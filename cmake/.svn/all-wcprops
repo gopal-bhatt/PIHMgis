@@ -1,71 +1,71 @@
 K 25
 svn:wc:ra_dav:version-url
-V 54
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/cmake
+V 49
+/qgis/!svn/ver/10639/branches/Release-1_0_2/cmake
 END
 FindGRASS.cmake
 K 25
 svn:wc:ra_dav:version-url
-V 70
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/cmake/FindGRASS.cmake
+V 65
+/qgis/!svn/ver/10639/branches/Release-1_0_2/cmake/FindGRASS.cmake
 END
 Python.cmake
 K 25
 svn:wc:ra_dav:version-url
-V 67
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/cmake/Python.cmake
+V 62
+/qgis/!svn/ver/10639/branches/Release-1_0_2/cmake/Python.cmake
 END
 FindExpat.cmake
 K 25
 svn:wc:ra_dav:version-url
-V 70
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/cmake/FindExpat.cmake
+V 65
+/qgis/!svn/ver/10639/branches/Release-1_0_2/cmake/FindExpat.cmake
 END
 FindSqlite3.cmake
 K 25
 svn:wc:ra_dav:version-url
-V 72
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/cmake/FindSqlite3.cmake
+V 67
+/qgis/!svn/ver/10639/branches/Release-1_0_2/cmake/FindSqlite3.cmake
 END
 FindGSL.cmake
 K 25
 svn:wc:ra_dav:version-url
-V 68
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/cmake/FindGSL.cmake
+V 63
+/qgis/!svn/ver/10639/branches/Release-1_0_2/cmake/FindGSL.cmake
 END
 FindPostgres.cmake
 K 25
 svn:wc:ra_dav:version-url
-V 73
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/cmake/FindPostgres.cmake
+V 68
+/qgis/!svn/ver/10639/branches/Release-1_0_2/cmake/FindPostgres.cmake
 END
 FindGDAL.cmake
 K 25
 svn:wc:ra_dav:version-url
-V 69
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/cmake/FindGDAL.cmake
+V 64
+/qgis/!svn/ver/10639/branches/Release-1_0_2/cmake/FindGDAL.cmake
 END
 Bison.cmake
 K 25
 svn:wc:ra_dav:version-url
-V 66
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/cmake/Bison.cmake
+V 61
+/qgis/!svn/ver/10639/branches/Release-1_0_2/cmake/Bison.cmake
 END
 FindProj.cmake
 K 25
 svn:wc:ra_dav:version-url
-V 69
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/cmake/FindProj.cmake
+V 64
+/qgis/!svn/ver/10639/branches/Release-1_0_2/cmake/FindProj.cmake
 END
 FindGEOS.cmake
 K 25
 svn:wc:ra_dav:version-url
-V 69
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/cmake/FindGEOS.cmake
+V 64
+/qgis/!svn/ver/10639/branches/Release-1_0_2/cmake/FindGEOS.cmake
 END
 Flex.cmake
 K 25
 svn:wc:ra_dav:version-url
-V 65
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/cmake/Flex.cmake
+V 60
+/qgis/!svn/ver/10639/branches/Release-1_0_2/cmake/Flex.cmake
 END

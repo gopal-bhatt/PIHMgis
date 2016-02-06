@@ -1,9 +1,9 @@
 8
 
 dir
-7809
-https://svn.qgis.org/repos/qgis/branches/Release-0_9_0/doc/plugins/geoprocessing
-https://svn.qgis.org/repos/qgis
+10938
+https://svn.osgeo.org/qgis/branches/Release-1_0_2/doc/plugins/geoprocessing
+https://svn.osgeo.org/qgis
 
 
 
@@ -35,7 +35,7 @@ file
 
 
 
-2007-12-24T08:18:17.000000Z
+2009-06-17T07:50:14.000000Z
 31076018db46093e4e5e50ab56486a4e
 2005-01-10T20:26:46.000000Z
 2610

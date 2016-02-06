@@ -25,7 +25,6 @@ SET(CMAKE_C_INCLUDE_PATH
   "../src/plugins/wfs/.."
   "../src/plugins/wfs/../../app"
   "/Library/Frameworks/GEOS.framework/Headers"
-  "/Library/Frameworks/GEOS.framework/Headers/geos"
   )
 SET(CMAKE_CXX_INCLUDE_PATH ${CMAKE_C_INCLUDE_PATH})
 

@@ -12,35 +12,28 @@
  *   (at your option) any later version.                                   *
  *                                                                         *
  ***************************************************************************/
-/* $Id: qgspgutil.cpp 6415 2007-01-09 02:39:15Z wonder $ */
+/* $Id: qgspgutil.cpp 9138 2008-08-23 21:37:31Z jef $ */
 #include "qgspgutil.h"
 
 QgsPgUtil *QgsPgUtil::mInstance = 0;
 QgsPgUtil * QgsPgUtil::instance()
 {
-  if(mInstance == 0)
+  if ( mInstance == 0 )
   {
     mInstance = new QgsPgUtil();
   }
   return mInstance;
 }
+
 QgsPgUtil::QgsPgUtil()
 {
-  // load the reserved word map
-  initReservedWords();
 }
+
 QgsPgUtil::~QgsPgUtil()
 {
 }
-bool QgsPgUtil::isReserved(QString word)
-{
-  // uppercase the word before testing it since all our reserved words are
-  // stored in uppercase
-  
-  QStringList::iterator it = mReservedWords.find(word.upper());
-  return (it != mReservedWords.end());
-}
-void QgsPgUtil::setConnection(PGconn *con)
+
+void QgsPgUtil::setConnection( PGconn *con )
 {
   mPgConnection = con;
 }
@@ -48,106 +41,19 @@ PGconn *QgsPgUtil::connection()
 {
   return mPgConnection;
 }
-const QStringList & QgsPgUtil::reservedWords()
+
+QString QgsPgUtil::quotedIdentifier( QString ident )
 {
-  return mReservedWords;
+  ident.replace( '"', "\"\"" );
+  return ident.prepend( "\"" ).append( "\"" );
 }
-void QgsPgUtil::initReservedWords()
+
+QString QgsPgUtil::quotedValue( QString value )
 {
-  // create the reserved word list by loading
-  // the words into a QStringList. We code them here
-  // for now rather than deal with the complexities
-  // of finding and loading from a text file
-  // in the install path
-  mReservedWords << "ALL"
-    << "ANALYSE"
-    << "ANALYZE"
-    << "AND"
-    << "ANY"
-    << "ARRAY"
-    << "AS"
-    << "ASC"
-    << "AUTHORIZATION"
-    << "BETWEEN"
-    << "BINARY"
-    << "BOTH"
-    << "CASE"
-    << "CAST"
-    << "CHECK"
-    << "COLLATE"
-    << "COLUMN"
-    << "CONSTRAINT"
-    << "CREATE"
-    << "CROSS"
-    << "CURRENT_DATE"
-    << "CURRENT_TIME"
-    << "CURRENT_TIMESTAMP"
-    << "CURRENT_USER"
-    << "DEFAULT"
-    << "DEFERRABLE"
-    << "DESC"
-    << "DISTINCT"
-    << "DO"
-    << "ELSE"
-    << "END"
-    << "EXCEPT"
-    << "FALSE"
-    << "FOR"
-    << "FOREIGN"
-    << "FREEZE"
-    << "FROM"
-    << "FULL"
-    << "GRANT"
-    << "GROUP"
-    << "HAVING"
-    << "ILIKE"
-    << "IN"
-    << "INITIALLY"
-    << "INNER"
-    << "INTERSECT"
-    << "INTO"
-    << "IS"
-    << "ISNULL"
-    << "JOIN"
-    << "LEADING"
-    << "LEFT"
-    << "LIKE"
-    << "LIMIT"
-    << "LOCALTIME"
-    << "LOCALTIMESTAMP"
-    << "NAMES"
-    << "NATURAL"
-    << "NEW"
-    << "NOT"
-    << "NOTNULL"
-    << "NULL"
-    << "OFF"
-    << "OFFSET"
-    << "OLD"
-    << "ON"
-    << "ONLY"
-    << "OR"
-    << "ORDER"
-    << "OUTER"
-    << "OVERLAPS"
-    << "PLACING"
-    << "PRIMARY"
-    << "REFERENCES"
-    << "RIGHT"
-    << "SELECT"
-    << "SESSION_USER"
-    << "SIMILAR"
-    << "SOME"
-    << "TABLE"
-    << "THEN"
-    << "TO"
-    << "TRAILING"
-    << "TRUE"
-    << "UNION"
-    << "UNIQUE"
-    << "USER"
-    << "USING"
-    << "VERBOSE"
-    << "WHEN"
-    << "WHERE";
+  if ( value.isNull() )
+    return "NULL";
+
+  // FIXME: use PQescapeStringConn
+  value.replace( "'", "''" );
+  return value.prepend( "'" ).append( "'" );
 }

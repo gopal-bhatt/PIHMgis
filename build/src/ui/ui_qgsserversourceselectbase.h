@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading ui file 'qgsserversourceselectbase.ui'
 **
-** Created: Wed Jun 11 19:03:31 2008
+** Created: Fri Jun 19 01:50:17 2009
 **      by: Qt User Interface Compiler version 4.3.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling ui file!
@@ -10,8 +10,6 @@
 #ifndef UI_QGSSERVERSOURCESELECTBASE_H
 #define UI_QGSSERVERSOURCESELECTBASE_H
 
-#include <Qt3Support/Q3Header>
-#include <Qt3Support/Q3ListView>
 #include <QtCore/QVariant>
 #include <QtGui/QAction>
 #include <QtGui/QApplication>
@@ -24,6 +22,7 @@
 #include <QtGui/QLabel>
 #include <QtGui/QPushButton>
 #include <QtGui/QSpacerItem>
+#include <QtGui/QTreeWidget>
 #include <QtGui/QVBoxLayout>
 
 class Ui_QgsServerSourceSelectBase
@@ -48,7 +47,7 @@ public:
     QPushButton *btnAdd;
     QGroupBox *groupBox2;
     QVBoxLayout *vboxLayout;
-    Q3ListView *lstLayers;
+    QTreeWidget *lstLayers;
     QGroupBox *btnGrpImageEncoding;
     QSpacerItem *spacerItem2;
     QPushButton *btnHelp;
@@ -161,21 +160,15 @@ public:
     vboxLayout->setSpacing(6);
     vboxLayout->setMargin(9);
     vboxLayout->setObjectName(QString::fromUtf8("vboxLayout"));
-    lstLayers = new Q3ListView(groupBox2);
-    lstLayers->addColumn(QApplication::translate("QgsServerSourceSelectBase", "ID", 0, QApplication::UnicodeUTF8));
-    lstLayers->addColumn(QApplication::translate("QgsServerSourceSelectBase", "Name", 0, QApplication::UnicodeUTF8));
-    lstLayers->addColumn(QApplication::translate("QgsServerSourceSelectBase", "Title", 0, QApplication::UnicodeUTF8));
-    lstLayers->addColumn(QApplication::translate("QgsServerSourceSelectBase", "Abstract", 0, QApplication::UnicodeUTF8));
+    lstLayers = new QTreeWidget(groupBox2);
     lstLayers->setObjectName(QString::fromUtf8("lstLayers"));
     QSizePolicy sizePolicy1(static_cast<QSizePolicy::Policy>(7), static_cast<QSizePolicy::Policy>(7));
     sizePolicy1.setHorizontalStretch(0);
     sizePolicy1.setVerticalStretch(0);
     sizePolicy1.setHeightForWidth(lstLayers->sizePolicy().hasHeightForWidth());
     lstLayers->setSizePolicy(sizePolicy1);
-    lstLayers->setSelectionMode(Q3ListView::Multi);
+    lstLayers->setSelectionMode(QAbstractItemView::MultiSelection);
     lstLayers->setAllColumnsShowFocus(true);
-    lstLayers->setShowSortIndicator(true);
-    lstLayers->setRootIsDecorated(true);
 
     vboxLayout->addWidget(lstLayers);
 
@@ -242,10 +235,10 @@ public:
     btnAdd->setText(QApplication::translate("QgsServerSourceSelectBase", "&Add", 0, QApplication::UnicodeUTF8));
     btnAdd->setShortcut(QApplication::translate("QgsServerSourceSelectBase", "Alt+A", 0, QApplication::UnicodeUTF8));
     groupBox2->setTitle(QApplication::translate("QgsServerSourceSelectBase", "Layers", 0, QApplication::UnicodeUTF8));
-    lstLayers->header()->setLabel(0, QApplication::translate("QgsServerSourceSelectBase", "ID", 0, QApplication::UnicodeUTF8));
-    lstLayers->header()->setLabel(1, QApplication::translate("QgsServerSourceSelectBase", "Name", 0, QApplication::UnicodeUTF8));
-    lstLayers->header()->setLabel(2, QApplication::translate("QgsServerSourceSelectBase", "Title", 0, QApplication::UnicodeUTF8));
-    lstLayers->header()->setLabel(3, QApplication::translate("QgsServerSourceSelectBase", "Abstract", 0, QApplication::UnicodeUTF8));
+    lstLayers->headerItem()->setText(0, QApplication::translate("QgsServerSourceSelectBase", "ID", 0, QApplication::UnicodeUTF8));
+    lstLayers->headerItem()->setText(1, QApplication::translate("QgsServerSourceSelectBase", "Name", 0, QApplication::UnicodeUTF8));
+    lstLayers->headerItem()->setText(2, QApplication::translate("QgsServerSourceSelectBase", "Title", 0, QApplication::UnicodeUTF8));
+    lstLayers->headerItem()->setText(3, QApplication::translate("QgsServerSourceSelectBase", "Abstract", 0, QApplication::UnicodeUTF8));
     btnGrpImageEncoding->setTitle(QApplication::translate("QgsServerSourceSelectBase", "Image encoding", 0, QApplication::UnicodeUTF8));
     btnHelp->setText(QApplication::translate("QgsServerSourceSelectBase", "Help", 0, QApplication::UnicodeUTF8));
     btnHelp->setShortcut(QApplication::translate("QgsServerSourceSelectBase", "F1", 0, QApplication::UnicodeUTF8));

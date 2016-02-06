@@ -1,311 +1,311 @@
 K 25
 svn:wc:ra_dav:version-url
-V 55
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/ui
-END
-qgspatterndialogbase.ui
-K 25
-svn:wc:ra_dav:version-url
-V 79
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/ui/qgspatterndialogbase.ui
+V 50
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/ui
 END
 qgsludialogbase.ui
 K 25
 svn:wc:ra_dav:version-url
-V 74
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/ui/qgsludialogbase.ui
-END
-qgsmarkerdialogbase.ui
-K 25
-svn:wc:ra_dav:version-url
-V 78
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/ui/qgsmarkerdialogbase.ui
+V 69
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/ui/qgsludialogbase.ui
 END
 qgscompositionbase.ui
 K 25
 svn:wc:ra_dav:version-url
-V 77
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/ui/qgscompositionbase.ui
+V 72
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/ui/qgscompositionbase.ui
 END
 qgsmapserverexportbase.ui
 K 25
 svn:wc:ra_dav:version-url
-V 81
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/ui/qgsmapserverexportbase.ui
+V 76
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/ui/qgsmapserverexportbase.ui
 END
-qgslayerprojectionselectorbase.ui
+qgscompositionwidgetbase.ui
 K 25
 svn:wc:ra_dav:version-url
-V 89
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/ui/qgslayerprojectionselectorbase.ui
+V 78
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/ui/qgscompositionwidgetbase.ui
+END
+qgscomposeritemwidgetbase.ui
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/ui/qgscomposeritemwidgetbase.ui
 END
 qgsrasterlayerpropertiesbase.ui
 K 25
 svn:wc:ra_dav:version-url
-V 87
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/ui/qgsrasterlayerpropertiesbase.ui
+V 82
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/ui/qgsrasterlayerpropertiesbase.ui
 END
 qgsattributetablebase.ui
 K 25
 svn:wc:ra_dav:version-url
-V 80
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/ui/qgsattributetablebase.ui
+V 75
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/ui/qgsattributetablebase.ui
 END
 qgsmessageviewer.ui
 K 25
 svn:wc:ra_dav:version-url
-V 75
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/ui/qgsmessageviewer.ui
-END
-qgsvectorsymbologywidgetbase.ui
-K 25
-svn:wc:ra_dav:version-url
-V 87
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/ui/qgsvectorsymbologywidgetbase.ui
+V 70
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/ui/qgsmessageviewer.ui
 END
 qgsvectorlayerpropertiesbase.ui
 K 25
 svn:wc:ra_dav:version-url
-V 87
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/ui/qgsvectorlayerpropertiesbase.ui
+V 82
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/ui/qgsvectorlayerpropertiesbase.ui
 END
 qgsdelattrdialogbase.ui
 K 25
 svn:wc:ra_dav:version-url
-V 79
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/ui/qgsdelattrdialogbase.ui
+V 74
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/ui/qgsdelattrdialogbase.ui
 END
 qgsuniquevaluedialogbase.ui
 K 25
 svn:wc:ra_dav:version-url
-V 83
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/ui/qgsuniquevaluedialogbase.ui
-END
-qgscomposerscalebarbase.ui
-K 25
-svn:wc:ra_dav:version-url
-V 82
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/ui/qgscomposerscalebarbase.ui
-END
-qgsserversourceselectbase.ui
-K 25
-svn:wc:ra_dav:version-url
-V 84
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/ui/qgsserversourceselectbase.ui
-END
-qgssinglesymboldialogbase.ui
-K 25
-svn:wc:ra_dav:version-url
-V 84
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/ui/qgssinglesymboldialogbase.ui
-END
-qgscomposerlabelbase.ui
-K 25
-svn:wc:ra_dav:version-url
-V 79
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/ui/qgscomposerlabelbase.ui
+V 78
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/ui/qgsuniquevaluedialogbase.ui
 END
 qgscustomprojectiondialogbase.ui
 K 25
 svn:wc:ra_dav:version-url
-V 88
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/ui/qgscustomprojectiondialogbase.ui
+V 83
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/ui/qgscustomprojectiondialogbase.ui
+END
+qgsserversourceselectbase.ui
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/ui/qgsserversourceselectbase.ui
+END
+qgssinglesymboldialogbase.ui
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/ui/qgssinglesymboldialogbase.ui
+END
+qgscomposerscalebarwidgetbase.ui
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/ui/qgscomposerscalebarwidgetbase.ui
 END
 qgsbookmarksbase.ui
 K 25
 svn:wc:ra_dav:version-url
-V 75
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/ui/qgsbookmarksbase.ui
-END
-qgslinestyledialogbase.ui
-K 25
-svn:wc:ra_dav:version-url
-V 81
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/ui/qgslinestyledialogbase.ui
+V 70
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/ui/qgsbookmarksbase.ui
 END
 qgspluginmanagerbase.ui
 K 25
 svn:wc:ra_dav:version-url
-V 79
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/ui/qgspluginmanagerbase.ui
-END
-qgscomposervectorlegendbase.ui
-K 25
-svn:wc:ra_dav:version-url
-V 86
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/ui/qgscomposervectorlegendbase.ui
+V 74
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/ui/qgspluginmanagerbase.ui
 END
 qgisappbase.ui
 K 25
 svn:wc:ra_dav:version-url
-V 70
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/ui/qgisappbase.ui
+V 65
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/ui/qgisappbase.ui
+END
+qgscomposervectorlegendbase.ui
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/ui/qgscomposervectorlegendbase.ui
 END
 qgsoptionsbase.ui
 K 25
 svn:wc:ra_dav:version-url
-V 73
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/ui/qgsoptionsbase.ui
+V 68
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/ui/qgsoptionsbase.ui
+END
+qgscomposerlabelwidgetbase.ui
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/ui/qgscomposerlabelwidgetbase.ui
 END
 CMakeLists.txt
 K 25
 svn:wc:ra_dav:version-url
-V 70
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/ui/CMakeLists.txt
+V 65
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/ui/CMakeLists.txt
 END
 .cvsignore
 K 25
 svn:wc:ra_dav:version-url
-V 66
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/ui/.cvsignore
+V 61
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/ui/.cvsignore
 END
 qgsidentifyresultsbase.ui
 K 25
 svn:wc:ra_dav:version-url
-V 81
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/ui/qgsidentifyresultsbase.ui
+V 76
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/ui/qgsidentifyresultsbase.ui
+END
+qgsdetaileditemwidgetbase.ui
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/ui/qgsdetaileditemwidgetbase.ui
+END
+qgssnappingdialogbase.ui
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/ui/qgssnappingdialogbase.ui
 END
 qgslabeldialogbase.ui
 K 25
 svn:wc:ra_dav:version-url
-V 77
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/ui/qgslabeldialogbase.ui
+V 72
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/ui/qgslabeldialogbase.ui
 END
 qgsmeasurebase.ui
 K 25
 svn:wc:ra_dav:version-url
-V 73
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/ui/qgsmeasurebase.ui
+V 68
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/ui/qgsmeasurebase.ui
 END
 qgspgquerybuilderbase.ui
 K 25
 svn:wc:ra_dav:version-url
-V 80
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/ui/qgspgquerybuilderbase.ui
+V 75
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/ui/qgspgquerybuilderbase.ui
 END
 qgsaddattrdialogbase.ui
 K 25
 svn:wc:ra_dav:version-url
-V 79
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/ui/qgsaddattrdialogbase.ui
+V 74
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/ui/qgsaddattrdialogbase.ui
+END
+qgscomposerlegenditemdialogbase.ui
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/ui/qgscomposerlegenditemdialogbase.ui
 END
 qgsgraduatedsymboldialogbase.ui
 K 25
 svn:wc:ra_dav:version-url
-V 87
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/ui/qgsgraduatedsymboldialogbase.ui
+V 82
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/ui/qgsgraduatedsymboldialogbase.ui
 END
 qgsdbsourceselectbase.ui
 K 25
 svn:wc:ra_dav:version-url
-V 80
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/ui/qgsdbsourceselectbase.ui
+V 75
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/ui/qgsdbsourceselectbase.ui
 END
 qgspythondialog.ui
 K 25
 svn:wc:ra_dav:version-url
-V 74
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/ui/qgspythondialog.ui
+V 69
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/ui/qgspythondialog.ui
 END
 qgsgeomtypedialogbase.ui
 K 25
 svn:wc:ra_dav:version-url
-V 80
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/ui/qgsgeomtypedialogbase.ui
+V 75
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/ui/qgsgeomtypedialogbase.ui
 END
 qgsnewconnectionbase.ui
 K 25
 svn:wc:ra_dav:version-url
-V 79
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/ui/qgsnewconnectionbase.ui
+V 74
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/ui/qgsnewconnectionbase.ui
 END
 qgsnewhttpconnectionbase.ui
 K 25
 svn:wc:ra_dav:version-url
-V 83
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/ui/qgsnewhttpconnectionbase.ui
+V 78
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/ui/qgsnewhttpconnectionbase.ui
 END
 qgshelpviewerbase.ui
 K 25
 svn:wc:ra_dav:version-url
-V 76
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/ui/qgshelpviewerbase.ui
+V 71
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/ui/qgshelpviewerbase.ui
 END
-qgsfillstylewidgetbase.ui
+qgsgenericprojectionselectorbase.ui
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/ui/qgsgenericprojectionselectorbase.ui
+END
+qgscomposerlegendwidgetbase.ui
 K 25
 svn:wc:ra_dav:version-url
 V 81
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/ui/qgsfillstylewidgetbase.ui
-END
-qgslinestylewidgetbase.ui
-K 25
-svn:wc:ra_dav:version-url
-V 81
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/ui/qgslinestylewidgetbase.ui
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/ui/qgscomposerlegendwidgetbase.ui
 END
 qgsprojectionselectorbase.ui
 K 25
 svn:wc:ra_dav:version-url
-V 84
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/ui/qgsprojectionselectorbase.ui
-END
-qgspointstylewidgetbase.ui
-K 25
-svn:wc:ra_dav:version-url
-V 82
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/ui/qgspointstylewidgetbase.ui
+V 79
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/ui/qgsprojectionselectorbase.ui
 END
 qgsabout.ui
 K 25
 svn:wc:ra_dav:version-url
-V 67
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/ui/qgsabout.ui
+V 62
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/ui/qgsabout.ui
 END
 qgsattributeactiondialogbase.ui
 K 25
 svn:wc:ra_dav:version-url
-V 87
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/ui/qgsattributeactiondialogbase.ui
+V 82
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/ui/qgsattributeactiondialogbase.ui
 END
 qgsattributedialogbase.ui
 K 25
 svn:wc:ra_dav:version-url
-V 81
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/ui/qgsattributedialogbase.ui
-END
-qgscomposerpicturebase.ui
-K 25
-svn:wc:ra_dav:version-url
-V 81
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/ui/qgscomposerpicturebase.ui
+V 76
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/ui/qgsattributedialogbase.ui
 END
 qgsprojectpropertiesbase.ui
 K 25
 svn:wc:ra_dav:version-url
-V 83
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/ui/qgsprojectpropertiesbase.ui
+V 78
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/ui/qgsprojectpropertiesbase.ui
 END
 qgscontinuouscolordialogbase.ui
 K 25
 svn:wc:ra_dav:version-url
-V 87
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/ui/qgscontinuouscolordialogbase.ui
+V 82
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/ui/qgscontinuouscolordialogbase.ui
 END
-qgscomposermapbase.ui
+qgscompositionwidget.h
 K 25
 svn:wc:ra_dav:version-url
-V 77
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/ui/qgscomposermapbase.ui
+V 73
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/ui/qgscompositionwidget.h
 END
 qgspastetransformationsbase.ui
 K 25
 svn:wc:ra_dav:version-url
-V 86
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/ui/qgspastetransformationsbase.ui
+V 81
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/ui/qgspastetransformationsbase.ui
 END
 qgscomposerbase.ui
 K 25
 svn:wc:ra_dav:version-url
-V 74
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/ui/qgscomposerbase.ui
+V 69
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/ui/qgscomposerbase.ui
+END
+qgscomposerpicturewidgetbase.ui
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/ui/qgscomposerpicturewidgetbase.ui
+END
+qgscomposermapwidgetbase.ui
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/ui/qgscomposermapwidgetbase.ui
 END

@@ -7,7 +7,7 @@ SET ([pluginlcasename]_SRCS
      [pluginlcasename]gui.cpp
 )
 
-SET ([pluginlcasename]_UIS [pluginlcasename]gui.ui)
+SET ([pluginlcasename]_UIS [pluginlcasename]guibase.ui)
 
 SET ([pluginlcasename]_MOC_HDRS
      [pluginlcasename].h
@@ -35,7 +35,6 @@ INCLUDE_DIRECTORIES(
 )
 
 TARGET_LINK_LIBRARIES([pluginlcasename]plugin
-  ${QT_LIBRARIES}
   qgis_core
   qgis_gui
 )

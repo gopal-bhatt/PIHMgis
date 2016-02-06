@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading ui file 'qgsidentifyresultsbase.ui'
 **
-** Created: Wed Jun 11 19:03:30 2008
+** Created: Fri Jun 19 01:50:16 2009
 **      by: Qt User Interface Compiler version 4.3.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling ui file!
@@ -10,7 +10,6 @@
 #ifndef UI_QGSIDENTIFYRESULTSBASE_H
 #define UI_QGSIDENTIFYRESULTSBASE_H
 
-#include <Qt3Support/Q3MimeSourceFactory>
 #include <QtCore/QVariant>
 #include <QtGui/QAction>
 #include <QtGui/QApplication>
@@ -36,7 +35,7 @@ public:
     {
     if (QgsIdentifyResultsBase->objectName().isEmpty())
         QgsIdentifyResultsBase->setObjectName(QString::fromUtf8("QgsIdentifyResultsBase"));
-    QgsIdentifyResultsBase->resize(231, 542);
+    QgsIdentifyResultsBase->resize(281, 316);
     vboxLayout = new QVBoxLayout(QgsIdentifyResultsBase);
     vboxLayout->setSpacing(6);
     vboxLayout->setMargin(9);

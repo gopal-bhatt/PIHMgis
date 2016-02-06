@@ -1,77 +1,71 @@
 K 25
 svn:wc:ra_dav:version-url
-V 70
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/scale_bar
+V 65
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/scale_bar
 END
 plugin.cpp
 K 25
 svn:wc:ra_dav:version-url
-V 81
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/scale_bar/plugin.cpp
-END
-scalebar.png
-K 25
-svn:wc:ra_dav:version-url
-V 83
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/scale_bar/scalebar.png
+V 76
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/scale_bar/plugin.cpp
 END
 pluginguibase.ui.h
 K 25
 svn:wc:ra_dav:version-url
-V 89
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/scale_bar/pluginguibase.ui.h
+V 84
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/scale_bar/pluginguibase.ui.h
 END
 plugin.h
 K 25
 svn:wc:ra_dav:version-url
-V 79
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/scale_bar/plugin.h
+V 74
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/scale_bar/plugin.h
 END
 plugingui.cpp
 K 25
 svn:wc:ra_dav:version-url
-V 84
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/scale_bar/plugingui.cpp
-END
-icon.xcf
-K 25
-svn:wc:ra_dav:version-url
 V 79
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/scale_bar/icon.xcf
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/scale_bar/plugingui.cpp
 END
 plugingui.h
 K 25
 svn:wc:ra_dav:version-url
-V 82
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/scale_bar/plugingui.h
+V 77
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/scale_bar/plugingui.h
+END
+scale_bar.svg
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/scale_bar/scale_bar.svg
 END
 pluginguibase.ui
 K 25
 svn:wc:ra_dav:version-url
-V 87
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/scale_bar/pluginguibase.ui
-END
-icon.xpm
-K 25
-svn:wc:ra_dav:version-url
-V 79
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/scale_bar/icon.xpm
+V 82
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/scale_bar/pluginguibase.ui
 END
 .cvsignore
 K 25
 svn:wc:ra_dav:version-url
-V 81
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/scale_bar/.cvsignore
+V 76
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/scale_bar/.cvsignore
 END
 CMakeLists.txt
 K 25
 svn:wc:ra_dav:version-url
-V 85
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/scale_bar/CMakeLists.txt
+V 80
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/scale_bar/CMakeLists.txt
+END
+scale_bar.png
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/scale_bar/scale_bar.png
 END
 scalebar_plugin.qrc
 K 25
 svn:wc:ra_dav:version-url
-V 90
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/scale_bar/scalebar_plugin.qrc
+V 85
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/scale_bar/scalebar_plugin.qrc
 END

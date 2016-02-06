@@ -24,43 +24,38 @@ Email                : sherman at mrcc dot com
 
 class TestQgsApplication: public QObject
 {
-  Q_OBJECT;
+    Q_OBJECT;
   private slots:
-    void getPaths();
     void checkTheme();
+    void initTestCase();
+  private:
+    QString getQgisPath();
 };
 
-void TestQgsApplication::getPaths()
+
+void TestQgsApplication::initTestCase()
 {
+  //
+  // Runs once before any tests are run
+  //
   // init QGIS's paths - true means that all path will be inited from prefix
-  QString qgisPath = QCoreApplication::applicationDirPath () + "/../";
-  QgsApplication::setPrefixPath(qgisPath, TRUE);
-
-  std::cout << "Prefix  PATH: " << QgsApplication::prefixPath().toLocal8Bit().data() << std::endl;
-  std::cout << "Plugin  PATH: " << QgsApplication::pluginPath().toLocal8Bit().data() << std::endl;
-  std::cout << "PkgData PATH: " << QgsApplication::pkgDataPath().toLocal8Bit().data() << std::endl;
-  std::cout << "User DB PATH: " << QgsApplication::qgisUserDbFilePath().toLocal8Bit().data() << std::endl;
-
+  QString qgisPath = QCoreApplication::applicationDirPath();
+  QgsApplication::setPrefixPath( INSTALL_PREFIX, true );
+  QgsApplication::showSettings();
 };
 
 void TestQgsApplication::checkTheme()
 {
-  QString qgisPath = QCoreApplication::applicationDirPath () + "/../";
-  QgsApplication::setPrefixPath(qgisPath, TRUE);
-  std::cout << "Prefix  PATH: " << QgsApplication::prefixPath().toLocal8Bit().data() << std::endl;
-  std::cout << "Plugin  PATH: " << QgsApplication::pluginPath().toLocal8Bit().data() << std::endl;
-  std::cout << "PkgData PATH: " << QgsApplication::pkgDataPath().toLocal8Bit().data() << std::endl;
-  std::cout << "User DB PATH: " << QgsApplication::qgisUserDbFilePath().toLocal8Bit().data() << std::endl;
-  QString myIconPath = QgsApplication::themePath();
+  QString myIconPath = QgsApplication::defaultThemePath();
   QPixmap myPixmap;
-  myPixmap.load(myIconPath+"/mIconProjectionDisabled.png");
-  qDebug("Checking if a theme icon exists:");
-  qDebug(myIconPath.toLocal8Bit()+"/mIconProjectionDisabled.png");
-  QVERIFY(!myPixmap.isNull());
+  myPixmap.load( myIconPath + "/mIconProjectionDisabled.png" );
+  qDebug( "Checking if a theme icon exists:" );
+  qDebug( "%s/mIconProjectionDisabled.png", myIconPath.toLocal8Bit().constData() );
+  QVERIFY( !myPixmap.isNull() );
 
 };
 
 
-QTEST_MAIN(TestQgsApplication)
+QTEST_MAIN( TestQgsApplication )
 #include "moc_testqgsapplication.cxx"
 

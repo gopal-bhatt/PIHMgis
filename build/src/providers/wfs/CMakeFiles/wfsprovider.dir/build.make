@@ -31,10 +31,10 @@ RM = /usr/bin/cmake -E remove -f
 CMAKE_EDIT_COMMAND = /usr/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0
+CMAKE_SOURCE_DIR = /Users/bhattgopal/dev/cpp/qgis_1.0.2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build
+CMAKE_BINARY_DIR = /Users/bhattgopal/dev/cpp/qgis_1.0.2/build
 
 # Include any dependencies generated for this target.
 include src/providers/wfs/CMakeFiles/wfsprovider.dir/depend.make
@@ -50,17 +50,17 @@ src/providers/wfs/CMakeFiles/wfsprovider.dir/depend.make.mark: ../src/providers/
 
 src/providers/wfs/CMakeFiles/wfsprovider.dir/qgswfsprovider.o: src/providers/wfs/CMakeFiles/wfsprovider.dir/flags.make
 src/providers/wfs/CMakeFiles/wfsprovider.dir/qgswfsprovider.o: ../src/providers/wfs/qgswfsprovider.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/providers/wfs/CMakeFiles/wfsprovider.dir/qgswfsprovider.o"
-	/usr/bin/c++   $(CXX_FLAGS) -Wno-error -o src/providers/wfs/CMakeFiles/wfsprovider.dir/qgswfsprovider.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/providers/wfs/qgswfsprovider.cpp
+	/usr/bin/c++   $(CXX_FLAGS) -o src/providers/wfs/CMakeFiles/wfsprovider.dir/qgswfsprovider.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/providers/wfs/qgswfsprovider.cpp
 
 src/providers/wfs/CMakeFiles/wfsprovider.dir/qgswfsprovider.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/providers/wfs/CMakeFiles/wfsprovider.dir/qgswfsprovider.i"
-	/usr/bin/c++  $(CXX_FLAGS) -Wno-error -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/providers/wfs/qgswfsprovider.cpp > src/providers/wfs/CMakeFiles/wfsprovider.dir/qgswfsprovider.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/providers/wfs/qgswfsprovider.cpp > src/providers/wfs/CMakeFiles/wfsprovider.dir/qgswfsprovider.i
 
 src/providers/wfs/CMakeFiles/wfsprovider.dir/qgswfsprovider.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/providers/wfs/CMakeFiles/wfsprovider.dir/qgswfsprovider.s"
-	/usr/bin/c++  $(CXX_FLAGS) -Wno-error -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/providers/wfs/qgswfsprovider.cpp -o src/providers/wfs/CMakeFiles/wfsprovider.dir/qgswfsprovider.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/providers/wfs/qgswfsprovider.cpp -o src/providers/wfs/CMakeFiles/wfsprovider.dir/qgswfsprovider.s
 
 src/providers/wfs/CMakeFiles/wfsprovider.dir/qgswfsprovider.o.requires:
 
@@ -74,17 +74,17 @@ src/providers/wfs/CMakeFiles/wfsprovider.dir/depend.make.mark: ../src/providers/
 
 src/providers/wfs/CMakeFiles/wfsprovider.dir/qgswfsdata.o: src/providers/wfs/CMakeFiles/wfsprovider.dir/flags.make
 src/providers/wfs/CMakeFiles/wfsprovider.dir/qgswfsdata.o: ../src/providers/wfs/qgswfsdata.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/providers/wfs/CMakeFiles/wfsprovider.dir/qgswfsdata.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/providers/wfs/CMakeFiles/wfsprovider.dir/qgswfsdata.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/providers/wfs/qgswfsdata.cpp
+	/usr/bin/c++   $(CXX_FLAGS) -o src/providers/wfs/CMakeFiles/wfsprovider.dir/qgswfsdata.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/providers/wfs/qgswfsdata.cpp
 
 src/providers/wfs/CMakeFiles/wfsprovider.dir/qgswfsdata.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/providers/wfs/CMakeFiles/wfsprovider.dir/qgswfsdata.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/providers/wfs/qgswfsdata.cpp > src/providers/wfs/CMakeFiles/wfsprovider.dir/qgswfsdata.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/providers/wfs/qgswfsdata.cpp > src/providers/wfs/CMakeFiles/wfsprovider.dir/qgswfsdata.i
 
 src/providers/wfs/CMakeFiles/wfsprovider.dir/qgswfsdata.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/providers/wfs/CMakeFiles/wfsprovider.dir/qgswfsdata.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/providers/wfs/qgswfsdata.cpp -o src/providers/wfs/CMakeFiles/wfsprovider.dir/qgswfsdata.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/providers/wfs/qgswfsdata.cpp -o src/providers/wfs/CMakeFiles/wfsprovider.dir/qgswfsdata.s
 
 src/providers/wfs/CMakeFiles/wfsprovider.dir/qgswfsdata.o.requires:
 
@@ -98,17 +98,17 @@ src/providers/wfs/CMakeFiles/wfsprovider.dir/depend.make.mark: src/providers/wfs
 
 src/providers/wfs/CMakeFiles/wfsprovider.dir/moc_qgswfsdata.o: src/providers/wfs/CMakeFiles/wfsprovider.dir/flags.make
 src/providers/wfs/CMakeFiles/wfsprovider.dir/moc_qgswfsdata.o: src/providers/wfs/moc_qgswfsdata.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_3)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/providers/wfs/CMakeFiles/wfsprovider.dir/moc_qgswfsdata.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/providers/wfs/CMakeFiles/wfsprovider.dir/moc_qgswfsdata.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/providers/wfs/moc_qgswfsdata.cxx
+	/usr/bin/c++   $(CXX_FLAGS) -o src/providers/wfs/CMakeFiles/wfsprovider.dir/moc_qgswfsdata.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/providers/wfs/moc_qgswfsdata.cxx
 
 src/providers/wfs/CMakeFiles/wfsprovider.dir/moc_qgswfsdata.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/providers/wfs/CMakeFiles/wfsprovider.dir/moc_qgswfsdata.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/providers/wfs/moc_qgswfsdata.cxx > src/providers/wfs/CMakeFiles/wfsprovider.dir/moc_qgswfsdata.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/providers/wfs/moc_qgswfsdata.cxx > src/providers/wfs/CMakeFiles/wfsprovider.dir/moc_qgswfsdata.i
 
 src/providers/wfs/CMakeFiles/wfsprovider.dir/moc_qgswfsdata.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/providers/wfs/CMakeFiles/wfsprovider.dir/moc_qgswfsdata.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/providers/wfs/moc_qgswfsdata.cxx -o src/providers/wfs/CMakeFiles/wfsprovider.dir/moc_qgswfsdata.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/providers/wfs/moc_qgswfsdata.cxx -o src/providers/wfs/CMakeFiles/wfsprovider.dir/moc_qgswfsdata.s
 
 src/providers/wfs/CMakeFiles/wfsprovider.dir/moc_qgswfsdata.o.requires:
 
@@ -117,22 +117,53 @@ src/providers/wfs/CMakeFiles/wfsprovider.dir/moc_qgswfsdata.o.provides: src/prov
 
 src/providers/wfs/CMakeFiles/wfsprovider.dir/moc_qgswfsdata.o.provides.build: src/providers/wfs/CMakeFiles/wfsprovider.dir/moc_qgswfsdata.o
 
+src/providers/wfs/CMakeFiles/wfsprovider.dir/depend.make.mark: src/providers/wfs/CMakeFiles/wfsprovider.dir/flags.make
+src/providers/wfs/CMakeFiles/wfsprovider.dir/depend.make.mark: src/providers/wfs/moc_qgswfsprovider.cxx
+
+src/providers/wfs/CMakeFiles/wfsprovider.dir/moc_qgswfsprovider.o: src/providers/wfs/CMakeFiles/wfsprovider.dir/flags.make
+src/providers/wfs/CMakeFiles/wfsprovider.dir/moc_qgswfsprovider.o: src/providers/wfs/moc_qgswfsprovider.cxx
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_4)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/providers/wfs/CMakeFiles/wfsprovider.dir/moc_qgswfsprovider.o"
+	/usr/bin/c++   $(CXX_FLAGS) -o src/providers/wfs/CMakeFiles/wfsprovider.dir/moc_qgswfsprovider.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/providers/wfs/moc_qgswfsprovider.cxx
+
+src/providers/wfs/CMakeFiles/wfsprovider.dir/moc_qgswfsprovider.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/providers/wfs/CMakeFiles/wfsprovider.dir/moc_qgswfsprovider.i"
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/providers/wfs/moc_qgswfsprovider.cxx > src/providers/wfs/CMakeFiles/wfsprovider.dir/moc_qgswfsprovider.i
+
+src/providers/wfs/CMakeFiles/wfsprovider.dir/moc_qgswfsprovider.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/providers/wfs/CMakeFiles/wfsprovider.dir/moc_qgswfsprovider.s"
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/providers/wfs/moc_qgswfsprovider.cxx -o src/providers/wfs/CMakeFiles/wfsprovider.dir/moc_qgswfsprovider.s
+
+src/providers/wfs/CMakeFiles/wfsprovider.dir/moc_qgswfsprovider.o.requires:
+
+src/providers/wfs/CMakeFiles/wfsprovider.dir/moc_qgswfsprovider.o.provides: src/providers/wfs/CMakeFiles/wfsprovider.dir/moc_qgswfsprovider.o.requires
+	$(MAKE) -f src/providers/wfs/CMakeFiles/wfsprovider.dir/build.make src/providers/wfs/CMakeFiles/wfsprovider.dir/moc_qgswfsprovider.o.provides.build
+
+src/providers/wfs/CMakeFiles/wfsprovider.dir/moc_qgswfsprovider.o.provides.build: src/providers/wfs/CMakeFiles/wfsprovider.dir/moc_qgswfsprovider.o
+
 src/providers/wfs/moc_qgswfsdata.cxx: ../src/providers/wfs/qgswfsdata.h
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_4)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating moc_qgswfsdata.cxx"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/providers/wfs && /Developer/Tools/Qt/moc -I /usr/include -I /Library/Frameworks/Qt3Support.framework/Headers -I /Library/Frameworks/QtSvg.framework/Headers -I /Library/Frameworks/QtGui.framework/Headers -I /Library/Frameworks/QtXml.framework/Headers -I /Library/Frameworks/QtSql.framework/Headers -I /Library/Frameworks/QtNetwork.framework/Headers -I /Library/Frameworks/QtCore.framework/Headers -I /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/providers/wfs/moc_qgswfsdata.cxx /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/providers/wfs/qgswfsdata.h
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/providers/wfs && /Developer/Tools/Qt/moc -I /usr/include -I /Library/Frameworks/Qt3Support.framework/Headers -I /Library/Frameworks/QtSvg.framework/Headers -I /Library/Frameworks/QtGui.framework/Headers -I /Library/Frameworks/QtXml.framework/Headers -I /Library/Frameworks/QtSql.framework/Headers -I /Library/Frameworks/QtNetwork.framework/Headers -I /Library/Frameworks/QtCore.framework/Headers -I /Users/bhattgopal/dev/cpp/qgis_1.0.2/build -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/providers/wfs/moc_qgswfsdata.cxx /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/providers/wfs/qgswfsdata.h
+
+src/providers/wfs/moc_qgswfsprovider.cxx: ../src/providers/wfs/qgswfsprovider.h
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_6)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating moc_qgswfsprovider.cxx"
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/providers/wfs && /Developer/Tools/Qt/moc -I /usr/include -I /Library/Frameworks/Qt3Support.framework/Headers -I /Library/Frameworks/QtSvg.framework/Headers -I /Library/Frameworks/QtGui.framework/Headers -I /Library/Frameworks/QtXml.framework/Headers -I /Library/Frameworks/QtSql.framework/Headers -I /Library/Frameworks/QtNetwork.framework/Headers -I /Library/Frameworks/QtCore.framework/Headers -I /Users/bhattgopal/dev/cpp/qgis_1.0.2/build -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/providers/wfs/moc_qgswfsprovider.cxx /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/providers/wfs/qgswfsprovider.h
 
 src/providers/wfs/CMakeFiles/wfsprovider.dir/depend: src/providers/wfs/CMakeFiles/wfsprovider.dir/depend.make.mark
 
 src/providers/wfs/CMakeFiles/wfsprovider.dir/depend.make.mark: src/providers/wfs/moc_qgswfsdata.cxx
+src/providers/wfs/CMakeFiles/wfsprovider.dir/depend.make.mark: src/providers/wfs/moc_qgswfsprovider.cxx
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --magenta --bold "Scanning dependencies of target wfsprovider"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0 /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/providers/wfs /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/providers/wfs /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/providers/wfs/CMakeFiles/wfsprovider.dir/DependInfo.cmake
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/bhattgopal/dev/cpp/qgis_1.0.2 /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/providers/wfs /Users/bhattgopal/dev/cpp/qgis_1.0.2/build /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/providers/wfs /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/providers/wfs/CMakeFiles/wfsprovider.dir/DependInfo.cmake
 
 # Object files for target wfsprovider
 wfsprovider_OBJECTS = \
 "CMakeFiles/wfsprovider.dir/qgswfsprovider.o" \
 "CMakeFiles/wfsprovider.dir/qgswfsdata.o" \
-"CMakeFiles/wfsprovider.dir/moc_qgswfsdata.o"
+"CMakeFiles/wfsprovider.dir/moc_qgswfsdata.o" \
+"CMakeFiles/wfsprovider.dir/moc_qgswfsprovider.o"
 
 # External object files for target wfsprovider
 wfsprovider_EXTERNAL_OBJECTS =
@@ -140,24 +171,22 @@ wfsprovider_EXTERNAL_OBJECTS =
 src/providers/wfs/libwfsprovider.so: src/providers/wfs/CMakeFiles/wfsprovider.dir/qgswfsprovider.o
 src/providers/wfs/libwfsprovider.so: src/providers/wfs/CMakeFiles/wfsprovider.dir/qgswfsdata.o
 src/providers/wfs/libwfsprovider.so: src/providers/wfs/CMakeFiles/wfsprovider.dir/moc_qgswfsdata.o
-src/providers/wfs/libwfsprovider.so: /Library/Frameworks/Qt3Support.framework
-src/providers/wfs/libwfsprovider.so: /Library/Frameworks/QtSvg.framework
-src/providers/wfs/libwfsprovider.so: /Library/Frameworks/QtGui.framework
-src/providers/wfs/libwfsprovider.so: /Library/Frameworks/QtXml.framework
-src/providers/wfs/libwfsprovider.so: /Library/Frameworks/QtSql.framework
-src/providers/wfs/libwfsprovider.so: /Library/Frameworks/QtNetwork.framework
+src/providers/wfs/libwfsprovider.so: src/providers/wfs/CMakeFiles/wfsprovider.dir/moc_qgswfsprovider.o
 src/providers/wfs/libwfsprovider.so: /Library/Frameworks/QtCore.framework
-src/providers/wfs/libwfsprovider.so: /usr/lib/libz.dylib
-src/providers/wfs/libwfsprovider.so: /Library/Frameworks/geos.framework
+src/providers/wfs/libwfsprovider.so: /Library/Frameworks/QtXml.framework
+src/providers/wfs/libwfsprovider.so: /Library/Frameworks/GEOS.framework/unix/lib/libgeos_c.dylib
 src/providers/wfs/libwfsprovider.so: /usr/lib/libexpat.dylib
 src/providers/wfs/libwfsprovider.so: src/core/libqgis_core.dylib
+src/providers/wfs/libwfsprovider.so: /Library/Frameworks/QtGui.framework
+src/providers/wfs/libwfsprovider.so: /Library/Frameworks/QtSvg.framework
+src/providers/wfs/libwfsprovider.so: /Library/Frameworks/QtNetwork.framework
 src/providers/wfs/libwfsprovider.so: /Library/Frameworks/proj.framework
-src/providers/wfs/libwfsprovider.so: /Library/Frameworks/sqlite3.framework
 src/providers/wfs/libwfsprovider.so: /Library/Frameworks/GDAL.framework/Versions/1.5/unix/lib/libgdal.dylib
+src/providers/wfs/libwfsprovider.so: /Library/Frameworks/sqlite3.framework
 src/providers/wfs/libwfsprovider.so: src/providers/wfs/CMakeFiles/wfsprovider.dir/build.make
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX shared module libwfsprovider.so"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/providers/wfs && $(CMAKE_COMMAND) -P CMakeFiles/wfsprovider.dir/cmake_clean_target.cmake
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/providers/wfs && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/wfsprovider.dir/link.txt --verbose=$(VERBOSE)
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/providers/wfs && $(CMAKE_COMMAND) -P CMakeFiles/wfsprovider.dir/cmake_clean_target.cmake
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/providers/wfs && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/wfsprovider.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 src/providers/wfs/CMakeFiles/wfsprovider.dir/build: src/providers/wfs/libwfsprovider.so
@@ -165,7 +194,8 @@ src/providers/wfs/CMakeFiles/wfsprovider.dir/build: src/providers/wfs/libwfsprov
 src/providers/wfs/CMakeFiles/wfsprovider.dir/requires: src/providers/wfs/CMakeFiles/wfsprovider.dir/qgswfsprovider.o.requires
 src/providers/wfs/CMakeFiles/wfsprovider.dir/requires: src/providers/wfs/CMakeFiles/wfsprovider.dir/qgswfsdata.o.requires
 src/providers/wfs/CMakeFiles/wfsprovider.dir/requires: src/providers/wfs/CMakeFiles/wfsprovider.dir/moc_qgswfsdata.o.requires
+src/providers/wfs/CMakeFiles/wfsprovider.dir/requires: src/providers/wfs/CMakeFiles/wfsprovider.dir/moc_qgswfsprovider.o.requires
 
 src/providers/wfs/CMakeFiles/wfsprovider.dir/clean:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/providers/wfs && $(CMAKE_COMMAND) -P CMakeFiles/wfsprovider.dir/cmake_clean.cmake
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/providers/wfs && $(CMAKE_COMMAND) -P CMakeFiles/wfsprovider.dir/cmake_clean.cmake
 

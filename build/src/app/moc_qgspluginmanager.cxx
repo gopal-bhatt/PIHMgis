@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'qgspluginmanager.h'
 **
-** Created: Wed Jun 11 19:05:43 2008
+** Created: Fri Jun 19 01:54:09 2009
 **      by: The Qt Meta Object Compiler version 59 (Qt 4.3.2)
 **
 ** WARNING! All changes made in this file will be lost!
@@ -28,19 +28,18 @@ static const uint qt_meta_data_QgsPluginManager[] = {
 
  // slots: signature, parameters, type, tag, flags
       18,   17,   17,   17, 0x0a,
-      37,   17,   17,   17, 0x0a,
-      63,   17,   17,   17, 0x0a,
-      88,   17,   17,   17, 0x0a,
-     111,   17,   17,   17, 0x0a,
+      52,   17,   17,   17, 0x0a,
+      61,   17,   17,   17, 0x0a,
+      73,   17,   17,   17, 0x0a,
+      92,   84,   17,   17, 0x0a,
 
        0        // eod
 };
 
 static const char qt_meta_stringdata_QgsPluginManager[] = {
-    "QgsPluginManager\0\0on_btnOk_clicked()\0"
-    "on_btnSelectAll_clicked()\0"
-    "on_btnClearAll_clicked()\0"
-    "on_btnBrowse_clicked()\0on_btnClose_clicked()\0"
+    "QgsPluginManager\0\0on_vwPlugins_clicked(QModelIndex)\0"
+    "accept()\0selectAll()\0clearAll()\0theText\0"
+    "on_leFilter_textChanged(QString)\0"
 };
 
 const QMetaObject QgsPluginManager::staticMetaObject = {
@@ -68,11 +67,11 @@ int QgsPluginManager::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
         switch (_id) {
-        case 0: on_btnOk_clicked(); break;
-        case 1: on_btnSelectAll_clicked(); break;
-        case 2: on_btnClearAll_clicked(); break;
-        case 3: on_btnBrowse_clicked(); break;
-        case 4: on_btnClose_clicked(); break;
+        case 0: on_vwPlugins_clicked((*reinterpret_cast< const QModelIndex(*)>(_a[1]))); break;
+        case 1: accept(); break;
+        case 2: selectAll(); break;
+        case 3: clearAll(); break;
+        case 4: on_leFilter_textChanged((*reinterpret_cast< QString(*)>(_a[1]))); break;
         }
         _id -= 5;
     }

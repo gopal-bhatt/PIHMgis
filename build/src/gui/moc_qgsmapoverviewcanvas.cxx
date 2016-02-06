@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'qgsmapoverviewcanvas.h'
 **
-** Created: Wed Jun 11 19:05:14 2008
+** Created: Fri Jun 19 01:53:20 2009
 **      by: The Qt Meta Object Compiler version 59 (Qt 4.3.2)
 **
 ** WARNING! All changes made in this file will be lost!
@@ -28,14 +28,14 @@ static const uint qt_meta_data_QgsMapOverviewCanvas[] = {
 
  // slots: signature, parameters, type, tag, flags
       27,   22,   21,   21, 0x0a,
-      52,   21,   21,   21, 0x0a,
+      56,   21,   21,   21, 0x0a,
 
        0        // eod
 };
 
 static const char qt_meta_stringdata_QgsMapOverviewCanvas[] = {
     "QgsMapOverviewCanvas\0\0flag\0"
-    "projectionsEnabled(bool)\0"
+    "hasCrsTransformEnabled(bool)\0"
     "destinationSrsChanged()\0"
 };
 
@@ -64,7 +64,7 @@ int QgsMapOverviewCanvas::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
         switch (_id) {
-        case 0: projectionsEnabled((*reinterpret_cast< bool(*)>(_a[1]))); break;
+        case 0: hasCrsTransformEnabled((*reinterpret_cast< bool(*)>(_a[1]))); break;
         case 1: destinationSrsChanged(); break;
         }
         _id -= 2;

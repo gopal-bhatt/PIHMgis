@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'plugingui.h'
 **
-** Created: Wed Jun 11 19:09:51 2008
+** Created: Fri Jun 19 01:58:34 2009
 **      by: The Qt Meta Object Compiler version 59 (Qt 4.3.2)
 **
 ** WARNING! All changes made in this file will be lost!
@@ -22,7 +22,7 @@ static const uint qt_meta_data_QgsCopyrightLabelPluginGui[] = {
        1,       // revision
        0,       // classname
        0,    0, // classinfo
-       8,   10, // methods
+       9,   10, // methods
        0,    0, // properties
        0,    0, // enums/sets
 
@@ -37,6 +37,7 @@ static const uint qt_meta_data_QgsCopyrightLabelPluginGui[] = {
      135,   27,   27,   27, 0x08,
      159,   27,   27,   27, 0x08,
      183,   27,   27,   27, 0x08,
+     212,   27,   27,   27, 0x08,
 
        0        // eod
 };
@@ -48,6 +49,7 @@ static const char qt_meta_stringdata_QgsCopyrightLabelPluginGui[] = {
     "enableCopyrightLabel(bool)\0"
     "on_buttonBox_accepted()\0on_buttonBox_rejected()\0"
     "on_buttonBox_helpRequested()\0"
+    "on_pbnColorChooser_clicked()\0"
 };
 
 const QMetaObject QgsCopyrightLabelPluginGui::staticMetaObject = {
@@ -83,8 +85,9 @@ int QgsCopyrightLabelPluginGui::qt_metacall(QMetaObject::Call _c, int _id, void 
         case 5: on_buttonBox_accepted(); break;
         case 6: on_buttonBox_rejected(); break;
         case 7: on_buttonBox_helpRequested(); break;
+        case 8: on_pbnColorChooser_clicked(); break;
         }
-        _id -= 8;
+        _id -= 9;
     }
     return _id;
 }

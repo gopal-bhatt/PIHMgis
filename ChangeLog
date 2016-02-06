@@ -1,5 +1,75 @@
 /* ChangeLog,v 1.214 2004/11/12 00:42:21 gsherman Exp */
 ------------------------------------------------------------------------------
+Version 1.0.1 'Kore'
+** This is a bugfix release in the stable release series. See
+**  https://trac.osgeo.org/qgis/query?status=closed&milestone=Version+1 for
+**  details. 
+Version 1.0.0 'Kore'
+** This release includes over 265 bug fixes and enhancements over the 
+** QGIS 0.11.0 release. In addition we have made the following changes:
+** HIG Compliance improvements for Windows / Mac OS X / KDE / Gnome
+** Saving a vector layer or subset of that layer to disk with a different Coordinate Reference System to the original.
+** Advanced topological editing of vector data.
+** Single click selection of vector features.
+** Many improvements to raster rendering and support for building pyramids external to the raster file.
+** Overhaul of the map composer for much improved printing support.
+** A new 'coordinate capture' plugin was added that lets you click on the map and then cut & paste the coordinates to and from the clipboard
+** A new plugin for converting between OGR supported formats was added.
+** A new plugin for converting from DXF files to shapefiles was added.
+** A new plugin was added for interpolating point features into ASCII grid layers.
+** The python plugin manager was completely overhauled, the new version having many improvements, including checking that the version of QGIS running will support a plugin that is being installed.
+** Plugin toolbar positions are now correctly saved when the application is closed.
+** In the WMS client, WMS standards support has been improved.
+** Tidy ups for GRASS integration and support for GRASS 6.4
+** Complete API revision - we now have a stable API following well defined naming conventions.
+** Ported all GDAL/OGR and GEOS usage to use C APIs only.
+Version 0.11.0 'Metis'
+** This release includes over 60 bug fixes and enhancements over the 
+** QGIS 0.10.0 release. In addition we have made the following changes:
+** Revision of all dialogs for user interface consistancy
+** Improvements to unique value renderer vector dialog
+** Symbol previews when defining vector classes
+** Separation of python support into its own library
+** List view and filter for GRASS toolbox to find tools more quickly
+** List view and filter for Plugin Manager to find plugins more easily
+** Updated Spatial Reference System definitions
+** QML Style support for rasters and database layers
+Version 0.10.0 'Io'
+** This release includes over 120 bug fixes and enchancements 
+** over the QGIS 0.9.1 release. In addition we have added 
+** the following new features:
+** Improvements to digitising capabilities.
+** Supporting default and defined styles (.qml) files for file based 
+** vector layers. With styles you can save the symbolisation 
+** and other settings associated with a vector layer and they 
+** will be loaded whenever you load that layer.
+** Improved support for transparency and contrast stretching 
+** in raster layers. Support for color ramps in raster layers. 
+** Support for non-north up rasters. Many other raster 
+** improvements 'under the hood'.
+** Updated icons for improved visual consistancy.
+** Support for migration of old projects to work in newer QGIS versions.
+Version 0.9.2rc1 'Ganymede'
+** This release candidate includes over 40 bug fixes and enchancements 
+** over the QGIS 0.9.1 release. In addition we have added 
+** the following new features:
+** Imrovements to digitising capabilities.
+** Supporting default and defined styles (.qml) files for file based 
+** vector layers. With styles you can save the symbolisation 
+** and other settings associated with a vector layer and they 
+** will be loaded whenever you load that layer.
+** Improved support for transparency and contrast stretching 
+** in raster layers. Support for color ramps in raster layers. 
+** Support for non-north up rasters. Many other raster 
+** improvements 'under the hood'.
+Version 0.9.1 'Ganymede'
+** This is a bug fix release
+** 70 Bugs closed
+** Added locale tab to options dialog so that locale can be overridden
+** Cleanups and additions to GRASS tools
+** Documentation updates
+** Improvements for building under MSVC
+** Python Plugin installer to install PyQGIS plugins from the repository
 Version 0.9 'Ganymede'
 ** Python bindings - This is the major focus of this release
    it is now possible to create plugins using python. It is also
@@ -234,7 +304,7 @@ of layers and tweak their symbology etc without having delays
 caused by rerendering everything after each change you make.
 
 2004-11-16 [larsl] 0.5.0devel24
-** Reimplemented getNextFeature() so features are visible again
+** Reimplemented nextFeature() so features are visible again
 
 2004-11-13 [larsl] 0.5.0devel23
 ** Changed QgsIdentifyResults and QgsVectorLayer to show all attributes
@@ -265,7 +335,7 @@ qgis to crash.
    a QgsFeature, fixed it
 
 2004-10-29 [larsl] 0.5.0devel16
-** Added getDefaultValue() in QgsVectorLayer and QgsVectorDataProvider,
+** Added defaultValue() in QgsVectorLayer and QgsVectorDataProvider,
    implemented it in the GPX provider
 
 2004-10-29 [stevehalasz] 0.5.0devel15
@@ -751,7 +821,7 @@ All that remains to do now is sort out syncronisation of layer ordering between 
    conventions (prefixed with m).
 
 
-** Import Note *** ONLY THE MAPLAYER REGISTRY SHOULD DELETE LAYERS NOW ***
+** Import Note *** ONLY THE MAPLAYER REGISTRY SHOULD DELETE QgsMapLayer::LayerType NOW ***
 
 2004-06-03 [ts] 0.3.0devel14
 ** Added getPaletteAsPixmap function to raster and display on raster props
@@ -864,7 +934,7 @@ will hopefully speed up compile times for folks building on p133's. Changed
 splash image to the fluffball ready for 0.3 release.
 
 2004-05-19 [larsl] 0.2.0devel27
-** Implemented getNextFeature(list<int>&) in the GPX provider
+** Implemented nextFeature(list<int>&) in the GPX provider
 
 2004-05-18 [gsherman] 0.2.0devel26
 ** Saved the qgsappbase.ui and the qgsprojectpropertiesbase.ui files (modified

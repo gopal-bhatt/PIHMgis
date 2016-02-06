@@ -17,143 +17,152 @@
 #define QGSGRASS_H
 
 // GRASS header files
-extern "C" {
+extern "C"
+{
 #include <grass/gis.h>
 #include <grass/form.h>
 }
 
+#include <QString>
+#include <setjmp.h>
+
 /*!
    Methods for C library initialization and error handling.
 */
-class QgsGrass {
+class QgsGrass
+{
 
-public:  
-    //! Get info about the mode 
-    /*! QgsGrass may be running in active or passive mode. 
-     *  Active mode means that GISRC is set up and GISRC file is available, 
+  public:
+    //! Get info about the mode
+    /*! QgsGrass may be running in active or passive mode.
+     *  Active mode means that GISRC is set up and GISRC file is available,
      *  in that case default GISDBASE, LOCATION and MAPSET may be read by GetDefaul*() functions.
      *  Passive mode means, that GISRC is not available. */
-    static bool activeMode ( void );
-    
+    static GRASS_EXPORT bool activeMode( void );
+
     //! Get default GISDBASE, returns GISDBASE name or empty string if not in active mode
-    static QString getDefaultGisdbase ( void ); 
+    static GRASS_EXPORT QString getDefaultGisdbase( void );
 
     //! Get default LOCATION_NAME, returns LOCATION_NAME name or empty string if not in active mode
-    static QString getDefaultLocation ( void ); 
+    static GRASS_EXPORT QString getDefaultLocation( void );
 
     //! Get default MAPSET, returns MAPSET name or empty string if not in active mode
-    static QString getDefaultMapset ( void ); 
+    static GRASS_EXPORT QString getDefaultMapset( void );
 
-    //! Init or reset GRASS library 
+    //! Init or reset GRASS library
     /*!
-	\param gisdbase full path to GRASS GISDBASE.
-	\param location location name (not path!).
+    \param gisdbase full path to GRASS GISDBASE.
+    \param location location name (not path!).
     */
-    static void setLocation( QString gisdbase, QString location);
+    static GRASS_EXPORT void setLocation( QString gisdbase, QString location );
 
     /*!
-	\param gisdbase full path to GRASS GISDBASE.
-	\param location location name (not path!).
-	\param mapset current mupset. Note that some variables depend on mapset and
-	              may influence behaviour of some functions (e.g. search path etc.) 
+    \param gisdbase full path to GRASS GISDBASE.
+    \param location location name (not path!).
+    \param mapset current mupset. Note that some variables depend on mapset and
+               may influence behaviour of some functions (e.g. search path etc.)
     */
-    static void setMapset( QString gisdbase, QString location, QString mapset);
+    static GRASS_EXPORT void setMapset( QString gisdbase, QString location, QString mapset );
 
-    //! Error codes returned by GetError() 
-    enum GERROR { OK, /*!< OK. No error. */  
-	         WARNING, /*!< Warning, non fatal error. Should be printed by application. */ 
-		 FATAL /*!< Fatal error. Function faild. */ 
-               };
+    //! Error codes returned by GetError()
+    enum GERROR { OK, /*!< OK. No error. */
+                  WARNING, /*!< Warning, non fatal error. Should be printed by application. */
+                  FATAL /*!< Fatal error. Function faild. */
+              };
 
     //! Map type
     enum MapType { Raster, Vector, Region };
 
-    //! Reset error code (to OK). Call this before a piece of code where an error is expected 
-    static void resetError ( void ); // reset error status
+    //! Reset error code (to OK). Call this before a piece of code where an error is expected
+    static GRASS_EXPORT void resetError( void );  // reset error status
 
     //! Check if any error occured in lately called functions. Returns value from ERROR.
-    static int getError ( void ); 
+    static GRASS_EXPORT int getError( void );
 
-    //! Get last error message 
-    static QString getErrorMessage ( void ); 
+    //! Get last error message
+    static GRASS_EXPORT QString getErrorMessage( void );
 
     /** \brief Open existing GRASS mapset
      * \return NULL string or error message
      */
-    static QString openMapset ( QString gisdbase, 
-                   QString location, QString mapset );
+    static GRASS_EXPORT QString openMapset( QString gisdbase,
+                                            QString location, QString mapset );
 
     /** \brief Close mapset if it was opened from QGIS.
      *         Delete GISRC, lock and temporary directory
      * \return NULL string or error message
      */
-    static QString closeMapset ();
+    static GRASS_EXPORT QString closeMapset();
 
     //! Check if given directory contains a GRASS installation
-    static bool isValidGrassBaseDir(QString const gisBase);
+    static GRASS_EXPORT bool isValidGrassBaseDir( QString const gisBase );
 
     //! Returns list of locations in given gisbase
-    static QStringList locations(QString gisbase);
-    
+    static QStringList GRASS_EXPORT locations( QString gisbase );
+
     //! Returns list of mapsets in location
-    static QStringList mapsets(QString gisbase, QString locationName);
-    static QStringList mapsets(QString locationPath);
+    static GRASS_EXPORT QStringList mapsets( QString gisbase, QString locationName );
+    static GRASS_EXPORT QStringList mapsets( QString locationPath );
 
     //! List of vectors and rasters
-    static QStringList vectors(QString gisbase, QString locationName,
-	                       QString mapsetName);
-    static QStringList vectors(QString mapsetPath);
+    static GRASS_EXPORT QStringList vectors( QString gisbase, QString locationName,
+        QString mapsetName );
+    static GRASS_EXPORT QStringList vectors( QString mapsetPath );
 
-    static QStringList rasters(QString gisbase, QString locationName,
-	                       QString mapsetName);
-    static QStringList rasters(QString mapsetPath);
+    static GRASS_EXPORT QStringList rasters( QString gisbase, QString locationName,
+        QString mapsetName );
+    static GRASS_EXPORT QStringList rasters( QString mapsetPath );
 
     //! List of elements
-    static QStringList elements(QString gisbase, QString locationName,
-	                       QString mapsetName, QString element);
-    static QStringList elements(QString mapsetPath, QString element);
+    static GRASS_EXPORT QStringList elements( QString gisbase, QString locationName,
+        QString mapsetName, QString element );
+    static GRASS_EXPORT QStringList elements( QString mapsetPath, QString element );
 
     // ! Get map region
-    static bool mapRegion( int type, QString gisbase,
-           QString location, QString mapset, QString map,
-           struct Cell_head *window );
+    static GRASS_EXPORT bool mapRegion( int type, QString gisbase,
+                                        QString location, QString mapset, QString map,
+                                        struct Cell_head *window );
 
     // ! String representation of region
-    static QString regionString( struct Cell_head *window );
+    static GRASS_EXPORT QString regionString( struct Cell_head *window );
 
     // ! Read current mapset region
-    static bool region( QString gisbase, QString location, QString mapset,
-           struct Cell_head *window );
+    static GRASS_EXPORT bool region( QString gisbase, QString location, QString mapset,
+                                     struct Cell_head *window );
 
     // ! Write current mapset region
-    static bool writeRegion( QString gisbase, QString location, QString mapset,
-           struct Cell_head *window );
+    static GRASS_EXPORT bool writeRegion( QString gisbase, QString location, QString mapset,
+                                          struct Cell_head *window );
 
-    // ! Set (copy) region extent, resolution is not changed 
-    static void copyRegionExtent( struct Cell_head *source,
-           struct Cell_head *target );
+    // ! Set (copy) region extent, resolution is not changed
+    static GRASS_EXPORT void copyRegionExtent( struct Cell_head *source,
+        struct Cell_head *target );
 
-    // ! Set (copy) region resolution, extent is not changed 
-    static void copyRegionResolution( struct Cell_head *source,
-           struct Cell_head *target );
+    // ! Set (copy) region resolution, extent is not changed
+    static GRASS_EXPORT void copyRegionResolution( struct Cell_head *source,
+        struct Cell_head *target );
 
-    // ! Extend region in target to source 
-    static void extendRegion( struct Cell_head *source,
-           struct Cell_head *target );
+    // ! Extend region in target to source
+    static GRASS_EXPORT void extendRegion( struct Cell_head *source,
+                                           struct Cell_head *target );
 
-    static void init (void); 
+    static GRASS_EXPORT void init( void );
 
     // ! test if the directory is mapset
-    static bool isMapset ( QString path );
+    static GRASS_EXPORT bool isMapset( QString path );
 
     //! Library version
-    static int versionMajor();
-    static int versionMinor();
-    static int versionRelease();
-    static QString versionString();
+    static GRASS_EXPORT int versionMajor();
+    static GRASS_EXPORT int versionMinor();
+    static GRASS_EXPORT int versionRelease();
+    static GRASS_EXPORT QString versionString();
 
-private:
-    static int initialized; // Set to 1 after initialization 
+    static GRASS_EXPORT jmp_buf& fatalErrorEnv();
+    static GRASS_EXPORT void clearErrorEnv();
+
+
+  private:
+    static int initialized; // Set to 1 after initialization
     static bool active; // is active mode
     static QString defaultGisdbase;
     static QString defaultLocation;
@@ -167,15 +176,19 @@ private:
     // - char* msg - older version
     // - const char* msg - in CVS from 04/2007
     // this way compiler chooses suitable call
-    static int error_routine ( const char *msg, int fatal); // static because pointer to this function is set later
-    static int error_routine ( char *msg, int fatal); // static because pointer to this function is set later
+    static int error_routine( const char *msg, int fatal ); // static because pointer to this function is set later
+    static int error_routine( char *msg, int fatal ); // static because pointer to this function is set later
 
     // Current mapset lock file path
-    static QString mMapsetLock;  
+    static QString mMapsetLock;
     // Current mapset GISRC file path
-    static QString mGisrc;  
+    static QString mGisrc;
     // Temporary directory where GISRC and sockets are stored
-    static QString mTmp;  
+    static QString mTmp;
+
+    // Context saved before a call to routine that can produce a fatal error
+    static jmp_buf mFatalErrorEnv;
+    static bool mFatalErrorEnvActive;
 };
 
 #endif // QGSGRASS_H

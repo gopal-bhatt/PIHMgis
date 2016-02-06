@@ -31,10 +31,10 @@ RM = /usr/bin/cmake -E remove -f
 CMAKE_EDIT_COMMAND = /usr/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0
+CMAKE_SOURCE_DIR = /Users/bhattgopal/dev/cpp/qgis_1.0.2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build
+CMAKE_BINARY_DIR = /Users/bhattgopal/dev/cpp/qgis_1.0.2/build
 
 # Utility rule file for ui.
 
@@ -46,286 +46,286 @@ src/ui/CMakeFiles/ui: src/ui/ui_qgsattributedialogbase.h
 src/ui/CMakeFiles/ui: src/ui/ui_qgsattributetablebase.h
 src/ui/CMakeFiles/ui: src/ui/ui_qgsbookmarksbase.h
 src/ui/CMakeFiles/ui: src/ui/ui_qgscomposerbase.h
-src/ui/CMakeFiles/ui: src/ui/ui_qgscomposerlabelbase.h
-src/ui/CMakeFiles/ui: src/ui/ui_qgscomposermapbase.h
-src/ui/CMakeFiles/ui: src/ui/ui_qgscomposerpicturebase.h
-src/ui/CMakeFiles/ui: src/ui/ui_qgscomposerscalebarbase.h
+src/ui/CMakeFiles/ui: src/ui/ui_qgscomposeritemwidgetbase.h
+src/ui/CMakeFiles/ui: src/ui/ui_qgscomposerlabelwidgetbase.h
+src/ui/CMakeFiles/ui: src/ui/ui_qgscomposerlegenditemdialogbase.h
+src/ui/CMakeFiles/ui: src/ui/ui_qgscomposerlegendwidgetbase.h
+src/ui/CMakeFiles/ui: src/ui/ui_qgscomposermapwidgetbase.h
+src/ui/CMakeFiles/ui: src/ui/ui_qgscomposerpicturewidgetbase.h
+src/ui/CMakeFiles/ui: src/ui/ui_qgscomposerscalebarwidgetbase.h
 src/ui/CMakeFiles/ui: src/ui/ui_qgscomposervectorlegendbase.h
 src/ui/CMakeFiles/ui: src/ui/ui_qgscompositionbase.h
+src/ui/CMakeFiles/ui: src/ui/ui_qgscompositionwidgetbase.h
 src/ui/CMakeFiles/ui: src/ui/ui_qgscontinuouscolordialogbase.h
 src/ui/CMakeFiles/ui: src/ui/ui_qgscustomprojectiondialogbase.h
 src/ui/CMakeFiles/ui: src/ui/ui_qgsdbsourceselectbase.h
 src/ui/CMakeFiles/ui: src/ui/ui_qgsdelattrdialogbase.h
-src/ui/CMakeFiles/ui: src/ui/ui_qgsfillstylewidgetbase.h
+src/ui/CMakeFiles/ui: src/ui/ui_qgsdetaileditemwidgetbase.h
+src/ui/CMakeFiles/ui: src/ui/ui_qgsgenericprojectionselectorbase.h
 src/ui/CMakeFiles/ui: src/ui/ui_qgsgeomtypedialogbase.h
 src/ui/CMakeFiles/ui: src/ui/ui_qgsgraduatedsymboldialogbase.h
 src/ui/CMakeFiles/ui: src/ui/ui_qgshelpviewerbase.h
 src/ui/CMakeFiles/ui: src/ui/ui_qgsidentifyresultsbase.h
 src/ui/CMakeFiles/ui: src/ui/ui_qgslabeldialogbase.h
-src/ui/CMakeFiles/ui: src/ui/ui_qgslayerprojectionselectorbase.h
-src/ui/CMakeFiles/ui: src/ui/ui_qgslinestyledialogbase.h
-src/ui/CMakeFiles/ui: src/ui/ui_qgslinestylewidgetbase.h
 src/ui/CMakeFiles/ui: src/ui/ui_qgsludialogbase.h
-src/ui/CMakeFiles/ui: src/ui/ui_qgsmarkerdialogbase.h
+src/ui/CMakeFiles/ui: src/ui/ui_qgsmapserverexportbase.h
 src/ui/CMakeFiles/ui: src/ui/ui_qgsmeasurebase.h
 src/ui/CMakeFiles/ui: src/ui/ui_qgsmessageviewer.h
 src/ui/CMakeFiles/ui: src/ui/ui_qgsnewconnectionbase.h
 src/ui/CMakeFiles/ui: src/ui/ui_qgsnewhttpconnectionbase.h
 src/ui/CMakeFiles/ui: src/ui/ui_qgsoptionsbase.h
 src/ui/CMakeFiles/ui: src/ui/ui_qgspastetransformationsbase.h
-src/ui/CMakeFiles/ui: src/ui/ui_qgspatterndialogbase.h
 src/ui/CMakeFiles/ui: src/ui/ui_qgspgquerybuilderbase.h
 src/ui/CMakeFiles/ui: src/ui/ui_qgspluginmanagerbase.h
-src/ui/CMakeFiles/ui: src/ui/ui_qgspointstylewidgetbase.h
 src/ui/CMakeFiles/ui: src/ui/ui_qgsprojectionselectorbase.h
 src/ui/CMakeFiles/ui: src/ui/ui_qgsprojectpropertiesbase.h
+src/ui/CMakeFiles/ui: src/ui/ui_qgspythondialog.h
 src/ui/CMakeFiles/ui: src/ui/ui_qgsrasterlayerpropertiesbase.h
 src/ui/CMakeFiles/ui: src/ui/ui_qgsserversourceselectbase.h
 src/ui/CMakeFiles/ui: src/ui/ui_qgssinglesymboldialogbase.h
+src/ui/CMakeFiles/ui: src/ui/ui_qgssnappingdialogbase.h
 src/ui/CMakeFiles/ui: src/ui/ui_qgsuniquevaluedialogbase.h
 src/ui/CMakeFiles/ui: src/ui/ui_qgsvectorlayerpropertiesbase.h
-src/ui/CMakeFiles/ui: src/ui/ui_qgsvectorsymbologywidgetbase.h
-src/ui/CMakeFiles/ui: src/ui/ui_qgspythondialog.h
 
 src/ui/ui_qgisappbase.h: ../src/ui/qgisappbase.ui
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ui_qgisappbase.h"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/ui && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/ui/ui_qgisappbase.h /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/ui/qgisappbase.ui
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/ui && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/ui/ui_qgisappbase.h /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/ui/qgisappbase.ui
 
 src/ui/ui_qgsabout.h: ../src/ui/qgsabout.ui
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ui_qgsabout.h"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/ui && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/ui/ui_qgsabout.h /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/ui/qgsabout.ui
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/ui && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/ui/ui_qgsabout.h /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/ui/qgsabout.ui
 
 src/ui/ui_qgsaddattrdialogbase.h: ../src/ui/qgsaddattrdialogbase.ui
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_3)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ui_qgsaddattrdialogbase.h"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/ui && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/ui/ui_qgsaddattrdialogbase.h /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/ui/qgsaddattrdialogbase.ui
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/ui && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/ui/ui_qgsaddattrdialogbase.h /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/ui/qgsaddattrdialogbase.ui
 
 src/ui/ui_qgsattributeactiondialogbase.h: ../src/ui/qgsattributeactiondialogbase.ui
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_4)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ui_qgsattributeactiondialogbase.h"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/ui && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/ui/ui_qgsattributeactiondialogbase.h /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/ui/qgsattributeactiondialogbase.ui
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/ui && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/ui/ui_qgsattributeactiondialogbase.h /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/ui/qgsattributeactiondialogbase.ui
 
 src/ui/ui_qgsattributedialogbase.h: ../src/ui/qgsattributedialogbase.ui
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_5)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ui_qgsattributedialogbase.h"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/ui && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/ui/ui_qgsattributedialogbase.h /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/ui/qgsattributedialogbase.ui
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/ui && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/ui/ui_qgsattributedialogbase.h /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/ui/qgsattributedialogbase.ui
 
 src/ui/ui_qgsattributetablebase.h: ../src/ui/qgsattributetablebase.ui
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_6)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ui_qgsattributetablebase.h"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/ui && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/ui/ui_qgsattributetablebase.h /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/ui/qgsattributetablebase.ui
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/ui && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/ui/ui_qgsattributetablebase.h /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/ui/qgsattributetablebase.ui
 
 src/ui/ui_qgsbookmarksbase.h: ../src/ui/qgsbookmarksbase.ui
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_7)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_7)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ui_qgsbookmarksbase.h"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/ui && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/ui/ui_qgsbookmarksbase.h /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/ui/qgsbookmarksbase.ui
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/ui && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/ui/ui_qgsbookmarksbase.h /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/ui/qgsbookmarksbase.ui
 
 src/ui/ui_qgscomposerbase.h: ../src/ui/qgscomposerbase.ui
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_8)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_8)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ui_qgscomposerbase.h"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/ui && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/ui/ui_qgscomposerbase.h /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/ui/qgscomposerbase.ui
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/ui && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/ui/ui_qgscomposerbase.h /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/ui/qgscomposerbase.ui
 
-src/ui/ui_qgscomposerlabelbase.h: ../src/ui/qgscomposerlabelbase.ui
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_9)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ui_qgscomposerlabelbase.h"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/ui && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/ui/ui_qgscomposerlabelbase.h /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/ui/qgscomposerlabelbase.ui
+src/ui/ui_qgscomposeritemwidgetbase.h: ../src/ui/qgscomposeritemwidgetbase.ui
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_9)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ui_qgscomposeritemwidgetbase.h"
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/ui && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/ui/ui_qgscomposeritemwidgetbase.h /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/ui/qgscomposeritemwidgetbase.ui
 
-src/ui/ui_qgscomposermapbase.h: ../src/ui/qgscomposermapbase.ui
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_10)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ui_qgscomposermapbase.h"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/ui && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/ui/ui_qgscomposermapbase.h /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/ui/qgscomposermapbase.ui
+src/ui/ui_qgscomposerlabelwidgetbase.h: ../src/ui/qgscomposerlabelwidgetbase.ui
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_10)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ui_qgscomposerlabelwidgetbase.h"
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/ui && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/ui/ui_qgscomposerlabelwidgetbase.h /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/ui/qgscomposerlabelwidgetbase.ui
 
-src/ui/ui_qgscomposerpicturebase.h: ../src/ui/qgscomposerpicturebase.ui
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_11)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ui_qgscomposerpicturebase.h"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/ui && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/ui/ui_qgscomposerpicturebase.h /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/ui/qgscomposerpicturebase.ui
+src/ui/ui_qgscomposerlegenditemdialogbase.h: ../src/ui/qgscomposerlegenditemdialogbase.ui
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_11)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ui_qgscomposerlegenditemdialogbase.h"
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/ui && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/ui/ui_qgscomposerlegenditemdialogbase.h /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/ui/qgscomposerlegenditemdialogbase.ui
 
-src/ui/ui_qgscomposerscalebarbase.h: ../src/ui/qgscomposerscalebarbase.ui
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_12)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ui_qgscomposerscalebarbase.h"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/ui && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/ui/ui_qgscomposerscalebarbase.h /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/ui/qgscomposerscalebarbase.ui
+src/ui/ui_qgscomposerlegendwidgetbase.h: ../src/ui/qgscomposerlegendwidgetbase.ui
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_12)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ui_qgscomposerlegendwidgetbase.h"
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/ui && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/ui/ui_qgscomposerlegendwidgetbase.h /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/ui/qgscomposerlegendwidgetbase.ui
+
+src/ui/ui_qgscomposermapwidgetbase.h: ../src/ui/qgscomposermapwidgetbase.ui
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_13)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ui_qgscomposermapwidgetbase.h"
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/ui && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/ui/ui_qgscomposermapwidgetbase.h /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/ui/qgscomposermapwidgetbase.ui
+
+src/ui/ui_qgscomposerpicturewidgetbase.h: ../src/ui/qgscomposerpicturewidgetbase.ui
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_14)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ui_qgscomposerpicturewidgetbase.h"
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/ui && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/ui/ui_qgscomposerpicturewidgetbase.h /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/ui/qgscomposerpicturewidgetbase.ui
+
+src/ui/ui_qgscomposerscalebarwidgetbase.h: ../src/ui/qgscomposerscalebarwidgetbase.ui
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_15)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ui_qgscomposerscalebarwidgetbase.h"
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/ui && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/ui/ui_qgscomposerscalebarwidgetbase.h /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/ui/qgscomposerscalebarwidgetbase.ui
 
 src/ui/ui_qgscomposervectorlegendbase.h: ../src/ui/qgscomposervectorlegendbase.ui
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_13)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_16)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ui_qgscomposervectorlegendbase.h"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/ui && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/ui/ui_qgscomposervectorlegendbase.h /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/ui/qgscomposervectorlegendbase.ui
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/ui && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/ui/ui_qgscomposervectorlegendbase.h /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/ui/qgscomposervectorlegendbase.ui
 
 src/ui/ui_qgscompositionbase.h: ../src/ui/qgscompositionbase.ui
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_14)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_17)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ui_qgscompositionbase.h"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/ui && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/ui/ui_qgscompositionbase.h /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/ui/qgscompositionbase.ui
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/ui && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/ui/ui_qgscompositionbase.h /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/ui/qgscompositionbase.ui
+
+src/ui/ui_qgscompositionwidgetbase.h: ../src/ui/qgscompositionwidgetbase.ui
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_18)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ui_qgscompositionwidgetbase.h"
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/ui && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/ui/ui_qgscompositionwidgetbase.h /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/ui/qgscompositionwidgetbase.ui
 
 src/ui/ui_qgscontinuouscolordialogbase.h: ../src/ui/qgscontinuouscolordialogbase.ui
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_15)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_19)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ui_qgscontinuouscolordialogbase.h"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/ui && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/ui/ui_qgscontinuouscolordialogbase.h /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/ui/qgscontinuouscolordialogbase.ui
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/ui && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/ui/ui_qgscontinuouscolordialogbase.h /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/ui/qgscontinuouscolordialogbase.ui
 
 src/ui/ui_qgscustomprojectiondialogbase.h: ../src/ui/qgscustomprojectiondialogbase.ui
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_16)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_20)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ui_qgscustomprojectiondialogbase.h"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/ui && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/ui/ui_qgscustomprojectiondialogbase.h /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/ui/qgscustomprojectiondialogbase.ui
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/ui && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/ui/ui_qgscustomprojectiondialogbase.h /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/ui/qgscustomprojectiondialogbase.ui
 
 src/ui/ui_qgsdbsourceselectbase.h: ../src/ui/qgsdbsourceselectbase.ui
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_17)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_21)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ui_qgsdbsourceselectbase.h"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/ui && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/ui/ui_qgsdbsourceselectbase.h /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/ui/qgsdbsourceselectbase.ui
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/ui && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/ui/ui_qgsdbsourceselectbase.h /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/ui/qgsdbsourceselectbase.ui
 
 src/ui/ui_qgsdelattrdialogbase.h: ../src/ui/qgsdelattrdialogbase.ui
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_18)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_22)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ui_qgsdelattrdialogbase.h"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/ui && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/ui/ui_qgsdelattrdialogbase.h /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/ui/qgsdelattrdialogbase.ui
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/ui && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/ui/ui_qgsdelattrdialogbase.h /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/ui/qgsdelattrdialogbase.ui
 
-src/ui/ui_qgsfillstylewidgetbase.h: ../src/ui/qgsfillstylewidgetbase.ui
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_19)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ui_qgsfillstylewidgetbase.h"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/ui && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/ui/ui_qgsfillstylewidgetbase.h /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/ui/qgsfillstylewidgetbase.ui
+src/ui/ui_qgsdetaileditemwidgetbase.h: ../src/ui/qgsdetaileditemwidgetbase.ui
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_23)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ui_qgsdetaileditemwidgetbase.h"
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/ui && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/ui/ui_qgsdetaileditemwidgetbase.h /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/ui/qgsdetaileditemwidgetbase.ui
+
+src/ui/ui_qgsgenericprojectionselectorbase.h: ../src/ui/qgsgenericprojectionselectorbase.ui
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_24)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ui_qgsgenericprojectionselectorbase.h"
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/ui && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/ui/ui_qgsgenericprojectionselectorbase.h /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/ui/qgsgenericprojectionselectorbase.ui
 
 src/ui/ui_qgsgeomtypedialogbase.h: ../src/ui/qgsgeomtypedialogbase.ui
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_20)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_25)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ui_qgsgeomtypedialogbase.h"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/ui && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/ui/ui_qgsgeomtypedialogbase.h /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/ui/qgsgeomtypedialogbase.ui
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/ui && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/ui/ui_qgsgeomtypedialogbase.h /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/ui/qgsgeomtypedialogbase.ui
 
 src/ui/ui_qgsgraduatedsymboldialogbase.h: ../src/ui/qgsgraduatedsymboldialogbase.ui
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_21)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_26)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ui_qgsgraduatedsymboldialogbase.h"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/ui && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/ui/ui_qgsgraduatedsymboldialogbase.h /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/ui/qgsgraduatedsymboldialogbase.ui
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/ui && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/ui/ui_qgsgraduatedsymboldialogbase.h /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/ui/qgsgraduatedsymboldialogbase.ui
 
 src/ui/ui_qgshelpviewerbase.h: ../src/ui/qgshelpviewerbase.ui
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_22)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_27)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ui_qgshelpviewerbase.h"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/ui && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/ui/ui_qgshelpviewerbase.h /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/ui/qgshelpviewerbase.ui
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/ui && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/ui/ui_qgshelpviewerbase.h /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/ui/qgshelpviewerbase.ui
 
 src/ui/ui_qgsidentifyresultsbase.h: ../src/ui/qgsidentifyresultsbase.ui
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_23)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_28)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ui_qgsidentifyresultsbase.h"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/ui && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/ui/ui_qgsidentifyresultsbase.h /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/ui/qgsidentifyresultsbase.ui
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/ui && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/ui/ui_qgsidentifyresultsbase.h /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/ui/qgsidentifyresultsbase.ui
 
 src/ui/ui_qgslabeldialogbase.h: ../src/ui/qgslabeldialogbase.ui
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_24)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_29)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ui_qgslabeldialogbase.h"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/ui && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/ui/ui_qgslabeldialogbase.h /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/ui/qgslabeldialogbase.ui
-
-src/ui/ui_qgslayerprojectionselectorbase.h: ../src/ui/qgslayerprojectionselectorbase.ui
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_25)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ui_qgslayerprojectionselectorbase.h"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/ui && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/ui/ui_qgslayerprojectionselectorbase.h /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/ui/qgslayerprojectionselectorbase.ui
-
-src/ui/ui_qgslinestyledialogbase.h: ../src/ui/qgslinestyledialogbase.ui
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_26)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ui_qgslinestyledialogbase.h"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/ui && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/ui/ui_qgslinestyledialogbase.h /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/ui/qgslinestyledialogbase.ui
-
-src/ui/ui_qgslinestylewidgetbase.h: ../src/ui/qgslinestylewidgetbase.ui
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_27)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ui_qgslinestylewidgetbase.h"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/ui && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/ui/ui_qgslinestylewidgetbase.h /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/ui/qgslinestylewidgetbase.ui
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/ui && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/ui/ui_qgslabeldialogbase.h /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/ui/qgslabeldialogbase.ui
 
 src/ui/ui_qgsludialogbase.h: ../src/ui/qgsludialogbase.ui
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_28)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_30)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ui_qgsludialogbase.h"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/ui && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/ui/ui_qgsludialogbase.h /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/ui/qgsludialogbase.ui
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/ui && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/ui/ui_qgsludialogbase.h /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/ui/qgsludialogbase.ui
 
-src/ui/ui_qgsmarkerdialogbase.h: ../src/ui/qgsmarkerdialogbase.ui
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_29)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ui_qgsmarkerdialogbase.h"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/ui && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/ui/ui_qgsmarkerdialogbase.h /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/ui/qgsmarkerdialogbase.ui
+src/ui/ui_qgsmapserverexportbase.h: ../src/ui/qgsmapserverexportbase.ui
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_31)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ui_qgsmapserverexportbase.h"
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/ui && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/ui/ui_qgsmapserverexportbase.h /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/ui/qgsmapserverexportbase.ui
 
 src/ui/ui_qgsmeasurebase.h: ../src/ui/qgsmeasurebase.ui
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_30)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_32)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ui_qgsmeasurebase.h"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/ui && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/ui/ui_qgsmeasurebase.h /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/ui/qgsmeasurebase.ui
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/ui && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/ui/ui_qgsmeasurebase.h /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/ui/qgsmeasurebase.ui
 
 src/ui/ui_qgsmessageviewer.h: ../src/ui/qgsmessageviewer.ui
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_31)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_33)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ui_qgsmessageviewer.h"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/ui && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/ui/ui_qgsmessageviewer.h /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/ui/qgsmessageviewer.ui
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/ui && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/ui/ui_qgsmessageviewer.h /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/ui/qgsmessageviewer.ui
 
 src/ui/ui_qgsnewconnectionbase.h: ../src/ui/qgsnewconnectionbase.ui
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_32)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_34)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ui_qgsnewconnectionbase.h"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/ui && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/ui/ui_qgsnewconnectionbase.h /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/ui/qgsnewconnectionbase.ui
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/ui && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/ui/ui_qgsnewconnectionbase.h /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/ui/qgsnewconnectionbase.ui
 
 src/ui/ui_qgsnewhttpconnectionbase.h: ../src/ui/qgsnewhttpconnectionbase.ui
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_33)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_35)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ui_qgsnewhttpconnectionbase.h"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/ui && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/ui/ui_qgsnewhttpconnectionbase.h /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/ui/qgsnewhttpconnectionbase.ui
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/ui && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/ui/ui_qgsnewhttpconnectionbase.h /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/ui/qgsnewhttpconnectionbase.ui
 
 src/ui/ui_qgsoptionsbase.h: ../src/ui/qgsoptionsbase.ui
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_34)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_36)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ui_qgsoptionsbase.h"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/ui && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/ui/ui_qgsoptionsbase.h /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/ui/qgsoptionsbase.ui
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/ui && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/ui/ui_qgsoptionsbase.h /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/ui/qgsoptionsbase.ui
 
 src/ui/ui_qgspastetransformationsbase.h: ../src/ui/qgspastetransformationsbase.ui
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_35)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_37)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ui_qgspastetransformationsbase.h"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/ui && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/ui/ui_qgspastetransformationsbase.h /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/ui/qgspastetransformationsbase.ui
-
-src/ui/ui_qgspatterndialogbase.h: ../src/ui/qgspatterndialogbase.ui
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_36)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ui_qgspatterndialogbase.h"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/ui && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/ui/ui_qgspatterndialogbase.h /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/ui/qgspatterndialogbase.ui
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/ui && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/ui/ui_qgspastetransformationsbase.h /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/ui/qgspastetransformationsbase.ui
 
 src/ui/ui_qgspgquerybuilderbase.h: ../src/ui/qgspgquerybuilderbase.ui
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_37)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_38)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ui_qgspgquerybuilderbase.h"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/ui && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/ui/ui_qgspgquerybuilderbase.h /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/ui/qgspgquerybuilderbase.ui
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/ui && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/ui/ui_qgspgquerybuilderbase.h /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/ui/qgspgquerybuilderbase.ui
 
 src/ui/ui_qgspluginmanagerbase.h: ../src/ui/qgspluginmanagerbase.ui
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_38)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_39)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ui_qgspluginmanagerbase.h"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/ui && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/ui/ui_qgspluginmanagerbase.h /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/ui/qgspluginmanagerbase.ui
-
-src/ui/ui_qgspointstylewidgetbase.h: ../src/ui/qgspointstylewidgetbase.ui
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_39)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ui_qgspointstylewidgetbase.h"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/ui && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/ui/ui_qgspointstylewidgetbase.h /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/ui/qgspointstylewidgetbase.ui
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/ui && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/ui/ui_qgspluginmanagerbase.h /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/ui/qgspluginmanagerbase.ui
 
 src/ui/ui_qgsprojectionselectorbase.h: ../src/ui/qgsprojectionselectorbase.ui
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_40)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_40)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ui_qgsprojectionselectorbase.h"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/ui && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/ui/ui_qgsprojectionselectorbase.h /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/ui/qgsprojectionselectorbase.ui
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/ui && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/ui/ui_qgsprojectionselectorbase.h /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/ui/qgsprojectionselectorbase.ui
 
 src/ui/ui_qgsprojectpropertiesbase.h: ../src/ui/qgsprojectpropertiesbase.ui
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_41)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_41)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ui_qgsprojectpropertiesbase.h"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/ui && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/ui/ui_qgsprojectpropertiesbase.h /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/ui/qgsprojectpropertiesbase.ui
-
-src/ui/ui_qgsrasterlayerpropertiesbase.h: ../src/ui/qgsrasterlayerpropertiesbase.ui
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_42)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ui_qgsrasterlayerpropertiesbase.h"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/ui && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/ui/ui_qgsrasterlayerpropertiesbase.h /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/ui/qgsrasterlayerpropertiesbase.ui
-
-src/ui/ui_qgsserversourceselectbase.h: ../src/ui/qgsserversourceselectbase.ui
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_43)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ui_qgsserversourceselectbase.h"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/ui && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/ui/ui_qgsserversourceselectbase.h /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/ui/qgsserversourceselectbase.ui
-
-src/ui/ui_qgssinglesymboldialogbase.h: ../src/ui/qgssinglesymboldialogbase.ui
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_44)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ui_qgssinglesymboldialogbase.h"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/ui && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/ui/ui_qgssinglesymboldialogbase.h /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/ui/qgssinglesymboldialogbase.ui
-
-src/ui/ui_qgsuniquevaluedialogbase.h: ../src/ui/qgsuniquevaluedialogbase.ui
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_45)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ui_qgsuniquevaluedialogbase.h"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/ui && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/ui/ui_qgsuniquevaluedialogbase.h /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/ui/qgsuniquevaluedialogbase.ui
-
-src/ui/ui_qgsvectorlayerpropertiesbase.h: ../src/ui/qgsvectorlayerpropertiesbase.ui
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_46)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ui_qgsvectorlayerpropertiesbase.h"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/ui && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/ui/ui_qgsvectorlayerpropertiesbase.h /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/ui/qgsvectorlayerpropertiesbase.ui
-
-src/ui/ui_qgsvectorsymbologywidgetbase.h: ../src/ui/qgsvectorsymbologywidgetbase.ui
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_47)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ui_qgsvectorsymbologywidgetbase.h"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/ui && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/ui/ui_qgsvectorsymbologywidgetbase.h /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/ui/qgsvectorsymbologywidgetbase.ui
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/ui && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/ui/ui_qgsprojectpropertiesbase.h /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/ui/qgsprojectpropertiesbase.ui
 
 src/ui/ui_qgspythondialog.h: ../src/ui/qgspythondialog.ui
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_48)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_42)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ui_qgspythondialog.h"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/ui && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/ui/ui_qgspythondialog.h /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/ui/qgspythondialog.ui
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/ui && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/ui/ui_qgspythondialog.h /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/ui/qgspythondialog.ui
+
+src/ui/ui_qgsrasterlayerpropertiesbase.h: ../src/ui/qgsrasterlayerpropertiesbase.ui
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_43)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ui_qgsrasterlayerpropertiesbase.h"
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/ui && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/ui/ui_qgsrasterlayerpropertiesbase.h /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/ui/qgsrasterlayerpropertiesbase.ui
+
+src/ui/ui_qgsserversourceselectbase.h: ../src/ui/qgsserversourceselectbase.ui
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_44)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ui_qgsserversourceselectbase.h"
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/ui && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/ui/ui_qgsserversourceselectbase.h /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/ui/qgsserversourceselectbase.ui
+
+src/ui/ui_qgssinglesymboldialogbase.h: ../src/ui/qgssinglesymboldialogbase.ui
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_45)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ui_qgssinglesymboldialogbase.h"
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/ui && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/ui/ui_qgssinglesymboldialogbase.h /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/ui/qgssinglesymboldialogbase.ui
+
+src/ui/ui_qgssnappingdialogbase.h: ../src/ui/qgssnappingdialogbase.ui
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_46)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ui_qgssnappingdialogbase.h"
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/ui && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/ui/ui_qgssnappingdialogbase.h /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/ui/qgssnappingdialogbase.ui
+
+src/ui/ui_qgsuniquevaluedialogbase.h: ../src/ui/qgsuniquevaluedialogbase.ui
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_47)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ui_qgsuniquevaluedialogbase.h"
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/ui && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/ui/ui_qgsuniquevaluedialogbase.h /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/ui/qgsuniquevaluedialogbase.ui
+
+src/ui/ui_qgsvectorlayerpropertiesbase.h: ../src/ui/qgsvectorlayerpropertiesbase.ui
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_48)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ui_qgsvectorlayerpropertiesbase.h"
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/ui && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/ui/ui_qgsvectorlayerpropertiesbase.h /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/ui/qgsvectorlayerpropertiesbase.ui
 
 ui: src/ui/CMakeFiles/ui.dir/build.make
 
@@ -340,47 +340,47 @@ src/ui/CMakeFiles/ui.dir/build: src/ui/ui_qgsattributedialogbase.h
 src/ui/CMakeFiles/ui.dir/build: src/ui/ui_qgsattributetablebase.h
 src/ui/CMakeFiles/ui.dir/build: src/ui/ui_qgsbookmarksbase.h
 src/ui/CMakeFiles/ui.dir/build: src/ui/ui_qgscomposerbase.h
-src/ui/CMakeFiles/ui.dir/build: src/ui/ui_qgscomposerlabelbase.h
-src/ui/CMakeFiles/ui.dir/build: src/ui/ui_qgscomposermapbase.h
-src/ui/CMakeFiles/ui.dir/build: src/ui/ui_qgscomposerpicturebase.h
-src/ui/CMakeFiles/ui.dir/build: src/ui/ui_qgscomposerscalebarbase.h
+src/ui/CMakeFiles/ui.dir/build: src/ui/ui_qgscomposeritemwidgetbase.h
+src/ui/CMakeFiles/ui.dir/build: src/ui/ui_qgscomposerlabelwidgetbase.h
+src/ui/CMakeFiles/ui.dir/build: src/ui/ui_qgscomposerlegenditemdialogbase.h
+src/ui/CMakeFiles/ui.dir/build: src/ui/ui_qgscomposerlegendwidgetbase.h
+src/ui/CMakeFiles/ui.dir/build: src/ui/ui_qgscomposermapwidgetbase.h
+src/ui/CMakeFiles/ui.dir/build: src/ui/ui_qgscomposerpicturewidgetbase.h
+src/ui/CMakeFiles/ui.dir/build: src/ui/ui_qgscomposerscalebarwidgetbase.h
 src/ui/CMakeFiles/ui.dir/build: src/ui/ui_qgscomposervectorlegendbase.h
 src/ui/CMakeFiles/ui.dir/build: src/ui/ui_qgscompositionbase.h
+src/ui/CMakeFiles/ui.dir/build: src/ui/ui_qgscompositionwidgetbase.h
 src/ui/CMakeFiles/ui.dir/build: src/ui/ui_qgscontinuouscolordialogbase.h
 src/ui/CMakeFiles/ui.dir/build: src/ui/ui_qgscustomprojectiondialogbase.h
 src/ui/CMakeFiles/ui.dir/build: src/ui/ui_qgsdbsourceselectbase.h
 src/ui/CMakeFiles/ui.dir/build: src/ui/ui_qgsdelattrdialogbase.h
-src/ui/CMakeFiles/ui.dir/build: src/ui/ui_qgsfillstylewidgetbase.h
+src/ui/CMakeFiles/ui.dir/build: src/ui/ui_qgsdetaileditemwidgetbase.h
+src/ui/CMakeFiles/ui.dir/build: src/ui/ui_qgsgenericprojectionselectorbase.h
 src/ui/CMakeFiles/ui.dir/build: src/ui/ui_qgsgeomtypedialogbase.h
 src/ui/CMakeFiles/ui.dir/build: src/ui/ui_qgsgraduatedsymboldialogbase.h
 src/ui/CMakeFiles/ui.dir/build: src/ui/ui_qgshelpviewerbase.h
 src/ui/CMakeFiles/ui.dir/build: src/ui/ui_qgsidentifyresultsbase.h
 src/ui/CMakeFiles/ui.dir/build: src/ui/ui_qgslabeldialogbase.h
-src/ui/CMakeFiles/ui.dir/build: src/ui/ui_qgslayerprojectionselectorbase.h
-src/ui/CMakeFiles/ui.dir/build: src/ui/ui_qgslinestyledialogbase.h
-src/ui/CMakeFiles/ui.dir/build: src/ui/ui_qgslinestylewidgetbase.h
 src/ui/CMakeFiles/ui.dir/build: src/ui/ui_qgsludialogbase.h
-src/ui/CMakeFiles/ui.dir/build: src/ui/ui_qgsmarkerdialogbase.h
+src/ui/CMakeFiles/ui.dir/build: src/ui/ui_qgsmapserverexportbase.h
 src/ui/CMakeFiles/ui.dir/build: src/ui/ui_qgsmeasurebase.h
 src/ui/CMakeFiles/ui.dir/build: src/ui/ui_qgsmessageviewer.h
 src/ui/CMakeFiles/ui.dir/build: src/ui/ui_qgsnewconnectionbase.h
 src/ui/CMakeFiles/ui.dir/build: src/ui/ui_qgsnewhttpconnectionbase.h
 src/ui/CMakeFiles/ui.dir/build: src/ui/ui_qgsoptionsbase.h
 src/ui/CMakeFiles/ui.dir/build: src/ui/ui_qgspastetransformationsbase.h
-src/ui/CMakeFiles/ui.dir/build: src/ui/ui_qgspatterndialogbase.h
 src/ui/CMakeFiles/ui.dir/build: src/ui/ui_qgspgquerybuilderbase.h
 src/ui/CMakeFiles/ui.dir/build: src/ui/ui_qgspluginmanagerbase.h
-src/ui/CMakeFiles/ui.dir/build: src/ui/ui_qgspointstylewidgetbase.h
 src/ui/CMakeFiles/ui.dir/build: src/ui/ui_qgsprojectionselectorbase.h
 src/ui/CMakeFiles/ui.dir/build: src/ui/ui_qgsprojectpropertiesbase.h
+src/ui/CMakeFiles/ui.dir/build: src/ui/ui_qgspythondialog.h
 src/ui/CMakeFiles/ui.dir/build: src/ui/ui_qgsrasterlayerpropertiesbase.h
 src/ui/CMakeFiles/ui.dir/build: src/ui/ui_qgsserversourceselectbase.h
 src/ui/CMakeFiles/ui.dir/build: src/ui/ui_qgssinglesymboldialogbase.h
+src/ui/CMakeFiles/ui.dir/build: src/ui/ui_qgssnappingdialogbase.h
 src/ui/CMakeFiles/ui.dir/build: src/ui/ui_qgsuniquevaluedialogbase.h
 src/ui/CMakeFiles/ui.dir/build: src/ui/ui_qgsvectorlayerpropertiesbase.h
-src/ui/CMakeFiles/ui.dir/build: src/ui/ui_qgsvectorsymbologywidgetbase.h
-src/ui/CMakeFiles/ui.dir/build: src/ui/ui_qgspythondialog.h
 
 src/ui/CMakeFiles/ui.dir/clean:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/ui && $(CMAKE_COMMAND) -P CMakeFiles/ui.dir/cmake_clean.cmake
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/ui && $(CMAKE_COMMAND) -P CMakeFiles/ui.dir/cmake_clean.cmake
 

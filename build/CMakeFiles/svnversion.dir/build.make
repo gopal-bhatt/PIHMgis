@@ -31,19 +31,19 @@ RM = /usr/bin/cmake -E remove -f
 CMAKE_EDIT_COMMAND = /usr/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0
+CMAKE_SOURCE_DIR = /Users/bhattgopal/dev/cpp/qgis_1.0.2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build
+CMAKE_BINARY_DIR = /Users/bhattgopal/dev/cpp/qgis_1.0.2/build
 
 # Utility rule file for svnversion.
 
 CMakeFiles/svnversion: qgssvnversion.h
 
 qgssvnversion.h: ../.svn/entries
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating qgssvnversion.h"
-	/usr/bin/cmake -P /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/svnscript.cmake
+	/usr/bin/cmake -P /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/svnscript.cmake
 
 svnversion: CMakeFiles/svnversion.dir/build.make
 

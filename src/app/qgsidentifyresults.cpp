@@ -15,11 +15,12 @@
  *   (at your option) any later version.                                   *
  *                                                                         *
  ***************************************************************************/
-/* $Id: qgsidentifyresults.cpp 6879 2007-04-11 11:46:35Z wonder $ */
+/* $Id: qgsidentifyresults.cpp 9209 2008-08-29 13:29:04Z jef $ */
 
 #include "qgsidentifyresults.h"
 #include "qgscontexthelp.h"
 #include "qgsapplication.h"
+#include "qgisapp.h"
 
 #include <QCloseEvent>
 #include <QLabel>
@@ -31,28 +32,31 @@
 
 #include <iostream>
 
-QgsIdentifyResults::QgsIdentifyResults(const QgsAttributeAction& actions,
-    QWidget *parent, Qt::WFlags f)
-: QDialog(parent, f),
-  mActions(actions),
-  mClickedOnValue(0),
-  mActionPopup(0),
-  mCurrentFeatureId(0)
+QgsIdentifyResults::QgsIdentifyResults( const QgsAttributeAction& actions,
+                                        QWidget *parent, Qt::WFlags f )
+    : QDialog( parent, f ),
+    mActions( actions ),
+    mClickedOnValue( 0 ),
+    mActionPopup( 0 ),
+    mCurrentFeatureId( 0 )
 {
-  setupUi(this);
-  lstResults->setColumnCount(2);
-  setColumnText(0, tr("Feature"));
-  setColumnText(1, tr("Value"));
+  setupUi( this );
+  lstResults->setColumnCount( 2 );
+  setColumnText( 0, tr( "Feature" ) );
+  setColumnText( 1, tr( "Value" ) );
 
-  connect( buttonCancel, SIGNAL(clicked()),
-      this, SLOT(close()) );
-  connect( lstResults, SIGNAL(itemClicked(QTreeWidgetItem*, int)),
-      this, SLOT(clicked(QTreeWidgetItem *)) );
-  connect( lstResults, SIGNAL(itemExpanded(QTreeWidgetItem*)),
-           this, SLOT(itemExpanded(QTreeWidgetItem*)));
+  connect( buttonCancel, SIGNAL( clicked() ),
+           this, SLOT( close() ) );
+  connect( lstResults, SIGNAL( itemClicked( QTreeWidgetItem*, int ) ),
+           this, SLOT( clicked( QTreeWidgetItem * ) ) );
+  connect( lstResults, SIGNAL( itemExpanded( QTreeWidgetItem* ) ),
+           this, SLOT( itemExpanded( QTreeWidgetItem* ) ) );
 
-  connect( lstResults, SIGNAL(currentItemChanged(QTreeWidgetItem*, QTreeWidgetItem*)),
-           this, SLOT(handleCurrentItemChanged(QTreeWidgetItem*, QTreeWidgetItem*)));
+  connect( lstResults, SIGNAL( currentItemChanged( QTreeWidgetItem*, QTreeWidgetItem* ) ),
+           this, SLOT( handleCurrentItemChanged( QTreeWidgetItem*, QTreeWidgetItem* ) ) );
+
+  // The label to use for the Derived node in the identify results
+  mDerivedLabel = tr( "(Derived)" );
 }
 
 QgsIdentifyResults::~QgsIdentifyResults()
@@ -64,7 +68,7 @@ QgsIdentifyResults::~QgsIdentifyResults()
 void QgsIdentifyResults::show()
 {
   // Enfore a few things before showing the dialog box
-  lstResults->sortItems(0, Qt::Ascending);
+  lstResults->sortItems( 0, Qt::AscendingOrder );
   expandColumnsToFit();
 
   QDialog::show();
@@ -74,11 +78,11 @@ void QgsIdentifyResults::show()
 void QgsIdentifyResults::close()
 {
   saveWindowLocation();
-  done(0);
+  done( 0 );
 }
-// Save the current window size/position before closing 
+// Save the current window size/position before closing
 // from window menu or X in titlebar
-void QgsIdentifyResults::closeEvent(QCloseEvent *e)
+void QgsIdentifyResults::closeEvent( QCloseEvent *e )
 {
   // We'll close in our own good time thanks...
   e->ignore();
@@ -89,111 +93,79 @@ void QgsIdentifyResults::closeEvent(QCloseEvent *e)
 // actions that can be applied to the data in the identify results
 // dialog box.
 
-void QgsIdentifyResults::contextMenuEvent(QContextMenuEvent* event)
+void QgsIdentifyResults::contextMenuEvent( QContextMenuEvent* event )
 {
-  QTreeWidgetItem* item = lstResults->itemAt(lstResults->viewport()->mapFrom(this, event->pos()));
+  QTreeWidgetItem* item = lstResults->itemAt( lstResults->viewport()->mapFrom( this, event->pos() ) );
   // if the user clicked below the end of the attribute list, just return
-  if (item == NULL)
+  if ( item == NULL )
     return;
-  
+
   // The assumption is made that an instance of QgsIdentifyResults is
   // created for each new Identify Results dialog box, and that the
   // contents of the popup menu doesn't change during the time that
   // such a dialog box is around.
-  if (mActionPopup == 0)
+  if ( mActionPopup == 0 )
   {
     mActionPopup = new QMenu();
-    QAction* a = mActionPopup->addAction( tr("Run action") );
-    a->setEnabled(false);
+    QAction* a = mActionPopup->addAction( tr( "Run action" ) );
+    a->setEnabled( false );
     mActionPopup->addSeparator();
 
     QgsAttributeAction::aIter iter = mActions.begin();
-    for (int j = 0; iter != mActions.end(); ++iter, ++j)
+    for ( int j = 0; iter != mActions.end(); ++iter, ++j )
     {
-      QAction* a = mActionPopup->addAction(iter->name());
+      QAction* a = mActionPopup->addAction( iter->name() );
       // The menu action stores an integer that is used later on to
       // associate an menu action with an actual qgis action.
-      a->setData(QVariant::fromValue(j));
+      a->setData( QVariant::fromValue( j ) );
     }
-    connect(mActionPopup, SIGNAL(triggered(QAction*)),
-            this, SLOT(popupItemSelected(QAction*)));
+    connect( mActionPopup, SIGNAL( triggered( QAction* ) ),
+             this, SLOT( popupItemSelected( QAction* ) ) );
   }
   // Save the attribute values as these are needed for substituting into
-  // the action. 
-  // A little bit complicated because the user could of right-clicked
-  // on a parent or a child in the dialog box. We also want to keep
-  // track of which row in the identify results table was actually
-  // clicked on. This is stored as an index into the mValues vector.
+  // the action.
+  extractAllItemData( item );
 
-  QTreeWidgetItem* parent = item->parent();
-  if (parent == 0)
-    parent = item;
-
-  mValues.clear();
-  for (int j = 0; j < parent->childCount(); ++j)
-  {
-    if ( parent->child(j)->text(0) != "action" ) {
-      mValues.push_back(std::make_pair(parent->child(j)->text(0), 
-                                       parent->child(j)->text(1)));
-      // Need to do the comparison on the text strings rather than the
-      // pointers because if the user clicked on the parent, we need
-      // to pick up which child that actually is (the parent in the
-      // identify results dialog box is just one of the children
-      // that has been chosen by some method).
-      if (parent->child(j)->text(0) == item->text(0))
-        mClickedOnValue = j;
-    }
-  }
-
-  if (mActions.size() > 0)
-    mActionPopup->popup(event->globalPos());
+  if ( mActions.size() > 0 )
+    mActionPopup->popup( event->globalPos() );
 }
 
 // Restore last window position/size and show the window
 void QgsIdentifyResults::restorePosition()
 {
-
   QSettings settings;
-  QPoint pos = settings.value("/Windows/Identify/pos", 
-                              QPoint(100,100)).toPoint();
-QSize size = settings.value("/Windows/Identify/size", 
-                            QSize(281,316)).toSize();
-  //std::cerr << "Setting geometry: " << wx << ", " << wy << ", " << ww << ", " << wh << std::endl;
-  resize(size);
-  move(pos);
+  restoreGeometry( settings.value( "/Windows/Identify/geometry" ).toByteArray() );
   show();
-  //std::cerr << "Current geometry: " << x() << ", " << y() << ", " << width() << ", " << height() << std::endl; 
 }
+
 // Save the current window location (store in ~/.qt/qgisrc)
 void QgsIdentifyResults::saveWindowLocation()
 {
   QSettings settings;
-  settings.setValue("/Windows/Identify/pos", this->pos());
-  settings.setValue("/Windows/Identify/size", this->size());
-} 
+  settings.setValue( "/Windows/Identify/geometry", saveGeometry() );
+}
 
 /** add an attribute and its value to the list */
-void QgsIdentifyResults::addAttribute(QTreeWidgetItem * fnode, QString field, QString value)
+void QgsIdentifyResults::addAttribute( QTreeWidgetItem * fnode, QString field, QString value )
 {
   QStringList labels;
   labels << field << value;
-  new QTreeWidgetItem(fnode, labels);
+  new QTreeWidgetItem( fnode, labels );
 }
 
-void QgsIdentifyResults::addAttribute(QString field, QString value)
+void QgsIdentifyResults::addAttribute( QString field, QString value )
 {
   QStringList labels;
   labels << field << value;
-  new QTreeWidgetItem(lstResults, labels);
+  new QTreeWidgetItem( lstResults, labels );
 }
 
-void QgsIdentifyResults::addDerivedAttribute(QTreeWidgetItem * fnode, QString field, QString value)
+void QgsIdentifyResults::addDerivedAttribute( QTreeWidgetItem * fnode, QString field, QString value )
 {
   QTreeWidgetItem * daRootNode;
 
-  // Determine if this is the first derived attribute for this
-  // feature or not
-  if (mDerivedAttributeRootNodes.find(fnode) != mDerivedAttributeRootNodes.end())
+  // Determine if this is the first derived attribute for this feature or not
+  if ( mDerivedAttributeRootNodes.find( fnode ) != mDerivedAttributeRootNodes.end() )
   {
     // Reuse existing derived-attribute root node
     daRootNode = mDerivedAttributeRootNodes[fnode];
@@ -201,53 +173,62 @@ void QgsIdentifyResults::addDerivedAttribute(QTreeWidgetItem * fnode, QString fi
   else
   {
     // Create new derived-attribute root node
-    daRootNode = new QTreeWidgetItem(fnode, QStringList(tr("(Derived)")));
-    QFont font = daRootNode->font(0);
-    font.setItalic(true);
-    daRootNode->setFont(0, font);
+    daRootNode = new QTreeWidgetItem( fnode, QStringList( mDerivedLabel ) );
+    QFont font = daRootNode->font( 0 );
+    font.setItalic( true );
+    daRootNode->setFont( 0, font );
+    mDerivedAttributeRootNodes[fnode] = daRootNode;
   }
 
   QStringList labels;
   labels << field << value;
-  new QTreeWidgetItem(daRootNode, labels);
+  new QTreeWidgetItem( daRootNode, labels );
 }
 
-void QgsIdentifyResults::addAction(QTreeWidgetItem * fnode, int id, QString field, QString value)
+void QgsIdentifyResults::addEdit( QTreeWidgetItem * fnode, int id )
 {
   QStringList labels;
-  labels << field << value << "action" << QString::number(id);
-  QTreeWidgetItem *item = new QTreeWidgetItem(fnode, labels );
+  labels << "edit" << QString::number( id );
+  QTreeWidgetItem *item = new QTreeWidgetItem( fnode, labels );
 
-  QPixmap pm ( QgsApplication::themePath() + "/mAction.png" );
-  item->setIcon ( 0, QIcon(pm) ); 
+  item->setIcon( 0, QgisApp::getThemeIcon( "/mIconEditable.png" ) );
+}
+
+void QgsIdentifyResults::addAction( QTreeWidgetItem * fnode, int id, QString field, QString value )
+{
+  QStringList labels;
+  labels << field << value << "action" << QString::number( id );
+  QTreeWidgetItem *item = new QTreeWidgetItem( fnode, labels );
+
+  item->setIcon( 0, QgisApp::getThemeIcon( "/mAction.png" ) );
 }
 
 /** Add a feature node to the list */
-QTreeWidgetItem *QgsIdentifyResults::addNode(QString label)
+QTreeWidgetItem *QgsIdentifyResults::addNode( QString label )
 {
-  return (new QTreeWidgetItem(lstResults, QStringList(label)));
+  return new QTreeWidgetItem( lstResults, QStringList( label ) );
 }
 
-void QgsIdentifyResults::setTitle(QString title)
+void QgsIdentifyResults::setTitle( QString title )
 {
-  setWindowTitle(tr("Identify Results - ") + title);
+  setWindowTitle( tr( "Identify Results - " ) + title );
 }
 
-void QgsIdentifyResults::setColumnText ( int column, const QString & label )
+void QgsIdentifyResults::setColumnText( int column, const QString & label )
 {
   QTreeWidgetItem* header = lstResults->headerItem();
-  header->setText ( column, label );
+  header->setText( column, label );
 }
 
 // Run the action that was selected in the popup menu
-void QgsIdentifyResults::popupItemSelected(QAction* menuAction)
+void QgsIdentifyResults::popupItemSelected( QAction* menuAction )
 {
   int id = menuAction->data().toInt();
-  mActions.doAction(id, mValues, mClickedOnValue);
+  mActions.doAction( id, mValues, mClickedOnValue );
 }
 
 /** Expand all the identified features (show their attributes). */
-void QgsIdentifyResults::showAllAttributes() 
+void QgsIdentifyResults::showAllAttributes()
 {
   // Easy now with Qt 4.2...
   lstResults->expandAll();
@@ -255,12 +236,13 @@ void QgsIdentifyResults::showAllAttributes()
 
 void QgsIdentifyResults::expandColumnsToFit()
 {
-  lstResults->resizeColumnToContents(0);
-  lstResults->resizeColumnToContents(1);
+  lstResults->resizeColumnToContents( 0 );
+  lstResults->resizeColumnToContents( 1 );
 }
 
 void QgsIdentifyResults::clear()
 {
+  mDerivedAttributeRootNodes.clear();
   lstResults->clear();
 }
 
@@ -268,79 +250,137 @@ void QgsIdentifyResults::setMessage( QString shortMsg, QString longMsg )
 {
   QStringList labels;
   labels << shortMsg << longMsg;
-  new QTreeWidgetItem(lstResults, labels );
+  new QTreeWidgetItem( lstResults, labels );
 }
 
-void QgsIdentifyResults::setActions( const QgsAttributeAction& actions  )
+void QgsIdentifyResults::setActions( const QgsAttributeAction& actions )
 {
   mActions = actions;
 }
 
-void QgsIdentifyResults::clicked ( QTreeWidgetItem *item )
+void QgsIdentifyResults::clicked( QTreeWidgetItem *item )
 {
-  if ( !item ) return;
+  if ( !item )
+    return;
 
-  if ( item->text(2) != "action" ) return;
-
-  int id = item->text(3).toInt();
-
-  QTreeWidgetItem* parent = item->parent();
-  if (parent == 0)
-    parent = item;
-
-  mValues.clear();
-
-  for (int j = 0; j < parent->childCount(); ++j)
+  if ( item->text( 2 ) == "action" )
   {
-    if ( parent->child(j)->text(0) != "action" ) {
-      mValues.push_back(std::make_pair(parent->child(j)->text(0), 
-                                       parent->child(j)->text(1)));
-      if (parent->child(j)->text(0) == item->text(0))
-        mClickedOnValue = j;
-    }
-  }
+    int id = item->text( 3 ).toInt();
 
-  mActions.doAction(id, mValues, mClickedOnValue);
+    extractAllItemData( item );
+
+    mActions.doAction( id, mValues, mClickedOnValue );
+  }
+  else if ( item->text( 0 ) == "edit" )
+  {
+    emit editFeature( item->text( 1 ).toInt() );
+  }
 }
 void QgsIdentifyResults::on_buttonHelp_clicked()
 {
-  QgsContextHelp::run(context_id);
+  QgsContextHelp::run( context_id );
 }
 
-void QgsIdentifyResults::itemExpanded(QTreeWidgetItem* item)
+void QgsIdentifyResults::itemExpanded( QTreeWidgetItem* item )
 {
   expandColumnsToFit();
 }
 
-void QgsIdentifyResults::handleCurrentItemChanged(QTreeWidgetItem* current, QTreeWidgetItem* previous)
+void QgsIdentifyResults::handleCurrentItemChanged( QTreeWidgetItem* current, QTreeWidgetItem* previous )
 {
-  if (lstResults->model()->rowCount() <= 1)
+  if ( lstResults->model()->rowCount() <= 1 )
     return;
-  
-  if (current == NULL)
+
+  if ( current == NULL )
   {
     mCurrentFeatureId = 0;
-    emit selectedFeatureChanged(0);
+    emit selectedFeatureChanged( 0 );
     return;
   }
-  
+
   // move to node where is saved feature ID
   QTreeWidgetItem* topLevelItem = current;
-  while (topLevelItem->parent() != NULL)
+  while ( topLevelItem->parent() != NULL )
   {
     topLevelItem = topLevelItem->parent();
   }
-  
-  QVariant fid = topLevelItem->data(0, Qt::UserRole);
-  
+
+  QVariant fid = topLevelItem->data( 0, Qt::UserRole );
+
   // no data saved...
-  if (fid.type() != QVariant::Int)
+  if ( fid.type() != QVariant::Int )
     return;
   int fid2 = fid.toInt();
-  
-  if (fid2 == mCurrentFeatureId)
+
+  if ( fid2 == mCurrentFeatureId )
     return;
-      
+
   mCurrentFeatureId = fid2;
-  emit selectedFeatureChanged(mCurrentFeatureId);
+  emit selectedFeatureChanged( mCurrentFeatureId );
+}
+
+void QgsIdentifyResults::extractAllItemData( QTreeWidgetItem* item )
+{
+  // Extracts the name/value pairs from the given item. This includes data
+  // under the (Derived) item.
+
+  // A little bit complicated because the user could of right-clicked
+  // on any item in the dialog box. We want a toplevel item, so walk upwards
+  // as far as possible.
+  // We also want to keep track of which row in the identify results table was
+  // actually clicked on. This is stored as an index into the mValues vector.
+
+  QTreeWidgetItem* child = item;
+  QTreeWidgetItem* parent = child->parent();
+  while ( parent != 0 )
+  {
+    child = parent;
+    parent = parent->parent();
+  }
+  parent = child;
+
+  mValues.clear();
+
+  // For the code below we
+  // need to do the comparison on the text strings rather than the
+  // pointers because if the user clicked on the parent, we need
+  // to pick up which child that actually is (the parent in the
+  // identify results dialog box is just one of the children
+  // that has been chosen by some method).
+
+  int valuesIndex = 0;
+
+  for ( int j = 0; j < parent->childCount(); ++j )
+  {
+    // For derived attributes, build up a virtual name
+    if ( parent->child( j )->text( 0 ) == mDerivedLabel )
+    {
+      for ( int k = 0; k < parent->child( j )->childCount(); ++k )
+      {
+        mValues.push_back(
+          std::make_pair( mDerivedLabel + "."
+                          + parent->child( j )->child( k )->text( 0 ),
+                          parent->child( j )->child( k )->text( 1 ) ) );
+
+        if ( item == parent->child( j )->child( k ) )
+        {
+          mClickedOnValue = valuesIndex;
+        }
+
+        valuesIndex++;
+      }
+    }
+    else // do the actual feature attributes
+    {
+      mValues.push_back( std::make_pair( parent->child( j )->text( 0 ),
+                                         parent->child( j )->text( 1 ) ) );
+
+      if ( item == parent->child( j ) )
+      {
+        mClickedOnValue = valuesIndex;
+      }
+
+      valuesIndex++;
+    }
+  }
 }

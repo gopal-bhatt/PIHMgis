@@ -1,17 +1,23 @@
 K 25
 svn:wc:ra_dav:version-url
-V 64
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/images/svg/icon
+V 59
+/qgis/!svn/ver/10639/branches/Release-1_0_2/images/svg/icon
 END
 golfcourse.svg
 K 25
 svn:wc:ra_dav:version-url
-V 79
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/images/svg/icon/golfcourse.svg
+V 74
+/qgis/!svn/ver/10639/branches/Release-1_0_2/images/svg/icon/golfcourse.svg
 END
 .cvsignore
 K 25
 svn:wc:ra_dav:version-url
+V 70
+/qgis/!svn/ver/10639/branches/Release-1_0_2/images/svg/icon/.cvsignore
+END
+cameraangle.svg
+K 25
+svn:wc:ra_dav:version-url
 V 75
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/images/svg/icon/.cvsignore
+/qgis/!svn/ver/10639/branches/Release-1_0_2/images/svg/icon/cameraangle.svg
 END

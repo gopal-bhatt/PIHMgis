@@ -22,6 +22,7 @@ src/plugins/delimited_text/CMakeFiles/delimitedtextplugin.dir/moc_qgsdelimitedte
 src/plugins/delimited_text/CMakeFiles/delimitedtextplugin.dir/qrc_delimited_text.o: src/plugins/delimited_text/qrc_delimited_text.cxx
 
 src/plugins/delimited_text/CMakeFiles/delimitedtextplugin.dir/qgsdelimitedtextplugingui.o: ../src/plugins/delimited_text/../../core/qgscontexthelp.h
+src/plugins/delimited_text/CMakeFiles/delimitedtextplugin.dir/qgsdelimitedtextplugingui.o: ../src/plugins/delimited_text/../../core/qgslogger.h
 src/plugins/delimited_text/CMakeFiles/delimitedtextplugin.dir/qgsdelimitedtextplugingui.o: ../src/plugins/delimited_text/../../gui/qgisinterface.h
 src/plugins/delimited_text/CMakeFiles/delimitedtextplugin.dir/qgsdelimitedtextplugingui.o: ../src/plugins/delimited_text/../../gui/qgsfiledropedit.h
 src/plugins/delimited_text/CMakeFiles/delimitedtextplugin.dir/qgsdelimitedtextplugingui.o: /Library/Frameworks/QtCore.framework/Headers/QFile
@@ -29,12 +30,14 @@ src/plugins/delimited_text/CMakeFiles/delimitedtextplugin.dir/qgsdelimitedtextpl
 src/plugins/delimited_text/CMakeFiles/delimitedtextplugin.dir/qgsdelimitedtextplugingui.o: /Library/Frameworks/QtCore.framework/Headers/QObject
 src/plugins/delimited_text/CMakeFiles/delimitedtextplugin.dir/qgsdelimitedtextplugingui.o: /Library/Frameworks/QtCore.framework/Headers/QRegExp
 src/plugins/delimited_text/CMakeFiles/delimitedtextplugin.dir/qgsdelimitedtextplugingui.o: /Library/Frameworks/QtCore.framework/Headers/QSettings
+src/plugins/delimited_text/CMakeFiles/delimitedtextplugin.dir/qgsdelimitedtextplugingui.o: /Library/Frameworks/QtCore.framework/Headers/QString
 src/plugins/delimited_text/CMakeFiles/delimitedtextplugin.dir/qgsdelimitedtextplugingui.o: /Library/Frameworks/QtCore.framework/Headers/QTextStream
 src/plugins/delimited_text/CMakeFiles/delimitedtextplugin.dir/qgsdelimitedtextplugingui.o: /Library/Frameworks/QtCore.framework/Headers/qfile.h
 src/plugins/delimited_text/CMakeFiles/delimitedtextplugin.dir/qgsdelimitedtextplugingui.o: /Library/Frameworks/QtCore.framework/Headers/qfileinfo.h
 src/plugins/delimited_text/CMakeFiles/delimitedtextplugin.dir/qgsdelimitedtextplugingui.o: /Library/Frameworks/QtCore.framework/Headers/qobject.h
 src/plugins/delimited_text/CMakeFiles/delimitedtextplugin.dir/qgsdelimitedtextplugingui.o: /Library/Frameworks/QtCore.framework/Headers/qregexp.h
 src/plugins/delimited_text/CMakeFiles/delimitedtextplugin.dir/qgsdelimitedtextplugingui.o: /Library/Frameworks/QtCore.framework/Headers/qsettings.h
+src/plugins/delimited_text/CMakeFiles/delimitedtextplugin.dir/qgsdelimitedtextplugingui.o: /Library/Frameworks/QtCore.framework/Headers/qstring.h
 src/plugins/delimited_text/CMakeFiles/delimitedtextplugin.dir/qgsdelimitedtextplugingui.o: /Library/Frameworks/QtCore.framework/Headers/qtextstream.h
 src/plugins/delimited_text/CMakeFiles/delimitedtextplugin.dir/qgsdelimitedtextplugingui.o: /Library/Frameworks/QtGui.framework/Headers/QComboBox
 src/plugins/delimited_text/CMakeFiles/delimitedtextplugin.dir/qgsdelimitedtextplugingui.o: /Library/Frameworks/QtGui.framework/Headers/QFileDialog
@@ -54,6 +57,7 @@ src/plugins/delimited_text/CMakeFiles/delimitedtextplugin.dir/qgsdelimitedtextpl
 src/plugins/delimited_text/CMakeFiles/delimitedtextplugin.dir/qgsdelimitedtextplugingui.o: /usr/include/runetype.h
 src/plugins/delimited_text/CMakeFiles/delimitedtextplugin.dir/qgsdelimitedtextplugingui.o: /usr/include/secure/_common.h
 src/plugins/delimited_text/CMakeFiles/delimitedtextplugin.dir/qgsdelimitedtextplugingui.o: /usr/include/secure/_stdio.h
+src/plugins/delimited_text/CMakeFiles/delimitedtextplugin.dir/qgsdelimitedtextplugingui.o: /usr/include/stdarg.h
 src/plugins/delimited_text/CMakeFiles/delimitedtextplugin.dir/qgsdelimitedtextplugingui.o: /usr/include/stdio.h
 src/plugins/delimited_text/CMakeFiles/delimitedtextplugin.dir/qgsdelimitedtextplugingui.o: /usr/include/sys/_types.h
 src/plugins/delimited_text/CMakeFiles/delimitedtextplugin.dir/qgsdelimitedtextplugingui.o: /usr/include/sys/cdefs.h
@@ -63,7 +67,7 @@ src/plugins/delimited_text/CMakeFiles/delimitedtextplugin.dir/qgsdelimitedtextpl
 
 src/plugins/delimited_text/CMakeFiles/delimitedtextplugin.dir/qgsdelimitedtextplugin.o: ../src/plugins/delimited_text/../../core/qgsmaplayer.h
 src/plugins/delimited_text/CMakeFiles/delimitedtextplugin.dir/qgsdelimitedtextplugin.o: ../src/plugins/delimited_text/../../core/qgspoint.h
-src/plugins/delimited_text/CMakeFiles/delimitedtextplugin.dir/qgsdelimitedtextplugin.o: ../src/plugins/delimited_text/../../core/qgsrect.h
+src/plugins/delimited_text/CMakeFiles/delimitedtextplugin.dir/qgsdelimitedtextplugin.o: ../src/plugins/delimited_text/../../core/qgsrectangle.h
 src/plugins/delimited_text/CMakeFiles/delimitedtextplugin.dir/qgsdelimitedtextplugin.o: ../src/plugins/delimited_text/../../gui/qgisgui.h
 src/plugins/delimited_text/CMakeFiles/delimitedtextplugin.dir/qgsdelimitedtextplugin.o: ../src/plugins/delimited_text/../../gui/qgisinterface.h
 src/plugins/delimited_text/CMakeFiles/delimitedtextplugin.dir/qgsdelimitedtextplugin.o: ../src/plugins/delimited_text/../../gui/qgsfiledropedit.h
@@ -80,7 +84,6 @@ src/plugins/delimited_text/CMakeFiles/delimitedtextplugin.dir/qgsdelimitedtextpl
 src/plugins/delimited_text/CMakeFiles/delimitedtextplugin.dir/qgsdelimitedtextplugin.o: /Library/Frameworks/QtGui.framework/Headers/qlineedit.h
 src/plugins/delimited_text/CMakeFiles/delimitedtextplugin.dir/qgsdelimitedtextplugin.o: /Library/Frameworks/QtGui.framework/Headers/qmenu.h
 src/plugins/delimited_text/CMakeFiles/delimitedtextplugin.dir/qgsdelimitedtextplugin.o: ../src/plugins/delimited_text/../qgisplugin.h
-src/plugins/delimited_text/CMakeFiles/delimitedtextplugin.dir/qgsdelimitedtextplugin.o: ../src/plugins/delimited_text/icon.xpm
 src/plugins/delimited_text/CMakeFiles/delimitedtextplugin.dir/qgsdelimitedtextplugin.o: ../src/plugins/delimited_text/qgsdelimitedtextplugin.cpp
 src/plugins/delimited_text/CMakeFiles/delimitedtextplugin.dir/qgsdelimitedtextplugin.o: ../src/plugins/delimited_text/qgsdelimitedtextplugin.h
 src/plugins/delimited_text/CMakeFiles/delimitedtextplugin.dir/qgsdelimitedtextplugin.o: ../src/plugins/delimited_text/qgsdelimitedtextplugingui.h

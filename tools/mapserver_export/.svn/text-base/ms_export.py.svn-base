@@ -20,7 +20,7 @@
 # CHANGES SHOULD NOT BE MADE TO THE writeMapFile METHOD UNLESS YOU
 # ARE CHANGING THE QgsMapserverExport CLASS AND YOU KNOW WHAT YOU ARE
 # DOING
-import sys, string
+import sys, string, os
 from xml.dom import minidom, Node
 
 # symbol map
@@ -39,8 +39,8 @@ class Qgis2Map:
     self.mapName = ''
     self.width = ''
     self.height = ''
-    self.minScale = ''
-    self.maxScale = ''
+    self.minimumScale = ''
+    self.maximumScale = ''
     self.template = ''
     self.header = ''
     self.footer = ''
@@ -54,8 +54,8 @@ class Qgis2Map:
     self.mapName = mapname
     self.width = width
     self.height = height
-    #self.minScale = minscale
-    #self.maxScale = maxscale
+    #self.minimumScale = minscale
+    #self.maximumScale = maxscale
     self.template = template
     self.header = header
     self.footer = footer
@@ -69,42 +69,50 @@ class Qgis2Map:
     # write the general map and web settings
     print " --- python : map section "
     self.writeMapSection()
+    logmsg =  "Wrote map section\n"
     print " --- python : map section done"
     # write the projection section
     print " --- python : proj section "
     self.writeProjectionSection()
+    logmsg += "Wrote projection section\n"
     print " --- python : proj section done"
     # write the output format section
     print " --- python : outputformat section "
     self.writeOutputFormat()
+    logmsg += "Wrote output format section\n"
     print " --- python : outputformat section done"
     # write the legend section
     print " --- python : legend section"
     self.writeLegendSection()
+    logmsg += "Wrote legend section\n"
     print " --- python : legend section done"
 
     # write the WEB section
     print " --- python : web section "
     self.writeWebSection()
+    logmsg += "Wrote web section\n"
     print " --- python : web section done"
 
     # write the LAYER sections
     print " --- python : layer section "
     self.writeMapLayers()
+    logmsg += "Wrote map layers\n"
     print " --- python : layer section done"
 
     # write the symbol defs section
     # must happen after layers so we can build a symbol queue
     print " --- python : symbol section "
     self.writeSymbolSection()
+    logmsg += "Wrote symbol section\n"
     print " --- python : symbol section done"
 
     # END and close the map file
     self.outFile.write("END")
     self.outFile.close()
 
-    ret = "Writing the map file using " + self.project + " " + self.mapFile
-    return ret
+    logmsg += "Map file completed for " + os.path.basename(self.project) + "\n"
+    logmsg += "Map file saved as " + os.path.basename(self.mapFile) + "\n"
+    return logmsg
 
   # Write the general parts of the map section
   def writeMapSection(self):
@@ -152,7 +160,7 @@ class Qgis2Map:
     # the project file doesn't contain the epsg id or proj4 text for 
     # the map apart from that defined in each layer
 
-    self.outFile.write("  PROJECTION\n")
+    self.outFile.write("  CRS\n")
 
     # Get the proj4 text from the first map layer's destination SRS
     destsrs = self.qgs.getElementsByTagName("destinationsrs")[0] 
@@ -205,10 +213,10 @@ class Qgis2Map:
     self.outFile.write("    END\n\n")
 
     self.outFile.write("    #Scale range at which web interface will operate\n")
-    if self.minScale != "":
-      self.outFile.write("    MINSCALE " + self.minScale + "\n") 
-    if self.maxScale != "":
-      self.outFile.write("    MAXSCALE " + self.maxScale + "\n") 
+    if self.minimumScale != "":
+      self.outFile.write("    MINSCALE " + self.minimumScale + "\n") 
+    if self.maximumScale != "":
+      self.outFile.write("    MAXSCALE " + self.maximumScale + "\n") 
 
     self.outFile.write("    # Template and header/footer settings\n")
     self.outFile.write("    # Only the template parameter is required to display a map. See MapServer documentation\n")
@@ -275,9 +283,9 @@ class Qgis2Map:
         self.outFile.write("    TYPE " + lyr.getAttribute("type").encode('utf-8').upper() + "\n")
  
       # Set min/max scales
-      if lyr.getAttribute('scaleBasedVisibilityFlag').encode('utf-8') == 1:
-        self.outFile.write("    MINSCALE " + lyr.getAttribute('minScale').encode('utf-8') + "\n")
-        self.outFile.write("    MAXSCALE " + lyr.getAttribute('maxScale').encode('utf-8') + "\n")
+      if lyr.getAttribute('hasScaleBasedVisibilityFlag').encode('utf-8') == 1:
+        self.outFile.write("    MINSCALE " + lyr.getAttribute('minimumScale').encode('utf-8') + "\n")
+        self.outFile.write("    MAXSCALE " + lyr.getAttribute('maximumScale').encode('utf-8') + "\n")
 
       # data
       dataString = lyr.getElementsByTagName("datasource")[0].childNodes[0].nodeValue.encode('utf-8')
@@ -315,13 +323,16 @@ class Qgis2Map:
             wmsStyles.append( '' )
         # Create necesssary wms metadata
         format = rasterProp.getElementsByTagName('wmsFormat')[0].childNodes[0].nodeValue.encode('utf-8')
-        ct = lyr.getElementsByTagName('coordinatetransform')[0]
-        srs = ct.getElementsByTagName('sourcesrs')[0].getElementsByTagName('spatialrefsys')[0]
-        epsg = srs.getElementsByTagName('epsg')[0].childNodes[0].nodeValue.encode('utf-8')
         self.outFile.write("    METADATA\n")
         self.outFile.write("      'wms_name' '" + ','.join(wmsNames) + "'\n")
         self.outFile.write("      'wms_server_version' '1.1.1'\n")
-        self.outFile.write("      'wms_srs' 'EPSG:4326 EPSG:" + epsg + "'\n")
+        try:
+          ct = lyr.getElementsByTagName('coordinatetransform')[0]
+          srs = ct.getElementsByTagName('sourcesrs')[0].getElementsByTagName('spatialrefsys')[0]
+          epsg = srs.getElementsByTagName('epsg')[0].childNodes[0].nodeValue.encode('utf-8')
+          self.outFile.write("      'wms_srs' 'EPSG:4326 EPSG:" + epsg + "'\n")
+        except:
+	  pass
         self.outFile.write("      'wms_format' '" + format + "'\n")
         self.outFile.write("      'wms_style' '" + ','.join(wmsStyles) + "'\n")
         self.outFile.write("    END\n")
@@ -342,15 +353,19 @@ class Qgis2Map:
            float(lyr.getElementsByTagName("transparencyLevelInt")[0].childNodes[0].nodeValue.encode('utf-8')) / 255.0 ) 
       self.outFile.write("    TRANSPARENCY " + str(opacity) + "\n")
 
-      self.outFile.write("    PROJECTION\n")
-      proj4Text = lyr.getElementsByTagName("proj4")[0].childNodes[0].nodeValue.encode('utf-8') 
+      self.outFile.write("    CRS\n")
+      # Get the destination srs for this layer and use it to create
+      # the projection section
+      destsrs = self.qgs.getElementsByTagName("destinationsrs")[0] 
+      proj4Text = destsrs.getElementsByTagName("proj4")[0].childNodes[0].nodeValue.encode('utf-8') 
+      # the proj4 text string needs to be reformatted to make mapserver happy
       self.outFile.write(self.formatProj4(proj4Text))
       self.outFile.write("    END\n")
-      scaleDependent = lyr.getAttribute("scaleBasedVisibilityFlag").encode('utf-8')
+      scaleDependent = lyr.getAttribute("hasScaleBasedVisibilityFlag").encode('utf-8')
       if scaleDependent == '1':
         # get the min and max scale settings
-        minscale = lyr.getAttribute("minScale").encode('utf-8')
-        maxscale = lyr.getAttribute("maxScale").encode('utf-8')
+        minscale = lyr.getAttribute("minimumScale").encode('utf-8')
+        maxscale = lyr.getAttribute("maximumScale").encode('utf-8')
         if minscale > '':
           self.outFile.write("    MINSCALE " + minscale + "\n")
         if maxscale > '':
@@ -359,9 +374,8 @@ class Qgis2Map:
       
       # Check for label field (ie LABELITEM) and label status
       try:
-        labelOn = lyr.getElementsByTagName("label")[0].childNodes[0].nodeValue.encode('utf-8')
-        labelNode = lyr.getElementsByTagName('labelattributes')[0]
-        labelField = labelNode.getElementsByTagName('label')[0].getAttribute('field').encode('utf-8')
+        labelOn    = lyr.getElementsByTagName(     "label")[0].childNodes[0].nodeValue.encode('utf-8')
+        labelField = lyr.getElementsByTagName("labelfield")[0].childNodes[0].nodeValue.encode('utf-8')
         if labelField != '' and labelField is not None and labelOn == "1":
           self.outFile.write("    LABELITEM '" + labelField + "'\n");
       except:
@@ -559,7 +573,11 @@ class Qgis2Map:
     for cls in classes:
       self.outFile.write("    CLASS\n")
 
-      lower = cls.getElementsByTagName('lowervalue')[0].childNodes[0].nodeValue.encode('utf-8')
+      try:
+        lower = cls.getElementsByTagName('lowervalue')[0].childNodes[0].nodeValue.encode('utf-8')
+      except IndexError:
+        # set to blank in the case where the field used for rendering has no value
+        lower = ""
 
       # If there's a label use it, otherwise autogenerate one
       try:

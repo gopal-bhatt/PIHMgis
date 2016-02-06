@@ -5,16 +5,36 @@ qgisgui.h
 ../src/plugins/wfs/../../app/qgisgui.h
 
 ../src/plugins/wfs/../../core/qgis.h
-qevent.h
+QEvent
+-
+QString
 -
 
 ../src/plugins/wfs/../../core/qgscontexthelp.h
 QObject
 -
 
+../src/plugins/wfs/../../core/qgscoordinatereferencesystem.h
+ostream
+-
+QString
+-
+QMap
+-
+qgis.h
+../src/plugins/wfs/../../core/qgis.h
+
 ../src/plugins/wfs/../../core/qgsfeature.h
 QMap
 -
+QString
+-
+QVariant
+-
+QList
+-
+
+../src/plugins/wfs/../../core/qgsfield.h
 QString
 -
 QVariant
@@ -33,13 +53,27 @@ map
 -
 QObject
 -
-qgsrect.h
-../src/plugins/wfs/../../core/qgsrect.h
+qgsrectangle.h
+../src/plugins/wfs/../../core/qgsrectangle.h
 
 ../src/plugins/wfs/../../core/qgspoint.h
 iostream
 -
 QString
+-
+
+../src/plugins/wfs/../../core/qgsproject.h
+memory
+-
+qgsprojectversion.h
+../src/plugins/wfs/../../core/qgsprojectversion.h
+QObject
+-
+
+../src/plugins/wfs/../../core/qgsprojectversion.h
+QString
+-
+QStringList
 -
 
 ../src/plugins/wfs/../../core/qgsproviderregistry.h
@@ -50,11 +84,19 @@ QDir
 QString
 -
 
-../src/plugins/wfs/../../core/qgsrect.h
+../src/plugins/wfs/../../core/qgsrectangle.h
 iosfwd
 -
 qgspoint.h
 ../src/plugins/wfs/../../core/qgspoint.h
+
+../src/plugins/wfs/../../core/qgssnapper.h
+qgspoint.h
+../src/plugins/wfs/../../core/qgspoint.h
+QList
+-
+QMultiMap
+-
 
 ../src/plugins/wfs/../../core/qgsvectorlayer.h
 QMap
@@ -63,16 +105,26 @@ QSet
 -
 QList
 -
+QStringList
+-
 qgis.h
 ../src/plugins/wfs/../../core/qgis.h
 qgsmaplayer.h
 ../src/plugins/wfs/../../core/qgsmaplayer.h
 qgsfeature.h
 ../src/plugins/wfs/../../core/qgsfeature.h
+qgssnapper.h
+../src/plugins/wfs/../../core/qgssnapper.h
+qgsfeature.h
+../src/plugins/wfs/../../core/qgsfeature.h
+qgsfield.h
+../src/plugins/wfs/../../core/qgsfield.h
 
 ../src/plugins/wfs/../../core/renderer/qgsrenderer.h
 qgis.h
 ../src/plugins/wfs/../../core/renderer/qgis.h
+QList
+-
 
 ../src/plugins/wfs/../../core/renderer/qgssinglesymbolrenderer.h
 qgsrenderer.h
@@ -88,9 +140,9 @@ QObject
 map
 -
 
-../src/plugins/wfs/../../gui/qgslayerprojectionselector.h
-ui_qgslayerprojectionselectorbase.h
-../src/plugins/wfs/../../gui/ui_qgslayerprojectionselectorbase.h
+../src/plugins/wfs/../../gui/qgsgenericprojectionselector.h
+ui_qgsgenericprojectionselectorbase.h
+../src/plugins/wfs/../../gui/ui_qgsgenericprojectionselectorbase.h
 qgisgui.h
 ../src/plugins/wfs/../../gui/qgisgui.h
 QSet
@@ -110,11 +162,19 @@ QString
 qdir.h
 /Library/Frameworks/QtCore.framework/Headers/qdir.h
 
+/Library/Frameworks/QtCore.framework/Headers/QEvent
+qcoreevent.h
+/Library/Frameworks/QtCore.framework/Headers/qcoreevent.h
+
 /Library/Frameworks/QtCore.framework/Headers/QList
 qlist.h
 /Library/Frameworks/QtCore.framework/Headers/qlist.h
 
 /Library/Frameworks/QtCore.framework/Headers/QMap
+qmap.h
+/Library/Frameworks/QtCore.framework/Headers/qmap.h
+
+/Library/Frameworks/QtCore.framework/Headers/QMultiMap
 qmap.h
 /Library/Frameworks/QtCore.framework/Headers/qmap.h
 
@@ -134,6 +194,10 @@ qsettings.h
 qstring.h
 /Library/Frameworks/QtCore.framework/Headers/qstring.h
 
+/Library/Frameworks/QtCore.framework/Headers/QStringList
+qstringlist.h
+/Library/Frameworks/QtCore.framework/Headers/qstringlist.h
+
 /Library/Frameworks/QtCore.framework/Headers/QVariant
 qvariant.h
 /Library/Frameworks/QtCore.framework/Headers/qvariant.h
@@ -141,6 +205,12 @@ qvariant.h
 /Library/Frameworks/QtCore.framework/Headers/Qt
 qnamespace.h
 /Library/Frameworks/QtCore.framework/Headers/qnamespace.h
+
+/Library/Frameworks/QtCore.framework/Headers/qcoreevent.h
+QtCore/qnamespace.h
+-
+QtCore/qbytearray.h
+-
 
 /Library/Frameworks/QtCore.framework/Headers/qdir.h
 QtCore/qstring.h
@@ -226,6 +296,22 @@ string
 stdarg.h
 -
 
+/Library/Frameworks/QtCore.framework/Headers/qstringlist.h
+QtCore/qalgorithms.h
+-
+QtCore/qdatastream.h
+-
+QtCore/qlist.h
+-
+QtCore/qregexp.h
+-
+QtCore/qstring.h
+-
+QtCore/qstringmatcher.h
+-
+Qt3Support/q3valuelist.h
+-
+
 /Library/Frameworks/QtCore.framework/Headers/qvariant.h
 QtCore/qatomic.h
 -
@@ -248,27 +334,9 @@ qlistwidget.h
 qmessagebox.h
 /Library/Frameworks/QtGui.framework/Headers/qmessagebox.h
 
-/Library/Frameworks/QtGui.framework/Headers/qevent.h
-QtGui/qwindowdefs.h
--
-QtCore/qobject.h
--
-QtGui/qregion.h
--
-QtCore/qnamespace.h
--
-QtCore/qstring.h
--
-QtGui/qkeysequence.h
--
-QtCore/qcoreevent.h
--
-QtGui/qmime.h
--
-QtGui/qdrag.h
--
-QtCore/qvariant.h
--
+/Library/Frameworks/QtGui.framework/Headers/QToolBar
+qtoolbar.h
+/Library/Frameworks/QtGui.framework/Headers/qtoolbar.h
 
 /Library/Frameworks/QtGui.framework/Headers/qlistwidget.h
 QtGui/qlistview.h
@@ -280,6 +348,10 @@ QtCore/qvector.h
 
 /Library/Frameworks/QtGui.framework/Headers/qmessagebox.h
 QtGui/qdialog.h
+-
+
+/Library/Frameworks/QtGui.framework/Headers/qtoolbar.h
+QtGui/qwidget.h
 -
 
 /Library/Frameworks/QtNetwork.framework/Headers/QHttp
@@ -304,85 +376,91 @@ qdom.h
 QtCore/qstring.h
 -
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/wfs/../../../../src/app/qgsnewhttpconnection.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/wfs/../../../../src/app/qgsnewhttpconnection.h
 ui_qgsnewhttpconnectionbase.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/wfs/../../../../src/app/ui_qgsnewhttpconnectionbase.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/wfs/../../../../src/app/ui_qgsnewhttpconnectionbase.h
 qgisgui.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/wfs/../../../../src/app/qgisgui.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/wfs/../../../../src/app/qgisgui.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/wfs/../../../../src/plugins/wfs/qgswfsplugin.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/wfs/../../../../src/plugins/wfs/qgswfsplugin.h
 qgisplugin.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/wfs/../../../../src/plugins/wfs/qgisplugin.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/wfs/../../../../src/plugins/wfs/qgisplugin.h
 QObject
 -
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/wfs/../../../../src/plugins/wfs/qgswfssourceselect.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/wfs/../../../../src/plugins/wfs/qgswfssourceselect.h
 ui_qgswfssourceselectbase.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/wfs/../../../../src/plugins/wfs/ui_qgswfssourceselectbase.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/wfs/../../../../src/plugins/wfs/ui_qgswfssourceselectbase.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/wfs/moc_qgsnewhttpconnection.cxx
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/wfs/moc_qgsnewhttpconnection.cxx
 ../../../../src/app/qgsnewhttpconnection.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/wfs/../../../../src/app/qgsnewhttpconnection.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/wfs/../../../../src/app/qgsnewhttpconnection.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/wfs/moc_qgswfsplugin.cxx
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/wfs/moc_qgswfsplugin.cxx
 ../../../../src/plugins/wfs/qgswfsplugin.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/wfs/../../../../src/plugins/wfs/qgswfsplugin.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/wfs/../../../../src/plugins/wfs/qgswfsplugin.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/wfs/moc_qgswfssourceselect.cxx
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/wfs/moc_qgswfssourceselect.cxx
 ../../../../src/plugins/wfs/qgswfssourceselect.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/wfs/../../../../src/plugins/wfs/qgswfssourceselect.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/wfs/../../../../src/plugins/wfs/qgswfssourceselect.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/app/qgsnewhttpconnection.cpp
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/wfs/qrc_wfsplugin.cxx
+QtCore/qglobal.h
+-
+
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/app/qgsnewhttpconnection.cpp
 qgsnewhttpconnection.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/app/qgsnewhttpconnection.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/app/qgsnewhttpconnection.h
 qgscontexthelp.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/app/qgscontexthelp.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/app/qgscontexthelp.h
 QSettings
 -
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/app/qgsnewhttpconnection.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/app/qgsnewhttpconnection.h
 ui_qgsnewhttpconnectionbase.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/app/ui_qgsnewhttpconnectionbase.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/app/ui_qgsnewhttpconnectionbase.h
 qgisgui.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/app/qgisgui.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/app/qgisgui.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/wfs/mIconAddWfsLayer.xpm
-
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/wfs/qgswfsplugin.cpp
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/wfs/qgswfsplugin.cpp
 qgisinterface.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/wfs/qgisinterface.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/wfs/qgisinterface.h
 qgsproviderregistry.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/wfs/qgsproviderregistry.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/wfs/qgsproviderregistry.h
 qgswfssourceselect.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/wfs/qgswfssourceselect.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/wfs/qgswfssourceselect.h
 qgssinglesymbolrenderer.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/wfs/qgssinglesymbolrenderer.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/wfs/qgssinglesymbolrenderer.h
 qgsvectorlayer.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/wfs/qgsvectorlayer.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/wfs/qgsvectorlayer.h
 qgswfsplugin.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/wfs/qgswfsplugin.h
-mIconAddWfsLayer.xpm
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/wfs/mIconAddWfsLayer.xpm
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/wfs/qgswfsplugin.h
+QToolBar
+-
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/wfs/qgswfsplugin.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/wfs/qgswfsplugin.h
 qgisplugin.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/wfs/qgisplugin.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/wfs/qgisplugin.h
 QObject
 -
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/wfs/qgswfssourceselect.cpp
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/wfs/qgswfssourceselect.cpp
 qgisinterface.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/wfs/qgisinterface.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/wfs/qgisinterface.h
 qgswfssourceselect.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/wfs/qgswfssourceselect.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/wfs/qgswfssourceselect.h
 qgsnewhttpconnection.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/wfs/qgsnewhttpconnection.h
-qgslayerprojectionselector.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/wfs/qgslayerprojectionselector.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/wfs/qgsnewhttpconnection.h
+qgsgenericprojectionselector.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/wfs/qgsgenericprojectionselector.h
 qgshttptransaction.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/wfs/qgshttptransaction.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/wfs/qgshttptransaction.h
 qgscontexthelp.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/wfs/qgscontexthelp.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/wfs/qgscontexthelp.h
+qgsproject.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/wfs/qgsproject.h
+qgscoordinatereferencesystem.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/wfs/qgscoordinatereferencesystem.h
 QDomDocument
 -
 QListWidgetItem
@@ -392,9 +470,9 @@ QMessageBox
 QSettings
 -
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/wfs/qgswfssourceselect.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/wfs/qgswfssourceselect.h
 ui_qgswfssourceselectbase.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/wfs/ui_qgswfssourceselectbase.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/wfs/ui_qgswfssourceselectbase.h
 
 /usr/include/_types.h
 sys/_types.h
@@ -436,7 +514,7 @@ machine/_types.h
 
 /usr/include/xlocale/_ctype.h
 
-src/plugins/wfs/../../ui/ui_qgslayerprojectionselectorbase.h
+src/plugins/wfs/../../ui/ui_qgsgenericprojectionselectorbase.h
 QtCore/QVariant
 -
 QtGui/QAction
@@ -447,11 +525,9 @@ QtGui/QButtonGroup
 -
 QtGui/QDialog
 -
+QtGui/QDialogButtonBox
+-
 QtGui/QGridLayout
--
-QtGui/QPushButton
--
-QtGui/QSpacerItem
 -
 QtGui/QTextEdit
 -
@@ -459,10 +535,6 @@ qgsprojectionselector.h
 src/plugins/wfs/../../ui/qgsprojectionselector.h
 
 src/plugins/wfs/../../ui/ui_qgsnewhttpconnectionbase.h
-Qt3Support/Q3GroupBox
--
-Qt3Support/Q3MimeSourceFactory
--
 QtCore/QVariant
 -
 QtGui/QAction
@@ -473,19 +545,15 @@ QtGui/QButtonGroup
 -
 QtGui/QDialog
 -
-QtGui/QFrame
+QtGui/QDialogButtonBox
 -
 QtGui/QGridLayout
+-
+QtGui/QGroupBox
 -
 QtGui/QLabel
 -
 QtGui/QLineEdit
--
-QtGui/QPushButton
--
-QtGui/QSpacerItem
--
-QtGui/QVBoxLayout
 -
 
 src/plugins/wfs/../../ui/ui_qgsprojectionselectorbase.h

@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading ui file 'qgswfssourceselectbase.ui'
 **
-** Created: Wed Jun 11 19:10:42 2008
+** Created: Fri Jun 19 01:59:47 2009
 **      by: Qt User Interface Compiler version 4.3.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling ui file!
@@ -152,7 +152,7 @@ public:
 
     void retranslateUi(QDialog *QgsWFSSourceSelectBase)
     {
-    QgsWFSSourceSelectBase->setWindowTitle(QApplication::translate("QgsWFSSourceSelectBase", "Note: this plugin not considered stable yet. Use it on your own risk", 0, QApplication::UnicodeUTF8));
+    QgsWFSSourceSelectBase->setWindowTitle(QApplication::translate("QgsWFSSourceSelectBase", "Add WFS Layer from a Server", 0, QApplication::UnicodeUTF8));
     treeWidget->headerItem()->setText(0, QApplication::translate("QgsWFSSourceSelectBase", "Title", 0, QApplication::UnicodeUTF8));
     treeWidget->headerItem()->setText(1, QApplication::translate("QgsWFSSourceSelectBase", "Name", 0, QApplication::UnicodeUTF8));
     treeWidget->headerItem()->setText(2, QApplication::translate("QgsWFSSourceSelectBase", "Abstract", 0, QApplication::UnicodeUTF8));

@@ -3,42 +3,59 @@ SET(QGIS_GUI_SRCS
 qgisgui.cpp
 qgisinterface.cpp
 qgscolorbutton.cpp
+qgscomposerview.cpp
 qgscursors.cpp
+qgsdetaileditemdelegate.cpp
+qgsdetaileditemwidget.cpp
+qgsdetaileditemdata.cpp
 qgsencodingfiledialog.cpp
 qgsfiledropedit.cpp
-qgslayerprojectionselector.cpp
+qgsgenericprojectionselector.cpp
 qgsmapcanvas.cpp
 qgsmapcanvasitem.cpp
 qgsmapcanvasmap.cpp
+qgsmapcanvassnapper.cpp
 qgsmapoverviewcanvas.cpp
+qgsmaptip.cpp
 qgsmaptool.cpp
 qgsmaptoolemitpoint.cpp
 qgsmaptoolpan.cpp
 qgsmaptoolzoom.cpp
 qgsmessageviewer.cpp
 qgsprojectionselector.cpp
+qgsquickprint.cpp
 qgsrubberband.cpp
 qgsvertexmarker.cpp
 )
 
 SET(QGIS_GUI_MOC_HDRS
+qgscomposerview.h
+qgsdetaileditemdelegate.h
+qgsdetaileditemwidget.h
 qgisinterface.h
 qgsencodingfiledialog.h
-qgslayerprojectionselector.h
+qgsgenericprojectionselector.h
 qgsmapcanvas.h
 qgsmapoverviewcanvas.h
 qgsmaptoolemitpoint.h
+qgsmessageviewer.h
 qgsprojectionselector.h
+qgsquickprint.h
 )
 
 QT4_WRAP_CPP(QGIS_GUI_MOC_SRCS ${QGIS_GUI_MOC_HDRS})
 
 INCLUDE_DIRECTORIES(${CMAKE_CURRENT_SOURCE_DIR} ../core
-     ../core/raster ../core/renderer ../core/symbology
-     ${SQLITE3_INCLUDE_DIR}
+     ../core/composer ../core/raster ../core/renderer ../core/symbology
      ${CMAKE_CURRENT_BINARY_DIR}
      ${CMAKE_CURRENT_BINARY_DIR}/../ui
+     ${GEOS_INCLUDE_DIR}
 )
+IF (WITH_INTERNAL_SQLITE3)
+  INCLUDE_DIRECTORIES(../core/sqlite3)
+ELSE (WITH_INTERNAL_SQLITE3)
+  INCLUDE_DIRECTORIES(${SQLITE3_INCLUDE_DIR})
+ENDIF (WITH_INTERNAL_SQLITE3)
 
 IF (WIN32)
   IF (MSVC)
@@ -55,6 +72,10 @@ ENDIF (WIN32)
 
 ADD_LIBRARY(qgis_gui SHARED ${QGIS_GUI_SRCS} ${QGIS_GUI_MOC_SRCS})
 
+SET_TARGET_PROPERTIES(qgis_gui PROPERTIES 
+			VERSION ${CPACK_PACKAGE_VERSION_MAJOR}.${CPACK_PACKAGE_VERSION_MINOR}
+			SOVERSION ${COMPLETE_VERSION})
+
 # make sure that UI files will be processed first
 ADD_DEPENDENCIES(qgis_gui ui)
 
@@ -64,22 +85,14 @@ TARGET_LINK_LIBRARIES(qgis_gui
   ${QT_QTSVG_LIBRARY} 
   ${QT_QTNETWORK_LIBRARY} 
   ${QT_QTMAIN_LIBRARY} 
-  ${QT_QT3SUPPORT_LIBRARY} 
   ${SQLITE3_LIBRARIES}
   qgis_core
 )
 
-#work aroud for the fact that qt3 support on mac is linked ot qsql
-IF (APPLE)
-  TARGET_LINK_LIBRARIES(qgis_gui
-    ${QT_QTSQL_LIBRARY} 
-    )
-ENDIF (APPLE)
-
-
 INSTALL(TARGETS qgis_gui
   RUNTIME DESTINATION ${QGIS_BIN_DIR}
-  LIBRARY DESTINATION lib)
+  LIBRARY DESTINATION ${QGIS_LIB_DIR}
+  ARCHIVE DESTINATION ${QGIS_LIB_DIR})
 
 # for installing headers
 
@@ -90,10 +103,11 @@ qgscolorbutton.h
 qgscursors.h
 qgsencodingfiledialog.h
 qgsfiledropedit.h
-qgslayerprojectionselector.h
+qgsgenericprojectionselector.h
 qgsmapcanvas.h
 qgsmapcanvasitem.h
 qgsmapcanvasmap.h
+qgsmapcanvassnapper.h
 qgsmapoverviewcanvas.h
 qgsmaptool.h
 qgsmaptoolemitpoint.h
@@ -103,8 +117,10 @@ qgsmessageviewer.h
 qgsprojectionselector.h
 qgsrubberband.h
 qgsvertexmarker.h
+qgsmaptip.h
 )
 
 
 INSTALL(CODE "MESSAGE(\"Installing GUI headers...\")")
 INSTALL(FILES ${QGIS_GUI_HDRS} ${QGIS_GUI_MOC_HDRS} DESTINATION ${QGIS_INCLUDE_DIR})
+

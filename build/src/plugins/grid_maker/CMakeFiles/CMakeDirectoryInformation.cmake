@@ -16,6 +16,7 @@ SET(CMAKE_C_INCLUDE_PATH
   "/Library/Frameworks/QtCore.framework/Headers"
   "."
   "src/plugins/grid_maker"
+  "/Library/Frameworks/GEOS.framework/Headers"
   "../src/plugins/grid_maker/../../core"
   "../src/plugins/grid_maker/../../core/raster"
   "../src/plugins/grid_maker/../../core/renderer"

@@ -1,17 +1,17 @@
 K 25
 svn:wc:ra_dav:version-url
-V 59
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/doc/images
+V 54
+/qgis/!svn/ver/10639/branches/Release-1_0_2/doc/images
 END
 .cvsignore
 K 25
 svn:wc:ra_dav:version-url
-V 70
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/doc/images/.cvsignore
+V 65
+/qgis/!svn/ver/10639/branches/Release-1_0_2/doc/images/.cvsignore
 END
 qgis_new_80pct.png
 K 25
 svn:wc:ra_dav:version-url
-V 78
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/doc/images/qgis_new_80pct.png
+V 73
+/qgis/!svn/ver/10639/branches/Release-1_0_2/doc/images/qgis_new_80pct.png
 END

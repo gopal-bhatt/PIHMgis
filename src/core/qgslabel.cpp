@@ -14,7 +14,8 @@
  *                                                                         *
  ***************************************************************************/
 
-#include <math.h> //needed for win32 build (ts)
+#include <cmath>
+#include <limits>
 
 #include <QString>
 #include <QFont>
@@ -29,7 +30,7 @@
 #include "qgsgeometry.h"
 #include "qgsfield.h"
 #include "qgslogger.h"
-#include "qgsrect.h"
+#include "qgsrectangle.h"
 #include "qgsmaptopixel.h"
 #include "qgscoordinatetransform.h"
 
@@ -43,19 +44,20 @@
 #endif
 
 static const char * const ident_ =
-    "$Id: qgslabel.cpp 7123 2007-08-05 22:15:40Z wonder $";
-
+  "$Id: qgslabel.cpp 10136 2009-02-08 19:18:53Z jef $";
 
 QgsLabel::QgsLabel( const QgsFieldMap & fields )
+    : mMinScale( 0 ),
+    mMaxScale( 100000000 ),
+    mScaleBasedVisibility( false )
 {
-
-    mField = fields;
-    mLabelFieldIdx.resize ( LabelFieldCount );
-    for ( int i = 0; i < LabelFieldCount; i++ )
-    {
-        mLabelFieldIdx[i] = -1;
-    }
-    mLabelAttributes = new QgsLabelAttributes ( true );
+  mField = fields;
+  mLabelFieldIdx.resize( LabelFieldCount );
+  for ( int i = 0; i < LabelFieldCount; i++ )
+  {
+    mLabelFieldIdx[i] = -1;
+  }
+  mLabelAttributes = new QgsLabelAttributes( true );
 }
 
 QgsLabel::~QgsLabel()
@@ -63,1097 +65,1279 @@ QgsLabel::~QgsLabel()
   delete mLabelAttributes;
 }
 
-QString QgsLabel::fieldValue ( int attr, QgsFeature &feature )
+QString QgsLabel::fieldValue( int attr, QgsFeature &feature )
 {
-    if (mLabelFieldIdx[attr] == -1)
-    {
-      return QString();
-    }
-
-    const QgsAttributeMap& attrs = feature.attributeMap();
-    QgsAttributeMap::const_iterator it = attrs.find(mLabelFieldIdx[attr]);
-    
-    if (it != attrs.end())
-    {
-      return it->toString();
-    }
-    else
-    {
-      return QString();
-    }
-}
-
-void QgsLabel::renderLabel( QPainter * painter, QgsRect &viewExtent,
-                            QgsCoordinateTransform* coordTransform,
-                            QgsMapToPixel *transform,
-                            QgsFeature &feature, bool selected, QgsLabelAttributes *classAttributes,
-       			    double sizeScale )
-{
-
-    QPen pen;
-    QFont font;
-    QString value;
-    QString text;
-
-    /* Calc scale (not nice) */
-    QgsPoint point;
-    point = transform->transform ( 0, 0 );
-    double x1 = point.x();
-    point = transform->transform ( 1000, 0 );
-    double x2 = point.x();
-    double scale = (x2-x1)*0.001;
-
-    /* Text */
-    value = fieldValue ( Text, feature );
-    if ( value.isEmpty() )
-    {
-        text = mLabelAttributes->text();
-    }
-    else
-    {
-        text = value;
-    }
-
-    /* Font */
-    value = fieldValue ( Family, feature );
-    if ( value.isEmpty() )
-    {
-        font.setFamily ( mLabelAttributes->family() );
-    }
-    else
-    {
-        font.setFamily ( value );
-    }
-
-    double size;
-    value = fieldValue ( Size, feature );
-    if ( value.isEmpty() )
-    {
-        size =  mLabelAttributes->size();
-    }
-    else
-    {
-        size =  value.toDouble();
-    }
-    if (  mLabelAttributes->sizeType() == QgsLabelAttributes::MapUnits )
-    {
-        size *= scale;
-    } else {
-	size *= sizeScale;
-    }
-    font.setPointSizeFloat ( size );
-
-    value = fieldValue ( Color, feature );
-    if ( value.isEmpty() )
-    {
-        pen.setColor ( mLabelAttributes->color() );
-    }
-    else
-    {
-        pen.setColor ( QColor(value) );
-    }
-
-    value = fieldValue ( Bold, feature );
-    if ( value.isEmpty() )
-    {
-        font.setBold ( mLabelAttributes->bold() );
-    }
-    else
-    {
-        font.setBold ( (bool) value.toInt() );
-    }
-
-    value = fieldValue ( Italic, feature );
-    if ( value.isEmpty() )
-    {
-        font.setItalic ( mLabelAttributes->italic() );
-    }
-    else
-    {
-        font.setItalic ( (bool) value.toInt() );
-    }
-
-    value = fieldValue ( Underline, feature );
-    if ( value.isEmpty() )
-    {
-        font.setUnderline ( mLabelAttributes->underline() );
-    }
-    else
-    {
-        font.setUnderline ( (bool) value.toInt() );
-    }
-
-    // 
-    QgsPoint overridePoint;
-    bool useOverridePoint = false;
-    value = fieldValue ( XCoordinate, feature );
-    if ( !value.isEmpty() )
-    {
-        overridePoint.setX ( value.toDouble() );
-        useOverridePoint = true;
-    }
-    value = fieldValue ( YCoordinate, feature );
-    if ( !value.isEmpty() )
-    {
-        overridePoint.setY ( value.toDouble() );
-        useOverridePoint = true;
-    }
-
-    /* Alignment */
-    int alignment;
-    QFontMetrics fm ( font );
-    int width = fm.width ( text );
-    int height = fm.height();
-    int dx = 0;
-    int dy = 0;
-
-    value = fieldValue ( Alignment, feature );
-    if ( value.isEmpty() )
-    {
-        alignment = mLabelAttributes->alignment();
-    }
-    else
-    {
-        value = value.lower();
-        alignment = Qt::AlignCenter;
-        if ( value.compare("left") == 0 )
-        {
-            alignment = Qt::AlignLeft | Qt::AlignVCenter;
-        }
-        else if ( value.compare("right") == 0 )
-        {
-            alignment = Qt::AlignRight | Qt::AlignVCenter;
-        }
-        else if ( value.compare("bottom") == 0 )
-        {
-            alignment = Qt::AlignBottom | Qt::AlignHCenter;
-        }
-        else if ( value.compare("top") == 0 )
-        {
-            alignment = Qt::AlignTop | Qt::AlignHCenter;
-        }
-    }
-
-    if ( alignment & Qt::AlignLeft )
-    {
-        dx = 0;
-    }
-    else if ( alignment & Qt::AlignHCenter )
-    {
-        dx = -width/2;
-    }
-    else if ( alignment & Qt::AlignRight )
-    {
-        dx = -width;
-    }
-
-    if ( alignment & Qt::AlignBottom )
-    {
-        dy = 0;
-    }
-    else if ( alignment & Qt::AlignVCenter )
-    {
-        dy = height/2;
-    }
-    else if ( alignment & Qt::AlignTop )
-    {
-        dy = height;
-    }
-
-    // Offset 
-    double xoffset, yoffset;
-    value = fieldValue ( XOffset, feature );
-    if ( value.isEmpty() )
-    {
-        xoffset = mLabelAttributes->xOffset();
-    }
-    else
-    {
-        xoffset = value.toDouble();
-    }
-    value = fieldValue ( YOffset, feature );
-    if ( value.isEmpty() )
-    {
-        yoffset = mLabelAttributes->yOffset();
-    }
-    else
-    {
-        yoffset = value.toDouble();
-    }
-
-    // recalc offset to points
-    if (  mLabelAttributes->offsetType() == QgsLabelAttributes::MapUnits )
-    {
-        xoffset *= scale;
-        yoffset *= scale;
-    }
-
-    // Angle 
-    double ang;
-    value = fieldValue ( Angle, feature );
-    if ( value.isEmpty() )
-    {
-        ang = mLabelAttributes->angle();
-    }
-    else
-    {
-        ang = value.toDouble();
-    }
-
-
-    // Work out a suitable position to put the label for the
-    // feature. For multi-geometries, put the same label on each
-    // part.
-    if (useOverridePoint)
-    {
-      renderLabel(painter, overridePoint, coordTransform, 
-                  transform, text, font, pen, dx, dy,
-                  xoffset, yoffset, ang);
-    }
-    else
-    {
-      std::vector<QgsPoint> points;
-      labelPoint ( points, feature );
-      for (uint i = 0; i < points.size(); ++i)
-      {
-        renderLabel(painter, points[i], coordTransform, 
-                    transform, text, font, pen, dx, dy,
-                    xoffset, yoffset, ang);
-      }
-    }
-}
-
-void QgsLabel::renderLabel(QPainter* painter, QgsPoint point, 
-                           QgsCoordinateTransform* coordTransform,
-                           QgsMapToPixel* transform,
-                           QString text, QFont font, QPen pen,
-                           int dx, int dy, 
-                           double xoffset, double yoffset, 
-                           double ang)
-{
-    // Convert point to projected units
-    if (coordTransform)
-    {
-      try
-      {
-        point = coordTransform->transform(point);
-      }
-      catch(QgsCsException &cse)
-      {
-	QgsDebugMsg("Caught transform error in QgsLabel::renderLabel(). "
-		          "Skipping rendering this label");
-	return;
-      }
-    }
-
-    // and then to canvas units
-    transform->transform(&point);
-    double x = point.x();
-    double y = point.y();
-
-    static const double rad = ang * M_PI/180;
-
-    x = x + xoffset * cos(rad) - yoffset * sin(rad);
-    y = y - xoffset * sin(rad) - yoffset * cos(rad);
-
-    painter->save();
-    painter->setFont ( font );
-    painter->translate ( x, y );
-    painter->rotate ( -ang );
-    //
-    // Draw a buffer behind the text if one is desired
-    //
-    if (mLabelAttributes->bufferSizeIsSet() && mLabelAttributes->bufferEnabled())
-    {
-        int myBufferSize = static_cast<int>(mLabelAttributes->bufferSize());
-        if (mLabelAttributes->bufferColorIsSet())
-        {
-            painter->setPen( mLabelAttributes->bufferColor());
-        }
-        else //default to a white buffer
-        {
-            painter->setPen( Qt::white);
-        }
-        for (int i = dx-myBufferSize; i <= dx+myBufferSize; i++)
-        {
-            for (int j = dy-myBufferSize; j <= dy+myBufferSize; j++)
-            {
-                painter->drawText( i ,j, text);
-            }
-        }
-    }
-
-    painter->setPen ( pen );
-    painter->drawText ( dx, dy, text );
-    painter->restore();
-}
-
-void QgsLabel::addRequiredFields ( QgsAttributeList& fields )
-{
-    for ( uint i = 0; i < LabelFieldCount; i++ )
-    {
-        if ( mLabelFieldIdx[i] == -1 )
-            continue;
-        bool found = false;
-        for (QgsAttributeList::iterator it = fields.begin(); it != fields.end(); ++it)
-        {
-            if ( *it == mLabelFieldIdx[i] )
-            {
-                found = true;
-                break;
-            }
-        }
-        if (!found)
-        {
-            fields.append(mLabelFieldIdx[i]);
-        }
-    }
-}
-
-void QgsLabel::setFields( const QgsFieldMap & fields  )
-{
-    mField = fields;
-}
-
-QgsFieldMap & QgsLabel::fields ( void )
-{
-    return mField;
-}
-
-void QgsLabel::setLabelField ( int attr, int fieldIndex )
-{
-    if ( attr >= LabelFieldCount )
-        return;
-
-    mLabelFieldIdx[attr] = fieldIndex;
-}
-
-QString QgsLabel::labelField ( int attr )
-{
-    if ( attr > LabelFieldCount )
-        return QString();
-
-    int fieldIndex = mLabelFieldIdx[attr];
-    return mField[fieldIndex].name();
-}
-
-QgsLabelAttributes *QgsLabel::layerAttributes ( void )
-{
-    return mLabelAttributes;
-}
-
-void QgsLabel::labelPoint ( std::vector<QgsPoint>& points, QgsFeature & feature )
-{
-  QgsGeometry* geometry = feature.geometry();
-  unsigned char *geom = geometry->wkbBuffer();
-  QGis::WKBTYPE wkbType = geometry->wkbType();
-  
-  QgsPoint point;
-
-  switch (wkbType)
+  if ( mLabelFieldIdx[attr] == -1 )
   {
-  case QGis::WKBPoint25D:
-  case QGis::WKBPoint:
-  case QGis::WKBLineString25D:
-  case QGis::WKBLineString:
-  case QGis::WKBPolygon25D:
-  case QGis::WKBPolygon:
-    {
-      labelPoint(point, geom);
-      points.push_back(point);
-    }
-    break;
-  case QGis::WKBMultiPoint25D:
-  case QGis::WKBMultiPoint:
-  case QGis::WKBMultiLineString25D:
-  case QGis::WKBMultiLineString:
-  case QGis::WKBMultiPolygon25D:
-  case QGis::WKBMultiPolygon:
-    // Return a position for each individual in the multi-feature
-    {
-      int numFeatures = (int)(*(geom + 5));
-      geom += 9; // now points to start of array of WKB's
-      for (int i = 0; i < numFeatures; ++i)
-      {
-        geom = labelPoint(point, geom);
-        points.push_back(point);
-      }
-    }
-    break;
-  default:
-    QgsDebugMsg("Unknown geometry type of " + QString::number(wkbType));
+    return QString();
+  }
+
+  const QgsAttributeMap& attrs = feature.attributeMap();
+  QgsAttributeMap::const_iterator it = attrs.find( mLabelFieldIdx[attr] );
+
+  if ( it != attrs.end() )
+  {
+    return it->toString();
+  }
+  else
+  {
+    return QString();
   }
 }
 
-unsigned char* QgsLabel::labelPoint ( QgsPoint& point, unsigned char* geom)
+void QgsLabel::renderLabel( QPainter * painter, const QgsRectangle& viewExtent,
+                            const QgsCoordinateTransform* coordinateTransform,
+                            const QgsMapToPixel *transform,
+                            QgsFeature &feature, bool selected, QgsLabelAttributes *classAttributes,
+                            double sizeScale, double rasterScaleFactor )
 {
-    // Number of bytes that ints and doubles take in the WKB format.
-    static const unsigned int sizeOfInt = 4;
-    static const unsigned int sizeOfDouble = 8;
+  QPen pen;
+  QFont font;
+  QString value;
+  QString text;
 
-    QGis::WKBTYPE wkbType;
-    bool hasZValue = false;
-    double *x, *y;
-    unsigned char *ptr;
-    int *nPoints;
-    // Upon return from this function, this variable will contain a
-    // pointer to the first byte beyond the current feature.
-    unsigned char *nextFeature = geom;
+  /* Calc scale (not nice) */
+  QgsPoint point;
+  point = transform->transform( 0, 0 );
+  double x1 = point.x();
+  point = transform->transform( 1000, 0 );
+  double x2 = point.x();
+  double scale = ( x2 - x1 ) * 0.001;
 
-    memcpy(&wkbType, (geom+1), sizeof(wkbType));
+  /* Text */
+  value = fieldValue( Text, feature );
+  if ( value.isEmpty() )
+  {
+    text = mLabelAttributes->text();
+  }
+  else
+  {
+    text = value;
+  }
 
-    switch (wkbType)
+  /* Font */
+  value = fieldValue( Family, feature );
+  if ( value.isEmpty() )
+  {
+    font.setFamily( mLabelAttributes->family() );
+  }
+  else
+  {
+    font.setFamily( value );
+  }
+
+  double size;
+  value = fieldValue( Size, feature );
+  if ( value.isEmpty() )
+  {
+    size =  mLabelAttributes->size();
+  }
+  else
+  {
+    size =  value.toDouble();
+  }
+  int sizeType;
+  value = fieldValue( SizeType, feature );
+  if ( value.isEmpty() )
+    sizeType = mLabelAttributes->sizeType();
+  else
+  {
+    value = value.toLower();
+    if ( value.compare( "mapunits" ) == 0 )
+      sizeType = QgsLabelAttributes::MapUnits;
+    else
+      sizeType = QgsLabelAttributes::PointUnits;
+  }
+  if ( sizeType == QgsLabelAttributes::MapUnits )
+  {
+    size *= scale;
+  }
+  else //point units
+  {
+    double sizeMM = size * 0.3527;
+    size = sizeMM * sizeScale;
+  }
+
+  //Request font larger (multiplied by rasterScaleFactor) as a workaround for the Qt font bug
+  //and scale the painter down by rasterScaleFactor when drawing the label
+  size *= rasterScaleFactor;
+
+  if (( int )size <= 0 )
+    // skip too small labels
+    return;
+
+  font.setPixelSize( size );
+
+  value = fieldValue( Color, feature );
+  if ( value.isEmpty() )
+  {
+    pen.setColor( mLabelAttributes->color() );
+  }
+  else
+  {
+    pen.setColor( QColor( value ) );
+  }
+
+  value = fieldValue( Bold, feature );
+  if ( value.isEmpty() )
+  {
+    font.setBold( mLabelAttributes->bold() );
+  }
+  else
+  {
+    font.setBold(( bool ) value.toInt() );
+  }
+
+  value = fieldValue( Italic, feature );
+  if ( value.isEmpty() )
+  {
+    font.setItalic( mLabelAttributes->italic() );
+  }
+  else
+  {
+    font.setItalic(( bool ) value.toInt() );
+  }
+
+  value = fieldValue( Underline, feature );
+  if ( value.isEmpty() )
+  {
+    font.setUnderline( mLabelAttributes->underline() );
+  }
+  else
+  {
+    font.setUnderline(( bool ) value.toInt() );
+  }
+
+  //
+  QgsPoint overridePoint;
+  bool useOverridePoint = false;
+  value = fieldValue( XCoordinate, feature );
+  if ( !value.isEmpty() )
+  {
+    overridePoint.setX( value.toDouble() );
+    useOverridePoint = true;
+  }
+  value = fieldValue( YCoordinate, feature );
+  if ( !value.isEmpty() )
+  {
+    overridePoint.setY( value.toDouble() );
+    useOverridePoint = true;
+  }
+
+  /* Alignment */
+  int alignment;
+  QFontMetrics fm( font );
+  int width, height;
+
+  if ( mLabelAttributes->multilineEnabled() )
+  {
+    QStringList texts = text.split( "\n" );
+
+    width = 0;
+    for ( int i = 0; i < texts.size(); i++ )
     {
+      int w = fm.width( texts[i] );
+      if ( w > width )
+        width = w;
+    }
+
+    height = fm.height() * texts.size();
+  }
+  else
+  {
+    width = fm.width( text );
+    height = fm.height();
+  }
+
+  int dx = 0;
+  int dy = 0;
+
+  value = fieldValue( Alignment, feature );
+  if ( value.isEmpty() )
+  {
+    alignment = mLabelAttributes->alignment();
+  }
+  else
+  {
+    value = value.toLower();
+
+    alignment = 0;
+
+    if ( value.contains( "left" ) )
+      alignment |= Qt::AlignLeft;
+    else if ( value.contains( "right" ) )
+      alignment |= Qt::AlignRight;
+    else
+      alignment |= Qt::AlignHCenter;
+
+    if ( value.contains( "bottom" ) )
+      alignment |= Qt::AlignBottom;
+    else if ( value.contains( "top" ) )
+      alignment |= Qt::AlignTop;
+    else
+      alignment |= Qt::AlignVCenter;
+  }
+
+  if ( alignment & Qt::AlignLeft )
+  {
+    dx = 0;
+  }
+  else if ( alignment & Qt::AlignHCenter )
+  {
+    dx = -width / 2;
+  }
+  else if ( alignment & Qt::AlignRight )
+  {
+    dx = -width;
+  }
+
+  if ( alignment & Qt::AlignBottom )
+  {
+    dy = 0;
+  }
+  else if ( alignment & Qt::AlignVCenter )
+  {
+    dy = height / 2;
+  }
+  else if ( alignment & Qt::AlignTop )
+  {
+    dy = height;
+  }
+
+  // Offset
+  double xoffset, yoffset;
+  value = fieldValue( XOffset, feature );
+  if ( value.isEmpty() )
+  {
+    xoffset = mLabelAttributes->xOffset();
+  }
+  else
+  {
+    xoffset = value.toDouble();
+  }
+  value = fieldValue( YOffset, feature );
+  if ( value.isEmpty() )
+  {
+    yoffset = mLabelAttributes->yOffset();
+  }
+  else
+  {
+    yoffset = value.toDouble();
+  }
+
+  // recalc offset to pixels
+  if ( mLabelAttributes->offsetType() == QgsLabelAttributes::MapUnits )
+  {
+    xoffset *= scale;
+    yoffset *= scale;
+  }
+  else
+  {
+    xoffset = xoffset * 0.3527 * sizeScale;
+    yoffset = yoffset * 0.3527 * sizeScale;
+  }
+
+  // Angle
+  double ang;
+  value = fieldValue( Angle, feature );
+  if ( value.isEmpty() )
+  {
+    ang = mLabelAttributes->angle();
+  }
+  else
+  {
+    ang = value.toDouble();
+  }
+
+
+  // Work out a suitable position to put the label for the
+  // feature. For multi-geometries, put the same label on each
+  // part.
+  if ( useOverridePoint )
+  {
+    renderLabel( painter, overridePoint, coordinateTransform,
+                 transform, text, font, pen, dx, dy,
+                 xoffset, yoffset, ang, width, height, alignment, sizeScale, rasterScaleFactor );
+  }
+  else
+  {
+    std::vector<labelpoint> points;
+    labelPoint( points, feature );
+    for ( uint i = 0; i < points.size(); ++i )
+    {
+      renderLabel( painter, points[i].p, coordinateTransform,
+                   transform, text, font, pen, dx, dy,
+                   xoffset, yoffset, mLabelAttributes->angleIsAuto() ? points[i].angle : ang, width, height, alignment, sizeScale, rasterScaleFactor );
+    }
+  }
+}
+
+void QgsLabel::renderLabel( QPainter* painter, QgsPoint point,
+                            const QgsCoordinateTransform* coordinateTransform,
+                            const QgsMapToPixel* transform,
+                            QString text, QFont font, QPen pen,
+                            int dx, int dy,
+                            double xoffset, double yoffset,
+                            double ang,
+                            int width, int height, int alignment, double sizeScale, double rasterScaleFactor )
+{
+  // Convert point to projected units
+  if ( coordinateTransform )
+  {
+    try
+    {
+      point = coordinateTransform->transform( point );
+    }
+    catch ( QgsCsException &cse )
+    {
+      Q_UNUSED( cse ); // unused otherwise
+      QgsDebugMsg( "Caught transform error. Skipping rendering this label" );
+      return;
+    }
+  }
+
+  // and then to canvas units
+  transform->transform( &point );
+  double x = point.x();
+  double y = point.y();
+
+  double rad = ang * M_PI / 180;
+
+  x = x + xoffset * cos( rad ) - yoffset * sin( rad );
+  y = y - xoffset * sin( rad ) - yoffset * cos( rad );
+
+
+  painter->save();
+  painter->setFont( font );
+  painter->translate( x, y );
+  //correct oversampled font size back by scaling painter down
+  painter->scale( 1.0 / rasterScaleFactor, 1.0 / rasterScaleFactor );
+  painter->rotate( -ang );
+
+  //
+  // Draw a buffer behind the text if one is desired
+  //
+  if ( mLabelAttributes->bufferSizeIsSet() && mLabelAttributes->bufferEnabled() )
+  {
+    double myBufferSize = mLabelAttributes->bufferSize() * 0.3527 * sizeScale * rasterScaleFactor;
+    QPen bufferPen;
+    if ( mLabelAttributes->bufferColorIsSet() )
+    {
+      bufferPen.setColor( mLabelAttributes->bufferColor() );
+    }
+    else //default to a white buffer
+    {
+      bufferPen.setColor( Qt::white );
+    }
+    painter->setPen( bufferPen );
+
+    double bufferStepSize; //hack to distinguish pixel devices from logical devices
+    if (( sizeScale - 1 ) > 1.5 )
+    {
+      bufferStepSize = 1;
+    }
+    else //draw more dense in case of logical devices
+    {
+      bufferStepSize = 1 / rasterScaleFactor;
+    }
+
+    for ( double i = dx - myBufferSize; i <= dx + myBufferSize; i += bufferStepSize )
+    {
+      for ( double j = dy - myBufferSize; j <= dy + myBufferSize; j += bufferStepSize )
+      {
+        if ( mLabelAttributes->multilineEnabled() )
+          painter->drawText( QRectF( i, j - height, width, height ), alignment, text );
+        else
+          painter->drawText( QPointF( i, j ), text );
+      }
+    }
+  }
+
+  painter->setPen( pen );
+  if ( mLabelAttributes->multilineEnabled() )
+    painter->drawText( dx, dy - height, width, height, alignment, text );
+  else
+    painter->drawText( dx, dy, text );
+  painter->restore();
+}
+
+void QgsLabel::addRequiredFields( QgsAttributeList& fields ) const
+{
+  for ( uint i = 0; i < LabelFieldCount; i++ )
+  {
+    if ( mLabelFieldIdx[i] == -1 )
+      continue;
+    bool found = false;
+    for ( QgsAttributeList::iterator it = fields.begin(); it != fields.end(); ++it )
+    {
+      if ( *it == mLabelFieldIdx[i] )
+      {
+        found = true;
+        break;
+      }
+    }
+    if ( !found )
+    {
+      fields.append( mLabelFieldIdx[i] );
+    }
+  }
+}
+
+void QgsLabel::setFields( const QgsFieldMap & fields )
+{
+  mField = fields;
+}
+
+QgsFieldMap & QgsLabel::fields( void )
+{
+  return mField;
+}
+
+void QgsLabel::setLabelField( int attr, int fieldIndex )
+{
+  if ( attr >= LabelFieldCount )
+    return;
+
+  mLabelFieldIdx[attr] = fieldIndex;
+}
+
+QString QgsLabel::labelField( int attr ) const
+{
+  if ( attr > LabelFieldCount )
+    return QString();
+
+  int fieldIndex = mLabelFieldIdx[attr];
+  return mField[fieldIndex].name();
+}
+
+QgsLabelAttributes *QgsLabel::layerAttributes( void )
+{
+  return mLabelAttributes;
+}
+
+void QgsLabel::labelPoint( std::vector<labelpoint>& points, QgsFeature & feature )
+{
+  QgsGeometry *geometry = feature.geometry();
+  unsigned char *geom = geometry->asWkb();
+  size_t geomlen = geometry->wkbSize();
+  QGis::WkbType wkbType = geometry->wkbType();
+  labelpoint point;
+
+  switch ( wkbType )
+  {
     case QGis::WKBPoint25D:
     case QGis::WKBPoint:
-      {
-        x = (double *) (geom + 5);
-        y = (double *) (geom + 5 + sizeof(double));
-        point.set(*x, *y);
-        nextFeature += 1 + sizeOfInt + sizeOfDouble*2;
-      }
-      break;
     case QGis::WKBLineString25D:
-      hasZValue = true;
-    case QGis::WKBLineString: // Line center
+    case QGis::WKBLineString:
+    case QGis::WKBPolygon25D:
+    case QGis::WKBPolygon:
+    {
+      labelPoint( point, geom, geomlen );
+      points.push_back( point );
+    }
+    break;
+
+    case QGis::WKBMultiPoint25D:
+    case QGis::WKBMultiPoint:
+    case QGis::WKBMultiLineString25D:
+    case QGis::WKBMultiLineString:
+    case QGis::WKBMultiPolygon25D:
+    case QGis::WKBMultiPolygon:
+      // Return a position for each individual in the multi-feature
+    {
+      Q_ASSERT( 1 + sizeof( wkbType ) + sizeof( int ) <= geomlen );
+      geom += 1 + sizeof( wkbType );
+      int nFeatures = *( unsigned int * )geom;
+      geom += sizeof( int );
+
+      unsigned char *feature = geom;
+      for ( int i = 0; i < nFeatures && feature; ++i )
       {
-        double dx, dy, tl, l;
-        ptr = geom + 5;
-        nPoints = (int *)ptr;
-	if(hasZValue)
-	  {
-	    nextFeature += 1 + sizeOfInt*2 + (*nPoints)*sizeOfDouble*3;
-	  }
-	else
-	  {
-	    nextFeature += 1 + sizeOfInt*2 + (*nPoints)*sizeOfDouble*2;
-	  }
-        ptr = geom + 1 + 2 * sizeof(int);
-
-        tl = 0;
-        for (int i = 1; i < *nPoints; i++)
-        {
-	  if(hasZValue)
-	    {
-	      dx = ((double *)ptr)[3*i] - ((double *)ptr)[3*i-3];
-	      dy = ((double *)ptr)[3*i+1] - ((double *)ptr)[3*i-2];
-	    }
-	  else
-	    {
-	      dx = ((double *)ptr)[2*i] - ((double *)ptr)[2*i-2];
-	      dy = ((double *)ptr)[2*i+1] - ((double *)ptr)[2*i-1];
-	    }
-            tl += sqrt(dx*dx + dy*dy);
-        }
-        tl /= 2;
-
-        l = 0;
-        for (int i = 1; i < *nPoints; i++)
-        {
-            double dl;
-	    if(hasZValue)
-	      {
-		dx = ((double *)ptr)[3*i] - ((double *)ptr)[3*i-3];
-		dy = ((double *)ptr)[3*i+1] - ((double *)ptr)[3*i-2];
-	      }
-	    else
-	      {
-		dx = ((double *)ptr)[2*i] - ((double *)ptr)[2*i-2];
-		dy = ((double *)ptr)[2*i+1] - ((double *)ptr)[2*i-1];
-	      }
-            dl = sqrt(dx*dx + dy*dy);
-
-            if ( l+dl > tl )
-            {
-                l = tl - l;
-                double k = l/dl;
-
-		if(hasZValue)
-		  {
-		    point.setX ( ((double *)ptr)[3*i-3] +  k * dx  );
-		    point.setY ( ((double *)ptr)[3*i-2] + k * dy );
-		  }
-		else
-		  {
-		    point.setX ( ((double *)ptr)[2*i-2] +  k * dx  );
-		    point.setY ( ((double *)ptr)[2*i-1] + k * dy );
-		  }
-                break;
-            }
-            l += dl;
-        }
+        feature = labelPoint( point, feature, geom + geomlen - feature );
+        points.push_back( point );
       }
-      break;
+    }
+    break;
+    default:
+      QgsDebugMsg( "Unknown geometry type of " + QString::number( wkbType ) );
+  }
+}
+
+unsigned char* QgsLabel::labelPoint( labelpoint& point, unsigned char *geom, size_t geomlen )
+{
+  // verify that local types match sizes as WKB spec
+  Q_ASSERT( sizeof( int ) == 4 );
+  Q_ASSERT( sizeof( QGis::WkbType ) == 4 );
+  Q_ASSERT( sizeof( double ) == 8 );
+
+  if ( geom == NULL )
+  {
+    QgsDebugMsg( "empty wkb" );
+    return NULL;
+  }
+
+  QGis::WkbType wkbType;
+#ifndef QT_NO_DEBUG
+  unsigned char *geomend = geom + geomlen;
+#endif
+  Q_ASSERT( geom + 1 + sizeof( wkbType ) <= geomend );
+
+  geom++; // skip endianess
+  memcpy( &wkbType, geom, sizeof( wkbType ) );
+  geom += sizeof( wkbType );
+
+  int dims = 2;
+
+  switch ( wkbType )
+  {
+    case QGis::WKBPoint25D:
+    case QGis::WKBPoint:
+    {
+      Q_ASSERT( geom + 2*sizeof( double ) <= geomend );
+      double *pts = ( double * )geom;
+      point.p.set( pts[0], pts[1] );
+      point.angle = 0.0;
+      geom += 2 * sizeof( double );
+    }
+    break;
+
+    case QGis::WKBLineString25D:
+      dims = 3;
+    case QGis::WKBLineString: // Line center
+    {
+      Q_ASSERT( geom + sizeof( int ) <= geomend );
+      int nPoints = *( unsigned int * )geom;
+      geom += sizeof( int );
+
+      Q_ASSERT( geom + nPoints*sizeof( double )*dims <= geomend );
+
+      // get line center
+      double *pts = ( double * )geom;
+      double tl = 0.0;
+      for ( int i = 1; i < nPoints; i++ )
+      {
+        double dx = pts[dims*i]   - pts[dims*( i-1 )];
+        double dy = pts[dims*i+1] - pts[dims*( i-1 )+1];
+        tl += sqrt( dx * dx + dy * dy );
+      }
+      tl /= 2.0;
+
+      // find line center
+      double l = 0.0;
+      for ( int i = 1; i < nPoints; i++ )
+      {
+        double dx = pts[dims*i]   - pts[dims*( i-1 )];
+        double dy = pts[dims*i+1] - pts[dims*( i-1 )+1];
+        double dl = sqrt( dx * dx + dy * dy );
+
+        if ( l + dl > tl )
+        {
+          double k = ( tl - l ) / dl;
+
+          point.p.set( pts[dims*( i-1 )]   + k * dx,
+                       pts[dims*( i-1 )+1] + k * dy );
+          point.angle = atan2( dy, dx ) * 180.0 * M_1_PI;
+          break;
+        }
+
+        l += dl;
+      }
+
+      geom += nPoints * sizeof( double ) * dims;
+    }
+    break;
 
     case QGis::WKBPolygon25D:
-      hasZValue = true;
-    case QGis::WKBPolygon:
+      dims = 3;
+    case QGis::WKBPolygon: // centroid of outer ring
+    {
+      Q_ASSERT( geom + sizeof( int ) <= geomend );
+      int nRings = *( unsigned int * )geom;
+      geom += sizeof( int );
+
+      for ( int i = 0; i < nRings; ++i )
       {
-        double sx, sy;
-        ptr = geom + 1 + 2 * sizeof(int); // set pointer to the first ring
-        nPoints = (int *) ptr;
-        ptr += 4;
-        sx = sy = 0;
-        for (int i = 0; i < *nPoints-1; i++)
+        Q_ASSERT( geom + sizeof( int ) <= geomend );
+        int nPoints = *( unsigned int * )geom;
+        geom += sizeof( int );
+
+        Q_ASSERT( geom + nPoints*sizeof( double )*dims <= geomend );
+
+        if ( i == 0 )
         {
-	  if(hasZValue)
-	    {
-	      sx += ((double *)ptr)[3*i];
-	      sy += ((double *)ptr)[3*i+1];
-	    }
-	  else
-	    {
-	      sx += ((double *)ptr)[2*i];
-	      sy += ((double *)ptr)[2*i+1];
-	    }
+          double sx = 0.0, sy = 0.0;
+          double *pts = ( double* ) geom;
+          for ( int j = 0; j < nPoints - 1; j++ )
+          {
+            sx += pts[dims*j];
+            sy += pts[dims*j+1];
+          }
+          point.p.set( sx / ( nPoints - 1 ),
+                       sy / ( nPoints - 1 ) );
+          point.angle = 0.0;
         }
-        point.setX ( sx/(*nPoints-1) );
-        point.setY ( sy/(*nPoints-1) );
-        // Work out a pointer to the next feature after this one.
-        int numRings = (int)(*(geom+1+sizeOfInt));
-        unsigned char* nextRing = nextFeature + 1 + 2*sizeOfInt; 
-        for (int i = 0; i < numRings; ++i)
-        {
-          int numPoints = (int)(*nextRing);
-          // get the start of the next ring
-	  if(hasZValue)
-	    {
-	      nextRing += sizeOfInt + numPoints*sizeOfDouble*3;
-	    }
-	  else
-	    {
-	      nextRing += sizeOfInt + numPoints*sizeOfDouble*2;
-	    }
-        }
-        nextFeature = nextRing;
+
+        geom += nPoints * sizeof( double ) * dims;
       }
-      break;
+    }
+    break;
 
     default:
       // To get here is a bug because our caller should be filtering
       // on wkb type.
-      break;
-    }
-    return nextFeature;
+      QgsDebugMsg( "unsupported wkb type" );
+      return NULL;
+  }
+
+  return geom;
 }
 
-static int _elementFieldIndex(QDomElement& el)
+bool QgsLabel::readLabelField( QDomElement &el, int attr, QString prefix = "field" )
 {
-	QString str = el.attribute("field","");
-	if (str == "")
-		return -1;
-	else
-		return str.toInt();
+  QString name = prefix + "name";
+
+  if ( el.hasAttribute( name ) )
+  {
+    name = el.attribute( name );
+
+    QgsFieldMap::const_iterator field_it = mField.constBegin();
+    for(; field_it != mField.constEnd(); ++field_it)
+    {
+        if(field_it.value().name() == name)
+        {
+            break;
+        }
+    }
+
+    if ( field_it != mField.constEnd() )
+    {
+      mLabelFieldIdx[attr] = field_it.key();
+      return true;
+    }
+  }
+  else if ( el.hasAttribute( prefix ) )
+  {
+    QString value = el.attribute( prefix );
+    mLabelFieldIdx[attr] = value.isEmpty() ? -1 : value.toInt();
+    return true;
+  }
+
+  mLabelFieldIdx[attr] = -1;
+  return false;
 }
+
 
 void QgsLabel::readXML( const QDomNode& node )
 {
-    QgsDebugMsg(" called for layer label properties, got node " + node.nodeName());
+  QgsDebugMsg( " called for layer label properties, got node " + node.nodeName() );
 
-    QDomNode scratchNode;       // DOM node re-used to get current QgsLabel attribute
-    QDomElement el;
-    
-    int red, green, blue;
-    int type;
+  QDomNode scratchNode;       // Dom node re-used to get current QgsLabel attribute
+  QDomElement el;
 
-    /* Text */
-    scratchNode = node.namedItem("label");
+  int red, green, blue;
+  int type;
 
-    if ( scratchNode.isNull() )
+  /* Text */
+  scratchNode = node.namedItem( "label" );
+
+  if ( scratchNode.isNull() )
+  {
+    QgsDebugMsg( "couldn't find QgsLabel ``label'' attribute" );
+  }
+  else
+  {
+    el = scratchNode.toElement();
+    mLabelAttributes->setText( el.attribute( "text", "" ) );
+    readLabelField( el, Text );
+  }
+
+  /* Family */
+  scratchNode = node.namedItem( "family" );
+
+  if ( scratchNode.isNull() )
+  {
+    QgsDebugMsg( "couldn't find QgsLabel ``family'' attribute" );
+  }
+  else
+  {
+    el = scratchNode.toElement();
+    mLabelAttributes->setFamily( el.attribute( "name", "" ) );
+    readLabelField( el, Family );
+  }
+
+  /* Size */
+  scratchNode = node.namedItem( "size" );
+
+  if ( scratchNode.isNull() )
+  {
+    QgsDebugMsg( "couldn't find QgsLabel ``size'' attribute" );
+  }
+  else
+  {
+    el = scratchNode.toElement();
+    if ( !el.hasAttribute( "unitfield" ) && !el.hasAttribute( "unitfieldname" ) )
     {
-        QgsDebugMsg("couldn't find QgsLabel ``label'' attribute");
+      type = QgsLabelAttributes::unitsCode( el.attribute( "units", "" ) );
+      mLabelAttributes->setSize( el.attribute( "value", "0.0" ).toDouble(), type );
     }
     else
     {
-        el = scratchNode.toElement();
-        mLabelAttributes->setText ( el.attribute("text","") );
-        setLabelField ( Text, _elementFieldIndex(el) );
+      readLabelField( el, SizeType, "unitfield" );
     }
+    readLabelField( el, Size );
+  }
 
-    /* Family */
-    scratchNode = node.namedItem("family");
+  /* Bold */
+  scratchNode = node.namedItem( "bold" );
 
-    if ( scratchNode.isNull() )
-    {
-        QgsDebugMsg("couldn't find QgsLabel ``family'' attribute");
-    }
-    else
-    {
-        el = scratchNode.toElement();
-        mLabelAttributes->setFamily ( el.attribute("name","") );
-        setLabelField ( Family, _elementFieldIndex(el) );
-    }
+  if ( scratchNode.isNull() )
+  {
+    QgsDebugMsg( "couldn't find QgsLabel ``bold'' attribute" );
+  }
+  else
+  {
+    el = scratchNode.toElement();
+    mLabelAttributes->setBold(( bool )el.attribute( "on", "0" ).toInt() );
+    readLabelField( el, Bold );
+  }
 
-    /* Size */
-    scratchNode = node.namedItem("size");
+  /* Italic */
+  scratchNode = node.namedItem( "italic" );
 
-    if ( scratchNode.isNull() )
-    {
-       QgsDebugMsg("couldn't find QgsLabel ``size'' attribute");
-    }
-    else
-    {
-        el = scratchNode.toElement();
-        type = QgsLabelAttributes::unitsCode( el.attribute("units","") );
-        mLabelAttributes->setSize ( el.attribute("value", "0.0").toDouble(), type );
-        setLabelField ( Size, _elementFieldIndex(el) );
-    }
+  if ( scratchNode.isNull() )
+  {
+    QgsDebugMsg( "couldn't find QgsLabel ``italic'' attribute" );
+  }
+  else
+  {
+    el = scratchNode.toElement();
+    mLabelAttributes->setItalic(( bool )el.attribute( "on", "0" ).toInt() );
+    readLabelField( el, Italic );
+  }
 
-    /* Bold */
-    scratchNode = node.namedItem("bold");
+  /* Underline */
+  scratchNode = node.namedItem( "underline" );
 
-    if ( scratchNode.isNull() )
-    {
-        QgsDebugMsg("couldn't find QgsLabel ``bold'' attribute");
-    }
-    else
-    {
-        el = scratchNode.toElement();
-        mLabelAttributes->setBold ( (bool)el.attribute("on","0").toInt() );
-        setLabelField ( Bold, _elementFieldIndex(el) );
-    }
+  if ( scratchNode.isNull() )
+  {
+    QgsDebugMsg( "couldn't find QgsLabel ``underline'' attribute" );
+  }
+  else
+  {
+    el = scratchNode.toElement();
+    mLabelAttributes->setUnderline(( bool )el.attribute( "on", "0" ).toInt() );
+    readLabelField( el, Underline );
+  }
 
-    /* Italic */
-    scratchNode = node.namedItem("italic");
+  /* Color */
+  scratchNode = node.namedItem( "color" );
 
-    if ( scratchNode.isNull() )
-    {
-        QgsDebugMsg("couldn't find QgsLabel ``italic'' attribute");
-    }
-    else
-    {
-        el = scratchNode.toElement();
-        mLabelAttributes->setItalic ( (bool)el.attribute("on","0").toInt() );
-        setLabelField ( Italic, _elementFieldIndex(el) );
-    }
+  if ( scratchNode.isNull() )
+  {
+    QgsDebugMsg( "couldn't find QgsLabel ``color'' attribute" );
+  }
+  else
+  {
+    el = scratchNode.toElement();
 
-    /* Underline */
-    scratchNode = node.namedItem("underline");
+    red = el.attribute( "red", "0" ).toInt();
+    green = el.attribute( "green", "0" ).toInt();
+    blue = el.attribute( "blue", "0" ).toInt();
 
-    if ( scratchNode.isNull() )
-    {
-        QgsDebugMsg("couldn't find QgsLabel ``underline'' attribute");
-    }
-    else
-    {
-        el = scratchNode.toElement();
-        mLabelAttributes->setUnderline ( (bool)el.attribute("on","0").toInt() );
-        setLabelField ( Underline, _elementFieldIndex(el) );
-    }
+    mLabelAttributes->setColor( QColor( red, green, blue ) );
 
-    /* Color */
-    scratchNode = node.namedItem("color");
+    readLabelField( el, Color );
+  }
 
-    if ( scratchNode.isNull() )
-    {
-        QgsDebugMsg("couldn't find QgsLabel ``color'' attribute");
-    }
-    else
-    {
-        el = scratchNode.toElement();
+  /* X */
+  scratchNode = node.namedItem( "x" );
 
-        red = el.attribute("red","0").toInt();
-        green = el.attribute("green","0").toInt();
-        blue = el.attribute("blue","0").toInt();
+  if ( scratchNode.isNull() )
+  {
+    QgsDebugMsg( "couldn't find QgsLabel ``x'' attribute" );
+  }
+  else
+  {
+    el = scratchNode.toElement();
+    readLabelField( el, XCoordinate );
+  }
 
-        mLabelAttributes->setColor( QColor(red, green, blue) );
+  /* Y */
+  scratchNode = node.namedItem( "y" );
 
-        setLabelField ( Color, _elementFieldIndex(el) );
-    }
-
-    /* X */
-    scratchNode = node.namedItem("x");
-
-    if ( scratchNode.isNull() )
-    {
-        QgsDebugMsg("couldn't find QgsLabel ``x'' attribute");
-    }
-    else
-    {
-        el = scratchNode.toElement();
-        setLabelField ( XCoordinate, _elementFieldIndex(el) );
-    }
-
-    /* Y */
-    scratchNode = node.namedItem("y");
-
-    if ( scratchNode.isNull() )
-    {
-        QgsDebugMsg("couldn't find QgsLabel ``y'' attribute");
-    }
-    else
-    {
-        el = scratchNode.toElement();
-        setLabelField ( YCoordinate, _elementFieldIndex(el) );
-    }
+  if ( scratchNode.isNull() )
+  {
+    QgsDebugMsg( "couldn't find QgsLabel ``y'' attribute" );
+  }
+  else
+  {
+    el = scratchNode.toElement();
+    readLabelField( el, YCoordinate );
+  }
 
 
-    /* X,Y offset */
-    scratchNode = node.namedItem("offset");
+  /* X,Y offset */
+  scratchNode = node.namedItem( "offset" );
 
-    if ( scratchNode.isNull() )
-    {
-        QgsDebugMsg("couldn't find QgsLabel ``offset'' attribute");
-    }
-    else
-    {
-        double xoffset, yoffset;
+  if ( scratchNode.isNull() )
+  {
+    QgsDebugMsg( "couldn't find QgsLabel ``offset'' attribute" );
+  }
+  else
+  {
+    double xoffset, yoffset;
 
-        el = scratchNode.toElement();
+    el = scratchNode.toElement();
 
-        type = QgsLabelAttributes::unitsCode( el.attribute("units","") );
-        xoffset = el.attribute("x","0.0").toDouble();
-        yoffset = el.attribute("y","0.0").toDouble();
+    type = QgsLabelAttributes::unitsCode( el.attribute( "units", "" ) );
+    xoffset = el.attribute( "x", "0.0" ).toDouble();
+    yoffset = el.attribute( "y", "0.0" ).toDouble();
 
-        mLabelAttributes->setOffset ( xoffset, yoffset, type );
-        setLabelField ( XOffset, el.attribute("xfield","0").toInt() );
-        setLabelField ( YOffset, el.attribute("yfield","0").toInt() );
-    }
+    mLabelAttributes->setOffset( xoffset, yoffset, type );
+    readLabelField( el, XOffset, "xfield" );
+    readLabelField( el, YOffset, "yfield" );
+  }
 
-    /* Angle */
-    scratchNode = node.namedItem("angle");
+  /* Angle */
+  scratchNode = node.namedItem( "angle" );
 
-    if ( scratchNode.isNull() )
-    {
-        QgsDebugMsg("couldn't find QgsLabel ``angle'' attribute");
-    }
-    else
-    {
-        el = scratchNode.toElement();
-        mLabelAttributes->setAngle ( el.attribute("value","0.0").toDouble() );
-        setLabelField ( Angle, _elementFieldIndex(el) );
-    }
+  if ( scratchNode.isNull() )
+  {
+    QgsDebugMsg( "couldn't find QgsLabel ``angle'' attribute" );
+  }
+  else
+  {
+    el = scratchNode.toElement();
+    mLabelAttributes->setAngle( el.attribute( "value", "0.0" ).toDouble() );
+    readLabelField( el, Angle );
+    mLabelAttributes->setAutoAngle( el.attribute( "auto", "0" ) == "1" );
+  }
 
-    /* Alignment */
-    scratchNode = node.namedItem("alignment");
+  /* Alignment */
+  scratchNode = node.namedItem( "alignment" );
 
-    if ( scratchNode.isNull() )
-    {
-        QgsDebugMsg("couldn't find QgsLabel ``alignment'' attribute");
-    }
-    else
-    {
-        el = scratchNode.toElement();
-        mLabelAttributes->setAlignment ( QgsLabelAttributes::alignmentCode(el.attribute("value","")) );
-        setLabelField ( Alignment, _elementFieldIndex(el) );
-    }
+  if ( scratchNode.isNull() )
+  {
+    QgsDebugMsg( "couldn't find QgsLabel ``alignment'' attribute" );
+  }
+  else
+  {
+    el = scratchNode.toElement();
+    mLabelAttributes->setAlignment( QgsLabelAttributes::alignmentCode( el.attribute( "value", "" ) ) );
+    readLabelField( el, Alignment );
+  }
 
 
-    // Buffer
-    scratchNode = node.namedItem("buffercolor");
+  // Buffer
+  scratchNode = node.namedItem( "buffercolor" );
 
-    if ( scratchNode.isNull() )
-    {
-        QgsDebugMsg("couldn't find QgsLabel ``buffercolor'' attribute");
-    }
-    else
-    {
-        el = scratchNode.toElement();
+  if ( scratchNode.isNull() )
+  {
+    QgsDebugMsg( "couldn't find QgsLabel ``buffercolor'' attribute" );
+  }
+  else
+  {
+    el = scratchNode.toElement();
 
-        red = el.attribute("red","0").toInt();
-        green = el.attribute("green","0").toInt();
-        blue = el.attribute("blue","0").toInt();
+    red = el.attribute( "red", "0" ).toInt();
+    green = el.attribute( "green", "0" ).toInt();
+    blue = el.attribute( "blue", "0" ).toInt();
 
-        mLabelAttributes->setBufferColor( QColor(red, green, blue) );
-        setLabelField ( BufferColor, _elementFieldIndex(el) );
-    }
+    mLabelAttributes->setBufferColor( QColor( red, green, blue ) );
+    readLabelField( el, BufferColor );
+  }
 
-    scratchNode = node.namedItem("buffersize");
+  scratchNode = node.namedItem( "buffersize" );
 
-    if ( scratchNode.isNull() )
-    {
-        QgsDebugMsg("couldn't find QgsLabel ``bffersize'' attribute");
-    }
-    else
-    {
-        el = scratchNode.toElement();
+  if ( scratchNode.isNull() )
+  {
+    QgsDebugMsg( "couldn't find QgsLabel ``bffersize'' attribute" );
+  }
+  else
+  {
+    el = scratchNode.toElement();
 
-        type = QgsLabelAttributes::unitsCode( el.attribute("units","") );
-        mLabelAttributes->setBufferSize ( el.attribute("value","0.0").toDouble(), type );
-        setLabelField ( BufferSize, _elementFieldIndex(el) );
-    }
+    type = QgsLabelAttributes::unitsCode( el.attribute( "units", "" ) );
+    mLabelAttributes->setBufferSize( el.attribute( "value", "0.0" ).toDouble(), type );
+    readLabelField( el, BufferSize );
+  }
 
-    scratchNode = node.namedItem("bufferenabled");
+  scratchNode = node.namedItem( "bufferenabled" );
 
-    if ( scratchNode.isNull() )
-    {
-        QgsDebugMsg("couldn't find QgsLabel ``bufferenabled'' attribute");
-    }
-    else
-    {
-        el = scratchNode.toElement();
+  if ( scratchNode.isNull() )
+  {
+    QgsDebugMsg( "couldn't find QgsLabel ``bufferenabled'' attribute" );
+  }
+  else
+  {
+    el = scratchNode.toElement();
 
-        mLabelAttributes->setBufferEnabled ( (bool)el.attribute("on","0").toInt() );
-        setLabelField ( BufferEnabled, _elementFieldIndex(el) );
-    }
+    mLabelAttributes->setBufferEnabled(( bool )el.attribute( "on", "0" ).toInt() );
+    readLabelField( el, BufferEnabled );
+  }
+
+  scratchNode = node.namedItem( "multilineenabled" );
+
+  if ( scratchNode.isNull() )
+  {
+    QgsDebugMsg( "couldn't find QgsLabel ``multilineenabled'' attribute" );
+  }
+  else
+  {
+    el = scratchNode.toElement();
+
+    mLabelAttributes->setMultilineEnabled(( bool )el.attribute( "on", "0" ).toInt() );
+    readLabelField( el, MultilineEnabled );
+  }
 
 } // QgsLabel::readXML()
 
 
 
-void QgsLabel::writeXML(std::ostream& xml)
+void QgsLabel::writeXML( QDomNode & layer_node, QDomDocument & document ) const
 {
+  QDomElement labelattributes = document.createElement( "labelattributes" );
 
-    xml << "\t\t<labelattributes>\n";
+  // Text
+  QDomElement label = document.createElement( "label" );
+  label.setAttribute( "text", mLabelAttributes->text() );
+  if ( mLabelAttributes->textIsSet() && mLabelFieldIdx[Text] != -1 )
+  {
+    label.setAttribute( "fieldname", labelField( Text ) );
+  }
+  else
+  {
+    label.setAttribute( "fieldname", "" );
+  }
+  labelattributes.appendChild( label );
 
-    // Text
-    if (mLabelAttributes->textIsSet())
+  // Family
+  QDomElement family = document.createElement( "family" );
+  if ( mLabelAttributes->familyIsSet() && !mLabelAttributes->family().isNull() )
+  {
+    if ( mLabelFieldIdx[Family] != -1 )
     {
-      if (mLabelFieldIdx[Text] != -1)
+      family.setAttribute( "name", mLabelAttributes->family() );
+      family.setAttribute( "fieldname", labelField( Family ) );
+    }
+    else
+    {
+      family.setAttribute( "name", mLabelAttributes->family() );
+      family.setAttribute( "fieldname", "" );
+    }
+  }
+  else
+  {
+    family.setAttribute( "name", "Arial" );
+    family.setAttribute( "fieldname", "" );
+  }
+  labelattributes.appendChild( family );
+
+  // size and units
+  QDomElement size = document.createElement( "size" );
+  size.setAttribute( "value", mLabelAttributes->size() );
+  if ( mLabelAttributes->sizeIsSet() )
+  {
+    if ( mLabelFieldIdx[Size] != -1 )
+    {
+      if ( mLabelFieldIdx[SizeType] != -1 )
       {
-          xml << "\t\t\t<label text=\"" << (const char*)(mLabelAttributes->text().utf8())
-              << "\" field=\"" << mLabelFieldIdx[Text] << "\" />\n";
+        size.setAttribute( "unitfieldname", labelField( SizeType ) );
       }
       else
       {
-          xml << "\t\t\t<label text=\"" << (const char*)(mLabelAttributes->text().utf8())
-              << "\" field=\"\" />\n";
+        size.setAttribute( "units", QgsLabelAttributes::unitsName( mLabelAttributes->sizeType() ) );
       }
+      size.setAttribute( "fieldname", labelField( Size ) );
     }
     else
     {
-        xml << "\t\t\t<label text=\"" << (const char*)(mLabelAttributes->text().utf8())
-            << "\" field=\"\" />\n";
+      size.setAttribute( "units", QgsLabelAttributes::unitsName( mLabelAttributes->sizeType() ) );
+      size.setAttribute( "fieldname", "" );
     }
+  }
+  else
+  {
+    size.setAttribute( "value", "12" );
+    size.setAttribute( "units", "Points" );
+    size.setAttribute( "fieldname", "" );
+  }
+  labelattributes.appendChild( size );
 
-    // Family
-    if (mLabelAttributes->familyIsSet() && !mLabelAttributes->family().isNull())
+  // bold
+  QDomElement bold = document.createElement( "bold" );
+  if ( mLabelAttributes->boldIsSet() )
+  {
+    bold.setAttribute( "on", mLabelAttributes->bold() );
+    if ( mLabelFieldIdx[Bold] != -1 )
     {
-      if (mLabelFieldIdx[Family] != -1)
-      {
-          xml << "\t\t\t<family name=\"" << mLabelAttributes->family().utf8().data()
-              << "\" field=\"" << mLabelFieldIdx[Family] << "\" />\n";
-      }
-      else
-      {
-          xml << "\t\t\t<family name=\"" << mLabelAttributes->family().utf8().data()
-              << "\" field=\"\" />\n";
-      }
+      bold.setAttribute( "fieldname", labelField( Bold ) );
     }
     else
     {
-        xml << "\t\t\t<family name=\"Arial\" field=\"\" />\n";
+      bold.setAttribute( "fieldname", "" );
     }
+  }
+  else
+  {
+    bold.setAttribute( "on", 0 );
+    bold.setAttribute( "fieldname", 0 );
+  }
+  labelattributes.appendChild( bold );
 
-    // size and units
-    if (mLabelAttributes->sizeIsSet())
+  // italics
+  QDomElement italic = document.createElement( "italic" );
+  if ( mLabelAttributes->italicIsSet() )
+  {
+    italic.setAttribute( "on", mLabelAttributes->italic() );
+    if ( mLabelFieldIdx[Italic] != -1 )
     {
-      if (mLabelFieldIdx[Size] != -1)
-      {
-          xml << "\t\t\t<size value=\"" << mLabelAttributes->size()
-              << "\" units=\"" << (const char *)QgsLabelAttributes::unitsName(mLabelAttributes->sizeType()).utf8()
-              << "\" field=\"" << mLabelFieldIdx[Size] << "\" />\n";
-      }
-      else
-      {
-          xml << "\t\t\t<size value=\"" << mLabelAttributes->size()
-              << "\" units=\"" << (const char *)QgsLabelAttributes::unitsName(mLabelAttributes->sizeType()).utf8()
-              << "\" field=\"\" />\n";
-      }
+      italic.setAttribute( "fieldname", labelField( Italic ) );
     }
     else
     {
-        xml << "\t\t\t<size value=\"12\" units=\"Points\" field=\"\" />\n";
+      italic.setAttribute( "fieldname", "" );
     }
+  }
+  else
+  {
+    italic.setAttribute( "on", "0" );
+    italic.setAttribute( "fieldname", "" );
+  }
+  labelattributes.appendChild( italic );
 
-
-    // bold
-    if (mLabelAttributes->boldIsSet())
+  // underline
+  QDomElement underline = document.createElement( "underline" );
+  if ( mLabelAttributes->underlineIsSet() )
+  {
+    underline.setAttribute( "on", mLabelAttributes->underline() );
+    if ( mLabelFieldIdx[Underline] != -1 )
     {
-      if (mLabelFieldIdx[Bold] != -1)
-      {
-          xml << "\t\t\t<bold on=\"" << mLabelAttributes->bold()
-              << "\" field=\"" << mLabelFieldIdx[Bold] << "\" />\n";
-      }
-      else
-      {
-          xml << "\t\t\t<bold on=\"" << mLabelAttributes->bold()
-              << "\" field=\"\" />\n";
-      }
+      underline.setAttribute( "fieldname", labelField( Underline ) );
     }
     else
     {
-        xml << "\t\t\t<bold on=\"0\" field=\"0\" />\n";
+      underline.setAttribute( "fieldname", "" );
     }
+  }
+  else
+  {
+    underline.setAttribute( "on", 0 );
+    underline.setAttribute( "fieldname", "" );
+  }
+  labelattributes.appendChild( underline );
 
-    // italics
-    if (mLabelAttributes->italicIsSet())
+  // color
+  QDomElement color = document.createElement( "color" );
+  if ( mLabelAttributes->colorIsSet() )
+  {
+    color.setAttribute( "red", mLabelAttributes->color().red() );
+    color.setAttribute( "green", mLabelAttributes->color().green() );
+    color.setAttribute( "blue", mLabelAttributes->color().blue() );
+    if ( mLabelFieldIdx[Color] != -1 )
     {
-      if (mLabelFieldIdx[Italic] != -1)
-      {
-          xml << "\t\t\t<italic on=\"" << mLabelAttributes->italic()
-              << "\" field=\"" << mLabelFieldIdx[Italic] << "\" />\n";
-      }
-      else
-      {
-          xml << "\t\t\t<italic on=\"" << mLabelAttributes->italic()
-              << "\" field=\"\" />\n";
-      }
+      color.setAttribute( "fieldname", labelField( Color ) );
     }
     else
     {
-        xml << "\t\t\t<italic on=\"0\" field=\"\" />\n";
+      color.setAttribute( "fieldname", "" );
     }
-    
-    // underline
-    if (mLabelAttributes->underlineIsSet())
+  }
+  else
+  {
+    color.setAttribute( "red", 0 );
+    color.setAttribute( "green", 0 );
+    color.setAttribute( "blue", 0 );
+    color.setAttribute( "fieldname", "" );
+  }
+  labelattributes.appendChild( color );
+
+  /* X */
+  QDomElement x = document.createElement( "x" );
+  if ( mLabelFieldIdx[XCoordinate] != -1 )
+  {
+    x.setAttribute( "fieldname", labelField( XCoordinate ) );
+  }
+  else
+  {
+    x.setAttribute( "fieldname", "" );
+  }
+  labelattributes.appendChild( x );
+
+  /* Y */
+  QDomElement y = document.createElement( "y" );
+  if ( mLabelFieldIdx[YCoordinate] != -1 )
+  {
+    y.setAttribute( "fieldname", labelField( YCoordinate ) );
+  }
+  else
+  {
+    y.setAttribute( "fieldname", "" );
+  }
+  labelattributes.appendChild( y );
+
+  // offset
+  if ( mLabelAttributes->offsetIsSet() )
+  {
+    QDomElement offset = document.createElement( "offset" );
+    offset.setAttribute( "units", QgsLabelAttributes::unitsName( mLabelAttributes->offsetType() ) );
+    offset.setAttribute( "x", mLabelAttributes->xOffset() );
+    offset.setAttribute( "xfieldname", labelField( XOffset ) );
+    offset.setAttribute( "y", mLabelAttributes->yOffset() );
+    offset.setAttribute( "yfieldname", labelField( YOffset ) );
+    labelattributes.appendChild( offset );
+  }
+
+  // Angle
+  QDomElement angle = document.createElement( "angle" );
+  if ( mLabelAttributes->angleIsSet() )
+  {
+    angle.setAttribute( "value", mLabelAttributes->angle() );
+    if ( mLabelFieldIdx[Angle] != -1 )
     {
-      if (mLabelFieldIdx[Underline] != -1)
-      {
-          xml << "\t\t\t<underline on=\"" << mLabelAttributes->underline()
-              << "\" field=\"" << mLabelFieldIdx[Underline] << "\" />\n";
-      }
-      else
-      {
-          xml << "\t\t\t<underline on=\"" << mLabelAttributes->underline()
-              << "\" field=\"\" />\n";
-      }
+      angle.setAttribute( "fieldname", labelField( Angle ) );
     }
     else
     {
-        xml << "\t\t\t<underline on=\"0\" field=\"\" />\n";
+      angle.setAttribute( "fieldname", "" );
     }
+  }
+  else
+  {
+    angle.setAttribute( "value", "" );
+    angle.setAttribute( "fieldname", "" );
+  }
+  angle.setAttribute( "auto", mLabelAttributes->angleIsAuto() ? "1" : "0" );
+  labelattributes.appendChild( angle );
 
-    // color
-    if (mLabelAttributes->colorIsSet())
+  // alignment
+  if ( mLabelAttributes->alignmentIsSet() )
+  {
+    QDomElement alignment = document.createElement( "alignment" );
+    alignment.setAttribute( "value", QgsLabelAttributes::alignmentName( mLabelAttributes->alignment() ) );
+    alignment.setAttribute( "fieldname", labelField( Alignment ) );
+    labelattributes.appendChild( alignment );
+  }
+
+  // buffer color
+  QDomElement buffercolor = document.createElement( "buffercolor" );
+  if ( mLabelAttributes->bufferColorIsSet() )
+  {
+    buffercolor.setAttribute( "red", mLabelAttributes->bufferColor().red() );
+    buffercolor.setAttribute( "green", mLabelAttributes->bufferColor().green() );
+    buffercolor.setAttribute( "blue", mLabelAttributes->bufferColor().blue() );
+    if ( mLabelFieldIdx[BufferColor] != -1 )
     {
-      if (mLabelFieldIdx[Color] != -1)
-      {
-          xml << "\t\t\t<color red=\"" << mLabelAttributes->color().red()
-              << "\" green=\"" << mLabelAttributes->color().green()
-              << "\" blue=\"" << mLabelAttributes->color().blue()
-              << "\" field=\"" << mLabelFieldIdx[Color] << "\" />\n";
-      }
-      else
-      {
-          xml << "\t\t\t<color red=\"" << mLabelAttributes->color().red()
-              << "\" green=\"" << mLabelAttributes->color().green()
-              << "\" blue=\"" << mLabelAttributes->color().blue()
-              << "\" field=\"\" />\n";
-      }
+      buffercolor.setAttribute( "fieldname", labelField( BufferColor ) );
     }
     else
     {
-        xml << "\t\t\t<color red=\"0\" green=\"0\" blue=\"0\" field=\"\" />\n";
+      buffercolor.setAttribute( "fieldname", "" );
     }
+  }
+  else
+  {
+    buffercolor.setAttribute( "red", "" );
+    buffercolor.setAttribute( "green", "" );
+    buffercolor.setAttribute( "blue", "" );
+    buffercolor.setAttribute( "fieldname", "" );
+  }
+  labelattributes.appendChild( buffercolor );
 
-
-    /* X */
-    if (mLabelFieldIdx[XCoordinate] != -1)
+  // buffer size
+  QDomElement buffersize = document.createElement( "buffersize" );
+  if ( mLabelAttributes->bufferSizeIsSet() )
+  {
+    buffersize.setAttribute( "value", mLabelAttributes->bufferSize() );
+    buffersize.setAttribute( "units", QgsLabelAttributes::unitsName( mLabelAttributes->bufferSizeType() ) );
+    if ( mLabelFieldIdx[BufferSize] != -1 )
     {
-      xml << "\t\t\t<x field=\"" << mLabelFieldIdx[XCoordinate] << "\" />\n";
+      buffersize.setAttribute( "fieldname", labelField( BufferSize ) );
     }
     else
     {
-      xml << "\t\t\t<x field=\"\" />\n";
+      buffersize.setAttribute( "fieldname", "" );
     }
+  }
+  else
+  {
+    buffersize.setAttribute( "value", "" );
+    buffersize.setAttribute( "units", "" );
+    buffersize.setAttribute( "fieldname", "" );
+  }
+  labelattributes.appendChild( buffersize );
 
-    /* Y */
-    if (mLabelFieldIdx[YCoordinate] != -1)
+  // buffer enabled
+  QDomElement bufferenabled = document.createElement( "bufferenabled" );
+  if ( mLabelAttributes->bufferEnabled() )
+  {
+    bufferenabled.setAttribute( "on", mLabelAttributes->bufferEnabled() );
+    if ( mLabelFieldIdx[BufferEnabled] != -1 )
     {
-      xml << "\t\t\t<y field=\"" << mLabelFieldIdx[YCoordinate] << "\" />\n";
+      bufferenabled.setAttribute( "fieldname", labelField( BufferEnabled ) );
     }
     else
     {
-      xml << "\t\t\t<y field=\"\" />\n";
+      bufferenabled.setAttribute( "fieldname", "" );
     }
+  }
+  else
+  {
+    bufferenabled.setAttribute( "on", "" );
+    bufferenabled.setAttribute( "fieldname", "" );
+  }
+  labelattributes.appendChild( bufferenabled );
 
-    // offset
-    if ( mLabelAttributes->offsetIsSet() )
+  // multiline enabled
+  QDomElement multilineenabled = document.createElement( "multilineenabled" );
+  if ( mLabelAttributes->multilineEnabled() )
+  {
+    multilineenabled.setAttribute( "on", mLabelAttributes->multilineEnabled() );
+    if ( mLabelFieldIdx[MultilineEnabled] != -1 )
     {
-            xml << "\t\t\t<offset  units=\"" << QgsLabelAttributes::unitsName(mLabelAttributes->offsetType()).utf8().data()
-            << "\" x=\"" << mLabelAttributes->xOffset() << "\" xfield=\"" << mLabelFieldIdx[XOffset]
-            << "\" y=\"" << mLabelAttributes->yOffset() << "\" yfield=\"" << mLabelFieldIdx[YOffset]
-            << "\" />\n";
-    }
-
-    // Angle
-    if ( mLabelAttributes->angleIsSet() )
-    {
-      if (mLabelFieldIdx[Angle] != -1)
-      {
-          xml << "\t\t\t<angle value=\"" << mLabelAttributes->angle()
-              << "\" field=\"" << mLabelFieldIdx[Angle] << "\" />\n";
-      }
-      else
-      {
-          xml << "\t\t\t<angle value=\"" << mLabelAttributes->angle() << "\" field=\"\" />\n";
-      }
+      multilineenabled.setAttribute( "fieldname", labelField( MultilineEnabled ) );
     }
     else
     {
-        xml << "\t\t\t<angle value=\"\" field=\"\" />\n";
+      multilineenabled.setAttribute( "fieldname", "" );
     }
+  }
+  else
+  {
+    multilineenabled.setAttribute( "on", "" );
+    multilineenabled.setAttribute( "fieldname", "" );
+  }
+  labelattributes.appendChild( multilineenabled );
 
-    // alignment
-    if ( mLabelAttributes->alignmentIsSet() )
-    {
-      xml << "\t\t\t<alignment value=\"" << QgsLabelAttributes::alignmentName(mLabelAttributes->alignment()).utf8().data()
-            << "\" field=\"" << mLabelFieldIdx[Alignment] << "\" />\n";
-    }
-
-    // buffer color
-    if (mLabelAttributes->bufferColorIsSet())
-    {
-      if (mLabelFieldIdx[BufferColor] != -1)
-      {
-        xml << "\t\t\t<buffercolor red=\"" << mLabelAttributes->bufferColor().red()
-            << "\" green=\"" << mLabelAttributes->bufferColor().green()
-            << "\" blue=\"" << mLabelAttributes->bufferColor().blue()
-            << "\" field=\"" << mLabelFieldIdx[BufferColor] << "\" />\n";
-      }
-      else
-      {
-        xml << "\t\t\t<buffercolor red=\"" << mLabelAttributes->bufferColor().red()
-            << "\" green=\"" << mLabelAttributes->bufferColor().green()
-            << "\" blue=\"" << mLabelAttributes->bufferColor().blue()
-            << "\" field=\"\" />\n";
-      }
-    }
-    else
-    {
-        xml << "\t\t\t<buffercolor red=\"\" green=\"\" blue=\"\" field=\"\" />\n";
-    }
-
-    // buffer size
-    if (mLabelAttributes->bufferSizeIsSet())
-    {
-      if (mLabelFieldIdx[BufferSize] != -1)
-      {
-          xml << "\t\t\t<buffersize value=\"" << mLabelAttributes->bufferSize()
-              << "\" units=\"" << (const char *)QgsLabelAttributes::unitsName(mLabelAttributes->bufferSizeType()).utf8()
-              << "\" field=\"" << mLabelFieldIdx[BufferSize] << "\" />\n";
-      }
-      else
-      {
-          xml << "\t\t\t<buffersize value=\"" << mLabelAttributes->bufferSize()
-              << "\" units=\"" << (const char *)QgsLabelAttributes::unitsName(mLabelAttributes->bufferSizeType()).utf8()
-              << "\" field=\"\" />\n";
-      }
-    }
-    else
-    {
-        xml << "\t\t\t<buffersize value=\"\" units=\"\" field=\"\" />\n";
-    }
-
-    // buffer enabled
-    if (mLabelAttributes->bufferEnabled())
-    {
-      if (mLabelFieldIdx[BufferEnabled] != -1)
-      {
-          xml << "\t\t\t<bufferenabled on=\"" << mLabelAttributes->bufferEnabled()
-              << "\" field=\"" << mLabelFieldIdx[BufferEnabled] << "\" />\n";
-      }
-      else
-      {
-          xml << "\t\t\t<bufferenabled on=\"" << mLabelAttributes->bufferEnabled()
-              << "\" field=\"\" />\n";
-      }
-    }
-    else
-    {
-        xml << "\t\t\t<bufferenabled on=\"" << "\" field=\"" << "\" />\n";
-    }
-    xml << "\t\t</labelattributes>\n";
+  layer_node.appendChild( labelattributes );
 }
 
+void QgsLabel::setScaleBasedVisibility( bool theVisibilityFlag )
+{
+  mScaleBasedVisibility = theVisibilityFlag;
+}
+
+bool QgsLabel::scaleBasedVisibility() const
+{
+  return mScaleBasedVisibility;
+}
+
+void QgsLabel::setMinScale( float theMinScale )
+{
+  mMinScale = theMinScale;
+}
+
+float QgsLabel::minScale() const
+{
+  return mMinScale;
+}
+
+void QgsLabel::setMaxScale( float theMaxScale )
+{
+  mMaxScale = theMaxScale;
+}
+
+float QgsLabel::maxScale() const
+{
+  return mMaxScale;
+}

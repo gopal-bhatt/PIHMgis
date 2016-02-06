@@ -1,83 +1,83 @@
 K 25
 svn:wc:ra_dav:version-url
-V 76
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/spatialindex/rtree
+V 71
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/core/spatialindex/rtree
 END
 Statistics.h
 K 25
 svn:wc:ra_dav:version-url
-V 89
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/spatialindex/rtree/Statistics.h
+V 84
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/core/spatialindex/rtree/Statistics.h
 END
 RTree.cc
 K 25
 svn:wc:ra_dav:version-url
-V 85
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/spatialindex/rtree/RTree.cc
+V 80
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/core/spatialindex/rtree/RTree.cc
 END
 PointerPoolNode.h
 K 25
 svn:wc:ra_dav:version-url
-V 94
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/spatialindex/rtree/PointerPoolNode.h
+V 89
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/core/spatialindex/rtree/PointerPoolNode.h
 END
 RTree.h
 K 25
 svn:wc:ra_dav:version-url
-V 84
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/spatialindex/rtree/RTree.h
+V 79
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/core/spatialindex/rtree/RTree.h
 END
 BulkLoader.cc
 K 25
 svn:wc:ra_dav:version-url
-V 90
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/spatialindex/rtree/BulkLoader.cc
+V 85
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/core/spatialindex/rtree/BulkLoader.cc
 END
 Node.cc
 K 25
 svn:wc:ra_dav:version-url
-V 84
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/spatialindex/rtree/Node.cc
+V 79
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/core/spatialindex/rtree/Node.cc
 END
 BulkLoader.h
 K 25
 svn:wc:ra_dav:version-url
-V 89
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/spatialindex/rtree/BulkLoader.h
+V 84
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/core/spatialindex/rtree/BulkLoader.h
 END
 Index.cc
 K 25
 svn:wc:ra_dav:version-url
-V 85
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/spatialindex/rtree/Index.cc
+V 80
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/core/spatialindex/rtree/Index.cc
 END
 Leaf.cc
 K 25
 svn:wc:ra_dav:version-url
-V 84
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/spatialindex/rtree/Leaf.cc
+V 79
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/core/spatialindex/rtree/Leaf.cc
 END
 Node.h
 K 25
 svn:wc:ra_dav:version-url
-V 83
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/spatialindex/rtree/Node.h
+V 78
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/core/spatialindex/rtree/Node.h
 END
 Index.h
 K 25
 svn:wc:ra_dav:version-url
-V 84
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/spatialindex/rtree/Index.h
+V 79
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/core/spatialindex/rtree/Index.h
 END
 Leaf.h
 K 25
 svn:wc:ra_dav:version-url
-V 83
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/spatialindex/rtree/Leaf.h
+V 78
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/core/spatialindex/rtree/Leaf.h
 END
 Statistics.cc
 K 25
 svn:wc:ra_dav:version-url
-V 90
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/spatialindex/rtree/Statistics.cc
+V 85
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/core/spatialindex/rtree/Statistics.cc
 END

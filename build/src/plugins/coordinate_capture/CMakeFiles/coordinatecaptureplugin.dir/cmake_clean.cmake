@@ -1,0 +1,17 @@
+FILE(REMOVE
+"moc_coordinatecapture.cxx"
+"moc_coordinatecapturegui.cxx"
+"moc_coordinatecapturemaptool.cxx"
+"qrc_coordinatecapture.cxx"
+"ui_coordinatecaptureguibase.h"
+"libcoordinatecaptureplugin.pdb"
+"libcoordinatecaptureplugin.a"
+"libcoordinatecaptureplugin.so"
+"CMakeFiles/coordinatecaptureplugin.dir/coordinatecapture.o"
+"CMakeFiles/coordinatecaptureplugin.dir/coordinatecapturegui.o"
+"CMakeFiles/coordinatecaptureplugin.dir/coordinatecapturemaptool.o"
+"CMakeFiles/coordinatecaptureplugin.dir/moc_coordinatecapture.o"
+"CMakeFiles/coordinatecaptureplugin.dir/moc_coordinatecapturegui.o"
+"CMakeFiles/coordinatecaptureplugin.dir/moc_coordinatecapturemaptool.o"
+"CMakeFiles/coordinatecaptureplugin.dir/qrc_coordinatecapture.o"
+)

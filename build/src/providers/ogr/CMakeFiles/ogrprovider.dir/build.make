@@ -31,10 +31,10 @@ RM = /usr/bin/cmake -E remove -f
 CMAKE_EDIT_COMMAND = /usr/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0
+CMAKE_SOURCE_DIR = /Users/bhattgopal/dev/cpp/qgis_1.0.2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build
+CMAKE_BINARY_DIR = /Users/bhattgopal/dev/cpp/qgis_1.0.2/build
 
 # Include any dependencies generated for this target.
 include src/providers/ogr/CMakeFiles/ogrprovider.dir/depend.make
@@ -50,17 +50,17 @@ src/providers/ogr/CMakeFiles/ogrprovider.dir/depend.make.mark: ../src/providers/
 
 src/providers/ogr/CMakeFiles/ogrprovider.dir/qgsogrprovider.o: src/providers/ogr/CMakeFiles/ogrprovider.dir/flags.make
 src/providers/ogr/CMakeFiles/ogrprovider.dir/qgsogrprovider.o: ../src/providers/ogr/qgsogrprovider.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/providers/ogr/CMakeFiles/ogrprovider.dir/qgsogrprovider.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/providers/ogr/CMakeFiles/ogrprovider.dir/qgsogrprovider.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/providers/ogr/qgsogrprovider.cpp
+	/usr/bin/c++   $(CXX_FLAGS) -o src/providers/ogr/CMakeFiles/ogrprovider.dir/qgsogrprovider.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/providers/ogr/qgsogrprovider.cpp
 
 src/providers/ogr/CMakeFiles/ogrprovider.dir/qgsogrprovider.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/providers/ogr/CMakeFiles/ogrprovider.dir/qgsogrprovider.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/providers/ogr/qgsogrprovider.cpp > src/providers/ogr/CMakeFiles/ogrprovider.dir/qgsogrprovider.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/providers/ogr/qgsogrprovider.cpp > src/providers/ogr/CMakeFiles/ogrprovider.dir/qgsogrprovider.i
 
 src/providers/ogr/CMakeFiles/ogrprovider.dir/qgsogrprovider.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/providers/ogr/CMakeFiles/ogrprovider.dir/qgsogrprovider.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/providers/ogr/qgsogrprovider.cpp -o src/providers/ogr/CMakeFiles/ogrprovider.dir/qgsogrprovider.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/providers/ogr/qgsogrprovider.cpp -o src/providers/ogr/CMakeFiles/ogrprovider.dir/qgsogrprovider.s
 
 src/providers/ogr/CMakeFiles/ogrprovider.dir/qgsogrprovider.o.requires:
 
@@ -73,7 +73,7 @@ src/providers/ogr/CMakeFiles/ogrprovider.dir/depend: src/providers/ogr/CMakeFile
 
 src/providers/ogr/CMakeFiles/ogrprovider.dir/depend.make.mark:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --magenta --bold "Scanning dependencies of target ogrprovider"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0 /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/providers/ogr /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/providers/ogr /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/providers/ogr/CMakeFiles/ogrprovider.dir/DependInfo.cmake
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/bhattgopal/dev/cpp/qgis_1.0.2 /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/providers/ogr /Users/bhattgopal/dev/cpp/qgis_1.0.2/build /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/providers/ogr /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/providers/ogr/CMakeFiles/ogrprovider.dir/DependInfo.cmake
 
 # Object files for target ogrprovider
 ogrprovider_OBJECTS = \
@@ -83,23 +83,20 @@ ogrprovider_OBJECTS = \
 ogrprovider_EXTERNAL_OBJECTS =
 
 src/providers/ogr/libogrprovider.so: src/providers/ogr/CMakeFiles/ogrprovider.dir/qgsogrprovider.o
-src/providers/ogr/libogrprovider.so: /Library/Frameworks/Qt3Support.framework
-src/providers/ogr/libogrprovider.so: /Library/Frameworks/QtSvg.framework
-src/providers/ogr/libogrprovider.so: /Library/Frameworks/QtGui.framework
-src/providers/ogr/libogrprovider.so: /Library/Frameworks/QtXml.framework
-src/providers/ogr/libogrprovider.so: /Library/Frameworks/QtSql.framework
-src/providers/ogr/libogrprovider.so: /Library/Frameworks/QtNetwork.framework
 src/providers/ogr/libogrprovider.so: /Library/Frameworks/QtCore.framework
-src/providers/ogr/libogrprovider.so: /usr/lib/libz.dylib
+src/providers/ogr/libogrprovider.so: /Library/Frameworks/QtXml.framework
 src/providers/ogr/libogrprovider.so: /Library/Frameworks/GDAL.framework/Versions/1.5/unix/lib/libgdal.dylib
-src/providers/ogr/libogrprovider.so: /Library/Frameworks/geos.framework
+src/providers/ogr/libogrprovider.so: /Library/Frameworks/GEOS.framework/unix/lib/libgeos_c.dylib
 src/providers/ogr/libogrprovider.so: src/core/libqgis_core.dylib
+src/providers/ogr/libogrprovider.so: /Library/Frameworks/QtGui.framework
+src/providers/ogr/libogrprovider.so: /Library/Frameworks/QtSvg.framework
+src/providers/ogr/libogrprovider.so: /Library/Frameworks/QtNetwork.framework
 src/providers/ogr/libogrprovider.so: /Library/Frameworks/proj.framework
 src/providers/ogr/libogrprovider.so: /Library/Frameworks/sqlite3.framework
 src/providers/ogr/libogrprovider.so: src/providers/ogr/CMakeFiles/ogrprovider.dir/build.make
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX shared module libogrprovider.so"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/providers/ogr && $(CMAKE_COMMAND) -P CMakeFiles/ogrprovider.dir/cmake_clean_target.cmake
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/providers/ogr && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ogrprovider.dir/link.txt --verbose=$(VERBOSE)
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/providers/ogr && $(CMAKE_COMMAND) -P CMakeFiles/ogrprovider.dir/cmake_clean_target.cmake
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/providers/ogr && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ogrprovider.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 src/providers/ogr/CMakeFiles/ogrprovider.dir/build: src/providers/ogr/libogrprovider.so
@@ -107,5 +104,5 @@ src/providers/ogr/CMakeFiles/ogrprovider.dir/build: src/providers/ogr/libogrprov
 src/providers/ogr/CMakeFiles/ogrprovider.dir/requires: src/providers/ogr/CMakeFiles/ogrprovider.dir/qgsogrprovider.o.requires
 
 src/providers/ogr/CMakeFiles/ogrprovider.dir/clean:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/providers/ogr && $(CMAKE_COMMAND) -P CMakeFiles/ogrprovider.dir/cmake_clean.cmake
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/providers/ogr && $(CMAKE_COMMAND) -P CMakeFiles/ogrprovider.dir/cmake_clean.cmake
 

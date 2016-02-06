@@ -15,12 +15,12 @@
  *   (at your option) any later version.                                   *
  *                                                                         *
  ***************************************************************************/
- /* $Id: qgspluginmetadata.h 6415 2007-01-09 02:39:15Z wonder $ */
- 
+/* $Id: qgspluginmetadata.h 9138 2008-08-23 21:37:31Z jef $ */
+
 #ifndef QGSPLUGINMETADATA_H
 #define QGSPLUGINMETADATA_H
+#include <QString>
 class QgisPlugin;
-class QString;
 /**
 * \class QgsPluginMetadata
 * \brief Stores information about a loaded plugin, including a pointer to
@@ -29,17 +29,17 @@ class QString;
 */
 class QgsPluginMetadata
 {
-public:
- QgsPluginMetadata(QString _libraryPath, QString _name, QgisPlugin *_plugin, bool _python=false);
- QString name();
- QString library();
- QgisPlugin *plugin();
- bool isPython();
-private:
- QString m_name;
- QString libraryPath;
- QgisPlugin *m_plugin;
- bool m_python;
+  public:
+    QgsPluginMetadata( QString _libraryPath, QString _name, QgisPlugin *_plugin, bool _python = false );
+    QString name();
+    QString library();
+    QgisPlugin *plugin();
+    bool isPython();
+  private:
+    QString m_name;
+    QString libraryPath;
+    QgisPlugin *m_plugin;
+    bool m_python;
 };
 #endif //QGSPLUGINMETADATA_H
 

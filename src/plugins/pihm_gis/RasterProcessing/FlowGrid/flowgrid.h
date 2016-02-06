@@ -3,15 +3,17 @@
 
 #include "ui_flowgrid.h"
 //??#include <qgisapp.h>
-
+#include <qgisinterface.h>
 class FlowGridDlg : public QDialog, private Ui::FlowGrid
 {
         Q_OBJECT
 public:
         FlowGridDlg(QWidget *parent = 0);
 
-//??	void setApplicationPointer(QgisApp *);
-//??	QgisApp* applicationPointer;
+//??	
+void setApplicationPointer(QgisInterface *);
+//??	
+QgisInterface* applicationPointer;
 
 public slots:
         void inputBrowse();

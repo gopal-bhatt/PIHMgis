@@ -14,160 +14,8 @@ typedef QVector< QVector<QgsPoint> > QgsMultiPolyline;
 /** a collection of QgsPolygons that share a common collection of attributes */
 typedef QVector< QVector< QVector<QgsPoint> > > QgsMultiPolygon;
 
+typedef unsigned int size_t;
     
-template <TYPE>
-%MappedType QVector< QVector<TYPE> >
-{
-%TypeHeaderCode
-#include <QVector>
-%End
-
-%ConvertFromTypeCode
-  // Create the list.
-  PyObject *l;
-
-  if ((l = PyList_New(sipCpp->size())) == NULL)
-    return NULL;
-      
-  const sipMappedType* qvector_qgspoint = sipFindMappedType("QVector<QgsPoint>");
-      
-  // Set the list elements.
-  for (int i = 0; i < sipCpp->size(); ++i)
-  {
-    QVector<TYPE>* t = new QVector<TYPE>(sipCpp->at(i));
-    PyObject *tobj;
-
-    if ((tobj = sipConvertFromMappedType(t, qvector_qgspoint, sipTransferObj)) == NULL)
-    {
-      Py_DECREF(l);
-      delete t;
-      return NULL;
-    }
-    PyList_SET_ITEM(l, i, tobj);
-  }
- 
-  return l;
-%End
-
-%ConvertToTypeCode
-  const sipMappedType* qvector_qgspoint = sipFindMappedType("QVector<QgsPoint>");
-  
-  // Check the type if that is all that is required.
-  if (sipIsErr == NULL)
-  {
-    if (!PyList_Check(sipPy))
-      return 0;
-
-    for (int i = 0; i < PyList_GET_SIZE(sipPy); ++i)
-      if (!sipCanConvertToMappedType(PyList_GET_ITEM(sipPy, i), qvector_qgspoint, SIP_NOT_NONE))
-        return 0;
-
-    return 1;
-  }
-
-  
-  QVector< QVector<TYPE> > *ql = new QVector< QVector<TYPE> >;
-
-  for (int i = 0; i < PyList_GET_SIZE(sipPy); ++i)
-  {
-    int state;
-    //TYPE *t = reinterpret_cast<TYPE *>(sipConvertToInstance(PyList_GET_ITEM(sipPy, i), sipClass_TYPE, sipTransferObj, SIP_NOT_NONE, &state, sipIsErr));
-    QVector<TYPE> * t = reinterpret_cast< QVector<TYPE> * >(sipConvertToMappedType(PyList_GET_ITEM(sipPy, i), qvector_qgspoint, sipTransferObj, SIP_NOT_NONE, &state, sipIsErr));
-
-    if (*sipIsErr)
-    {
-      sipReleaseInstance(t, sipClass_TYPE, state);
-      delete ql;
-      return 0;
-    }
-    ql->append(*t);
-    sipReleaseInstance(t, sipClass_TYPE, state);
-  }
-
-  *sipCppPtr = ql;
-  return sipGetState(sipTransferObj);
-%End
-
-};
-
-
-template <TYPE>
-%MappedType QVector< QVector< QVector<TYPE> > >
-{
-%TypeHeaderCode
-#include <QVector>
-%End
-
-%ConvertFromTypeCode
-  // Create the list.
-  PyObject *l;
-
-  if ((l = PyList_New(sipCpp->size())) == NULL)
-    return NULL;
-      
-  const sipMappedType* qvector_qgspoint = sipFindMappedType("QVector<QVector<QgsPoint> >");
-      
-  // Set the list elements.
-  for (int i = 0; i < sipCpp->size(); ++i)
-  {
-    QVector<QVector<TYPE> >* t = new QVector<QVector<TYPE> >(sipCpp->at(i));
-    PyObject *tobj;
-
-    if ((tobj = sipConvertFromMappedType(t, qvector_qgspoint, sipTransferObj)) == NULL)
-    {
-      Py_DECREF(l);
-      delete t;
-      return NULL;
-    }
-    PyList_SET_ITEM(l, i, tobj);
-  }
-  return l;
-%End
-
-%ConvertToTypeCode
-  
-  const sipMappedType* qvector_qgspoint = sipFindMappedType("QVector<QVector<QgsPoint> >");
-  
-  // Check the type if that is all that is required.
-  if (sipIsErr == NULL)
-  {
-    if (!PyList_Check(sipPy))
-      return 0;
-
-    for (int i = 0; i < PyList_GET_SIZE(sipPy); ++i)
-      if (!sipCanConvertToMappedType(PyList_GET_ITEM(sipPy, i), qvector_qgspoint, SIP_NOT_NONE))
-        return 0;
-
-    return 1;
-  }
-
-  
-  QVector< QVector< QVector<TYPE> > > *ql = new QVector< QVector< QVector<TYPE> > >;
-
-  for (int i = 0; i < PyList_GET_SIZE(sipPy); ++i)
-  {
-    int state;
-    //TYPE *t = reinterpret_cast<TYPE *>(sipConvertToInstance(PyList_GET_ITEM(sipPy, i), sipClass_TYPE, sipTransferObj, SIP_NOT_NONE, &state, sipIsErr));
-    QVector<QVector<TYPE> > * t = reinterpret_cast< QVector< QVector<TYPE> > * >(sipConvertToMappedType(PyList_GET_ITEM(sipPy, i), qvector_qgspoint, sipTransferObj, SIP_NOT_NONE, &state, sipIsErr));
-
-    if (*sipIsErr)
-    {
-      sipReleaseInstance(t, sipClass_TYPE, state);
-      delete ql;
-      return 0;
-    }
-    ql->append(*t);
-    sipReleaseInstance(t, sipClass_TYPE, state);
-  }
-
-  *sipCppPtr = ql;
-  return sipGetState(sipTransferObj);
-%End
-
-};
-
-
-
 class QgsGeometry
 {
 %TypeHeaderCode
@@ -187,45 +35,57 @@ class QgsGeometry
     ~QgsGeometry();
 
 
-    /** static method that creates geometry from WKT */
+    /** static method that creates geometry from Wkt */
     static QgsGeometry* fromWkt(QString wkt) /Factory/;
     
     /** construct geometry from a point */
     static QgsGeometry* fromPoint(const QgsPoint& point) /Factory/;
+    /** construct geometry from a multipoint */
+    static QgsGeometry* fromMultiPoint(const QgsMultiPoint& multipoint) /Factory/;
     /** construct geometry from a polyline */
     static QgsGeometry* fromPolyline(const QgsPolyline& polyline) /Factory/;
+    /** construct geometry from a multipolyline*/
+    static QgsGeometry* fromMultiPolyline(const QgsMultiPolyline& multiline) /Factory/;
     /** construct geometry from a polygon */
     static QgsGeometry* fromPolygon(const QgsPolygon& polygon) /Factory/;
+    /** construct geometry from a multipolygon */
+    static QgsGeometry* fromMultiPolygon(const QgsMultiPolygon& multipoly) /Factory/;
     /** construct geometry from a rectangle */
-    static QgsGeometry* fromRect(const QgsRect& rect) /Factory/;
+    static QgsGeometry* fromRect(const QgsRectangle& rect) /Factory/;
         
-    typedef unsigned int size_t;
 
     
     /** 
        Set the geometry, feeding in the buffer containing OGC Well-Known Binary and the buffer's length.
        This class will take ownership of the buffer.
     */
-    // SIP: buffer will be transferred from python to C++
-    // TODO: create pythonic interface that will receive wkb as a string
-    void setWkbAndOwnership(unsigned char * wkb /Transfer, Array/, size_t length /ArraySize/);
+    void fromWkb(unsigned char * wkb /Array/, size_t length /ArraySize/);
+%MethodCode
+  // create copy of Python's string and pass it to fromWkb()
+  unsigned char * copy = new unsigned char[a1];
+  memcpy(copy, a0, a1);
+  sipCpp->fromWkb(copy, a1);
+%End
     
     /** 
        Returns the buffer containing this geometry in WKB format.
        You may wish to use in conjunction with wkbSize().
     */
-    unsigned char * wkbBuffer();
+    SIP_PYOBJECT asWkb();
+%MethodCode
+  sipRes = PyString_FromStringAndSize((const char *)sipCpp->asWkb(), sipCpp->wkbSize());
+%End
     
     /** 
-       Returns the size of the WKB in wkbBuffer().
+       Returns the size of the WKB in asWkb().
     */
     size_t wkbSize();
     
     /** Returns type of wkb (point / linestring / polygon etc.) */
-    QGis::WKBTYPE wkbType();
+    QGis::WkbType wkbType();
 
     /** Returns type of the vector */
-    QGis::VectorType vectorType();
+    QGis::GeometryType type();
 
     /** Returns true if wkb of the geometry is of WKBMulti* type */
     bool isMultipart();
@@ -234,7 +94,7 @@ class QgsGeometry
        Set the geometry, feeding in a geometry in GEOS format.
     */
     // TODO: unsupported class... would be possible to use PyGEOS?
-    //void setGeos(geos::Geometry* geos);
+    //void fromGeos(geos::Geometry* geos);
 
     double distance(QgsGeometry& geom);
 
@@ -242,8 +102,7 @@ class QgsGeometry
        Returns the vertex closest to the given point 
        (and also vertex index, squared distance and indexes of the vertices before/after)
     */
-    QgsPoint closestVertex(const QgsPoint& point, QgsGeometryVertexIndex& atVertex, int& beforeVertex, int& afterVertex, double& sqrDist);
-
+    QgsPoint closestVertex(const QgsPoint& point, int& atVertex /Out/, int& beforeVertex /Out/, int& afterVertex /Out/, double& sqrDist /Out/);
 
     /**
        Returns the indexes of the vertices before and after the given vertex index.
@@ -257,8 +116,7 @@ class QgsGeometry
           account the first vertex is equal to the last vertex (and will
           skip equal vertex positions).
     */
-    void adjacentVerticies(const QgsGeometryVertexIndex& atVertex, int& beforeVertex, int& afterVertex);
-
+    void adjacentVertices(int atVertex, int& beforeVertex /Out/, int& afterVertex /Out/);
 
     /** Insert a new vertex before the given vertex index,
      *  ring and item (first number is index 0)
@@ -271,7 +129,7 @@ class QgsGeometry
      *  these error conditions.  (Or maybe we add another method to this
      *  object to help make the distinction?)
      */
-    bool insertVertexBefore(double x, double y, QgsGeometryVertexIndex beforeVertex);
+	bool insertVertex(double x, double y, int beforeVertex);
 
     /** Moves the vertex at the given position number,
      *  ring and item (first number is index 0)
@@ -279,9 +137,9 @@ class QgsGeometry
      *  Returns FALSE if atVertex does not correspond to a valid vertex
      *  on this geometry 
      */
-    bool moveVertexAt(double x, double y, QgsGeometryVertexIndex atVertex);
-
-    /** Deletes the vertex at the given position number,
+	bool moveVertex(double x, double y, int atVertex);
+    
+	/** Deletes the vertex at the given position number,
      *  ring and item (first number is index 0)
      *  Returns FALSE if atVertex does not correspond to a valid vertex
      *  on this geometry (including if this geometry is a Point),
@@ -291,32 +149,28 @@ class QgsGeometry
      *  these error conditions.  (Or maybe we add another method to this
      *  object to help make the distinction?)
      */
-    bool deleteVertexAt(QgsGeometryVertexIndex atVertex);
-
-    /**
-        Returns the squared cartesian distance between the given point
-        to the given vertex index (vertex at the given position number,
-        ring and item (first number is index 0))
-
-     */
-    double sqrDistToVertexAt(QgsPoint& point,
-                             QgsGeometryVertexIndex& atVertex /Out/);
+	bool deleteVertex(int atVertex);
 
     /**
      *  Returns coordinates of a vertex.
      *  @param atVertex index of the vertex
      *  @return Coordinates of the vertex or QgsPoint(0,0) on error
      */
-    QgsPoint vertexAt(const QgsGeometryVertexIndex& atVertex);
+    QgsPoint vertexAt(int atVertex);
 
     /**
+        Returns the squared cartesian distance between the given point
+        to the given vertex index*/
+	double sqrDistToVertexAt(QgsPoint& point /In/, int atVertex);
+
+	
+	/**
      * Searches for the the closest vertex in this geometry to the given point.
      * @param point Specifiest the point for search
      * @param atVertex Receives index of the closest vertex
      * @return The squared cartesian distance is also returned in sqrDist, negative number on error
      */
-    double closestVertexWithContext(const QgsPoint& point,
-                                    QgsGeometryVertexIndex& atVertex /Out/);
+    double closestVertexWithContext(const QgsPoint& point, int& atVertex /Out/);
 
     /**
      * Searches for the closest segment of geometry to the given point
@@ -325,21 +179,68 @@ class QgsGeometry
      * @param beforeVertex Receives index of the vertex before the closest segment
      * @return The squared cartesian distance is also returned in sqrDist, negative number on error
      */
-    double closestSegmentWithContext(const QgsPoint& point,
-                                     QgsPoint& minDistPoint /Out/,
-                                     QgsGeometryVertexIndex& beforeVertex /Out/);
+    double closestSegmentWithContext(const QgsPoint& point, QgsPoint& minDistPoint /Out/, int& beforeVertex /Out/);
+
+ /**Adds a new ring to this geometry. This makes only sense for polygon and multipolygons.
+     @return 0 in case of success (ring added), 1 problem with geometry type, 2 ring not closed, \
+     3 ring is not valid geometry, 4 ring not disjoint with existing rings, 5 no polygon found which contained the ring*/
+    int addRing(const QList<QgsPoint>& ring);
+
+ /**Adds a new island polygon to a multipolygon feature
+     @return 0 in case of success, 1 if not a multipolygon, 2 if ring is not a valid geometry, 3 if new polygon ring \
+not disjoint with existing polygons of the feature*/
+    int addIsland(const QList<QgsPoint>& ring);
+
+ /**Translate this geometry by dx, dy
+     @return 0 in case of success*/
+    int translate(double dx, double dy);
+
+ /**Splits this geometry according to a given line. Note that the geometry is only splitted once. If there are several intersections
+    between geometry and splitLine, only the first one is considered.
+    @param splitLine the line that splits the geometry
+    @param newGeometrys OUT: list of new geometries that have been created with the split
+    @param topological true if topological editing is enabled
+    @topologyTestPoints OUT: points that need to be tested for topological completeness in the dataset
+    @return 0 in case of success, 1 if geometry has not been split, error else*/
+    int splitGeometry(const QList<QgsPoint>& splitLine, QList<QgsGeometry*>& newGeometries, bool topological, QList<QgsPoint>& topologyTestPoints);
+
+ /**Changes this geometry such that it does not intersect the other geometry
+       @param other geometry that should not be intersect
+       @return 0 in case of success*/
+    int makeDifference(QgsGeometry* other);	
 
     /**Returns the bounding box of this feature*/
-    QgsRect boundingBox();
+    QgsRectangle boundingBox();
 
     /** Test for intersection with a rectangle (uses GEOS) */
-    bool intersects(const QgsRect& r);
+    bool intersects(const QgsRectangle& r);
     /** Test for intersection with a geoemetry (uses GEOS) */
     bool intersects(QgsGeometry* geometry);
 
     /** Test for containment of a point (uses GEOS) */
     bool contains(QgsPoint* p);
 
+    /** Returns a buffer region around this geometry having the given width and with a specified number
+        of segments used to approximate curves */
+    QgsGeometry* buffer(double distance, int segments) /Factory/;
+
+    /** Returns the smallest convex polygon that contains all the points in the geometry. */
+    QgsGeometry* convexHull() /Factory/;
+    
+    /** Returns a geometry representing the points shared by this geometry and other. */
+    QgsGeometry* intersection(QgsGeometry* geometry) /Factory/;
+    
+    /** Returns a geometry representing all the points in this geometry and other (a 
+     * union geometry operation). 
+     * @note this operation is not called union since its a reserved word in C++.*/
+    QgsGeometry* combine( QgsGeometry* geometry ) /Factory/;
+    
+    /** Returns a geometry representing the points making up this geometry that do not make up other. */
+    QgsGeometry* difference(QgsGeometry* geometry) /Factory/;
+    
+    /** Returns a Geometry representing the points making up this Geometry that do not make up other. */
+    QgsGeometry* symDifference(QgsGeometry* geometry) /Factory/;
+    
     /**Creates a geos geometry from this features geometry. Note, that the returned object needs to be deleted*/
     // TODO: unsupported class... would be possible to use PyGEOS?
     //geos::Geometry* geosGeometry() const;

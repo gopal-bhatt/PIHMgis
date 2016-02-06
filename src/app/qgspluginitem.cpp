@@ -1,7 +1,7 @@
 /***************************************************************************
-                               qgspluginitem.cpp  
+                               qgspluginitem.cpp
                              -------------------
-    begin                : 
+    begin                :
     copyright            : (C) 2004 by Gary E.Sherman
     email                : sherman at mrcc.com
  ***************************************************************************/
@@ -14,12 +14,11 @@
  *   (at your option) any later version.                                   *
  *                                                                         *
  ***************************************************************************/
-/* $Id: qgspluginitem.cpp 6415 2007-01-09 02:39:15Z wonder $ */
-#include <qstring.h>
+/* $Id: qgspluginitem.cpp 9526 2008-10-23 13:39:22Z wonder $ */
 #include "qgspluginitem.h"
 
-QgsPluginItem::QgsPluginItem(QString _name, QString _description, QString _fullPath, QString _type, bool _python):
-m_name(_name), m_description(_description), m_fullPath(_fullPath), m_type(_type), m_python(_python)
+QgsPluginItem::QgsPluginItem( QString _name, QString _fullPath, QString _type, bool _python ):
+    m_name( _name ), m_fullPath( _fullPath ), m_type( _type ), m_python( _python )
 {
 
 }

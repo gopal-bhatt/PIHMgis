@@ -1,6 +1,6 @@
 /***************************************************************************
             qgsogrprovider.h Data provider for ESRI shapefile format
-                    Formerly known as qgsshapefileprovider.h  
+                    Formerly known as qgsshapefileprovider.h
 begin                : Oct 29, 2003
 copyright            : (C) 2003 by Gary E.Sherman
 email                : sherman at mrcc.com
@@ -14,30 +14,15 @@ email                : sherman at mrcc.com
  *   (at your option) any later version.                                   *
  *                                                                         *
  ***************************************************************************/
-/* $Id: qgsogrprovider.h 6879 2007-04-11 11:46:35Z wonder $ */
+/* $Id: qgsogrprovider.h 9605 2008-11-09 00:14:12Z timlinux $ */
 
-#include "qgsrect.h"
+#include "qgsrectangle.h"
 #include "qgsvectordataprovider.h"
-
-#include <geos.h>
-#if GEOS_VERSION_MAJOR < 3
-#define GEOS_GEOM geos
-#define GEOS_IO geos
-#define GEOS_UTIL geos
-#else
-#define GEOS_GEOM geos::geom
-#define GEOS_IO geos::io
-#define GEOS_UTIL geos::util
-#endif
 
 class QgsFeature;
 class QgsField;
-class OGRDataSource;
-class OGRSFDriver;
-class OGRLayer;
-class OGRFeature;
-class OGREnvelope;
-class OGRPolygon;
+
+#include <ogr_api.h>
 
 /**
   \class QgsOgrProvider
@@ -46,48 +31,48 @@ class OGRPolygon;
 class QgsOgrProvider : public QgsVectorDataProvider
 {
   public:
-    
+
     /**
      * Constructor of the vector provider
      * @param uri  uniform resource locator (URI) for a dataset
      */
-    QgsOgrProvider(QString const & uri = "");
-    
+    QgsOgrProvider( QString const & uri = "" );
+
     /**
      * Destructor
      */
     virtual ~QgsOgrProvider();
 
-    
-    
-    virtual QgsSpatialRefSys getSRS();
-   
-    
+
+
+    virtual QgsCoordinateReferenceSystem crs();
+
+
     /**
      *   Returns the permanent storage type for this layer as a friendly name.
      */
     virtual QString storageType() const;
 
-    /** Select features based on a bounding rectangle. Features can be retrieved with calls to getNextFeature.
+    /** Select features based on a bounding rectangle. Features can be retrieved with calls to nextFeature.
      *  @param fetchAttributes list of attributes which should be fetched
      *  @param rect spatial filter
      *  @param fetchGeometry true if the feature geometry should be fetched
      *  @param useIntersect true if an accurate intersection test should be used,
      *                     false if a test based on bounding box is sufficient
      */
-    virtual void select(QgsAttributeList fetchAttributes = QgsAttributeList(),
-                        QgsRect rect = QgsRect(),
-                        bool fetchGeometry = true,
-                        bool useIntersect = false);
-  
+    virtual void select( QgsAttributeList fetchAttributes = QgsAttributeList(),
+                         QgsRectangle rect = QgsRectangle(),
+                         bool fetchGeometry = true,
+                         bool useIntersect = false );
+
     /**
      * Get the next feature resulting from a select operation.
      * @param feature feature which will receive data from the provider
      * @return true when there was a feature to fetch, false when end was hit
      */
-    virtual bool getNextFeature(QgsFeature& feature);
-    
-    /** 
+    virtual bool nextFeature( QgsFeature& feature );
+
+    /**
      * Gets the feature at the given feature ID.
      * @param featureId id of the feature
      * @param feature feature which will receive the data
@@ -95,32 +80,32 @@ class QgsOgrProvider : public QgsVectorDataProvider
      * @param fetchAttributes a list containing the indexes of the attribute fields to copy
      * @return True when feature was found, otherwise false
      */
-    virtual bool getFeatureAtId(int featureId,
-                                QgsFeature& feature,
-                                bool fetchGeometry = true,
-                                QgsAttributeList fetchAttributes = QgsAttributeList());
+    virtual bool featureAtId( int featureId,
+                              QgsFeature& feature,
+                              bool fetchGeometry = true,
+                              QgsAttributeList fetchAttributes = QgsAttributeList() );
 
     /**
      * Get feature type.
      * @return int representing the feature type
      */
-    virtual QGis::WKBTYPE geometryType() const;
+    virtual QGis::WkbType geometryType() const;
 
     /** return the number of layers for the current data source
 
-    @note 
+    @note
 
     Should this be subLayerCount() instead?
     */
     virtual size_t layerCount() const;
 
-    /** 
+    /**
      * Get the number of features in the layer
      */
     virtual long featureCount() const;
 
 
-    /** 
+    /**
      * Get the number of fields in the layer
      */
     virtual uint fieldCount() const;
@@ -132,25 +117,25 @@ class QgsOgrProvider : public QgsVectorDataProvider
 
     /** Return the extent for this data layer
      */
-    virtual QgsRect extent();
+    virtual QgsRectangle extent();
 
     /** Restart reading features from previous select operation */
-    virtual void reset();
+    virtual void rewind();
 
     /**Writes a list of features to the file*/
-    virtual bool addFeatures(QgsFeatureList & flist);
+    virtual bool addFeatures( QgsFeatureList & flist );
 
     /**Deletes a feature*/
-    virtual bool deleteFeatures(const QgsFeatureIds & id);
-    
+    virtual bool deleteFeatures( const QgsFeatureIds & id );
+
     /**Adds new attributess. Unfortunately not supported for layers with features in it*/
-    virtual bool addAttributes(const QgsNewAttributesMap & attributes);
+    virtual bool addAttributes( const QgsNewAttributesMap & attributes );
 
     /**Changes attribute values of existing features */
-    virtual bool changeAttributeValues(const QgsChangedAttributesMap & attr_map);
+    virtual bool changeAttributeValues( const QgsChangedAttributesMap & attr_map );
 
     /**Changes existing geometries*/
-    virtual bool changeGeometryValues(QgsGeometryMap & geometry_map);
+    virtual bool changeGeometryValues( QgsGeometryMap & geometry_map );
 
     /**Tries to create a .qix index file for faster access if only a subset of the features is required
      @return true in case of success*/
@@ -164,8 +149,8 @@ class QgsOgrProvider : public QgsVectorDataProvider
       */
     virtual int capabilities() const;
 
-    virtual void setEncoding(const QString& e);
-    
+    virtual void setEncoding( const QString& e );
+
 
     /** return vector file filter string
 
@@ -184,28 +169,40 @@ class QgsOgrProvider : public QgsVectorDataProvider
     */
     bool isValid();
 
+    /** Returns the minimum value of an attribute
+     *  @param index the index of the attribute */
+    QVariant minimumValue( int index );
+
+    /** Returns the maximum value of an attribute
+     *  @param index the index of the attribute */
+    QVariant maximumValue( int index );
+
+    /** Return the unique values of an attribute
+     *  @param index the index of the attribute
+     *  @param values reference to the list of unique values */
+    virtual void uniqueValues( int index, QList<QVariant> &uniqueValues );
 
   protected:
     /** loads fields from input file to member attributeFields */
     void loadFields();
 
     /**Get an attribute associated with a feature*/
-    void getFeatureAttribute(OGRFeature * ogrFet, QgsFeature & f, int attindex);
+    void getFeatureAttribute( OGRFeatureH ogrFet, QgsFeature & f, int attindex );
 
-      /** return a provider name
+    /** return a provider name
 
-      Essentially just returns the provider key.  Should be used to build file
-      dialogs so that providers can be shown with their supported types. Thus
-      if more than one provider supports a given format, the user is able to
-      select a specific provider to open that file.
+    Essentially just returns the provider key.  Should be used to build file
+    dialogs so that providers can be shown with their supported types. Thus
+    if more than one provider supports a given format, the user is able to
+    select a specific provider to open that file.
 
-      @note
+    @note
 
-      Instead of being pure virtual, might be better to generalize this
-      behavior and presume that none of the sub-classes are going to do
-      anything strange with regards to their name or description?
+    Instead of being pure virtual, might be better to generalize this
+    behavior and presume that none of the sub-classes are going to do
+    anything strange with regards to their name or description?
 
-      */
+    */
     QString name() const;
 
 
@@ -224,19 +221,20 @@ class QgsOgrProvider : public QgsVectorDataProvider
 
 
   private:
-    unsigned char *getGeometryPointer(OGRFeature * fet);
-    
+    unsigned char *getGeometryPointer( OGRFeatureH fet );
+
     QgsFieldMap mAttributeFields;
 
-    OGRDataSource *ogrDataSource;
-    OGREnvelope *extent_;
+    OGRDataSourceH ogrDataSource;
+    void *extent_;
+
     /**This member variable receives the same value as extent_
      in the method QgsOgrProvider::extent(). The purpose is to prevent a memory leak*/
-    QgsRect mExtentRect;
-    OGRLayer *ogrLayer;
+    QgsRectangle mExtentRect;
+    OGRLayerH ogrLayer;
 
     // OGR Driver that was actually used to open the layer
-    OGRSFDriver *ogrDriver;
+    OGRSFDriverH ogrDriver;
 
     // Friendly name of the OGR Driver that was actually used to open the layer
     QString ogrDriverName;
@@ -245,15 +243,14 @@ class QgsOgrProvider : public QgsVectorDataProvider
     //! Flag to indicate that spatial intersect should be used in selecting features
     bool mUseIntersect;
     int geomType;
-    long numberFeatures;
-    
-    //! Selection rectangle 
-    OGRPolygon * mSelectionRectangle;
-    /**Adds one feature*/
-    bool addFeature(QgsFeature& f);
-    /**Deletes one feature*/
-    bool deleteFeature(int id);
-    //! The geometry factory
-    GEOS_GEOM::GeometryFactory *geometryFactory;
+    long featuresCounted;
 
+    //! Selection rectangle
+    OGRGeometryH mSelectionRectangle;
+    /**Adds one feature*/
+    bool addFeature( QgsFeature& f );
+    /**Deletes one feature*/
+    bool deleteFeature( int id );
+
+    QString quotedIdentifier( QString field );
 };

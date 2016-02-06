@@ -1,0 +1,132 @@
+
+/**
+ * \class QgsMapRenderer
+ * \brief Class for rendering map layer set
+ *
+ */
+
+class QgsMapRenderer : QObject
+{
+%TypeHeaderCode
+#include <qgsmaprenderer.h>
+%End
+      
+  public:
+    
+    //! constructor
+    QgsMapRenderer();
+    
+    //! destructor
+    ~QgsMapRenderer();
+
+    //! starts rendering
+    void render(QPainter* painter);
+    
+    //! sets extent and checks whether suitable (returns false if not)
+    bool setExtent(const QgsRectangle& extent);
+    
+    //! returns current extent
+    QgsRectangle extent();
+    
+    const QgsMapToPixel* coordinateTransform();
+    
+    double scale() const;
+    double mapUnitsPerPixel() const;
+
+    int width() const;
+    int height() const;
+
+
+    //! Recalculate the map scale
+    void updateScale();
+
+    QGis::UnitType mapUnits() const;
+    void setMapUnits(QGis::UnitType u);
+    
+    //! sets whether map image will be for overview
+    void enableOverviewMode(bool isOverview = true);
+
+    void setOutputSize(QSize size, int dpi);
+    
+    //!accessor for output dpi
+    int outputDpi();
+    //!accessor for output size
+    QSize outputSize();
+    
+    //! transform extent in layer's CRS to extent in output CRS
+    QgsRectangle layerExtentToOutputExtent(QgsMapLayer* theLayer, QgsRectangle extent);
+    
+    //! transform coordinates from layer's CRS to output CRS
+    QgsPoint layerToMapCoordinates(QgsMapLayer* theLayer, QgsPoint point);
+
+    //! transform coordinates from output CRS to layer's CRS
+    QgsPoint mapToLayerCoordinates(QgsMapLayer* theLayer, QgsPoint point);
+
+    //! transform rect's coordinates from output CRS to layer's CRS
+    QgsRectangle mapToLayerCoordinates(QgsMapLayer* theLayer, QgsRectangle rect);
+    
+    //! sets whether to use projections for this layer set
+    void setProjectionsEnabled(bool enabled);
+    
+    //! returns true if projections are enabled for this layer set
+    bool hasCrsTransformEnabled();
+    
+    //! sets destination spatial reference system
+    void setDestinationSrs(const QgsCoordinateReferenceSystem& srs);
+    
+    //! returns CRS ID of destination spatial reference system
+    const QgsCoordinateReferenceSystem& destinationSrs();
+
+    //! returns current extent of layer set
+    QgsRectangle fullExtent();
+    
+    //! returns current layer set
+    QStringList& layerSet();
+    
+    //! change current layer set
+    void setLayerSet(const QStringList& layers);
+
+    //! updates extent of the layer set
+    void updateFullExtent();
+
+    //! read settings
+    bool readXML(QDomNode & theNode);
+
+    //! write settings
+    bool writeXML(QDomNode & theNode, QDomDocument & theDoc);
+
+  signals:
+    
+    void setProgress(int current, int total);
+    
+    void hasCrsTransformEnabled(bool flag);
+    
+    void destinationSrsChanged();
+    
+    void updateMap();
+    
+    void mapUnitsChanged();
+
+    //! emitted when layer's draw() returned FALSE
+    void drawError(QgsMapLayer*);
+
+  public slots:
+    
+    //! called by signal from layer current being drawn
+    void onDrawingProgress(int current, int total);
+
+  protected:
+    
+    //! adjust extent to fit the pixmap size
+    void adjustExtentToSize();
+    
+    /** Convenience function to project an extent into the layer source
+     * CRS, but also split it into two extents if it crosses
+     * the +/- 180 degree line. Modifies the given extent to be in the
+     * source CRS coordinates, and if it was split, returns true, and
+     * also sets the contents of the r2 parameter
+     */
+    bool splitLayersExtent(QgsMapLayer* layer, QgsRectangle& extent, QgsRectangle& r2);
+
+};
+

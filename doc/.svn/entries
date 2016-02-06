@@ -1,14 +1,14 @@
 8
 
 dir
-7809
-https://svn.qgis.org/repos/qgis/branches/Release-0_9_0/doc
-https://svn.qgis.org/repos/qgis
+10938
+https://svn.osgeo.org/qgis/branches/Release-1_0_2/doc
+https://svn.osgeo.org/qgis
 
 
 
-2007-08-29T04:42:59.486230Z
-7168
+2009-02-18T08:42:45.289454Z
+10197
 timlinux
 has-props
 
@@ -26,13 +26,25 @@ svn:special svn:externals svn:needs-lock
 
 c8812cc2-4d05-0410-92ff-de0c093fc19c
 
+index.dox
+file
+
+
+
+
+2009-06-17T07:50:17.000000Z
+900f50fd675c346668150afe9a3e219d
+2008-12-20T20:07:20.860249Z
+9881
+jef
+
 qgisdoc.css
 file
 
 
 
 
-2007-12-24T08:18:19.000000Z
+2009-06-17T07:50:17.000000Z
 8ec956c2bd4b8c8a831d1887080094d0
 2005-11-05T17:15:37.000000Z
 4159
@@ -42,8 +54,17 @@ has-props
 plugins
 dir
 
-install_guide
-dir
+modules.dox
+file
+
+
+
+
+2009-06-17T07:50:17.000000Z
+0f4fd88a28b0b94a6095c2e854086eee
+2008-10-28T23:00:54.668407Z
+9554
+wonder
 
 userguide.pdf
 file
@@ -51,15 +72,28 @@ file
 
 
 
-2007-12-24T08:18:19.000000Z
-34626920b9f0d1cb1dfaa7a9d7627408
-2007-01-09T02:39:15.173934Z
-6415
-wonder
+2009-06-17T07:50:17.000000Z
+37b1c3e82077868f7e917187d9cd56ca
+2008-10-19T19:20:42.283563Z
+9495
+timlinux
 has-props
 
 images
 dir
+
+style.css
+file
+
+
+
+
+2009-06-17T07:50:17.000000Z
+c8604ccf233d753808649215ab895da7
+2008-05-21T17:11:10.541956Z
+8481
+timlinux
+has-props
 
 index.html
 file
@@ -67,12 +101,24 @@ file
 
 
 
-2007-12-24T08:18:20.000000Z
-7b1fe9f69cfe5f52ee84c5f44f3d627c
-2007-08-29T04:42:59.486230Z
-7168
+2009-06-17T07:50:17.000000Z
+246edee6bf724a369ae2c4e06e63f00f
+2009-02-18T08:42:45.289454Z
+10197
 timlinux
 has-props
+
+CODING.t2t
+file
+
+
+
+
+2009-06-17T07:50:17.000000Z
+e74cd82bd2d31490b75c0b29aa50a587
+2008-12-20T20:07:20.860249Z
+9881
+jef
 
 .cvsignore
 file
@@ -80,7 +126,7 @@ file
 
 
 
-2007-12-24T08:18:20.000000Z
+2009-06-17T07:50:17.000000Z
 31076018db46093e4e5e50ab56486a4e
 2005-01-10T20:26:46.000000Z
 2610
@@ -93,11 +139,23 @@ file
 
 
 
-2007-12-24T08:18:20.000000Z
-70f4c3f67b4dc19b71fa7f7296526c7d
-2007-01-09T02:39:15.173934Z
-6415
-wonder
+2009-06-17T07:50:17.000000Z
+2ba3ebfe225d6c839052cc3a081da617
+2007-12-07T03:28:13.285875Z
+7726
+timlinux
+
+INSTALL.t2t
+file
+
+
+
+
+2009-06-17T07:50:17.000000Z
+3f871aa6cda3393040a4133e2200d127
+2008-12-20T20:07:20.860249Z
+9881
+jef
 
 favicon.ico
 file
@@ -105,23 +163,10 @@ file
 
 
 
-2007-12-24T08:18:20.000000Z
+2009-06-17T07:50:17.000000Z
 032ecc47c22a91e7f3f1d28a45d7f7bc
 2004-02-07T22:06:30.000000Z
 741
-gsherman
-has-props
-
-install.pdf
-file
-
-
-
-
-2007-12-24T08:18:20.000000Z
-22db5ba89457578138048cb5688c9e0a
-2006-01-01T22:08:30.123230Z
-4455
 gsherman
 has-props
 

@@ -15,21 +15,20 @@
  *   (at your option) any later version.                                   *
  *                                                                         *
  ***************************************************************************/
-/* $Id: qgsproviderextentcalcevent.cpp 4502 2006-01-08 01:18:20Z timlinux $ */
+/* $Id: qgsproviderextentcalcevent.cpp 9605 2008-11-09 00:14:12Z timlinux $ */
 
 #include "qgsproviderextentcalcevent.h"
-//Added by qt3to4:
-#include <QCustomEvent>
+#include "qgis.h"
 
-QgsProviderExtentCalcEvent::QgsProviderExtentCalcEvent( QgsRect* layerExtent )
-    : QCustomEvent( QGis::ProviderExtentCalcEvent ),
-      le( layerExtent )
+QgsProviderExtentCalcEvent::QgsProviderExtentCalcEvent( QgsRectangle* layerExtent )
+    : QEvent( static_cast<QEvent::Type>( QGis::ProviderExtentCalcEvent ) ),
+    le( layerExtent )
 {
   // NO-OP
 }
 
 
-QgsRect* QgsProviderExtentCalcEvent::layerExtent() const
+QgsRectangle* QgsProviderExtentCalcEvent::layerExtent() const
 {
   return le;
 }

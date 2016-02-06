@@ -2,18 +2,12 @@
 QApplication
 -
 
-/Library/Frameworks/Qt3Support.framework/Headers/q3serversocket.h
-QtCore/qobject.h
+../src/helpviewer/../core/qgslogger.h
+iostream
 -
-QtNetwork/qhostaddress.h
+sstream
 -
-Qt3Support/q3socketdevice.h
--
-
-/Library/Frameworks/Qt3Support.framework/Headers/q3socket.h
-QtCore/qiodevice.h
--
-QtNetwork/qhostaddress.h
+QString
 -
 
 /Library/Frameworks/QtCore.framework/Headers/QFile
@@ -24,13 +18,17 @@ qfile.h
 qfileinfo.h
 /Library/Frameworks/QtCore.framework/Headers/qfileinfo.h
 
+/Library/Frameworks/QtCore.framework/Headers/QLocale
+qlocale.h
+/Library/Frameworks/QtCore.framework/Headers/qlocale.h
+
+/Library/Frameworks/QtCore.framework/Headers/QSettings
+qsettings.h
+/Library/Frameworks/QtCore.framework/Headers/qsettings.h
+
 /Library/Frameworks/QtCore.framework/Headers/QString
 qstring.h
 /Library/Frameworks/QtCore.framework/Headers/qstring.h
-
-/Library/Frameworks/QtCore.framework/Headers/QTextCodec
-qtextcodec.h
-/Library/Frameworks/QtCore.framework/Headers/qtextcodec.h
 
 /Library/Frameworks/QtCore.framework/Headers/QTextStream
 qtextstream.h
@@ -54,6 +52,24 @@ QtCore/qfile.h
 QtCore/qlist.h
 -
 
+/Library/Frameworks/QtCore.framework/Headers/qlocale.h
+QtCore/qstring.h
+-
+QtCore/qobjectdefs.h
+-
+
+/Library/Frameworks/QtCore.framework/Headers/qsettings.h
+QtCore/qobject.h
+-
+QtCore/qvariant.h
+-
+QtCore/qstring.h
+-
+QtCore/qstringlist.h
+-
+ctype.h
+-
+
 /Library/Frameworks/QtCore.framework/Headers/qstring.h
 QtCore/qchar.h
 -
@@ -70,12 +86,6 @@ string
 string
 -
 stdarg.h
--
-
-/Library/Frameworks/QtCore.framework/Headers/qtextcodec.h
-QtCore/qstring.h
--
-QtCore/qlist.h
 -
 
 /Library/Frameworks/QtCore.framework/Headers/qtextstream.h
@@ -130,53 +140,71 @@ QtGui/qtransportauth_qws.h
 QtGui/qdialog.h
 -
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/helpviewer/../../../src/helpviewer/qgshelpserver.h
-q3serversocket.h
+/Library/Frameworks/QtNetwork.framework/Headers/QTcpServer
+qtcpserver.h
+/Library/Frameworks/QtNetwork.framework/Headers/qtcpserver.h
+
+/Library/Frameworks/QtNetwork.framework/Headers/QTcpSocket
+qtcpsocket.h
+/Library/Frameworks/QtNetwork.framework/Headers/qtcpsocket.h
+
+/Library/Frameworks/QtNetwork.framework/Headers/qtcpserver.h
+QtCore/qobject.h
 -
-q3socket.h
+QtNetwork/qabstractsocket.h
+-
+QtNetwork/qhostaddress.h
 -
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/helpviewer/../../../src/helpviewer/qgshelpviewer.h
+/Library/Frameworks/QtNetwork.framework/Headers/qtcpsocket.h
+QtNetwork/qabstractsocket.h
+-
+
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/helpviewer/../../../src/helpviewer/qgshelpserver.h
+QTcpServer
+-
+QTcpSocket
+-
+
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/helpviewer/../../../src/helpviewer/qgshelpviewer.h
 ui_qgshelpviewerbase.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/helpviewer/../../../src/helpviewer/ui_qgshelpviewerbase.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/helpviewer/../../../src/helpviewer/ui_qgshelpviewerbase.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/helpviewer/moc_qgshelpserver.cxx
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/helpviewer/moc_qgshelpserver.cxx
 ../../../src/helpviewer/qgshelpserver.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/helpviewer/../../../src/helpviewer/qgshelpserver.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/helpviewer/../../../src/helpviewer/qgshelpserver.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/helpviewer/moc_qgshelpviewer.cxx
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/helpviewer/moc_qgshelpviewer.cxx
 ../../../src/helpviewer/qgshelpviewer.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/helpviewer/../../../src/helpviewer/qgshelpviewer.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/helpviewer/../../../src/helpviewer/qgshelpviewer.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/helpviewer/main.cpp
-iostream
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/helpviewer/main.cpp
+QLocale
 -
-qgsapplication.h
--
-qstring.h
--
-QTextCodec
+QSettings
 -
 QTranslator
 -
 qgshelpserver.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/helpviewer/qgshelpserver.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/helpviewer/qgshelpserver.h
 qgshelpviewer.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/helpviewer/qgshelpviewer.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/helpviewer/qgshelpviewer.h
 qgsapplication.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/helpviewer/qgsapplication.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/helpviewer/qgsapplication.h
+qgslogger.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/helpviewer/qgslogger.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/helpviewer/qgshelpserver.cpp
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/helpviewer/qgshelpserver.cpp
 qgshelpserver.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/helpviewer/qgshelpserver.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/helpviewer/qgshelpserver.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/helpviewer/qgshelpserver.h
-q3serversocket.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/helpviewer/qgshelpserver.h
+QTcpServer
 -
-q3socket.h
+QTcpSocket
 -
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/helpviewer/qgshelpviewer.cpp
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/helpviewer/qgshelpviewer.cpp
 cassert
 -
 iostream
@@ -185,11 +213,13 @@ QString
 -
 QApplication
 -
+QLocale
+-
 QMessageBox
 -
 QFileInfo
 -
-QTextCodec
+QSettings
 -
 QTextStream
 -
@@ -198,14 +228,22 @@ QFile
 sqlite3.h
 -
 qgshelpviewer.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/helpviewer/qgshelpviewer.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/helpviewer/qgshelpviewer.h
+qgsapplication.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/helpviewer/qgsapplication.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/helpviewer/qgshelpviewer.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/helpviewer/qgshelpviewer.h
 ui_qgshelpviewerbase.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/helpviewer/ui_qgshelpviewerbase.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/helpviewer/ui_qgshelpviewerbase.h
 
 /usr/include/_types.h
 sys/_types.h
+-
+
+/usr/include/ctype.h
+runetype.h
+-
+xlocale/_ctype.h
 -
 
 /usr/include/i386/_types.h
@@ -219,6 +257,10 @@ arm/_types.h
 /usr/include/machine/arm/_types.h
 
 /usr/include/ppc/_types.h
+
+/usr/include/runetype.h
+_types.h
+-
 
 /usr/include/secure/_common.h
 
@@ -249,6 +291,8 @@ machine/_types.h
 -
 
 /usr/include/sys/cdefs.h
+
+/usr/include/xlocale/_ctype.h
 
 /usr/include/xlocale/_stdio.h
 

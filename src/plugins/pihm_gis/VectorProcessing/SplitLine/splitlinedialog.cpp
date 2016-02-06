@@ -30,7 +30,7 @@ void splitLineDialogDlg::addBrowse()
 
         for(i=0; i< temp.count();i++)
         {
-                        //std::cout<<"\n"<<temp[i].ascii();
+                        //std::cout<<"\n"<<qPrintable(temp[i]);
                         str = temp[i];
                         str1 = temp[i];
                         str1.truncate(str1.length()-4);
@@ -75,7 +75,7 @@ void splitLineDialogDlg::run()
 
 	QString logFileName("/tmp/log.html");
 	ofstream log;
-	log.open(logFileName.ascii());
+	log.open(qPrintable(logFileName));
 	log<<"<html><body><font size=3 color=black><p> Verifying Files...</p></font></body></html>";
         log.close();
         MessageLog->setSource(logFileName);
@@ -83,7 +83,7 @@ void splitLineDialogDlg::run()
         MessageLog->setModified(TRUE);
 
 	if(inputOutputTable->numRows() < 1){
-		log.open(logFileName.ascii(), ios::app);
+		log.open(qPrintable(logFileName), ios::app);
 		log<<"<p><font size=3 color=red> First Please input Files</p>";
 		log.close();
 		MessageLog->reload();
@@ -104,25 +104,25 @@ void splitLineDialogDlg::run()
                 	dbfFileNameSplit.append("dbf");
 		
 			ifstream in;
-	                in.open(shpFileName.ascii());
+	                in.open(qPrintable(shpFileName));
 			ofstream out;
-			out.open(shpFileNameSplit.ascii());
+			out.open(qPrintable(shpFileNameSplit));
 			
 			int runFlag = 1;
-			log.open(logFileName.ascii(), ios::app);
-			log<<"<p>Checking... "<<shpFileName.ascii()<<"... ";
+			log.open(qPrintable(logFileName), ios::app);
+			log<<"<p>Checking... "<<qPrintable(shpFileName)<<"... ";
                 	if(in == NULL){
 				log<<"<font size=3 color=red> Error!</p>";
 				runFlag = 0;
-				qWarning("\n %s doesn't exist!", shpFileName.ascii());                        
+				qWarning("\n %s doesn't exist!", qPrintable(shpFileName));                        
 			}
 			else
 				log<<"Done!</p>";
-			log<<"<p>Checking... "<<shpFileNameSplit.ascii()<<"... ";		
+			log<<"<p>Checking... "<<qPrintable(shpFileNameSplit)<<"... ";		
 			if(out == NULL){
 				log<<"<font size=3 color=red> Error!</p>";
 				runFlag = 0;
-				qWarning("\n %s doesn't exist!", shpFileNameSplit.ascii());
+				qWarning("\n %s doesn't exist!", qPrintable(shpFileNameSplit));
 			}
 			else
 				log<<"Done!</p>";
@@ -131,14 +131,14 @@ void splitLineDialogDlg::run()
 			QApplication::processEvents();
 
                 	if(runFlag == 1){
-				log.open(logFileName.ascii(), ios::app);
-				log<<"<p>Running... "<<shpFileName.ascii();
+				log.open(qPrintable(logFileName), ios::app);
+				log<<"<p>Running... "<<qPrintable(shpFileName);
 				log.close();
 				MessageLog->reload();
 				QApplication::processEvents();
 
-                		splitLineAtVertices(shpFileName.ascii(), dbfFileName.ascii(), shpFileNameSplit.ascii(), dbfFileNameSplit.ascii());
-				log.open(logFileName.ascii(), ios::app);
+                		splitLineAtVertices(qPrintable(shpFileName), qPrintable(dbfFileName), qPrintable(shpFileNameSplit), qPrintable(dbfFileNameSplit));
+				log.open(qPrintable(logFileName), ios::app);
 				log<<" Done!</p>";
 				log.close();
 				MessageLog->reload();

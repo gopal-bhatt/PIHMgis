@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading ui file 'pluginguibase.ui'
 **
-** Created: Wed Jun 11 19:10:13 2008
+** Created: Fri Jun 19 01:59:19 2009
 **      by: Qt User Interface Compiler version 4.3.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling ui file!
@@ -10,7 +10,6 @@
 #ifndef UI_PLUGINGUIBASE_H
 #define UI_PLUGINGUIBASE_H
 
-#include <Qt3Support/Q3IconView>
 #include <QtCore/QVariant>
 #include <QtGui/QAction>
 #include <QtGui/QApplication>
@@ -23,6 +22,7 @@
 #include <QtGui/QGridLayout>
 #include <QtGui/QLabel>
 #include <QtGui/QLineEdit>
+#include <QtGui/QListView>
 #include <QtGui/QPushButton>
 #include <QtGui/QSlider>
 #include <QtGui/QSpinBox>
@@ -51,7 +51,7 @@ public:
     QGridLayout *gridLayout3;
     QLineEdit *txtDirectory;
     QPushButton *btnBrowse;
-    Q3IconView *iconView;
+    QListView *iconView;
     QLabel *txtHeading;
     QFrame *line1;
     QLabel *label;
@@ -61,7 +61,7 @@ public:
     {
     if (QgsNorthArrowPluginGuiBase->objectName().isEmpty())
         QgsNorthArrowPluginGuiBase->setObjectName(QString::fromUtf8("QgsNorthArrowPluginGuiBase"));
-    QgsNorthArrowPluginGuiBase->resize(457, 422);
+    QgsNorthArrowPluginGuiBase->resize(457, 424);
     QgsNorthArrowPluginGuiBase->setWindowIcon(QIcon());
     gridLayout = new QGridLayout(QgsNorthArrowPluginGuiBase);
     gridLayout->setSpacing(6);
@@ -160,8 +160,9 @@ public:
 
     gridLayout3->addWidget(btnBrowse, 0, 1, 1, 1);
 
-    iconView = new Q3IconView(tabIcon);
+    iconView = new QListView(tabIcon);
     iconView->setObjectName(QString::fromUtf8("iconView"));
+    iconView->setViewMode(QListView::IconMode);
 
     gridLayout3->addWidget(iconView, 1, 0, 1, 2);
 
@@ -240,10 +241,6 @@ public:
     pixmapLabel->setToolTip(QApplication::translate("QgsNorthArrowPluginGuiBase", "Preview of north arrow", 0, QApplication::UnicodeUTF8));
     tabNorthArrowOptions->setTabText(tabNorthArrowOptions->indexOf(tabProperties), QApplication::translate("QgsNorthArrowPluginGuiBase", "Properties", 0, QApplication::UnicodeUTF8));
     btnBrowse->setText(QApplication::translate("QgsNorthArrowPluginGuiBase", "Browse...", 0, QApplication::UnicodeUTF8));
-    iconView->clear();
-
-    Q3IconViewItem *__item = new Q3IconViewItem(iconView);
-    __item->setText(QApplication::translate("QgsNorthArrowPluginGuiBase", "New Item", 0, QApplication::UnicodeUTF8));
     tabNorthArrowOptions->setTabText(tabNorthArrowOptions->indexOf(tabIcon), QApplication::translate("QgsNorthArrowPluginGuiBase", "Icon", 0, QApplication::UnicodeUTF8));
     txtHeading->setText(QApplication::translate("QgsNorthArrowPluginGuiBase", "North Arrow Plugin", 0, QApplication::UnicodeUTF8));
     label->setText(QString());

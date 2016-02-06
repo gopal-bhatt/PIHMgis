@@ -16,7 +16,7 @@ SET (WFS_MOC_HDRS
      ../../app/qgsnewhttpconnection.h
 )
 
-#SET (WFS_RCCS  northarrow_plugin.qrc)
+SET (WFS_RCCS  wfsplugin.qrc)
 
 ########################################################
 # Build
@@ -25,9 +25,9 @@ QT4_WRAP_UI (WFS_UIS_H  ${WFS_UIS})
 
 QT4_WRAP_CPP (WFS_MOC_SRCS  ${WFS_MOC_HDRS})
 
-#QT4_ADD_RESOURCES(WFS_RCC_SRCS ${WFS_RCCS})
+QT4_ADD_RESOURCES(WFS_RCC_SRCS ${WFS_RCCS})
 
-ADD_LIBRARY (wfsplugin MODULE ${WFS_SRCS} ${WFS_MOC_SRCS} ${WFS_UIS_H})
+ADD_LIBRARY (wfsplugin MODULE ${WFS_SRCS} ${WFS_MOC_SRCS} ${WFS_UIS_H} ${WFS_RCC_SRCS})
 
 INCLUDE_DIRECTORIES(
      ${CMAKE_CURRENT_BINARY_DIR}
@@ -37,11 +37,9 @@ INCLUDE_DIRECTORIES(
      ..
      ../../app # for QgsNewHttpConnection
      ${GEOS_INCLUDE_DIR}
-     ${GEOS_INCLUDE_DIR}/geos
 )
 
 TARGET_LINK_LIBRARIES(wfsplugin
-  ${QT_LIBRARIES}
   qgis_core
   qgis_gui
 )

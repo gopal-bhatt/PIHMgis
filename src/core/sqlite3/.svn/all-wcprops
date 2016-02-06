@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/core/sqlite3
+END
+sqlite3.c
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/core/sqlite3/sqlite3.c
+END
+sqlite3.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/core/sqlite3/sqlite3.h
+END
+sqlite3ext.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/core/sqlite3/sqlite3ext.h
+END

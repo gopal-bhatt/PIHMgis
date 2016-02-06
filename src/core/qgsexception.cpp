@@ -15,11 +15,11 @@
  *                                                                         *
  ***************************************************************************/
 
-
+#include <QObject>
 #include "qgsexception.h"
 
 
-const char * const ident_ = "$Id: qgsexception.cpp 4502 2006-01-08 01:18:20Z timlinux $";
+const char * const ident_ = "$Id: qgsexception.cpp 8671 2008-06-23 08:54:39Z timlinux $";
 
 
 

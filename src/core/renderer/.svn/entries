@@ -1,15 +1,15 @@
 8
 
 dir
-7809
-https://svn.qgis.org/repos/qgis/branches/Release-0_9_0/src/core/renderer
-https://svn.qgis.org/repos/qgis
+10938
+https://svn.osgeo.org/qgis/branches/Release-1_0_2/src/core/renderer
+https://svn.osgeo.org/qgis
 
 
 
-2007-09-16T02:54:22.835569Z
-7203
-gsherman
+2009-02-08T19:18:53.305828Z
+10136
+jef
 
 
 svn:special svn:externals svn:needs-lock
@@ -32,11 +32,11 @@ file
 
 
 
-2007-12-24T08:18:08.000000Z
-68866ae1c374a542b8f10b77cbe48c26
-2007-04-02T17:14:34.227598Z
-6863
-wonder
+2009-06-17T07:49:49.000000Z
+fb6827dbb111a20e1230ee3acb411ec4
+2008-10-10T20:02:22.493155Z
+9471
+jef
 
 qgsrenderer.cpp
 file
@@ -44,11 +44,11 @@ file
 
 
 
-2007-12-24T08:18:08.000000Z
-e4eabaa413b53e56fe24533f795bc6af
-2007-09-16T02:54:22.835569Z
-7203
-gsherman
+2009-06-17T07:49:49.000000Z
+ac695b3799c054748bb607f2ef2ce2c8
+2008-10-10T20:02:22.493155Z
+9471
+jef
 has-props
 
 qgsuniquevaluerenderer.cpp
@@ -57,11 +57,11 @@ file
 
 
 
-2007-12-24T08:18:08.000000Z
-ee1ce33daea028cd39f5814645dbf051
-2007-04-02T17:14:34.227598Z
-6863
-wonder
+2009-06-17T07:49:49.000000Z
+74d1a25c0b489b0748fc16e6e2e41fac
+2008-12-07T03:10:00.617071Z
+9747
+jef
 
 qgsrenderer.h
 file
@@ -69,11 +69,11 @@ file
 
 
 
-2007-12-24T08:18:08.000000Z
-7e2d180bb6dd4fa86c7f7cac9306dccd
-2007-08-29T05:39:44.316278Z
-7169
-timlinux
+2009-06-17T07:49:49.000000Z
+c3c03ce03c569adfb73ebf3eeab68857
+2008-10-10T20:02:22.493155Z
+9471
+jef
 has-props
 
 qgscontinuouscolorrenderer.cpp
@@ -82,11 +82,11 @@ file
 
 
 
-2007-12-24T08:18:08.000000Z
-1aafec59f39431ce37c49ca6b6861960
-2007-04-02T18:24:51.231577Z
-6866
-wonder
+2009-06-17T07:49:49.000000Z
+f81e5d1d1f6e48cb7cfb812e3fc4a322
+2008-12-07T03:10:00.617071Z
+9747
+jef
 
 qgsgraduatedsymbolrenderer.cpp
 file
@@ -94,11 +94,11 @@ file
 
 
 
-2007-12-24T08:18:08.000000Z
-3c5bbd9bc6d6e00cd4cdaf6e1f051cfe
-2007-04-02T17:14:34.227598Z
-6863
-wonder
+2009-06-17T07:49:49.000000Z
+613c222ba21cbd4da87e0a6b3f386bb3
+2008-12-07T03:10:00.617071Z
+9747
+jef
 
 qgssinglesymbolrenderer.cpp
 file
@@ -106,11 +106,11 @@ file
 
 
 
-2007-12-24T08:18:08.000000Z
-b5931891870bc6505f094f0026bd7dc4
-2007-04-02T17:14:34.227598Z
-6863
-wonder
+2009-06-17T07:49:49.000000Z
+f40a1c9c81fbc913141a876207730118
+2009-02-08T19:18:53.305828Z
+10136
+jef
 
 qgsuniquevaluerenderer.h
 file
@@ -118,11 +118,11 @@ file
 
 
 
-2007-12-24T08:18:08.000000Z
-099c9c6f9c5dab1d60cc088729ccfec6
-2007-04-02T17:14:34.227598Z
-6863
-wonder
+2009-06-17T07:49:49.000000Z
+023cea6e9a6de29ab52270dfbb1893c3
+2008-10-10T20:02:22.493155Z
+9471
+jef
 
 qgscontinuouscolorrenderer.h
 file
@@ -130,11 +130,11 @@ file
 
 
 
-2007-12-24T08:18:08.000000Z
-5cbb75203a1c4cb7b3a2680f88dd0a0a
-2007-04-02T17:14:34.227598Z
-6863
-wonder
+2009-06-17T07:49:49.000000Z
+f0b0590e6ffb19d20d16d6b9937381b4
+2008-10-10T20:02:22.493155Z
+9471
+jef
 
 qgsgraduatedsymbolrenderer.h
 file
@@ -142,9 +142,9 @@ file
 
 
 
-2007-12-24T08:18:08.000000Z
-32d8b297a33dbc96bc4c95ddc91d7ad9
-2007-04-02T17:14:34.227598Z
-6863
-wonder
+2009-06-17T07:49:49.000000Z
+aebefc607c588141b9d6402bac3611ec
+2008-10-22T08:56:03.329449Z
+9518
+jef
 

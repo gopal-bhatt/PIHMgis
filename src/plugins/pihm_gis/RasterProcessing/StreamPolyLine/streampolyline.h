@@ -3,15 +3,17 @@
 
 #include "ui_streampolyline.h"
 //??#include <qgisapp.h>
-
+#include <qgisinterface.h>
 class StreamPolyLineDlg : public QDialog, private Ui::StreamPolyLine
 {
         Q_OBJECT
 public:
         StreamPolyLineDlg(QWidget *parent = 0);
 
-//??	void setApplicationPointer(QgisApp *);
-//??	QgisApp* applicationPointer;
+//??	
+void setApplicationPointer(QgisInterface *);
+//??	
+QgisInterface* applicationPointer;
 
 public slots:
         void inputSTRBrowse();

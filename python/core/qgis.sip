@@ -28,20 +28,20 @@ public:
   // Version constants
   //
   // Version string 
-  static const char* qgisVersion;
+  static const char* QGIS_VERSION;
   // Version number used for comparing versions using the "Check QGIS Version" function
-  static const int qgisVersionInt;
+  static const int QGIS_VERSION_INT;
   // Release name
-  static const char* qgisReleaseName;
+  static const char* QGIS_RELEASE_NAME;
   // The subversion version
-  static const char* qgisSvnVersion;
+  static const char* QGIS_SVN_VERSION;
 
   // Enumerations
   //
 
   //! Used for symbology operations
   // Feature types
-  enum WKBTYPE
+  enum WkbType
   {
     WKBPoint = 1,
     WKBLineString,
@@ -49,14 +49,20 @@ public:
     WKBMultiPoint,
     WKBMultiLineString,
     WKBMultiPolygon,
-    WKBUnknown
+    WKBUnknown,
+    WKBPoint25D = 0x80000001,
+    WKBLineString25D,
+    WKBPolygon25D,
+    WKBMultiPoint25D,
+    WKBMultiLineString25D,
+    WKBMultiPolygon25D
   };
-  enum VectorType
+  enum GeometryType
   {
     Point,
     Line,
     Polygon,
-    Unknown
+    UnknownGeometry
   };
   
   // TODO:
@@ -65,12 +71,12 @@ public:
   //static const char *qgisFeatureTypes[];
 
   //! map units that qgis supports
-  enum units
+  enum UnitType
   {
-    METERS,
-    FEET,
-    DEGREES,
-    UNKNOWN
+    Meters,
+    Feet,
+    Degrees,
+    UnknownUnit
   };
 
   //! User defined event types
@@ -89,22 +95,34 @@ public:
 };
 
 
-  /** WKT string that represents a geographic coord sys */
-  const  QString GEOWKT;
+  /** Wkt string that represents a geographic coord sys */
+  const  QString GEOWkt;
   
   /** PROJ4 string that represents a geographic coord sys */
   const QString GEOPROJ4;
   /** Magic number for a geographic coord sys in POSTGIS SRID */
   const long GEOSRID;
   /** Magic number for a geographic coord sys in QGIS srs.db tbl_srs.srs_id */
-  const long GEOSRS_ID;
-  /**  Magic number for a geographic coord sys in EPSG ID format */
-  const long EPSGID;
+  const long GEOCRS_ID;
+  /**  Magic number for a geographic coord sys in EpsgCrsId ID format */
+  const long GEO_EPSG_CRS_ID;
   /** The length of teh string "+proj=" */
   const int PROJ_PREFIX_LEN;
   /** The length of teh string "+ellps=" */
   const int ELLPS_PREFIX_LEN;
+  /** The length of the string "+lat_1=" */
+  const int LAT_PREFIX_LEN;
   /** Magick number that determins whether a projection srsid is a system (srs.db)
    *  or user (~/.qgis.qgis.db) defined projection. */
-  const int USER_PROJECTION_START_ID;
+  const int USER_CRS_START_ID;
+
+  //
+  // Constants for point symbols
+  //
+
+  /** Magic number that determines the minimum allowable point size for point symbols */
+  const float MINIMUM_POINT_SIZE;
+  /** Magic number that determines the minimum allowable point size for point symbols */
+  const float DEFAULT_POINT_SIZE;
+  const double DEFAULT_LINE_WIDTH;
 

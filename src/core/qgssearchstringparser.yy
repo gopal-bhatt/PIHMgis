@@ -15,12 +15,15 @@
  *   (at your option) any later version.                                   *
  *                                                                         *
  ***************************************************************************/
- /* $Id: qgssearchstringparser.yy 5763 2006-09-06 13:02:51Z wonder $ */
+ /* $Id: qgssearchstringparser.yy 9471 2008-10-10 20:02:22Z jef $ */
  
 %{
 #include <qglobal.h>
 #include <QList>
 #include "qgssearchtreenode.h"
+
+// don't redeclare malloc/free
+#define YYINCLUDED_STDLIB_H 1
 
 /** returns parsed tree, otherwise returns NULL and sets parserErrorMsg
     (interface function to be called from QgsSearchString) 
@@ -61,7 +64,7 @@ void addToTmpNodes(QgsSearchTreeNode* node);
 %token STRING
 %token COLUMN_REF
 
-%token UNKNOWN_CHARACTER
+%token Unknown_CHARACTER
 
 %token NOT
 %token AND

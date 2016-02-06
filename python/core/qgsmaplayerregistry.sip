@@ -14,10 +14,9 @@ public:
 
  //! Returns the instance pointer, creating the object on the first call
  static QgsMapLayerRegistry * instance();
-/*! Return the number of registered layers.
- *
- * */
- const int count();
+
+ //! Return the number of registered layers.
+ int count();
 
  ~QgsMapLayerRegistry();
  
@@ -25,8 +24,7 @@ public:
  QgsMapLayer * mapLayer(QString theLayerId);
 
  //! Retrieve the mapLayers collection (mainly intended for use by projectio)
- // TODO: wrap
- //std::map<QString,QgsMapLayer*> & mapLayers();
+ QMap<QString,QgsMapLayer*> & mapLayers();
 
  /** Add a layer to the map of loaded layers 
     @returns NULL if unable to add layer, otherwise pointer to newly added layer
@@ -90,7 +88,7 @@ signals:
 protected:
 
  //! protected constructor
- QgsMapLayerRegistry( QObject * parent = 0, const char * name = 0 );
+ QgsMapLayerRegistry( QObject * parent = 0 );
 
 
 }; // class QgsMapLayerRegistry

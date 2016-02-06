@@ -18,31 +18,32 @@
 
 #include "qgsgeometry.h"
 #include "qgsfeature.h"
-#include "qgsrect.h"
-    
+#include "qgsrectangle.h"
+#include "qgslogger.h"
+
 #include "SpatialIndex.h"
 
 using namespace SpatialIndex;
 
 
-// custom visitor that adds found features to list 
+// custom visitor that adds found features to list
 class QgisVisitor : public SpatialIndex::IVisitor
 {
-public:
-  QgisVisitor(QList<int> & list)
-  : mList(list) {}
+  public:
+    QgisVisitor( QList<int> & list )
+        : mList( list ) {}
 
-  void visitNode(const INode& n) {}
-  
-  void visitData(const IData& d)
-  {
-    mList.append(d.getIdentifier());
-  }
+    void visitNode( const INode& n ) {}
 
-  void visitData(std::vector<const IData*>& v) {}
+    void visitData( const IData& d )
+    {
+      mList.append( d.getIdentifier() );
+    }
 
-private:
-  QList<int>& mList;
+    void visitData( std::vector<const IData*>& v ) {}
+
+  private:
+    QList<int>& mList;
 };
 
 
@@ -55,7 +56,7 @@ QgsSpatialIndex::QgsSpatialIndex()
 
   unsigned int capacity = 10;
   bool writeThrough = false;
-  mStorage = StorageManager::createNewRandomEvictionsBuffer(*mStorageManager, capacity, writeThrough);
+  mStorage = StorageManager::createNewRandomEvictionsBuffer( *mStorageManager, capacity, writeThrough );
 
   // R-Tree parameters
   double fillFactor = 0.7;
@@ -66,8 +67,8 @@ QgsSpatialIndex::QgsSpatialIndex()
 
   // create R-tree
   long indexId;
-  mRTree = RTree::createNewRTree(*mStorage, fillFactor, indexCapacity,
-                                 leafCapacity, dimension, variant, indexId);
+  mRTree = RTree::createNewRTree( *mStorage, fillFactor, indexCapacity,
+                                  leafCapacity, dimension, variant, indexId );
 }
 
 QgsSpatialIndex:: ~QgsSpatialIndex()
@@ -77,74 +78,91 @@ QgsSpatialIndex:: ~QgsSpatialIndex()
   delete mStorageManager;
 }
 
-Tools::Geometry::Region QgsSpatialIndex::rectToRegion(QgsRect rect)
+Tools::Geometry::Region QgsSpatialIndex::rectToRegion( QgsRectangle rect )
 {
   double pt1[2], pt2[2];
-  pt1[0] = rect.xMin();
-  pt1[1] = rect.yMin();
-  pt2[0] = rect.xMax();
-  pt2[1] = rect.yMax();
-  return Tools::Geometry::Region(pt1, pt2, 2);
+  pt1[0] = rect.xMinimum();
+  pt1[1] = rect.yMinimum();
+  pt2[0] = rect.xMaximum();
+  pt2[1] = rect.yMaximum();
+  return Tools::Geometry::Region( pt1, pt2, 2 );
 }
 
-bool QgsSpatialIndex::featureInfo(QgsFeature& f, Tools::Geometry::Region& r, long& id)
+bool QgsSpatialIndex::featureInfo( QgsFeature& f, Tools::Geometry::Region& r, long& id )
 {
-  QgsGeometry* g = f.geometry();
-  if (!g)
+  QgsGeometry *g = f.geometry();
+  if ( !g )
     return false;
 
-  id = f.featureId();
-  r = rectToRegion(g->boundingBox());
+  id = f.id();
+  r = rectToRegion( g->boundingBox() );
   return true;
 }
 
-bool QgsSpatialIndex::insertFeature(QgsFeature& f)
+bool QgsSpatialIndex::insertFeature( QgsFeature& f )
 {
   Tools::Geometry::Region r;
   long id;
-  if (!featureInfo(f, r, id))
+  if ( !featureInfo( f, r, id ) )
     return false;
 
-  // TODO: handle possible exceptions
-  mRTree->insertData(0,0, r, id);
+  // TODO: handle possible exceptions correctly
+  try
+  {
+    mRTree->insertData( 0, 0, r, id );
+  }
+  catch ( Tools::Exception &e )
+  {
+    Q_UNUSED(e);
+    QgsDebugMsg( QString( "Tools::Exception caught: " ).arg( e.what().c_str() ) );
+  }
+  catch ( const std::exception &e )
+  {
+    Q_UNUSED(e);
+    QgsDebugMsg( QString( "std::exception caught: " ).arg( e.what() ) );
+  }
+  catch ( ... )
+  {
+    QgsDebugMsg( "unknown spatial index exception caught" );
+  }
 
   return true;
 }
 
-bool QgsSpatialIndex::deleteFeature(QgsFeature& f)
+bool QgsSpatialIndex::deleteFeature( QgsFeature& f )
 {
   Tools::Geometry::Region r;
   long id;
-  if (!featureInfo(f, r, id))
+  if ( !featureInfo( f, r, id ) )
     return false;
 
   // TODO: handle exceptions
-  return mRTree->deleteData(r, id);
+  return mRTree->deleteData( r, id );
 }
 
-QList<int> QgsSpatialIndex::intersects(QgsRect rect)
+QList<int> QgsSpatialIndex::intersects( QgsRectangle rect )
 {
   QList<int> list;
-  QgisVisitor visitor(list);
+  QgisVisitor visitor( list );
 
-  Tools::Geometry::Region r = rectToRegion(rect);
+  Tools::Geometry::Region r = rectToRegion( rect );
 
-  mRTree->intersectsWithQuery(r, visitor);
+  mRTree->intersectsWithQuery( r, visitor );
 
   return list;
 }
 
-QList<int> QgsSpatialIndex::nearestNeighbor(QgsPoint point, int neighbors)
+QList<int> QgsSpatialIndex::nearestNeighbor( QgsPoint point, int neighbors )
 {
   QList<int> list;
-  QgisVisitor visitor(list);
+  QgisVisitor visitor( list );
 
   double pt[2];
   pt[0] = point.x();
   pt[1] = point.y();
-  Tools::Geometry::Point p(pt, 2);
+  Tools::Geometry::Point p( pt, 2 );
 
-  mRTree->nearestNeighborQuery(neighbors, p, visitor);
+  mRTree->nearestNeighborQuery( neighbors, p, visitor );
 
   return list;
 }

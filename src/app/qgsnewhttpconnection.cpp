@@ -14,60 +14,53 @@
  *   (at your option) any later version.                                   *
  *                                                                         *
  ***************************************************************************/
- /* $Id: qgsnewhttpconnection.cpp 6415 2007-01-09 02:39:15Z wonder $ */
+/* $Id: qgsnewhttpconnection.cpp 9138 2008-08-23 21:37:31Z jef $ */
 #include "qgsnewhttpconnection.h"
 #include "qgscontexthelp.h"
 #include <QSettings>
 
-QgsNewHttpConnection::QgsNewHttpConnection(QWidget *parent, const QString& baseKey, const QString& connName, Qt::WFlags fl): QDialog(parent, fl), mBaseKey(baseKey)
+QgsNewHttpConnection::QgsNewHttpConnection(
+  QWidget *parent, const QString& baseKey, const QString& connName, Qt::WFlags fl ):
+    QDialog( parent, fl ),
+    mBaseKey( baseKey ),
+    mOriginalConnName( connName )
 {
-  setupUi(this);
-  connect(btnCancel, SIGNAL(clicked()), this, SLOT(reject()));
-  connect(btnOk, SIGNAL(clicked()), this, SLOT(saveConnection()));
+  setupUi( this );
 
-  if (!connName.isEmpty())
-    {
-      // populate the dialog with the information stored for the connection
-      // populate the fields with the stored setting parameters
-      
-      QSettings settings;
+  if ( !connName.isEmpty() )
+  {
+    // populate the dialog with the information stored for the connection
+    // populate the fields with the stored setting parameters
 
-      QString key = mBaseKey + connName;
-      txtName->setText     (connName);
-      txtUrl->setText      (settings.readEntry(key + "/url"));
-      txtProxyHost->setText(settings.readEntry(key + "/proxyhost"));
-      txtProxyPort->setText(settings.readEntry(key + "/proxyport"));
-      txtProxyUser->setText(settings.readEntry(key + "/proxyuser"));
-      txtProxyPass->setText(settings.readEntry(key + "/proxypassword"));
-    }
+    QSettings settings;
+
+    QString key = mBaseKey + connName;
+    txtName->setText( connName );
+    txtUrl->setText( settings.value( key + "/url" ).toString() );
+  }
+  connect( buttonBox, SIGNAL( helpRequested() ), this, SLOT( helpRequested() ) );
 }
 
 QgsNewHttpConnection::~QgsNewHttpConnection()
 {
 }
 
-void QgsNewHttpConnection::testConnection()
+void QgsNewHttpConnection::accept()
 {
-  // following line uses Qt SQL plugin - currently not used
-  // QSqlDatabase *testCon = QSqlDatabase::addDatabase("QPSQL7","testconnection");
-
-
-}
-
-void QgsNewHttpConnection::saveConnection()
-{
-  QSettings settings; 
+  QSettings settings;
   QString key = mBaseKey + txtName->text();
-  settings.writeEntry(key + "/url", txtUrl->text().trimmed());
-  settings.writeEntry(key + "/proxyhost", txtProxyHost->text().trimmed());
-  settings.writeEntry(key + "/proxyport", txtProxyPort->text().trimmed());
-  settings.writeEntry(key + "/proxyuser", txtProxyUser->text().trimmed());
-  settings.writeEntry(key + "/proxypassword", txtProxyPass->text().trimmed());
-  
-  accept();
+
+  //delete original entry first
+  if ( !mOriginalConnName.isNull() && mOriginalConnName != key )
+  {
+    settings.remove( mBaseKey + mOriginalConnName );
+  }
+  settings.setValue( key + "/url", txtUrl->text().trimmed() );
+
+  QDialog::accept();
 }
 
-void QgsNewHttpConnection::on_btnHelp_clicked()
+void QgsNewHttpConnection::helpRequested()
 {
-  QgsContextHelp::run(context_id);
+  QgsContextHelp::run( context_id );
 }

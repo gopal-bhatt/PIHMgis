@@ -19,7 +19,7 @@ public:
     {
       NoCapabilities =              0,
       Identify =                    1
-//      Capability2 =           1 <<  1,    , etc
+//      Capability2 =           1 <<  1, etc
     };
 
 
@@ -28,40 +28,6 @@ public:
     QgsRasterDataProvider( const QString & uri );
 
     virtual ~QgsRasterDataProvider();
-
-
-    /**
-     * Gets the HTTP proxy host used for this connection
-     */
-    virtual QString proxyHost() const = 0;
-
-    /**
-     * Gets the HTTP proxy port used for this connection
-     */
-    virtual int proxyPort() const = 0;
-
-    /**
-     * Gets the HTTP proxy user name used for this connection
-     */
-    virtual QString proxyUser() const = 0;
-
-    /**
-     * Gets the HTTP proxy user password used for this connection
-     */
-    virtual QString proxyPass() const = 0;
-
-    /**
-     *
-     * Sets a proxy for the URL given in the constructor
-     *
-     *
-     * \retval TRUE if proxy setting is successful (if indeed it is supported)
-     */
-    virtual bool setProxy(const QString & host,
-                                      int port,
-                          const QString & user,
-                          const QString & pass);
-    
 
     /**
      * Add the list of WMS layer names to be rendered by this server
@@ -91,7 +57,7 @@ public:
     // TODO: Document this better.
     /** \brief   Renders the layer as an image
      */
-    virtual QImage* draw(const QgsRect & viewExtent, int pixelWidth, int pixelHeight) = 0;
+    virtual QImage* draw(const QgsRectangle & viewExtent, int pixelWidth, int pixelHeight) = 0;
 
     /** Returns a bitmask containing the supported capabilities
         Note, some capabilities may change depending on whether
@@ -115,7 +81,7 @@ public:
      * Get metadata in a format suitable for feeding directly
      * into a subset of the GUI raster properties "Metadata" tab.
      */
-    virtual QString getMetadata() = 0;
+    virtual QString metadata() = 0;
 
     /**
      * \brief Identify details from a server (e.g. WMS) from the last screen update
@@ -141,7 +107,7 @@ public:
      * call a QMessageBox to display the contents.
      *
      */
-    virtual QString errorCaptionString() = 0;
+    virtual QString lastErrorTitle() = 0;
 
     /**
      * \brief   Returns the verbose error text for the last error in this provider
@@ -152,7 +118,7 @@ public:
      * call a QMessageBox to display the contents.
      *
      */
-    virtual QString errorString() = 0;
+    virtual QString lastError() = 0;
 
 
 protected:

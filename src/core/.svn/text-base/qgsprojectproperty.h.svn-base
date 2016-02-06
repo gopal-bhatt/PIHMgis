@@ -2,7 +2,7 @@
                                   qgsproject.h
 
                       Implements persistent project state.
- 
+
                               -------------------
   begin                : February 24, 2005
   copyright            : (C) 2005 by Mark Coletti
@@ -23,9 +23,8 @@
 #ifndef QGSPROJECTPROPERTY_H
 #define QGSPROJECTPROPERTY_H
 
-#include <qvariant.h>
-#include <qstring.h>
-#include <q3dict.h>
+#include <QHash>
+#include <QVariant>
 
 class QDomNode;
 class QDomElement;
@@ -33,14 +32,14 @@ class QDomDocument;
 class QStringList;
 
 
-/**
-   ABC for property hierarchies
+/** \ingroup core
+ * An Abstract Base Class for QGIS project property hierarchies.
 
    Each sub-class is either a QgsPropertyKey or QgsPropertyValue.  QgsPropertyKeys can
    contain either QgsPropertyKeys or QgsPropertyValues, thus describing an
    hierarchy.  QgsPropertyValues are always graph leaves.
 
-   @note 
+   @note
 
    This is really a hidden QgsProject implementation class.  It was getting
    too large and unwieldy, so it's broken out here into separate files.
@@ -48,28 +47,28 @@ class QStringList;
 */
 class CORE_EXPORT QgsProperty
 {
-public:
+  public:
 
     QgsProperty()
     {}
-    
+
     virtual ~ QgsProperty()
     {}
 
-    /** dumps out the keys and values 
+    /** dumps out the keys and values
 
     @param tabs is number of tabs to print; used for pretty-printing
     hierarchy
     */
     virtual void dump( size_t tabs = 0 ) const = 0;
-    
+
     /** returns true if is a QgsPropertyKey */
     virtual bool isKey() const = 0;
 
     /** returns true if is a QgsPropertyValue */
     virtual bool isValue() const = 0;
 
-    /** returns true if a leaf node 
+    /** returns true if a leaf node
 
     A leaf node is a key node that has either no value or a single value.
     A non-leaf node would be a key node with key sub-nodes.
@@ -79,24 +78,24 @@ public:
     virtual bool isLeaf() const = 0;
 
     /**
-       restores property hierarchy to given DOM node
+       restores property hierarchy to given Dom node
 
        Used for restoring properties from project file
     */
-    virtual bool readXML(QDomNode & keyNode) = 0;
+    virtual bool readXML( QDomNode & keyNode ) = 0;
 
     /**
-       adds property hierarchy to given DOM node
+       adds property hierarchy to given Dom node
 
        Used for saving properties to project file.
 
        @param nodeName the tag name associated with this element
        @param node     the parent (or encompassing) property node
-       @param documetn the overall project file DOM document
+       @param documetn the overall project file Dom document
     */
-    virtual bool writeXML(QString const & nodeName, 
-                          QDomElement   & element,
-                          QDomDocument  & document) = 0;
+    virtual bool writeXML( QString const & nodeName,
+                           QDomElement   & element,
+                           QDomDocument  & document ) = 0;
 
     /** return the node's value
 
@@ -104,7 +103,7 @@ public:
        embedded QVariant, _value.  For QgsPropertyKey, this means returning
        the QgsPropertyValue _value that is keyed by its name, if it exists;
        i.e., QgsPropertyKey "foo" will return the property value mapped to its
-       name, "foo", in its QDict of QProperties.
+       name, "foo", in its QHash of QProperties.
 
      */
     virtual QVariant value() const = 0;
@@ -120,12 +119,12 @@ Contains a QgsPropertyKey's value
 */
 class CORE_EXPORT QgsPropertyValue : public QgsProperty
 {
-public:
+  public:
     QgsPropertyValue()
-    {} 
+    {}
 
-    QgsPropertyValue(QVariant const &value)
-        : value_(value)
+    QgsPropertyValue( QVariant const &value )
+        : value_( value )
     {}
 
     virtual ~ QgsPropertyValue()
@@ -135,7 +134,7 @@ public:
     virtual bool isKey() const
     { return false; }
 
-    /** returns true if is a QgsPropertyValue */ 
+    /** returns true if is a QgsPropertyValue */
     virtual bool isValue() const
     { return true; }
 
@@ -146,15 +145,15 @@ public:
 
     @note I suppose, in a way, value nodes can also be qualified as leaf
     nodes even though we're only counting key nodes.
-    */ 
+    */
     bool isLeaf() const
     { return true; }
 
-    void dump( size_t tabs = 0) const;
+    void dump( size_t tabs = 0 ) const;
 
-    bool readXML(QDomNode & keyNode);
+    bool readXML( QDomNode & keyNode );
 
-    bool writeXML( QString const & nodeName, 
+    bool writeXML( QString const & nodeName,
                    QDomElement   & element,
                    QDomDocument  & document );
 
@@ -169,13 +168,13 @@ public:
     void entryList( QStringList & keyName, QStringList & entries ) const
     { /* NOP */ }
 
-private:
+  private:
 
     /** We use QVariant as it's very handy to keep multiple types and provides
         type conversions
     */
     QVariant value_;
-    
+
 }; // class QgsPropertyValue
 
 
@@ -186,7 +185,7 @@ private:
 
    Can, itself, contain QgsPropertyKeys and QgsPropertyValues.
 
-   The internal QDict, mProperties, maps key names to their respective
+   The internal QHash, mProperties, maps key names to their respective
    QgsPropertyValue or next QgsPropertyKey in the key name sequence.  The key with
    the current name should contain its QgsPropertyValue.
 
@@ -199,12 +198,11 @@ private:
 */
 class CORE_EXPORT QgsPropertyKey : public QgsProperty
 {
-public:
+  public:
 
     QgsPropertyKey( QString const name = "" );
 
-    virtual ~ QgsPropertyKey()
-    { }
+    virtual ~ QgsPropertyKey();
 
     /// every key has a name
     // @{
@@ -225,16 +223,17 @@ public:
     /// add the given property key
     QgsPropertyKey * addKey( QString const & keyName )
     {
-        mProperties.replace( keyName, new QgsPropertyKey(keyName) );
+      delete mProperties.take( keyName );
+      mProperties.insert( keyName, new QgsPropertyKey( keyName ) );
 
-        return dynamic_cast<QgsPropertyKey*>(mProperties.find( keyName ));
+      return dynamic_cast<QgsPropertyKey*>( mProperties.value( keyName ) );
     }
 
 
     /// remove the given key
-    bool removeKey( QString const & keyName )
+    void removeKey( QString const & keyName )
     {
-        return mProperties.remove( keyName );
+      delete mProperties.take( keyName );
     }
 
     /** set the value associated with this key
@@ -242,9 +241,10 @@ public:
     */
     QgsPropertyValue * setValue( QString const & name, QVariant const & value )
     {
-        mProperties.replace( name, new QgsPropertyValue( value ) );
+      delete mProperties.take( name );
+      mProperties.insert( name, new QgsPropertyValue( value ) );
 
-        return dynamic_cast<QgsPropertyValue*>(mProperties.find( name ));
+      return dynamic_cast<QgsPropertyValue*>( mProperties.value( name ) );
     }
 
     /** set the value associated with this key
@@ -254,30 +254,30 @@ public:
     */
     QgsPropertyValue * setValue( QVariant const & value )
     {
-        return setValue( name(), value );
+      return setValue( name(), value );
     }
 
 
 
     void dump( size_t tabs = 0 ) const;
 
-    bool readXML(QDomNode & keyNode);
+    bool readXML( QDomNode & keyNode );
 
-    bool writeXML(QString const &nodeName, QDomElement & element, QDomDocument & document);
+    bool writeXML( QString const &nodeName, QDomElement & element, QDomDocument & document );
 
     /// how many elements are contained within this one?
     size_t count() const
     { return mProperties.count(); }
 
     /// Does this property not have any subkeys or values?
-    /* virtual */ bool isEmpty() const 
+    /* virtual */ bool isEmpty() const
     { return mProperties.isEmpty(); }
 
-    /** returns true if is a QgsPropertyKey */ 
+    /** returns true if is a QgsPropertyKey */
     virtual bool isKey() const
     { return true; }
 
-    /** returns true if is a QgsPropertyValue */ 
+    /** returns true if is a QgsPropertyValue */
     virtual bool isValue() const
     { return false; }
 
@@ -285,9 +285,9 @@ public:
     void entryList( QStringList & entries ) const;
 
     /// return keys that contain other keys
-    void subkeyList(QStringList & entries) const;
+    void subkeyList( QStringList & entries ) const;
 
-    /** returns true if a leaf node 
+    /** returns true if a leaf node
 
     A leaf node is a key node that has either no value or a single value.  A
     non-leaf node would be a key node with key sub-nodes.
@@ -297,28 +297,29 @@ public:
     /// reset the QgsProperty key to prestine state
     virtual void clear()
     {
-        mName = "";
-        mProperties.clear();
+      mName = "";
+      clearKeys();
     }
 
     /// delete any sub-nodes
     virtual void clearKeys()
     {
-        mProperties.clear();
+      qDeleteAll( mProperties );
+      mProperties.clear();
     }
 
-    QgsProperty * find( QString & propertyName ) 
+    QgsProperty * find( QString & propertyName )
     {
-        return mProperties.find( propertyName );
+      return mProperties.value( propertyName );
     }
 
-private:
+  private:
 
     /// every key has a name
     QString mName;
 
     /// sub-keys
-    Q3Dict < QgsProperty > mProperties;
+    QHash < QString, QgsProperty* > mProperties;
 
 }; // class QgsPropertyKey
 

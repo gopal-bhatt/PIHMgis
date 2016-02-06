@@ -1,0 +1,20 @@
+# The set of files whose dependency integrity should be checked:
+SET(CMAKE_DEPENDS_LANGUAGES
+  "CXX"
+  )
+SET(CMAKE_DEPENDS_CHECK_CXX
+  "/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/coordinate_capture/moc_coordinatecapture.cxx"
+  "/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/coordinate_capture/CMakeFiles/coordinatecaptureplugin.dir/moc_coordinatecapture.o"
+  "/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/coordinate_capture/moc_coordinatecapturegui.cxx"
+  "/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/coordinate_capture/CMakeFiles/coordinatecaptureplugin.dir/moc_coordinatecapturegui.o"
+  "/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/coordinate_capture/moc_coordinatecapturemaptool.cxx"
+  "/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/coordinate_capture/CMakeFiles/coordinatecaptureplugin.dir/moc_coordinatecapturemaptool.o"
+  "/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/coordinate_capture/qrc_coordinatecapture.cxx"
+  "/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/coordinate_capture/CMakeFiles/coordinatecaptureplugin.dir/qrc_coordinatecapture.o"
+  "/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/coordinate_capture/coordinatecapturegui.cpp"
+  "/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/coordinate_capture/CMakeFiles/coordinatecaptureplugin.dir/coordinatecapturegui.o"
+  "/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/coordinate_capture/coordinatecapture.cpp"
+  "/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/coordinate_capture/CMakeFiles/coordinatecaptureplugin.dir/coordinatecapture.o"
+  "/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/coordinate_capture/coordinatecapturemaptool.cpp"
+  "/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/coordinate_capture/CMakeFiles/coordinatecaptureplugin.dir/coordinatecapturemaptool.o"
+  )

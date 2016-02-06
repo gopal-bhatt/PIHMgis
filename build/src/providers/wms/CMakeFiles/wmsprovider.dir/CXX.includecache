@@ -1,18 +1,30 @@
 ../src/providers/wms/../../core/qgis.h
-qevent.h
+QEvent
 -
+QString
+-
+
+../src/providers/wms/../../core/qgscoordinatereferencesystem.h
+ostream
+-
+QString
+-
+QMap
+-
+qgis.h
+../src/providers/wms/../../core/qgis.h
 
 ../src/providers/wms/../../core/qgscoordinatetransform.h
 QObject
 -
 qgspoint.h
 ../src/providers/wms/../../core/qgspoint.h
-qgsrect.h
-../src/providers/wms/../../core/qgsrect.h
+qgsrectangle.h
+../src/providers/wms/../../core/qgsrectangle.h
 qgscsexception.h
 ../src/providers/wms/../../core/qgscsexception.h
-qgsspatialrefsys.h
-../src/providers/wms/../../core/qgsspatialrefsys.h
+qgscoordinatereferencesystem.h
+../src/providers/wms/../../core/qgscoordinatereferencesystem.h
 iostream
 -
 vector
@@ -37,9 +49,7 @@ string
 -
 list
 -
-qdom.h
--
-qstring.h
+QDomNode
 -
 
 ../src/providers/wms/../../core/qgshttptransaction.h
@@ -66,21 +76,15 @@ QString
 qgsdataprovider.h
 ../src/providers/wms/../../core/qgsdataprovider.h
 
-../src/providers/wms/../../core/qgsrect.h
+../src/providers/wms/../../core/qgsrectangle.h
 iosfwd
 -
 qgspoint.h
 ../src/providers/wms/../../core/qgspoint.h
 
-../src/providers/wms/../../core/qgsspatialrefsys.h
-ostream
--
-QString
--
-QMap
--
-qgis.h
-../src/providers/wms/../../core/qgis.h
+/Library/Frameworks/QtCore.framework/Headers/QEvent
+qcoreevent.h
+/Library/Frameworks/QtCore.framework/Headers/qcoreevent.h
 
 /Library/Frameworks/QtCore.framework/Headers/QFile
 qfile.h
@@ -109,6 +113,12 @@ qstringlist.h
 /Library/Frameworks/QtCore.framework/Headers/QUrl
 qurl.h
 /Library/Frameworks/QtCore.framework/Headers/qurl.h
+
+/Library/Frameworks/QtCore.framework/Headers/qcoreevent.h
+QtCore/qnamespace.h
+-
+QtCore/qbytearray.h
+-
 
 /Library/Frameworks/QtCore.framework/Headers/qfile.h
 QtCore/qiodevice.h
@@ -192,28 +202,6 @@ QtCore/qstring.h
 qimage.h
 /Library/Frameworks/QtGui.framework/Headers/qimage.h
 
-/Library/Frameworks/QtGui.framework/Headers/qevent.h
-QtGui/qwindowdefs.h
--
-QtCore/qobject.h
--
-QtGui/qregion.h
--
-QtCore/qnamespace.h
--
-QtCore/qstring.h
--
-QtGui/qkeysequence.h
--
-QtCore/qcoreevent.h
--
-QtGui/qmime.h
--
-QtGui/qdrag.h
--
-QtCore/qvariant.h
--
-
 /Library/Frameworks/QtGui.framework/Headers/qimage.h
 QtGui/qtransform.h
 -
@@ -246,19 +234,23 @@ QtCore/qpair.h
 qdom.h
 /Library/Frameworks/QtXml.framework/Headers/qdom.h
 
+/Library/Frameworks/QtXml.framework/Headers/QDomNode
+qdom.h
+/Library/Frameworks/QtXml.framework/Headers/qdom.h
+
 /Library/Frameworks/QtXml.framework/Headers/qdom.h
 QtCore/qstring.h
 -
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/providers/wms/../../../../src/providers/wms/qgswmsprovider.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/providers/wms/../../../../src/providers/wms/qgswmsprovider.h
 map
 -
 vector
 -
 qgsrasterdataprovider.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/providers/wms/../../../../src/providers/wms/qgsrasterdataprovider.h
-qgsrect.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/providers/wms/../../../../src/providers/wms/qgsrect.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/providers/wms/../../../../src/providers/wms/qgsrasterdataprovider.h
+qgsrectangle.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/providers/wms/../../../../src/providers/wms/qgsrectangle.h
 QString
 -
 QStringList
@@ -266,29 +258,25 @@ QStringList
 QDomElement
 -
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/providers/wms/moc_qgswmsprovider.cxx
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/providers/wms/moc_qgswmsprovider.cxx
 ../../../../src/providers/wms/qgswmsprovider.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/providers/wms/../../../../src/providers/wms/qgswmsprovider.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/providers/wms/../../../../src/providers/wms/qgswmsprovider.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/providers/wms/qgswmsprovider.cpp
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/providers/wms/qgswmsprovider.cpp
 qgslogger.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/providers/wms/qgslogger.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/providers/wms/qgslogger.h
 qgswmsprovider.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/providers/wms/qgswmsprovider.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/providers/wms/qgswmsprovider.h
 math.h
 -
-fstream
--
-iostream
--
 qgscoordinatetransform.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/providers/wms/qgscoordinatetransform.h
-qgsrect.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/providers/wms/qgsrect.h
-qgsspatialrefsys.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/providers/wms/qgsspatialrefsys.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/providers/wms/qgscoordinatetransform.h
+qgsrectangle.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/providers/wms/qgsrectangle.h
+qgscoordinatereferencesystem.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/providers/wms/qgscoordinatereferencesystem.h
 qgshttptransaction.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/providers/wms/qgshttptransaction.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/providers/wms/qgshttptransaction.h
 QUrl
 -
 QImage
@@ -299,18 +287,16 @@ float.h
 -
 QFile
 -
-fstream
--
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/providers/wms/qgswmsprovider.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/providers/wms/qgswmsprovider.h
 map
 -
 vector
 -
 qgsrasterdataprovider.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/providers/wms/qgsrasterdataprovider.h
-qgsrect.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/providers/wms/qgsrect.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/providers/wms/qgsrasterdataprovider.h
+qgsrectangle.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/providers/wms/qgsrectangle.h
 QString
 -
 QStringList

@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'mapcoordsdialog.h'
 **
-** Created: Wed Jun 11 19:10:51 2008
+** Created: Fri Jun 19 01:59:55 2009
 **      by: The Qt Meta Object Compiler version 59 (Qt 4.3.2)
 **
 ** WARNING! All changes made in this file will be lost!
@@ -33,8 +33,8 @@ static const uint qt_meta_data_MapCoordsDialog[] = {
       69,   16,   16,   16, 0x0a,
       91,   16,   16,   16, 0x0a,
      117,   16,   16,   16, 0x0a,
-     149,   16,   16,   16, 0x0a,
-     166,   16,   16,   16, 0x0a,
+     151,  149,   16,   16, 0x0a,
+     189,   16,   16,   16, 0x0a,
 
        0        // eod
 };
@@ -43,8 +43,9 @@ static const char qt_meta_stringdata_MapCoordsDialog[] = {
     "MapCoordsDialog\0\0pixelCoords,mapCoords\0"
     "pointAdded(QgsPoint,QgsPoint)\0"
     "on_buttonOk_clicked()\0on_buttonCancel_clicked()\0"
-    "on_btnPointFromCanvas_clicked()\0"
-    "setXY(QgsPoint&)\0updateOK()\0"
+    "on_btnPointFromCanvas_clicked()\0,\0"
+    "maybeSetXY(QgsPoint&,Qt::MouseButton)\0"
+    "updateOK()\0"
 };
 
 const QMetaObject MapCoordsDialog::staticMetaObject = {
@@ -76,7 +77,7 @@ int MapCoordsDialog::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
         case 1: on_buttonOk_clicked(); break;
         case 2: on_buttonCancel_clicked(); break;
         case 3: on_btnPointFromCanvas_clicked(); break;
-        case 4: setXY((*reinterpret_cast< QgsPoint(*)>(_a[1]))); break;
+        case 4: maybeSetXY((*reinterpret_cast< QgsPoint(*)>(_a[1])),(*reinterpret_cast< Qt::MouseButton(*)>(_a[2]))); break;
         case 5: updateOK(); break;
         }
         _id -= 6;

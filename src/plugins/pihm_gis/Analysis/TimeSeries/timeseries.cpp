@@ -7,6 +7,7 @@
 #include "../../pihmLIBS/helpDialog/helpdialog.h"
 
 #include <qwt_plot_canvas.h>
+#include <qwt_magnifier.h>
 
 #define ELEMENT_FEATURE	0
 #define RIVER_FEATURE	1
@@ -524,7 +525,6 @@ void timeSeriesDlg::plot()
 	QPalette palette;
 	palette.setColor(QPalette::Background, Qt::white);
 	plotts->setPalette(palette);
-
 	plotts->resize(600, 400);
 	plotts->show();
 /***********************************************************************************/

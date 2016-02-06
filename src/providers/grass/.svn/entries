@@ -1,15 +1,15 @@
 8
 
 dir
-7809
-https://svn.qgis.org/repos/qgis/branches/Release-0_9_0/src/providers/grass
-https://svn.qgis.org/repos/qgis
+10938
+https://svn.osgeo.org/qgis/branches/Release-1_0_2/src/providers/grass
+https://svn.osgeo.org/qgis
 
 
 
-2007-08-05T19:26:01.281748Z
-7121
-wonder
+2009-04-19T10:30:28.288336Z
+10598
+jef
 has-props
 
 svn:special svn:externals svn:needs-lock
@@ -32,11 +32,11 @@ file
 
 
 
-2007-12-24T08:18:11.000000Z
-bfce7593ead850f789da62f0e6cfa53e
-2007-04-17T20:21:54.788776Z
-6894
-wonder
+2009-06-17T07:49:55.000000Z
+e20d7850afdf1c4cb59ffbb3bb9b6c4a
+2008-09-09T22:49:34.154710Z
+9288
+telwertowski
 has-props
 
 qgsgrassprovider.cpp
@@ -45,11 +45,11 @@ file
 
 
 
-2007-12-24T08:18:11.000000Z
-0bc3bcdc230ce8e0d67084eeff6ad78c
-2007-07-04T15:43:44.665626Z
-7059
-timlinux
+2009-06-17T07:49:55.000000Z
+07e6fb7bbcf89e092bacf9a5f8ead69a
+2009-04-19T10:30:28.288336Z
+10598
+jef
 has-props
 
 provider.cpp
@@ -58,11 +58,11 @@ file
 
 
 
-2007-12-24T08:18:11.000000Z
-35495fda2c066ad85da30dea5c84326e
-2007-01-09T02:39:15.173934Z
-6415
-wonder
+2009-06-17T07:49:55.000000Z
+9f92c301ce905866090083810bdabed2
+2008-11-09T00:14:12.141861Z
+9605
+timlinux
 has-props
 
 qgsgrass.cpp
@@ -71,11 +71,11 @@ file
 
 
 
-2007-12-24T08:18:11.000000Z
-3bd53a5b3de5b419431afbe53aa68a14
-2007-05-01T21:34:03.429410Z
-6923
-wonder
+2009-06-17T07:49:55.000000Z
+5fb0f8cf441028f5d46456d9b3726e5e
+2009-02-08T18:30:28.612068Z
+10135
+jef
 has-props
 
 qgsgrassprovider.h
@@ -84,11 +84,11 @@ file
 
 
 
-2007-12-24T08:18:11.000000Z
-f5b550e3e375f13e1901f10fd0b4560a
-2007-04-11T11:46:35.046700Z
-6879
-wonder
+2009-06-17T07:49:55.000000Z
+ebd096ccf68393e3c7a0cfdf8c43e03b
+2008-11-09T00:14:12.141861Z
+9605
+timlinux
 has-props
 
 .cvsignore
@@ -97,7 +97,7 @@ file
 
 
 
-2007-12-24T08:18:11.000000Z
+2009-06-17T07:49:55.000000Z
 6f6f93439e8f6e0e8d65a82c3296241b
 2005-05-10T18:17:03.000000Z
 3350
@@ -110,9 +110,9 @@ file
 
 
 
-2007-12-24T08:18:11.000000Z
-1b3b2161bae210f5405aea371f216678
-2007-07-26T03:20:16.025427Z
-7099
-timlinux
+2009-06-17T07:49:55.000000Z
+0953017703a3442bddc592ffaa6e9f26
+2009-04-07T19:36:40.944791Z
+10502
+jef
 

@@ -34,10 +34,10 @@ RM = /usr/bin/cmake -E remove -f
 CMAKE_EDIT_COMMAND = /usr/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0
+CMAKE_SOURCE_DIR = /Users/bhattgopal/dev/cpp/qgis_1.0.2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build
+CMAKE_BINARY_DIR = /Users/bhattgopal/dev/cpp/qgis_1.0.2/build
 
 # Include the progress variables for this target.
 include CMakeFiles/progress.make
@@ -48,7 +48,7 @@ include CMakeFiles/progress.make
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/mac/Contents && /usr/bin/ccmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/mac/Contents && /usr/bin/ccmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 
 # Special rule for the target edit_cache
 edit_cache/fast: edit_cache
@@ -56,17 +56,17 @@ edit_cache/fast: edit_cache
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/mac/Contents && /usr/bin/cmake -P cmake_install.cmake
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/mac/Contents && /usr/bin/cmake -P cmake_install.cmake
 
 # Special rule for the target install
 install/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/mac/Contents && /usr/bin/cmake -P cmake_install.cmake
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/mac/Contents && /usr/bin/cmake -P cmake_install.cmake
 
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/mac/Contents && /usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/mac/Contents && /usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 
 # Special rule for the target install/local
 install/local/fast: install/local
@@ -81,7 +81,7 @@ list_install_components/fast: list_install_components
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/mac/Contents && /usr/bin/cpack --config /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CPackConfig.cmake
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/mac/Contents && /usr/bin/cpack --config /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CPackConfig.cmake
 
 # Special rule for the target package
 package/fast: package
@@ -89,7 +89,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/mac/Contents && /usr/bin/cpack --config /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CPackSourceConfig.cmake
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/mac/Contents && /usr/bin/cpack --config /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CPackSourceConfig.cmake
 
 # Special rule for the target package_source
 package_source/fast: package_source
@@ -97,31 +97,31 @@ package_source/fast: package_source
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/mac/Contents && /usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/mac/Contents && /usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 
 # Special rule for the target rebuild_cache
 rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_ALL_PROGRESS)
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f CMakeFiles/Makefile2 src/mac/Contents/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles 0
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_ALL_PROGRESS)
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f CMakeFiles/Makefile2 src/mac/Contents/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles 0
 
 # The main clean target
 clean:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f CMakeFiles/Makefile2 src/mac/Contents/clean
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f CMakeFiles/Makefile2 src/mac/Contents/clean
 
 # The main clean target
 clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f CMakeFiles/Makefile2 src/mac/Contents/preinstall
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f CMakeFiles/Makefile2 src/mac/Contents/preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f CMakeFiles/Makefile2 src/mac/Contents/preinstall
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f CMakeFiles/Makefile2 src/mac/Contents/preinstall
 
 # clear depends
 depend:
@@ -129,14 +129,14 @@ depend:
 
 # Convenience name for target.
 src/mac/Contents/CMakeFiles/Info.plist.dir/rule:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f CMakeFiles/Makefile2 src/mac/Contents/CMakeFiles/Info.plist.dir/rule
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f CMakeFiles/Makefile2 src/mac/Contents/CMakeFiles/Info.plist.dir/rule
 
 # Convenience name for target.
 Info.plist: src/mac/Contents/CMakeFiles/Info.plist.dir/rule
 
 # fast build rule for target.
 Info.plist/fast:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/mac/Contents/CMakeFiles/Info.plist.dir/build.make src/mac/Contents/CMakeFiles/Info.plist.dir/build
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/mac/Contents/CMakeFiles/Info.plist.dir/build.make src/mac/Contents/CMakeFiles/Info.plist.dir/build
 
 # Help Target
 help::
@@ -162,5 +162,5 @@ help::
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 

@@ -1,83 +1,77 @@
 K 25
 svn:wc:ra_dav:version-url
-V 72
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/north_arrow
+V 67
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/north_arrow
 END
 plugin.cpp
 K 25
 svn:wc:ra_dav:version-url
-V 83
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/north_arrow/plugin.cpp
+V 78
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/north_arrow/plugin.cpp
 END
 pluginguibase.ui.h
 K 25
 svn:wc:ra_dav:version-url
-V 91
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/north_arrow/pluginguibase.ui.h
+V 86
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/north_arrow/pluginguibase.ui.h
 END
-north_arrow.xcf
+north_arrow.svg
 K 25
 svn:wc:ra_dav:version-url
-V 88
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/north_arrow/north_arrow.xcf
+V 83
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/north_arrow/north_arrow.svg
 END
 plugin.h
 K 25
 svn:wc:ra_dav:version-url
-V 81
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/north_arrow/plugin.h
+V 76
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/north_arrow/plugin.h
 END
 plugingui.cpp
 K 25
 svn:wc:ra_dav:version-url
-V 86
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/north_arrow/plugingui.cpp
+V 81
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/north_arrow/plugingui.cpp
+END
+north_arrow.png
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/north_arrow/north_arrow.png
 END
 northarrow_plugin.qrc
 K 25
 svn:wc:ra_dav:version-url
-V 94
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/north_arrow/northarrow_plugin.qrc
-END
-northarrow.png
-K 25
-svn:wc:ra_dav:version-url
-V 87
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/north_arrow/northarrow.png
+V 89
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/north_arrow/northarrow_plugin.qrc
 END
 plugingui.h
 K 25
 svn:wc:ra_dav:version-url
-V 84
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/north_arrow/plugingui.h
+V 79
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/north_arrow/plugingui.h
 END
 pluginguibase.ui
 K 25
 svn:wc:ra_dav:version-url
-V 89
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/north_arrow/pluginguibase.ui
-END
-icon.xpm
-K 25
-svn:wc:ra_dav:version-url
-V 81
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/north_arrow/icon.xpm
+V 84
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/north_arrow/pluginguibase.ui
 END
 .cvsignore
 K 25
 svn:wc:ra_dav:version-url
-V 83
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/north_arrow/.cvsignore
+V 78
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/north_arrow/.cvsignore
 END
 CMakeLists.txt
 K 25
 svn:wc:ra_dav:version-url
-V 87
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/north_arrow/CMakeLists.txt
+V 82
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/north_arrow/CMakeLists.txt
 END
 README
 K 25
 svn:wc:ra_dav:version-url
-V 79
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/north_arrow/README
+V 74
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/north_arrow/README
 END

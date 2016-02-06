@@ -21,11 +21,13 @@ SET(CMAKE_C_INCLUDE_PATH
   "../src/plugins/pihm_gis/../../core/renderer"
   "../src/plugins/pihm_gis/../../core/symbology"
   "../src/plugins/pihm_gis/../../gui"
+  "../src/plugins/pihm_gis/../../app"
   "../src/plugins/pihm_gis/.."
   "/Users/bhattgopal/dev/sundials/include"
   "/Users/bhattgopal/dev/sundials/include/sundials"
   "/Users/bhattgopal/dev/sundials/include/cvode"
   "/Library/Frameworks/GDAL.framework/Headers"
+  "/usr/local/qwt-5.2.0/include"
   )
 SET(CMAKE_CXX_INCLUDE_PATH ${CMAKE_C_INCLUDE_PATH})
 

@@ -32,7 +32,7 @@
 #include "pihm.h"  
 
 
-void initialize(char *filename, Model_Data DS, Control_Data *CS, N_Vector CV_Y)
+int initialize(char *filename, Model_Data DS, Control_Data *CS, N_Vector CV_Y)
 	{
   	int i,j,tmpBool,BoolBR,BoolR=0;
   	realtype a_x, a_y, b_x, b_y, c_x, c_y,distX,distY;
@@ -216,7 +216,7 @@ void initialize(char *filename, Model_Data DS, Control_Data *CS, N_Vector CV_Y)
 		{
 		printf("\n Filling Surface Sink Elements");
 		qWarning("Filling Surface Sink Element");
-		tempMsg->showMessage("Filling Surface Sink Elements");
+		//??tempMsg->showMessage("Filling Surface Sink Elements");
 		for(i=0; i<DS->NumEle; i++)
 			{
 			/* Correction of Surf Elev (artifacts due to coarse scale discretization). Not needed if there is lake feature.*/
@@ -260,7 +260,7 @@ void initialize(char *filename, Model_Data DS, Control_Data *CS, N_Vector CV_Y)
 		if(CS->FillEleSub == 1)
 		{
 		printf("\n Filling Subsurface Element Sinks");
-		tempMsg->showMessage("Filling Subsurface Sink Elements");
+		//??tempMsg->showMessage("Filling Subsurface Sink Elements");
 		for(i=0; i<DS->NumEle; i++)
 			{
 			tmpBool=1;
@@ -444,5 +444,6 @@ void initialize(char *filename, Model_Data DS, Control_Data *CS, N_Vector CV_Y)
     		fclose(init_file); 
   		}
   	printf("done.\n");
+	return BoolR;
 	}
 

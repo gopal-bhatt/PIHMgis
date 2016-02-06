@@ -14,7 +14,7 @@
  *   (at your option) any later version.                                   *
  *                                                                         *
  ***************************************************************************/
-/* $Id: qgstable.h 6415 2007-01-09 02:39:15Z wonder $ */
+/* $Id: qgstable.h 9138 2008-08-23 21:37:31Z jef $ */
 
 #ifndef QGSTABLE_H
 #define QGSTABLE_H
@@ -26,12 +26,13 @@
  * to a map layer of any type
  */
 
-class QgsTable : public QgsDataSource  {
-public: 
+class QgsTable : public QgsDataSource
+{
+  public:
     //! Constructor
-	QgsTable();
-	//! Destructor
-	~QgsTable();
+    QgsTable();
+    //! Destructor
+    ~QgsTable();
 };
 
 #endif

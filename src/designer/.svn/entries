@@ -1,15 +1,15 @@
 8
 
 dir
-7809
-https://svn.qgis.org/repos/qgis/branches/Release-0_9_0/src/designer
-https://svn.qgis.org/repos/qgis
+10938
+https://svn.osgeo.org/qgis/branches/Release-1_0_2/src/designer
+https://svn.osgeo.org/qgis
 
 
 
-2007-07-25T20:00:26.247663Z
-7086
-timlinux
+2008-08-24T14:07:06.583894Z
+9150
+jef
 has-props
 
 svn:special svn:externals svn:needs-lock
@@ -32,7 +32,7 @@ file
 
 
 
-2007-12-24T08:17:21.000000Z
+2009-06-17T07:49:16.000000Z
 a410197189aa7f00db5a1e1b3387c689
 2006-04-02T22:57:22.991651Z
 5133
@@ -44,9 +44,9 @@ file
 
 
 
-2007-12-24T08:17:21.000000Z
-53cc51b679f691a7fc729d5ee7f611a5
-2006-04-03T01:09:31.406740Z
-5135
-timlinux
+2009-06-17T07:49:16.000000Z
+1a3f6d2ada4801d9d10a06de2792589c
+2008-08-24T14:07:06.583894Z
+9150
+jef
 

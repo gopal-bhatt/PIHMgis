@@ -12,12 +12,12 @@ class QgsMapToPixel
 
  public:
  /* Constructor
- * @param mupp Map units per pixel
+ * @param mapUnitsPerPixel Map units per pixel
  * @param ymax Maximum y value of the map canvas
  * @param ymin Minimum y value of the map canvas
  * @param xmin Minimum x value of the map canvas
  */
-    QgsMapToPixel(double mupp=0, double ymax = 0, double ymin=0,
+    QgsMapToPixel(double mapUnitsPerPixel=0, double ymax = 0, double ymin=0,
 			   double xmin = 0);
 		 //! destructor
     ~QgsMapToPixel();
@@ -61,26 +61,26 @@ class QgsMapToPixel
     
     QgsPoint toMapPoint(int x, int y);
     /*! Set map units per pixel
-    * @param mupp Map units per pixel
+    * @param mapUnitsPerPixel Map units per pixel
     */
-    void setMapUnitsPerPixel(double mupp);
+    void setMapUnitsPerPixel(double mapUnitsPerPixel);
     
     //! Return current map units per pixel
     double mapUnitsPerPixel();
 
     //! Set maximum y value
-    void setYmax(double ymax);
+    void setYMaximum(double ymax);
     //! Set minimum y value
-    void setYmin(double ymin);
+    void setYMinimum(double ymin);
     //! set minimum x value
-    void setXmin(double xmin);
+    void setXMinimum(double xmin);
     /*! Set parameters for use in tranfsorming coordinates
-    * @param mupp Map units per pixel
+    * @param mapUnitsPerPixel Map units per pixel
     * @param xmin Minimum x value
     * @param ymin Minimum y value
     * @param ymax Maximum y value
     */
-    void setParameters(double mupp, double xmin, double ymin, double ymax);
+    void setParameters(double mapUnitsPerPixel, double xmin, double ymin, double ymax);
     //! String representation of the parameters used in the transform
     QString showParameters();
 

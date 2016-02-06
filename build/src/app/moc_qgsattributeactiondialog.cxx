@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'qgsattributeactiondialog.h'
 **
-** Created: Wed Jun 11 19:05:42 2008
+** Created: Fri Jun 19 01:54:08 2009
 **      by: The Qt Meta Object Compiler version 59 (Qt 4.3.2)
 **
 ** WARNING! All changes made in this file will be lost!
@@ -35,7 +35,7 @@ static const uint qt_meta_data_QgsAttributeActionDialog[] = {
       73,   25,   25,   25, 0x0a,
       87,   25,   25,   25, 0x0a,
       95,   25,   25,   25, 0x0a,
-     108,  104,   25,   25, 0x0a,
+     104,   25,   25,   25, 0x0a,
 
        0        // eod
 };
@@ -43,8 +43,8 @@ static const uint qt_meta_data_QgsAttributeActionDialog[] = {
 static const char qt_meta_stringdata_QgsAttributeActionDialog[] = {
     "QgsAttributeActionDialog\0\0moveUp()\0"
     "moveDown()\0browse()\0remove()\0insert()\0"
-    "insertField()\0apply()\0update()\0,,,\0"
-    "rowSelected(int,int,int,QPoint)\0"
+    "insertField()\0apply()\0update()\0"
+    "itemSelectionChanged()\0"
 };
 
 const QMetaObject QgsAttributeActionDialog::staticMetaObject = {
@@ -80,7 +80,7 @@ int QgsAttributeActionDialog::qt_metacall(QMetaObject::Call _c, int _id, void **
         case 5: insertField(); break;
         case 6: apply(); break;
         case 7: update(); break;
-        case 8: rowSelected((*reinterpret_cast< int(*)>(_a[1])),(*reinterpret_cast< int(*)>(_a[2])),(*reinterpret_cast< int(*)>(_a[3])),(*reinterpret_cast< const QPoint(*)>(_a[4]))); break;
+        case 8: itemSelectionChanged(); break;
         }
         _id -= 9;
     }

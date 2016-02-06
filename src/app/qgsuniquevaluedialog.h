@@ -14,7 +14,7 @@
  *   (at your option) any later version.                                   *
  *                                                                         *
  ***************************************************************************/
-/* $Id: qgsuniquevaluedialog.h 6472 2007-01-29 08:00:18Z mhugent $ */
+/* $Id: qgsuniquevaluedialog.h 9138 2008-08-23 21:37:31Z jef $ */
 
 #ifndef QGSUNIQUEVALUEDIALOG_H
 #define QGSUNIQUEVALUEDIALOG_H
@@ -29,31 +29,45 @@ class QgsVectorLayer;
 class QgsUniqueValueDialog: public QDialog, private Ui::QgsUniqueValueDialogBase
 {
     Q_OBJECT
- public:
-    QgsUniqueValueDialog(QgsVectorLayer* vl);
+  public:
+    QgsUniqueValueDialog( QgsVectorLayer* vl );
     ~QgsUniqueValueDialog();
 
- public slots:
-     void apply();
+  public slots:
+    void apply();
+    void itemChanged( QListWidgetItem *item );
+    void randomizeColors();
+    void resetColors();
 
- protected:
+  protected:
     /**Pointer to the associated vector layer*/
     QgsVectorLayer* mVectorLayer;
     /**Set to store the already entered values*/
-    std::map<QString,QgsSymbol*> mValues;
+    QMap<QString, QgsSymbol*> mValues;
     QgsSingleSymbolDialog sydialog;
-    /**Value for which symbology settings are displayed*/
-    QString currentValue;
 
- protected slots:
+  protected slots:
     /**Set new attribut for classification*/
     void changeClassificationAttribute();
-    /**Changes the display of the single symbol dialog*/
-    void changeCurrentValue();
-    /**Removes a class from the classification*/
-    void deleteCurrentClass();
+    /**update single symbol dialog after selection changed*/
+    void selectionChanged();
+    /**add a new classes to the classification*/
+    void addClass( QString value = QString::null );
+    /**Removes the selected classes from the classification*/
+    void deleteSelectedClasses();
     /**Writes changes in the single symbol dialog to the corresponding QgsSymbol*/
     void applySymbologyChanges();
+
+  private:
+    /** Update the list widget item icon with a preview for the symbol.
+     * @param QgsSymbol * - symbol holding the style info.
+     * @param QListWidgetItem * - item to get its icon updated.
+     */
+    void updateEntryIcon( QgsSymbol * thepSymbol, QListWidgetItem * thepItem );
+    QColor randomColor();
+    void setSymbolColor( QgsSymbol *symbol, QColor thecolor );
+
+    QString mOldClassificationAttribute;
 };
 
 #endif

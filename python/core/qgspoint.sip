@@ -48,10 +48,10 @@ public:
   double y() const;
 
   //! String representation of the point (x,y)
-  QString stringRep() const;
+  QString toString() const;
 
   //! As above but with precision for string representaiton of a point
-  QString stringRep(int thePrecision) const;
+  QString toString(int thePrecision) const;
   
   /*! Return the well known text representation for the point.
    * The wkt is created without an SRID.
@@ -81,6 +81,25 @@ public:
     //QString str("(%f,%f)").arg(sipCpp->x()).arg(sipCpp->y());
     sipRes = PyString_FromString(str.toLocal8Bit().data());
 %End
+
+  int __len__();
+%MethodCode
+    sipRes = 2;
+%End
+
+
+  SIP_PYOBJECT __getitem__(int);
+%MethodCode    
+    if (a0 == 0) {
+        sipRes = Py_BuildValue("d",sipCpp->x());
+    } else if (a0 == 1) {
+        sipRes = Py_BuildValue("d",sipCpp->y());
+    } else {
+        QString msg = QString("Bad index: %1").arg(a0);
+        PyErr_SetString(PyExc_IndexError, msg.toAscii().constData());
+    }
+%End
+
 
   
 }; // class QgsPOint

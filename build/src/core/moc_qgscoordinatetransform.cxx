@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'qgscoordinatetransform.h'
 **
-** Created: Wed Jun 11 19:03:32 2008
+** Created: Fri Jun 19 01:50:18 2009
 **      by: The Qt Meta Object Compiler version 59 (Qt 4.3.2)
 **
 ** WARNING! All changes made in this file will be lost!
@@ -81,7 +81,7 @@ int QgsCoordinateTransform::qt_metacall(QMetaObject::Call _c, int _id, void **_a
 }
 
 // SIGNAL 0
-void QgsCoordinateTransform::invalidTransformInput()
+void QgsCoordinateTransform::invalidTransformInput()const
 {
-    QMetaObject::activate(this, &staticMetaObject, 0, 0);
+    QMetaObject::activate(const_cast< QgsCoordinateTransform *>(this), &staticMetaObject, 0, 0);
 }

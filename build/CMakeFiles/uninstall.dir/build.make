@@ -31,15 +31,15 @@ RM = /usr/bin/cmake -E remove -f
 CMAKE_EDIT_COMMAND = /usr/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0
+CMAKE_SOURCE_DIR = /Users/bhattgopal/dev/cpp/qgis_1.0.2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build
+CMAKE_BINARY_DIR = /Users/bhattgopal/dev/cpp/qgis_1.0.2/build
 
 # Utility rule file for uninstall.
 
 CMakeFiles/uninstall:
-	/usr/bin/cmake -P /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/cmake_uninstall.cmake
+	/usr/bin/cmake -P /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/cmake_uninstall.cmake
 
 uninstall: CMakeFiles/uninstall.dir/build.make
 

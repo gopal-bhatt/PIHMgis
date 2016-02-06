@@ -4,7 +4,7 @@
 src/providers/wms/CMakeFiles/wmsprovider.dir/moc_qgswmsprovider.o: ../src/providers/wms/../../core/qgsdataprovider.h
 src/providers/wms/CMakeFiles/wmsprovider.dir/moc_qgswmsprovider.o: ../src/providers/wms/../../core/qgspoint.h
 src/providers/wms/CMakeFiles/wmsprovider.dir/moc_qgswmsprovider.o: ../src/providers/wms/../../core/qgsrasterdataprovider.h
-src/providers/wms/CMakeFiles/wmsprovider.dir/moc_qgswmsprovider.o: ../src/providers/wms/../../core/qgsrect.h
+src/providers/wms/CMakeFiles/wmsprovider.dir/moc_qgswmsprovider.o: ../src/providers/wms/../../core/qgsrectangle.h
 src/providers/wms/CMakeFiles/wmsprovider.dir/moc_qgswmsprovider.o: /Library/Frameworks/QtCore.framework/Headers/QObject
 src/providers/wms/CMakeFiles/wmsprovider.dir/moc_qgswmsprovider.o: /Library/Frameworks/QtCore.framework/Headers/QString
 src/providers/wms/CMakeFiles/wmsprovider.dir/moc_qgswmsprovider.o: /Library/Frameworks/QtCore.framework/Headers/QStringList
@@ -18,6 +18,7 @@ src/providers/wms/CMakeFiles/wmsprovider.dir/moc_qgswmsprovider.o: src/providers
 src/providers/wms/CMakeFiles/wmsprovider.dir/moc_qgswmsprovider.o: /usr/include/stdarg.h
 
 src/providers/wms/CMakeFiles/wmsprovider.dir/qgswmsprovider.o: ../src/providers/wms/../../core/qgis.h
+src/providers/wms/CMakeFiles/wmsprovider.dir/qgswmsprovider.o: ../src/providers/wms/../../core/qgscoordinatereferencesystem.h
 src/providers/wms/CMakeFiles/wmsprovider.dir/qgswmsprovider.o: ../src/providers/wms/../../core/qgscoordinatetransform.h
 src/providers/wms/CMakeFiles/wmsprovider.dir/qgswmsprovider.o: ../src/providers/wms/../../core/qgscsexception.h
 src/providers/wms/CMakeFiles/wmsprovider.dir/qgswmsprovider.o: ../src/providers/wms/../../core/qgsdataprovider.h
@@ -26,8 +27,8 @@ src/providers/wms/CMakeFiles/wmsprovider.dir/qgswmsprovider.o: ../src/providers/
 src/providers/wms/CMakeFiles/wmsprovider.dir/qgswmsprovider.o: ../src/providers/wms/../../core/qgslogger.h
 src/providers/wms/CMakeFiles/wmsprovider.dir/qgswmsprovider.o: ../src/providers/wms/../../core/qgspoint.h
 src/providers/wms/CMakeFiles/wmsprovider.dir/qgswmsprovider.o: ../src/providers/wms/../../core/qgsrasterdataprovider.h
-src/providers/wms/CMakeFiles/wmsprovider.dir/qgswmsprovider.o: ../src/providers/wms/../../core/qgsrect.h
-src/providers/wms/CMakeFiles/wmsprovider.dir/qgswmsprovider.o: ../src/providers/wms/../../core/qgsspatialrefsys.h
+src/providers/wms/CMakeFiles/wmsprovider.dir/qgswmsprovider.o: ../src/providers/wms/../../core/qgsrectangle.h
+src/providers/wms/CMakeFiles/wmsprovider.dir/qgswmsprovider.o: /Library/Frameworks/QtCore.framework/Headers/QEvent
 src/providers/wms/CMakeFiles/wmsprovider.dir/qgswmsprovider.o: /Library/Frameworks/QtCore.framework/Headers/QFile
 src/providers/wms/CMakeFiles/wmsprovider.dir/qgswmsprovider.o: /Library/Frameworks/QtCore.framework/Headers/QMap
 src/providers/wms/CMakeFiles/wmsprovider.dir/qgswmsprovider.o: /Library/Frameworks/QtCore.framework/Headers/QObject
@@ -35,6 +36,7 @@ src/providers/wms/CMakeFiles/wmsprovider.dir/qgswmsprovider.o: /Library/Framewor
 src/providers/wms/CMakeFiles/wmsprovider.dir/qgswmsprovider.o: /Library/Frameworks/QtCore.framework/Headers/QString
 src/providers/wms/CMakeFiles/wmsprovider.dir/qgswmsprovider.o: /Library/Frameworks/QtCore.framework/Headers/QStringList
 src/providers/wms/CMakeFiles/wmsprovider.dir/qgswmsprovider.o: /Library/Frameworks/QtCore.framework/Headers/QUrl
+src/providers/wms/CMakeFiles/wmsprovider.dir/qgswmsprovider.o: /Library/Frameworks/QtCore.framework/Headers/qcoreevent.h
 src/providers/wms/CMakeFiles/wmsprovider.dir/qgswmsprovider.o: /Library/Frameworks/QtCore.framework/Headers/qfile.h
 src/providers/wms/CMakeFiles/wmsprovider.dir/qgswmsprovider.o: /Library/Frameworks/QtCore.framework/Headers/qmap.h
 src/providers/wms/CMakeFiles/wmsprovider.dir/qgswmsprovider.o: /Library/Frameworks/QtCore.framework/Headers/qobject.h
@@ -43,11 +45,11 @@ src/providers/wms/CMakeFiles/wmsprovider.dir/qgswmsprovider.o: /Library/Framewor
 src/providers/wms/CMakeFiles/wmsprovider.dir/qgswmsprovider.o: /Library/Frameworks/QtCore.framework/Headers/qstringlist.h
 src/providers/wms/CMakeFiles/wmsprovider.dir/qgswmsprovider.o: /Library/Frameworks/QtCore.framework/Headers/qurl.h
 src/providers/wms/CMakeFiles/wmsprovider.dir/qgswmsprovider.o: /Library/Frameworks/QtGui.framework/Headers/QImage
-src/providers/wms/CMakeFiles/wmsprovider.dir/qgswmsprovider.o: /Library/Frameworks/QtGui.framework/Headers/qevent.h
 src/providers/wms/CMakeFiles/wmsprovider.dir/qgswmsprovider.o: /Library/Frameworks/QtGui.framework/Headers/qimage.h
 src/providers/wms/CMakeFiles/wmsprovider.dir/qgswmsprovider.o: /Library/Frameworks/QtNetwork.framework/Headers/QHttp
 src/providers/wms/CMakeFiles/wmsprovider.dir/qgswmsprovider.o: /Library/Frameworks/QtNetwork.framework/Headers/qhttp.h
 src/providers/wms/CMakeFiles/wmsprovider.dir/qgswmsprovider.o: /Library/Frameworks/QtXml.framework/Headers/QDomElement
+src/providers/wms/CMakeFiles/wmsprovider.dir/qgswmsprovider.o: /Library/Frameworks/QtXml.framework/Headers/QDomNode
 src/providers/wms/CMakeFiles/wmsprovider.dir/qgswmsprovider.o: /Library/Frameworks/QtXml.framework/Headers/qdom.h
 src/providers/wms/CMakeFiles/wmsprovider.dir/qgswmsprovider.o: ../src/providers/wms/qgswmsprovider.cpp
 src/providers/wms/CMakeFiles/wmsprovider.dir/qgswmsprovider.o: ../src/providers/wms/qgswmsprovider.h

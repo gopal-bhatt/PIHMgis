@@ -68,7 +68,7 @@ void mshFileDlg::run()
 
 	QString logFileName("/tmp/log.html");
 	ofstream log;
-	log.open(logFileName.ascii());
+	log.open(qPrintable(logFileName));
 	log<<"<html><body><font size=3 color=black><p> Verifying Files...</p></font></body></html>";
         log.close();
         MessageLog->setSource(logFileName);
@@ -78,33 +78,33 @@ void mshFileDlg::run()
 	ifstream ele, node, neigh, sele, bele;
         ofstream mesh;
 
-        ele.open((eleFileLineEdit->text()).ascii());
-        node.open((nodeFileLineEdit->text()).ascii());
-        neigh.open((neighFileLineEdit->text()).ascii());
-        sele.open((sElevFileLineEdit->text()).ascii());
-        bele.open((bElevFileLineEdit->text()).ascii());
-        mesh.open((mshFileLineEdit->text()).ascii(), ios::out);
+        ele.open(qPrintable((eleFileLineEdit->text())));
+        node.open(qPrintable((nodeFileLineEdit->text())));
+        neigh.open(qPrintable((neighFileLineEdit->text())));
+        sele.open(qPrintable((sElevFileLineEdit->text())));
+        bele.open(qPrintable((bElevFileLineEdit->text())));
+        mesh.open(qPrintable((mshFileLineEdit->text())), ios::out);
 
 	int runFlag = 1;
 /*
         if(ele==NULL){
-        	qWarning("\n%s doesn't exist!", (eleFileLineEdit->text()).ascii());
+        	qWarning("\n%s doesn't exist!", qPrintable((eleFileLineEdit->text())));
 	        runFlag=0;
         }
 	if(node==NULL){
-                qWarning("\n%s doesn't exist!", (nodeFileLineEdit->text()).ascii());
+                qWarning("\n%s doesn't exist!", qPrintable((nodeFileLineEdit->text())));
                 runFlag=0;
         }
 	if(neigh==NULL){
-                qWarning("\n%s doesn't exist!", (neighFileLineEdit->text()).ascii());
+                qWarning("\n%s doesn't exist!", qPrintable((neighFileLineEdit->text())));
                 runFlag=0;
         }
 	if(sele==NULL){
-                qWarning("\n%s doesn't exist!", (sElevFileLineEdit->text()).ascii());
+                qWarning("\n%s doesn't exist!", qPrintable((sElevFileLineEdit->text())));
                 runFlag=0;
         }
 	if(bele==NULL){
-                qWarning("\n%s doesn't exist!", (bElevFileLineEdit->text()).ascii());
+                qWarning("\n%s doesn't exist!", qPrintable((bElevFileLineEdit->text())));
                 runFlag=0;
         }
 	if(mesh==NULL){
@@ -113,16 +113,16 @@ void mshFileDlg::run()
         }
 */
 
-	log.open(logFileName.ascii(), ios::app);
+	log.open(qPrintable(logFileName), ios::app);
 	if((eleFileLineEdit->text()).length()==0){
 		log<<"<p><font size=3 color=red> Error! Please input .ele Input File</p>";
 		runFlag = 0;
 	}
 	else{
-		log<<"<p>Checking... "<<(eleFileLineEdit->text()).ascii()<<"... ";
+		log<<"<p>Checking... "<<qPrintable((eleFileLineEdit->text()))<<"... ";
 		if(ele == NULL){
 			log<<"<font size=3 color=red> Error!</p>";
-			//qWarning("\n%s doesn't exist!", (inputFileLineEdit->text()).ascii());
+			//qWarning("\n%s doesn't exist!", qPrintable((inputFileLineEdit->text())));
 			runFlag = 0;
 		}
 		else
@@ -133,16 +133,16 @@ void mshFileDlg::run()
 	QApplication::processEvents();
 
 	
-	log.open(logFileName.ascii(), ios::app);
+	log.open(qPrintable(logFileName), ios::app);
 	if((nodeFileLineEdit->text()).length()==0){
 		log<<"<p><font size=3 color=red> Error! Please input .node Input File</p>";
 		runFlag = 0;
 	}
 	else{
-		log<<"<p>Checking... "<<(nodeFileLineEdit->text()).ascii()<<"... ";
+		log<<"<p>Checking... "<<qPrintable((nodeFileLineEdit->text()))<<"... ";
 		if(ele == NULL){
 			log<<"<font size=3 color=red> Error!</p>";
-			//qWarning("\n%s doesn't exist!", (inputFileLineEdit->text()).ascii());
+			//qWarning("\n%s doesn't exist!", qPrintable((inputFileLineEdit->text())));
 			runFlag = 0;
 		}
 		else
@@ -153,16 +153,16 @@ void mshFileDlg::run()
 	QApplication::processEvents();
 
 	
-	log.open(logFileName.ascii(), ios::app);
+	log.open(qPrintable(logFileName), ios::app);
 	if((neighFileLineEdit->text()).length()==0){
 		log<<"<p><font size=3 color=red> Error! Please input .neigh Input File</p>";
 		runFlag = 0;
 	}
 	else{
-		log<<"<p>Checking... "<<(neighFileLineEdit->text()).ascii()<<"... ";
+		log<<"<p>Checking... "<<qPrintable((neighFileLineEdit->text()))<<"... ";
 		if(neigh == NULL){
 			log<<"<font size=3 color=red> Error!</p>";
-			//qWarning("\n%s doesn't exist!", (inputFileLineEdit->text()).ascii());
+			//qWarning("\n%s doesn't exist!", qPrintable((inputFileLineEdit->text())));
 			runFlag = 0;
 		}
 		else
@@ -173,13 +173,13 @@ void mshFileDlg::run()
 	QApplication::processEvents();
 
 
-	log.open(logFileName.ascii(), ios::app);
+	log.open(qPrintable(logFileName), ios::app);
 	if((sElevFileLineEdit->text()).length()==0){
 		log<<"<p><font size=3 color=red> Error! Please input Surface Elev. Input File</p>";
 		runFlag = 0;
 	}
 	else{
-		log<<"<p>Checking... "<<(sElevFileLineEdit->text()).ascii()<<"... ";
+		log<<"<p>Checking... "<<qPrintable((sElevFileLineEdit->text()))<<"... ";
 		if(sele == NULL){
 			log<<"<font size=3 color=red> Error!</p>";
 			//qWarning("\n%s doesn't exist!", (inputFileLineEdit->text()).ascii());
@@ -193,13 +193,13 @@ void mshFileDlg::run()
 	QApplication::processEvents();
 
 
-	log.open(logFileName.ascii(), ios::app);
+	log.open(qPrintable(logFileName), ios::app);
 	if((bElevFileLineEdit->text()).length()==0){
 		log<<"<p><font size=3 color=red> Error! Please input Bed Elev. Input File</p>";
 		runFlag = 0;
 	}
 	else{
-		log<<"<p>Checking... "<<(bElevFileLineEdit->text()).ascii()<<"... ";
+		log<<"<p>Checking... "<<qPrintable((bElevFileLineEdit->text()))<<"... ";
 		if(bele == NULL){
 			log<<"<font size=3 color=red> Error!</p>";
 			//qWarning("\n%s doesn't exist!", (inputFileLineEdit->text()).ascii());
@@ -213,13 +213,13 @@ void mshFileDlg::run()
 	QApplication::processEvents();
 
 
-	log.open(logFileName.ascii(), ios::app);
+	log.open(qPrintable(logFileName), ios::app);
 	if((mshFileLineEdit->text()).length()==0){
 		log<<"<p><font size=3 color=red> Error! Please input .mesh Output File</p>";
 		runFlag = 0;
 	}
 	else{
-		log<<"<p>Checking... "<<(mshFileLineEdit->text()).ascii()<<"... ";
+		log<<"<p>Checking... "<<qPrintable((mshFileLineEdit->text()))<<"... ";
 		if(mesh == NULL){
 			log<<"<font size=3 color=red> Error!</p>";
 			qWarning("\nCan not open output file name");
@@ -235,7 +235,7 @@ void mshFileDlg::run()
 
 	if(runFlag == 1){
 
-		log.open(logFileName.ascii(), ios::app);
+		log.open(qPrintable(logFileName), ios::app);
 		log<<"<p>Running...";
 		log.close();
 		MessageLog->reload();
@@ -244,8 +244,8 @@ void mshFileDlg::run()
 		GDALDataset *sElev, *bElev;
                 double sRanges[6], bRanges[6];
                 GDALAllRegister();
-                sElev = (GDALDataset *)GDALOpen((sElevFileLineEdit->text()).ascii(), GA_ReadOnly);
-                bElev = (GDALDataset *)GDALOpen((bElevFileLineEdit->text()).ascii(), GA_ReadOnly);
+                sElev = (GDALDataset *)GDALOpen(qPrintable((sElevFileLineEdit->text())), GA_ReadOnly);
+                bElev = (GDALDataset *)GDALOpen(qPrintable((bElevFileLineEdit->text())), GA_ReadOnly);
                 getExtent(sElev, sRanges);
                 getExtent(bElev, bRanges);
 
@@ -272,7 +272,7 @@ void mshFileDlg::run()
                         mesh<<"\n"<<index<<"\t"<<setprecision(20)<<X<<"\t"<<setprecision(20)<<Y<<"\t"<<setprecision(15)<<Zmin<<"\t"<<setprecision(15)<<Zmax;
                 }
 
-		log.open(logFileName.ascii(), ios::app);
+		log.open(qPrintable(logFileName), ios::app);
 		log<<" Done!</p>";
 		log.close();
 		MessageLog->reload();

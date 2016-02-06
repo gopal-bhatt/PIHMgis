@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'qgsencodingfiledialog.h'
 **
-** Created: Wed Jun 11 19:05:14 2008
+** Created: Fri Jun 19 01:53:20 2009
 **      by: The Qt Meta Object Compiler version 59 (Qt 4.3.2)
 **
 ** WARNING! All changes made in this file will be lost!

@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'plugingui.h'
 **
-** Created: Wed Jun 11 19:10:51 2008
+** Created: Fri Jun 19 01:59:55 2009
 **      by: The Qt Meta Object Compiler version 59 (Qt 4.3.2)
 **
 ** WARNING! All changes made in this file will be lost!
@@ -22,22 +22,24 @@ static const uint qt_meta_data_QgsGeorefPluginGui[] = {
        1,       // revision
        0,       // classname
        0,    0, // classinfo
-       3,   10, // methods
+       4,   10, // methods
        0,    0, // properties
        0,    0, // enums/sets
 
  // slots: signature, parameters, type, tag, flags
       20,   19,   19,   19, 0x0a,
       42,   19,   19,   19, 0x0a,
-      75,   19,   19,   19, 0x0a,
+      70,   19,   19,   19, 0x0a,
+      99,   19,   19,   19, 0x0a,
 
        0        // eod
 };
 
 static const char qt_meta_stringdata_QgsGeorefPluginGui[] = {
     "QgsGeorefPluginGui\0\0on_pbnClose_clicked()\0"
-    "on_pbnEnterWorldCoords_clicked()\0"
+    "on_pbnDescription_clicked()\0"
     "on_pbnSelectRaster_clicked()\0"
+    "on_mArrangeWindowsButton_clicked()\0"
 };
 
 const QMetaObject QgsGeorefPluginGui::staticMetaObject = {
@@ -66,10 +68,11 @@ int QgsGeorefPluginGui::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_c == QMetaObject::InvokeMetaMethod) {
         switch (_id) {
         case 0: on_pbnClose_clicked(); break;
-        case 1: on_pbnEnterWorldCoords_clicked(); break;
+        case 1: on_pbnDescription_clicked(); break;
         case 2: on_pbnSelectRaster_clicked(); break;
+        case 3: on_mArrangeWindowsButton_clicked(); break;
         }
-        _id -= 3;
+        _id -= 4;
     }
     return _id;
 }

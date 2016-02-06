@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'qgshelpserver.h'
 **
-** Created: Wed Jun 11 19:09:16 2008
+** Created: Fri Jun 19 01:57:52 2009
 **      by: The Qt Meta Object Compiler version 59 (Qt 4.3.2)
 **
 ** WARNING! All changes made in this file will be lost!
@@ -22,22 +22,26 @@ static const uint qt_meta_data_QgsHelpContextServer[] = {
        1,       // revision
        0,       // classname
        0,    0, // classinfo
-       1,   10, // methods
+       2,   10, // methods
        0,    0, // properties
        0,    0, // enums/sets
 
  // signals: signature, parameters, type, tag, flags
       22,   21,   21,   21, 0x05,
 
+ // slots: signature, parameters, type, tag, flags
+      49,   42,   21,   21, 0x0a,
+
        0        // eod
 };
 
 static const char qt_meta_stringdata_QgsHelpContextServer[] = {
     "QgsHelpContextServer\0\0setContext(QString)\0"
+    "socket\0incomingConnection(int)\0"
 };
 
 const QMetaObject QgsHelpContextServer::staticMetaObject = {
-    { &Q3ServerSocket::staticMetaObject, qt_meta_stringdata_QgsHelpContextServer,
+    { &QTcpServer::staticMetaObject, qt_meta_stringdata_QgsHelpContextServer,
       qt_meta_data_QgsHelpContextServer, 0 }
 };
 
@@ -51,19 +55,20 @@ void *QgsHelpContextServer::qt_metacast(const char *_clname)
     if (!_clname) return 0;
     if (!strcmp(_clname, qt_meta_stringdata_QgsHelpContextServer))
 	return static_cast<void*>(const_cast< QgsHelpContextServer*>(this));
-    return Q3ServerSocket::qt_metacast(_clname);
+    return QTcpServer::qt_metacast(_clname);
 }
 
 int QgsHelpContextServer::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 {
-    _id = Q3ServerSocket::qt_metacall(_c, _id, _a);
+    _id = QTcpServer::qt_metacall(_c, _id, _a);
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
         switch (_id) {
         case 0: setContext((*reinterpret_cast< const QString(*)>(_a[1]))); break;
+        case 1: incomingConnection((*reinterpret_cast< int(*)>(_a[1]))); break;
         }
-        _id -= 1;
+        _id -= 2;
     }
     return _id;
 }
@@ -99,7 +104,7 @@ static const char qt_meta_stringdata_QgsHelpContextSocket[] = {
 };
 
 const QMetaObject QgsHelpContextSocket::staticMetaObject = {
-    { &Q3Socket::staticMetaObject, qt_meta_stringdata_QgsHelpContextSocket,
+    { &QTcpSocket::staticMetaObject, qt_meta_stringdata_QgsHelpContextSocket,
       qt_meta_data_QgsHelpContextSocket, 0 }
 };
 
@@ -113,12 +118,12 @@ void *QgsHelpContextSocket::qt_metacast(const char *_clname)
     if (!_clname) return 0;
     if (!strcmp(_clname, qt_meta_stringdata_QgsHelpContextSocket))
 	return static_cast<void*>(const_cast< QgsHelpContextSocket*>(this));
-    return Q3Socket::qt_metacast(_clname);
+    return QTcpSocket::qt_metacast(_clname);
 }
 
 int QgsHelpContextSocket::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 {
-    _id = Q3Socket::qt_metacall(_c, _id, _a);
+    _id = QTcpSocket::qt_metacall(_c, _id, _a);
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {

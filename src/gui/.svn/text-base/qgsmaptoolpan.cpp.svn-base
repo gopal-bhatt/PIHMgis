@@ -19,42 +19,43 @@
 #include "qgscursors.h"
 #include <QBitmap>
 #include <QCursor>
+#include <QMouseEvent>
 
 
-QgsMapToolPan::QgsMapToolPan(QgsMapCanvas* canvas)
-  : QgsMapTool(canvas), mDragging(FALSE)
+QgsMapToolPan::QgsMapToolPan( QgsMapCanvas* canvas )
+    : QgsMapTool( canvas ), mDragging( FALSE )
 {
   // set cursor
-  QBitmap panBmp(16, 16, pan_bits, true);
-  QBitmap panBmpMask(16, 16, pan_mask_bits, true);
-  mCursor = QCursor(panBmp, panBmpMask, 5, 5);
+  QBitmap panBmp = QBitmap::fromData( QSize( 16, 16 ), pan_bits );
+  QBitmap panBmpMask = QBitmap::fromData( QSize( 16, 16 ), pan_mask_bits );
+  mCursor = QCursor( panBmp, panBmpMask, 5, 5 );
 }
 
-    
-void QgsMapToolPan::canvasMoveEvent(QMouseEvent * e)
+
+void QgsMapToolPan::canvasMoveEvent( QMouseEvent * e )
 {
-  if (mDragging && (e->buttons() & Qt::LeftButton))
+  if ( mDragging && ( e->buttons() & Qt::LeftButton ) )
   {
     // move map and other canvas items
-    mCanvas->panAction(e);
+    mCanvas->panAction( e );
   }
 }
-  
-    
-void QgsMapToolPan::canvasPressEvent(QMouseEvent * e)
+
+
+void QgsMapToolPan::canvasPressEvent( QMouseEvent * e )
 {
-  if (e->button() == Qt::LeftButton)
+  if ( e->button() == Qt::LeftButton )
   {
     mDragging = TRUE;
   }
 }
-  
-    
-void QgsMapToolPan::canvasReleaseEvent(QMouseEvent * e)
+
+
+void QgsMapToolPan::canvasReleaseEvent( QMouseEvent * e )
 {
-  if (mDragging && e->button() == Qt::LeftButton)
+  if ( mDragging && e->button() == Qt::LeftButton )
   {
-    mCanvas->panActionEnd(e->pos());
+    mCanvas->panActionEnd( e->pos() );
     mDragging = FALSE;
   }
 }

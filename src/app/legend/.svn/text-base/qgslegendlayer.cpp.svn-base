@@ -1,6 +1,6 @@
 /***************************************************************************
- *   Copyright (C) 2005 by Tim Sutton   *
- *   aps02ts@macbuntu   *
+ *   Copyright (C) 2005 by Tim Sutton                                      *
+ *   aps02ts@macbuntu                                                      *
  *                                                                         *
  *   This program is free software; you can redistribute it and/or modify  *
  *   it under the terms of the GNU General Public License as published by  *
@@ -19,6 +19,7 @@
  ***************************************************************************/
 
 #include "qgsapplication.h"
+#include "qgisapp.h"
 #include "qgslegend.h"
 #include "qgslegendlayer.h"
 #include "qgslegendlayerfile.h"
@@ -42,41 +43,51 @@
 #include <QMenu>
 #include <QMessageBox>
 #include <QPainter>
+#include <QSettings>
 
-QgsLegendLayer::QgsLegendLayer(QTreeWidgetItem* parent,QString name)
-    : QgsLegendItem(parent, name)
+QgsLegendLayer::QgsLegendLayer( QTreeWidgetItem* parent, QString name )
+    : QgsLegendItem( parent, name )
 {
-  mType=LEGEND_LAYER;
-  setFlags(Qt::ItemIsEditable | Qt::ItemIsUserCheckable | Qt::ItemIsEnabled | Qt::ItemIsSelectable);
-  setCheckState (0, Qt::Checked);
-  setText(0, name);
+  mType = LEGEND_LAYER;
+  setFlags( Qt::ItemIsEditable | Qt::ItemIsUserCheckable | Qt::ItemIsEnabled | Qt::ItemIsSelectable );
+  setCheckState( 0, Qt::Checked );
+  setText( 0, name );
+  setupFont();
 }
 
-QgsLegendLayer::QgsLegendLayer(QTreeWidget* parent, QString name): QgsLegendItem(parent, name)
+QgsLegendLayer::QgsLegendLayer( QTreeWidget* parent, QString name ): QgsLegendItem( parent, name )
 {
-  mType=LEGEND_LAYER;
-  setFlags(Qt::ItemIsEditable | Qt::ItemIsUserCheckable | Qt::ItemIsEnabled | Qt::ItemIsSelectable);
-  setCheckState (0, Qt::Checked);
-  setText(0, name);
+  mType = LEGEND_LAYER;
+  setFlags( Qt::ItemIsEditable | Qt::ItemIsUserCheckable | Qt::ItemIsEnabled | Qt::ItemIsSelectable );
+  setCheckState( 0, Qt::Checked );
+  setText( 0, name );
+  setupFont();
 }
 
-QgsLegendLayer::QgsLegendLayer(QString name): QgsLegendItem()
+QgsLegendLayer::QgsLegendLayer( QString name ): QgsLegendItem()
 {
-  mType=LEGEND_LAYER;
-  setFlags(Qt::ItemIsEditable | Qt::ItemIsUserCheckable | Qt::ItemIsEnabled | Qt::ItemIsSelectable);
-  setCheckState (0, Qt::Checked);
-  setText(0, name);
+  mType = LEGEND_LAYER;
+  setFlags( Qt::ItemIsEditable | Qt::ItemIsUserCheckable | Qt::ItemIsEnabled | Qt::ItemIsSelectable );
+  setCheckState( 0, Qt::Checked );
+  setText( 0, name );
+  setupFont();
 }
 
 QgsLegendLayer::~QgsLegendLayer()
 {
-  mType=LEGEND_LAYER;
+  mType = LEGEND_LAYER;
 }
 
+void QgsLegendLayer::setupFont() //private method
+{
+  QFont myFont = font( 0 );
+  myFont.setBold( true ); //visually differentiate layer labels from the rest
+  setFont( 0, myFont );
+}
 void QgsLegendLayer::setLayerTypeIcon()
 {
-  QIcon myIcon(getOriginalPixmap());
-  setIcon(0, myIcon);
+  QIcon myIcon( getOriginalPixmap() );
+  setIcon( 0, myIcon );
 }
 
 bool QgsLegendLayer::isLeafNode()
@@ -84,39 +95,39 @@ bool QgsLegendLayer::isLeafNode()
   return false;
 }
 
-QgsLegendItem::DRAG_ACTION QgsLegendLayer::accept(LEGEND_ITEM_TYPE type)
+QgsLegendItem::DRAG_ACTION QgsLegendLayer::accept( LEGEND_ITEM_TYPE type )
 {
-    if ( type == LEGEND_LAYER || type == LEGEND_GROUP)
-    {
-      return REORDER;
-    }
-    else
-      {
-	return NO_ACTION;
-      }
+  if ( type == LEGEND_LAYER || type == LEGEND_GROUP )
+  {
+    return REORDER;
+  }
+  else
+  {
+    return NO_ACTION;
+  }
 }
 
-QgsLegendItem::DRAG_ACTION QgsLegendLayer::accept(const QgsLegendItem* li) const
+QgsLegendItem::DRAG_ACTION QgsLegendLayer::accept( const QgsLegendItem* li ) const
 {
-  if(li && li != this)
+  if ( li && li != this )
+  {
+    LEGEND_ITEM_TYPE type = li->type();
+    if ( type == LEGEND_LAYER )
     {
-      LEGEND_ITEM_TYPE type = li->type();
-      if ( type == LEGEND_LAYER)
-	{
-	  //if(parent() == li->parent())
-	  //{
-	      return REORDER;
-	      //}
-	}
-      else if(type == LEGEND_GROUP)
-	{
-	  //only parent legend layers can change positions with groups
-	  if(parent() == 0)
-	    {
-	      return REORDER;
-	    }
-	}
+      //if(parent() == li->parent())
+      //{
+      return REORDER;
+      //}
     }
+    else if ( type == LEGEND_GROUP )
+    {
+      //only parent legend layers can change positions with groups
+      if ( parent() == 0 )
+      {
+        return REORDER;
+      }
+    }
+  }
   return NO_ACTION;
 }
 
@@ -124,33 +135,33 @@ QgsLegendLayerFile* QgsLegendLayer::firstLayerFile() const
 {
   //first find the legend layer file group
   QgsLegendLayerFileGroup* llfg = 0;
-  for(int i = 0; i < childCount(); ++i)
+  for ( int i = 0; i < childCount(); ++i )
   {
-    llfg = dynamic_cast<QgsLegendLayerFileGroup*>(child(i));
-    if(llfg)
+    llfg = dynamic_cast<QgsLegendLayerFileGroup*>( child( i ) );
+    if ( llfg )
     {
       break;
     }
   }
 
-  if(!llfg)
+  if ( !llfg )
   {
     return 0;
   }
 
-  QTreeWidgetItem* llf = llfg->child(0);
-  if(!llf)
+  QTreeWidgetItem* llf = llfg->child( 0 );
+  if ( !llf )
   {
     return 0;
   }
-  QgsLegendLayerFile* legendlayerfile = dynamic_cast<QgsLegendLayerFile*>(llf);
+  QgsLegendLayerFile* legendlayerfile = dynamic_cast<QgsLegendLayerFile*>( llf );
   return legendlayerfile;
 }
 
 QgsMapLayer* QgsLegendLayer::firstMapLayer() const
 {
   QgsLegendLayerFile* llf = firstLayerFile();
-  if (llf)
+  if ( llf )
   {
     return llf->layer();
   }
@@ -162,117 +173,117 @@ QgsMapLayer* QgsLegendLayer::firstMapLayer() const
 
 std::list<QgsMapLayer*> QgsLegendLayer::mapLayers()
 {
-    std::list<QgsMapLayer*> list;
-    std::list<QgsLegendLayerFile*> llist = legendLayerFiles();
-    for(std::list<QgsLegendLayerFile*>::iterator it = llist.begin(); it != llist.end(); ++it)
-      {
-	list.push_back((*it)->layer());
-      }
-    return list;
+  std::list<QgsMapLayer*> list;
+  std::list<QgsLegendLayerFile*> llist = legendLayerFiles();
+  for ( std::list<QgsLegendLayerFile*>::iterator it = llist.begin(); it != llist.end(); ++it )
+  {
+    list.push_back(( *it )->layer() );
+  }
+  return list;
 }
 
 std::list<QgsLegendLayerFile*> QgsLegendLayer::legendLayerFiles()
 {
   std::list<QgsLegendLayerFile*> list;
-  
+
   //find the layer file group
   QgsLegendLayerFileGroup* theLayerGroup = 0;
-  for(int i = 0; i < childCount(); ++i)
+  for ( int i = 0; i < childCount(); ++i )
+  {
+    theLayerGroup = dynamic_cast<QgsLegendLayerFileGroup*>( child( i ) );
+    if ( theLayerGroup )
     {
-      theLayerGroup = dynamic_cast<QgsLegendLayerFileGroup*>(child(i));
-      if(theLayerGroup)
-	{
-	  break;
-	}
+      break;
     }
+  }
 
   //add all the legend layer files in the group
-  if(theLayerGroup)
+  if ( theLayerGroup )
+  {
+    QgsLegendLayerFile* theFile = 0;
+    for ( int i = 0; i < theLayerGroup->childCount(); ++i )
     {
-      QgsLegendLayerFile* theFile = 0;
-      for(int i = 0; i < theLayerGroup->childCount(); ++i)
-	{
-	  theFile = dynamic_cast<QgsLegendLayerFile*>(theLayerGroup->child(i));
-	  if(theFile)
-	    {
-	      list.push_back(theFile);
-	    }
-	}
+      theFile = dynamic_cast<QgsLegendLayerFile*>( theLayerGroup->child( i ) );
+      if ( theFile )
+      {
+        list.push_back( theFile );
+      }
     }
+  }
   return list;
 }
 
-void QgsLegendLayer::updateLayerSymbologySettings(const QgsMapLayer* mapLayer)
+void QgsLegendLayer::updateLayerSymbologySettings( const QgsMapLayer* mapLayer )
 {
-  if(mapLayer)
+  if ( mapLayer )
+  {
+    //find all layers
+    std::list<QgsMapLayer*> theMapLayers = mapLayers();
+    for ( std::list<QgsMapLayer*>::iterator it = theMapLayers.begin(); it != theMapLayers.end(); ++it )
     {
-      //find all layers
-      std::list<QgsMapLayer*> theMapLayers = mapLayers();
-      for(std::list<QgsMapLayer*>::iterator it = theMapLayers.begin(); it != theMapLayers.end(); ++it)
-	{
-	  if((*it) != mapLayer)
-	    {
-	      (*it)->copySymbologySettings(*mapLayer);
-	    }
-	}
-      // source might have changed - e.g. other subset
-      setToolTip(0, mapLayer->publicSource());
+      if (( *it ) != mapLayer )
+      {
+        ( *it )->copySymbologySettings( *mapLayer );
+      }
     }
+    // source might have changed - e.g. other subset
+    setToolTip( 0, mapLayer->publicSource() );
+  }
 }
 
 void QgsLegendLayer::updateCheckState()
 {
   std::list<QgsLegendLayerFile*> llfiles = legendLayerFiles();
-  if(llfiles.size() < 1)
-    {
-      return;
-    }
-
-  std::list<QgsLegendLayerFile*>::iterator iter = llfiles.begin();
-  Qt::CheckState theState = (*iter)->checkState(0);
-  for(; iter != llfiles.end(); ++iter)
-    {
-      if(theState != (*iter)->checkState(0))
-	{
-	  theState = Qt::PartiallyChecked;
-	  break;
-	}
-    }
-
-  if(theState != checkState(0))
-    {
-      treeWidget()->blockSignals(true);
-      setCheckState(0, theState);
-      //notify the legend that the check state has changed
-      legend()->updateCheckStates(this, theState);
-      treeWidget()->blockSignals(false);
-    }
-}
-
-void QgsLegendLayer::refreshSymbology(const QString& key)
-{
-  QgsMapLayer* theMapLayer = QgsMapLayerRegistry::instance()->mapLayer(key);
-  if(!theMapLayer)
+  if ( llfiles.size() < 1 )
   {
     return;
   }
 
-  if (theMapLayer->type() == QgsMapLayer::VECTOR) // VECTOR
+  std::list<QgsLegendLayerFile*>::iterator iter = llfiles.begin();
+  Qt::CheckState theState = ( *iter )->checkState( 0 );
+  for ( ; iter != llfiles.end(); ++iter )
   {
-    QgsVectorLayer* vlayer = dynamic_cast<QgsVectorLayer*>(theMapLayer);
-    vectorLayerSymbology(vlayer); // get and change symbology
+    if ( theState != ( *iter )->checkState( 0 ) )
+    {
+      theState = Qt::PartiallyChecked;
+      break;
+    }
   }
-  else // RASTER
+
+  if ( theState != checkState( 0 ) )
   {
-    QgsRasterLayer* rlayer = dynamic_cast<QgsRasterLayer*>(theMapLayer);
-    rasterLayerSymbology(rlayer); // get and change symbology
+    treeWidget()->blockSignals( true );
+    setCheckState( 0, theState );
+    //notify the legend that the check state has changed
+    legend()->updateCheckStates( this, theState );
+    treeWidget()->blockSignals( false );
   }
 }
 
-void QgsLegendLayer::changeSymbologySettings(const QgsMapLayer* theMapLayer,
-                                             const SymbologyList& newSymbologyItems)
+void QgsLegendLayer::refreshSymbology( const QString& key, double widthScale )
 {
-  if(!theMapLayer)
+  QgsMapLayer* theMapLayer = QgsMapLayerRegistry::instance()->mapLayer( key );
+  if ( !theMapLayer )
+  {
+    return;
+  }
+
+  if ( theMapLayer->type() == QgsMapLayer::VectorLayer ) // VECTOR
+  {
+    QgsVectorLayer* vlayer = dynamic_cast<QgsVectorLayer*>( theMapLayer );
+    vectorLayerSymbology( vlayer, widthScale ); // get and change symbology
+  }
+  else // RASTER
+  {
+    QgsRasterLayer* rlayer = dynamic_cast<QgsRasterLayer*>( theMapLayer );
+    rasterLayerSymbology( rlayer ); // get and change symbology
+  }
+}
+
+void QgsLegendLayer::changeSymbologySettings( const QgsMapLayer* theMapLayer,
+    const SymbologyList& newSymbologyItems )
+{
+  if ( !theMapLayer )
   {
     return;
   }
@@ -280,35 +291,35 @@ void QgsLegendLayer::changeSymbologySettings(const QgsMapLayer* theMapLayer,
   QgsLegendSymbologyItem* theSymbologyItem = 0;
 
   //remove the symbology items under the legend layer
-  for(int i = childCount(); i >= 0; --i)
+  for ( int i = childCount(); i >= 0; --i )
   {
-    theSymbologyItem = dynamic_cast<QgsLegendSymbologyItem*>(child(i));
-    if(theSymbologyItem)
+    theSymbologyItem = dynamic_cast<QgsLegendSymbologyItem*>( child( i ) );
+    if ( theSymbologyItem )
     {
-      delete takeChild(i);
+      delete takeChild( i );
     }
   }
 
   //add the new symbology items
   int childposition = 0; //position to insert the items
-  for(SymbologyList::const_iterator it= newSymbologyItems.begin(); it != newSymbologyItems.end(); ++it)
+  for ( SymbologyList::const_iterator it = newSymbologyItems.begin(); it != newSymbologyItems.end(); ++it )
   {
-    QgsLegendSymbologyItem* theItem = new QgsLegendSymbologyItem(it->second.width(), it->second.height());
-    theItem->setText(0, it->first);
-    theItem->setIcon(0, QIcon(it->second));
-    insertChild(childposition, theItem);
+    QgsLegendSymbologyItem* theItem = new QgsLegendSymbologyItem( it->second.width(), it->second.height() );
+    theItem->setText( 0, it->first );
+    theItem->setIcon( 0, QIcon( it->second ) );
+    insertChild( childposition, theItem );
 
     ++childposition;
   }
 
   //copy the legend settings for the other layer files in the same legend layer
-  updateLayerSymbologySettings(theMapLayer);
+  updateLayerSymbologySettings( theMapLayer );
 
 }
 
 
 
-void QgsLegendLayer::vectorLayerSymbology(const QgsVectorLayer* layer)
+void QgsLegendLayer::vectorLayerSymbology( const QgsVectorLayer* layer, double widthScale )
 {
   SymbologyList itemList;
 
@@ -317,225 +328,221 @@ void QgsLegendLayer::vectorLayerSymbology(const QgsVectorLayer* layer)
   const QgsRenderer* renderer = layer->renderer();
   const QList<QgsSymbol*> sym = renderer->symbols();
 
-  for(QList<QgsSymbol*>::const_iterator it=sym.begin(); it!=sym.end(); ++it)
+  for ( QList<QgsSymbol*>::const_iterator it = sym.begin(); it != sym.end(); ++it )
   {
     QImage img;
-    if((*it)->type() == QGis::Point)
+    if (( *it )->type() == QGis::Point )
     {
-      img = (*it)->getPointSymbolAsImage();
+      img = ( *it )->getPointSymbolAsImage( widthScale );
     }
-    else if((*it)->type() == QGis::Line)
+    else if (( *it )->type() == QGis::Line )
     {
-      img = (*it)->getLineSymbolAsImage();
+      img = ( *it )->getLineSymbolAsImage();
     }
     else //polygon
     {
-      img = (*it)->getPolygonSymbolAsImage();
+      img = ( *it )->getPolygonSymbolAsImage();
     }
 
     QString values;
-    lw = (*it)->lowerValue();
-    if(!lw.isEmpty())
+    lw = ( *it )->lowerValue();
+    if ( !lw.isEmpty() )
     {
       values += lw;
     }
-    uv = (*it)->upperValue();
-    if(!uv.isEmpty())
+    uv = ( *it )->upperValue();
+    if ( !uv.isEmpty() )
     {
       values += " - ";
       values += uv;
     }
-    label = (*it)->label();
-    if(!label.isEmpty())
+    label = ( *it )->label();
+    if ( !label.isEmpty() )
     {
       values += " ";
       values += label;
     }
 
-    QPixmap pix = QPixmap::fromImage(img); // convert to pixmap
-    itemList.push_back(std::make_pair(values, pix));
+    QPixmap pix = QPixmap::fromImage( img ); // convert to pixmap
+    itemList.push_back( std::make_pair( values, pix ) );
   }
 
-  if(renderer->needsAttributes()) //create an item for each classification field (only one for most renderers)
+
+  //create an item for each classification field (only one for most renderers)
+  QSettings settings;
+  if ( settings.value( "/qgis/showLegendClassifiers", false ).toBool() )
   {
-    QgsAttributeList classfieldlist = renderer->classificationAttributes();
-    const QgsFieldMap& fields = layer->getDataProvider()->fields();
-    for(QgsAttributeList::iterator it = classfieldlist.begin(); it!=classfieldlist.end(); ++it)
+    if ( renderer->needsAttributes() )
     {
-      const QgsField& theField = fields[*it];
-      QString classfieldname = theField.name();
-      itemList.push_front(std::make_pair(classfieldname, QPixmap()));
+      QgsAttributeList classfieldlist = renderer->classificationAttributes();
+      const QgsFieldMap& fields = layer->dataProvider()->fields();
+      for ( QgsAttributeList::iterator it = classfieldlist.begin(); it != classfieldlist.end(); ++it )
+      {
+        const QgsField& theField = fields[*it];
+        QString classfieldname = theField.name();
+        itemList.push_front( std::make_pair( classfieldname, QPixmap() ) );
+      }
     }
   }
 
-  changeSymbologySettings(layer, itemList);
+  changeSymbologySettings( layer, itemList );
 }
 
-void QgsLegendLayer::rasterLayerSymbology(QgsRasterLayer* layer)
+void QgsLegendLayer::rasterLayerSymbology( QgsRasterLayer* layer )
 {
   SymbologyList itemList;
-  QPixmap legendpixmap = layer->getLegendQPixmap(true).scaled(20, 20, Qt::KeepAspectRatio); 
-  itemList.push_back(std::make_pair("", legendpixmap));   
-    
-  changeSymbologySettings(layer, itemList);
+  QPixmap legendpixmap = layer->legendAsPixmap( true ).scaled( 20, 20, Qt::KeepAspectRatio );
+  itemList.push_back( std::make_pair( "", legendpixmap ) );
+
+  changeSymbologySettings( layer, itemList );
 }
 
 void QgsLegendLayer::updateIcon()
 {
-  QPixmap newIcon(getOriginalPixmap());
+  QPixmap newIcon( getOriginalPixmap() );
 
   QgsMapLayer* theLayer = firstMapLayer();
   QgsLegendLayerFile* theFile = firstLayerFile();
 
-  if(mapLayers().size() == 1)
+  if ( mapLayers().size() == 1 )
+  {
+    //overview
+    if ( theFile->isInOverview() )
     {
-  
-      //overview
-      if(theFile->isInOverview())
-	{
-	  // Overlay the overview icon on the default icon
-	  QPixmap myPixmap(QgsApplication::themePath()+"mIconOverview.png");
-	  QPainter p(&newIcon);
-	  p.drawPixmap(0,0,myPixmap);
-	  p.end();
-	}
-      
-      //editable
-      if(theLayer->isEditable())
-	{
-	  // Overlay the editable icon on the default icon
-	  QPixmap myPixmap(QgsApplication::themePath()+"mIconEditable.png");
-	  QPainter p(&newIcon);
-	  p.drawPixmap(0,0,myPixmap);
-	  p.end();
-	}
+      // Overlay the overview icon on the default icon
+      QPixmap myPixmap = QgisApp::getThemePixmap( + "mIconOverview.png" );
+      QPainter p( &newIcon );
+      p.drawPixmap( 0, 0, myPixmap );
+      p.end();
     }
 
-  QIcon theIcon(newIcon);
-  setIcon(0, theIcon);
+    //editable
+    if ( theLayer->isEditable() )
+    {
+      // Overlay the editable icon on the default icon
+      QPixmap myPixmap = QgisApp::getThemePixmap( + "mIconEditable.png" );
+      QPainter p( &newIcon );
+      p.drawPixmap( 0, 0, myPixmap );
+      p.end();
+    }
+  }
+
+  QIcon theIcon( newIcon );
+  setIcon( 0, theIcon );
 }
 
 QPixmap QgsLegendLayer::getOriginalPixmap() const
 {
   QgsMapLayer* firstLayer = firstMapLayer();
-  if(firstLayer)
+  if ( firstLayer )
   {
-    QString myThemePath = QgsApplication::themePath();
-    QString myPath;
-
-    if (firstLayer->type() == QgsMapLayer::VECTOR)
+    if ( firstLayer->type() == QgsMapLayer::VectorLayer )
     {
-      QgsVectorLayer* vlayer = dynamic_cast<QgsVectorLayer*>(firstLayer);
-      switch(vlayer->vectorType())
+      QgsVectorLayer* vlayer = dynamic_cast<QgsVectorLayer*>( firstLayer );
+      switch ( vlayer->geometryType() )
       {
         case QGis::Point:
-          myPath = myThemePath+"/mIconPointLayer.png";
+          return QgisApp::getThemePixmap( "/mIconPointLayer.png" );
           break;
         case QGis::Line:
-          myPath = myThemePath+"/mIconLineLayer.png";
+          return QgisApp::getThemePixmap( "/mIconLineLayer.png" );
           break;
         case QGis::Polygon:
-          myPath = myThemePath+"/mIconPolygonLayer.png";
+          return QgisApp::getThemePixmap( "/mIconPolygonLayer.png" );
           break;
         default:
-          myPath = myThemePath+"/mIconLayer.png";
+          return QgisApp::getThemePixmap( "/mIconLayer.png" );
       }
     }
-    else // RASTER
+    else if ( firstLayer->type() == QgsMapLayer::RasterLayer )
     {
-      myPath = myThemePath+"/mIconLayer.png";
-    }
-
-    
-    QFileInfo file(myPath);
-    if(file.exists())
-    {
-      return QPixmap(file.absoluteFilePath());
+      QgsRasterLayer* rlayer = dynamic_cast<QgsRasterLayer*>( firstLayer );
+      QPixmap myPixmap( 32, 32 );
+      rlayer->thumbnailAsPixmap( &myPixmap );
+      return myPixmap;
     }
   }
 
-  QPixmap emptyPixmap;
-  return emptyPixmap;
+  // undefined - should never reach this
+  return QgisApp::getThemePixmap( "/mIconLayer.png" );
 }
 
-
-void QgsLegendLayer::addToPopupMenu(QMenu& theMenu, QAction* toggleEditingAction)
+void QgsLegendLayer::addToPopupMenu( QMenu& theMenu, QAction* toggleEditingAction )
 {
-  QString iconsPath = QgsApplication::themePath();
   std::list<QgsLegendLayerFile*> files = legendLayerFiles();
   QgsMapLayer* firstLayer = NULL;
-  if (files.size() > 0)
+  if ( files.size() > 0 )
   {
     firstLayer = files.front()->layer();
   }
-  
+
   // zoom to layer extent
-  theMenu.addAction(QIcon(iconsPath+QString("/mActionZoomToLayer.png")),
-                    tr("&Zoom to layer extent"), legend(), SLOT(legendLayerZoom()));
-  if (firstLayer && firstLayer->type() == QgsMapLayer::RASTER)
+  theMenu.addAction( QgisApp::getThemeIcon( "/mActionZoomToLayer.png" ),
+                     tr( "&Zoom to layer extent" ), legend(), SLOT( legendLayerZoom() ) );
+  if ( firstLayer && firstLayer->type() == QgsMapLayer::RasterLayer )
   {
-    theMenu.addAction(tr("&Zoom to best scale (100%)"), legend(), SLOT(legendLayerZoomNative()));
+    theMenu.addAction( tr( "&Zoom to best scale (100%)" ), legend(), SLOT( legendLayerZoomNative() ) );
   }
 
   // show in overview
-  QAction* showInOverviewAction = theMenu.addAction(tr("&Show in overview"), this, SLOT(showInOverview()));
-  showInOverviewAction->setCheckable(true); // doesn't support tristate
-  showInOverviewAction->setChecked(isInOverview());
-    
+  QAction* showInOverviewAction = theMenu.addAction( tr( "&Show in overview" ), this, SLOT( showInOverview() ) );
+  showInOverviewAction->setCheckable( true ); // doesn't support tristate
+  showInOverviewAction->setChecked( isInOverview() );
+
   // remove from canvas
-  theMenu.addAction(QIcon(QPixmap(iconsPath+QString("/mActionRemove.png"))),
-                    tr("&Remove"), legend(), SLOT(legendLayerRemove()));
-	  
+  theMenu.addAction( QgisApp::getThemeIcon( "/mActionRemove.png" ),
+                     tr( "&Remove" ), legend(), SLOT( legendLayerRemove() ) );
+
   theMenu.addSeparator();
-  
-  if (firstLayer && firstLayer->type() == QgsMapLayer::VECTOR)
+
+  if ( firstLayer && firstLayer->type() == QgsMapLayer::VectorLayer )
   {
     // attribute table
-    QAction* tableAction = theMenu.addAction(tr("&Open attribute table"), this, SLOT(table()));
-    if (files.size() != 1)
+    QAction* tableAction = theMenu.addAction( tr( "&Open attribute table" ), this, SLOT( table() ) );
+    if ( files.size() != 1 )
     {
-      tableAction->setEnabled(false);
+      tableAction->setEnabled( false );
     }
-    
+
     // allow editing
-    if(toggleEditingAction)
-      {
-	theMenu.addAction(toggleEditingAction);
-      }
-    
-    QgsVectorLayer* theVectorLayer = dynamic_cast<QgsVectorLayer*>(firstLayer);
-  
-    if (files.size() != 1)
+    if ( toggleEditingAction )
     {
-      toggleEditingAction->setEnabled(false);
+      theMenu.addAction( toggleEditingAction );
     }
-    if (theVectorLayer)
+
+    QgsVectorLayer* theVectorLayer = dynamic_cast<QgsVectorLayer*>( firstLayer );
+
+    if ( files.size() != 1 )
     {
-      toggleEditingAction->setChecked(theVectorLayer->isEditable());
+      toggleEditingAction->setEnabled( false );
     }
-  
+    if ( theVectorLayer )
+    {
+      toggleEditingAction->setChecked( theVectorLayer->isEditable() );
+    }
+
     // save as shapefile
-    QAction* saveShpAction = theMenu.addAction(tr("Save as shapefile..."), this, SLOT(saveAsShapefile()));
-    if (files.size() != 1)
+    QAction* saveShpAction = theMenu.addAction( tr( "Save as shapefile..." ), this, SLOT( saveAsShapefile() ) );
+    if ( files.size() != 1 )
     {
-      saveShpAction->setEnabled(false);
+      saveShpAction->setEnabled( false );
     }
-    
+
     // save selection as shapefile
-    QAction* saveSelectionAction = theMenu.addAction(tr("Save selection as shapefile..."), this, SLOT(saveSelectionAsShapefile()));
-    if (files.size() != 1 || theVectorLayer->selectedFeatureCount() == 0)
+    QAction* saveSelectionAction = theMenu.addAction( tr( "Save selection as shapefile..." ), this, SLOT( saveSelectionAsShapefile() ) );
+    if ( files.size() != 1 || theVectorLayer->selectedFeatureCount() == 0 )
     {
-      saveSelectionAction->setEnabled(false);
+      saveSelectionAction->setEnabled( false );
     }
-    
+
     theMenu.addSeparator();
   }
-	
-  
-  QAction* propertiesAction = theMenu.addAction(tr("&Properties"), legend(), SLOT(legendLayerShowProperties()));
-  if (files.size() != 1)
+
+
+  QAction* propertiesAction = theMenu.addAction( tr( "&Properties" ), legend(), SLOT( legendLayerShowProperties() ) );
+  if ( files.size() != 1 )
   {
-    propertiesAction->setEnabled(false);
+    propertiesAction->setEnabled( false );
   }
 
 }
@@ -545,18 +552,18 @@ bool QgsLegendLayer::isInOverview()
   // QAction doesn't support tristate checkboxes
   // returns true if just some are in overview
   bool hasVisible = false;
-  
+
   // find out whether we're showing or hiding them
   std::list<QgsLegendLayerFile*> maplayers = legendLayerFiles();
-  for (std::list<QgsLegendLayerFile*>::iterator it = maplayers.begin(); it!=maplayers.end(); ++it)
+  for ( std::list<QgsLegendLayerFile*>::iterator it = maplayers.begin(); it != maplayers.end(); ++it )
   {
-    if (*it && (*it)->isInOverview())
+    if ( *it && ( *it )->isInOverview() )
     {
       hasVisible = true;
       break;
     }
   }
-  
+
   return hasVisible;
 }
 
@@ -564,14 +571,14 @@ void QgsLegendLayer::showInOverview()
 {
   std::list<QgsLegendLayerFile*> maplayers = legendLayerFiles();
   bool showLayers = ( ! isInOverview() );
-  
+
   // set overview visibility
-  for (std::list<QgsLegendLayerFile*>::iterator it = maplayers.begin(); it!=maplayers.end(); ++it)
+  for ( std::list<QgsLegendLayerFile*>::iterator it = maplayers.begin(); it != maplayers.end(); ++it )
   {
-    if (*it)
-      (*it)->setInOverview(showLayers);
+    if ( *it )
+      ( *it )->setInOverview( showLayers );
   }
-   
+
   legend()->updateMapCanvasLayerSet();
   legend()->updateOverview();
 }
@@ -579,12 +586,12 @@ void QgsLegendLayer::showInOverview()
 void QgsLegendLayer::table()
 {
   std::list<QgsLegendLayerFile*> maplayers = legendLayerFiles();
-  if (maplayers.size() > 1)
+  if ( maplayers.size() > 1 )
   {
-    QMessageBox::information(0, tr("More layers"),
-      tr("This item contains more layer files. Displaying more layers in table is not supported."));
+    QMessageBox::information( 0, tr( "Multiple layers" ),
+                              tr( "This item contains multiple layers. Displaying multiple layers in the table is not supported." ) );
   }
-  else if (maplayers.size() == 1)
+  else if ( maplayers.size() == 1 )
   {
     maplayers.front()->table();
   }
@@ -593,7 +600,7 @@ void QgsLegendLayer::table()
 void QgsLegendLayer::saveAsShapefile()
 {
   std::list<QgsLegendLayerFile*> maplayers = legendLayerFiles();
-  if (maplayers.size() == 1)
+  if ( maplayers.size() == 1 )
   {
     maplayers.front()->saveAsShapefile();
   }
@@ -602,7 +609,7 @@ void QgsLegendLayer::saveAsShapefile()
 void QgsLegendLayer::saveSelectionAsShapefile()
 {
   std::list<QgsLegendLayerFile*> maplayers = legendLayerFiles();
-  if (maplayers.size() == 1)
+  if ( maplayers.size() == 1 )
   {
     maplayers.front()->saveSelectionAsShapefile();
   }

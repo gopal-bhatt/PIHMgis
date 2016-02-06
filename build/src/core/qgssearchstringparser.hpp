@@ -43,7 +43,7 @@
      COMPARISON = 259,
      STRING = 260,
      COLUMN_REF = 261,
-     UNKNOWN_CHARACTER = 262,
+     Unknown_CHARACTER = 262,
      NOT = 263,
      AND = 264,
      OR = 265,
@@ -55,7 +55,7 @@
 #define COMPARISON 259
 #define STRING 260
 #define COLUMN_REF 261
-#define UNKNOWN_CHARACTER 262
+#define Unknown_CHARACTER 262
 #define NOT 263
 #define AND 264
 #define OR 265
@@ -66,10 +66,10 @@
 
 #if ! defined YYSTYPE && ! defined YYSTYPE_IS_DECLARED
 typedef union YYSTYPE
-#line 52 "/Users/bhattgopal/dev/cpp/qgis0.9/src/core/qgssearchstringparser.yy"
+#line 55 "/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgssearchstringparser.yy"
 { QgsSearchTreeNode* node; double number; QgsSearchTreeNode::Operator op; }
 /* Line 1529 of yacc.c.  */
-#line 73 "/Users/bhattgopal/dev/cpp/qgis0.9/build/src/core/qgssearchstringparser.hpp"
+#line 73 "/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/qgssearchstringparser.hpp"
 	YYSTYPE;
 # define yystype YYSTYPE /* obsolescent; will be withdrawn */
 # define YYSTYPE_IS_DECLARED 1

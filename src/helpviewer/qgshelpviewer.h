@@ -1,5 +1,5 @@
 /***************************************************************************
-                             qgshelpviewer.h 
+                             qgshelpviewer.h
                              Simple help browser
                              -------------------
     begin                : 2005-07-02
@@ -15,26 +15,31 @@
  *   (at your option) any later version.                                   *
  *                                                                         *
  ***************************************************************************/
- /* $Id: qgshelpviewer.h 6091 2006-11-16 03:39:30Z gsherman $ */
+/* $Id: qgshelpviewer.h 9138 2008-08-23 21:37:31Z jef $ */
 
 #ifndef QGSHELPVIEWER_H
 #define QGSHELPVIEWER_H
 # include "ui_qgshelpviewerbase.h"
 class QString;
-class sqlite3;
+struct sqlite3;
 class QgsHelpViewer : public QDialog, private Ui::QgsHelpViewerBase
 {
-  Q_OBJECT
+    Q_OBJECT
   public:
-    QgsHelpViewer(const QString &contextId=QString::null, QWidget *parent=0, Qt::WFlags=0);
+    QgsHelpViewer( const QString &contextId = QString::null, QWidget *parent = 0, Qt::WFlags = 0 );
     ~QgsHelpViewer();
-public slots:
-    void setContext(const QString &contextId);
+  public slots:
+    void setContext( const QString &contextId );
     void fileExit();
-private:
-    void loadContext(const QString &contextId);
-    void loadContextFromSqlite(const QString &contextId);
-  int connectDb(const QString &helpDbPath);
- sqlite3 *db;
+  protected:
+    void moveEvent( QMoveEvent *event );
+    void resizeEvent( QResizeEvent *event );
+  private:
+    void restorePosition();
+    void saveWindowLocation();
+    void loadContext( const QString &contextId );
+    void loadContextFromSqlite( const QString &contextId );
+    int connectDb( const QString &helpDbPath );
+    sqlite3 *db;
 };
 #endif // QGSHELPVIEWER_H

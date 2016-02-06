@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading ui file 'qgshelpviewerbase.ui'
 **
-** Created: Wed Jun 11 19:03:30 2008
+** Created: Fri Jun 19 01:50:16 2009
 **      by: Qt User Interface Compiler version 4.3.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling ui file!
@@ -10,7 +10,6 @@
 #ifndef UI_QGSHELPVIEWERBASE_H
 #define UI_QGSHELPVIEWERBASE_H
 
-#include <Qt3Support/Q3MimeSourceFactory>
 #include <QtCore/QVariant>
 #include <QtGui/QAction>
 #include <QtGui/QApplication>

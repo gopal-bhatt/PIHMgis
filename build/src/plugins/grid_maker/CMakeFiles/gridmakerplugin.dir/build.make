@@ -31,10 +31,10 @@ RM = /usr/bin/cmake -E remove -f
 CMAKE_EDIT_COMMAND = /usr/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0
+CMAKE_SOURCE_DIR = /Users/bhattgopal/dev/cpp/qgis_1.0.2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build
+CMAKE_BINARY_DIR = /Users/bhattgopal/dev/cpp/qgis_1.0.2/build
 
 # Include any dependencies generated for this target.
 include src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/depend.make
@@ -50,17 +50,17 @@ src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/depend.make.mark: ../src/p
 
 src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/plugin.o: src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/flags.make
 src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/plugin.o: ../src/plugins/grid_maker/plugin.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/plugin.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/plugin.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/grid_maker/plugin.cpp
+	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/plugin.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/grid_maker/plugin.cpp
 
 src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/plugin.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/plugin.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/grid_maker/plugin.cpp > src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/plugin.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/grid_maker/plugin.cpp > src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/plugin.i
 
 src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/plugin.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/plugin.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/grid_maker/plugin.cpp -o src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/plugin.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/grid_maker/plugin.cpp -o src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/plugin.s
 
 src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/plugin.o.requires:
 
@@ -74,17 +74,17 @@ src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/depend.make.mark: ../src/p
 
 src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/plugingui.o: src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/flags.make
 src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/plugingui.o: ../src/plugins/grid_maker/plugingui.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/plugingui.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/plugingui.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/grid_maker/plugingui.cpp
+	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/plugingui.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/grid_maker/plugingui.cpp
 
 src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/plugingui.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/plugingui.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/grid_maker/plugingui.cpp > src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/plugingui.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/grid_maker/plugingui.cpp > src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/plugingui.i
 
 src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/plugingui.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/plugingui.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/grid_maker/plugingui.cpp -o src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/plugingui.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/grid_maker/plugingui.cpp -o src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/plugingui.s
 
 src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/plugingui.o.requires:
 
@@ -98,17 +98,17 @@ src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/depend.make.mark: ../src/p
 
 src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/graticulecreator.o: src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/flags.make
 src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/graticulecreator.o: ../src/plugins/grid_maker/graticulecreator.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_3)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/graticulecreator.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/graticulecreator.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/grid_maker/graticulecreator.cpp
+	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/graticulecreator.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/grid_maker/graticulecreator.cpp
 
 src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/graticulecreator.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/graticulecreator.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/grid_maker/graticulecreator.cpp > src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/graticulecreator.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/grid_maker/graticulecreator.cpp > src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/graticulecreator.i
 
 src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/graticulecreator.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/graticulecreator.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/grid_maker/graticulecreator.cpp -o src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/graticulecreator.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/grid_maker/graticulecreator.cpp -o src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/graticulecreator.s
 
 src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/graticulecreator.o.requires:
 
@@ -118,93 +118,21 @@ src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/graticulecreator.o.provide
 src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/graticulecreator.o.provides.build: src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/graticulecreator.o
 
 src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/depend.make.mark: src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/flags.make
-src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/depend.make.mark: ../src/plugins/grid_maker/utils.c
-
-src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/utils.o: src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/flags.make
-src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/utils.o: ../src/plugins/grid_maker/utils.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_4)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/utils.o"
-	/usr/bin/gcc  $(C_FLAGS) -o src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/utils.o   -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/grid_maker/utils.c
-
-src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/utils.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/utils.i"
-	/usr/bin/gcc  $(C_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/grid_maker/utils.c > src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/utils.i
-
-src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/utils.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/utils.s"
-	/usr/bin/gcc  $(C_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/grid_maker/utils.c -o src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/utils.s
-
-src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/utils.o.requires:
-
-src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/utils.o.provides: src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/utils.o.requires
-	$(MAKE) -f src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/build.make src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/utils.o.provides.build
-
-src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/utils.o.provides.build: src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/utils.o
-
-src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/depend.make.mark: src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/flags.make
-src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/depend.make.mark: ../src/plugins/grid_maker/shpopen.c
-
-src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/shpopen.o: src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/flags.make
-src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/shpopen.o: ../src/plugins/grid_maker/shpopen.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_5)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/shpopen.o"
-	/usr/bin/gcc  $(C_FLAGS) -o src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/shpopen.o   -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/grid_maker/shpopen.c
-
-src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/shpopen.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/shpopen.i"
-	/usr/bin/gcc  $(C_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/grid_maker/shpopen.c > src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/shpopen.i
-
-src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/shpopen.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/shpopen.s"
-	/usr/bin/gcc  $(C_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/grid_maker/shpopen.c -o src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/shpopen.s
-
-src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/shpopen.o.requires:
-
-src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/shpopen.o.provides: src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/shpopen.o.requires
-	$(MAKE) -f src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/build.make src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/shpopen.o.provides.build
-
-src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/shpopen.o.provides.build: src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/shpopen.o
-
-src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/depend.make.mark: src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/flags.make
-src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/depend.make.mark: ../src/plugins/grid_maker/dbfopen.c
-
-src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/dbfopen.o: src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/flags.make
-src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/dbfopen.o: ../src/plugins/grid_maker/dbfopen.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_6)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/dbfopen.o"
-	/usr/bin/gcc  $(C_FLAGS) -o src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/dbfopen.o   -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/grid_maker/dbfopen.c
-
-src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/dbfopen.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/dbfopen.i"
-	/usr/bin/gcc  $(C_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/grid_maker/dbfopen.c > src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/dbfopen.i
-
-src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/dbfopen.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/dbfopen.s"
-	/usr/bin/gcc  $(C_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/grid_maker/dbfopen.c -o src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/dbfopen.s
-
-src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/dbfopen.o.requires:
-
-src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/dbfopen.o.provides: src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/dbfopen.o.requires
-	$(MAKE) -f src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/build.make src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/dbfopen.o.provides.build
-
-src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/dbfopen.o.provides.build: src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/dbfopen.o
-
-src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/depend.make.mark: src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/flags.make
 src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/depend.make.mark: src/plugins/grid_maker/moc_plugin.cxx
 
 src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/moc_plugin.o: src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/flags.make
 src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/moc_plugin.o: src/plugins/grid_maker/moc_plugin.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_7)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/moc_plugin.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/moc_plugin.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/grid_maker/moc_plugin.cxx
+	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/moc_plugin.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/grid_maker/moc_plugin.cxx
 
 src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/moc_plugin.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/moc_plugin.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/grid_maker/moc_plugin.cxx > src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/moc_plugin.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/grid_maker/moc_plugin.cxx > src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/moc_plugin.i
 
 src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/moc_plugin.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/moc_plugin.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/grid_maker/moc_plugin.cxx -o src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/moc_plugin.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/grid_maker/moc_plugin.cxx -o src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/moc_plugin.s
 
 src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/moc_plugin.o.requires:
 
@@ -218,17 +146,17 @@ src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/depend.make.mark: src/plug
 
 src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/moc_plugingui.o: src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/flags.make
 src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/moc_plugingui.o: src/plugins/grid_maker/moc_plugingui.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_8)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/moc_plugingui.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/moc_plugingui.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/grid_maker/moc_plugingui.cxx
+	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/moc_plugingui.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/grid_maker/moc_plugingui.cxx
 
 src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/moc_plugingui.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/moc_plugingui.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/grid_maker/moc_plugingui.cxx > src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/moc_plugingui.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/grid_maker/moc_plugingui.cxx > src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/moc_plugingui.i
 
 src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/moc_plugingui.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/moc_plugingui.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/grid_maker/moc_plugingui.cxx -o src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/moc_plugingui.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/grid_maker/moc_plugingui.cxx -o src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/moc_plugingui.s
 
 src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/moc_plugingui.o.requires:
 
@@ -242,17 +170,17 @@ src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/depend.make.mark: src/plug
 
 src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/qrc_gridmaker_plugin.o: src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/flags.make
 src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/qrc_gridmaker_plugin.o: src/plugins/grid_maker/qrc_gridmaker_plugin.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_9)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/qrc_gridmaker_plugin.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/qrc_gridmaker_plugin.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/grid_maker/qrc_gridmaker_plugin.cxx
+	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/qrc_gridmaker_plugin.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/grid_maker/qrc_gridmaker_plugin.cxx
 
 src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/qrc_gridmaker_plugin.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/qrc_gridmaker_plugin.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/grid_maker/qrc_gridmaker_plugin.cxx > src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/qrc_gridmaker_plugin.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/grid_maker/qrc_gridmaker_plugin.cxx > src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/qrc_gridmaker_plugin.i
 
 src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/qrc_gridmaker_plugin.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/qrc_gridmaker_plugin.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/grid_maker/qrc_gridmaker_plugin.cxx -o src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/qrc_gridmaker_plugin.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/grid_maker/qrc_gridmaker_plugin.cxx -o src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/qrc_gridmaker_plugin.s
 
 src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/qrc_gridmaker_plugin.o.requires:
 
@@ -262,25 +190,25 @@ src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/qrc_gridmaker_plugin.o.pro
 src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/qrc_gridmaker_plugin.o.provides.build: src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/qrc_gridmaker_plugin.o
 
 src/plugins/grid_maker/moc_plugin.cxx: ../src/plugins/grid_maker/plugin.h
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_10)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_7)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating moc_plugin.cxx"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/grid_maker && /Developer/Tools/Qt/moc -I /usr/include -I /Library/Frameworks/Qt3Support.framework/Headers -I /Library/Frameworks/QtSvg.framework/Headers -I /Library/Frameworks/QtGui.framework/Headers -I /Library/Frameworks/QtXml.framework/Headers -I /Library/Frameworks/QtSql.framework/Headers -I /Library/Frameworks/QtNetwork.framework/Headers -I /Library/Frameworks/QtCore.framework/Headers -I /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/grid_maker/moc_plugin.cxx /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/grid_maker/plugin.h
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/grid_maker && /Developer/Tools/Qt/moc -I /usr/include -I /Library/Frameworks/Qt3Support.framework/Headers -I /Library/Frameworks/QtSvg.framework/Headers -I /Library/Frameworks/QtGui.framework/Headers -I /Library/Frameworks/QtXml.framework/Headers -I /Library/Frameworks/QtSql.framework/Headers -I /Library/Frameworks/QtNetwork.framework/Headers -I /Library/Frameworks/QtCore.framework/Headers -I /Users/bhattgopal/dev/cpp/qgis_1.0.2/build -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/grid_maker/moc_plugin.cxx /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/grid_maker/plugin.h
 
 src/plugins/grid_maker/moc_plugingui.cxx: ../src/plugins/grid_maker/plugingui.h
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_11)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_8)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating moc_plugingui.cxx"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/grid_maker && /Developer/Tools/Qt/moc -I /usr/include -I /Library/Frameworks/Qt3Support.framework/Headers -I /Library/Frameworks/QtSvg.framework/Headers -I /Library/Frameworks/QtGui.framework/Headers -I /Library/Frameworks/QtXml.framework/Headers -I /Library/Frameworks/QtSql.framework/Headers -I /Library/Frameworks/QtNetwork.framework/Headers -I /Library/Frameworks/QtCore.framework/Headers -I /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/grid_maker/moc_plugingui.cxx /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/grid_maker/plugingui.h
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/grid_maker && /Developer/Tools/Qt/moc -I /usr/include -I /Library/Frameworks/Qt3Support.framework/Headers -I /Library/Frameworks/QtSvg.framework/Headers -I /Library/Frameworks/QtGui.framework/Headers -I /Library/Frameworks/QtXml.framework/Headers -I /Library/Frameworks/QtSql.framework/Headers -I /Library/Frameworks/QtNetwork.framework/Headers -I /Library/Frameworks/QtCore.framework/Headers -I /Users/bhattgopal/dev/cpp/qgis_1.0.2/build -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/grid_maker/moc_plugingui.cxx /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/grid_maker/plugingui.h
 
-src/plugins/grid_maker/qrc_gridmaker_plugin.cxx: ../src/plugins/grid_maker/grid_pic2.png
+src/plugins/grid_maker/qrc_gridmaker_plugin.cxx: ../src/plugins/grid_maker/grid_maker.png
 src/plugins/grid_maker/qrc_gridmaker_plugin.cxx: ../src/plugins/grid_maker/gridmaker_plugin.qrc
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_12)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_9)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating qrc_gridmaker_plugin.cxx"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/grid_maker && /Developer/Tools/Qt/rcc -name gridmaker_plugin -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/grid_maker/qrc_gridmaker_plugin.cxx /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/grid_maker/gridmaker_plugin.qrc
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/grid_maker && /Developer/Tools/Qt/rcc -name gridmaker_plugin -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/grid_maker/qrc_gridmaker_plugin.cxx /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/grid_maker/gridmaker_plugin.qrc
 
 src/plugins/grid_maker/ui_pluginguibase.h: ../src/plugins/grid_maker/pluginguibase.ui
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_13)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_10)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ui_pluginguibase.h"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/grid_maker && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/grid_maker/ui_pluginguibase.h /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/grid_maker/pluginguibase.ui
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/grid_maker && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/grid_maker/ui_pluginguibase.h /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/grid_maker/pluginguibase.ui
 
 src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/depend: src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/depend.make.mark
 
@@ -289,16 +217,13 @@ src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/depend.make.mark: src/plug
 src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/depend.make.mark: src/plugins/grid_maker/qrc_gridmaker_plugin.cxx
 src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/depend.make.mark: src/plugins/grid_maker/ui_pluginguibase.h
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --magenta --bold "Scanning dependencies of target gridmakerplugin"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0 /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/grid_maker /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/grid_maker /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/DependInfo.cmake
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/bhattgopal/dev/cpp/qgis_1.0.2 /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/grid_maker /Users/bhattgopal/dev/cpp/qgis_1.0.2/build /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/grid_maker /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/DependInfo.cmake
 
 # Object files for target gridmakerplugin
 gridmakerplugin_OBJECTS = \
 "CMakeFiles/gridmakerplugin.dir/plugin.o" \
 "CMakeFiles/gridmakerplugin.dir/plugingui.o" \
 "CMakeFiles/gridmakerplugin.dir/graticulecreator.o" \
-"CMakeFiles/gridmakerplugin.dir/utils.o" \
-"CMakeFiles/gridmakerplugin.dir/shpopen.o" \
-"CMakeFiles/gridmakerplugin.dir/dbfopen.o" \
 "CMakeFiles/gridmakerplugin.dir/moc_plugin.o" \
 "CMakeFiles/gridmakerplugin.dir/moc_plugingui.o" \
 "CMakeFiles/gridmakerplugin.dir/qrc_gridmaker_plugin.o"
@@ -309,30 +234,24 @@ gridmakerplugin_EXTERNAL_OBJECTS =
 src/plugins/grid_maker/libgridmakerplugin.so: src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/plugin.o
 src/plugins/grid_maker/libgridmakerplugin.so: src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/plugingui.o
 src/plugins/grid_maker/libgridmakerplugin.so: src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/graticulecreator.o
-src/plugins/grid_maker/libgridmakerplugin.so: src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/utils.o
-src/plugins/grid_maker/libgridmakerplugin.so: src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/shpopen.o
-src/plugins/grid_maker/libgridmakerplugin.so: src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/dbfopen.o
 src/plugins/grid_maker/libgridmakerplugin.so: src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/moc_plugin.o
 src/plugins/grid_maker/libgridmakerplugin.so: src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/moc_plugingui.o
 src/plugins/grid_maker/libgridmakerplugin.so: src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/qrc_gridmaker_plugin.o
-src/plugins/grid_maker/libgridmakerplugin.so: /Library/Frameworks/Qt3Support.framework
-src/plugins/grid_maker/libgridmakerplugin.so: /Library/Frameworks/QtSvg.framework
-src/plugins/grid_maker/libgridmakerplugin.so: /Library/Frameworks/QtGui.framework
-src/plugins/grid_maker/libgridmakerplugin.so: /Library/Frameworks/QtXml.framework
-src/plugins/grid_maker/libgridmakerplugin.so: /Library/Frameworks/QtSql.framework
-src/plugins/grid_maker/libgridmakerplugin.so: /Library/Frameworks/QtNetwork.framework
-src/plugins/grid_maker/libgridmakerplugin.so: /Library/Frameworks/QtCore.framework
-src/plugins/grid_maker/libgridmakerplugin.so: /usr/lib/libz.dylib
 src/plugins/grid_maker/libgridmakerplugin.so: src/core/libqgis_core.dylib
 src/plugins/grid_maker/libgridmakerplugin.so: src/gui/libqgis_gui.dylib
+src/plugins/grid_maker/libgridmakerplugin.so: /Library/Frameworks/QtCore.framework
+src/plugins/grid_maker/libgridmakerplugin.so: /Library/Frameworks/QtGui.framework
+src/plugins/grid_maker/libgridmakerplugin.so: /Library/Frameworks/QtXml.framework
+src/plugins/grid_maker/libgridmakerplugin.so: /Library/Frameworks/QtSvg.framework
+src/plugins/grid_maker/libgridmakerplugin.so: /Library/Frameworks/QtNetwork.framework
 src/plugins/grid_maker/libgridmakerplugin.so: /Library/Frameworks/proj.framework
-src/plugins/grid_maker/libgridmakerplugin.so: /Library/Frameworks/sqlite3.framework
-src/plugins/grid_maker/libgridmakerplugin.so: /Library/Frameworks/geos.framework
+src/plugins/grid_maker/libgridmakerplugin.so: /Library/Frameworks/GEOS.framework/unix/lib/libgeos_c.dylib
 src/plugins/grid_maker/libgridmakerplugin.so: /Library/Frameworks/GDAL.framework/Versions/1.5/unix/lib/libgdal.dylib
+src/plugins/grid_maker/libgridmakerplugin.so: /Library/Frameworks/sqlite3.framework
 src/plugins/grid_maker/libgridmakerplugin.so: src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/build.make
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX shared module libgridmakerplugin.so"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/grid_maker && $(CMAKE_COMMAND) -P CMakeFiles/gridmakerplugin.dir/cmake_clean_target.cmake
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/grid_maker && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gridmakerplugin.dir/link.txt --verbose=$(VERBOSE)
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/grid_maker && $(CMAKE_COMMAND) -P CMakeFiles/gridmakerplugin.dir/cmake_clean_target.cmake
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/grid_maker && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gridmakerplugin.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/build: src/plugins/grid_maker/libgridmakerplugin.so
@@ -340,13 +259,10 @@ src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/build: src/plugins/grid_ma
 src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/requires: src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/plugin.o.requires
 src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/requires: src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/plugingui.o.requires
 src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/requires: src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/graticulecreator.o.requires
-src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/requires: src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/utils.o.requires
-src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/requires: src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/shpopen.o.requires
-src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/requires: src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/dbfopen.o.requires
 src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/requires: src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/moc_plugin.o.requires
 src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/requires: src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/moc_plugingui.o.requires
 src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/requires: src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/qrc_gridmaker_plugin.o.requires
 
 src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/clean:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/grid_maker && $(CMAKE_COMMAND) -P CMakeFiles/gridmakerplugin.dir/cmake_clean.cmake
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/grid_maker && $(CMAKE_COMMAND) -P CMakeFiles/gridmakerplugin.dir/cmake_clean.cmake
 

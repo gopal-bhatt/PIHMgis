@@ -1,7 +1,0 @@
-K 10
-svn:ignore
-V 26
-.deps
-Makefile
-Makefile.in
-END

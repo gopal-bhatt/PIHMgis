@@ -16,14 +16,15 @@ SET(CMAKE_C_INCLUDE_PATH
   "/Library/Frameworks/QtCore.framework/Headers"
   "."
   "../src/core"
+  "../src/core/composer"
   "../src/core/raster"
   "../src/core/renderer"
   "../src/core/symbology"
   "../src/core/spatialindex/include"
   "/Library/Frameworks/PROJ.framework/Headers"
-  "/Library/Frameworks/SQLite3.framework/Headers"
   "/Library/Frameworks/GEOS.framework/Headers"
   "/Library/Frameworks/GDAL.framework/Headers"
+  "/Library/Frameworks/SQLite3.framework/Headers"
   )
 SET(CMAKE_CXX_INCLUDE_PATH ${CMAKE_C_INCLUDE_PATH})
 

@@ -1,15 +1,15 @@
 8
 
 dir
-7809
-https://svn.qgis.org/repos/qgis/branches/Release-0_9_0/src/plugins/grid_maker
-https://svn.qgis.org/repos/qgis
+10938
+https://svn.osgeo.org/qgis/branches/Release-1_0_2/src/plugins/grid_maker
+https://svn.osgeo.org/qgis
 
 
 
-2007-09-16T20:18:38.396806Z
-7204
-gsherman
+2009-03-03T12:05:05.003205Z
+10258
+jef
 has-props
 
 svn:special svn:externals svn:needs-lock
@@ -32,11 +32,11 @@ file
 
 
 
-2007-12-24T08:18:02.000000Z
-443ce11926b7182adf4d1304d30a849c
-2007-02-01T01:12:20.086063Z
-6475
-telwertowski
+2009-06-17T07:49:43.000000Z
+cfcf1b71b6de430df0cd0ca785e7ca5e
+2008-08-31T16:56:09.308014Z
+9231
+timlinux
 has-props
 
 graticulecreator.cpp
@@ -45,179 +45,11 @@ file
 
 
 
-2007-12-24T08:18:02.000000Z
-c6df416d3643aa405b1d50a48395aa4c
-2007-09-16T20:18:38.396806Z
-7204
-gsherman
-has-props
-
-utils.c
-file
-
-
-
-
-2007-12-24T08:18:02.000000Z
-1a0f10a7527ea1d359c3fa8e4595d4fa
-2007-09-16T20:18:38.396806Z
-7204
-gsherman
-has-props
-
-shapefil.h
-file
-
-
-
-
-2007-12-24T08:18:02.000000Z
-da21ac4526801f3fbf559dc4758382ea
-2007-07-04T15:41:25.212478Z
-7058
-timlinux
-
-plugin.h
-file
-
-
-
-
-2007-12-24T08:18:02.000000Z
-37b2f2b5dc60c65bcf6600c3e6daa2a2
-2007-01-09T02:39:15.173934Z
-6415
-wonder
-has-props
-
-plugingui.cpp
-file
-
-
-
-
-2007-12-24T08:18:02.000000Z
-b9bdaf113a5575db6bf2048319604521
-2007-03-27T17:51:57.977644Z
-6838
-homann
-has-props
-
-graticulecreator.h
-file
-
-
-
-
-2007-12-24T08:18:02.000000Z
-04233db286f6d69d24cdd6efeacd0826
-2007-09-16T20:18:38.396806Z
-7204
-gsherman
-has-props
-
-grid_pic2.png
-file
-
-
-
-
-2007-12-24T08:18:02.000000Z
-47152f4528303ccc41daace687fb4867
-2004-04-05T15:39:45.000000Z
-1155
-timlinux
-has-props
-
-utils.h
-file
-
-
-
-
-2007-12-24T08:18:02.000000Z
-b20e4cf0ba6216c5223c9dfdc9100d10
-2007-09-16T20:18:38.396806Z
-7204
-gsherman
-has-props
-
-shapefile.h
-file
-
-
-
-
-2007-12-24T08:18:02.000000Z
-010d4b10468076386f9c61579e9fdc3b
-2007-07-04T15:41:25.212478Z
-7058
-timlinux
-has-props
-
-plugingui.h
-file
-
-
-
-
-2007-12-24T08:18:02.000000Z
-78ee183782421a76154d964c3b9648a3
-2007-06-27T11:32:49.889659Z
-7049
-wonder
-has-props
-
-icon.xpm
-file
-
-
-
-
-2007-12-24T08:18:02.000000Z
-b624ce716146682a4a48c4b83a5989f9
-2004-04-05T20:25:23.000000Z
-1157
-timlinux
-has-props
-
-shpopen.c
-file
-
-
-
-
-2007-12-24T08:18:02.000000Z
-fddeb9b53ebcbd126d8519e2db95ec71
-2007-07-04T15:41:25.212478Z
-7058
-timlinux
-has-props
-
-README
-file
-
-
-
-
-2007-12-24T08:18:02.000000Z
-9881f731f77b3b3fbf58515e5cc18e3b
-2004-04-05T15:39:45.000000Z
-1155
-timlinux
-has-props
-
-dbfopen.c
-file
-
-
-
-
-2007-12-24T08:18:02.000000Z
-c6485410e06982461db34f872a833561
-2007-07-04T15:41:25.212478Z
-7058
-timlinux
+2009-06-17T07:49:43.000000Z
+b7f84e50415c8e40c528a8b2a433805e
+2009-03-03T12:05:05.003205Z
+10258
+jef
 has-props
 
 pluginguibase.ui.h
@@ -226,24 +58,63 @@ file
 
 
 
-2007-12-24T08:18:02.000000Z
-86ba1afc419f985a7aa17e78f72d4f05
-2005-04-24T06:57:41.000000Z
-3214
-gsherman
+2009-06-17T07:49:43.000000Z
+0075befbced5959fffaeace3e71cd008
+2008-08-23T21:37:31.208899Z
+9138
+jef
 has-props
 
-main.cpp
+plugin.h
 file
 
 
 
 
-2007-12-24T08:18:02.000000Z
-9900420c15e99e2c0ceee857fcaa2e3d
-2007-09-16T20:18:38.396806Z
-7204
-gsherman
+2009-06-17T07:49:43.000000Z
+8b6e77d52af23f9201b65bff1539f046
+2008-08-23T21:37:31.208899Z
+9138
+jef
+has-props
+
+plugingui.cpp
+file
+
+
+
+
+2009-06-17T07:49:43.000000Z
+bef5e861931e20d29a57ef8f4d88399f
+2008-08-31T12:49:15.553701Z
+9227
+jef
+has-props
+
+graticulecreator.h
+file
+
+
+
+
+2009-06-17T07:49:43.000000Z
+d1627a2024bc5b76e59ea02f54567410
+2008-08-23T21:37:31.208899Z
+9138
+jef
+has-props
+
+grid_maker.png
+file
+
+
+
+
+2009-06-17T07:49:43.000000Z
+8100314925c18453d161830c9e14aaf1
+2008-07-30T11:23:55.738376Z
+8952
+timlinux
 has-props
 
 gridmaker_plugin.qrc
@@ -252,11 +123,24 @@ file
 
 
 
-2007-12-24T08:18:02.000000Z
-0f30a780a4e6f20633fd6d4e80f3e9a5
-2006-01-06T08:04:39.772967Z
-4486
-g_j_m
+2009-06-17T07:49:43.000000Z
+e37054f171b5296257020ac32818a56b
+2008-07-30T11:23:55.738376Z
+8952
+timlinux
+
+plugingui.h
+file
+
+
+
+
+2009-06-17T07:49:43.000000Z
+8e88f4ce11ba3979821a9f67c5a46547
+2008-08-23T21:37:31.208899Z
+9138
+jef
+has-props
 
 pluginguibase.ui
 file
@@ -264,11 +148,24 @@ file
 
 
 
-2007-12-24T08:18:02.000000Z
-85a3c2b9f7e24eb063d6ffd3bc99e763
-2007-02-01T01:12:20.086063Z
-6475
-telwertowski
+2009-06-17T07:49:43.000000Z
+4553385cdd8da74356cd49d1c5bc9025
+2008-07-25T22:58:07.091356Z
+8907
+timlinux
+has-props
+
+.cvsignore
+file
+
+
+
+
+2009-06-17T07:49:43.000000Z
+4ee62ad6ec40a1d1eddf326d72de41ba
+2005-01-10T22:06:18.000000Z
+2612
+g_j_m
 has-props
 
 CMakeLists.txt
@@ -277,22 +174,34 @@ file
 
 
 
-2007-12-24T08:18:02.000000Z
-f5f7eab1d78fdf4db5bd538217629ae1
-2007-01-09T22:31:48.242433Z
-6418
-telwertowski
+2009-06-17T07:49:43.000000Z
+c83bf5f7b064390c46567fbe0364f6db
+2008-02-12T23:41:14.033991Z
+8147
+timlinux
 
-.cvsignore
+README
 file
 
 
 
 
-2007-12-24T08:18:02.000000Z
-4ee62ad6ec40a1d1eddf326d72de41ba
-2005-01-10T22:06:18.000000Z
-2612
-g_j_m
+2009-06-17T07:49:43.000000Z
+9881f731f77b3b3fbf58515e5cc18e3b
+2004-04-05T15:39:45.000000Z
+1155
+timlinux
 has-props
+
+graticule.svg
+file
+
+
+
+
+2009-06-17T07:49:43.000000Z
+493a579baf0bef818d69a076534cd138
+2008-07-25T22:58:07.091356Z
+8907
+timlinux
 

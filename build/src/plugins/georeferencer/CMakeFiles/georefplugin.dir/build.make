@@ -31,10 +31,10 @@ RM = /usr/bin/cmake -E remove -f
 CMAKE_EDIT_COMMAND = /usr/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0
+CMAKE_SOURCE_DIR = /Users/bhattgopal/dev/cpp/qgis_1.0.2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build
+CMAKE_BINARY_DIR = /Users/bhattgopal/dev/cpp/qgis_1.0.2/build
 
 # Include any dependencies generated for this target.
 include src/plugins/georeferencer/CMakeFiles/georefplugin.dir/depend.make
@@ -50,17 +50,17 @@ src/plugins/georeferencer/CMakeFiles/georefplugin.dir/depend.make.mark: ../src/p
 
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/plugin.o: src/plugins/georeferencer/CMakeFiles/georefplugin.dir/flags.make
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/plugin.o: ../src/plugins/georeferencer/plugin.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/plugins/georeferencer/CMakeFiles/georefplugin.dir/plugin.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/georeferencer/CMakeFiles/georefplugin.dir/plugin.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/georeferencer/plugin.cpp
+	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/georeferencer/CMakeFiles/georefplugin.dir/plugin.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/georeferencer/plugin.cpp
 
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/plugin.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/plugins/georeferencer/CMakeFiles/georefplugin.dir/plugin.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/georeferencer/plugin.cpp > src/plugins/georeferencer/CMakeFiles/georefplugin.dir/plugin.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/georeferencer/plugin.cpp > src/plugins/georeferencer/CMakeFiles/georefplugin.dir/plugin.i
 
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/plugin.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/plugins/georeferencer/CMakeFiles/georefplugin.dir/plugin.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/georeferencer/plugin.cpp -o src/plugins/georeferencer/CMakeFiles/georefplugin.dir/plugin.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/georeferencer/plugin.cpp -o src/plugins/georeferencer/CMakeFiles/georefplugin.dir/plugin.s
 
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/plugin.o.requires:
 
@@ -74,17 +74,17 @@ src/plugins/georeferencer/CMakeFiles/georefplugin.dir/depend.make.mark: ../src/p
 
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsgeorefdatapoint.o: src/plugins/georeferencer/CMakeFiles/georefplugin.dir/flags.make
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsgeorefdatapoint.o: ../src/plugins/georeferencer/qgsgeorefdatapoint.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsgeorefdatapoint.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsgeorefdatapoint.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/georeferencer/qgsgeorefdatapoint.cpp
+	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsgeorefdatapoint.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/georeferencer/qgsgeorefdatapoint.cpp
 
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsgeorefdatapoint.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsgeorefdatapoint.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/georeferencer/qgsgeorefdatapoint.cpp > src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsgeorefdatapoint.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/georeferencer/qgsgeorefdatapoint.cpp > src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsgeorefdatapoint.i
 
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsgeorefdatapoint.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsgeorefdatapoint.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/georeferencer/qgsgeorefdatapoint.cpp -o src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsgeorefdatapoint.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/georeferencer/qgsgeorefdatapoint.cpp -o src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsgeorefdatapoint.s
 
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsgeorefdatapoint.o.requires:
 
@@ -98,17 +98,17 @@ src/plugins/georeferencer/CMakeFiles/georefplugin.dir/depend.make.mark: ../src/p
 
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/plugingui.o: src/plugins/georeferencer/CMakeFiles/georefplugin.dir/flags.make
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/plugingui.o: ../src/plugins/georeferencer/plugingui.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_3)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/plugins/georeferencer/CMakeFiles/georefplugin.dir/plugingui.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/georeferencer/CMakeFiles/georefplugin.dir/plugingui.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/georeferencer/plugingui.cpp
+	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/georeferencer/CMakeFiles/georefplugin.dir/plugingui.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/georeferencer/plugingui.cpp
 
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/plugingui.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/plugins/georeferencer/CMakeFiles/georefplugin.dir/plugingui.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/georeferencer/plugingui.cpp > src/plugins/georeferencer/CMakeFiles/georefplugin.dir/plugingui.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/georeferencer/plugingui.cpp > src/plugins/georeferencer/CMakeFiles/georefplugin.dir/plugingui.i
 
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/plugingui.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/plugins/georeferencer/CMakeFiles/georefplugin.dir/plugingui.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/georeferencer/plugingui.cpp -o src/plugins/georeferencer/CMakeFiles/georefplugin.dir/plugingui.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/georeferencer/plugingui.cpp -o src/plugins/georeferencer/CMakeFiles/georefplugin.dir/plugingui.s
 
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/plugingui.o.requires:
 
@@ -122,17 +122,17 @@ src/plugins/georeferencer/CMakeFiles/georefplugin.dir/depend.make.mark: ../src/p
 
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsimagewarper.o: src/plugins/georeferencer/CMakeFiles/georefplugin.dir/flags.make
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsimagewarper.o: ../src/plugins/georeferencer/qgsimagewarper.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_4)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsimagewarper.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsimagewarper.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/georeferencer/qgsimagewarper.cpp
+	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsimagewarper.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/georeferencer/qgsimagewarper.cpp
 
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsimagewarper.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsimagewarper.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/georeferencer/qgsimagewarper.cpp > src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsimagewarper.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/georeferencer/qgsimagewarper.cpp > src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsimagewarper.i
 
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsimagewarper.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsimagewarper.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/georeferencer/qgsimagewarper.cpp -o src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsimagewarper.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/georeferencer/qgsimagewarper.cpp -o src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsimagewarper.s
 
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsimagewarper.o.requires:
 
@@ -146,17 +146,17 @@ src/plugins/georeferencer/CMakeFiles/georefplugin.dir/depend.make.mark: ../src/p
 
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsleastsquares.o: src/plugins/georeferencer/CMakeFiles/georefplugin.dir/flags.make
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsleastsquares.o: ../src/plugins/georeferencer/qgsleastsquares.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_5)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsleastsquares.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsleastsquares.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/georeferencer/qgsleastsquares.cpp
+	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsleastsquares.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/georeferencer/qgsleastsquares.cpp
 
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsleastsquares.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsleastsquares.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/georeferencer/qgsleastsquares.cpp > src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsleastsquares.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/georeferencer/qgsleastsquares.cpp > src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsleastsquares.i
 
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsleastsquares.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsleastsquares.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/georeferencer/qgsleastsquares.cpp -o src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsleastsquares.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/georeferencer/qgsleastsquares.cpp -o src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsleastsquares.s
 
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsleastsquares.o.requires:
 
@@ -170,17 +170,17 @@ src/plugins/georeferencer/CMakeFiles/georefplugin.dir/depend.make.mark: ../src/p
 
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgspointdialog.o: src/plugins/georeferencer/CMakeFiles/georefplugin.dir/flags.make
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgspointdialog.o: ../src/plugins/georeferencer/qgspointdialog.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_6)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgspointdialog.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgspointdialog.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/georeferencer/qgspointdialog.cpp
+	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgspointdialog.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/georeferencer/qgspointdialog.cpp
 
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgspointdialog.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgspointdialog.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/georeferencer/qgspointdialog.cpp > src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgspointdialog.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/georeferencer/qgspointdialog.cpp > src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgspointdialog.i
 
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgspointdialog.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgspointdialog.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/georeferencer/qgspointdialog.cpp -o src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgspointdialog.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/georeferencer/qgspointdialog.cpp -o src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgspointdialog.s
 
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgspointdialog.o.requires:
 
@@ -190,21 +190,45 @@ src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgspointdialog.o.provides:
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgspointdialog.o.provides.build: src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgspointdialog.o
 
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/depend.make.mark: src/plugins/georeferencer/CMakeFiles/georefplugin.dir/flags.make
+src/plugins/georeferencer/CMakeFiles/georefplugin.dir/depend.make.mark: ../src/plugins/georeferencer/qgsgeorefdescriptiondialog.cpp
+
+src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsgeorefdescriptiondialog.o: src/plugins/georeferencer/CMakeFiles/georefplugin.dir/flags.make
+src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsgeorefdescriptiondialog.o: ../src/plugins/georeferencer/qgsgeorefdescriptiondialog.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_7)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsgeorefdescriptiondialog.o"
+	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsgeorefdescriptiondialog.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/georeferencer/qgsgeorefdescriptiondialog.cpp
+
+src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsgeorefdescriptiondialog.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsgeorefdescriptiondialog.i"
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/georeferencer/qgsgeorefdescriptiondialog.cpp > src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsgeorefdescriptiondialog.i
+
+src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsgeorefdescriptiondialog.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsgeorefdescriptiondialog.s"
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/georeferencer/qgsgeorefdescriptiondialog.cpp -o src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsgeorefdescriptiondialog.s
+
+src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsgeorefdescriptiondialog.o.requires:
+
+src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsgeorefdescriptiondialog.o.provides: src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsgeorefdescriptiondialog.o.requires
+	$(MAKE) -f src/plugins/georeferencer/CMakeFiles/georefplugin.dir/build.make src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsgeorefdescriptiondialog.o.provides.build
+
+src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsgeorefdescriptiondialog.o.provides.build: src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsgeorefdescriptiondialog.o
+
+src/plugins/georeferencer/CMakeFiles/georefplugin.dir/depend.make.mark: src/plugins/georeferencer/CMakeFiles/georefplugin.dir/flags.make
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/depend.make.mark: ../src/plugins/georeferencer/qgsgeorefwarpoptionsdialog.cpp
 
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsgeorefwarpoptionsdialog.o: src/plugins/georeferencer/CMakeFiles/georefplugin.dir/flags.make
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsgeorefwarpoptionsdialog.o: ../src/plugins/georeferencer/qgsgeorefwarpoptionsdialog.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_7)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_8)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsgeorefwarpoptionsdialog.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsgeorefwarpoptionsdialog.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/georeferencer/qgsgeorefwarpoptionsdialog.cpp
+	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsgeorefwarpoptionsdialog.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/georeferencer/qgsgeorefwarpoptionsdialog.cpp
 
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsgeorefwarpoptionsdialog.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsgeorefwarpoptionsdialog.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/georeferencer/qgsgeorefwarpoptionsdialog.cpp > src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsgeorefwarpoptionsdialog.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/georeferencer/qgsgeorefwarpoptionsdialog.cpp > src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsgeorefwarpoptionsdialog.i
 
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsgeorefwarpoptionsdialog.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsgeorefwarpoptionsdialog.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/georeferencer/qgsgeorefwarpoptionsdialog.cpp -o src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsgeorefwarpoptionsdialog.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/georeferencer/qgsgeorefwarpoptionsdialog.cpp -o src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsgeorefwarpoptionsdialog.s
 
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsgeorefwarpoptionsdialog.o.requires:
 
@@ -218,17 +242,17 @@ src/plugins/georeferencer/CMakeFiles/georefplugin.dir/depend.make.mark: ../src/p
 
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/mapcoordsdialog.o: src/plugins/georeferencer/CMakeFiles/georefplugin.dir/flags.make
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/mapcoordsdialog.o: ../src/plugins/georeferencer/mapcoordsdialog.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_8)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_9)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/plugins/georeferencer/CMakeFiles/georefplugin.dir/mapcoordsdialog.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/georeferencer/CMakeFiles/georefplugin.dir/mapcoordsdialog.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/georeferencer/mapcoordsdialog.cpp
+	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/georeferencer/CMakeFiles/georefplugin.dir/mapcoordsdialog.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/georeferencer/mapcoordsdialog.cpp
 
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/mapcoordsdialog.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/plugins/georeferencer/CMakeFiles/georefplugin.dir/mapcoordsdialog.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/georeferencer/mapcoordsdialog.cpp > src/plugins/georeferencer/CMakeFiles/georefplugin.dir/mapcoordsdialog.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/georeferencer/mapcoordsdialog.cpp > src/plugins/georeferencer/CMakeFiles/georefplugin.dir/mapcoordsdialog.i
 
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/mapcoordsdialog.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/plugins/georeferencer/CMakeFiles/georefplugin.dir/mapcoordsdialog.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/georeferencer/mapcoordsdialog.cpp -o src/plugins/georeferencer/CMakeFiles/georefplugin.dir/mapcoordsdialog.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/georeferencer/mapcoordsdialog.cpp -o src/plugins/georeferencer/CMakeFiles/georefplugin.dir/mapcoordsdialog.s
 
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/mapcoordsdialog.o.requires:
 
@@ -242,17 +266,17 @@ src/plugins/georeferencer/CMakeFiles/georefplugin.dir/depend.make.mark: src/plug
 
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/moc_plugin.o: src/plugins/georeferencer/CMakeFiles/georefplugin.dir/flags.make
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/moc_plugin.o: src/plugins/georeferencer/moc_plugin.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_9)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_10)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/plugins/georeferencer/CMakeFiles/georefplugin.dir/moc_plugin.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/georeferencer/CMakeFiles/georefplugin.dir/moc_plugin.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/georeferencer/moc_plugin.cxx
+	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/georeferencer/CMakeFiles/georefplugin.dir/moc_plugin.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/georeferencer/moc_plugin.cxx
 
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/moc_plugin.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/plugins/georeferencer/CMakeFiles/georefplugin.dir/moc_plugin.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/georeferencer/moc_plugin.cxx > src/plugins/georeferencer/CMakeFiles/georefplugin.dir/moc_plugin.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/georeferencer/moc_plugin.cxx > src/plugins/georeferencer/CMakeFiles/georefplugin.dir/moc_plugin.i
 
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/moc_plugin.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/plugins/georeferencer/CMakeFiles/georefplugin.dir/moc_plugin.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/georeferencer/moc_plugin.cxx -o src/plugins/georeferencer/CMakeFiles/georefplugin.dir/moc_plugin.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/georeferencer/moc_plugin.cxx -o src/plugins/georeferencer/CMakeFiles/georefplugin.dir/moc_plugin.s
 
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/moc_plugin.o.requires:
 
@@ -266,17 +290,17 @@ src/plugins/georeferencer/CMakeFiles/georefplugin.dir/depend.make.mark: src/plug
 
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/moc_plugingui.o: src/plugins/georeferencer/CMakeFiles/georefplugin.dir/flags.make
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/moc_plugingui.o: src/plugins/georeferencer/moc_plugingui.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_10)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_11)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/plugins/georeferencer/CMakeFiles/georefplugin.dir/moc_plugingui.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/georeferencer/CMakeFiles/georefplugin.dir/moc_plugingui.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/georeferencer/moc_plugingui.cxx
+	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/georeferencer/CMakeFiles/georefplugin.dir/moc_plugingui.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/georeferencer/moc_plugingui.cxx
 
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/moc_plugingui.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/plugins/georeferencer/CMakeFiles/georefplugin.dir/moc_plugingui.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/georeferencer/moc_plugingui.cxx > src/plugins/georeferencer/CMakeFiles/georefplugin.dir/moc_plugingui.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/georeferencer/moc_plugingui.cxx > src/plugins/georeferencer/CMakeFiles/georefplugin.dir/moc_plugingui.i
 
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/moc_plugingui.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/plugins/georeferencer/CMakeFiles/georefplugin.dir/moc_plugingui.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/georeferencer/moc_plugingui.cxx -o src/plugins/georeferencer/CMakeFiles/georefplugin.dir/moc_plugingui.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/georeferencer/moc_plugingui.cxx -o src/plugins/georeferencer/CMakeFiles/georefplugin.dir/moc_plugingui.s
 
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/moc_plugingui.o.requires:
 
@@ -290,17 +314,17 @@ src/plugins/georeferencer/CMakeFiles/georefplugin.dir/depend.make.mark: src/plug
 
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/moc_qgspointdialog.o: src/plugins/georeferencer/CMakeFiles/georefplugin.dir/flags.make
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/moc_qgspointdialog.o: src/plugins/georeferencer/moc_qgspointdialog.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_11)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_12)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/plugins/georeferencer/CMakeFiles/georefplugin.dir/moc_qgspointdialog.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/georeferencer/CMakeFiles/georefplugin.dir/moc_qgspointdialog.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/georeferencer/moc_qgspointdialog.cxx
+	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/georeferencer/CMakeFiles/georefplugin.dir/moc_qgspointdialog.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/georeferencer/moc_qgspointdialog.cxx
 
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/moc_qgspointdialog.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/plugins/georeferencer/CMakeFiles/georefplugin.dir/moc_qgspointdialog.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/georeferencer/moc_qgspointdialog.cxx > src/plugins/georeferencer/CMakeFiles/georefplugin.dir/moc_qgspointdialog.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/georeferencer/moc_qgspointdialog.cxx > src/plugins/georeferencer/CMakeFiles/georefplugin.dir/moc_qgspointdialog.i
 
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/moc_qgspointdialog.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/plugins/georeferencer/CMakeFiles/georefplugin.dir/moc_qgspointdialog.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/georeferencer/moc_qgspointdialog.cxx -o src/plugins/georeferencer/CMakeFiles/georefplugin.dir/moc_qgspointdialog.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/georeferencer/moc_qgspointdialog.cxx -o src/plugins/georeferencer/CMakeFiles/georefplugin.dir/moc_qgspointdialog.s
 
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/moc_qgspointdialog.o.requires:
 
@@ -314,17 +338,17 @@ src/plugins/georeferencer/CMakeFiles/georefplugin.dir/depend.make.mark: src/plug
 
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/moc_mapcoordsdialog.o: src/plugins/georeferencer/CMakeFiles/georefplugin.dir/flags.make
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/moc_mapcoordsdialog.o: src/plugins/georeferencer/moc_mapcoordsdialog.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_12)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_13)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/plugins/georeferencer/CMakeFiles/georefplugin.dir/moc_mapcoordsdialog.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/georeferencer/CMakeFiles/georefplugin.dir/moc_mapcoordsdialog.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/georeferencer/moc_mapcoordsdialog.cxx
+	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/georeferencer/CMakeFiles/georefplugin.dir/moc_mapcoordsdialog.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/georeferencer/moc_mapcoordsdialog.cxx
 
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/moc_mapcoordsdialog.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/plugins/georeferencer/CMakeFiles/georefplugin.dir/moc_mapcoordsdialog.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/georeferencer/moc_mapcoordsdialog.cxx > src/plugins/georeferencer/CMakeFiles/georefplugin.dir/moc_mapcoordsdialog.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/georeferencer/moc_mapcoordsdialog.cxx > src/plugins/georeferencer/CMakeFiles/georefplugin.dir/moc_mapcoordsdialog.i
 
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/moc_mapcoordsdialog.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/plugins/georeferencer/CMakeFiles/georefplugin.dir/moc_mapcoordsdialog.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/georeferencer/moc_mapcoordsdialog.cxx -o src/plugins/georeferencer/CMakeFiles/georefplugin.dir/moc_mapcoordsdialog.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/georeferencer/moc_mapcoordsdialog.cxx -o src/plugins/georeferencer/CMakeFiles/georefplugin.dir/moc_mapcoordsdialog.s
 
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/moc_mapcoordsdialog.o.requires:
 
@@ -338,17 +362,17 @@ src/plugins/georeferencer/CMakeFiles/georefplugin.dir/depend.make.mark: src/plug
 
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/moc_qgsgeorefwarpoptionsdialog.o: src/plugins/georeferencer/CMakeFiles/georefplugin.dir/flags.make
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/moc_qgsgeorefwarpoptionsdialog.o: src/plugins/georeferencer/moc_qgsgeorefwarpoptionsdialog.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_13)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_14)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/plugins/georeferencer/CMakeFiles/georefplugin.dir/moc_qgsgeorefwarpoptionsdialog.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/georeferencer/CMakeFiles/georefplugin.dir/moc_qgsgeorefwarpoptionsdialog.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/georeferencer/moc_qgsgeorefwarpoptionsdialog.cxx
+	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/georeferencer/CMakeFiles/georefplugin.dir/moc_qgsgeorefwarpoptionsdialog.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/georeferencer/moc_qgsgeorefwarpoptionsdialog.cxx
 
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/moc_qgsgeorefwarpoptionsdialog.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/plugins/georeferencer/CMakeFiles/georefplugin.dir/moc_qgsgeorefwarpoptionsdialog.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/georeferencer/moc_qgsgeorefwarpoptionsdialog.cxx > src/plugins/georeferencer/CMakeFiles/georefplugin.dir/moc_qgsgeorefwarpoptionsdialog.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/georeferencer/moc_qgsgeorefwarpoptionsdialog.cxx > src/plugins/georeferencer/CMakeFiles/georefplugin.dir/moc_qgsgeorefwarpoptionsdialog.i
 
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/moc_qgsgeorefwarpoptionsdialog.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/plugins/georeferencer/CMakeFiles/georefplugin.dir/moc_qgsgeorefwarpoptionsdialog.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/georeferencer/moc_qgsgeorefwarpoptionsdialog.cxx -o src/plugins/georeferencer/CMakeFiles/georefplugin.dir/moc_qgsgeorefwarpoptionsdialog.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/georeferencer/moc_qgsgeorefwarpoptionsdialog.cxx -o src/plugins/georeferencer/CMakeFiles/georefplugin.dir/moc_qgsgeorefwarpoptionsdialog.s
 
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/moc_qgsgeorefwarpoptionsdialog.o.requires:
 
@@ -362,17 +386,17 @@ src/plugins/georeferencer/CMakeFiles/georefplugin.dir/depend.make.mark: src/plug
 
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qrc_georeferencer.o: src/plugins/georeferencer/CMakeFiles/georefplugin.dir/flags.make
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qrc_georeferencer.o: src/plugins/georeferencer/qrc_georeferencer.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_14)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_15)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qrc_georeferencer.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qrc_georeferencer.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/georeferencer/qrc_georeferencer.cxx
+	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qrc_georeferencer.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/georeferencer/qrc_georeferencer.cxx
 
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qrc_georeferencer.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qrc_georeferencer.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/georeferencer/qrc_georeferencer.cxx > src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qrc_georeferencer.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/georeferencer/qrc_georeferencer.cxx > src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qrc_georeferencer.i
 
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qrc_georeferencer.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qrc_georeferencer.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/georeferencer/qrc_georeferencer.cxx -o src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qrc_georeferencer.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/georeferencer/qrc_georeferencer.cxx -o src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qrc_georeferencer.s
 
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qrc_georeferencer.o.requires:
 
@@ -382,57 +406,62 @@ src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qrc_georeferencer.o.provid
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qrc_georeferencer.o.provides.build: src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qrc_georeferencer.o
 
 src/plugins/georeferencer/moc_plugin.cxx: ../src/plugins/georeferencer/plugin.h
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_15)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_16)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating moc_plugin.cxx"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/georeferencer && /Developer/Tools/Qt/moc -I /usr/include -I /Library/Frameworks/Qt3Support.framework/Headers -I /Library/Frameworks/QtSvg.framework/Headers -I /Library/Frameworks/QtGui.framework/Headers -I /Library/Frameworks/QtXml.framework/Headers -I /Library/Frameworks/QtSql.framework/Headers -I /Library/Frameworks/QtNetwork.framework/Headers -I /Library/Frameworks/QtCore.framework/Headers -I /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/georeferencer/moc_plugin.cxx /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/georeferencer/plugin.h
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/georeferencer && /Developer/Tools/Qt/moc -I /usr/include -I /Library/Frameworks/Qt3Support.framework/Headers -I /Library/Frameworks/QtSvg.framework/Headers -I /Library/Frameworks/QtGui.framework/Headers -I /Library/Frameworks/QtXml.framework/Headers -I /Library/Frameworks/QtSql.framework/Headers -I /Library/Frameworks/QtNetwork.framework/Headers -I /Library/Frameworks/QtCore.framework/Headers -I /Users/bhattgopal/dev/cpp/qgis_1.0.2/build -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/georeferencer/moc_plugin.cxx /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/georeferencer/plugin.h
 
 src/plugins/georeferencer/moc_plugingui.cxx: ../src/plugins/georeferencer/plugingui.h
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_16)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_17)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating moc_plugingui.cxx"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/georeferencer && /Developer/Tools/Qt/moc -I /usr/include -I /Library/Frameworks/Qt3Support.framework/Headers -I /Library/Frameworks/QtSvg.framework/Headers -I /Library/Frameworks/QtGui.framework/Headers -I /Library/Frameworks/QtXml.framework/Headers -I /Library/Frameworks/QtSql.framework/Headers -I /Library/Frameworks/QtNetwork.framework/Headers -I /Library/Frameworks/QtCore.framework/Headers -I /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/georeferencer/moc_plugingui.cxx /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/georeferencer/plugingui.h
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/georeferencer && /Developer/Tools/Qt/moc -I /usr/include -I /Library/Frameworks/Qt3Support.framework/Headers -I /Library/Frameworks/QtSvg.framework/Headers -I /Library/Frameworks/QtGui.framework/Headers -I /Library/Frameworks/QtXml.framework/Headers -I /Library/Frameworks/QtSql.framework/Headers -I /Library/Frameworks/QtNetwork.framework/Headers -I /Library/Frameworks/QtCore.framework/Headers -I /Users/bhattgopal/dev/cpp/qgis_1.0.2/build -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/georeferencer/moc_plugingui.cxx /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/georeferencer/plugingui.h
 
 src/plugins/georeferencer/moc_qgspointdialog.cxx: ../src/plugins/georeferencer/qgspointdialog.h
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_17)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_18)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating moc_qgspointdialog.cxx"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/georeferencer && /Developer/Tools/Qt/moc -I /usr/include -I /Library/Frameworks/Qt3Support.framework/Headers -I /Library/Frameworks/QtSvg.framework/Headers -I /Library/Frameworks/QtGui.framework/Headers -I /Library/Frameworks/QtXml.framework/Headers -I /Library/Frameworks/QtSql.framework/Headers -I /Library/Frameworks/QtNetwork.framework/Headers -I /Library/Frameworks/QtCore.framework/Headers -I /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/georeferencer/moc_qgspointdialog.cxx /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/georeferencer/qgspointdialog.h
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/georeferencer && /Developer/Tools/Qt/moc -I /usr/include -I /Library/Frameworks/Qt3Support.framework/Headers -I /Library/Frameworks/QtSvg.framework/Headers -I /Library/Frameworks/QtGui.framework/Headers -I /Library/Frameworks/QtXml.framework/Headers -I /Library/Frameworks/QtSql.framework/Headers -I /Library/Frameworks/QtNetwork.framework/Headers -I /Library/Frameworks/QtCore.framework/Headers -I /Users/bhattgopal/dev/cpp/qgis_1.0.2/build -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/georeferencer/moc_qgspointdialog.cxx /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/georeferencer/qgspointdialog.h
 
 src/plugins/georeferencer/moc_mapcoordsdialog.cxx: ../src/plugins/georeferencer/mapcoordsdialog.h
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_18)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_19)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating moc_mapcoordsdialog.cxx"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/georeferencer && /Developer/Tools/Qt/moc -I /usr/include -I /Library/Frameworks/Qt3Support.framework/Headers -I /Library/Frameworks/QtSvg.framework/Headers -I /Library/Frameworks/QtGui.framework/Headers -I /Library/Frameworks/QtXml.framework/Headers -I /Library/Frameworks/QtSql.framework/Headers -I /Library/Frameworks/QtNetwork.framework/Headers -I /Library/Frameworks/QtCore.framework/Headers -I /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/georeferencer/moc_mapcoordsdialog.cxx /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/georeferencer/mapcoordsdialog.h
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/georeferencer && /Developer/Tools/Qt/moc -I /usr/include -I /Library/Frameworks/Qt3Support.framework/Headers -I /Library/Frameworks/QtSvg.framework/Headers -I /Library/Frameworks/QtGui.framework/Headers -I /Library/Frameworks/QtXml.framework/Headers -I /Library/Frameworks/QtSql.framework/Headers -I /Library/Frameworks/QtNetwork.framework/Headers -I /Library/Frameworks/QtCore.framework/Headers -I /Users/bhattgopal/dev/cpp/qgis_1.0.2/build -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/georeferencer/moc_mapcoordsdialog.cxx /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/georeferencer/mapcoordsdialog.h
 
 src/plugins/georeferencer/moc_qgsgeorefwarpoptionsdialog.cxx: ../src/plugins/georeferencer/qgsgeorefwarpoptionsdialog.h
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_19)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_20)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating moc_qgsgeorefwarpoptionsdialog.cxx"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/georeferencer && /Developer/Tools/Qt/moc -I /usr/include -I /Library/Frameworks/Qt3Support.framework/Headers -I /Library/Frameworks/QtSvg.framework/Headers -I /Library/Frameworks/QtGui.framework/Headers -I /Library/Frameworks/QtXml.framework/Headers -I /Library/Frameworks/QtSql.framework/Headers -I /Library/Frameworks/QtNetwork.framework/Headers -I /Library/Frameworks/QtCore.framework/Headers -I /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/georeferencer/moc_qgsgeorefwarpoptionsdialog.cxx /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/georeferencer/qgsgeorefwarpoptionsdialog.h
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/georeferencer && /Developer/Tools/Qt/moc -I /usr/include -I /Library/Frameworks/Qt3Support.framework/Headers -I /Library/Frameworks/QtSvg.framework/Headers -I /Library/Frameworks/QtGui.framework/Headers -I /Library/Frameworks/QtXml.framework/Headers -I /Library/Frameworks/QtSql.framework/Headers -I /Library/Frameworks/QtNetwork.framework/Headers -I /Library/Frameworks/QtCore.framework/Headers -I /Users/bhattgopal/dev/cpp/qgis_1.0.2/build -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/georeferencer/moc_qgsgeorefwarpoptionsdialog.cxx /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/georeferencer/qgsgeorefwarpoptionsdialog.h
 
 src/plugins/georeferencer/qrc_georeferencer.cxx: ../src/plugins/georeferencer/georef.png
-src/plugins/georeferencer/qrc_georeferencer.cxx: ../src/plugins/georeferencer/icon.png
+src/plugins/georeferencer/qrc_georeferencer.cxx: ../src/plugins/georeferencer/georeferencer.png
 src/plugins/georeferencer/qrc_georeferencer.cxx: ../src/plugins/georeferencer/pencil.png
 src/plugins/georeferencer/qrc_georeferencer.cxx: ../src/plugins/georeferencer/georeferencer.qrc
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_20)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_21)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating qrc_georeferencer.cxx"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/georeferencer && /Developer/Tools/Qt/rcc -name georeferencer -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/georeferencer/qrc_georeferencer.cxx /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/georeferencer/georeferencer.qrc
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/georeferencer && /Developer/Tools/Qt/rcc -name georeferencer -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/georeferencer/qrc_georeferencer.cxx /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/georeferencer/georeferencer.qrc
 
 src/plugins/georeferencer/ui_pluginguibase.h: ../src/plugins/georeferencer/pluginguibase.ui
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_21)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_22)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ui_pluginguibase.h"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/georeferencer && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/georeferencer/ui_pluginguibase.h /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/georeferencer/pluginguibase.ui
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/georeferencer && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/georeferencer/ui_pluginguibase.h /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/georeferencer/pluginguibase.ui
 
 src/plugins/georeferencer/ui_qgspointdialogbase.h: ../src/plugins/georeferencer/qgspointdialogbase.ui
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_22)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_23)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ui_qgspointdialogbase.h"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/georeferencer && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/georeferencer/ui_qgspointdialogbase.h /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/georeferencer/qgspointdialogbase.ui
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/georeferencer && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/georeferencer/ui_qgspointdialogbase.h /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/georeferencer/qgspointdialogbase.ui
 
 src/plugins/georeferencer/ui_mapcoordsdialogbase.h: ../src/plugins/georeferencer/mapcoordsdialogbase.ui
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_23)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_24)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ui_mapcoordsdialogbase.h"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/georeferencer && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/georeferencer/ui_mapcoordsdialogbase.h /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/georeferencer/mapcoordsdialogbase.ui
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/georeferencer && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/georeferencer/ui_mapcoordsdialogbase.h /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/georeferencer/mapcoordsdialogbase.ui
+
+src/plugins/georeferencer/ui_qgsgeorefdescriptiondialogbase.h: ../src/plugins/georeferencer/qgsgeorefdescriptiondialogbase.ui
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_25)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ui_qgsgeorefdescriptiondialogbase.h"
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/georeferencer && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/georeferencer/ui_qgsgeorefdescriptiondialogbase.h /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/georeferencer/qgsgeorefdescriptiondialogbase.ui
 
 src/plugins/georeferencer/ui_qgsgeorefwarpoptionsdialogbase.h: ../src/plugins/georeferencer/qgsgeorefwarpoptionsdialogbase.ui
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_24)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_26)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ui_qgsgeorefwarpoptionsdialogbase.h"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/georeferencer && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/georeferencer/ui_qgsgeorefwarpoptionsdialogbase.h /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/georeferencer/qgsgeorefwarpoptionsdialogbase.ui
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/georeferencer && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/georeferencer/ui_qgsgeorefwarpoptionsdialogbase.h /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/georeferencer/qgsgeorefwarpoptionsdialogbase.ui
 
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/depend: src/plugins/georeferencer/CMakeFiles/georefplugin.dir/depend.make.mark
 
@@ -445,9 +474,10 @@ src/plugins/georeferencer/CMakeFiles/georefplugin.dir/depend.make.mark: src/plug
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/depend.make.mark: src/plugins/georeferencer/ui_pluginguibase.h
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/depend.make.mark: src/plugins/georeferencer/ui_qgspointdialogbase.h
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/depend.make.mark: src/plugins/georeferencer/ui_mapcoordsdialogbase.h
+src/plugins/georeferencer/CMakeFiles/georefplugin.dir/depend.make.mark: src/plugins/georeferencer/ui_qgsgeorefdescriptiondialogbase.h
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/depend.make.mark: src/plugins/georeferencer/ui_qgsgeorefwarpoptionsdialogbase.h
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --magenta --bold "Scanning dependencies of target georefplugin"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0 /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/georeferencer /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/georeferencer /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/georeferencer/CMakeFiles/georefplugin.dir/DependInfo.cmake
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/bhattgopal/dev/cpp/qgis_1.0.2 /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/georeferencer /Users/bhattgopal/dev/cpp/qgis_1.0.2/build /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/georeferencer /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/georeferencer/CMakeFiles/georefplugin.dir/DependInfo.cmake
 
 # Object files for target georefplugin
 georefplugin_OBJECTS = \
@@ -457,6 +487,7 @@ georefplugin_OBJECTS = \
 "CMakeFiles/georefplugin.dir/qgsimagewarper.o" \
 "CMakeFiles/georefplugin.dir/qgsleastsquares.o" \
 "CMakeFiles/georefplugin.dir/qgspointdialog.o" \
+"CMakeFiles/georefplugin.dir/qgsgeorefdescriptiondialog.o" \
 "CMakeFiles/georefplugin.dir/qgsgeorefwarpoptionsdialog.o" \
 "CMakeFiles/georefplugin.dir/mapcoordsdialog.o" \
 "CMakeFiles/georefplugin.dir/moc_plugin.o" \
@@ -475,6 +506,7 @@ src/plugins/georeferencer/libgeorefplugin.so: src/plugins/georeferencer/CMakeFil
 src/plugins/georeferencer/libgeorefplugin.so: src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsimagewarper.o
 src/plugins/georeferencer/libgeorefplugin.so: src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsleastsquares.o
 src/plugins/georeferencer/libgeorefplugin.so: src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgspointdialog.o
+src/plugins/georeferencer/libgeorefplugin.so: src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsgeorefdescriptiondialog.o
 src/plugins/georeferencer/libgeorefplugin.so: src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsgeorefwarpoptionsdialog.o
 src/plugins/georeferencer/libgeorefplugin.so: src/plugins/georeferencer/CMakeFiles/georefplugin.dir/mapcoordsdialog.o
 src/plugins/georeferencer/libgeorefplugin.so: src/plugins/georeferencer/CMakeFiles/georefplugin.dir/moc_plugin.o
@@ -483,24 +515,21 @@ src/plugins/georeferencer/libgeorefplugin.so: src/plugins/georeferencer/CMakeFil
 src/plugins/georeferencer/libgeorefplugin.so: src/plugins/georeferencer/CMakeFiles/georefplugin.dir/moc_mapcoordsdialog.o
 src/plugins/georeferencer/libgeorefplugin.so: src/plugins/georeferencer/CMakeFiles/georefplugin.dir/moc_qgsgeorefwarpoptionsdialog.o
 src/plugins/georeferencer/libgeorefplugin.so: src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qrc_georeferencer.o
-src/plugins/georeferencer/libgeorefplugin.so: /Library/Frameworks/Qt3Support.framework
-src/plugins/georeferencer/libgeorefplugin.so: /Library/Frameworks/QtSvg.framework
-src/plugins/georeferencer/libgeorefplugin.so: /Library/Frameworks/QtGui.framework
-src/plugins/georeferencer/libgeorefplugin.so: /Library/Frameworks/QtXml.framework
-src/plugins/georeferencer/libgeorefplugin.so: /Library/Frameworks/QtSql.framework
-src/plugins/georeferencer/libgeorefplugin.so: /Library/Frameworks/QtNetwork.framework
-src/plugins/georeferencer/libgeorefplugin.so: /Library/Frameworks/QtCore.framework
-src/plugins/georeferencer/libgeorefplugin.so: /usr/lib/libz.dylib
 src/plugins/georeferencer/libgeorefplugin.so: src/core/libqgis_core.dylib
 src/plugins/georeferencer/libgeorefplugin.so: src/gui/libqgis_gui.dylib
+src/plugins/georeferencer/libgeorefplugin.so: /Library/Frameworks/QtCore.framework
+src/plugins/georeferencer/libgeorefplugin.so: /Library/Frameworks/QtGui.framework
+src/plugins/georeferencer/libgeorefplugin.so: /Library/Frameworks/QtXml.framework
+src/plugins/georeferencer/libgeorefplugin.so: /Library/Frameworks/QtSvg.framework
+src/plugins/georeferencer/libgeorefplugin.so: /Library/Frameworks/QtNetwork.framework
 src/plugins/georeferencer/libgeorefplugin.so: /Library/Frameworks/proj.framework
-src/plugins/georeferencer/libgeorefplugin.so: /Library/Frameworks/sqlite3.framework
-src/plugins/georeferencer/libgeorefplugin.so: /Library/Frameworks/geos.framework
+src/plugins/georeferencer/libgeorefplugin.so: /Library/Frameworks/GEOS.framework/unix/lib/libgeos_c.dylib
 src/plugins/georeferencer/libgeorefplugin.so: /Library/Frameworks/GDAL.framework/Versions/1.5/unix/lib/libgdal.dylib
+src/plugins/georeferencer/libgeorefplugin.so: /Library/Frameworks/sqlite3.framework
 src/plugins/georeferencer/libgeorefplugin.so: src/plugins/georeferencer/CMakeFiles/georefplugin.dir/build.make
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX shared module libgeorefplugin.so"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/georeferencer && $(CMAKE_COMMAND) -P CMakeFiles/georefplugin.dir/cmake_clean_target.cmake
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/georeferencer && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/georefplugin.dir/link.txt --verbose=$(VERBOSE)
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/georeferencer && $(CMAKE_COMMAND) -P CMakeFiles/georefplugin.dir/cmake_clean_target.cmake
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/georeferencer && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/georefplugin.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/build: src/plugins/georeferencer/libgeorefplugin.so
@@ -511,6 +540,7 @@ src/plugins/georeferencer/CMakeFiles/georefplugin.dir/requires: src/plugins/geor
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/requires: src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsimagewarper.o.requires
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/requires: src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsleastsquares.o.requires
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/requires: src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgspointdialog.o.requires
+src/plugins/georeferencer/CMakeFiles/georefplugin.dir/requires: src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsgeorefdescriptiondialog.o.requires
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/requires: src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsgeorefwarpoptionsdialog.o.requires
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/requires: src/plugins/georeferencer/CMakeFiles/georefplugin.dir/mapcoordsdialog.o.requires
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/requires: src/plugins/georeferencer/CMakeFiles/georefplugin.dir/moc_plugin.o.requires
@@ -521,5 +551,5 @@ src/plugins/georeferencer/CMakeFiles/georefplugin.dir/requires: src/plugins/geor
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/requires: src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qrc_georeferencer.o.requires
 
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/clean:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/georeferencer && $(CMAKE_COMMAND) -P CMakeFiles/georefplugin.dir/cmake_clean.cmake
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/georeferencer && $(CMAKE_COMMAND) -P CMakeFiles/georefplugin.dir/cmake_clean.cmake
 

@@ -1,14 +1,14 @@
 8
 
 dir
-7809
-https://svn.qgis.org/repos/qgis/branches/Release-0_9_0/cmake_templates
-https://svn.qgis.org/repos/qgis
+10938
+https://svn.osgeo.org/qgis/branches/Release-1_0_2/cmake_templates
+https://svn.osgeo.org/qgis
 
 
 
-2007-08-27T23:43:46.499450Z
-7158
+2008-07-08T20:41:42.433619Z
+8739
 timlinux
 
 
@@ -32,10 +32,10 @@ file
 
 
 
-2007-12-24T08:18:13.000000Z
-dfb4f0c6d4802665879575191c8303dd
-2007-07-25T21:28:00.603048Z
-7097
+2009-06-17T07:50:24.000000Z
+16ef75d166f357fed63f148c60a617ae
+2007-09-27T19:41:16.325812Z
+7226
 timlinux
 
 qgssvnversion.h.in_cmake
@@ -44,7 +44,7 @@ file
 
 
 
-2007-12-24T08:18:13.000000Z
+2009-06-17T07:50:24.000000Z
 52475efa313d90dac8746beb59a57f8c
 2007-07-25T21:28:00.603048Z
 7097
@@ -56,10 +56,10 @@ file
 
 
 
-2007-12-24T08:18:13.000000Z
-c1cc4d87d8325e0352165090a5c6df2c
-2007-08-27T23:43:46.499450Z
-7158
+2009-06-17T07:50:24.000000Z
+b349262a80987a084a41f5cd3a58ef16
+2008-07-08T20:41:42.433619Z
+8739
 timlinux
 
 cmake_uninstall.cmake.in
@@ -68,7 +68,7 @@ file
 
 
 
-2007-12-24T08:18:13.000000Z
+2009-06-17T07:50:24.000000Z
 4fed4d760975c04612a17e299cac977f
 2007-07-25T21:28:00.603048Z
 7097

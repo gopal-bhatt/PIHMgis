@@ -7,7 +7,6 @@
 #include <qwt_text.h>
 #include <math.h>
 #include <qdialog.h>
-
 #include <qcolor.h>
 #include "plotTS.h"
 

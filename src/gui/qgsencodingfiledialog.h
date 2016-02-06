@@ -19,18 +19,20 @@
 #include <QFileDialog>
 class QComboBox;
 
-/**A file dialog which lets the user select the prefered encoding type for a data provider*/
+/** \ingroup gui
+ * A file dialog which lets the user select the prefered encoding type for a data provider.
+ **/
 class GUI_EXPORT QgsEncodingFileDialog: public QFileDialog
 {
     Q_OBJECT
- public:
-    QgsEncodingFileDialog(QWidget * parent = 0,
-        const QString & caption = QString(), const QString & directory = QString(),
-        const QString & filter = QString(), const QString & encoding = QString());
+  public:
+    QgsEncodingFileDialog( QWidget * parent = 0,
+                           const QString & caption = QString(), const QString & directory = QString(),
+                           const QString & filter = QString(), const QString & encoding = QString() );
     ~QgsEncodingFileDialog();
     /**Returns a string describing the choosen encoding*/
     QString encoding() const;
- private:
+  private:
     /**Box to choose the encoding type*/
     QComboBox* mEncodingComboBox;
 };

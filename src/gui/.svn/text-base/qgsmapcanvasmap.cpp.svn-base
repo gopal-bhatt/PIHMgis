@@ -17,44 +17,48 @@
 #include "qgslogger.h"
 #include "qgsmapcanvas.h"
 #include "qgsmapcanvasmap.h"
-#include "qgsmaprender.h"
+#include "qgsmaprenderer.h"
 
 #include <QPainter>
 
-QgsMapCanvasMap::QgsMapCanvasMap(QgsMapCanvas* canvas)
-  : mCanvas(canvas)
+QgsMapCanvasMap::QgsMapCanvasMap( QgsMapCanvas* canvas )
+    : mCanvas( canvas )
 {
-  setZValue(-10);
-  setPos(0,0);
-  resize(QSize(1,1));
+  setZValue( -10 );
+  setPos( 0, 0 );
+  resize( QSize( 1, 1 ) );
   mUseQImageToRender = false;
 }
 
-void QgsMapCanvasMap::paint(QPainter* p, const QStyleOptionGraphicsItem*, QWidget*)
+void QgsMapCanvasMap::paint( QPainter* p, const QStyleOptionGraphicsItem*, QWidget* )
 {
-  if (mCanvas->isDirty())
+  //refreshes the canvas map with the current offscreen image
+  if ( mUseQImageToRender )
   {
-    mCanvas->render();
+    mPixmap = QPixmap::fromImage( mImage );
   }
-  p->drawPixmap(0,0, mPixmap);
+  p->drawPixmap( 0, 0, mPixmap );
 }
 
 QRectF QgsMapCanvasMap::boundingRect() const
 {
-  return QRectF(0,0,mPixmap.width(),mPixmap.height());
+  return QRectF( 0, 0, mPixmap.width(), mPixmap.height() );
 }
 
 
-void QgsMapCanvasMap::resize(QSize size)
+void QgsMapCanvasMap::resize( QSize size )
 {
-  mPixmap = QPixmap(size);
-  mCanvas->mapRender()->setOutputSize(size, mPixmap.logicalDpiX());
+  prepareGeometryChange();	// to keep QGraphicsScene indexes up to date on size change
+
+  mPixmap = QPixmap( size );
+  mImage = QImage( size, QImage::Format_RGB32 );	// temporary image - build it here so it is available when switching from QPixmap to QImage rendering
+  mCanvas->mapRenderer()->setOutputSize( size, mPixmap.logicalDpiX() );
 }
 
-void QgsMapCanvasMap::setPanningOffset(const QPoint& point)
+void QgsMapCanvasMap::setPanningOffset( const QPoint& point )
 {
   mOffset = point;
-  setPos(mOffset);
+  setPos( mOffset );
 }
 
 void QgsMapCanvasMap::render()
@@ -62,39 +66,50 @@ void QgsMapCanvasMap::render()
   // Rendering to a QImage gives incorrectly filled polygons in some
   // cases (as at Qt4.1.4), but it is the only renderer that supports
   // anti-aliasing, so we provide the means to swap between QImage and
-  // QPixmap. 
+  // QPixmap.
 
-  if (mUseQImageToRender)
+  if ( mUseQImageToRender )
   {
     // use temporary image for rendering
-    QImage image(boundingRect().size().toSize(), QImage::Format_RGB32);
-  
-    image.fill(mBgColor.rgb());
+    mImage.fill( mBgColor.rgb() );
 
     QPainter paint;
-    paint.begin(&image);
+    paint.begin( &mImage );
     // Clip drawing to the QImage
-    paint.setClipRect(image.rect());
+    paint.setClipRect( mImage.rect() );
 
     // antialiasing
-    if (mAntiAliasing)
-      paint.setRenderHint(QPainter::Antialiasing);
-  
-    mCanvas->mapRender()->render(&paint);
+    if ( mAntiAliasing )
+      paint.setRenderHint( QPainter::Antialiasing );
+
+    mCanvas->mapRenderer()->render( &paint );
 
     paint.end();
-  
+
     // convert QImage to QPixmap to acheive faster drawing on screen
-    mPixmap = QPixmap::fromImage(image);
+    //mPixmap = QPixmap::fromImage(image);
   }
   else
   {
-    mPixmap.fill(mBgColor.rgb());
+    mPixmap.fill( mBgColor.rgb() );
     QPainter paint;
-    paint.begin(&mPixmap);
+    paint.begin( &mPixmap );
     // Clip our drawing to the QPixmap
-    paint.setClipRect(mPixmap.rect());
-    mCanvas->mapRender()->render(&paint);
+    paint.setClipRect( mPixmap.rect() );
+    mCanvas->mapRenderer()->render( &paint );
     paint.end();
+  }
+  update();
+}
+
+QPaintDevice& QgsMapCanvasMap::paintDevice()
+{
+  if ( mUseQImageToRender )
+  {
+    return mImage;
+  }
+  else
+  {
+    return mPixmap;
   }
 }

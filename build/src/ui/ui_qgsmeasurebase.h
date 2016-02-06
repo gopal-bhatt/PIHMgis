@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading ui file 'qgsmeasurebase.ui'
 **
-** Created: Wed Jun 11 19:03:30 2008
+** Created: Fri Jun 19 01:50:17 2009
 **      by: Qt User Interface Compiler version 4.3.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling ui file!
@@ -10,9 +10,6 @@
 #ifndef UI_QGSMEASUREBASE_H
 #define UI_QGSMEASUREBASE_H
 
-#include <Qt3Support/Q3Frame>
-#include <Qt3Support/Q3Header>
-#include <Qt3Support/Q3Table>
 #include <QtCore/QVariant>
 #include <QtGui/QAction>
 #include <QtGui/QApplication>
@@ -24,6 +21,7 @@
 #include <QtGui/QLineEdit>
 #include <QtGui/QPushButton>
 #include <QtGui/QSpacerItem>
+#include <QtGui/QTreeWidget>
 
 class Ui_QgsMeasureBase
 {
@@ -32,8 +30,7 @@ public:
     QLineEdit *editTotal;
     QSpacerItem *spacerItem;
     QLabel *textLabel2;
-    Q3Table *mTable;
-    Q3Frame *frame4;
+    QTreeWidget *mTable;
     QHBoxLayout *hboxLayout;
     QPushButton *btnHelp;
     QSpacerItem *spacerItem1;
@@ -71,27 +68,19 @@ public:
 
     gridLayout->addWidget(textLabel2, 1, 0, 1, 1);
 
-    mTable = new Q3Table(QgsMeasureBase);
+    mTable = new QTreeWidget(QgsMeasureBase);
     mTable->setObjectName(QString::fromUtf8("mTable"));
-    mTable->setResizePolicy(Q3ScrollView::Manual);
-    mTable->setNumRows(0);
-    mTable->setNumCols(1);
-    mTable->setShowGrid(true);
-    mTable->setReadOnly(true);
+    mTable->setEditTriggers(QAbstractItemView::NoEditTriggers);
+    mTable->setRootIsDecorated(false);
+    mTable->setColumnCount(1);
 
     gridLayout->addWidget(mTable, 0, 0, 1, 3);
 
-    frame4 = new Q3Frame(QgsMeasureBase);
-    frame4->setObjectName(QString::fromUtf8("frame4"));
-    frame4->setMinimumSize(QSize(150, 0));
-    frame4->setFrameShape(QFrame::StyledPanel);
-    frame4->setFrameShadow(QFrame::Plain);
-    frame4->setLineWidth(0);
-    hboxLayout = new QHBoxLayout(frame4);
+    hboxLayout = new QHBoxLayout();
     hboxLayout->setSpacing(6);
     hboxLayout->setMargin(4);
     hboxLayout->setObjectName(QString::fromUtf8("hboxLayout"));
-    btnHelp = new QPushButton(frame4);
+    btnHelp = new QPushButton(QgsMeasureBase);
     btnHelp->setObjectName(QString::fromUtf8("btnHelp"));
 
     hboxLayout->addWidget(btnHelp);
@@ -100,18 +89,18 @@ public:
 
     hboxLayout->addItem(spacerItem1);
 
-    mRestartButton = new QPushButton(frame4);
+    mRestartButton = new QPushButton(QgsMeasureBase);
     mRestartButton->setObjectName(QString::fromUtf8("mRestartButton"));
 
     hboxLayout->addWidget(mRestartButton);
 
-    mCloseButton = new QPushButton(frame4);
+    mCloseButton = new QPushButton(QgsMeasureBase);
     mCloseButton->setObjectName(QString::fromUtf8("mCloseButton"));
 
     hboxLayout->addWidget(mCloseButton);
 
 
-    gridLayout->addWidget(frame4, 2, 0, 1, 3);
+    gridLayout->addLayout(hboxLayout, 2, 0, 1, 3);
 
     textLabel2->setBuddy(editTotal);
 
@@ -124,6 +113,7 @@ public:
     {
     QgsMeasureBase->setWindowTitle(QApplication::translate("QgsMeasureBase", "Measure", 0, QApplication::UnicodeUTF8));
     textLabel2->setText(QApplication::translate("QgsMeasureBase", "Total:", 0, QApplication::UnicodeUTF8));
+    mTable->headerItem()->setText(0, QApplication::translate("QgsMeasureBase", "Segments", 0, QApplication::UnicodeUTF8));
     btnHelp->setText(QApplication::translate("QgsMeasureBase", "Help", 0, QApplication::UnicodeUTF8));
     mRestartButton->setText(QApplication::translate("QgsMeasureBase", "New", 0, QApplication::UnicodeUTF8));
     mCloseButton->setText(QApplication::translate("QgsMeasureBase", "Cl&ose", 0, QApplication::UnicodeUTF8));

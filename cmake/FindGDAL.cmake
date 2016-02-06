@@ -11,9 +11,26 @@
 
 IF(WIN32)
 
-  FIND_PATH(GDAL_INCLUDE_DIR gdal.h /usr/local/include /usr/include c:/msys/local/include)
-  FIND_LIBRARY(GDAL_LIBRARY NAMES gdal PATHS /usr/local/lib /usr/lib c:/msys/local/lib)
+  IF (MINGW)
+    FIND_PATH(GDAL_INCLUDE_DIR gdal.h /usr/local/include /usr/include c:/msys/local/include)
+    FIND_LIBRARY(GDAL_LIBRARY NAMES gdal PATHS /usr/local/lib /usr/lib c:/msys/local/lib)
+  ENDIF (MINGW)
 
+  IF (MSVC)
+    SET (
+       GDAL_INCLUDE_DIR 
+       "$ENV{LIB_DIR}/include/gdal"
+       CACHE STRING INTERNAL
+       )
+    FIND_LIBRARY(GDAL_LIBRARY NAMES gdal gdal_i PATHS 
+      "$ENV{LIB_DIR}/lib" /usr/lib c:/msys/local/lib)
+    IF (GDAL_LIBRARY)
+      SET (
+         GDAL_LIBRARY;odbc32;odbccp32 
+         CACHE STRING INTERNAL)
+    ENDIF (GDAL_LIBRARY)
+  ENDIF (MSVC)
+  
   
 ELSE(WIN32)
   IF(UNIX) 
@@ -24,8 +41,10 @@ ELSE(WIN32)
     ENDIF (APPLE)
 
     SET(GDAL_CONFIG_PREFER_PATH "$ENV{GDAL_HOME}/bin" CACHE STRING "preferred path to GDAL (gdal-config)")
+    SET(GDAL_CONFIG_PREFER_FWTOOLS_PATH "$ENV{FWTOOLS_HOME}/bin_safe" CACHE STRING "preferred path to GDAL (gdal-config) from FWTools")
     FIND_PROGRAM(GDAL_CONFIG gdal-config
       ${GDAL_CONFIG_PREFER_PATH}
+      ${GDAL_CONFIG_PREFER_FWTOOLS_PATH}
       ${GDAL_MAC_PATH}
       /usr/local/bin/
       /usr/bin/
@@ -33,6 +52,25 @@ ELSE(WIN32)
     # MESSAGE("DBG GDAL_CONFIG ${GDAL_CONFIG}")
     
     IF (GDAL_CONFIG) 
+
+      ## extract gdal version 
+      EXEC_PROGRAM(${GDAL_CONFIG}
+        ARGS --version
+        OUTPUT_VARIABLE GDAL_VERSION )
+      STRING(REGEX REPLACE "([0-9]+)\\.([0-9]+)\\.([0-9]+)" "\\1" GDAL_VERSION_MAJOR "${GDAL_VERSION}")
+      STRING(REGEX REPLACE "([0-9]+)\\.([0-9]+)\\.([0-9]+)" "\\2" GDAL_VERSION_MINOR "${GDAL_VERSION}")
+  
+      # MESSAGE("DBG GDAL_VERSION ${GDAL_VERSION}")
+      # MESSAGE("DBG GDAL_VERSION_MAJOR ${GDAL_VERSION_MAJOR}")
+      # MESSAGE("DBG GDAL_VERSION_MINOR ${GDAL_VERSION_MINOR}")
+  
+      # check for gdal version
+      # version 1.2.5 is known NOT to be supported (missing CPL_STDCALL macro)
+      # According to INSTALL, 1.4.0+ is required
+      IF (GDAL_VERSION_MAJOR LESS 1 OR GDAL_VERSION_MINOR LESS 4)
+          MESSAGE (FATAL_ERROR "GDAL version is too old (${GDAL_VERSION}). Use 1.4.0 or higher.")
+      ENDIF (GDAL_VERSION_MAJOR LESS 1 OR GDAL_VERSION_MINOR LESS 4)
+
       # set INCLUDE_DIR to prefix+include
       EXEC_PROGRAM(${GDAL_CONFIG}
         ARGS --prefix

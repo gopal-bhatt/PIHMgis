@@ -1,8 +1,8 @@
-IF(NOT EXISTS "/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/install_manifest.txt")
-  MESSAGE(FATAL_ERROR "Cannot find install manifest: \"/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/install_manifest.txt\"")
-ENDIF(NOT EXISTS "/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/install_manifest.txt")
+IF(NOT EXISTS "/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/install_manifest.txt")
+  MESSAGE(FATAL_ERROR "Cannot find install manifest: \"/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/install_manifest.txt\"")
+ENDIF(NOT EXISTS "/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/install_manifest.txt")
 
-FILE(READ "/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/install_manifest.txt" files)
+FILE(READ "/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/install_manifest.txt" files)
 STRING(REGEX REPLACE "\n" ";" files "${files}")
 FOREACH(file ${files})
   MESSAGE(STATUS "Uninstalling \"$ENV{DESTDIR}${file}\"")

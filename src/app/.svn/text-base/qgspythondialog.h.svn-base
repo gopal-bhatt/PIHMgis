@@ -20,25 +20,38 @@
 #include "ui_qgspythondialog.h"
 
 class QgisInterface;
+class QgsPythonUtils;
+class QCloseEvent;
+class QShowEvent;
 
 class QgsPythonDialog : public QDialog, private Ui::QgsPythonDialog
 {
-  Q_OBJECT
-  
+    Q_OBJECT
+
   public:
-    QgsPythonDialog(QgisInterface* pIface, QWidget *parent = 0);
-    
+    QgsPythonDialog( QgisInterface* pIface, QgsPythonUtils* pythonUtils, QWidget *parent = 0 );
+
     ~QgsPythonDialog();
 
-    QString escapeHtml(QString text);
+    QString escapeHtml( QString text );
 
   public slots:
-    
+
     void on_edtCmdLine_returnPressed();
-    
+
+  protected:
+
+    void keyPressEvent( QKeyEvent *event );
+    void closeEvent( QCloseEvent *event );
+    void showEvent( QShowEvent *event );
+
   private:
-    
+
     QgisInterface* mIface;
+    QgsPythonUtils* mPythonUtils;
+
+    QStringList history;
+    int pos;
 };
 
 #endif

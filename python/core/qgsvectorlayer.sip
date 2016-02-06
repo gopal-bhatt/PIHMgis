@@ -1,12 +1,28 @@
-
-
 class QgsVectorLayer : QgsMapLayer
 {
 %TypeHeaderCode
-#include <qgsvectorlayer.h>
+#include "qgsvectorlayer.h"
 %End
 
 public:
+  enum EditType { 
+    LineEdit,
+    UniqueValues,
+    UniqueValuesEditable,
+    ValueMap,
+    Classification,
+    EditRange,
+    SliderRange
+  };
+   
+  struct RangeData {
+    RangeData();
+    RangeData(QVariant theMin, QVariant theMax, QVariant theStep);
+
+    QVariant mMin;
+    QVariant mMax;
+    QVariant mStep;
+  };
 
   /** Constructor */
   QgsVectorLayer(QString baseName = 0, QString path = 0, QString providerLib = 0);
@@ -29,17 +45,11 @@ public:
   /** Returns the primary display field name used in the identify results dialog */
   const QString displayField() const;
 
-  /** bind layer to a specific data provider
-     @param provider should be "postgres", "ogr", or ??
-     @todo XXX should this return bool?  Throw exceptions?
-  */
-  bool setDataProvider(const QString & provider );
-  
   /** Returns the data provider */
-  QgsVectorDataProvider* getDataProvider();
+  QgsVectorDataProvider* dataProvider();
 
   /** Returns the data provider in a const-correct manner */
-  //const QgsVectorDataProvider* getDataProvider() const;
+  //const QgsVectorDataProvider* dataProvider() const;
 
   /** Sets the textencoding of the data provider */
   void setProviderEncoding(const QString& encoding);
@@ -55,10 +65,13 @@ public:
   int selectedFeatureCount();
   
   /** Select features found within the search rectangle (in layer's coordinates) */
-  void select(QgsRect & rect, bool lock);
+  void select(QgsRectangle & rect, bool lock);
   
   /** Select not selected features and deselect selected ones */
   void invertSelection();
+
+  /** Invert selection of features found within the search rectangle (in layer's coordinates) */
+  void invertSelectionInRectangle( QgsRectangle & rect);
 
   /** Get a copy of the user-selected features */  
   QList<QgsFeature> selectedFeatures();
@@ -69,18 +82,14 @@ public:
   /** Change selection to the new set of features */
   void setSelectedFeatures(const QSet<int>& ids);
 
-  /** Returns the bounding box of the selected features. If there is no selection, QgsRect(0,0,0,0) is returned */
-  QgsRect boundingBoxOfSelected();
-
-  
-  /** Insert a copy of the given features into the layer */
-  bool addFeatures(QList<QgsFeature> features, bool makeSelected = TRUE);
+  /** Returns the bounding box of the selected features. If there is no selection, QgsRectangle(0,0,0,0) is returned */
+  QgsRectangle boundingBoxOfSelected();
 
   /** Copies the symbology settings from another layer. Returns true in case of success */
   bool copySymbologySettings(const QgsMapLayer& other);
 
   /** Returns true if this layer can be in the same symbology group with another layer */
-  bool isSymbologyCompatible(const QgsMapLayer& other) const;
+  bool hasCompatibleSymbology(const QgsMapLayer& other) const;
   
   /** Returns a pointer to the renderer */
   const QgsRenderer* renderer() const;
@@ -89,24 +98,39 @@ public:
   void setRenderer(QgsRenderer * r /Transfer/);
 
   /** Returns point, line or polygon */
-  QGis::VectorType vectorType() const;
+  QGis::GeometryType geometryType() const;
 
   /**Returns the WKBType or WKBUnknown in case of error*/
-  QGis::WKBTYPE geometryType() const;
+  QGis::WkbType wkbType() const;
 
   /** Return the provider type for this layer */
   QString providerType() const;
 
-  /** reads vector layer specific state from project file DOM node.
-   *  @note Called by QgsMapLayer::readXML().
+  /** reads vector layer specific state from project file Dom node.
+   *  @note Called by QgsMapLayer::readXml().
    */
-  virtual bool readXML_( QDomNode & layer_node );
+  virtual bool readXml( QDomNode & layer_node );
 
-  /** write vector layer specific state to project file DOM node.
-   *  @note Called by QgsMapLayer::writeXML().
+  /** write vector layer specific state to project file Dom node.
+   *  @note Called by QgsMapLayer::writeXml().
    */
-  virtual bool writeXML_( QDomNode & layer_node, QDomDocument & doc );
+  virtual bool writeXml( QDomNode & layer_node, QDomDocument & doc );
 
+
+  /** Read the symbology for the current layer from the Dom node supplied. 
+   * @param QDomNode node that will contain the symbology definition for this layer.
+   * @param errorMessage reference to string that will be updated with any error messages
+   * @return true in case of success.
+   */
+  bool readSymbology(const QDomNode& node, QString& errorMessage);
+
+  /** Write the symbology for the layer into the docment provided.
+   *  @param QDomNode the node that will have the style element added to it.
+   *  @param QDomDocument the document that will have the QDomNode added.
+   * @param errorMessage reference to string that will be updated with any error messages
+   *  @return true in case of success.
+   */
+  bool writeSymbology(QDomNode&, QDomDocument& doc, QString& errorMessage) const;
 
   /**
    * Number of features in the layer. This is necessary if features are
@@ -136,9 +160,21 @@ public:
    */
   virtual QString subsetString();
 
+  void select(QList<int> fetchAttributes = QList<int>(),
+              QgsRectangle rect = QgsRectangle(),
+              bool fetchGeometry = true,
+              bool useIntersect = false);
+
+  bool nextFeature(QgsFeature& feature);
+
+
+  /**Gets the feature at the given feature id. Considers the changed, added, deleted and permanent features
+   @return true in case of success*/
+  bool featureAtId(int featureId, QgsFeature& f, bool fetchGeometries = true, bool fetchAttributes = true);
+
   /** Adds a feature
-      @param lastFeatureInBatch  If True, will also go to the effort of e.g. updating the extents.
-      @return                    Irue in case of success and False in case of error
+      @param alsoUpdateExtent    If True, will also go to the effort of e.g. updating the extents.
+      @return                    True in case of success and False in case of error
    */
   bool addFeature(QgsFeature& f, bool alsoUpdateExtent = TRUE);
   
@@ -147,21 +183,18 @@ public:
    *  in the given ring, item (first number is index 0), and feature
    *  Not meaningful for Point geometries
    */
-  bool insertVertexBefore(double x, double y, int atFeatureId,
-                          QgsGeometryVertexIndex beforeVertex);
+  bool insertVertex(double x, double y, int atFeatureId, int beforeVertex);
 
   /** Moves the vertex at the given position number,
    *  ring and item (first number is index 0), and feature
    *  to the given coordinates
    */
-  bool moveVertexAt(double x, double y, int atFeatureId,
-                    QgsGeometryVertexIndex atVertex);
+  bool moveVertex(double x, double y, int atFeatureId, int atVertex);
 
   /** Deletes the vertex at the given position number,
    *  ring and item (first number is index 0), and feature
    */
-  bool deleteVertexAt(int atFeatureId,
-                      QgsGeometryVertexIndex atVertex);
+  bool deleteVertex(int atFeatureId, int atVertex);
 
   /** Deletes the selected features
    *  @return true in case of success and false otherwise
@@ -169,21 +202,73 @@ public:
   bool deleteSelectedFeatures();
 
   /**Adds a ring to polygon/multipolygon features
-   @return 0 in case of success, 1 problem with feature type, 2 ring not closed, 3 ring not valid, 4 ring crosses \
-existing rings, 5 no feature found where ring can be inserted*/
+   @return
+     0 in case of success,
+     1 problem with feature type,
+     2 ring not closed,
+     3 ring not valid,
+     4 ring crosses existing rings,
+     5 no feature found where ring can be inserted*/
   int addRing(const QList<QgsPoint>& ring);
 
   /**Adds a new island polygon to a multipolygon feature
-   @return 0 in case of success, 1 if selected feature is not multipolygon, 2 if ring is not a valid geometry, \
-3 if new polygon ring not disjoint with existing rings, 4 if no feature was selected, 5 if several features are selected, \
-6 if selected geometry not found*/
+   @return
+     0 in case of success,
+     1 if selected feature is not multipolygon,
+     2 if ring is not a valid geometry,
+     3 if new polygon ring not disjoint with existing rings,
+     4 if no feature was selected,
+     5 if several features are selected,
+     6 if selected geometry not found*/
   int addIsland(const QList<QgsPoint>& ring);
 
+  /**Translates feature by dx, dy
+     @param featureId id of the feature to translate
+     @param dx translation of x-coordinate
+     @param dy translation of y-coordinate
+     @return 0 in case of success*/
+  int translateFeature(int featureId, double dx, double dy);
+
+  /**Splits features cut by the given line
+     @param splitLine line that splits the layer features
+     @param topologicalEditing true if topological editing is enabled
+     @return
+       0 in case of success,
+       1 if several intersections but only 1 split done,
+       2 if intersection too complex to be handled, else other error*/
+  int splitFeatures(const QList<QgsPoint>& splitLine, bool topologicalEditing = false);
+
+  /**Changes the specified geometry such that it has no intersections with other \
+     polygon (or multipolygon) geometries in this vector layer
+     @param geom geometry to modify
+     @return 0 in case of success*/
+  int removePolygonIntersections(QgsGeometry* geom);
+
+  /**Adds topological points for every vertex of the geometry
+     @param geom the geometry where each vertex is added to segments of other features
+     Note: geom is not going to be modified by the function
+     @return 0 in case of success*/
+  int addTopologicalPoints(QgsGeometry* geom);
+		
+  /**Adds a vertex to segments which intersect point p but don't 
+     already have a vertex there. If a feature already has a vertex at position p, 
+     no additional vertex is inserted. This method is usefull for topological 
+     editing.
+     @param p position of the vertex
+     @return 0 in case of success*/
+  int addTopologicalPoints(const QgsPoint& p);
+
+ /**Inserts vertices to the snapped segments.
+   This is usefull for topological editing if snap to segment is enabled.
+   @param snapResults results collected from the snapping operation
+   @return 0 in case of success*/
+  int insertSegmentVerticesForSnap(const QList<QgsSnappingResult>& snapResults);	
+
   /** Set labels on */
-  void setLabelOn( bool on );
+  void enableLabels( bool on );
 
   /** Label is on */
-  bool labelOn( );
+  bool hasLabelsEnabled( );
 
   /** Returns true if the provider is in editing mode */
   virtual bool isEditable() const;
@@ -196,107 +281,56 @@ existing rings, 5 no feature found where ring can be inserted*/
      If there is no point within this tolerance, point is left unchanged.
      @param tolerance   The snapping tolerance
      @return true if the position of point has been changed, and false otherwise */
-  bool snapPoint(QgsPoint& point /In, Out/, double tolerance);
+  bool snapPoint(QgsPoint& point, double tolerance);
 
-  /**Snaps a point to the closest vertex if there is one within the snapping tolerance
-     @param atVertex          Set to a vertex index of the snapped-to vertex
-     @param beforeVertexIndex Returns the index of the vertex before atVertex (for rubber band purposes). -1 if no vertex is before
-     @param afterVertexIndex  Returns the index of the vertex after atVertex (for rubber band purposes). -1 if no vertex is after
-     @param snappedFeatureId  Set to the feature ID that where the snapped-to vertex belongs to.
-     @param snappedGeometry   Set to the geometry that the snapped-to vertex belongs to.
-     @param tolerance         The snapping tolerance
-     @return true if the position of the points have been changed, and false otherwise (or not implemented by the provider) 
-     
-     TODO: Handle returning multiple verticies if they are coincident
-   */
-  bool snapVertexWithContext(QgsPoint& point,
-                             QgsGeometryVertexIndex& atVertex /Out/,
-			     int& beforeVertexIndex /Out/,
-			     int& afterVertexIndex /Out/,
-                             int& snappedFeatureId /Out/,
-                             QgsGeometry& snappedGeometry /Out/,
-                             double tolerance);
-
-  /**Snaps a point to the closest line segment if there is one within the snapping tolerance
-     @param beforeVertex      Set to a value where the snapped-to segment is before this vertex index
-     @param snappedFeatureId  Set to the feature ID that where the snapped-to segment belongs to.
-     @param snappedGeometry   Set to the geometry that the snapped-to segment belongs to.
-     @param tolerance         The snapping tolerance
-     @return true if the position of the points have been changed, and false otherwise (or not implemented by the provider) 
-     
-     TODO: Handle returning multiple lineFeatures if they are coincident
-   */
-  bool snapSegmentWithContext(QgsPoint& point /In, Out/,
-                              QgsGeometryVertexIndex& beforeVertex /Out/,
-                              int& snappedFeatureId /Out/, 
-                              QgsGeometry& snappedGeometry /Out/,
-                              double tolerance);
-
-  /**
-    Commits edited attributes. Depending on the feature id,
-    the changes are written to not commited features or redirected to
-    the data provider
-
-    The commits (in this version) occur in three distinct stages,
-    (delete attributes, add attributes, change attribute values)
-    so if a stage fails, it's difficult to roll back cleanly.
-
-    \todo Need to indicate at which stage the failed commit occurred,
-          for better cleanup and recovery from the error.
-
-    \param deleted  Set of attribute indices (i.e. columns) to delete
-    \param added    Map (name, type) of attribute names (i.e. columns) to add
-    \param changed  Map (feature ID, Map (attribute name, new value) )
-                      of attribute values to change
-
-   */
-  bool commitAttributeChanges(const QSet<int>& deleted,
-                              const QMap<QString, QString>& added,
-                              const QMap<int, QMap<int, QVariant> >& changed);
+/**Snaps to segment or vertex within given tolerance
+     @param startPoint point to snap (in layer coordinates)
+     @param snappingTolerance distance tolerance for snapping
+     @param snappingResults snapping results. Key is the distance between startPoint and snapping target
+     @param snap_to to segment / to vertex
+     @return 0 in case of success
+  */
+  int snapWithContext(const QgsPoint& startPoint, double snappingTolerance, QMultiMap<double, QgsSnappingResult>& snappingResults /Out/,
+                      QgsSnapper::SnappingType snap_to);
 
   /** Draws the layer using coordinate transformation
    *  @return FALSE if an error occurred during drawing
    */
-  bool draw(QPainter * p,
-            QgsRect & viewExtent,
-            QgsMapToPixel * cXf,
-            QgsCoordinateTransform* ct,
-            bool drawingToEditingCanvas);
+  bool draw(QgsRenderContext& rendererContext);
 
   /** Draws the layer labels using coordinate transformation */
-  void drawLabels(QPainter * p, QgsRect & viewExtent, QgsMapToPixel * cXf, QgsCoordinateTransform* ct);
+  void drawLabels(QgsRenderContext& rendererContext);
 
-  /** \brief Draws the layer using coordinate transformation
-   *  \param widthScale line width scale
-   *  \param symbolScale symbol scale
-   */
-  void draw(QPainter * p,
-            QgsRect & viewExtent,
-            QgsMapToPixel * cXf,
-            QgsCoordinateTransform* ct,
-            bool drawingToEditingCanvas,
-            double widthScale,
-            double symbolScale);
+  /** returns list of attributes */
+  QList<int> pendingAllAttributesList();
 
-  /** \brief Draws the layer labels using coordinate transformation
-   *  \param scale size scale, applied to all values in pixels
-   */
-  void drawLabels(QPainter * p, QgsRect & viewExtent, QgsMapToPixel * cXf, QgsCoordinateTransform* ct, double scale);
+  /** returns fields list which are not commited */
+  const QMap<int, QgsField> &pendingFields();
 
-  /** returns array of added features */
-  QList<QgsFeature>& addedFeatures();
-
-  /** returns array of deleted feature IDs */
-  QSet<int>& deletedFeatureIds();
- 
-  /** returns array of features with changed attributes */
-  QMap<int, QMap<int, QVariant> >& changedAttributes();
-
+  /** returns feature count after commit */
+  int pendingFeatureCount();
+  
   /** Sets whether some features are modified or not */
   void setModified(bool modified = TRUE, bool onlyGeometryWasModified = FALSE);
   
   /** Make layer editable */
   bool startEditing();
+
+  /** changed an attribute value (but does not commit it */
+  bool changeAttributeValue(int fid, int field, QVariant value, bool emitSignal = true);
+
+  /** add an attribute field (but does not commit it) 
+      returns the field index or -1 in case of failure */
+  bool addAttribute(QString name, QString type);
+
+  /** delete an attribute field (but does not commit it) */
+  bool deleteAttribute(int attr);
+
+  /** Insert a copy of the given features into the layer  (but does not commit it) */
+  bool addFeatures(QList<QgsFeature> features, bool makeSelected = TRUE);
+
+  /** delete a feature from the layer (but does not commit it) */
+  bool deleteFeature(int fid);
   
   /**
     Attempts to commit any changes to disk.  Returns the result of the attempt.
@@ -314,15 +348,31 @@ existing rings, 5 no feature found where ring can be inserted*/
 
    */
   bool commitChanges();
+  const QStringList &commitErrors();
 
   /** Stop editing and discard the edits */
   bool rollBack();
+
+  /**get edit type*/ 
+  EditType editType(int idx);
+
+  /**set edit type*/
+  void setEditType(int idx, EditType edit);
+
+  /**access value map*/
+  QMap<QString, QVariant> &valueMap(int idx);
+
+  /**access range */
+  RangeData &range(int idx);
 
 public slots:
 
   /** Select feature by its ID, optionally emit signal selectionChanged() */
   void select(int featureId, bool emitSignal = TRUE);
   
+  /** Deselect feature by its ID, optionally emit signal selectionChanged() */
+  void deselect( int featureId, bool emitSignal = TRUE );
+
   /** Clear selection */
   void removeSelection(bool emitSignal = TRUE);
 
@@ -339,7 +389,16 @@ signals:
   void selectionChanged();
   
   /** This signal is emitted when modifications has been done on layer */
-  void wasModified(bool onlyGeometry);
+  void layerModified(bool onlyGeometry);
+
+  void editingStarted();
+  void editingStopped();
+  void attributeAdded(int idx);
+  void attributeDeleted(int idx);
+  void featureDeleted(int fid);
+  void layerDeleted();
+
+  void attributeValueChanged(int fid, int idx, const QVariant &);
 
 private:                       // Private methods
 

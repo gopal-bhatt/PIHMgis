@@ -9,11 +9,12 @@
 
 
 %Include qgisinterface.sip
-%Include qgisplugin.sip
-%Include qgslayerprojectionselector.sip
+%Include qgsencodingfiledialog.sip
+%Include qgsgenericprojectionselector.sip
 %Include qgsmapcanvas.sip
 %Include qgsmapcanvasitem.sip
 %Include qgsmapcanvasmap.sip
+%Include qgsmapcanvassnapper.sip
 %Include qgsmaptool.sip
 %Include qgsmaptoolemitpoint.sip
 %Include qgsmaptoolpan.sip
@@ -21,6 +22,7 @@
 %Include qgsmapoverviewcanvas.sip
 %Include qgsmessageviewer.sip
 %Include qgsprojectionselector.sip
+%Include qgsquickprint.sip
 %Include qgsrubberband.sip
 %Include qgsvertexmarker.sip
 

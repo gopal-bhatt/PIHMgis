@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/qgis/!svn/ver/10639/branches/Release-1_0_2/images/svg/landmark
+END
+religion=sikh.svg
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/qgis/!svn/ver/10639/branches/Release-1_0_2/images/svg/landmark/religion=sikh.svg
+END
+amenity=place_of_worship.svg
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/qgis/!svn/ver/10639/branches/Release-1_0_2/images/svg/landmark/amenity=place_of_worship.svg
+END
+religion=christian.svg
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/qgis/!svn/ver/10639/branches/Release-1_0_2/images/svg/landmark/religion=christian.svg
+END
+amenity=school.svg
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/qgis/!svn/ver/10639/branches/Release-1_0_2/images/svg/landmark/amenity=school.svg
+END
+tourism=museum.svg
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/qgis/!svn/ver/10639/branches/Release-1_0_2/images/svg/landmark/tourism=museum.svg
+END
+religion=buddhist.svg
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/qgis/!svn/ver/10639/branches/Release-1_0_2/images/svg/landmark/religion=buddhist.svg
+END
+religion=muslim.svg
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/qgis/!svn/ver/10639/branches/Release-1_0_2/images/svg/landmark/religion=muslim.svg
+END
+religion=hindu.svg
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/qgis/!svn/ver/10639/branches/Release-1_0_2/images/svg/landmark/religion=hindu.svg
+END
+religion=jewish.svg
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/qgis/!svn/ver/10639/branches/Release-1_0_2/images/svg/landmark/religion=jewish.svg
+END
+religion=pastafarian.svg
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/qgis/!svn/ver/10639/branches/Release-1_0_2/images/svg/landmark/religion=pastafarian.svg
+END

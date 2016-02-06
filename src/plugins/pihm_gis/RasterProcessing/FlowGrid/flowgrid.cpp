@@ -54,7 +54,7 @@ void FlowGridDlg::run()
 {
 	QString logFileName("/tmp/log.html");
 	ofstream log;
-	log.open(logFileName.ascii());
+	log.open(qPrintable(logFileName));
 	log<<"<html><body><font size=3 color=black><p> Verifying Files...</p></font></body></html>";
         log.close();
         messageLog->setSource(logFileName);
@@ -65,21 +65,21 @@ void FlowGridDlg::run()
 	QString outputFDRFileName((outputFDRFileLineEdit->text()));
 	QString outputFAGFileName((outputFAGFileLineEdit->text()));
 	
-	ifstream inFile;      inFile.open((inputFileLineEdit->text()).ascii());
-	ofstream FDRoutFile; FDRoutFile.open((outputFDRFileLineEdit->text()).ascii());
-	ofstream FAGoutFile; FAGoutFile.open((outputFAGFileLineEdit->text()).ascii());
+	ifstream inFile;      inFile.open(qPrintable(inputFileLineEdit->text()));
+	ofstream FDRoutFile; FDRoutFile.open(qPrintable(outputFDRFileLineEdit->text()));
+	ofstream FAGoutFile; FAGoutFile.open(qPrintable(outputFAGFileLineEdit->text()));
 	int runFlag = 1;
 	
-	log.open(logFileName.ascii(), ios::app);
+	log.open(qPrintable(logFileName), ios::app);
 	if(inputFileName.length()==0){
 		log<<"<p><font size=3 color=red> Error! Please input Fill Grid Input File</p>";
 		runFlag = 0;
 	}
 	else{
-		log<<"</p>Checking... "<<inputFileName.ascii()<<"... ";
+		log<<"</p>Checking... "<<qPrintable(inputFileName)<<"... ";
 		if(inFile == NULL){
 			log<<"<font size=3 color=red> Error!";
-			qWarning("\n%s doesn't exist!", (inputFileLineEdit->text()).ascii());
+			qWarning("\n%s doesn't exist!", qPrintable(inputFileLineEdit->text()));
 			runFlag = 0;
 		}
 		else
@@ -89,13 +89,13 @@ void FlowGridDlg::run()
 	messageLog->reload();
 	QApplication::processEvents();
 
-	log.open(logFileName.ascii(), ios::app);
+	log.open(qPrintable(logFileName), ios::app);
 	if(outputFDRFileName.length()==0){
 		log<<"<p><font size=3 color=red> Error! Please input FDR Output File</p>";
 		runFlag = 0;
 	}
 	else{
-		log<<"</p><p>Checking... "<<outputFDRFileName.ascii()<<"... ";
+		log<<"</p><p>Checking... "<<qPrintable(outputFDRFileName)<<"... ";
 		if(FDRoutFile == NULL){
 			log<<"<font size=3 color=red> Error!";
 			qWarning("\nCan not open output file");
@@ -108,13 +108,13 @@ void FlowGridDlg::run()
 	messageLog->reload();
 	QApplication::processEvents();
 
-	log.open(logFileName.ascii(), ios::app);
+	log.open(qPrintable(logFileName), ios::app);
 	if(outputFAGFileName.length()==0){
 		log<<"<p><font size=3 color=red> Error! Please input FAG Output File</p>";
 		runFlag = 0;
 	}
 	else{
-		log<<"</p><p>Checking... "<<outputFAGFileName.ascii()<<"... ";
+		log<<"</p><p>Checking... "<<qPrintable(outputFAGFileName)<<"... ";
 		if(FAGoutFile == NULL){
 			log<<"<font size=3 color=red> Error!";
 			qWarning("\nCan not open output file name");
@@ -128,29 +128,29 @@ void FlowGridDlg::run()
 	QApplication::processEvents();
 	
 	if(runFlag == 1){	
-		log.open(logFileName.ascii(), ios::app);
+		log.open(qPrintable(logFileName), ios::app);
 		log<<"<p>Running Flow Direction...";
 		log.close();
 		messageLog->reload();
 		QApplication::processEvents();
 
-		int err1 = setdird8((char *)inputFileName.ascii(), (char *)outputFDRFileName.ascii(), "dummy" );
+		int err1 = setdird8((char *)qPrintable(inputFileName), (char *)qPrintable(outputFDRFileName), "dummy" );
 
-		log.open(logFileName.ascii(), ios::app);
+		log.open(qPrintable(logFileName), ios::app);
 		log<<" Done!</p>";
 		log.close();
 		messageLog->reload();
 		QApplication::processEvents();
 
-		log.open(logFileName.ascii(), ios::app);
+		log.open(qPrintable(logFileName), ios::app);
 		log<<"<p>Running Flow Accumulation...";
 		log.close();
 		messageLog->reload();
 		QApplication::processEvents();
 
-		int err2 = aread8((char *)outputFDRFileName.ascii(), (char *)outputFAGFileName.ascii(), 0.0, 0.0, 1 );
+		int err2 = aread8((char *)qPrintable(outputFDRFileName), (char *)qPrintable(outputFAGFileName), 0.0, 0.0, 1 );
 
-		log.open(logFileName.ascii(), ios::app);
+		log.open(qPrintable(logFileName), ios::app);
 		log<<" Done!</p>";
 		log.close();
 		messageLog->reload();
@@ -159,11 +159,13 @@ void FlowGridDlg::run()
 
 		if(showFDR_DFrame->isChecked() == 1){
         		//QgsRasterLayer *tempLayer = new QgsRasterLayer("/backup/pihm/RasterProcessing/FillPits", "morgedem.asc");
-		//??	applicationPointer->addRasterLayer(QStringList(outputFDRFileName));
+		//??	
+			applicationPointer->addRasterLayer(outputFDRFileName);
 		}
 		if(showFAG_DFrame->isChecked() == 1){
 		        //QgsRasterLayer *tempLayer = new QgsRasterLayer("/backup/pihm/RasterProcessing/FillPits", "morgedem.asc");
-		//??	applicationPointer->addRasterLayer(QStringList(outputFAGFileName));
+		//??	
+			applicationPointer->addRasterLayer(outputFAGFileName);
 	        }
 	}
 }
@@ -173,7 +175,7 @@ void FlowGridDlg::help()
 	helpDialog* hlpDlg = new helpDialog(this, "Flow Grid", 1, "helpFiles/flowgrid.html", "Help :: Flow Grid");
 	hlpDlg->show();	
 }
-/*
-void FlowGridDlg::setApplicationPointer(QgisApp* appPtr){
+
+void FlowGridDlg::setApplicationPointer(QgisInterface* appPtr){
     applicationPointer = appPtr;
-}*/
+}

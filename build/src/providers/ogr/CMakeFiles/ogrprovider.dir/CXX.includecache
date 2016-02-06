@@ -1,10 +1,42 @@
 ../src/providers/ogr/../../core/qgis.h
-qevent.h
+QEvent
+-
+QString
 -
 
 ../src/providers/ogr/../../core/qgsapplication.h
 QApplication
 -
+
+../src/providers/ogr/../../core/qgscoordinatereferencesystem.h
+ostream
+-
+QString
+-
+QMap
+-
+qgis.h
+../src/providers/ogr/../../core/qgis.h
+
+../src/providers/ogr/../../core/qgscoordinatetransform.h
+QObject
+-
+qgspoint.h
+../src/providers/ogr/../../core/qgspoint.h
+qgsrectangle.h
+../src/providers/ogr/../../core/qgsrectangle.h
+qgscsexception.h
+../src/providers/ogr/../../core/qgscsexception.h
+qgscoordinatereferencesystem.h
+../src/providers/ogr/../../core/qgscoordinatereferencesystem.h
+iostream
+-
+vector
+-
+
+../src/providers/ogr/../../core/qgscsexception.h
+qgsexception.h
+../src/providers/ogr/../../core/qgsexception.h
 
 ../src/providers/ogr/../../core/qgsdataprovider.h
 QObject
@@ -14,12 +46,24 @@ QString
 QStringList
 -
 
+../src/providers/ogr/../../core/qgsexception.h
+exception
+-
+string
+-
+list
+-
+QDomNode
+-
+
 ../src/providers/ogr/../../core/qgsfeature.h
 QMap
 -
 QString
 -
 QVariant
+-
+QList
 -
 
 ../src/providers/ogr/../../core/qgsfield.h
@@ -35,10 +79,12 @@ QVector
 -
 qgis.h
 ../src/providers/ogr/../../core/qgis.h
-geos.h
+geos_c.h
 -
 qgspoint.h
 ../src/providers/ogr/../../core/qgspoint.h
+qgscoordinatetransform.h
+../src/providers/ogr/../../core/qgscoordinatetransform.h
 
 ../src/providers/ogr/../../core/qgslogger.h
 iostream
@@ -55,8 +101,8 @@ map
 -
 QObject
 -
-qgsrect.h
-../src/providers/ogr/../../core/qgsrect.h
+qgsrectangle.h
+../src/providers/ogr/../../core/qgsrectangle.h
 
 ../src/providers/ogr/../../core/qgspoint.h
 iostream
@@ -64,21 +110,19 @@ iostream
 QString
 -
 
-../src/providers/ogr/../../core/qgsrect.h
+../src/providers/ogr/../../core/qgsrectangle.h
 iosfwd
 -
 qgspoint.h
 ../src/providers/ogr/../../core/qgspoint.h
 
-../src/providers/ogr/../../core/qgsspatialrefsys.h
-ostream
+../src/providers/ogr/../../core/qgssnapper.h
+qgspoint.h
+../src/providers/ogr/../../core/qgspoint.h
+QList
 -
-QString
+QMultiMap
 -
-QMap
--
-qgis.h
-../src/providers/ogr/../../core/qgis.h
 
 ../src/providers/ogr/../../core/qgsvectordataprovider.h
 QList
@@ -93,6 +137,8 @@ qgsdataprovider.h
 ../src/providers/ogr/../../core/qgsdataprovider.h
 qgsvectorlayer.h
 ../src/providers/ogr/../../core/qgsvectorlayer.h
+qgsfield.h
+../src/providers/ogr/../../core/qgsfield.h
 
 ../src/providers/ogr/../../core/qgsvectorlayer.h
 QMap
@@ -101,22 +147,22 @@ QSet
 -
 QList
 -
+QStringList
+-
 qgis.h
 ../src/providers/ogr/../../core/qgis.h
 qgsmaplayer.h
 ../src/providers/ogr/../../core/qgsmaplayer.h
 qgsfeature.h
 ../src/providers/ogr/../../core/qgsfeature.h
+qgssnapper.h
+../src/providers/ogr/../../core/qgssnapper.h
+qgsfeature.h
+../src/providers/ogr/../../core/qgsfeature.h
+qgsfield.h
+../src/providers/ogr/../../core/qgsfield.h
 
 /Library/Frameworks/GDAL.framework/Headers/cpl_config.h
-
-/Library/Frameworks/GDAL.framework/Headers/cpl_conv.h
-cpl_port.h
-/Library/Frameworks/GDAL.framework/Headers/cpl_port.h
-cpl_vsi.h
-/Library/Frameworks/GDAL.framework/Headers/cpl_vsi.h
-cpl_error.h
-/Library/Frameworks/GDAL.framework/Headers/cpl_error.h
 
 /Library/Frameworks/GDAL.framework/Headers/cpl_error.h
 cpl_port.h
@@ -160,28 +206,6 @@ dmalloc.h
 float.h
 -
 
-/Library/Frameworks/GDAL.framework/Headers/cpl_string.h
-cpl_vsi.h
-/Library/Frameworks/GDAL.framework/Headers/cpl_vsi.h
-cpl_error.h
-/Library/Frameworks/GDAL.framework/Headers/cpl_error.h
-cpl_conv.h
-/Library/Frameworks/GDAL.framework/Headers/cpl_conv.h
-string
--
-
-/Library/Frameworks/GDAL.framework/Headers/cpl_vsi.h
-cpl_port.h
-/Library/Frameworks/GDAL.framework/Headers/cpl_port.h
-unistd.h
--
-sys/stat.h
--
-wce_stat.h
--
-cpl_error.h
-/Library/Frameworks/GDAL.framework/Headers/cpl_error.h
-
 /Library/Frameworks/GDAL.framework/Headers/gdal.h
 gdal_version.h
 /Library/Frameworks/GDAL.framework/Headers/gdal_version.h
@@ -202,51 +226,21 @@ cpl_port.h
 gdal_version.h
 /Library/Frameworks/GDAL.framework/Headers/gdal_version.h
 
-/Library/Frameworks/GDAL.framework/Headers/ogr_feature.h
-ogr_geometry.h
-/Library/Frameworks/GDAL.framework/Headers/ogr_geometry.h
-ogr_featurestyle.h
-/Library/Frameworks/GDAL.framework/Headers/ogr_featurestyle.h
-
-/Library/Frameworks/GDAL.framework/Headers/ogr_featurestyle.h
-cpl_conv.h
-/Library/Frameworks/GDAL.framework/Headers/cpl_conv.h
-cpl_string.h
-/Library/Frameworks/GDAL.framework/Headers/cpl_string.h
-ogr_core.h
-/Library/Frameworks/GDAL.framework/Headers/ogr_core.h
-
-/Library/Frameworks/GDAL.framework/Headers/ogr_geometry.h
-ogr_core.h
-/Library/Frameworks/GDAL.framework/Headers/ogr_core.h
-ogr_spatialref.h
-/Library/Frameworks/GDAL.framework/Headers/ogr_spatialref.h
-
-/Library/Frameworks/GDAL.framework/Headers/ogr_spatialref.h
-ogr_srs_api.h
-/Library/Frameworks/GDAL.framework/Headers/ogr_srs_api.h
-
 /Library/Frameworks/GDAL.framework/Headers/ogr_srs_api.h
 ogr_core.h
 /Library/Frameworks/GDAL.framework/Headers/ogr_core.h
 
-/Library/Frameworks/GDAL.framework/Headers/ogrsf_frmts.h
-ogr_feature.h
-/Library/Frameworks/GDAL.framework/Headers/ogr_feature.h
-ogr_featurestyle.h
-/Library/Frameworks/GDAL.framework/Headers/ogr_featurestyle.h
+/Library/Frameworks/GEOS.framework/Headers/geos_c.h
+stddef.h
+-
 
-/Library/Frameworks/GEOS.framework/Headers/geos.h
-GEOS/version.h
--
-GEOS/geom.h
--
-GEOS/util.h
--
-GEOS/io.h
--
-GEOS/unload.h
--
+/Library/Frameworks/QtCore.framework/Headers/QDir
+qdir.h
+/Library/Frameworks/QtCore.framework/Headers/qdir.h
+
+/Library/Frameworks/QtCore.framework/Headers/QEvent
+qcoreevent.h
+/Library/Frameworks/QtCore.framework/Headers/qcoreevent.h
 
 /Library/Frameworks/QtCore.framework/Headers/QFile
 qfile.h
@@ -261,6 +255,10 @@ qlist.h
 /Library/Frameworks/QtCore.framework/Headers/qlist.h
 
 /Library/Frameworks/QtCore.framework/Headers/QMap
+qmap.h
+/Library/Frameworks/QtCore.framework/Headers/qmap.h
+
+/Library/Frameworks/QtCore.framework/Headers/QMultiMap
 qmap.h
 /Library/Frameworks/QtCore.framework/Headers/qmap.h
 
@@ -280,6 +278,10 @@ qstring.h
 qstringlist.h
 /Library/Frameworks/QtCore.framework/Headers/qstringlist.h
 
+/Library/Frameworks/QtCore.framework/Headers/QTextCodec
+qtextcodec.h
+/Library/Frameworks/QtCore.framework/Headers/qtextcodec.h
+
 /Library/Frameworks/QtCore.framework/Headers/QVariant
 qvariant.h
 /Library/Frameworks/QtCore.framework/Headers/qvariant.h
@@ -291,6 +293,12 @@ qvector.h
 /Library/Frameworks/QtCore.framework/Headers/QtDebug
 qdebug.h
 /Library/Frameworks/QtCore.framework/Headers/qdebug.h
+
+/Library/Frameworks/QtCore.framework/Headers/qcoreevent.h
+QtCore/qnamespace.h
+-
+QtCore/qbytearray.h
+-
 
 /Library/Frameworks/QtCore.framework/Headers/qdebug.h
 QtCore/qalgorithms.h
@@ -310,6 +318,14 @@ QtCore/qstring.h
 QtCore/qvector.h
 -
 QtCore/qset.h
+-
+
+/Library/Frameworks/QtCore.framework/Headers/qdir.h
+QtCore/qstring.h
+-
+QtCore/qfileinfo.h
+-
+QtCore/qstringlist.h
 -
 
 /Library/Frameworks/QtCore.framework/Headers/qfile.h
@@ -402,6 +418,12 @@ QtCore/qstringmatcher.h
 Qt3Support/q3valuelist.h
 -
 
+/Library/Frameworks/QtCore.framework/Headers/qtextcodec.h
+QtCore/qstring.h
+-
+QtCore/qlist.h
+-
+
 /Library/Frameworks/QtCore.framework/Headers/qvariant.h
 QtCore/qatomic.h
 -
@@ -464,50 +486,36 @@ QtGui/qrgb.h
 QtGui/qtransportauth_qws.h
 -
 
-/Library/Frameworks/QtGui.framework/Headers/qevent.h
-QtGui/qwindowdefs.h
--
-QtCore/qobject.h
--
-QtGui/qregion.h
--
-QtCore/qnamespace.h
--
+/Library/Frameworks/QtXml.framework/Headers/QDomNode
+qdom.h
+/Library/Frameworks/QtXml.framework/Headers/qdom.h
+
+/Library/Frameworks/QtXml.framework/Headers/qdom.h
 QtCore/qstring.h
 -
-QtGui/qkeysequence.h
--
-QtCore/qcoreevent.h
--
-QtGui/qmime.h
--
-QtGui/qdrag.h
--
-QtCore/qvariant.h
--
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/providers/ogr/qgsogrprovider.cpp
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/providers/ogr/qgsogrprovider.cpp
 qgsogrprovider.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/providers/ogr/qgsogrprovider.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/providers/ogr/qgsogrprovider.h
+qgslogger.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/providers/ogr/qgslogger.h
 iostream
 -
 cassert
 -
 gdal.h
 -
-ogrsf_frmts.h
+ogr_api.h
 -
-ogr_geometry.h
--
-ogr_spatialref.h
+ogr_srs_api.h
 -
 cpl_error.h
 -
-ogr_api.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/providers/ogr/ogr_api.h
 QtDebug
 -
 QFile
+-
+QDir
 -
 QFileInfo
 -
@@ -515,29 +523,29 @@ QMap
 -
 QString
 -
+QTextCodec
+-
 qgsapplication.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/providers/ogr/qgsapplication.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/providers/ogr/qgsapplication.h
 qgsdataprovider.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/providers/ogr/qgsdataprovider.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/providers/ogr/qgsdataprovider.h
 qgsfeature.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/providers/ogr/qgsfeature.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/providers/ogr/qgsfeature.h
 qgsfield.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/providers/ogr/qgsfield.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/providers/ogr/qgsfield.h
 qgsgeometry.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/providers/ogr/qgsgeometry.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/providers/ogr/qgsgeometry.h
 qgslogger.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/providers/ogr/qgslogger.h
-qgsspatialrefsys.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/providers/ogr/qgsspatialrefsys.h
-qgis.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/providers/ogr/qgis.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/providers/ogr/qgslogger.h
+qgscoordinatereferencesystem.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/providers/ogr/qgscoordinatereferencesystem.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/providers/ogr/qgsogrprovider.h
-qgsrect.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/providers/ogr/qgsrect.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/providers/ogr/qgsogrprovider.h
+qgsrectangle.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/providers/ogr/qgsrectangle.h
 qgsvectordataprovider.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/providers/ogr/qgsvectordataprovider.h
-geos.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/providers/ogr/qgsvectordataprovider.h
+ogr_api.h
 -
 
 /usr/include/_locale.h
@@ -738,6 +746,10 @@ secure/_common.h
 mw_stdarg.h
 /usr/include/mw_stdarg.h
 
+/usr/include/stddef.h
+_types.h
+-
+
 /usr/include/stdio.h
 _types.h
 -
@@ -786,8 +798,6 @@ sys/cdefs.h
 libkern/_OSByteOrder.h
 -
 
-/usr/include/sys/_select.h
-
 /usr/include/sys/_structs.h
 sys/cdefs.h
 -
@@ -820,18 +830,6 @@ sys/_types.h
 sys/_structs.h
 -
 
-/usr/include/sys/select.h
-sys/appleapiopts.h
--
-sys/cdefs.h
--
-sys/_types.h
--
-sys/_structs.h
--
-sys/_select.h
--
-
 /usr/include/sys/signal.h
 sys/cdefs.h
 -
@@ -842,18 +840,6 @@ machine/signal.h
 sys/_types.h
 -
 sys/_structs.h
--
-
-/usr/include/sys/stat.h
-sys/_types.h
--
-sys/cdefs.h
--
-sys/_structs.h
--
-
-/usr/include/sys/unistd.h
-sys/cdefs.h
 -
 
 /usr/include/sys/wait.h
@@ -876,14 +862,6 @@ _structs.h
 machine/_limits.h
 -
 xlocale/_time.h
--
-
-/usr/include/unistd.h
-_types.h
--
-sys/unistd.h
--
-sys/select.h
 -
 
 /usr/include/xlocale/_ctype.h

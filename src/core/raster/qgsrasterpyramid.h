@@ -1,6 +1,6 @@
 /***************************************************************************
                             qgsrasterpyramid.h
-                       
+
                              -------------------
     begin                : 2007
     copyright            : (C) 2007 by Gary E. Sherman
@@ -17,18 +17,31 @@
  ***************************************************************************/
 #ifndef QGSRASTERPYRAMID
 #define QGSRASTERPYRAMID
-/** \brief This struct is used to store pyramid info for the raster layer. */
+/** \ingroup core
+  * This struct is used to store pyramid info for the raster layer.
+  */
 class CORE_EXPORT QgsRasterPyramid
 {
   public:
-  /** \brief The pyramid level as implemented in gdal (level 2 is half orignal raster size etc) */
-  int levelInt;
-  /** \brief XDimension for this pyramid layer */
-  int xDimInt;
-  /** \brief YDimension for this pyramid layer */
-  int yDimInt;
-  /** \brief Whether the pyramid layer has been built yet */
-  bool existsFlag;
+    /** \brief The pyramid level as implemented in gdal (level 2 is half orignal raster size etc) */
+    int level;
+    /** \brief XDimension for this pyramid layer */
+    int xDim;
+    /** \brief YDimension for this pyramid layer */
+    int yDim;
+    /** \brief Whether the pyramid layer has been built yet */
+    bool exists;
+    /** \brief Whether the pyramid should be built */
+    bool build;
+
+    QgsRasterPyramid()
+    {
+      level = 0;
+      xDim = 0;
+      yDim = 0;
+      exists = false;
+      build = false;
+    }
 
 };
 #endif

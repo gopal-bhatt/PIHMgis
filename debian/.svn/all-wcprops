@@ -1,131 +1,179 @@
 K 25
 svn:wc:ra_dav:version-url
-V 55
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/debian
+V 50
+/qgis/!svn/ver/10639/branches/Release-1_0_2/debian
 END
-qgis.postrm.debhelper
+python-qgis.lintian-overrides
 K 25
 svn:wc:ra_dav:version-url
-V 77
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/debian/qgis.postrm.debhelper
+V 80
+/qgis/!svn/ver/10639/branches/Release-1_0_2/debian/python-qgis.lintian-overrides
 END
 control
 K 25
 svn:wc:ra_dav:version-url
-V 63
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/debian/control
-END
-libqgis1.install
-K 25
-svn:wc:ra_dav:version-url
-V 72
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/debian/libqgis1.install
+V 58
+/qgis/!svn/ver/10639/branches/Release-1_0_2/debian/control
 END
 qgis-plugin-grass.install
 K 25
 svn:wc:ra_dav:version-url
-V 81
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/debian/qgis-plugin-grass.install
+V 76
+/qgis/!svn/ver/10639/branches/Release-1_0_2/debian/qgis-plugin-grass.install
+END
+qgis-common.sharedmimeinfo
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/qgis/!svn/ver/10639/branches/Release-1_0_2/debian/qgis-common.sharedmimeinfo
 END
 compat
 K 25
 svn:wc:ra_dav:version-url
-V 62
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/debian/compat
+V 57
+/qgis/!svn/ver/10639/branches/Release-1_0_2/debian/compat
 END
 changelog
 K 25
 svn:wc:ra_dav:version-url
-V 65
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/debian/changelog
+V 60
+/qgis/!svn/ver/10639/branches/Release-1_0_2/debian/changelog
+END
+python-qgis.install
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/qgis/!svn/ver/10639/branches/Release-1_0_2/debian/python-qgis.install
 END
 docs
 K 25
 svn:wc:ra_dav:version-url
+V 55
+/qgis/!svn/ver/10639/branches/Release-1_0_2/debian/docs
+END
+qgis.mime
+K 25
+svn:wc:ra_dav:version-url
 V 60
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/debian/docs
+/qgis/!svn/ver/10639/branches/Release-1_0_2/debian/qgis.mime
 END
 rules
 K 25
 svn:wc:ra_dav:version-url
-V 61
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/debian/rules
+V 56
+/qgis/!svn/ver/10639/branches/Release-1_0_2/debian/rules
 END
-libqgis1-dev.install
+libqgis1.0.2-dev.install
 K 25
 svn:wc:ra_dav:version-url
-V 76
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/debian/libqgis1-dev.install
+V 75
+/qgis/!svn/ver/10639/branches/Release-1_0_2/debian/libqgis1.0.2-dev.install
 END
 qgis-icon.xpm
 K 25
 svn:wc:ra_dav:version-url
-V 69
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/debian/qgis-icon.xpm
+V 64
+/qgis/!svn/ver/10639/branches/Release-1_0_2/debian/qgis-icon.xpm
 END
-files
+qgis-common.install
 K 25
 svn:wc:ra_dav:version-url
-V 61
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/debian/files
+V 70
+/qgis/!svn/ver/10639/branches/Release-1_0_2/debian/qgis-common.install
+END
+qgis-plugin-grass.preinst
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/qgis/!svn/ver/10639/branches/Release-1_0_2/debian/qgis-plugin-grass.preinst
+END
+qgis-plugin-grass.postrm
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/qgis/!svn/ver/10639/branches/Release-1_0_2/debian/qgis-plugin-grass.postrm
 END
 pencil.uu
 K 25
 svn:wc:ra_dav:version-url
-V 65
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/debian/pencil.uu
+V 60
+/qgis/!svn/ver/10639/branches/Release-1_0_2/debian/pencil.uu
 END
-qgis.1
+qgis.xml
 K 25
 svn:wc:ra_dav:version-url
-V 62
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/debian/qgis.1
-END
-qgis.dirs
-K 25
-svn:wc:ra_dav:version-url
-V 65
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/debian/qgis.dirs
-END
-gridmaker.1
-K 25
-svn:wc:ra_dav:version-url
-V 67
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/debian/gridmaker.1
+V 59
+/qgis/!svn/ver/10639/branches/Release-1_0_2/debian/qgis.xml
 END
 libqgis1-dev.README.Debian
 K 25
 svn:wc:ra_dav:version-url
-V 82
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/debian/libqgis1-dev.README.Debian
-END
-qgis-config.1
-K 25
-svn:wc:ra_dav:version-url
-V 69
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/debian/qgis-config.1
+V 77
+/qgis/!svn/ver/10639/branches/Release-1_0_2/debian/libqgis1-dev.README.Debian
 END
 qgis.menu
 K 25
 svn:wc:ra_dav:version-url
-V 65
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/debian/qgis.menu
+V 60
+/qgis/!svn/ver/10639/branches/Release-1_0_2/debian/qgis.menu
+END
+watch
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/qgis/!svn/ver/10639/branches/Release-1_0_2/debian/watch
+END
+qgis-plugin-grass-common.install
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/qgis/!svn/ver/10639/branches/Release-1_0_2/debian/qgis-plugin-grass-common.install
+END
+libqgis1.lintian-overrides
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/qgis/!svn/ver/10639/branches/Release-1_0_2/debian/libqgis1.lintian-overrides
 END
 copyright
 K 25
 svn:wc:ra_dav:version-url
-V 65
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/debian/copyright
+V 60
+/qgis/!svn/ver/10639/branches/Release-1_0_2/debian/copyright
 END
 qgis.install
 K 25
 svn:wc:ra_dav:version-url
-V 68
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/debian/qgis.install
+V 63
+/qgis/!svn/ver/10639/branches/Release-1_0_2/debian/qgis.install
 END
-qgis.postinst.debhelper
+qgis-plugin-grass.lintian-overrides
 K 25
 svn:wc:ra_dav:version-url
-V 79
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/debian/qgis.postinst.debhelper
+V 86
+/qgis/!svn/ver/10639/branches/Release-1_0_2/debian/qgis-plugin-grass.lintian-overrides
+END
+qgis.desktop
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/qgis/!svn/ver/10639/branches/Release-1_0_2/debian/qgis.desktop
+END
+qgis.sh
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/qgis/!svn/ver/10639/branches/Release-1_0_2/debian/qgis.sh
+END
+python-qgis-common.install
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/qgis/!svn/ver/10639/branches/Release-1_0_2/debian/python-qgis-common.install
+END
+libqgis1.0.2.install
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/qgis/!svn/ver/10639/branches/Release-1_0_2/debian/libqgis1.0.2.install
 END

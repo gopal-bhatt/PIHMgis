@@ -1,0 +1,281 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/grass/themes/classic
+END
+grass_module_error.png
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/grass/themes/classic/grass_module_error.png
+END
+grass_new_line.png
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/grass/themes/classic/grass_new_line.png
+END
+grass_tools.png
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/grass/themes/classic/grass_tools.png
+END
+mapcalc_select.png
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/grass/themes/classic/mapcalc_select.png
+END
+mapcalc_save_as.png
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/grass/themes/classic/mapcalc_save_as.png
+END
+grass_move_vertex.png
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/grass/themes/classic/grass_move_vertex.png
+END
+grass_rename_map.png
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/grass/themes/classic/grass_rename_map.png
+END
+mapcalc_add_map.png
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/grass/themes/classic/mapcalc_add_map.png
+END
+grass_new_vector_layer.png
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/grass/themes/classic/grass_new_vector_layer.png
+END
+grass_copy_map.png
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/grass/themes/classic/grass_copy_map.png
+END
+grass_shell.png
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/grass/themes/classic/grass_shell.png
+END
+grass_add_raster.png
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/grass/themes/classic/grass_add_raster.png
+END
+grass_delete_line.png
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/grass/themes/classic/grass_delete_line.png
+END
+grass_module_warning.png
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/grass/themes/classic/grass_module_warning.png
+END
+grass_add_vector.png
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/grass/themes/classic/grass_add_vector.png
+END
+grass_close_edit.png
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/grass/themes/classic/grass_close_edit.png
+END
+grass_open_mapset.png
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/grass/themes/classic/grass_open_mapset.png
+END
+mapcalc_save.png
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/grass/themes/classic/mapcalc_save.png
+END
+grass_region.png
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/grass/themes/classic/grass_region.png
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/grass/themes/classic/CMakeLists.txt
+END
+.cvsignore
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/grass/themes/classic/.cvsignore
+END
+grass_new_boundary.png
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/grass/themes/classic/grass_new_boundary.png
+END
+grass_set_region.png
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/grass/themes/classic/grass_set_region.png
+END
+grass_refresh.png
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/grass/themes/classic/grass_refresh.png
+END
+grass_delete_vertex.png
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/grass/themes/classic/grass_delete_vertex.png
+END
+grass_delete_map.png
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/grass/themes/classic/grass_delete_map.png
+END
+grass_browser_raster_layer.png
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/grass/themes/classic/grass_browser_raster_layer.png
+END
+grass_browser_vector_layer.png
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/grass/themes/classic/grass_browser_vector_layer.png
+END
+grass_split_line.png
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/grass/themes/classic/grass_split_line.png
+END
+grass_new_mapset.png
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/grass/themes/classic/grass_new_mapset.png
+END
+grass_new_point.png
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/grass/themes/classic/grass_new_point.png
+END
+grass_clear_input.png
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/grass/themes/classic/grass_clear_input.png
+END
+grass_move_line.png
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/grass/themes/classic/grass_move_line.png
+END
+grass_close_mapset.png
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/grass/themes/classic/grass_close_mapset.png
+END
+mapcalc_add_function.png
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/grass/themes/classic/mapcalc_add_function.png
+END
+grass_new_centroid.png
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/grass/themes/classic/grass_new_centroid.png
+END
+mapcalc_add_constant.png
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/grass/themes/classic/mapcalc_add_constant.png
+END
+mapcalc_open.png
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/grass/themes/classic/mapcalc_open.png
+END
+mapcalc_delete.png
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/grass/themes/classic/mapcalc_delete.png
+END
+grass_add_map.png
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/grass/themes/classic/grass_add_map.png
+END
+grass_add_vertex.png
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/grass/themes/classic/grass_add_vertex.png
+END
+grass_edit.png
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/grass/themes/classic/grass_edit.png
+END
+grass_region_edit.png
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/grass/themes/classic/grass_region_edit.png
+END
+mapcalc_add_connection.png
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/grass/themes/classic/mapcalc_add_connection.png
+END
+world.png
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/grass/themes/classic/world.png
+END
+grass_edit_attributes.png
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/grass/themes/classic/grass_edit_attributes.png
+END

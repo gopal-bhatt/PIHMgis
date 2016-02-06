@@ -1,15 +1,15 @@
 8
 
 dir
-7809
-https://svn.qgis.org/repos/qgis/branches/Release-0_9_0/src/providers
-https://svn.qgis.org/repos/qgis
+10938
+https://svn.osgeo.org/qgis/branches/Release-1_0_2/src/providers
+https://svn.osgeo.org/qgis
 
 
 
-2007-09-16T20:34:54.819737Z
-7205
-gsherman
+2009-04-19T10:30:28.288336Z
+10598
+jef
 has-props
 
 svn:special svn:externals svn:needs-lock
@@ -35,9 +35,6 @@ dir
 delimitedtext
 dir
 
-mysql
-dir
-
 postgres
 dir
 
@@ -47,13 +44,16 @@ dir
 ogr
 dir
 
+memory
+dir
+
 .cvsignore
 file
 
 
 
 
-2007-12-24T08:18:12.000000Z
+2009-06-17T07:49:56.000000Z
 31076018db46093e4e5e50ab56486a4e
 2005-01-10T22:06:18.000000Z
 2612
@@ -66,11 +66,11 @@ file
 
 
 
-2007-12-24T08:18:12.000000Z
-707d456cf44010753f7377fa92642e3d
-2007-01-15T08:29:34.189136Z
-6434
-mhugent
+2009-06-17T07:49:56.000000Z
+23d14ae8e603a8a63e2420b91e093be7
+2008-06-08T17:57:40.837766Z
+8626
+wonder
 
 gpx
 dir

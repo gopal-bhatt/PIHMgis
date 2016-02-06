@@ -1,35 +1,35 @@
 K 25
 svn:wc:ra_dav:version-url
-V 54
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/tools
+V 49
+/qgis/!svn/ver/10639/branches/Release-1_0_2/tools
 END
 qgis-qt3to4.pl
 K 25
 svn:wc:ra_dav:version-url
-V 69
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/tools/qgis-qt3to4.pl
+V 64
+/qgis/!svn/ver/10639/branches/Release-1_0_2/tools/qgis-qt3to4.pl
 END
 qgisdetect.m4
 K 25
 svn:wc:ra_dav:version-url
-V 68
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/tools/qgisdetect.m4
+V 63
+/qgis/!svn/ver/10639/branches/Release-1_0_2/tools/qgisdetect.m4
 END
 qgiscommit
 K 25
 svn:wc:ra_dav:version-url
-V 65
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/tools/qgiscommit
+V 60
+/qgis/!svn/ver/10639/branches/Release-1_0_2/tools/qgiscommit
 END
 .cvsignore
 K 25
 svn:wc:ra_dav:version-url
-V 65
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/tools/.cvsignore
+V 60
+/qgis/!svn/ver/10639/branches/Release-1_0_2/tools/.cvsignore
 END
 CMakeLists.txt
 K 25
 svn:wc:ra_dav:version-url
-V 69
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/tools/CMakeLists.txt
+V 64
+/qgis/!svn/ver/10639/branches/Release-1_0_2/tools/CMakeLists.txt
 END

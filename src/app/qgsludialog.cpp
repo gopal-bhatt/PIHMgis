@@ -14,17 +14,15 @@
  *   (at your option) any later version.                                   *
  *                                                                         *
  ***************************************************************************/
-/* $Id: qgsludialog.cpp 6415 2007-01-09 02:39:15Z wonder $ */
+/* $Id: qgsludialog.cpp 9138 2008-08-23 21:37:31Z jef $ */
 
 #include "qgsludialog.h"
 
 
-QgsLUDialog::QgsLUDialog(QWidget *parent, Qt::WFlags fl)
-: QDialog(parent, fl)
+QgsLUDialog::QgsLUDialog( QWidget *parent, Qt::WFlags fl )
+    : QDialog( parent, fl )
 {
-    setupUi(this);
-    connect(mOkButton, SIGNAL(clicked()), this, SLOT(accept()));
-    connect(mCancelButton, SIGNAL(clicked()), this, SLOT(reject()));
+  setupUi( this );
 }
 
 QgsLUDialog::~QgsLUDialog()
@@ -34,20 +32,20 @@ QgsLUDialog::~QgsLUDialog()
 
 QString QgsLUDialog::lowerValue() const
 {
-    return mLowerEdit->text();
+  return mLowerEdit->text();
 }
 
 QString QgsLUDialog::upperValue() const
 {
-    return mUpperEdit->text();
+  return mUpperEdit->text();
 }
 
-void QgsLUDialog::setLowerValue(QString val)
+void QgsLUDialog::setLowerValue( QString val )
 {
-    mLowerEdit->setText(val);
+  mLowerEdit->setText( val );
 }
 
-void QgsLUDialog::setUpperValue(QString val)
+void QgsLUDialog::setUpperValue( QString val )
 {
-    mUpperEdit->setText(val);
+  mUpperEdit->setText( val );
 }

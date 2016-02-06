@@ -68,6 +68,9 @@ public:
     bool   angleIsSet ( ) const;
     double angle ( ) const;
 
+    bool   angleIsAuto( ) const;
+    void   setAutoAngle(bool state);
+
     /* Alignment */
     void setAlignment ( int alignment );
     bool alignmentIsSet ( ) const;
@@ -83,7 +86,7 @@ public:
 
     void  setBufferColor ( const QColor &color );
     bool  bufferColorIsSet ( ) const;
-    const QColor & bufferColor ( ) const;
+    QColor bufferColor ( ) const;
 
     void  setBufferStyle ( Qt::BrushStyle style );
     bool  bufferStyleIsSet ( ) const;
@@ -101,6 +104,8 @@ public:
     void  setBorderStyle ( Qt::PenStyle style );
     bool  borderStyleIsSet ( ) const;
     Qt::PenStyle   borderStyle ( ) const;
-    
+
+    bool  multilineEnabled() const;
+    void  setMultilineEnabled( bool useMultiline );
 };
 

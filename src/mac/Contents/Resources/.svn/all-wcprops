@@ -1,95 +1,95 @@
 K 25
 svn:wc:ra_dav:version-url
-V 75
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/mac/Contents/Resources
+V 70
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/mac/Contents/Resources
 END
 qgs.psd
 K 25
 svn:wc:ra_dav:version-url
-V 83
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/mac/Contents/Resources/qgs.psd
+V 78
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/mac/Contents/Resources/qgs.psd
 END
 dt0.icns
 K 25
 svn:wc:ra_dav:version-url
-V 84
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/mac/Contents/Resources/dt0.icns
+V 79
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/mac/Contents/Resources/dt0.icns
 END
 tiff.icns
 K 25
 svn:wc:ra_dav:version-url
-V 85
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/mac/Contents/Resources/tiff.icns
+V 80
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/mac/Contents/Resources/tiff.icns
 END
 shp.icns
 K 25
 svn:wc:ra_dav:version-url
-V 84
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/mac/Contents/Resources/shp.icns
+V 79
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/mac/Contents/Resources/shp.icns
 END
 qgs.icns
 K 25
 svn:wc:ra_dav:version-url
-V 84
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/mac/Contents/Resources/qgs.icns
+V 79
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/mac/Contents/Resources/qgs.icns
 END
 jp2.icns
 K 25
 svn:wc:ra_dav:version-url
-V 84
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/mac/Contents/Resources/jp2.icns
+V 79
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/mac/Contents/Resources/jp2.icns
 END
 ddf.icns
 K 25
 svn:wc:ra_dav:version-url
-V 84
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/mac/Contents/Resources/ddf.icns
+V 79
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/mac/Contents/Resources/ddf.icns
 END
 qgis.icns
 K 25
 svn:wc:ra_dav:version-url
-V 85
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/mac/Contents/Resources/qgis.icns
+V 80
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/mac/Contents/Resources/qgis.icns
 END
 dem.icns
 K 25
 svn:wc:ra_dav:version-url
-V 84
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/mac/Contents/Resources/dem.icns
+V 79
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/mac/Contents/Resources/dem.icns
 END
 asc.icns
 K 25
 svn:wc:ra_dav:version-url
-V 84
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/mac/Contents/Resources/asc.icns
+V 79
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/mac/Contents/Resources/asc.icns
 END
 mif.icns
 K 25
 svn:wc:ra_dav:version-url
-V 84
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/mac/Contents/Resources/mif.icns
+V 79
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/mac/Contents/Resources/mif.icns
 END
 img.icns
 K 25
 svn:wc:ra_dav:version-url
-V 84
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/mac/Contents/Resources/img.icns
+V 79
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/mac/Contents/Resources/img.icns
 END
 gml.icns
 K 25
 svn:wc:ra_dav:version-url
-V 84
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/mac/Contents/Resources/gml.icns
+V 79
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/mac/Contents/Resources/gml.icns
 END
 CMakeLists.txt
 K 25
 svn:wc:ra_dav:version-url
-V 90
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/mac/Contents/Resources/CMakeLists.txt
+V 85
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/mac/Contents/Resources/CMakeLists.txt
 END
 .cvsignore
 K 25
 svn:wc:ra_dav:version-url
-V 86
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/mac/Contents/Resources/.cvsignore
+V 81
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/mac/Contents/Resources/.cvsignore
 END

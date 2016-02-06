@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'qgshttptransaction.h'
 **
-** Created: Wed Jun 11 19:03:32 2008
+** Created: Fri Jun 19 01:50:18 2009
 **      by: The Qt Meta Object Compiler version 59 (Qt 4.3.2)
 **
 ** WARNING! All changes made in this file will be lost!
@@ -31,14 +31,14 @@ static const uint qt_meta_data_QgsHttpTransaction[] = {
       84,   67,   19,   19, 0x05,
 
  // slots: signature, parameters, type, tag, flags
-     106,  103,   19,   19, 0x0a,
-     128,  123,   19,   19, 0x0a,
-     168,  123,   19,   19, 0x0a,
-     213,  202,   19,   19, 0x0a,
-     244,  235,   19,   19, 0x0a,
-     273,  267,   19,   19, 0x0a,
-     305,  299,   19,   19, 0x0a,
-     327,   19,   19,   19, 0x0a,
+     110,  107,   19,   19, 0x0a,
+     132,  127,   19,   19, 0x0a,
+     172,  127,   19,   19, 0x0a,
+     217,  206,   19,   19, 0x0a,
+     248,  239,   19,   19, 0x0a,
+     277,  271,   19,   19, 0x0a,
+     309,  303,   19,   19, 0x0a,
+     331,   19,   19,   19, 0x0a,
 
        0        // eod
 };
@@ -46,7 +46,7 @@ static const uint qt_meta_data_QgsHttpTransaction[] = {
 static const char qt_meta_stringdata_QgsHttpTransaction[] = {
     "QgsHttpTransaction\0\0theProgress,theTotalSteps\0"
     "setProgress(int,int)\0theStatusQString\0"
-    "setStatus(QString)\0id\0dataStarted(int)\0"
+    "statusChanged(QString)\0id\0dataStarted(int)\0"
     "resp\0dataHeaderReceived(QHttpResponseHeader)\0"
     "dataReceived(QHttpResponseHeader)\0"
     "done,total\0dataProgress(int,int)\0"
@@ -81,7 +81,7 @@ int QgsHttpTransaction::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_c == QMetaObject::InvokeMetaMethod) {
         switch (_id) {
         case 0: setProgress((*reinterpret_cast< int(*)>(_a[1])),(*reinterpret_cast< int(*)>(_a[2]))); break;
-        case 1: setStatus((*reinterpret_cast< QString(*)>(_a[1]))); break;
+        case 1: statusChanged((*reinterpret_cast< QString(*)>(_a[1]))); break;
         case 2: dataStarted((*reinterpret_cast< int(*)>(_a[1]))); break;
         case 3: dataHeaderReceived((*reinterpret_cast< const QHttpResponseHeader(*)>(_a[1]))); break;
         case 4: dataReceived((*reinterpret_cast< const QHttpResponseHeader(*)>(_a[1]))); break;
@@ -104,7 +104,7 @@ void QgsHttpTransaction::setProgress(int _t1, int _t2)
 }
 
 // SIGNAL 1
-void QgsHttpTransaction::setStatus(QString _t1)
+void QgsHttpTransaction::statusChanged(QString _t1)
 {
     void *_a[] = { 0, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
     QMetaObject::activate(this, &staticMetaObject, 1, _a);

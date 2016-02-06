@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'qgsgpsplugin.h'
 **
-** Created: Wed Jun 11 19:10:26 2008
+** Created: Fri Jun 19 01:59:31 2009
 **      by: The Qt Meta Object Compiler version 59 (Qt 4.3.2)
 **
 ** WARNING! All changes made in this file will be lost!
@@ -22,7 +22,7 @@ static const uint qt_meta_data_QgsGPSPlugin[] = {
        1,       // revision
        0,       // classname
        0,    0, // classinfo
-      11,   10, // methods
+      12,   10, // methods
        0,    0, // properties
        0,    0, // enums/sets
 
@@ -38,8 +38,9 @@ static const uint qt_meta_data_QgsGPSPlugin[] = {
      106,   13,   13,   13, 0x0a,
      158,  113,   13,   13, 0x0a,
      284,  194,   13,   13, 0x0a,
-     439,  354,   13,   13, 0x0a,
-     524,  503,   13,   13, 0x0a,
+     405,  354,   13,   13, 0x0a,
+     534,  449,   13,   13, 0x0a,
+     619,  598,   13,   13, 0x0a,
 
        0        // eod
 };
@@ -49,13 +50,15 @@ static const char qt_meta_stringdata_QgsGPSPlugin[] = {
     "run()\0createGPX()\0,,\0"
     "drawVectorLayer(QString,QString,QString)\0"
     "unload()\0help()\0"
-    "filename,loadWaypoints,loadRoutes,loadTracks\0"
+    "fileName,loadWaypoints,loadRoutes,loadTracks\0"
     "loadGPXFile(QString,bool,bool,bool)\0"
-    "inputFilename,importer,importWaypoints,importRoutes,importTracks,outpu"
-    "tFilename,layerName\0"
+    "inputFileName,importer,importWaypoints,importRoutes,importTracks,outpu"
+    "tFileName,layerName\0"
     "importGPSFile(QString,QgsBabelFormat*,bool,bool,bool,QString,QString)\0"
+    "inputFileName,convertType,outputFileName,layerName\0"
+    "convertGPSFile(QString,int,QString,QString)\0"
     "device,port,downloadWaypoints,downloadRoutes,downloadTracks,outputFile"
-    "name,layerName\0"
+    "Name,layerName\0"
     "downloadFromGPS(QString,QString,bool,bool,bool,QString,QString)\0"
     "gpxLayer,device,port\0"
     "uploadToGPS(QgsVectorLayer*,QString,QString)\0"
@@ -97,10 +100,11 @@ int QgsGPSPlugin::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
         case 6: help(); break;
         case 7: loadGPXFile((*reinterpret_cast< QString(*)>(_a[1])),(*reinterpret_cast< bool(*)>(_a[2])),(*reinterpret_cast< bool(*)>(_a[3])),(*reinterpret_cast< bool(*)>(_a[4]))); break;
         case 8: importGPSFile((*reinterpret_cast< QString(*)>(_a[1])),(*reinterpret_cast< QgsBabelFormat*(*)>(_a[2])),(*reinterpret_cast< bool(*)>(_a[3])),(*reinterpret_cast< bool(*)>(_a[4])),(*reinterpret_cast< bool(*)>(_a[5])),(*reinterpret_cast< QString(*)>(_a[6])),(*reinterpret_cast< QString(*)>(_a[7]))); break;
-        case 9: downloadFromGPS((*reinterpret_cast< QString(*)>(_a[1])),(*reinterpret_cast< QString(*)>(_a[2])),(*reinterpret_cast< bool(*)>(_a[3])),(*reinterpret_cast< bool(*)>(_a[4])),(*reinterpret_cast< bool(*)>(_a[5])),(*reinterpret_cast< QString(*)>(_a[6])),(*reinterpret_cast< QString(*)>(_a[7]))); break;
-        case 10: uploadToGPS((*reinterpret_cast< QgsVectorLayer*(*)>(_a[1])),(*reinterpret_cast< QString(*)>(_a[2])),(*reinterpret_cast< QString(*)>(_a[3]))); break;
+        case 9: convertGPSFile((*reinterpret_cast< QString(*)>(_a[1])),(*reinterpret_cast< int(*)>(_a[2])),(*reinterpret_cast< QString(*)>(_a[3])),(*reinterpret_cast< QString(*)>(_a[4]))); break;
+        case 10: downloadFromGPS((*reinterpret_cast< QString(*)>(_a[1])),(*reinterpret_cast< QString(*)>(_a[2])),(*reinterpret_cast< bool(*)>(_a[3])),(*reinterpret_cast< bool(*)>(_a[4])),(*reinterpret_cast< bool(*)>(_a[5])),(*reinterpret_cast< QString(*)>(_a[6])),(*reinterpret_cast< QString(*)>(_a[7]))); break;
+        case 11: uploadToGPS((*reinterpret_cast< QgsVectorLayer*(*)>(_a[1])),(*reinterpret_cast< QString(*)>(_a[2])),(*reinterpret_cast< QString(*)>(_a[3]))); break;
         }
-        _id -= 11;
+        _id -= 12;
     }
     return _id;
 }

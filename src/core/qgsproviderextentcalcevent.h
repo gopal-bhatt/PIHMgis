@@ -15,49 +15,45 @@
  *   (at your option) any later version.                                   *
  *                                                                         *
  ***************************************************************************/
-/* $Id: qgsproviderextentcalcevent.h 6415 2007-01-09 02:39:15Z wonder $ */
+/* $Id: qgsproviderextentcalcevent.h 9605 2008-11-09 00:14:12Z timlinux $ */
 
 #ifndef QGSPROVIDEREXTENTCALCEVENT_H
 #define QGSPROVIDEREXTENTCALCEVENT_H
 
-#include <qevent.h>
+#include <QEvent>
+class QgsRectangle;
 
-#include "qgis.h"
-#include "qgsrect.h"
-//Added by qt3to4:
-#include <QCustomEvent>
-
-/*!
- * \brief   A custom event that is designed to be fired when a layer extent has been fully calculated.
+/** \ingroup core
+ * A custom event that is designed to be fired when a layer extent has been fully calculated.
    \author  Brendan Morley
    \date    March 2005
 
-   
-   This QCustomEvent is designed to be fired when the full extent of a layer has been calculated.
+
+   This custom QEvent is designed to be fired when the full extent of a layer has been calculated.
    It was initially included in QGIS to help the QgsPostgresProvider provide the asynchronous
    calculation of PostgreSQL layer extents.
-   
+
    Events are used instead of Qt signals/slots as events can be received asynchronously,
    which makes for better mutlithreading behaviour and less opportunity for programmer mishap.
-  
- */ 
+
+ */
 
 // TODO: Add the pg table this is a extent OF.
 
-class CORE_EXPORT QgsProviderExtentCalcEvent : public QCustomEvent
+class CORE_EXPORT QgsProviderExtentCalcEvent : public QEvent
 {
 
-public:
+  public:
 
-  QgsProviderExtentCalcEvent( QgsRect* layerExtent );
+    QgsProviderExtentCalcEvent( QgsRectangle* layerExtent );
 
-  QgsRect* layerExtent() const;
+    QgsRectangle* layerExtent() const;
 
-  
-private:
 
-  QgsRect* le;
-    
+  private:
+
+    QgsRectangle* le;
+
 };
 
 #endif

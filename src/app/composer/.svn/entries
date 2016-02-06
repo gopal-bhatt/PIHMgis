@@ -1,15 +1,15 @@
 8
 
 dir
-7809
-https://svn.qgis.org/repos/qgis/branches/Release-0_9_0/src/app/composer
-https://svn.qgis.org/repos/qgis
+10938
+https://svn.osgeo.org/qgis/branches/Release-1_0_2/src/app/composer
+https://svn.osgeo.org/qgis
 
 
 
-2007-09-24T02:23:49.007875Z
-7218
-StevenB
+2009-02-25T18:41:20.075909Z
+10235
+mhugent
 has-props
 
 svn:special svn:externals svn:needs-lock
@@ -26,135 +26,66 @@ svn:special svn:externals svn:needs-lock
 
 c8812cc2-4d05-0410-92ff-de0c093fc19c
 
-qgscomposerpicture.cpp
-file
-
-
-
-
-2007-12-24T08:17:20.000000Z
-9133c1c4e33db662f4f53b5850748d3b
-2007-07-19T15:24:39.580649Z
-7078
-StevenB
-has-props
-
-qgscomposerscalebar.cpp
-file
-
-
-
-
-2007-12-24T08:17:20.000000Z
-68811450de2300525b9d38751e4bbdff
-2007-07-16T18:40:59.210963Z
-7072
-timlinux
-has-props
-
-qgscomposermap.cpp
-file
-
-
-
-
-2007-12-24T08:17:20.000000Z
-fac5a3613844356f9d7fae42138e2711
-2007-09-24T01:25:44.998802Z
-7217
-StevenB
-has-props
-
 qgscomposer.cpp
 file
 
 
 
 
-2007-12-24T08:17:20.000000Z
-42c0559dbc1b63bcd632d1e282360c1a
-2007-09-24T01:25:44.998802Z
-7217
-StevenB
+2009-06-17T07:49:14.000000Z
+fdc015f37f06b80a77a5a7aae948109c
+2009-02-08T19:18:53.305828Z
+10136
+jef
 has-props
 
-qgscomposerlabel.cpp
+qgscomposerpicturewidget.cpp
 file
 
 
 
 
-2007-12-24T08:17:20.000000Z
-255fe32531e3c0e762869adf9946a619
-2007-07-16T18:40:59.210963Z
-7072
+2009-06-17T07:49:14.000000Z
+785af85a7342309df810aa8da820ab4a
+2008-08-23T21:37:31.208899Z
+9138
+jef
+
+qgscomposerscalebarwidget.cpp
+file
+
+
+
+
+2009-06-17T07:49:14.000000Z
+f7798e83421d56e501cbfa660bbf0b1c
+2009-02-25T18:41:20.075909Z
+10235
+mhugent
+
+qgscomposermapwidget.cpp
+file
+
+
+
+
+2009-06-17T07:49:14.000000Z
+2ab68fc77d434e7bda02c93e4eb2befa
+2008-11-09T00:14:12.141861Z
+9605
 timlinux
-has-props
 
-qgscomposerview.h
+qgscomposerlabelwidget.cpp
 file
 
 
 
 
-2007-12-24T08:17:20.000000Z
-ac7d7220a67e541d5b9e85d6a99a15f4
-2007-07-16T18:40:59.210963Z
-7072
-timlinux
-has-props
-
-qgscomposerpicture.h
-file
-
-
-
-
-2007-12-24T08:17:20.000000Z
-97d0ded48e91e1e22ebe3d4d2c418f16
-2007-07-16T18:40:59.210963Z
-7072
-timlinux
-has-props
-
-qgscomposerscalebar.h
-file
-
-
-
-
-2007-12-24T08:17:20.000000Z
-dcedfe41f61a8f75f2d131aaefbbc7ff
-2007-07-16T18:40:59.210963Z
-7072
-timlinux
-has-props
-
-qgscomposervectorlegend.cpp
-file
-
-
-
-
-2007-12-24T08:17:20.000000Z
-57622debfdd3510b44c4a63ad80067c1
-2007-09-24T02:23:49.007875Z
-7218
-StevenB
-has-props
-
-qgscomposermap.h
-file
-
-
-
-
-2007-12-24T08:17:20.000000Z
-0012e7e198a653dbc239646d88f36c2a
-2007-07-16T18:40:59.210963Z
-7072
-timlinux
-has-props
+2009-06-17T07:49:14.000000Z
+625cf2be820542dc0af280d122ebb3c8
+2008-09-01T17:14:59.048588Z
+9237
+mhugent
 
 qgscomposer.h
 file
@@ -162,101 +93,154 @@ file
 
 
 
-2007-12-24T08:17:20.000000Z
-498c7f3bccace52ab7ad83d22d277948
-2007-01-09T02:39:15.173934Z
-6415
-wonder
+2009-06-17T07:49:14.000000Z
+b3349ac85083d80e84cc40e84c6f93c6
+2008-12-13T11:07:45.519330Z
+9781
+jef
 has-props
 
-qgscomposerlabel.h
+qgscomposerpicturewidget.h
 file
 
 
 
 
-2007-12-24T08:17:20.000000Z
-321dc2e7d048bfcbaf2220de30e1ff8a
-2007-07-16T18:40:59.210963Z
-7072
+2009-06-17T07:49:14.000000Z
+d7ad96f700709ccd3570d471d840c516
+2008-08-23T21:37:31.208899Z
+9138
+jef
+
+qgscomposerscalebarwidget.h
+file
+
+
+
+
+2009-06-17T07:49:14.000000Z
+938e417b6b5e1ba35424a69deb6e520a
+2008-08-23T21:37:31.208899Z
+9138
+jef
+
+qgscomposermapwidget.h
+file
+
+
+
+
+2009-06-17T07:49:14.000000Z
+5417287643dba88b045839ab5a711cf6
+2008-08-23T21:37:31.208899Z
+9138
+jef
+
+qgscomposerlabelwidget.h
+file
+
+
+
+
+2009-06-17T07:49:14.000000Z
+e36456052dae925309a72238b98a22e0
+2008-08-23T21:37:31.208899Z
+9138
+jef
+
+qgscomposerlegenditemdialog.cpp
+file
+
+
+
+
+2009-06-17T07:49:14.000000Z
+b145b122b9c0ae5e6db0985079a8e4ed
+2008-08-23T21:37:31.208899Z
+9138
+jef
+
+qgscompositionwidget.cpp
+file
+
+
+
+
+2009-06-17T07:49:14.000000Z
+fe2fefb18a8896d37ded88bbf60f05af
+2008-11-07T10:35:32.802491Z
+9570
 timlinux
-has-props
 
-qgscomposervectorlegend.h
+qgscomposeritemwidget.cpp
 file
 
 
 
 
-2007-12-24T08:17:20.000000Z
-ec94c03db851e9c5cc3dc45a8649f096
-2007-07-16T18:40:59.210963Z
-7072
-timlinux
-has-props
+2009-06-17T07:49:14.000000Z
+46743b7e2634b1f2df7cd98d851291da
+2008-08-23T21:37:31.208899Z
+9138
+jef
 
-qgscomposition.cpp
+qgscomposerlegenditemdialog.h
 file
 
 
 
 
-2007-12-24T08:17:20.000000Z
-3b213086db87de5ac8ad917b67ff8bf6
-2007-07-16T18:40:59.210963Z
-7072
-timlinux
-has-props
+2009-06-17T07:49:14.000000Z
+1f0cbdf9ba0aec898a021d2eb5a64153
+2008-08-23T21:37:31.208899Z
+9138
+jef
 
-qgscomposeritem.cpp
+qgscomposerlegendwidget.cpp
 file
 
 
 
 
-2007-12-24T08:17:20.000000Z
-7198f1bda30d656fd4b5cc2ebefa91bf
-2007-01-22T02:38:33.285981Z
-6451
-g_j_m
-has-props
+2009-06-17T07:49:14.000000Z
+ae7bef6658877fd5db307e4a442acc68
+2008-09-08T08:18:14.309200Z
+9282
+jef
 
-qgscomposition.h
+qgscompositionwidget.h
 file
 
 
 
 
-2007-12-24T08:17:20.000000Z
-cb73f23dabb25a9bc22d8369bd7d8441
-2007-07-16T18:40:59.210963Z
-7072
-timlinux
-has-props
+2009-06-17T07:49:14.000000Z
+8521b83cdaa7faa10163448139e71eb9
+2008-08-23T21:37:31.208899Z
+9138
+jef
 
-qgscomposeritem.h
+qgscomposerlegendwidget.h
 file
 
 
 
 
-2007-12-24T08:17:20.000000Z
-6895dc600ae32ef708b33947ae27ffdd
-2007-01-09T02:39:15.173934Z
-6415
-wonder
-has-props
+2009-06-17T07:49:14.000000Z
+968530cb092b0a9607af42d7db941589
+2008-08-27T13:21:17.592645Z
+9190
+mhugent
 
-qgscomposerview.cpp
+qgscomposeritemwidget.h
 file
 
 
 
 
-2007-12-24T08:17:20.000000Z
-ec687f3cd7bcb3ad1c014e63409635bc
-2007-07-16T18:40:59.210963Z
-7072
-timlinux
-has-props
+2009-06-17T07:49:14.000000Z
+f9fba066f9f0df0226fe08a47a632ef4
+2008-08-23T21:37:31.208899Z
+9138
+jef
 

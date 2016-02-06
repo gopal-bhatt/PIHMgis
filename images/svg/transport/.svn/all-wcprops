@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/qgis/!svn/ver/10639/branches/Release-1_0_2/images/svg/transport
+END
+amenity=airport.svg
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/qgis/!svn/ver/10639/branches/Release-1_0_2/images/svg/transport/amenity=airport.svg
+END
+amenity=ferry_terminal.svg
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/qgis/!svn/ver/10639/branches/Release-1_0_2/images/svg/transport/amenity=ferry_terminal.svg
+END
+railway=station.svg
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/qgis/!svn/ver/10639/branches/Release-1_0_2/images/svg/transport/railway=station.svg
+END
+amenity=taxi.svg
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/qgis/!svn/ver/10639/branches/Release-1_0_2/images/svg/transport/amenity=taxi.svg
+END
+highway=bus_stop.svg
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/qgis/!svn/ver/10639/branches/Release-1_0_2/images/svg/transport/highway=bus_stop.svg
+END
+amenity=parking.svg
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/qgis/!svn/ver/10639/branches/Release-1_0_2/images/svg/transport/amenity=parking.svg
+END

@@ -17,57 +17,118 @@
 #include "qgspythondialog.h"
 #include "qgspythonutils.h"
 
+#include <QShowEvent>
+#include <QCloseEvent>
 
-QgsPythonDialog::QgsPythonDialog(QgisInterface* pIface, QWidget *parent)
-  : QDialog(parent)
+QgsPythonDialog::QgsPythonDialog( QgisInterface* pIface, QgsPythonUtils* pythonUtils, QWidget *parent )
+    : QDialog( parent )
 {
-  setupUi(this);
+  setupUi( this );
+#ifdef Q_WS_MAC
+  // Qt4.3+ bug?: Mac window minimize control isn't enabled
+  setWindowFlags( windowFlags() | Qt::WindowMinimizeButtonHint );
+#endif
   mIface = pIface;
-  
-  QgsPythonUtils::installConsoleHooks();
+  mPythonUtils = pythonUtils;
+
+  pos = 0;
 }
 
 QgsPythonDialog::~QgsPythonDialog()
 {
-  QgsPythonUtils::uninstallConsoleHooks();
 }
 
-QString QgsPythonDialog::escapeHtml(QString text)
+QString QgsPythonDialog::escapeHtml( QString text )
 {
-    return text.replace("<","&lt;").replace(">","&gt;");
+  return text.replace( "<", "&lt;" ).replace( ">", "&gt;" );
+}
+
+void QgsPythonDialog::keyPressEvent( QKeyEvent *ev )
+{
+  switch ( ev->key() )
+  {
+    case Qt::Key_Up:
+    {
+      if ( pos > 0 )
+      {
+        if ( pos == history.size() )
+          history << edtCmdLine->text();
+        else
+          history[pos] = edtCmdLine->text();
+        pos--;
+        edtCmdLine->setText( history[pos] );
+      }
+    }
+    break;
+    case Qt::Key_Down:
+    {
+      if ( pos < history.size() - 1 )
+      {
+        history[pos] = edtCmdLine->text();
+        pos++;
+        edtCmdLine->setText( history[pos] );
+      }
+    }
+    break;
+    default:
+      QWidget::keyPressEvent( ev );
+      break;
+  }
 }
 
 void QgsPythonDialog::on_edtCmdLine_returnPressed()
 {
   QString command = edtCmdLine->text();
+
+  if ( !command.isEmpty() )
+  {
+    history << command;
+    pos = history.size();
+  }
+
   QString output;
-  
+
   // when using Py_single_input the return value will be always null
   // we're using custom hooks for output and exceptions to show output in console
-  if (QgsPythonUtils::runString(command))
+  if ( mPythonUtils->runStringUnsafe( command ) )
   {
-    QgsPythonUtils::evalString("sys.stdout.data", output);
-    QgsPythonUtils::runString("sys.stdout.data = ''");
-    QString result = QgsPythonUtils::getResult();
+    mPythonUtils->evalString( "sys.stdout.get_and_clean_data()", output );
+    QString result = mPythonUtils->getResult();
     // escape the result so python objects display properly and
     // we can still use html output to get nicely formatted display
-    output = escapeHtml(output) + escapeHtml(result);
-    
-    if (!output.isEmpty())
+    output = escapeHtml( output ) + escapeHtml( result );
+
+    if ( !output.isEmpty() )
       output += "<br>";
   }
   else
   {
     QString className, errorText;
-    QgsPythonUtils::getError(className, errorText);
-    
-    output = "<font color=\"red\">" + escapeHtml(className) + ": " + escapeHtml(errorText) + "</font><br>";
+    mPythonUtils->getError( className, errorText );
+
+    output = "<font color=\"red\">" + escapeHtml( className ) + ": " + escapeHtml( errorText ) + "</font><br>";
   }
-   
-  QString str = "<b><font color=\"green\">>>></font> " + escapeHtml(command) + "</b><br>" + output;
-  txtHistory->setText(txtHistory->text() + str);
-  edtCmdLine->setText("");
-  
-  txtHistory->moveCursor(QTextCursor::End);
+
+  QString str = "<b><font color=\"green\">&gt;&gt;&gt;</font> " + escapeHtml( command ) + "</b><br>" + output;
+
+  edtCmdLine->setText( "" );
+
+  txtHistory->moveCursor( QTextCursor::End );
+  txtHistory->insertHtml( str );
+  txtHistory->moveCursor( QTextCursor::End );
   txtHistory->ensureCursorVisible();
+}
+
+void QgsPythonDialog::showEvent( QShowEvent* event )
+{
+  QDialog::showEvent( event );
+
+  mPythonUtils->installConsoleHooks();
+}
+
+void QgsPythonDialog::closeEvent( QCloseEvent* event )
+{
+  mPythonUtils->uninstallConsoleHooks();
+
+  QDialog::closeEvent( event );
 }

@@ -1,6 +1,6 @@
-#line 2 "/Users/bhattgopal/dev/cpp/qgis0.9/build/src/core/flex_qgssearchstringlexer.cpp"
+#line 2 "/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/flex_qgssearchstringlexer.cpp"
 
-#line 4 "/Users/bhattgopal/dev/cpp/qgis0.9/build/src/core/flex_qgssearchstringlexer.cpp"
+#line 4 "/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/flex_qgssearchstringlexer.cpp"
 
 #define  YY_INT_ALIGNED short int
 
@@ -568,7 +568,7 @@ static yyconst flex_int16_t yy_rule_linenum[20] =
 #define YY_MORE_ADJ 0
 #define YY_RESTORE_YY_MORE_OFFSET
 char *yytext;
-#line 1 "/Users/bhattgopal/dev/cpp/qgis0.9/src/core/qgssearchstringlexer.ll"
+#line 1 "/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgssearchstringlexer.ll"
 /***************************************************************************
                           qgssearchstringparser.ll
           Rules for lexical analysis of search strings done by Flex
@@ -585,9 +585,9 @@ char *yytext;
  *   (at your option) any later version.                                   *
  *                                                                         *
  ***************************************************************************/
-/* $Id: qgssearchstringlexer.ll 6415 2007-01-09 02:39:15Z wonder $ */
+/* $Id: qgssearchstringlexer.ll 9471 2008-10-10 20:02:22Z jef $ */
 // ensure that lexer will be 8-bit (and not just 7-bit)
-#line 27 "/Users/bhattgopal/dev/cpp/qgis0.9/src/core/qgssearchstringlexer.ll"
+#line 27 "/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgssearchstringlexer.ll"
   
 #include <stdlib.h>  // atof()
   
@@ -598,7 +598,7 @@ char *yytext;
 // which doesn't in MSVC compiler
 #define YY_NEVER_INTERACTIVE 1
 
-#line 602 "/Users/bhattgopal/dev/cpp/qgis0.9/build/src/core/flex_qgssearchstringlexer.cpp"
+#line 602 "/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/flex_qgssearchstringlexer.cpp"
 
 #define INITIAL 0
 
@@ -810,10 +810,10 @@ YY_DECL
 	register int yy_act;
     
 /* %% [7.0] user's declarations go here */
-#line 55 "/Users/bhattgopal/dev/cpp/qgis0.9/src/core/qgssearchstringlexer.ll"
+#line 55 "/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgssearchstringlexer.ll"
 
 
-#line 817 "/Users/bhattgopal/dev/cpp/qgis0.9/build/src/core/flex_qgssearchstringlexer.cpp"
+#line 817 "/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/flex_qgssearchstringlexer.cpp"
 
 	if ( !(yy_init) )
 		{
@@ -929,107 +929,107 @@ do_action:	/* This label is used only to access EOF actions. */
 
 case 1:
 YY_RULE_SETUP
-#line 57 "/Users/bhattgopal/dev/cpp/qgis0.9/src/core/qgssearchstringlexer.ll"
+#line 57 "/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgssearchstringlexer.ll"
 { return NOT; }
 	YY_BREAK
 case 2:
 YY_RULE_SETUP
-#line 58 "/Users/bhattgopal/dev/cpp/qgis0.9/src/core/qgssearchstringlexer.ll"
+#line 58 "/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgssearchstringlexer.ll"
 { return AND;  }
 	YY_BREAK
 case 3:
 YY_RULE_SETUP
-#line 59 "/Users/bhattgopal/dev/cpp/qgis0.9/src/core/qgssearchstringlexer.ll"
+#line 59 "/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgssearchstringlexer.ll"
 { return OR; }
 	YY_BREAK
 case 4:
 YY_RULE_SETUP
-#line 61 "/Users/bhattgopal/dev/cpp/qgis0.9/src/core/qgssearchstringlexer.ll"
+#line 61 "/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgssearchstringlexer.ll"
 {  yylval.op = QgsSearchTreeNode::opEQ; return COMPARISON; }
 	YY_BREAK
 case 5:
 YY_RULE_SETUP
-#line 62 "/Users/bhattgopal/dev/cpp/qgis0.9/src/core/qgssearchstringlexer.ll"
+#line 62 "/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgssearchstringlexer.ll"
 {  yylval.op = QgsSearchTreeNode::opNE; return COMPARISON; }
 	YY_BREAK
 case 6:
 YY_RULE_SETUP
-#line 63 "/Users/bhattgopal/dev/cpp/qgis0.9/src/core/qgssearchstringlexer.ll"
+#line 63 "/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgssearchstringlexer.ll"
 {  yylval.op = QgsSearchTreeNode::opLE; return COMPARISON; }
 	YY_BREAK
 case 7:
 YY_RULE_SETUP
-#line 64 "/Users/bhattgopal/dev/cpp/qgis0.9/src/core/qgssearchstringlexer.ll"
+#line 64 "/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgssearchstringlexer.ll"
 {  yylval.op = QgsSearchTreeNode::opGE; return COMPARISON; }
 	YY_BREAK
 case 8:
 YY_RULE_SETUP
-#line 65 "/Users/bhattgopal/dev/cpp/qgis0.9/src/core/qgssearchstringlexer.ll"
+#line 65 "/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgssearchstringlexer.ll"
 {  yylval.op = QgsSearchTreeNode::opNE; return COMPARISON; }
 	YY_BREAK
 case 9:
 YY_RULE_SETUP
-#line 66 "/Users/bhattgopal/dev/cpp/qgis0.9/src/core/qgssearchstringlexer.ll"
+#line 66 "/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgssearchstringlexer.ll"
 {  yylval.op = QgsSearchTreeNode::opLT; return COMPARISON; }
 	YY_BREAK
 case 10:
 YY_RULE_SETUP
-#line 67 "/Users/bhattgopal/dev/cpp/qgis0.9/src/core/qgssearchstringlexer.ll"
+#line 67 "/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgssearchstringlexer.ll"
 {  yylval.op = QgsSearchTreeNode::opGT; return COMPARISON; }
 	YY_BREAK
 case 11:
 YY_RULE_SETUP
-#line 68 "/Users/bhattgopal/dev/cpp/qgis0.9/src/core/qgssearchstringlexer.ll"
+#line 68 "/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgssearchstringlexer.ll"
 {  yylval.op = QgsSearchTreeNode::opRegexp; return COMPARISON; }
 	YY_BREAK
 case 12:
 YY_RULE_SETUP
-#line 69 "/Users/bhattgopal/dev/cpp/qgis0.9/src/core/qgssearchstringlexer.ll"
+#line 69 "/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgssearchstringlexer.ll"
 { yylval.op = QgsSearchTreeNode::opLike; return COMPARISON; }
 	YY_BREAK
 case 13:
 YY_RULE_SETUP
-#line 71 "/Users/bhattgopal/dev/cpp/qgis0.9/src/core/qgssearchstringlexer.ll"
+#line 71 "/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgssearchstringlexer.ll"
 { return yytext[0]; }
 	YY_BREAK
 case 14:
 YY_RULE_SETUP
-#line 73 "/Users/bhattgopal/dev/cpp/qgis0.9/src/core/qgssearchstringlexer.ll"
+#line 73 "/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgssearchstringlexer.ll"
 { return yytext[0]; }
 	YY_BREAK
 case 15:
 YY_RULE_SETUP
-#line 75 "/Users/bhattgopal/dev/cpp/qgis0.9/src/core/qgssearchstringlexer.ll"
+#line 75 "/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgssearchstringlexer.ll"
 { yylval.number  = atof(yytext); return NUMBER; }
 	YY_BREAK
 case 16:
 /* rule 16 can match eol */
 YY_RULE_SETUP
-#line 77 "/Users/bhattgopal/dev/cpp/qgis0.9/src/core/qgssearchstringlexer.ll"
+#line 77 "/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgssearchstringlexer.ll"
 { return STRING; }
 	YY_BREAK
 case 17:
 YY_RULE_SETUP
-#line 79 "/Users/bhattgopal/dev/cpp/qgis0.9/src/core/qgssearchstringlexer.ll"
+#line 79 "/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgssearchstringlexer.ll"
 { return COLUMN_REF; }
 	YY_BREAK
 case 18:
 /* rule 18 can match eol */
 YY_RULE_SETUP
-#line 81 "/Users/bhattgopal/dev/cpp/qgis0.9/src/core/qgssearchstringlexer.ll"
+#line 81 "/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgssearchstringlexer.ll"
 /* skip blanks and tabs */
 	YY_BREAK
 case 19:
 YY_RULE_SETUP
-#line 83 "/Users/bhattgopal/dev/cpp/qgis0.9/src/core/qgssearchstringlexer.ll"
-{ return UNKNOWN_CHARACTER; }
+#line 83 "/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgssearchstringlexer.ll"
+{ return Unknown_CHARACTER; }
 	YY_BREAK
 case 20:
 YY_RULE_SETUP
-#line 85 "/Users/bhattgopal/dev/cpp/qgis0.9/src/core/qgssearchstringlexer.ll"
+#line 85 "/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgssearchstringlexer.ll"
 ECHO;
 	YY_BREAK
-#line 1033 "/Users/bhattgopal/dev/cpp/qgis0.9/build/src/core/flex_qgssearchstringlexer.cpp"
+#line 1033 "/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/flex_qgssearchstringlexer.cpp"
 case YY_STATE_EOF(INITIAL):
 	yyterminate();
 
@@ -2152,7 +2152,7 @@ void yyfree (void * ptr )
 
 /* %ok-for-header */
 
-#line 85 "/Users/bhattgopal/dev/cpp/qgis0.9/src/core/qgssearchstringlexer.ll"
+#line 85 "/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgssearchstringlexer.ll"
 
 
 

@@ -15,7 +15,7 @@
  *   (at your option) any later version.                                   *
  *                                                                         *
  ***************************************************************************/
-/* $Id: qgsmapoverviewcanvas.h 6971 2007-05-31 00:33:26Z wonder $ */
+/* $Id: qgsmapoverviewcanvas.h 9605 2008-11-09 00:14:12Z timlinux $ */
 
 #ifndef QGSMAPOVERVIEWCANVAS_H
 #define QGSMAPOVERVIEWCANVAS_H
@@ -28,78 +28,81 @@
 #include <QPixmap>
 
 class QgsMapCanvas;
-class QgsMapRender;
+class QgsMapRenderer;
 class QgsPanningWidget; // defined in .cpp
-class QgsRect;
+class QgsRectangle;
 
+/** \ingroup gui
+ * A widget that displays an overview map.
+ */
 class GUI_EXPORT QgsMapOverviewCanvas : public QWidget
 {
-  Q_OBJECT;
-  
+    Q_OBJECT
+
   public:
-    QgsMapOverviewCanvas(QWidget * parent = 0, QgsMapCanvas* mapCanvas = NULL);
-    
+    QgsMapOverviewCanvas( QWidget * parent = 0, QgsMapCanvas* mapCanvas = NULL );
+
     ~QgsMapOverviewCanvas();
-  
+
     //! used for overview canvas to reflect changed extent in main map canvas
-    void reflectChangedExtent();
+    void drawExtentRect();
 
     //! renders overview and updates panning widget
     void refresh();
-  
+
     //! changes background color
-    void setbgColor(const QColor& color);
-        
+    void setBackgroundColor( const QColor& color );
+
     //! updates layer set for overview
-    void setLayerSet(const QStringList& layerSet);
-    
+    void setLayerSet( const QStringList& layerSet );
+
     QStringList& layerSet();
-    
-    void enableAntiAliasing(bool flag) { mAntiAliasing = flag; }
-    
-    void updateFullExtent(const QgsRect& rect);
-    
+
+    void enableAntiAliasing( bool flag ) { mAntiAliasing = flag; }
+
+    void updateFullExtent( const QgsRectangle& rect );
+
   public slots:
-    
-    void projectionsEnabled(bool flag);
-    
+
+    void hasCrsTransformEnabled( bool flag );
+
     void destinationSrsChanged();
-    
+
   protected:
-  
+
     //! Overridden paint event
-    void paintEvent(QPaintEvent * pe);
+    void paintEvent( QPaintEvent * pe );
 
     //! Overridden resize event
-    void resizeEvent(QResizeEvent * e);
+    void resizeEvent( QResizeEvent * e );
 
     //! Overridden mouse move event
-    void mouseMoveEvent(QMouseEvent * e);
+    void mouseMoveEvent( QMouseEvent * e );
 
     //! Overridden mouse press event
-    void mousePressEvent(QMouseEvent * e);
+    void mousePressEvent( QMouseEvent * e );
 
     //! Overridden mouse release event
-    void mouseReleaseEvent(QMouseEvent * e);
-    
+    void mouseReleaseEvent( QMouseEvent * e );
+
     //! called when panning to reflect mouse movement
-    void updatePanningWidget(const QPoint& pos);
-    
+    void updatePanningWidget( const QPoint& pos );
+
     //! widget for panning map in overview
     QgsPanningWidget* mPanningWidget;
-    
+
     //! position of cursor inside panning widget
     QPoint mPanningCursorOffset;
-  
+
     //! main map canvas - used to get/set extent
     QgsMapCanvas* mMapCanvas;
-    
+
     //! for rendering overview
-    QgsMapRender* mMapRender;
-    
+    QgsMapRenderer* mMapRenderer;
+
     //! pixmap where the map is stored
     QPixmap mPixmap;
-    
+
     //! background color
     QColor mBgColor;
 

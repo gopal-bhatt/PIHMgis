@@ -17,23 +17,24 @@
 
 #include "qgsmaptoolemitpoint.h"
 #include "qgsmapcanvas.h"
+#include <QMouseEvent>
 
 
-QgsMapToolEmitPoint::QgsMapToolEmitPoint(QgsMapCanvas* canvas)
-  : QgsMapTool(canvas)
+QgsMapToolEmitPoint::QgsMapToolEmitPoint( QgsMapCanvas* canvas )
+    : QgsMapTool( canvas )
 {
 }
 
-void QgsMapToolEmitPoint::canvasMoveEvent(QMouseEvent * e)
+void QgsMapToolEmitPoint::canvasMoveEvent( QMouseEvent * e )
 {
 }
 
-void QgsMapToolEmitPoint::canvasPressEvent(QMouseEvent * e)
+void QgsMapToolEmitPoint::canvasPressEvent( QMouseEvent * e )
 {
-  QgsPoint pnt = toMapCoords(e->pos());
-  emit gotPoint(pnt, e->button());
+  QgsPoint pnt = toMapCoordinates( e->pos() );
+  emit canvasClicked( pnt, e->button() );
 }
 
-void QgsMapToolEmitPoint::canvasReleaseEvent(QMouseEvent * e)
+void QgsMapToolEmitPoint::canvasReleaseEvent( QMouseEvent * e )
 {
 }

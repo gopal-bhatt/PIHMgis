@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading ui file 'qgscustomprojectiondialogbase.ui'
 **
-** Created: Wed Jun 11 19:03:30 2008
+** Created: Fri Jun 19 01:50:16 2009
 **      by: Qt User Interface Compiler version 4.3.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling ui file!
@@ -15,257 +15,237 @@
 #include <QtGui/QApplication>
 #include <QtGui/QButtonGroup>
 #include <QtGui/QDialog>
+#include <QtGui/QDialogButtonBox>
 #include <QtGui/QGridLayout>
+#include <QtGui/QGroupBox>
 #include <QtGui/QHBoxLayout>
 #include <QtGui/QLabel>
 #include <QtGui/QLineEdit>
 #include <QtGui/QPushButton>
-#include <QtGui/QSpacerItem>
-#include <QtGui/QTabWidget>
-#include <QtGui/QTextBrowser>
-#include <QtGui/QWidget>
+#include <QtGui/QToolButton>
 
 class Ui_QgsCustomProjectionDialogBase
 {
 public:
     QGridLayout *gridLayout;
-    QTabWidget *tabWidget2;
-    QWidget *tab1;
+    QGroupBox *groupBox;
     QGridLayout *gridLayout1;
-    QTextBrowser *textBrowser;
-    QLabel *textLabel5;
-    QLineEdit *leParameters;
-    QLabel *textLabel3_2;
-    QHBoxLayout *hboxLayout;
-    QPushButton *pbnFirst;
-    QPushButton *pbnPrevious;
-    QLabel *lblRecordNo;
-    QPushButton *pbnNext;
-    QPushButton *pbnLast;
-    QPushButton *pbnNew;
-    QPushButton *pbnSave;
-    QPushButton *pbnDelete;
-    QPushButton *pbnClose;
+    QLabel *label;
     QLabel *textLabel1;
     QLineEdit *leName;
-    QWidget *tab2;
+    QLabel *textLabel3_2;
+    QLineEdit *leParameters;
+    QHBoxLayout *hboxLayout;
+    QToolButton *pbnFirst;
+    QToolButton *pbnPrevious;
+    QLabel *lblRecordNo;
+    QToolButton *pbnNext;
+    QToolButton *pbnLast;
+    QToolButton *pbnNew;
+    QToolButton *pbnSave;
+    QToolButton *pbnDelete;
+    QGroupBox *groupBox_2;
     QGridLayout *gridLayout2;
-    QLabel *textLabel1_2;
-    QTextBrowser *textBrowser_2;
+    QLabel *label_2;
     QLabel *textLabel3_2_2;
     QLineEdit *leTestParameters;
-    QSpacerItem *spacerItem;
-    QLabel *textLabel2_3;
     QLabel *textLabel1_3;
-    QLabel *projectedY;
-    QLineEdit *eastWGS84;
-    QLabel *textLabel2_2_2;
+    QLabel *textLabel2_3;
     QLabel *textLabel2_2;
     QLineEdit *northWGS84;
     QLabel *projectedX;
+    QLabel *textLabel2_2_2;
+    QLineEdit *eastWGS84;
+    QLabel *projectedY;
     QPushButton *pbnCalculate;
+    QDialogButtonBox *buttonBox;
 
     void setupUi(QDialog *QgsCustomProjectionDialogBase)
     {
     if (QgsCustomProjectionDialogBase->objectName().isEmpty())
         QgsCustomProjectionDialogBase->setObjectName(QString::fromUtf8("QgsCustomProjectionDialogBase"));
-    QgsCustomProjectionDialogBase->resize(718, 323);
+    QgsCustomProjectionDialogBase->resize(474, 548);
     QgsCustomProjectionDialogBase->setWindowIcon(QIcon());
     gridLayout = new QGridLayout(QgsCustomProjectionDialogBase);
     gridLayout->setSpacing(6);
-    gridLayout->setMargin(9);
+    gridLayout->setMargin(11);
     gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
-    tabWidget2 = new QTabWidget(QgsCustomProjectionDialogBase);
-    tabWidget2->setObjectName(QString::fromUtf8("tabWidget2"));
-    tab1 = new QWidget();
-    tab1->setObjectName(QString::fromUtf8("tab1"));
-    gridLayout1 = new QGridLayout(tab1);
+    groupBox = new QGroupBox(QgsCustomProjectionDialogBase);
+    groupBox->setObjectName(QString::fromUtf8("groupBox"));
+    gridLayout1 = new QGridLayout(groupBox);
     gridLayout1->setSpacing(6);
-    gridLayout1->setMargin(9);
+    gridLayout1->setMargin(11);
     gridLayout1->setObjectName(QString::fromUtf8("gridLayout1"));
-    textBrowser = new QTextBrowser(tab1);
-    textBrowser->setObjectName(QString::fromUtf8("textBrowser"));
+    label = new QLabel(groupBox);
+    label->setObjectName(QString::fromUtf8("label"));
+    label->setWordWrap(true);
 
-    gridLayout1->addWidget(textBrowser, 1, 0, 1, 2);
+    gridLayout1->addWidget(label, 0, 0, 1, 2);
 
-    textLabel5 = new QLabel(tab1);
-    textLabel5->setObjectName(QString::fromUtf8("textLabel5"));
-    QFont font;
-    font.setFamily(QString::fromUtf8("Arial"));
-    font.setPointSize(18);
-    font.setBold(false);
-    font.setItalic(false);
-    font.setUnderline(false);
-    font.setWeight(50);
-    font.setStrikeOut(false);
-    textLabel5->setFont(font);
+    textLabel1 = new QLabel(groupBox);
+    textLabel1->setObjectName(QString::fromUtf8("textLabel1"));
 
-    gridLayout1->addWidget(textLabel5, 0, 0, 1, 2);
+    gridLayout1->addWidget(textLabel1, 1, 0, 1, 1);
 
-    leParameters = new QLineEdit(tab1);
-    leParameters->setObjectName(QString::fromUtf8("leParameters"));
+    leName = new QLineEdit(groupBox);
+    leName->setObjectName(QString::fromUtf8("leName"));
 
-    gridLayout1->addWidget(leParameters, 3, 1, 1, 1);
+    gridLayout1->addWidget(leName, 1, 1, 1, 1);
 
-    textLabel3_2 = new QLabel(tab1);
+    textLabel3_2 = new QLabel(groupBox);
     textLabel3_2->setObjectName(QString::fromUtf8("textLabel3_2"));
 
-    gridLayout1->addWidget(textLabel3_2, 3, 0, 1, 1);
+    gridLayout1->addWidget(textLabel3_2, 2, 0, 1, 1);
+
+    leParameters = new QLineEdit(groupBox);
+    leParameters->setObjectName(QString::fromUtf8("leParameters"));
+
+    gridLayout1->addWidget(leParameters, 2, 1, 1, 1);
 
     hboxLayout = new QHBoxLayout();
     hboxLayout->setSpacing(6);
-    hboxLayout->setMargin(0);
     hboxLayout->setObjectName(QString::fromUtf8("hboxLayout"));
-    pbnFirst = new QPushButton(tab1);
+    pbnFirst = new QToolButton(groupBox);
     pbnFirst->setObjectName(QString::fromUtf8("pbnFirst"));
+    pbnFirst->setIcon(QIcon(QString::fromUtf8("../../images/themes/default/mIconFirst.png")));
 
     hboxLayout->addWidget(pbnFirst);
 
-    pbnPrevious = new QPushButton(tab1);
+    pbnPrevious = new QToolButton(groupBox);
     pbnPrevious->setObjectName(QString::fromUtf8("pbnPrevious"));
+    pbnPrevious->setIcon(QIcon(QString::fromUtf8("../../images/themes/default/mIconPrevious.png")));
 
     hboxLayout->addWidget(pbnPrevious);
 
-    lblRecordNo = new QLabel(tab1);
+    lblRecordNo = new QLabel(groupBox);
     lblRecordNo->setObjectName(QString::fromUtf8("lblRecordNo"));
     lblRecordNo->setAlignment(Qt::AlignCenter);
 
     hboxLayout->addWidget(lblRecordNo);
 
-    pbnNext = new QPushButton(tab1);
+    pbnNext = new QToolButton(groupBox);
     pbnNext->setObjectName(QString::fromUtf8("pbnNext"));
+    pbnNext->setIcon(QIcon(QString::fromUtf8("../../images/themes/default/mIconNext.png")));
 
     hboxLayout->addWidget(pbnNext);
 
-    pbnLast = new QPushButton(tab1);
+    pbnLast = new QToolButton(groupBox);
     pbnLast->setObjectName(QString::fromUtf8("pbnLast"));
+    pbnLast->setIcon(QIcon(QString::fromUtf8("../../images/themes/default/mIconLast.png")));
 
     hboxLayout->addWidget(pbnLast);
 
-    pbnNew = new QPushButton(tab1);
+    pbnNew = new QToolButton(groupBox);
     pbnNew->setObjectName(QString::fromUtf8("pbnNew"));
+    pbnNew->setIcon(QIcon(QString::fromUtf8("../../images/themes/default/mIconNew.png")));
 
     hboxLayout->addWidget(pbnNew);
 
-    pbnSave = new QPushButton(tab1);
+    pbnSave = new QToolButton(groupBox);
     pbnSave->setObjectName(QString::fromUtf8("pbnSave"));
+    pbnSave->setIcon(QIcon(QString::fromUtf8("../../images/themes/default/mActionFileSave.png")));
 
     hboxLayout->addWidget(pbnSave);
 
-    pbnDelete = new QPushButton(tab1);
+    pbnDelete = new QToolButton(groupBox);
     pbnDelete->setObjectName(QString::fromUtf8("pbnDelete"));
+    pbnDelete->setIcon(QIcon(QString::fromUtf8("../../images/themes/default/mIconDelete.png")));
 
     hboxLayout->addWidget(pbnDelete);
 
-    pbnClose = new QPushButton(tab1);
-    pbnClose->setObjectName(QString::fromUtf8("pbnClose"));
 
-    hboxLayout->addWidget(pbnClose);
+    gridLayout1->addLayout(hboxLayout, 3, 1, 1, 1);
 
 
-    gridLayout1->addLayout(hboxLayout, 4, 0, 1, 2);
+    gridLayout->addWidget(groupBox, 0, 0, 1, 1);
 
-    textLabel1 = new QLabel(tab1);
-    textLabel1->setObjectName(QString::fromUtf8("textLabel1"));
-
-    gridLayout1->addWidget(textLabel1, 2, 0, 1, 1);
-
-    leName = new QLineEdit(tab1);
-    leName->setObjectName(QString::fromUtf8("leName"));
-
-    gridLayout1->addWidget(leName, 2, 1, 1, 1);
-
-    tabWidget2->addTab(tab1, QString());
-    tab2 = new QWidget();
-    tab2->setObjectName(QString::fromUtf8("tab2"));
-    gridLayout2 = new QGridLayout(tab2);
+    groupBox_2 = new QGroupBox(QgsCustomProjectionDialogBase);
+    groupBox_2->setObjectName(QString::fromUtf8("groupBox_2"));
+    gridLayout2 = new QGridLayout(groupBox_2);
     gridLayout2->setSpacing(6);
-    gridLayout2->setMargin(9);
+    gridLayout2->setMargin(11);
     gridLayout2->setObjectName(QString::fromUtf8("gridLayout2"));
-    textLabel1_2 = new QLabel(tab2);
-    textLabel1_2->setObjectName(QString::fromUtf8("textLabel1_2"));
+    label_2 = new QLabel(groupBox_2);
+    label_2->setObjectName(QString::fromUtf8("label_2"));
+    label_2->setWordWrap(true);
 
-    gridLayout2->addWidget(textLabel1_2, 0, 0, 1, 3);
+    gridLayout2->addWidget(label_2, 0, 0, 1, 3);
 
-    textBrowser_2 = new QTextBrowser(tab2);
-    textBrowser_2->setObjectName(QString::fromUtf8("textBrowser_2"));
-
-    gridLayout2->addWidget(textBrowser_2, 1, 0, 1, 3);
-
-    textLabel3_2_2 = new QLabel(tab2);
+    textLabel3_2_2 = new QLabel(groupBox_2);
     textLabel3_2_2->setObjectName(QString::fromUtf8("textLabel3_2_2"));
 
-    gridLayout2->addWidget(textLabel3_2_2, 2, 0, 1, 1);
+    gridLayout2->addWidget(textLabel3_2_2, 1, 0, 1, 1);
 
-    leTestParameters = new QLineEdit(tab2);
+    leTestParameters = new QLineEdit(groupBox_2);
     leTestParameters->setObjectName(QString::fromUtf8("leTestParameters"));
 
-    gridLayout2->addWidget(leTestParameters, 2, 1, 1, 2);
+    gridLayout2->addWidget(leTestParameters, 1, 1, 1, 2);
 
-    spacerItem = new QSpacerItem(41, 21, QSizePolicy::Expanding, QSizePolicy::Minimum);
-
-    gridLayout2->addItem(spacerItem, 3, 0, 1, 1);
-
-    textLabel2_3 = new QLabel(tab2);
-    textLabel2_3->setObjectName(QString::fromUtf8("textLabel2_3"));
-
-    gridLayout2->addWidget(textLabel2_3, 3, 2, 1, 1);
-
-    textLabel1_3 = new QLabel(tab2);
+    textLabel1_3 = new QLabel(groupBox_2);
     textLabel1_3->setObjectName(QString::fromUtf8("textLabel1_3"));
 
-    gridLayout2->addWidget(textLabel1_3, 3, 1, 1, 1);
+    gridLayout2->addWidget(textLabel1_3, 2, 1, 1, 1);
 
-    projectedY = new QLabel(tab2);
+    textLabel2_3 = new QLabel(groupBox_2);
+    textLabel2_3->setObjectName(QString::fromUtf8("textLabel2_3"));
+
+    gridLayout2->addWidget(textLabel2_3, 2, 2, 1, 1);
+
+    textLabel2_2 = new QLabel(groupBox_2);
+    textLabel2_2->setObjectName(QString::fromUtf8("textLabel2_2"));
+
+    gridLayout2->addWidget(textLabel2_2, 3, 0, 1, 1);
+
+    northWGS84 = new QLineEdit(groupBox_2);
+    northWGS84->setObjectName(QString::fromUtf8("northWGS84"));
+    northWGS84->setEnabled(true);
+
+    gridLayout2->addWidget(northWGS84, 3, 1, 1, 1);
+
+    projectedX = new QLabel(groupBox_2);
+    projectedX->setObjectName(QString::fromUtf8("projectedX"));
+    projectedX->setEnabled(true);
+    projectedX->setFrameShape(QFrame::Box);
+
+    gridLayout2->addWidget(projectedX, 3, 2, 1, 1);
+
+    textLabel2_2_2 = new QLabel(groupBox_2);
+    textLabel2_2_2->setObjectName(QString::fromUtf8("textLabel2_2_2"));
+
+    gridLayout2->addWidget(textLabel2_2_2, 4, 0, 1, 1);
+
+    eastWGS84 = new QLineEdit(groupBox_2);
+    eastWGS84->setObjectName(QString::fromUtf8("eastWGS84"));
+
+    gridLayout2->addWidget(eastWGS84, 4, 1, 1, 1);
+
+    projectedY = new QLabel(groupBox_2);
     projectedY->setObjectName(QString::fromUtf8("projectedY"));
     projectedY->setEnabled(true);
     projectedY->setFrameShape(QFrame::Box);
     projectedY->setMargin(1);
 
-    gridLayout2->addWidget(projectedY, 5, 2, 1, 1);
+    gridLayout2->addWidget(projectedY, 4, 2, 1, 1);
 
-    eastWGS84 = new QLineEdit(tab2);
-    eastWGS84->setObjectName(QString::fromUtf8("eastWGS84"));
-
-    gridLayout2->addWidget(eastWGS84, 5, 1, 1, 1);
-
-    textLabel2_2_2 = new QLabel(tab2);
-    textLabel2_2_2->setObjectName(QString::fromUtf8("textLabel2_2_2"));
-
-    gridLayout2->addWidget(textLabel2_2_2, 5, 0, 1, 1);
-
-    textLabel2_2 = new QLabel(tab2);
-    textLabel2_2->setObjectName(QString::fromUtf8("textLabel2_2"));
-
-    gridLayout2->addWidget(textLabel2_2, 4, 0, 1, 1);
-
-    northWGS84 = new QLineEdit(tab2);
-    northWGS84->setObjectName(QString::fromUtf8("northWGS84"));
-    northWGS84->setEnabled(true);
-
-    gridLayout2->addWidget(northWGS84, 4, 1, 1, 1);
-
-    projectedX = new QLabel(tab2);
-    projectedX->setObjectName(QString::fromUtf8("projectedX"));
-    projectedX->setEnabled(true);
-    projectedX->setFrameShape(QFrame::Box);
-
-    gridLayout2->addWidget(projectedX, 4, 2, 1, 1);
-
-    pbnCalculate = new QPushButton(tab2);
+    pbnCalculate = new QPushButton(groupBox_2);
     pbnCalculate->setObjectName(QString::fromUtf8("pbnCalculate"));
 
-    gridLayout2->addWidget(pbnCalculate, 6, 0, 1, 3);
+    gridLayout2->addWidget(pbnCalculate, 5, 0, 1, 3);
 
-    tabWidget2->addTab(tab2, QString());
 
-    gridLayout->addWidget(tabWidget2, 0, 0, 1, 1);
+    gridLayout->addWidget(groupBox_2, 1, 0, 1, 1);
 
+    buttonBox = new QDialogButtonBox(QgsCustomProjectionDialogBase);
+    buttonBox->setObjectName(QString::fromUtf8("buttonBox"));
+    buttonBox->setStandardButtons(QDialogButtonBox::Ok);
+
+    gridLayout->addWidget(buttonBox, 2, 0, 1, 1);
+
+    textLabel1->setBuddy(leName);
+    textLabel3_2->setBuddy(leParameters);
     textLabel3_2_2->setBuddy(leTestParameters);
-    textLabel2_2_2->setBuddy(eastWGS84);
     textLabel2_2->setBuddy(northWGS84);
-    QWidget::setTabOrder(tabWidget2, textBrowser);
-    QWidget::setTabOrder(textBrowser, leName);
+    textLabel2_2_2->setBuddy(eastWGS84);
     QWidget::setTabOrder(leName, leParameters);
     QWidget::setTabOrder(leParameters, pbnFirst);
     QWidget::setTabOrder(pbnFirst, pbnPrevious);
@@ -274,55 +254,43 @@ public:
     QWidget::setTabOrder(pbnLast, pbnNew);
     QWidget::setTabOrder(pbnNew, pbnSave);
     QWidget::setTabOrder(pbnSave, pbnDelete);
-    QWidget::setTabOrder(pbnDelete, pbnClose);
-    QWidget::setTabOrder(pbnClose, textBrowser_2);
-    QWidget::setTabOrder(textBrowser_2, leTestParameters);
+    QWidget::setTabOrder(pbnDelete, leTestParameters);
     QWidget::setTabOrder(leTestParameters, northWGS84);
     QWidget::setTabOrder(northWGS84, eastWGS84);
     QWidget::setTabOrder(eastWGS84, pbnCalculate);
+    QWidget::setTabOrder(pbnCalculate, buttonBox);
 
     retranslateUi(QgsCustomProjectionDialogBase);
-
-    tabWidget2->setCurrentIndex(0);
-
+    QObject::connect(buttonBox, SIGNAL(accepted()), QgsCustomProjectionDialogBase, SLOT(accept()));
 
     QMetaObject::connectSlotsByName(QgsCustomProjectionDialogBase);
     } // setupUi
 
     void retranslateUi(QDialog *QgsCustomProjectionDialogBase)
     {
-    QgsCustomProjectionDialogBase->setWindowTitle(QApplication::translate("QgsCustomProjectionDialogBase", "Custom Projection Definition", 0, QApplication::UnicodeUTF8));
-    textBrowser->setHtml(QApplication::translate("QgsCustomProjectionDialogBase", "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-weight:400; font-style:normal; text-decoration:none;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Arial'; font-size:10pt;\">You can define your own custom projection here. The definition must conform to the proj4 format for specifying a Spatial Reference System.</p></body></html>", 0, QApplication::UnicodeUTF8));
-    textLabel5->setText(QApplication::translate("QgsCustomProjectionDialogBase", "Custom Projection Definition", 0, QApplication::UnicodeUTF8));
-    textLabel3_2->setText(QApplication::translate("QgsCustomProjectionDialogBase", "Parameters:", 0, QApplication::UnicodeUTF8));
+    QgsCustomProjectionDialogBase->setWindowTitle(QApplication::translate("QgsCustomProjectionDialogBase", "Custom Coordinate Reference System Definition", 0, QApplication::UnicodeUTF8));
+    groupBox->setTitle(QApplication::translate("QgsCustomProjectionDialogBase", "Define", 0, QApplication::UnicodeUTF8));
+    label->setText(QApplication::translate("QgsCustomProjectionDialogBase", "You can define your own custom Coordinate Reference System (CRS) here. The definition must conform to the proj4 format for specifying a CRS.", 0, QApplication::UnicodeUTF8));
+    textLabel1->setText(QApplication::translate("QgsCustomProjectionDialogBase", "Name", 0, QApplication::UnicodeUTF8));
+    textLabel3_2->setText(QApplication::translate("QgsCustomProjectionDialogBase", "Parameters", 0, QApplication::UnicodeUTF8));
     pbnFirst->setText(QApplication::translate("QgsCustomProjectionDialogBase", "|<", 0, QApplication::UnicodeUTF8));
     pbnPrevious->setText(QApplication::translate("QgsCustomProjectionDialogBase", "<", 0, QApplication::UnicodeUTF8));
     lblRecordNo->setText(QApplication::translate("QgsCustomProjectionDialogBase", "1 of 1", 0, QApplication::UnicodeUTF8));
     pbnNext->setText(QApplication::translate("QgsCustomProjectionDialogBase", ">", 0, QApplication::UnicodeUTF8));
     pbnLast->setText(QApplication::translate("QgsCustomProjectionDialogBase", ">|", 0, QApplication::UnicodeUTF8));
-    pbnNew->setText(QApplication::translate("QgsCustomProjectionDialogBase", "New", 0, QApplication::UnicodeUTF8));
-    pbnSave->setText(QApplication::translate("QgsCustomProjectionDialogBase", "Save", 0, QApplication::UnicodeUTF8));
-    pbnDelete->setText(QApplication::translate("QgsCustomProjectionDialogBase", "Delete", 0, QApplication::UnicodeUTF8));
-    pbnClose->setText(QApplication::translate("QgsCustomProjectionDialogBase", "Close", 0, QApplication::UnicodeUTF8));
-    textLabel1->setText(QApplication::translate("QgsCustomProjectionDialogBase", "Name:", 0, QApplication::UnicodeUTF8));
-    tabWidget2->setTabText(tabWidget2->indexOf(tab1), QApplication::translate("QgsCustomProjectionDialogBase", "Define", 0, QApplication::UnicodeUTF8));
-    textLabel1_2->setText(QApplication::translate("QgsCustomProjectionDialogBase", "Transform from WGS84 to the chosen projection", 0, QApplication::UnicodeUTF8));
-    textBrowser_2->setHtml(QApplication::translate("QgsCustomProjectionDialogBase", "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-weight:400; font-style:normal; text-decoration:none;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Arial'; font-size:10pt;\">Use the text boxes below to test the projection definition you are creating. Enter a coordinate where both the lat/long and the projected result are known (for example by reading off a map). Then press the calculate button to see if the projection definition you are creating is accurate.</p></body></html>", 0, QApplication::UnicodeUTF8));
-    textLabel3_2_2->setText(QApplication::translate("QgsCustomProjectionDialogBase", "Parameters:", 0, QApplication::UnicodeUTF8));
-    textLabel2_3->setText(QApplication::translate("QgsCustomProjectionDialogBase", "Projected Corrdinate System", 0, QApplication::UnicodeUTF8));
+    pbnNew->setText(QApplication::translate("QgsCustomProjectionDialogBase", "*", 0, QApplication::UnicodeUTF8));
+    pbnSave->setText(QApplication::translate("QgsCustomProjectionDialogBase", "S", 0, QApplication::UnicodeUTF8));
+    pbnDelete->setText(QApplication::translate("QgsCustomProjectionDialogBase", "X", 0, QApplication::UnicodeUTF8));
+    groupBox_2->setTitle(QApplication::translate("QgsCustomProjectionDialogBase", "Test", 0, QApplication::UnicodeUTF8));
+    label_2->setText(QApplication::translate("QgsCustomProjectionDialogBase", "Use the text boxes below to test the CRS definition you are creating. Enter a coordinate where both the lat/long and the transformed result are known (for example by reading off a map). Then press the calculate button to see if the CRS definition you are creating is accurate.", 0, QApplication::UnicodeUTF8));
+    textLabel3_2_2->setText(QApplication::translate("QgsCustomProjectionDialogBase", "Parameters", 0, QApplication::UnicodeUTF8));
     textLabel1_3->setText(QApplication::translate("QgsCustomProjectionDialogBase", "Geographic / WGS84", 0, QApplication::UnicodeUTF8));
-    projectedY->setText(QString());
-    textLabel2_2_2->setText(QApplication::translate("QgsCustomProjectionDialogBase", "East:", 0, QApplication::UnicodeUTF8));
-    textLabel2_2->setText(QApplication::translate("QgsCustomProjectionDialogBase", "North:", 0, QApplication::UnicodeUTF8));
+    textLabel2_3->setText(QApplication::translate("QgsCustomProjectionDialogBase", "Destination CRS        ", 0, QApplication::UnicodeUTF8));
+    textLabel2_2->setText(QApplication::translate("QgsCustomProjectionDialogBase", "North", 0, QApplication::UnicodeUTF8));
     projectedX->setText(QString());
+    textLabel2_2_2->setText(QApplication::translate("QgsCustomProjectionDialogBase", "East", 0, QApplication::UnicodeUTF8));
+    projectedY->setText(QString());
     pbnCalculate->setText(QApplication::translate("QgsCustomProjectionDialogBase", "Calculate", 0, QApplication::UnicodeUTF8));
-    tabWidget2->setTabText(tabWidget2->indexOf(tab2), QApplication::translate("QgsCustomProjectionDialogBase", "Test", 0, QApplication::UnicodeUTF8));
     Q_UNUSED(QgsCustomProjectionDialogBase);
     } // retranslateUi
 

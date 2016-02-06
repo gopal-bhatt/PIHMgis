@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'qgsvectorlayerproperties.h'
 **
-** Created: Wed Jun 11 19:05:43 2008
+** Created: Fri Jun 19 01:54:09 2009
 **      by: The Qt Meta Object Compiler version 59 (Qt 4.3.2)
 **
 ** WARNING! All changes made in this file will be lost!
@@ -22,39 +22,57 @@ static const uint qt_meta_data_QgsVectorLayerProperties[] = {
        1,       // revision
        0,       // classname
        0,    0, // classinfo
-      11,   10, // methods
+      22,   10, // methods
        0,    0, // properties
        0,    0, // enums/sets
 
  // signals: signature, parameters, type, tag, flags
-      34,   26,   25,   25, 0x05,
+      45,   26,   25,   25, 0x05,
+      73,   25,   25,   25, 0x05,
 
  // slots: signature, parameters, type, tag, flags
-      64,   57,   25,   25, 0x0a,
-      90,   25,   25,   25, 0x0a,
-     106,   25,   98,   25, 0x0a,
-     129,  120,   25,   25, 0x0a,
-     166,   25,   25,   25, 0x0a,
-     185,   25,   25,   25, 0x0a,
-     193,   25,   25,   25, 0x0a,
-     222,   25,   25,   25, 0x0a,
-     251,   25,   25,   25, 0x0a,
-     273,   25,   25,   25, 0x0a,
+     108,  101,   25,   25, 0x0a,
+     134,   25,   25,   25, 0x0a,
+     150,   25,  142,   25, 0x0a,
+     170,  161,   25,   25, 0x0a,
+     207,   25,   25,   25, 0x0a,
+     226,   25,   25,   25, 0x0a,
+     234,   25,   25,   25, 0x0a,
+     250,   25,   25,   25, 0x0a,
+     267,   25,   25,   25, 0x0a,
+     296,   25,   25,   25, 0x0a,
+     325,   25,   25,   25, 0x0a,
+     347,   25,   25,   25, 0x0a,
+     383,   25,   25,   25, 0x0a,
+     416,   25,   25,   25, 0x0a,
+     449,   25,   25,   25, 0x0a,
+     475,   25,   25,   25, 0x0a,
+     503,   25,   25,   25, 0x0a,
+     518,   25,   25,   25, 0x0a,
+     540,  536,   25,   25, 0x0a,
+     560,  536,   25,   25, 0x0a,
 
        0        // eod
 };
 
 static const char qt_meta_stringdata_QgsVectorLayerProperties[] = {
-    "QgsVectorLayerProperties\0\0layerID\0"
-    "refreshLegend(QString)\0string\0"
+    "QgsVectorLayerProperties\0\0layerID,expandItem\0"
+    "refreshLegend(QString,bool)\0"
+    "toggleEditing(QgsMapLayer*)\0string\0"
     "alterLayerDialog(QString)\0reset()\0"
-    "QString\0getMetadata()\0theValue\0"
+    "QString\0metadata()\0theValue\0"
     "sliderTransparency_valueChanged(int)\0"
-    "setLabelCheckBox()\0apply()\0"
-    "on_buttonBox_helpRequested()\0"
+    "setLabelCheckBox()\0apply()\0toggleEditing()\0"
+    "editingToggled()\0on_buttonBox_helpRequested()\0"
     "on_pbnQueryBuilder_clicked()\0"
     "on_pbnIndex_clicked()\0"
     "on_pbnChangeSpatialRefSys_clicked()\0"
+    "on_pbnLoadDefaultStyle_clicked()\0"
+    "on_pbnSaveDefaultStyle_clicked()\0"
+    "on_pbnLoadStyle_clicked()\0"
+    "on_pbnSaveStyleAs_clicked()\0addAttribute()\0"
+    "deleteAttribute()\0idx\0attributeAdded(int)\0"
+    "attributeDeleted(int)\0"
 };
 
 const QMetaObject QgsVectorLayerProperties::staticMetaObject = {
@@ -82,27 +100,45 @@ int QgsVectorLayerProperties::qt_metacall(QMetaObject::Call _c, int _id, void **
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
         switch (_id) {
-        case 0: refreshLegend((*reinterpret_cast< QString(*)>(_a[1]))); break;
-        case 1: alterLayerDialog((*reinterpret_cast< const QString(*)>(_a[1]))); break;
-        case 2: reset(); break;
-        case 3: { QString _r = getMetadata();
+        case 0: refreshLegend((*reinterpret_cast< QString(*)>(_a[1])),(*reinterpret_cast< bool(*)>(_a[2]))); break;
+        case 1: toggleEditing((*reinterpret_cast< QgsMapLayer*(*)>(_a[1]))); break;
+        case 2: alterLayerDialog((*reinterpret_cast< const QString(*)>(_a[1]))); break;
+        case 3: reset(); break;
+        case 4: { QString _r = metadata();
             if (_a[0]) *reinterpret_cast< QString*>(_a[0]) = _r; }  break;
-        case 4: sliderTransparency_valueChanged((*reinterpret_cast< int(*)>(_a[1]))); break;
-        case 5: setLabelCheckBox(); break;
-        case 6: apply(); break;
-        case 7: on_buttonBox_helpRequested(); break;
-        case 8: on_pbnQueryBuilder_clicked(); break;
-        case 9: on_pbnIndex_clicked(); break;
-        case 10: on_pbnChangeSpatialRefSys_clicked(); break;
+        case 5: sliderTransparency_valueChanged((*reinterpret_cast< int(*)>(_a[1]))); break;
+        case 6: setLabelCheckBox(); break;
+        case 7: apply(); break;
+        case 8: toggleEditing(); break;
+        case 9: editingToggled(); break;
+        case 10: on_buttonBox_helpRequested(); break;
+        case 11: on_pbnQueryBuilder_clicked(); break;
+        case 12: on_pbnIndex_clicked(); break;
+        case 13: on_pbnChangeSpatialRefSys_clicked(); break;
+        case 14: on_pbnLoadDefaultStyle_clicked(); break;
+        case 15: on_pbnSaveDefaultStyle_clicked(); break;
+        case 16: on_pbnLoadStyle_clicked(); break;
+        case 17: on_pbnSaveStyleAs_clicked(); break;
+        case 18: addAttribute(); break;
+        case 19: deleteAttribute(); break;
+        case 20: attributeAdded((*reinterpret_cast< int(*)>(_a[1]))); break;
+        case 21: attributeDeleted((*reinterpret_cast< int(*)>(_a[1]))); break;
         }
-        _id -= 11;
+        _id -= 22;
     }
     return _id;
 }
 
 // SIGNAL 0
-void QgsVectorLayerProperties::refreshLegend(QString _t1)
+void QgsVectorLayerProperties::refreshLegend(QString _t1, bool _t2)
+{
+    void *_a[] = { 0, const_cast<void*>(reinterpret_cast<const void*>(&_t1)), const_cast<void*>(reinterpret_cast<const void*>(&_t2)) };
+    QMetaObject::activate(this, &staticMetaObject, 0, _a);
+}
+
+// SIGNAL 1
+void QgsVectorLayerProperties::toggleEditing(QgsMapLayer * _t1)
 {
     void *_a[] = { 0, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
-    QMetaObject::activate(this, &staticMetaObject, 0, _a);
+    QMetaObject::activate(this, &staticMetaObject, 1, _a);
 }

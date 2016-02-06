@@ -33,7 +33,7 @@ void paraFileDlg::run()
 
 	QString logFileName("/tmp/log.html");
 	ofstream log;
-	log.open(logFileName.ascii());
+	log.open(qPrintable(logFileName));
 	log<<"<html><body><font size=3 color=black><p> Verifying Files...</p></font></body></html>";
         log.close();
         MessageLog->setSource(logFileName);
@@ -41,7 +41,7 @@ void paraFileDlg::run()
         MessageLog->setModified(TRUE);
 
         ofstream parameters;
-        parameters.open((paraFileLineEdit->text()).ascii(), ios::out);
+        parameters.open(qPrintable((paraFileLineEdit->text())), ios::out);
 
 	int runFlag = 1;
 
@@ -51,13 +51,13 @@ void paraFileDlg::run()
 	        runFlag=0;
         }*/
 
-	log.open(logFileName.ascii(), ios::app);
+	log.open(qPrintable(logFileName), ios::app);
 	if((paraFileLineEdit->text()).length()==0){
 		log<<"<p><font size=3 color=red> Error! Please input .para Output File</p>";
 		runFlag = 0;
 	}
 	else{
-		log<<"<p>Checking... "<<(paraFileLineEdit->text()).ascii()<<"... ";
+		log<<"<p>Checking... "<<qPrintable((paraFileLineEdit->text()))<<"... ";
 		if(parameters == NULL){
 			log<<"<font size=3 color=red> Error!</p>";
 			//qWarning("\nCan not open output file name");
@@ -71,7 +71,7 @@ void paraFileDlg::run()
 	QApplication::processEvents();
 
 	
-	log.open(logFileName.ascii(), ios::app);
+	log.open(qPrintable(logFileName), ios::app);
 	log<<"<p><font size=3 color=black>Checking Krylov Dimension..."; 
 	if(KDlineEdit->text().length()==0){
 		log<<"<font size=3 color=red>Error!</p>";
@@ -85,7 +85,7 @@ void paraFileDlg::run()
 	MessageLog->reload();
 	QApplication::processEvents();
 
-	log.open(logFileName.ascii(), ios::app);
+	log.open(qPrintable(logFileName), ios::app);
 	log<<"<p><font size=3 color=black>Checking Convergence Threshold...";
         if(CTlineEdit->text().length()==0){
 		log<<"<font size=3 color=red>Error!</p>";
@@ -99,7 +99,7 @@ void paraFileDlg::run()
 	MessageLog->reload();
 	QApplication::processEvents();
 
-	log.open(logFileName.ascii(), ios::app);
+	log.open(qPrintable(logFileName), ios::app);
 	log<<"<p><font size=3 color=black>Checking Absolute Tolerance...";
         if(ATlineEdit->text().length()==0){
 		log<<"<font size=3 color=red>Error!</p>";
@@ -114,7 +114,7 @@ void paraFileDlg::run()
 	QApplication::processEvents();
 
 
-	log.open(logFileName.ascii(), ios::app);
+	log.open(qPrintable(logFileName), ios::app);
 	log<<"<p><font size=3 color=black>Checking Relative Tolerance...";
         if(RTlineEdit->text().length()==0){
 		log<<"<font size=3 color=red>Error!</p>";
@@ -128,7 +128,7 @@ void paraFileDlg::run()
 	MessageLog->reload();
 	QApplication::processEvents();
 
-	log.open(logFileName.ascii(), ios::app);
+	log.open(qPrintable(logFileName), ios::app);
 	log<<"<p><font size=3 color=black>Checking Initial Step...";
         if(ISlineEdit->text().length()==0){
 		log<<"<font size=3 color=red>Error!</p>";
@@ -142,7 +142,7 @@ void paraFileDlg::run()
 	MessageLog->reload();
 	QApplication::processEvents();
 
-	log.open(logFileName.ascii(), ios::app);
+	log.open(qPrintable(logFileName), ios::app);
 	log<<"<p><font size=3 color=black>Checking Maximum Step...";
         if(MSlineEdit->text().length()==0){
 		log<<"<font size=3 color=red>Error!</p>";
@@ -157,7 +157,7 @@ void paraFileDlg::run()
 	QApplication::processEvents();
 
 	
-	log.open(logFileName.ascii(), ios::app);
+	log.open(qPrintable(logFileName), ios::app);
 	log<<"<p><font size=3 color=black>Checking Start Time...";
         if(STlineEdit->text().length()==0){
 		log<<"<font size=3 color=red>Error!</p>";
@@ -172,7 +172,7 @@ void paraFileDlg::run()
 	QApplication::processEvents();
 
 
-	log.open(logFileName.ascii(), ios::app);
+	log.open(qPrintable(logFileName), ios::app);
 	log<<"<p><font size=3 color=black>Checking End Time...";
         if(ETlineEdit->text().length()==0){
 		log<<"<font size=3 color=red>Error!</p>";
@@ -187,7 +187,7 @@ void paraFileDlg::run()
 	QApplication::processEvents();
 
 
-	log.open(logFileName.ascii(), ios::app);
+	log.open(qPrintable(logFileName), ios::app);
 	log<<"<p><font size=3 color=black>Checking Step Size...";
         if(a_lineEdit->text().length()==0){
 		log<<"<font size=3 color=red>Error!</p>";
@@ -202,7 +202,7 @@ void paraFileDlg::run()
 	QApplication::processEvents();
 
 
-	log.open(logFileName.ascii(), ios::app);
+	log.open(qPrintable(logFileName), ios::app);
 	log<<"<p><font size=3 color=black>Checking Base Step Size...";
         if(b_lineEdit->text().length()==0){
 		log<<"<font size=3 color=red>Error!</p>";
@@ -219,7 +219,7 @@ void paraFileDlg::run()
 
 	if(runFlag == 1){
 
-		log.open(logFileName.ascii(), ios::app);
+		log.open(qPrintable(logFileName), ios::app);
 		log<<"<p>Writing .para file...";
 		log.close();
 		MessageLog->reload();
@@ -236,9 +236,9 @@ void paraFileDlg::run()
 	        else
         	        parameters<<"0\t";
 
-	        if(imComboBox->currentItem() == 0)
+	        if(imComboBox->currentIndex() == 0)
         	        parameters<<"3\n";
-	        else if(imComboBox->currentItem() == 1)
+	        else if(imComboBox->currentIndex() == 1)
         	        parameters<<"1\n";
 	        else
         	        parameters<<"0\n";
@@ -349,61 +349,61 @@ void paraFileDlg::run()
                         parameters<<"0\n";
 		///
                 if(checkBox1->isChecked())
-                        parameters<<(lineEdit1->text()).ascii()<<"\t";
+                        parameters<<qPrintable((lineEdit1->text()))<<"\t";
                 else
                         parameters<<"0\t";
                 if(checkBox2->isChecked())
-                        parameters<<(lineEdit2->text()).ascii()<<"\t";
+                        parameters<<qPrintable((lineEdit2->text()))<<"\t";
                 else
                         parameters<<"0\t";
                 if(checkBox3->isChecked())
-                        parameters<<(lineEdit3->text()).ascii()<<"\t";
+                        parameters<<qPrintable((lineEdit3->text()))<<"\t";
                 else
                         parameters<<"0\t";
                 if(checkBox4->isChecked())
-                        parameters<<(lineEdit4->text()).ascii()<<"\n";
+                        parameters<<qPrintable((lineEdit4->text()))<<"\n";
                 else
                         parameters<<"0\n";
 
 		////
                 if(checkBox5->isChecked())
-                        parameters<<(lineEdit5->text()).ascii()<<"\t";
+                        parameters<<qPrintable((lineEdit5->text()))<<"\t";
                 else
                         parameters<<"0\t";
                 if(checkBox6->isChecked())
-                        parameters<<(lineEdit6->text()).ascii()<<"\t";
+                        parameters<<qPrintable((lineEdit6->text()))<<"\t";
                 else
                         parameters<<"0\t";
                 if(checkBox7->isChecked())
-                        parameters<<(lineEdit7->text()).ascii()<<"\t";
+                        parameters<<qPrintable((lineEdit7->text()))<<"\t";
                 else
                         parameters<<"0\t";
                 if(checkBox8->isChecked() || checkBox9->isChecked() || checkBox10->isChecked())
-                        parameters<<(lineEdit8->text()).ascii()<<"\t";
+                        parameters<<qPrintable((lineEdit8->text()))<<"\t";
                 else
                         parameters<<"0\t";
                 if(checkBox11->isChecked() || checkBox12->isChecked() || checkBox13->isChecked() || checkBox14->isChecked() || checkBox15->isChecked() || checkBox16->isChecked() || checkBox17->isChecked() || checkBox18->isChecked() || checkBox19->isChecked() || checkBox20->isChecked())
-                        parameters<<(lineEdit11->text()).ascii()<<"\n";
+                        parameters<<qPrintable((lineEdit11->text()))<<"\n";
                 else
                         parameters<<"0\n";
 
 		////
 
-		if(umComboBox->currentItem() == 0)
+		if(umComboBox->currentIndex() == 0)
 	                parameters<<"1\t";
         	else
                 	parameters<<"2\t";
 
-	        if(smComboBox->currentItem() == 0)
+	        if(smComboBox->currentIndex() == 0)
         	        parameters<<"2\t";
-	        else if(smComboBox->currentItem() == 1)
+	        else if(smComboBox->currentIndex() == 1)
         	        parameters<<"1\t";
 	        else
         	        parameters<<"3\t";
 
-	        if(rmComboBox->currentItem() == 0)
+	        if(rmComboBox->currentIndex() == 0)
         	        parameters<<"2\n";
-	        else if(rmComboBox->currentItem() == 1)
+	        else if(rmComboBox->currentIndex() == 1)
         	        parameters<<"1\n";
 	        else
         	        parameters<<"3\n";
@@ -415,40 +415,40 @@ void paraFileDlg::run()
 	        else
         	        parameters<<"2\t";
 
-	        if(GScomboBox->currentItem() == 0)
+	        if(GScomboBox->currentIndex() == 0)
         	        parameters<<"1\t";
 	        else
         	        parameters<<"2\t";
 
-	        parameters<<(KDlineEdit->text()).ascii()<<"\t";
+	        parameters<<qPrintable((KDlineEdit->text()))<<"\t";
 
-        	parameters<<(CTlineEdit->text()).ascii()<<"\n";
+        	parameters<<qPrintable((CTlineEdit->text()))<<"\n";
 
 	        /*************************************************/
 
-        	parameters<<(ATlineEdit->text()).ascii()<<"\t";
+        	parameters<<qPrintable((ATlineEdit->text()))<<"\t";
 
-	        parameters<<(RTlineEdit->text()).ascii()<<"\t";
+	        parameters<<qPrintable((RTlineEdit->text()))<<"\t";
 
-        	parameters<<(ISlineEdit->text()).ascii()<<"\t";
+        	parameters<<qPrintable((ISlineEdit->text()))<<"\t";
 
-	        parameters<<(MSlineEdit->text()).ascii()<<"\t";
+	        parameters<<qPrintable((MSlineEdit->text()))<<"\t";
 
-		parameters<<(ETSlineEdit->text()).ascii()<<"\n";
+		parameters<<qPrintable((ETSlineEdit->text()))<<"\n";
 
 		/***********/
 
-		parameters<<(STlineEdit->text()).ascii()<<"\t";
+		parameters<<qPrintable((STlineEdit->text()))<<"\t";
 
-		parameters<<(ETlineEdit->text()).ascii()<<"\t";
+		parameters<<qPrintable((ETlineEdit->text()))<<"\t";
 
-		if(SScomboBox->currentItem() == 0)
+		if(SScomboBox->currentIndex() == 0)
 			parameters<<"0\n";
 		else
 			parameters<<"1\n";
 		
-		parameters<<(a_lineEdit->text()).ascii()<<"\t";
-		parameters<<(b_lineEdit->text()).ascii()<<"\n";
+		parameters<<qPrintable((a_lineEdit->text()))<<"\t";
+		parameters<<qPrintable((b_lineEdit->text()))<<"\n";
 
 		if(checkBoxFillSurf->isChecked())
 			parameters<<"1\t";
@@ -460,7 +460,7 @@ void paraFileDlg::run()
 		else
 			parameters<<"0\n";
 
-		log.open(logFileName.ascii(), ios::app);
+		log.open(qPrintable(logFileName), ios::app);
 		log<<" Done!</p>";
 		log.close();
 		MessageLog->reload();

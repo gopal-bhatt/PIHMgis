@@ -14,7 +14,7 @@
  *   (at your option) any later version.                                   *
  *                                                                         *
  ***************************************************************************/
-/* $Id: qgsexception.h 7202 2007-09-16 02:45:42Z gsherman $ */
+/* $Id: qgsexception.h 9138 2008-08-23 21:37:31Z jef $ */
 #ifndef QGSEXCEPTION_H
 #define QGSEXCEPTION_H
 
@@ -22,22 +22,21 @@
 #include <string>
 #include <list>
 
-#include <qdom.h> 
-#include <qstring.h>
+#include <QDomNode>
 
-/**
-   Defines a qgis exception class
+/** \ingroup core
+  * Defines a qgis exception class.
  */
 class CORE_EXPORT QgsException : public std::exception
 {
-public:
+  public:
 
     QgsException( std::string const & what )
         : what_( what )
     {}
 
     QgsException( QString const & what )
-        : what_( (const char *)what.toLocal8Bit().data() )
+        : what_(( const char * )what.toLocal8Bit().data() )
     {}
 
     virtual ~QgsException() throw()
@@ -45,10 +44,10 @@ public:
 
     const char* what() const throw()
     {
-        return what_.c_str();
+      return what_.c_str();
     }
-    
-private:
+
+  private:
 
     /// description of exception
     std::string what_;
@@ -56,22 +55,22 @@ private:
 }; // class QgsException
 
 
-/** for Qgis I/O related exceptions 
+/** for Qgis I/O related exceptions
 
   @note usually thrown for opening file's that don't exist, and the like.
 
 */
 class QgsIOException : public QgsException
 {
-public:
+  public:
 
     QgsIOException( std::string const & what )
         : QgsException( what )
-        {}
+    {}
 
     QgsIOException( QString const & what )
         : QgsException( what )
-        {}
+    {}
 
 }; // class QgsIOException
 
@@ -82,26 +81,26 @@ public:
 */
 class QgsProjectBadLayerException : public QgsException
 {
-public:
+  public:
 
     QgsProjectBadLayerException( std::list<QDomNode> const & layers )
-        : QgsException(std::string(msg_)),
-          mBrokenLayers( layers )
+        : QgsException( std::string( msg_ ) ),
+        mBrokenLayers( layers )
     {}
-    
+
     ~QgsProjectBadLayerException() throw()
     {}
-    
+
     std::list<QDomNode> const & layers() const
     {
-        return mBrokenLayers;
+      return mBrokenLayers;
     }
 
-private:
+  private:
 
     /** QDomNodes representing the state of a layer that couldn't be loaded
 
-    The layer data was either relocated or deleted.  The DOM node also
+    The layer data was either relocated or deleted.  The Dom node also
     contains ancillary data such as line widths and the like.
 
      */

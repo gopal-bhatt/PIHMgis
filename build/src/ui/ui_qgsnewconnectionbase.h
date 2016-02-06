@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading ui file 'qgsnewconnectionbase.ui'
 **
-** Created: Wed Jun 11 19:03:30 2008
+** Created: Fri Jun 19 01:50:17 2009
 **      by: Qt User Interface Compiler version 4.3.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling ui file!
@@ -10,8 +10,6 @@
 #ifndef UI_QGSNEWCONNECTIONBASE_H
 #define UI_QGSNEWCONNECTIONBASE_H
 
-#include <Qt3Support/Q3GroupBox>
-#include <Qt3Support/Q3MimeSourceFactory>
 #include <QtCore/QVariant>
 #include <QtGui/QAction>
 #include <QtGui/QApplication>
@@ -20,6 +18,7 @@
 #include <QtGui/QDialog>
 #include <QtGui/QFrame>
 #include <QtGui/QGridLayout>
+#include <QtGui/QGroupBox>
 #include <QtGui/QHBoxLayout>
 #include <QtGui/QLabel>
 #include <QtGui/QLineEdit>
@@ -31,7 +30,7 @@ class Ui_QgsNewConnectionBase
 {
 public:
     QGridLayout *gridLayout;
-    Q3GroupBox *GroupBox1;
+    QGroupBox *GroupBox1;
     QGridLayout *gridLayout1;
     QFrame *frame_2;
     QCheckBox *cb_publicSchemaOnly;
@@ -77,17 +76,11 @@ public:
     gridLayout->setSpacing(6);
     gridLayout->setMargin(9);
     gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
-    GroupBox1 = new Q3GroupBox(QgsNewConnectionBase);
+    GroupBox1 = new QGroupBox(QgsNewConnectionBase);
     GroupBox1->setObjectName(QString::fromUtf8("GroupBox1"));
-    GroupBox1->setOrientation(Qt::Vertical);
-    GroupBox1->setColumnLayout(0, Qt::Vertical);
-    GroupBox1->layout()->setSpacing(5);
-    GroupBox1->layout()->setMargin(0);
-    gridLayout1 = new QGridLayout();
-    QBoxLayout *boxlayout = qobject_cast<QBoxLayout *>(GroupBox1->layout());
-    if (boxlayout)
-        boxlayout->addLayout(gridLayout1);
-    gridLayout1->setAlignment(Qt::AlignTop);
+    gridLayout1 = new QGridLayout(GroupBox1);
+    gridLayout1->setSpacing(5);
+    gridLayout1->setMargin(0);
     gridLayout1->setObjectName(QString::fromUtf8("gridLayout1"));
     frame_2 = new QFrame(GroupBox1);
     frame_2->setObjectName(QString::fromUtf8("frame_2"));
@@ -272,11 +265,11 @@ public:
     {
     QgsNewConnectionBase->setWindowTitle(QApplication::translate("QgsNewConnectionBase", "Create a New PostGIS connection", 0, QApplication::UnicodeUTF8));
     GroupBox1->setTitle(QApplication::translate("QgsNewConnectionBase", "Connection Information", 0, QApplication::UnicodeUTF8));
-    cb_publicSchemaOnly->setToolTip(QApplication::translate("QgsNewConnectionBase", "<html><head><meta name=\"qrichtext\" content=\"1\" /></head><body style=\" white-space: pre-wrap; font-family:Sans Serif; font-size:12pt; font-weight:400; font-style:normal; text-decoration:none;\"><p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Restrict the search to the public schema for spatial tables not in the geometry_columns table</p></body></html>", 0, QApplication::UnicodeUTF8));
-    cb_publicSchemaOnly->setWhatsThis(QApplication::translate("QgsNewConnectionBase", "<html><head><meta name=\"qrichtext\" content=\"1\" /></head><body style=\" white-space: pre-wrap; font-family:Sans Serif; font-size:12pt; font-weight:400; font-style:normal; text-decoration:none;\"><p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">When searching for spatial tables that are not in the geometry_columns tables, restrict the search to tables that are in the public schema (for some databases this can save lots of time)</p></body></html>", 0, QApplication::UnicodeUTF8));
+    cb_publicSchemaOnly->setToolTip(QApplication::translate("QgsNewConnectionBase", "Restrict the search to the public schema for spatial tables not in the geometry_columns table", 0, QApplication::UnicodeUTF8));
+    cb_publicSchemaOnly->setWhatsThis(QApplication::translate("QgsNewConnectionBase", "When searching for spatial tables that are not in the geometry_columns tables, restrict the search to tables that are in the public schema (for some databases this can save lots of time)", 0, QApplication::UnicodeUTF8));
     cb_publicSchemaOnly->setText(QApplication::translate("QgsNewConnectionBase", "Only look in the 'public' schema", 0, QApplication::UnicodeUTF8));
-    cb_geometryColumnsOnly->setToolTip(QApplication::translate("QgsNewConnectionBase", "<html><head><meta name=\"qrichtext\" content=\"1\" /></head><body style=\" white-space: pre-wrap; font-family:Sans Serif; font-size:9pt; font-weight:400; font-style:normal; text-decoration:none;\"><p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:12pt;\">Restrict the displayed tables to those that are in the geometry_columns table</p></body></html>", 0, QApplication::UnicodeUTF8));
-    cb_geometryColumnsOnly->setWhatsThis(QApplication::translate("QgsNewConnectionBase", "<html><head><meta name=\"qrichtext\" content=\"1\" /></head><body style=\" white-space: pre-wrap; font-family:Sans Serif; font-size:9pt; font-weight:400; font-style:normal; text-decoration:none;\"><p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:12pt;\">Restricts the displayed tables to those that are in the geometry_columns table. This can speed up the initial display of spatial tables.</p></body></html>", 0, QApplication::UnicodeUTF8));
+    cb_geometryColumnsOnly->setToolTip(QApplication::translate("QgsNewConnectionBase", "Restrict the displayed tables to those that are in the geometry_columns table", 0, QApplication::UnicodeUTF8));
+    cb_geometryColumnsOnly->setWhatsThis(QApplication::translate("QgsNewConnectionBase", "Restricts the displayed tables to those that are in the geometry_columns table. This can speed up the initial display of spatial tables.", 0, QApplication::UnicodeUTF8));
     cb_geometryColumnsOnly->setText(QApplication::translate("QgsNewConnectionBase", "Only look in the geometry_columns table", 0, QApplication::UnicodeUTF8));
     chkStorePassword->setText(QApplication::translate("QgsNewConnectionBase", "Save Password", 0, QApplication::UnicodeUTF8));
     btnConnect->setText(QApplication::translate("QgsNewConnectionBase", "Test Connect", 0, QApplication::UnicodeUTF8));

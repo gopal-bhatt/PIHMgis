@@ -1,8 +1,8 @@
-# Install script for directory: /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/mac/Contents/Resources
+# Install script for directory: /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/mac/Contents/Resources
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  SET(CMAKE_INSTALL_PREFIX "/Users/bhattgopal/apps/qgis0.9.0.app/Contents/MacOS")
+  SET(CMAKE_INSTALL_PREFIX "/Users/bhattgopal/apps/qgis1.0.2.app/Contents/MacOS")
 ENDIF(NOT DEFINED CMAKE_INSTALL_PREFIX)
 STRING(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -27,15 +27,15 @@ IF(NOT CMAKE_INSTALL_COMPONENT)
   ENDIF(COMPONENT)
 ENDIF(NOT CMAKE_INSTALL_COMPONENT)
 
-FILE(INSTALL DESTINATION "/Users/bhattgopal/apps/qgis0.9.0.app/Contents/MacOS/../Resources" TYPE FILE COMPONENTS "Unspecified" FILES "/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/mac/Contents/Resources/asc.icns")
-FILE(INSTALL DESTINATION "/Users/bhattgopal/apps/qgis0.9.0.app/Contents/MacOS/../Resources" TYPE FILE COMPONENTS "Unspecified" FILES "/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/mac/Contents/Resources/ddf.icns")
-FILE(INSTALL DESTINATION "/Users/bhattgopal/apps/qgis0.9.0.app/Contents/MacOS/../Resources" TYPE FILE COMPONENTS "Unspecified" FILES "/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/mac/Contents/Resources/dem.icns")
-FILE(INSTALL DESTINATION "/Users/bhattgopal/apps/qgis0.9.0.app/Contents/MacOS/../Resources" TYPE FILE COMPONENTS "Unspecified" FILES "/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/mac/Contents/Resources/dt0.icns")
-FILE(INSTALL DESTINATION "/Users/bhattgopal/apps/qgis0.9.0.app/Contents/MacOS/../Resources" TYPE FILE COMPONENTS "Unspecified" FILES "/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/mac/Contents/Resources/gml.icns")
-FILE(INSTALL DESTINATION "/Users/bhattgopal/apps/qgis0.9.0.app/Contents/MacOS/../Resources" TYPE FILE COMPONENTS "Unspecified" FILES "/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/mac/Contents/Resources/img.icns")
-FILE(INSTALL DESTINATION "/Users/bhattgopal/apps/qgis0.9.0.app/Contents/MacOS/../Resources" TYPE FILE COMPONENTS "Unspecified" FILES "/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/mac/Contents/Resources/jp2.icns")
-FILE(INSTALL DESTINATION "/Users/bhattgopal/apps/qgis0.9.0.app/Contents/MacOS/../Resources" TYPE FILE COMPONENTS "Unspecified" FILES "/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/mac/Contents/Resources/mif.icns")
-FILE(INSTALL DESTINATION "/Users/bhattgopal/apps/qgis0.9.0.app/Contents/MacOS/../Resources" TYPE FILE COMPONENTS "Unspecified" FILES "/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/mac/Contents/Resources/qgis.icns")
-FILE(INSTALL DESTINATION "/Users/bhattgopal/apps/qgis0.9.0.app/Contents/MacOS/../Resources" TYPE FILE COMPONENTS "Unspecified" FILES "/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/mac/Contents/Resources/qgs.icns")
-FILE(INSTALL DESTINATION "/Users/bhattgopal/apps/qgis0.9.0.app/Contents/MacOS/../Resources" TYPE FILE COMPONENTS "Unspecified" FILES "/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/mac/Contents/Resources/shp.icns")
-FILE(INSTALL DESTINATION "/Users/bhattgopal/apps/qgis0.9.0.app/Contents/MacOS/../Resources" TYPE FILE COMPONENTS "Unspecified" FILES "/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/mac/Contents/Resources/tiff.icns")
+FILE(INSTALL DESTINATION "/Users/bhattgopal/apps/qgis1.0.2.app/Contents/MacOS/../Resources" TYPE FILE COMPONENTS "Unspecified" FILES "/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/mac/Contents/Resources/asc.icns")
+FILE(INSTALL DESTINATION "/Users/bhattgopal/apps/qgis1.0.2.app/Contents/MacOS/../Resources" TYPE FILE COMPONENTS "Unspecified" FILES "/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/mac/Contents/Resources/ddf.icns")
+FILE(INSTALL DESTINATION "/Users/bhattgopal/apps/qgis1.0.2.app/Contents/MacOS/../Resources" TYPE FILE COMPONENTS "Unspecified" FILES "/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/mac/Contents/Resources/dem.icns")
+FILE(INSTALL DESTINATION "/Users/bhattgopal/apps/qgis1.0.2.app/Contents/MacOS/../Resources" TYPE FILE COMPONENTS "Unspecified" FILES "/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/mac/Contents/Resources/dt0.icns")
+FILE(INSTALL DESTINATION "/Users/bhattgopal/apps/qgis1.0.2.app/Contents/MacOS/../Resources" TYPE FILE COMPONENTS "Unspecified" FILES "/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/mac/Contents/Resources/gml.icns")
+FILE(INSTALL DESTINATION "/Users/bhattgopal/apps/qgis1.0.2.app/Contents/MacOS/../Resources" TYPE FILE COMPONENTS "Unspecified" FILES "/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/mac/Contents/Resources/img.icns")
+FILE(INSTALL DESTINATION "/Users/bhattgopal/apps/qgis1.0.2.app/Contents/MacOS/../Resources" TYPE FILE COMPONENTS "Unspecified" FILES "/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/mac/Contents/Resources/jp2.icns")
+FILE(INSTALL DESTINATION "/Users/bhattgopal/apps/qgis1.0.2.app/Contents/MacOS/../Resources" TYPE FILE COMPONENTS "Unspecified" FILES "/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/mac/Contents/Resources/mif.icns")
+FILE(INSTALL DESTINATION "/Users/bhattgopal/apps/qgis1.0.2.app/Contents/MacOS/../Resources" TYPE FILE COMPONENTS "Unspecified" FILES "/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/mac/Contents/Resources/qgis.icns")
+FILE(INSTALL DESTINATION "/Users/bhattgopal/apps/qgis1.0.2.app/Contents/MacOS/../Resources" TYPE FILE COMPONENTS "Unspecified" FILES "/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/mac/Contents/Resources/qgs.icns")
+FILE(INSTALL DESTINATION "/Users/bhattgopal/apps/qgis1.0.2.app/Contents/MacOS/../Resources" TYPE FILE COMPONENTS "Unspecified" FILES "/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/mac/Contents/Resources/shp.icns")
+FILE(INSTALL DESTINATION "/Users/bhattgopal/apps/qgis1.0.2.app/Contents/MacOS/../Resources" TYPE FILE COMPONENTS "Unspecified" FILES "/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/mac/Contents/Resources/tiff.icns")

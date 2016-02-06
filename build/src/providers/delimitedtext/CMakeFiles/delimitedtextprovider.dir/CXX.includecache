@@ -1,10 +1,22 @@
 ../src/providers/delimitedtext/../../core/qgis.h
-qevent.h
+QEvent
+-
+QString
 -
 
 ../src/providers/delimitedtext/../../core/qgsapplication.h
 QApplication
 -
+
+../src/providers/delimitedtext/../../core/qgscoordinatereferencesystem.h
+ostream
+-
+QString
+-
+QMap
+-
+qgis.h
+../src/providers/delimitedtext/../../core/qgis.h
 
 ../src/providers/delimitedtext/../../core/qgsdataprovider.h
 QObject
@@ -20,6 +32,8 @@ QMap
 QString
 -
 QVariant
+-
+QList
 -
 
 ../src/providers/delimitedtext/../../core/qgsfield.h
@@ -43,8 +57,8 @@ map
 -
 QObject
 -
-qgsrect.h
-../src/providers/delimitedtext/../../core/qgsrect.h
+qgsrectangle.h
+../src/providers/delimitedtext/../../core/qgsrectangle.h
 
 ../src/providers/delimitedtext/../../core/qgsmessageoutput.h
 QString
@@ -58,21 +72,19 @@ iostream
 QString
 -
 
-../src/providers/delimitedtext/../../core/qgsrect.h
+../src/providers/delimitedtext/../../core/qgsrectangle.h
 iosfwd
 -
 qgspoint.h
 ../src/providers/delimitedtext/../../core/qgspoint.h
 
-../src/providers/delimitedtext/../../core/qgsspatialrefsys.h
-ostream
+../src/providers/delimitedtext/../../core/qgssnapper.h
+qgspoint.h
+../src/providers/delimitedtext/../../core/qgspoint.h
+QList
 -
-QString
+QMultiMap
 -
-QMap
--
-qgis.h
-../src/providers/delimitedtext/../../core/qgis.h
 
 ../src/providers/delimitedtext/../../core/qgsvectordataprovider.h
 QList
@@ -87,6 +99,8 @@ qgsdataprovider.h
 ../src/providers/delimitedtext/../../core/qgsdataprovider.h
 qgsvectorlayer.h
 ../src/providers/delimitedtext/../../core/qgsvectorlayer.h
+qgsfield.h
+../src/providers/delimitedtext/../../core/qgsfield.h
 
 ../src/providers/delimitedtext/../../core/qgsvectorlayer.h
 QMap
@@ -95,16 +109,28 @@ QSet
 -
 QList
 -
+QStringList
+-
 qgis.h
 ../src/providers/delimitedtext/../../core/qgis.h
 qgsmaplayer.h
 ../src/providers/delimitedtext/../../core/qgsmaplayer.h
 qgsfeature.h
 ../src/providers/delimitedtext/../../core/qgsfeature.h
+qgssnapper.h
+../src/providers/delimitedtext/../../core/qgssnapper.h
+qgsfeature.h
+../src/providers/delimitedtext/../../core/qgsfeature.h
+qgsfield.h
+../src/providers/delimitedtext/../../core/qgsfield.h
 
 /Library/Frameworks/QtCore.framework/Headers/QDataStream
 qdatastream.h
 /Library/Frameworks/QtCore.framework/Headers/qdatastream.h
+
+/Library/Frameworks/QtCore.framework/Headers/QEvent
+qcoreevent.h
+/Library/Frameworks/QtCore.framework/Headers/qcoreevent.h
 
 /Library/Frameworks/QtCore.framework/Headers/QFile
 qfile.h
@@ -115,6 +141,10 @@ qlist.h
 /Library/Frameworks/QtCore.framework/Headers/qlist.h
 
 /Library/Frameworks/QtCore.framework/Headers/QMap
+qmap.h
+/Library/Frameworks/QtCore.framework/Headers/qmap.h
+
+/Library/Frameworks/QtCore.framework/Headers/QMultiMap
 qmap.h
 /Library/Frameworks/QtCore.framework/Headers/qmap.h
 
@@ -157,6 +187,12 @@ qvariant.h
 /Library/Frameworks/QtCore.framework/Headers/QtGlobal
 qglobal.h
 /Library/Frameworks/QtCore.framework/Headers/qglobal.h
+
+/Library/Frameworks/QtCore.framework/Headers/qcoreevent.h
+QtCore/qnamespace.h
+-
+QtCore/qbytearray.h
+-
 
 /Library/Frameworks/QtCore.framework/Headers/qdatastream.h
 QtCore/qiodevice.h
@@ -340,35 +376,23 @@ QtGui/qrgb.h
 QtGui/qtransportauth_qws.h
 -
 
-/Library/Frameworks/QtGui.framework/Headers/qevent.h
-QtGui/qwindowdefs.h
--
-QtCore/qobject.h
--
-QtGui/qregion.h
--
-QtCore/qnamespace.h
--
-QtCore/qstring.h
--
-QtGui/qkeysequence.h
--
-QtCore/qcoreevent.h
--
-QtGui/qmime.h
--
-QtGui/qdrag.h
--
-QtCore/qvariant.h
--
-
 /Library/Frameworks/QtGui.framework/Headers/qmessagebox.h
 QtGui/qdialog.h
 -
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/providers/delimitedtext/qgsdelimitedtextprovider.cpp
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/providers/delimitedtext/../../../../src/providers/delimitedtext/qgsdelimitedtextprovider.h
+qgsvectordataprovider.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/providers/delimitedtext/../../../../src/providers/delimitedtext/qgsvectordataprovider.h
+QStringList
+-
+
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/providers/delimitedtext/moc_qgsdelimitedtextprovider.cxx
+../../../../src/providers/delimitedtext/qgsdelimitedtextprovider.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/providers/delimitedtext/../../../../src/providers/delimitedtext/qgsdelimitedtextprovider.h
+
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/providers/delimitedtext/qgsdelimitedtextprovider.cpp
 qgsdelimitedtextprovider.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/providers/delimitedtext/qgsdelimitedtextprovider.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/providers/delimitedtext/qgsdelimitedtextprovider.h
 QtGlobal
 -
 QFile
@@ -388,29 +412,27 @@ QRegExp
 QUrl
 -
 qgsapplication.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/providers/delimitedtext/qgsapplication.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/providers/delimitedtext/qgsapplication.h
 qgsdataprovider.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/providers/delimitedtext/qgsdataprovider.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/providers/delimitedtext/qgsdataprovider.h
 qgsfeature.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/providers/delimitedtext/qgsfeature.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/providers/delimitedtext/qgsfeature.h
 qgsfield.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/providers/delimitedtext/qgsfield.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/providers/delimitedtext/qgsfield.h
 qgslogger.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/providers/delimitedtext/qgslogger.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/providers/delimitedtext/qgslogger.h
 qgsmessageoutput.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/providers/delimitedtext/qgsmessageoutput.h
-qgsrect.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/providers/delimitedtext/qgsrect.h
-qgsspatialrefsys.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/providers/delimitedtext/qgsspatialrefsys.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/providers/delimitedtext/qgsmessageoutput.h
+qgsrectangle.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/providers/delimitedtext/qgsrectangle.h
+qgscoordinatereferencesystem.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/providers/delimitedtext/qgscoordinatereferencesystem.h
 qgis.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/providers/delimitedtext/qgis.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/providers/delimitedtext/qgis.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/providers/delimitedtext/qgsdelimitedtextprovider.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/providers/delimitedtext/qgsdelimitedtextprovider.h
 qgsvectordataprovider.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/providers/delimitedtext/qgsvectordataprovider.h
-map
--
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/providers/delimitedtext/qgsvectordataprovider.h
 QStringList
 -
 

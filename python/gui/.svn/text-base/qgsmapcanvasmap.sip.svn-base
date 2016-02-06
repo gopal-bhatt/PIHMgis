@@ -33,12 +33,12 @@ class QgsMapCanvasMap : QGraphicsRectItem
     
     void enableAntiAliasing(bool flag);
     
-    void useQImageToRender(bool flag);
+    void useImageToRender(bool flag);
 
     //! renders map using QgsMapRender to mPixmap
     void render();
     
-    void setBgColor(const QColor& color);
+    void setBackgroundColor(const QColor& color);
     
     void setPanningOffset(const QPoint& point);
     

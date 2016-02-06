@@ -6,24 +6,24 @@ class QgsSingleSymbolRenderer : QgsRenderer
 %End
 
  public:
-    QgsSingleSymbolRenderer(QGis::VectorType type);
+    QgsSingleSymbolRenderer(QGis::GeometryType type);
     QgsSingleSymbolRenderer(const QgsSingleSymbolRenderer& other);
     virtual ~QgsSingleSymbolRenderer();
     /**Replaces the current mSymbol by sy*/
-    void addSymbol(QgsSymbol* sy);
+    void addSymbol(QgsSymbol* sy /Transfer/);
     /*Returns a pointer to mSymbol*/
     const QgsSymbol* symbol() const;
     /**Renders an OGRFeature*/
-    void renderFeature(QPainter* p, QgsFeature& f, QImage* img, double* scalefactor, bool selected, double widthScale = 1);
+    void renderFeature(QPainter* p, QgsFeature& f, QImage* img, bool selected, double widthScale = 1.0, double rasterScaleFactor = 1.0);
     /**Reads the renderer configuration from an XML file
-     @param rnode the DOM node to read 
+     @param rnode the Dom node to read 
      @param vl the vector layer which will be associated with the renderer*/
-    virtual void readXML(const QDomNode& rnode, QgsVectorLayer& vl);
+    virtual int readXML(const QDomNode& rnode, QgsVectorLayer& vl);
     /**Writes the contents of the renderer to a configuration file*/
     /*virtual void writeXML(std::ostream& xml);*/
     /**Writes the contents of the renderer to a configuration file
      @ return true in case of success*/
-    virtual bool writeXML( QDomNode & layer_node, QDomDocument & document ) const;
+    virtual bool writeXML( QDomNode & layer_node, QDomDocument & document, const QgsVectorLayer& vl  ) const;
     /**Returns false, no attributes neede for single symbol*/
     bool needsAttributes() const;
     /**Returns an empty list, since no classification attributes are used*/
@@ -33,6 +33,6 @@ class QgsSingleSymbolRenderer : QgsRenderer
     /**Returns a list containing mSymbol*/
     const QList<QgsSymbol*> symbols() const;
     /**Returns a deep copy of this renderer*/
-    QgsRenderer* clone() const;
+    QgsRenderer* clone() const /Factory/;
 };
 

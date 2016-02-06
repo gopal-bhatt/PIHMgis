@@ -9,6 +9,7 @@ SET (GEOREF_SRCS
      qgsimagewarper.cpp
      qgsleastsquares.cpp
      qgspointdialog.cpp
+     qgsgeorefdescriptiondialog.cpp
      qgsgeorefwarpoptionsdialog.cpp
      mapcoordsdialog.cpp
 )
@@ -17,6 +18,7 @@ SET (GEOREF_UIS
      pluginguibase.ui
      qgspointdialogbase.ui
      mapcoordsdialogbase.ui
+     qgsgeorefdescriptiondialogbase.ui
      qgsgeorefwarpoptionsdialogbase.ui
 )
 
@@ -53,7 +55,6 @@ INCLUDE_DIRECTORIES(
 )
 
 TARGET_LINK_LIBRARIES(georefplugin
-  ${QT_LIBRARIES}
   qgis_core
   qgis_gui
   ${GSL_LIBRARIES}

@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading ui file 'qgsprojectionselectorbase.ui'
 **
-** Created: Wed Jun 11 19:03:31 2008
+** Created: Fri Jun 19 01:50:17 2009
 **      by: Qt User Interface Compiler version 4.3.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling ui file!
@@ -27,25 +27,21 @@ class Ui_QgsProjectionSelectorBase
 {
 public:
     QGridLayout *gridLayout;
-    QGroupBox *groupBox_2;
-    QGridLayout *gridLayout1;
-    QGroupBox *groupBox;
-    QGridLayout *gridLayout2;
-    QPushButton *pbnFind;
-    QLineEdit *leSearch;
-    QRadioButton *radName;
-    QRadioButton *radSRSID;
-    QRadioButton *radEPSGID;
-    QRadioButton *radSRID;
-    QTextEdit *teProjection;
     QTreeWidget *lstCoordinateSystems;
+    QTextEdit *teProjection;
+    QGroupBox *groupBox;
+    QGridLayout *gridLayout1;
+    QRadioButton *radEpsgCrsId;
+    QRadioButton *radName;
+    QLineEdit *leSearch;
+    QPushButton *pbnFind;
 
     void setupUi(QWidget *QgsProjectionSelectorBase)
     {
     if (QgsProjectionSelectorBase->objectName().isEmpty())
         QgsProjectionSelectorBase->setObjectName(QString::fromUtf8("QgsProjectionSelectorBase"));
-    QgsProjectionSelectorBase->resize(468, 428);
-    QSizePolicy sizePolicy(static_cast<QSizePolicy::Policy>(7), static_cast<QSizePolicy::Policy>(5));
+    QgsProjectionSelectorBase->resize(466, 416);
+    QSizePolicy sizePolicy(QSizePolicy::Expanding, QSizePolicy::Preferred);
     sizePolicy.setHorizontalStretch(0);
     sizePolicy.setVerticalStretch(0);
     sizePolicy.setHeightForWidth(QgsProjectionSelectorBase->sizePolicy().hasHeightForWidth());
@@ -53,110 +49,89 @@ public:
     QgsProjectionSelectorBase->setWindowIcon(QIcon());
     gridLayout = new QGridLayout(QgsProjectionSelectorBase);
     gridLayout->setSpacing(6);
-    gridLayout->setMargin(9);
+    gridLayout->setMargin(11);
     gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
-    groupBox_2 = new QGroupBox(QgsProjectionSelectorBase);
-    groupBox_2->setObjectName(QString::fromUtf8("groupBox_2"));
-    QSizePolicy sizePolicy1(static_cast<QSizePolicy::Policy>(7), static_cast<QSizePolicy::Policy>(7));
+    gridLayout->setVerticalSpacing(3);
+    gridLayout->setContentsMargins(3, 3, 3, 3);
+    lstCoordinateSystems = new QTreeWidget(QgsProjectionSelectorBase);
+    lstCoordinateSystems->setObjectName(QString::fromUtf8("lstCoordinateSystems"));
+    lstCoordinateSystems->setAlternatingRowColors(true);
+    lstCoordinateSystems->setUniformRowHeights(true);
+    lstCoordinateSystems->setColumnCount(3);
+
+    gridLayout->addWidget(lstCoordinateSystems, 0, 0, 1, 1);
+
+    teProjection = new QTextEdit(QgsProjectionSelectorBase);
+    teProjection->setObjectName(QString::fromUtf8("teProjection"));
+    QSizePolicy sizePolicy1(QSizePolicy::Expanding, QSizePolicy::Minimum);
     sizePolicy1.setHorizontalStretch(0);
     sizePolicy1.setVerticalStretch(0);
-    sizePolicy1.setHeightForWidth(groupBox_2->sizePolicy().hasHeightForWidth());
-    groupBox_2->setSizePolicy(sizePolicy1);
-    gridLayout1 = new QGridLayout(groupBox_2);
-    gridLayout1->setSpacing(6);
-    gridLayout1->setMargin(9);
-    gridLayout1->setObjectName(QString::fromUtf8("gridLayout1"));
-    groupBox = new QGroupBox(groupBox_2);
+    sizePolicy1.setHeightForWidth(teProjection->sizePolicy().hasHeightForWidth());
+    teProjection->setSizePolicy(sizePolicy1);
+    teProjection->setMinimumSize(QSize(0, 30));
+    teProjection->setMaximumSize(QSize(16777215, 50));
+    teProjection->setBaseSize(QSize(0, 50));
+    teProjection->setAutoFormatting(QTextEdit::AutoBulletList);
+    teProjection->setReadOnly(true);
+
+    gridLayout->addWidget(teProjection, 1, 0, 1, 1);
+
+    groupBox = new QGroupBox(QgsProjectionSelectorBase);
     groupBox->setObjectName(QString::fromUtf8("groupBox"));
-    QSizePolicy sizePolicy2(static_cast<QSizePolicy::Policy>(3), static_cast<QSizePolicy::Policy>(1));
+    QSizePolicy sizePolicy2(QSizePolicy::MinimumExpanding, QSizePolicy::Minimum);
     sizePolicy2.setHorizontalStretch(0);
     sizePolicy2.setVerticalStretch(0);
     sizePolicy2.setHeightForWidth(groupBox->sizePolicy().hasHeightForWidth());
     groupBox->setSizePolicy(sizePolicy2);
-    gridLayout2 = new QGridLayout(groupBox);
-    gridLayout2->setSpacing(0);
-    gridLayout2->setMargin(2);
-    gridLayout2->setObjectName(QString::fromUtf8("gridLayout2"));
-    pbnFind = new QPushButton(groupBox);
-    pbnFind->setObjectName(QString::fromUtf8("pbnFind"));
-    pbnFind->setMaximumSize(QSize(100, 16777215));
-    pbnFind->setDefault(true);
+    gridLayout1 = new QGridLayout(groupBox);
+    gridLayout1->setSpacing(6);
+    gridLayout1->setMargin(11);
+    gridLayout1->setObjectName(QString::fromUtf8("gridLayout1"));
+    radEpsgCrsId = new QRadioButton(groupBox);
+    radEpsgCrsId->setObjectName(QString::fromUtf8("radEpsgCrsId"));
+    radEpsgCrsId->setIconSize(QSize(16, 10));
+    radEpsgCrsId->setChecked(true);
 
-    gridLayout2->addWidget(pbnFind, 1, 3, 1, 1);
-
-    leSearch = new QLineEdit(groupBox);
-    leSearch->setObjectName(QString::fromUtf8("leSearch"));
-
-    gridLayout2->addWidget(leSearch, 1, 0, 1, 3);
+    gridLayout1->addWidget(radEpsgCrsId, 0, 0, 1, 1);
 
     radName = new QRadioButton(groupBox);
     radName->setObjectName(QString::fromUtf8("radName"));
     radName->setIconSize(QSize(16, 10));
 
-    gridLayout2->addWidget(radName, 0, 3, 1, 1);
+    gridLayout1->addWidget(radName, 0, 1, 1, 1);
 
-    radSRSID = new QRadioButton(groupBox);
-    radSRSID->setObjectName(QString::fromUtf8("radSRSID"));
-    radSRSID->setIconSize(QSize(16, 10));
+    leSearch = new QLineEdit(groupBox);
+    leSearch->setObjectName(QString::fromUtf8("leSearch"));
 
-    gridLayout2->addWidget(radSRSID, 0, 2, 1, 1);
+    gridLayout1->addWidget(leSearch, 0, 2, 1, 1);
 
-    radEPSGID = new QRadioButton(groupBox);
-    radEPSGID->setObjectName(QString::fromUtf8("radEPSGID"));
-    radEPSGID->setIconSize(QSize(16, 10));
+    pbnFind = new QPushButton(groupBox);
+    pbnFind->setObjectName(QString::fromUtf8("pbnFind"));
+    pbnFind->setMaximumSize(QSize(100, 16777215));
+    pbnFind->setDefault(true);
 
-    gridLayout2->addWidget(radEPSGID, 0, 1, 1, 1);
-
-    radSRID = new QRadioButton(groupBox);
-    radSRID->setObjectName(QString::fromUtf8("radSRID"));
-    radSRID->setIconSize(QSize(16, 10));
-    radSRID->setChecked(true);
-
-    gridLayout2->addWidget(radSRID, 0, 0, 1, 1);
+    gridLayout1->addWidget(pbnFind, 0, 3, 1, 1);
 
 
-    gridLayout1->addWidget(groupBox, 2, 0, 1, 1);
-
-    teProjection = new QTextEdit(groupBox_2);
-    teProjection->setObjectName(QString::fromUtf8("teProjection"));
-    sizePolicy1.setHeightForWidth(teProjection->sizePolicy().hasHeightForWidth());
-    teProjection->setSizePolicy(sizePolicy1);
-    teProjection->setMinimumSize(QSize(0, 100));
-    teProjection->setMaximumSize(QSize(16777215, 80));
-    teProjection->setAutoFormatting(QTextEdit::AutoBulletList);
-    teProjection->setReadOnly(true);
-
-    gridLayout1->addWidget(teProjection, 1, 0, 1, 1);
-
-    lstCoordinateSystems = new QTreeWidget(groupBox_2);
-    lstCoordinateSystems->setObjectName(QString::fromUtf8("lstCoordinateSystems"));
-    lstCoordinateSystems->setAlternatingRowColors(true);
-    lstCoordinateSystems->setUniformRowHeights(true);
-    lstCoordinateSystems->setColumnCount(2);
-
-    gridLayout1->addWidget(lstCoordinateSystems, 0, 0, 1, 1);
-
-
-    gridLayout->addWidget(groupBox_2, 0, 0, 1, 1);
+    gridLayout->addWidget(groupBox, 2, 0, 1, 1);
 
 
     retranslateUi(QgsProjectionSelectorBase);
+    QObject::connect(leSearch, SIGNAL(editingFinished()), pbnFind, SLOT(click()));
 
     QMetaObject::connectSlotsByName(QgsProjectionSelectorBase);
     } // setupUi
 
     void retranslateUi(QWidget *QgsProjectionSelectorBase)
     {
-    QgsProjectionSelectorBase->setWindowTitle(QApplication::translate("QgsProjectionSelectorBase", "Projection Selector", 0, QApplication::UnicodeUTF8));
-    groupBox_2->setTitle(QApplication::translate("QgsProjectionSelectorBase", "Projection", 0, QApplication::UnicodeUTF8));
+    QgsProjectionSelectorBase->setWindowTitle(QApplication::translate("QgsProjectionSelectorBase", "Coordinate Reference System Selector", 0, QApplication::UnicodeUTF8));
+    lstCoordinateSystems->headerItem()->setText(0, QApplication::translate("QgsProjectionSelectorBase", "Coordinate Reference System", 0, QApplication::UnicodeUTF8));
+    lstCoordinateSystems->headerItem()->setText(1, QApplication::translate("QgsProjectionSelectorBase", "EPSG", 0, QApplication::UnicodeUTF8));
+    lstCoordinateSystems->headerItem()->setText(2, QApplication::translate("QgsProjectionSelectorBase", "ID", 0, QApplication::UnicodeUTF8));
     groupBox->setTitle(QApplication::translate("QgsProjectionSelectorBase", "Search", 0, QApplication::UnicodeUTF8));
-    pbnFind->setText(QApplication::translate("QgsProjectionSelectorBase", "Find", 0, QApplication::UnicodeUTF8));
+    radEpsgCrsId->setText(QApplication::translate("QgsProjectionSelectorBase", "EPSG ID", 0, QApplication::UnicodeUTF8));
     radName->setText(QApplication::translate("QgsProjectionSelectorBase", "Name", 0, QApplication::UnicodeUTF8));
-    radSRSID->setText(QApplication::translate("QgsProjectionSelectorBase", "QGIS SRSID", 0, QApplication::UnicodeUTF8));
-    radEPSGID->setText(QApplication::translate("QgsProjectionSelectorBase", "EPSG ID", 0, QApplication::UnicodeUTF8));
-    radSRID->setText(QApplication::translate("QgsProjectionSelectorBase", "Postgis SRID", 0, QApplication::UnicodeUTF8));
-    lstCoordinateSystems->headerItem()->setText(0, QApplication::translate("QgsProjectionSelectorBase", "Spatial Reference System", 0, QApplication::UnicodeUTF8));
-    lstCoordinateSystems->headerItem()->setText(1, QApplication::translate("QgsProjectionSelectorBase", "Id", 0, QApplication::UnicodeUTF8));
+    pbnFind->setText(QApplication::translate("QgsProjectionSelectorBase", "Find", 0, QApplication::UnicodeUTF8));
     Q_UNUSED(QgsProjectionSelectorBase);
     } // retranslateUi
 

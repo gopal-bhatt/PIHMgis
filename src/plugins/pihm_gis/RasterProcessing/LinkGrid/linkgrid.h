@@ -3,15 +3,17 @@
 
 #include "ui_linkgrid.h"
 //??#include <qgisapp.h>
-
+#include <qgisinterface.h>
 class LinkGridDlg : public QDialog, private Ui::LinkGrid
 {
         Q_OBJECT
 public:
         LinkGridDlg(QWidget *parent = 0);
 	
-//??	void setApplicationPointer(QgisApp *);
-//??	QgisApp* applicationPointer;
+//??	
+void setApplicationPointer(QgisInterface *);
+//??	
+QgisInterface* applicationPointer;
 
 public slots:
         void inputSTRBrowse();

@@ -1,239 +1,323 @@
 K 25
 svn:wc:ra_dav:version-url
-V 56
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/gui
+V 51
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/gui
 END
 qgsvertexmarker.h
 K 25
 svn:wc:ra_dav:version-url
-V 74
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/gui/qgsvertexmarker.h
+V 69
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/gui/qgsvertexmarker.h
 END
 qgsmaptoolzoom.h
 K 25
 svn:wc:ra_dav:version-url
-V 73
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/gui/qgsmaptoolzoom.h
+V 68
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/gui/qgsmaptoolzoom.h
+END
+qgscomposerview.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/gui/qgscomposerview.h
 END
 qgsmapcanvasitem.cpp
 K 25
 svn:wc:ra_dav:version-url
+V 72
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/gui/qgsmapcanvasitem.cpp
+END
+qgsdetaileditemdata.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/gui/qgsdetaileditemdata.h
+END
+qgsquickprint.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/gui/qgsquickprint.cpp
+END
+qgsdetaileditemdelegate.h
+K 25
+svn:wc:ra_dav:version-url
 V 77
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/gui/qgsmapcanvasitem.cpp
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/gui/qgsdetaileditemdelegate.h
 END
 qgisgui.cpp
 K 25
 svn:wc:ra_dav:version-url
-V 68
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/gui/qgisgui.cpp
+V 63
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/gui/qgisgui.cpp
+END
+qgsdetaileditemwidget.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/gui/qgsdetaileditemwidget.cpp
+END
+qgsmaptip.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/gui/qgsmaptip.h
 END
 qgscursors.cpp
 K 25
 svn:wc:ra_dav:version-url
-V 71
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/gui/qgscursors.cpp
+V 66
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/gui/qgscursors.cpp
+END
+qgsmapcanvassnapper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/gui/qgsmapcanvassnapper.cpp
 END
 qgsmapoverviewcanvas.h
 K 25
 svn:wc:ra_dav:version-url
-V 79
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/gui/qgsmapoverviewcanvas.h
+V 74
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/gui/qgsmapoverviewcanvas.h
 END
 qgsmessageviewer.cpp
 K 25
 svn:wc:ra_dav:version-url
-V 77
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/gui/qgsmessageviewer.cpp
+V 72
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/gui/qgsmessageviewer.cpp
 END
 qgsrubberband.cpp
 K 25
 svn:wc:ra_dav:version-url
-V 74
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/gui/qgsrubberband.cpp
+V 69
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/gui/qgsrubberband.cpp
 END
 qgsmapcanvasmap.cpp
 K 25
 svn:wc:ra_dav:version-url
-V 76
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/gui/qgsmapcanvasmap.cpp
+V 71
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/gui/qgsmapcanvasmap.cpp
 END
 qgsmaptoolemitpoint.h
 K 25
 svn:wc:ra_dav:version-url
-V 78
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/gui/qgsmaptoolemitpoint.h
+V 73
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/gui/qgsmaptoolemitpoint.h
 END
 qgisinterface.cpp
 K 25
 svn:wc:ra_dav:version-url
-V 74
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/gui/qgisinterface.cpp
+V 69
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/gui/qgisinterface.cpp
 END
 qgsmapcanvas.cpp
 K 25
 svn:wc:ra_dav:version-url
-V 73
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/gui/qgsmapcanvas.cpp
+V 68
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/gui/qgsmapcanvas.cpp
 END
 qgscolorbutton.cpp
 K 25
 svn:wc:ra_dav:version-url
-V 75
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/gui/qgscolorbutton.cpp
+V 70
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/gui/qgscolorbutton.cpp
+END
+qgsgenericprojectionselector.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/gui/qgsgenericprojectionselector.cpp
 END
 qgsencodingfiledialog.h
 K 25
 svn:wc:ra_dav:version-url
-V 80
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/gui/qgsencodingfiledialog.h
-END
-qgslayerprojectionselector.h
-K 25
-svn:wc:ra_dav:version-url
-V 85
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/gui/qgslayerprojectionselector.h
+V 75
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/gui/qgsencodingfiledialog.h
 END
 qgsvertexmarker.cpp
 K 25
 svn:wc:ra_dav:version-url
-V 76
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/gui/qgsvertexmarker.cpp
-END
-qgsfiledropedit.h
-K 25
-svn:wc:ra_dav:version-url
-V 74
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/gui/qgsfiledropedit.h
+V 71
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/gui/qgsvertexmarker.cpp
 END
 qgsmaptoolpan.h
 K 25
 svn:wc:ra_dav:version-url
-V 72
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/gui/qgsmaptoolpan.h
+V 67
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/gui/qgsmaptoolpan.h
 END
-qgsmaptool.h
+qgsfiledropedit.h
 K 25
 svn:wc:ra_dav:version-url
 V 69
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/gui/qgsmaptool.h
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/gui/qgsfiledropedit.h
 END
 qgsmaptoolzoom.cpp
 K 25
 svn:wc:ra_dav:version-url
-V 75
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/gui/qgsmaptoolzoom.cpp
+V 70
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/gui/qgsmaptoolzoom.cpp
+END
+qgsmaptool.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/gui/qgsmaptool.h
 END
 CMakeLists.txt
 K 25
 svn:wc:ra_dav:version-url
-V 71
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/gui/CMakeLists.txt
+V 66
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/gui/CMakeLists.txt
 END
 qgsprojectionselector.h
 K 25
 svn:wc:ra_dav:version-url
-V 80
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/gui/qgsprojectionselector.h
+V 75
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/gui/qgsprojectionselector.h
+END
+qgscomposerview.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/gui/qgscomposerview.cpp
+END
+qgsdetaileditemdata.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/gui/qgsdetaileditemdata.cpp
+END
+qgsdetaileditemdelegate.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/gui/qgsdetaileditemdelegate.cpp
+END
+qgsmaptip.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/gui/qgsmaptip.cpp
 END
 qgsmapcanvasitem.h
 K 25
 svn:wc:ra_dav:version-url
-V 75
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/gui/qgsmapcanvasitem.h
+V 70
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/gui/qgsmapcanvasitem.h
+END
+qgsquickprint.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/gui/qgsquickprint.h
 END
 qgsmapoverviewcanvas.cpp
 K 25
 svn:wc:ra_dav:version-url
-V 81
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/gui/qgsmapoverviewcanvas.cpp
+V 76
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/gui/qgsmapoverviewcanvas.cpp
 END
 qgisgui.h
 K 25
 svn:wc:ra_dav:version-url
-V 66
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/gui/qgisgui.h
+V 61
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/gui/qgisgui.h
+END
+qgsdetaileditemwidget.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/gui/qgsdetaileditemwidget.h
 END
 qgsmaptoolemitpoint.cpp
 K 25
 svn:wc:ra_dav:version-url
-V 80
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/gui/qgsmaptoolemitpoint.cpp
+V 75
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/gui/qgsmaptoolemitpoint.cpp
 END
 qgscursors.h
 K 25
 svn:wc:ra_dav:version-url
-V 69
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/gui/qgscursors.h
+V 64
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/gui/qgscursors.h
 END
 qgsencodingfiledialog.cpp
 K 25
 svn:wc:ra_dav:version-url
-V 82
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/gui/qgsencodingfiledialog.cpp
+V 77
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/gui/qgsencodingfiledialog.cpp
 END
-qgslayerprojectionselector.cpp
+qgsmapcanvassnapper.h
 K 25
 svn:wc:ra_dav:version-url
-V 87
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/gui/qgslayerprojectionselector.cpp
+V 73
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/gui/qgsmapcanvassnapper.h
 END
 qgsfiledropedit.cpp
 K 25
 svn:wc:ra_dav:version-url
-V 76
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/gui/qgsfiledropedit.cpp
+V 71
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/gui/qgsfiledropedit.cpp
 END
 qgsmaptoolpan.cpp
 K 25
 svn:wc:ra_dav:version-url
-V 74
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/gui/qgsmaptoolpan.cpp
+V 69
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/gui/qgsmaptoolpan.cpp
 END
 qgsmaptool.cpp
 K 25
 svn:wc:ra_dav:version-url
-V 71
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/gui/qgsmaptool.cpp
+V 66
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/gui/qgsmaptool.cpp
 END
 qgsmessageviewer.h
 K 25
 svn:wc:ra_dav:version-url
-V 75
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/gui/qgsmessageviewer.h
+V 70
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/gui/qgsmessageviewer.h
 END
 qgsrubberband.h
 K 25
 svn:wc:ra_dav:version-url
-V 72
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/gui/qgsrubberband.h
+V 67
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/gui/qgsrubberband.h
 END
 qgsmapcanvasmap.h
 K 25
 svn:wc:ra_dav:version-url
-V 74
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/gui/qgsmapcanvasmap.h
+V 69
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/gui/qgsmapcanvasmap.h
 END
 qgsprojectionselector.cpp
 K 25
 svn:wc:ra_dav:version-url
-V 82
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/gui/qgsprojectionselector.cpp
+V 77
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/gui/qgsprojectionselector.cpp
 END
 qgsmapcanvas.h
 K 25
 svn:wc:ra_dav:version-url
-V 71
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/gui/qgsmapcanvas.h
+V 66
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/gui/qgsmapcanvas.h
 END
 qgisinterface.h
 K 25
 svn:wc:ra_dav:version-url
-V 72
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/gui/qgisinterface.h
+V 67
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/gui/qgisinterface.h
+END
+qgsgenericprojectionselector.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/gui/qgsgenericprojectionselector.h
 END
 qgscolorbutton.h
 K 25
 svn:wc:ra_dav:version-url
-V 73
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/gui/qgscolorbutton.h
+V 68
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/gui/qgscolorbutton.h
 END

@@ -18,17 +18,20 @@
 
 #include <QToolButton>
 
+/** \ingroup gui
+ * A cross platform button subclass for selecting colors.
+ */
 class GUI_EXPORT QgsColorButton: public QToolButton
 {
   public:
-    QgsColorButton(QWidget *parent = 0);
+    QgsColorButton( QWidget *parent = 0 );
     ~QgsColorButton();
 
-    void setColor(const QColor &color); 
+    void setColor( const QColor &color );
     QColor color() const { return mColor; }
 
   protected:
-    void paintEvent(QPaintEvent *e);
+    void paintEvent( QPaintEvent *e );
 
   private:
     QColor mColor;

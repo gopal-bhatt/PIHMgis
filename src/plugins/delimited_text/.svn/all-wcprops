@@ -1,65 +1,65 @@
 K 25
 svn:wc:ra_dav:version-url
-V 75
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/delimited_text
+V 70
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/delimited_text
 END
 qgsdelimitedtextplugin.cpp
 K 25
 svn:wc:ra_dav:version-url
-V 102
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/delimited_text/qgsdelimitedtextplugin.cpp
+V 97
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/delimited_text/qgsdelimitedtextplugin.cpp
+END
+delimitedText.svg
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/delimited_text/delimitedText.svg
 END
 qgsdelimitedtextplugin.h
 K 25
 svn:wc:ra_dav:version-url
-V 100
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/delimited_text/qgsdelimitedtextplugin.h
+V 95
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/delimited_text/qgsdelimitedtextplugin.h
 END
 qgsdelimitedtextplugingui.cpp
 K 25
 svn:wc:ra_dav:version-url
-V 105
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/delimited_text/qgsdelimitedtextplugingui.cpp
+V 100
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/delimited_text/qgsdelimitedtextplugingui.cpp
 END
 delimited_text.png
 K 25
 svn:wc:ra_dav:version-url
-V 94
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/delimited_text/delimited_text.png
+V 89
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/delimited_text/delimited_text.png
 END
 delimited_text.qrc
 K 25
 svn:wc:ra_dav:version-url
-V 94
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/delimited_text/delimited_text.qrc
+V 89
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/delimited_text/delimited_text.qrc
 END
 qgsdelimitedtextplugingui.h
 K 25
 svn:wc:ra_dav:version-url
-V 103
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/delimited_text/qgsdelimitedtextplugingui.h
-END
-icon.xpm
-K 25
-svn:wc:ra_dav:version-url
-V 84
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/delimited_text/icon.xpm
+V 98
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/delimited_text/qgsdelimitedtextplugingui.h
 END
 qgsdelimitedtextpluginguibase.ui
 K 25
 svn:wc:ra_dav:version-url
-V 108
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/delimited_text/qgsdelimitedtextpluginguibase.ui
+V 103
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/delimited_text/qgsdelimitedtextpluginguibase.ui
 END
 .cvsignore
 K 25
 svn:wc:ra_dav:version-url
-V 86
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/delimited_text/.cvsignore
+V 81
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/delimited_text/.cvsignore
 END
 CMakeLists.txt
 K 25
 svn:wc:ra_dav:version-url
-V 90
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/delimited_text/CMakeLists.txt
+V 85
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/delimited_text/CMakeLists.txt
 END

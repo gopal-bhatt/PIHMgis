@@ -1,65 +1,65 @@
 K 25
 svn:wc:ra_dav:version-url
-V 76
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/plugin_template
+V 71
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/plugin_template
 END
 plugin.cpp
 K 25
 svn:wc:ra_dav:version-url
-V 87
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/plugin_template/plugin.cpp
-END
-plugingui.ui
-K 25
-svn:wc:ra_dav:version-url
-V 89
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/plugin_template/plugingui.ui
+V 82
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/plugin_template/plugin.cpp
 END
 plugin.png
 K 25
 svn:wc:ra_dav:version-url
-V 87
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/plugin_template/plugin.png
+V 82
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/plugin_template/plugin.png
 END
 plugin.qrc
 K 25
 svn:wc:ra_dav:version-url
-V 87
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/plugin_template/plugin.qrc
+V 82
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/plugin_template/plugin.qrc
 END
 plugin.h
 K 25
 svn:wc:ra_dav:version-url
-V 85
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/plugin_template/plugin.h
+V 80
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/plugin_template/plugin.h
 END
 plugingui.cpp
 K 25
 svn:wc:ra_dav:version-url
-V 90
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/plugin_template/plugingui.cpp
+V 85
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/plugin_template/plugingui.cpp
 END
 plugingui.h
 K 25
 svn:wc:ra_dav:version-url
+V 83
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/plugin_template/plugingui.h
+END
+pluginguibase.ui
+K 25
+svn:wc:ra_dav:version-url
 V 88
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/plugin_template/plugingui.h
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/plugin_template/pluginguibase.ui
 END
 CMakeLists.txt
 K 25
 svn:wc:ra_dav:version-url
-V 91
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/plugin_template/CMakeLists.txt
+V 86
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/plugin_template/CMakeLists.txt
 END
 README
 K 25
 svn:wc:ra_dav:version-url
-V 83
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/plugin_template/README
+V 78
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/plugin_template/README
 END
 README.whatnext
 K 25
 svn:wc:ra_dav:version-url
-V 92
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/plugin_template/README.whatnext
+V 87
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/plugin_template/README.whatnext
 END

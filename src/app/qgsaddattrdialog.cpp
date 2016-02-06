@@ -18,41 +18,37 @@
 #include "qgsaddattrdialog.h"
 #include "qgsvectordataprovider.h"
 
-QgsAddAttrDialog::QgsAddAttrDialog(QgsVectorDataProvider* provider, QWidget *parent, Qt::WFlags fl)
-: QDialog(parent, fl), mDataProvider(provider)
+QgsAddAttrDialog::QgsAddAttrDialog( QgsVectorDataProvider* provider, QWidget *parent, Qt::WFlags fl )
+    : QDialog( parent, fl ), mDataProvider( provider )
 {
-    setupUi(this);
-    connect(mOkButton, SIGNAL(clicked()), this, SLOT(accept()));
-    connect(mCancelButton, SIGNAL(clicked()), this, SLOT(reject()));
+  setupUi( this );
 
-    //fill data types into the combo box    
-    const QSet<QString>& typelist=mDataProvider->supportedNativeTypes();
+  //fill data types into the combo box
+  const QgsNativeTypeMap &typelist = mDataProvider->supportedNativeTypes();
 
-    for(QSet<QString>::const_iterator it = typelist.constBegin(); it != typelist.constEnd(); ++it)
-      {
-	mTypeBox->insertItem(*it);
-      }
+  for ( QgsNativeTypeMap::const_iterator it = typelist.constBegin(); it != typelist.constEnd(); ++it )
+  {
+    mTypeBox->addItem( it.key() );
+  }
 }
 
-QgsAddAttrDialog::QgsAddAttrDialog(const std::list<QString>& typelist, QWidget *parent, Qt::WFlags fl)
-: QDialog(parent, fl), mDataProvider(0)
+QgsAddAttrDialog::QgsAddAttrDialog( const std::list<QString>& typelist, QWidget *parent, Qt::WFlags fl )
+    : QDialog( parent, fl ), mDataProvider( 0 )
 {
-    setupUi(this);
-    connect(mOkButton, SIGNAL(clicked()), this, SLOT(accept()));
-    connect(mCancelButton, SIGNAL(clicked()), this, SLOT(reject()));
+  setupUi( this );
 
-    for(std::list<QString>::const_iterator iter=typelist.begin();iter!=typelist.end();++iter)
-    {
-	mTypeBox->insertItem(*iter);
-    }
+  for ( std::list<QString>::const_iterator iter = typelist.begin();iter != typelist.end();++iter )
+  {
+    mTypeBox->addItem( *iter );
+  }
 }
 
 QString QgsAddAttrDialog::name() const
 {
-    return mNameEdit->text();
+  return mNameEdit->text();
 }
 
 QString QgsAddAttrDialog::type() const
 {
-    return mTypeBox->currentText();
+  return mTypeBox->currentText();
 }

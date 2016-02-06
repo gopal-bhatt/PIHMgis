@@ -1,6 +1,6 @@
 /***************************************************************************
                           qgsvectorfilewriter.h
-                          generic vector file writer 
+                          generic vector file writer
                              -------------------
     begin                : Jun 6 2004
     copyright            : (C) 2004 by Tim Sutton
@@ -21,16 +21,16 @@
 #define _QGSVECTORFILEWRITER_H_
 
 #include "qgsvectorlayer.h"
+#include "qgsfield.h"
 
-#include <QString>
-
-class OGRDataSource;
-class OGRLayer;
-class OGRGeometry;
+typedef void *OGRDataSourceH;
+typedef void *OGRLayerH;
+typedef void *OGRGeometryH;
 
 class QTextCodec;
 
-/**
+/** \ingroup core
+  * A convenience class for writing vector files to disk.
  There are two possibilities how to use this class:
  1. static call to QgsVectorFileWriter::writeAsShapefile(...) which saves the whole vector layer
  2. create an instance of the class and issue calls to addFeature(...)
@@ -41,55 +41,62 @@ class QTextCodec;
 class CORE_EXPORT QgsVectorFileWriter
 {
   public:
-      
+
     enum WriterError
     {
       NoError = 0,
       ErrDriverNotFound,
       ErrCreateDataSource,
-      ErrCreateLayer
+      ErrCreateLayer,
+      ErrAttributeTypeUnsupported
     };
 
     /** Write contents of vector layer to a shapefile */
-    static WriterError writeAsShapefile(QgsVectorLayer* layer,
-                                        const QString& shapefileName,
-                                        const QString& fileEncoding,
-                                        bool onlySelected = FALSE);
+    static WriterError writeAsShapefile( QgsVectorLayer* layer,
+                                         const QString& shapefileName,
+                                         const QString& fileEncoding,
+                                         const QgsCoordinateReferenceSystem *destCRS,
+                                         bool onlySelected = FALSE );
 
 
     /** create shapefile and initialize it */
-    QgsVectorFileWriter(const QString& shapefileName,
-                        const QString& fileEncoding,
-                        const QgsFieldMap& fields,
-                        QGis::WKBTYPE geometryType,
-                        const QgsSpatialRefSys* srs);
-    
+    QgsVectorFileWriter( const QString& shapefileName,
+                         const QString& fileEncoding,
+                         const QgsFieldMap& fields,
+                         QGis::WkbType geometryType,
+                         const QgsCoordinateReferenceSystem* srs );
+
     /** checks whether there were any errors in constructor */
     WriterError hasError();
-    
+
     /** add feature to the currently opened shapefile */
-    bool addFeature(QgsFeature& feature);
-    
+    bool addFeature( QgsFeature& feature );
+
     /** close opened shapefile for writing */
     ~QgsVectorFileWriter();
-    
+
+    /** Delete a shapefile (and its accompanying shx / dbf / prf)
+     * @param QString theFileName - /path/to/file.shp
+     * @return bool true if the file was deleted successfully
+     */
+    static bool deleteShapeFile( QString theFileName );
   protected:
-    
-    OGRGeometry* createEmptyGeometry(QGis::WKBTYPE wkbType);
-    
-    OGRDataSource* mDS;
-    OGRLayer* mLayer;
-    OGRGeometry* mGeom;
-    
+
+    OGRGeometryH createEmptyGeometry( QGis::WkbType wkbType );
+
+    OGRDataSourceH mDS;
+    OGRLayerH mLayer;
+    OGRGeometryH mGeom;
+
     QgsFieldMap mFields;
-    
-    /** contains error value if construction was not successfull */
+
+    /** contains error value if construction was not successful */
     WriterError mError;
 
     QTextCodec* mCodec;
-    
+
     /** geometry type which is being used */
-    QGis::WKBTYPE mWkbType;
+    QGis::WkbType mWkbType;
 };
 
 #endif

@@ -14,10 +14,10 @@
  *   (at your option) any later version.                                   *
  *                                                                         *
  ***************************************************************************/
-/* $Id: qgsrasterdataprovider.cpp 6415 2007-01-09 02:39:15Z wonder $ */
+/* $Id: qgsrasterdataprovider.cpp 9150 2008-08-24 14:07:06Z jef $ */
 
 #include "qgsrasterdataprovider.h"
-#include <iostream>
+#include "qgslogger.h"
 
 QgsRasterDataProvider::QgsRasterDataProvider()
 {
@@ -25,7 +25,7 @@ QgsRasterDataProvider::QgsRasterDataProvider()
 
 
 QgsRasterDataProvider::QgsRasterDataProvider( QString const & uri )
-    : QgsDataProvider(uri)
+    : QgsDataProvider( uri )
 {
 }
 
@@ -36,17 +36,13 @@ QString QgsRasterDataProvider::capabilitiesString() const
 
   int abilities = capabilities();
 
-  if (abilities & QgsRasterDataProvider::Identify)
+  if ( abilities & QgsRasterDataProvider::Identify )
   {
     abilitiesList += "Identify";
-#ifdef QGISDEBUG
-        std::cerr << "QgsRasterDataProvider::capabilitiesString "
-          << "Identify" << std::endl;
-#endif
-
+    QgsDebugMsg( "Identify" );
   }
 
-  return abilitiesList.join(", ");
+  return abilitiesList.join( ", " );
 }
 
 

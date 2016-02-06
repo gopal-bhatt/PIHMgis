@@ -1,15 +1,15 @@
 8
 
 dir
-7809
-https://svn.qgis.org/repos/qgis/branches/Release-0_9_0/src/providers/gpx
-https://svn.qgis.org/repos/qgis
+10938
+https://svn.osgeo.org/qgis/branches/Release-1_0_2/src/providers/gpx
+https://svn.osgeo.org/qgis
 
 
 
-2007-08-05T19:26:01.281748Z
-7121
-wonder
+2008-11-09T00:14:12.141861Z
+9605
+timlinux
 has-props
 
 svn:special svn:externals svn:needs-lock
@@ -32,11 +32,11 @@ file
 
 
 
-2007-12-24T08:18:12.000000Z
-c1c0b995ced1b7f40c44e28be9317b1e
-2007-02-01T15:44:20.017957Z
-6480
-homann
+2009-06-17T07:49:56.000000Z
+4982aa340014ea70061c3ec368ef361a
+2008-11-09T00:14:12.141861Z
+9605
+timlinux
 has-props
 
 qgsgpxprovider.cpp
@@ -45,11 +45,11 @@ file
 
 
 
-2007-12-24T08:18:12.000000Z
-94195e4cb710633c823c4182ace29045
-2007-04-15T16:37:05.917526Z
-6887
-wonder
+2009-06-17T07:49:56.000000Z
+0c9cce24a6fc69c318745c4aa4b87aed
+2008-11-09T00:14:12.141861Z
+9605
+timlinux
 has-props
 
 gpsdata.h
@@ -58,11 +58,11 @@ file
 
 
 
-2007-12-24T08:18:12.000000Z
-e5eb074ce56797fd98325f7458f7ab5f
-2007-02-03T02:26:02.917646Z
-6498
-g_j_m
+2009-06-17T07:49:56.000000Z
+e42391d57a88ee6513b9f7ad2ff22aff
+2008-11-09T00:14:12.141861Z
+9605
+timlinux
 has-props
 
 qgsgpxprovider.h
@@ -71,11 +71,11 @@ file
 
 
 
-2007-12-24T08:18:12.000000Z
-bfe865de6b0763e1f53bc3179ea4f608
-2007-04-11T11:46:35.046700Z
-6879
-wonder
+2009-06-17T07:49:56.000000Z
+44f3058a5140eb8c9149b8aeda1279c6
+2008-11-09T00:14:12.141861Z
+9605
+timlinux
 has-props
 
 .cvsignore
@@ -84,7 +84,7 @@ file
 
 
 
-2007-12-24T08:18:12.000000Z
+2009-06-17T07:49:56.000000Z
 a75685567c23eea304b72611adad56bf
 2005-01-10T22:06:18.000000Z
 2612
@@ -97,9 +97,9 @@ file
 
 
 
-2007-12-24T08:18:12.000000Z
-f1d8e6e1299dd3c996f4600cffc266b6
-2007-01-09T22:31:48.242433Z
-6418
-telwertowski
+2009-06-17T07:49:56.000000Z
+652861eff0117cdfc852c00e418aa134
+2008-06-30T13:09:41.373624Z
+8692
+jef
 

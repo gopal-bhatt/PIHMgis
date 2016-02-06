@@ -1,9 +1,9 @@
 8
 
 dir
-7809
-https://svn.qgis.org/repos/qgis/branches/Release-0_9_0/images/north_arrows
-https://svn.qgis.org/repos/qgis
+10938
+https://svn.osgeo.org/qgis/branches/Release-1_0_2/images/north_arrows
+https://svn.osgeo.org/qgis
 
 
 
@@ -32,7 +32,7 @@ file
 
 
 
-2007-12-24T08:18:22.000000Z
+2009-06-17T07:50:08.000000Z
 31b0b9783b5350906109b665403fbe02
 2004-05-25T15:49:41.000000Z
 1463
@@ -45,7 +45,7 @@ file
 
 
 
-2007-12-24T08:18:22.000000Z
+2009-06-17T07:50:08.000000Z
 31076018db46093e4e5e50ab56486a4e
 2005-01-10T20:26:46.000000Z
 2610
@@ -58,7 +58,7 @@ file
 
 
 
-2007-12-24T08:18:22.000000Z
+2009-06-17T07:50:08.000000Z
 47405dee1cdcabd1831b4b7a8833d468
 2007-01-09T02:39:15.173934Z
 6415

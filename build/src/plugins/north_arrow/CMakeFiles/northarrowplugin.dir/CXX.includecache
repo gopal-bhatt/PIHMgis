@@ -1,5 +1,7 @@
 ../src/plugins/north_arrow/../../core/qgis.h
-qevent.h
+QEvent
+-
+QString
 -
 
 ../src/plugins/north_arrow/../../core/qgsapplication.h
@@ -10,17 +12,27 @@ QApplication
 QObject
 -
 
+../src/plugins/north_arrow/../../core/qgscoordinatereferencesystem.h
+ostream
+-
+QString
+-
+QMap
+-
+qgis.h
+../src/plugins/north_arrow/../../core/qgis.h
+
 ../src/plugins/north_arrow/../../core/qgscoordinatetransform.h
 QObject
 -
 qgspoint.h
 ../src/plugins/north_arrow/../../core/qgspoint.h
-qgsrect.h
-../src/plugins/north_arrow/../../core/qgsrect.h
+qgsrectangle.h
+../src/plugins/north_arrow/../../core/qgsrectangle.h
 qgscsexception.h
 ../src/plugins/north_arrow/../../core/qgscsexception.h
-qgsspatialrefsys.h
-../src/plugins/north_arrow/../../core/qgsspatialrefsys.h
+qgscoordinatereferencesystem.h
+../src/plugins/north_arrow/../../core/qgscoordinatereferencesystem.h
 iostream
 -
 vector
@@ -37,9 +49,15 @@ string
 -
 list
 -
-qdom.h
+QDomNode
 -
-qstring.h
+
+../src/plugins/north_arrow/../../core/qgslogger.h
+iostream
+-
+sstream
+-
+QString
 -
 
 ../src/plugins/north_arrow/../../core/qgsmaplayer.h
@@ -49,16 +67,28 @@ map
 -
 QObject
 -
-qgsrect.h
-../src/plugins/north_arrow/../../core/qgsrect.h
+qgsrectangle.h
+../src/plugins/north_arrow/../../core/qgsrectangle.h
 
-../src/plugins/north_arrow/../../core/qgsmaprender.h
+../src/plugins/north_arrow/../../core/qgsmaprenderer.h
+QSize
+-
 QStringList
 -
 qgis.h
 ../src/plugins/north_arrow/../../core/qgis.h
-qgsrect.h
-../src/plugins/north_arrow/../../core/qgsrect.h
+qgsrectangle.h
+../src/plugins/north_arrow/../../core/qgsrectangle.h
+qgsrendercontext.h
+../src/plugins/north_arrow/../../core/qgsrendercontext.h
+
+../src/plugins/north_arrow/../../core/qgsmaptopixel.h
+qgspoint.h
+../src/plugins/north_arrow/../../core/qgspoint.h
+vector
+-
+cassert
+-
 
 ../src/plugins/north_arrow/../../core/qgspoint.h
 iostream
@@ -69,24 +99,30 @@ QString
 ../src/plugins/north_arrow/../../core/qgsproject.h
 memory
 -
+qgsprojectversion.h
+../src/plugins/north_arrow/../../core/qgsprojectversion.h
 QObject
 -
 
-../src/plugins/north_arrow/../../core/qgsrect.h
+../src/plugins/north_arrow/../../core/qgsprojectversion.h
+QString
+-
+QStringList
+-
+
+../src/plugins/north_arrow/../../core/qgsrectangle.h
 iosfwd
 -
 qgspoint.h
 ../src/plugins/north_arrow/../../core/qgspoint.h
 
-../src/plugins/north_arrow/../../core/qgsspatialrefsys.h
-ostream
--
-QString
--
-QMap
--
-qgis.h
-../src/plugins/north_arrow/../../core/qgis.h
+../src/plugins/north_arrow/../../core/qgsrendercontext.h
+qgscoordinatetransform.h
+../src/plugins/north_arrow/../../core/qgscoordinatetransform.h
+qgsmaptopixel.h
+../src/plugins/north_arrow/../../core/qgsmaptopixel.h
+qgsrectangle.h
+../src/plugins/north_arrow/../../core/qgsrectangle.h
 
 ../src/plugins/north_arrow/../../gui/qgisgui.h
 Qt
@@ -105,8 +141,8 @@ memory
 -
 deque
 -
-qgsrect.h
-../src/plugins/north_arrow/../../gui/qgsrect.h
+qgsrectangle.h
+../src/plugins/north_arrow/../../gui/qgsrectangle.h
 qgspoint.h
 ../src/plugins/north_arrow/../../gui/qgspoint.h
 qgis.h
@@ -116,6 +152,14 @@ QDomDocument
 QGraphicsView
 -
 
+/Library/Frameworks/QtCore.framework/Headers/QDir
+qdir.h
+/Library/Frameworks/QtCore.framework/Headers/qdir.h
+
+/Library/Frameworks/QtCore.framework/Headers/QEvent
+qcoreevent.h
+/Library/Frameworks/QtCore.framework/Headers/qcoreevent.h
+
 /Library/Frameworks/QtCore.framework/Headers/QMap
 qmap.h
 /Library/Frameworks/QtCore.framework/Headers/qmap.h
@@ -123,6 +167,10 @@ qmap.h
 /Library/Frameworks/QtCore.framework/Headers/QObject
 qobject.h
 /Library/Frameworks/QtCore.framework/Headers/qobject.h
+
+/Library/Frameworks/QtCore.framework/Headers/QSize
+qsize.h
+/Library/Frameworks/QtCore.framework/Headers/qsize.h
 
 /Library/Frameworks/QtCore.framework/Headers/QString
 qstring.h
@@ -135,6 +183,20 @@ qstringlist.h
 /Library/Frameworks/QtCore.framework/Headers/Qt
 qnamespace.h
 /Library/Frameworks/QtCore.framework/Headers/qnamespace.h
+
+/Library/Frameworks/QtCore.framework/Headers/qcoreevent.h
+QtCore/qnamespace.h
+-
+QtCore/qbytearray.h
+-
+
+/Library/Frameworks/QtCore.framework/Headers/qdir.h
+QtCore/qstring.h
+-
+QtCore/qfileinfo.h
+-
+QtCore/qstringlist.h
+-
 
 /Library/Frameworks/QtCore.framework/Headers/qmap.h
 QtCore/qatomic.h
@@ -162,6 +224,10 @@ QtCore/qbytearray.h
 QtCore/qlist.h
 -
 QtCore/qcoreevent.h
+-
+
+/Library/Frameworks/QtCore.framework/Headers/qsize.h
+QtCore/qnamespace.h
 -
 
 /Library/Frameworks/QtCore.framework/Headers/qstring.h
@@ -236,28 +302,6 @@ QtGui/qrgb.h
 QtGui/qtransportauth_qws.h
 -
 
-/Library/Frameworks/QtGui.framework/Headers/qevent.h
-QtGui/qwindowdefs.h
--
-QtCore/qobject.h
--
-QtGui/qregion.h
--
-QtCore/qnamespace.h
--
-QtCore/qstring.h
--
-QtGui/qkeysequence.h
--
-QtCore/qcoreevent.h
--
-QtGui/qmime.h
--
-QtGui/qdrag.h
--
-QtCore/qvariant.h
--
-
 /Library/Frameworks/QtGui.framework/Headers/qgraphicsview.h
 QtCore/qmetatype.h
 -
@@ -314,66 +358,72 @@ QtGui/qfontmetrics.h
 qdom.h
 /Library/Frameworks/QtXml.framework/Headers/qdom.h
 
+/Library/Frameworks/QtXml.framework/Headers/QDomNode
+qdom.h
+/Library/Frameworks/QtXml.framework/Headers/qdom.h
+
 /Library/Frameworks/QtXml.framework/Headers/qdom.h
 QtCore/qstring.h
 -
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/north_arrow/../../../../src/plugins/north_arrow/../qgisplugin.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/north_arrow/../../../../src/plugins/north_arrow/../qgisplugin.h
 QString
 -
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/north_arrow/../../../../src/plugins/north_arrow/plugin.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/north_arrow/../../../../src/plugins/north_arrow/plugin.h
 ../qgisplugin.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/north_arrow/../../../../src/plugins/north_arrow/../qgisplugin.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/north_arrow/../../../../src/plugins/north_arrow/../qgisplugin.h
 QObject
 -
 QStringList
 -
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/north_arrow/../../../../src/plugins/north_arrow/plugingui.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/north_arrow/../../../../src/plugins/north_arrow/plugingui.h
 ui_pluginguibase.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/north_arrow/../../../../src/plugins/north_arrow/ui_pluginguibase.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/north_arrow/../../../../src/plugins/north_arrow/ui_pluginguibase.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/north_arrow/moc_plugin.cxx
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/north_arrow/moc_plugin.cxx
 ../../../../src/plugins/north_arrow/plugin.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/north_arrow/../../../../src/plugins/north_arrow/plugin.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/north_arrow/../../../../src/plugins/north_arrow/plugin.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/north_arrow/moc_plugingui.cxx
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/north_arrow/moc_plugingui.cxx
 ../../../../src/plugins/north_arrow/plugingui.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/north_arrow/../../../../src/plugins/north_arrow/plugingui.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/north_arrow/../../../../src/plugins/north_arrow/plugingui.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/north_arrow/qrc_northarrow_plugin.cxx
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/north_arrow/qrc_northarrow_plugin.cxx
 QtCore/qglobal.h
 -
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/north_arrow/../qgisplugin.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/north_arrow/../qgisplugin.h
 QString
 -
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/north_arrow/icon.xpm
-
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/north_arrow/plugin.cpp
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/north_arrow/plugin.cpp
 qgisinterface.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/north_arrow/qgisinterface.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/north_arrow/qgisinterface.h
 qgisgui.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/north_arrow/qgisgui.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/north_arrow/qgisgui.h
 qgscoordinatetransform.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/north_arrow/qgscoordinatetransform.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/north_arrow/qgscoordinatetransform.h
 qgsmaplayer.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/north_arrow/qgsmaplayer.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/north_arrow/qgsmaplayer.h
 plugin.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/north_arrow/plugin.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/north_arrow/plugin.h
 qgsproject.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/north_arrow/qgsproject.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/north_arrow/qgsproject.h
+qgslogger.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/north_arrow/qgslogger.h
 qgsmapcanvas.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/north_arrow/qgsmapcanvas.h
-qgsmaprender.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/north_arrow/qgsmaprender.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/north_arrow/qgsmapcanvas.h
+qgsmaprenderer.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/north_arrow/qgsmaprenderer.h
 qgsapplication.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/north_arrow/qgsapplication.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/north_arrow/qgsapplication.h
 QPainter
 -
 QMenu
+-
+QDir
 -
 iostream
 -
@@ -382,43 +432,39 @@ cmath
 cassert
 -
 plugingui.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/north_arrow/plugingui.h
-icon.xpm
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/north_arrow/icon.xpm
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/north_arrow/plugingui.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/north_arrow/plugin.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/north_arrow/plugin.h
 ../qgisplugin.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/north_arrow/../qgisplugin.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/north_arrow/../qgisplugin.h
 QObject
 -
 QStringList
 -
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/north_arrow/plugingui.cpp
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/north_arrow/plugingui.cpp
 plugingui.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/north_arrow/plugingui.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/north_arrow/plugingui.h
 qgsapplication.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/north_arrow/qgsapplication.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/north_arrow/qgsapplication.h
 qgscontexthelp.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/north_arrow/qgscontexthelp.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/north_arrow/qgscontexthelp.h
 QPainter
 -
 cmath
 -
-iostream
--
+qgslogger.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/north_arrow/qgslogger.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/north_arrow/plugingui.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/north_arrow/plugingui.h
 ui_pluginguibase.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/north_arrow/ui_pluginguibase.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/north_arrow/ui_pluginguibase.h
 
 /usr/include/stdarg.h
 mw_stdarg.h
 /usr/include/mw_stdarg.h
 
 src/plugins/north_arrow/ui_pluginguibase.h
-Qt3Support/Q3IconView
--
 QtCore/QVariant
 -
 QtGui/QAction
@@ -442,6 +488,8 @@ QtGui/QGridLayout
 QtGui/QLabel
 -
 QtGui/QLineEdit
+-
+QtGui/QListView
 -
 QtGui/QPushButton
 -

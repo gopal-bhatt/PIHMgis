@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading ui file 'mapcoordsdialogbase.ui'
 **
-** Created: Wed Jun 11 19:10:51 2008
+** Created: Fri Jun 19 01:59:56 2009
 **      by: Qt User Interface Compiler version 4.3.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling ui file!
@@ -10,7 +10,6 @@
 #ifndef UI_MAPCOORDSDIALOGBASE_H
 #define UI_MAPCOORDSDIALOGBASE_H
 
-#include <Qt3Support/Q3MimeSourceFactory>
 #include <QtCore/QVariant>
 #include <QtGui/QAction>
 #include <QtGui/QApplication>
@@ -109,7 +108,7 @@ public:
     hboxLayout->setObjectName(QString::fromUtf8("hboxLayout"));
     btnPointFromCanvas = new QPushButton(MapCoordsDialogBase);
     btnPointFromCanvas->setObjectName(QString::fromUtf8("btnPointFromCanvas"));
-    btnPointFromCanvas->setIcon(QIcon(qPixmapFromMimeSource(":/pencil.png")));
+    btnPointFromCanvas->setIcon(QIcon(QString::fromUtf8(":/pencil.png")));
     btnPointFromCanvas->setIconSize(QSize(18, 18));
     btnPointFromCanvas->setCheckable(true);
 

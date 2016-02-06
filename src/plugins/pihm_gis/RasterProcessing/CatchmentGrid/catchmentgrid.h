@@ -3,15 +3,17 @@
 
 #include "ui_catchmentgrid.h"
 //??#include <qgisapp.h>
-
+#include <qgisinterface.h>
 class CatchmentGridDlg : public QDialog, private Ui::CatchmentGrid
 {
         Q_OBJECT
 public:
         CatchmentGridDlg(QWidget *parent = 0);
 
-//??	void setApplicationPointer(QgisApp *);
-//??	QgisApp* applicationPointer;
+//??	
+void setApplicationPointer(QgisInterface *);
+//??	
+QgisInterface* applicationPointer;
 
 public slots:
         void inputLNKBrowse();

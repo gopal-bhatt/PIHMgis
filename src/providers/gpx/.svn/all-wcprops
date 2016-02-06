@@ -1,41 +1,41 @@
 K 25
 svn:wc:ra_dav:version-url
-V 66
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/providers/gpx
+V 61
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/providers/gpx
 END
 gpsdata.cpp
 K 25
 svn:wc:ra_dav:version-url
-V 78
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/providers/gpx/gpsdata.cpp
+V 73
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/providers/gpx/gpsdata.cpp
 END
 qgsgpxprovider.cpp
 K 25
 svn:wc:ra_dav:version-url
-V 85
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/providers/gpx/qgsgpxprovider.cpp
+V 80
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/providers/gpx/qgsgpxprovider.cpp
 END
 gpsdata.h
 K 25
 svn:wc:ra_dav:version-url
-V 76
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/providers/gpx/gpsdata.h
+V 71
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/providers/gpx/gpsdata.h
 END
 qgsgpxprovider.h
 K 25
 svn:wc:ra_dav:version-url
-V 83
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/providers/gpx/qgsgpxprovider.h
+V 78
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/providers/gpx/qgsgpxprovider.h
 END
 .cvsignore
 K 25
 svn:wc:ra_dav:version-url
-V 77
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/providers/gpx/.cvsignore
+V 72
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/providers/gpx/.cvsignore
 END
 CMakeLists.txt
 K 25
 svn:wc:ra_dav:version-url
-V 81
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/providers/gpx/CMakeLists.txt
+V 76
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/providers/gpx/CMakeLists.txt
 END

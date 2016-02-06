@@ -1,15 +1,15 @@
 8
 
 dir
-7809
-https://svn.qgis.org/repos/qgis/branches/Release-0_9_0/src/providers/delimitedtext
-https://svn.qgis.org/repos/qgis
+10938
+https://svn.osgeo.org/qgis/branches/Release-1_0_2/src/providers/delimitedtext
+https://svn.osgeo.org/qgis
 
 
 
-2007-08-05T19:26:01.281748Z
-7121
-wonder
+2008-11-09T00:14:12.141861Z
+9605
+timlinux
 has-props
 
 svn:special svn:externals svn:needs-lock
@@ -32,11 +32,11 @@ file
 
 
 
-2007-12-24T08:18:11.000000Z
-7010caf8c01b1ea32c8de72075326520
-2007-04-17T19:51:58.077861Z
-6893
-wonder
+2009-06-17T07:49:55.000000Z
+6a70350033a7743862508760b1db42f9
+2008-11-09T00:14:12.141861Z
+9605
+timlinux
 has-props
 
 qgsdelimitedtextprovider.cpp
@@ -45,11 +45,11 @@ file
 
 
 
-2007-12-24T08:18:11.000000Z
-2d55f579d0e3413ce367789ad8668d2e
-2007-04-17T19:51:58.077861Z
-6893
-wonder
+2009-06-17T07:49:55.000000Z
+bc0d6bf2c1b50fa05ee80330c71ca84e
+2008-11-09T00:14:12.141861Z
+9605
+timlinux
 has-props
 
 .cvsignore
@@ -58,7 +58,7 @@ file
 
 
 
-2007-12-24T08:18:11.000000Z
+2009-06-17T07:49:55.000000Z
 a75685567c23eea304b72611adad56bf
 2005-01-10T22:06:18.000000Z
 2612
@@ -71,9 +71,9 @@ file
 
 
 
-2007-12-24T08:18:11.000000Z
-9aa6e0399de8b03e72e71321fd2219f7
-2007-01-09T22:31:48.242433Z
-6418
-telwertowski
+2009-06-17T07:49:55.000000Z
+7083e7911da619d914c7792ca2e34c64
+2008-06-30T13:09:41.373624Z
+8692
+jef
 

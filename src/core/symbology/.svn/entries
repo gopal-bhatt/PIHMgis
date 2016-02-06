@@ -1,15 +1,15 @@
 8
 
 dir
-7809
-https://svn.qgis.org/repos/qgis/branches/Release-0_9_0/src/core/symbology
-https://svn.qgis.org/repos/qgis
+10938
+https://svn.osgeo.org/qgis/branches/Release-1_0_2/src/core/symbology
+https://svn.osgeo.org/qgis
 
 
 
-2007-06-19T11:16:35.575559Z
-7040
-timlinux
+2009-02-08T19:18:53.305828Z
+10136
+jef
 
 
 svn:special svn:externals svn:needs-lock
@@ -32,11 +32,11 @@ file
 
 
 
-2007-12-24T08:18:10.000000Z
-b1f59da2733cca6c3b2cb82b9df61830
-2007-06-19T11:16:35.575559Z
-7040
-timlinux
+2009-06-17T07:49:53.000000Z
+b341a24e57f64c23fd4689f966ebb05a
+2009-02-08T19:18:53.305828Z
+10136
+jef
 has-props
 
 qgssymbologyutils.cpp
@@ -45,11 +45,11 @@ file
 
 
 
-2007-12-24T08:18:10.000000Z
-7608e9ec728f71e6e58f4828b20525c1
-2007-06-19T11:16:35.575559Z
-7040
-timlinux
+2009-06-17T07:49:53.000000Z
+34f8a1d09ef63b9d14714c2b1966556d
+2009-02-08T19:18:53.305828Z
+10136
+jef
 has-props
 
 qgsmarkercatalogue.cpp
@@ -58,11 +58,11 @@ file
 
 
 
-2007-12-24T08:18:10.000000Z
-2b297f793889a11017df8025e53f22f4
-2007-04-02T18:24:51.231577Z
-6866
-wonder
+2009-06-17T07:49:53.000000Z
+5c5e47acdedbf3da0a01be244573d762
+2008-12-13T11:07:45.519330Z
+9781
+jef
 has-props
 
 qgssymbol.h
@@ -71,11 +71,11 @@ file
 
 
 
-2007-12-24T08:18:10.000000Z
-80cfbb0a6e35606d2864dccfa7f72a1b
-2007-06-19T11:16:35.575559Z
-7040
-timlinux
+2009-06-17T07:49:53.000000Z
+e5021f58a346091330eb1e5b7f26ed87
+2008-12-07T03:10:00.617071Z
+9747
+jef
 has-props
 
 qgssymbologyutils.h
@@ -84,11 +84,11 @@ file
 
 
 
-2007-12-24T08:18:10.000000Z
-effc91e44aa30c0bae10e6651fce0f1f
-2007-01-09T02:39:15.173934Z
-6415
-wonder
+2009-06-17T07:49:53.000000Z
+64da08f5fc1415d0d0da409faa556513
+2008-08-23T21:37:31.208899Z
+9138
+jef
 has-props
 
 qgsmarkercatalogue.h
@@ -97,10 +97,10 @@ file
 
 
 
-2007-12-24T08:18:10.000000Z
-ba08c1723df8cebfad39b9059b24e356
-2007-04-02T18:24:51.231577Z
-6866
-wonder
+2009-06-17T07:49:53.000000Z
+e45caee034cf434f1fc917ed0965eacb
+2008-11-14T18:44:36.156816Z
+9636
+homann
 has-props
 

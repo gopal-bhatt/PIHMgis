@@ -15,7 +15,7 @@
  *   (at your option) any later version.                                   *
  *                                                                         *
  ****************************************************************************/
- /* $Id: qgisinterface.cpp 6415 2007-01-09 02:39:15Z wonder $ */
+/* $Id: qgisinterface.cpp 9138 2008-08-23 21:37:31Z jef $ */
 
 #include "qgisinterface.h"
 

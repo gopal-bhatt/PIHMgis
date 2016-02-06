@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'streamgrid.h'
 **
-** Created: Wed Jun 11 19:11:08 2008
+** Created: Fri Jul 24 04:57:59 2009
 **      by: The Qt Meta Object Compiler version 59 (Qt 4.3.2)
 **
 ** WARNING! All changes made in this file will be lost!

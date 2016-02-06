@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'qgsidentifyresults.h'
 **
-** Created: Wed Jun 11 19:05:43 2008
+** Created: Fri Jun 19 01:54:08 2009
 **      by: The Qt Meta Object Compiler version 59 (Qt 4.3.2)
 **
 ** WARNING! All changes made in this file will be lost!
@@ -22,30 +22,32 @@ static const uint qt_meta_data_QgsIdentifyResults[] = {
        1,       // revision
        0,       // classname
        0,    0, // classinfo
-       9,   10, // methods
+      10,   10, // methods
        0,    0, // properties
        0,    0, // enums/sets
 
  // signals: signature, parameters, type, tag, flags
       30,   20,   19,   19, 0x05,
+      58,   20,   19,   19, 0x05,
 
  // slots: signature, parameters, type, tag, flags
-      58,   19,   19,   19, 0x0a,
-      65,   19,   19,   19, 0x0a,
-      73,   19,   19,   19, 0x0a,
-     121,  110,   19,   19, 0x0a,
-     153,  149,   19,   19, 0x0a,
-     179,   19,   19,   19, 0x0a,
-     203,   19,   19,   19, 0x0a,
-     251,  234,   19,   19, 0x0a,
+      75,   19,   19,   19, 0x0a,
+      82,   19,   19,   19, 0x0a,
+      90,   19,   19,   19, 0x0a,
+     138,  127,   19,   19, 0x0a,
+     170,  166,   19,   19, 0x0a,
+     196,   19,   19,   19, 0x0a,
+     220,   19,   19,   19, 0x0a,
+     268,  251,   19,   19, 0x0a,
 
        0        // eod
 };
 
 static const char qt_meta_stringdata_QgsIdentifyResults[] = {
     "QgsIdentifyResults\0\0featureId\0"
-    "selectedFeatureChanged(int)\0show()\0"
-    "close()\0contextMenuEvent(QContextMenuEvent*)\0"
+    "selectedFeatureChanged(int)\0"
+    "editFeature(int)\0show()\0close()\0"
+    "contextMenuEvent(QContextMenuEvent*)\0"
     "menuAction\0popupItemSelected(QAction*)\0"
     "lvi\0clicked(QTreeWidgetItem*)\0"
     "on_buttonHelp_clicked()\0"
@@ -80,16 +82,17 @@ int QgsIdentifyResults::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_c == QMetaObject::InvokeMetaMethod) {
         switch (_id) {
         case 0: selectedFeatureChanged((*reinterpret_cast< int(*)>(_a[1]))); break;
-        case 1: show(); break;
-        case 2: close(); break;
-        case 3: contextMenuEvent((*reinterpret_cast< QContextMenuEvent*(*)>(_a[1]))); break;
-        case 4: popupItemSelected((*reinterpret_cast< QAction*(*)>(_a[1]))); break;
-        case 5: clicked((*reinterpret_cast< QTreeWidgetItem*(*)>(_a[1]))); break;
-        case 6: on_buttonHelp_clicked(); break;
-        case 7: itemExpanded((*reinterpret_cast< QTreeWidgetItem*(*)>(_a[1]))); break;
-        case 8: handleCurrentItemChanged((*reinterpret_cast< QTreeWidgetItem*(*)>(_a[1])),(*reinterpret_cast< QTreeWidgetItem*(*)>(_a[2]))); break;
+        case 1: editFeature((*reinterpret_cast< int(*)>(_a[1]))); break;
+        case 2: show(); break;
+        case 3: close(); break;
+        case 4: contextMenuEvent((*reinterpret_cast< QContextMenuEvent*(*)>(_a[1]))); break;
+        case 5: popupItemSelected((*reinterpret_cast< QAction*(*)>(_a[1]))); break;
+        case 6: clicked((*reinterpret_cast< QTreeWidgetItem*(*)>(_a[1]))); break;
+        case 7: on_buttonHelp_clicked(); break;
+        case 8: itemExpanded((*reinterpret_cast< QTreeWidgetItem*(*)>(_a[1]))); break;
+        case 9: handleCurrentItemChanged((*reinterpret_cast< QTreeWidgetItem*(*)>(_a[1])),(*reinterpret_cast< QTreeWidgetItem*(*)>(_a[2]))); break;
         }
-        _id -= 9;
+        _id -= 10;
     }
     return _id;
 }
@@ -99,4 +102,11 @@ void QgsIdentifyResults::selectedFeatureChanged(int _t1)
 {
     void *_a[] = { 0, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
     QMetaObject::activate(this, &staticMetaObject, 0, _a);
+}
+
+// SIGNAL 1
+void QgsIdentifyResults::editFeature(int _t1)
+{
+    void *_a[] = { 0, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
+    QMetaObject::activate(this, &staticMetaObject, 1, _a);
 }

@@ -31,10 +31,10 @@ RM = /usr/bin/cmake -E remove -f
 CMAKE_EDIT_COMMAND = /usr/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0
+CMAKE_SOURCE_DIR = /Users/bhattgopal/dev/cpp/qgis_1.0.2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build
+CMAKE_BINARY_DIR = /Users/bhattgopal/dev/cpp/qgis_1.0.2/build
 
 # Include any dependencies generated for this target.
 include src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/depend.make
@@ -50,17 +50,17 @@ src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/depend.make.mark: ../src/plugi
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmgis.o: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/flags.make
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmgis.o: ../src/plugins/pihm_gis/pihmgis.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmgis.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmgis.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmgis.cpp
+	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmgis.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmgis.cpp
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmgis.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmgis.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmgis.cpp > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmgis.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmgis.cpp > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmgis.i
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmgis.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmgis.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmgis.cpp -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmgis.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmgis.cpp -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmgis.s
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmgis.o.requires:
 
@@ -74,17 +74,17 @@ src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/depend.make.mark: ../src/plugi
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmgisgui.o: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/flags.make
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmgisgui.o: ../src/plugins/pihm_gis/pihmgisgui.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmgisgui.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmgisgui.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmgisgui.cpp
+	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmgisgui.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmgisgui.cpp
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmgisgui.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmgisgui.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmgisgui.cpp > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmgisgui.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmgisgui.cpp > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmgisgui.i
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmgisgui.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmgisgui.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmgisgui.cpp -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmgisgui.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmgisgui.cpp -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmgisgui.s
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmgisgui.o.requires:
 
@@ -98,17 +98,17 @@ src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/depend.make.mark: ../src/plugi
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/helpDialog/helpdialog.o: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/flags.make
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/helpDialog/helpdialog.o: ../src/plugins/pihm_gis/pihmLIBS/helpDialog/helpdialog.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_3)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/helpDialog/helpdialog.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/helpDialog/helpdialog.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmLIBS/helpDialog/helpdialog.cpp
+	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/helpDialog/helpdialog.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmLIBS/helpDialog/helpdialog.cpp
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/helpDialog/helpdialog.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/helpDialog/helpdialog.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmLIBS/helpDialog/helpdialog.cpp > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/helpDialog/helpdialog.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmLIBS/helpDialog/helpdialog.cpp > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/helpDialog/helpdialog.i
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/helpDialog/helpdialog.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/helpDialog/helpdialog.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmLIBS/helpDialog/helpdialog.cpp -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/helpDialog/helpdialog.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmLIBS/helpDialog/helpdialog.cpp -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/helpDialog/helpdialog.s
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/helpDialog/helpdialog.o.requires:
 
@@ -122,17 +122,17 @@ src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/depend.make.mark: ../src/plugi
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/avcalls_null.o: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/flags.make
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/avcalls_null.o: ../src/plugins/pihm_gis/pihmRasterLIBS/avcalls_null.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_4)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/avcalls_null.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/avcalls_null.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmRasterLIBS/avcalls_null.cpp
+	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/avcalls_null.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmRasterLIBS/avcalls_null.cpp
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/avcalls_null.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/avcalls_null.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmRasterLIBS/avcalls_null.cpp > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/avcalls_null.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmRasterLIBS/avcalls_null.cpp > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/avcalls_null.i
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/avcalls_null.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/avcalls_null.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmRasterLIBS/avcalls_null.cpp -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/avcalls_null.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmRasterLIBS/avcalls_null.cpp -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/avcalls_null.s
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/avcalls_null.o.requires:
 
@@ -146,17 +146,17 @@ src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/depend.make.mark: ../src/plugi
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/gridio_null.o: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/flags.make
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/gridio_null.o: ../src/plugins/pihm_gis/pihmRasterLIBS/gridio_null.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_5)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/gridio_null.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/gridio_null.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmRasterLIBS/gridio_null.cpp
+	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/gridio_null.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmRasterLIBS/gridio_null.cpp
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/gridio_null.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/gridio_null.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmRasterLIBS/gridio_null.cpp > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/gridio_null.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmRasterLIBS/gridio_null.cpp > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/gridio_null.i
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/gridio_null.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/gridio_null.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmRasterLIBS/gridio_null.cpp -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/gridio_null.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmRasterLIBS/gridio_null.cpp -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/gridio_null.s
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/gridio_null.o.requires:
 
@@ -170,17 +170,17 @@ src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/depend.make.mark: ../src/plugi
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/lsmcom.o: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/flags.make
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/lsmcom.o: ../src/plugins/pihm_gis/pihmRasterLIBS/lsmcom.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_6)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/lsmcom.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/lsmcom.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmRasterLIBS/lsmcom.cpp
+	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/lsmcom.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmRasterLIBS/lsmcom.cpp
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/lsmcom.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/lsmcom.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmRasterLIBS/lsmcom.cpp > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/lsmcom.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmRasterLIBS/lsmcom.cpp > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/lsmcom.i
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/lsmcom.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/lsmcom.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmRasterLIBS/lsmcom.cpp -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/lsmcom.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmRasterLIBS/lsmcom.cpp -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/lsmcom.s
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/lsmcom.o.requires:
 
@@ -194,17 +194,17 @@ src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/depend.make.mark: ../src/plugi
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/callocate.o: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/flags.make
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/callocate.o: ../src/plugins/pihm_gis/pihmRasterLIBS/callocate.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_7)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_7)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/callocate.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/callocate.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmRasterLIBS/callocate.cpp
+	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/callocate.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmRasterLIBS/callocate.cpp
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/callocate.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/callocate.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmRasterLIBS/callocate.cpp > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/callocate.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmRasterLIBS/callocate.cpp > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/callocate.i
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/callocate.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/callocate.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmRasterLIBS/callocate.cpp -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/callocate.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmRasterLIBS/callocate.cpp -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/callocate.s
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/callocate.o.requires:
 
@@ -218,17 +218,17 @@ src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/depend.make.mark: ../src/plugi
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/gridio.o: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/flags.make
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/gridio.o: ../src/plugins/pihm_gis/pihmRasterLIBS/gridio.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_8)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_8)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/gridio.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/gridio.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmRasterLIBS/gridio.cpp
+	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/gridio.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmRasterLIBS/gridio.cpp
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/gridio.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/gridio.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmRasterLIBS/gridio.cpp > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/gridio.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmRasterLIBS/gridio.cpp > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/gridio.i
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/gridio.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/gridio.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmRasterLIBS/gridio.cpp -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/gridio.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmRasterLIBS/gridio.cpp -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/gridio.s
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/gridio.o.requires:
 
@@ -242,17 +242,17 @@ src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/depend.make.mark: ../src/plugi
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/flood.o: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/flags.make
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/flood.o: ../src/plugins/pihm_gis/pihmRasterLIBS/flood.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_9)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_9)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/flood.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/flood.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmRasterLIBS/flood.cpp
+	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/flood.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmRasterLIBS/flood.cpp
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/flood.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/flood.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmRasterLIBS/flood.cpp > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/flood.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmRasterLIBS/flood.cpp > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/flood.i
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/flood.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/flood.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmRasterLIBS/flood.cpp -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/flood.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmRasterLIBS/flood.cpp -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/flood.s
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/flood.o.requires:
 
@@ -266,17 +266,17 @@ src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/depend.make.mark: ../src/plugi
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/setdir.o: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/flags.make
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/setdir.o: ../src/plugins/pihm_gis/pihmRasterLIBS/setdir.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_10)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_10)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/setdir.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/setdir.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmRasterLIBS/setdir.cpp
+	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/setdir.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmRasterLIBS/setdir.cpp
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/setdir.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/setdir.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmRasterLIBS/setdir.cpp > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/setdir.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmRasterLIBS/setdir.cpp > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/setdir.i
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/setdir.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/setdir.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmRasterLIBS/setdir.cpp -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/setdir.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmRasterLIBS/setdir.cpp -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/setdir.s
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/setdir.o.requires:
 
@@ -290,17 +290,17 @@ src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/depend.make.mark: ../src/plugi
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/aread8.o: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/flags.make
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/aread8.o: ../src/plugins/pihm_gis/pihmRasterLIBS/aread8.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_11)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_11)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/aread8.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/aread8.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmRasterLIBS/aread8.cpp
+	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/aread8.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmRasterLIBS/aread8.cpp
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/aread8.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/aread8.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmRasterLIBS/aread8.cpp > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/aread8.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmRasterLIBS/aread8.cpp > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/aread8.i
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/aread8.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/aread8.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmRasterLIBS/aread8.cpp -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/aread8.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmRasterLIBS/aread8.cpp -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/aread8.s
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/aread8.o.requires:
 
@@ -314,17 +314,17 @@ src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/depend.make.mark: ../src/plugi
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/streamDefinition.o: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/flags.make
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/streamDefinition.o: ../src/plugins/pihm_gis/pihmRasterLIBS/streamDefinition.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_12)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_12)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/streamDefinition.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/streamDefinition.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmRasterLIBS/streamDefinition.cpp
+	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/streamDefinition.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmRasterLIBS/streamDefinition.cpp
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/streamDefinition.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/streamDefinition.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmRasterLIBS/streamDefinition.cpp > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/streamDefinition.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmRasterLIBS/streamDefinition.cpp > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/streamDefinition.i
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/streamDefinition.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/streamDefinition.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmRasterLIBS/streamDefinition.cpp -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/streamDefinition.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmRasterLIBS/streamDefinition.cpp -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/streamDefinition.s
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/streamDefinition.o.requires:
 
@@ -338,17 +338,17 @@ src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/depend.make.mark: ../src/plugi
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/streamSegmentation.o: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/flags.make
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/streamSegmentation.o: ../src/plugins/pihm_gis/pihmRasterLIBS/streamSegmentation.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_13)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_13)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/streamSegmentation.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/streamSegmentation.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmRasterLIBS/streamSegmentation.cpp
+	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/streamSegmentation.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmRasterLIBS/streamSegmentation.cpp
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/streamSegmentation.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/streamSegmentation.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmRasterLIBS/streamSegmentation.cpp > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/streamSegmentation.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmRasterLIBS/streamSegmentation.cpp > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/streamSegmentation.i
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/streamSegmentation.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/streamSegmentation.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmRasterLIBS/streamSegmentation.cpp -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/streamSegmentation.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmRasterLIBS/streamSegmentation.cpp -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/streamSegmentation.s
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/streamSegmentation.o.requires:
 
@@ -362,17 +362,17 @@ src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/depend.make.mark: ../src/plugi
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/streamSegmentationShp.o: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/flags.make
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/streamSegmentationShp.o: ../src/plugins/pihm_gis/pihmRasterLIBS/streamSegmentationShp.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_14)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_14)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/streamSegmentationShp.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/streamSegmentationShp.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmRasterLIBS/streamSegmentationShp.cpp
+	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/streamSegmentationShp.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmRasterLIBS/streamSegmentationShp.cpp
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/streamSegmentationShp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/streamSegmentationShp.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmRasterLIBS/streamSegmentationShp.cpp > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/streamSegmentationShp.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmRasterLIBS/streamSegmentationShp.cpp > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/streamSegmentationShp.i
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/streamSegmentationShp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/streamSegmentationShp.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmRasterLIBS/streamSegmentationShp.cpp -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/streamSegmentationShp.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmRasterLIBS/streamSegmentationShp.cpp -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/streamSegmentationShp.s
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/streamSegmentationShp.o.requires:
 
@@ -386,17 +386,17 @@ src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/depend.make.mark: ../src/plugi
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/catProcessing.o: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/flags.make
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/catProcessing.o: ../src/plugins/pihm_gis/pihmRasterLIBS/catProcessing.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_15)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_15)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/catProcessing.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/catProcessing.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmRasterLIBS/catProcessing.cpp
+	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/catProcessing.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmRasterLIBS/catProcessing.cpp
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/catProcessing.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/catProcessing.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmRasterLIBS/catProcessing.cpp > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/catProcessing.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmRasterLIBS/catProcessing.cpp > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/catProcessing.i
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/catProcessing.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/catProcessing.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmRasterLIBS/catProcessing.cpp -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/catProcessing.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmRasterLIBS/catProcessing.cpp -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/catProcessing.s
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/catProcessing.o.requires:
 
@@ -410,17 +410,17 @@ src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/depend.make.mark: ../src/plugi
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/catPoly.o: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/flags.make
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/catPoly.o: ../src/plugins/pihm_gis/pihmRasterLIBS/catPoly.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_16)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_16)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/catPoly.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/catPoly.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmRasterLIBS/catPoly.cpp
+	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/catPoly.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmRasterLIBS/catPoly.cpp
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/catPoly.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/catPoly.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmRasterLIBS/catPoly.cpp > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/catPoly.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmRasterLIBS/catPoly.cpp > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/catPoly.i
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/catPoly.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/catPoly.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmRasterLIBS/catPoly.cpp -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/catPoly.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmRasterLIBS/catPoly.cpp -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/catPoly.s
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/catPoly.o.requires:
 
@@ -434,17 +434,17 @@ src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/depend.make.mark: ../src/plugi
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/RasterProcessing/FillPits/fillpits.o: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/flags.make
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/RasterProcessing/FillPits/fillpits.o: ../src/plugins/pihm_gis/RasterProcessing/FillPits/fillpits.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_17)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_17)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/RasterProcessing/FillPits/fillpits.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/RasterProcessing/FillPits/fillpits.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/FillPits/fillpits.cpp
+	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/RasterProcessing/FillPits/fillpits.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/FillPits/fillpits.cpp
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/RasterProcessing/FillPits/fillpits.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/RasterProcessing/FillPits/fillpits.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/FillPits/fillpits.cpp > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/RasterProcessing/FillPits/fillpits.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/FillPits/fillpits.cpp > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/RasterProcessing/FillPits/fillpits.i
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/RasterProcessing/FillPits/fillpits.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/RasterProcessing/FillPits/fillpits.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/FillPits/fillpits.cpp -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/RasterProcessing/FillPits/fillpits.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/FillPits/fillpits.cpp -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/RasterProcessing/FillPits/fillpits.s
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/RasterProcessing/FillPits/fillpits.o.requires:
 
@@ -458,17 +458,17 @@ src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/depend.make.mark: ../src/plugi
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/RasterProcessing/FlowGrid/flowgrid.o: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/flags.make
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/RasterProcessing/FlowGrid/flowgrid.o: ../src/plugins/pihm_gis/RasterProcessing/FlowGrid/flowgrid.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_18)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_18)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/RasterProcessing/FlowGrid/flowgrid.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/RasterProcessing/FlowGrid/flowgrid.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/FlowGrid/flowgrid.cpp
+	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/RasterProcessing/FlowGrid/flowgrid.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/FlowGrid/flowgrid.cpp
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/RasterProcessing/FlowGrid/flowgrid.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/RasterProcessing/FlowGrid/flowgrid.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/FlowGrid/flowgrid.cpp > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/RasterProcessing/FlowGrid/flowgrid.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/FlowGrid/flowgrid.cpp > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/RasterProcessing/FlowGrid/flowgrid.i
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/RasterProcessing/FlowGrid/flowgrid.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/RasterProcessing/FlowGrid/flowgrid.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/FlowGrid/flowgrid.cpp -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/RasterProcessing/FlowGrid/flowgrid.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/FlowGrid/flowgrid.cpp -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/RasterProcessing/FlowGrid/flowgrid.s
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/RasterProcessing/FlowGrid/flowgrid.o.requires:
 
@@ -482,17 +482,17 @@ src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/depend.make.mark: ../src/plugi
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/RasterProcessing/StreamGrid/streamgrid.o: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/flags.make
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/RasterProcessing/StreamGrid/streamgrid.o: ../src/plugins/pihm_gis/RasterProcessing/StreamGrid/streamgrid.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_19)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_19)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/RasterProcessing/StreamGrid/streamgrid.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/RasterProcessing/StreamGrid/streamgrid.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/StreamGrid/streamgrid.cpp
+	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/RasterProcessing/StreamGrid/streamgrid.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/StreamGrid/streamgrid.cpp
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/RasterProcessing/StreamGrid/streamgrid.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/RasterProcessing/StreamGrid/streamgrid.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/StreamGrid/streamgrid.cpp > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/RasterProcessing/StreamGrid/streamgrid.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/StreamGrid/streamgrid.cpp > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/RasterProcessing/StreamGrid/streamgrid.i
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/RasterProcessing/StreamGrid/streamgrid.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/RasterProcessing/StreamGrid/streamgrid.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/StreamGrid/streamgrid.cpp -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/RasterProcessing/StreamGrid/streamgrid.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/StreamGrid/streamgrid.cpp -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/RasterProcessing/StreamGrid/streamgrid.s
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/RasterProcessing/StreamGrid/streamgrid.o.requires:
 
@@ -506,17 +506,17 @@ src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/depend.make.mark: ../src/plugi
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/RasterProcessing/LinkGrid/linkgrid.o: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/flags.make
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/RasterProcessing/LinkGrid/linkgrid.o: ../src/plugins/pihm_gis/RasterProcessing/LinkGrid/linkgrid.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_20)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_20)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/RasterProcessing/LinkGrid/linkgrid.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/RasterProcessing/LinkGrid/linkgrid.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/LinkGrid/linkgrid.cpp
+	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/RasterProcessing/LinkGrid/linkgrid.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/LinkGrid/linkgrid.cpp
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/RasterProcessing/LinkGrid/linkgrid.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/RasterProcessing/LinkGrid/linkgrid.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/LinkGrid/linkgrid.cpp > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/RasterProcessing/LinkGrid/linkgrid.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/LinkGrid/linkgrid.cpp > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/RasterProcessing/LinkGrid/linkgrid.i
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/RasterProcessing/LinkGrid/linkgrid.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/RasterProcessing/LinkGrid/linkgrid.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/LinkGrid/linkgrid.cpp -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/RasterProcessing/LinkGrid/linkgrid.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/LinkGrid/linkgrid.cpp -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/RasterProcessing/LinkGrid/linkgrid.s
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/RasterProcessing/LinkGrid/linkgrid.o.requires:
 
@@ -530,17 +530,17 @@ src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/depend.make.mark: ../src/plugi
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/RasterProcessing/StreamPolyLine/streampolyline.o: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/flags.make
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/RasterProcessing/StreamPolyLine/streampolyline.o: ../src/plugins/pihm_gis/RasterProcessing/StreamPolyLine/streampolyline.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_21)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_21)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/RasterProcessing/StreamPolyLine/streampolyline.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/RasterProcessing/StreamPolyLine/streampolyline.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/StreamPolyLine/streampolyline.cpp
+	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/RasterProcessing/StreamPolyLine/streampolyline.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/StreamPolyLine/streampolyline.cpp
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/RasterProcessing/StreamPolyLine/streampolyline.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/RasterProcessing/StreamPolyLine/streampolyline.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/StreamPolyLine/streampolyline.cpp > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/RasterProcessing/StreamPolyLine/streampolyline.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/StreamPolyLine/streampolyline.cpp > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/RasterProcessing/StreamPolyLine/streampolyline.i
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/RasterProcessing/StreamPolyLine/streampolyline.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/RasterProcessing/StreamPolyLine/streampolyline.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/StreamPolyLine/streampolyline.cpp -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/RasterProcessing/StreamPolyLine/streampolyline.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/StreamPolyLine/streampolyline.cpp -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/RasterProcessing/StreamPolyLine/streampolyline.s
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/RasterProcessing/StreamPolyLine/streampolyline.o.requires:
 
@@ -554,17 +554,17 @@ src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/depend.make.mark: ../src/plugi
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/RasterProcessing/CatchmentGrid/catchmentgrid.o: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/flags.make
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/RasterProcessing/CatchmentGrid/catchmentgrid.o: ../src/plugins/pihm_gis/RasterProcessing/CatchmentGrid/catchmentgrid.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_22)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_22)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/RasterProcessing/CatchmentGrid/catchmentgrid.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/RasterProcessing/CatchmentGrid/catchmentgrid.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/CatchmentGrid/catchmentgrid.cpp
+	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/RasterProcessing/CatchmentGrid/catchmentgrid.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/CatchmentGrid/catchmentgrid.cpp
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/RasterProcessing/CatchmentGrid/catchmentgrid.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/RasterProcessing/CatchmentGrid/catchmentgrid.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/CatchmentGrid/catchmentgrid.cpp > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/RasterProcessing/CatchmentGrid/catchmentgrid.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/CatchmentGrid/catchmentgrid.cpp > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/RasterProcessing/CatchmentGrid/catchmentgrid.i
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/RasterProcessing/CatchmentGrid/catchmentgrid.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/RasterProcessing/CatchmentGrid/catchmentgrid.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/CatchmentGrid/catchmentgrid.cpp -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/RasterProcessing/CatchmentGrid/catchmentgrid.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/CatchmentGrid/catchmentgrid.cpp -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/RasterProcessing/CatchmentGrid/catchmentgrid.s
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/RasterProcessing/CatchmentGrid/catchmentgrid.o.requires:
 
@@ -578,17 +578,17 @@ src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/depend.make.mark: ../src/plugi
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/RasterProcessing/CatchmentPolygon/catchmentpolygon.o: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/flags.make
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/RasterProcessing/CatchmentPolygon/catchmentpolygon.o: ../src/plugins/pihm_gis/RasterProcessing/CatchmentPolygon/catchmentpolygon.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_23)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_23)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/RasterProcessing/CatchmentPolygon/catchmentpolygon.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/RasterProcessing/CatchmentPolygon/catchmentpolygon.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/CatchmentPolygon/catchmentpolygon.cpp
+	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/RasterProcessing/CatchmentPolygon/catchmentpolygon.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/CatchmentPolygon/catchmentpolygon.cpp
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/RasterProcessing/CatchmentPolygon/catchmentpolygon.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/RasterProcessing/CatchmentPolygon/catchmentpolygon.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/CatchmentPolygon/catchmentpolygon.cpp > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/RasterProcessing/CatchmentPolygon/catchmentpolygon.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/CatchmentPolygon/catchmentpolygon.cpp > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/RasterProcessing/CatchmentPolygon/catchmentpolygon.i
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/RasterProcessing/CatchmentPolygon/catchmentpolygon.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/RasterProcessing/CatchmentPolygon/catchmentpolygon.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/CatchmentPolygon/catchmentpolygon.cpp -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/RasterProcessing/CatchmentPolygon/catchmentpolygon.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/CatchmentPolygon/catchmentpolygon.cpp -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/RasterProcessing/CatchmentPolygon/catchmentpolygon.s
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/RasterProcessing/CatchmentPolygon/catchmentpolygon.o.requires:
 
@@ -602,17 +602,17 @@ src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/depend.make.mark: ../src/plugi
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/VectorProcessing/PolygonToPolyLine/polygontopolylinedialog.o: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/flags.make
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/VectorProcessing/PolygonToPolyLine/polygontopolylinedialog.o: ../src/plugins/pihm_gis/VectorProcessing/PolygonToPolyLine/polygontopolylinedialog.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_24)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_24)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/VectorProcessing/PolygonToPolyLine/polygontopolylinedialog.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/VectorProcessing/PolygonToPolyLine/polygontopolylinedialog.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/VectorProcessing/PolygonToPolyLine/polygontopolylinedialog.cpp
+	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/VectorProcessing/PolygonToPolyLine/polygontopolylinedialog.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/VectorProcessing/PolygonToPolyLine/polygontopolylinedialog.cpp
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/VectorProcessing/PolygonToPolyLine/polygontopolylinedialog.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/VectorProcessing/PolygonToPolyLine/polygontopolylinedialog.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/VectorProcessing/PolygonToPolyLine/polygontopolylinedialog.cpp > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/VectorProcessing/PolygonToPolyLine/polygontopolylinedialog.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/VectorProcessing/PolygonToPolyLine/polygontopolylinedialog.cpp > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/VectorProcessing/PolygonToPolyLine/polygontopolylinedialog.i
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/VectorProcessing/PolygonToPolyLine/polygontopolylinedialog.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/VectorProcessing/PolygonToPolyLine/polygontopolylinedialog.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/VectorProcessing/PolygonToPolyLine/polygontopolylinedialog.cpp -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/VectorProcessing/PolygonToPolyLine/polygontopolylinedialog.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/VectorProcessing/PolygonToPolyLine/polygontopolylinedialog.cpp -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/VectorProcessing/PolygonToPolyLine/polygontopolylinedialog.s
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/VectorProcessing/PolygonToPolyLine/polygontopolylinedialog.o.requires:
 
@@ -626,17 +626,17 @@ src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/depend.make.mark: ../src/plugi
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/VectorProcessing/SimplifyLine/simplifylinedialog.o: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/flags.make
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/VectorProcessing/SimplifyLine/simplifylinedialog.o: ../src/plugins/pihm_gis/VectorProcessing/SimplifyLine/simplifylinedialog.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_25)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_25)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/VectorProcessing/SimplifyLine/simplifylinedialog.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/VectorProcessing/SimplifyLine/simplifylinedialog.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/VectorProcessing/SimplifyLine/simplifylinedialog.cpp
+	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/VectorProcessing/SimplifyLine/simplifylinedialog.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/VectorProcessing/SimplifyLine/simplifylinedialog.cpp
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/VectorProcessing/SimplifyLine/simplifylinedialog.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/VectorProcessing/SimplifyLine/simplifylinedialog.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/VectorProcessing/SimplifyLine/simplifylinedialog.cpp > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/VectorProcessing/SimplifyLine/simplifylinedialog.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/VectorProcessing/SimplifyLine/simplifylinedialog.cpp > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/VectorProcessing/SimplifyLine/simplifylinedialog.i
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/VectorProcessing/SimplifyLine/simplifylinedialog.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/VectorProcessing/SimplifyLine/simplifylinedialog.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/VectorProcessing/SimplifyLine/simplifylinedialog.cpp -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/VectorProcessing/SimplifyLine/simplifylinedialog.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/VectorProcessing/SimplifyLine/simplifylinedialog.cpp -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/VectorProcessing/SimplifyLine/simplifylinedialog.s
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/VectorProcessing/SimplifyLine/simplifylinedialog.o.requires:
 
@@ -650,17 +650,17 @@ src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/depend.make.mark: ../src/plugi
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/VectorProcessing/SplitLine/splitlinedialog.o: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/flags.make
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/VectorProcessing/SplitLine/splitlinedialog.o: ../src/plugins/pihm_gis/VectorProcessing/SplitLine/splitlinedialog.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_26)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_26)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/VectorProcessing/SplitLine/splitlinedialog.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/VectorProcessing/SplitLine/splitlinedialog.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/VectorProcessing/SplitLine/splitlinedialog.cpp
+	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/VectorProcessing/SplitLine/splitlinedialog.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/VectorProcessing/SplitLine/splitlinedialog.cpp
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/VectorProcessing/SplitLine/splitlinedialog.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/VectorProcessing/SplitLine/splitlinedialog.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/VectorProcessing/SplitLine/splitlinedialog.cpp > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/VectorProcessing/SplitLine/splitlinedialog.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/VectorProcessing/SplitLine/splitlinedialog.cpp > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/VectorProcessing/SplitLine/splitlinedialog.i
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/VectorProcessing/SplitLine/splitlinedialog.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/VectorProcessing/SplitLine/splitlinedialog.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/VectorProcessing/SplitLine/splitlinedialog.cpp -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/VectorProcessing/SplitLine/splitlinedialog.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/VectorProcessing/SplitLine/splitlinedialog.cpp -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/VectorProcessing/SplitLine/splitlinedialog.s
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/VectorProcessing/SplitLine/splitlinedialog.o.requires:
 
@@ -674,17 +674,17 @@ src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/depend.make.mark: ../src/plugi
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/VectorProcessing/MergeFeatures/mergefeaturesdialog.o: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/flags.make
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/VectorProcessing/MergeFeatures/mergefeaturesdialog.o: ../src/plugins/pihm_gis/VectorProcessing/MergeFeatures/mergefeaturesdialog.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_27)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_27)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/VectorProcessing/MergeFeatures/mergefeaturesdialog.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/VectorProcessing/MergeFeatures/mergefeaturesdialog.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/VectorProcessing/MergeFeatures/mergefeaturesdialog.cpp
+	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/VectorProcessing/MergeFeatures/mergefeaturesdialog.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/VectorProcessing/MergeFeatures/mergefeaturesdialog.cpp
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/VectorProcessing/MergeFeatures/mergefeaturesdialog.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/VectorProcessing/MergeFeatures/mergefeaturesdialog.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/VectorProcessing/MergeFeatures/mergefeaturesdialog.cpp > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/VectorProcessing/MergeFeatures/mergefeaturesdialog.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/VectorProcessing/MergeFeatures/mergefeaturesdialog.cpp > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/VectorProcessing/MergeFeatures/mergefeaturesdialog.i
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/VectorProcessing/MergeFeatures/mergefeaturesdialog.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/VectorProcessing/MergeFeatures/mergefeaturesdialog.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/VectorProcessing/MergeFeatures/mergefeaturesdialog.cpp -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/VectorProcessing/MergeFeatures/mergefeaturesdialog.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/VectorProcessing/MergeFeatures/mergefeaturesdialog.cpp -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/VectorProcessing/MergeFeatures/mergefeaturesdialog.s
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/VectorProcessing/MergeFeatures/mergefeaturesdialog.o.requires:
 
@@ -698,17 +698,17 @@ src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/depend.make.mark: ../src/plugi
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DomainDecomposition/GenerateShapeTopology/generateshapetopology.o: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/flags.make
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DomainDecomposition/GenerateShapeTopology/generateshapetopology.o: ../src/plugins/pihm_gis/DomainDecomposition/GenerateShapeTopology/generateshapetopology.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_28)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_28)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DomainDecomposition/GenerateShapeTopology/generateshapetopology.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DomainDecomposition/GenerateShapeTopology/generateshapetopology.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DomainDecomposition/GenerateShapeTopology/generateshapetopology.cpp
+	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DomainDecomposition/GenerateShapeTopology/generateshapetopology.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DomainDecomposition/GenerateShapeTopology/generateshapetopology.cpp
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DomainDecomposition/GenerateShapeTopology/generateshapetopology.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DomainDecomposition/GenerateShapeTopology/generateshapetopology.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DomainDecomposition/GenerateShapeTopology/generateshapetopology.cpp > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DomainDecomposition/GenerateShapeTopology/generateshapetopology.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DomainDecomposition/GenerateShapeTopology/generateshapetopology.cpp > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DomainDecomposition/GenerateShapeTopology/generateshapetopology.i
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DomainDecomposition/GenerateShapeTopology/generateshapetopology.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DomainDecomposition/GenerateShapeTopology/generateshapetopology.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DomainDecomposition/GenerateShapeTopology/generateshapetopology.cpp -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DomainDecomposition/GenerateShapeTopology/generateshapetopology.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DomainDecomposition/GenerateShapeTopology/generateshapetopology.cpp -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DomainDecomposition/GenerateShapeTopology/generateshapetopology.s
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DomainDecomposition/GenerateShapeTopology/generateshapetopology.o.requires:
 
@@ -722,17 +722,17 @@ src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/depend.make.mark: ../src/plugi
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DomainDecomposition/RunTriangle/triangle.o: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/flags.make
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DomainDecomposition/RunTriangle/triangle.o: ../src/plugins/pihm_gis/DomainDecomposition/RunTriangle/triangle.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_29)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_29)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DomainDecomposition/RunTriangle/triangle.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DomainDecomposition/RunTriangle/triangle.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DomainDecomposition/RunTriangle/triangle.cpp
+	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DomainDecomposition/RunTriangle/triangle.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DomainDecomposition/RunTriangle/triangle.cpp
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DomainDecomposition/RunTriangle/triangle.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DomainDecomposition/RunTriangle/triangle.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DomainDecomposition/RunTriangle/triangle.cpp > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DomainDecomposition/RunTriangle/triangle.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DomainDecomposition/RunTriangle/triangle.cpp > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DomainDecomposition/RunTriangle/triangle.i
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DomainDecomposition/RunTriangle/triangle.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DomainDecomposition/RunTriangle/triangle.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DomainDecomposition/RunTriangle/triangle.cpp -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DomainDecomposition/RunTriangle/triangle.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DomainDecomposition/RunTriangle/triangle.cpp -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DomainDecomposition/RunTriangle/triangle.s
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DomainDecomposition/RunTriangle/triangle.o.requires:
 
@@ -746,17 +746,17 @@ src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/depend.make.mark: ../src/plugi
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DomainDecomposition/RunTriangle/runtriangle.o: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/flags.make
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DomainDecomposition/RunTriangle/runtriangle.o: ../src/plugins/pihm_gis/DomainDecomposition/RunTriangle/runtriangle.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_30)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_30)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DomainDecomposition/RunTriangle/runtriangle.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DomainDecomposition/RunTriangle/runtriangle.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DomainDecomposition/RunTriangle/runtriangle.cpp
+	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DomainDecomposition/RunTriangle/runtriangle.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DomainDecomposition/RunTriangle/runtriangle.cpp
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DomainDecomposition/RunTriangle/runtriangle.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DomainDecomposition/RunTriangle/runtriangle.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DomainDecomposition/RunTriangle/runtriangle.cpp > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DomainDecomposition/RunTriangle/runtriangle.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DomainDecomposition/RunTriangle/runtriangle.cpp > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DomainDecomposition/RunTriangle/runtriangle.i
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DomainDecomposition/RunTriangle/runtriangle.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DomainDecomposition/RunTriangle/runtriangle.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DomainDecomposition/RunTriangle/runtriangle.cpp -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DomainDecomposition/RunTriangle/runtriangle.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DomainDecomposition/RunTriangle/runtriangle.cpp -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DomainDecomposition/RunTriangle/runtriangle.s
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DomainDecomposition/RunTriangle/runtriangle.o.requires:
 
@@ -770,17 +770,17 @@ src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/depend.make.mark: ../src/plugi
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DomainDecomposition/CreateTINs/createtins.o: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/flags.make
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DomainDecomposition/CreateTINs/createtins.o: ../src/plugins/pihm_gis/DomainDecomposition/CreateTINs/createtins.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_31)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_31)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DomainDecomposition/CreateTINs/createtins.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DomainDecomposition/CreateTINs/createtins.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DomainDecomposition/CreateTINs/createtins.cpp
+	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DomainDecomposition/CreateTINs/createtins.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DomainDecomposition/CreateTINs/createtins.cpp
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DomainDecomposition/CreateTINs/createtins.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DomainDecomposition/CreateTINs/createtins.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DomainDecomposition/CreateTINs/createtins.cpp > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DomainDecomposition/CreateTINs/createtins.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DomainDecomposition/CreateTINs/createtins.cpp > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DomainDecomposition/CreateTINs/createtins.i
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DomainDecomposition/CreateTINs/createtins.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DomainDecomposition/CreateTINs/createtins.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DomainDecomposition/CreateTINs/createtins.cpp -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DomainDecomposition/CreateTINs/createtins.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DomainDecomposition/CreateTINs/createtins.cpp -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DomainDecomposition/CreateTINs/createtins.s
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DomainDecomposition/CreateTINs/createtins.o.requires:
 
@@ -794,17 +794,17 @@ src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/depend.make.mark: ../src/plugi
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/pickGridValue.o: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/flags.make
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/pickGridValue.o: ../src/plugins/pihm_gis/pihmLIBS/pickGridValue.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_32)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_32)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/pickGridValue.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/pickGridValue.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmLIBS/pickGridValue.cpp
+	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/pickGridValue.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmLIBS/pickGridValue.cpp
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/pickGridValue.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/pickGridValue.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmLIBS/pickGridValue.cpp > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/pickGridValue.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmLIBS/pickGridValue.cpp > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/pickGridValue.i
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/pickGridValue.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/pickGridValue.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmLIBS/pickGridValue.cpp -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/pickGridValue.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmLIBS/pickGridValue.cpp -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/pickGridValue.s
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/pickGridValue.o.requires:
 
@@ -818,17 +818,17 @@ src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/depend.make.mark: ../src/plugi
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/addFID.o: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/flags.make
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/addFID.o: ../src/plugins/pihm_gis/pihmLIBS/addFID.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_33)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_33)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/addFID.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/addFID.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmLIBS/addFID.cpp
+	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/addFID.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmLIBS/addFID.cpp
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/addFID.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/addFID.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmLIBS/addFID.cpp > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/addFID.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmLIBS/addFID.cpp > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/addFID.i
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/addFID.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/addFID.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmLIBS/addFID.cpp -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/addFID.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmLIBS/addFID.cpp -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/addFID.s
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/addFID.o.requires:
 
@@ -842,17 +842,17 @@ src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/depend.make.mark: ../src/plugi
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/addToFromNode.o: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/flags.make
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/addToFromNode.o: ../src/plugins/pihm_gis/pihmLIBS/addToFromNode.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_34)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_34)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/addToFromNode.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/addToFromNode.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmLIBS/addToFromNode.cpp
+	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/addToFromNode.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmLIBS/addToFromNode.cpp
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/addToFromNode.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/addToFromNode.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmLIBS/addToFromNode.cpp > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/addToFromNode.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmLIBS/addToFromNode.cpp > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/addToFromNode.i
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/addToFromNode.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/addToFromNode.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmLIBS/addToFromNode.cpp -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/addToFromNode.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmLIBS/addToFromNode.cpp -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/addToFromNode.s
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/addToFromNode.o.requires:
 
@@ -866,17 +866,17 @@ src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/depend.make.mark: ../src/plugi
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/addSOrder.o: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/flags.make
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/addSOrder.o: ../src/plugins/pihm_gis/pihmLIBS/addSOrder.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_35)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_35)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/addSOrder.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/addSOrder.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmLIBS/addSOrder.cpp
+	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/addSOrder.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmLIBS/addSOrder.cpp
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/addSOrder.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/addSOrder.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmLIBS/addSOrder.cpp > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/addSOrder.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmLIBS/addSOrder.cpp > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/addSOrder.i
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/addSOrder.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/addSOrder.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmLIBS/addSOrder.cpp -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/addSOrder.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmLIBS/addSOrder.cpp -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/addSOrder.s
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/addSOrder.o.requires:
 
@@ -890,17 +890,17 @@ src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/depend.make.mark: ../src/plugi
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/calDownSegment.o: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/flags.make
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/calDownSegment.o: ../src/plugins/pihm_gis/pihmLIBS/calDownSegment.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_36)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_36)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/calDownSegment.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/calDownSegment.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmLIBS/calDownSegment.cpp
+	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/calDownSegment.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmLIBS/calDownSegment.cpp
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/calDownSegment.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/calDownSegment.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmLIBS/calDownSegment.cpp > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/calDownSegment.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmLIBS/calDownSegment.cpp > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/calDownSegment.i
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/calDownSegment.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/calDownSegment.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmLIBS/calDownSegment.cpp -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/calDownSegment.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmLIBS/calDownSegment.cpp -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/calDownSegment.s
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/calDownSegment.o.requires:
 
@@ -914,17 +914,17 @@ src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/depend.make.mark: ../src/plugi
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/Point.o: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/flags.make
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/Point.o: ../src/plugins/pihm_gis/pihmLIBS/Point.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_37)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_37)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/Point.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/Point.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmLIBS/Point.cpp
+	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/Point.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmLIBS/Point.cpp
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/Point.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/Point.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmLIBS/Point.cpp > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/Point.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmLIBS/Point.cpp > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/Point.i
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/Point.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/Point.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmLIBS/Point.cpp -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/Point.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmLIBS/Point.cpp -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/Point.s
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/Point.o.requires:
 
@@ -938,17 +938,17 @@ src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/depend.make.mark: ../src/plugi
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/extractRiver4mTIN.o: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/flags.make
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/extractRiver4mTIN.o: ../src/plugins/pihm_gis/pihmLIBS/extractRiver4mTIN.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_38)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_38)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/extractRiver4mTIN.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/extractRiver4mTIN.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmLIBS/extractRiver4mTIN.cpp
+	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/extractRiver4mTIN.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmLIBS/extractRiver4mTIN.cpp
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/extractRiver4mTIN.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/extractRiver4mTIN.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmLIBS/extractRiver4mTIN.cpp > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/extractRiver4mTIN.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmLIBS/extractRiver4mTIN.cpp > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/extractRiver4mTIN.i
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/extractRiver4mTIN.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/extractRiver4mTIN.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmLIBS/extractRiver4mTIN.cpp -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/extractRiver4mTIN.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmLIBS/extractRiver4mTIN.cpp -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/extractRiver4mTIN.s
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/extractRiver4mTIN.o.requires:
 
@@ -962,17 +962,17 @@ src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/depend.make.mark: ../src/plugi
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DataModelLoader/MeshFile/mshfile.o: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/flags.make
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DataModelLoader/MeshFile/mshfile.o: ../src/plugins/pihm_gis/DataModelLoader/MeshFile/mshfile.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_39)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_39)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DataModelLoader/MeshFile/mshfile.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DataModelLoader/MeshFile/mshfile.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DataModelLoader/MeshFile/mshfile.cpp
+	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DataModelLoader/MeshFile/mshfile.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DataModelLoader/MeshFile/mshfile.cpp
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DataModelLoader/MeshFile/mshfile.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DataModelLoader/MeshFile/mshfile.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DataModelLoader/MeshFile/mshfile.cpp > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DataModelLoader/MeshFile/mshfile.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DataModelLoader/MeshFile/mshfile.cpp > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DataModelLoader/MeshFile/mshfile.i
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DataModelLoader/MeshFile/mshfile.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DataModelLoader/MeshFile/mshfile.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DataModelLoader/MeshFile/mshfile.cpp -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DataModelLoader/MeshFile/mshfile.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DataModelLoader/MeshFile/mshfile.cpp -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DataModelLoader/MeshFile/mshfile.s
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DataModelLoader/MeshFile/mshfile.o.requires:
 
@@ -986,17 +986,17 @@ src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/depend.make.mark: ../src/plugi
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DataModelLoader/AttFile/attfile.o: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/flags.make
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DataModelLoader/AttFile/attfile.o: ../src/plugins/pihm_gis/DataModelLoader/AttFile/attfile.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_40)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_40)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DataModelLoader/AttFile/attfile.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DataModelLoader/AttFile/attfile.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DataModelLoader/AttFile/attfile.cpp
+	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DataModelLoader/AttFile/attfile.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DataModelLoader/AttFile/attfile.cpp
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DataModelLoader/AttFile/attfile.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DataModelLoader/AttFile/attfile.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DataModelLoader/AttFile/attfile.cpp > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DataModelLoader/AttFile/attfile.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DataModelLoader/AttFile/attfile.cpp > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DataModelLoader/AttFile/attfile.i
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DataModelLoader/AttFile/attfile.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DataModelLoader/AttFile/attfile.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DataModelLoader/AttFile/attfile.cpp -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DataModelLoader/AttFile/attfile.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DataModelLoader/AttFile/attfile.cpp -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DataModelLoader/AttFile/attfile.s
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DataModelLoader/AttFile/attfile.o.requires:
 
@@ -1010,17 +1010,17 @@ src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/depend.make.mark: ../src/plugi
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DataModelLoader/RivFile/rivfile.o: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/flags.make
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DataModelLoader/RivFile/rivfile.o: ../src/plugins/pihm_gis/DataModelLoader/RivFile/rivfile.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_41)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_41)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DataModelLoader/RivFile/rivfile.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DataModelLoader/RivFile/rivfile.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DataModelLoader/RivFile/rivfile.cpp
+	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DataModelLoader/RivFile/rivfile.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DataModelLoader/RivFile/rivfile.cpp
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DataModelLoader/RivFile/rivfile.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DataModelLoader/RivFile/rivfile.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DataModelLoader/RivFile/rivfile.cpp > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DataModelLoader/RivFile/rivfile.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DataModelLoader/RivFile/rivfile.cpp > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DataModelLoader/RivFile/rivfile.i
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DataModelLoader/RivFile/rivfile.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DataModelLoader/RivFile/rivfile.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DataModelLoader/RivFile/rivfile.cpp -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DataModelLoader/RivFile/rivfile.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DataModelLoader/RivFile/rivfile.cpp -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DataModelLoader/RivFile/rivfile.s
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DataModelLoader/RivFile/rivfile.o.requires:
 
@@ -1034,17 +1034,17 @@ src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/depend.make.mark: ../src/plugi
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DataModelLoader/ParaFile/parafile.o: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/flags.make
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DataModelLoader/ParaFile/parafile.o: ../src/plugins/pihm_gis/DataModelLoader/ParaFile/parafile.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_42)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_42)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DataModelLoader/ParaFile/parafile.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DataModelLoader/ParaFile/parafile.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DataModelLoader/ParaFile/parafile.cpp
+	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DataModelLoader/ParaFile/parafile.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DataModelLoader/ParaFile/parafile.cpp
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DataModelLoader/ParaFile/parafile.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DataModelLoader/ParaFile/parafile.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DataModelLoader/ParaFile/parafile.cpp > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DataModelLoader/ParaFile/parafile.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DataModelLoader/ParaFile/parafile.cpp > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DataModelLoader/ParaFile/parafile.i
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DataModelLoader/ParaFile/parafile.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DataModelLoader/ParaFile/parafile.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DataModelLoader/ParaFile/parafile.cpp -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DataModelLoader/ParaFile/parafile.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DataModelLoader/ParaFile/parafile.cpp -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DataModelLoader/ParaFile/parafile.s
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DataModelLoader/ParaFile/parafile.o.requires:
 
@@ -1058,17 +1058,17 @@ src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/depend.make.mark: ../src/plugi
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/PIHM_v2.0/update.o: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/flags.make
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/PIHM_v2.0/update.o: ../src/plugins/pihm_gis/PIHM_v2.0/update.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_43)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_43)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/PIHM_v2.0/update.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/PIHM_v2.0/update.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/PIHM_v2.0/update.cpp
+	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/PIHM_v2.0/update.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/PIHM_v2.0/update.cpp
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/PIHM_v2.0/update.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/PIHM_v2.0/update.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/PIHM_v2.0/update.cpp > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/PIHM_v2.0/update.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/PIHM_v2.0/update.cpp > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/PIHM_v2.0/update.i
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/PIHM_v2.0/update.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/PIHM_v2.0/update.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/PIHM_v2.0/update.cpp -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/PIHM_v2.0/update.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/PIHM_v2.0/update.cpp -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/PIHM_v2.0/update.s
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/PIHM_v2.0/update.o.requires:
 
@@ -1082,17 +1082,17 @@ src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/depend.make.mark: ../src/plugi
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/PIHM_v2.0/f.o: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/flags.make
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/PIHM_v2.0/f.o: ../src/plugins/pihm_gis/PIHM_v2.0/f.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_44)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_44)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/PIHM_v2.0/f.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/PIHM_v2.0/f.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/PIHM_v2.0/f.cpp
+	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/PIHM_v2.0/f.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/PIHM_v2.0/f.cpp
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/PIHM_v2.0/f.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/PIHM_v2.0/f.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/PIHM_v2.0/f.cpp > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/PIHM_v2.0/f.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/PIHM_v2.0/f.cpp > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/PIHM_v2.0/f.i
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/PIHM_v2.0/f.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/PIHM_v2.0/f.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/PIHM_v2.0/f.cpp -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/PIHM_v2.0/f.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/PIHM_v2.0/f.cpp -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/PIHM_v2.0/f.s
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/PIHM_v2.0/f.o.requires:
 
@@ -1106,17 +1106,17 @@ src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/depend.make.mark: ../src/plugi
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/PIHM_v2.0/pihm.o: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/flags.make
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/PIHM_v2.0/pihm.o: ../src/plugins/pihm_gis/PIHM_v2.0/pihm.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_45)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_45)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/PIHM_v2.0/pihm.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/PIHM_v2.0/pihm.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/PIHM_v2.0/pihm.cpp
+	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/PIHM_v2.0/pihm.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/PIHM_v2.0/pihm.cpp
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/PIHM_v2.0/pihm.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/PIHM_v2.0/pihm.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/PIHM_v2.0/pihm.cpp > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/PIHM_v2.0/pihm.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/PIHM_v2.0/pihm.cpp > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/PIHM_v2.0/pihm.i
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/PIHM_v2.0/pihm.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/PIHM_v2.0/pihm.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/PIHM_v2.0/pihm.cpp -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/PIHM_v2.0/pihm.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/PIHM_v2.0/pihm.cpp -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/PIHM_v2.0/pihm.s
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/PIHM_v2.0/pihm.o.requires:
 
@@ -1130,17 +1130,17 @@ src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/depend.make.mark: ../src/plugi
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/PIHM_v2.0/print.o: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/flags.make
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/PIHM_v2.0/print.o: ../src/plugins/pihm_gis/PIHM_v2.0/print.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_46)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_46)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/PIHM_v2.0/print.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/PIHM_v2.0/print.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/PIHM_v2.0/print.cpp
+	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/PIHM_v2.0/print.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/PIHM_v2.0/print.cpp
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/PIHM_v2.0/print.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/PIHM_v2.0/print.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/PIHM_v2.0/print.cpp > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/PIHM_v2.0/print.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/PIHM_v2.0/print.cpp > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/PIHM_v2.0/print.i
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/PIHM_v2.0/print.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/PIHM_v2.0/print.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/PIHM_v2.0/print.cpp -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/PIHM_v2.0/print.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/PIHM_v2.0/print.cpp -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/PIHM_v2.0/print.s
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/PIHM_v2.0/print.o.requires:
 
@@ -1154,17 +1154,17 @@ src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/depend.make.mark: ../src/plugi
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/PIHM_v2.0/initialize.o: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/flags.make
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/PIHM_v2.0/initialize.o: ../src/plugins/pihm_gis/PIHM_v2.0/initialize.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_47)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_47)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/PIHM_v2.0/initialize.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/PIHM_v2.0/initialize.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/PIHM_v2.0/initialize.cpp
+	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/PIHM_v2.0/initialize.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/PIHM_v2.0/initialize.cpp
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/PIHM_v2.0/initialize.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/PIHM_v2.0/initialize.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/PIHM_v2.0/initialize.cpp > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/PIHM_v2.0/initialize.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/PIHM_v2.0/initialize.cpp > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/PIHM_v2.0/initialize.i
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/PIHM_v2.0/initialize.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/PIHM_v2.0/initialize.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/PIHM_v2.0/initialize.cpp -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/PIHM_v2.0/initialize.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/PIHM_v2.0/initialize.cpp -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/PIHM_v2.0/initialize.s
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/PIHM_v2.0/initialize.o.requires:
 
@@ -1178,17 +1178,17 @@ src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/depend.make.mark: ../src/plugi
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/PIHM_v2.0/read_alloc.o: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/flags.make
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/PIHM_v2.0/read_alloc.o: ../src/plugins/pihm_gis/PIHM_v2.0/read_alloc.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_48)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_48)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/PIHM_v2.0/read_alloc.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/PIHM_v2.0/read_alloc.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/PIHM_v2.0/read_alloc.cpp
+	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/PIHM_v2.0/read_alloc.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/PIHM_v2.0/read_alloc.cpp
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/PIHM_v2.0/read_alloc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/PIHM_v2.0/read_alloc.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/PIHM_v2.0/read_alloc.cpp > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/PIHM_v2.0/read_alloc.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/PIHM_v2.0/read_alloc.cpp > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/PIHM_v2.0/read_alloc.i
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/PIHM_v2.0/read_alloc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/PIHM_v2.0/read_alloc.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/PIHM_v2.0/read_alloc.cpp -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/PIHM_v2.0/read_alloc.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/PIHM_v2.0/read_alloc.cpp -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/PIHM_v2.0/read_alloc.s
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/PIHM_v2.0/read_alloc.o.requires:
 
@@ -1202,17 +1202,17 @@ src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/depend.make.mark: ../src/plugi
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/PIHM_v2.0/is_sm_et.o: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/flags.make
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/PIHM_v2.0/is_sm_et.o: ../src/plugins/pihm_gis/PIHM_v2.0/is_sm_et.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_49)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_49)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/PIHM_v2.0/is_sm_et.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/PIHM_v2.0/is_sm_et.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/PIHM_v2.0/is_sm_et.cpp
+	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/PIHM_v2.0/is_sm_et.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/PIHM_v2.0/is_sm_et.cpp
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/PIHM_v2.0/is_sm_et.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/PIHM_v2.0/is_sm_et.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/PIHM_v2.0/is_sm_et.cpp > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/PIHM_v2.0/is_sm_et.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/PIHM_v2.0/is_sm_et.cpp > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/PIHM_v2.0/is_sm_et.i
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/PIHM_v2.0/is_sm_et.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/PIHM_v2.0/is_sm_et.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/PIHM_v2.0/is_sm_et.cpp -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/PIHM_v2.0/is_sm_et.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/PIHM_v2.0/is_sm_et.cpp -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/PIHM_v2.0/is_sm_et.s
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/PIHM_v2.0/is_sm_et.o.requires:
 
@@ -1222,21 +1222,45 @@ src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/PIHM_v2.0/is_sm_et.o.provides:
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/PIHM_v2.0/is_sm_et.o.provides.build: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/PIHM_v2.0/is_sm_et.o
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/depend.make.mark: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/flags.make
+src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/depend.make.mark: ../src/plugins/pihm_gis/MyNewThread.cpp
+
+src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/MyNewThread.o: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/flags.make
+src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/MyNewThread.o: ../src/plugins/pihm_gis/MyNewThread.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_50)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/MyNewThread.o"
+	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/MyNewThread.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/MyNewThread.cpp
+
+src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/MyNewThread.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/MyNewThread.i"
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/MyNewThread.cpp > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/MyNewThread.i
+
+src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/MyNewThread.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/MyNewThread.s"
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/MyNewThread.cpp -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/MyNewThread.s
+
+src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/MyNewThread.o.requires:
+
+src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/MyNewThread.o.provides: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/MyNewThread.o.requires
+	$(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/MyNewThread.o.provides.build
+
+src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/MyNewThread.o.provides.build: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/MyNewThread.o
+
+src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/depend.make.mark: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/flags.make
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/depend.make.mark: ../src/plugins/pihm_gis/RunPIHM/runpihm.cpp
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/RunPIHM/runpihm.o: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/flags.make
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/RunPIHM/runpihm.o: ../src/plugins/pihm_gis/RunPIHM/runpihm.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_50)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_51)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/RunPIHM/runpihm.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/RunPIHM/runpihm.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RunPIHM/runpihm.cpp
+	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/RunPIHM/runpihm.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RunPIHM/runpihm.cpp
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/RunPIHM/runpihm.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/RunPIHM/runpihm.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RunPIHM/runpihm.cpp > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/RunPIHM/runpihm.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RunPIHM/runpihm.cpp > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/RunPIHM/runpihm.i
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/RunPIHM/runpihm.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/RunPIHM/runpihm.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RunPIHM/runpihm.cpp -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/RunPIHM/runpihm.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RunPIHM/runpihm.cpp -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/RunPIHM/runpihm.s
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/RunPIHM/runpihm.o.requires:
 
@@ -1250,17 +1274,17 @@ src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/depend.make.mark: ../src/plugi
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/generateShape.o: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/flags.make
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/generateShape.o: ../src/plugins/pihm_gis/pihmLIBS/generateShape.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_51)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_52)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/generateShape.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/generateShape.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmLIBS/generateShape.cpp
+	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/generateShape.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmLIBS/generateShape.cpp
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/generateShape.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/generateShape.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmLIBS/generateShape.cpp > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/generateShape.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmLIBS/generateShape.cpp > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/generateShape.i
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/generateShape.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/generateShape.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmLIBS/generateShape.cpp -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/generateShape.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmLIBS/generateShape.cpp -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/generateShape.s
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/generateShape.o.requires:
 
@@ -1270,21 +1294,69 @@ src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/generateShape.o.provi
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/generateShape.o.provides.build: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/generateShape.o
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/depend.make.mark: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/flags.make
+src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/depend.make.mark: ../src/plugins/pihm_gis/Analysis/TimeSeries/plotTS.cpp
+
+src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/Analysis/TimeSeries/plotTS.o: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/flags.make
+src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/Analysis/TimeSeries/plotTS.o: ../src/plugins/pihm_gis/Analysis/TimeSeries/plotTS.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_53)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/Analysis/TimeSeries/plotTS.o"
+	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/Analysis/TimeSeries/plotTS.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/Analysis/TimeSeries/plotTS.cpp
+
+src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/Analysis/TimeSeries/plotTS.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/Analysis/TimeSeries/plotTS.i"
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/Analysis/TimeSeries/plotTS.cpp > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/Analysis/TimeSeries/plotTS.i
+
+src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/Analysis/TimeSeries/plotTS.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/Analysis/TimeSeries/plotTS.s"
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/Analysis/TimeSeries/plotTS.cpp -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/Analysis/TimeSeries/plotTS.s
+
+src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/Analysis/TimeSeries/plotTS.o.requires:
+
+src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/Analysis/TimeSeries/plotTS.o.provides: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/Analysis/TimeSeries/plotTS.o.requires
+	$(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/Analysis/TimeSeries/plotTS.o.provides.build
+
+src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/Analysis/TimeSeries/plotTS.o.provides.build: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/Analysis/TimeSeries/plotTS.o
+
+src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/depend.make.mark: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/flags.make
+src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/depend.make.mark: ../src/plugins/pihm_gis/Analysis/TimeSeries/timeseries.cpp
+
+src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/Analysis/TimeSeries/timeseries.o: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/flags.make
+src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/Analysis/TimeSeries/timeseries.o: ../src/plugins/pihm_gis/Analysis/TimeSeries/timeseries.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_54)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/Analysis/TimeSeries/timeseries.o"
+	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/Analysis/TimeSeries/timeseries.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/Analysis/TimeSeries/timeseries.cpp
+
+src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/Analysis/TimeSeries/timeseries.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/Analysis/TimeSeries/timeseries.i"
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/Analysis/TimeSeries/timeseries.cpp > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/Analysis/TimeSeries/timeseries.i
+
+src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/Analysis/TimeSeries/timeseries.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/Analysis/TimeSeries/timeseries.s"
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/Analysis/TimeSeries/timeseries.cpp -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/Analysis/TimeSeries/timeseries.s
+
+src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/Analysis/TimeSeries/timeseries.o.requires:
+
+src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/Analysis/TimeSeries/timeseries.o.provides: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/Analysis/TimeSeries/timeseries.o.requires
+	$(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/Analysis/TimeSeries/timeseries.o.provides.build
+
+src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/Analysis/TimeSeries/timeseries.o.provides.build: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/Analysis/TimeSeries/timeseries.o
+
+src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/depend.make.mark: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/flags.make
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/depend.make.mark: ../src/plugins/pihm_gis/Analysis/Spatialplot/spatialplot.cpp
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/Analysis/Spatialplot/spatialplot.o: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/flags.make
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/Analysis/Spatialplot/spatialplot.o: ../src/plugins/pihm_gis/Analysis/Spatialplot/spatialplot.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_52)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_55)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/Analysis/Spatialplot/spatialplot.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/Analysis/Spatialplot/spatialplot.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/Analysis/Spatialplot/spatialplot.cpp
+	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/Analysis/Spatialplot/spatialplot.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/Analysis/Spatialplot/spatialplot.cpp
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/Analysis/Spatialplot/spatialplot.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/Analysis/Spatialplot/spatialplot.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/Analysis/Spatialplot/spatialplot.cpp > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/Analysis/Spatialplot/spatialplot.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/Analysis/Spatialplot/spatialplot.cpp > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/Analysis/Spatialplot/spatialplot.i
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/Analysis/Spatialplot/spatialplot.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/Analysis/Spatialplot/spatialplot.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/Analysis/Spatialplot/spatialplot.cpp -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/Analysis/Spatialplot/spatialplot.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/Analysis/Spatialplot/spatialplot.cpp -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/Analysis/Spatialplot/spatialplot.s
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/Analysis/Spatialplot/spatialplot.o.requires:
 
@@ -1298,17 +1370,17 @@ src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/depend.make.mark: ../src/plugi
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/Help/About/about.o: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/flags.make
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/Help/About/about.o: ../src/plugins/pihm_gis/Help/About/about.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_53)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_56)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/Help/About/about.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/Help/About/about.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/Help/About/about.cpp
+	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/Help/About/about.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/Help/About/about.cpp
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/Help/About/about.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/Help/About/about.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/Help/About/about.cpp > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/Help/About/about.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/Help/About/about.cpp > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/Help/About/about.i
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/Help/About/about.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/Help/About/about.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/Help/About/about.cpp -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/Help/About/about.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/Help/About/about.cpp -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/Help/About/about.s
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/Help/About/about.o.requires:
 
@@ -1322,17 +1394,17 @@ src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/depend.make.mark: src/plugins/
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_pihmgis.o: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/flags.make
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_pihmgis.o: src/plugins/pihm_gis/moc_pihmgis.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_54)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_57)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_pihmgis.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_pihmgis.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/moc_pihmgis.cxx
+	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_pihmgis.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_pihmgis.cxx
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_pihmgis.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_pihmgis.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/moc_pihmgis.cxx > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_pihmgis.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_pihmgis.cxx > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_pihmgis.i
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_pihmgis.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_pihmgis.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/moc_pihmgis.cxx -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_pihmgis.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_pihmgis.cxx -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_pihmgis.s
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_pihmgis.o.requires:
 
@@ -1346,17 +1418,17 @@ src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/depend.make.mark: src/plugins/
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_pihmgisgui.o: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/flags.make
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_pihmgisgui.o: src/plugins/pihm_gis/moc_pihmgisgui.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_55)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_58)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_pihmgisgui.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_pihmgisgui.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/moc_pihmgisgui.cxx
+	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_pihmgisgui.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_pihmgisgui.cxx
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_pihmgisgui.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_pihmgisgui.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/moc_pihmgisgui.cxx > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_pihmgisgui.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_pihmgisgui.cxx > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_pihmgisgui.i
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_pihmgisgui.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_pihmgisgui.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/moc_pihmgisgui.cxx -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_pihmgisgui.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_pihmgisgui.cxx -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_pihmgisgui.s
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_pihmgisgui.o.requires:
 
@@ -1370,17 +1442,17 @@ src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/depend.make.mark: src/plugins/
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_helpdialog.o: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/flags.make
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_helpdialog.o: src/plugins/pihm_gis/moc_helpdialog.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_56)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_59)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_helpdialog.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_helpdialog.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/moc_helpdialog.cxx
+	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_helpdialog.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_helpdialog.cxx
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_helpdialog.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_helpdialog.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/moc_helpdialog.cxx > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_helpdialog.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_helpdialog.cxx > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_helpdialog.i
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_helpdialog.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_helpdialog.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/moc_helpdialog.cxx -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_helpdialog.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_helpdialog.cxx -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_helpdialog.s
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_helpdialog.o.requires:
 
@@ -1394,17 +1466,17 @@ src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/depend.make.mark: src/plugins/
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_fillpits.o: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/flags.make
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_fillpits.o: src/plugins/pihm_gis/moc_fillpits.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_57)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_60)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_fillpits.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_fillpits.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/moc_fillpits.cxx
+	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_fillpits.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_fillpits.cxx
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_fillpits.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_fillpits.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/moc_fillpits.cxx > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_fillpits.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_fillpits.cxx > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_fillpits.i
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_fillpits.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_fillpits.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/moc_fillpits.cxx -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_fillpits.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_fillpits.cxx -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_fillpits.s
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_fillpits.o.requires:
 
@@ -1418,17 +1490,17 @@ src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/depend.make.mark: src/plugins/
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_flowgrid.o: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/flags.make
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_flowgrid.o: src/plugins/pihm_gis/moc_flowgrid.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_58)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_61)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_flowgrid.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_flowgrid.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/moc_flowgrid.cxx
+	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_flowgrid.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_flowgrid.cxx
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_flowgrid.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_flowgrid.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/moc_flowgrid.cxx > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_flowgrid.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_flowgrid.cxx > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_flowgrid.i
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_flowgrid.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_flowgrid.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/moc_flowgrid.cxx -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_flowgrid.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_flowgrid.cxx -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_flowgrid.s
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_flowgrid.o.requires:
 
@@ -1442,17 +1514,17 @@ src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/depend.make.mark: src/plugins/
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_streamgrid.o: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/flags.make
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_streamgrid.o: src/plugins/pihm_gis/moc_streamgrid.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_59)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_62)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_streamgrid.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_streamgrid.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/moc_streamgrid.cxx
+	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_streamgrid.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_streamgrid.cxx
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_streamgrid.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_streamgrid.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/moc_streamgrid.cxx > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_streamgrid.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_streamgrid.cxx > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_streamgrid.i
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_streamgrid.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_streamgrid.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/moc_streamgrid.cxx -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_streamgrid.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_streamgrid.cxx -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_streamgrid.s
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_streamgrid.o.requires:
 
@@ -1466,17 +1538,17 @@ src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/depend.make.mark: src/plugins/
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_linkgrid.o: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/flags.make
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_linkgrid.o: src/plugins/pihm_gis/moc_linkgrid.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_60)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_63)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_linkgrid.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_linkgrid.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/moc_linkgrid.cxx
+	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_linkgrid.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_linkgrid.cxx
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_linkgrid.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_linkgrid.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/moc_linkgrid.cxx > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_linkgrid.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_linkgrid.cxx > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_linkgrid.i
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_linkgrid.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_linkgrid.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/moc_linkgrid.cxx -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_linkgrid.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_linkgrid.cxx -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_linkgrid.s
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_linkgrid.o.requires:
 
@@ -1490,17 +1562,17 @@ src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/depend.make.mark: src/plugins/
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_streampolyline.o: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/flags.make
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_streampolyline.o: src/plugins/pihm_gis/moc_streampolyline.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_61)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_64)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_streampolyline.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_streampolyline.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/moc_streampolyline.cxx
+	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_streampolyline.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_streampolyline.cxx
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_streampolyline.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_streampolyline.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/moc_streampolyline.cxx > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_streampolyline.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_streampolyline.cxx > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_streampolyline.i
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_streampolyline.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_streampolyline.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/moc_streampolyline.cxx -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_streampolyline.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_streampolyline.cxx -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_streampolyline.s
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_streampolyline.o.requires:
 
@@ -1514,17 +1586,17 @@ src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/depend.make.mark: src/plugins/
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_catchmentgrid.o: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/flags.make
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_catchmentgrid.o: src/plugins/pihm_gis/moc_catchmentgrid.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_62)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_65)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_catchmentgrid.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_catchmentgrid.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/moc_catchmentgrid.cxx
+	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_catchmentgrid.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_catchmentgrid.cxx
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_catchmentgrid.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_catchmentgrid.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/moc_catchmentgrid.cxx > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_catchmentgrid.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_catchmentgrid.cxx > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_catchmentgrid.i
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_catchmentgrid.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_catchmentgrid.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/moc_catchmentgrid.cxx -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_catchmentgrid.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_catchmentgrid.cxx -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_catchmentgrid.s
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_catchmentgrid.o.requires:
 
@@ -1538,17 +1610,17 @@ src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/depend.make.mark: src/plugins/
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_catchmentpolygon.o: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/flags.make
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_catchmentpolygon.o: src/plugins/pihm_gis/moc_catchmentpolygon.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_63)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_66)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_catchmentpolygon.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_catchmentpolygon.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/moc_catchmentpolygon.cxx
+	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_catchmentpolygon.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_catchmentpolygon.cxx
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_catchmentpolygon.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_catchmentpolygon.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/moc_catchmentpolygon.cxx > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_catchmentpolygon.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_catchmentpolygon.cxx > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_catchmentpolygon.i
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_catchmentpolygon.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_catchmentpolygon.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/moc_catchmentpolygon.cxx -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_catchmentpolygon.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_catchmentpolygon.cxx -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_catchmentpolygon.s
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_catchmentpolygon.o.requires:
 
@@ -1562,17 +1634,17 @@ src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/depend.make.mark: src/plugins/
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_polygontopolylinedialog.o: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/flags.make
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_polygontopolylinedialog.o: src/plugins/pihm_gis/moc_polygontopolylinedialog.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_64)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_67)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_polygontopolylinedialog.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_polygontopolylinedialog.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/moc_polygontopolylinedialog.cxx
+	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_polygontopolylinedialog.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_polygontopolylinedialog.cxx
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_polygontopolylinedialog.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_polygontopolylinedialog.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/moc_polygontopolylinedialog.cxx > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_polygontopolylinedialog.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_polygontopolylinedialog.cxx > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_polygontopolylinedialog.i
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_polygontopolylinedialog.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_polygontopolylinedialog.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/moc_polygontopolylinedialog.cxx -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_polygontopolylinedialog.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_polygontopolylinedialog.cxx -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_polygontopolylinedialog.s
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_polygontopolylinedialog.o.requires:
 
@@ -1586,17 +1658,17 @@ src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/depend.make.mark: src/plugins/
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_simplifylinedialog.o: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/flags.make
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_simplifylinedialog.o: src/plugins/pihm_gis/moc_simplifylinedialog.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_65)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_68)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_simplifylinedialog.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_simplifylinedialog.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/moc_simplifylinedialog.cxx
+	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_simplifylinedialog.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_simplifylinedialog.cxx
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_simplifylinedialog.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_simplifylinedialog.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/moc_simplifylinedialog.cxx > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_simplifylinedialog.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_simplifylinedialog.cxx > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_simplifylinedialog.i
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_simplifylinedialog.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_simplifylinedialog.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/moc_simplifylinedialog.cxx -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_simplifylinedialog.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_simplifylinedialog.cxx -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_simplifylinedialog.s
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_simplifylinedialog.o.requires:
 
@@ -1610,17 +1682,17 @@ src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/depend.make.mark: src/plugins/
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_splitlinedialog.o: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/flags.make
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_splitlinedialog.o: src/plugins/pihm_gis/moc_splitlinedialog.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_66)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_69)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_splitlinedialog.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_splitlinedialog.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/moc_splitlinedialog.cxx
+	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_splitlinedialog.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_splitlinedialog.cxx
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_splitlinedialog.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_splitlinedialog.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/moc_splitlinedialog.cxx > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_splitlinedialog.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_splitlinedialog.cxx > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_splitlinedialog.i
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_splitlinedialog.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_splitlinedialog.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/moc_splitlinedialog.cxx -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_splitlinedialog.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_splitlinedialog.cxx -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_splitlinedialog.s
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_splitlinedialog.o.requires:
 
@@ -1634,17 +1706,17 @@ src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/depend.make.mark: src/plugins/
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_mergefeaturesdialog.o: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/flags.make
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_mergefeaturesdialog.o: src/plugins/pihm_gis/moc_mergefeaturesdialog.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_67)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_70)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_mergefeaturesdialog.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_mergefeaturesdialog.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/moc_mergefeaturesdialog.cxx
+	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_mergefeaturesdialog.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_mergefeaturesdialog.cxx
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_mergefeaturesdialog.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_mergefeaturesdialog.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/moc_mergefeaturesdialog.cxx > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_mergefeaturesdialog.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_mergefeaturesdialog.cxx > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_mergefeaturesdialog.i
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_mergefeaturesdialog.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_mergefeaturesdialog.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/moc_mergefeaturesdialog.cxx -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_mergefeaturesdialog.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_mergefeaturesdialog.cxx -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_mergefeaturesdialog.s
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_mergefeaturesdialog.o.requires:
 
@@ -1658,17 +1730,17 @@ src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/depend.make.mark: src/plugins/
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_generateshapetopology.o: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/flags.make
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_generateshapetopology.o: src/plugins/pihm_gis/moc_generateshapetopology.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_68)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_71)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_generateshapetopology.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_generateshapetopology.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/moc_generateshapetopology.cxx
+	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_generateshapetopology.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_generateshapetopology.cxx
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_generateshapetopology.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_generateshapetopology.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/moc_generateshapetopology.cxx > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_generateshapetopology.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_generateshapetopology.cxx > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_generateshapetopology.i
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_generateshapetopology.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_generateshapetopology.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/moc_generateshapetopology.cxx -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_generateshapetopology.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_generateshapetopology.cxx -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_generateshapetopology.s
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_generateshapetopology.o.requires:
 
@@ -1682,17 +1754,17 @@ src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/depend.make.mark: src/plugins/
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_runtriangle.o: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/flags.make
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_runtriangle.o: src/plugins/pihm_gis/moc_runtriangle.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_69)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_72)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_runtriangle.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_runtriangle.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/moc_runtriangle.cxx
+	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_runtriangle.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_runtriangle.cxx
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_runtriangle.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_runtriangle.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/moc_runtriangle.cxx > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_runtriangle.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_runtriangle.cxx > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_runtriangle.i
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_runtriangle.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_runtriangle.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/moc_runtriangle.cxx -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_runtriangle.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_runtriangle.cxx -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_runtriangle.s
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_runtriangle.o.requires:
 
@@ -1706,17 +1778,17 @@ src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/depend.make.mark: src/plugins/
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_createtins.o: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/flags.make
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_createtins.o: src/plugins/pihm_gis/moc_createtins.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_70)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_73)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_createtins.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_createtins.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/moc_createtins.cxx
+	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_createtins.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_createtins.cxx
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_createtins.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_createtins.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/moc_createtins.cxx > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_createtins.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_createtins.cxx > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_createtins.i
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_createtins.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_createtins.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/moc_createtins.cxx -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_createtins.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_createtins.cxx -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_createtins.s
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_createtins.o.requires:
 
@@ -1730,17 +1802,17 @@ src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/depend.make.mark: src/plugins/
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_mshfile.o: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/flags.make
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_mshfile.o: src/plugins/pihm_gis/moc_mshfile.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_71)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_74)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_mshfile.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_mshfile.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/moc_mshfile.cxx
+	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_mshfile.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_mshfile.cxx
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_mshfile.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_mshfile.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/moc_mshfile.cxx > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_mshfile.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_mshfile.cxx > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_mshfile.i
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_mshfile.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_mshfile.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/moc_mshfile.cxx -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_mshfile.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_mshfile.cxx -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_mshfile.s
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_mshfile.o.requires:
 
@@ -1754,17 +1826,17 @@ src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/depend.make.mark: src/plugins/
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_attfile.o: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/flags.make
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_attfile.o: src/plugins/pihm_gis/moc_attfile.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_72)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_75)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_attfile.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_attfile.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/moc_attfile.cxx
+	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_attfile.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_attfile.cxx
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_attfile.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_attfile.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/moc_attfile.cxx > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_attfile.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_attfile.cxx > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_attfile.i
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_attfile.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_attfile.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/moc_attfile.cxx -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_attfile.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_attfile.cxx -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_attfile.s
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_attfile.o.requires:
 
@@ -1778,17 +1850,17 @@ src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/depend.make.mark: src/plugins/
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_rivfile.o: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/flags.make
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_rivfile.o: src/plugins/pihm_gis/moc_rivfile.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_73)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_76)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_rivfile.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_rivfile.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/moc_rivfile.cxx
+	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_rivfile.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_rivfile.cxx
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_rivfile.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_rivfile.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/moc_rivfile.cxx > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_rivfile.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_rivfile.cxx > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_rivfile.i
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_rivfile.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_rivfile.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/moc_rivfile.cxx -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_rivfile.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_rivfile.cxx -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_rivfile.s
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_rivfile.o.requires:
 
@@ -1802,17 +1874,17 @@ src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/depend.make.mark: src/plugins/
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_parafile.o: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/flags.make
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_parafile.o: src/plugins/pihm_gis/moc_parafile.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_74)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_77)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_parafile.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_parafile.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/moc_parafile.cxx
+	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_parafile.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_parafile.cxx
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_parafile.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_parafile.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/moc_parafile.cxx > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_parafile.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_parafile.cxx > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_parafile.i
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_parafile.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_parafile.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/moc_parafile.cxx -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_parafile.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_parafile.cxx -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_parafile.s
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_parafile.o.requires:
 
@@ -1826,17 +1898,17 @@ src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/depend.make.mark: src/plugins/
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_runpihm.o: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/flags.make
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_runpihm.o: src/plugins/pihm_gis/moc_runpihm.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_75)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_78)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_runpihm.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_runpihm.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/moc_runpihm.cxx
+	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_runpihm.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_runpihm.cxx
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_runpihm.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_runpihm.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/moc_runpihm.cxx > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_runpihm.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_runpihm.cxx > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_runpihm.i
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_runpihm.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_runpihm.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/moc_runpihm.cxx -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_runpihm.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_runpihm.cxx -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_runpihm.s
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_runpihm.o.requires:
 
@@ -1846,21 +1918,69 @@ src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_runpihm.o.provides: src/pl
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_runpihm.o.provides.build: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_runpihm.o
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/depend.make.mark: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/flags.make
+src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/depend.make.mark: src/plugins/pihm_gis/moc_plotTS.cxx
+
+src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_plotTS.o: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/flags.make
+src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_plotTS.o: src/plugins/pihm_gis/moc_plotTS.cxx
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_79)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_plotTS.o"
+	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_plotTS.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_plotTS.cxx
+
+src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_plotTS.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_plotTS.i"
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_plotTS.cxx > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_plotTS.i
+
+src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_plotTS.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_plotTS.s"
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_plotTS.cxx -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_plotTS.s
+
+src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_plotTS.o.requires:
+
+src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_plotTS.o.provides: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_plotTS.o.requires
+	$(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_plotTS.o.provides.build
+
+src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_plotTS.o.provides.build: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_plotTS.o
+
+src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/depend.make.mark: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/flags.make
+src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/depend.make.mark: src/plugins/pihm_gis/moc_timeseries.cxx
+
+src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_timeseries.o: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/flags.make
+src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_timeseries.o: src/plugins/pihm_gis/moc_timeseries.cxx
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_80)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_timeseries.o"
+	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_timeseries.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_timeseries.cxx
+
+src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_timeseries.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_timeseries.i"
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_timeseries.cxx > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_timeseries.i
+
+src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_timeseries.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_timeseries.s"
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_timeseries.cxx -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_timeseries.s
+
+src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_timeseries.o.requires:
+
+src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_timeseries.o.provides: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_timeseries.o.requires
+	$(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_timeseries.o.provides.build
+
+src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_timeseries.o.provides.build: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_timeseries.o
+
+src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/depend.make.mark: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/flags.make
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/depend.make.mark: src/plugins/pihm_gis/moc_spatialplot.cxx
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_spatialplot.o: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/flags.make
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_spatialplot.o: src/plugins/pihm_gis/moc_spatialplot.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_76)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_81)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_spatialplot.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_spatialplot.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/moc_spatialplot.cxx
+	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_spatialplot.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_spatialplot.cxx
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_spatialplot.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_spatialplot.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/moc_spatialplot.cxx > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_spatialplot.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_spatialplot.cxx > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_spatialplot.i
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_spatialplot.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_spatialplot.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/moc_spatialplot.cxx -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_spatialplot.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_spatialplot.cxx -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_spatialplot.s
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_spatialplot.o.requires:
 
@@ -1874,17 +1994,17 @@ src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/depend.make.mark: src/plugins/
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_about.o: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/flags.make
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_about.o: src/plugins/pihm_gis/moc_about.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_77)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_82)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_about.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_about.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/moc_about.cxx
+	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_about.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_about.cxx
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_about.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_about.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/moc_about.cxx > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_about.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_about.cxx > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_about.i
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_about.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_about.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/moc_about.cxx -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_about.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_about.cxx -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_about.s
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_about.o.requires:
 
@@ -1898,17 +2018,17 @@ src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/depend.make.mark: src/plugins/
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/qrc_pihmgis.o: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/flags.make
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/qrc_pihmgis.o: src/plugins/pihm_gis/qrc_pihmgis.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_78)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_83)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/qrc_pihmgis.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/qrc_pihmgis.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/qrc_pihmgis.cxx
+	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/qrc_pihmgis.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/qrc_pihmgis.cxx
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/qrc_pihmgis.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/qrc_pihmgis.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/qrc_pihmgis.cxx > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/qrc_pihmgis.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/qrc_pihmgis.cxx > src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/qrc_pihmgis.i
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/qrc_pihmgis.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/qrc_pihmgis.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/qrc_pihmgis.cxx -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/qrc_pihmgis.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/qrc_pihmgis.cxx -o src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/qrc_pihmgis.s
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/qrc_pihmgis.o.requires:
 
@@ -1918,245 +2038,260 @@ src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/qrc_pihmgis.o.provides: src/pl
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/qrc_pihmgis.o.provides.build: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/qrc_pihmgis.o
 
 src/plugins/pihm_gis/moc_pihmgis.cxx: ../src/plugins/pihm_gis/pihmgis.h
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_79)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_84)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating moc_pihmgis.cxx"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis && /Developer/Tools/Qt/moc -I /usr/include -I /Library/Frameworks/Qt3Support.framework/Headers -I /Library/Frameworks/QtSvg.framework/Headers -I /Library/Frameworks/QtGui.framework/Headers -I /Library/Frameworks/QtXml.framework/Headers -I /Library/Frameworks/QtSql.framework/Headers -I /Library/Frameworks/QtNetwork.framework/Headers -I /Library/Frameworks/QtCore.framework/Headers -I /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/moc_pihmgis.cxx /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmgis.h
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis && /Developer/Tools/Qt/moc -I /usr/include -I /Library/Frameworks/Qt3Support.framework/Headers -I /Library/Frameworks/QtSvg.framework/Headers -I /Library/Frameworks/QtGui.framework/Headers -I /Library/Frameworks/QtXml.framework/Headers -I /Library/Frameworks/QtSql.framework/Headers -I /Library/Frameworks/QtNetwork.framework/Headers -I /Library/Frameworks/QtCore.framework/Headers -I /Users/bhattgopal/dev/cpp/qgis_1.0.2/build -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_pihmgis.cxx /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmgis.h
 
 src/plugins/pihm_gis/moc_pihmgisgui.cxx: ../src/plugins/pihm_gis/pihmgisgui.h
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_80)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_85)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating moc_pihmgisgui.cxx"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis && /Developer/Tools/Qt/moc -I /usr/include -I /Library/Frameworks/Qt3Support.framework/Headers -I /Library/Frameworks/QtSvg.framework/Headers -I /Library/Frameworks/QtGui.framework/Headers -I /Library/Frameworks/QtXml.framework/Headers -I /Library/Frameworks/QtSql.framework/Headers -I /Library/Frameworks/QtNetwork.framework/Headers -I /Library/Frameworks/QtCore.framework/Headers -I /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/moc_pihmgisgui.cxx /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmgisgui.h
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis && /Developer/Tools/Qt/moc -I /usr/include -I /Library/Frameworks/Qt3Support.framework/Headers -I /Library/Frameworks/QtSvg.framework/Headers -I /Library/Frameworks/QtGui.framework/Headers -I /Library/Frameworks/QtXml.framework/Headers -I /Library/Frameworks/QtSql.framework/Headers -I /Library/Frameworks/QtNetwork.framework/Headers -I /Library/Frameworks/QtCore.framework/Headers -I /Users/bhattgopal/dev/cpp/qgis_1.0.2/build -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_pihmgisgui.cxx /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmgisgui.h
 
 src/plugins/pihm_gis/moc_helpdialog.cxx: ../src/plugins/pihm_gis/pihmLIBS/helpDialog/helpdialog.h
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_81)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_86)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating moc_helpdialog.cxx"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis && /Developer/Tools/Qt/moc -I /usr/include -I /Library/Frameworks/Qt3Support.framework/Headers -I /Library/Frameworks/QtSvg.framework/Headers -I /Library/Frameworks/QtGui.framework/Headers -I /Library/Frameworks/QtXml.framework/Headers -I /Library/Frameworks/QtSql.framework/Headers -I /Library/Frameworks/QtNetwork.framework/Headers -I /Library/Frameworks/QtCore.framework/Headers -I /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/moc_helpdialog.cxx /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmLIBS/helpDialog/helpdialog.h
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis && /Developer/Tools/Qt/moc -I /usr/include -I /Library/Frameworks/Qt3Support.framework/Headers -I /Library/Frameworks/QtSvg.framework/Headers -I /Library/Frameworks/QtGui.framework/Headers -I /Library/Frameworks/QtXml.framework/Headers -I /Library/Frameworks/QtSql.framework/Headers -I /Library/Frameworks/QtNetwork.framework/Headers -I /Library/Frameworks/QtCore.framework/Headers -I /Users/bhattgopal/dev/cpp/qgis_1.0.2/build -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_helpdialog.cxx /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmLIBS/helpDialog/helpdialog.h
 
 src/plugins/pihm_gis/moc_fillpits.cxx: ../src/plugins/pihm_gis/RasterProcessing/FillPits/fillpits.h
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_82)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_87)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating moc_fillpits.cxx"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis && /Developer/Tools/Qt/moc -I /usr/include -I /Library/Frameworks/Qt3Support.framework/Headers -I /Library/Frameworks/QtSvg.framework/Headers -I /Library/Frameworks/QtGui.framework/Headers -I /Library/Frameworks/QtXml.framework/Headers -I /Library/Frameworks/QtSql.framework/Headers -I /Library/Frameworks/QtNetwork.framework/Headers -I /Library/Frameworks/QtCore.framework/Headers -I /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/moc_fillpits.cxx /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/FillPits/fillpits.h
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis && /Developer/Tools/Qt/moc -I /usr/include -I /Library/Frameworks/Qt3Support.framework/Headers -I /Library/Frameworks/QtSvg.framework/Headers -I /Library/Frameworks/QtGui.framework/Headers -I /Library/Frameworks/QtXml.framework/Headers -I /Library/Frameworks/QtSql.framework/Headers -I /Library/Frameworks/QtNetwork.framework/Headers -I /Library/Frameworks/QtCore.framework/Headers -I /Users/bhattgopal/dev/cpp/qgis_1.0.2/build -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_fillpits.cxx /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/FillPits/fillpits.h
 
 src/plugins/pihm_gis/moc_flowgrid.cxx: ../src/plugins/pihm_gis/RasterProcessing/FlowGrid/flowgrid.h
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_83)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_88)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating moc_flowgrid.cxx"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis && /Developer/Tools/Qt/moc -I /usr/include -I /Library/Frameworks/Qt3Support.framework/Headers -I /Library/Frameworks/QtSvg.framework/Headers -I /Library/Frameworks/QtGui.framework/Headers -I /Library/Frameworks/QtXml.framework/Headers -I /Library/Frameworks/QtSql.framework/Headers -I /Library/Frameworks/QtNetwork.framework/Headers -I /Library/Frameworks/QtCore.framework/Headers -I /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/moc_flowgrid.cxx /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/FlowGrid/flowgrid.h
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis && /Developer/Tools/Qt/moc -I /usr/include -I /Library/Frameworks/Qt3Support.framework/Headers -I /Library/Frameworks/QtSvg.framework/Headers -I /Library/Frameworks/QtGui.framework/Headers -I /Library/Frameworks/QtXml.framework/Headers -I /Library/Frameworks/QtSql.framework/Headers -I /Library/Frameworks/QtNetwork.framework/Headers -I /Library/Frameworks/QtCore.framework/Headers -I /Users/bhattgopal/dev/cpp/qgis_1.0.2/build -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_flowgrid.cxx /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/FlowGrid/flowgrid.h
 
 src/plugins/pihm_gis/moc_streamgrid.cxx: ../src/plugins/pihm_gis/RasterProcessing/StreamGrid/streamgrid.h
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_84)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_89)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating moc_streamgrid.cxx"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis && /Developer/Tools/Qt/moc -I /usr/include -I /Library/Frameworks/Qt3Support.framework/Headers -I /Library/Frameworks/QtSvg.framework/Headers -I /Library/Frameworks/QtGui.framework/Headers -I /Library/Frameworks/QtXml.framework/Headers -I /Library/Frameworks/QtSql.framework/Headers -I /Library/Frameworks/QtNetwork.framework/Headers -I /Library/Frameworks/QtCore.framework/Headers -I /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/moc_streamgrid.cxx /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/StreamGrid/streamgrid.h
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis && /Developer/Tools/Qt/moc -I /usr/include -I /Library/Frameworks/Qt3Support.framework/Headers -I /Library/Frameworks/QtSvg.framework/Headers -I /Library/Frameworks/QtGui.framework/Headers -I /Library/Frameworks/QtXml.framework/Headers -I /Library/Frameworks/QtSql.framework/Headers -I /Library/Frameworks/QtNetwork.framework/Headers -I /Library/Frameworks/QtCore.framework/Headers -I /Users/bhattgopal/dev/cpp/qgis_1.0.2/build -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_streamgrid.cxx /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/StreamGrid/streamgrid.h
 
 src/plugins/pihm_gis/moc_linkgrid.cxx: ../src/plugins/pihm_gis/RasterProcessing/LinkGrid/linkgrid.h
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_85)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_90)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating moc_linkgrid.cxx"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis && /Developer/Tools/Qt/moc -I /usr/include -I /Library/Frameworks/Qt3Support.framework/Headers -I /Library/Frameworks/QtSvg.framework/Headers -I /Library/Frameworks/QtGui.framework/Headers -I /Library/Frameworks/QtXml.framework/Headers -I /Library/Frameworks/QtSql.framework/Headers -I /Library/Frameworks/QtNetwork.framework/Headers -I /Library/Frameworks/QtCore.framework/Headers -I /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/moc_linkgrid.cxx /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/LinkGrid/linkgrid.h
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis && /Developer/Tools/Qt/moc -I /usr/include -I /Library/Frameworks/Qt3Support.framework/Headers -I /Library/Frameworks/QtSvg.framework/Headers -I /Library/Frameworks/QtGui.framework/Headers -I /Library/Frameworks/QtXml.framework/Headers -I /Library/Frameworks/QtSql.framework/Headers -I /Library/Frameworks/QtNetwork.framework/Headers -I /Library/Frameworks/QtCore.framework/Headers -I /Users/bhattgopal/dev/cpp/qgis_1.0.2/build -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_linkgrid.cxx /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/LinkGrid/linkgrid.h
 
 src/plugins/pihm_gis/moc_streampolyline.cxx: ../src/plugins/pihm_gis/RasterProcessing/StreamPolyLine/streampolyline.h
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_86)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_91)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating moc_streampolyline.cxx"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis && /Developer/Tools/Qt/moc -I /usr/include -I /Library/Frameworks/Qt3Support.framework/Headers -I /Library/Frameworks/QtSvg.framework/Headers -I /Library/Frameworks/QtGui.framework/Headers -I /Library/Frameworks/QtXml.framework/Headers -I /Library/Frameworks/QtSql.framework/Headers -I /Library/Frameworks/QtNetwork.framework/Headers -I /Library/Frameworks/QtCore.framework/Headers -I /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/moc_streampolyline.cxx /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/StreamPolyLine/streampolyline.h
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis && /Developer/Tools/Qt/moc -I /usr/include -I /Library/Frameworks/Qt3Support.framework/Headers -I /Library/Frameworks/QtSvg.framework/Headers -I /Library/Frameworks/QtGui.framework/Headers -I /Library/Frameworks/QtXml.framework/Headers -I /Library/Frameworks/QtSql.framework/Headers -I /Library/Frameworks/QtNetwork.framework/Headers -I /Library/Frameworks/QtCore.framework/Headers -I /Users/bhattgopal/dev/cpp/qgis_1.0.2/build -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_streampolyline.cxx /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/StreamPolyLine/streampolyline.h
 
 src/plugins/pihm_gis/moc_catchmentgrid.cxx: ../src/plugins/pihm_gis/RasterProcessing/CatchmentGrid/catchmentgrid.h
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_87)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_92)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating moc_catchmentgrid.cxx"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis && /Developer/Tools/Qt/moc -I /usr/include -I /Library/Frameworks/Qt3Support.framework/Headers -I /Library/Frameworks/QtSvg.framework/Headers -I /Library/Frameworks/QtGui.framework/Headers -I /Library/Frameworks/QtXml.framework/Headers -I /Library/Frameworks/QtSql.framework/Headers -I /Library/Frameworks/QtNetwork.framework/Headers -I /Library/Frameworks/QtCore.framework/Headers -I /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/moc_catchmentgrid.cxx /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/CatchmentGrid/catchmentgrid.h
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis && /Developer/Tools/Qt/moc -I /usr/include -I /Library/Frameworks/Qt3Support.framework/Headers -I /Library/Frameworks/QtSvg.framework/Headers -I /Library/Frameworks/QtGui.framework/Headers -I /Library/Frameworks/QtXml.framework/Headers -I /Library/Frameworks/QtSql.framework/Headers -I /Library/Frameworks/QtNetwork.framework/Headers -I /Library/Frameworks/QtCore.framework/Headers -I /Users/bhattgopal/dev/cpp/qgis_1.0.2/build -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_catchmentgrid.cxx /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/CatchmentGrid/catchmentgrid.h
 
 src/plugins/pihm_gis/moc_catchmentpolygon.cxx: ../src/plugins/pihm_gis/RasterProcessing/CatchmentPolygon/catchmentpolygon.h
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_88)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_93)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating moc_catchmentpolygon.cxx"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis && /Developer/Tools/Qt/moc -I /usr/include -I /Library/Frameworks/Qt3Support.framework/Headers -I /Library/Frameworks/QtSvg.framework/Headers -I /Library/Frameworks/QtGui.framework/Headers -I /Library/Frameworks/QtXml.framework/Headers -I /Library/Frameworks/QtSql.framework/Headers -I /Library/Frameworks/QtNetwork.framework/Headers -I /Library/Frameworks/QtCore.framework/Headers -I /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/moc_catchmentpolygon.cxx /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/CatchmentPolygon/catchmentpolygon.h
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis && /Developer/Tools/Qt/moc -I /usr/include -I /Library/Frameworks/Qt3Support.framework/Headers -I /Library/Frameworks/QtSvg.framework/Headers -I /Library/Frameworks/QtGui.framework/Headers -I /Library/Frameworks/QtXml.framework/Headers -I /Library/Frameworks/QtSql.framework/Headers -I /Library/Frameworks/QtNetwork.framework/Headers -I /Library/Frameworks/QtCore.framework/Headers -I /Users/bhattgopal/dev/cpp/qgis_1.0.2/build -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_catchmentpolygon.cxx /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/CatchmentPolygon/catchmentpolygon.h
 
 src/plugins/pihm_gis/moc_polygontopolylinedialog.cxx: ../src/plugins/pihm_gis/VectorProcessing/PolygonToPolyLine/polygontopolylinedialog.h
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_89)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_94)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating moc_polygontopolylinedialog.cxx"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis && /Developer/Tools/Qt/moc -I /usr/include -I /Library/Frameworks/Qt3Support.framework/Headers -I /Library/Frameworks/QtSvg.framework/Headers -I /Library/Frameworks/QtGui.framework/Headers -I /Library/Frameworks/QtXml.framework/Headers -I /Library/Frameworks/QtSql.framework/Headers -I /Library/Frameworks/QtNetwork.framework/Headers -I /Library/Frameworks/QtCore.framework/Headers -I /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/moc_polygontopolylinedialog.cxx /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/VectorProcessing/PolygonToPolyLine/polygontopolylinedialog.h
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis && /Developer/Tools/Qt/moc -I /usr/include -I /Library/Frameworks/Qt3Support.framework/Headers -I /Library/Frameworks/QtSvg.framework/Headers -I /Library/Frameworks/QtGui.framework/Headers -I /Library/Frameworks/QtXml.framework/Headers -I /Library/Frameworks/QtSql.framework/Headers -I /Library/Frameworks/QtNetwork.framework/Headers -I /Library/Frameworks/QtCore.framework/Headers -I /Users/bhattgopal/dev/cpp/qgis_1.0.2/build -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_polygontopolylinedialog.cxx /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/VectorProcessing/PolygonToPolyLine/polygontopolylinedialog.h
 
 src/plugins/pihm_gis/moc_simplifylinedialog.cxx: ../src/plugins/pihm_gis/VectorProcessing/SimplifyLine/simplifylinedialog.h
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_90)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_95)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating moc_simplifylinedialog.cxx"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis && /Developer/Tools/Qt/moc -I /usr/include -I /Library/Frameworks/Qt3Support.framework/Headers -I /Library/Frameworks/QtSvg.framework/Headers -I /Library/Frameworks/QtGui.framework/Headers -I /Library/Frameworks/QtXml.framework/Headers -I /Library/Frameworks/QtSql.framework/Headers -I /Library/Frameworks/QtNetwork.framework/Headers -I /Library/Frameworks/QtCore.framework/Headers -I /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/moc_simplifylinedialog.cxx /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/VectorProcessing/SimplifyLine/simplifylinedialog.h
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis && /Developer/Tools/Qt/moc -I /usr/include -I /Library/Frameworks/Qt3Support.framework/Headers -I /Library/Frameworks/QtSvg.framework/Headers -I /Library/Frameworks/QtGui.framework/Headers -I /Library/Frameworks/QtXml.framework/Headers -I /Library/Frameworks/QtSql.framework/Headers -I /Library/Frameworks/QtNetwork.framework/Headers -I /Library/Frameworks/QtCore.framework/Headers -I /Users/bhattgopal/dev/cpp/qgis_1.0.2/build -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_simplifylinedialog.cxx /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/VectorProcessing/SimplifyLine/simplifylinedialog.h
 
 src/plugins/pihm_gis/moc_splitlinedialog.cxx: ../src/plugins/pihm_gis/VectorProcessing/SplitLine/splitlinedialog.h
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_91)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_96)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating moc_splitlinedialog.cxx"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis && /Developer/Tools/Qt/moc -I /usr/include -I /Library/Frameworks/Qt3Support.framework/Headers -I /Library/Frameworks/QtSvg.framework/Headers -I /Library/Frameworks/QtGui.framework/Headers -I /Library/Frameworks/QtXml.framework/Headers -I /Library/Frameworks/QtSql.framework/Headers -I /Library/Frameworks/QtNetwork.framework/Headers -I /Library/Frameworks/QtCore.framework/Headers -I /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/moc_splitlinedialog.cxx /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/VectorProcessing/SplitLine/splitlinedialog.h
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis && /Developer/Tools/Qt/moc -I /usr/include -I /Library/Frameworks/Qt3Support.framework/Headers -I /Library/Frameworks/QtSvg.framework/Headers -I /Library/Frameworks/QtGui.framework/Headers -I /Library/Frameworks/QtXml.framework/Headers -I /Library/Frameworks/QtSql.framework/Headers -I /Library/Frameworks/QtNetwork.framework/Headers -I /Library/Frameworks/QtCore.framework/Headers -I /Users/bhattgopal/dev/cpp/qgis_1.0.2/build -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_splitlinedialog.cxx /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/VectorProcessing/SplitLine/splitlinedialog.h
 
 src/plugins/pihm_gis/moc_mergefeaturesdialog.cxx: ../src/plugins/pihm_gis/VectorProcessing/MergeFeatures/mergefeaturesdialog.h
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_92)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_97)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating moc_mergefeaturesdialog.cxx"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis && /Developer/Tools/Qt/moc -I /usr/include -I /Library/Frameworks/Qt3Support.framework/Headers -I /Library/Frameworks/QtSvg.framework/Headers -I /Library/Frameworks/QtGui.framework/Headers -I /Library/Frameworks/QtXml.framework/Headers -I /Library/Frameworks/QtSql.framework/Headers -I /Library/Frameworks/QtNetwork.framework/Headers -I /Library/Frameworks/QtCore.framework/Headers -I /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/moc_mergefeaturesdialog.cxx /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/VectorProcessing/MergeFeatures/mergefeaturesdialog.h
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis && /Developer/Tools/Qt/moc -I /usr/include -I /Library/Frameworks/Qt3Support.framework/Headers -I /Library/Frameworks/QtSvg.framework/Headers -I /Library/Frameworks/QtGui.framework/Headers -I /Library/Frameworks/QtXml.framework/Headers -I /Library/Frameworks/QtSql.framework/Headers -I /Library/Frameworks/QtNetwork.framework/Headers -I /Library/Frameworks/QtCore.framework/Headers -I /Users/bhattgopal/dev/cpp/qgis_1.0.2/build -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_mergefeaturesdialog.cxx /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/VectorProcessing/MergeFeatures/mergefeaturesdialog.h
 
 src/plugins/pihm_gis/moc_generateshapetopology.cxx: ../src/plugins/pihm_gis/DomainDecomposition/GenerateShapeTopology/generateshapetopology.h
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_93)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_98)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating moc_generateshapetopology.cxx"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis && /Developer/Tools/Qt/moc -I /usr/include -I /Library/Frameworks/Qt3Support.framework/Headers -I /Library/Frameworks/QtSvg.framework/Headers -I /Library/Frameworks/QtGui.framework/Headers -I /Library/Frameworks/QtXml.framework/Headers -I /Library/Frameworks/QtSql.framework/Headers -I /Library/Frameworks/QtNetwork.framework/Headers -I /Library/Frameworks/QtCore.framework/Headers -I /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/moc_generateshapetopology.cxx /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DomainDecomposition/GenerateShapeTopology/generateshapetopology.h
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis && /Developer/Tools/Qt/moc -I /usr/include -I /Library/Frameworks/Qt3Support.framework/Headers -I /Library/Frameworks/QtSvg.framework/Headers -I /Library/Frameworks/QtGui.framework/Headers -I /Library/Frameworks/QtXml.framework/Headers -I /Library/Frameworks/QtSql.framework/Headers -I /Library/Frameworks/QtNetwork.framework/Headers -I /Library/Frameworks/QtCore.framework/Headers -I /Users/bhattgopal/dev/cpp/qgis_1.0.2/build -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_generateshapetopology.cxx /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DomainDecomposition/GenerateShapeTopology/generateshapetopology.h
 
 src/plugins/pihm_gis/moc_runtriangle.cxx: ../src/plugins/pihm_gis/DomainDecomposition/RunTriangle/runtriangle.h
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_94)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_99)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating moc_runtriangle.cxx"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis && /Developer/Tools/Qt/moc -I /usr/include -I /Library/Frameworks/Qt3Support.framework/Headers -I /Library/Frameworks/QtSvg.framework/Headers -I /Library/Frameworks/QtGui.framework/Headers -I /Library/Frameworks/QtXml.framework/Headers -I /Library/Frameworks/QtSql.framework/Headers -I /Library/Frameworks/QtNetwork.framework/Headers -I /Library/Frameworks/QtCore.framework/Headers -I /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/moc_runtriangle.cxx /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DomainDecomposition/RunTriangle/runtriangle.h
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis && /Developer/Tools/Qt/moc -I /usr/include -I /Library/Frameworks/Qt3Support.framework/Headers -I /Library/Frameworks/QtSvg.framework/Headers -I /Library/Frameworks/QtGui.framework/Headers -I /Library/Frameworks/QtXml.framework/Headers -I /Library/Frameworks/QtSql.framework/Headers -I /Library/Frameworks/QtNetwork.framework/Headers -I /Library/Frameworks/QtCore.framework/Headers -I /Users/bhattgopal/dev/cpp/qgis_1.0.2/build -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_runtriangle.cxx /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DomainDecomposition/RunTriangle/runtriangle.h
 
 src/plugins/pihm_gis/moc_createtins.cxx: ../src/plugins/pihm_gis/DomainDecomposition/CreateTINs/createtins.h
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_95)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_100)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating moc_createtins.cxx"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis && /Developer/Tools/Qt/moc -I /usr/include -I /Library/Frameworks/Qt3Support.framework/Headers -I /Library/Frameworks/QtSvg.framework/Headers -I /Library/Frameworks/QtGui.framework/Headers -I /Library/Frameworks/QtXml.framework/Headers -I /Library/Frameworks/QtSql.framework/Headers -I /Library/Frameworks/QtNetwork.framework/Headers -I /Library/Frameworks/QtCore.framework/Headers -I /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/moc_createtins.cxx /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DomainDecomposition/CreateTINs/createtins.h
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis && /Developer/Tools/Qt/moc -I /usr/include -I /Library/Frameworks/Qt3Support.framework/Headers -I /Library/Frameworks/QtSvg.framework/Headers -I /Library/Frameworks/QtGui.framework/Headers -I /Library/Frameworks/QtXml.framework/Headers -I /Library/Frameworks/QtSql.framework/Headers -I /Library/Frameworks/QtNetwork.framework/Headers -I /Library/Frameworks/QtCore.framework/Headers -I /Users/bhattgopal/dev/cpp/qgis_1.0.2/build -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_createtins.cxx /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DomainDecomposition/CreateTINs/createtins.h
 
 src/plugins/pihm_gis/moc_mshfile.cxx: ../src/plugins/pihm_gis/DataModelLoader/MeshFile/mshfile.h
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_96)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_101)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating moc_mshfile.cxx"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis && /Developer/Tools/Qt/moc -I /usr/include -I /Library/Frameworks/Qt3Support.framework/Headers -I /Library/Frameworks/QtSvg.framework/Headers -I /Library/Frameworks/QtGui.framework/Headers -I /Library/Frameworks/QtXml.framework/Headers -I /Library/Frameworks/QtSql.framework/Headers -I /Library/Frameworks/QtNetwork.framework/Headers -I /Library/Frameworks/QtCore.framework/Headers -I /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/moc_mshfile.cxx /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DataModelLoader/MeshFile/mshfile.h
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis && /Developer/Tools/Qt/moc -I /usr/include -I /Library/Frameworks/Qt3Support.framework/Headers -I /Library/Frameworks/QtSvg.framework/Headers -I /Library/Frameworks/QtGui.framework/Headers -I /Library/Frameworks/QtXml.framework/Headers -I /Library/Frameworks/QtSql.framework/Headers -I /Library/Frameworks/QtNetwork.framework/Headers -I /Library/Frameworks/QtCore.framework/Headers -I /Users/bhattgopal/dev/cpp/qgis_1.0.2/build -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_mshfile.cxx /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DataModelLoader/MeshFile/mshfile.h
 
 src/plugins/pihm_gis/moc_attfile.cxx: ../src/plugins/pihm_gis/DataModelLoader/AttFile/attfile.h
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_97)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_102)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating moc_attfile.cxx"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis && /Developer/Tools/Qt/moc -I /usr/include -I /Library/Frameworks/Qt3Support.framework/Headers -I /Library/Frameworks/QtSvg.framework/Headers -I /Library/Frameworks/QtGui.framework/Headers -I /Library/Frameworks/QtXml.framework/Headers -I /Library/Frameworks/QtSql.framework/Headers -I /Library/Frameworks/QtNetwork.framework/Headers -I /Library/Frameworks/QtCore.framework/Headers -I /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/moc_attfile.cxx /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DataModelLoader/AttFile/attfile.h
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis && /Developer/Tools/Qt/moc -I /usr/include -I /Library/Frameworks/Qt3Support.framework/Headers -I /Library/Frameworks/QtSvg.framework/Headers -I /Library/Frameworks/QtGui.framework/Headers -I /Library/Frameworks/QtXml.framework/Headers -I /Library/Frameworks/QtSql.framework/Headers -I /Library/Frameworks/QtNetwork.framework/Headers -I /Library/Frameworks/QtCore.framework/Headers -I /Users/bhattgopal/dev/cpp/qgis_1.0.2/build -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_attfile.cxx /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DataModelLoader/AttFile/attfile.h
 
 src/plugins/pihm_gis/moc_rivfile.cxx: ../src/plugins/pihm_gis/DataModelLoader/RivFile/rivfile.h
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_98)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_103)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating moc_rivfile.cxx"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis && /Developer/Tools/Qt/moc -I /usr/include -I /Library/Frameworks/Qt3Support.framework/Headers -I /Library/Frameworks/QtSvg.framework/Headers -I /Library/Frameworks/QtGui.framework/Headers -I /Library/Frameworks/QtXml.framework/Headers -I /Library/Frameworks/QtSql.framework/Headers -I /Library/Frameworks/QtNetwork.framework/Headers -I /Library/Frameworks/QtCore.framework/Headers -I /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/moc_rivfile.cxx /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DataModelLoader/RivFile/rivfile.h
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis && /Developer/Tools/Qt/moc -I /usr/include -I /Library/Frameworks/Qt3Support.framework/Headers -I /Library/Frameworks/QtSvg.framework/Headers -I /Library/Frameworks/QtGui.framework/Headers -I /Library/Frameworks/QtXml.framework/Headers -I /Library/Frameworks/QtSql.framework/Headers -I /Library/Frameworks/QtNetwork.framework/Headers -I /Library/Frameworks/QtCore.framework/Headers -I /Users/bhattgopal/dev/cpp/qgis_1.0.2/build -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_rivfile.cxx /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DataModelLoader/RivFile/rivfile.h
 
 src/plugins/pihm_gis/moc_parafile.cxx: ../src/plugins/pihm_gis/DataModelLoader/ParaFile/parafile.h
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_99)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_104)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating moc_parafile.cxx"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis && /Developer/Tools/Qt/moc -I /usr/include -I /Library/Frameworks/Qt3Support.framework/Headers -I /Library/Frameworks/QtSvg.framework/Headers -I /Library/Frameworks/QtGui.framework/Headers -I /Library/Frameworks/QtXml.framework/Headers -I /Library/Frameworks/QtSql.framework/Headers -I /Library/Frameworks/QtNetwork.framework/Headers -I /Library/Frameworks/QtCore.framework/Headers -I /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/moc_parafile.cxx /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DataModelLoader/ParaFile/parafile.h
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis && /Developer/Tools/Qt/moc -I /usr/include -I /Library/Frameworks/Qt3Support.framework/Headers -I /Library/Frameworks/QtSvg.framework/Headers -I /Library/Frameworks/QtGui.framework/Headers -I /Library/Frameworks/QtXml.framework/Headers -I /Library/Frameworks/QtSql.framework/Headers -I /Library/Frameworks/QtNetwork.framework/Headers -I /Library/Frameworks/QtCore.framework/Headers -I /Users/bhattgopal/dev/cpp/qgis_1.0.2/build -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_parafile.cxx /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DataModelLoader/ParaFile/parafile.h
 
 src/plugins/pihm_gis/moc_runpihm.cxx: ../src/plugins/pihm_gis/RunPIHM/runpihm.h
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_100)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_105)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating moc_runpihm.cxx"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis && /Developer/Tools/Qt/moc -I /usr/include -I /Library/Frameworks/Qt3Support.framework/Headers -I /Library/Frameworks/QtSvg.framework/Headers -I /Library/Frameworks/QtGui.framework/Headers -I /Library/Frameworks/QtXml.framework/Headers -I /Library/Frameworks/QtSql.framework/Headers -I /Library/Frameworks/QtNetwork.framework/Headers -I /Library/Frameworks/QtCore.framework/Headers -I /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/moc_runpihm.cxx /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RunPIHM/runpihm.h
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis && /Developer/Tools/Qt/moc -I /usr/include -I /Library/Frameworks/Qt3Support.framework/Headers -I /Library/Frameworks/QtSvg.framework/Headers -I /Library/Frameworks/QtGui.framework/Headers -I /Library/Frameworks/QtXml.framework/Headers -I /Library/Frameworks/QtSql.framework/Headers -I /Library/Frameworks/QtNetwork.framework/Headers -I /Library/Frameworks/QtCore.framework/Headers -I /Users/bhattgopal/dev/cpp/qgis_1.0.2/build -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_runpihm.cxx /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RunPIHM/runpihm.h
+
+src/plugins/pihm_gis/moc_plotTS.cxx: ../src/plugins/pihm_gis/Analysis/TimeSeries/plotTS.h
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_106)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating moc_plotTS.cxx"
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis && /Developer/Tools/Qt/moc -I /usr/include -I /Library/Frameworks/Qt3Support.framework/Headers -I /Library/Frameworks/QtSvg.framework/Headers -I /Library/Frameworks/QtGui.framework/Headers -I /Library/Frameworks/QtXml.framework/Headers -I /Library/Frameworks/QtSql.framework/Headers -I /Library/Frameworks/QtNetwork.framework/Headers -I /Library/Frameworks/QtCore.framework/Headers -I /Users/bhattgopal/dev/cpp/qgis_1.0.2/build -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_plotTS.cxx /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/Analysis/TimeSeries/plotTS.h
+
+src/plugins/pihm_gis/moc_timeseries.cxx: ../src/plugins/pihm_gis/Analysis/TimeSeries/timeseries.h
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_107)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating moc_timeseries.cxx"
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis && /Developer/Tools/Qt/moc -I /usr/include -I /Library/Frameworks/Qt3Support.framework/Headers -I /Library/Frameworks/QtSvg.framework/Headers -I /Library/Frameworks/QtGui.framework/Headers -I /Library/Frameworks/QtXml.framework/Headers -I /Library/Frameworks/QtSql.framework/Headers -I /Library/Frameworks/QtNetwork.framework/Headers -I /Library/Frameworks/QtCore.framework/Headers -I /Users/bhattgopal/dev/cpp/qgis_1.0.2/build -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_timeseries.cxx /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/Analysis/TimeSeries/timeseries.h
 
 src/plugins/pihm_gis/moc_spatialplot.cxx: ../src/plugins/pihm_gis/Analysis/SpatialPlot/spatialplot.h
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_101)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_108)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating moc_spatialplot.cxx"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis && /Developer/Tools/Qt/moc -I /usr/include -I /Library/Frameworks/Qt3Support.framework/Headers -I /Library/Frameworks/QtSvg.framework/Headers -I /Library/Frameworks/QtGui.framework/Headers -I /Library/Frameworks/QtXml.framework/Headers -I /Library/Frameworks/QtSql.framework/Headers -I /Library/Frameworks/QtNetwork.framework/Headers -I /Library/Frameworks/QtCore.framework/Headers -I /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/moc_spatialplot.cxx /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/Analysis/SpatialPlot/spatialplot.h
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis && /Developer/Tools/Qt/moc -I /usr/include -I /Library/Frameworks/Qt3Support.framework/Headers -I /Library/Frameworks/QtSvg.framework/Headers -I /Library/Frameworks/QtGui.framework/Headers -I /Library/Frameworks/QtXml.framework/Headers -I /Library/Frameworks/QtSql.framework/Headers -I /Library/Frameworks/QtNetwork.framework/Headers -I /Library/Frameworks/QtCore.framework/Headers -I /Users/bhattgopal/dev/cpp/qgis_1.0.2/build -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_spatialplot.cxx /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/Analysis/SpatialPlot/spatialplot.h
 
 src/plugins/pihm_gis/moc_about.cxx: ../src/plugins/pihm_gis/Help/About/about.h
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_102)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_109)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating moc_about.cxx"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis && /Developer/Tools/Qt/moc -I /usr/include -I /Library/Frameworks/Qt3Support.framework/Headers -I /Library/Frameworks/QtSvg.framework/Headers -I /Library/Frameworks/QtGui.framework/Headers -I /Library/Frameworks/QtXml.framework/Headers -I /Library/Frameworks/QtSql.framework/Headers -I /Library/Frameworks/QtNetwork.framework/Headers -I /Library/Frameworks/QtCore.framework/Headers -I /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/moc_about.cxx /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/Help/About/about.h
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis && /Developer/Tools/Qt/moc -I /usr/include -I /Library/Frameworks/Qt3Support.framework/Headers -I /Library/Frameworks/QtSvg.framework/Headers -I /Library/Frameworks/QtGui.framework/Headers -I /Library/Frameworks/QtXml.framework/Headers -I /Library/Frameworks/QtSql.framework/Headers -I /Library/Frameworks/QtNetwork.framework/Headers -I /Library/Frameworks/QtCore.framework/Headers -I /Users/bhattgopal/dev/cpp/qgis_1.0.2/build -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_about.cxx /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/Help/About/about.h
 
 src/plugins/pihm_gis/qrc_pihmgis.cxx: ../src/plugins/pihm_gis/pihmgis.png
 src/plugins/pihm_gis/qrc_pihmgis.cxx: ../src/plugins/pihm_gis/pihmgis.qrc
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_103)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_110)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating qrc_pihmgis.cxx"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis && /Developer/Tools/Qt/rcc -name pihmgis -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/qrc_pihmgis.cxx /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmgis.qrc
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis && /Developer/Tools/Qt/rcc -name pihmgis -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/qrc_pihmgis.cxx /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmgis.qrc
 
 src/plugins/pihm_gis/ui_pihmgisgui.h: ../src/plugins/pihm_gis/pihmgisgui.ui
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_104)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_111)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ui_pihmgisgui.h"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/ui_pihmgisgui.h /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmgisgui.ui
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/ui_pihmgisgui.h /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmgisgui.ui
 
 src/plugins/pihm_gis/ui_helpdialog.h: ../src/plugins/pihm_gis/pihmLIBS/helpDialog/helpdialog.ui
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_105)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_112)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ui_helpdialog.h"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/ui_helpdialog.h /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmLIBS/helpDialog/helpdialog.ui
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/ui_helpdialog.h /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmLIBS/helpDialog/helpdialog.ui
 
 src/plugins/pihm_gis/ui_fillpits.h: ../src/plugins/pihm_gis/RasterProcessing/FillPits/fillpits.ui
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_106)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_113)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ui_fillpits.h"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/ui_fillpits.h /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/FillPits/fillpits.ui
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/ui_fillpits.h /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/FillPits/fillpits.ui
 
 src/plugins/pihm_gis/ui_flowgrid.h: ../src/plugins/pihm_gis/RasterProcessing/FlowGrid/flowgrid.ui
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_107)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_114)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ui_flowgrid.h"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/ui_flowgrid.h /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/FlowGrid/flowgrid.ui
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/ui_flowgrid.h /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/FlowGrid/flowgrid.ui
 
 src/plugins/pihm_gis/ui_streamgrid.h: ../src/plugins/pihm_gis/RasterProcessing/StreamGrid/streamgrid.ui
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_108)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_115)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ui_streamgrid.h"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/ui_streamgrid.h /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/StreamGrid/streamgrid.ui
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/ui_streamgrid.h /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/StreamGrid/streamgrid.ui
 
 src/plugins/pihm_gis/ui_linkgrid.h: ../src/plugins/pihm_gis/RasterProcessing/LinkGrid/linkgrid.ui
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_109)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_116)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ui_linkgrid.h"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/ui_linkgrid.h /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/LinkGrid/linkgrid.ui
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/ui_linkgrid.h /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/LinkGrid/linkgrid.ui
 
 src/plugins/pihm_gis/ui_streampolyline.h: ../src/plugins/pihm_gis/RasterProcessing/StreamPolyLine/streampolyline.ui
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_110)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_117)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ui_streampolyline.h"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/ui_streampolyline.h /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/StreamPolyLine/streampolyline.ui
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/ui_streampolyline.h /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/StreamPolyLine/streampolyline.ui
 
 src/plugins/pihm_gis/ui_catchmentgrid.h: ../src/plugins/pihm_gis/RasterProcessing/CatchmentGrid/catchmentgrid.ui
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_111)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_118)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ui_catchmentgrid.h"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/ui_catchmentgrid.h /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/CatchmentGrid/catchmentgrid.ui
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/ui_catchmentgrid.h /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/CatchmentGrid/catchmentgrid.ui
 
 src/plugins/pihm_gis/ui_catchmentpolygon.h: ../src/plugins/pihm_gis/RasterProcessing/CatchmentPolygon/catchmentpolygon.ui
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_112)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_119)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ui_catchmentpolygon.h"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/ui_catchmentpolygon.h /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/CatchmentPolygon/catchmentpolygon.ui
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/ui_catchmentpolygon.h /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/CatchmentPolygon/catchmentpolygon.ui
 
 src/plugins/pihm_gis/ui_polygontopolylinedialog.h: ../src/plugins/pihm_gis/VectorProcessing/PolygonToPolyLine/polygontopolylinedialog.ui
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_113)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_120)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ui_polygontopolylinedialog.h"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/ui_polygontopolylinedialog.h /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/VectorProcessing/PolygonToPolyLine/polygontopolylinedialog.ui
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/ui_polygontopolylinedialog.h /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/VectorProcessing/PolygonToPolyLine/polygontopolylinedialog.ui
 
 src/plugins/pihm_gis/ui_simplifylinedialog.h: ../src/plugins/pihm_gis/VectorProcessing/SimplifyLine/simplifylinedialog.ui
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_114)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_121)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ui_simplifylinedialog.h"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/ui_simplifylinedialog.h /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/VectorProcessing/SimplifyLine/simplifylinedialog.ui
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/ui_simplifylinedialog.h /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/VectorProcessing/SimplifyLine/simplifylinedialog.ui
 
 src/plugins/pihm_gis/ui_splitlinedialog.h: ../src/plugins/pihm_gis/VectorProcessing/SplitLine/splitlinedialog.ui
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_115)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_122)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ui_splitlinedialog.h"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/ui_splitlinedialog.h /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/VectorProcessing/SplitLine/splitlinedialog.ui
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/ui_splitlinedialog.h /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/VectorProcessing/SplitLine/splitlinedialog.ui
 
 src/plugins/pihm_gis/ui_mergefeaturesdialog.h: ../src/plugins/pihm_gis/VectorProcessing/MergeFeatures/mergefeaturesdialog.ui
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_116)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_123)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ui_mergefeaturesdialog.h"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/ui_mergefeaturesdialog.h /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/VectorProcessing/MergeFeatures/mergefeaturesdialog.ui
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/ui_mergefeaturesdialog.h /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/VectorProcessing/MergeFeatures/mergefeaturesdialog.ui
 
 src/plugins/pihm_gis/ui_generateshapetopology.h: ../src/plugins/pihm_gis/DomainDecomposition/GenerateShapeTopology/generateshapetopology.ui
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_117)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_124)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ui_generateshapetopology.h"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/ui_generateshapetopology.h /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DomainDecomposition/GenerateShapeTopology/generateshapetopology.ui
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/ui_generateshapetopology.h /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DomainDecomposition/GenerateShapeTopology/generateshapetopology.ui
 
 src/plugins/pihm_gis/ui_runtriangle.h: ../src/plugins/pihm_gis/DomainDecomposition/RunTriangle/runtriangle.ui
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_118)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_125)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ui_runtriangle.h"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/ui_runtriangle.h /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DomainDecomposition/RunTriangle/runtriangle.ui
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/ui_runtriangle.h /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DomainDecomposition/RunTriangle/runtriangle.ui
 
 src/plugins/pihm_gis/ui_createtinsdialog.h: ../src/plugins/pihm_gis/DomainDecomposition/CreateTINs/createtinsdialog.ui
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_119)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_126)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ui_createtinsdialog.h"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/ui_createtinsdialog.h /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DomainDecomposition/CreateTINs/createtinsdialog.ui
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/ui_createtinsdialog.h /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DomainDecomposition/CreateTINs/createtinsdialog.ui
 
 src/plugins/pihm_gis/ui_mshfile.h: ../src/plugins/pihm_gis/DataModelLoader/MeshFile/mshfile.ui
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_120)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_127)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ui_mshfile.h"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/ui_mshfile.h /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DataModelLoader/MeshFile/mshfile.ui
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/ui_mshfile.h /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DataModelLoader/MeshFile/mshfile.ui
 
 src/plugins/pihm_gis/ui_attfile.h: ../src/plugins/pihm_gis/DataModelLoader/AttFile/attfile.ui
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_121)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_128)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ui_attfile.h"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/ui_attfile.h /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DataModelLoader/AttFile/attfile.ui
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/ui_attfile.h /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DataModelLoader/AttFile/attfile.ui
 
 src/plugins/pihm_gis/ui_rivfile.h: ../src/plugins/pihm_gis/DataModelLoader/RivFile/rivfile.ui
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_122)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_129)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ui_rivfile.h"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/ui_rivfile.h /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DataModelLoader/RivFile/rivfile.ui
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/ui_rivfile.h /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DataModelLoader/RivFile/rivfile.ui
 
 src/plugins/pihm_gis/ui_parafile.h: ../src/plugins/pihm_gis/DataModelLoader/ParaFile/parafile.ui
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_123)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_130)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ui_parafile.h"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/ui_parafile.h /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DataModelLoader/ParaFile/parafile.ui
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/ui_parafile.h /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DataModelLoader/ParaFile/parafile.ui
 
 src/plugins/pihm_gis/ui_runpihm.h: ../src/plugins/pihm_gis/RunPIHM/runpihm.ui
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_124)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_131)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ui_runpihm.h"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/ui_runpihm.h /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RunPIHM/runpihm.ui
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/ui_runpihm.h /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RunPIHM/runpihm.ui
+
+src/plugins/pihm_gis/ui_timeseries.h: ../src/plugins/pihm_gis/Analysis/TimeSeries/timeseries.ui
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_132)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ui_timeseries.h"
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/ui_timeseries.h /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/Analysis/TimeSeries/timeseries.ui
 
 src/plugins/pihm_gis/ui_spatialplot.h: ../src/plugins/pihm_gis/Analysis/SpatialPlot/spatialplot.ui
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_125)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_133)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ui_spatialplot.h"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/ui_spatialplot.h /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/Analysis/SpatialPlot/spatialplot.ui
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/ui_spatialplot.h /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/Analysis/SpatialPlot/spatialplot.ui
 
 src/plugins/pihm_gis/ui_about.h: ../src/plugins/pihm_gis/Help/About/about.ui
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_126)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_134)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ui_about.h"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/ui_about.h /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/Help/About/about.ui
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/ui_about.h /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/Help/About/about.ui
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/depend: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/depend.make.mark
 
@@ -2182,6 +2317,8 @@ src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/depend.make.mark: src/plugins/
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/depend.make.mark: src/plugins/pihm_gis/moc_rivfile.cxx
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/depend.make.mark: src/plugins/pihm_gis/moc_parafile.cxx
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/depend.make.mark: src/plugins/pihm_gis/moc_runpihm.cxx
+src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/depend.make.mark: src/plugins/pihm_gis/moc_plotTS.cxx
+src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/depend.make.mark: src/plugins/pihm_gis/moc_timeseries.cxx
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/depend.make.mark: src/plugins/pihm_gis/moc_spatialplot.cxx
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/depend.make.mark: src/plugins/pihm_gis/moc_about.cxx
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/depend.make.mark: src/plugins/pihm_gis/qrc_pihmgis.cxx
@@ -2206,10 +2343,11 @@ src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/depend.make.mark: src/plugins/
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/depend.make.mark: src/plugins/pihm_gis/ui_rivfile.h
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/depend.make.mark: src/plugins/pihm_gis/ui_parafile.h
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/depend.make.mark: src/plugins/pihm_gis/ui_runpihm.h
+src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/depend.make.mark: src/plugins/pihm_gis/ui_timeseries.h
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/depend.make.mark: src/plugins/pihm_gis/ui_spatialplot.h
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/depend.make.mark: src/plugins/pihm_gis/ui_about.h
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --magenta --bold "Scanning dependencies of target pihmgisplugin"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0 /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DependInfo.cmake
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/bhattgopal/dev/cpp/qgis_1.0.2 /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis /Users/bhattgopal/dev/cpp/qgis_1.0.2/build /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DependInfo.cmake
 
 # Object files for target pihmgisplugin
 pihmgisplugin_OBJECTS = \
@@ -2262,8 +2400,11 @@ pihmgisplugin_OBJECTS = \
 "CMakeFiles/pihmgisplugin.dir/PIHM_v2.0/initialize.o" \
 "CMakeFiles/pihmgisplugin.dir/PIHM_v2.0/read_alloc.o" \
 "CMakeFiles/pihmgisplugin.dir/PIHM_v2.0/is_sm_et.o" \
+"CMakeFiles/pihmgisplugin.dir/MyNewThread.o" \
 "CMakeFiles/pihmgisplugin.dir/RunPIHM/runpihm.o" \
 "CMakeFiles/pihmgisplugin.dir/pihmLIBS/generateShape.o" \
+"CMakeFiles/pihmgisplugin.dir/Analysis/TimeSeries/plotTS.o" \
+"CMakeFiles/pihmgisplugin.dir/Analysis/TimeSeries/timeseries.o" \
 "CMakeFiles/pihmgisplugin.dir/Analysis/Spatialplot/spatialplot.o" \
 "CMakeFiles/pihmgisplugin.dir/Help/About/about.o" \
 "CMakeFiles/pihmgisplugin.dir/moc_pihmgis.o" \
@@ -2288,6 +2429,8 @@ pihmgisplugin_OBJECTS = \
 "CMakeFiles/pihmgisplugin.dir/moc_rivfile.o" \
 "CMakeFiles/pihmgisplugin.dir/moc_parafile.o" \
 "CMakeFiles/pihmgisplugin.dir/moc_runpihm.o" \
+"CMakeFiles/pihmgisplugin.dir/moc_plotTS.o" \
+"CMakeFiles/pihmgisplugin.dir/moc_timeseries.o" \
 "CMakeFiles/pihmgisplugin.dir/moc_spatialplot.o" \
 "CMakeFiles/pihmgisplugin.dir/moc_about.o" \
 "CMakeFiles/pihmgisplugin.dir/qrc_pihmgis.o"
@@ -2344,8 +2487,11 @@ src/plugins/pihm_gis/libpihmgisplugin.so: src/plugins/pihm_gis/CMakeFiles/pihmgi
 src/plugins/pihm_gis/libpihmgisplugin.so: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/PIHM_v2.0/initialize.o
 src/plugins/pihm_gis/libpihmgisplugin.so: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/PIHM_v2.0/read_alloc.o
 src/plugins/pihm_gis/libpihmgisplugin.so: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/PIHM_v2.0/is_sm_et.o
+src/plugins/pihm_gis/libpihmgisplugin.so: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/MyNewThread.o
 src/plugins/pihm_gis/libpihmgisplugin.so: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/RunPIHM/runpihm.o
 src/plugins/pihm_gis/libpihmgisplugin.so: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/generateShape.o
+src/plugins/pihm_gis/libpihmgisplugin.so: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/Analysis/TimeSeries/plotTS.o
+src/plugins/pihm_gis/libpihmgisplugin.so: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/Analysis/TimeSeries/timeseries.o
 src/plugins/pihm_gis/libpihmgisplugin.so: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/Analysis/Spatialplot/spatialplot.o
 src/plugins/pihm_gis/libpihmgisplugin.so: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/Help/About/about.o
 src/plugins/pihm_gis/libpihmgisplugin.so: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_pihmgis.o
@@ -2370,6 +2516,8 @@ src/plugins/pihm_gis/libpihmgisplugin.so: src/plugins/pihm_gis/CMakeFiles/pihmgi
 src/plugins/pihm_gis/libpihmgisplugin.so: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_rivfile.o
 src/plugins/pihm_gis/libpihmgisplugin.so: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_parafile.o
 src/plugins/pihm_gis/libpihmgisplugin.so: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_runpihm.o
+src/plugins/pihm_gis/libpihmgisplugin.so: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_plotTS.o
+src/plugins/pihm_gis/libpihmgisplugin.so: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_timeseries.o
 src/plugins/pihm_gis/libpihmgisplugin.so: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_spatialplot.o
 src/plugins/pihm_gis/libpihmgisplugin.so: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_about.o
 src/plugins/pihm_gis/libpihmgisplugin.so: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/qrc_pihmgis.o
@@ -2384,13 +2532,13 @@ src/plugins/pihm_gis/libpihmgisplugin.so: /usr/lib/libz.dylib
 src/plugins/pihm_gis/libpihmgisplugin.so: src/core/libqgis_core.dylib
 src/plugins/pihm_gis/libpihmgisplugin.so: src/gui/libqgis_gui.dylib
 src/plugins/pihm_gis/libpihmgisplugin.so: /Library/Frameworks/proj.framework
-src/plugins/pihm_gis/libpihmgisplugin.so: /Library/Frameworks/sqlite3.framework
-src/plugins/pihm_gis/libpihmgisplugin.so: /Library/Frameworks/geos.framework
+src/plugins/pihm_gis/libpihmgisplugin.so: /Library/Frameworks/GEOS.framework/unix/lib/libgeos_c.dylib
 src/plugins/pihm_gis/libpihmgisplugin.so: /Library/Frameworks/GDAL.framework/Versions/1.5/unix/lib/libgdal.dylib
+src/plugins/pihm_gis/libpihmgisplugin.so: /Library/Frameworks/sqlite3.framework
 src/plugins/pihm_gis/libpihmgisplugin.so: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX shared module libpihmgisplugin.so"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis && $(CMAKE_COMMAND) -P CMakeFiles/pihmgisplugin.dir/cmake_clean_target.cmake
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/pihmgisplugin.dir/link.txt --verbose=$(VERBOSE)
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis && $(CMAKE_COMMAND) -P CMakeFiles/pihmgisplugin.dir/cmake_clean_target.cmake
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/pihmgisplugin.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build: src/plugins/pihm_gis/libpihmgisplugin.so
@@ -2444,8 +2592,11 @@ src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/requires: src/plugins/pihm_gis
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/requires: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/PIHM_v2.0/initialize.o.requires
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/requires: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/PIHM_v2.0/read_alloc.o.requires
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/requires: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/PIHM_v2.0/is_sm_et.o.requires
+src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/requires: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/MyNewThread.o.requires
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/requires: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/RunPIHM/runpihm.o.requires
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/requires: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/generateShape.o.requires
+src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/requires: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/Analysis/TimeSeries/plotTS.o.requires
+src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/requires: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/Analysis/TimeSeries/timeseries.o.requires
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/requires: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/Analysis/Spatialplot/spatialplot.o.requires
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/requires: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/Help/About/about.o.requires
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/requires: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_pihmgis.o.requires
@@ -2470,10 +2621,12 @@ src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/requires: src/plugins/pihm_gis
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/requires: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_rivfile.o.requires
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/requires: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_parafile.o.requires
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/requires: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_runpihm.o.requires
+src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/requires: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_plotTS.o.requires
+src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/requires: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_timeseries.o.requires
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/requires: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_spatialplot.o.requires
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/requires: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_about.o.requires
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/requires: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/qrc_pihmgis.o.requires
 
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/clean:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis && $(CMAKE_COMMAND) -P CMakeFiles/pihmgisplugin.dir/cmake_clean.cmake
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis && $(CMAKE_COMMAND) -P CMakeFiles/pihmgisplugin.dir/cmake_clean.cmake
 

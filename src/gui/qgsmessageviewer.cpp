@@ -17,76 +17,96 @@
 /* $Id$ */
 
 #include "qgsmessageviewer.h"
+#include <QSettings>
 
-
-QgsMessageViewer::QgsMessageViewer(QWidget *parent, Qt::WFlags fl)
-: QDialog(parent, fl)
+QgsMessageViewer::QgsMessageViewer( QWidget *parent, Qt::WFlags fl )
+    : QDialog( parent, fl )
 {
-  setupUi(this);
-  setAttribute(Qt::WA_DeleteOnClose);
-  
+  setupUi( this );
+  setAttribute( Qt::WA_DeleteOnClose );
+
   // Default state for the checkbox
-  setCheckBoxVisible(false);
-  setCheckBoxState(Qt::Unchecked);
+  setCheckBoxVisible( false );
+  setCheckBoxState( Qt::Unchecked );
+
+  mCheckBoxQSettingsLabel = "";
 }
 
 QgsMessageViewer::~QgsMessageViewer()
 {
 }
 
-void QgsMessageViewer::setMessageAsHtml(const QString& msg)
+void QgsMessageViewer::setMessageAsHtml( const QString& msg )
 {
-  txtMessage->setHtml(msg);
+  txtMessage->setHtml( msg );
 }
 
-void QgsMessageViewer::setMessageAsPlainText(const QString& msg)
+void QgsMessageViewer::setMessageAsPlainText( const QString& msg )
 {
-  txtMessage->setPlainText(msg);
+  txtMessage->setPlainText( msg );
 }
 
-void QgsMessageViewer::appendMessage(const QString& msg)
+void QgsMessageViewer::appendMessage( const QString& msg )
 {
-  txtMessage->append(msg);
+  txtMessage->append( msg );
 }
 
 
-void QgsMessageViewer::setMessage(const QString& message, MessageType msgType)
+void QgsMessageViewer::setMessage( const QString& message, MessageType msgType )
 {
-  if (msgType == MessageHtml)
-    setMessageAsHtml(message);
+  if ( msgType == MessageHtml )
+    setMessageAsHtml( message );
   else
-    setMessageAsPlainText(message);
+    setMessageAsPlainText( message );
 }
 
-void QgsMessageViewer::showMessage(bool blocking)
+void QgsMessageViewer::showMessage( bool blocking )
 {
-  if (blocking)
+  if ( blocking )
     exec();
   else
     show();
 }
 
-void QgsMessageViewer::setTitle(const QString& title)
+void QgsMessageViewer::setTitle( const QString& title )
 {
-  setCaption(title);
+  setWindowTitle( title );
 }
 
-void QgsMessageViewer::setCheckBoxText(const QString& text)
+void QgsMessageViewer::setCheckBoxText( const QString& text )
 {
-  checkBox->setText(text);
+  checkBox->setText( text );
 }
 
-void QgsMessageViewer::setCheckBoxVisible(bool visible)
+void QgsMessageViewer::setCheckBoxVisible( bool visible )
 {
-  checkBox->setVisible(visible);
+  checkBox->setVisible( visible );
 }
 
-void QgsMessageViewer::setCheckBoxState(Qt::CheckState state)
+void QgsMessageViewer::setCheckBoxState( Qt::CheckState state )
 {
-  checkBox->setCheckState(state);
+  checkBox->setCheckState( state );
 }
 
 Qt::CheckState QgsMessageViewer::checkBoxState()
 {
   return checkBox->checkState();
+}
+
+void QgsMessageViewer::setCheckBoxQSettingsLabel( QString label )
+{
+  mCheckBoxQSettingsLabel = label;
+}
+
+
+void QgsMessageViewer::on_checkBox_toggled( bool toggled )
+{
+  if ( !mCheckBoxQSettingsLabel.isEmpty() )
+  {
+    QSettings settings;
+    if ( checkBox->checkState() == Qt::Checked )
+      settings.setValue( mCheckBoxQSettingsLabel, false );
+    else
+      settings.setValue( mCheckBoxQSettingsLabel, true );
+  }
 }

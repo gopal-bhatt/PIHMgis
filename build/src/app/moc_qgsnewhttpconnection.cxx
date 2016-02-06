@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'qgsnewhttpconnection.h'
 **
-** Created: Wed Jun 11 19:05:43 2008
+** Created: Fri Jun 19 01:54:09 2009
 **      by: The Qt Meta Object Compiler version 59 (Qt 4.3.2)
 **
 ** WARNING! All changes made in this file will be lost!
@@ -28,14 +28,14 @@ static const uint qt_meta_data_QgsNewHttpConnection[] = {
 
  // slots: signature, parameters, type, tag, flags
       22,   21,   21,   21, 0x0a,
-      39,   21,   21,   21, 0x0a,
+      31,   21,   21,   21, 0x0a,
 
        0        // eod
 };
 
 static const char qt_meta_stringdata_QgsNewHttpConnection[] = {
-    "QgsNewHttpConnection\0\0saveConnection()\0"
-    "on_btnHelp_clicked()\0"
+    "QgsNewHttpConnection\0\0accept()\0"
+    "helpRequested()\0"
 };
 
 const QMetaObject QgsNewHttpConnection::staticMetaObject = {
@@ -63,8 +63,8 @@ int QgsNewHttpConnection::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
         switch (_id) {
-        case 0: saveConnection(); break;
-        case 1: on_btnHelp_clicked(); break;
+        case 0: accept(); break;
+        case 1: helpRequested(); break;
         }
         _id -= 2;
     }

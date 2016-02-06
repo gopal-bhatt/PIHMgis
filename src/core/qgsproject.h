@@ -2,7 +2,7 @@
                                   qgsproject.h
 
                       Implements persistent project state.
- 
+
                               -------------------
   begin                : July 23, 2004
   copyright            : (C) 2004 by Mark Coletti
@@ -17,12 +17,13 @@
  *   (at your option) any later version.                                   *
  *                                                                         *
  ***************************************************************************/
-/* $Id: qgsproject.h 6415 2007-01-09 02:39:15Z wonder $ */
+/* $Id: qgsproject.h 9536 2008-10-24 21:47:48Z timlinux $ */
 
 #ifndef QGSPROJECT_H
 #define QGSPROJECT_H
 
 #include <memory>
+#include "qgsprojectversion.h"
 #include <QObject>
 
 //#include <QDomDocument>
@@ -32,8 +33,9 @@ class QDomDocument;
 class QDomNode;
 
 
-/** Reads and writes project states.
-   
+/** \ingroup core
+ * Reads and writes project states.
+
 
   @note
 
@@ -51,9 +53,9 @@ class QDomNode;
 */
 class CORE_EXPORT QgsProject : public QObject
 {
-  Q_OBJECT
+    Q_OBJECT
 
-public:
+  public:
 
     /**
        @todo XXX Should have semantics for saving project if dirty as last gasp?
@@ -80,7 +82,7 @@ public:
        write()
      */
     //@{
-    bool dirty() const;
+    bool isDirty() const;
 
     void dirty( bool b );
     //@}
@@ -90,10 +92,10 @@ public:
        Every project has an associated file that contains its XML
      */
     //@{
-    void filename( QString const & name );
+    void setFileName( QString const & name );
 
     /** returns file name */
-    QString filename() const;
+    QString fileName() const;
     //@}
 
 
@@ -131,14 +133,14 @@ public:
     //@}
 
 
-    /** read the layer described in the associated DOM node
+    /** read the layer described in the associated Dom node
 
-        @param layerNode   represents a QgsProject DOM node that maps to a specific layer.
+        @param layerNode   represents a QgsProject Dom node that maps to a specific layer.
 
         QgsProject raises an exception when one of the QgsProject::read()
         implementations fails.  Since the read()s are invoked from qgisapp,
         then qgisapp handles the exception.  It prompts the user for the new
-        location of the data, if any.  If there is a new location, the DOM
+        location of the data, if any.  If there is a new location, the Dom
         node associated with the layer has its <datasource> tag corrected.
         Then that node is passed to this member function to be re-opened.
 
@@ -183,10 +185,10 @@ public:
        @todo "properties" is, overall, a good name; but that might imply that
        the qgis specific state properites are different since they aren't
        accessible here.  Actually, what if we make "qgis" yet another
-       scope that stores its state in the properties list?  E.g., 
+       scope that stores its state in the properties list?  E.g.,
        QgsProject::instance()->properties()["qgis"]?
 
-       
+
      */
     // DEPRECATED Properties & properties( QString const & scope );
 
@@ -196,7 +198,7 @@ public:
     void clearProperties();
 
 
-    /* key value mutators 
+    /* key value mutators
 
       keys would be the familiar QSettings-like '/' delimited entries, implying
       a hierarchy of keys and corresponding values
@@ -204,11 +206,11 @@ public:
       @note The key string <em>must</em> include '/'s.  E.g., "/foo" not "foo".
     */
     //@{
-    bool writeEntry ( QString const & scope, const QString & key, bool value );
-    bool writeEntry ( QString const & scope, const QString & key, double value );
-    bool writeEntry ( QString const & scope, const QString & key, int value );
-    bool writeEntry ( QString const & scope, const QString & key, const QString & value );
-    bool writeEntry ( QString const & scope, const QString & key, const QStringList & value );
+    bool writeEntry( QString const & scope, const QString & key, bool value );
+    bool writeEntry( QString const & scope, const QString & key, double value );
+    bool writeEntry( QString const & scope, const QString & key, int value );
+    bool writeEntry( QString const & scope, const QString & key, const QString & value );
+    bool writeEntry( QString const & scope, const QString & key, const QStringList & value );
     //@}
 
     /** key value accessors
@@ -220,33 +222,33 @@ public:
         @note The key string <em>must</em> include '/'s.  E.g., "/foo" not "foo".
     */
     //@{
-    QStringList readListEntry ( QString const & scope, const QString & key, bool * ok = 0 ) const;
+    QStringList readListEntry( QString const & scope, const QString & key, bool * ok = 0 ) const;
 
-    QString readEntry ( QString const & scope, const QString & key, const QString & def = QString::null, bool * ok = 0 ) const;
-    int readNumEntry ( QString const & scope, const QString & key, int def = 0, bool * ok = 0 ) const;
-    double readDoubleEntry ( QString const & scope, const QString & key, double def = 0, bool * ok = 0 ) const;
-    bool readBoolEntry ( QString const & scope, const QString & key, bool def = FALSE, bool * ok = 0 ) const;
+    QString readEntry( QString const & scope, const QString & key, const QString & def = QString::null, bool * ok = 0 ) const;
+    int readNumEntry( QString const & scope, const QString & key, int def = 0, bool * ok = 0 ) const;
+    double readDoubleEntry( QString const & scope, const QString & key, double def = 0, bool * ok = 0 ) const;
+    bool readBoolEntry( QString const & scope, const QString & key, bool def = FALSE, bool * ok = 0 ) const;
     //@}
 
 
     /** remove the given key */
-    bool removeEntry ( QString const & scope, const QString & key );
+    bool removeEntry( QString const & scope, const QString & key );
 
 
     /** return keys with values -- do not return keys that contain other keys
 
       @note equivalent to QSettings entryList()
     */
-    QStringList entryList ( QString const & scope, QString const & key ) const;
+    QStringList entryList( QString const & scope, QString const & key ) const;
 
     /** return keys with keys -- do not return keys that contain only values
 
       @note equivalent to QSettings subkeyList()
     */
-    QStringList subkeyList ( QString const & scope, QString const & key ) const;
+    QStringList subkeyList( QString const & scope, QString const & key ) const;
 
 
-    /** dump out current project properties to stderr 
+    /** dump out current project properties to stderr
 
       @todo XXX Now slightly broken since re-factoring.  Won't print out top-level key
                 and redundantly prints sub-keys.
@@ -254,14 +256,17 @@ public:
     void dumpProperties() const;
 
   signals:
-    
-    //! emitted when project is being read
-    void readProject(const QDomDocument &);
-    
-    //! emitted when project is being written
-    void writeProject(QDomDocument &);
 
-private:
+    //! emitted when project is being read
+    void readProject( const QDomDocument & );
+
+    //! emitted when project is being written
+    void writeProject( QDomDocument & );
+
+    //! emitted when an old project file is read.
+    void oldProjectVersionWarning( QString );
+
+  private:
 
     QgsProject(); // private 'cause it's a singleton
 

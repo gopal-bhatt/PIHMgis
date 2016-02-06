@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'qgsmaptoolemitpoint.h'
 **
-** Created: Wed Jun 11 19:05:14 2008
+** Created: Fri Jun 19 01:53:20 2009
 **      by: The Qt Meta Object Compiler version 59 (Qt 4.3.2)
 **
 ** WARNING! All changes made in this file will be lost!
@@ -34,7 +34,7 @@ static const uint qt_meta_data_QgsMapToolEmitPoint[] = {
 
 static const char qt_meta_stringdata_QgsMapToolEmitPoint[] = {
     "QgsMapToolEmitPoint\0\0point,button\0"
-    "gotPoint(QgsPoint&,Qt::MouseButton)\0"
+    "canvasClicked(QgsPoint&,Qt::MouseButton)\0"
 };
 
 const QMetaObject QgsMapToolEmitPoint::staticMetaObject = {
@@ -62,7 +62,7 @@ int QgsMapToolEmitPoint::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
         switch (_id) {
-        case 0: gotPoint((*reinterpret_cast< QgsPoint(*)>(_a[1])),(*reinterpret_cast< Qt::MouseButton(*)>(_a[2]))); break;
+        case 0: canvasClicked((*reinterpret_cast< QgsPoint(*)>(_a[1])),(*reinterpret_cast< Qt::MouseButton(*)>(_a[2]))); break;
         }
         _id -= 1;
     }
@@ -70,7 +70,7 @@ int QgsMapToolEmitPoint::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 }
 
 // SIGNAL 0
-void QgsMapToolEmitPoint::gotPoint(QgsPoint & _t1, Qt::MouseButton _t2)
+void QgsMapToolEmitPoint::canvasClicked(QgsPoint & _t1, Qt::MouseButton _t2)
 {
     void *_a[] = { 0, const_cast<void*>(reinterpret_cast<const void*>(&_t1)), const_cast<void*>(reinterpret_cast<const void*>(&_t2)) };
     QMetaObject::activate(this, &staticMetaObject, 0, _a);

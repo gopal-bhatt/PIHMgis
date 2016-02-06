@@ -1,17 +1,17 @@
 K 25
 svn:wc:ra_dav:version-url
-V 61
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/designer
+V 56
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/designer
 END
 qgisdesignerwidgets.qrc
 K 25
 svn:wc:ra_dav:version-url
-V 85
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/designer/qgisdesignerwidgets.qrc
+V 80
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/designer/qgisdesignerwidgets.qrc
 END
 README.txt
 K 25
 svn:wc:ra_dav:version-url
-V 72
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/designer/README.txt
+V 67
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/designer/README.txt
 END

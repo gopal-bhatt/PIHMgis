@@ -1,9 +1,5 @@
-//Added by qt3to4:
-#include <QPixmap>
-#include <QCloseEvent>
-#include <Q3Frame>
 /***************************************************************************
-                              qgsgrassmodule.h 
+                              qgsgrassmodule.h
                              -------------------
     begin                : March, 2005
     copyright            : (C) 2005 by Radim Blazek
@@ -20,105 +16,96 @@
 #ifndef QGSGRASSMODULE_H
 #define QGSGRASSMODULE_H
 
-class QCloseEvent;
-class QString;
-class QStringList;
-class Q3GroupBox;
-class Q3Frame;
-class Q3ListView;
-class QDomNode;
-class QDomElement;
-class QComboBox;
-class QLineEdit;
-class QPixmap;
-class QValidator;
+#include "ui_qgsgrassmodulebase.h"
 
-#include <vector>
-#include <q3groupbox.h>
-#include <qcheckbox.h>
-#include <q3process.h>
+#include "qgis.h"
+#include "qgsfield.h"
+
+#include <QCheckBox>
 #include <QGroupBox>
-//#include <QLayout>
-#include <QVBoxLayout>
 #include <QProcess>
 
-// Must be here, so that it is included to moc file
-#include "qgsvectorlayer.h"
-class QgisInterface;
-class QgsMapCanvas;
-
-class QgsGrassProvider;
 class QgsGrassTools;
 class QgsGrassModuleItem;
-class QgsGrassModuleOptions; 
-class QgsGrassModuleStandardOptions; 
-#include "ui_qgsgrassmodulebase.h"
-#include <QDialog>
+class QgsGrassModuleOptions;
+
+class QgisInterface;
+class QgsMapCanvas;
+class QgsMapLayer;
+class QgsVectorLayer;
+
+class QComboBox;
+class QDomNode;
+class QDomElement;
+class QLineEdit;
+class QValidator;
+
+
 /*! \class QgsGrassModule
  *  \brief Interface to GRASS modules.
  *
  */
-class QgsGrassModule: public QDialog, private  Ui::QgsGrassModuleBase 
+class QgsGrassModule: public QDialog, private  Ui::QgsGrassModuleBase
 {
-    Q_OBJECT;
+    Q_OBJECT
 
-public:
+  public:
     //! Constructor
-    QgsGrassModule ( QgsGrassTools *tools, QString moduleName, QgisInterface *iface,  
-	           QString path, QWidget * parent = 0, const char * name = 0, Qt::WFlags f = 0 );
+    QgsGrassModule( QgsGrassTools *tools, QString moduleName, QgisInterface *iface,
+                    QString path, QWidget * parent = 0, Qt::WFlags f = 0 );
 
     //! Destructor
     ~QgsGrassModule();
 
     //! Returns module label for module description path
-    static QString label ( QString path );
+    static QString label( QString path );
 
-    /** \brief Returns pixmap representing the module 
+    /** \brief Returns pixmap representing the module
      * \param path module path without .qgm extension
      */
-    static QPixmap pixmap ( QString path, int height );
+    static QPixmap pixmap( QString path, int height );
 
     //! Find element in GRASS module description by key, if not found, returned element is null
-    static QDomNode nodeByKey ( QDomElement gDocElem, QString key );
+    static QDomNode nodeByKey( QDomElement gDocElem, QString key );
 
-    //! Returns pointer to QGIS interface 
+    //! Returns pointer to QGIS interface
     QgisInterface *qgisIface();
 
-    // ! Options widget 
+    // ! Options widget
     QgsGrassModuleOptions *options() { return mOptions; }
 
-    // ! List of directories in PATH variable + current directory on Windows 
+    // ! List of directories in PATH variable + current directory on Windows
     static QStringList mExecPath;
     static bool mExecPathInited;
-    
+
     // ! Find in exec path
     //   returns full path or null string
     //   appends automaticaly .exe on Windows
-    static QString findExec ( QString file );
+    static QString findExec( QString file );
 
     // ! Check if file is in mExecPath
-    static bool inExecPath ( QString file );
+    static bool inExecPath( QString file );
 
     // ! Get executable + arguments. Executable is returned as first string.
     // On Window if the module is script the executable will be path to shell
     // Returns empty list if not found.
-    static QStringList execArguments ( QString module );
+    static QStringList execArguments( QString module );
 
-public slots:
+  public slots:
     //! Run the module with current options
     void on_mRunButton_clicked() { run(); }
-    void run ();
+    void run();
 
     //! Close the module tab
     void on_mCloseButton_clicked() { close(); }
-    void close ();
+    void close();
 
     //! Show output in map view
     void on_mViewButton_clicked() { viewOutput(); }
-    void viewOutput ();
+    void viewOutput();
 
     //! Running process finished
-    void finished (int exitCode, QProcess::ExitStatus exitStatus );
+    void finished( int exitCode, QProcess::ExitStatus exitStatus );
 
     //! Read module's standard output
     void readStdout();
@@ -126,23 +113,23 @@ public slots:
     //! Read module's standard error
     void readStderr();
 
-private:
+  private:
     //! Pointer to the QGIS interface object
     QgisInterface *mIface;
 
     //! Pointer to canvas
     QgsMapCanvas *mCanvas;
 
-    //! Pointer to GRASS Tools 
+    //! Pointer to GRASS Tools
     QgsGrassTools *mTools;
 
     //! Module definition file path (.qgm file)
     QString mPath;
 
-    //! Name of module executable 
+    //! Name of module executable
     QString mXName;
 
-    //! Path to module executable 
+    //! Path to module executable
     QString mXPath;
 
     //! Parent widget
@@ -155,7 +142,7 @@ private:
     QString mAppDir;
 
     //! Pointer to options widget
-    QgsGrassModuleOptions *mOptions; 
+    QgsGrassModuleOptions *mOptions;
 
     //! Last raster output
     QStringList mOutputRaster;
@@ -173,11 +160,11 @@ private:
  */
 class QgsGrassModuleOptions
 {
-public:
+  public:
     //! Constructor
-    QgsGrassModuleOptions ( 
-            QgsGrassTools *tools, QgsGrassModule *module, 
-            QgisInterface *iface ); 
+    QgsGrassModuleOptions(
+      QgsGrassTools *tools, QgsGrassModule *module,
+      QgisInterface *iface );
 
     //! Destructor
     virtual ~QgsGrassModuleOptions();
@@ -190,23 +177,23 @@ public:
     // return list of existing output maps
     virtual QStringList checkOutput() { return QStringList() ; }
 
-    //! Freeze output vector maps used in QGIS on Windows 
+    //! Freeze output vector maps used in QGIS on Windows
     virtual void freezeOutput() { return; }
 
-    //! Thaw output vector maps used in QGIS on Windows 
+    //! Thaw output vector maps used in QGIS on Windows
     virtual void thawOutput() { return; }
 
-    //! Check if otpion is ready
+    //! Check if option is ready
     //  Returns empty string or error message
     virtual QStringList ready() { return QStringList() ; }
 
     //! Get list of current output maps
-    virtual QStringList output(int type) { return QStringList() ; }
+    virtual QStringList output( int type ) { return QStringList() ; }
 
     //! Has raster input or output
     virtual bool usesRegion() { return false; }
 
-    //! One or more input maps were swithched on to be used as region
+    //! One or more input maps were switched on to be used as region
     virtual bool requestsRegion() { return false; }
 
     //! Check region
@@ -222,14 +209,14 @@ public:
     // ! Flag names
     virtual QStringList flagNames() { return QStringList() ; }
 
-protected:
+  protected:
     //! Pointer to the QGIS interface object
     QgisInterface *mIface;
 
     //! Pointer to canvas
     QgsMapCanvas *mCanvas;
 
-    //! Pointer to GRASS Tools 
+    //! Pointer to GRASS Tools
     QgsGrassTools *mTools;
 
     //! Pointer to GRASS module
@@ -246,15 +233,15 @@ protected:
  *  \brief Widget with GRASS standard options.
  *
  */
-class QgsGrassModuleStandardOptions: public QgsGrassModuleOptions, QWidget 
+class QgsGrassModuleStandardOptions: public QgsGrassModuleOptions, QWidget
 {
-public:
+  public:
     //! Constructor
-    QgsGrassModuleStandardOptions ( 
-            QgsGrassTools *tools, QgsGrassModule *module, 
-            QgisInterface *iface,  
-	    QString xname, QDomElement docElem,
-            QWidget * parent = 0, const char * name = 0, Qt::WFlags f = 0 );
+    QgsGrassModuleStandardOptions(
+      QgsGrassTools *tools, QgsGrassModule *module,
+      QgisInterface *iface,
+      QString xname, QDomElement docElem,
+      QWidget * parent = 0, Qt::WFlags f = 0 );
 
     //! Destructor
     ~QgsGrassModuleStandardOptions();
@@ -263,25 +250,25 @@ public:
     QStringList arguments();
 
     // ! Get item by ID
-    QgsGrassModuleItem *item(QString id);
+    QgsGrassModuleItem *item( QString id );
 
     // Reimplemented methods from QgsGrassModuleOptions
     QStringList checkOutput();
     void freezeOutput();
     void thawOutput();
     QStringList ready() ;
-    QStringList output(int type);
+    QStringList output( int type );
     QStringList checkRegion();
     bool usesRegion();
     bool requestsRegion();
     bool inputRegion( struct Cell_head *window, bool all );
     QStringList flagNames() { return mFlagNames; }
 
-private:
-    //! Name of module executable 
+  private:
+    //! Name of module executable
     QString mXName;
 
-    //! Path to module executable 
+    //! Path to module executable
     QString mXPath;
 
     //! Option items
@@ -291,7 +278,7 @@ private:
     QStringList mFlagNames;
 
     //! Use of region defined in qgm
-    bool mUsesRegion; 
+    bool mUsesRegion;
 };
 
 /*! \class QgsGrassModuleItem
@@ -299,14 +286,14 @@ private:
  */
 class QgsGrassModuleItem
 {
-public:
+  public:
     /*! \brief Constructor
      * \param qdesc option element in QGIS module description XML file
      * \param gdesc GRASS module XML description file
      * \param gnode option node in GRASS module XML description file
      */
-    QgsGrassModuleItem ( QgsGrassModule *module, QString key, 
-	                 QDomElement &qdesc, QDomElement &gdesc, QDomNode &gnode );
+    QgsGrassModuleItem( QgsGrassModule *module, QString key,
+                        QDomElement &qdesc, QDomElement &gdesc, QDomNode &gnode );
 
     //! Destructor
     virtual ~QgsGrassModuleItem();
@@ -315,19 +302,19 @@ public:
     bool hidden();
 
     //! Retruns list of options which will be passed to module
-    virtual QStringList options(); 
+    virtual QStringList options();
 
     //! Item's key
-    QString key() { return mKey; } 
+    QString key() { return mKey; }
 
     //! Item's id
-    QString id() { return mId; } 
+    QString id() { return mId; }
 
     //! Check if otpion is ready
     //  Returns empty string or error message
     virtual QString ready() { return QString() ; }
 
-protected:
+  protected:
 
     //! Pointer to GRASS module
     QgsGrassModule *mModule;
@@ -347,26 +334,26 @@ protected:
     //! Predefined answer from config
     QString mAnswer;
 
-private:
+  private:
 
 };
 
 /****************** QgsGrassModuleOption ************************/
 
 /*! \class QgsGrassModuleOption
- *  \brief  GRASS option 
+ *  \brief  GRASS option
  */
 class QgsGrassModuleOption: public QGroupBox, public QgsGrassModuleItem
 {
-    Q_OBJECT;
+    Q_OBJECT
 
-public:
+  public:
     /*! \brief Constructor
      * \param qdesc option element in QGIS module description XML file
      * \param gdesc GRASS module XML description file
      */
-    QgsGrassModuleOption ( QgsGrassModule *module, QString key,
-	                  QDomElement &qdesc, QDomElement &gdesc, QDomNode &gnode,
+    QgsGrassModuleOption( QgsGrassModule *module, QString key,
+                          QDomElement &qdesc, QDomElement &gdesc, QDomNode &gnode,
                           QWidget * parent = 0 );
 
     //! Destructor
@@ -380,15 +367,15 @@ public:
 
     //! Output type
     enum OutputType { None, Vector, Raster };
-    
+
     //! Retruns list of options which will be passed to module
-    virtual QStringList options(); 
-   
+    virtual QStringList options();
+
     //! True if this option is output
-    bool isOutput() { return mIsOutput; } 
-   
+    bool isOutput() { return mIsOutput; }
+
     //! Returns output type
-    int outputType() { return mOutputType; } 
+    int outputType() { return mOutputType; }
 
     //! If output, check if current output exists
     // Returns emppty string or name of existing output
@@ -404,14 +391,14 @@ public:
     //  Use of region can be forced by 'region' attribute in qgm
     bool usesRegion() { return mUsesRegion; }
 
-public slots:
+  public slots:
     // Add new line edit for multiple options
     void addLineEdit();
 
     // Remove one line edit for multiple options
     void removeLineEdit();
 
-private:
+  private:
     //! Control type
     ControlType mControlType;
 
@@ -424,7 +411,7 @@ private:
     //! If have defined value limits
     bool mHaveLimits;
     double mMin, mMax;
-    
+
     //! Combobox
     QComboBox *mComboBox;
 
@@ -433,7 +420,7 @@ private:
 
     //! Check boxes
     std::vector<QCheckBox*> mCheckBoxes;
-    
+
     //! Line
     std::vector<QLineEdit*> mLineEdits;
 
@@ -458,22 +445,22 @@ private:
  */
 class QgsGrassModuleFlag: public QCheckBox, public QgsGrassModuleItem
 {
-    Q_OBJECT;
+    Q_OBJECT
 
-public:
+  public:
     /*! \brief Constructor
      * \param qdesc option element in QGIS module description XML file
      * \param gdesc GRASS module XML description file
      */
-    QgsGrassModuleFlag ( QgsGrassModule *module, QString key,
-	                  QDomElement &qdesc, QDomElement &gdesc, QDomNode &gnode,
-                          QWidget * parent = 0 );
+    QgsGrassModuleFlag( QgsGrassModule *module, QString key,
+                        QDomElement &qdesc, QDomElement &gdesc, QDomNode &gnode,
+                        QWidget * parent = 0 );
 
     //! Destructor
     ~QgsGrassModuleFlag();
     //! Retruns list of options which will be passed to module
-    virtual QStringList options(); 
-private:
+    virtual QStringList options();
+  private:
 };
 
 /************************ QgsGrassModuleInput **********************/
@@ -483,17 +470,17 @@ private:
  */
 class QgsGrassModuleInput: public QGroupBox, public QgsGrassModuleItem
 {
-    Q_OBJECT;
+    Q_OBJECT
 
-public:
+  public:
     /*! \brief Constructor
      * \param qdesc option element in QGIS module description XML file
      * \param gdesc GRASS module XML description file
      */
-    QgsGrassModuleInput ( QgsGrassModule *module, 
-	        	  QgsGrassModuleStandardOptions *options, QString key,
-	                  QDomElement &qdesc, QDomElement &gdesc, QDomNode &gnode,
-                          QWidget * parent = 0 );
+    QgsGrassModuleInput( QgsGrassModule *module,
+                         QgsGrassModuleStandardOptions *options, QString key,
+                         QDomElement &qdesc, QDomElement &gdesc, QDomNode &gnode,
+                         QWidget * parent = 0 );
 
     //! Destructor
     ~QgsGrassModuleInput();
@@ -501,7 +488,7 @@ public:
     enum Type { Vector, Raster };
 
     //! Retruns list of options which will be passed to module
-    virtual QStringList options(); 
+    virtual QStringList options();
 
     // ! Return vector of attribute fields of current vector
     std::vector<QgsField> currentFields();
@@ -523,33 +510,33 @@ public:
 
     int type() { return mType; }
 
-public slots:
+  public slots:
     //! Fill combobox with currently available maps in QGIS canvas
     void updateQgisLayers();
-    
-    void changed(int);
 
-signals:
+    void changed( int );
+
+  signals:
     // emited when value changed/selected
     void valueChanged();
 
-private:
+  private:
     //! Input type
     Type mType;
 
-    // Module options 
+    // Module options
     QgsGrassModuleStandardOptions *mModuleStandardOptions;
 
     //! Vector type mask read from option defined by "typeoption" tag, used for QGIS layers in combo
     //  + type mask defined in configuration fil
-    int mVectorTypeMask;    
+    int mGeometryTypeMask;
 
     //! Name of vector type option associated with this input
-    QString mVectorTypeOption;
-    
+    QString mGeometryTypeOption;
+
     //! Name of vector layer option associated with this input
     QString mVectorLayerOption;
-    
+
     //! Combobox for QGIS layers
     QComboBox *mLayerComboBox;
 
@@ -563,10 +550,10 @@ private:
 
     //! Vector of map@mapset in the combobox
     std::vector<QString> mMaps;
-    
+
     //! Type of vector in the combobox
-    std::vector<QString> mVectorTypes;
-    
+    std::vector<QString> mGeometryTypes;
+
     //! Layer names in the combobox
     std::vector<QString> mVectorLayerNames;
 
@@ -588,18 +575,18 @@ private:
 /*! \class QgsGrassModuleGdalInput
  *  \brief GDAL/OGR module input
  */
-class QgsGrassModuleGdalInput: public Q3GroupBox, public QgsGrassModuleItem
+class QgsGrassModuleGdalInput: public QGroupBox, public QgsGrassModuleItem
 {
-    Q_OBJECT;
+    Q_OBJECT
 
-public:
+  public:
     /*! \brief Constructor
      * \param qdesc option element in QGIS module description XML file
      * \param gdesc GRASS module XML description file
      */
-    QgsGrassModuleGdalInput ( QgsGrassModule *module, int type, QString key,
-	                  QDomElement &qdesc, QDomElement &gdesc, QDomNode &gnode,
-                          QWidget * parent = 0 );
+    QgsGrassModuleGdalInput( QgsGrassModule *module, int type, QString key,
+                             QDomElement &qdesc, QDomElement &gdesc, QDomNode &gnode,
+                             QWidget * parent = 0 );
 
     //! Destructor
     ~QgsGrassModuleGdalInput();
@@ -607,20 +594,23 @@ public:
     enum Type { Gdal, Ogr };
 
     //! Reimplemented
-    QStringList options(); 
+    QStringList options();
     QString ready();
 
-public slots:
+  public slots:
     //! Fill combobox with currently available maps in QGIS canvas
     void updateQgisLayers();
 
-private:
+  private:
     //! Input type
     int mType;
 
     //! Ogr layer option associated with this input
     QString mOgrLayerOption;
-    
+
+    //! Ogr sql option associated with this input
+    QString mOgrWhereOption;
+
     //! Combobox for QGIS layers
     QComboBox *mLayerComboBox;
 
@@ -629,6 +619,9 @@ private:
 
     //! Ogr layer options
     std::vector<QString> mOgrLayers;
+
+    //! Ogr where clauses
+    std::vector<QString> mOgrWheres;
 };
 
 /*********************** QgsGrassModuleField **********************/
@@ -636,44 +629,44 @@ private:
 /*! \class QgsGrassModuleField
  *  \brief GRASS vector attribute column.
  */
-class QgsGrassModuleField: public Q3GroupBox, public QgsGrassModuleItem
+class QgsGrassModuleField: public QGroupBox, public QgsGrassModuleItem
 {
-    Q_OBJECT;
+    Q_OBJECT
 
-public:
+  public:
     /*! \brief Constructor
      * \param qdesc option element in QGIS module description XML file
      * \param gdesc GRASS module XML description file
      */
-    QgsGrassModuleField ( QgsGrassModule *module, 
-	                  QgsGrassModuleStandardOptions *options, 
-	    		  QString key,
-	                  QDomElement &qdesc, QDomElement &gdesc, QDomNode &gnode,
-                          QWidget * parent = 0 );
+    QgsGrassModuleField( QgsGrassModule *module,
+                         QgsGrassModuleStandardOptions *options,
+                         QString key,
+                         QDomElement &qdesc, QDomElement &gdesc, QDomNode &gnode,
+                         QWidget * parent = 0 );
 
     //! Destructor
     ~QgsGrassModuleField();
 
     //! Retruns list of options which will be passed to module
-    virtual QStringList options(); 
+    virtual QStringList options();
 
-public slots:
+  public slots:
     //! Fill combobox with currently available maps in QGIS canvas
     void updateFields();
 
-private:
-    // Module options 
+  private:
+    // Module options
     QgsGrassModuleStandardOptions *mModuleStandardOptions;
 
     //! Layer key
     QString mLayerId;
 
     //! Pointer to layer input
-    QgsGrassModuleInput *mLayerInput; 
+    QgsGrassModuleInput *mLayerInput;
 
     // ! Field type (integer,double,string,datetime)
     QString mType;
-    
+
     //! Combobox for QGIS layer fields
     QComboBox *mFieldComboBox;
 };
@@ -683,48 +676,48 @@ private:
 /*! \class QgsGrassModuleSelection
  *  \brief List of categories taken from current layer selection.
  */
-class QgsGrassModuleSelection: public Q3GroupBox, public QgsGrassModuleItem
+class QgsGrassModuleSelection: public QGroupBox, public QgsGrassModuleItem
 {
-    Q_OBJECT;
+    Q_OBJECT
 
-public:
+  public:
     /*! \brief Constructor
      * \param qdesc option element in QGIS module description XML file
      * \param gdesc GRASS module XML description file
      */
-    QgsGrassModuleSelection ( QgsGrassModule *module, 
-	                  QgsGrassModuleStandardOptions *options, 
-	    		  QString key,
-	                  QDomElement &qdesc, QDomElement &gdesc, 
-			  QDomNode &gnode, 
-			  QWidget * parent = 0 );
+    QgsGrassModuleSelection( QgsGrassModule *module,
+                             QgsGrassModuleStandardOptions *options,
+                             QString key,
+                             QDomElement &qdesc, QDomElement &gdesc,
+                             QDomNode &gnode,
+                             QWidget * parent = 0 );
 
     //! Destructor
     ~QgsGrassModuleSelection();
 
     //! Retruns list of options which will be passed to module
-    virtual QStringList options(); 
+    virtual QStringList options();
 
-public slots:
+  public slots:
     //! Set selection list to currently selected features
     void updateSelection();
 
-private:
-    // Module options 
+  private:
+    // Module options
     QgsGrassModuleStandardOptions *mModuleStandardOptions;
 
     //! Layer key
     QString mLayerId;
 
     //! Pointer to layer input
-    QgsGrassModuleInput *mLayerInput; 
+    QgsGrassModuleInput *mLayerInput;
 
     //! Currently connected layer
     QgsVectorLayer *mVectorLayer;
 
     // ! Field type (integer,double,string,datetime)
     QString mType;
-    
+
     //! Line
     QLineEdit *mLineEdit;
 };
@@ -736,18 +729,18 @@ private:
  */
 class QgsGrassModuleFile: public QGroupBox, public QgsGrassModuleItem
 {
-    Q_OBJECT;
+    Q_OBJECT
 
-public:
+  public:
     /*! \brief Constructor
      * \param qdesc option element in QGIS module description XML file
      * \param gdesc GRASS module XML description file
      */
-    QgsGrassModuleFile ( QgsGrassModule *module, 
-	    		  QString key,
-	                  QDomElement &qdesc, QDomElement &gdesc, 
-			  QDomNode &gnode, 
-			  QWidget * parent = 0 );
+    QgsGrassModuleFile( QgsGrassModule *module,
+                        QString key,
+                        QDomElement &qdesc, QDomElement &gdesc,
+                        QDomNode &gnode,
+                        QWidget * parent = 0 );
 
     //! Destructor
     ~QgsGrassModuleFile();
@@ -756,14 +749,14 @@ public:
     enum Type { Old, New };
 
     // Reimplemented methods from QgsGrassModuleOptions
-    QStringList options(); 
+    QStringList options();
     QString ready() ;
 
-public slots:
+  public slots:
     // browse files
     void browse();
 
-private:
+  private:
     // ! File type (New, Old)
     int mType;
 
@@ -772,7 +765,7 @@ private:
 
     // ! Default suffix
     QString mSuffix;
-    
+
     //! Line
     QLineEdit *mLineEdit;
 

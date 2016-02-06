@@ -1,8 +1,8 @@
-# Install script for directory: /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src
+# Install script for directory: /Users/bhattgopal/dev/cpp/qgis_1.0.2/src
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  SET(CMAKE_INSTALL_PREFIX "/Users/bhattgopal/apps/qgis0.9.0.app/Contents/MacOS")
+  SET(CMAKE_INSTALL_PREFIX "/Users/bhattgopal/apps/qgis1.0.2.app/Contents/MacOS")
 ENDIF(NOT DEFINED CMAKE_INSTALL_PREFIX)
 STRING(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -29,13 +29,13 @@ ENDIF(NOT CMAKE_INSTALL_COMPONENT)
 
 IF(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  INCLUDE("/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/core/cmake_install.cmake")
-  INCLUDE("/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/ui/cmake_install.cmake")
-  INCLUDE("/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/gui/cmake_install.cmake")
-  INCLUDE("/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/app/cmake_install.cmake")
-  INCLUDE("/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/providers/cmake_install.cmake")
-  INCLUDE("/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/cmake_install.cmake")
-  INCLUDE("/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/helpviewer/cmake_install.cmake")
-  INCLUDE("/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/mac/cmake_install.cmake")
+  INCLUDE("/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/cmake_install.cmake")
+  INCLUDE("/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/ui/cmake_install.cmake")
+  INCLUDE("/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/gui/cmake_install.cmake")
+  INCLUDE("/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/app/cmake_install.cmake")
+  INCLUDE("/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/providers/cmake_install.cmake")
+  INCLUDE("/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/cmake_install.cmake")
+  INCLUDE("/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/helpviewer/cmake_install.cmake")
+  INCLUDE("/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/mac/cmake_install.cmake")
 
 ENDIF(NOT CMAKE_INSTALL_LOCAL_ONLY)

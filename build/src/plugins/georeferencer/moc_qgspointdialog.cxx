@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'qgspointdialog.h'
 **
-** Created: Wed Jun 11 19:10:51 2008
+** Created: Fri Jun 19 01:59:55 2009
 **      by: The Qt Meta Object Compiler version 59 (Qt 4.3.2)
 **
 ** WARNING! All changes made in this file will be lost!
@@ -22,25 +22,24 @@ static const uint qt_meta_data_QgsPointDialog[] = {
        1,       // revision
        0,       // classname
        0,    0, // classinfo
-      14,   10, // methods
+      13,   10, // methods
        0,    0, // properties
        0,    0, // enums/sets
 
  // slots: signature, parameters, type, tag, flags
       38,   16,   15,   15, 0x0a,
       66,   15,   15,   15, 0x0a,
-      89,   15,   15,   15, 0x0a,
-     123,   15,   15,   15, 0x0a,
-     155,   15,   15,   15, 0x0a,
-     187,   15,   15,   15, 0x0a,
-     224,   15,   15,   15, 0x0a,
-     273,   15,   15,   15, 0x0a,
-     282,   15,   15,   15, 0x0a,
-     292,   15,   15,   15, 0x0a,
-     306,   15,   15,   15, 0x0a,
-     312,   15,   15,   15, 0x0a,
-     323,   15,   15,   15, 0x0a,
-     337,   15,   15,   15, 0x0a,
+     100,   15,   15,   15, 0x0a,
+     132,   15,   15,   15, 0x0a,
+     164,   15,   15,   15, 0x0a,
+     201,   15,   15,   15, 0x0a,
+     250,   15,   15,   15, 0x0a,
+     259,   15,   15,   15, 0x0a,
+     269,   15,   15,   15, 0x0a,
+     283,   15,   15,   15, 0x0a,
+     289,   15,   15,   15, 0x0a,
+     300,   15,   15,   15, 0x0a,
+     314,   15,   15,   15, 0x0a,
 
        0        // eod
 };
@@ -48,7 +47,6 @@ static const uint qt_meta_data_QgsPointDialog[] = {
 static const char qt_meta_stringdata_QgsPointDialog[] = {
     "QgsPointDialog\0\0pixelCoords,mapCoords\0"
     "addPoint(QgsPoint,QgsPoint)\0"
-    "on_pbnCancel_clicked()\0"
     "on_pbnGenerateWorldFile_clicked()\0"
     "on_pbnGenerateAndLoad_clicked()\0"
     "on_pbnSelectWorldFile_clicked()\0"
@@ -85,21 +83,20 @@ int QgsPointDialog::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_c == QMetaObject::InvokeMetaMethod) {
         switch (_id) {
         case 0: addPoint((*reinterpret_cast< const QgsPoint(*)>(_a[1])),(*reinterpret_cast< const QgsPoint(*)>(_a[2]))); break;
-        case 1: on_pbnCancel_clicked(); break;
-        case 2: on_pbnGenerateWorldFile_clicked(); break;
-        case 3: on_pbnGenerateAndLoad_clicked(); break;
-        case 4: on_pbnSelectWorldFile_clicked(); break;
-        case 5: on_pbnSelectModifiedRaster_clicked(); break;
-        case 6: on_cmbTransformType_currentIndexChanged((*reinterpret_cast< const QString(*)>(_a[1]))); break;
-        case 7: zoomIn(); break;
-        case 8: zoomOut(); break;
-        case 9: zoomToLayer(); break;
-        case 10: pan(); break;
-        case 11: addPoint(); break;
-        case 12: deletePoint(); break;
-        case 13: enableRelevantControls(); break;
+        case 1: on_pbnGenerateWorldFile_clicked(); break;
+        case 2: on_pbnGenerateAndLoad_clicked(); break;
+        case 3: on_pbnSelectWorldFile_clicked(); break;
+        case 4: on_pbnSelectModifiedRaster_clicked(); break;
+        case 5: on_cmbTransformType_currentIndexChanged((*reinterpret_cast< const QString(*)>(_a[1]))); break;
+        case 6: zoomIn(); break;
+        case 7: zoomOut(); break;
+        case 8: zoomToLayer(); break;
+        case 9: pan(); break;
+        case 10: addPoint(); break;
+        case 11: deletePoint(); break;
+        case 12: enableRelevantControls(); break;
         }
-        _id -= 14;
+        _id -= 13;
     }
     return _id;
 }

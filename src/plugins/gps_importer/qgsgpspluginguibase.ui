@@ -5,8 +5,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>691</width>
-    <height>406</height>
+    <width>987</width>
+    <height>428</height>
    </rect>
   </property>
   <property name="windowTitle" >
@@ -16,10 +16,22 @@
    <iconset/>
   </property>
   <layout class="QGridLayout" >
-   <property name="margin" >
+   <property name="leftMargin" >
     <number>9</number>
    </property>
-   <property name="spacing" >
+   <property name="topMargin" >
+    <number>9</number>
+   </property>
+   <property name="rightMargin" >
+    <number>9</number>
+   </property>
+   <property name="bottomMargin" >
+    <number>9</number>
+   </property>
+   <property name="horizontalSpacing" >
+    <number>6</number>
+   </property>
+   <property name="verticalSpacing" >
     <number>6</number>
    </property>
    <item row="0" column="0" >
@@ -51,25 +63,35 @@
    <item row="0" column="2" >
     <widget class="QTabWidget" name="tabWidget" >
      <property name="currentIndex" >
-      <number>0</number>
+      <number>2</number>
      </property>
      <widget class="QWidget" name="tab1" >
       <attribute name="title" >
        <string>Load GPX file</string>
       </attribute>
       <layout class="QGridLayout" >
-       <property name="margin" >
+       <property name="leftMargin" >
         <number>9</number>
        </property>
-       <property name="spacing" >
+       <property name="topMargin" >
+        <number>9</number>
+       </property>
+       <property name="rightMargin" >
+        <number>9</number>
+       </property>
+       <property name="bottomMargin" >
+        <number>9</number>
+       </property>
+       <property name="horizontalSpacing" >
+        <number>6</number>
+       </property>
+       <property name="verticalSpacing" >
         <number>6</number>
        </property>
        <item row="0" column="0" colspan="2" >
-        <widget class="QTextEdit" name="textEdit" >
+        <widget class="QTextEdit" name="teLoadDescription" >
          <property name="sizePolicy" >
-          <sizepolicy>
-           <hsizetype>7</hsizetype>
-           <vsizetype>7</vsizetype>
+          <sizepolicy vsizetype="Expanding" hsizetype="Expanding" >
            <horstretch>0</horstretch>
            <verstretch>0</verstretch>
           </sizepolicy>
@@ -83,9 +105,8 @@
          <property name="html" >
           <string>&lt;html>&lt;head>&lt;meta name="qrichtext" content="1" />&lt;style type="text/css">
 p, li { white-space: pre-wrap; }
-&lt;/style>&lt;/head>&lt;body style=" font-family:'Sans Serif'; font-size:9pt; font-weight:400; font-style:normal; text-decoration:none;">
-&lt;p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Arial'; font-size:12pt;">&lt;span style=" font-size:10pt;">GPX is the &lt;/span>&lt;a href="http://www.topografix.com/gpx.asp">&lt;span style=" font-size:10pt; text-decoration: underline; color:#0000ff;">GPS eXchange file format&lt;/span>&lt;/a>&lt;span style=" font-size:10pt;">, which is used to store information about waypoints, routes, and tracks.&lt;/span>&lt;/p>
-&lt;p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Arial'; font-size:10pt;">Select a GPX file and then select the feature types that you want to load.&lt;/p>&lt;/body>&lt;/html></string>
+&lt;/style>&lt;/head>&lt;body style=" font-family:'Verdana'; font-size:10pt; font-weight:400; font-style:normal;">
+&lt;p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; font-size:9pt;">&lt;/p>&lt;/body>&lt;/html></string>
          </property>
         </widget>
        </item>
@@ -159,23 +180,34 @@ p, li { white-space: pre-wrap; }
        <string>Import other file</string>
       </attribute>
       <layout class="QGridLayout" >
-       <property name="margin" >
+       <property name="leftMargin" >
         <number>9</number>
        </property>
-       <property name="spacing" >
+       <property name="topMargin" >
+        <number>9</number>
+       </property>
+       <property name="rightMargin" >
+        <number>9</number>
+       </property>
+       <property name="bottomMargin" >
+        <number>9</number>
+       </property>
+       <property name="horizontalSpacing" >
+        <number>6</number>
+       </property>
+       <property name="verticalSpacing" >
         <number>6</number>
        </property>
        <item row="0" column="0" colspan="4" >
-        <widget class="QTextEdit" name="textEdit_2" >
+        <widget class="QTextEdit" name="teIMPDescription" >
          <property name="readOnly" >
           <bool>true</bool>
          </property>
          <property name="html" >
           <string>&lt;html>&lt;head>&lt;meta name="qrichtext" content="1" />&lt;style type="text/css">
 p, li { white-space: pre-wrap; }
-&lt;/style>&lt;/head>&lt;body style=" font-family:'Sans Serif'; font-size:9pt; font-weight:400; font-style:normal; text-decoration:none;">
-&lt;p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Arial'; font-size:12pt;">&lt;span style=" font-size:10pt;">QGIS can only load GPX files by itself, but many other formats can be converted to GPX using GPSBabel (&lt;/span>&lt;a href="http://gpsbabel.sf.net">&lt;span style=" font-size:10pt; text-decoration: underline; color:#0000ff;">http://gpsbabel.sf.net&lt;/span>&lt;/a>&lt;span style=" font-size:10pt;">). This requires that you have GPSBabel installed where QGIS can find it.&lt;/span>&lt;/p>
-&lt;p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Arial'; font-size:10pt;">Select a GPS file format and the file that you want to import, the feature type that you want to use, a GPX filename that you want to save the converted file as, and a name for the new layer. All file formats can not store waypoints, routes, and tracks, so some feature types may be disabled for some file formats.&lt;/p>&lt;/body>&lt;/html></string>
+&lt;/style>&lt;/head>&lt;body style=" font-family:'Verdana'; font-size:10pt; font-weight:400; font-style:normal;">
+&lt;p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; font-size:9pt;">&lt;/p>&lt;/body>&lt;/html></string>
          </property>
         </widget>
        </item>
@@ -233,7 +265,7 @@ p, li { white-space: pre-wrap; }
         <widget class="QComboBox" name="cmbIMPFeature" >
          <property name="minimumSize" >
           <size>
-           <width>90</width>
+           <width>130</width>
            <height>0</height>
           </size>
          </property>
@@ -243,6 +275,13 @@ p, li { white-space: pre-wrap; }
         <widget class="QLabel" name="textLabel2_3" >
          <property name="text" >
           <string>Feature type:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="2" >
+        <widget class="QLabel" name="textLabel2_6" >
+         <property name="text" >
+          <string>(Note: Selecting correct file type in browser dialog important!)</string>
          </property>
         </widget>
        </item>
@@ -267,27 +306,67 @@ p, li { white-space: pre-wrap; }
        <string>Download from GPS</string>
       </attribute>
       <layout class="QGridLayout" >
-       <property name="margin" >
-        <number>9</number>
-       </property>
-       <property name="spacing" >
-        <number>6</number>
-       </property>
-       <item row="0" column="0" colspan="5" >
-        <widget class="QTextEdit" name="textEdit_3" >
+       <item row="0" column="0" colspan="9" >
+        <widget class="QTextEdit" name="teDLDescription" >
          <property name="readOnly" >
           <bool>true</bool>
          </property>
          <property name="html" >
           <string>&lt;html>&lt;head>&lt;meta name="qrichtext" content="1" />&lt;style type="text/css">
 p, li { white-space: pre-wrap; }
-&lt;/style>&lt;/head>&lt;body style=" font-family:'Sans Serif'; font-size:9pt; font-weight:400; font-style:normal; text-decoration:none;">
-&lt;p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Arial'; font-size:12pt;">&lt;span style=" font-size:10pt;">This tool will help you download data from a GPS device. Choose your GPS device, the port it is connected to, the feature type you want to download, a name for your new layer, and the GPX file where you want to store the data. If your device isn't listed, or if you want to change some settings, you can also edit the devices.&lt;/span>&lt;/p>
-&lt;p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Arial'; font-size:10pt;">This tool uses the program GPSBabel (&lt;a href="http://gpsbabel.sf.net">&lt;span style=" text-decoration: underline; color:#0000ff;">http://gpsbabel.sf.net&lt;/span>&lt;/a>) to transfer the data. If you don't have GPSBabel installed where QGIS can find it, this tool will not work.&lt;/p>&lt;/body>&lt;/html></string>
+&lt;/style>&lt;/head>&lt;body style=" font-family:'Verdana'; font-size:10pt; font-weight:400; font-style:normal;">
+&lt;p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; font-size:9pt;">&lt;/p>&lt;/body>&lt;/html></string>
          </property>
         </widget>
        </item>
-       <item row="1" column="4" >
+       <item row="1" column="0" >
+        <widget class="QLabel" name="textLabel1" >
+         <property name="text" >
+          <string>GPS device:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1" >
+        <widget class="QComboBox" name="cmbDLDevice" >
+         <property name="minimumSize" >
+          <size>
+           <width>120</width>
+           <height>0</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="2" >
+        <widget class="QPushButton" name="pbDLEditDevices" >
+         <property name="text" >
+          <string>Edit devices...</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="3" >
+        <spacer>
+         <property name="orientation" >
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeType" >
+          <enum>QSizePolicy::Expanding</enum>
+         </property>
+         <property name="sizeHint" >
+          <size>
+           <width>121</width>
+           <height>24</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="1" column="4" colspan="2" >
+        <widget class="QLabel" name="textLabel2_5" >
+         <property name="text" >
+          <string>Port:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="6" colspan="2" >
         <widget class="QComboBox" name="cmbDLPort" >
          <property name="minimumSize" >
           <size>
@@ -297,7 +376,37 @@ p, li { white-space: pre-wrap; }
          </property>
         </widget>
        </item>
-       <item row="2" column="4" >
+       <item row="1" column="8" >
+        <widget class="QPushButton" name="pbnRefresh" >
+         <property name="text" >
+          <string>Refresh</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="2" colspan="3" >
+        <spacer>
+         <property name="orientation" >
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeType" >
+          <enum>QSizePolicy::Expanding</enum>
+         </property>
+         <property name="sizeHint" >
+          <size>
+           <width>80</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="2" column="5" colspan="2" >
+        <widget class="QLabel" name="textLabel1_3" >
+         <property name="text" >
+          <string>Feature type:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="7" colspan="2" >
         <widget class="QComboBox" name="cmbDLFeatureType" >
          <property name="minimumSize" >
           <size>
@@ -322,22 +431,22 @@ p, li { white-space: pre-wrap; }
          </item>
         </widget>
        </item>
-       <item row="1" column="3" >
-        <widget class="QLabel" name="textLabel2_5" >
+       <item row="3" column="0" >
+        <widget class="QLabel" name="textLabel2" >
          <property name="text" >
-          <string>Port:</string>
+          <string>Output file:</string>
          </property>
         </widget>
        </item>
-       <item row="2" column="3" >
-        <widget class="QLabel" name="textLabel1_3" >
+       <item row="3" column="1" colspan="6" >
+        <widget class="QLineEdit" name="leDLOutput" />
+       </item>
+       <item row="3" column="7" colspan="2" >
+        <widget class="QPushButton" name="pbnDLOutput" >
          <property name="text" >
-          <string>Feature type:</string>
+          <string>Save As...</string>
          </property>
         </widget>
-       </item>
-       <item row="4" column="1" colspan="3" >
-        <widget class="QLineEdit" name="leDLBasename" />
        </item>
        <item row="4" column="0" >
         <widget class="QLabel" name="textLabel1_2" >
@@ -346,78 +455,8 @@ p, li { white-space: pre-wrap; }
          </property>
         </widget>
        </item>
-       <item row="3" column="0" >
-        <widget class="QLabel" name="textLabel2" >
-         <property name="text" >
-          <string>Output file:</string>
-         </property>
-        </widget>
-       </item>
-       <item row="3" column="1" colspan="3" >
-        <widget class="QLineEdit" name="leDLOutput" />
-       </item>
-       <item row="1" column="2" >
-        <spacer>
-         <property name="orientation" >
-          <enum>Qt::Horizontal</enum>
-         </property>
-         <property name="sizeType" >
-          <enum>QSizePolicy::Expanding</enum>
-         </property>
-         <property name="sizeHint" >
-          <size>
-           <width>80</width>
-           <height>20</height>
-          </size>
-         </property>
-        </spacer>
-       </item>
-       <item row="2" column="2" >
-        <spacer>
-         <property name="orientation" >
-          <enum>Qt::Horizontal</enum>
-         </property>
-         <property name="sizeType" >
-          <enum>QSizePolicy::Expanding</enum>
-         </property>
-         <property name="sizeHint" >
-          <size>
-           <width>80</width>
-           <height>20</height>
-          </size>
-         </property>
-        </spacer>
-       </item>
-       <item row="1" column="0" >
-        <widget class="QLabel" name="textLabel1" >
-         <property name="text" >
-          <string>GPS device:</string>
-         </property>
-        </widget>
-       </item>
-       <item row="1" column="1" >
-        <widget class="QComboBox" name="cmbDLDevice" >
-         <property name="minimumSize" >
-          <size>
-           <width>120</width>
-           <height>0</height>
-          </size>
-         </property>
-        </widget>
-       </item>
-       <item row="2" column="1" >
-        <widget class="QPushButton" name="pbDLEditDevices" >
-         <property name="text" >
-          <string>Edit devices</string>
-         </property>
-        </widget>
-       </item>
-       <item row="3" column="4" >
-        <widget class="QPushButton" name="pbnDLOutput" >
-         <property name="text" >
-          <string>Save As...</string>
-         </property>
-        </widget>
+       <item row="4" column="1" colspan="6" >
+        <widget class="QLineEdit" name="leDLBasename" />
        </item>
       </layout>
      </widget>
@@ -426,10 +465,22 @@ p, li { white-space: pre-wrap; }
        <string>Upload to GPS</string>
       </attribute>
       <layout class="QGridLayout" >
-       <property name="margin" >
+       <property name="leftMargin" >
         <number>9</number>
        </property>
-       <property name="spacing" >
+       <property name="topMargin" >
+        <number>9</number>
+       </property>
+       <property name="rightMargin" >
+        <number>9</number>
+       </property>
+       <property name="bottomMargin" >
+        <number>9</number>
+       </property>
+       <property name="horizontalSpacing" >
+        <number>6</number>
+       </property>
+       <property name="verticalSpacing" >
         <number>6</number>
        </property>
        <item row="1" column="2" >
@@ -449,16 +500,15 @@ p, li { white-space: pre-wrap; }
         </spacer>
        </item>
        <item row="0" column="0" colspan="5" >
-        <widget class="QTextEdit" name="textEdit_4" >
+        <widget class="QTextEdit" name="teULDescription" >
          <property name="readOnly" >
           <bool>true</bool>
          </property>
          <property name="html" >
           <string>&lt;html>&lt;head>&lt;meta name="qrichtext" content="1" />&lt;style type="text/css">
 p, li { white-space: pre-wrap; }
-&lt;/style>&lt;/head>&lt;body style=" font-family:'Sans Serif'; font-size:9pt; font-weight:400; font-style:normal; text-decoration:none;">
-&lt;p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Arial'; font-size:12pt;">&lt;span style=" font-size:10pt;">This tool will help you upload data from a GPX layer to a GPS device. Choose the layer you want to upload, the device you want to upload it to, and the port your device is connected to. If your device isn't listed, or if you want to change some settings, you can also edit the devices.&lt;/span>&lt;/p>
-&lt;p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Arial'; font-size:10pt;">This tool uses the program GPSBabel (&lt;a href="http://gpsbabel.sf.net">&lt;span style=" text-decoration: underline; color:#0000ff;">http://gpsbabel.sf.net&lt;/span>&lt;/a>) to transfer the data. If you don't have GPSBabel installed where QGIS can find it, this tool will not work.&lt;/p>&lt;/body>&lt;/html></string>
+&lt;/style>&lt;/head>&lt;body style=" font-family:'Verdana'; font-size:10pt; font-weight:400; font-style:normal;">
+&lt;p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; font-size:9pt;">&lt;/p>&lt;/body>&lt;/html></string>
          </property>
         </widget>
        </item>
@@ -522,6 +572,125 @@ p, li { white-space: pre-wrap; }
        </item>
       </layout>
      </widget>
+     <widget class="QWidget" name="tab5" >
+      <attribute name="title" >
+       <string>GPX Conversions</string>
+      </attribute>
+      <layout class="QGridLayout" >
+       <property name="leftMargin" >
+        <number>9</number>
+       </property>
+       <property name="topMargin" >
+        <number>9</number>
+       </property>
+       <property name="rightMargin" >
+        <number>9</number>
+       </property>
+       <property name="bottomMargin" >
+        <number>9</number>
+       </property>
+       <property name="horizontalSpacing" >
+        <number>6</number>
+       </property>
+       <property name="verticalSpacing" >
+        <number>6</number>
+       </property>
+       <item row="0" column="0" colspan="4" >
+        <widget class="QTextEdit" name="teCONVDescription" >
+         <property name="readOnly" >
+          <bool>true</bool>
+         </property>
+         <property name="html" >
+          <string>&lt;html>&lt;head>&lt;meta name="qrichtext" content="1" />&lt;style type="text/css">
+p, li { white-space: pre-wrap; }
+&lt;/style>&lt;/head>&lt;body style=" font-family:'Verdana'; font-size:10pt; font-weight:400; font-style:normal;">
+&lt;p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; font-size:9pt;">&lt;/p>&lt;/body>&lt;/html></string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="1" colspan="2" >
+        <widget class="QLineEdit" name="leCONVLayer" />
+       </item>
+       <item row="4" column="0" >
+        <widget class="QLabel" name="textLabel5_1" >
+         <property name="text" >
+          <string>Layer name:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="3" >
+        <widget class="QPushButton" name="pbnCONVOutput" >
+         <property name="text" >
+          <string>Save As...</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="3" >
+        <widget class="QPushButton" name="pbnCONVInput" >
+         <property name="text" >
+          <string>Browse...</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1" colspan="2" >
+        <widget class="QLineEdit" name="leCONVOutput" />
+       </item>
+       <item row="3" column="0" >
+        <widget class="QLabel" name="textLabel5_2" >
+         <property name="text" >
+          <string>GPX output file:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="2" >
+        <spacer>
+         <property name="orientation" >
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeType" >
+          <enum>QSizePolicy::Expanding</enum>
+         </property>
+         <property name="sizeHint" >
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="2" column="1" >
+        <widget class="QComboBox" name="cmbCONVType" >
+         <property name="minimumSize" >
+          <size>
+           <width>10</width>
+           <height>0</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0" >
+        <widget class="QLabel" name="textLabel5_3" >
+         <property name="text" >
+          <string>Conversion:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1" colspan="2" >
+        <widget class="QLineEdit" name="leCONVInput" >
+         <property name="enabled" >
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0" >
+        <widget class="QLabel" name="textLabel5_4" >
+         <property name="text" >
+          <string>GPX input file:</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
     </widget>
    </item>
    <item row="1" column="0" colspan="3" >
@@ -544,6 +713,43 @@ p, li { white-space: pre-wrap; }
    <header>qgsfiledropedit.h</header>
   </customwidget>
  </customwidgets>
+ <tabstops>
+  <tabstop>leGPXFile</tabstop>
+  <tabstop>pbnGPXSelectFile</tabstop>
+  <tabstop>cbGPXWaypoints</tabstop>
+  <tabstop>cbGPXRoutes</tabstop>
+  <tabstop>cbGPXTracks</tabstop>
+  <tabstop>buttonBox</tabstop>
+  <tabstop>leIMPInput</tabstop>
+  <tabstop>pbnIMPInput</tabstop>
+  <tabstop>cmbIMPFeature</tabstop>
+  <tabstop>leIMPOutput</tabstop>
+  <tabstop>pbnIMPOutput</tabstop>
+  <tabstop>leIMPLayer</tabstop>
+  <tabstop>cmbDLDevice</tabstop>
+  <tabstop>cmbDLPort</tabstop>
+  <tabstop>pbDLEditDevices</tabstop>
+  <tabstop>cmbDLFeatureType</tabstop>
+  <tabstop>leDLOutput</tabstop>
+  <tabstop>pbnDLOutput</tabstop>
+  <tabstop>leDLBasename</tabstop>
+  <tabstop>cmbULLayer</tabstop>
+  <tabstop>cmbULDevice</tabstop>
+  <tabstop>cmbULPort</tabstop>
+  <tabstop>pbULEditDevices</tabstop>
+  <tabstop>leCONVInput</tabstop>
+  <tabstop>pbnCONVInput</tabstop>
+  <tabstop>cmbCONVType</tabstop>
+  <tabstop>leCONVOutput</tabstop>
+  <tabstop>pbnCONVOutput</tabstop>
+  <tabstop>leCONVLayer</tabstop>
+  <tabstop>teCONVDescription</tabstop>
+  <tabstop>teDLDescription</tabstop>
+  <tabstop>teULDescription</tabstop>
+  <tabstop>teLoadDescription</tabstop>
+  <tabstop>tabWidget</tabstop>
+  <tabstop>teIMPDescription</tabstop>
+ </tabstops>
  <resources>
   <include location="qgsgps_plugin.qrc" />
  </resources>

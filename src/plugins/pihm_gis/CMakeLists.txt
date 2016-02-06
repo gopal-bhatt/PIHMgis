@@ -83,9 +83,12 @@ SET (pihmgis_SRCS
 	PIHM_v2.0/read_alloc.cpp
 	#PIHM_v2.0/et_is.h
 	PIHM_v2.0/is_sm_et.cpp
+	MyNewThread.cpp
 	RunPIHM/runpihm.cpp
 	pihmLIBS/generateShape.h
 	pihmLIBS/generateShape.cpp
+	Analysis/TimeSeries/plotTS.cpp
+	Analysis/TimeSeries/timeseries.cpp
 	Analysis/Spatialplot/spatialplot.cpp
 	Help/About/about.cpp
 )
@@ -111,6 +114,7 @@ SET (pihmgis_UIS pihmgisgui.ui
 	DataModelLoader/RivFile/rivfile.ui
 	DataModelLoader/ParaFile/parafile.ui
 	RunPIHM/runpihm.ui
+	Analysis/TimeSeries/timeseries.ui
 	Analysis/SpatialPlot/spatialplot.ui
 	Help/About/about.ui
 )
@@ -138,6 +142,8 @@ SET (pihmgis_MOC_HDRS
 	DataModelLoader/RivFile/rivfile.h
 	DataModelLoader/ParaFile/parafile.h
 	RunPIHM/runpihm.h
+	Analysis/TimeSeries/plotTS.h
+	Analysis/TimeSeries/timeseries.h
 	Analysis/SpatialPlot/spatialplot.h
 	Help/About/about.h
 )
@@ -159,12 +165,13 @@ ADD_LIBRARY (pihmgisplugin MODULE ${pihmgis_SRCS} ${pihmgis_MOC_SRCS} ${pihmgis_
 INCLUDE_DIRECTORIES(
      ${CMAKE_CURRENT_BINARY_DIR}
      ../../core ../../core/raster ../../core/renderer ../../core/symbology
-     ../../gui
+     ../../gui ../../app
      ..
 	/Users/bhattgopal/dev/sundials/include
 	/Users/bhattgopal/dev/sundials/include/sundials
 	/Users/bhattgopal/dev/sundials/include/cvode
 	/Library/Frameworks/GDAL.framework/Headers
+	/usr/local/qwt-5.2.0/include/
 )
 
 TARGET_LINK_LIBRARIES(pihmgisplugin
@@ -173,7 +180,9 @@ TARGET_LINK_LIBRARIES(pihmgisplugin
   qgis_gui
 	-L/Users/bhattgopal/dev/sundials/lib
 	sundials_cvode
-	sundials_nvecserial	
+	sundials_nvecserial
+	-L/usr/local/qwt-5.2.0/lib
+	qwt	
 	#lgdal
 )
 

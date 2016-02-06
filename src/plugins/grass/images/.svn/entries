@@ -1,9 +1,9 @@
 8
 
 dir
-7809
-https://svn.qgis.org/repos/qgis/branches/Release-0_9_0/src/plugins/grass/images
-https://svn.qgis.org/repos/qgis
+10938
+https://svn.osgeo.org/qgis/branches/Release-1_0_2/src/plugins/grass/images
+https://svn.osgeo.org/qgis
 
 
 
@@ -32,7 +32,7 @@ file
 
 
 
-2007-12-24T08:17:24.000000Z
+2009-06-17T07:49:18.000000Z
 028471c165ea4f5579aec5e48e3d17d0
 2006-01-18T14:33:58.339290Z
 4701

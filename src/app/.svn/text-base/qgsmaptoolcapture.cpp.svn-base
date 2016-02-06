@@ -18,9 +18,11 @@
 #include "qgsattributedialog.h"
 #include "qgscoordinatetransform.h"
 #include "qgsfield.h"
+#include "qgslogger.h"
+#include "qgsgeometry.h"
 #include "qgsmaptoolcapture.h"
 #include "qgsmapcanvas.h"
-#include "qgsmaprender.h"
+#include "qgsmaprenderer.h"
 #include "qgsmaptopixel.h"
 #include "qgsfeature.h"
 #include "qgsproject.h"
@@ -31,15 +33,18 @@
 #include <QCursor>
 #include <QPixmap>
 #include <QMessageBox>
+#include <QMouseEvent>
 
 
-QgsMapToolCapture::QgsMapToolCapture(QgsMapCanvas* canvas, enum CaptureTool tool)
-  : QgsMapTool(canvas), mTool(tool), mRubberBand(0)
+QgsMapToolCapture::QgsMapToolCapture( QgsMapCanvas* canvas, enum CaptureTool tool )
+    : QgsMapToolEdit( canvas ), mTool( tool ), mRubberBand( 0 )
 {
   mCapturing = FALSE;
-  
-  QPixmap mySelectQPixmap = QPixmap((const char **) capture_point_cursor);
-  mCursor = QCursor(mySelectQPixmap, 8, 8);
+
+  QPixmap mySelectQPixmap = QPixmap(( const char ** ) capture_point_cursor );
+  mCursor = QCursor( mySelectQPixmap, 8, 8 );
+
+  mSnapper.setMapCanvas( canvas );
 }
 
 QgsMapToolCapture::~QgsMapToolCapture()
@@ -48,26 +53,22 @@ QgsMapToolCapture::~QgsMapToolCapture()
   mRubberBand = 0;
 }
 
-void QgsMapToolCapture::canvasMoveEvent(QMouseEvent * e)
+void QgsMapToolCapture::canvasMoveEvent( QMouseEvent * e )
 {
-
-  if (mCapturing)
+  if ( mRubberBand && mCapturing )
   {
-    // show the rubber-band from the last click
-    QgsVectorLayer *vlayer = dynamic_cast <QgsVectorLayer*>(mCanvas->currentLayer());
-    double tolerance  = QgsProject::instance()->readDoubleEntry("Digitizing","/Tolerance",0);
     QgsPoint mapPoint;
-    QgsPoint layerPoint = toLayerCoords(vlayer, e->pos());
-    vlayer->snapPoint(layerPoint, tolerance); //show snapping during dragging
-    //now we need to know the map coordinates of the snapped point for the rubber band
-    mapPoint = toMapCoords(vlayer, layerPoint);
-    mRubberBand->movePoint(mapPoint); //does only work if coordinate reprojection is not enabled
+    QList<QgsSnappingResult> snapResults;
+    if ( mSnapper.snapToBackgroundLayers( e->pos(), snapResults ) == 0 )
+    {
+      mapPoint = snapPointFromResults( snapResults, e->pos() );
+      mRubberBand->movePoint( mapPoint );
+    }
   }
-
 } // mouseMoveEvent
 
 
-void QgsMapToolCapture::canvasPressEvent(QMouseEvent * e)
+void QgsMapToolCapture::canvasPressEvent( QMouseEvent * e )
 {
   // nothing to be done
 }
@@ -81,48 +82,80 @@ void QgsMapToolCapture::deactivate()
 {
   delete mRubberBand;
   mRubberBand = 0;
+  mCaptureList.clear();
+
+  QgsMapTool::deactivate();
 }
 
-int QgsMapToolCapture::addVertex(const QPoint& p)
+int QgsMapToolCapture::addVertex( const QPoint& p )
 {
-  QgsVectorLayer *vlayer = dynamic_cast <QgsVectorLayer*>(mCanvas->currentLayer());
-  
-  if (!vlayer)
-    {
-      return 1;
-    }
+  QgsVectorLayer *vlayer = dynamic_cast <QgsVectorLayer*>( mCanvas->currentLayer() );
 
-  if (!mRubberBand)
-    {
-      mRubberBand = new QgsRubberBand(mCanvas, mTool == CapturePolygon);
-      QgsProject* project = QgsProject::instance();
-      QColor color(
-		   project->readNumEntry("Digitizing", "/LineColorRedPart", 255),
-		   project->readNumEntry("Digitizing", "/LineColorGreenPart", 0),
-		   project->readNumEntry("Digitizing", "/LineColorBluePart", 0));
-      mRubberBand->setColor(color);
-      mRubberBand->setWidth(project->readNumEntry("Digitizing", "/LineWidth", 1));
-      mRubberBand->show();
-    }
-      
-  QgsPoint mapPoint;
+  if ( !vlayer )
+  {
+    return 1;
+  }
+
+  if ( !mRubberBand )
+  {
+    mRubberBand = createRubberBand( mTool == CapturePolygon );
+  }
+
   QgsPoint digitisedPoint;
   try
-    {
-      digitisedPoint = toLayerCoords(vlayer, p); //todo: handle coordinate transform exception
-    }
-  catch(QgsCsException &cse)
-    {
-      return 2; //cannot reproject point to layer coordinate system
-    }
+  {
+    digitisedPoint = toLayerCoordinates( vlayer, p );
+  }
+  catch ( QgsCsException &cse )
+  {
+    Q_UNUSED( cse );
+    return 2;
+  }
 
-  //snap point
-  double tolerance  = QgsProject::instance()->readDoubleEntry("Digitizing","/Tolerance",0);
-  vlayer->snapPoint(digitisedPoint, tolerance);
-  mapPoint = toMapCoords(vlayer, digitisedPoint);
-  
-  mCaptureList.push_back(digitisedPoint);
-  mRubberBand->addPoint(mapPoint);
+  QgsPoint mapPoint;
+  QgsPoint layerPoint;
+
+  QList<QgsSnappingResult> snapResults;
+  if ( mSnapper.snapToBackgroundLayers( p, snapResults ) == 0 )
+  {
+    mapPoint = snapPointFromResults( snapResults, p );
+    try
+    {
+      layerPoint = toLayerCoordinates( vlayer, mapPoint ); //transform snapped point back to layer crs
+    }
+    catch ( QgsCsException &cse )
+    {
+      Q_UNUSED( cse );
+      return 2;
+    }
+    mRubberBand->addPoint( mapPoint );
+    mCaptureList.push_back( layerPoint );
+  }
 
   return 0;
+}
+
+void QgsMapToolCapture::undo()
+{
+  if ( mRubberBand )
+  {
+    int rubberBandSize = mRubberBand->numberOfVertices();
+    int captureListSize = mCaptureList.size();
+
+    if ( rubberBandSize < 1 || captureListSize < 1 )
+    {
+      return;
+    }
+
+    mRubberBand->removeLastPoint();
+    mCaptureList.pop_back();
+  }
+}
+
+void QgsMapToolCapture::keyPressEvent( QKeyEvent* e )
+{
+  if ( e->key() == Qt::Key_Backspace )
+  {
+    undo();
+  }
 }

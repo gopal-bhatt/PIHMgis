@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'qgsprojectionselector.h'
 **
-** Created: Wed Jun 11 19:05:13 2008
+** Created: Fri Jun 19 01:53:20 2009
 **      by: The Qt Meta Object Compiler version 59 (Qt 4.3.2)
 **
 ** WARNING! All changes made in this file will be lost!
@@ -22,7 +22,7 @@ static const uint qt_meta_data_QgsProjectionSelector[] = {
        1,       // revision
        0,       // classname
        0,    0, // classinfo
-      12,   10, // methods
+      13,   10, // methods
        0,    0, // properties
        0,    0, // enums/sets
 
@@ -34,13 +34,14 @@ static const uint qt_meta_data_QgsProjectionSelector[] = {
  // slots: signature, parameters, type, tag, flags
       98,   87,   22,   22, 0x0a,
      134,   22,  126,   22, 0x0a,
-     161,  152,   22,   22, 0x0a,
-     184,   22,  126,   22, 0x0a,
-     213,   22,  208,   22, 0x0a,
-     230,   22,  208,   22, 0x0a,
-     258,  248,   22,   22, 0x0a,
-     292,   22,   22,   22, 0x0a,
-     313,   22,   22,   22, 0x08,
+     158,  149,   22,   22, 0x0a,
+     186,  181,   22,   22, 0x0a,
+     208,   22,  126,   22, 0x0a,
+     235,   22,  230,   22, 0x0a,
+     258,   22,  230,   22, 0x0a,
+     284,  274,   22,   22, 0x0a,
+     318,   22,   22,   22, 0x0a,
+     339,   22,   22,   22, 0x08,
 
        0        // eod
 };
@@ -48,11 +49,12 @@ static const uint qt_meta_data_QgsProjectionSelector[] = {
 static const char qt_meta_stringdata_QgsProjectionSelector[] = {
     "QgsProjectionSelector\0\0theSRID\0"
     "sridSelected(QString)\0refresh()\0"
-    "searchBoxHasFocus(bool)\0theSRSName\0"
-    "setSelectedSRSName(QString)\0QString\0"
-    "getSelectedName()\0theSRSID\0"
-    "setSelectedSRSID(long)\0getCurrentProj4String()\0"
-    "long\0getCurrentSRID()\0getCurrentSRSID()\0"
+    "searchBoxHasFocus(bool)\0theCRSName\0"
+    "setSelectedCrsName(QString)\0QString\0"
+    "selectedName()\0theCRSID\0setSelectedCrsId(long)\0"
+    "epsg\0setSelectedEpsg(long)\0"
+    "selectedProj4String()\0long\0"
+    "selectedPostgresSrId()\0selectedCrsId()\0"
     "crsFilter\0setOgcWmsCrsFilter(QSet<QString>)\0"
     "on_pbnFind_clicked()\0"
     "coordinateSystemSelected(QTreeWidgetItem*)\0"
@@ -86,21 +88,22 @@ int QgsProjectionSelector::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
         case 0: sridSelected((*reinterpret_cast< QString(*)>(_a[1]))); break;
         case 1: refresh(); break;
         case 2: searchBoxHasFocus((*reinterpret_cast< bool(*)>(_a[1]))); break;
-        case 3: setSelectedSRSName((*reinterpret_cast< QString(*)>(_a[1]))); break;
-        case 4: { QString _r = getSelectedName();
+        case 3: setSelectedCrsName((*reinterpret_cast< QString(*)>(_a[1]))); break;
+        case 4: { QString _r = selectedName();
             if (_a[0]) *reinterpret_cast< QString*>(_a[0]) = _r; }  break;
-        case 5: setSelectedSRSID((*reinterpret_cast< long(*)>(_a[1]))); break;
-        case 6: { QString _r = getCurrentProj4String();
+        case 5: setSelectedCrsId((*reinterpret_cast< long(*)>(_a[1]))); break;
+        case 6: setSelectedEpsg((*reinterpret_cast< long(*)>(_a[1]))); break;
+        case 7: { QString _r = selectedProj4String();
             if (_a[0]) *reinterpret_cast< QString*>(_a[0]) = _r; }  break;
-        case 7: { long _r = getCurrentSRID();
+        case 8: { long _r = selectedPostgresSrId();
             if (_a[0]) *reinterpret_cast< long*>(_a[0]) = _r; }  break;
-        case 8: { long _r = getCurrentSRSID();
+        case 9: { long _r = selectedCrsId();
             if (_a[0]) *reinterpret_cast< long*>(_a[0]) = _r; }  break;
-        case 9: setOgcWmsCrsFilter((*reinterpret_cast< QSet<QString>(*)>(_a[1]))); break;
-        case 10: on_pbnFind_clicked(); break;
-        case 11: coordinateSystemSelected((*reinterpret_cast< QTreeWidgetItem*(*)>(_a[1]))); break;
+        case 10: setOgcWmsCrsFilter((*reinterpret_cast< QSet<QString>(*)>(_a[1]))); break;
+        case 11: on_pbnFind_clicked(); break;
+        case 12: coordinateSystemSelected((*reinterpret_cast< QTreeWidgetItem*(*)>(_a[1]))); break;
         }
-        _id -= 12;
+        _id -= 13;
     }
     return _id;
 }

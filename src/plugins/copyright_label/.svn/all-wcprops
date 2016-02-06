@@ -1,83 +1,77 @@
 K 25
 svn:wc:ra_dav:version-url
-V 76
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/copyright_label
+V 71
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/copyright_label
 END
 plugin.cpp
 K 25
 svn:wc:ra_dav:version-url
-V 87
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/copyright_label/plugin.cpp
+V 82
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/copyright_label/plugin.cpp
 END
 pluginguibase.ui.h
 K 25
 svn:wc:ra_dav:version-url
-V 95
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/copyright_label/pluginguibase.ui.h
+V 90
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/copyright_label/pluginguibase.ui.h
 END
 plugin.h
 K 25
 svn:wc:ra_dav:version-url
-V 85
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/copyright_label/plugin.h
+V 80
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/copyright_label/plugin.h
 END
 plugingui.cpp
 K 25
 svn:wc:ra_dav:version-url
-V 90
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/copyright_label/plugingui.cpp
+V 85
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/copyright_label/plugingui.cpp
 END
-icon.xcf
+copyright.svg
 K 25
 svn:wc:ra_dav:version-url
 V 85
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/copyright_label/icon.xcf
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/copyright_label/copyright.svg
 END
 plugingui.h
 K 25
 svn:wc:ra_dav:version-url
-V 88
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/copyright_label/plugingui.h
+V 83
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/copyright_label/plugingui.h
+END
+copyright_label.png
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/copyright_label/copyright_label.png
 END
 copyright_plugin.qrc
 K 25
 svn:wc:ra_dav:version-url
-V 97
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/copyright_label/copyright_plugin.qrc
+V 92
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/copyright_label/copyright_plugin.qrc
 END
 pluginguibase.ui
 K 25
 svn:wc:ra_dav:version-url
-V 93
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/copyright_label/pluginguibase.ui
-END
-copyright.png
-K 25
-svn:wc:ra_dav:version-url
-V 90
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/copyright_label/copyright.png
-END
-icon.xpm
-K 25
-svn:wc:ra_dav:version-url
-V 85
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/copyright_label/icon.xpm
+V 88
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/copyright_label/pluginguibase.ui
 END
 .cvsignore
 K 25
 svn:wc:ra_dav:version-url
-V 87
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/copyright_label/.cvsignore
+V 82
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/copyright_label/.cvsignore
 END
 CMakeLists.txt
 K 25
 svn:wc:ra_dav:version-url
-V 91
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/copyright_label/CMakeLists.txt
+V 86
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/copyright_label/CMakeLists.txt
 END
 README
 K 25
 svn:wc:ra_dav:version-url
-V 83
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/copyright_label/README
+V 78
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/copyright_label/README
 END

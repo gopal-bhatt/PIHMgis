@@ -1,5 +1,5 @@
 /***************************************************************************
-                              qgswfsplugin.h    
+                              qgswfsplugin.h
                               -------------------
   begin                : July 25, 2006
   copyright            : (C) 2006 by Marco Hugentobler
@@ -22,21 +22,17 @@
 #include "qgsvectorlayer.h"
 #include "qgswfsplugin.h"
 
-#include "mIconAddWfsLayer.xpm"
+#include <QToolBar>
 
-#ifdef WIN32
-#define QGISEXTERN extern "C" __declspec( dllexport )
-#else
-#define QGISEXTERN extern "C"
-#endif
 
-static const QString name_ = QObject::tr("WFS plugin");
-static const QString description_ = QObject::tr("Adds WFS layers to the QGIS canvas");
-static const QString version_ = QObject::tr("Version 0.0001");
 
-QgsWFSPlugin::QgsWFSPlugin(QgisInterface* iface)
-: QgisPlugin(name_, description_, version_, QgisPlugin::MAPLAYER), 
-  mIface(iface), mWfsDialogAction(0)
+static const QString name_ = QObject::tr( "WFS plugin" );
+static const QString description_ = QObject::tr( "Adds WFS layers to the QGIS canvas" );
+static const QString version_ = QObject::tr( "Version 0.1" );
+
+QgsWFSPlugin::QgsWFSPlugin( QgisInterface* iface )
+    : QgisPlugin( name_, description_, version_, QgisPlugin::MAPLAYER ),
+    mIface( iface ), mWfsDialogAction( 0 )
 {
 
 }
@@ -48,32 +44,32 @@ QgsWFSPlugin::~QgsWFSPlugin()
 
 void QgsWFSPlugin::initGui()
 {
-  if(mIface)
-    {
-      mWfsDialogAction = new QAction(QIcon(mIconAddWfsLayer), tr("&Add WFS layer"), 0);
-      QObject::connect(mWfsDialogAction, SIGNAL(activated()), this, SLOT(showSourceDialog()));
-      mIface->addToolBarIcon(mWfsDialogAction);
-      mIface->addPluginMenu(tr("&Add WFS layer"), mWfsDialogAction);
-    }
+  if ( mIface )
+  {
+    mWfsDialogAction = new QAction( QIcon( ":/mIconAddWfsLayer.png" ), tr( "&Add WFS layer" ), 0 );
+    QObject::connect( mWfsDialogAction, SIGNAL( triggered() ), this, SLOT( showSourceDialog() ) );
+    mIface->fileToolBar()->addAction( mWfsDialogAction );
+    mIface->addPluginToMenu( tr( "&Add WFS layer" ), mWfsDialogAction );
+  }
 }
 
 void QgsWFSPlugin::unload()
 {
-  mIface->removeToolBarIcon(mWfsDialogAction);
-  mIface->removePluginMenu(tr("&Add WFS layer"), mWfsDialogAction);
+  mIface->removeToolBarIcon( mWfsDialogAction );
+  mIface->removePluginMenu( tr( "&Add WFS layer" ), mWfsDialogAction );
   delete mWfsDialogAction;
   mWfsDialogAction = 0;
 }
 
 void QgsWFSPlugin::showSourceDialog()
 {
-  QgsWFSSourceSelect serverDialog(0, mIface);
+  QgsWFSSourceSelect serverDialog( 0, mIface );
   serverDialog.exec();
 }
 
-QGISEXTERN QgisPlugin * classFactory(QgisInterface * theQgisInterfacePointer)
+QGISEXTERN QgisPlugin * classFactory( QgisInterface * theQgisInterfacePointer )
 {
-  return new QgsWFSPlugin(theQgisInterfacePointer);
+  return new QgsWFSPlugin( theQgisInterfacePointer );
 }
 
 QGISEXTERN QString name()
@@ -96,7 +92,7 @@ QGISEXTERN int type()
   return QgisPlugin::UI;
 }
 
-QGISEXTERN void unload(QgisPlugin* theQgsWFSPluginPointer)
+QGISEXTERN void unload( QgisPlugin* theQgsWFSPluginPointer )
 {
   delete theQgsWFSPluginPointer;
 }

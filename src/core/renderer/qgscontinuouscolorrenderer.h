@@ -30,23 +30,23 @@ class QImage;
 /**Renderer class which interpolates rgb values linear between the minimum and maximum value of the classification field*/
 class CORE_EXPORT QgsContinuousColorRenderer: public QgsRenderer
 {
- public:
-    QgsContinuousColorRenderer(QGis::VectorType type);
-    QgsContinuousColorRenderer(const QgsContinuousColorRenderer& other);
-    QgsContinuousColorRenderer& operator=(const QgsContinuousColorRenderer& other);
+  public:
+    QgsContinuousColorRenderer( QGis::GeometryType type );
+    QgsContinuousColorRenderer( const QgsContinuousColorRenderer& other );
+    QgsContinuousColorRenderer& operator=( const QgsContinuousColorRenderer& other );
     virtual ~QgsContinuousColorRenderer();
     /**Renders the feature using the minimum and maximum value of the classification field*/
-    void renderFeature(QPainter* p, QgsFeature& f, QImage* img, double* scalefactor, bool selected,  double widthScale = 1.);
+    void renderFeature( QPainter* p, QgsFeature& f, QImage* img, bool selected,  double widthScale = 1.0, double rasterScaleFactor = 1.0 );
     /**Returns the number of the classification field*/
     int classificationField() const;
     /**Sets the id of the classification field*/
-    void setClassificationField(int id);
+    void setClassificationField( int id );
     /**Sets the symbol for the minimum value. The symbol has to be created using the new operator and is automatically deleted when inserting a new symbol or when the instance is destroyed*/
-    void setMinimumSymbol(QgsSymbol* sy);
+    void setMinimumSymbol( QgsSymbol* sy );
     /**Sets the symbol for the maximum value. The symbol has to be created using the new operator and is automatically deleted when inserting a new symbol or when the instance is destroyed*/
-    void setMaximumSymbol(QgsSymbol* sy);
+    void setMaximumSymbol( QgsSymbol* sy );
     /** Sets whether to draw the polygon outline*/
-    void setDrawPolygonOutline(bool draw) { mDrawPolygonOutline = draw;}
+    void setDrawPolygonOutline( bool draw ) { mDrawPolygonOutline = draw;}
     /**Returns the symbol for the minimum value*/
     const QgsSymbol* minimumSymbol() const;
     /**Returns the symbol for the maximum value*/
@@ -54,12 +54,14 @@ class CORE_EXPORT QgsContinuousColorRenderer: public QgsRenderer
     /** whether to draw a polygon outline*/
     bool drawPolygonOutline() const { return mDrawPolygonOutline; }
     /**Reads the renderer configuration from an XML file
-     @param rnode the DOM node to read 
-     @param vl the vector layer which will be associated with the renderer*/
-    virtual void readXML(const QDomNode& rnode, QgsVectorLayer& vl);
+     @param rnode the Dom node to read
+     @param vl the vector layer which will be associated with the renderer
+     @return 0 in case of success, 1 if vector layer has no renderer, 2 if classification field not found
+    */
+    virtual int readXML( const QDomNode& rnode, QgsVectorLayer& vl );
     /**Writes the contents of the renderer to a configuration file
      @ return true in case of success*/
-    virtual bool writeXML( QDomNode & layer_node, QDomDocument & document ) const;
+    virtual bool writeXML( QDomNode & layer_node, QDomDocument & document, const QgsVectorLayer& vl ) const;
     /** Returns true*/
     bool needsAttributes() const;
     /**Returns a list with the index of the classification attribute*/
@@ -69,7 +71,7 @@ class CORE_EXPORT QgsContinuousColorRenderer: public QgsRenderer
     /**Return symbology items*/
     const QList<QgsSymbol*> symbols() const;
     QgsRenderer* clone() const;
- protected:
+  protected:
     /**Number of the classification field (it must be a numerical field)*/
     int mClassificationField;
     /**Item for the minimum value*/
@@ -82,22 +84,22 @@ class CORE_EXPORT QgsContinuousColorRenderer: public QgsRenderer
 
 inline int QgsContinuousColorRenderer::classificationField() const
 {
-    return mClassificationField;
+  return mClassificationField;
 }
 
-inline void QgsContinuousColorRenderer::setClassificationField(int id)
+inline void QgsContinuousColorRenderer::setClassificationField( int id )
 {
-    mClassificationField=id;
+  mClassificationField = id;
 }
 
 inline const QgsSymbol* QgsContinuousColorRenderer::minimumSymbol() const
 {
-    return mMinimumSymbol;
+  return mMinimumSymbol;
 }
 
 inline const QgsSymbol* QgsContinuousColorRenderer::maximumSymbol() const
 {
-    return mMaximumSymbol;
+  return mMaximumSymbol;
 }
 
 inline bool QgsContinuousColorRenderer::needsAttributes() const

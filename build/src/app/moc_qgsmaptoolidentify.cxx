@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'qgsmaptoolidentify.h'
 **
-** Created: Wed Jun 11 19:05:43 2008
+** Created: Fri Jun 19 01:54:08 2009
 **      by: The Qt Meta Object Compiler version 59 (Qt 4.3.2)
 **
 ** WARNING! All changes made in this file will be lost!
@@ -22,20 +22,22 @@ static const uint qt_meta_data_QgsMapToolIdentify[] = {
        1,       // revision
        0,       // classname
        0,    0, // classinfo
-       2,   10, // methods
+       3,   10, // methods
        0,    0, // properties
        0,    0, // enums/sets
 
  // slots: signature, parameters, type, tag, flags
       30,   20,   19,   19, 0x0a,
-      52,   19,   19,   19, 0x08,
+      52,   20,   19,   19, 0x0a,
+      69,   19,   19,   19, 0x08,
 
        0        // eod
 };
 
 static const char qt_meta_stringdata_QgsMapToolIdentify[] = {
     "QgsMapToolIdentify\0\0featureId\0"
-    "highlightFeature(int)\0resultsDialogGone()\0"
+    "highlightFeature(int)\0editFeature(int)\0"
+    "resultsDialogGone()\0"
 };
 
 const QMetaObject QgsMapToolIdentify::staticMetaObject = {
@@ -64,9 +66,10 @@ int QgsMapToolIdentify::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_c == QMetaObject::InvokeMetaMethod) {
         switch (_id) {
         case 0: highlightFeature((*reinterpret_cast< int(*)>(_a[1]))); break;
-        case 1: resultsDialogGone(); break;
+        case 1: editFeature((*reinterpret_cast< int(*)>(_a[1]))); break;
+        case 2: resultsDialogGone(); break;
         }
-        _id -= 2;
+        _id -= 3;
     }
     return _id;
 }

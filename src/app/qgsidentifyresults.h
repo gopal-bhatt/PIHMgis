@@ -15,7 +15,7 @@
  *   (at your option) any later version.                                   *
  *                                                                         *
  ***************************************************************************/
-/* $Id: qgsidentifyresults.h 6879 2007-04-11 11:46:35Z wonder $ */
+/* $Id: qgsidentifyresults.h 9138 2008-08-23 21:37:31Z jef $ */
 #ifndef QGSIDENTIFYRESULTS_H
 #define QGSIDENTIFYRESULTS_H
 
@@ -36,95 +36,105 @@ class QMenu;
 
 class QgsIdentifyResults: public QDialog, private Ui::QgsIdentifyResultsBase
 {
-  Q_OBJECT;
+    Q_OBJECT
   public:
 
-  //! Constructor - takes it own copy of the QgsAttributeAction so
-  // that it is independent of whoever created it.
-  QgsIdentifyResults(const QgsAttributeAction& actions, QWidget *parent = 0, Qt::WFlags f = 0);
+    //! Constructor - takes it own copy of the QgsAttributeAction so
+    // that it is independent of whoever created it.
+    QgsIdentifyResults( const QgsAttributeAction& actions, QWidget *parent = 0, Qt::WFlags f = 0 );
 
-  ~QgsIdentifyResults();
+    ~QgsIdentifyResults();
 
-  /** Add an attribute to the feature display node */
-  void addAttribute(QTreeWidgetItem *parent, QString field, QString value);
+    /** Add an attribute to the feature display node */
+    void addAttribute( QTreeWidgetItem *parent, QString field, QString value );
 
-  /** Add an attribute */
-  void addAttribute(QString field, QString value);
+    /** Add an attribute */
+    void addAttribute( QString field, QString value );
 
-  /** Add a derived attribute (e.g. Length, Area) to the feature display node */
-  void addDerivedAttribute(QTreeWidgetItem *parent, QString field, QString value);
+    /** Add a derived attribute (e.g. Length, Area) to the feature display node */
+    void addDerivedAttribute( QTreeWidgetItem *parent, QString field, QString value );
 
-  /** Add an action to the feature display node */
-  void addAction(QTreeWidgetItem *parent, int id, QString field, QString value);
+    /** Add an action to the feature display node */
+    void addAction( QTreeWidgetItem *parent, int id, QString field, QString value );
 
-  /** Add a feature node to the feature display */
-  QTreeWidgetItem * addNode(QString label);
-  /** Set the title for the identify results dialog */
-  void setTitle(QString title);
-  /** Set header column */
-  void setColumnText ( int column, const QString & label );
-  void saveWindowLocation();
-  void restorePosition();  
-  void closeEvent(QCloseEvent *e);
-  void showAllAttributes();
+    /** Add an edit action to the feature display node */
+    void addEdit( QTreeWidgetItem *parent, int id );
 
-  /** Resize all of the columns to fit the data in them */
-  void expandColumnsToFit();
+    /** Add a feature node to the feature display */
+    QTreeWidgetItem * addNode( QString label );
+    /** Set the title for the identify results dialog */
+    void setTitle( QString title );
+    /** Set header column */
+    void setColumnText( int column, const QString & label );
+    void saveWindowLocation();
+    void restorePosition();
+    void closeEvent( QCloseEvent *e );
+    void showAllAttributes();
 
-  /** Remove results */
-  void clear();
-  
-  /** Set "No features ... " */
-  void setMessage( QString shortMsg, QString longMsg );
+    /** Resize all of the columns to fit the data in them */
+    void expandColumnsToFit();
 
-  /** Set actions */
-  void setActions ( const QgsAttributeAction& actions );
-  
-  //void accept();
-  //void reject();
-  
+    /** Remove results */
+    void clear();
+
+    /** Set "No features ... " */
+    void setMessage( QString shortMsg, QString longMsg );
+
+    /** Set actions */
+    void setActions( const QgsAttributeAction& actions );
+
+    //void accept();
+    //void reject();
+
   signals:
-    void selectedFeatureChanged(int featureId);
+    void selectedFeatureChanged( int featureId );
+    void editFeature( int featureId );
 
   public slots:
 
     void show();
 
     void close();
-    void contextMenuEvent(QContextMenuEvent*);
-    void popupItemSelected(QAction* menuAction);
+    void contextMenuEvent( QContextMenuEvent* );
+    void popupItemSelected( QAction* menuAction );
 
     /* Item in tree was clicked */
-    void clicked ( QTreeWidgetItem *lvi );
+    void clicked( QTreeWidgetItem *lvi );
 
     //! Context help
     void on_buttonHelp_clicked();
 
     /* Called when an item is expanded so that we can ensure that the
        column width if expanded to show it */
-    void itemExpanded(QTreeWidgetItem*);
-    
+    void itemExpanded( QTreeWidgetItem* );
+
     //! sends signal if current feature id has changed
-    void handleCurrentItemChanged(QTreeWidgetItem* current, QTreeWidgetItem* previous);
+    void handleCurrentItemChanged( QTreeWidgetItem* current, QTreeWidgetItem* previous );
 
-    
+
   private:
-  
-  QgsAttributeAction mActions;
-  int mClickedOnValue;
-  QMenu* mActionPopup;
-  std::vector<std::pair<QString, QString> > mValues;
-  static const int context_id = 689216579;
-  int mCurrentFeatureId;
 
-  /**
-   Keeps track of what derived-attribute (e.g. Length, Area)
-   root nodes have been generated for each feature in this widget.
+    bool mEditable;
+    QgsAttributeAction mActions;
+    int mClickedOnValue;
+    QMenu* mActionPopup;
+    std::vector<std::pair<QString, QString> > mValues;
+    static const int context_id = 689216579;
+    int mCurrentFeatureId;
+    QString mDerivedLabel;
 
-   First item:  Feature root node
-   Second item: Derived-attribute root node for that feature
-   */
-  std::map<QTreeWidgetItem *, QTreeWidgetItem *> mDerivedAttributeRootNodes;
+    /**
+     Keeps track of what derived-attribute (e.g. Length, Area)
+     root nodes have been generated for each feature in this widget.
+
+     First item:  Feature root node
+     Second item: Derived-attribute root node for that feature
+     */
+    std::map<QTreeWidgetItem *, QTreeWidgetItem *> mDerivedAttributeRootNodes;
+
+    // Convenience function to populate mValues with all of the item names and
+    // values for a item, including the derived ones.
+    void extractAllItemData( QTreeWidgetItem* item );
 };
 
 #endif

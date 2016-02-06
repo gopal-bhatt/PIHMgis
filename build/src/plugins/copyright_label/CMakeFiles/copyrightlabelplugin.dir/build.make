@@ -31,10 +31,10 @@ RM = /usr/bin/cmake -E remove -f
 CMAKE_EDIT_COMMAND = /usr/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0
+CMAKE_SOURCE_DIR = /Users/bhattgopal/dev/cpp/qgis_1.0.2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build
+CMAKE_BINARY_DIR = /Users/bhattgopal/dev/cpp/qgis_1.0.2/build
 
 # Include any dependencies generated for this target.
 include src/plugins/copyright_label/CMakeFiles/copyrightlabelplugin.dir/depend.make
@@ -50,17 +50,17 @@ src/plugins/copyright_label/CMakeFiles/copyrightlabelplugin.dir/depend.make.mark
 
 src/plugins/copyright_label/CMakeFiles/copyrightlabelplugin.dir/plugin.o: src/plugins/copyright_label/CMakeFiles/copyrightlabelplugin.dir/flags.make
 src/plugins/copyright_label/CMakeFiles/copyrightlabelplugin.dir/plugin.o: ../src/plugins/copyright_label/plugin.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/plugins/copyright_label/CMakeFiles/copyrightlabelplugin.dir/plugin.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/copyright_label/CMakeFiles/copyrightlabelplugin.dir/plugin.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/copyright_label/plugin.cpp
+	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/copyright_label/CMakeFiles/copyrightlabelplugin.dir/plugin.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/copyright_label/plugin.cpp
 
 src/plugins/copyright_label/CMakeFiles/copyrightlabelplugin.dir/plugin.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/plugins/copyright_label/CMakeFiles/copyrightlabelplugin.dir/plugin.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/copyright_label/plugin.cpp > src/plugins/copyright_label/CMakeFiles/copyrightlabelplugin.dir/plugin.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/copyright_label/plugin.cpp > src/plugins/copyright_label/CMakeFiles/copyrightlabelplugin.dir/plugin.i
 
 src/plugins/copyright_label/CMakeFiles/copyrightlabelplugin.dir/plugin.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/plugins/copyright_label/CMakeFiles/copyrightlabelplugin.dir/plugin.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/copyright_label/plugin.cpp -o src/plugins/copyright_label/CMakeFiles/copyrightlabelplugin.dir/plugin.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/copyright_label/plugin.cpp -o src/plugins/copyright_label/CMakeFiles/copyrightlabelplugin.dir/plugin.s
 
 src/plugins/copyright_label/CMakeFiles/copyrightlabelplugin.dir/plugin.o.requires:
 
@@ -74,17 +74,17 @@ src/plugins/copyright_label/CMakeFiles/copyrightlabelplugin.dir/depend.make.mark
 
 src/plugins/copyright_label/CMakeFiles/copyrightlabelplugin.dir/plugingui.o: src/plugins/copyright_label/CMakeFiles/copyrightlabelplugin.dir/flags.make
 src/plugins/copyright_label/CMakeFiles/copyrightlabelplugin.dir/plugingui.o: ../src/plugins/copyright_label/plugingui.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/plugins/copyright_label/CMakeFiles/copyrightlabelplugin.dir/plugingui.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/copyright_label/CMakeFiles/copyrightlabelplugin.dir/plugingui.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/copyright_label/plugingui.cpp
+	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/copyright_label/CMakeFiles/copyrightlabelplugin.dir/plugingui.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/copyright_label/plugingui.cpp
 
 src/plugins/copyright_label/CMakeFiles/copyrightlabelplugin.dir/plugingui.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/plugins/copyright_label/CMakeFiles/copyrightlabelplugin.dir/plugingui.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/copyright_label/plugingui.cpp > src/plugins/copyright_label/CMakeFiles/copyrightlabelplugin.dir/plugingui.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/copyright_label/plugingui.cpp > src/plugins/copyright_label/CMakeFiles/copyrightlabelplugin.dir/plugingui.i
 
 src/plugins/copyright_label/CMakeFiles/copyrightlabelplugin.dir/plugingui.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/plugins/copyright_label/CMakeFiles/copyrightlabelplugin.dir/plugingui.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/copyright_label/plugingui.cpp -o src/plugins/copyright_label/CMakeFiles/copyrightlabelplugin.dir/plugingui.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/copyright_label/plugingui.cpp -o src/plugins/copyright_label/CMakeFiles/copyrightlabelplugin.dir/plugingui.s
 
 src/plugins/copyright_label/CMakeFiles/copyrightlabelplugin.dir/plugingui.o.requires:
 
@@ -98,17 +98,17 @@ src/plugins/copyright_label/CMakeFiles/copyrightlabelplugin.dir/depend.make.mark
 
 src/plugins/copyright_label/CMakeFiles/copyrightlabelplugin.dir/moc_plugin.o: src/plugins/copyright_label/CMakeFiles/copyrightlabelplugin.dir/flags.make
 src/plugins/copyright_label/CMakeFiles/copyrightlabelplugin.dir/moc_plugin.o: src/plugins/copyright_label/moc_plugin.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_3)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/plugins/copyright_label/CMakeFiles/copyrightlabelplugin.dir/moc_plugin.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/copyright_label/CMakeFiles/copyrightlabelplugin.dir/moc_plugin.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/copyright_label/moc_plugin.cxx
+	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/copyright_label/CMakeFiles/copyrightlabelplugin.dir/moc_plugin.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/copyright_label/moc_plugin.cxx
 
 src/plugins/copyright_label/CMakeFiles/copyrightlabelplugin.dir/moc_plugin.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/plugins/copyright_label/CMakeFiles/copyrightlabelplugin.dir/moc_plugin.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/copyright_label/moc_plugin.cxx > src/plugins/copyright_label/CMakeFiles/copyrightlabelplugin.dir/moc_plugin.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/copyright_label/moc_plugin.cxx > src/plugins/copyright_label/CMakeFiles/copyrightlabelplugin.dir/moc_plugin.i
 
 src/plugins/copyright_label/CMakeFiles/copyrightlabelplugin.dir/moc_plugin.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/plugins/copyright_label/CMakeFiles/copyrightlabelplugin.dir/moc_plugin.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/copyright_label/moc_plugin.cxx -o src/plugins/copyright_label/CMakeFiles/copyrightlabelplugin.dir/moc_plugin.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/copyright_label/moc_plugin.cxx -o src/plugins/copyright_label/CMakeFiles/copyrightlabelplugin.dir/moc_plugin.s
 
 src/plugins/copyright_label/CMakeFiles/copyrightlabelplugin.dir/moc_plugin.o.requires:
 
@@ -122,17 +122,17 @@ src/plugins/copyright_label/CMakeFiles/copyrightlabelplugin.dir/depend.make.mark
 
 src/plugins/copyright_label/CMakeFiles/copyrightlabelplugin.dir/moc_plugingui.o: src/plugins/copyright_label/CMakeFiles/copyrightlabelplugin.dir/flags.make
 src/plugins/copyright_label/CMakeFiles/copyrightlabelplugin.dir/moc_plugingui.o: src/plugins/copyright_label/moc_plugingui.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_4)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/plugins/copyright_label/CMakeFiles/copyrightlabelplugin.dir/moc_plugingui.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/copyright_label/CMakeFiles/copyrightlabelplugin.dir/moc_plugingui.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/copyright_label/moc_plugingui.cxx
+	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/copyright_label/CMakeFiles/copyrightlabelplugin.dir/moc_plugingui.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/copyright_label/moc_plugingui.cxx
 
 src/plugins/copyright_label/CMakeFiles/copyrightlabelplugin.dir/moc_plugingui.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/plugins/copyright_label/CMakeFiles/copyrightlabelplugin.dir/moc_plugingui.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/copyright_label/moc_plugingui.cxx > src/plugins/copyright_label/CMakeFiles/copyrightlabelplugin.dir/moc_plugingui.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/copyright_label/moc_plugingui.cxx > src/plugins/copyright_label/CMakeFiles/copyrightlabelplugin.dir/moc_plugingui.i
 
 src/plugins/copyright_label/CMakeFiles/copyrightlabelplugin.dir/moc_plugingui.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/plugins/copyright_label/CMakeFiles/copyrightlabelplugin.dir/moc_plugingui.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/copyright_label/moc_plugingui.cxx -o src/plugins/copyright_label/CMakeFiles/copyrightlabelplugin.dir/moc_plugingui.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/copyright_label/moc_plugingui.cxx -o src/plugins/copyright_label/CMakeFiles/copyrightlabelplugin.dir/moc_plugingui.s
 
 src/plugins/copyright_label/CMakeFiles/copyrightlabelplugin.dir/moc_plugingui.o.requires:
 
@@ -146,17 +146,17 @@ src/plugins/copyright_label/CMakeFiles/copyrightlabelplugin.dir/depend.make.mark
 
 src/plugins/copyright_label/CMakeFiles/copyrightlabelplugin.dir/qrc_copyright_plugin.o: src/plugins/copyright_label/CMakeFiles/copyrightlabelplugin.dir/flags.make
 src/plugins/copyright_label/CMakeFiles/copyrightlabelplugin.dir/qrc_copyright_plugin.o: src/plugins/copyright_label/qrc_copyright_plugin.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_5)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/plugins/copyright_label/CMakeFiles/copyrightlabelplugin.dir/qrc_copyright_plugin.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/copyright_label/CMakeFiles/copyrightlabelplugin.dir/qrc_copyright_plugin.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/copyright_label/qrc_copyright_plugin.cxx
+	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/copyright_label/CMakeFiles/copyrightlabelplugin.dir/qrc_copyright_plugin.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/copyright_label/qrc_copyright_plugin.cxx
 
 src/plugins/copyright_label/CMakeFiles/copyrightlabelplugin.dir/qrc_copyright_plugin.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/plugins/copyright_label/CMakeFiles/copyrightlabelplugin.dir/qrc_copyright_plugin.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/copyright_label/qrc_copyright_plugin.cxx > src/plugins/copyright_label/CMakeFiles/copyrightlabelplugin.dir/qrc_copyright_plugin.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/copyright_label/qrc_copyright_plugin.cxx > src/plugins/copyright_label/CMakeFiles/copyrightlabelplugin.dir/qrc_copyright_plugin.i
 
 src/plugins/copyright_label/CMakeFiles/copyrightlabelplugin.dir/qrc_copyright_plugin.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/plugins/copyright_label/CMakeFiles/copyrightlabelplugin.dir/qrc_copyright_plugin.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/copyright_label/qrc_copyright_plugin.cxx -o src/plugins/copyright_label/CMakeFiles/copyrightlabelplugin.dir/qrc_copyright_plugin.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/copyright_label/qrc_copyright_plugin.cxx -o src/plugins/copyright_label/CMakeFiles/copyrightlabelplugin.dir/qrc_copyright_plugin.s
 
 src/plugins/copyright_label/CMakeFiles/copyrightlabelplugin.dir/qrc_copyright_plugin.o.requires:
 
@@ -166,25 +166,25 @@ src/plugins/copyright_label/CMakeFiles/copyrightlabelplugin.dir/qrc_copyright_pl
 src/plugins/copyright_label/CMakeFiles/copyrightlabelplugin.dir/qrc_copyright_plugin.o.provides.build: src/plugins/copyright_label/CMakeFiles/copyrightlabelplugin.dir/qrc_copyright_plugin.o
 
 src/plugins/copyright_label/moc_plugin.cxx: ../src/plugins/copyright_label/plugin.h
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_6)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating moc_plugin.cxx"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/copyright_label && /Developer/Tools/Qt/moc -I /usr/include -I /Library/Frameworks/Qt3Support.framework/Headers -I /Library/Frameworks/QtSvg.framework/Headers -I /Library/Frameworks/QtGui.framework/Headers -I /Library/Frameworks/QtXml.framework/Headers -I /Library/Frameworks/QtSql.framework/Headers -I /Library/Frameworks/QtNetwork.framework/Headers -I /Library/Frameworks/QtCore.framework/Headers -I /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/copyright_label/moc_plugin.cxx /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/copyright_label/plugin.h
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/copyright_label && /Developer/Tools/Qt/moc -I /usr/include -I /Library/Frameworks/Qt3Support.framework/Headers -I /Library/Frameworks/QtSvg.framework/Headers -I /Library/Frameworks/QtGui.framework/Headers -I /Library/Frameworks/QtXml.framework/Headers -I /Library/Frameworks/QtSql.framework/Headers -I /Library/Frameworks/QtNetwork.framework/Headers -I /Library/Frameworks/QtCore.framework/Headers -I /Users/bhattgopal/dev/cpp/qgis_1.0.2/build -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/copyright_label/moc_plugin.cxx /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/copyright_label/plugin.h
 
 src/plugins/copyright_label/moc_plugingui.cxx: ../src/plugins/copyright_label/plugingui.h
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_7)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_7)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating moc_plugingui.cxx"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/copyright_label && /Developer/Tools/Qt/moc -I /usr/include -I /Library/Frameworks/Qt3Support.framework/Headers -I /Library/Frameworks/QtSvg.framework/Headers -I /Library/Frameworks/QtGui.framework/Headers -I /Library/Frameworks/QtXml.framework/Headers -I /Library/Frameworks/QtSql.framework/Headers -I /Library/Frameworks/QtNetwork.framework/Headers -I /Library/Frameworks/QtCore.framework/Headers -I /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/copyright_label/moc_plugingui.cxx /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/copyright_label/plugingui.h
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/copyright_label && /Developer/Tools/Qt/moc -I /usr/include -I /Library/Frameworks/Qt3Support.framework/Headers -I /Library/Frameworks/QtSvg.framework/Headers -I /Library/Frameworks/QtGui.framework/Headers -I /Library/Frameworks/QtXml.framework/Headers -I /Library/Frameworks/QtSql.framework/Headers -I /Library/Frameworks/QtNetwork.framework/Headers -I /Library/Frameworks/QtCore.framework/Headers -I /Users/bhattgopal/dev/cpp/qgis_1.0.2/build -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/copyright_label/moc_plugingui.cxx /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/copyright_label/plugingui.h
 
-src/plugins/copyright_label/qrc_copyright_plugin.cxx: ../src/plugins/copyright_label/copyright.png
+src/plugins/copyright_label/qrc_copyright_plugin.cxx: ../src/plugins/copyright_label/copyright_label.png
 src/plugins/copyright_label/qrc_copyright_plugin.cxx: ../src/plugins/copyright_label/copyright_plugin.qrc
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_8)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_8)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating qrc_copyright_plugin.cxx"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/copyright_label && /Developer/Tools/Qt/rcc -name copyright_plugin -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/copyright_label/qrc_copyright_plugin.cxx /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/copyright_label/copyright_plugin.qrc
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/copyright_label && /Developer/Tools/Qt/rcc -name copyright_plugin -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/copyright_label/qrc_copyright_plugin.cxx /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/copyright_label/copyright_plugin.qrc
 
 src/plugins/copyright_label/ui_pluginguibase.h: ../src/plugins/copyright_label/pluginguibase.ui
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_9)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_9)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ui_pluginguibase.h"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/copyright_label && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/copyright_label/ui_pluginguibase.h /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/copyright_label/pluginguibase.ui
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/copyright_label && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/copyright_label/ui_pluginguibase.h /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/copyright_label/pluginguibase.ui
 
 src/plugins/copyright_label/CMakeFiles/copyrightlabelplugin.dir/depend: src/plugins/copyright_label/CMakeFiles/copyrightlabelplugin.dir/depend.make.mark
 
@@ -193,7 +193,7 @@ src/plugins/copyright_label/CMakeFiles/copyrightlabelplugin.dir/depend.make.mark
 src/plugins/copyright_label/CMakeFiles/copyrightlabelplugin.dir/depend.make.mark: src/plugins/copyright_label/qrc_copyright_plugin.cxx
 src/plugins/copyright_label/CMakeFiles/copyrightlabelplugin.dir/depend.make.mark: src/plugins/copyright_label/ui_pluginguibase.h
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --magenta --bold "Scanning dependencies of target copyrightlabelplugin"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0 /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/copyright_label /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/copyright_label /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/copyright_label/CMakeFiles/copyrightlabelplugin.dir/DependInfo.cmake
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/bhattgopal/dev/cpp/qgis_1.0.2 /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/copyright_label /Users/bhattgopal/dev/cpp/qgis_1.0.2/build /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/copyright_label /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/copyright_label/CMakeFiles/copyrightlabelplugin.dir/DependInfo.cmake
 
 # Object files for target copyrightlabelplugin
 copyrightlabelplugin_OBJECTS = \
@@ -218,16 +218,14 @@ src/plugins/copyright_label/libcopyrightlabelplugin.so: /Library/Frameworks/QtGu
 src/plugins/copyright_label/libcopyrightlabelplugin.so: /Library/Frameworks/QtXml.framework
 src/plugins/copyright_label/libcopyrightlabelplugin.so: /Library/Frameworks/QtSvg.framework
 src/plugins/copyright_label/libcopyrightlabelplugin.so: /Library/Frameworks/QtNetwork.framework
-src/plugins/copyright_label/libcopyrightlabelplugin.so: /Library/Frameworks/Qt3Support.framework
 src/plugins/copyright_label/libcopyrightlabelplugin.so: /Library/Frameworks/proj.framework
-src/plugins/copyright_label/libcopyrightlabelplugin.so: /Library/Frameworks/sqlite3.framework
-src/plugins/copyright_label/libcopyrightlabelplugin.so: /Library/Frameworks/geos.framework
+src/plugins/copyright_label/libcopyrightlabelplugin.so: /Library/Frameworks/GEOS.framework/unix/lib/libgeos_c.dylib
 src/plugins/copyright_label/libcopyrightlabelplugin.so: /Library/Frameworks/GDAL.framework/Versions/1.5/unix/lib/libgdal.dylib
-src/plugins/copyright_label/libcopyrightlabelplugin.so: /Library/Frameworks/QtSql.framework
+src/plugins/copyright_label/libcopyrightlabelplugin.so: /Library/Frameworks/sqlite3.framework
 src/plugins/copyright_label/libcopyrightlabelplugin.so: src/plugins/copyright_label/CMakeFiles/copyrightlabelplugin.dir/build.make
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX shared module libcopyrightlabelplugin.so"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/copyright_label && $(CMAKE_COMMAND) -P CMakeFiles/copyrightlabelplugin.dir/cmake_clean_target.cmake
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/copyright_label && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/copyrightlabelplugin.dir/link.txt --verbose=$(VERBOSE)
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/copyright_label && $(CMAKE_COMMAND) -P CMakeFiles/copyrightlabelplugin.dir/cmake_clean_target.cmake
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/copyright_label && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/copyrightlabelplugin.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 src/plugins/copyright_label/CMakeFiles/copyrightlabelplugin.dir/build: src/plugins/copyright_label/libcopyrightlabelplugin.so
@@ -239,5 +237,5 @@ src/plugins/copyright_label/CMakeFiles/copyrightlabelplugin.dir/requires: src/pl
 src/plugins/copyright_label/CMakeFiles/copyrightlabelplugin.dir/requires: src/plugins/copyright_label/CMakeFiles/copyrightlabelplugin.dir/qrc_copyright_plugin.o.requires
 
 src/plugins/copyright_label/CMakeFiles/copyrightlabelplugin.dir/clean:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/copyright_label && $(CMAKE_COMMAND) -P CMakeFiles/copyrightlabelplugin.dir/cmake_clean.cmake
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/copyright_label && $(CMAKE_COMMAND) -P CMakeFiles/copyrightlabelplugin.dir/cmake_clean.cmake
 

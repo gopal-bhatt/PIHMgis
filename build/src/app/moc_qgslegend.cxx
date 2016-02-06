@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'qgslegend.h'
 **
-** Created: Wed Jun 11 19:05:44 2008
+** Created: Fri Jun 19 01:54:10 2009
 **      by: The Qt Meta Object Compiler version 59 (Qt 4.3.2)
 **
 ** WARNING! All changes made in this file will be lost!
@@ -22,7 +22,7 @@ static const uint qt_meta_data_QgsLegend[] = {
        1,       // revision
        0,       // classname
        0,    0, // classinfo
-      26,   10, // methods
+      27,   10, // methods
        0,    0, // properties
        0,    0, // enums/sets
 
@@ -33,28 +33,29 @@ static const uint qt_meta_data_QgsLegend[] = {
  // slots: signature, parameters, type, tag, flags
       80,   40,   10,   10, 0x0a,
      110,  103,   10,   10, 0x0a,
-     142,  138,   10,   10, 0x0a,
-     173,   10,   10,   10, 0x0a,
-     192,  185,   10,   10, 0x0a,
-     208,   10,   10,   10, 0x0a,
-     219,   10,   10,   10, 0x0a,
-     240,   10,   10,   10, 0x0a,
-     266,   10,   10,   10, 0x0a,
-     294,   10,   10,   10, 0x0a,
-     314,   10,   10,   10, 0x0a,
-     342,   10,   10,   10, 0x0a,
-     360,   10,   10,   10, 0x0a,
-     384,   10,   10,   10, 0x0a,
-     412,   10,   10,   10, 0x0a,
-     454,  440,   10,   10, 0x08,
-     501,   10,   10,   10, 0x08,
-     521,   10,   10,   10, 0x08,
-     533,   10,   10,   10, 0x08,
-     556,  547,   10,   10, 0x08,
-     612,  595,   10,   10, 0x08,
-     672,   10,   10,   10, 0x08,
-     685,   10,   10,   10, 0x08,
-     706,   10,   10,   10, 0x08,
+     153,  138,   10,   10, 0x0a,
+     193,  189,   10,   10, 0x2a,
+     224,   10,   10,   10, 0x0a,
+     243,  236,   10,   10, 0x0a,
+     259,   10,   10,   10, 0x0a,
+     270,   10,   10,   10, 0x0a,
+     291,   10,   10,   10, 0x0a,
+     317,   10,   10,   10, 0x0a,
+     345,   10,   10,   10, 0x0a,
+     365,   10,   10,   10, 0x0a,
+     393,   10,   10,   10, 0x0a,
+     411,   10,   10,   10, 0x0a,
+     435,   10,   10,   10, 0x0a,
+     463,   10,   10,   10, 0x0a,
+     505,  491,   10,   10, 0x08,
+     552,   10,   10,   10, 0x08,
+     572,   10,   10,   10, 0x08,
+     584,   10,   10,   10, 0x08,
+     607,  598,   10,   10, 0x08,
+     663,  646,   10,   10, 0x08,
+     723,   10,   10,   10, 0x08,
+     736,   10,   10,   10, 0x08,
+     757,   10,   10,   10, 0x08,
 
        0        // eod
 };
@@ -63,8 +64,9 @@ static const char qt_meta_stringdata_QgsLegend[] = {
     "QgsLegend\0\0lv\0zOrderChanged(QgsLegend*)\0"
     "layer\0currentLayerChanged(QgsMapLayer*)\0"
     "addLayer(QgsMapLayer*)\0canvas\0"
-    "setMapCanvas(QgsMapCanvas*)\0key\0"
-    "refreshLayerSymbology(QString)\0"
+    "setMapCanvas(QgsMapCanvas*)\0key,expandItem\0"
+    "refreshLayerSymbology(QString,bool)\0"
+    "key\0refreshLayerSymbology(QString)\0"
     "removeAll()\0select\0selectAll(bool)\0"
     "addGroup()\0removeLayer(QString)\0"
     "readProject(QDomDocument)\0"
@@ -112,30 +114,31 @@ int QgsLegend::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
         case 1: currentLayerChanged((*reinterpret_cast< QgsMapLayer*(*)>(_a[1]))); break;
         case 2: addLayer((*reinterpret_cast< QgsMapLayer*(*)>(_a[1]))); break;
         case 3: setMapCanvas((*reinterpret_cast< QgsMapCanvas*(*)>(_a[1]))); break;
-        case 4: refreshLayerSymbology((*reinterpret_cast< QString(*)>(_a[1]))); break;
-        case 5: removeAll(); break;
-        case 6: selectAll((*reinterpret_cast< bool(*)>(_a[1]))); break;
-        case 7: addGroup(); break;
-        case 8: removeLayer((*reinterpret_cast< QString(*)>(_a[1]))); break;
-        case 9: readProject((*reinterpret_cast< const QDomDocument(*)>(_a[1]))); break;
-        case 10: writeProject((*reinterpret_cast< QDomDocument(*)>(_a[1]))); break;
-        case 11: legendLayerRemove(); break;
-        case 12: legendLayerShowInOverview(); break;
-        case 13: legendLayerZoom(); break;
-        case 14: legendLayerZoomNative(); break;
-        case 15: legendLayerAttributeTable(); break;
-        case 16: legendLayerShowProperties(); break;
-        case 17: handleRightClickEvent((*reinterpret_cast< QTreeWidgetItem*(*)>(_a[1])),(*reinterpret_cast< const QPoint(*)>(_a[2]))); break;
-        case 18: legendGroupRemove(); break;
-        case 19: expandAll(); break;
-        case 20: collapseAll(); break;
-        case 21: handleItemChange((*reinterpret_cast< QTreeWidgetItem*(*)>(_a[1])),(*reinterpret_cast< int(*)>(_a[2]))); break;
-        case 22: handleCurrentItemChanged((*reinterpret_cast< QTreeWidgetItem*(*)>(_a[1])),(*reinterpret_cast< QTreeWidgetItem*(*)>(_a[2]))); break;
-        case 23: openEditor(); break;
-        case 24: makeToTopLevelItem(); break;
-        case 25: showLegendLayerFileGroups(); break;
+        case 4: refreshLayerSymbology((*reinterpret_cast< QString(*)>(_a[1])),(*reinterpret_cast< bool(*)>(_a[2]))); break;
+        case 5: refreshLayerSymbology((*reinterpret_cast< QString(*)>(_a[1]))); break;
+        case 6: removeAll(); break;
+        case 7: selectAll((*reinterpret_cast< bool(*)>(_a[1]))); break;
+        case 8: addGroup(); break;
+        case 9: removeLayer((*reinterpret_cast< QString(*)>(_a[1]))); break;
+        case 10: readProject((*reinterpret_cast< const QDomDocument(*)>(_a[1]))); break;
+        case 11: writeProject((*reinterpret_cast< QDomDocument(*)>(_a[1]))); break;
+        case 12: legendLayerRemove(); break;
+        case 13: legendLayerShowInOverview(); break;
+        case 14: legendLayerZoom(); break;
+        case 15: legendLayerZoomNative(); break;
+        case 16: legendLayerAttributeTable(); break;
+        case 17: legendLayerShowProperties(); break;
+        case 18: handleRightClickEvent((*reinterpret_cast< QTreeWidgetItem*(*)>(_a[1])),(*reinterpret_cast< const QPoint(*)>(_a[2]))); break;
+        case 19: legendGroupRemove(); break;
+        case 20: expandAll(); break;
+        case 21: collapseAll(); break;
+        case 22: handleItemChange((*reinterpret_cast< QTreeWidgetItem*(*)>(_a[1])),(*reinterpret_cast< int(*)>(_a[2]))); break;
+        case 23: handleCurrentItemChanged((*reinterpret_cast< QTreeWidgetItem*(*)>(_a[1])),(*reinterpret_cast< QTreeWidgetItem*(*)>(_a[2]))); break;
+        case 24: openEditor(); break;
+        case 25: makeToTopLevelItem(); break;
+        case 26: showLegendLayerFileGroups(); break;
         }
-        _id -= 26;
+        _id -= 27;
     }
     return _id;
 }

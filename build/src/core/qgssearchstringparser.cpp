@@ -70,7 +70,7 @@
      COMPARISON = 259,
      STRING = 260,
      COLUMN_REF = 261,
-     UNKNOWN_CHARACTER = 262,
+     Unknown_CHARACTER = 262,
      NOT = 263,
      AND = 264,
      OR = 265,
@@ -82,7 +82,7 @@
 #define COMPARISON 259
 #define STRING 260
 #define COLUMN_REF 261
-#define UNKNOWN_CHARACTER 262
+#define Unknown_CHARACTER 262
 #define NOT 263
 #define AND 264
 #define OR 265
@@ -92,11 +92,14 @@
 
 
 /* Copy the first part of user declarations.  */
-#line 20 "/Users/bhattgopal/dev/cpp/qgis0.9/src/core/qgssearchstringparser.yy"
+#line 20 "/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgssearchstringparser.yy"
 
 #include <qglobal.h>
 #include <QList>
 #include "qgssearchtreenode.h"
+
+// don't redeclare malloc/free
+#define YYINCLUDED_STDLIB_H 1
 
 /** returns parsed tree, otherwise returns NULL and sets parserErrorMsg
     (interface function to be called from QgsSearchString) 
@@ -145,10 +148,10 @@ void addToTmpNodes(QgsSearchTreeNode* node);
 
 #if ! defined YYSTYPE && ! defined YYSTYPE_IS_DECLARED
 typedef union YYSTYPE
-#line 52 "/Users/bhattgopal/dev/cpp/qgis0.9/src/core/qgssearchstringparser.yy"
+#line 55 "/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgssearchstringparser.yy"
 { QgsSearchTreeNode* node; double number; QgsSearchTreeNode::Operator op; }
 /* Line 193 of yacc.c.  */
-#line 152 "/Users/bhattgopal/dev/cpp/qgis0.9/build/src/core/qgssearchstringparser.cpp"
+#line 155 "/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/qgssearchstringparser.cpp"
 	YYSTYPE;
 # define yystype YYSTYPE /* obsolescent; will be withdrawn */
 # define YYSTYPE_IS_DECLARED 1
@@ -161,7 +164,7 @@ typedef union YYSTYPE
 
 
 /* Line 216 of yacc.c.  */
-#line 165 "/Users/bhattgopal/dev/cpp/qgis0.9/build/src/core/qgssearchstringparser.cpp"
+#line 168 "/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/qgssearchstringparser.cpp"
 
 #ifdef short
 # undef short
@@ -449,8 +452,8 @@ static const yytype_int8 yyrhs[] =
 /* YYRLINE[YYN] -- source line where rule number YYN was defined.  */
 static const yytype_uint8 yyrline[] =
 {
-       0,    93,    93,    97,    98,    99,   100,   101,   106,   110,
-     114,   115,   116,   117,   118,   119,   120,   121,   122,   123
+       0,    96,    96,   100,   101,   102,   103,   104,   109,   113,
+     117,   118,   119,   120,   121,   122,   123,   124,   125,   126
 };
 #endif
 
@@ -460,7 +463,7 @@ static const yytype_uint8 yyrline[] =
 static const char *const yytname[] =
 {
   "$end", "error", "$undefined", "NUMBER", "COMPARISON", "STRING",
-  "COLUMN_REF", "UNKNOWN_CHARACTER", "NOT", "AND", "OR", "'*'", "'/'",
+  "COLUMN_REF", "Unknown_CHARACTER", "NOT", "AND", "OR", "'*'", "'/'",
   "'+'", "'-'", "UMINUS", "'('", "')'", "$accept", "root", "search_cond",
   "predicate", "comp_predicate", "scalar_exp", 0
 };
@@ -1373,88 +1376,88 @@ yyreduce:
   switch (yyn)
     {
         case 2:
-#line 93 "/Users/bhattgopal/dev/cpp/qgis0.9/src/core/qgssearchstringparser.yy"
+#line 96 "/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgssearchstringparser.yy"
     { /*gParserRootNode = $1;*/ ;}
     break;
 
   case 3:
-#line 97 "/Users/bhattgopal/dev/cpp/qgis0.9/src/core/qgssearchstringparser.yy"
+#line 100 "/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgssearchstringparser.yy"
     { (yyval.node) = new QgsSearchTreeNode(QgsSearchTreeNode::opOR,  (yyvsp[(1) - (3)].node), (yyvsp[(3) - (3)].node)); joinTmpNodes((yyval.node),(yyvsp[(1) - (3)].node),(yyvsp[(3) - (3)].node)); ;}
     break;
 
   case 4:
-#line 98 "/Users/bhattgopal/dev/cpp/qgis0.9/src/core/qgssearchstringparser.yy"
+#line 101 "/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgssearchstringparser.yy"
     { (yyval.node) = new QgsSearchTreeNode(QgsSearchTreeNode::opAND, (yyvsp[(1) - (3)].node), (yyvsp[(3) - (3)].node)); joinTmpNodes((yyval.node),(yyvsp[(1) - (3)].node),(yyvsp[(3) - (3)].node)); ;}
     break;
 
   case 5:
-#line 99 "/Users/bhattgopal/dev/cpp/qgis0.9/src/core/qgssearchstringparser.yy"
+#line 102 "/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgssearchstringparser.yy"
     { (yyval.node) = new QgsSearchTreeNode(QgsSearchTreeNode::opNOT, (yyvsp[(2) - (2)].node),  0); joinTmpNodes((yyval.node),(yyvsp[(2) - (2)].node), 0); ;}
     break;
 
   case 6:
-#line 100 "/Users/bhattgopal/dev/cpp/qgis0.9/src/core/qgssearchstringparser.yy"
+#line 103 "/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgssearchstringparser.yy"
     { (yyval.node) = (yyvsp[(2) - (3)].node); ;}
     break;
 
   case 9:
-#line 110 "/Users/bhattgopal/dev/cpp/qgis0.9/src/core/qgssearchstringparser.yy"
+#line 113 "/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgssearchstringparser.yy"
     { (yyval.node) = new QgsSearchTreeNode((yyvsp[(2) - (3)].op), (yyvsp[(1) - (3)].node), (yyvsp[(3) - (3)].node)); joinTmpNodes((yyval.node),(yyvsp[(1) - (3)].node),(yyvsp[(3) - (3)].node)); ;}
     break;
 
   case 10:
-#line 114 "/Users/bhattgopal/dev/cpp/qgis0.9/src/core/qgssearchstringparser.yy"
+#line 117 "/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgssearchstringparser.yy"
     { (yyval.node) = new QgsSearchTreeNode(QgsSearchTreeNode::opMUL,  (yyvsp[(1) - (3)].node), (yyvsp[(3) - (3)].node)); joinTmpNodes((yyval.node),(yyvsp[(1) - (3)].node),(yyvsp[(3) - (3)].node)); ;}
     break;
 
   case 11:
-#line 115 "/Users/bhattgopal/dev/cpp/qgis0.9/src/core/qgssearchstringparser.yy"
+#line 118 "/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgssearchstringparser.yy"
     { (yyval.node) = new QgsSearchTreeNode(QgsSearchTreeNode::opDIV,  (yyvsp[(1) - (3)].node), (yyvsp[(3) - (3)].node)); joinTmpNodes((yyval.node),(yyvsp[(1) - (3)].node),(yyvsp[(3) - (3)].node)); ;}
     break;
 
   case 12:
-#line 116 "/Users/bhattgopal/dev/cpp/qgis0.9/src/core/qgssearchstringparser.yy"
+#line 119 "/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgssearchstringparser.yy"
     { (yyval.node) = new QgsSearchTreeNode(QgsSearchTreeNode::opPLUS, (yyvsp[(1) - (3)].node), (yyvsp[(3) - (3)].node)); joinTmpNodes((yyval.node),(yyvsp[(1) - (3)].node),(yyvsp[(3) - (3)].node)); ;}
     break;
 
   case 13:
-#line 117 "/Users/bhattgopal/dev/cpp/qgis0.9/src/core/qgssearchstringparser.yy"
+#line 120 "/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgssearchstringparser.yy"
     { (yyval.node) = new QgsSearchTreeNode(QgsSearchTreeNode::opMINUS,(yyvsp[(1) - (3)].node), (yyvsp[(3) - (3)].node)); joinTmpNodes((yyval.node),(yyvsp[(1) - (3)].node),(yyvsp[(3) - (3)].node)); ;}
     break;
 
   case 14:
-#line 118 "/Users/bhattgopal/dev/cpp/qgis0.9/src/core/qgssearchstringparser.yy"
+#line 121 "/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgssearchstringparser.yy"
     { (yyval.node) = (yyvsp[(2) - (3)].node); ;}
     break;
 
   case 15:
-#line 119 "/Users/bhattgopal/dev/cpp/qgis0.9/src/core/qgssearchstringparser.yy"
+#line 122 "/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgssearchstringparser.yy"
     { (yyval.node) = (yyvsp[(2) - (2)].node); ;}
     break;
 
   case 16:
-#line 120 "/Users/bhattgopal/dev/cpp/qgis0.9/src/core/qgssearchstringparser.yy"
+#line 123 "/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgssearchstringparser.yy"
     { (yyval.node) = (yyvsp[(2) - (2)].node); if ((yyval.node)->type() == QgsSearchTreeNode::tNumber) (yyval.node)->setNumber(- (yyval.node)->number()); ;}
     break;
 
   case 17:
-#line 121 "/Users/bhattgopal/dev/cpp/qgis0.9/src/core/qgssearchstringparser.yy"
+#line 124 "/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgssearchstringparser.yy"
     { (yyval.node) = new QgsSearchTreeNode((yyvsp[(1) - (1)].number));        addToTmpNodes((yyval.node)); ;}
     break;
 
   case 18:
-#line 122 "/Users/bhattgopal/dev/cpp/qgis0.9/src/core/qgssearchstringparser.yy"
+#line 125 "/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgssearchstringparser.yy"
     { (yyval.node) = new QgsSearchTreeNode(QString::fromUtf8(yytext), 0); addToTmpNodes((yyval.node)); ;}
     break;
 
   case 19:
-#line 123 "/Users/bhattgopal/dev/cpp/qgis0.9/src/core/qgssearchstringparser.yy"
+#line 126 "/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgssearchstringparser.yy"
     { (yyval.node) = new QgsSearchTreeNode(QString::fromUtf8(yytext), 1); addToTmpNodes((yyval.node)); ;}
     break;
 
 
 /* Line 1267 of yacc.c.  */
-#line 1458 "/Users/bhattgopal/dev/cpp/qgis0.9/build/src/core/qgssearchstringparser.cpp"
+#line 1461 "/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/qgssearchstringparser.cpp"
       default: break;
     }
   YY_SYMBOL_PRINT ("-> $$ =", yyr1[yyn], &yyval, &yyloc);
@@ -1668,7 +1671,7 @@ yyreturn:
 }
 
 
-#line 126 "/Users/bhattgopal/dev/cpp/qgis0.9/src/core/qgssearchstringparser.yy"
+#line 129 "/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgssearchstringparser.yy"
 
 
 void addToTmpNodes(QgsSearchTreeNode* node)

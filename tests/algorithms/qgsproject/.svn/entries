@@ -1,15 +1,15 @@
 8
 
 dir
-7809
-https://svn.qgis.org/repos/qgis/branches/Release-0_9_0/tests/algorithms/qgsproject
-https://svn.qgis.org/repos/qgis
+10938
+https://svn.osgeo.org/qgis/branches/Release-1_0_2/tests/algorithms/qgsproject
+https://svn.osgeo.org/qgis
 
 
 
-2007-09-16T20:34:54.819737Z
-7205
-gsherman
+2008-10-10T20:02:22.493155Z
+9471
+jef
 has-props
 
 svn:special svn:externals svn:needs-lock
@@ -32,11 +32,11 @@ file
 
 
 
-2007-12-24T08:18:14.000000Z
-06cab5f340193f0521c7313726f54c52
-2007-09-16T20:34:54.819737Z
-7205
-gsherman
+2009-06-17T07:50:00.000000Z
+a650313da587a857e5f2f59b6ca7d98d
+2008-08-27T12:57:47.259768Z
+9189
+jef
 has-props
 
 projecttest.h
@@ -45,11 +45,11 @@ file
 
 
 
-2007-12-24T08:18:14.000000Z
-1bd6f802047c8c832dcb2bef00f3f866
-2007-09-16T20:34:54.819737Z
-7205
-gsherman
+2009-06-17T07:50:00.000000Z
+ce3337a1444b0157b354f22b2ccedea5
+2008-10-10T20:02:22.493155Z
+9471
+jef
 has-props
 
 .cvsignore
@@ -58,7 +58,7 @@ file
 
 
 
-2007-12-24T08:18:14.000000Z
+2009-06-17T07:50:00.000000Z
 a8f373c9089da673e120c99f2ba757b7
 2005-02-28T05:50:59.000000Z
 2876
@@ -71,7 +71,7 @@ file
 
 
 
-2007-12-24T08:18:14.000000Z
+2009-06-17T07:50:00.000000Z
 bf21c57ec89ac9b9c3e5f099c5c0da96
 2005-01-19T20:52:26.000000Z
 2670

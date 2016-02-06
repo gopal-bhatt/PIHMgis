@@ -1,23 +1,23 @@
 K 25
 svn:wc:ra_dav:version-url
-V 85
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/gps_importer/sample_data
+V 80
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/gps_importer/sample_data
 END
 garmin_dump_sample.txt
 K 25
 svn:wc:ra_dav:version-url
-V 108
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/gps_importer/sample_data/garmin_dump_sample.txt
+V 103
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/gps_importer/sample_data/garmin_dump_sample.txt
 END
 tracks.gpx
 K 25
 svn:wc:ra_dav:version-url
-V 96
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/gps_importer/sample_data/tracks.gpx
+V 91
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/gps_importer/sample_data/tracks.gpx
 END
 waypoints.gpx
 K 25
 svn:wc:ra_dav:version-url
-V 99
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/gps_importer/sample_data/waypoints.gpx
+V 94
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/gps_importer/sample_data/waypoints.gpx
 END

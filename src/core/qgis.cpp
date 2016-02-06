@@ -1,6 +1,6 @@
 /***************************************************************************
-                                qgis.cpp 
-                       
+                                qgis.cpp
+
                              -------------------
     begin                : 2007
     copyright            : (C) 2007 by Gary E. Sherman
@@ -26,16 +26,17 @@
 //
 
 // Version string
-const char* QGis::qgisVersion = VERSION;
+const char* QGis::QGIS_VERSION = VERSION;
 
 // SVN version
-const char* QGis::qgisSvnVersion = QGSSVNVERSION;
-  
-// Version number used for comparing versions using the "Check QGIS Version" function
-const int QGis::qgisVersionInt =900;
-  
+const char* QGis::QGIS_SVN_VERSION = QGSSVNVERSION;
+
+// Version number used for comparing versions using the
+// "Check QGIS Version" function
+const int QGis::QGIS_VERSION_INT = VERSION_INT;
+
 // Release name
-const char* QGis::qgisReleaseName = "Ganymede";
+const char* QGis::QGIS_RELEASE_NAME = RELEASE_NAME;
 
 const char* QGis::qgisVectorGeometryType[] =
 {
@@ -56,5 +57,5 @@ const char* QGis::qgisFeatureTypes[] =
   "WKBMultiPolygon"
 };
 
-const double QGis::DEFAULT_IDENTIFY_RADIUS=0.5;
+const double QGis::DEFAULT_IDENTIFY_RADIUS = 0.5;
 

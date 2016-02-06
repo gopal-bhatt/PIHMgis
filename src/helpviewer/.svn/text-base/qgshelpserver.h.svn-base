@@ -18,41 +18,43 @@
 /* $Id$ */
 #ifndef QGSHELPSERVER_H
 #define QGSHELPSERVER_H
-#include <q3serversocket.h>
-#include <q3socket.h>
+#include <QTcpServer>
+#include <QTcpSocket>
 
 /*!
  * \class QgsHelpContextServer
  * \brief Listens for localhost connection and creates socket.
  */
-class QgsHelpContextServer : public Q3ServerSocket
+class QgsHelpContextServer : public QTcpServer
 {
-  Q_OBJECT
-public:
-  QgsHelpContextServer(QObject* parent = 0);
-  ~QgsHelpContextServer();
-  virtual void newConnection(int socket);
+    Q_OBJECT
+  public:
+    QgsHelpContextServer( QObject *parent = 0 );
+    ~QgsHelpContextServer();
 
-signals:
-  void setContext(const QString&);
+  public slots:
+    void incomingConnection( int socket );
+
+  signals:
+    void setContext( const QString& );
 };
 
 /*!
  * \class QgsHelpContextSocket
  * \brief Receives and passes context numbers to viewer.
  */
-class QgsHelpContextSocket : public Q3Socket
+class QgsHelpContextSocket : public QTcpSocket
 {
-  Q_OBJECT
-public:
-  QgsHelpContextSocket(int socket, QObject *parent = 0);
-  ~QgsHelpContextSocket();
+    Q_OBJECT
+  public:
+    QgsHelpContextSocket( int socket, QObject *parent = 0 );
+    ~QgsHelpContextSocket();
 
-signals:
-  void setContext(const QString&);
+  signals:
+    void setContext( const QString& );
 
-private slots:
-  void readClient();
+  private slots:
+    void readClient();
 };
 
 #endif // QGSHELPSERVER_H

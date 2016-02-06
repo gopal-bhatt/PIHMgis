@@ -15,56 +15,56 @@
  *   (at your option) any later version.                                   *
  *                                                                         *
  ***************************************************************************/
-/* $Id: qgspostgisbox3d.h 6415 2007-01-09 02:39:15Z wonder $ */
+/* $Id: qgspostgisbox3d.h 9605 2008-11-09 00:14:12Z timlinux $ */
 
 #ifndef QGSPOSTGISBOX3D_H
 #define QGSPOSTGISBOX3D_H
 
 #include <string>
 
-#include "qgsrect.h"
+#include "qgsrectangle.h"
 
 /*!
  * \brief   PostgreSQL/PostGIS "box3d" representation and transformation
    \author  Brendan Morley
    \date    March 2005
 
-   
+
    This object is designed to represent and transform the PostGIS "box3d"
    data type.
-   
-   \note    Only 2 dimensions are handled at this time.
-     
- */ 
 
-class QgsPostGisBox3d : public QgsRect
+   \note    Only 2 dimensions are handled at this time.
+
+ */
+
+class QgsPostGisBox3d : public QgsRectangle
 {
 
-public:
+  public:
 
-  /*!  Constructor from a string
-       \param   box3d  The box3d formed as a PostGIS SQL string,
-                       formed by functions such as PQgetvalue
-   */
-  
-  QgsPostGisBox3d( std::string box3d );
+    /*!  Constructor from a string
+         \param   box3d  The box3d formed as a PostGIS SQL string,
+                         formed by functions such as PQgetvalue
+     */
 
-  
-  ~QgsPostGisBox3d();
-  
-  
-  /*!  Returns this object as a PostGIS SQL-compatible QString
-   */
+    QgsPostGisBox3d( std::string box3d );
 
-  
-  QString stringRepAsBox3d();
-  
-  
-protected:
-  
-  double zmin;
-  double zmax;
-    
+
+    ~QgsPostGisBox3d();
+
+
+    /*!  Returns this object as a PostGIS SQL-compatible QString
+     */
+
+
+    QString toStringAsBox3d();
+
+
+  protected:
+
+    double zmin;
+    double zmax;
+
 };
 
 

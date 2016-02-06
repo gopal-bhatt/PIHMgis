@@ -31,10 +31,10 @@ RM = /usr/bin/cmake -E remove -f
 CMAKE_EDIT_COMMAND = /usr/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0
+CMAKE_SOURCE_DIR = /Users/bhattgopal/dev/cpp/qgis_1.0.2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build
+CMAKE_BINARY_DIR = /Users/bhattgopal/dev/cpp/qgis_1.0.2/build
 
 # Include any dependencies generated for this target.
 include src/helpviewer/CMakeFiles/qgis_help.dir/depend.make
@@ -50,17 +50,17 @@ src/helpviewer/CMakeFiles/qgis_help.dir/depend.make.mark: ../src/helpviewer/main
 
 src/helpviewer/CMakeFiles/qgis_help.dir/main.o: src/helpviewer/CMakeFiles/qgis_help.dir/flags.make
 src/helpviewer/CMakeFiles/qgis_help.dir/main.o: ../src/helpviewer/main.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/helpviewer/CMakeFiles/qgis_help.dir/main.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/helpviewer/CMakeFiles/qgis_help.dir/main.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/helpviewer/main.cpp
+	/usr/bin/c++   $(CXX_FLAGS) -o src/helpviewer/CMakeFiles/qgis_help.dir/main.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/helpviewer/main.cpp
 
 src/helpviewer/CMakeFiles/qgis_help.dir/main.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/helpviewer/CMakeFiles/qgis_help.dir/main.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/helpviewer/main.cpp > src/helpviewer/CMakeFiles/qgis_help.dir/main.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/helpviewer/main.cpp > src/helpviewer/CMakeFiles/qgis_help.dir/main.i
 
 src/helpviewer/CMakeFiles/qgis_help.dir/main.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/helpviewer/CMakeFiles/qgis_help.dir/main.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/helpviewer/main.cpp -o src/helpviewer/CMakeFiles/qgis_help.dir/main.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/helpviewer/main.cpp -o src/helpviewer/CMakeFiles/qgis_help.dir/main.s
 
 src/helpviewer/CMakeFiles/qgis_help.dir/main.o.requires:
 
@@ -74,17 +74,17 @@ src/helpviewer/CMakeFiles/qgis_help.dir/depend.make.mark: ../src/helpviewer/qgsh
 
 src/helpviewer/CMakeFiles/qgis_help.dir/qgshelpserver.o: src/helpviewer/CMakeFiles/qgis_help.dir/flags.make
 src/helpviewer/CMakeFiles/qgis_help.dir/qgshelpserver.o: ../src/helpviewer/qgshelpserver.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/helpviewer/CMakeFiles/qgis_help.dir/qgshelpserver.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/helpviewer/CMakeFiles/qgis_help.dir/qgshelpserver.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/helpviewer/qgshelpserver.cpp
+	/usr/bin/c++   $(CXX_FLAGS) -o src/helpviewer/CMakeFiles/qgis_help.dir/qgshelpserver.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/helpviewer/qgshelpserver.cpp
 
 src/helpviewer/CMakeFiles/qgis_help.dir/qgshelpserver.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/helpviewer/CMakeFiles/qgis_help.dir/qgshelpserver.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/helpviewer/qgshelpserver.cpp > src/helpviewer/CMakeFiles/qgis_help.dir/qgshelpserver.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/helpviewer/qgshelpserver.cpp > src/helpviewer/CMakeFiles/qgis_help.dir/qgshelpserver.i
 
 src/helpviewer/CMakeFiles/qgis_help.dir/qgshelpserver.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/helpviewer/CMakeFiles/qgis_help.dir/qgshelpserver.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/helpviewer/qgshelpserver.cpp -o src/helpviewer/CMakeFiles/qgis_help.dir/qgshelpserver.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/helpviewer/qgshelpserver.cpp -o src/helpviewer/CMakeFiles/qgis_help.dir/qgshelpserver.s
 
 src/helpviewer/CMakeFiles/qgis_help.dir/qgshelpserver.o.requires:
 
@@ -98,17 +98,17 @@ src/helpviewer/CMakeFiles/qgis_help.dir/depend.make.mark: ../src/helpviewer/qgsh
 
 src/helpviewer/CMakeFiles/qgis_help.dir/qgshelpviewer.o: src/helpviewer/CMakeFiles/qgis_help.dir/flags.make
 src/helpviewer/CMakeFiles/qgis_help.dir/qgshelpviewer.o: ../src/helpviewer/qgshelpviewer.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_3)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/helpviewer/CMakeFiles/qgis_help.dir/qgshelpviewer.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/helpviewer/CMakeFiles/qgis_help.dir/qgshelpviewer.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/helpviewer/qgshelpviewer.cpp
+	/usr/bin/c++   $(CXX_FLAGS) -o src/helpviewer/CMakeFiles/qgis_help.dir/qgshelpviewer.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/helpviewer/qgshelpviewer.cpp
 
 src/helpviewer/CMakeFiles/qgis_help.dir/qgshelpviewer.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/helpviewer/CMakeFiles/qgis_help.dir/qgshelpviewer.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/helpviewer/qgshelpviewer.cpp > src/helpviewer/CMakeFiles/qgis_help.dir/qgshelpviewer.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/helpviewer/qgshelpviewer.cpp > src/helpviewer/CMakeFiles/qgis_help.dir/qgshelpviewer.i
 
 src/helpviewer/CMakeFiles/qgis_help.dir/qgshelpviewer.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/helpviewer/CMakeFiles/qgis_help.dir/qgshelpviewer.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/helpviewer/qgshelpviewer.cpp -o src/helpviewer/CMakeFiles/qgis_help.dir/qgshelpviewer.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/helpviewer/qgshelpviewer.cpp -o src/helpviewer/CMakeFiles/qgis_help.dir/qgshelpviewer.s
 
 src/helpviewer/CMakeFiles/qgis_help.dir/qgshelpviewer.o.requires:
 
@@ -122,17 +122,17 @@ src/helpviewer/CMakeFiles/qgis_help.dir/depend.make.mark: src/helpviewer/moc_qgs
 
 src/helpviewer/CMakeFiles/qgis_help.dir/moc_qgshelpserver.o: src/helpviewer/CMakeFiles/qgis_help.dir/flags.make
 src/helpviewer/CMakeFiles/qgis_help.dir/moc_qgshelpserver.o: src/helpviewer/moc_qgshelpserver.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_4)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/helpviewer/CMakeFiles/qgis_help.dir/moc_qgshelpserver.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/helpviewer/CMakeFiles/qgis_help.dir/moc_qgshelpserver.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/helpviewer/moc_qgshelpserver.cxx
+	/usr/bin/c++   $(CXX_FLAGS) -o src/helpviewer/CMakeFiles/qgis_help.dir/moc_qgshelpserver.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/helpviewer/moc_qgshelpserver.cxx
 
 src/helpviewer/CMakeFiles/qgis_help.dir/moc_qgshelpserver.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/helpviewer/CMakeFiles/qgis_help.dir/moc_qgshelpserver.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/helpviewer/moc_qgshelpserver.cxx > src/helpviewer/CMakeFiles/qgis_help.dir/moc_qgshelpserver.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/helpviewer/moc_qgshelpserver.cxx > src/helpviewer/CMakeFiles/qgis_help.dir/moc_qgshelpserver.i
 
 src/helpviewer/CMakeFiles/qgis_help.dir/moc_qgshelpserver.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/helpviewer/CMakeFiles/qgis_help.dir/moc_qgshelpserver.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/helpviewer/moc_qgshelpserver.cxx -o src/helpviewer/CMakeFiles/qgis_help.dir/moc_qgshelpserver.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/helpviewer/moc_qgshelpserver.cxx -o src/helpviewer/CMakeFiles/qgis_help.dir/moc_qgshelpserver.s
 
 src/helpviewer/CMakeFiles/qgis_help.dir/moc_qgshelpserver.o.requires:
 
@@ -146,17 +146,17 @@ src/helpviewer/CMakeFiles/qgis_help.dir/depend.make.mark: src/helpviewer/moc_qgs
 
 src/helpviewer/CMakeFiles/qgis_help.dir/moc_qgshelpviewer.o: src/helpviewer/CMakeFiles/qgis_help.dir/flags.make
 src/helpviewer/CMakeFiles/qgis_help.dir/moc_qgshelpviewer.o: src/helpviewer/moc_qgshelpviewer.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_5)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/helpviewer/CMakeFiles/qgis_help.dir/moc_qgshelpviewer.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/helpviewer/CMakeFiles/qgis_help.dir/moc_qgshelpviewer.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/helpviewer/moc_qgshelpviewer.cxx
+	/usr/bin/c++   $(CXX_FLAGS) -o src/helpviewer/CMakeFiles/qgis_help.dir/moc_qgshelpviewer.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/helpviewer/moc_qgshelpviewer.cxx
 
 src/helpviewer/CMakeFiles/qgis_help.dir/moc_qgshelpviewer.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/helpviewer/CMakeFiles/qgis_help.dir/moc_qgshelpviewer.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/helpviewer/moc_qgshelpviewer.cxx > src/helpviewer/CMakeFiles/qgis_help.dir/moc_qgshelpviewer.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/helpviewer/moc_qgshelpviewer.cxx > src/helpviewer/CMakeFiles/qgis_help.dir/moc_qgshelpviewer.i
 
 src/helpviewer/CMakeFiles/qgis_help.dir/moc_qgshelpviewer.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/helpviewer/CMakeFiles/qgis_help.dir/moc_qgshelpviewer.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/helpviewer/moc_qgshelpviewer.cxx -o src/helpviewer/CMakeFiles/qgis_help.dir/moc_qgshelpviewer.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/helpviewer/moc_qgshelpviewer.cxx -o src/helpviewer/CMakeFiles/qgis_help.dir/moc_qgshelpviewer.s
 
 src/helpviewer/CMakeFiles/qgis_help.dir/moc_qgshelpviewer.o.requires:
 
@@ -166,19 +166,19 @@ src/helpviewer/CMakeFiles/qgis_help.dir/moc_qgshelpviewer.o.provides: src/helpvi
 src/helpviewer/CMakeFiles/qgis_help.dir/moc_qgshelpviewer.o.provides.build: src/helpviewer/CMakeFiles/qgis_help.dir/moc_qgshelpviewer.o
 
 src/helpviewer/moc_qgshelpserver.cxx: ../src/helpviewer/qgshelpserver.h
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_6)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating moc_qgshelpserver.cxx"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/helpviewer && /Developer/Tools/Qt/moc -I /usr/include -I /Library/Frameworks/Qt3Support.framework/Headers -I /Library/Frameworks/QtSvg.framework/Headers -I /Library/Frameworks/QtGui.framework/Headers -I /Library/Frameworks/QtXml.framework/Headers -I /Library/Frameworks/QtSql.framework/Headers -I /Library/Frameworks/QtNetwork.framework/Headers -I /Library/Frameworks/QtCore.framework/Headers -I /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/helpviewer/moc_qgshelpserver.cxx /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/helpviewer/qgshelpserver.h
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/helpviewer && /Developer/Tools/Qt/moc -I /usr/include -I /Library/Frameworks/Qt3Support.framework/Headers -I /Library/Frameworks/QtSvg.framework/Headers -I /Library/Frameworks/QtGui.framework/Headers -I /Library/Frameworks/QtXml.framework/Headers -I /Library/Frameworks/QtSql.framework/Headers -I /Library/Frameworks/QtNetwork.framework/Headers -I /Library/Frameworks/QtCore.framework/Headers -I /Users/bhattgopal/dev/cpp/qgis_1.0.2/build -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/helpviewer/moc_qgshelpserver.cxx /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/helpviewer/qgshelpserver.h
 
 src/helpviewer/moc_qgshelpviewer.cxx: ../src/helpviewer/qgshelpviewer.h
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_7)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_7)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating moc_qgshelpviewer.cxx"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/helpviewer && /Developer/Tools/Qt/moc -I /usr/include -I /Library/Frameworks/Qt3Support.framework/Headers -I /Library/Frameworks/QtSvg.framework/Headers -I /Library/Frameworks/QtGui.framework/Headers -I /Library/Frameworks/QtXml.framework/Headers -I /Library/Frameworks/QtSql.framework/Headers -I /Library/Frameworks/QtNetwork.framework/Headers -I /Library/Frameworks/QtCore.framework/Headers -I /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/helpviewer/moc_qgshelpviewer.cxx /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/helpviewer/qgshelpviewer.h
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/helpviewer && /Developer/Tools/Qt/moc -I /usr/include -I /Library/Frameworks/Qt3Support.framework/Headers -I /Library/Frameworks/QtSvg.framework/Headers -I /Library/Frameworks/QtGui.framework/Headers -I /Library/Frameworks/QtXml.framework/Headers -I /Library/Frameworks/QtSql.framework/Headers -I /Library/Frameworks/QtNetwork.framework/Headers -I /Library/Frameworks/QtCore.framework/Headers -I /Users/bhattgopal/dev/cpp/qgis_1.0.2/build -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/helpviewer/moc_qgshelpviewer.cxx /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/helpviewer/qgshelpviewer.h
 
 src/helpviewer/ui_qgshelpviewerbase.h: ../src/helpviewer/qgshelpviewerbase.ui
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_8)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_8)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ui_qgshelpviewerbase.h"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/helpviewer && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/helpviewer/ui_qgshelpviewerbase.h /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/helpviewer/qgshelpviewerbase.ui
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/helpviewer && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/helpviewer/ui_qgshelpviewerbase.h /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/helpviewer/qgshelpviewerbase.ui
 
 src/helpviewer/CMakeFiles/qgis_help.dir/depend: src/helpviewer/CMakeFiles/qgis_help.dir/depend.make.mark
 
@@ -186,7 +186,7 @@ src/helpviewer/CMakeFiles/qgis_help.dir/depend.make.mark: src/helpviewer/moc_qgs
 src/helpviewer/CMakeFiles/qgis_help.dir/depend.make.mark: src/helpviewer/moc_qgshelpviewer.cxx
 src/helpviewer/CMakeFiles/qgis_help.dir/depend.make.mark: src/helpviewer/ui_qgshelpviewerbase.h
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --magenta --bold "Scanning dependencies of target qgis_help"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0 /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/helpviewer /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/helpviewer /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/helpviewer/CMakeFiles/qgis_help.dir/DependInfo.cmake
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/bhattgopal/dev/cpp/qgis_1.0.2 /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/helpviewer /Users/bhattgopal/dev/cpp/qgis_1.0.2/build /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/helpviewer /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/helpviewer/CMakeFiles/qgis_help.dir/DependInfo.cmake
 
 # Object files for target qgis_help
 qgis_help_OBJECTS = \
@@ -204,23 +204,20 @@ src/helpviewer/qgis_help.app/Contents/MacOS/qgis_help: src/helpviewer/CMakeFiles
 src/helpviewer/qgis_help.app/Contents/MacOS/qgis_help: src/helpviewer/CMakeFiles/qgis_help.dir/qgshelpviewer.o
 src/helpviewer/qgis_help.app/Contents/MacOS/qgis_help: src/helpviewer/CMakeFiles/qgis_help.dir/moc_qgshelpserver.o
 src/helpviewer/qgis_help.app/Contents/MacOS/qgis_help: src/helpviewer/CMakeFiles/qgis_help.dir/moc_qgshelpviewer.o
-src/helpviewer/qgis_help.app/Contents/MacOS/qgis_help: /Library/Frameworks/Qt3Support.framework
-src/helpviewer/qgis_help.app/Contents/MacOS/qgis_help: /Library/Frameworks/QtSvg.framework
-src/helpviewer/qgis_help.app/Contents/MacOS/qgis_help: /Library/Frameworks/QtGui.framework
-src/helpviewer/qgis_help.app/Contents/MacOS/qgis_help: /Library/Frameworks/QtXml.framework
-src/helpviewer/qgis_help.app/Contents/MacOS/qgis_help: /Library/Frameworks/QtSql.framework
-src/helpviewer/qgis_help.app/Contents/MacOS/qgis_help: /Library/Frameworks/QtNetwork.framework
-src/helpviewer/qgis_help.app/Contents/MacOS/qgis_help: /Library/Frameworks/QtCore.framework
-src/helpviewer/qgis_help.app/Contents/MacOS/qgis_help: /usr/lib/libz.dylib
 src/helpviewer/qgis_help.app/Contents/MacOS/qgis_help: /Library/Frameworks/sqlite3.framework
 src/helpviewer/qgis_help.app/Contents/MacOS/qgis_help: src/core/libqgis_core.dylib
+src/helpviewer/qgis_help.app/Contents/MacOS/qgis_help: /Library/Frameworks/QtCore.framework
+src/helpviewer/qgis_help.app/Contents/MacOS/qgis_help: /Library/Frameworks/QtGui.framework
+src/helpviewer/qgis_help.app/Contents/MacOS/qgis_help: /Library/Frameworks/QtNetwork.framework
+src/helpviewer/qgis_help.app/Contents/MacOS/qgis_help: /Library/Frameworks/QtSvg.framework
+src/helpviewer/qgis_help.app/Contents/MacOS/qgis_help: /Library/Frameworks/QtXml.framework
 src/helpviewer/qgis_help.app/Contents/MacOS/qgis_help: /Library/Frameworks/proj.framework
-src/helpviewer/qgis_help.app/Contents/MacOS/qgis_help: /Library/Frameworks/geos.framework
+src/helpviewer/qgis_help.app/Contents/MacOS/qgis_help: /Library/Frameworks/GEOS.framework/unix/lib/libgeos_c.dylib
 src/helpviewer/qgis_help.app/Contents/MacOS/qgis_help: /Library/Frameworks/GDAL.framework/Versions/1.5/unix/lib/libgdal.dylib
 src/helpviewer/qgis_help.app/Contents/MacOS/qgis_help: src/helpviewer/CMakeFiles/qgis_help.dir/build.make
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable qgis_help.app/Contents/MacOS/qgis_help"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/helpviewer && $(CMAKE_COMMAND) -P CMakeFiles/qgis_help.dir/cmake_clean_target.cmake
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/helpviewer && /usr/bin/c++     -O3 -DNDEBUG -DQT_NO_DEBUG -headerpad_max_install_names -fPIC $(qgis_help_OBJECTS) $(qgis_help_EXTERNAL_OBJECTS)  -o qgis_help.app/Contents/MacOS/qgis_help  -L/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/core -L/Library/Frameworks/GDAL.framework/Versions/1.5/unix/lib -F/Library/Frameworks -framework Qt3Support -framework QtSvg -framework QtGui -framework Carbon -framework QuickTime -framework QtXml -framework QtSql -framework QtNetwork -framework QtCore -lz -framework ApplicationServices -framework sqlite3 -lqgis_core -framework QtCore -framework QtCore -framework QtGui -framework QtGui -framework QtXml -framework QtXml -framework QtSvg -framework QtSvg -framework QtNetwork -framework QtNetwork -framework Qt3Support -framework Qt3Support -framework proj -framework sqlite3 -framework geos -lgdal -framework QtSql -framework QtSql 
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/helpviewer && $(CMAKE_COMMAND) -P CMakeFiles/qgis_help.dir/cmake_clean_target.cmake
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/helpviewer && /usr/bin/c++     -O3 -DNDEBUG -DQT_NO_DEBUG -headerpad_max_install_names -fPIC $(qgis_help_OBJECTS) $(qgis_help_EXTERNAL_OBJECTS)  -o qgis_help.app/Contents/MacOS/qgis_help  -L/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core -L/Library/Frameworks/GEOS.framework/unix/lib -L/Library/Frameworks/GDAL.framework/Versions/1.5/unix/lib -F/Library/Frameworks -framework sqlite3 -lqgis_core -framework QtCore -framework QtGui -framework QtNetwork -framework QtSvg -framework QtXml -framework proj -lgeos_c -lgdal -framework sqlite3 
 
 # Rule to build all files generated by this target.
 src/helpviewer/CMakeFiles/qgis_help.dir/build: src/helpviewer/qgis_help.app/Contents/MacOS/qgis_help
@@ -232,5 +229,5 @@ src/helpviewer/CMakeFiles/qgis_help.dir/requires: src/helpviewer/CMakeFiles/qgis
 src/helpviewer/CMakeFiles/qgis_help.dir/requires: src/helpviewer/CMakeFiles/qgis_help.dir/moc_qgshelpviewer.o.requires
 
 src/helpviewer/CMakeFiles/qgis_help.dir/clean:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/helpviewer && $(CMAKE_COMMAND) -P CMakeFiles/qgis_help.dir/cmake_clean.cmake
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/helpviewer && $(CMAKE_COMMAND) -P CMakeFiles/qgis_help.dir/cmake_clean.cmake
 

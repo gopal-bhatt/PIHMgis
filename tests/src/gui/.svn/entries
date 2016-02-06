@@ -1,0 +1,52 @@
+8
+
+dir
+10938
+https://svn.osgeo.org/qgis/branches/Release-1_0_2/tests/src/gui
+https://svn.osgeo.org/qgis
+
+
+
+2008-08-30T23:51:32.930038Z
+9222
+timlinux
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+c8812cc2-4d05-0410-92ff-de0c093fc19c
+
+testqgsquickprint.cpp
+file
+
+
+
+
+2009-06-17T07:49:59.000000Z
+34bf70d23fed37975425d83eb8e3ec27
+2008-08-05T21:11:58.675335Z
+8997
+timlinux
+
+CMakeLists.txt
+file
+
+
+
+
+2009-06-17T07:49:59.000000Z
+24b42768ad6c9ad787cf090072df6ad6
+2008-08-30T23:51:32.930038Z
+9222
+timlinux
+

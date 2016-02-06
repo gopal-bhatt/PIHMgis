@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
- <!DOCTYPE qgisgrassmodule SYSTEM "http://mrcc.com/qgisgrassmodule.dtd">
- <qgisgrassmodule label="g.proj - Converts coordinate system descriptions (i.e. projection information) between GEOREFERENCED FILE (including GRASS format) and create a NEW LOACATION" module="g.proj">
-    <file key="georef" type="old" />
-	<option key="location" />
- </qgisgrassmodule>
+<!DOCTYPE qgisgrassmodule SYSTEM "http://mrcc.com/qgisgrassmodule.dtd">
 
+<qgisgrassmodule label="Display projection information from a georeferenced file (raster, vector or image) and create a new location based on it" module="g.proj">
+	<file key="georef" type="old" />
+	<option key="location" />
+</qgisgrassmodule>

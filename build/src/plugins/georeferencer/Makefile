@@ -34,10 +34,10 @@ RM = /usr/bin/cmake -E remove -f
 CMAKE_EDIT_COMMAND = /usr/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0
+CMAKE_SOURCE_DIR = /Users/bhattgopal/dev/cpp/qgis_1.0.2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build
+CMAKE_BINARY_DIR = /Users/bhattgopal/dev/cpp/qgis_1.0.2/build
 
 # Include the progress variables for this target.
 include CMakeFiles/progress.make
@@ -48,7 +48,7 @@ include CMakeFiles/progress.make
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/georeferencer && /usr/bin/ccmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/georeferencer && /usr/bin/ccmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 
 # Special rule for the target edit_cache
 edit_cache/fast: edit_cache
@@ -56,17 +56,17 @@ edit_cache/fast: edit_cache
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/georeferencer && /usr/bin/cmake -P cmake_install.cmake
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/georeferencer && /usr/bin/cmake -P cmake_install.cmake
 
 # Special rule for the target install
 install/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/georeferencer && /usr/bin/cmake -P cmake_install.cmake
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/georeferencer && /usr/bin/cmake -P cmake_install.cmake
 
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/georeferencer && /usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/georeferencer && /usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 
 # Special rule for the target install/local
 install/local/fast: install/local
@@ -81,7 +81,7 @@ list_install_components/fast: list_install_components
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/georeferencer && /usr/bin/cpack --config /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CPackConfig.cmake
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/georeferencer && /usr/bin/cpack --config /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CPackConfig.cmake
 
 # Special rule for the target package
 package/fast: package
@@ -89,7 +89,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/georeferencer && /usr/bin/cpack --config /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CPackSourceConfig.cmake
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/georeferencer && /usr/bin/cpack --config /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CPackSourceConfig.cmake
 
 # Special rule for the target package_source
 package_source/fast: package_source
@@ -97,31 +97,31 @@ package_source/fast: package_source
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/georeferencer && /usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/georeferencer && /usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 
 # Special rule for the target rebuild_cache
 rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_ALL_PROGRESS)
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f CMakeFiles/Makefile2 src/plugins/georeferencer/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles 0
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_ALL_PROGRESS)
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f CMakeFiles/Makefile2 src/plugins/georeferencer/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles 0
 
 # The main clean target
 clean:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f CMakeFiles/Makefile2 src/plugins/georeferencer/clean
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f CMakeFiles/Makefile2 src/plugins/georeferencer/clean
 
 # The main clean target
 clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f CMakeFiles/Makefile2 src/plugins/georeferencer/preinstall
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f CMakeFiles/Makefile2 src/plugins/georeferencer/preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f CMakeFiles/Makefile2 src/plugins/georeferencer/preinstall
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f CMakeFiles/Makefile2 src/plugins/georeferencer/preinstall
 
 # clear depends
 depend:
@@ -129,182 +129,194 @@ depend:
 
 # Convenience name for target.
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/rule:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f CMakeFiles/Makefile2 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/rule
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f CMakeFiles/Makefile2 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/rule
 
 # Convenience name for target.
 georefplugin: src/plugins/georeferencer/CMakeFiles/georefplugin.dir/rule
 
 # fast build rule for target.
 georefplugin/fast:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/plugins/georeferencer/CMakeFiles/georefplugin.dir/build.make src/plugins/georeferencer/CMakeFiles/georefplugin.dir/build
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/georeferencer/CMakeFiles/georefplugin.dir/build.make src/plugins/georeferencer/CMakeFiles/georefplugin.dir/build
 
 # target to build an object file
 mapcoordsdialog.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/plugins/georeferencer/CMakeFiles/georefplugin.dir/build.make src/plugins/georeferencer/CMakeFiles/georefplugin.dir/mapcoordsdialog.o
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/georeferencer/CMakeFiles/georefplugin.dir/build.make src/plugins/georeferencer/CMakeFiles/georefplugin.dir/mapcoordsdialog.o
 
 # target to preprocess a source file
 mapcoordsdialog.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/plugins/georeferencer/CMakeFiles/georefplugin.dir/build.make src/plugins/georeferencer/CMakeFiles/georefplugin.dir/mapcoordsdialog.i
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/georeferencer/CMakeFiles/georefplugin.dir/build.make src/plugins/georeferencer/CMakeFiles/georefplugin.dir/mapcoordsdialog.i
 
 # target to generate assembly for a file
 mapcoordsdialog.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/plugins/georeferencer/CMakeFiles/georefplugin.dir/build.make src/plugins/georeferencer/CMakeFiles/georefplugin.dir/mapcoordsdialog.s
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/georeferencer/CMakeFiles/georefplugin.dir/build.make src/plugins/georeferencer/CMakeFiles/georefplugin.dir/mapcoordsdialog.s
 
 # target to build an object file
 moc_mapcoordsdialog.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/plugins/georeferencer/CMakeFiles/georefplugin.dir/build.make src/plugins/georeferencer/CMakeFiles/georefplugin.dir/moc_mapcoordsdialog.o
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/georeferencer/CMakeFiles/georefplugin.dir/build.make src/plugins/georeferencer/CMakeFiles/georefplugin.dir/moc_mapcoordsdialog.o
 
 # target to preprocess a source file
 moc_mapcoordsdialog.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/plugins/georeferencer/CMakeFiles/georefplugin.dir/build.make src/plugins/georeferencer/CMakeFiles/georefplugin.dir/moc_mapcoordsdialog.i
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/georeferencer/CMakeFiles/georefplugin.dir/build.make src/plugins/georeferencer/CMakeFiles/georefplugin.dir/moc_mapcoordsdialog.i
 
 # target to generate assembly for a file
 moc_mapcoordsdialog.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/plugins/georeferencer/CMakeFiles/georefplugin.dir/build.make src/plugins/georeferencer/CMakeFiles/georefplugin.dir/moc_mapcoordsdialog.s
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/georeferencer/CMakeFiles/georefplugin.dir/build.make src/plugins/georeferencer/CMakeFiles/georefplugin.dir/moc_mapcoordsdialog.s
 
 # target to build an object file
 moc_plugin.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/plugins/georeferencer/CMakeFiles/georefplugin.dir/build.make src/plugins/georeferencer/CMakeFiles/georefplugin.dir/moc_plugin.o
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/georeferencer/CMakeFiles/georefplugin.dir/build.make src/plugins/georeferencer/CMakeFiles/georefplugin.dir/moc_plugin.o
 
 # target to preprocess a source file
 moc_plugin.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/plugins/georeferencer/CMakeFiles/georefplugin.dir/build.make src/plugins/georeferencer/CMakeFiles/georefplugin.dir/moc_plugin.i
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/georeferencer/CMakeFiles/georefplugin.dir/build.make src/plugins/georeferencer/CMakeFiles/georefplugin.dir/moc_plugin.i
 
 # target to generate assembly for a file
 moc_plugin.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/plugins/georeferencer/CMakeFiles/georefplugin.dir/build.make src/plugins/georeferencer/CMakeFiles/georefplugin.dir/moc_plugin.s
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/georeferencer/CMakeFiles/georefplugin.dir/build.make src/plugins/georeferencer/CMakeFiles/georefplugin.dir/moc_plugin.s
 
 # target to build an object file
 moc_plugingui.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/plugins/georeferencer/CMakeFiles/georefplugin.dir/build.make src/plugins/georeferencer/CMakeFiles/georefplugin.dir/moc_plugingui.o
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/georeferencer/CMakeFiles/georefplugin.dir/build.make src/plugins/georeferencer/CMakeFiles/georefplugin.dir/moc_plugingui.o
 
 # target to preprocess a source file
 moc_plugingui.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/plugins/georeferencer/CMakeFiles/georefplugin.dir/build.make src/plugins/georeferencer/CMakeFiles/georefplugin.dir/moc_plugingui.i
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/georeferencer/CMakeFiles/georefplugin.dir/build.make src/plugins/georeferencer/CMakeFiles/georefplugin.dir/moc_plugingui.i
 
 # target to generate assembly for a file
 moc_plugingui.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/plugins/georeferencer/CMakeFiles/georefplugin.dir/build.make src/plugins/georeferencer/CMakeFiles/georefplugin.dir/moc_plugingui.s
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/georeferencer/CMakeFiles/georefplugin.dir/build.make src/plugins/georeferencer/CMakeFiles/georefplugin.dir/moc_plugingui.s
 
 # target to build an object file
 moc_qgsgeorefwarpoptionsdialog.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/plugins/georeferencer/CMakeFiles/georefplugin.dir/build.make src/plugins/georeferencer/CMakeFiles/georefplugin.dir/moc_qgsgeorefwarpoptionsdialog.o
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/georeferencer/CMakeFiles/georefplugin.dir/build.make src/plugins/georeferencer/CMakeFiles/georefplugin.dir/moc_qgsgeorefwarpoptionsdialog.o
 
 # target to preprocess a source file
 moc_qgsgeorefwarpoptionsdialog.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/plugins/georeferencer/CMakeFiles/georefplugin.dir/build.make src/plugins/georeferencer/CMakeFiles/georefplugin.dir/moc_qgsgeorefwarpoptionsdialog.i
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/georeferencer/CMakeFiles/georefplugin.dir/build.make src/plugins/georeferencer/CMakeFiles/georefplugin.dir/moc_qgsgeorefwarpoptionsdialog.i
 
 # target to generate assembly for a file
 moc_qgsgeorefwarpoptionsdialog.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/plugins/georeferencer/CMakeFiles/georefplugin.dir/build.make src/plugins/georeferencer/CMakeFiles/georefplugin.dir/moc_qgsgeorefwarpoptionsdialog.s
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/georeferencer/CMakeFiles/georefplugin.dir/build.make src/plugins/georeferencer/CMakeFiles/georefplugin.dir/moc_qgsgeorefwarpoptionsdialog.s
 
 # target to build an object file
 moc_qgspointdialog.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/plugins/georeferencer/CMakeFiles/georefplugin.dir/build.make src/plugins/georeferencer/CMakeFiles/georefplugin.dir/moc_qgspointdialog.o
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/georeferencer/CMakeFiles/georefplugin.dir/build.make src/plugins/georeferencer/CMakeFiles/georefplugin.dir/moc_qgspointdialog.o
 
 # target to preprocess a source file
 moc_qgspointdialog.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/plugins/georeferencer/CMakeFiles/georefplugin.dir/build.make src/plugins/georeferencer/CMakeFiles/georefplugin.dir/moc_qgspointdialog.i
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/georeferencer/CMakeFiles/georefplugin.dir/build.make src/plugins/georeferencer/CMakeFiles/georefplugin.dir/moc_qgspointdialog.i
 
 # target to generate assembly for a file
 moc_qgspointdialog.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/plugins/georeferencer/CMakeFiles/georefplugin.dir/build.make src/plugins/georeferencer/CMakeFiles/georefplugin.dir/moc_qgspointdialog.s
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/georeferencer/CMakeFiles/georefplugin.dir/build.make src/plugins/georeferencer/CMakeFiles/georefplugin.dir/moc_qgspointdialog.s
 
 # target to build an object file
 plugin.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/plugins/georeferencer/CMakeFiles/georefplugin.dir/build.make src/plugins/georeferencer/CMakeFiles/georefplugin.dir/plugin.o
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/georeferencer/CMakeFiles/georefplugin.dir/build.make src/plugins/georeferencer/CMakeFiles/georefplugin.dir/plugin.o
 
 # target to preprocess a source file
 plugin.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/plugins/georeferencer/CMakeFiles/georefplugin.dir/build.make src/plugins/georeferencer/CMakeFiles/georefplugin.dir/plugin.i
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/georeferencer/CMakeFiles/georefplugin.dir/build.make src/plugins/georeferencer/CMakeFiles/georefplugin.dir/plugin.i
 
 # target to generate assembly for a file
 plugin.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/plugins/georeferencer/CMakeFiles/georefplugin.dir/build.make src/plugins/georeferencer/CMakeFiles/georefplugin.dir/plugin.s
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/georeferencer/CMakeFiles/georefplugin.dir/build.make src/plugins/georeferencer/CMakeFiles/georefplugin.dir/plugin.s
 
 # target to build an object file
 plugingui.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/plugins/georeferencer/CMakeFiles/georefplugin.dir/build.make src/plugins/georeferencer/CMakeFiles/georefplugin.dir/plugingui.o
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/georeferencer/CMakeFiles/georefplugin.dir/build.make src/plugins/georeferencer/CMakeFiles/georefplugin.dir/plugingui.o
 
 # target to preprocess a source file
 plugingui.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/plugins/georeferencer/CMakeFiles/georefplugin.dir/build.make src/plugins/georeferencer/CMakeFiles/georefplugin.dir/plugingui.i
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/georeferencer/CMakeFiles/georefplugin.dir/build.make src/plugins/georeferencer/CMakeFiles/georefplugin.dir/plugingui.i
 
 # target to generate assembly for a file
 plugingui.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/plugins/georeferencer/CMakeFiles/georefplugin.dir/build.make src/plugins/georeferencer/CMakeFiles/georefplugin.dir/plugingui.s
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/georeferencer/CMakeFiles/georefplugin.dir/build.make src/plugins/georeferencer/CMakeFiles/georefplugin.dir/plugingui.s
 
 # target to build an object file
 qgsgeorefdatapoint.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/plugins/georeferencer/CMakeFiles/georefplugin.dir/build.make src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsgeorefdatapoint.o
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/georeferencer/CMakeFiles/georefplugin.dir/build.make src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsgeorefdatapoint.o
 
 # target to preprocess a source file
 qgsgeorefdatapoint.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/plugins/georeferencer/CMakeFiles/georefplugin.dir/build.make src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsgeorefdatapoint.i
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/georeferencer/CMakeFiles/georefplugin.dir/build.make src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsgeorefdatapoint.i
 
 # target to generate assembly for a file
 qgsgeorefdatapoint.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/plugins/georeferencer/CMakeFiles/georefplugin.dir/build.make src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsgeorefdatapoint.s
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/georeferencer/CMakeFiles/georefplugin.dir/build.make src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsgeorefdatapoint.s
+
+# target to build an object file
+qgsgeorefdescriptiondialog.o:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/georeferencer/CMakeFiles/georefplugin.dir/build.make src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsgeorefdescriptiondialog.o
+
+# target to preprocess a source file
+qgsgeorefdescriptiondialog.i:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/georeferencer/CMakeFiles/georefplugin.dir/build.make src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsgeorefdescriptiondialog.i
+
+# target to generate assembly for a file
+qgsgeorefdescriptiondialog.s:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/georeferencer/CMakeFiles/georefplugin.dir/build.make src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsgeorefdescriptiondialog.s
 
 # target to build an object file
 qgsgeorefwarpoptionsdialog.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/plugins/georeferencer/CMakeFiles/georefplugin.dir/build.make src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsgeorefwarpoptionsdialog.o
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/georeferencer/CMakeFiles/georefplugin.dir/build.make src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsgeorefwarpoptionsdialog.o
 
 # target to preprocess a source file
 qgsgeorefwarpoptionsdialog.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/plugins/georeferencer/CMakeFiles/georefplugin.dir/build.make src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsgeorefwarpoptionsdialog.i
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/georeferencer/CMakeFiles/georefplugin.dir/build.make src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsgeorefwarpoptionsdialog.i
 
 # target to generate assembly for a file
 qgsgeorefwarpoptionsdialog.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/plugins/georeferencer/CMakeFiles/georefplugin.dir/build.make src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsgeorefwarpoptionsdialog.s
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/georeferencer/CMakeFiles/georefplugin.dir/build.make src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsgeorefwarpoptionsdialog.s
 
 # target to build an object file
 qgsimagewarper.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/plugins/georeferencer/CMakeFiles/georefplugin.dir/build.make src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsimagewarper.o
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/georeferencer/CMakeFiles/georefplugin.dir/build.make src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsimagewarper.o
 
 # target to preprocess a source file
 qgsimagewarper.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/plugins/georeferencer/CMakeFiles/georefplugin.dir/build.make src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsimagewarper.i
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/georeferencer/CMakeFiles/georefplugin.dir/build.make src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsimagewarper.i
 
 # target to generate assembly for a file
 qgsimagewarper.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/plugins/georeferencer/CMakeFiles/georefplugin.dir/build.make src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsimagewarper.s
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/georeferencer/CMakeFiles/georefplugin.dir/build.make src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsimagewarper.s
 
 # target to build an object file
 qgsleastsquares.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/plugins/georeferencer/CMakeFiles/georefplugin.dir/build.make src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsleastsquares.o
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/georeferencer/CMakeFiles/georefplugin.dir/build.make src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsleastsquares.o
 
 # target to preprocess a source file
 qgsleastsquares.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/plugins/georeferencer/CMakeFiles/georefplugin.dir/build.make src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsleastsquares.i
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/georeferencer/CMakeFiles/georefplugin.dir/build.make src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsleastsquares.i
 
 # target to generate assembly for a file
 qgsleastsquares.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/plugins/georeferencer/CMakeFiles/georefplugin.dir/build.make src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsleastsquares.s
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/georeferencer/CMakeFiles/georefplugin.dir/build.make src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsleastsquares.s
 
 # target to build an object file
 qgspointdialog.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/plugins/georeferencer/CMakeFiles/georefplugin.dir/build.make src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgspointdialog.o
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/georeferencer/CMakeFiles/georefplugin.dir/build.make src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgspointdialog.o
 
 # target to preprocess a source file
 qgspointdialog.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/plugins/georeferencer/CMakeFiles/georefplugin.dir/build.make src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgspointdialog.i
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/georeferencer/CMakeFiles/georefplugin.dir/build.make src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgspointdialog.i
 
 # target to generate assembly for a file
 qgspointdialog.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/plugins/georeferencer/CMakeFiles/georefplugin.dir/build.make src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgspointdialog.s
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/georeferencer/CMakeFiles/georefplugin.dir/build.make src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgspointdialog.s
 
 # target to build an object file
 qrc_georeferencer.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/plugins/georeferencer/CMakeFiles/georefplugin.dir/build.make src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qrc_georeferencer.o
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/georeferencer/CMakeFiles/georefplugin.dir/build.make src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qrc_georeferencer.o
 
 # target to preprocess a source file
 qrc_georeferencer.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/plugins/georeferencer/CMakeFiles/georefplugin.dir/build.make src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qrc_georeferencer.i
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/georeferencer/CMakeFiles/georefplugin.dir/build.make src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qrc_georeferencer.i
 
 # target to generate assembly for a file
 qrc_georeferencer.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/plugins/georeferencer/CMakeFiles/georefplugin.dir/build.make src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qrc_georeferencer.s
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/georeferencer/CMakeFiles/georefplugin.dir/build.make src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qrc_georeferencer.s
 
 # Help Target
 help::
@@ -347,6 +359,9 @@ help::
 	@echo "... qgsgeorefdatapoint.o"
 	@echo "... qgsgeorefdatapoint.i"
 	@echo "... qgsgeorefdatapoint.s"
+	@echo "... qgsgeorefdescriptiondialog.o"
+	@echo "... qgsgeorefdescriptiondialog.i"
+	@echo "... qgsgeorefdescriptiondialog.s"
 	@echo "... qgsgeorefwarpoptionsdialog.o"
 	@echo "... qgsgeorefwarpoptionsdialog.i"
 	@echo "... qgsgeorefwarpoptionsdialog.s"
@@ -372,5 +387,5 @@ help::
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 

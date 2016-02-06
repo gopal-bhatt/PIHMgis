@@ -1,0 +1,46 @@
+8
+
+dir
+10938
+https://svn.osgeo.org/qgis/branches/Release-1_0_2/python/plugins
+https://svn.osgeo.org/qgis
+
+
+
+2009-03-21T19:49:11.061916Z
+10378
+borysiasty
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+c8812cc2-4d05-0410-92ff-de0c093fc19c
+
+mapserver_export
+dir
+
+plugin_installer
+dir
+
+CMakeLists.txt
+file
+
+
+
+
+2009-06-17T07:49:07.000000Z
+fb4a3851ae97d12b9a9c0227abe6e1b6
+2008-01-10T04:49:11.786913Z
+7898
+gsherman
+

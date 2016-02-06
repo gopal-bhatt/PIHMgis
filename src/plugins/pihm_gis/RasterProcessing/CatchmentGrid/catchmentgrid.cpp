@@ -52,7 +52,7 @@ void CatchmentGridDlg::run()
 
 	QString logFileName("/tmp/log.html");
 	ofstream log;
-	log.open(logFileName.ascii());
+	log.open(qPrintable(logFileName));
 	log<<"<html><body><font size=3 color=black><p> Verifying Files...</p></font></body></html>";
         log.close();
         messageLog->setSource(logFileName);
@@ -63,21 +63,21 @@ void CatchmentGridDlg::run()
 	QString inputFDRFileName((inputFDRFileLineEdit->text()));
 	QString outputFileName((outputFileLineEdit->text()));
 
-	ifstream LNKinFile;      LNKinFile.open((inputLNKFileLineEdit->text()).ascii());
-	ifstream FDRinFile;      FDRinFile.open((inputFDRFileLineEdit->text()).ascii());
-	ofstream outFile;    outFile.open((outputFileLineEdit->text()).ascii());
+	ifstream LNKinFile;      LNKinFile.open(qPrintable(inputLNKFileLineEdit->text()));
+	ifstream FDRinFile;      FDRinFile.open(qPrintable(inputFDRFileLineEdit->text()));
+	ofstream outFile;    outFile.open(qPrintable(outputFileLineEdit->text()));
 	int runFlag = 1;
 
-	log.open(logFileName.ascii(), ios::app);
+	log.open(qPrintable(logFileName), ios::app);
 	if(inputLNKFileName.length()==0){
 		log<<"<p><font size=3 color=red> Error! Please input Link Grid Input File</p>";
 		runFlag = 0;
 	}
 	else{
-		log<<"<p>Checking... "<<inputLNKFileName.ascii()<<"... ";
+		log<<"<p>Checking... "<<qPrintable(inputLNKFileName)<<"... ";
 		if(LNKinFile == NULL){
 			log<<"<font size=3 color=red> Error!</p>";
-			qWarning("\n%s doesn't exist!", (inputLNKFileLineEdit->text()).ascii());
+			qWarning("\n%s doesn't exist!", qPrintable(inputLNKFileLineEdit->text()));
 			runFlag = 0;
 		}
 		else
@@ -87,16 +87,16 @@ void CatchmentGridDlg::run()
 	messageLog->reload();
 	QApplication::processEvents();
 
-	log.open(logFileName.ascii(), ios::app);
+	log.open(qPrintable(logFileName), ios::app);
 	if(inputFDRFileName.length()==0){
 		log<<"<p><font size=3 color=red> Error! Please input Flow Dir. Grid Input File</p>";
 		runFlag = 0;
 	}
 	else{
-		log<<"<p>Checking... "<<inputFDRFileName.ascii()<<"... ";
+		log<<"<p>Checking... "<<qPrintable(inputFDRFileName)<<"... ";
 		if(FDRinFile == NULL){
 			log<<"<font size=3 color=red> Error!</p>";
-			qWarning("\n%s doesn't exist!", (inputFDRFileLineEdit->text()).ascii());
+			qWarning("\n%s doesn't exist!", qPrintable(inputFDRFileLineEdit->text()));
 			runFlag = 0;
 		}
 		else
@@ -107,13 +107,13 @@ void CatchmentGridDlg::run()
 	QApplication::processEvents();
 
 
-	log.open(logFileName.ascii(), ios::app);
+	log.open(qPrintable(logFileName), ios::app);
 	if(outputFileName.length()==0){
 		log<<"<p><font size=3 color=red> Error! Please input Catchment Grid Output File</p>";
 		runFlag = 0;
 	}
 	else{
-		log<<"<p>Checking... "<<outputFileName.ascii()<<"... ";
+		log<<"<p>Checking... "<<qPrintable(outputFileName)<<"... ";
 		if(outFile == NULL){
 			log<<"<font size=3 color=red> Error!</p>";
 			qWarning("\nCan not open output file name");
@@ -128,15 +128,15 @@ void CatchmentGridDlg::run()
 
 
 	if(runFlag == 1){
-		log.open(logFileName.ascii(), ios::app);
+		log.open(qPrintable(logFileName), ios::app);
 		log<<"<p>Running...";
 		log.close();
 		messageLog->reload();
 		QApplication::processEvents();	
 
-		int err = catchmentGrid((char *)inputLNKFileName.ascii(), (char *)inputFDRFileName.ascii(), (char *)outputFileName.ascii() );
+		int err = catchmentGrid((char *)qPrintable(inputLNKFileName), (char *)qPrintable(inputFDRFileName), (char *)qPrintable(outputFileName) );
 
-		log.open(logFileName.ascii(), ios::app);
+		log.open(qPrintable(logFileName), ios::app);
 		log<<" Done!</p>";
 		log.close();
 		messageLog->reload();
@@ -144,7 +144,8 @@ void CatchmentGridDlg::run()
 
 		if(showSG_DFrame->isChecked() == 1){
        			 //QgsRasterLayer *tempLayer = new QgsRasterLayer("/backup/pihm/RasterProcessing/FillPits", "morgedem.asc");
-		//??	applicationPointer->addRasterLayer(QStringList(outputFileName));
+		//??	
+			applicationPointer->addRasterLayer(outputFileName);
 		}
 	}
 }
@@ -155,8 +156,8 @@ void CatchmentGridDlg::help()
 	hlpDlg->show();	
 
 }
-/* ??
-void CatchmentGridDlg::setApplicationPointer(QgisApp* appPtr){
+/* ??*/
+void CatchmentGridDlg::setApplicationPointer(QgisInterface* appPtr){
     applicationPointer = appPtr;
 }
-*/
+

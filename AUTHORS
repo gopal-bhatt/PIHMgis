@@ -5,11 +5,10 @@
 # in the format:
 # name [tab] <email>
 #
-# The name will be used to infer the image name, with spaces 
-# replaced by underscores. If no matching image is found
-# a blank image will be displayed.
-# Images are read out of $PREFIX/share/qgis/images/developers/
 # ---------------------------------------------------------
+#
+# ALWAYS USE UTF-8 WHEN WRITING THIS FILE!
+#
 Gary E.Sherman	<sherman at mrcc dot com>
 Steve Halasz	<stevehalasz at users.sourceforge.net>
 Marco Hugentobler	<mhugent at users.sourceforge.net>
@@ -29,3 +28,12 @@ Godofredo Contreras	      <frdcn athotmail.com>
 Martin Dobias	<wonder.sk at gmail.com>
 Brendan Morley	<morb at beagle.com.au>
 Magnus Homann	<magnus at homann.se>
+Jürgen E. Fischer	<jef@norbit.de>
+Tisham Dhar	<tisham at apogee.com.au>
+Leonardo Lami	<lami@faunalia.it>
+Marco Pasetti	<marco.pasetti@alice.it>
+Mateusz Loskot	<mateusz at loskot dot net>
+Peter Ersts	<ersts at amnh.org>
+Borys Jurgiel	<borysiasty at aster.pl>
+Paolo Cavallini	<cavallini at faunalia.it>
+Carson J. Q. Farmer	<carson dot farmer at gmail dot com>

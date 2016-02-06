@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'helpdialog.h'
 **
-** Created: Thu Feb 7 18:10:26 2008
+** Created: Wed May 27 04:53:07 2009
 **      by: The Qt Meta Object Compiler version 59 (Qt 4.3.2)
 **
 ** WARNING! All changes made in this file will be lost!

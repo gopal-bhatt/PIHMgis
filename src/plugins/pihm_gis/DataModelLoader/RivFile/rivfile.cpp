@@ -58,7 +58,7 @@ void rivFileDlg::rivBrowse()
 {
 	QString temp = QFileDialog::getSaveFileName(this, "Choose File", "~/", "riv File(*.riv *RIV)");
         QString tmp  = temp;
-        if(!(tmp.lower()).endsWith(".riv")){
+        if(!(tmp.toLower()).endsWith(".riv")){
                 tmp.append(".riv");
                 temp = tmp;
         }
@@ -70,7 +70,7 @@ void rivFileDlg::run()
 
 	QString logFileName("/tmp/log.html");
 	ofstream log;
-	log.open(logFileName.ascii());
+	log.open(qPrintable(logFileName));
 	log<<"<html><body><font size=3 color=black><p> Verifying Files...</p></font></body></html>";
         log.close();
         messageLog->setSource(logFileName);
@@ -80,22 +80,22 @@ void rivFileDlg::run()
 	ifstream ele, node, neigh, river;
         ofstream riv;
 
-        ele.open((eleLineEdit->text()).ascii());
-        node.open((nodeLineEdit->text()).ascii());
-        neigh.open((neighLineEdit->text()).ascii());
-        river.open((riverLineEdit->text()).ascii());
+        ele.open(qPrintable((eleLineEdit->text())));
+        node.open(qPrintable((nodeLineEdit->text())));
+        neigh.open(qPrintable((neighLineEdit->text())));
+        river.open(qPrintable((riverLineEdit->text())));
 
-        riv.open((rivLineEdit->text()).ascii(), ios::out);
+        riv.open(qPrintable((rivLineEdit->text())), ios::out);
 
 	int runFlag = 1;
 
-	log.open(logFileName.ascii(), ios::app);
+	log.open(qPrintable(logFileName), ios::app);
 	if((eleLineEdit->text()).length()==0){
 		log<<"<p><font size=3 color=red> Error! Please input .ele Input File</p>";
 		runFlag = 0;
 	}
 	else{
-		log<<"<p>Checking... "<<(eleLineEdit->text()).ascii()<<"... ";
+		log<<"<p>Checking... "<<qPrintable((eleLineEdit->text()))<<"... ";
 		if(ele == NULL){
 			log<<"<font size=3 color=red> Error!</p>";
 			//qWarning("\n%s doesn't exist!", (inputFileLineEdit->text()).ascii());
@@ -109,13 +109,13 @@ void rivFileDlg::run()
 	QApplication::processEvents();
 
 
-	log.open(logFileName.ascii(), ios::app);
+	log.open(qPrintable(logFileName), ios::app);
 	if((nodeLineEdit->text()).length()==0){
 		log<<"<p><font size=3 color=red> Error! Please input .node Input File</p>";
 		runFlag = 0;
 	}
 	else{
-		log<<"<p>Checking... "<<(nodeLineEdit->text()).ascii()<<"... ";
+		log<<"<p>Checking... "<<qPrintable((nodeLineEdit->text()))<<"... ";
 		if(node == NULL){
 			log<<"<font size=3 color=red> Error!</p>";
 			//qWarning("\n%s doesn't exist!", (inputFileLineEdit->text()).ascii());
@@ -129,13 +129,13 @@ void rivFileDlg::run()
 	QApplication::processEvents();
 
 	
-	log.open(logFileName.ascii(), ios::app);
+	log.open(qPrintable(logFileName), ios::app);
 	if((neighLineEdit->text()).length()==0){
 		log<<"<p><font size=3 color=red> Error! Please input .neigh Input File</p>";
 		runFlag = 0;
 	}
 	else{
-		log<<"<p>Checking... "<<(neighLineEdit->text()).ascii()<<"... ";
+		log<<"<p>Checking... "<<qPrintable((neighLineEdit->text()))<<"... ";
 		if(neigh == NULL){
 			log<<"<font size=3 color=red> Error!</p>";
 			//qWarning("\n%s doesn't exist!", (inputFileLineEdit->text()).ascii());
@@ -149,13 +149,13 @@ void rivFileDlg::run()
 	QApplication::processEvents();
 
 
-	log.open(logFileName.ascii(), ios::app);
+	log.open(qPrintable(logFileName), ios::app);
 	if((riverLineEdit->text()).length()==0){
 		log<<"<p><font size=3 color=red> Error! Please input Split River File File</p>";
 		runFlag = 0;
 	}
 	else{
-		log<<"<p>Checking... "<<(riverLineEdit->text()).ascii()<<"... ";
+		log<<"<p>Checking... "<<qPrintable((riverLineEdit->text()))<<"... ";
 		if(river == NULL){
 			log<<"<font size=3 color=red> Error!</p>";
 			//qWarning("\n%s doesn't exist!", (inputFileLineEdit->text()).ascii());
@@ -169,13 +169,13 @@ void rivFileDlg::run()
 	QApplication::processEvents();
 
 
-	log.open(logFileName.ascii(), ios::app);
+	log.open(qPrintable(logFileName), ios::app);
 	if((rivLineEdit->text()).length()==0){
 		log<<"<p><font size=3 color=red> Error! Please input Output River File</p>";
 		runFlag = 0;
 	}
 	else{
-		log<<"<p>Checking... "<<(rivLineEdit->text()).ascii()<<"... ";
+		log<<"<p>Checking... "<<qPrintable((rivLineEdit->text()))<<"... ";
 		if(riv == NULL){
 			log<<"<font size=3 color=red> Error!</p>";
 			//qWarning("\nCan not open output file name");
@@ -215,7 +215,7 @@ void rivFileDlg::run()
 				
 
 
-		QString shpFileName((riverLineEdit->text()).ascii());
+		QString shpFileName(qPrintable((riverLineEdit->text())));
 	        QString dbfFileName(shpFileName);
         	        dbfFileName.truncate(dbfFileName.length()-3);
                 	dbfFileName.append("dbf");
@@ -223,44 +223,46 @@ void rivFileDlg::run()
 		QString newshp(shpFileName);
 		QString newdbf(shpFileName);
 	
-  		int slashPos = newshp.findRev("/");
-		newshp.truncate(slashPos);
-		newdbf.truncate(slashPos);
+  		//int slashPos = newshp.findRev("/");
+		//newshp.truncate(slashPos);
+		//newdbf.truncate(slashPos);
+		newshp=newshp.section('/',0,-2);
+		newdbf=newdbf.section('/',0,-2);
 		
 		newshp.append("/temp.shp");
 		newdbf.append("/temp.dbf");
 
-		qWarning("\n%s", newshp.ascii());
-		qWarning("\n%s", newdbf.ascii()); 	
+		qWarning("\n%s", qPrintable(newshp));
+		qWarning("\n%s", qPrintable(newdbf)); 	
 	
-		QString eleFileName((eleLineEdit->text()).ascii());
-        	QString nodeFileName((nodeLineEdit->text()).ascii());
-        	QString neighFileName((neighLineEdit->text()).ascii());
+		QString eleFileName(qPrintable((eleLineEdit->text())));
+        	QString nodeFileName(qPrintable((nodeLineEdit->text())));
+        	QString neighFileName(qPrintable((neighLineEdit->text())));
 		
-		log.open(logFileName.ascii(), ios::app);
+		log.open(qPrintable(logFileName), ios::app);
 		log<<"<p>Extracting River from TIN (MESH)...";
 		log.close();
 		messageLog->reload();
 		QApplication::processEvents();
 		
-        	extractRiver4mTIN(shpFileName.ascii(),dbfFileName.ascii(),eleFileName.ascii(),nodeFileName.ascii(),neighFileName.ascii(), newshp.ascii(), newdbf.ascii());
+        	extractRiver4mTIN(qPrintable(shpFileName),qPrintable(dbfFileName),qPrintable(eleFileName),qPrintable(nodeFileName),qPrintable(neighFileName), qPrintable(newshp), qPrintable(newdbf));
 		
-		log.open(logFileName.ascii(), ios::app);
+		log.open(qPrintable(logFileName), ios::app);
 		log<<" Done!</p>";
 		log.close();
 		messageLog->reload();
 		QApplication::processEvents();
 
 
-		log.open(logFileName.ascii(), ios::app);
+		log.open(qPrintable(logFileName), ios::app);
 		log<<"<p>Adding FID...";
 		log.close();
 		messageLog->reload();
 		QApplication::processEvents();
  
-        	addFID(newdbf.ascii());
+        	addFID(qPrintable(newdbf));
 
-		log.open(logFileName.ascii(), ios::app);
+		log.open(qPrintable(logFileName), ios::app);
 		log<<" Done!</p>";
 		log.close();
 		messageLog->reload();
@@ -268,15 +270,15 @@ void rivFileDlg::run()
 
 
 
-		log.open(logFileName.ascii(), ios::app);
+		log.open(qPrintable(logFileName), ios::app);
 		log<<"<p>Computing To and From Node information...";
 		log.close();
 		messageLog->reload();
 		QApplication::processEvents();
 
-        	addToFromNode(newdbf.ascii(), newshp.ascii());
+        	addToFromNode(qPrintable(newdbf), qPrintable(newshp));
         	
-		log.open(logFileName.ascii(), ios::app);
+		log.open(qPrintable(logFileName), ios::app);
 		log<<" Done!</p>";
 		log.close();
 		messageLog->reload();
@@ -284,15 +286,15 @@ void rivFileDlg::run()
 
 
 
-		log.open(logFileName.ascii(), ios::app);
+		log.open(qPrintable(logFileName), ios::app);
 		log<<"<p>Computing Stream Order...";
 		log.close();
 		messageLog->reload();
 		QApplication::processEvents();
 
-		addSOrder(newdbf.ascii(), newshp.ascii());
+		addSOrder(qPrintable(newdbf), qPrintable(newshp));
 
-		log.open(logFileName.ascii(), ios::app);
+		log.open(qPrintable(logFileName), ios::app);
 		log<<" Done!</p>";
 		log.close();
 		messageLog->reload();
@@ -300,15 +302,15 @@ void rivFileDlg::run()
 
 
 
-		log.open(logFileName.ascii(), ios::app);
+		log.open(qPrintable(logFileName), ios::app);
 		log<<"<p>Calculating Down Segments...";
 		log.close();
 		messageLog->reload();
 		QApplication::processEvents();
 
-        	calDownSegment(newdbf.ascii());
+        	calDownSegment(qPrintable(newdbf));
 
-		log.open(logFileName.ascii(), ios::app);
+		log.open(qPrintable(logFileName), ios::app);
 		log<<" Done!</p>";
 		log.close();
 		messageLog->reload();
@@ -316,14 +318,14 @@ void rivFileDlg::run()
 
 
 
-		log.open(logFileName.ascii(), ios::app);
+		log.open(qPrintable(logFileName), ios::app);
 		log<<"<p>Writing .riv file...";
 		log.close();
 		messageLog->reload();
 		QApplication::processEvents();
 
 
-		DBFHandle dbf = DBFOpen(newdbf.ascii(), "rb");
+		DBFHandle dbf = DBFOpen(qPrintable(newdbf), "rb");
 
 		int fid         = DBFGetFieldIndex(dbf, "FID");
 		int fromTriNode = DBFGetFieldIndex(dbf, "FromTriNode");
@@ -361,7 +363,7 @@ void rivFileDlg::run()
 		riv<<"RES\t"     <<"0"     <<"\n";
 		
 
-		log.open(logFileName.ascii(), ios::app);
+		log.open(qPrintable(logFileName), ios::app);
 		log<<" Done!</p>";
 		log.close();
 		messageLog->reload();
@@ -370,7 +372,7 @@ void rivFileDlg::run()
 	}
 	riv.close();
 
-	log.open(logFileName.ascii(), ios::app);
+	log.open(qPrintable(logFileName), ios::app);
 	log<<"<p><font size=3 color=red>Note: Please add SHAPE, MATERIAL, INITIAL AND BOUNDARY CONDITION at the end of the .riv file MANUALLY</p>";
 	log.close();
 	messageLog->reload();

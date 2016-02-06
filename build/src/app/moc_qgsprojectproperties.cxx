@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'qgsprojectproperties.h'
 **
-** Created: Wed Jun 11 19:05:43 2008
+** Created: Fri Jun 19 01:54:09 2009
 **      by: The Qt Meta Object Compiler version 59 (Qt 4.3.2)
 **
 ** WARNING! All changes made in this file will be lost!
@@ -34,9 +34,9 @@ static const uint qt_meta_data_QgsProjectProperties[] = {
       58,   21,   21,   21, 0x0a,
       66,   21,   21,   21, 0x0a,
       87,   21,   21,   21, 0x0a,
-     123,   21,   21,   21, 0x0a,
-     155,   21,   21,   21, 0x0a,
-     183,   21,   21,   21, 0x0a,
+     119,   21,   21,   21, 0x0a,
+     147,   21,   21,   21, 0x0a,
+     176,   21,   21,   21, 0x0a,
 
        0        // eod
 };
@@ -44,10 +44,10 @@ static const uint qt_meta_data_QgsProjectProperties[] = {
 static const char qt_meta_stringdata_QgsProjectProperties[] = {
     "QgsProjectProperties\0\0displayPrecisionChanged()\0"
     "refresh()\0apply()\0showProjectionsTab()\0"
-    "on_pbnDigitisedLineColour_clicked()\0"
     "on_pbnSelectionColour_clicked()\0"
     "on_pbnCanvasColor_clicked()\0"
     "on_buttonBox_helpRequested()\0"
+    "on_mSnappingOptionsPushButton_clicked()\0"
 };
 
 const QMetaObject QgsProjectProperties::staticMetaObject = {
@@ -79,10 +79,10 @@ int QgsProjectProperties::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
         case 1: refresh(); break;
         case 2: apply(); break;
         case 3: showProjectionsTab(); break;
-        case 4: on_pbnDigitisedLineColour_clicked(); break;
-        case 5: on_pbnSelectionColour_clicked(); break;
-        case 6: on_pbnCanvasColor_clicked(); break;
-        case 7: on_buttonBox_helpRequested(); break;
+        case 4: on_pbnSelectionColour_clicked(); break;
+        case 5: on_pbnCanvasColor_clicked(); break;
+        case 6: on_buttonBox_helpRequested(); break;
+        case 7: on_mSnappingOptionsPushButton_clicked(); break;
         }
         _id -= 8;
     }

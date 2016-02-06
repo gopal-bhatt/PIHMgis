@@ -31,10 +31,10 @@ RM = /usr/bin/cmake -E remove -f
 CMAKE_EDIT_COMMAND = /usr/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0
+CMAKE_SOURCE_DIR = /Users/bhattgopal/dev/cpp/qgis_1.0.2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build
+CMAKE_BINARY_DIR = /Users/bhattgopal/dev/cpp/qgis_1.0.2/build
 
 # Include any dependencies generated for this target.
 include src/plugins/north_arrow/CMakeFiles/northarrowplugin.dir/depend.make
@@ -50,17 +50,17 @@ src/plugins/north_arrow/CMakeFiles/northarrowplugin.dir/depend.make.mark: ../src
 
 src/plugins/north_arrow/CMakeFiles/northarrowplugin.dir/plugin.o: src/plugins/north_arrow/CMakeFiles/northarrowplugin.dir/flags.make
 src/plugins/north_arrow/CMakeFiles/northarrowplugin.dir/plugin.o: ../src/plugins/north_arrow/plugin.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/plugins/north_arrow/CMakeFiles/northarrowplugin.dir/plugin.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/north_arrow/CMakeFiles/northarrowplugin.dir/plugin.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/north_arrow/plugin.cpp
+	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/north_arrow/CMakeFiles/northarrowplugin.dir/plugin.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/north_arrow/plugin.cpp
 
 src/plugins/north_arrow/CMakeFiles/northarrowplugin.dir/plugin.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/plugins/north_arrow/CMakeFiles/northarrowplugin.dir/plugin.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/north_arrow/plugin.cpp > src/plugins/north_arrow/CMakeFiles/northarrowplugin.dir/plugin.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/north_arrow/plugin.cpp > src/plugins/north_arrow/CMakeFiles/northarrowplugin.dir/plugin.i
 
 src/plugins/north_arrow/CMakeFiles/northarrowplugin.dir/plugin.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/plugins/north_arrow/CMakeFiles/northarrowplugin.dir/plugin.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/north_arrow/plugin.cpp -o src/plugins/north_arrow/CMakeFiles/northarrowplugin.dir/plugin.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/north_arrow/plugin.cpp -o src/plugins/north_arrow/CMakeFiles/northarrowplugin.dir/plugin.s
 
 src/plugins/north_arrow/CMakeFiles/northarrowplugin.dir/plugin.o.requires:
 
@@ -74,17 +74,17 @@ src/plugins/north_arrow/CMakeFiles/northarrowplugin.dir/depend.make.mark: ../src
 
 src/plugins/north_arrow/CMakeFiles/northarrowplugin.dir/plugingui.o: src/plugins/north_arrow/CMakeFiles/northarrowplugin.dir/flags.make
 src/plugins/north_arrow/CMakeFiles/northarrowplugin.dir/plugingui.o: ../src/plugins/north_arrow/plugingui.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/plugins/north_arrow/CMakeFiles/northarrowplugin.dir/plugingui.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/north_arrow/CMakeFiles/northarrowplugin.dir/plugingui.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/north_arrow/plugingui.cpp
+	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/north_arrow/CMakeFiles/northarrowplugin.dir/plugingui.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/north_arrow/plugingui.cpp
 
 src/plugins/north_arrow/CMakeFiles/northarrowplugin.dir/plugingui.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/plugins/north_arrow/CMakeFiles/northarrowplugin.dir/plugingui.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/north_arrow/plugingui.cpp > src/plugins/north_arrow/CMakeFiles/northarrowplugin.dir/plugingui.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/north_arrow/plugingui.cpp > src/plugins/north_arrow/CMakeFiles/northarrowplugin.dir/plugingui.i
 
 src/plugins/north_arrow/CMakeFiles/northarrowplugin.dir/plugingui.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/plugins/north_arrow/CMakeFiles/northarrowplugin.dir/plugingui.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/north_arrow/plugingui.cpp -o src/plugins/north_arrow/CMakeFiles/northarrowplugin.dir/plugingui.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/north_arrow/plugingui.cpp -o src/plugins/north_arrow/CMakeFiles/northarrowplugin.dir/plugingui.s
 
 src/plugins/north_arrow/CMakeFiles/northarrowplugin.dir/plugingui.o.requires:
 
@@ -98,17 +98,17 @@ src/plugins/north_arrow/CMakeFiles/northarrowplugin.dir/depend.make.mark: src/pl
 
 src/plugins/north_arrow/CMakeFiles/northarrowplugin.dir/moc_plugin.o: src/plugins/north_arrow/CMakeFiles/northarrowplugin.dir/flags.make
 src/plugins/north_arrow/CMakeFiles/northarrowplugin.dir/moc_plugin.o: src/plugins/north_arrow/moc_plugin.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_3)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/plugins/north_arrow/CMakeFiles/northarrowplugin.dir/moc_plugin.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/north_arrow/CMakeFiles/northarrowplugin.dir/moc_plugin.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/north_arrow/moc_plugin.cxx
+	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/north_arrow/CMakeFiles/northarrowplugin.dir/moc_plugin.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/north_arrow/moc_plugin.cxx
 
 src/plugins/north_arrow/CMakeFiles/northarrowplugin.dir/moc_plugin.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/plugins/north_arrow/CMakeFiles/northarrowplugin.dir/moc_plugin.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/north_arrow/moc_plugin.cxx > src/plugins/north_arrow/CMakeFiles/northarrowplugin.dir/moc_plugin.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/north_arrow/moc_plugin.cxx > src/plugins/north_arrow/CMakeFiles/northarrowplugin.dir/moc_plugin.i
 
 src/plugins/north_arrow/CMakeFiles/northarrowplugin.dir/moc_plugin.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/plugins/north_arrow/CMakeFiles/northarrowplugin.dir/moc_plugin.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/north_arrow/moc_plugin.cxx -o src/plugins/north_arrow/CMakeFiles/northarrowplugin.dir/moc_plugin.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/north_arrow/moc_plugin.cxx -o src/plugins/north_arrow/CMakeFiles/northarrowplugin.dir/moc_plugin.s
 
 src/plugins/north_arrow/CMakeFiles/northarrowplugin.dir/moc_plugin.o.requires:
 
@@ -122,17 +122,17 @@ src/plugins/north_arrow/CMakeFiles/northarrowplugin.dir/depend.make.mark: src/pl
 
 src/plugins/north_arrow/CMakeFiles/northarrowplugin.dir/moc_plugingui.o: src/plugins/north_arrow/CMakeFiles/northarrowplugin.dir/flags.make
 src/plugins/north_arrow/CMakeFiles/northarrowplugin.dir/moc_plugingui.o: src/plugins/north_arrow/moc_plugingui.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_4)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/plugins/north_arrow/CMakeFiles/northarrowplugin.dir/moc_plugingui.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/north_arrow/CMakeFiles/northarrowplugin.dir/moc_plugingui.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/north_arrow/moc_plugingui.cxx
+	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/north_arrow/CMakeFiles/northarrowplugin.dir/moc_plugingui.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/north_arrow/moc_plugingui.cxx
 
 src/plugins/north_arrow/CMakeFiles/northarrowplugin.dir/moc_plugingui.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/plugins/north_arrow/CMakeFiles/northarrowplugin.dir/moc_plugingui.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/north_arrow/moc_plugingui.cxx > src/plugins/north_arrow/CMakeFiles/northarrowplugin.dir/moc_plugingui.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/north_arrow/moc_plugingui.cxx > src/plugins/north_arrow/CMakeFiles/northarrowplugin.dir/moc_plugingui.i
 
 src/plugins/north_arrow/CMakeFiles/northarrowplugin.dir/moc_plugingui.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/plugins/north_arrow/CMakeFiles/northarrowplugin.dir/moc_plugingui.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/north_arrow/moc_plugingui.cxx -o src/plugins/north_arrow/CMakeFiles/northarrowplugin.dir/moc_plugingui.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/north_arrow/moc_plugingui.cxx -o src/plugins/north_arrow/CMakeFiles/northarrowplugin.dir/moc_plugingui.s
 
 src/plugins/north_arrow/CMakeFiles/northarrowplugin.dir/moc_plugingui.o.requires:
 
@@ -146,17 +146,17 @@ src/plugins/north_arrow/CMakeFiles/northarrowplugin.dir/depend.make.mark: src/pl
 
 src/plugins/north_arrow/CMakeFiles/northarrowplugin.dir/qrc_northarrow_plugin.o: src/plugins/north_arrow/CMakeFiles/northarrowplugin.dir/flags.make
 src/plugins/north_arrow/CMakeFiles/northarrowplugin.dir/qrc_northarrow_plugin.o: src/plugins/north_arrow/qrc_northarrow_plugin.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_5)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/plugins/north_arrow/CMakeFiles/northarrowplugin.dir/qrc_northarrow_plugin.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/north_arrow/CMakeFiles/northarrowplugin.dir/qrc_northarrow_plugin.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/north_arrow/qrc_northarrow_plugin.cxx
+	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/north_arrow/CMakeFiles/northarrowplugin.dir/qrc_northarrow_plugin.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/north_arrow/qrc_northarrow_plugin.cxx
 
 src/plugins/north_arrow/CMakeFiles/northarrowplugin.dir/qrc_northarrow_plugin.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/plugins/north_arrow/CMakeFiles/northarrowplugin.dir/qrc_northarrow_plugin.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/north_arrow/qrc_northarrow_plugin.cxx > src/plugins/north_arrow/CMakeFiles/northarrowplugin.dir/qrc_northarrow_plugin.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/north_arrow/qrc_northarrow_plugin.cxx > src/plugins/north_arrow/CMakeFiles/northarrowplugin.dir/qrc_northarrow_plugin.i
 
 src/plugins/north_arrow/CMakeFiles/northarrowplugin.dir/qrc_northarrow_plugin.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/plugins/north_arrow/CMakeFiles/northarrowplugin.dir/qrc_northarrow_plugin.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/north_arrow/qrc_northarrow_plugin.cxx -o src/plugins/north_arrow/CMakeFiles/northarrowplugin.dir/qrc_northarrow_plugin.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/north_arrow/qrc_northarrow_plugin.cxx -o src/plugins/north_arrow/CMakeFiles/northarrowplugin.dir/qrc_northarrow_plugin.s
 
 src/plugins/north_arrow/CMakeFiles/northarrowplugin.dir/qrc_northarrow_plugin.o.requires:
 
@@ -166,25 +166,25 @@ src/plugins/north_arrow/CMakeFiles/northarrowplugin.dir/qrc_northarrow_plugin.o.
 src/plugins/north_arrow/CMakeFiles/northarrowplugin.dir/qrc_northarrow_plugin.o.provides.build: src/plugins/north_arrow/CMakeFiles/northarrowplugin.dir/qrc_northarrow_plugin.o
 
 src/plugins/north_arrow/moc_plugin.cxx: ../src/plugins/north_arrow/plugin.h
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_6)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating moc_plugin.cxx"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/north_arrow && /Developer/Tools/Qt/moc -I /usr/include -I /Library/Frameworks/Qt3Support.framework/Headers -I /Library/Frameworks/QtSvg.framework/Headers -I /Library/Frameworks/QtGui.framework/Headers -I /Library/Frameworks/QtXml.framework/Headers -I /Library/Frameworks/QtSql.framework/Headers -I /Library/Frameworks/QtNetwork.framework/Headers -I /Library/Frameworks/QtCore.framework/Headers -I /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/north_arrow/moc_plugin.cxx /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/north_arrow/plugin.h
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/north_arrow && /Developer/Tools/Qt/moc -I /usr/include -I /Library/Frameworks/Qt3Support.framework/Headers -I /Library/Frameworks/QtSvg.framework/Headers -I /Library/Frameworks/QtGui.framework/Headers -I /Library/Frameworks/QtXml.framework/Headers -I /Library/Frameworks/QtSql.framework/Headers -I /Library/Frameworks/QtNetwork.framework/Headers -I /Library/Frameworks/QtCore.framework/Headers -I /Users/bhattgopal/dev/cpp/qgis_1.0.2/build -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/north_arrow/moc_plugin.cxx /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/north_arrow/plugin.h
 
 src/plugins/north_arrow/moc_plugingui.cxx: ../src/plugins/north_arrow/plugingui.h
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_7)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_7)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating moc_plugingui.cxx"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/north_arrow && /Developer/Tools/Qt/moc -I /usr/include -I /Library/Frameworks/Qt3Support.framework/Headers -I /Library/Frameworks/QtSvg.framework/Headers -I /Library/Frameworks/QtGui.framework/Headers -I /Library/Frameworks/QtXml.framework/Headers -I /Library/Frameworks/QtSql.framework/Headers -I /Library/Frameworks/QtNetwork.framework/Headers -I /Library/Frameworks/QtCore.framework/Headers -I /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/north_arrow/moc_plugingui.cxx /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/north_arrow/plugingui.h
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/north_arrow && /Developer/Tools/Qt/moc -I /usr/include -I /Library/Frameworks/Qt3Support.framework/Headers -I /Library/Frameworks/QtSvg.framework/Headers -I /Library/Frameworks/QtGui.framework/Headers -I /Library/Frameworks/QtXml.framework/Headers -I /Library/Frameworks/QtSql.framework/Headers -I /Library/Frameworks/QtNetwork.framework/Headers -I /Library/Frameworks/QtCore.framework/Headers -I /Users/bhattgopal/dev/cpp/qgis_1.0.2/build -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/north_arrow/moc_plugingui.cxx /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/north_arrow/plugingui.h
 
-src/plugins/north_arrow/qrc_northarrow_plugin.cxx: ../src/plugins/north_arrow/northarrow.png
+src/plugins/north_arrow/qrc_northarrow_plugin.cxx: ../src/plugins/north_arrow/north_arrow.png
 src/plugins/north_arrow/qrc_northarrow_plugin.cxx: ../src/plugins/north_arrow/northarrow_plugin.qrc
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_8)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_8)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating qrc_northarrow_plugin.cxx"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/north_arrow && /Developer/Tools/Qt/rcc -name northarrow_plugin -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/north_arrow/qrc_northarrow_plugin.cxx /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/north_arrow/northarrow_plugin.qrc
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/north_arrow && /Developer/Tools/Qt/rcc -name northarrow_plugin -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/north_arrow/qrc_northarrow_plugin.cxx /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/north_arrow/northarrow_plugin.qrc
 
 src/plugins/north_arrow/ui_pluginguibase.h: ../src/plugins/north_arrow/pluginguibase.ui
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_9)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_9)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ui_pluginguibase.h"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/north_arrow && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/north_arrow/ui_pluginguibase.h /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/north_arrow/pluginguibase.ui
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/north_arrow && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/north_arrow/ui_pluginguibase.h /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/north_arrow/pluginguibase.ui
 
 src/plugins/north_arrow/CMakeFiles/northarrowplugin.dir/depend: src/plugins/north_arrow/CMakeFiles/northarrowplugin.dir/depend.make.mark
 
@@ -193,7 +193,7 @@ src/plugins/north_arrow/CMakeFiles/northarrowplugin.dir/depend.make.mark: src/pl
 src/plugins/north_arrow/CMakeFiles/northarrowplugin.dir/depend.make.mark: src/plugins/north_arrow/qrc_northarrow_plugin.cxx
 src/plugins/north_arrow/CMakeFiles/northarrowplugin.dir/depend.make.mark: src/plugins/north_arrow/ui_pluginguibase.h
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --magenta --bold "Scanning dependencies of target northarrowplugin"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0 /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/north_arrow /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/north_arrow /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/north_arrow/CMakeFiles/northarrowplugin.dir/DependInfo.cmake
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/bhattgopal/dev/cpp/qgis_1.0.2 /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/north_arrow /Users/bhattgopal/dev/cpp/qgis_1.0.2/build /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/north_arrow /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/north_arrow/CMakeFiles/northarrowplugin.dir/DependInfo.cmake
 
 # Object files for target northarrowplugin
 northarrowplugin_OBJECTS = \
@@ -211,24 +211,21 @@ src/plugins/north_arrow/libnortharrowplugin.so: src/plugins/north_arrow/CMakeFil
 src/plugins/north_arrow/libnortharrowplugin.so: src/plugins/north_arrow/CMakeFiles/northarrowplugin.dir/moc_plugin.o
 src/plugins/north_arrow/libnortharrowplugin.so: src/plugins/north_arrow/CMakeFiles/northarrowplugin.dir/moc_plugingui.o
 src/plugins/north_arrow/libnortharrowplugin.so: src/plugins/north_arrow/CMakeFiles/northarrowplugin.dir/qrc_northarrow_plugin.o
-src/plugins/north_arrow/libnortharrowplugin.so: /Library/Frameworks/Qt3Support.framework
-src/plugins/north_arrow/libnortharrowplugin.so: /Library/Frameworks/QtSvg.framework
-src/plugins/north_arrow/libnortharrowplugin.so: /Library/Frameworks/QtGui.framework
-src/plugins/north_arrow/libnortharrowplugin.so: /Library/Frameworks/QtXml.framework
-src/plugins/north_arrow/libnortharrowplugin.so: /Library/Frameworks/QtSql.framework
-src/plugins/north_arrow/libnortharrowplugin.so: /Library/Frameworks/QtNetwork.framework
-src/plugins/north_arrow/libnortharrowplugin.so: /Library/Frameworks/QtCore.framework
-src/plugins/north_arrow/libnortharrowplugin.so: /usr/lib/libz.dylib
 src/plugins/north_arrow/libnortharrowplugin.so: src/core/libqgis_core.dylib
 src/plugins/north_arrow/libnortharrowplugin.so: src/gui/libqgis_gui.dylib
+src/plugins/north_arrow/libnortharrowplugin.so: /Library/Frameworks/QtCore.framework
+src/plugins/north_arrow/libnortharrowplugin.so: /Library/Frameworks/QtGui.framework
+src/plugins/north_arrow/libnortharrowplugin.so: /Library/Frameworks/QtXml.framework
+src/plugins/north_arrow/libnortharrowplugin.so: /Library/Frameworks/QtSvg.framework
+src/plugins/north_arrow/libnortharrowplugin.so: /Library/Frameworks/QtNetwork.framework
 src/plugins/north_arrow/libnortharrowplugin.so: /Library/Frameworks/proj.framework
-src/plugins/north_arrow/libnortharrowplugin.so: /Library/Frameworks/sqlite3.framework
-src/plugins/north_arrow/libnortharrowplugin.so: /Library/Frameworks/geos.framework
+src/plugins/north_arrow/libnortharrowplugin.so: /Library/Frameworks/GEOS.framework/unix/lib/libgeos_c.dylib
 src/plugins/north_arrow/libnortharrowplugin.so: /Library/Frameworks/GDAL.framework/Versions/1.5/unix/lib/libgdal.dylib
+src/plugins/north_arrow/libnortharrowplugin.so: /Library/Frameworks/sqlite3.framework
 src/plugins/north_arrow/libnortharrowplugin.so: src/plugins/north_arrow/CMakeFiles/northarrowplugin.dir/build.make
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX shared module libnortharrowplugin.so"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/north_arrow && $(CMAKE_COMMAND) -P CMakeFiles/northarrowplugin.dir/cmake_clean_target.cmake
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/north_arrow && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/northarrowplugin.dir/link.txt --verbose=$(VERBOSE)
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/north_arrow && $(CMAKE_COMMAND) -P CMakeFiles/northarrowplugin.dir/cmake_clean_target.cmake
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/north_arrow && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/northarrowplugin.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 src/plugins/north_arrow/CMakeFiles/northarrowplugin.dir/build: src/plugins/north_arrow/libnortharrowplugin.so
@@ -240,5 +237,5 @@ src/plugins/north_arrow/CMakeFiles/northarrowplugin.dir/requires: src/plugins/no
 src/plugins/north_arrow/CMakeFiles/northarrowplugin.dir/requires: src/plugins/north_arrow/CMakeFiles/northarrowplugin.dir/qrc_northarrow_plugin.o.requires
 
 src/plugins/north_arrow/CMakeFiles/northarrowplugin.dir/clean:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/north_arrow && $(CMAKE_COMMAND) -P CMakeFiles/northarrowplugin.dir/cmake_clean.cmake
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/north_arrow && $(CMAKE_COMMAND) -P CMakeFiles/northarrowplugin.dir/cmake_clean.cmake
 

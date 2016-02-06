@@ -1,113 +1,113 @@
 K 25
 svn:wc:ra_dav:version-url
-V 65
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/app/composer
-END
-qgscomposerpicture.cpp
-K 25
-svn:wc:ra_dav:version-url
-V 88
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/app/composer/qgscomposerpicture.cpp
-END
-qgscomposerscalebar.cpp
-K 25
-svn:wc:ra_dav:version-url
-V 89
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/app/composer/qgscomposerscalebar.cpp
-END
-qgscomposermap.cpp
-K 25
-svn:wc:ra_dav:version-url
-V 84
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/app/composer/qgscomposermap.cpp
+V 60
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/app/composer
 END
 qgscomposer.cpp
 K 25
 svn:wc:ra_dav:version-url
-V 81
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/app/composer/qgscomposer.cpp
+V 76
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/app/composer/qgscomposer.cpp
 END
-qgscomposerlabel.cpp
+qgscomposerpicturewidget.cpp
 K 25
 svn:wc:ra_dav:version-url
-V 86
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/app/composer/qgscomposerlabel.cpp
+V 89
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/app/composer/qgscomposerpicturewidget.cpp
 END
-qgscomposerview.h
+qgscomposerscalebarwidget.cpp
 K 25
 svn:wc:ra_dav:version-url
-V 83
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/app/composer/qgscomposerview.h
+V 90
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/app/composer/qgscomposerscalebarwidget.cpp
 END
-qgscomposerpicture.h
+qgscomposermapwidget.cpp
 K 25
 svn:wc:ra_dav:version-url
-V 86
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/app/composer/qgscomposerpicture.h
+V 85
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/app/composer/qgscomposermapwidget.cpp
 END
-qgscomposerscalebar.h
+qgscomposerlabelwidget.cpp
 K 25
 svn:wc:ra_dav:version-url
 V 87
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/app/composer/qgscomposerscalebar.h
-END
-qgscomposervectorlegend.cpp
-K 25
-svn:wc:ra_dav:version-url
-V 93
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/app/composer/qgscomposervectorlegend.cpp
-END
-qgscomposermap.h
-K 25
-svn:wc:ra_dav:version-url
-V 82
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/app/composer/qgscomposermap.h
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/app/composer/qgscomposerlabelwidget.cpp
 END
 qgscomposer.h
 K 25
 svn:wc:ra_dav:version-url
-V 79
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/app/composer/qgscomposer.h
+V 74
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/app/composer/qgscomposer.h
 END
-qgscomposerlabel.h
+qgscomposerpicturewidget.h
 K 25
 svn:wc:ra_dav:version-url
-V 84
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/app/composer/qgscomposerlabel.h
+V 87
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/app/composer/qgscomposerpicturewidget.h
 END
-qgscomposervectorlegend.h
+qgscomposerscalebarwidget.h
 K 25
 svn:wc:ra_dav:version-url
-V 91
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/app/composer/qgscomposervectorlegend.h
+V 88
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/app/composer/qgscomposerscalebarwidget.h
 END
-qgscomposition.cpp
-K 25
-svn:wc:ra_dav:version-url
-V 84
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/app/composer/qgscomposition.cpp
-END
-qgscomposeritem.cpp
-K 25
-svn:wc:ra_dav:version-url
-V 85
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/app/composer/qgscomposeritem.cpp
-END
-qgscomposition.h
-K 25
-svn:wc:ra_dav:version-url
-V 82
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/app/composer/qgscomposition.h
-END
-qgscomposeritem.h
+qgscomposermapwidget.h
 K 25
 svn:wc:ra_dav:version-url
 V 83
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/app/composer/qgscomposeritem.h
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/app/composer/qgscomposermapwidget.h
 END
-qgscomposerview.cpp
+qgscomposerlabelwidget.h
 K 25
 svn:wc:ra_dav:version-url
 V 85
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/app/composer/qgscomposerview.cpp
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/app/composer/qgscomposerlabelwidget.h
+END
+qgscomposerlegenditemdialog.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/app/composer/qgscomposerlegenditemdialog.cpp
+END
+qgscompositionwidget.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/app/composer/qgscompositionwidget.cpp
+END
+qgscomposeritemwidget.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/app/composer/qgscomposeritemwidget.cpp
+END
+qgscomposerlegenditemdialog.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/app/composer/qgscomposerlegenditemdialog.h
+END
+qgscomposerlegendwidget.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/app/composer/qgscomposerlegendwidget.cpp
+END
+qgscompositionwidget.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/app/composer/qgscompositionwidget.h
+END
+qgscomposerlegendwidget.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/app/composer/qgscomposerlegendwidget.h
+END
+qgscomposeritemwidget.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/app/composer/qgscomposeritemwidget.h
 END

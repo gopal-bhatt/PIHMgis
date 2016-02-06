@@ -14,7 +14,7 @@
  *   (at your option) any later version.                                   *
  *                                                                         *
  ***************************************************************************/
-/* $Id: qgsserversourceselect.h 6415 2007-01-09 02:39:15Z wonder $ */
+/* $Id: qgsserversourceselect.h 9502 2008-10-20 20:24:36Z timlinux $ */
 
 #ifndef QGSSERVERSOURCESELECT_H
 #define QGSSERVERSOURCESELECT_H
@@ -34,17 +34,17 @@ class QButtonGroup;
  * This dialog allows the user to define and save connection information
  * for WMS servers, etc.
  *
- * The user can then connect and add 
+ * The user can then connect and add
  * layers from the WMS server to the map canvas.
  */
-class QgsServerSourceSelect : public QDialog, private Ui::QgsServerSourceSelectBase 
+class QgsServerSourceSelect : public QDialog, private Ui::QgsServerSourceSelectBase
 {
-  Q_OBJECT
-  
-public:
+    Q_OBJECT
+
+  public:
 
     //! Constructor
-    QgsServerSourceSelect(QgisApp *app, QWidget *parent = 0, Qt::WFlags fl = QgisGui::ModalDialogFlags);
+    QgsServerSourceSelect( QWidget *parent = 0, Qt::WFlags fl = QgisGui::ModalDialogFlags );
     //! Destructor
     ~QgsServerSourceSelect();
     //! Populate the connection list combo box
@@ -54,7 +54,7 @@ public:
     QString connName();
 
     //! Connection info (uri)
-    QString connInfo();
+    QString connectionInfo();
 
     //! Connection Proxy Host
     QString connProxyHost();
@@ -83,10 +83,10 @@ public:
     //! Stores which server is now selected.
     void serverChanged();
 
-    //! Set the server connection combo box to that stored in the config file. 
+    //! Set the server connection combo box to that stored in the config file.
     void setConnectionListPosition();
 
-public slots:
+  public slots:
 
     //! Opens the create connection dialog to build a new connection
     void on_btnNew_clicked();
@@ -95,7 +95,7 @@ public slots:
     //! Deletes the selected connection
     void on_btnDelete_clicked();
 
-    /*! Connects to the database using the stored connection parameters. 
+    /*! Connects to the database using the stored connection parameters.
     * Once connected, available layers are displayed.
     */
     void on_btnConnect_clicked();
@@ -110,21 +110,21 @@ public slots:
     void on_btnHelp_clicked();
 
     //! Signaled when a layer selection is changed.  Ensures that only one style is selected per layer.
-    void on_lstLayers_selectionChanged();
+    void on_lstLayers_itemSelectionChanged();
 
     //! Set status message to theMessage
-    void showStatusMessage(QString const & theMessage);
+    void showStatusMessage( QString const & theMessage );
 
     //! show whatever error is exposed by the QgsWmsProvider.
-    void showError(QgsWmsProvider * wms);
+    void showError( QgsWmsProvider * wms );
 
     //! Stores the selected datasource whenerver it is changed
-    void on_cmbConnections_activated(int);
+    void on_cmbConnections_activated( int );
 
     //! Add some default wms servers to the list
     void on_btnAddDefault_clicked();
 
-private:
+  private:
 
     //! Add a few example servers to the list.
     void addDefaultServers();
@@ -132,25 +132,22 @@ private:
     /**
      * \brief Populate the layer list - private for now.
      *
-     * \retval FALSE if the layers could not be retreived or parsed - 
+     * \retval FALSE if the layers could not be retrieved or parsed -
      *         see mWmsProvider->errorString() for more info
      */
-    bool populateLayerList(QgsWmsProvider* wmsProvider);
+    bool populateLayerList( QgsWmsProvider* wmsProvider );
 
     //! Populate the image encoding button group - private for now.
-    void populateImageEncodingGroup(QgsWmsProvider* wmsProvider);
+    void populateImageEncodingGroup( QgsWmsProvider* wmsProvider );
 
-    //! Returns the common CRSs for the selected layers.
-    std::set<QString> crsForSelection();
-
-    //! Returns a textual description for the EPSG number
-    QString descriptionForEpsg(long epsg);
+    //! Returns a textual description for the EpsgCrsId number
+    QString descriptionForEpsg( long epsg );
 
     //! Name for selected connection
     QString m_connName;
 
     //! URI for selected connection
-    QString m_connInfo;
+    QString m_connectionInfo;
 
     //! Proxy Host for selected connection
     QString m_connProxyHost;
@@ -173,14 +170,11 @@ private:
     //! The mime type, the text to use in the button and a unique number
     QMap<QString, QPair<QString, int> > m_PotentialFormats;
 
-    //! Pointer to the qgis application mainwindow
-    QgisApp *qgisApp;
-
     //! The widget that controls the image format radio buttons
     QButtonGroup* m_imageFormatGroup;
     QHBoxLayout* m_imageFormatLayout;
 
-    //! The WMS provider that retreives information for this dialog
+    //! The WMS provider that retrieves information for this dialog
     QgsWmsProvider * mWmsProvider;
 
     static const int context_id = 710979116;

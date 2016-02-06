@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'runpihm.h'
 **
-** Created: Wed Jun 11 19:11:09 2008
+** Created: Fri Jun 19 02:00:50 2009
 **      by: The Qt Meta Object Compiler version 59 (Qt 4.3.2)
 **
 ** WARNING! All changes made in this file will be lost!
@@ -22,7 +22,7 @@ static const uint qt_meta_data_runPIHMDlg[] = {
        1,       // revision
        0,       // classname
        0,    0, // classinfo
-       3,   10, // methods
+       4,   10, // methods
        0,    0, // properties
        0,    0, // enums/sets
 
@@ -30,13 +30,14 @@ static const uint qt_meta_data_runPIHMDlg[] = {
       12,   11,   11,   11, 0x0a,
       27,   11,   11,   11, 0x0a,
       33,   11,   11,   11, 0x0a,
+      40,   11,   11,   11, 0x0a,
 
        0        // eod
 };
 
 static const char qt_meta_stringdata_runPIHMDlg[] = {
     "runPIHMDlg\0\0folderBrowse()\0run()\0"
-    "help()\0"
+    "help()\0cancelPIHM()\0"
 };
 
 const QMetaObject runPIHMDlg::staticMetaObject = {
@@ -67,8 +68,9 @@ int runPIHMDlg::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
         case 0: folderBrowse(); break;
         case 1: run(); break;
         case 2: help(); break;
+        case 3: cancelPIHM(); break;
         }
-        _id -= 3;
+        _id -= 4;
     }
     return _id;
 }

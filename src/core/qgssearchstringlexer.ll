@@ -15,7 +15,7 @@
  *   (at your option) any later version.                                   *
  *                                                                         *
  ***************************************************************************/
- /* $Id: qgssearchstringlexer.ll 6415 2007-01-09 02:39:15Z wonder $ */
+ /* $Id: qgssearchstringlexer.ll 9471 2008-10-10 20:02:22Z jef $ */
  
 %option noyywrap
 %option case-insensitive
@@ -80,7 +80,7 @@ string      "'"{str_char}*"'"
 
 {white}    /* skip blanks and tabs */
 
-.       { return UNKNOWN_CHARACTER; }
+.       { return Unknown_CHARACTER; }
 
 %%
 

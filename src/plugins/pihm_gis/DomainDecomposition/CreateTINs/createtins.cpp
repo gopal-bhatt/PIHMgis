@@ -48,7 +48,7 @@ void createTINsDlg::run()
 
 	QString logFileName("/tmp/log.html");
 	ofstream log;
-	log.open(logFileName.ascii());
+	log.open(qPrintable(logFileName));
 	log<<"<html><body><font size=3 color=black><p> Verifying Files...</p></font></body></html>";
         log.close();
         MessageLog->setSource(logFileName);
@@ -64,20 +64,20 @@ void createTINsDlg::run()
 	dbfFileName.append("dbf");
 	
 	int runFlag = 1;
-	ifstream inEle(eleFileName.ascii());
-	ifstream inNode(nodeFileName.ascii());
-	ofstream outFile(shpFileName.ascii());
+	ifstream inEle(qPrintable(eleFileName));
+	ifstream inNode(qPrintable(nodeFileName));
+	ofstream outFile(qPrintable(shpFileName));
 
-	log.open(logFileName.ascii(), ios::app);
+	log.open(qPrintable(logFileName), ios::app);
 	if(eleFileName.length()==0){
 		log<<"<p><font size=3 color=red> Error! Please input ele Input File</p>";
 		runFlag = 0;
 	}
 	else{
-		log<<"<p>Checking... "<<eleFileName.ascii()<<"... ";
+		log<<"<p>Checking... "<<qPrintable(eleFileName)<<"... ";
 		if(inEle == NULL){
 			log<<"<font size=3 color=red> Error!</p>";
-			//qWarning("\n%s doesn't exist!", (inputFileLineEdit->text()).ascii());
+			//qWarning("\n%s doesn't exist!", qPrintable((inputFileLineEdit->text())));
 			runFlag = 0;
 		}
 		else
@@ -88,16 +88,16 @@ void createTINsDlg::run()
 	QApplication::processEvents();
 	
 
-	log.open(logFileName.ascii(), ios::app);
+	log.open(qPrintable(logFileName), ios::app);
 	if(nodeFileName.length()==0){
 		log<<"<p><font size=3 color=red> Error! Please input node Input File</p>";
 		runFlag = 0;
 	}
 	else{
-		log<<"<p>Checking... "<<nodeFileName.ascii()<<"... ";
+		log<<"<p>Checking... "<<qPrintable(nodeFileName)<<"... ";
 		if(inNode == NULL){
 			log<<"<font size=3 color=red> Error!</p>";
-			//qWarning("\n%s doesn't exist!", (inputFileLineEdit->text()).ascii());
+			//qWarning("\n%s doesn't exist!", qPrintable((inputFileLineEdit->text())));
 			runFlag = 0;
 		}
 		else
@@ -108,13 +108,13 @@ void createTINsDlg::run()
 	QApplication::processEvents();
 
 
-	log.open(logFileName.ascii(), ios::app);
+	log.open(qPrintable(logFileName), ios::app);
 	if(shpFileName.length()==0){
 		log<<"<p><font size=3 color=red> Error! Please input Output Shape File</p>";
 		runFlag = 0;
 	}
 	else{
-		log<<"<p>Checking... "<<shpFileName.ascii()<<"... ";
+		log<<"<p>Checking... "<<qPrintable(shpFileName)<<"... ";
 		if(outFile == NULL){
 			log<<"<font size=3 color=red> Error!</p>";
 			//qWarning("\nCan not open output file name");
@@ -135,21 +135,21 @@ void createTINsDlg::run()
 	//else if(shpFileName.length()==0)
 	//	qWarning("\n Enter Shape File");
 	//else if(tempEle==NULL)
-	//	qWarning("\n %s doesn't exist!", eleFileName.ascii());
+	//	qWarning("\n %s doesn't exist!", qPrintable(eleFileName));
 	//else if(tempNode==NULL)
-	//	qWarning("\n %s doesn't exist!", nodeFileName.ascii());
+	//	qWarning("\n %s doesn't exist!", qPrintable(nodeFileName));
 
 
 	if(runFlag == 1){
-		log.open(logFileName.ascii(), ios::app);
+		log.open(qPrintable(logFileName), ios::app);
 		log<<"<p>Running TRINAGLE...";
 		log.close();
 		MessageLog->reload();
 		QApplication::processEvents();
 
-		createTinShapeFile(eleFileName.ascii(), nodeFileName.ascii(), shpFileName.ascii(), dbfFileName.ascii(), "dummy");
+		createTinShapeFile(qPrintable(eleFileName), qPrintable(nodeFileName), qPrintable(shpFileName), qPrintable(dbfFileName), "dummy");
 
-		log.open(logFileName.ascii(), ios::app);
+		log.open(qPrintable(logFileName), ios::app);
 		log<<" Done!</p>";
 		log.close();
 		MessageLog->reload();

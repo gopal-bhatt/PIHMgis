@@ -15,16 +15,16 @@
  *   (at your option) any later version.                                   *
  *                                                                         *
  ***************************************************************************/
- /* $Id: qgsprovidermetadata.h 6415 2007-01-09 02:39:15Z wonder $ */
- 
+/* $Id: qgsprovidermetadata.h 9138 2008-08-23 21:37:31Z jef $ */
+
 #ifndef QGSPROVIDERMETADATA_H
 #define QGSPROVIDERMETADATA_H
 
 
-#include <qstring.h>
+#include <QString>
 
-
-/** holds data provider key, description, and associated shared library file information
+/** \ingroup core
+ * Holds data provider key, description, and associated shared library file information.
 
    The metadata class is used in a lazy load implementation in
    QgsProviderRegistry.  To save memory, data providers are only actually
@@ -37,9 +37,9 @@
  */
 class CORE_EXPORT QgsProviderMetadata
 {
-public:
+  public:
 
-    QgsProviderMetadata(QString const & _key, QString const & _description, QString const & _library);
+    QgsProviderMetadata( QString const & _key, QString const & _description, QString const & _library );
 
     /** this returns the unique key associated with the provider
 
@@ -59,8 +59,8 @@ public:
     */
     QString const & library() const;
 
-private:
-    
+  private:
+
     /// unique key for data provider
     QString key_;
 

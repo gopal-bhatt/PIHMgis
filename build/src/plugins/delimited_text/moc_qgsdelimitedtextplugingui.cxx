@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'qgsdelimitedtextplugingui.h'
 **
-** Created: Wed Jun 11 19:09:58 2008
+** Created: Fri Jun 19 01:58:40 2009
 **      by: The Qt Meta Object Compiler version 59 (Qt 4.3.2)
 **
 ** WARNING! All changes made in this file will be lost!
@@ -22,7 +22,7 @@ static const uint qt_meta_data_QgsDelimitedTextPluginGui[] = {
        1,       // revision
        0,       // classname
        0,    0, // classinfo
-       8,   10, // methods
+       9,   10, // methods
        0,    0, // properties
        0,    0, // enums/sets
 
@@ -36,7 +36,8 @@ static const uint qt_meta_data_QgsDelimitedTextPluginGui[] = {
      127,   26,   26,   26, 0x08,
      151,   26,   26,   26, 0x08,
      180,   26,   26,   26, 0x08,
-     210,   26,   26,   26, 0x08,
+     215,  210,   26,   26, 0x08,
+     252,   26,   26,   26, 0x08,
 
        0        // eod
 };
@@ -48,7 +49,8 @@ static const char qt_meta_stringdata_QgsDelimitedTextPluginGui[] = {
     "help()\0on_buttonBox_accepted()\0"
     "on_buttonBox_rejected()\0"
     "on_buttonBox_helpRequested()\0"
-    "on_btnBrowseForFile_clicked()\0"
+    "on_btnBrowseForFile_clicked()\0text\0"
+    "on_txtDelimiter_textChanged(QString)\0"
     "pbnParse_clicked()\0"
 };
 
@@ -84,9 +86,10 @@ int QgsDelimitedTextPluginGui::qt_metacall(QMetaObject::Call _c, int _id, void *
         case 4: on_buttonBox_rejected(); break;
         case 5: on_buttonBox_helpRequested(); break;
         case 6: on_btnBrowseForFile_clicked(); break;
-        case 7: pbnParse_clicked(); break;
+        case 7: on_txtDelimiter_textChanged((*reinterpret_cast< const QString(*)>(_a[1]))); break;
+        case 8: pbnParse_clicked(); break;
         }
-        _id -= 8;
+        _id -= 9;
     }
     return _id;
 }

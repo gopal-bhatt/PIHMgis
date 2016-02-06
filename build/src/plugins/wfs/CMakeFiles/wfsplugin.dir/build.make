@@ -31,10 +31,10 @@ RM = /usr/bin/cmake -E remove -f
 CMAKE_EDIT_COMMAND = /usr/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0
+CMAKE_SOURCE_DIR = /Users/bhattgopal/dev/cpp/qgis_1.0.2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build
+CMAKE_BINARY_DIR = /Users/bhattgopal/dev/cpp/qgis_1.0.2/build
 
 # Include any dependencies generated for this target.
 include src/plugins/wfs/CMakeFiles/wfsplugin.dir/depend.make
@@ -50,17 +50,17 @@ src/plugins/wfs/CMakeFiles/wfsplugin.dir/depend.make.mark: ../src/plugins/wfs/qg
 
 src/plugins/wfs/CMakeFiles/wfsplugin.dir/qgswfsplugin.o: src/plugins/wfs/CMakeFiles/wfsplugin.dir/flags.make
 src/plugins/wfs/CMakeFiles/wfsplugin.dir/qgswfsplugin.o: ../src/plugins/wfs/qgswfsplugin.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/plugins/wfs/CMakeFiles/wfsplugin.dir/qgswfsplugin.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/wfs/CMakeFiles/wfsplugin.dir/qgswfsplugin.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/wfs/qgswfsplugin.cpp
+	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/wfs/CMakeFiles/wfsplugin.dir/qgswfsplugin.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/wfs/qgswfsplugin.cpp
 
 src/plugins/wfs/CMakeFiles/wfsplugin.dir/qgswfsplugin.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/plugins/wfs/CMakeFiles/wfsplugin.dir/qgswfsplugin.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/wfs/qgswfsplugin.cpp > src/plugins/wfs/CMakeFiles/wfsplugin.dir/qgswfsplugin.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/wfs/qgswfsplugin.cpp > src/plugins/wfs/CMakeFiles/wfsplugin.dir/qgswfsplugin.i
 
 src/plugins/wfs/CMakeFiles/wfsplugin.dir/qgswfsplugin.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/plugins/wfs/CMakeFiles/wfsplugin.dir/qgswfsplugin.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/wfs/qgswfsplugin.cpp -o src/plugins/wfs/CMakeFiles/wfsplugin.dir/qgswfsplugin.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/wfs/qgswfsplugin.cpp -o src/plugins/wfs/CMakeFiles/wfsplugin.dir/qgswfsplugin.s
 
 src/plugins/wfs/CMakeFiles/wfsplugin.dir/qgswfsplugin.o.requires:
 
@@ -74,17 +74,17 @@ src/plugins/wfs/CMakeFiles/wfsplugin.dir/depend.make.mark: ../src/plugins/wfs/qg
 
 src/plugins/wfs/CMakeFiles/wfsplugin.dir/qgswfssourceselect.o: src/plugins/wfs/CMakeFiles/wfsplugin.dir/flags.make
 src/plugins/wfs/CMakeFiles/wfsplugin.dir/qgswfssourceselect.o: ../src/plugins/wfs/qgswfssourceselect.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/plugins/wfs/CMakeFiles/wfsplugin.dir/qgswfssourceselect.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/wfs/CMakeFiles/wfsplugin.dir/qgswfssourceselect.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/wfs/qgswfssourceselect.cpp
+	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/wfs/CMakeFiles/wfsplugin.dir/qgswfssourceselect.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/wfs/qgswfssourceselect.cpp
 
 src/plugins/wfs/CMakeFiles/wfsplugin.dir/qgswfssourceselect.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/plugins/wfs/CMakeFiles/wfsplugin.dir/qgswfssourceselect.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/wfs/qgswfssourceselect.cpp > src/plugins/wfs/CMakeFiles/wfsplugin.dir/qgswfssourceselect.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/wfs/qgswfssourceselect.cpp > src/plugins/wfs/CMakeFiles/wfsplugin.dir/qgswfssourceselect.i
 
 src/plugins/wfs/CMakeFiles/wfsplugin.dir/qgswfssourceselect.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/plugins/wfs/CMakeFiles/wfsplugin.dir/qgswfssourceselect.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/wfs/qgswfssourceselect.cpp -o src/plugins/wfs/CMakeFiles/wfsplugin.dir/qgswfssourceselect.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/wfs/qgswfssourceselect.cpp -o src/plugins/wfs/CMakeFiles/wfsplugin.dir/qgswfssourceselect.s
 
 src/plugins/wfs/CMakeFiles/wfsplugin.dir/qgswfssourceselect.o.requires:
 
@@ -98,17 +98,17 @@ src/plugins/wfs/CMakeFiles/wfsplugin.dir/depend.make.mark: ../src/app/qgsnewhttp
 
 src/plugins/wfs/CMakeFiles/wfsplugin.dir/__/__/__/__/src/app/qgsnewhttpconnection.o: src/plugins/wfs/CMakeFiles/wfsplugin.dir/flags.make
 src/plugins/wfs/CMakeFiles/wfsplugin.dir/__/__/__/__/src/app/qgsnewhttpconnection.o: ../src/app/qgsnewhttpconnection.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_3)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/plugins/wfs/CMakeFiles/wfsplugin.dir/__/__/__/__/src/app/qgsnewhttpconnection.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/wfs/CMakeFiles/wfsplugin.dir/__/__/__/__/src/app/qgsnewhttpconnection.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/app/qgsnewhttpconnection.cpp
+	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/wfs/CMakeFiles/wfsplugin.dir/__/__/__/__/src/app/qgsnewhttpconnection.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/app/qgsnewhttpconnection.cpp
 
 src/plugins/wfs/CMakeFiles/wfsplugin.dir/__/__/__/__/src/app/qgsnewhttpconnection.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/plugins/wfs/CMakeFiles/wfsplugin.dir/__/__/__/__/src/app/qgsnewhttpconnection.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/app/qgsnewhttpconnection.cpp > src/plugins/wfs/CMakeFiles/wfsplugin.dir/__/__/__/__/src/app/qgsnewhttpconnection.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/app/qgsnewhttpconnection.cpp > src/plugins/wfs/CMakeFiles/wfsplugin.dir/__/__/__/__/src/app/qgsnewhttpconnection.i
 
 src/plugins/wfs/CMakeFiles/wfsplugin.dir/__/__/__/__/src/app/qgsnewhttpconnection.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/plugins/wfs/CMakeFiles/wfsplugin.dir/__/__/__/__/src/app/qgsnewhttpconnection.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/app/qgsnewhttpconnection.cpp -o src/plugins/wfs/CMakeFiles/wfsplugin.dir/__/__/__/__/src/app/qgsnewhttpconnection.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/app/qgsnewhttpconnection.cpp -o src/plugins/wfs/CMakeFiles/wfsplugin.dir/__/__/__/__/src/app/qgsnewhttpconnection.s
 
 src/plugins/wfs/CMakeFiles/wfsplugin.dir/__/__/__/__/src/app/qgsnewhttpconnection.o.requires:
 
@@ -122,17 +122,17 @@ src/plugins/wfs/CMakeFiles/wfsplugin.dir/depend.make.mark: src/plugins/wfs/moc_q
 
 src/plugins/wfs/CMakeFiles/wfsplugin.dir/moc_qgswfsplugin.o: src/plugins/wfs/CMakeFiles/wfsplugin.dir/flags.make
 src/plugins/wfs/CMakeFiles/wfsplugin.dir/moc_qgswfsplugin.o: src/plugins/wfs/moc_qgswfsplugin.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_4)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/plugins/wfs/CMakeFiles/wfsplugin.dir/moc_qgswfsplugin.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/wfs/CMakeFiles/wfsplugin.dir/moc_qgswfsplugin.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/wfs/moc_qgswfsplugin.cxx
+	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/wfs/CMakeFiles/wfsplugin.dir/moc_qgswfsplugin.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/wfs/moc_qgswfsplugin.cxx
 
 src/plugins/wfs/CMakeFiles/wfsplugin.dir/moc_qgswfsplugin.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/plugins/wfs/CMakeFiles/wfsplugin.dir/moc_qgswfsplugin.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/wfs/moc_qgswfsplugin.cxx > src/plugins/wfs/CMakeFiles/wfsplugin.dir/moc_qgswfsplugin.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/wfs/moc_qgswfsplugin.cxx > src/plugins/wfs/CMakeFiles/wfsplugin.dir/moc_qgswfsplugin.i
 
 src/plugins/wfs/CMakeFiles/wfsplugin.dir/moc_qgswfsplugin.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/plugins/wfs/CMakeFiles/wfsplugin.dir/moc_qgswfsplugin.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/wfs/moc_qgswfsplugin.cxx -o src/plugins/wfs/CMakeFiles/wfsplugin.dir/moc_qgswfsplugin.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/wfs/moc_qgswfsplugin.cxx -o src/plugins/wfs/CMakeFiles/wfsplugin.dir/moc_qgswfsplugin.s
 
 src/plugins/wfs/CMakeFiles/wfsplugin.dir/moc_qgswfsplugin.o.requires:
 
@@ -146,17 +146,17 @@ src/plugins/wfs/CMakeFiles/wfsplugin.dir/depend.make.mark: src/plugins/wfs/moc_q
 
 src/plugins/wfs/CMakeFiles/wfsplugin.dir/moc_qgswfssourceselect.o: src/plugins/wfs/CMakeFiles/wfsplugin.dir/flags.make
 src/plugins/wfs/CMakeFiles/wfsplugin.dir/moc_qgswfssourceselect.o: src/plugins/wfs/moc_qgswfssourceselect.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_5)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/plugins/wfs/CMakeFiles/wfsplugin.dir/moc_qgswfssourceselect.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/wfs/CMakeFiles/wfsplugin.dir/moc_qgswfssourceselect.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/wfs/moc_qgswfssourceselect.cxx
+	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/wfs/CMakeFiles/wfsplugin.dir/moc_qgswfssourceselect.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/wfs/moc_qgswfssourceselect.cxx
 
 src/plugins/wfs/CMakeFiles/wfsplugin.dir/moc_qgswfssourceselect.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/plugins/wfs/CMakeFiles/wfsplugin.dir/moc_qgswfssourceselect.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/wfs/moc_qgswfssourceselect.cxx > src/plugins/wfs/CMakeFiles/wfsplugin.dir/moc_qgswfssourceselect.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/wfs/moc_qgswfssourceselect.cxx > src/plugins/wfs/CMakeFiles/wfsplugin.dir/moc_qgswfssourceselect.i
 
 src/plugins/wfs/CMakeFiles/wfsplugin.dir/moc_qgswfssourceselect.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/plugins/wfs/CMakeFiles/wfsplugin.dir/moc_qgswfssourceselect.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/wfs/moc_qgswfssourceselect.cxx -o src/plugins/wfs/CMakeFiles/wfsplugin.dir/moc_qgswfssourceselect.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/wfs/moc_qgswfssourceselect.cxx -o src/plugins/wfs/CMakeFiles/wfsplugin.dir/moc_qgswfssourceselect.s
 
 src/plugins/wfs/CMakeFiles/wfsplugin.dir/moc_qgswfssourceselect.o.requires:
 
@@ -170,17 +170,17 @@ src/plugins/wfs/CMakeFiles/wfsplugin.dir/depend.make.mark: src/plugins/wfs/moc_q
 
 src/plugins/wfs/CMakeFiles/wfsplugin.dir/moc_qgsnewhttpconnection.o: src/plugins/wfs/CMakeFiles/wfsplugin.dir/flags.make
 src/plugins/wfs/CMakeFiles/wfsplugin.dir/moc_qgsnewhttpconnection.o: src/plugins/wfs/moc_qgsnewhttpconnection.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_6)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/plugins/wfs/CMakeFiles/wfsplugin.dir/moc_qgsnewhttpconnection.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/wfs/CMakeFiles/wfsplugin.dir/moc_qgsnewhttpconnection.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/wfs/moc_qgsnewhttpconnection.cxx
+	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/wfs/CMakeFiles/wfsplugin.dir/moc_qgsnewhttpconnection.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/wfs/moc_qgsnewhttpconnection.cxx
 
 src/plugins/wfs/CMakeFiles/wfsplugin.dir/moc_qgsnewhttpconnection.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/plugins/wfs/CMakeFiles/wfsplugin.dir/moc_qgsnewhttpconnection.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/wfs/moc_qgsnewhttpconnection.cxx > src/plugins/wfs/CMakeFiles/wfsplugin.dir/moc_qgsnewhttpconnection.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/wfs/moc_qgsnewhttpconnection.cxx > src/plugins/wfs/CMakeFiles/wfsplugin.dir/moc_qgsnewhttpconnection.i
 
 src/plugins/wfs/CMakeFiles/wfsplugin.dir/moc_qgsnewhttpconnection.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/plugins/wfs/CMakeFiles/wfsplugin.dir/moc_qgsnewhttpconnection.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/wfs/moc_qgsnewhttpconnection.cxx -o src/plugins/wfs/CMakeFiles/wfsplugin.dir/moc_qgsnewhttpconnection.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/wfs/moc_qgsnewhttpconnection.cxx -o src/plugins/wfs/CMakeFiles/wfsplugin.dir/moc_qgsnewhttpconnection.s
 
 src/plugins/wfs/CMakeFiles/wfsplugin.dir/moc_qgsnewhttpconnection.o.requires:
 
@@ -189,25 +189,55 @@ src/plugins/wfs/CMakeFiles/wfsplugin.dir/moc_qgsnewhttpconnection.o.provides: sr
 
 src/plugins/wfs/CMakeFiles/wfsplugin.dir/moc_qgsnewhttpconnection.o.provides.build: src/plugins/wfs/CMakeFiles/wfsplugin.dir/moc_qgsnewhttpconnection.o
 
+src/plugins/wfs/CMakeFiles/wfsplugin.dir/depend.make.mark: src/plugins/wfs/CMakeFiles/wfsplugin.dir/flags.make
+src/plugins/wfs/CMakeFiles/wfsplugin.dir/depend.make.mark: src/plugins/wfs/qrc_wfsplugin.cxx
+
+src/plugins/wfs/CMakeFiles/wfsplugin.dir/qrc_wfsplugin.o: src/plugins/wfs/CMakeFiles/wfsplugin.dir/flags.make
+src/plugins/wfs/CMakeFiles/wfsplugin.dir/qrc_wfsplugin.o: src/plugins/wfs/qrc_wfsplugin.cxx
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_7)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/plugins/wfs/CMakeFiles/wfsplugin.dir/qrc_wfsplugin.o"
+	/usr/bin/c++   $(CXX_FLAGS) -o src/plugins/wfs/CMakeFiles/wfsplugin.dir/qrc_wfsplugin.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/wfs/qrc_wfsplugin.cxx
+
+src/plugins/wfs/CMakeFiles/wfsplugin.dir/qrc_wfsplugin.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/plugins/wfs/CMakeFiles/wfsplugin.dir/qrc_wfsplugin.i"
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/wfs/qrc_wfsplugin.cxx > src/plugins/wfs/CMakeFiles/wfsplugin.dir/qrc_wfsplugin.i
+
+src/plugins/wfs/CMakeFiles/wfsplugin.dir/qrc_wfsplugin.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/plugins/wfs/CMakeFiles/wfsplugin.dir/qrc_wfsplugin.s"
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/wfs/qrc_wfsplugin.cxx -o src/plugins/wfs/CMakeFiles/wfsplugin.dir/qrc_wfsplugin.s
+
+src/plugins/wfs/CMakeFiles/wfsplugin.dir/qrc_wfsplugin.o.requires:
+
+src/plugins/wfs/CMakeFiles/wfsplugin.dir/qrc_wfsplugin.o.provides: src/plugins/wfs/CMakeFiles/wfsplugin.dir/qrc_wfsplugin.o.requires
+	$(MAKE) -f src/plugins/wfs/CMakeFiles/wfsplugin.dir/build.make src/plugins/wfs/CMakeFiles/wfsplugin.dir/qrc_wfsplugin.o.provides.build
+
+src/plugins/wfs/CMakeFiles/wfsplugin.dir/qrc_wfsplugin.o.provides.build: src/plugins/wfs/CMakeFiles/wfsplugin.dir/qrc_wfsplugin.o
+
 src/plugins/wfs/moc_qgswfsplugin.cxx: ../src/plugins/wfs/qgswfsplugin.h
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_7)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_8)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating moc_qgswfsplugin.cxx"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/wfs && /Developer/Tools/Qt/moc -I /usr/include -I /Library/Frameworks/Qt3Support.framework/Headers -I /Library/Frameworks/QtSvg.framework/Headers -I /Library/Frameworks/QtGui.framework/Headers -I /Library/Frameworks/QtXml.framework/Headers -I /Library/Frameworks/QtSql.framework/Headers -I /Library/Frameworks/QtNetwork.framework/Headers -I /Library/Frameworks/QtCore.framework/Headers -I /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/wfs/moc_qgswfsplugin.cxx /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/wfs/qgswfsplugin.h
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/wfs && /Developer/Tools/Qt/moc -I /usr/include -I /Library/Frameworks/Qt3Support.framework/Headers -I /Library/Frameworks/QtSvg.framework/Headers -I /Library/Frameworks/QtGui.framework/Headers -I /Library/Frameworks/QtXml.framework/Headers -I /Library/Frameworks/QtSql.framework/Headers -I /Library/Frameworks/QtNetwork.framework/Headers -I /Library/Frameworks/QtCore.framework/Headers -I /Users/bhattgopal/dev/cpp/qgis_1.0.2/build -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/wfs/moc_qgswfsplugin.cxx /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/wfs/qgswfsplugin.h
 
 src/plugins/wfs/moc_qgswfssourceselect.cxx: ../src/plugins/wfs/qgswfssourceselect.h
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_8)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_9)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating moc_qgswfssourceselect.cxx"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/wfs && /Developer/Tools/Qt/moc -I /usr/include -I /Library/Frameworks/Qt3Support.framework/Headers -I /Library/Frameworks/QtSvg.framework/Headers -I /Library/Frameworks/QtGui.framework/Headers -I /Library/Frameworks/QtXml.framework/Headers -I /Library/Frameworks/QtSql.framework/Headers -I /Library/Frameworks/QtNetwork.framework/Headers -I /Library/Frameworks/QtCore.framework/Headers -I /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/wfs/moc_qgswfssourceselect.cxx /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/wfs/qgswfssourceselect.h
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/wfs && /Developer/Tools/Qt/moc -I /usr/include -I /Library/Frameworks/Qt3Support.framework/Headers -I /Library/Frameworks/QtSvg.framework/Headers -I /Library/Frameworks/QtGui.framework/Headers -I /Library/Frameworks/QtXml.framework/Headers -I /Library/Frameworks/QtSql.framework/Headers -I /Library/Frameworks/QtNetwork.framework/Headers -I /Library/Frameworks/QtCore.framework/Headers -I /Users/bhattgopal/dev/cpp/qgis_1.0.2/build -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/wfs/moc_qgswfssourceselect.cxx /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/wfs/qgswfssourceselect.h
 
 src/plugins/wfs/moc_qgsnewhttpconnection.cxx: ../src/app/qgsnewhttpconnection.h
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_9)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_10)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating moc_qgsnewhttpconnection.cxx"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/wfs && /Developer/Tools/Qt/moc -I /usr/include -I /Library/Frameworks/Qt3Support.framework/Headers -I /Library/Frameworks/QtSvg.framework/Headers -I /Library/Frameworks/QtGui.framework/Headers -I /Library/Frameworks/QtXml.framework/Headers -I /Library/Frameworks/QtSql.framework/Headers -I /Library/Frameworks/QtNetwork.framework/Headers -I /Library/Frameworks/QtCore.framework/Headers -I /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/wfs/moc_qgsnewhttpconnection.cxx /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/app/qgsnewhttpconnection.h
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/wfs && /Developer/Tools/Qt/moc -I /usr/include -I /Library/Frameworks/Qt3Support.framework/Headers -I /Library/Frameworks/QtSvg.framework/Headers -I /Library/Frameworks/QtGui.framework/Headers -I /Library/Frameworks/QtXml.framework/Headers -I /Library/Frameworks/QtSql.framework/Headers -I /Library/Frameworks/QtNetwork.framework/Headers -I /Library/Frameworks/QtCore.framework/Headers -I /Users/bhattgopal/dev/cpp/qgis_1.0.2/build -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/wfs/moc_qgsnewhttpconnection.cxx /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/app/qgsnewhttpconnection.h
 
 src/plugins/wfs/ui_qgswfssourceselectbase.h: ../src/plugins/wfs/qgswfssourceselectbase.ui
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_10)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_11)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ui_qgswfssourceselectbase.h"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/wfs && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/wfs/ui_qgswfssourceselectbase.h /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/wfs/qgswfssourceselectbase.ui
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/wfs && /Developer/Tools/Qt/uic -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/wfs/ui_qgswfssourceselectbase.h /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/wfs/qgswfssourceselectbase.ui
+
+src/plugins/wfs/qrc_wfsplugin.cxx: ../src/plugins/wfs/mIconAddWfsLayer.png
+src/plugins/wfs/qrc_wfsplugin.cxx: ../src/plugins/wfs/wfsplugin.qrc
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_12)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating qrc_wfsplugin.cxx"
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/wfs && /Developer/Tools/Qt/rcc -name wfsplugin -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/wfs/qrc_wfsplugin.cxx /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/wfs/wfsplugin.qrc
 
 src/plugins/wfs/CMakeFiles/wfsplugin.dir/depend: src/plugins/wfs/CMakeFiles/wfsplugin.dir/depend.make.mark
 
@@ -215,8 +245,9 @@ src/plugins/wfs/CMakeFiles/wfsplugin.dir/depend.make.mark: src/plugins/wfs/moc_q
 src/plugins/wfs/CMakeFiles/wfsplugin.dir/depend.make.mark: src/plugins/wfs/moc_qgswfssourceselect.cxx
 src/plugins/wfs/CMakeFiles/wfsplugin.dir/depend.make.mark: src/plugins/wfs/moc_qgsnewhttpconnection.cxx
 src/plugins/wfs/CMakeFiles/wfsplugin.dir/depend.make.mark: src/plugins/wfs/ui_qgswfssourceselectbase.h
+src/plugins/wfs/CMakeFiles/wfsplugin.dir/depend.make.mark: src/plugins/wfs/qrc_wfsplugin.cxx
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --magenta --bold "Scanning dependencies of target wfsplugin"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0 /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/wfs /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/wfs /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/wfs/CMakeFiles/wfsplugin.dir/DependInfo.cmake
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/bhattgopal/dev/cpp/qgis_1.0.2 /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/wfs /Users/bhattgopal/dev/cpp/qgis_1.0.2/build /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/wfs /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/wfs/CMakeFiles/wfsplugin.dir/DependInfo.cmake
 
 # Object files for target wfsplugin
 wfsplugin_OBJECTS = \
@@ -225,7 +256,8 @@ wfsplugin_OBJECTS = \
 "CMakeFiles/wfsplugin.dir/__/__/__/__/src/app/qgsnewhttpconnection.o" \
 "CMakeFiles/wfsplugin.dir/moc_qgswfsplugin.o" \
 "CMakeFiles/wfsplugin.dir/moc_qgswfssourceselect.o" \
-"CMakeFiles/wfsplugin.dir/moc_qgsnewhttpconnection.o"
+"CMakeFiles/wfsplugin.dir/moc_qgsnewhttpconnection.o" \
+"CMakeFiles/wfsplugin.dir/qrc_wfsplugin.o"
 
 # External object files for target wfsplugin
 wfsplugin_EXTERNAL_OBJECTS =
@@ -236,24 +268,22 @@ src/plugins/wfs/libwfsplugin.so: src/plugins/wfs/CMakeFiles/wfsplugin.dir/__/__/
 src/plugins/wfs/libwfsplugin.so: src/plugins/wfs/CMakeFiles/wfsplugin.dir/moc_qgswfsplugin.o
 src/plugins/wfs/libwfsplugin.so: src/plugins/wfs/CMakeFiles/wfsplugin.dir/moc_qgswfssourceselect.o
 src/plugins/wfs/libwfsplugin.so: src/plugins/wfs/CMakeFiles/wfsplugin.dir/moc_qgsnewhttpconnection.o
-src/plugins/wfs/libwfsplugin.so: /Library/Frameworks/Qt3Support.framework
-src/plugins/wfs/libwfsplugin.so: /Library/Frameworks/QtSvg.framework
-src/plugins/wfs/libwfsplugin.so: /Library/Frameworks/QtGui.framework
-src/plugins/wfs/libwfsplugin.so: /Library/Frameworks/QtXml.framework
-src/plugins/wfs/libwfsplugin.so: /Library/Frameworks/QtSql.framework
-src/plugins/wfs/libwfsplugin.so: /Library/Frameworks/QtNetwork.framework
-src/plugins/wfs/libwfsplugin.so: /Library/Frameworks/QtCore.framework
-src/plugins/wfs/libwfsplugin.so: /usr/lib/libz.dylib
+src/plugins/wfs/libwfsplugin.so: src/plugins/wfs/CMakeFiles/wfsplugin.dir/qrc_wfsplugin.o
 src/plugins/wfs/libwfsplugin.so: src/core/libqgis_core.dylib
 src/plugins/wfs/libwfsplugin.so: src/gui/libqgis_gui.dylib
+src/plugins/wfs/libwfsplugin.so: /Library/Frameworks/QtCore.framework
+src/plugins/wfs/libwfsplugin.so: /Library/Frameworks/QtGui.framework
+src/plugins/wfs/libwfsplugin.so: /Library/Frameworks/QtXml.framework
+src/plugins/wfs/libwfsplugin.so: /Library/Frameworks/QtSvg.framework
+src/plugins/wfs/libwfsplugin.so: /Library/Frameworks/QtNetwork.framework
 src/plugins/wfs/libwfsplugin.so: /Library/Frameworks/proj.framework
-src/plugins/wfs/libwfsplugin.so: /Library/Frameworks/sqlite3.framework
-src/plugins/wfs/libwfsplugin.so: /Library/Frameworks/geos.framework
+src/plugins/wfs/libwfsplugin.so: /Library/Frameworks/GEOS.framework/unix/lib/libgeos_c.dylib
 src/plugins/wfs/libwfsplugin.so: /Library/Frameworks/GDAL.framework/Versions/1.5/unix/lib/libgdal.dylib
+src/plugins/wfs/libwfsplugin.so: /Library/Frameworks/sqlite3.framework
 src/plugins/wfs/libwfsplugin.so: src/plugins/wfs/CMakeFiles/wfsplugin.dir/build.make
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX shared module libwfsplugin.so"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/wfs && $(CMAKE_COMMAND) -P CMakeFiles/wfsplugin.dir/cmake_clean_target.cmake
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/wfs && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/wfsplugin.dir/link.txt --verbose=$(VERBOSE)
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/wfs && $(CMAKE_COMMAND) -P CMakeFiles/wfsplugin.dir/cmake_clean_target.cmake
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/wfs && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/wfsplugin.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 src/plugins/wfs/CMakeFiles/wfsplugin.dir/build: src/plugins/wfs/libwfsplugin.so
@@ -264,7 +294,8 @@ src/plugins/wfs/CMakeFiles/wfsplugin.dir/requires: src/plugins/wfs/CMakeFiles/wf
 src/plugins/wfs/CMakeFiles/wfsplugin.dir/requires: src/plugins/wfs/CMakeFiles/wfsplugin.dir/moc_qgswfsplugin.o.requires
 src/plugins/wfs/CMakeFiles/wfsplugin.dir/requires: src/plugins/wfs/CMakeFiles/wfsplugin.dir/moc_qgswfssourceselect.o.requires
 src/plugins/wfs/CMakeFiles/wfsplugin.dir/requires: src/plugins/wfs/CMakeFiles/wfsplugin.dir/moc_qgsnewhttpconnection.o.requires
+src/plugins/wfs/CMakeFiles/wfsplugin.dir/requires: src/plugins/wfs/CMakeFiles/wfsplugin.dir/qrc_wfsplugin.o.requires
 
 src/plugins/wfs/CMakeFiles/wfsplugin.dir/clean:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/wfs && $(CMAKE_COMMAND) -P CMakeFiles/wfsplugin.dir/cmake_clean.cmake
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/wfs && $(CMAKE_COMMAND) -P CMakeFiles/wfsplugin.dir/cmake_clean.cmake
 

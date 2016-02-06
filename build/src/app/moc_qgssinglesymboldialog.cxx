@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'qgssinglesymboldialog.h'
 **
-** Created: Wed Jun 11 19:05:43 2008
+** Created: Fri Jun 19 01:54:09 2009
 **      by: The Qt Meta Object Compiler version 59 (Qt 4.3.2)
 **
 ** WARNING! All changes made in this file will be lost!
@@ -22,7 +22,7 @@ static const uint qt_meta_data_QgsSingleSymbolDialog[] = {
        1,       // revision
        0,       // classname
        0,    0, // classinfo
-       8,   10, // methods
+      12,   10, // methods
        0,    0, // properties
        0,    0, // enums/sets
 
@@ -30,23 +30,30 @@ static const uint qt_meta_data_QgsSingleSymbolDialog[] = {
       23,   22,   22,   22, 0x05,
 
  // slots: signature, parameters, type, tag, flags
-      44,   41,   22,   22, 0x0a,
-      66,   22,   22,   22, 0x0a,
-      74,   41,   22,   22, 0x0a,
-      92,   22,   22,   22, 0x0a,
-     116,   22,   22,   22, 0x09,
-     137,   22,   22,   22, 0x09,
-     155,   22,   22,   22, 0x09,
+      41,   22,   22,   22, 0x0a,
+      52,   49,   22,   22, 0x0a,
+      74,   49,   22,   22, 0x0a,
+     102,   22,   22,   22, 0x0a,
+     110,   49,   22,   22, 0x0a,
+     128,   22,   22,   22, 0x0a,
+     161,  152,   22,   22, 0x0a,
+     183,   22,   22,   22, 0x09,
+     204,   22,   22,   22, 0x09,
+     222,   22,   22,   22, 0x09,
+     260,  243,   22,   22, 0x09,
 
        0        // eod
 };
 
 static const char qt_meta_stringdata_QgsSingleSymbolDialog[] = {
     "QgsSingleSymbolDialog\0\0settingsChanged()\0"
-    "sy\0set(const QgsSymbol*)\0apply()\0"
+    "unset()\0sy\0set(const QgsSymbol*)\0"
+    "updateSet(const QgsSymbol*)\0apply()\0"
     "apply(QgsSymbol*)\0resendSettingsChanged()\0"
+    "theIndex\0fillStyleChanged(int)\0"
     "selectOutlineColor()\0selectFillColor()\0"
-    "selectTextureImage()\0"
+    "selectTextureImage()\0current,previous\0"
+    "symbolChanged(QListWidgetItem*,QListWidgetItem*)\0"
 };
 
 const QMetaObject QgsSingleSymbolDialog::staticMetaObject = {
@@ -75,15 +82,19 @@ int QgsSingleSymbolDialog::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_c == QMetaObject::InvokeMetaMethod) {
         switch (_id) {
         case 0: settingsChanged(); break;
-        case 1: set((*reinterpret_cast< const QgsSymbol*(*)>(_a[1]))); break;
-        case 2: apply(); break;
-        case 3: apply((*reinterpret_cast< QgsSymbol*(*)>(_a[1]))); break;
-        case 4: resendSettingsChanged(); break;
-        case 5: selectOutlineColor(); break;
-        case 6: selectFillColor(); break;
-        case 7: selectTextureImage(); break;
+        case 1: unset(); break;
+        case 2: set((*reinterpret_cast< const QgsSymbol*(*)>(_a[1]))); break;
+        case 3: updateSet((*reinterpret_cast< const QgsSymbol*(*)>(_a[1]))); break;
+        case 4: apply(); break;
+        case 5: apply((*reinterpret_cast< QgsSymbol*(*)>(_a[1]))); break;
+        case 6: resendSettingsChanged(); break;
+        case 7: fillStyleChanged((*reinterpret_cast< int(*)>(_a[1]))); break;
+        case 8: selectOutlineColor(); break;
+        case 9: selectFillColor(); break;
+        case 10: selectTextureImage(); break;
+        case 11: symbolChanged((*reinterpret_cast< QListWidgetItem*(*)>(_a[1])),(*reinterpret_cast< QListWidgetItem*(*)>(_a[2]))); break;
         }
-        _id -= 8;
+        _id -= 12;
     }
     return _id;
 }

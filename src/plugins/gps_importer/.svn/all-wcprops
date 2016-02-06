@@ -1,113 +1,113 @@
 K 25
 svn:wc:ra_dav:version-url
-V 73
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/gps_importer
+V 68
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/gps_importer
 END
 qgsbabelformat.h
 K 25
 svn:wc:ra_dav:version-url
-V 90
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/gps_importer/qgsbabelformat.h
+V 85
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/gps_importer/qgsbabelformat.h
 END
 qgsgpsdevicedialog.cpp
 K 25
 svn:wc:ra_dav:version-url
-V 96
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/gps_importer/qgsgpsdevicedialog.cpp
+V 91
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/gps_importer/qgsgpsdevicedialog.cpp
 END
 qgsgpsdevicedialog.h
 K 25
 svn:wc:ra_dav:version-url
-V 94
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/gps_importer/qgsgpsdevicedialog.h
-END
-icon.xpm
-K 25
-svn:wc:ra_dav:version-url
-V 82
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/gps_importer/icon.xpm
+V 89
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/gps_importer/qgsgpsdevicedialog.h
 END
 gps.xpm
 K 25
 svn:wc:ra_dav:version-url
-V 81
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/gps_importer/gps.xpm
+V 76
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/gps_importer/gps.xpm
 END
 README
 K 25
 svn:wc:ra_dav:version-url
-V 80
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/gps_importer/README
+V 75
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/gps_importer/README
+END
+gps_importer.png
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/gps_importer/gps_importer.png
 END
 qgsgpspluginguibase.ui
 K 25
 svn:wc:ra_dav:version-url
-V 96
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/gps_importer/qgsgpspluginguibase.ui
+V 91
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/gps_importer/qgsgpspluginguibase.ui
 END
 qgsgpsplugin.cpp
 K 25
 svn:wc:ra_dav:version-url
-V 90
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/gps_importer/qgsgpsplugin.cpp
+V 85
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/gps_importer/qgsgpsplugin.cpp
 END
 qgsgpsdevice.cpp
 K 25
 svn:wc:ra_dav:version-url
-V 90
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/gps_importer/qgsgpsdevice.cpp
+V 85
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/gps_importer/qgsgpsdevice.cpp
 END
 qgsgps_plugin.qrc
 K 25
 svn:wc:ra_dav:version-url
-V 91
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/gps_importer/qgsgps_plugin.qrc
+V 86
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/gps_importer/qgsgps_plugin.qrc
 END
 qgsgpsplugin.h
 K 25
 svn:wc:ra_dav:version-url
-V 88
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/gps_importer/qgsgpsplugin.h
+V 83
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/gps_importer/qgsgpsplugin.h
 END
 qgsgpsplugingui.cpp
 K 25
 svn:wc:ra_dav:version-url
-V 93
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/gps_importer/qgsgpsplugingui.cpp
+V 88
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/gps_importer/qgsgpsplugingui.cpp
 END
 qgsbabelformat.cpp
 K 25
 svn:wc:ra_dav:version-url
-V 92
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/gps_importer/qgsbabelformat.cpp
+V 87
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/gps_importer/qgsbabelformat.cpp
 END
 qgsgpsdevice.h
 K 25
 svn:wc:ra_dav:version-url
-V 88
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/gps_importer/qgsgpsdevice.h
+V 83
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/gps_importer/qgsgpsdevice.h
 END
 qgsgpsdevicedialogbase.ui
 K 25
 svn:wc:ra_dav:version-url
-V 99
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/gps_importer/qgsgpsdevicedialogbase.ui
+V 94
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/gps_importer/qgsgpsdevicedialogbase.ui
 END
 CMakeLists.txt
 K 25
 svn:wc:ra_dav:version-url
-V 88
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/gps_importer/CMakeLists.txt
+V 83
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/gps_importer/CMakeLists.txt
 END
 .cvsignore
 K 25
 svn:wc:ra_dav:version-url
-V 84
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/gps_importer/.cvsignore
+V 79
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/gps_importer/.cvsignore
 END
 qgsgpsplugingui.h
 K 25
 svn:wc:ra_dav:version-url
-V 91
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/gps_importer/qgsgpsplugingui.h
+V 86
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/gps_importer/qgsgpsplugingui.h
 END

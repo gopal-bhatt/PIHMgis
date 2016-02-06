@@ -14,16 +14,19 @@
  *   (at your option) any later version.                                   *
  *                                                                         *
  ***************************************************************************/
-/* $Id: qgscsexception.h 6415 2007-01-09 02:39:15Z wonder $ */
+/* $Id: qgscsexception.h 9138 2008-08-23 21:37:31Z jef $ */
 #ifndef QGSCSEXCEPTION_H
 #define QGSCSEXCEPTION_H
 
 #include "qgsexception.h"
+/** \ingroup core
+ * Custom exception class for Coordinate Reference System related exceptions.
+ */
 class CORE_EXPORT QgsCsException : public QgsException
 {
   public:
-    QgsCsException(std::string const &what) : QgsException(what){};
-    QgsCsException(QString const &what) : QgsException(what){};
-    
+    QgsCsException( std::string const &what ) : QgsException( what ) {};
+    QgsCsException( QString const &what ) : QgsException( what ) {};
+
 };
 #endif //QGCSEXCEPTION_H

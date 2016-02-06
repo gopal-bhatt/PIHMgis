@@ -2,7 +2,6 @@
 SET (DOC_FILES
 favicon.ico
 index.html
-install.pdf
 qgisdoc.css
 userguide.pdf
 )

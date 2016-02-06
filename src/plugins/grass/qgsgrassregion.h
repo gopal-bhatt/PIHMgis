@@ -16,20 +16,19 @@
 #ifndef QGSGRASSREGION_H
 #define QGSGRASSREGION_H
 
-#include <q3pointarray.h>
+#include "ui_qgsgrassregionbase.h"
 
-class QgsGrassProvider;
 class QgsGrassPlugin;
+class QgsGrassRegionEdit;
+
 class QgisInterface;
 class QgsMapCanvas;
-class Q3ButtonGroup;
-class QgsPoint;
-class QgsGrassRegionEdit;
-#include "ui_qgsgrassregionbase.h"
-#include <QDialog>
-#include <QRubberBand>
+//class QgsPoint;
 
-extern "C" {
+class QButtonGroup;
+
+extern "C"
+{
 #include <grass/gis.h>
 }
 
@@ -39,27 +38,27 @@ extern "C" {
  */
 class QgsGrassRegion: public QDialog, private Ui::QgsGrassRegionBase
 {
-    Q_OBJECT;
+    Q_OBJECT
 
-public:
+  public:
     //! Constructor
-    QgsGrassRegion ( QgsGrassPlugin *plugin, QgisInterface *iface, 
-	             QWidget * parent = 0, Qt::WFlags f = 0 );
+    QgsGrassRegion( QgsGrassPlugin *plugin, QgisInterface *iface,
+                    QWidget * parent = 0, Qt::WFlags f = 0 );
 
     //! Destructor
     ~QgsGrassRegion();
 
-public slots:
+  public slots:
     //! OK
     void on_acceptButton_clicked() { accept(); }
-    void accept ( void );
+    void accept( void );
 
     //! Close
     void on_rejectButton_clicked() { reject(); }
-    void reject ( void );
+    void reject( void );
 
     //! Called when rendering is finished
-    void postRender ( QPainter * );
+    void postRender( QPainter * );
 
     //! Mouse event receiver
     //void mouseEventReceiverMove ( QgsPoint & );
@@ -68,27 +67,27 @@ public slots:
     //void mouseEventReceiverClick ( QgsPoint & );
 
     //! Calculate region, called if any value is changed
-    void adjust ( void );
+    void adjust( void );
 
     //! Value in GUI was changed
-    void northChanged(const QString &str);
-    void southChanged(const QString &str);
-    void eastChanged(const QString &str);
-    void westChanged(const QString &str);
-    void NSResChanged(const QString &str);
-    void EWResChanged(const QString &str);
-    void rowsChanged(const QString &str);
-    void colsChanged(const QString &str);
+    void northChanged( const QString &str );
+    void southChanged( const QString &str );
+    void eastChanged( const QString &str );
+    void westChanged( const QString &str );
+    void NSResChanged( const QString &str );
+    void EWResChanged( const QString &str );
+    void rowsChanged( const QString &str );
+    void colsChanged( const QString &str );
 
-    void radioChanged ( void ) ;
-    
-    void changeColor ( void ) ;
-    void changeWidth ( void ) ;
+    void radioChanged( void ) ;
 
-    void restorePosition(void);
+    void changeColor( void ) ;
+    void changeWidth( void ) ;
 
-private:
-    //! Pointer to plugin 
+    void restorePosition( void );
+
+  private:
+    //! Pointer to plugin
     QgsGrassPlugin *mPlugin;
 
     //! Pointer to QGIS interface
@@ -97,40 +96,40 @@ private:
     //! Pointer to canvas
     QgsMapCanvas *mCanvas;
 
-    Q3ButtonGroup *mNSRadioGroup;
-    Q3ButtonGroup *mEWRadioGroup;
+    QButtonGroup *mNSRadioGroup;
+    QButtonGroup *mEWRadioGroup;
 
     //! Current new region
     struct Cell_head mWindow;
 
     //! Display current state of new region in XOR mode
-    void displayRegion(void);
+    void displayRegion( void );
 
-    //! Region was displayed 
+    //! Region was displayed
     bool mDisplayed;
 
     //! Draw region
-    void draw ( double x1, double y1, double x2, double y2 );
+    void draw( double x1, double y1, double x2, double y2 );
 
     //! First corner coordinates
     double mX;
     double mY;
-    
+
     //! Currently updating GUI, don't run *Changed methods
     bool mUpdatingGui;
 
     // Set region values in GUI from mWindow
-    void setGuiValues( bool north = true, bool south = true, bool east = true, bool west = true, 
-	               bool nsres = true, bool ewres = true, bool rows = true, bool cols = true );
+    void setGuiValues( bool north = true, bool south = true, bool east = true, bool west = true,
+                       bool nsres = true, bool ewres = true, bool rows = true, bool cols = true );
 
-    
-    void saveWindowLocation(void);
+
+    void saveWindowLocation( void );
 
     // Format N, S, E, W value
-    QString formatEdge ( double v );
+    QString formatEdge( double v );
 
     QgsGrassRegionEdit* mRegionEdit;
-    
+
     friend class QgsGrassRegionEdit;
 };
 

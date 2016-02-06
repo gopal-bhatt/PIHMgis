@@ -3,6 +3,7 @@ FILE(REMOVE
 "moc_qgswfssourceselect.cxx"
 "moc_qgsnewhttpconnection.cxx"
 "ui_qgswfssourceselectbase.h"
+"qrc_wfsplugin.cxx"
 "libwfsplugin.pdb"
 "libwfsplugin.a"
 "libwfsplugin.so"
@@ -12,4 +13,5 @@ FILE(REMOVE
 "CMakeFiles/wfsplugin.dir/moc_qgswfsplugin.o"
 "CMakeFiles/wfsplugin.dir/moc_qgswfssourceselect.o"
 "CMakeFiles/wfsplugin.dir/moc_qgsnewhttpconnection.o"
+"CMakeFiles/wfsplugin.dir/qrc_wfsplugin.o"
 )

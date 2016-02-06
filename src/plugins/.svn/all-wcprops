@@ -1,35 +1,35 @@
 K 25
 svn:wc:ra_dav:version-url
-V 60
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins
+V 55
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins
 END
 qgsrendererplugin.h
 K 25
 svn:wc:ra_dav:version-url
-V 80
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/qgsrendererplugin.h
+V 75
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/qgsrendererplugin.h
 END
 qgisplugin.h
 K 25
 svn:wc:ra_dav:version-url
-V 73
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/qgisplugin.h
+V 68
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/qgisplugin.h
 END
 plugin_builder.py
 K 25
 svn:wc:ra_dav:version-url
-V 78
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/plugin_builder.py
+V 73
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/plugin_builder.py
 END
 CMakeLists.txt
 K 25
 svn:wc:ra_dav:version-url
-V 75
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/CMakeLists.txt
+V 70
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/CMakeLists.txt
 END
 .cvsignore
 K 25
 svn:wc:ra_dav:version-url
-V 71
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/.cvsignore
+V 66
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/.cvsignore
 END

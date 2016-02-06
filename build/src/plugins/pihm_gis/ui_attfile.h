@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading ui file 'attfile.ui'
 **
-** Created: Sun Jun 15 03:16:52 2008
+** Created: Fri Jun 19 02:00:51 2009
 **      by: Qt User Interface Compiler version 4.3.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling ui file!

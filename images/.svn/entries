@@ -1,14 +1,14 @@
 8
 
 dir
-7809
-https://svn.qgis.org/repos/qgis/branches/Release-0_9_0/images
-https://svn.qgis.org/repos/qgis
+10938
+https://svn.osgeo.org/qgis/branches/Release-1_0_2/images
+https://svn.osgeo.org/qgis
 
 
 
-2007-07-25T20:00:26.247663Z
-7086
+2009-02-18T08:42:45.289454Z
+10197
 timlinux
 has-props
 
@@ -38,6 +38,18 @@ dir
 developers
 dir
 
+images.qrc
+file
+
+
+
+
+2009-06-17T07:50:13.000000Z
+fe7486335270979ec658b3c87d0e7e24
+2008-05-14T13:03:59.692029Z
+8431
+timlinux
+
 splash
 dir
 
@@ -50,7 +62,7 @@ file
 
 
 
-2007-12-24T08:18:32.000000Z
+2009-06-17T07:50:13.000000Z
 31076018db46093e4e5e50ab56486a4e
 2005-01-10T20:26:46.000000Z
 2610
@@ -63,11 +75,11 @@ file
 
 
 
-2007-12-24T08:18:32.000000Z
-9a4d8450b97f8884c079c59fff056731
-2007-01-09T02:39:15.173934Z
-6415
-wonder
+2009-06-17T07:50:13.000000Z
+2e389079e6fa3ba6e5e2c672633f0d13
+2008-05-14T12:53:25.946338Z
+8428
+timlinux
 
 designer_widget_icons
 dir

@@ -1,9 +1,9 @@
 /***************************************************************************
                         qgsrasterviewport.h  -  description
                               -------------------
-	begin                : Fri Jun 28 2002
-	copyright            : (C) 2005 by T.Sutton
-	email                : tim@linfiniti.com
+ begin                : Fri Jun 28 2002
+ copyright            : (C) 2005 by T.Sutton
+ email                : tim@linfiniti.com
 ***************************************************************************/
 
 /***************************************************************************
@@ -20,10 +20,10 @@
 
 #include <qgspoint.h>
 
-/** \file qgsrasterviewport.h
- *  \brief This class provides details of the viewable area that a raster will
+/** \ingroup core
+ *  This class provides details of the viewable area that a raster will
  *  be rendered into.
- *  
+ *
  *  The qgsrasterviewport class sets up a viewport / area of interest to be used
  *  by rasterlayer draw functions at the point of drawing to the screen.
  */
@@ -32,48 +32,48 @@ struct QgsRasterViewPort
 {
   /** \brief  The offset from the left hand edge of the raster for the rectangle that will be drawn to screen.
    * TODO Check this explanation is correc!*/
-  int   rectXOffsetInt;
+  int   rectXOffset;
   float rectXOffsetFloat;
   /** \brief  The offset from the bottom edge of the raster for the rectangle that will be drawn to screen.
    * TODO Check this explanation is correc!*/
-  int   rectYOffsetInt;
+  int   rectYOffset;
   float rectYOffsetFloat;
   /** \brief Lower left X dimension of clipped raster image in raster pixel space.
-   *  RasterIO will do the scaling for us, so for example, if the user is zoomed in a long way, there may only 
-   *  be e.g. 5x5 pixels retrieved from the raw raster data, but rasterio will seamlessly scale the up to 
+   *  RasterIO will do the scaling for us, so for example, if the user is zoomed in a long way, there may only
+   *  be e.g. 5x5 pixels retrieved from the raw raster data, but rasterio will seamlessly scale the up to
    *  whatever the screen coordinates are (e.g. a 600x800 display window) */
-  double clippedXMinDouble;
+  double clippedXMin;
   /** \brief Top Right X dimension of clipped raster image in raster pixel space.
-   *  RasterIO will do the scaling for us, so for example, if the user is zoomed in a long way, there may only 
-   *  be e.g. 5x5 pixels retrieved from the raw raster data, but rasterio will seamlessly scale the up to 
+   *  RasterIO will do the scaling for us, so for example, if the user is zoomed in a long way, there may only
+   *  be e.g. 5x5 pixels retrieved from the raw raster data, but rasterio will seamlessly scale the up to
    *  whatever the screen coordinates are (e.g. a 600x800 display window) */
-  double clippedXMaxDouble;
+  double clippedXMax;
   /** \brief Lower left Y dimension of clipped raster image in raster pixel space.
-   *  RasterIO will do the scaling for us, so for example, if the user is zoomed in a long way, there may only 
-   *  be e.g. 5x5 pixels retrieved from the raw raster data, but rasterio will seamlessly scale the up to 
+   *  RasterIO will do the scaling for us, so for example, if the user is zoomed in a long way, there may only
+   *  be e.g. 5x5 pixels retrieved from the raw raster data, but rasterio will seamlessly scale the up to
    *  whatever the screen coordinates are (e.g. a 600x800 display window) */
-  double clippedYMinDouble;
+  double clippedYMin;
   /** \brief Top Right X dimension of clipped raster image in raster pixel space.
-   *  RasterIO will do the scaling for us, so for example, if the user is zoomed in a long way, there may only 
-   *  be e.g. 5x5 pixels retrieved from the raw raster data, but rasterio will seamlessly scale the up to 
+   *  RasterIO will do the scaling for us, so for example, if the user is zoomed in a long way, there may only
+   *  be e.g. 5x5 pixels retrieved from the raw raster data, but rasterio will seamlessly scale the up to
    *  whatever the screen coordinates are (e.g. a 600x800 display window) */
-  double clippedYMaxDouble;
-  /** \brief  Distance in pixels from clippedXMinDouble to clippedXMaxDouble. */
-  int clippedWidthInt;
-  /** \brief Distance in pixels from clippedYMinDouble to clippedYMaxDouble  */
-  int clippedHeightInt;
-  /** \brief Coordinate (in geographic coordinate system) of top left corner of the part of the raster that 
+  double clippedYMax;
+  /** \brief  Distance in pixels from clippedXMin to clippedXMax. */
+  int clippedWidth;
+  /** \brief Distance in pixels from clippedYMin to clippedYMax  */
+  int clippedHeight;
+  /** \brief Coordinate (in geographic coordinate system) of top left corner of the part of the raster that
    * is to be rendered.*/
   QgsPoint topLeftPoint;
-  /** \brief Coordinate (in geographic coordinate system) of bottom right corner of the part of the raster that 
+  /** \brief Coordinate (in geographic coordinate system) of bottom right corner of the part of the raster that
    * is to be rendered.*/
   QgsPoint bottomRightPoint;
-  /** \brief Distance in map units from left edge to right edge for the part of the raster that 
+  /** \brief Distance in map units from left edge to right edge for the part of the raster that
    * is to be rendered.*/
-  int drawableAreaXDimInt;
-  /** \brief Distance in map units from bottom edge to top edge for the part of the raster that 
+  int drawableAreaXDim;
+  /** \brief Distance in map units from bottom edge to top edge for the part of the raster that
    * is to be rendered.*/
-  int drawableAreaYDimInt;
+  int drawableAreaYDim;
 };
 
 #endif //QGSRASTERVIEWPORT_H

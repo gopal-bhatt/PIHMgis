@@ -34,10 +34,10 @@ RM = /usr/bin/cmake -E remove -f
 CMAKE_EDIT_COMMAND = /usr/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0
+CMAKE_SOURCE_DIR = /Users/bhattgopal/dev/cpp/qgis_1.0.2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build
+CMAKE_BINARY_DIR = /Users/bhattgopal/dev/cpp/qgis_1.0.2/build
 
 # Include the progress variables for this target.
 include CMakeFiles/progress.make
@@ -48,7 +48,7 @@ include CMakeFiles/progress.make
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/app && /usr/bin/ccmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/app && /usr/bin/ccmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 
 # Special rule for the target edit_cache
 edit_cache/fast: edit_cache
@@ -56,17 +56,17 @@ edit_cache/fast: edit_cache
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/app && /usr/bin/cmake -P cmake_install.cmake
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/app && /usr/bin/cmake -P cmake_install.cmake
 
 # Special rule for the target install
 install/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/app && /usr/bin/cmake -P cmake_install.cmake
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/app && /usr/bin/cmake -P cmake_install.cmake
 
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/app && /usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/app && /usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 
 # Special rule for the target install/local
 install/local/fast: install/local
@@ -81,7 +81,7 @@ list_install_components/fast: list_install_components
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/app && /usr/bin/cpack --config /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CPackConfig.cmake
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/app && /usr/bin/cpack --config /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CPackConfig.cmake
 
 # Special rule for the target package
 package/fast: package
@@ -89,7 +89,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/app && /usr/bin/cpack --config /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CPackSourceConfig.cmake
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/app && /usr/bin/cpack --config /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CPackSourceConfig.cmake
 
 # Special rule for the target package_source
 package_source/fast: package_source
@@ -97,31 +97,31 @@ package_source/fast: package_source
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/app && /usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/app && /usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 
 # Special rule for the target rebuild_cache
 rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_ALL_PROGRESS)
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f CMakeFiles/Makefile2 src/app/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles 0
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_ALL_PROGRESS)
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f CMakeFiles/Makefile2 src/app/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles 0
 
 # The main clean target
 clean:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f CMakeFiles/Makefile2 src/app/clean
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f CMakeFiles/Makefile2 src/app/clean
 
 # The main clean target
 clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f CMakeFiles/Makefile2 src/app/preinstall
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f CMakeFiles/Makefile2 src/app/preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f CMakeFiles/Makefile2 src/app/preinstall
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f CMakeFiles/Makefile2 src/app/preinstall
 
 # clear depends
 depend:
@@ -129,1490 +129,1490 @@ depend:
 
 # Convenience name for target.
 src/app/CMakeFiles/qgis.dir/rule:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f CMakeFiles/Makefile2 src/app/CMakeFiles/qgis.dir/rule
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f CMakeFiles/Makefile2 src/app/CMakeFiles/qgis.dir/rule
 
 # Convenience name for target.
 qgis: src/app/CMakeFiles/qgis.dir/rule
 
 # fast build rule for target.
 qgis/fast:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/build
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/build
 
 # target to build an object file
 composer/qgscomposer.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/composer/qgscomposer.o
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/composer/qgscomposer.o
 
 # target to preprocess a source file
 composer/qgscomposer.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/composer/qgscomposer.i
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/composer/qgscomposer.i
 
 # target to generate assembly for a file
 composer/qgscomposer.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/composer/qgscomposer.s
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/composer/qgscomposer.s
 
 # target to build an object file
-composer/qgscomposeritem.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/composer/qgscomposeritem.o
+composer/qgscomposeritemwidget.o:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/composer/qgscomposeritemwidget.o
 
 # target to preprocess a source file
-composer/qgscomposeritem.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/composer/qgscomposeritem.i
+composer/qgscomposeritemwidget.i:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/composer/qgscomposeritemwidget.i
 
 # target to generate assembly for a file
-composer/qgscomposeritem.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/composer/qgscomposeritem.s
+composer/qgscomposeritemwidget.s:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/composer/qgscomposeritemwidget.s
 
 # target to build an object file
-composer/qgscomposerlabel.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/composer/qgscomposerlabel.o
+composer/qgscomposerlabelwidget.o:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/composer/qgscomposerlabelwidget.o
 
 # target to preprocess a source file
-composer/qgscomposerlabel.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/composer/qgscomposerlabel.i
+composer/qgscomposerlabelwidget.i:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/composer/qgscomposerlabelwidget.i
 
 # target to generate assembly for a file
-composer/qgscomposerlabel.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/composer/qgscomposerlabel.s
+composer/qgscomposerlabelwidget.s:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/composer/qgscomposerlabelwidget.s
 
 # target to build an object file
-composer/qgscomposermap.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/composer/qgscomposermap.o
+composer/qgscomposerlegenditemdialog.o:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/composer/qgscomposerlegenditemdialog.o
 
 # target to preprocess a source file
-composer/qgscomposermap.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/composer/qgscomposermap.i
+composer/qgscomposerlegenditemdialog.i:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/composer/qgscomposerlegenditemdialog.i
 
 # target to generate assembly for a file
-composer/qgscomposermap.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/composer/qgscomposermap.s
+composer/qgscomposerlegenditemdialog.s:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/composer/qgscomposerlegenditemdialog.s
 
 # target to build an object file
-composer/qgscomposerpicture.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/composer/qgscomposerpicture.o
+composer/qgscomposerlegendwidget.o:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/composer/qgscomposerlegendwidget.o
 
 # target to preprocess a source file
-composer/qgscomposerpicture.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/composer/qgscomposerpicture.i
+composer/qgscomposerlegendwidget.i:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/composer/qgscomposerlegendwidget.i
 
 # target to generate assembly for a file
-composer/qgscomposerpicture.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/composer/qgscomposerpicture.s
+composer/qgscomposerlegendwidget.s:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/composer/qgscomposerlegendwidget.s
 
 # target to build an object file
-composer/qgscomposerscalebar.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/composer/qgscomposerscalebar.o
+composer/qgscomposermapwidget.o:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/composer/qgscomposermapwidget.o
 
 # target to preprocess a source file
-composer/qgscomposerscalebar.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/composer/qgscomposerscalebar.i
+composer/qgscomposermapwidget.i:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/composer/qgscomposermapwidget.i
 
 # target to generate assembly for a file
-composer/qgscomposerscalebar.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/composer/qgscomposerscalebar.s
+composer/qgscomposermapwidget.s:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/composer/qgscomposermapwidget.s
 
 # target to build an object file
-composer/qgscomposervectorlegend.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/composer/qgscomposervectorlegend.o
+composer/qgscomposerpicturewidget.o:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/composer/qgscomposerpicturewidget.o
 
 # target to preprocess a source file
-composer/qgscomposervectorlegend.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/composer/qgscomposervectorlegend.i
+composer/qgscomposerpicturewidget.i:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/composer/qgscomposerpicturewidget.i
 
 # target to generate assembly for a file
-composer/qgscomposervectorlegend.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/composer/qgscomposervectorlegend.s
+composer/qgscomposerpicturewidget.s:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/composer/qgscomposerpicturewidget.s
 
 # target to build an object file
-composer/qgscomposerview.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/composer/qgscomposerview.o
+composer/qgscomposerscalebarwidget.o:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/composer/qgscomposerscalebarwidget.o
 
 # target to preprocess a source file
-composer/qgscomposerview.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/composer/qgscomposerview.i
+composer/qgscomposerscalebarwidget.i:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/composer/qgscomposerscalebarwidget.i
 
 # target to generate assembly for a file
-composer/qgscomposerview.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/composer/qgscomposerview.s
+composer/qgscomposerscalebarwidget.s:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/composer/qgscomposerscalebarwidget.s
 
 # target to build an object file
-composer/qgscomposition.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/composer/qgscomposition.o
+composer/qgscompositionwidget.o:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/composer/qgscompositionwidget.o
 
 # target to preprocess a source file
-composer/qgscomposition.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/composer/qgscomposition.i
+composer/qgscompositionwidget.i:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/composer/qgscompositionwidget.i
 
 # target to generate assembly for a file
-composer/qgscomposition.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/composer/qgscomposition.s
+composer/qgscompositionwidget.s:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/composer/qgscompositionwidget.s
 
 # target to build an object file
 legend/qgslegend.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/legend/qgslegend.o
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/legend/qgslegend.o
 
 # target to preprocess a source file
 legend/qgslegend.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/legend/qgslegend.i
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/legend/qgslegend.i
 
 # target to generate assembly for a file
 legend/qgslegend.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/legend/qgslegend.s
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/legend/qgslegend.s
 
 # target to build an object file
 legend/qgslegendgroup.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/legend/qgslegendgroup.o
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/legend/qgslegendgroup.o
 
 # target to preprocess a source file
 legend/qgslegendgroup.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/legend/qgslegendgroup.i
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/legend/qgslegendgroup.i
 
 # target to generate assembly for a file
 legend/qgslegendgroup.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/legend/qgslegendgroup.s
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/legend/qgslegendgroup.s
 
 # target to build an object file
 legend/qgslegenditem.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/legend/qgslegenditem.o
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/legend/qgslegenditem.o
 
 # target to preprocess a source file
 legend/qgslegenditem.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/legend/qgslegenditem.i
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/legend/qgslegenditem.i
 
 # target to generate assembly for a file
 legend/qgslegenditem.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/legend/qgslegenditem.s
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/legend/qgslegenditem.s
 
 # target to build an object file
 legend/qgslegendlayer.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/legend/qgslegendlayer.o
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/legend/qgslegendlayer.o
 
 # target to preprocess a source file
 legend/qgslegendlayer.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/legend/qgslegendlayer.i
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/legend/qgslegendlayer.i
 
 # target to generate assembly for a file
 legend/qgslegendlayer.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/legend/qgslegendlayer.s
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/legend/qgslegendlayer.s
 
 # target to build an object file
 legend/qgslegendlayerfile.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/legend/qgslegendlayerfile.o
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/legend/qgslegendlayerfile.o
 
 # target to preprocess a source file
 legend/qgslegendlayerfile.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/legend/qgslegendlayerfile.i
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/legend/qgslegendlayerfile.i
 
 # target to generate assembly for a file
 legend/qgslegendlayerfile.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/legend/qgslegendlayerfile.s
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/legend/qgslegendlayerfile.s
 
 # target to build an object file
 legend/qgslegendlayerfilegroup.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/legend/qgslegendlayerfilegroup.o
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/legend/qgslegendlayerfilegroup.o
 
 # target to preprocess a source file
 legend/qgslegendlayerfilegroup.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/legend/qgslegendlayerfilegroup.i
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/legend/qgslegendlayerfilegroup.i
 
 # target to generate assembly for a file
 legend/qgslegendlayerfilegroup.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/legend/qgslegendlayerfilegroup.s
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/legend/qgslegendlayerfilegroup.s
 
 # target to build an object file
 legend/qgslegendpropertygroup.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/legend/qgslegendpropertygroup.o
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/legend/qgslegendpropertygroup.o
 
 # target to preprocess a source file
 legend/qgslegendpropertygroup.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/legend/qgslegendpropertygroup.i
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/legend/qgslegendpropertygroup.i
 
 # target to generate assembly for a file
 legend/qgslegendpropertygroup.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/legend/qgslegendpropertygroup.s
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/legend/qgslegendpropertygroup.s
 
 # target to build an object file
 legend/qgslegendpropertyitem.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/legend/qgslegendpropertyitem.o
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/legend/qgslegendpropertyitem.o
 
 # target to preprocess a source file
 legend/qgslegendpropertyitem.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/legend/qgslegendpropertyitem.i
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/legend/qgslegendpropertyitem.i
 
 # target to generate assembly for a file
 legend/qgslegendpropertyitem.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/legend/qgslegendpropertyitem.s
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/legend/qgslegendpropertyitem.s
 
 # target to build an object file
 legend/qgslegendsymbologygroup.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/legend/qgslegendsymbologygroup.o
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/legend/qgslegendsymbologygroup.o
 
 # target to preprocess a source file
 legend/qgslegendsymbologygroup.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/legend/qgslegendsymbologygroup.i
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/legend/qgslegendsymbologygroup.i
 
 # target to generate assembly for a file
 legend/qgslegendsymbologygroup.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/legend/qgslegendsymbologygroup.s
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/legend/qgslegendsymbologygroup.s
 
 # target to build an object file
 legend/qgslegendsymbologyitem.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/legend/qgslegendsymbologyitem.o
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/legend/qgslegendsymbologyitem.o
 
 # target to preprocess a source file
 legend/qgslegendsymbologyitem.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/legend/qgslegendsymbologyitem.i
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/legend/qgslegendsymbologyitem.i
 
 # target to generate assembly for a file
 legend/qgslegendsymbologyitem.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/legend/qgslegendsymbologyitem.s
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/legend/qgslegendsymbologyitem.s
 
 # target to build an object file
 legend/qgslegendvectorsymbologyitem.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/legend/qgslegendvectorsymbologyitem.o
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/legend/qgslegendvectorsymbologyitem.o
 
 # target to preprocess a source file
 legend/qgslegendvectorsymbologyitem.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/legend/qgslegendvectorsymbologyitem.i
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/legend/qgslegendvectorsymbologyitem.i
 
 # target to generate assembly for a file
 legend/qgslegendvectorsymbologyitem.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/legend/qgslegendvectorsymbologyitem.s
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/legend/qgslegendvectorsymbologyitem.s
 
 # target to build an object file
 main.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/main.o
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/main.o
 
 # target to preprocess a source file
 main.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/main.i
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/main.i
 
 # target to generate assembly for a file
 main.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/main.s
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/main.s
 
 # target to build an object file
 moc_qgisapp.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgisapp.o
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgisapp.o
 
 # target to preprocess a source file
 moc_qgisapp.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgisapp.i
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgisapp.i
 
 # target to generate assembly for a file
 moc_qgisapp.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgisapp.s
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgisapp.s
 
 # target to build an object file
 moc_qgisappinterface.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgisappinterface.o
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgisappinterface.o
 
 # target to preprocess a source file
 moc_qgisappinterface.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgisappinterface.i
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgisappinterface.i
 
 # target to generate assembly for a file
 moc_qgisappinterface.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgisappinterface.s
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgisappinterface.s
 
 # target to build an object file
 moc_qgsabout.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsabout.o
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsabout.o
 
 # target to preprocess a source file
 moc_qgsabout.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsabout.i
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsabout.i
 
 # target to generate assembly for a file
 moc_qgsabout.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsabout.s
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsabout.s
 
 # target to build an object file
 moc_qgsaddattrdialog.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsaddattrdialog.o
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsaddattrdialog.o
 
 # target to preprocess a source file
 moc_qgsaddattrdialog.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsaddattrdialog.i
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsaddattrdialog.i
 
 # target to generate assembly for a file
 moc_qgsaddattrdialog.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsaddattrdialog.s
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsaddattrdialog.s
 
 # target to build an object file
 moc_qgsattributeactiondialog.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsattributeactiondialog.o
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsattributeactiondialog.o
 
 # target to preprocess a source file
 moc_qgsattributeactiondialog.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsattributeactiondialog.i
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsattributeactiondialog.i
 
 # target to generate assembly for a file
 moc_qgsattributeactiondialog.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsattributeactiondialog.s
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsattributeactiondialog.s
 
 # target to build an object file
 moc_qgsattributedialog.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsattributedialog.o
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsattributedialog.o
 
 # target to preprocess a source file
 moc_qgsattributedialog.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsattributedialog.i
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsattributedialog.i
 
 # target to generate assembly for a file
 moc_qgsattributedialog.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsattributedialog.s
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsattributedialog.s
 
 # target to build an object file
 moc_qgsattributetable.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsattributetable.o
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsattributetable.o
 
 # target to preprocess a source file
 moc_qgsattributetable.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsattributetable.i
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsattributetable.i
 
 # target to generate assembly for a file
 moc_qgsattributetable.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsattributetable.s
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsattributetable.s
 
 # target to build an object file
 moc_qgsattributetabledisplay.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsattributetabledisplay.o
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsattributetabledisplay.o
 
 # target to preprocess a source file
 moc_qgsattributetabledisplay.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsattributetabledisplay.i
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsattributetabledisplay.i
 
 # target to generate assembly for a file
 moc_qgsattributetabledisplay.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsattributetabledisplay.s
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsattributetabledisplay.s
 
 # target to build an object file
 moc_qgsbookmarks.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsbookmarks.o
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsbookmarks.o
 
 # target to preprocess a source file
 moc_qgsbookmarks.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsbookmarks.i
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsbookmarks.i
 
 # target to generate assembly for a file
 moc_qgsbookmarks.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsbookmarks.s
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsbookmarks.s
 
 # target to build an object file
 moc_qgscomposer.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgscomposer.o
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgscomposer.o
 
 # target to preprocess a source file
 moc_qgscomposer.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgscomposer.i
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgscomposer.i
 
 # target to generate assembly for a file
 moc_qgscomposer.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgscomposer.s
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgscomposer.s
 
 # target to build an object file
-moc_qgscomposerlabel.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgscomposerlabel.o
+moc_qgscomposeritemwidget.o:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgscomposeritemwidget.o
 
 # target to preprocess a source file
-moc_qgscomposerlabel.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgscomposerlabel.i
+moc_qgscomposeritemwidget.i:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgscomposeritemwidget.i
 
 # target to generate assembly for a file
-moc_qgscomposerlabel.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgscomposerlabel.s
+moc_qgscomposeritemwidget.s:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgscomposeritemwidget.s
 
 # target to build an object file
-moc_qgscomposermap.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgscomposermap.o
+moc_qgscomposerlabelwidget.o:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgscomposerlabelwidget.o
 
 # target to preprocess a source file
-moc_qgscomposermap.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgscomposermap.i
+moc_qgscomposerlabelwidget.i:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgscomposerlabelwidget.i
 
 # target to generate assembly for a file
-moc_qgscomposermap.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgscomposermap.s
+moc_qgscomposerlabelwidget.s:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgscomposerlabelwidget.s
 
 # target to build an object file
-moc_qgscomposerpicture.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgscomposerpicture.o
+moc_qgscomposerlegendwidget.o:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgscomposerlegendwidget.o
 
 # target to preprocess a source file
-moc_qgscomposerpicture.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgscomposerpicture.i
+moc_qgscomposerlegendwidget.i:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgscomposerlegendwidget.i
 
 # target to generate assembly for a file
-moc_qgscomposerpicture.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgscomposerpicture.s
+moc_qgscomposerlegendwidget.s:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgscomposerlegendwidget.s
 
 # target to build an object file
-moc_qgscomposerscalebar.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgscomposerscalebar.o
+moc_qgscomposermapwidget.o:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgscomposermapwidget.o
 
 # target to preprocess a source file
-moc_qgscomposerscalebar.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgscomposerscalebar.i
+moc_qgscomposermapwidget.i:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgscomposermapwidget.i
 
 # target to generate assembly for a file
-moc_qgscomposerscalebar.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgscomposerscalebar.s
+moc_qgscomposermapwidget.s:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgscomposermapwidget.s
 
 # target to build an object file
-moc_qgscomposervectorlegend.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgscomposervectorlegend.o
+moc_qgscomposerpicturewidget.o:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgscomposerpicturewidget.o
 
 # target to preprocess a source file
-moc_qgscomposervectorlegend.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgscomposervectorlegend.i
+moc_qgscomposerpicturewidget.i:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgscomposerpicturewidget.i
 
 # target to generate assembly for a file
-moc_qgscomposervectorlegend.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgscomposervectorlegend.s
+moc_qgscomposerpicturewidget.s:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgscomposerpicturewidget.s
 
 # target to build an object file
-moc_qgscomposerview.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgscomposerview.o
+moc_qgscomposerscalebarwidget.o:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgscomposerscalebarwidget.o
 
 # target to preprocess a source file
-moc_qgscomposerview.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgscomposerview.i
+moc_qgscomposerscalebarwidget.i:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgscomposerscalebarwidget.i
 
 # target to generate assembly for a file
-moc_qgscomposerview.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgscomposerview.s
+moc_qgscomposerscalebarwidget.s:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgscomposerscalebarwidget.s
 
 # target to build an object file
-moc_qgscomposition.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgscomposition.o
+moc_qgscompositionwidget.o:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgscompositionwidget.o
 
 # target to preprocess a source file
-moc_qgscomposition.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgscomposition.i
+moc_qgscompositionwidget.i:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgscompositionwidget.i
 
 # target to generate assembly for a file
-moc_qgscomposition.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgscomposition.s
+moc_qgscompositionwidget.s:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgscompositionwidget.s
 
 # target to build an object file
 moc_qgscontinuouscolordialog.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgscontinuouscolordialog.o
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgscontinuouscolordialog.o
 
 # target to preprocess a source file
 moc_qgscontinuouscolordialog.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgscontinuouscolordialog.i
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgscontinuouscolordialog.i
 
 # target to generate assembly for a file
 moc_qgscontinuouscolordialog.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgscontinuouscolordialog.s
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgscontinuouscolordialog.s
 
 # target to build an object file
 moc_qgscustomprojectiondialog.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgscustomprojectiondialog.o
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgscustomprojectiondialog.o
 
 # target to preprocess a source file
 moc_qgscustomprojectiondialog.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgscustomprojectiondialog.i
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgscustomprojectiondialog.i
 
 # target to generate assembly for a file
 moc_qgscustomprojectiondialog.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgscustomprojectiondialog.s
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgscustomprojectiondialog.s
+
+# target to build an object file
+moc_qgsdbtablemodel.o:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsdbtablemodel.o
+
+# target to preprocess a source file
+moc_qgsdbtablemodel.i:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsdbtablemodel.i
+
+# target to generate assembly for a file
+moc_qgsdbtablemodel.s:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsdbtablemodel.s
 
 # target to build an object file
 moc_qgsdelattrdialog.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsdelattrdialog.o
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsdelattrdialog.o
 
 # target to preprocess a source file
 moc_qgsdelattrdialog.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsdelattrdialog.i
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsdelattrdialog.i
 
 # target to generate assembly for a file
 moc_qgsdelattrdialog.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsdelattrdialog.s
-
-# target to build an object file
-moc_qgsfillstylewidget.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsfillstylewidget.o
-
-# target to preprocess a source file
-moc_qgsfillstylewidget.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsfillstylewidget.i
-
-# target to generate assembly for a file
-moc_qgsfillstylewidget.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsfillstylewidget.s
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsdelattrdialog.s
 
 # target to build an object file
 moc_qgsgeomtypedialog.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsgeomtypedialog.o
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsgeomtypedialog.o
 
 # target to preprocess a source file
 moc_qgsgeomtypedialog.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsgeomtypedialog.i
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsgeomtypedialog.i
 
 # target to generate assembly for a file
 moc_qgsgeomtypedialog.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsgeomtypedialog.s
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsgeomtypedialog.s
 
 # target to build an object file
 moc_qgsgraduatedsymboldialog.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsgraduatedsymboldialog.o
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsgraduatedsymboldialog.o
 
 # target to preprocess a source file
 moc_qgsgraduatedsymboldialog.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsgraduatedsymboldialog.i
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsgraduatedsymboldialog.i
 
 # target to generate assembly for a file
 moc_qgsgraduatedsymboldialog.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsgraduatedsymboldialog.s
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsgraduatedsymboldialog.s
 
 # target to build an object file
 moc_qgshelpviewer.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgshelpviewer.o
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgshelpviewer.o
 
 # target to preprocess a source file
 moc_qgshelpviewer.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgshelpviewer.i
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgshelpviewer.i
 
 # target to generate assembly for a file
 moc_qgshelpviewer.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgshelpviewer.s
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgshelpviewer.s
 
 # target to build an object file
 moc_qgsidentifyresults.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsidentifyresults.o
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsidentifyresults.o
 
 # target to preprocess a source file
 moc_qgsidentifyresults.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsidentifyresults.i
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsidentifyresults.i
 
 # target to generate assembly for a file
 moc_qgsidentifyresults.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsidentifyresults.s
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsidentifyresults.s
 
 # target to build an object file
 moc_qgslabeldialog.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgslabeldialog.o
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgslabeldialog.o
 
 # target to preprocess a source file
 moc_qgslabeldialog.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgslabeldialog.i
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgslabeldialog.i
 
 # target to generate assembly for a file
 moc_qgslabeldialog.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgslabeldialog.s
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgslabeldialog.s
 
 # target to build an object file
 moc_qgslegend.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgslegend.o
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgslegend.o
 
 # target to preprocess a source file
 moc_qgslegend.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgslegend.i
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgslegend.i
 
 # target to generate assembly for a file
 moc_qgslegend.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgslegend.s
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgslegend.s
 
 # target to build an object file
 moc_qgslegendlayer.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgslegendlayer.o
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgslegendlayer.o
 
 # target to preprocess a source file
 moc_qgslegendlayer.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgslegendlayer.i
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgslegendlayer.i
 
 # target to generate assembly for a file
 moc_qgslegendlayer.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgslegendlayer.s
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgslegendlayer.s
 
 # target to build an object file
 moc_qgslegendlayerfile.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgslegendlayerfile.o
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgslegendlayerfile.o
 
 # target to preprocess a source file
 moc_qgslegendlayerfile.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgslegendlayerfile.i
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgslegendlayerfile.i
 
 # target to generate assembly for a file
 moc_qgslegendlayerfile.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgslegendlayerfile.s
-
-# target to build an object file
-moc_qgslinestyledialog.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgslinestyledialog.o
-
-# target to preprocess a source file
-moc_qgslinestyledialog.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgslinestyledialog.i
-
-# target to generate assembly for a file
-moc_qgslinestyledialog.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgslinestyledialog.s
-
-# target to build an object file
-moc_qgslinestylewidget.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgslinestylewidget.o
-
-# target to preprocess a source file
-moc_qgslinestylewidget.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgslinestylewidget.i
-
-# target to generate assembly for a file
-moc_qgslinestylewidget.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgslinestylewidget.s
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgslegendlayerfile.s
 
 # target to build an object file
 moc_qgsludialog.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsludialog.o
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsludialog.o
 
 # target to preprocess a source file
 moc_qgsludialog.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsludialog.i
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsludialog.i
 
 # target to generate assembly for a file
 moc_qgsludialog.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsludialog.s
-
-# target to build an object file
-moc_qgsmaplayerinterface.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsmaplayerinterface.o
-
-# target to preprocess a source file
-moc_qgsmaplayerinterface.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsmaplayerinterface.i
-
-# target to generate assembly for a file
-moc_qgsmaplayerinterface.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsmaplayerinterface.s
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsludialog.s
 
 # target to build an object file
 moc_qgsmaptoolidentify.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsmaptoolidentify.o
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsmaptoolidentify.o
 
 # target to preprocess a source file
 moc_qgsmaptoolidentify.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsmaptoolidentify.i
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsmaptoolidentify.i
 
 # target to generate assembly for a file
 moc_qgsmaptoolidentify.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsmaptoolidentify.s
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsmaptoolidentify.s
 
 # target to build an object file
-moc_qgsmarkerdialog.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsmarkerdialog.o
+moc_qgsmaptoolsplitfeatures.o:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsmaptoolsplitfeatures.o
 
 # target to preprocess a source file
-moc_qgsmarkerdialog.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsmarkerdialog.i
+moc_qgsmaptoolsplitfeatures.i:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsmaptoolsplitfeatures.i
 
 # target to generate assembly for a file
-moc_qgsmarkerdialog.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsmarkerdialog.s
+moc_qgsmaptoolsplitfeatures.s:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsmaptoolsplitfeatures.s
+
+# target to build an object file
+moc_qgsmaptoolvertexedit.o:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsmaptoolvertexedit.o
+
+# target to preprocess a source file
+moc_qgsmaptoolvertexedit.i:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsmaptoolvertexedit.i
+
+# target to generate assembly for a file
+moc_qgsmaptoolvertexedit.s:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsmaptoolvertexedit.s
 
 # target to build an object file
 moc_qgsmeasuredialog.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsmeasuredialog.o
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsmeasuredialog.o
 
 # target to preprocess a source file
 moc_qgsmeasuredialog.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsmeasuredialog.i
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsmeasuredialog.i
 
 # target to generate assembly for a file
 moc_qgsmeasuredialog.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsmeasuredialog.s
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsmeasuredialog.s
+
+# target to build an object file
+moc_qgsmeasuretool.o:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsmeasuretool.o
+
+# target to preprocess a source file
+moc_qgsmeasuretool.i:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsmeasuretool.i
+
+# target to generate assembly for a file
+moc_qgsmeasuretool.s:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsmeasuretool.s
 
 # target to build an object file
 moc_qgsnewhttpconnection.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsnewhttpconnection.o
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsnewhttpconnection.o
 
 # target to preprocess a source file
 moc_qgsnewhttpconnection.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsnewhttpconnection.i
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsnewhttpconnection.i
 
 # target to generate assembly for a file
 moc_qgsnewhttpconnection.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsnewhttpconnection.s
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsnewhttpconnection.s
 
 # target to build an object file
 moc_qgsoptions.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsoptions.o
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsoptions.o
 
 # target to preprocess a source file
 moc_qgsoptions.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsoptions.i
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsoptions.i
 
 # target to generate assembly for a file
 moc_qgsoptions.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsoptions.s
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsoptions.s
 
 # target to build an object file
 moc_qgspastetransformations.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgspastetransformations.o
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgspastetransformations.o
 
 # target to preprocess a source file
 moc_qgspastetransformations.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgspastetransformations.i
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgspastetransformations.i
 
 # target to generate assembly for a file
 moc_qgspastetransformations.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgspastetransformations.s
-
-# target to build an object file
-moc_qgspatterndialog.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgspatterndialog.o
-
-# target to preprocess a source file
-moc_qgspatterndialog.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgspatterndialog.i
-
-# target to generate assembly for a file
-moc_qgspatterndialog.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgspatterndialog.s
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgspastetransformations.s
 
 # target to build an object file
 moc_qgspluginmanager.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgspluginmanager.o
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgspluginmanager.o
 
 # target to preprocess a source file
 moc_qgspluginmanager.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgspluginmanager.i
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgspluginmanager.i
 
 # target to generate assembly for a file
 moc_qgspluginmanager.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgspluginmanager.s
-
-# target to build an object file
-moc_qgspointstylewidget.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgspointstylewidget.o
-
-# target to preprocess a source file
-moc_qgspointstylewidget.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgspointstylewidget.i
-
-# target to generate assembly for a file
-moc_qgspointstylewidget.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgspointstylewidget.s
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgspluginmanager.s
 
 # target to build an object file
 moc_qgsprojectproperties.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsprojectproperties.o
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsprojectproperties.o
 
 # target to preprocess a source file
 moc_qgsprojectproperties.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsprojectproperties.i
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsprojectproperties.i
 
 # target to generate assembly for a file
 moc_qgsprojectproperties.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsprojectproperties.s
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsprojectproperties.s
 
 # target to build an object file
 moc_qgspythondialog.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgspythondialog.o
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgspythondialog.o
 
 # target to preprocess a source file
 moc_qgspythondialog.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgspythondialog.i
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgspythondialog.i
 
 # target to generate assembly for a file
 moc_qgspythondialog.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgspythondialog.s
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgspythondialog.s
 
 # target to build an object file
 moc_qgsrasterlayerproperties.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsrasterlayerproperties.o
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsrasterlayerproperties.o
 
 # target to preprocess a source file
 moc_qgsrasterlayerproperties.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsrasterlayerproperties.i
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsrasterlayerproperties.i
 
 # target to generate assembly for a file
 moc_qgsrasterlayerproperties.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsrasterlayerproperties.s
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsrasterlayerproperties.s
 
 # target to build an object file
 moc_qgssearchquerybuilder.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgssearchquerybuilder.o
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgssearchquerybuilder.o
 
 # target to preprocess a source file
 moc_qgssearchquerybuilder.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgssearchquerybuilder.i
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgssearchquerybuilder.i
 
 # target to generate assembly for a file
 moc_qgssearchquerybuilder.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgssearchquerybuilder.s
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgssearchquerybuilder.s
 
 # target to build an object file
 moc_qgsserversourceselect.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsserversourceselect.o
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsserversourceselect.o
 
 # target to preprocess a source file
 moc_qgsserversourceselect.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsserversourceselect.i
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsserversourceselect.i
 
 # target to generate assembly for a file
 moc_qgsserversourceselect.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsserversourceselect.s
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsserversourceselect.s
 
 # target to build an object file
 moc_qgssinglesymboldialog.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgssinglesymboldialog.o
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgssinglesymboldialog.o
 
 # target to preprocess a source file
 moc_qgssinglesymboldialog.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgssinglesymboldialog.i
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgssinglesymboldialog.i
 
 # target to generate assembly for a file
 moc_qgssinglesymboldialog.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgssinglesymboldialog.s
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgssinglesymboldialog.s
+
+# target to build an object file
+moc_qgssnappingdialog.o:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgssnappingdialog.o
+
+# target to preprocess a source file
+moc_qgssnappingdialog.i:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgssnappingdialog.i
+
+# target to generate assembly for a file
+moc_qgssnappingdialog.s:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgssnappingdialog.s
 
 # target to build an object file
 moc_qgsuniquevaluedialog.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsuniquevaluedialog.o
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsuniquevaluedialog.o
 
 # target to preprocess a source file
 moc_qgsuniquevaluedialog.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsuniquevaluedialog.i
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsuniquevaluedialog.i
 
 # target to generate assembly for a file
 moc_qgsuniquevaluedialog.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsuniquevaluedialog.s
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsuniquevaluedialog.s
 
 # target to build an object file
 moc_qgsvectorlayerproperties.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsvectorlayerproperties.o
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsvectorlayerproperties.o
 
 # target to preprocess a source file
 moc_qgsvectorlayerproperties.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsvectorlayerproperties.i
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsvectorlayerproperties.i
 
 # target to generate assembly for a file
 moc_qgsvectorlayerproperties.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsvectorlayerproperties.s
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/moc_qgsvectorlayerproperties.s
 
 # target to build an object file
 qgisapp.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgisapp.o
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgisapp.o
 
 # target to preprocess a source file
 qgisapp.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgisapp.i
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgisapp.i
 
 # target to generate assembly for a file
 qgisapp.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgisapp.s
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgisapp.s
 
 # target to build an object file
 qgisappinterface.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgisappinterface.o
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgisappinterface.o
 
 # target to preprocess a source file
 qgisappinterface.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgisappinterface.i
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgisappinterface.i
 
 # target to generate assembly for a file
 qgisappinterface.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgisappinterface.s
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgisappinterface.s
 
 # target to build an object file
 qgsabout.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsabout.o
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsabout.o
 
 # target to preprocess a source file
 qgsabout.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsabout.i
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsabout.i
 
 # target to generate assembly for a file
 qgsabout.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsabout.s
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsabout.s
 
 # target to build an object file
 qgsaddattrdialog.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsaddattrdialog.o
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsaddattrdialog.o
 
 # target to preprocess a source file
 qgsaddattrdialog.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsaddattrdialog.i
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsaddattrdialog.i
 
 # target to generate assembly for a file
 qgsaddattrdialog.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsaddattrdialog.s
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsaddattrdialog.s
 
 # target to build an object file
 qgsattributeactiondialog.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsattributeactiondialog.o
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsattributeactiondialog.o
 
 # target to preprocess a source file
 qgsattributeactiondialog.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsattributeactiondialog.i
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsattributeactiondialog.i
 
 # target to generate assembly for a file
 qgsattributeactiondialog.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsattributeactiondialog.s
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsattributeactiondialog.s
 
 # target to build an object file
 qgsattributedialog.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsattributedialog.o
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsattributedialog.o
 
 # target to preprocess a source file
 qgsattributedialog.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsattributedialog.i
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsattributedialog.i
 
 # target to generate assembly for a file
 qgsattributedialog.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsattributedialog.s
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsattributedialog.s
 
 # target to build an object file
 qgsattributetable.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsattributetable.o
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsattributetable.o
 
 # target to preprocess a source file
 qgsattributetable.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsattributetable.i
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsattributetable.i
 
 # target to generate assembly for a file
 qgsattributetable.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsattributetable.s
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsattributetable.s
 
 # target to build an object file
 qgsattributetabledisplay.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsattributetabledisplay.o
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsattributetabledisplay.o
 
 # target to preprocess a source file
 qgsattributetabledisplay.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsattributetabledisplay.i
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsattributetabledisplay.i
 
 # target to generate assembly for a file
 qgsattributetabledisplay.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsattributetabledisplay.s
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsattributetabledisplay.s
 
 # target to build an object file
 qgsbookmarkitem.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsbookmarkitem.o
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsbookmarkitem.o
 
 # target to preprocess a source file
 qgsbookmarkitem.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsbookmarkitem.i
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsbookmarkitem.i
 
 # target to generate assembly for a file
 qgsbookmarkitem.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsbookmarkitem.s
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsbookmarkitem.s
 
 # target to build an object file
 qgsbookmarks.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsbookmarks.o
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsbookmarks.o
 
 # target to preprocess a source file
 qgsbookmarks.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsbookmarks.i
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsbookmarks.i
 
 # target to generate assembly for a file
 qgsbookmarks.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsbookmarks.s
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsbookmarks.s
 
 # target to build an object file
 qgsclipboard.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsclipboard.o
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsclipboard.o
 
 # target to preprocess a source file
 qgsclipboard.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsclipboard.i
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsclipboard.i
 
 # target to generate assembly for a file
 qgsclipboard.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsclipboard.s
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsclipboard.s
 
 # target to build an object file
 qgscontinuouscolordialog.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgscontinuouscolordialog.o
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgscontinuouscolordialog.o
 
 # target to preprocess a source file
 qgscontinuouscolordialog.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgscontinuouscolordialog.i
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgscontinuouscolordialog.i
 
 # target to generate assembly for a file
 qgscontinuouscolordialog.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgscontinuouscolordialog.s
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgscontinuouscolordialog.s
 
 # target to build an object file
 qgscustomprojectiondialog.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgscustomprojectiondialog.o
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgscustomprojectiondialog.o
 
 # target to preprocess a source file
 qgscustomprojectiondialog.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgscustomprojectiondialog.i
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgscustomprojectiondialog.i
 
 # target to generate assembly for a file
 qgscustomprojectiondialog.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgscustomprojectiondialog.s
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgscustomprojectiondialog.s
+
+# target to build an object file
+qgsdbfilterproxymodel.o:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsdbfilterproxymodel.o
+
+# target to preprocess a source file
+qgsdbfilterproxymodel.i:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsdbfilterproxymodel.i
+
+# target to generate assembly for a file
+qgsdbfilterproxymodel.s:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsdbfilterproxymodel.s
+
+# target to build an object file
+qgsdbtablemodel.o:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsdbtablemodel.o
+
+# target to preprocess a source file
+qgsdbtablemodel.i:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsdbtablemodel.i
+
+# target to generate assembly for a file
+qgsdbtablemodel.s:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsdbtablemodel.s
 
 # target to build an object file
 qgsdelattrdialog.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsdelattrdialog.o
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsdelattrdialog.o
 
 # target to preprocess a source file
 qgsdelattrdialog.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsdelattrdialog.i
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsdelattrdialog.i
 
 # target to generate assembly for a file
 qgsdelattrdialog.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsdelattrdialog.s
-
-# target to build an object file
-qgsfillstylewidget.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsfillstylewidget.o
-
-# target to preprocess a source file
-qgsfillstylewidget.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsfillstylewidget.i
-
-# target to generate assembly for a file
-qgsfillstylewidget.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsfillstylewidget.s
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsdelattrdialog.s
 
 # target to build an object file
 qgsgeomtypedialog.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsgeomtypedialog.o
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsgeomtypedialog.o
 
 # target to preprocess a source file
 qgsgeomtypedialog.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsgeomtypedialog.i
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsgeomtypedialog.i
 
 # target to generate assembly for a file
 qgsgeomtypedialog.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsgeomtypedialog.s
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsgeomtypedialog.s
 
 # target to build an object file
 qgsgraduatedsymboldialog.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsgraduatedsymboldialog.o
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsgraduatedsymboldialog.o
 
 # target to preprocess a source file
 qgsgraduatedsymboldialog.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsgraduatedsymboldialog.i
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsgraduatedsymboldialog.i
 
 # target to generate assembly for a file
 qgsgraduatedsymboldialog.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsgraduatedsymboldialog.s
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsgraduatedsymboldialog.s
 
 # target to build an object file
 qgshelpviewer.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgshelpviewer.o
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgshelpviewer.o
 
 # target to preprocess a source file
 qgshelpviewer.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgshelpviewer.i
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgshelpviewer.i
 
 # target to generate assembly for a file
 qgshelpviewer.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgshelpviewer.s
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgshelpviewer.s
 
 # target to build an object file
 qgsidentifyresults.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsidentifyresults.o
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsidentifyresults.o
 
 # target to preprocess a source file
 qgsidentifyresults.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsidentifyresults.i
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsidentifyresults.i
 
 # target to generate assembly for a file
 qgsidentifyresults.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsidentifyresults.s
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsidentifyresults.s
 
 # target to build an object file
 qgslabeldialog.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgslabeldialog.o
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgslabeldialog.o
 
 # target to preprocess a source file
 qgslabeldialog.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgslabeldialog.i
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgslabeldialog.i
 
 # target to generate assembly for a file
 qgslabeldialog.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgslabeldialog.s
-
-# target to build an object file
-qgslinestyledialog.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgslinestyledialog.o
-
-# target to preprocess a source file
-qgslinestyledialog.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgslinestyledialog.i
-
-# target to generate assembly for a file
-qgslinestyledialog.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgslinestyledialog.s
-
-# target to build an object file
-qgslinestylewidget.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgslinestylewidget.o
-
-# target to preprocess a source file
-qgslinestylewidget.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgslinestylewidget.i
-
-# target to generate assembly for a file
-qgslinestylewidget.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgslinestylewidget.s
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgslabeldialog.s
 
 # target to build an object file
 qgsludialog.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsludialog.o
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsludialog.o
 
 # target to preprocess a source file
 qgsludialog.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsludialog.i
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsludialog.i
 
 # target to generate assembly for a file
 qgsludialog.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsludialog.s
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsludialog.s
 
 # target to build an object file
 qgsmaptooladdfeature.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsmaptooladdfeature.o
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsmaptooladdfeature.o
 
 # target to preprocess a source file
 qgsmaptooladdfeature.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsmaptooladdfeature.i
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsmaptooladdfeature.i
 
 # target to generate assembly for a file
 qgsmaptooladdfeature.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsmaptooladdfeature.s
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsmaptooladdfeature.s
 
 # target to build an object file
 qgsmaptooladdisland.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsmaptooladdisland.o
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsmaptooladdisland.o
 
 # target to preprocess a source file
 qgsmaptooladdisland.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsmaptooladdisland.i
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsmaptooladdisland.i
 
 # target to generate assembly for a file
 qgsmaptooladdisland.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsmaptooladdisland.s
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsmaptooladdisland.s
 
 # target to build an object file
 qgsmaptooladdring.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsmaptooladdring.o
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsmaptooladdring.o
 
 # target to preprocess a source file
 qgsmaptooladdring.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsmaptooladdring.i
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsmaptooladdring.i
 
 # target to generate assembly for a file
 qgsmaptooladdring.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsmaptooladdring.s
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsmaptooladdring.s
+
+# target to build an object file
+qgsmaptooladdvertex.o:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsmaptooladdvertex.o
+
+# target to preprocess a source file
+qgsmaptooladdvertex.i:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsmaptooladdvertex.i
+
+# target to generate assembly for a file
+qgsmaptooladdvertex.s:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsmaptooladdvertex.s
 
 # target to build an object file
 qgsmaptoolcapture.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsmaptoolcapture.o
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsmaptoolcapture.o
 
 # target to preprocess a source file
 qgsmaptoolcapture.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsmaptoolcapture.i
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsmaptoolcapture.i
 
 # target to generate assembly for a file
 qgsmaptoolcapture.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsmaptoolcapture.s
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsmaptoolcapture.s
+
+# target to build an object file
+qgsmaptooldeletevertex.o:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsmaptooldeletevertex.o
+
+# target to preprocess a source file
+qgsmaptooldeletevertex.i:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsmaptooldeletevertex.i
+
+# target to generate assembly for a file
+qgsmaptooldeletevertex.s:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsmaptooldeletevertex.s
+
+# target to build an object file
+qgsmaptooledit.o:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsmaptooledit.o
+
+# target to preprocess a source file
+qgsmaptooledit.i:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsmaptooledit.i
+
+# target to generate assembly for a file
+qgsmaptooledit.s:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsmaptooledit.s
 
 # target to build an object file
 qgsmaptoolidentify.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsmaptoolidentify.o
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsmaptoolidentify.o
 
 # target to preprocess a source file
 qgsmaptoolidentify.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsmaptoolidentify.i
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsmaptoolidentify.i
 
 # target to generate assembly for a file
 qgsmaptoolidentify.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsmaptoolidentify.s
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsmaptoolidentify.s
+
+# target to build an object file
+qgsmaptoolmovefeature.o:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsmaptoolmovefeature.o
+
+# target to preprocess a source file
+qgsmaptoolmovefeature.i:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsmaptoolmovefeature.i
+
+# target to generate assembly for a file
+qgsmaptoolmovefeature.s:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsmaptoolmovefeature.s
+
+# target to build an object file
+qgsmaptoolmovevertex.o:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsmaptoolmovevertex.o
+
+# target to preprocess a source file
+qgsmaptoolmovevertex.i:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsmaptoolmovevertex.i
+
+# target to generate assembly for a file
+qgsmaptoolmovevertex.s:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsmaptoolmovevertex.s
 
 # target to build an object file
 qgsmaptoolselect.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsmaptoolselect.o
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsmaptoolselect.o
 
 # target to preprocess a source file
 qgsmaptoolselect.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsmaptoolselect.i
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsmaptoolselect.i
 
 # target to generate assembly for a file
 qgsmaptoolselect.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsmaptoolselect.s
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsmaptoolselect.s
+
+# target to build an object file
+qgsmaptoolsplitfeatures.o:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsmaptoolsplitfeatures.o
+
+# target to preprocess a source file
+qgsmaptoolsplitfeatures.i:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsmaptoolsplitfeatures.i
+
+# target to generate assembly for a file
+qgsmaptoolsplitfeatures.s:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsmaptoolsplitfeatures.s
 
 # target to build an object file
 qgsmaptoolvertexedit.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsmaptoolvertexedit.o
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsmaptoolvertexedit.o
 
 # target to preprocess a source file
 qgsmaptoolvertexedit.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsmaptoolvertexedit.i
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsmaptoolvertexedit.i
 
 # target to generate assembly for a file
 qgsmaptoolvertexedit.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsmaptoolvertexedit.s
-
-# target to build an object file
-qgsmarkerdialog.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsmarkerdialog.o
-
-# target to preprocess a source file
-qgsmarkerdialog.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsmarkerdialog.i
-
-# target to generate assembly for a file
-qgsmarkerdialog.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsmarkerdialog.s
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsmaptoolvertexedit.s
 
 # target to build an object file
 qgsmeasuredialog.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsmeasuredialog.o
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsmeasuredialog.o
 
 # target to preprocess a source file
 qgsmeasuredialog.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsmeasuredialog.i
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsmeasuredialog.i
 
 # target to generate assembly for a file
 qgsmeasuredialog.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsmeasuredialog.s
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsmeasuredialog.s
 
 # target to build an object file
 qgsmeasuretool.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsmeasuretool.o
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsmeasuretool.o
 
 # target to preprocess a source file
 qgsmeasuretool.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsmeasuretool.i
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsmeasuretool.i
 
 # target to generate assembly for a file
 qgsmeasuretool.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsmeasuretool.s
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsmeasuretool.s
 
 # target to build an object file
 qgsnewhttpconnection.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsnewhttpconnection.o
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsnewhttpconnection.o
 
 # target to preprocess a source file
 qgsnewhttpconnection.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsnewhttpconnection.i
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsnewhttpconnection.i
 
 # target to generate assembly for a file
 qgsnewhttpconnection.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsnewhttpconnection.s
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsnewhttpconnection.s
 
 # target to build an object file
 qgsnumericsortlistviewitem.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsnumericsortlistviewitem.o
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsnumericsortlistviewitem.o
 
 # target to preprocess a source file
 qgsnumericsortlistviewitem.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsnumericsortlistviewitem.i
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsnumericsortlistviewitem.i
 
 # target to generate assembly for a file
 qgsnumericsortlistviewitem.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsnumericsortlistviewitem.s
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsnumericsortlistviewitem.s
 
 # target to build an object file
 qgsoptions.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsoptions.o
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsoptions.o
 
 # target to preprocess a source file
 qgsoptions.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsoptions.i
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsoptions.i
 
 # target to generate assembly for a file
 qgsoptions.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsoptions.s
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsoptions.s
 
 # target to build an object file
 qgspastetransformations.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgspastetransformations.o
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgspastetransformations.o
 
 # target to preprocess a source file
 qgspastetransformations.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgspastetransformations.i
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgspastetransformations.i
 
 # target to generate assembly for a file
 qgspastetransformations.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgspastetransformations.s
-
-# target to build an object file
-qgspatterndialog.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgspatterndialog.o
-
-# target to preprocess a source file
-qgspatterndialog.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgspatterndialog.i
-
-# target to generate assembly for a file
-qgspatterndialog.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgspatterndialog.s
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgspastetransformations.s
 
 # target to build an object file
 qgspluginitem.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgspluginitem.o
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgspluginitem.o
 
 # target to preprocess a source file
 qgspluginitem.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgspluginitem.i
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgspluginitem.i
 
 # target to generate assembly for a file
 qgspluginitem.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgspluginitem.s
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgspluginitem.s
 
 # target to build an object file
 qgspluginmanager.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgspluginmanager.o
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgspluginmanager.o
 
 # target to preprocess a source file
 qgspluginmanager.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgspluginmanager.i
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgspluginmanager.i
 
 # target to generate assembly for a file
 qgspluginmanager.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgspluginmanager.s
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgspluginmanager.s
 
 # target to build an object file
 qgspluginmetadata.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgspluginmetadata.o
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgspluginmetadata.o
 
 # target to preprocess a source file
 qgspluginmetadata.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgspluginmetadata.i
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgspluginmetadata.i
 
 # target to generate assembly for a file
 qgspluginmetadata.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgspluginmetadata.s
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgspluginmetadata.s
 
 # target to build an object file
 qgspluginregistry.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgspluginregistry.o
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgspluginregistry.o
 
 # target to preprocess a source file
 qgspluginregistry.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgspluginregistry.i
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgspluginregistry.i
 
 # target to generate assembly for a file
 qgspluginregistry.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgspluginregistry.s
-
-# target to build an object file
-qgspointstylewidget.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgspointstylewidget.o
-
-# target to preprocess a source file
-qgspointstylewidget.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgspointstylewidget.i
-
-# target to generate assembly for a file
-qgspointstylewidget.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgspointstylewidget.s
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgspluginregistry.s
 
 # target to build an object file
 qgsprojectproperties.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsprojectproperties.o
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsprojectproperties.o
 
 # target to preprocess a source file
 qgsprojectproperties.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsprojectproperties.i
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsprojectproperties.i
 
 # target to generate assembly for a file
 qgsprojectproperties.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsprojectproperties.s
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsprojectproperties.s
 
 # target to build an object file
 qgspythondialog.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgspythondialog.o
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgspythondialog.o
 
 # target to preprocess a source file
 qgspythondialog.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgspythondialog.i
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgspythondialog.i
 
 # target to generate assembly for a file
 qgspythondialog.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgspythondialog.s
-
-# target to build an object file
-qgspythonutils.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgspythonutils.o
-
-# target to preprocess a source file
-qgspythonutils.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgspythonutils.i
-
-# target to generate assembly for a file
-qgspythonutils.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgspythonutils.s
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgspythondialog.s
 
 # target to build an object file
 qgsrasterlayerproperties.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsrasterlayerproperties.o
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsrasterlayerproperties.o
 
 # target to preprocess a source file
 qgsrasterlayerproperties.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsrasterlayerproperties.i
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsrasterlayerproperties.i
 
 # target to generate assembly for a file
 qgsrasterlayerproperties.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsrasterlayerproperties.s
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsrasterlayerproperties.s
 
 # target to build an object file
 qgssearchquerybuilder.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgssearchquerybuilder.o
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgssearchquerybuilder.o
 
 # target to preprocess a source file
 qgssearchquerybuilder.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgssearchquerybuilder.i
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgssearchquerybuilder.i
 
 # target to generate assembly for a file
 qgssearchquerybuilder.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgssearchquerybuilder.s
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgssearchquerybuilder.s
 
 # target to build an object file
 qgsserversourceselect.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsserversourceselect.o
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsserversourceselect.o
 
 # target to preprocess a source file
 qgsserversourceselect.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsserversourceselect.i
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsserversourceselect.i
 
 # target to generate assembly for a file
 qgsserversourceselect.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsserversourceselect.s
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsserversourceselect.s
 
 # target to build an object file
 qgssinglesymboldialog.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgssinglesymboldialog.o
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgssinglesymboldialog.o
 
 # target to preprocess a source file
 qgssinglesymboldialog.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgssinglesymboldialog.i
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgssinglesymboldialog.i
 
 # target to generate assembly for a file
 qgssinglesymboldialog.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgssinglesymboldialog.s
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgssinglesymboldialog.s
+
+# target to build an object file
+qgssnappingdialog.o:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgssnappingdialog.o
+
+# target to preprocess a source file
+qgssnappingdialog.i:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgssnappingdialog.i
+
+# target to generate assembly for a file
+qgssnappingdialog.s:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgssnappingdialog.s
 
 # target to build an object file
 qgsuniquevaluedialog.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsuniquevaluedialog.o
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsuniquevaluedialog.o
 
 # target to preprocess a source file
 qgsuniquevaluedialog.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsuniquevaluedialog.i
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsuniquevaluedialog.i
 
 # target to generate assembly for a file
 qgsuniquevaluedialog.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsuniquevaluedialog.s
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsuniquevaluedialog.s
 
 # target to build an object file
 qgsvectorlayerproperties.o:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsvectorlayerproperties.o
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsvectorlayerproperties.o
 
 # target to preprocess a source file
 qgsvectorlayerproperties.i:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsvectorlayerproperties.i
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsvectorlayerproperties.i
 
 # target to generate assembly for a file
 qgsvectorlayerproperties.s:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsvectorlayerproperties.s
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/qgsvectorlayerproperties.s
 
 # Help Target
 help::
@@ -1631,30 +1631,30 @@ help::
 	@echo "... composer/qgscomposer.o"
 	@echo "... composer/qgscomposer.i"
 	@echo "... composer/qgscomposer.s"
-	@echo "... composer/qgscomposeritem.o"
-	@echo "... composer/qgscomposeritem.i"
-	@echo "... composer/qgscomposeritem.s"
-	@echo "... composer/qgscomposerlabel.o"
-	@echo "... composer/qgscomposerlabel.i"
-	@echo "... composer/qgscomposerlabel.s"
-	@echo "... composer/qgscomposermap.o"
-	@echo "... composer/qgscomposermap.i"
-	@echo "... composer/qgscomposermap.s"
-	@echo "... composer/qgscomposerpicture.o"
-	@echo "... composer/qgscomposerpicture.i"
-	@echo "... composer/qgscomposerpicture.s"
-	@echo "... composer/qgscomposerscalebar.o"
-	@echo "... composer/qgscomposerscalebar.i"
-	@echo "... composer/qgscomposerscalebar.s"
-	@echo "... composer/qgscomposervectorlegend.o"
-	@echo "... composer/qgscomposervectorlegend.i"
-	@echo "... composer/qgscomposervectorlegend.s"
-	@echo "... composer/qgscomposerview.o"
-	@echo "... composer/qgscomposerview.i"
-	@echo "... composer/qgscomposerview.s"
-	@echo "... composer/qgscomposition.o"
-	@echo "... composer/qgscomposition.i"
-	@echo "... composer/qgscomposition.s"
+	@echo "... composer/qgscomposeritemwidget.o"
+	@echo "... composer/qgscomposeritemwidget.i"
+	@echo "... composer/qgscomposeritemwidget.s"
+	@echo "... composer/qgscomposerlabelwidget.o"
+	@echo "... composer/qgscomposerlabelwidget.i"
+	@echo "... composer/qgscomposerlabelwidget.s"
+	@echo "... composer/qgscomposerlegenditemdialog.o"
+	@echo "... composer/qgscomposerlegenditemdialog.i"
+	@echo "... composer/qgscomposerlegenditemdialog.s"
+	@echo "... composer/qgscomposerlegendwidget.o"
+	@echo "... composer/qgscomposerlegendwidget.i"
+	@echo "... composer/qgscomposerlegendwidget.s"
+	@echo "... composer/qgscomposermapwidget.o"
+	@echo "... composer/qgscomposermapwidget.i"
+	@echo "... composer/qgscomposermapwidget.s"
+	@echo "... composer/qgscomposerpicturewidget.o"
+	@echo "... composer/qgscomposerpicturewidget.i"
+	@echo "... composer/qgscomposerpicturewidget.s"
+	@echo "... composer/qgscomposerscalebarwidget.o"
+	@echo "... composer/qgscomposerscalebarwidget.i"
+	@echo "... composer/qgscomposerscalebarwidget.s"
+	@echo "... composer/qgscompositionwidget.o"
+	@echo "... composer/qgscompositionwidget.i"
+	@echo "... composer/qgscompositionwidget.s"
 	@echo "... legend/qgslegend.o"
 	@echo "... legend/qgslegend.i"
 	@echo "... legend/qgslegend.s"
@@ -1721,39 +1721,39 @@ help::
 	@echo "... moc_qgscomposer.o"
 	@echo "... moc_qgscomposer.i"
 	@echo "... moc_qgscomposer.s"
-	@echo "... moc_qgscomposerlabel.o"
-	@echo "... moc_qgscomposerlabel.i"
-	@echo "... moc_qgscomposerlabel.s"
-	@echo "... moc_qgscomposermap.o"
-	@echo "... moc_qgscomposermap.i"
-	@echo "... moc_qgscomposermap.s"
-	@echo "... moc_qgscomposerpicture.o"
-	@echo "... moc_qgscomposerpicture.i"
-	@echo "... moc_qgscomposerpicture.s"
-	@echo "... moc_qgscomposerscalebar.o"
-	@echo "... moc_qgscomposerscalebar.i"
-	@echo "... moc_qgscomposerscalebar.s"
-	@echo "... moc_qgscomposervectorlegend.o"
-	@echo "... moc_qgscomposervectorlegend.i"
-	@echo "... moc_qgscomposervectorlegend.s"
-	@echo "... moc_qgscomposerview.o"
-	@echo "... moc_qgscomposerview.i"
-	@echo "... moc_qgscomposerview.s"
-	@echo "... moc_qgscomposition.o"
-	@echo "... moc_qgscomposition.i"
-	@echo "... moc_qgscomposition.s"
+	@echo "... moc_qgscomposeritemwidget.o"
+	@echo "... moc_qgscomposeritemwidget.i"
+	@echo "... moc_qgscomposeritemwidget.s"
+	@echo "... moc_qgscomposerlabelwidget.o"
+	@echo "... moc_qgscomposerlabelwidget.i"
+	@echo "... moc_qgscomposerlabelwidget.s"
+	@echo "... moc_qgscomposerlegendwidget.o"
+	@echo "... moc_qgscomposerlegendwidget.i"
+	@echo "... moc_qgscomposerlegendwidget.s"
+	@echo "... moc_qgscomposermapwidget.o"
+	@echo "... moc_qgscomposermapwidget.i"
+	@echo "... moc_qgscomposermapwidget.s"
+	@echo "... moc_qgscomposerpicturewidget.o"
+	@echo "... moc_qgscomposerpicturewidget.i"
+	@echo "... moc_qgscomposerpicturewidget.s"
+	@echo "... moc_qgscomposerscalebarwidget.o"
+	@echo "... moc_qgscomposerscalebarwidget.i"
+	@echo "... moc_qgscomposerscalebarwidget.s"
+	@echo "... moc_qgscompositionwidget.o"
+	@echo "... moc_qgscompositionwidget.i"
+	@echo "... moc_qgscompositionwidget.s"
 	@echo "... moc_qgscontinuouscolordialog.o"
 	@echo "... moc_qgscontinuouscolordialog.i"
 	@echo "... moc_qgscontinuouscolordialog.s"
 	@echo "... moc_qgscustomprojectiondialog.o"
 	@echo "... moc_qgscustomprojectiondialog.i"
 	@echo "... moc_qgscustomprojectiondialog.s"
+	@echo "... moc_qgsdbtablemodel.o"
+	@echo "... moc_qgsdbtablemodel.i"
+	@echo "... moc_qgsdbtablemodel.s"
 	@echo "... moc_qgsdelattrdialog.o"
 	@echo "... moc_qgsdelattrdialog.i"
 	@echo "... moc_qgsdelattrdialog.s"
-	@echo "... moc_qgsfillstylewidget.o"
-	@echo "... moc_qgsfillstylewidget.i"
-	@echo "... moc_qgsfillstylewidget.s"
 	@echo "... moc_qgsgeomtypedialog.o"
 	@echo "... moc_qgsgeomtypedialog.i"
 	@echo "... moc_qgsgeomtypedialog.s"
@@ -1778,27 +1778,24 @@ help::
 	@echo "... moc_qgslegendlayerfile.o"
 	@echo "... moc_qgslegendlayerfile.i"
 	@echo "... moc_qgslegendlayerfile.s"
-	@echo "... moc_qgslinestyledialog.o"
-	@echo "... moc_qgslinestyledialog.i"
-	@echo "... moc_qgslinestyledialog.s"
-	@echo "... moc_qgslinestylewidget.o"
-	@echo "... moc_qgslinestylewidget.i"
-	@echo "... moc_qgslinestylewidget.s"
 	@echo "... moc_qgsludialog.o"
 	@echo "... moc_qgsludialog.i"
 	@echo "... moc_qgsludialog.s"
-	@echo "... moc_qgsmaplayerinterface.o"
-	@echo "... moc_qgsmaplayerinterface.i"
-	@echo "... moc_qgsmaplayerinterface.s"
 	@echo "... moc_qgsmaptoolidentify.o"
 	@echo "... moc_qgsmaptoolidentify.i"
 	@echo "... moc_qgsmaptoolidentify.s"
-	@echo "... moc_qgsmarkerdialog.o"
-	@echo "... moc_qgsmarkerdialog.i"
-	@echo "... moc_qgsmarkerdialog.s"
+	@echo "... moc_qgsmaptoolsplitfeatures.o"
+	@echo "... moc_qgsmaptoolsplitfeatures.i"
+	@echo "... moc_qgsmaptoolsplitfeatures.s"
+	@echo "... moc_qgsmaptoolvertexedit.o"
+	@echo "... moc_qgsmaptoolvertexedit.i"
+	@echo "... moc_qgsmaptoolvertexedit.s"
 	@echo "... moc_qgsmeasuredialog.o"
 	@echo "... moc_qgsmeasuredialog.i"
 	@echo "... moc_qgsmeasuredialog.s"
+	@echo "... moc_qgsmeasuretool.o"
+	@echo "... moc_qgsmeasuretool.i"
+	@echo "... moc_qgsmeasuretool.s"
 	@echo "... moc_qgsnewhttpconnection.o"
 	@echo "... moc_qgsnewhttpconnection.i"
 	@echo "... moc_qgsnewhttpconnection.s"
@@ -1808,15 +1805,9 @@ help::
 	@echo "... moc_qgspastetransformations.o"
 	@echo "... moc_qgspastetransformations.i"
 	@echo "... moc_qgspastetransformations.s"
-	@echo "... moc_qgspatterndialog.o"
-	@echo "... moc_qgspatterndialog.i"
-	@echo "... moc_qgspatterndialog.s"
 	@echo "... moc_qgspluginmanager.o"
 	@echo "... moc_qgspluginmanager.i"
 	@echo "... moc_qgspluginmanager.s"
-	@echo "... moc_qgspointstylewidget.o"
-	@echo "... moc_qgspointstylewidget.i"
-	@echo "... moc_qgspointstylewidget.s"
 	@echo "... moc_qgsprojectproperties.o"
 	@echo "... moc_qgsprojectproperties.i"
 	@echo "... moc_qgsprojectproperties.s"
@@ -1835,6 +1826,9 @@ help::
 	@echo "... moc_qgssinglesymboldialog.o"
 	@echo "... moc_qgssinglesymboldialog.i"
 	@echo "... moc_qgssinglesymboldialog.s"
+	@echo "... moc_qgssnappingdialog.o"
+	@echo "... moc_qgssnappingdialog.i"
+	@echo "... moc_qgssnappingdialog.s"
 	@echo "... moc_qgsuniquevaluedialog.o"
 	@echo "... moc_qgsuniquevaluedialog.i"
 	@echo "... moc_qgsuniquevaluedialog.s"
@@ -1880,12 +1874,15 @@ help::
 	@echo "... qgscustomprojectiondialog.o"
 	@echo "... qgscustomprojectiondialog.i"
 	@echo "... qgscustomprojectiondialog.s"
+	@echo "... qgsdbfilterproxymodel.o"
+	@echo "... qgsdbfilterproxymodel.i"
+	@echo "... qgsdbfilterproxymodel.s"
+	@echo "... qgsdbtablemodel.o"
+	@echo "... qgsdbtablemodel.i"
+	@echo "... qgsdbtablemodel.s"
 	@echo "... qgsdelattrdialog.o"
 	@echo "... qgsdelattrdialog.i"
 	@echo "... qgsdelattrdialog.s"
-	@echo "... qgsfillstylewidget.o"
-	@echo "... qgsfillstylewidget.i"
-	@echo "... qgsfillstylewidget.s"
 	@echo "... qgsgeomtypedialog.o"
 	@echo "... qgsgeomtypedialog.i"
 	@echo "... qgsgeomtypedialog.s"
@@ -1901,12 +1898,6 @@ help::
 	@echo "... qgslabeldialog.o"
 	@echo "... qgslabeldialog.i"
 	@echo "... qgslabeldialog.s"
-	@echo "... qgslinestyledialog.o"
-	@echo "... qgslinestyledialog.i"
-	@echo "... qgslinestyledialog.s"
-	@echo "... qgslinestylewidget.o"
-	@echo "... qgslinestylewidget.i"
-	@echo "... qgslinestylewidget.s"
 	@echo "... qgsludialog.o"
 	@echo "... qgsludialog.i"
 	@echo "... qgsludialog.s"
@@ -1919,21 +1910,36 @@ help::
 	@echo "... qgsmaptooladdring.o"
 	@echo "... qgsmaptooladdring.i"
 	@echo "... qgsmaptooladdring.s"
+	@echo "... qgsmaptooladdvertex.o"
+	@echo "... qgsmaptooladdvertex.i"
+	@echo "... qgsmaptooladdvertex.s"
 	@echo "... qgsmaptoolcapture.o"
 	@echo "... qgsmaptoolcapture.i"
 	@echo "... qgsmaptoolcapture.s"
+	@echo "... qgsmaptooldeletevertex.o"
+	@echo "... qgsmaptooldeletevertex.i"
+	@echo "... qgsmaptooldeletevertex.s"
+	@echo "... qgsmaptooledit.o"
+	@echo "... qgsmaptooledit.i"
+	@echo "... qgsmaptooledit.s"
 	@echo "... qgsmaptoolidentify.o"
 	@echo "... qgsmaptoolidentify.i"
 	@echo "... qgsmaptoolidentify.s"
+	@echo "... qgsmaptoolmovefeature.o"
+	@echo "... qgsmaptoolmovefeature.i"
+	@echo "... qgsmaptoolmovefeature.s"
+	@echo "... qgsmaptoolmovevertex.o"
+	@echo "... qgsmaptoolmovevertex.i"
+	@echo "... qgsmaptoolmovevertex.s"
 	@echo "... qgsmaptoolselect.o"
 	@echo "... qgsmaptoolselect.i"
 	@echo "... qgsmaptoolselect.s"
+	@echo "... qgsmaptoolsplitfeatures.o"
+	@echo "... qgsmaptoolsplitfeatures.i"
+	@echo "... qgsmaptoolsplitfeatures.s"
 	@echo "... qgsmaptoolvertexedit.o"
 	@echo "... qgsmaptoolvertexedit.i"
 	@echo "... qgsmaptoolvertexedit.s"
-	@echo "... qgsmarkerdialog.o"
-	@echo "... qgsmarkerdialog.i"
-	@echo "... qgsmarkerdialog.s"
 	@echo "... qgsmeasuredialog.o"
 	@echo "... qgsmeasuredialog.i"
 	@echo "... qgsmeasuredialog.s"
@@ -1952,9 +1958,6 @@ help::
 	@echo "... qgspastetransformations.o"
 	@echo "... qgspastetransformations.i"
 	@echo "... qgspastetransformations.s"
-	@echo "... qgspatterndialog.o"
-	@echo "... qgspatterndialog.i"
-	@echo "... qgspatterndialog.s"
 	@echo "... qgspluginitem.o"
 	@echo "... qgspluginitem.i"
 	@echo "... qgspluginitem.s"
@@ -1967,18 +1970,12 @@ help::
 	@echo "... qgspluginregistry.o"
 	@echo "... qgspluginregistry.i"
 	@echo "... qgspluginregistry.s"
-	@echo "... qgspointstylewidget.o"
-	@echo "... qgspointstylewidget.i"
-	@echo "... qgspointstylewidget.s"
 	@echo "... qgsprojectproperties.o"
 	@echo "... qgsprojectproperties.i"
 	@echo "... qgsprojectproperties.s"
 	@echo "... qgspythondialog.o"
 	@echo "... qgspythondialog.i"
 	@echo "... qgspythondialog.s"
-	@echo "... qgspythonutils.o"
-	@echo "... qgspythonutils.i"
-	@echo "... qgspythonutils.s"
 	@echo "... qgsrasterlayerproperties.o"
 	@echo "... qgsrasterlayerproperties.i"
 	@echo "... qgsrasterlayerproperties.s"
@@ -1991,6 +1988,9 @@ help::
 	@echo "... qgssinglesymboldialog.o"
 	@echo "... qgssinglesymboldialog.i"
 	@echo "... qgssinglesymboldialog.s"
+	@echo "... qgssnappingdialog.o"
+	@echo "... qgssnappingdialog.i"
+	@echo "... qgssnappingdialog.s"
 	@echo "... qgsuniquevaluedialog.o"
 	@echo "... qgsuniquevaluedialog.i"
 	@echo "... qgsuniquevaluedialog.s"
@@ -2007,5 +2007,5 @@ help::
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 

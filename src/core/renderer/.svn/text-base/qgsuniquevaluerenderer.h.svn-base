@@ -23,51 +23,58 @@
 
 class CORE_EXPORT QgsUniqueValueRenderer: public QgsRenderer
 {
- public:
-    QgsUniqueValueRenderer(QGis::VectorType type);
-    QgsUniqueValueRenderer(const QgsUniqueValueRenderer& other);
-    QgsUniqueValueRenderer& operator=(const QgsUniqueValueRenderer& other);
+  public:
+    QgsUniqueValueRenderer( QGis::GeometryType type );
+    QgsUniqueValueRenderer( const QgsUniqueValueRenderer& other );
+    QgsUniqueValueRenderer& operator=( const QgsUniqueValueRenderer& other );
     virtual ~QgsUniqueValueRenderer();
-    /** Determines if a feature will be rendered or not 
-	@param f a pointer to the feature to determine if rendering will happen*/
-    bool willRenderFeature(QgsFeature *f);
-    void renderFeature(QPainter* p, QgsFeature& f,QImage* img, double* scalefactor, bool selected, double widthScale = 1.);
+    /** Determines if a feature will be rendered or not
+    @param f a pointer to the feature to determine if rendering will happen*/
+    virtual bool willRenderFeature( QgsFeature *f );
+    void renderFeature( QPainter* p, QgsFeature& f, QImage* img, bool selected, double widthScale = 1.0, double rasterScaleFactor = 1.0 );
     /**Reads the renderer configuration from an XML file
-     @param rnode the DOM node to read 
-     @param vl the vector layer which will be associated with the renderer*/
-    void readXML(const QDomNode& rnode, QgsVectorLayer& vl);
+     @param rnode the Dom node to read
+     @param vl the vector layer which will be associated with the renderer
+     @return 0 in case of success, 1 if vector layer has no renderer, 2 if classification field not found
+    */
+    int readXML( const QDomNode& rnode, QgsVectorLayer& vl );
     /**Writes the contents of the renderer to a configuration file
      @ return true in case of success*/
-    virtual bool writeXML( QDomNode & layer_node, QDomDocument & document ) const;
+    virtual bool writeXML( QDomNode & layer_node, QDomDocument & document, const QgsVectorLayer& vl ) const;
     /** Returns true, if attribute values are used by the renderer and false otherwise*/
     bool needsAttributes() const;
     /**Returns a list with indexes of classification attributes*/
     QgsAttributeList classificationAttributes() const;
+    void updateSymbolAttributes();
     /**Returns the renderers name*/
     QString name() const;
-    /**Inserts an entry into mEntries. The render items have to be created with the new operator and are automatically destroyed if not needed anymore*/
-    void insertValue(QString name, QgsSymbol* symbol);
+    /**Inserts an entry into mEntries. The render items have to be created with the new operator and
+       are automatically destroyed if not needed anymore */
+    void insertValue( QString name, QgsSymbol* symbol );
     /**Removes all entries from mEntries*/
     void clearValues();
     /**Sets the Field index used for classification*/
-    void setClassificationField(int field);
+    void setClassificationField( int field );
     /**Returns the index of the classification field*/
-    int classificationField();
+    int classificationField() const;
     /**Return symbology items*/
     const QList<QgsSymbol*> symbols() const;
     QgsRenderer* clone() const;
- protected:
+  protected:
     /**Field index used for classification*/
     int mClassificationField;
     /**Symbols for the unique values*/
     QMap<QString, QgsSymbol*> mSymbols;
     /**Returns the symbol for a feature or 0 if there isn't any*/
-    QgsSymbol* symbolForFeature(const QgsFeature* f);
+    QgsSymbol *symbolForFeature( const QgsFeature* f );
+    /**Cached copy of all underlying symbols required attribute fields*/
+    QgsAttributeList mSymbolAttributes;
+    bool mSymbolAttributesDirty;  // insertValue was called
 };
 
 inline bool QgsUniqueValueRenderer::needsAttributes() const
 {
-    return true;
+  return true;
 }
 
 #endif

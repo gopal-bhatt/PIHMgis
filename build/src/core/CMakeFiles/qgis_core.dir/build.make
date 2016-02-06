@@ -31,10 +31,10 @@ RM = /usr/bin/cmake -E remove -f
 CMAKE_EDIT_COMMAND = /usr/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0
+CMAKE_SOURCE_DIR = /Users/bhattgopal/dev/cpp/qgis_1.0.2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build
+CMAKE_BINARY_DIR = /Users/bhattgopal/dev/cpp/qgis_1.0.2/build
 
 # Include any dependencies generated for this target.
 include src/core/CMakeFiles/qgis_core.dir/depend.make
@@ -50,17 +50,17 @@ src/core/CMakeFiles/qgis_core.dir/depend.make.mark: ../src/core/qgis.cpp
 
 src/core/CMakeFiles/qgis_core.dir/qgis.o: src/core/CMakeFiles/qgis_core.dir/flags.make
 src/core/CMakeFiles/qgis_core.dir/qgis.o: ../src/core/qgis.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/core/CMakeFiles/qgis_core.dir/qgis.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/qgis.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgis.cpp
+	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/qgis.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgis.cpp
 
 src/core/CMakeFiles/qgis_core.dir/qgis.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/core/CMakeFiles/qgis_core.dir/qgis.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgis.cpp > src/core/CMakeFiles/qgis_core.dir/qgis.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgis.cpp > src/core/CMakeFiles/qgis_core.dir/qgis.i
 
 src/core/CMakeFiles/qgis_core.dir/qgis.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/core/CMakeFiles/qgis_core.dir/qgis.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgis.cpp -o src/core/CMakeFiles/qgis_core.dir/qgis.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgis.cpp -o src/core/CMakeFiles/qgis_core.dir/qgis.s
 
 src/core/CMakeFiles/qgis_core.dir/qgis.o.requires:
 
@@ -74,17 +74,17 @@ src/core/CMakeFiles/qgis_core.dir/depend.make.mark: ../src/core/qgsapplication.c
 
 src/core/CMakeFiles/qgis_core.dir/qgsapplication.o: src/core/CMakeFiles/qgis_core.dir/flags.make
 src/core/CMakeFiles/qgis_core.dir/qgsapplication.o: ../src/core/qgsapplication.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/core/CMakeFiles/qgis_core.dir/qgsapplication.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/qgsapplication.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgsapplication.cpp
+	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/qgsapplication.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgsapplication.cpp
 
 src/core/CMakeFiles/qgis_core.dir/qgsapplication.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/core/CMakeFiles/qgis_core.dir/qgsapplication.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgsapplication.cpp > src/core/CMakeFiles/qgis_core.dir/qgsapplication.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgsapplication.cpp > src/core/CMakeFiles/qgis_core.dir/qgsapplication.i
 
 src/core/CMakeFiles/qgis_core.dir/qgsapplication.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/core/CMakeFiles/qgis_core.dir/qgsapplication.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgsapplication.cpp -o src/core/CMakeFiles/qgis_core.dir/qgsapplication.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgsapplication.cpp -o src/core/CMakeFiles/qgis_core.dir/qgsapplication.s
 
 src/core/CMakeFiles/qgis_core.dir/qgsapplication.o.requires:
 
@@ -98,17 +98,17 @@ src/core/CMakeFiles/qgis_core.dir/depend.make.mark: ../src/core/qgsattributeacti
 
 src/core/CMakeFiles/qgis_core.dir/qgsattributeaction.o: src/core/CMakeFiles/qgis_core.dir/flags.make
 src/core/CMakeFiles/qgis_core.dir/qgsattributeaction.o: ../src/core/qgsattributeaction.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_3)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/core/CMakeFiles/qgis_core.dir/qgsattributeaction.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/qgsattributeaction.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgsattributeaction.cpp
+	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/qgsattributeaction.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgsattributeaction.cpp
 
 src/core/CMakeFiles/qgis_core.dir/qgsattributeaction.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/core/CMakeFiles/qgis_core.dir/qgsattributeaction.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgsattributeaction.cpp > src/core/CMakeFiles/qgis_core.dir/qgsattributeaction.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgsattributeaction.cpp > src/core/CMakeFiles/qgis_core.dir/qgsattributeaction.i
 
 src/core/CMakeFiles/qgis_core.dir/qgsattributeaction.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/core/CMakeFiles/qgis_core.dir/qgsattributeaction.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgsattributeaction.cpp -o src/core/CMakeFiles/qgis_core.dir/qgsattributeaction.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgsattributeaction.cpp -o src/core/CMakeFiles/qgis_core.dir/qgsattributeaction.s
 
 src/core/CMakeFiles/qgis_core.dir/qgsattributeaction.o.requires:
 
@@ -122,17 +122,17 @@ src/core/CMakeFiles/qgis_core.dir/depend.make.mark: ../src/core/qgsclipper.cpp
 
 src/core/CMakeFiles/qgis_core.dir/qgsclipper.o: src/core/CMakeFiles/qgis_core.dir/flags.make
 src/core/CMakeFiles/qgis_core.dir/qgsclipper.o: ../src/core/qgsclipper.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_4)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/core/CMakeFiles/qgis_core.dir/qgsclipper.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/qgsclipper.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgsclipper.cpp
+	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/qgsclipper.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgsclipper.cpp
 
 src/core/CMakeFiles/qgis_core.dir/qgsclipper.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/core/CMakeFiles/qgis_core.dir/qgsclipper.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgsclipper.cpp > src/core/CMakeFiles/qgis_core.dir/qgsclipper.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgsclipper.cpp > src/core/CMakeFiles/qgis_core.dir/qgsclipper.i
 
 src/core/CMakeFiles/qgis_core.dir/qgsclipper.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/core/CMakeFiles/qgis_core.dir/qgsclipper.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgsclipper.cpp -o src/core/CMakeFiles/qgis_core.dir/qgsclipper.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgsclipper.cpp -o src/core/CMakeFiles/qgis_core.dir/qgsclipper.s
 
 src/core/CMakeFiles/qgis_core.dir/qgsclipper.o.requires:
 
@@ -146,17 +146,17 @@ src/core/CMakeFiles/qgis_core.dir/depend.make.mark: ../src/core/qgscontexthelp.c
 
 src/core/CMakeFiles/qgis_core.dir/qgscontexthelp.o: src/core/CMakeFiles/qgis_core.dir/flags.make
 src/core/CMakeFiles/qgis_core.dir/qgscontexthelp.o: ../src/core/qgscontexthelp.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_5)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/core/CMakeFiles/qgis_core.dir/qgscontexthelp.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/qgscontexthelp.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgscontexthelp.cpp
+	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/qgscontexthelp.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgscontexthelp.cpp
 
 src/core/CMakeFiles/qgis_core.dir/qgscontexthelp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/core/CMakeFiles/qgis_core.dir/qgscontexthelp.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgscontexthelp.cpp > src/core/CMakeFiles/qgis_core.dir/qgscontexthelp.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgscontexthelp.cpp > src/core/CMakeFiles/qgis_core.dir/qgscontexthelp.i
 
 src/core/CMakeFiles/qgis_core.dir/qgscontexthelp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/core/CMakeFiles/qgis_core.dir/qgscontexthelp.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgscontexthelp.cpp -o src/core/CMakeFiles/qgis_core.dir/qgscontexthelp.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgscontexthelp.cpp -o src/core/CMakeFiles/qgis_core.dir/qgscontexthelp.s
 
 src/core/CMakeFiles/qgis_core.dir/qgscontexthelp.o.requires:
 
@@ -170,17 +170,17 @@ src/core/CMakeFiles/qgis_core.dir/depend.make.mark: ../src/core/qgscoordinatetra
 
 src/core/CMakeFiles/qgis_core.dir/qgscoordinatetransform.o: src/core/CMakeFiles/qgis_core.dir/flags.make
 src/core/CMakeFiles/qgis_core.dir/qgscoordinatetransform.o: ../src/core/qgscoordinatetransform.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_6)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/core/CMakeFiles/qgis_core.dir/qgscoordinatetransform.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/qgscoordinatetransform.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgscoordinatetransform.cpp
+	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/qgscoordinatetransform.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgscoordinatetransform.cpp
 
 src/core/CMakeFiles/qgis_core.dir/qgscoordinatetransform.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/core/CMakeFiles/qgis_core.dir/qgscoordinatetransform.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgscoordinatetransform.cpp > src/core/CMakeFiles/qgis_core.dir/qgscoordinatetransform.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgscoordinatetransform.cpp > src/core/CMakeFiles/qgis_core.dir/qgscoordinatetransform.i
 
 src/core/CMakeFiles/qgis_core.dir/qgscoordinatetransform.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/core/CMakeFiles/qgis_core.dir/qgscoordinatetransform.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgscoordinatetransform.cpp -o src/core/CMakeFiles/qgis_core.dir/qgscoordinatetransform.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgscoordinatetransform.cpp -o src/core/CMakeFiles/qgis_core.dir/qgscoordinatetransform.s
 
 src/core/CMakeFiles/qgis_core.dir/qgscoordinatetransform.o.requires:
 
@@ -194,17 +194,17 @@ src/core/CMakeFiles/qgis_core.dir/depend.make.mark: ../src/core/qgsdatasourceuri
 
 src/core/CMakeFiles/qgis_core.dir/qgsdatasourceuri.o: src/core/CMakeFiles/qgis_core.dir/flags.make
 src/core/CMakeFiles/qgis_core.dir/qgsdatasourceuri.o: ../src/core/qgsdatasourceuri.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_7)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_7)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/core/CMakeFiles/qgis_core.dir/qgsdatasourceuri.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/qgsdatasourceuri.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgsdatasourceuri.cpp
+	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/qgsdatasourceuri.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgsdatasourceuri.cpp
 
 src/core/CMakeFiles/qgis_core.dir/qgsdatasourceuri.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/core/CMakeFiles/qgis_core.dir/qgsdatasourceuri.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgsdatasourceuri.cpp > src/core/CMakeFiles/qgis_core.dir/qgsdatasourceuri.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgsdatasourceuri.cpp > src/core/CMakeFiles/qgis_core.dir/qgsdatasourceuri.i
 
 src/core/CMakeFiles/qgis_core.dir/qgsdatasourceuri.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/core/CMakeFiles/qgis_core.dir/qgsdatasourceuri.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgsdatasourceuri.cpp -o src/core/CMakeFiles/qgis_core.dir/qgsdatasourceuri.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgsdatasourceuri.cpp -o src/core/CMakeFiles/qgis_core.dir/qgsdatasourceuri.s
 
 src/core/CMakeFiles/qgis_core.dir/qgsdatasourceuri.o.requires:
 
@@ -218,17 +218,17 @@ src/core/CMakeFiles/qgis_core.dir/depend.make.mark: ../src/core/qgsdistancearea.
 
 src/core/CMakeFiles/qgis_core.dir/qgsdistancearea.o: src/core/CMakeFiles/qgis_core.dir/flags.make
 src/core/CMakeFiles/qgis_core.dir/qgsdistancearea.o: ../src/core/qgsdistancearea.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_8)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_8)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/core/CMakeFiles/qgis_core.dir/qgsdistancearea.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/qgsdistancearea.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgsdistancearea.cpp
+	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/qgsdistancearea.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgsdistancearea.cpp
 
 src/core/CMakeFiles/qgis_core.dir/qgsdistancearea.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/core/CMakeFiles/qgis_core.dir/qgsdistancearea.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgsdistancearea.cpp > src/core/CMakeFiles/qgis_core.dir/qgsdistancearea.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgsdistancearea.cpp > src/core/CMakeFiles/qgis_core.dir/qgsdistancearea.i
 
 src/core/CMakeFiles/qgis_core.dir/qgsdistancearea.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/core/CMakeFiles/qgis_core.dir/qgsdistancearea.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgsdistancearea.cpp -o src/core/CMakeFiles/qgis_core.dir/qgsdistancearea.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgsdistancearea.cpp -o src/core/CMakeFiles/qgis_core.dir/qgsdistancearea.s
 
 src/core/CMakeFiles/qgis_core.dir/qgsdistancearea.o.requires:
 
@@ -242,17 +242,17 @@ src/core/CMakeFiles/qgis_core.dir/depend.make.mark: ../src/core/qgsexception.cpp
 
 src/core/CMakeFiles/qgis_core.dir/qgsexception.o: src/core/CMakeFiles/qgis_core.dir/flags.make
 src/core/CMakeFiles/qgis_core.dir/qgsexception.o: ../src/core/qgsexception.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_9)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_9)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/core/CMakeFiles/qgis_core.dir/qgsexception.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/qgsexception.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgsexception.cpp
+	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/qgsexception.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgsexception.cpp
 
 src/core/CMakeFiles/qgis_core.dir/qgsexception.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/core/CMakeFiles/qgis_core.dir/qgsexception.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgsexception.cpp > src/core/CMakeFiles/qgis_core.dir/qgsexception.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgsexception.cpp > src/core/CMakeFiles/qgis_core.dir/qgsexception.i
 
 src/core/CMakeFiles/qgis_core.dir/qgsexception.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/core/CMakeFiles/qgis_core.dir/qgsexception.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgsexception.cpp -o src/core/CMakeFiles/qgis_core.dir/qgsexception.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgsexception.cpp -o src/core/CMakeFiles/qgis_core.dir/qgsexception.s
 
 src/core/CMakeFiles/qgis_core.dir/qgsexception.o.requires:
 
@@ -266,17 +266,17 @@ src/core/CMakeFiles/qgis_core.dir/depend.make.mark: ../src/core/qgsfeature.cpp
 
 src/core/CMakeFiles/qgis_core.dir/qgsfeature.o: src/core/CMakeFiles/qgis_core.dir/flags.make
 src/core/CMakeFiles/qgis_core.dir/qgsfeature.o: ../src/core/qgsfeature.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_10)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_10)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/core/CMakeFiles/qgis_core.dir/qgsfeature.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/qgsfeature.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgsfeature.cpp
+	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/qgsfeature.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgsfeature.cpp
 
 src/core/CMakeFiles/qgis_core.dir/qgsfeature.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/core/CMakeFiles/qgis_core.dir/qgsfeature.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgsfeature.cpp > src/core/CMakeFiles/qgis_core.dir/qgsfeature.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgsfeature.cpp > src/core/CMakeFiles/qgis_core.dir/qgsfeature.i
 
 src/core/CMakeFiles/qgis_core.dir/qgsfeature.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/core/CMakeFiles/qgis_core.dir/qgsfeature.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgsfeature.cpp -o src/core/CMakeFiles/qgis_core.dir/qgsfeature.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgsfeature.cpp -o src/core/CMakeFiles/qgis_core.dir/qgsfeature.s
 
 src/core/CMakeFiles/qgis_core.dir/qgsfeature.o.requires:
 
@@ -290,17 +290,17 @@ src/core/CMakeFiles/qgis_core.dir/depend.make.mark: ../src/core/qgsfield.cpp
 
 src/core/CMakeFiles/qgis_core.dir/qgsfield.o: src/core/CMakeFiles/qgis_core.dir/flags.make
 src/core/CMakeFiles/qgis_core.dir/qgsfield.o: ../src/core/qgsfield.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_11)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_11)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/core/CMakeFiles/qgis_core.dir/qgsfield.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/qgsfield.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgsfield.cpp
+	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/qgsfield.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgsfield.cpp
 
 src/core/CMakeFiles/qgis_core.dir/qgsfield.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/core/CMakeFiles/qgis_core.dir/qgsfield.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgsfield.cpp > src/core/CMakeFiles/qgis_core.dir/qgsfield.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgsfield.cpp > src/core/CMakeFiles/qgis_core.dir/qgsfield.i
 
 src/core/CMakeFiles/qgis_core.dir/qgsfield.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/core/CMakeFiles/qgis_core.dir/qgsfield.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgsfield.cpp -o src/core/CMakeFiles/qgis_core.dir/qgsfield.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgsfield.cpp -o src/core/CMakeFiles/qgis_core.dir/qgsfield.s
 
 src/core/CMakeFiles/qgis_core.dir/qgsfield.o.requires:
 
@@ -314,17 +314,17 @@ src/core/CMakeFiles/qgis_core.dir/depend.make.mark: ../src/core/qgsgeometry.cpp
 
 src/core/CMakeFiles/qgis_core.dir/qgsgeometry.o: src/core/CMakeFiles/qgis_core.dir/flags.make
 src/core/CMakeFiles/qgis_core.dir/qgsgeometry.o: ../src/core/qgsgeometry.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_12)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_12)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/core/CMakeFiles/qgis_core.dir/qgsgeometry.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/qgsgeometry.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgsgeometry.cpp
+	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/qgsgeometry.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgsgeometry.cpp
 
 src/core/CMakeFiles/qgis_core.dir/qgsgeometry.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/core/CMakeFiles/qgis_core.dir/qgsgeometry.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgsgeometry.cpp > src/core/CMakeFiles/qgis_core.dir/qgsgeometry.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgsgeometry.cpp > src/core/CMakeFiles/qgis_core.dir/qgsgeometry.i
 
 src/core/CMakeFiles/qgis_core.dir/qgsgeometry.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/core/CMakeFiles/qgis_core.dir/qgsgeometry.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgsgeometry.cpp -o src/core/CMakeFiles/qgis_core.dir/qgsgeometry.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgsgeometry.cpp -o src/core/CMakeFiles/qgis_core.dir/qgsgeometry.s
 
 src/core/CMakeFiles/qgis_core.dir/qgsgeometry.o.requires:
 
@@ -334,45 +334,21 @@ src/core/CMakeFiles/qgis_core.dir/qgsgeometry.o.provides: src/core/CMakeFiles/qg
 src/core/CMakeFiles/qgis_core.dir/qgsgeometry.o.provides.build: src/core/CMakeFiles/qgis_core.dir/qgsgeometry.o
 
 src/core/CMakeFiles/qgis_core.dir/depend.make.mark: src/core/CMakeFiles/qgis_core.dir/flags.make
-src/core/CMakeFiles/qgis_core.dir/depend.make.mark: ../src/core/qgsgeometryvertexindex.cpp
-
-src/core/CMakeFiles/qgis_core.dir/qgsgeometryvertexindex.o: src/core/CMakeFiles/qgis_core.dir/flags.make
-src/core/CMakeFiles/qgis_core.dir/qgsgeometryvertexindex.o: ../src/core/qgsgeometryvertexindex.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_13)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/core/CMakeFiles/qgis_core.dir/qgsgeometryvertexindex.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/qgsgeometryvertexindex.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgsgeometryvertexindex.cpp
-
-src/core/CMakeFiles/qgis_core.dir/qgsgeometryvertexindex.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/core/CMakeFiles/qgis_core.dir/qgsgeometryvertexindex.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgsgeometryvertexindex.cpp > src/core/CMakeFiles/qgis_core.dir/qgsgeometryvertexindex.i
-
-src/core/CMakeFiles/qgis_core.dir/qgsgeometryvertexindex.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/core/CMakeFiles/qgis_core.dir/qgsgeometryvertexindex.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgsgeometryvertexindex.cpp -o src/core/CMakeFiles/qgis_core.dir/qgsgeometryvertexindex.s
-
-src/core/CMakeFiles/qgis_core.dir/qgsgeometryvertexindex.o.requires:
-
-src/core/CMakeFiles/qgis_core.dir/qgsgeometryvertexindex.o.provides: src/core/CMakeFiles/qgis_core.dir/qgsgeometryvertexindex.o.requires
-	$(MAKE) -f src/core/CMakeFiles/qgis_core.dir/build.make src/core/CMakeFiles/qgis_core.dir/qgsgeometryvertexindex.o.provides.build
-
-src/core/CMakeFiles/qgis_core.dir/qgsgeometryvertexindex.o.provides.build: src/core/CMakeFiles/qgis_core.dir/qgsgeometryvertexindex.o
-
-src/core/CMakeFiles/qgis_core.dir/depend.make.mark: src/core/CMakeFiles/qgis_core.dir/flags.make
 src/core/CMakeFiles/qgis_core.dir/depend.make.mark: ../src/core/qgshttptransaction.cpp
 
 src/core/CMakeFiles/qgis_core.dir/qgshttptransaction.o: src/core/CMakeFiles/qgis_core.dir/flags.make
 src/core/CMakeFiles/qgis_core.dir/qgshttptransaction.o: ../src/core/qgshttptransaction.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_14)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_13)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/core/CMakeFiles/qgis_core.dir/qgshttptransaction.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/qgshttptransaction.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgshttptransaction.cpp
+	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/qgshttptransaction.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgshttptransaction.cpp
 
 src/core/CMakeFiles/qgis_core.dir/qgshttptransaction.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/core/CMakeFiles/qgis_core.dir/qgshttptransaction.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgshttptransaction.cpp > src/core/CMakeFiles/qgis_core.dir/qgshttptransaction.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgshttptransaction.cpp > src/core/CMakeFiles/qgis_core.dir/qgshttptransaction.i
 
 src/core/CMakeFiles/qgis_core.dir/qgshttptransaction.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/core/CMakeFiles/qgis_core.dir/qgshttptransaction.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgshttptransaction.cpp -o src/core/CMakeFiles/qgis_core.dir/qgshttptransaction.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgshttptransaction.cpp -o src/core/CMakeFiles/qgis_core.dir/qgshttptransaction.s
 
 src/core/CMakeFiles/qgis_core.dir/qgshttptransaction.o.requires:
 
@@ -386,17 +362,17 @@ src/core/CMakeFiles/qgis_core.dir/depend.make.mark: ../src/core/qgslabel.cpp
 
 src/core/CMakeFiles/qgis_core.dir/qgslabel.o: src/core/CMakeFiles/qgis_core.dir/flags.make
 src/core/CMakeFiles/qgis_core.dir/qgslabel.o: ../src/core/qgslabel.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_15)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_14)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/core/CMakeFiles/qgis_core.dir/qgslabel.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/qgslabel.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgslabel.cpp
+	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/qgslabel.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgslabel.cpp
 
 src/core/CMakeFiles/qgis_core.dir/qgslabel.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/core/CMakeFiles/qgis_core.dir/qgslabel.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgslabel.cpp > src/core/CMakeFiles/qgis_core.dir/qgslabel.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgslabel.cpp > src/core/CMakeFiles/qgis_core.dir/qgslabel.i
 
 src/core/CMakeFiles/qgis_core.dir/qgslabel.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/core/CMakeFiles/qgis_core.dir/qgslabel.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgslabel.cpp -o src/core/CMakeFiles/qgis_core.dir/qgslabel.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgslabel.cpp -o src/core/CMakeFiles/qgis_core.dir/qgslabel.s
 
 src/core/CMakeFiles/qgis_core.dir/qgslabel.o.requires:
 
@@ -410,17 +386,17 @@ src/core/CMakeFiles/qgis_core.dir/depend.make.mark: ../src/core/qgslabelattribut
 
 src/core/CMakeFiles/qgis_core.dir/qgslabelattributes.o: src/core/CMakeFiles/qgis_core.dir/flags.make
 src/core/CMakeFiles/qgis_core.dir/qgslabelattributes.o: ../src/core/qgslabelattributes.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_16)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_15)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/core/CMakeFiles/qgis_core.dir/qgslabelattributes.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/qgslabelattributes.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgslabelattributes.cpp
+	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/qgslabelattributes.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgslabelattributes.cpp
 
 src/core/CMakeFiles/qgis_core.dir/qgslabelattributes.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/core/CMakeFiles/qgis_core.dir/qgslabelattributes.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgslabelattributes.cpp > src/core/CMakeFiles/qgis_core.dir/qgslabelattributes.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgslabelattributes.cpp > src/core/CMakeFiles/qgis_core.dir/qgslabelattributes.i
 
 src/core/CMakeFiles/qgis_core.dir/qgslabelattributes.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/core/CMakeFiles/qgis_core.dir/qgslabelattributes.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgslabelattributes.cpp -o src/core/CMakeFiles/qgis_core.dir/qgslabelattributes.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgslabelattributes.cpp -o src/core/CMakeFiles/qgis_core.dir/qgslabelattributes.s
 
 src/core/CMakeFiles/qgis_core.dir/qgslabelattributes.o.requires:
 
@@ -430,45 +406,21 @@ src/core/CMakeFiles/qgis_core.dir/qgslabelattributes.o.provides: src/core/CMakeF
 src/core/CMakeFiles/qgis_core.dir/qgslabelattributes.o.provides.build: src/core/CMakeFiles/qgis_core.dir/qgslabelattributes.o
 
 src/core/CMakeFiles/qgis_core.dir/depend.make.mark: src/core/CMakeFiles/qgis_core.dir/flags.make
-src/core/CMakeFiles/qgis_core.dir/depend.make.mark: ../src/core/qgsline.cpp
-
-src/core/CMakeFiles/qgis_core.dir/qgsline.o: src/core/CMakeFiles/qgis_core.dir/flags.make
-src/core/CMakeFiles/qgis_core.dir/qgsline.o: ../src/core/qgsline.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_17)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/core/CMakeFiles/qgis_core.dir/qgsline.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/qgsline.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgsline.cpp
-
-src/core/CMakeFiles/qgis_core.dir/qgsline.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/core/CMakeFiles/qgis_core.dir/qgsline.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgsline.cpp > src/core/CMakeFiles/qgis_core.dir/qgsline.i
-
-src/core/CMakeFiles/qgis_core.dir/qgsline.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/core/CMakeFiles/qgis_core.dir/qgsline.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgsline.cpp -o src/core/CMakeFiles/qgis_core.dir/qgsline.s
-
-src/core/CMakeFiles/qgis_core.dir/qgsline.o.requires:
-
-src/core/CMakeFiles/qgis_core.dir/qgsline.o.provides: src/core/CMakeFiles/qgis_core.dir/qgsline.o.requires
-	$(MAKE) -f src/core/CMakeFiles/qgis_core.dir/build.make src/core/CMakeFiles/qgis_core.dir/qgsline.o.provides.build
-
-src/core/CMakeFiles/qgis_core.dir/qgsline.o.provides.build: src/core/CMakeFiles/qgis_core.dir/qgsline.o
-
-src/core/CMakeFiles/qgis_core.dir/depend.make.mark: src/core/CMakeFiles/qgis_core.dir/flags.make
 src/core/CMakeFiles/qgis_core.dir/depend.make.mark: ../src/core/qgslogger.cpp
 
 src/core/CMakeFiles/qgis_core.dir/qgslogger.o: src/core/CMakeFiles/qgis_core.dir/flags.make
 src/core/CMakeFiles/qgis_core.dir/qgslogger.o: ../src/core/qgslogger.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_18)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_16)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/core/CMakeFiles/qgis_core.dir/qgslogger.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/qgslogger.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgslogger.cpp
+	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/qgslogger.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgslogger.cpp
 
 src/core/CMakeFiles/qgis_core.dir/qgslogger.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/core/CMakeFiles/qgis_core.dir/qgslogger.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgslogger.cpp > src/core/CMakeFiles/qgis_core.dir/qgslogger.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgslogger.cpp > src/core/CMakeFiles/qgis_core.dir/qgslogger.i
 
 src/core/CMakeFiles/qgis_core.dir/qgslogger.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/core/CMakeFiles/qgis_core.dir/qgslogger.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgslogger.cpp -o src/core/CMakeFiles/qgis_core.dir/qgslogger.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgslogger.cpp -o src/core/CMakeFiles/qgis_core.dir/qgslogger.s
 
 src/core/CMakeFiles/qgis_core.dir/qgslogger.o.requires:
 
@@ -482,17 +434,17 @@ src/core/CMakeFiles/qgis_core.dir/depend.make.mark: ../src/core/qgsmaplayer.cpp
 
 src/core/CMakeFiles/qgis_core.dir/qgsmaplayer.o: src/core/CMakeFiles/qgis_core.dir/flags.make
 src/core/CMakeFiles/qgis_core.dir/qgsmaplayer.o: ../src/core/qgsmaplayer.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_19)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_17)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/core/CMakeFiles/qgis_core.dir/qgsmaplayer.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/qgsmaplayer.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgsmaplayer.cpp
+	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/qgsmaplayer.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgsmaplayer.cpp
 
 src/core/CMakeFiles/qgis_core.dir/qgsmaplayer.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/core/CMakeFiles/qgis_core.dir/qgsmaplayer.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgsmaplayer.cpp > src/core/CMakeFiles/qgis_core.dir/qgsmaplayer.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgsmaplayer.cpp > src/core/CMakeFiles/qgis_core.dir/qgsmaplayer.i
 
 src/core/CMakeFiles/qgis_core.dir/qgsmaplayer.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/core/CMakeFiles/qgis_core.dir/qgsmaplayer.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgsmaplayer.cpp -o src/core/CMakeFiles/qgis_core.dir/qgsmaplayer.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgsmaplayer.cpp -o src/core/CMakeFiles/qgis_core.dir/qgsmaplayer.s
 
 src/core/CMakeFiles/qgis_core.dir/qgsmaplayer.o.requires:
 
@@ -506,17 +458,17 @@ src/core/CMakeFiles/qgis_core.dir/depend.make.mark: ../src/core/qgsmaplayerregis
 
 src/core/CMakeFiles/qgis_core.dir/qgsmaplayerregistry.o: src/core/CMakeFiles/qgis_core.dir/flags.make
 src/core/CMakeFiles/qgis_core.dir/qgsmaplayerregistry.o: ../src/core/qgsmaplayerregistry.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_20)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_18)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/core/CMakeFiles/qgis_core.dir/qgsmaplayerregistry.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/qgsmaplayerregistry.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgsmaplayerregistry.cpp
+	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/qgsmaplayerregistry.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgsmaplayerregistry.cpp
 
 src/core/CMakeFiles/qgis_core.dir/qgsmaplayerregistry.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/core/CMakeFiles/qgis_core.dir/qgsmaplayerregistry.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgsmaplayerregistry.cpp > src/core/CMakeFiles/qgis_core.dir/qgsmaplayerregistry.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgsmaplayerregistry.cpp > src/core/CMakeFiles/qgis_core.dir/qgsmaplayerregistry.i
 
 src/core/CMakeFiles/qgis_core.dir/qgsmaplayerregistry.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/core/CMakeFiles/qgis_core.dir/qgsmaplayerregistry.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgsmaplayerregistry.cpp -o src/core/CMakeFiles/qgis_core.dir/qgsmaplayerregistry.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgsmaplayerregistry.cpp -o src/core/CMakeFiles/qgis_core.dir/qgsmaplayerregistry.s
 
 src/core/CMakeFiles/qgis_core.dir/qgsmaplayerregistry.o.requires:
 
@@ -526,45 +478,45 @@ src/core/CMakeFiles/qgis_core.dir/qgsmaplayerregistry.o.provides: src/core/CMake
 src/core/CMakeFiles/qgis_core.dir/qgsmaplayerregistry.o.provides.build: src/core/CMakeFiles/qgis_core.dir/qgsmaplayerregistry.o
 
 src/core/CMakeFiles/qgis_core.dir/depend.make.mark: src/core/CMakeFiles/qgis_core.dir/flags.make
-src/core/CMakeFiles/qgis_core.dir/depend.make.mark: ../src/core/qgsmaprender.cpp
+src/core/CMakeFiles/qgis_core.dir/depend.make.mark: ../src/core/qgsmaprenderer.cpp
 
-src/core/CMakeFiles/qgis_core.dir/qgsmaprender.o: src/core/CMakeFiles/qgis_core.dir/flags.make
-src/core/CMakeFiles/qgis_core.dir/qgsmaprender.o: ../src/core/qgsmaprender.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_21)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/core/CMakeFiles/qgis_core.dir/qgsmaprender.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/qgsmaprender.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgsmaprender.cpp
+src/core/CMakeFiles/qgis_core.dir/qgsmaprenderer.o: src/core/CMakeFiles/qgis_core.dir/flags.make
+src/core/CMakeFiles/qgis_core.dir/qgsmaprenderer.o: ../src/core/qgsmaprenderer.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_19)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/core/CMakeFiles/qgis_core.dir/qgsmaprenderer.o"
+	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/qgsmaprenderer.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgsmaprenderer.cpp
 
-src/core/CMakeFiles/qgis_core.dir/qgsmaprender.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/core/CMakeFiles/qgis_core.dir/qgsmaprender.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgsmaprender.cpp > src/core/CMakeFiles/qgis_core.dir/qgsmaprender.i
+src/core/CMakeFiles/qgis_core.dir/qgsmaprenderer.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/core/CMakeFiles/qgis_core.dir/qgsmaprenderer.i"
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgsmaprenderer.cpp > src/core/CMakeFiles/qgis_core.dir/qgsmaprenderer.i
 
-src/core/CMakeFiles/qgis_core.dir/qgsmaprender.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/core/CMakeFiles/qgis_core.dir/qgsmaprender.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgsmaprender.cpp -o src/core/CMakeFiles/qgis_core.dir/qgsmaprender.s
+src/core/CMakeFiles/qgis_core.dir/qgsmaprenderer.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/core/CMakeFiles/qgis_core.dir/qgsmaprenderer.s"
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgsmaprenderer.cpp -o src/core/CMakeFiles/qgis_core.dir/qgsmaprenderer.s
 
-src/core/CMakeFiles/qgis_core.dir/qgsmaprender.o.requires:
+src/core/CMakeFiles/qgis_core.dir/qgsmaprenderer.o.requires:
 
-src/core/CMakeFiles/qgis_core.dir/qgsmaprender.o.provides: src/core/CMakeFiles/qgis_core.dir/qgsmaprender.o.requires
-	$(MAKE) -f src/core/CMakeFiles/qgis_core.dir/build.make src/core/CMakeFiles/qgis_core.dir/qgsmaprender.o.provides.build
+src/core/CMakeFiles/qgis_core.dir/qgsmaprenderer.o.provides: src/core/CMakeFiles/qgis_core.dir/qgsmaprenderer.o.requires
+	$(MAKE) -f src/core/CMakeFiles/qgis_core.dir/build.make src/core/CMakeFiles/qgis_core.dir/qgsmaprenderer.o.provides.build
 
-src/core/CMakeFiles/qgis_core.dir/qgsmaprender.o.provides.build: src/core/CMakeFiles/qgis_core.dir/qgsmaprender.o
+src/core/CMakeFiles/qgis_core.dir/qgsmaprenderer.o.provides.build: src/core/CMakeFiles/qgis_core.dir/qgsmaprenderer.o
 
 src/core/CMakeFiles/qgis_core.dir/depend.make.mark: src/core/CMakeFiles/qgis_core.dir/flags.make
 src/core/CMakeFiles/qgis_core.dir/depend.make.mark: ../src/core/qgsmaptopixel.cpp
 
 src/core/CMakeFiles/qgis_core.dir/qgsmaptopixel.o: src/core/CMakeFiles/qgis_core.dir/flags.make
 src/core/CMakeFiles/qgis_core.dir/qgsmaptopixel.o: ../src/core/qgsmaptopixel.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_22)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_20)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/core/CMakeFiles/qgis_core.dir/qgsmaptopixel.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/qgsmaptopixel.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgsmaptopixel.cpp
+	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/qgsmaptopixel.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgsmaptopixel.cpp
 
 src/core/CMakeFiles/qgis_core.dir/qgsmaptopixel.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/core/CMakeFiles/qgis_core.dir/qgsmaptopixel.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgsmaptopixel.cpp > src/core/CMakeFiles/qgis_core.dir/qgsmaptopixel.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgsmaptopixel.cpp > src/core/CMakeFiles/qgis_core.dir/qgsmaptopixel.i
 
 src/core/CMakeFiles/qgis_core.dir/qgsmaptopixel.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/core/CMakeFiles/qgis_core.dir/qgsmaptopixel.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgsmaptopixel.cpp -o src/core/CMakeFiles/qgis_core.dir/qgsmaptopixel.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgsmaptopixel.cpp -o src/core/CMakeFiles/qgis_core.dir/qgsmaptopixel.s
 
 src/core/CMakeFiles/qgis_core.dir/qgsmaptopixel.o.requires:
 
@@ -578,17 +530,17 @@ src/core/CMakeFiles/qgis_core.dir/depend.make.mark: ../src/core/qgsmessageoutput
 
 src/core/CMakeFiles/qgis_core.dir/qgsmessageoutput.o: src/core/CMakeFiles/qgis_core.dir/flags.make
 src/core/CMakeFiles/qgis_core.dir/qgsmessageoutput.o: ../src/core/qgsmessageoutput.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_23)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_21)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/core/CMakeFiles/qgis_core.dir/qgsmessageoutput.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/qgsmessageoutput.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgsmessageoutput.cpp
+	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/qgsmessageoutput.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgsmessageoutput.cpp
 
 src/core/CMakeFiles/qgis_core.dir/qgsmessageoutput.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/core/CMakeFiles/qgis_core.dir/qgsmessageoutput.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgsmessageoutput.cpp > src/core/CMakeFiles/qgis_core.dir/qgsmessageoutput.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgsmessageoutput.cpp > src/core/CMakeFiles/qgis_core.dir/qgsmessageoutput.i
 
 src/core/CMakeFiles/qgis_core.dir/qgsmessageoutput.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/core/CMakeFiles/qgis_core.dir/qgsmessageoutput.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgsmessageoutput.cpp -o src/core/CMakeFiles/qgis_core.dir/qgsmessageoutput.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgsmessageoutput.cpp -o src/core/CMakeFiles/qgis_core.dir/qgsmessageoutput.s
 
 src/core/CMakeFiles/qgis_core.dir/qgsmessageoutput.o.requires:
 
@@ -602,17 +554,17 @@ src/core/CMakeFiles/qgis_core.dir/depend.make.mark: ../src/core/qgspoint.cpp
 
 src/core/CMakeFiles/qgis_core.dir/qgspoint.o: src/core/CMakeFiles/qgis_core.dir/flags.make
 src/core/CMakeFiles/qgis_core.dir/qgspoint.o: ../src/core/qgspoint.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_24)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_22)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/core/CMakeFiles/qgis_core.dir/qgspoint.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/qgspoint.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgspoint.cpp
+	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/qgspoint.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgspoint.cpp
 
 src/core/CMakeFiles/qgis_core.dir/qgspoint.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/core/CMakeFiles/qgis_core.dir/qgspoint.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgspoint.cpp > src/core/CMakeFiles/qgis_core.dir/qgspoint.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgspoint.cpp > src/core/CMakeFiles/qgis_core.dir/qgspoint.i
 
 src/core/CMakeFiles/qgis_core.dir/qgspoint.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/core/CMakeFiles/qgis_core.dir/qgspoint.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgspoint.cpp -o src/core/CMakeFiles/qgis_core.dir/qgspoint.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgspoint.cpp -o src/core/CMakeFiles/qgis_core.dir/qgspoint.s
 
 src/core/CMakeFiles/qgis_core.dir/qgspoint.o.requires:
 
@@ -626,17 +578,17 @@ src/core/CMakeFiles/qgis_core.dir/depend.make.mark: ../src/core/qgsproject.cpp
 
 src/core/CMakeFiles/qgis_core.dir/qgsproject.o: src/core/CMakeFiles/qgis_core.dir/flags.make
 src/core/CMakeFiles/qgis_core.dir/qgsproject.o: ../src/core/qgsproject.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_25)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_23)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/core/CMakeFiles/qgis_core.dir/qgsproject.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/qgsproject.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgsproject.cpp
+	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/qgsproject.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgsproject.cpp
 
 src/core/CMakeFiles/qgis_core.dir/qgsproject.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/core/CMakeFiles/qgis_core.dir/qgsproject.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgsproject.cpp > src/core/CMakeFiles/qgis_core.dir/qgsproject.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgsproject.cpp > src/core/CMakeFiles/qgis_core.dir/qgsproject.i
 
 src/core/CMakeFiles/qgis_core.dir/qgsproject.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/core/CMakeFiles/qgis_core.dir/qgsproject.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgsproject.cpp -o src/core/CMakeFiles/qgis_core.dir/qgsproject.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgsproject.cpp -o src/core/CMakeFiles/qgis_core.dir/qgsproject.s
 
 src/core/CMakeFiles/qgis_core.dir/qgsproject.o.requires:
 
@@ -646,21 +598,69 @@ src/core/CMakeFiles/qgis_core.dir/qgsproject.o.provides: src/core/CMakeFiles/qgi
 src/core/CMakeFiles/qgis_core.dir/qgsproject.o.provides.build: src/core/CMakeFiles/qgis_core.dir/qgsproject.o
 
 src/core/CMakeFiles/qgis_core.dir/depend.make.mark: src/core/CMakeFiles/qgis_core.dir/flags.make
+src/core/CMakeFiles/qgis_core.dir/depend.make.mark: ../src/core/qgsprojectfiletransform.cpp
+
+src/core/CMakeFiles/qgis_core.dir/qgsprojectfiletransform.o: src/core/CMakeFiles/qgis_core.dir/flags.make
+src/core/CMakeFiles/qgis_core.dir/qgsprojectfiletransform.o: ../src/core/qgsprojectfiletransform.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_24)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/core/CMakeFiles/qgis_core.dir/qgsprojectfiletransform.o"
+	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/qgsprojectfiletransform.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgsprojectfiletransform.cpp
+
+src/core/CMakeFiles/qgis_core.dir/qgsprojectfiletransform.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/core/CMakeFiles/qgis_core.dir/qgsprojectfiletransform.i"
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgsprojectfiletransform.cpp > src/core/CMakeFiles/qgis_core.dir/qgsprojectfiletransform.i
+
+src/core/CMakeFiles/qgis_core.dir/qgsprojectfiletransform.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/core/CMakeFiles/qgis_core.dir/qgsprojectfiletransform.s"
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgsprojectfiletransform.cpp -o src/core/CMakeFiles/qgis_core.dir/qgsprojectfiletransform.s
+
+src/core/CMakeFiles/qgis_core.dir/qgsprojectfiletransform.o.requires:
+
+src/core/CMakeFiles/qgis_core.dir/qgsprojectfiletransform.o.provides: src/core/CMakeFiles/qgis_core.dir/qgsprojectfiletransform.o.requires
+	$(MAKE) -f src/core/CMakeFiles/qgis_core.dir/build.make src/core/CMakeFiles/qgis_core.dir/qgsprojectfiletransform.o.provides.build
+
+src/core/CMakeFiles/qgis_core.dir/qgsprojectfiletransform.o.provides.build: src/core/CMakeFiles/qgis_core.dir/qgsprojectfiletransform.o
+
+src/core/CMakeFiles/qgis_core.dir/depend.make.mark: src/core/CMakeFiles/qgis_core.dir/flags.make
+src/core/CMakeFiles/qgis_core.dir/depend.make.mark: ../src/core/qgsprojectversion.cpp
+
+src/core/CMakeFiles/qgis_core.dir/qgsprojectversion.o: src/core/CMakeFiles/qgis_core.dir/flags.make
+src/core/CMakeFiles/qgis_core.dir/qgsprojectversion.o: ../src/core/qgsprojectversion.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_25)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/core/CMakeFiles/qgis_core.dir/qgsprojectversion.o"
+	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/qgsprojectversion.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgsprojectversion.cpp
+
+src/core/CMakeFiles/qgis_core.dir/qgsprojectversion.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/core/CMakeFiles/qgis_core.dir/qgsprojectversion.i"
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgsprojectversion.cpp > src/core/CMakeFiles/qgis_core.dir/qgsprojectversion.i
+
+src/core/CMakeFiles/qgis_core.dir/qgsprojectversion.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/core/CMakeFiles/qgis_core.dir/qgsprojectversion.s"
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgsprojectversion.cpp -o src/core/CMakeFiles/qgis_core.dir/qgsprojectversion.s
+
+src/core/CMakeFiles/qgis_core.dir/qgsprojectversion.o.requires:
+
+src/core/CMakeFiles/qgis_core.dir/qgsprojectversion.o.provides: src/core/CMakeFiles/qgis_core.dir/qgsprojectversion.o.requires
+	$(MAKE) -f src/core/CMakeFiles/qgis_core.dir/build.make src/core/CMakeFiles/qgis_core.dir/qgsprojectversion.o.provides.build
+
+src/core/CMakeFiles/qgis_core.dir/qgsprojectversion.o.provides.build: src/core/CMakeFiles/qgis_core.dir/qgsprojectversion.o
+
+src/core/CMakeFiles/qgis_core.dir/depend.make.mark: src/core/CMakeFiles/qgis_core.dir/flags.make
 src/core/CMakeFiles/qgis_core.dir/depend.make.mark: ../src/core/qgsprojectproperty.cpp
 
 src/core/CMakeFiles/qgis_core.dir/qgsprojectproperty.o: src/core/CMakeFiles/qgis_core.dir/flags.make
 src/core/CMakeFiles/qgis_core.dir/qgsprojectproperty.o: ../src/core/qgsprojectproperty.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_26)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_26)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/core/CMakeFiles/qgis_core.dir/qgsprojectproperty.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/qgsprojectproperty.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgsprojectproperty.cpp
+	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/qgsprojectproperty.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgsprojectproperty.cpp
 
 src/core/CMakeFiles/qgis_core.dir/qgsprojectproperty.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/core/CMakeFiles/qgis_core.dir/qgsprojectproperty.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgsprojectproperty.cpp > src/core/CMakeFiles/qgis_core.dir/qgsprojectproperty.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgsprojectproperty.cpp > src/core/CMakeFiles/qgis_core.dir/qgsprojectproperty.i
 
 src/core/CMakeFiles/qgis_core.dir/qgsprojectproperty.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/core/CMakeFiles/qgis_core.dir/qgsprojectproperty.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgsprojectproperty.cpp -o src/core/CMakeFiles/qgis_core.dir/qgsprojectproperty.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgsprojectproperty.cpp -o src/core/CMakeFiles/qgis_core.dir/qgsprojectproperty.s
 
 src/core/CMakeFiles/qgis_core.dir/qgsprojectproperty.o.requires:
 
@@ -674,17 +674,17 @@ src/core/CMakeFiles/qgis_core.dir/depend.make.mark: ../src/core/qgsprovidercount
 
 src/core/CMakeFiles/qgis_core.dir/qgsprovidercountcalcevent.o: src/core/CMakeFiles/qgis_core.dir/flags.make
 src/core/CMakeFiles/qgis_core.dir/qgsprovidercountcalcevent.o: ../src/core/qgsprovidercountcalcevent.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_27)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_27)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/core/CMakeFiles/qgis_core.dir/qgsprovidercountcalcevent.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/qgsprovidercountcalcevent.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgsprovidercountcalcevent.cpp
+	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/qgsprovidercountcalcevent.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgsprovidercountcalcevent.cpp
 
 src/core/CMakeFiles/qgis_core.dir/qgsprovidercountcalcevent.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/core/CMakeFiles/qgis_core.dir/qgsprovidercountcalcevent.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgsprovidercountcalcevent.cpp > src/core/CMakeFiles/qgis_core.dir/qgsprovidercountcalcevent.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgsprovidercountcalcevent.cpp > src/core/CMakeFiles/qgis_core.dir/qgsprovidercountcalcevent.i
 
 src/core/CMakeFiles/qgis_core.dir/qgsprovidercountcalcevent.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/core/CMakeFiles/qgis_core.dir/qgsprovidercountcalcevent.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgsprovidercountcalcevent.cpp -o src/core/CMakeFiles/qgis_core.dir/qgsprovidercountcalcevent.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgsprovidercountcalcevent.cpp -o src/core/CMakeFiles/qgis_core.dir/qgsprovidercountcalcevent.s
 
 src/core/CMakeFiles/qgis_core.dir/qgsprovidercountcalcevent.o.requires:
 
@@ -698,17 +698,17 @@ src/core/CMakeFiles/qgis_core.dir/depend.make.mark: ../src/core/qgsproviderexten
 
 src/core/CMakeFiles/qgis_core.dir/qgsproviderextentcalcevent.o: src/core/CMakeFiles/qgis_core.dir/flags.make
 src/core/CMakeFiles/qgis_core.dir/qgsproviderextentcalcevent.o: ../src/core/qgsproviderextentcalcevent.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_28)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_28)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/core/CMakeFiles/qgis_core.dir/qgsproviderextentcalcevent.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/qgsproviderextentcalcevent.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgsproviderextentcalcevent.cpp
+	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/qgsproviderextentcalcevent.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgsproviderextentcalcevent.cpp
 
 src/core/CMakeFiles/qgis_core.dir/qgsproviderextentcalcevent.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/core/CMakeFiles/qgis_core.dir/qgsproviderextentcalcevent.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgsproviderextentcalcevent.cpp > src/core/CMakeFiles/qgis_core.dir/qgsproviderextentcalcevent.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgsproviderextentcalcevent.cpp > src/core/CMakeFiles/qgis_core.dir/qgsproviderextentcalcevent.i
 
 src/core/CMakeFiles/qgis_core.dir/qgsproviderextentcalcevent.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/core/CMakeFiles/qgis_core.dir/qgsproviderextentcalcevent.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgsproviderextentcalcevent.cpp -o src/core/CMakeFiles/qgis_core.dir/qgsproviderextentcalcevent.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgsproviderextentcalcevent.cpp -o src/core/CMakeFiles/qgis_core.dir/qgsproviderextentcalcevent.s
 
 src/core/CMakeFiles/qgis_core.dir/qgsproviderextentcalcevent.o.requires:
 
@@ -722,17 +722,17 @@ src/core/CMakeFiles/qgis_core.dir/depend.make.mark: ../src/core/qgsprovidermetad
 
 src/core/CMakeFiles/qgis_core.dir/qgsprovidermetadata.o: src/core/CMakeFiles/qgis_core.dir/flags.make
 src/core/CMakeFiles/qgis_core.dir/qgsprovidermetadata.o: ../src/core/qgsprovidermetadata.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_29)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_29)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/core/CMakeFiles/qgis_core.dir/qgsprovidermetadata.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/qgsprovidermetadata.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgsprovidermetadata.cpp
+	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/qgsprovidermetadata.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgsprovidermetadata.cpp
 
 src/core/CMakeFiles/qgis_core.dir/qgsprovidermetadata.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/core/CMakeFiles/qgis_core.dir/qgsprovidermetadata.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgsprovidermetadata.cpp > src/core/CMakeFiles/qgis_core.dir/qgsprovidermetadata.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgsprovidermetadata.cpp > src/core/CMakeFiles/qgis_core.dir/qgsprovidermetadata.i
 
 src/core/CMakeFiles/qgis_core.dir/qgsprovidermetadata.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/core/CMakeFiles/qgis_core.dir/qgsprovidermetadata.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgsprovidermetadata.cpp -o src/core/CMakeFiles/qgis_core.dir/qgsprovidermetadata.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgsprovidermetadata.cpp -o src/core/CMakeFiles/qgis_core.dir/qgsprovidermetadata.s
 
 src/core/CMakeFiles/qgis_core.dir/qgsprovidermetadata.o.requires:
 
@@ -746,17 +746,17 @@ src/core/CMakeFiles/qgis_core.dir/depend.make.mark: ../src/core/qgsproviderregis
 
 src/core/CMakeFiles/qgis_core.dir/qgsproviderregistry.o: src/core/CMakeFiles/qgis_core.dir/flags.make
 src/core/CMakeFiles/qgis_core.dir/qgsproviderregistry.o: ../src/core/qgsproviderregistry.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_30)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_30)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/core/CMakeFiles/qgis_core.dir/qgsproviderregistry.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/qgsproviderregistry.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgsproviderregistry.cpp
+	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/qgsproviderregistry.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgsproviderregistry.cpp
 
 src/core/CMakeFiles/qgis_core.dir/qgsproviderregistry.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/core/CMakeFiles/qgis_core.dir/qgsproviderregistry.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgsproviderregistry.cpp > src/core/CMakeFiles/qgis_core.dir/qgsproviderregistry.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgsproviderregistry.cpp > src/core/CMakeFiles/qgis_core.dir/qgsproviderregistry.i
 
 src/core/CMakeFiles/qgis_core.dir/qgsproviderregistry.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/core/CMakeFiles/qgis_core.dir/qgsproviderregistry.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgsproviderregistry.cpp -o src/core/CMakeFiles/qgis_core.dir/qgsproviderregistry.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgsproviderregistry.cpp -o src/core/CMakeFiles/qgis_core.dir/qgsproviderregistry.s
 
 src/core/CMakeFiles/qgis_core.dir/qgsproviderregistry.o.requires:
 
@@ -770,17 +770,17 @@ src/core/CMakeFiles/qgis_core.dir/depend.make.mark: ../src/core/qgsrasterdatapro
 
 src/core/CMakeFiles/qgis_core.dir/qgsrasterdataprovider.o: src/core/CMakeFiles/qgis_core.dir/flags.make
 src/core/CMakeFiles/qgis_core.dir/qgsrasterdataprovider.o: ../src/core/qgsrasterdataprovider.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_31)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_31)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/core/CMakeFiles/qgis_core.dir/qgsrasterdataprovider.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/qgsrasterdataprovider.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgsrasterdataprovider.cpp
+	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/qgsrasterdataprovider.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgsrasterdataprovider.cpp
 
 src/core/CMakeFiles/qgis_core.dir/qgsrasterdataprovider.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/core/CMakeFiles/qgis_core.dir/qgsrasterdataprovider.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgsrasterdataprovider.cpp > src/core/CMakeFiles/qgis_core.dir/qgsrasterdataprovider.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgsrasterdataprovider.cpp > src/core/CMakeFiles/qgis_core.dir/qgsrasterdataprovider.i
 
 src/core/CMakeFiles/qgis_core.dir/qgsrasterdataprovider.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/core/CMakeFiles/qgis_core.dir/qgsrasterdataprovider.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgsrasterdataprovider.cpp -o src/core/CMakeFiles/qgis_core.dir/qgsrasterdataprovider.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgsrasterdataprovider.cpp -o src/core/CMakeFiles/qgis_core.dir/qgsrasterdataprovider.s
 
 src/core/CMakeFiles/qgis_core.dir/qgsrasterdataprovider.o.requires:
 
@@ -790,45 +790,69 @@ src/core/CMakeFiles/qgis_core.dir/qgsrasterdataprovider.o.provides: src/core/CMa
 src/core/CMakeFiles/qgis_core.dir/qgsrasterdataprovider.o.provides.build: src/core/CMakeFiles/qgis_core.dir/qgsrasterdataprovider.o
 
 src/core/CMakeFiles/qgis_core.dir/depend.make.mark: src/core/CMakeFiles/qgis_core.dir/flags.make
-src/core/CMakeFiles/qgis_core.dir/depend.make.mark: ../src/core/qgsrect.cpp
+src/core/CMakeFiles/qgis_core.dir/depend.make.mark: ../src/core/qgsrendercontext.cpp
 
-src/core/CMakeFiles/qgis_core.dir/qgsrect.o: src/core/CMakeFiles/qgis_core.dir/flags.make
-src/core/CMakeFiles/qgis_core.dir/qgsrect.o: ../src/core/qgsrect.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_32)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/core/CMakeFiles/qgis_core.dir/qgsrect.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/qgsrect.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgsrect.cpp
+src/core/CMakeFiles/qgis_core.dir/qgsrendercontext.o: src/core/CMakeFiles/qgis_core.dir/flags.make
+src/core/CMakeFiles/qgis_core.dir/qgsrendercontext.o: ../src/core/qgsrendercontext.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_32)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/core/CMakeFiles/qgis_core.dir/qgsrendercontext.o"
+	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/qgsrendercontext.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgsrendercontext.cpp
 
-src/core/CMakeFiles/qgis_core.dir/qgsrect.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/core/CMakeFiles/qgis_core.dir/qgsrect.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgsrect.cpp > src/core/CMakeFiles/qgis_core.dir/qgsrect.i
+src/core/CMakeFiles/qgis_core.dir/qgsrendercontext.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/core/CMakeFiles/qgis_core.dir/qgsrendercontext.i"
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgsrendercontext.cpp > src/core/CMakeFiles/qgis_core.dir/qgsrendercontext.i
 
-src/core/CMakeFiles/qgis_core.dir/qgsrect.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/core/CMakeFiles/qgis_core.dir/qgsrect.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgsrect.cpp -o src/core/CMakeFiles/qgis_core.dir/qgsrect.s
+src/core/CMakeFiles/qgis_core.dir/qgsrendercontext.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/core/CMakeFiles/qgis_core.dir/qgsrendercontext.s"
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgsrendercontext.cpp -o src/core/CMakeFiles/qgis_core.dir/qgsrendercontext.s
 
-src/core/CMakeFiles/qgis_core.dir/qgsrect.o.requires:
+src/core/CMakeFiles/qgis_core.dir/qgsrendercontext.o.requires:
 
-src/core/CMakeFiles/qgis_core.dir/qgsrect.o.provides: src/core/CMakeFiles/qgis_core.dir/qgsrect.o.requires
-	$(MAKE) -f src/core/CMakeFiles/qgis_core.dir/build.make src/core/CMakeFiles/qgis_core.dir/qgsrect.o.provides.build
+src/core/CMakeFiles/qgis_core.dir/qgsrendercontext.o.provides: src/core/CMakeFiles/qgis_core.dir/qgsrendercontext.o.requires
+	$(MAKE) -f src/core/CMakeFiles/qgis_core.dir/build.make src/core/CMakeFiles/qgis_core.dir/qgsrendercontext.o.provides.build
 
-src/core/CMakeFiles/qgis_core.dir/qgsrect.o.provides.build: src/core/CMakeFiles/qgis_core.dir/qgsrect.o
+src/core/CMakeFiles/qgis_core.dir/qgsrendercontext.o.provides.build: src/core/CMakeFiles/qgis_core.dir/qgsrendercontext.o
+
+src/core/CMakeFiles/qgis_core.dir/depend.make.mark: src/core/CMakeFiles/qgis_core.dir/flags.make
+src/core/CMakeFiles/qgis_core.dir/depend.make.mark: ../src/core/qgsrectangle.cpp
+
+src/core/CMakeFiles/qgis_core.dir/qgsrectangle.o: src/core/CMakeFiles/qgis_core.dir/flags.make
+src/core/CMakeFiles/qgis_core.dir/qgsrectangle.o: ../src/core/qgsrectangle.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_33)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/core/CMakeFiles/qgis_core.dir/qgsrectangle.o"
+	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/qgsrectangle.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgsrectangle.cpp
+
+src/core/CMakeFiles/qgis_core.dir/qgsrectangle.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/core/CMakeFiles/qgis_core.dir/qgsrectangle.i"
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgsrectangle.cpp > src/core/CMakeFiles/qgis_core.dir/qgsrectangle.i
+
+src/core/CMakeFiles/qgis_core.dir/qgsrectangle.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/core/CMakeFiles/qgis_core.dir/qgsrectangle.s"
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgsrectangle.cpp -o src/core/CMakeFiles/qgis_core.dir/qgsrectangle.s
+
+src/core/CMakeFiles/qgis_core.dir/qgsrectangle.o.requires:
+
+src/core/CMakeFiles/qgis_core.dir/qgsrectangle.o.provides: src/core/CMakeFiles/qgis_core.dir/qgsrectangle.o.requires
+	$(MAKE) -f src/core/CMakeFiles/qgis_core.dir/build.make src/core/CMakeFiles/qgis_core.dir/qgsrectangle.o.provides.build
+
+src/core/CMakeFiles/qgis_core.dir/qgsrectangle.o.provides.build: src/core/CMakeFiles/qgis_core.dir/qgsrectangle.o
 
 src/core/CMakeFiles/qgis_core.dir/depend.make.mark: src/core/CMakeFiles/qgis_core.dir/flags.make
 src/core/CMakeFiles/qgis_core.dir/depend.make.mark: ../src/core/qgsrunprocess.cpp
 
 src/core/CMakeFiles/qgis_core.dir/qgsrunprocess.o: src/core/CMakeFiles/qgis_core.dir/flags.make
 src/core/CMakeFiles/qgis_core.dir/qgsrunprocess.o: ../src/core/qgsrunprocess.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_33)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_34)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/core/CMakeFiles/qgis_core.dir/qgsrunprocess.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/qgsrunprocess.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgsrunprocess.cpp
+	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/qgsrunprocess.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgsrunprocess.cpp
 
 src/core/CMakeFiles/qgis_core.dir/qgsrunprocess.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/core/CMakeFiles/qgis_core.dir/qgsrunprocess.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgsrunprocess.cpp > src/core/CMakeFiles/qgis_core.dir/qgsrunprocess.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgsrunprocess.cpp > src/core/CMakeFiles/qgis_core.dir/qgsrunprocess.i
 
 src/core/CMakeFiles/qgis_core.dir/qgsrunprocess.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/core/CMakeFiles/qgis_core.dir/qgsrunprocess.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgsrunprocess.cpp -o src/core/CMakeFiles/qgis_core.dir/qgsrunprocess.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgsrunprocess.cpp -o src/core/CMakeFiles/qgis_core.dir/qgsrunprocess.s
 
 src/core/CMakeFiles/qgis_core.dir/qgsrunprocess.o.requires:
 
@@ -842,17 +866,17 @@ src/core/CMakeFiles/qgis_core.dir/depend.make.mark: ../src/core/qgsscalecalculat
 
 src/core/CMakeFiles/qgis_core.dir/qgsscalecalculator.o: src/core/CMakeFiles/qgis_core.dir/flags.make
 src/core/CMakeFiles/qgis_core.dir/qgsscalecalculator.o: ../src/core/qgsscalecalculator.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_34)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_35)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/core/CMakeFiles/qgis_core.dir/qgsscalecalculator.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/qgsscalecalculator.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgsscalecalculator.cpp
+	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/qgsscalecalculator.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgsscalecalculator.cpp
 
 src/core/CMakeFiles/qgis_core.dir/qgsscalecalculator.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/core/CMakeFiles/qgis_core.dir/qgsscalecalculator.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgsscalecalculator.cpp > src/core/CMakeFiles/qgis_core.dir/qgsscalecalculator.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgsscalecalculator.cpp > src/core/CMakeFiles/qgis_core.dir/qgsscalecalculator.i
 
 src/core/CMakeFiles/qgis_core.dir/qgsscalecalculator.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/core/CMakeFiles/qgis_core.dir/qgsscalecalculator.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgsscalecalculator.cpp -o src/core/CMakeFiles/qgis_core.dir/qgsscalecalculator.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgsscalecalculator.cpp -o src/core/CMakeFiles/qgis_core.dir/qgsscalecalculator.s
 
 src/core/CMakeFiles/qgis_core.dir/qgsscalecalculator.o.requires:
 
@@ -866,17 +890,17 @@ src/core/CMakeFiles/qgis_core.dir/depend.make.mark: ../src/core/qgssearchstring.
 
 src/core/CMakeFiles/qgis_core.dir/qgssearchstring.o: src/core/CMakeFiles/qgis_core.dir/flags.make
 src/core/CMakeFiles/qgis_core.dir/qgssearchstring.o: ../src/core/qgssearchstring.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_35)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_36)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/core/CMakeFiles/qgis_core.dir/qgssearchstring.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/qgssearchstring.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgssearchstring.cpp
+	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/qgssearchstring.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgssearchstring.cpp
 
 src/core/CMakeFiles/qgis_core.dir/qgssearchstring.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/core/CMakeFiles/qgis_core.dir/qgssearchstring.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgssearchstring.cpp > src/core/CMakeFiles/qgis_core.dir/qgssearchstring.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgssearchstring.cpp > src/core/CMakeFiles/qgis_core.dir/qgssearchstring.i
 
 src/core/CMakeFiles/qgis_core.dir/qgssearchstring.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/core/CMakeFiles/qgis_core.dir/qgssearchstring.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgssearchstring.cpp -o src/core/CMakeFiles/qgis_core.dir/qgssearchstring.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgssearchstring.cpp -o src/core/CMakeFiles/qgis_core.dir/qgssearchstring.s
 
 src/core/CMakeFiles/qgis_core.dir/qgssearchstring.o.requires:
 
@@ -890,17 +914,17 @@ src/core/CMakeFiles/qgis_core.dir/depend.make.mark: ../src/core/qgssearchtreenod
 
 src/core/CMakeFiles/qgis_core.dir/qgssearchtreenode.o: src/core/CMakeFiles/qgis_core.dir/flags.make
 src/core/CMakeFiles/qgis_core.dir/qgssearchtreenode.o: ../src/core/qgssearchtreenode.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_36)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_37)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/core/CMakeFiles/qgis_core.dir/qgssearchtreenode.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/qgssearchtreenode.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgssearchtreenode.cpp
+	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/qgssearchtreenode.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgssearchtreenode.cpp
 
 src/core/CMakeFiles/qgis_core.dir/qgssearchtreenode.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/core/CMakeFiles/qgis_core.dir/qgssearchtreenode.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgssearchtreenode.cpp > src/core/CMakeFiles/qgis_core.dir/qgssearchtreenode.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgssearchtreenode.cpp > src/core/CMakeFiles/qgis_core.dir/qgssearchtreenode.i
 
 src/core/CMakeFiles/qgis_core.dir/qgssearchtreenode.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/core/CMakeFiles/qgis_core.dir/qgssearchtreenode.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgssearchtreenode.cpp -o src/core/CMakeFiles/qgis_core.dir/qgssearchtreenode.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgssearchtreenode.cpp -o src/core/CMakeFiles/qgis_core.dir/qgssearchtreenode.s
 
 src/core/CMakeFiles/qgis_core.dir/qgssearchtreenode.o.requires:
 
@@ -910,45 +934,69 @@ src/core/CMakeFiles/qgis_core.dir/qgssearchtreenode.o.provides: src/core/CMakeFi
 src/core/CMakeFiles/qgis_core.dir/qgssearchtreenode.o.provides.build: src/core/CMakeFiles/qgis_core.dir/qgssearchtreenode.o
 
 src/core/CMakeFiles/qgis_core.dir/depend.make.mark: src/core/CMakeFiles/qgis_core.dir/flags.make
-src/core/CMakeFiles/qgis_core.dir/depend.make.mark: ../src/core/qgsspatialrefsys.cpp
+src/core/CMakeFiles/qgis_core.dir/depend.make.mark: ../src/core/qgssnapper.cpp
 
-src/core/CMakeFiles/qgis_core.dir/qgsspatialrefsys.o: src/core/CMakeFiles/qgis_core.dir/flags.make
-src/core/CMakeFiles/qgis_core.dir/qgsspatialrefsys.o: ../src/core/qgsspatialrefsys.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_37)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/core/CMakeFiles/qgis_core.dir/qgsspatialrefsys.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/qgsspatialrefsys.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgsspatialrefsys.cpp
+src/core/CMakeFiles/qgis_core.dir/qgssnapper.o: src/core/CMakeFiles/qgis_core.dir/flags.make
+src/core/CMakeFiles/qgis_core.dir/qgssnapper.o: ../src/core/qgssnapper.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_38)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/core/CMakeFiles/qgis_core.dir/qgssnapper.o"
+	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/qgssnapper.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgssnapper.cpp
 
-src/core/CMakeFiles/qgis_core.dir/qgsspatialrefsys.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/core/CMakeFiles/qgis_core.dir/qgsspatialrefsys.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgsspatialrefsys.cpp > src/core/CMakeFiles/qgis_core.dir/qgsspatialrefsys.i
+src/core/CMakeFiles/qgis_core.dir/qgssnapper.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/core/CMakeFiles/qgis_core.dir/qgssnapper.i"
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgssnapper.cpp > src/core/CMakeFiles/qgis_core.dir/qgssnapper.i
 
-src/core/CMakeFiles/qgis_core.dir/qgsspatialrefsys.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/core/CMakeFiles/qgis_core.dir/qgsspatialrefsys.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgsspatialrefsys.cpp -o src/core/CMakeFiles/qgis_core.dir/qgsspatialrefsys.s
+src/core/CMakeFiles/qgis_core.dir/qgssnapper.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/core/CMakeFiles/qgis_core.dir/qgssnapper.s"
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgssnapper.cpp -o src/core/CMakeFiles/qgis_core.dir/qgssnapper.s
 
-src/core/CMakeFiles/qgis_core.dir/qgsspatialrefsys.o.requires:
+src/core/CMakeFiles/qgis_core.dir/qgssnapper.o.requires:
 
-src/core/CMakeFiles/qgis_core.dir/qgsspatialrefsys.o.provides: src/core/CMakeFiles/qgis_core.dir/qgsspatialrefsys.o.requires
-	$(MAKE) -f src/core/CMakeFiles/qgis_core.dir/build.make src/core/CMakeFiles/qgis_core.dir/qgsspatialrefsys.o.provides.build
+src/core/CMakeFiles/qgis_core.dir/qgssnapper.o.provides: src/core/CMakeFiles/qgis_core.dir/qgssnapper.o.requires
+	$(MAKE) -f src/core/CMakeFiles/qgis_core.dir/build.make src/core/CMakeFiles/qgis_core.dir/qgssnapper.o.provides.build
 
-src/core/CMakeFiles/qgis_core.dir/qgsspatialrefsys.o.provides.build: src/core/CMakeFiles/qgis_core.dir/qgsspatialrefsys.o
+src/core/CMakeFiles/qgis_core.dir/qgssnapper.o.provides.build: src/core/CMakeFiles/qgis_core.dir/qgssnapper.o
+
+src/core/CMakeFiles/qgis_core.dir/depend.make.mark: src/core/CMakeFiles/qgis_core.dir/flags.make
+src/core/CMakeFiles/qgis_core.dir/depend.make.mark: ../src/core/qgscoordinatereferencesystem.cpp
+
+src/core/CMakeFiles/qgis_core.dir/qgscoordinatereferencesystem.o: src/core/CMakeFiles/qgis_core.dir/flags.make
+src/core/CMakeFiles/qgis_core.dir/qgscoordinatereferencesystem.o: ../src/core/qgscoordinatereferencesystem.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_39)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/core/CMakeFiles/qgis_core.dir/qgscoordinatereferencesystem.o"
+	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/qgscoordinatereferencesystem.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgscoordinatereferencesystem.cpp
+
+src/core/CMakeFiles/qgis_core.dir/qgscoordinatereferencesystem.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/core/CMakeFiles/qgis_core.dir/qgscoordinatereferencesystem.i"
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgscoordinatereferencesystem.cpp > src/core/CMakeFiles/qgis_core.dir/qgscoordinatereferencesystem.i
+
+src/core/CMakeFiles/qgis_core.dir/qgscoordinatereferencesystem.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/core/CMakeFiles/qgis_core.dir/qgscoordinatereferencesystem.s"
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgscoordinatereferencesystem.cpp -o src/core/CMakeFiles/qgis_core.dir/qgscoordinatereferencesystem.s
+
+src/core/CMakeFiles/qgis_core.dir/qgscoordinatereferencesystem.o.requires:
+
+src/core/CMakeFiles/qgis_core.dir/qgscoordinatereferencesystem.o.provides: src/core/CMakeFiles/qgis_core.dir/qgscoordinatereferencesystem.o.requires
+	$(MAKE) -f src/core/CMakeFiles/qgis_core.dir/build.make src/core/CMakeFiles/qgis_core.dir/qgscoordinatereferencesystem.o.provides.build
+
+src/core/CMakeFiles/qgis_core.dir/qgscoordinatereferencesystem.o.provides.build: src/core/CMakeFiles/qgis_core.dir/qgscoordinatereferencesystem.o
 
 src/core/CMakeFiles/qgis_core.dir/depend.make.mark: src/core/CMakeFiles/qgis_core.dir/flags.make
 src/core/CMakeFiles/qgis_core.dir/depend.make.mark: ../src/core/qgsvectordataprovider.cpp
 
 src/core/CMakeFiles/qgis_core.dir/qgsvectordataprovider.o: src/core/CMakeFiles/qgis_core.dir/flags.make
 src/core/CMakeFiles/qgis_core.dir/qgsvectordataprovider.o: ../src/core/qgsvectordataprovider.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_38)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_40)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/core/CMakeFiles/qgis_core.dir/qgsvectordataprovider.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/qgsvectordataprovider.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgsvectordataprovider.cpp
+	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/qgsvectordataprovider.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgsvectordataprovider.cpp
 
 src/core/CMakeFiles/qgis_core.dir/qgsvectordataprovider.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/core/CMakeFiles/qgis_core.dir/qgsvectordataprovider.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgsvectordataprovider.cpp > src/core/CMakeFiles/qgis_core.dir/qgsvectordataprovider.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgsvectordataprovider.cpp > src/core/CMakeFiles/qgis_core.dir/qgsvectordataprovider.i
 
 src/core/CMakeFiles/qgis_core.dir/qgsvectordataprovider.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/core/CMakeFiles/qgis_core.dir/qgsvectordataprovider.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgsvectordataprovider.cpp -o src/core/CMakeFiles/qgis_core.dir/qgsvectordataprovider.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgsvectordataprovider.cpp -o src/core/CMakeFiles/qgis_core.dir/qgsvectordataprovider.s
 
 src/core/CMakeFiles/qgis_core.dir/qgsvectordataprovider.o.requires:
 
@@ -962,17 +1010,17 @@ src/core/CMakeFiles/qgis_core.dir/depend.make.mark: ../src/core/qgsvectorfilewri
 
 src/core/CMakeFiles/qgis_core.dir/qgsvectorfilewriter.o: src/core/CMakeFiles/qgis_core.dir/flags.make
 src/core/CMakeFiles/qgis_core.dir/qgsvectorfilewriter.o: ../src/core/qgsvectorfilewriter.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_39)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_41)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/core/CMakeFiles/qgis_core.dir/qgsvectorfilewriter.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/qgsvectorfilewriter.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgsvectorfilewriter.cpp
+	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/qgsvectorfilewriter.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgsvectorfilewriter.cpp
 
 src/core/CMakeFiles/qgis_core.dir/qgsvectorfilewriter.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/core/CMakeFiles/qgis_core.dir/qgsvectorfilewriter.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgsvectorfilewriter.cpp > src/core/CMakeFiles/qgis_core.dir/qgsvectorfilewriter.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgsvectorfilewriter.cpp > src/core/CMakeFiles/qgis_core.dir/qgsvectorfilewriter.i
 
 src/core/CMakeFiles/qgis_core.dir/qgsvectorfilewriter.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/core/CMakeFiles/qgis_core.dir/qgsvectorfilewriter.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgsvectorfilewriter.cpp -o src/core/CMakeFiles/qgis_core.dir/qgsvectorfilewriter.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgsvectorfilewriter.cpp -o src/core/CMakeFiles/qgis_core.dir/qgsvectorfilewriter.s
 
 src/core/CMakeFiles/qgis_core.dir/qgsvectorfilewriter.o.requires:
 
@@ -986,17 +1034,17 @@ src/core/CMakeFiles/qgis_core.dir/depend.make.mark: ../src/core/qgsvectorlayer.c
 
 src/core/CMakeFiles/qgis_core.dir/qgsvectorlayer.o: src/core/CMakeFiles/qgis_core.dir/flags.make
 src/core/CMakeFiles/qgis_core.dir/qgsvectorlayer.o: ../src/core/qgsvectorlayer.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_40)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_42)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/core/CMakeFiles/qgis_core.dir/qgsvectorlayer.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/qgsvectorlayer.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgsvectorlayer.cpp
+	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/qgsvectorlayer.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgsvectorlayer.cpp
 
 src/core/CMakeFiles/qgis_core.dir/qgsvectorlayer.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/core/CMakeFiles/qgis_core.dir/qgsvectorlayer.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgsvectorlayer.cpp > src/core/CMakeFiles/qgis_core.dir/qgsvectorlayer.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgsvectorlayer.cpp > src/core/CMakeFiles/qgis_core.dir/qgsvectorlayer.i
 
 src/core/CMakeFiles/qgis_core.dir/qgsvectorlayer.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/core/CMakeFiles/qgis_core.dir/qgsvectorlayer.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgsvectorlayer.cpp -o src/core/CMakeFiles/qgis_core.dir/qgsvectorlayer.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgsvectorlayer.cpp -o src/core/CMakeFiles/qgis_core.dir/qgsvectorlayer.s
 
 src/core/CMakeFiles/qgis_core.dir/qgsvectorlayer.o.requires:
 
@@ -1006,45 +1054,549 @@ src/core/CMakeFiles/qgis_core.dir/qgsvectorlayer.o.provides: src/core/CMakeFiles
 src/core/CMakeFiles/qgis_core.dir/qgsvectorlayer.o.provides.build: src/core/CMakeFiles/qgis_core.dir/qgsvectorlayer.o
 
 src/core/CMakeFiles/qgis_core.dir/depend.make.mark: src/core/CMakeFiles/qgis_core.dir/flags.make
-src/core/CMakeFiles/qgis_core.dir/depend.make.mark: ../src/core/raster/qgscolortable.cpp
+src/core/CMakeFiles/qgis_core.dir/depend.make.mark: ../src/core/composer/qgscomposeritem.cpp
 
-src/core/CMakeFiles/qgis_core.dir/raster/qgscolortable.o: src/core/CMakeFiles/qgis_core.dir/flags.make
-src/core/CMakeFiles/qgis_core.dir/raster/qgscolortable.o: ../src/core/raster/qgscolortable.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_41)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/core/CMakeFiles/qgis_core.dir/raster/qgscolortable.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/raster/qgscolortable.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/raster/qgscolortable.cpp
+src/core/CMakeFiles/qgis_core.dir/composer/qgscomposeritem.o: src/core/CMakeFiles/qgis_core.dir/flags.make
+src/core/CMakeFiles/qgis_core.dir/composer/qgscomposeritem.o: ../src/core/composer/qgscomposeritem.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_43)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/core/CMakeFiles/qgis_core.dir/composer/qgscomposeritem.o"
+	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/composer/qgscomposeritem.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/composer/qgscomposeritem.cpp
 
-src/core/CMakeFiles/qgis_core.dir/raster/qgscolortable.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/core/CMakeFiles/qgis_core.dir/raster/qgscolortable.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/raster/qgscolortable.cpp > src/core/CMakeFiles/qgis_core.dir/raster/qgscolortable.i
+src/core/CMakeFiles/qgis_core.dir/composer/qgscomposeritem.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/core/CMakeFiles/qgis_core.dir/composer/qgscomposeritem.i"
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/composer/qgscomposeritem.cpp > src/core/CMakeFiles/qgis_core.dir/composer/qgscomposeritem.i
 
-src/core/CMakeFiles/qgis_core.dir/raster/qgscolortable.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/core/CMakeFiles/qgis_core.dir/raster/qgscolortable.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/raster/qgscolortable.cpp -o src/core/CMakeFiles/qgis_core.dir/raster/qgscolortable.s
+src/core/CMakeFiles/qgis_core.dir/composer/qgscomposeritem.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/core/CMakeFiles/qgis_core.dir/composer/qgscomposeritem.s"
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/composer/qgscomposeritem.cpp -o src/core/CMakeFiles/qgis_core.dir/composer/qgscomposeritem.s
 
-src/core/CMakeFiles/qgis_core.dir/raster/qgscolortable.o.requires:
+src/core/CMakeFiles/qgis_core.dir/composer/qgscomposeritem.o.requires:
 
-src/core/CMakeFiles/qgis_core.dir/raster/qgscolortable.o.provides: src/core/CMakeFiles/qgis_core.dir/raster/qgscolortable.o.requires
-	$(MAKE) -f src/core/CMakeFiles/qgis_core.dir/build.make src/core/CMakeFiles/qgis_core.dir/raster/qgscolortable.o.provides.build
+src/core/CMakeFiles/qgis_core.dir/composer/qgscomposeritem.o.provides: src/core/CMakeFiles/qgis_core.dir/composer/qgscomposeritem.o.requires
+	$(MAKE) -f src/core/CMakeFiles/qgis_core.dir/build.make src/core/CMakeFiles/qgis_core.dir/composer/qgscomposeritem.o.provides.build
 
-src/core/CMakeFiles/qgis_core.dir/raster/qgscolortable.o.provides.build: src/core/CMakeFiles/qgis_core.dir/raster/qgscolortable.o
+src/core/CMakeFiles/qgis_core.dir/composer/qgscomposeritem.o.provides.build: src/core/CMakeFiles/qgis_core.dir/composer/qgscomposeritem.o
+
+src/core/CMakeFiles/qgis_core.dir/depend.make.mark: src/core/CMakeFiles/qgis_core.dir/flags.make
+src/core/CMakeFiles/qgis_core.dir/depend.make.mark: ../src/core/composer/qgscomposeritemgroup.cpp
+
+src/core/CMakeFiles/qgis_core.dir/composer/qgscomposeritemgroup.o: src/core/CMakeFiles/qgis_core.dir/flags.make
+src/core/CMakeFiles/qgis_core.dir/composer/qgscomposeritemgroup.o: ../src/core/composer/qgscomposeritemgroup.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_44)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/core/CMakeFiles/qgis_core.dir/composer/qgscomposeritemgroup.o"
+	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/composer/qgscomposeritemgroup.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/composer/qgscomposeritemgroup.cpp
+
+src/core/CMakeFiles/qgis_core.dir/composer/qgscomposeritemgroup.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/core/CMakeFiles/qgis_core.dir/composer/qgscomposeritemgroup.i"
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/composer/qgscomposeritemgroup.cpp > src/core/CMakeFiles/qgis_core.dir/composer/qgscomposeritemgroup.i
+
+src/core/CMakeFiles/qgis_core.dir/composer/qgscomposeritemgroup.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/core/CMakeFiles/qgis_core.dir/composer/qgscomposeritemgroup.s"
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/composer/qgscomposeritemgroup.cpp -o src/core/CMakeFiles/qgis_core.dir/composer/qgscomposeritemgroup.s
+
+src/core/CMakeFiles/qgis_core.dir/composer/qgscomposeritemgroup.o.requires:
+
+src/core/CMakeFiles/qgis_core.dir/composer/qgscomposeritemgroup.o.provides: src/core/CMakeFiles/qgis_core.dir/composer/qgscomposeritemgroup.o.requires
+	$(MAKE) -f src/core/CMakeFiles/qgis_core.dir/build.make src/core/CMakeFiles/qgis_core.dir/composer/qgscomposeritemgroup.o.provides.build
+
+src/core/CMakeFiles/qgis_core.dir/composer/qgscomposeritemgroup.o.provides.build: src/core/CMakeFiles/qgis_core.dir/composer/qgscomposeritemgroup.o
+
+src/core/CMakeFiles/qgis_core.dir/depend.make.mark: src/core/CMakeFiles/qgis_core.dir/flags.make
+src/core/CMakeFiles/qgis_core.dir/depend.make.mark: ../src/core/composer/qgscomposerlabel.cpp
+
+src/core/CMakeFiles/qgis_core.dir/composer/qgscomposerlabel.o: src/core/CMakeFiles/qgis_core.dir/flags.make
+src/core/CMakeFiles/qgis_core.dir/composer/qgscomposerlabel.o: ../src/core/composer/qgscomposerlabel.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_45)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/core/CMakeFiles/qgis_core.dir/composer/qgscomposerlabel.o"
+	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/composer/qgscomposerlabel.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/composer/qgscomposerlabel.cpp
+
+src/core/CMakeFiles/qgis_core.dir/composer/qgscomposerlabel.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/core/CMakeFiles/qgis_core.dir/composer/qgscomposerlabel.i"
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/composer/qgscomposerlabel.cpp > src/core/CMakeFiles/qgis_core.dir/composer/qgscomposerlabel.i
+
+src/core/CMakeFiles/qgis_core.dir/composer/qgscomposerlabel.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/core/CMakeFiles/qgis_core.dir/composer/qgscomposerlabel.s"
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/composer/qgscomposerlabel.cpp -o src/core/CMakeFiles/qgis_core.dir/composer/qgscomposerlabel.s
+
+src/core/CMakeFiles/qgis_core.dir/composer/qgscomposerlabel.o.requires:
+
+src/core/CMakeFiles/qgis_core.dir/composer/qgscomposerlabel.o.provides: src/core/CMakeFiles/qgis_core.dir/composer/qgscomposerlabel.o.requires
+	$(MAKE) -f src/core/CMakeFiles/qgis_core.dir/build.make src/core/CMakeFiles/qgis_core.dir/composer/qgscomposerlabel.o.provides.build
+
+src/core/CMakeFiles/qgis_core.dir/composer/qgscomposerlabel.o.provides.build: src/core/CMakeFiles/qgis_core.dir/composer/qgscomposerlabel.o
+
+src/core/CMakeFiles/qgis_core.dir/depend.make.mark: src/core/CMakeFiles/qgis_core.dir/flags.make
+src/core/CMakeFiles/qgis_core.dir/depend.make.mark: ../src/core/composer/qgscomposerpicture.cpp
+
+src/core/CMakeFiles/qgis_core.dir/composer/qgscomposerpicture.o: src/core/CMakeFiles/qgis_core.dir/flags.make
+src/core/CMakeFiles/qgis_core.dir/composer/qgscomposerpicture.o: ../src/core/composer/qgscomposerpicture.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_46)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/core/CMakeFiles/qgis_core.dir/composer/qgscomposerpicture.o"
+	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/composer/qgscomposerpicture.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/composer/qgscomposerpicture.cpp
+
+src/core/CMakeFiles/qgis_core.dir/composer/qgscomposerpicture.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/core/CMakeFiles/qgis_core.dir/composer/qgscomposerpicture.i"
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/composer/qgscomposerpicture.cpp > src/core/CMakeFiles/qgis_core.dir/composer/qgscomposerpicture.i
+
+src/core/CMakeFiles/qgis_core.dir/composer/qgscomposerpicture.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/core/CMakeFiles/qgis_core.dir/composer/qgscomposerpicture.s"
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/composer/qgscomposerpicture.cpp -o src/core/CMakeFiles/qgis_core.dir/composer/qgscomposerpicture.s
+
+src/core/CMakeFiles/qgis_core.dir/composer/qgscomposerpicture.o.requires:
+
+src/core/CMakeFiles/qgis_core.dir/composer/qgscomposerpicture.o.provides: src/core/CMakeFiles/qgis_core.dir/composer/qgscomposerpicture.o.requires
+	$(MAKE) -f src/core/CMakeFiles/qgis_core.dir/build.make src/core/CMakeFiles/qgis_core.dir/composer/qgscomposerpicture.o.provides.build
+
+src/core/CMakeFiles/qgis_core.dir/composer/qgscomposerpicture.o.provides.build: src/core/CMakeFiles/qgis_core.dir/composer/qgscomposerpicture.o
+
+src/core/CMakeFiles/qgis_core.dir/depend.make.mark: src/core/CMakeFiles/qgis_core.dir/flags.make
+src/core/CMakeFiles/qgis_core.dir/depend.make.mark: ../src/core/composer/qgscomposermap.cpp
+
+src/core/CMakeFiles/qgis_core.dir/composer/qgscomposermap.o: src/core/CMakeFiles/qgis_core.dir/flags.make
+src/core/CMakeFiles/qgis_core.dir/composer/qgscomposermap.o: ../src/core/composer/qgscomposermap.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_47)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/core/CMakeFiles/qgis_core.dir/composer/qgscomposermap.o"
+	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/composer/qgscomposermap.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/composer/qgscomposermap.cpp
+
+src/core/CMakeFiles/qgis_core.dir/composer/qgscomposermap.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/core/CMakeFiles/qgis_core.dir/composer/qgscomposermap.i"
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/composer/qgscomposermap.cpp > src/core/CMakeFiles/qgis_core.dir/composer/qgscomposermap.i
+
+src/core/CMakeFiles/qgis_core.dir/composer/qgscomposermap.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/core/CMakeFiles/qgis_core.dir/composer/qgscomposermap.s"
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/composer/qgscomposermap.cpp -o src/core/CMakeFiles/qgis_core.dir/composer/qgscomposermap.s
+
+src/core/CMakeFiles/qgis_core.dir/composer/qgscomposermap.o.requires:
+
+src/core/CMakeFiles/qgis_core.dir/composer/qgscomposermap.o.provides: src/core/CMakeFiles/qgis_core.dir/composer/qgscomposermap.o.requires
+	$(MAKE) -f src/core/CMakeFiles/qgis_core.dir/build.make src/core/CMakeFiles/qgis_core.dir/composer/qgscomposermap.o.provides.build
+
+src/core/CMakeFiles/qgis_core.dir/composer/qgscomposermap.o.provides.build: src/core/CMakeFiles/qgis_core.dir/composer/qgscomposermap.o
+
+src/core/CMakeFiles/qgis_core.dir/depend.make.mark: src/core/CMakeFiles/qgis_core.dir/flags.make
+src/core/CMakeFiles/qgis_core.dir/depend.make.mark: ../src/core/composer/qgscomposerscalebar.cpp
+
+src/core/CMakeFiles/qgis_core.dir/composer/qgscomposerscalebar.o: src/core/CMakeFiles/qgis_core.dir/flags.make
+src/core/CMakeFiles/qgis_core.dir/composer/qgscomposerscalebar.o: ../src/core/composer/qgscomposerscalebar.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_48)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/core/CMakeFiles/qgis_core.dir/composer/qgscomposerscalebar.o"
+	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/composer/qgscomposerscalebar.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/composer/qgscomposerscalebar.cpp
+
+src/core/CMakeFiles/qgis_core.dir/composer/qgscomposerscalebar.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/core/CMakeFiles/qgis_core.dir/composer/qgscomposerscalebar.i"
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/composer/qgscomposerscalebar.cpp > src/core/CMakeFiles/qgis_core.dir/composer/qgscomposerscalebar.i
+
+src/core/CMakeFiles/qgis_core.dir/composer/qgscomposerscalebar.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/core/CMakeFiles/qgis_core.dir/composer/qgscomposerscalebar.s"
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/composer/qgscomposerscalebar.cpp -o src/core/CMakeFiles/qgis_core.dir/composer/qgscomposerscalebar.s
+
+src/core/CMakeFiles/qgis_core.dir/composer/qgscomposerscalebar.o.requires:
+
+src/core/CMakeFiles/qgis_core.dir/composer/qgscomposerscalebar.o.provides: src/core/CMakeFiles/qgis_core.dir/composer/qgscomposerscalebar.o.requires
+	$(MAKE) -f src/core/CMakeFiles/qgis_core.dir/build.make src/core/CMakeFiles/qgis_core.dir/composer/qgscomposerscalebar.o.provides.build
+
+src/core/CMakeFiles/qgis_core.dir/composer/qgscomposerscalebar.o.provides.build: src/core/CMakeFiles/qgis_core.dir/composer/qgscomposerscalebar.o
+
+src/core/CMakeFiles/qgis_core.dir/depend.make.mark: src/core/CMakeFiles/qgis_core.dir/flags.make
+src/core/CMakeFiles/qgis_core.dir/depend.make.mark: ../src/core/composer/qgslegendmodel.cpp
+
+src/core/CMakeFiles/qgis_core.dir/composer/qgslegendmodel.o: src/core/CMakeFiles/qgis_core.dir/flags.make
+src/core/CMakeFiles/qgis_core.dir/composer/qgslegendmodel.o: ../src/core/composer/qgslegendmodel.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_49)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/core/CMakeFiles/qgis_core.dir/composer/qgslegendmodel.o"
+	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/composer/qgslegendmodel.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/composer/qgslegendmodel.cpp
+
+src/core/CMakeFiles/qgis_core.dir/composer/qgslegendmodel.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/core/CMakeFiles/qgis_core.dir/composer/qgslegendmodel.i"
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/composer/qgslegendmodel.cpp > src/core/CMakeFiles/qgis_core.dir/composer/qgslegendmodel.i
+
+src/core/CMakeFiles/qgis_core.dir/composer/qgslegendmodel.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/core/CMakeFiles/qgis_core.dir/composer/qgslegendmodel.s"
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/composer/qgslegendmodel.cpp -o src/core/CMakeFiles/qgis_core.dir/composer/qgslegendmodel.s
+
+src/core/CMakeFiles/qgis_core.dir/composer/qgslegendmodel.o.requires:
+
+src/core/CMakeFiles/qgis_core.dir/composer/qgslegendmodel.o.provides: src/core/CMakeFiles/qgis_core.dir/composer/qgslegendmodel.o.requires
+	$(MAKE) -f src/core/CMakeFiles/qgis_core.dir/build.make src/core/CMakeFiles/qgis_core.dir/composer/qgslegendmodel.o.provides.build
+
+src/core/CMakeFiles/qgis_core.dir/composer/qgslegendmodel.o.provides.build: src/core/CMakeFiles/qgis_core.dir/composer/qgslegendmodel.o
+
+src/core/CMakeFiles/qgis_core.dir/depend.make.mark: src/core/CMakeFiles/qgis_core.dir/flags.make
+src/core/CMakeFiles/qgis_core.dir/depend.make.mark: ../src/core/composer/qgscomposerlegend.cpp
+
+src/core/CMakeFiles/qgis_core.dir/composer/qgscomposerlegend.o: src/core/CMakeFiles/qgis_core.dir/flags.make
+src/core/CMakeFiles/qgis_core.dir/composer/qgscomposerlegend.o: ../src/core/composer/qgscomposerlegend.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_50)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/core/CMakeFiles/qgis_core.dir/composer/qgscomposerlegend.o"
+	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/composer/qgscomposerlegend.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/composer/qgscomposerlegend.cpp
+
+src/core/CMakeFiles/qgis_core.dir/composer/qgscomposerlegend.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/core/CMakeFiles/qgis_core.dir/composer/qgscomposerlegend.i"
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/composer/qgscomposerlegend.cpp > src/core/CMakeFiles/qgis_core.dir/composer/qgscomposerlegend.i
+
+src/core/CMakeFiles/qgis_core.dir/composer/qgscomposerlegend.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/core/CMakeFiles/qgis_core.dir/composer/qgscomposerlegend.s"
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/composer/qgscomposerlegend.cpp -o src/core/CMakeFiles/qgis_core.dir/composer/qgscomposerlegend.s
+
+src/core/CMakeFiles/qgis_core.dir/composer/qgscomposerlegend.o.requires:
+
+src/core/CMakeFiles/qgis_core.dir/composer/qgscomposerlegend.o.provides: src/core/CMakeFiles/qgis_core.dir/composer/qgscomposerlegend.o.requires
+	$(MAKE) -f src/core/CMakeFiles/qgis_core.dir/build.make src/core/CMakeFiles/qgis_core.dir/composer/qgscomposerlegend.o.provides.build
+
+src/core/CMakeFiles/qgis_core.dir/composer/qgscomposerlegend.o.provides.build: src/core/CMakeFiles/qgis_core.dir/composer/qgscomposerlegend.o
+
+src/core/CMakeFiles/qgis_core.dir/depend.make.mark: src/core/CMakeFiles/qgis_core.dir/flags.make
+src/core/CMakeFiles/qgis_core.dir/depend.make.mark: ../src/core/composer/qgsscalebarstyle.cpp
+
+src/core/CMakeFiles/qgis_core.dir/composer/qgsscalebarstyle.o: src/core/CMakeFiles/qgis_core.dir/flags.make
+src/core/CMakeFiles/qgis_core.dir/composer/qgsscalebarstyle.o: ../src/core/composer/qgsscalebarstyle.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_51)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/core/CMakeFiles/qgis_core.dir/composer/qgsscalebarstyle.o"
+	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/composer/qgsscalebarstyle.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/composer/qgsscalebarstyle.cpp
+
+src/core/CMakeFiles/qgis_core.dir/composer/qgsscalebarstyle.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/core/CMakeFiles/qgis_core.dir/composer/qgsscalebarstyle.i"
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/composer/qgsscalebarstyle.cpp > src/core/CMakeFiles/qgis_core.dir/composer/qgsscalebarstyle.i
+
+src/core/CMakeFiles/qgis_core.dir/composer/qgsscalebarstyle.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/core/CMakeFiles/qgis_core.dir/composer/qgsscalebarstyle.s"
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/composer/qgsscalebarstyle.cpp -o src/core/CMakeFiles/qgis_core.dir/composer/qgsscalebarstyle.s
+
+src/core/CMakeFiles/qgis_core.dir/composer/qgsscalebarstyle.o.requires:
+
+src/core/CMakeFiles/qgis_core.dir/composer/qgsscalebarstyle.o.provides: src/core/CMakeFiles/qgis_core.dir/composer/qgsscalebarstyle.o.requires
+	$(MAKE) -f src/core/CMakeFiles/qgis_core.dir/build.make src/core/CMakeFiles/qgis_core.dir/composer/qgsscalebarstyle.o.provides.build
+
+src/core/CMakeFiles/qgis_core.dir/composer/qgsscalebarstyle.o.provides.build: src/core/CMakeFiles/qgis_core.dir/composer/qgsscalebarstyle.o
+
+src/core/CMakeFiles/qgis_core.dir/depend.make.mark: src/core/CMakeFiles/qgis_core.dir/flags.make
+src/core/CMakeFiles/qgis_core.dir/depend.make.mark: ../src/core/composer/qgsdoubleboxscalebarstyle.cpp
+
+src/core/CMakeFiles/qgis_core.dir/composer/qgsdoubleboxscalebarstyle.o: src/core/CMakeFiles/qgis_core.dir/flags.make
+src/core/CMakeFiles/qgis_core.dir/composer/qgsdoubleboxscalebarstyle.o: ../src/core/composer/qgsdoubleboxscalebarstyle.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_52)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/core/CMakeFiles/qgis_core.dir/composer/qgsdoubleboxscalebarstyle.o"
+	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/composer/qgsdoubleboxscalebarstyle.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/composer/qgsdoubleboxscalebarstyle.cpp
+
+src/core/CMakeFiles/qgis_core.dir/composer/qgsdoubleboxscalebarstyle.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/core/CMakeFiles/qgis_core.dir/composer/qgsdoubleboxscalebarstyle.i"
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/composer/qgsdoubleboxscalebarstyle.cpp > src/core/CMakeFiles/qgis_core.dir/composer/qgsdoubleboxscalebarstyle.i
+
+src/core/CMakeFiles/qgis_core.dir/composer/qgsdoubleboxscalebarstyle.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/core/CMakeFiles/qgis_core.dir/composer/qgsdoubleboxscalebarstyle.s"
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/composer/qgsdoubleboxscalebarstyle.cpp -o src/core/CMakeFiles/qgis_core.dir/composer/qgsdoubleboxscalebarstyle.s
+
+src/core/CMakeFiles/qgis_core.dir/composer/qgsdoubleboxscalebarstyle.o.requires:
+
+src/core/CMakeFiles/qgis_core.dir/composer/qgsdoubleboxscalebarstyle.o.provides: src/core/CMakeFiles/qgis_core.dir/composer/qgsdoubleboxscalebarstyle.o.requires
+	$(MAKE) -f src/core/CMakeFiles/qgis_core.dir/build.make src/core/CMakeFiles/qgis_core.dir/composer/qgsdoubleboxscalebarstyle.o.provides.build
+
+src/core/CMakeFiles/qgis_core.dir/composer/qgsdoubleboxscalebarstyle.o.provides.build: src/core/CMakeFiles/qgis_core.dir/composer/qgsdoubleboxscalebarstyle.o
+
+src/core/CMakeFiles/qgis_core.dir/depend.make.mark: src/core/CMakeFiles/qgis_core.dir/flags.make
+src/core/CMakeFiles/qgis_core.dir/depend.make.mark: ../src/core/composer/qgsnumericscalebarstyle.cpp
+
+src/core/CMakeFiles/qgis_core.dir/composer/qgsnumericscalebarstyle.o: src/core/CMakeFiles/qgis_core.dir/flags.make
+src/core/CMakeFiles/qgis_core.dir/composer/qgsnumericscalebarstyle.o: ../src/core/composer/qgsnumericscalebarstyle.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_53)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/core/CMakeFiles/qgis_core.dir/composer/qgsnumericscalebarstyle.o"
+	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/composer/qgsnumericscalebarstyle.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/composer/qgsnumericscalebarstyle.cpp
+
+src/core/CMakeFiles/qgis_core.dir/composer/qgsnumericscalebarstyle.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/core/CMakeFiles/qgis_core.dir/composer/qgsnumericscalebarstyle.i"
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/composer/qgsnumericscalebarstyle.cpp > src/core/CMakeFiles/qgis_core.dir/composer/qgsnumericscalebarstyle.i
+
+src/core/CMakeFiles/qgis_core.dir/composer/qgsnumericscalebarstyle.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/core/CMakeFiles/qgis_core.dir/composer/qgsnumericscalebarstyle.s"
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/composer/qgsnumericscalebarstyle.cpp -o src/core/CMakeFiles/qgis_core.dir/composer/qgsnumericscalebarstyle.s
+
+src/core/CMakeFiles/qgis_core.dir/composer/qgsnumericscalebarstyle.o.requires:
+
+src/core/CMakeFiles/qgis_core.dir/composer/qgsnumericscalebarstyle.o.provides: src/core/CMakeFiles/qgis_core.dir/composer/qgsnumericscalebarstyle.o.requires
+	$(MAKE) -f src/core/CMakeFiles/qgis_core.dir/build.make src/core/CMakeFiles/qgis_core.dir/composer/qgsnumericscalebarstyle.o.provides.build
+
+src/core/CMakeFiles/qgis_core.dir/composer/qgsnumericscalebarstyle.o.provides.build: src/core/CMakeFiles/qgis_core.dir/composer/qgsnumericscalebarstyle.o
+
+src/core/CMakeFiles/qgis_core.dir/depend.make.mark: src/core/CMakeFiles/qgis_core.dir/flags.make
+src/core/CMakeFiles/qgis_core.dir/depend.make.mark: ../src/core/composer/qgssingleboxscalebarstyle.cpp
+
+src/core/CMakeFiles/qgis_core.dir/composer/qgssingleboxscalebarstyle.o: src/core/CMakeFiles/qgis_core.dir/flags.make
+src/core/CMakeFiles/qgis_core.dir/composer/qgssingleboxscalebarstyle.o: ../src/core/composer/qgssingleboxscalebarstyle.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_54)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/core/CMakeFiles/qgis_core.dir/composer/qgssingleboxscalebarstyle.o"
+	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/composer/qgssingleboxscalebarstyle.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/composer/qgssingleboxscalebarstyle.cpp
+
+src/core/CMakeFiles/qgis_core.dir/composer/qgssingleboxscalebarstyle.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/core/CMakeFiles/qgis_core.dir/composer/qgssingleboxscalebarstyle.i"
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/composer/qgssingleboxscalebarstyle.cpp > src/core/CMakeFiles/qgis_core.dir/composer/qgssingleboxscalebarstyle.i
+
+src/core/CMakeFiles/qgis_core.dir/composer/qgssingleboxscalebarstyle.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/core/CMakeFiles/qgis_core.dir/composer/qgssingleboxscalebarstyle.s"
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/composer/qgssingleboxscalebarstyle.cpp -o src/core/CMakeFiles/qgis_core.dir/composer/qgssingleboxscalebarstyle.s
+
+src/core/CMakeFiles/qgis_core.dir/composer/qgssingleboxscalebarstyle.o.requires:
+
+src/core/CMakeFiles/qgis_core.dir/composer/qgssingleboxscalebarstyle.o.provides: src/core/CMakeFiles/qgis_core.dir/composer/qgssingleboxscalebarstyle.o.requires
+	$(MAKE) -f src/core/CMakeFiles/qgis_core.dir/build.make src/core/CMakeFiles/qgis_core.dir/composer/qgssingleboxscalebarstyle.o.provides.build
+
+src/core/CMakeFiles/qgis_core.dir/composer/qgssingleboxscalebarstyle.o.provides.build: src/core/CMakeFiles/qgis_core.dir/composer/qgssingleboxscalebarstyle.o
+
+src/core/CMakeFiles/qgis_core.dir/depend.make.mark: src/core/CMakeFiles/qgis_core.dir/flags.make
+src/core/CMakeFiles/qgis_core.dir/depend.make.mark: ../src/core/composer/qgsticksscalebarstyle.cpp
+
+src/core/CMakeFiles/qgis_core.dir/composer/qgsticksscalebarstyle.o: src/core/CMakeFiles/qgis_core.dir/flags.make
+src/core/CMakeFiles/qgis_core.dir/composer/qgsticksscalebarstyle.o: ../src/core/composer/qgsticksscalebarstyle.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_55)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/core/CMakeFiles/qgis_core.dir/composer/qgsticksscalebarstyle.o"
+	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/composer/qgsticksscalebarstyle.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/composer/qgsticksscalebarstyle.cpp
+
+src/core/CMakeFiles/qgis_core.dir/composer/qgsticksscalebarstyle.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/core/CMakeFiles/qgis_core.dir/composer/qgsticksscalebarstyle.i"
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/composer/qgsticksscalebarstyle.cpp > src/core/CMakeFiles/qgis_core.dir/composer/qgsticksscalebarstyle.i
+
+src/core/CMakeFiles/qgis_core.dir/composer/qgsticksscalebarstyle.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/core/CMakeFiles/qgis_core.dir/composer/qgsticksscalebarstyle.s"
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/composer/qgsticksscalebarstyle.cpp -o src/core/CMakeFiles/qgis_core.dir/composer/qgsticksscalebarstyle.s
+
+src/core/CMakeFiles/qgis_core.dir/composer/qgsticksscalebarstyle.o.requires:
+
+src/core/CMakeFiles/qgis_core.dir/composer/qgsticksscalebarstyle.o.provides: src/core/CMakeFiles/qgis_core.dir/composer/qgsticksscalebarstyle.o.requires
+	$(MAKE) -f src/core/CMakeFiles/qgis_core.dir/build.make src/core/CMakeFiles/qgis_core.dir/composer/qgsticksscalebarstyle.o.provides.build
+
+src/core/CMakeFiles/qgis_core.dir/composer/qgsticksscalebarstyle.o.provides.build: src/core/CMakeFiles/qgis_core.dir/composer/qgsticksscalebarstyle.o
+
+src/core/CMakeFiles/qgis_core.dir/depend.make.mark: src/core/CMakeFiles/qgis_core.dir/flags.make
+src/core/CMakeFiles/qgis_core.dir/depend.make.mark: ../src/core/composer/qgscomposition.cpp
+
+src/core/CMakeFiles/qgis_core.dir/composer/qgscomposition.o: src/core/CMakeFiles/qgis_core.dir/flags.make
+src/core/CMakeFiles/qgis_core.dir/composer/qgscomposition.o: ../src/core/composer/qgscomposition.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_56)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/core/CMakeFiles/qgis_core.dir/composer/qgscomposition.o"
+	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/composer/qgscomposition.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/composer/qgscomposition.cpp
+
+src/core/CMakeFiles/qgis_core.dir/composer/qgscomposition.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/core/CMakeFiles/qgis_core.dir/composer/qgscomposition.i"
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/composer/qgscomposition.cpp > src/core/CMakeFiles/qgis_core.dir/composer/qgscomposition.i
+
+src/core/CMakeFiles/qgis_core.dir/composer/qgscomposition.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/core/CMakeFiles/qgis_core.dir/composer/qgscomposition.s"
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/composer/qgscomposition.cpp -o src/core/CMakeFiles/qgis_core.dir/composer/qgscomposition.s
+
+src/core/CMakeFiles/qgis_core.dir/composer/qgscomposition.o.requires:
+
+src/core/CMakeFiles/qgis_core.dir/composer/qgscomposition.o.provides: src/core/CMakeFiles/qgis_core.dir/composer/qgscomposition.o.requires
+	$(MAKE) -f src/core/CMakeFiles/qgis_core.dir/build.make src/core/CMakeFiles/qgis_core.dir/composer/qgscomposition.o.provides.build
+
+src/core/CMakeFiles/qgis_core.dir/composer/qgscomposition.o.provides.build: src/core/CMakeFiles/qgis_core.dir/composer/qgscomposition.o
+
+src/core/CMakeFiles/qgis_core.dir/depend.make.mark: src/core/CMakeFiles/qgis_core.dir/flags.make
+src/core/CMakeFiles/qgis_core.dir/depend.make.mark: ../src/core/raster/qgscliptominmaxenhancement.cpp
+
+src/core/CMakeFiles/qgis_core.dir/raster/qgscliptominmaxenhancement.o: src/core/CMakeFiles/qgis_core.dir/flags.make
+src/core/CMakeFiles/qgis_core.dir/raster/qgscliptominmaxenhancement.o: ../src/core/raster/qgscliptominmaxenhancement.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_57)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/core/CMakeFiles/qgis_core.dir/raster/qgscliptominmaxenhancement.o"
+	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/raster/qgscliptominmaxenhancement.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/raster/qgscliptominmaxenhancement.cpp
+
+src/core/CMakeFiles/qgis_core.dir/raster/qgscliptominmaxenhancement.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/core/CMakeFiles/qgis_core.dir/raster/qgscliptominmaxenhancement.i"
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/raster/qgscliptominmaxenhancement.cpp > src/core/CMakeFiles/qgis_core.dir/raster/qgscliptominmaxenhancement.i
+
+src/core/CMakeFiles/qgis_core.dir/raster/qgscliptominmaxenhancement.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/core/CMakeFiles/qgis_core.dir/raster/qgscliptominmaxenhancement.s"
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/raster/qgscliptominmaxenhancement.cpp -o src/core/CMakeFiles/qgis_core.dir/raster/qgscliptominmaxenhancement.s
+
+src/core/CMakeFiles/qgis_core.dir/raster/qgscliptominmaxenhancement.o.requires:
+
+src/core/CMakeFiles/qgis_core.dir/raster/qgscliptominmaxenhancement.o.provides: src/core/CMakeFiles/qgis_core.dir/raster/qgscliptominmaxenhancement.o.requires
+	$(MAKE) -f src/core/CMakeFiles/qgis_core.dir/build.make src/core/CMakeFiles/qgis_core.dir/raster/qgscliptominmaxenhancement.o.provides.build
+
+src/core/CMakeFiles/qgis_core.dir/raster/qgscliptominmaxenhancement.o.provides.build: src/core/CMakeFiles/qgis_core.dir/raster/qgscliptominmaxenhancement.o
+
+src/core/CMakeFiles/qgis_core.dir/depend.make.mark: src/core/CMakeFiles/qgis_core.dir/flags.make
+src/core/CMakeFiles/qgis_core.dir/depend.make.mark: ../src/core/raster/qgscolorrampshader.cpp
+
+src/core/CMakeFiles/qgis_core.dir/raster/qgscolorrampshader.o: src/core/CMakeFiles/qgis_core.dir/flags.make
+src/core/CMakeFiles/qgis_core.dir/raster/qgscolorrampshader.o: ../src/core/raster/qgscolorrampshader.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_58)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/core/CMakeFiles/qgis_core.dir/raster/qgscolorrampshader.o"
+	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/raster/qgscolorrampshader.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/raster/qgscolorrampshader.cpp
+
+src/core/CMakeFiles/qgis_core.dir/raster/qgscolorrampshader.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/core/CMakeFiles/qgis_core.dir/raster/qgscolorrampshader.i"
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/raster/qgscolorrampshader.cpp > src/core/CMakeFiles/qgis_core.dir/raster/qgscolorrampshader.i
+
+src/core/CMakeFiles/qgis_core.dir/raster/qgscolorrampshader.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/core/CMakeFiles/qgis_core.dir/raster/qgscolorrampshader.s"
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/raster/qgscolorrampshader.cpp -o src/core/CMakeFiles/qgis_core.dir/raster/qgscolorrampshader.s
+
+src/core/CMakeFiles/qgis_core.dir/raster/qgscolorrampshader.o.requires:
+
+src/core/CMakeFiles/qgis_core.dir/raster/qgscolorrampshader.o.provides: src/core/CMakeFiles/qgis_core.dir/raster/qgscolorrampshader.o.requires
+	$(MAKE) -f src/core/CMakeFiles/qgis_core.dir/build.make src/core/CMakeFiles/qgis_core.dir/raster/qgscolorrampshader.o.provides.build
+
+src/core/CMakeFiles/qgis_core.dir/raster/qgscolorrampshader.o.provides.build: src/core/CMakeFiles/qgis_core.dir/raster/qgscolorrampshader.o
+
+src/core/CMakeFiles/qgis_core.dir/depend.make.mark: src/core/CMakeFiles/qgis_core.dir/flags.make
+src/core/CMakeFiles/qgis_core.dir/depend.make.mark: ../src/core/raster/qgscontrastenhancement.cpp
+
+src/core/CMakeFiles/qgis_core.dir/raster/qgscontrastenhancement.o: src/core/CMakeFiles/qgis_core.dir/flags.make
+src/core/CMakeFiles/qgis_core.dir/raster/qgscontrastenhancement.o: ../src/core/raster/qgscontrastenhancement.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_59)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/core/CMakeFiles/qgis_core.dir/raster/qgscontrastenhancement.o"
+	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/raster/qgscontrastenhancement.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/raster/qgscontrastenhancement.cpp
+
+src/core/CMakeFiles/qgis_core.dir/raster/qgscontrastenhancement.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/core/CMakeFiles/qgis_core.dir/raster/qgscontrastenhancement.i"
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/raster/qgscontrastenhancement.cpp > src/core/CMakeFiles/qgis_core.dir/raster/qgscontrastenhancement.i
+
+src/core/CMakeFiles/qgis_core.dir/raster/qgscontrastenhancement.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/core/CMakeFiles/qgis_core.dir/raster/qgscontrastenhancement.s"
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/raster/qgscontrastenhancement.cpp -o src/core/CMakeFiles/qgis_core.dir/raster/qgscontrastenhancement.s
+
+src/core/CMakeFiles/qgis_core.dir/raster/qgscontrastenhancement.o.requires:
+
+src/core/CMakeFiles/qgis_core.dir/raster/qgscontrastenhancement.o.provides: src/core/CMakeFiles/qgis_core.dir/raster/qgscontrastenhancement.o.requires
+	$(MAKE) -f src/core/CMakeFiles/qgis_core.dir/build.make src/core/CMakeFiles/qgis_core.dir/raster/qgscontrastenhancement.o.provides.build
+
+src/core/CMakeFiles/qgis_core.dir/raster/qgscontrastenhancement.o.provides.build: src/core/CMakeFiles/qgis_core.dir/raster/qgscontrastenhancement.o
+
+src/core/CMakeFiles/qgis_core.dir/depend.make.mark: src/core/CMakeFiles/qgis_core.dir/flags.make
+src/core/CMakeFiles/qgis_core.dir/depend.make.mark: ../src/core/raster/qgscontrastenhancementfunction.cpp
+
+src/core/CMakeFiles/qgis_core.dir/raster/qgscontrastenhancementfunction.o: src/core/CMakeFiles/qgis_core.dir/flags.make
+src/core/CMakeFiles/qgis_core.dir/raster/qgscontrastenhancementfunction.o: ../src/core/raster/qgscontrastenhancementfunction.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_60)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/core/CMakeFiles/qgis_core.dir/raster/qgscontrastenhancementfunction.o"
+	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/raster/qgscontrastenhancementfunction.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/raster/qgscontrastenhancementfunction.cpp
+
+src/core/CMakeFiles/qgis_core.dir/raster/qgscontrastenhancementfunction.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/core/CMakeFiles/qgis_core.dir/raster/qgscontrastenhancementfunction.i"
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/raster/qgscontrastenhancementfunction.cpp > src/core/CMakeFiles/qgis_core.dir/raster/qgscontrastenhancementfunction.i
+
+src/core/CMakeFiles/qgis_core.dir/raster/qgscontrastenhancementfunction.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/core/CMakeFiles/qgis_core.dir/raster/qgscontrastenhancementfunction.s"
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/raster/qgscontrastenhancementfunction.cpp -o src/core/CMakeFiles/qgis_core.dir/raster/qgscontrastenhancementfunction.s
+
+src/core/CMakeFiles/qgis_core.dir/raster/qgscontrastenhancementfunction.o.requires:
+
+src/core/CMakeFiles/qgis_core.dir/raster/qgscontrastenhancementfunction.o.provides: src/core/CMakeFiles/qgis_core.dir/raster/qgscontrastenhancementfunction.o.requires
+	$(MAKE) -f src/core/CMakeFiles/qgis_core.dir/build.make src/core/CMakeFiles/qgis_core.dir/raster/qgscontrastenhancementfunction.o.provides.build
+
+src/core/CMakeFiles/qgis_core.dir/raster/qgscontrastenhancementfunction.o.provides.build: src/core/CMakeFiles/qgis_core.dir/raster/qgscontrastenhancementfunction.o
+
+src/core/CMakeFiles/qgis_core.dir/depend.make.mark: src/core/CMakeFiles/qgis_core.dir/flags.make
+src/core/CMakeFiles/qgis_core.dir/depend.make.mark: ../src/core/raster/qgsfreakoutshader.cpp
+
+src/core/CMakeFiles/qgis_core.dir/raster/qgsfreakoutshader.o: src/core/CMakeFiles/qgis_core.dir/flags.make
+src/core/CMakeFiles/qgis_core.dir/raster/qgsfreakoutshader.o: ../src/core/raster/qgsfreakoutshader.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_61)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/core/CMakeFiles/qgis_core.dir/raster/qgsfreakoutshader.o"
+	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/raster/qgsfreakoutshader.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/raster/qgsfreakoutshader.cpp
+
+src/core/CMakeFiles/qgis_core.dir/raster/qgsfreakoutshader.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/core/CMakeFiles/qgis_core.dir/raster/qgsfreakoutshader.i"
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/raster/qgsfreakoutshader.cpp > src/core/CMakeFiles/qgis_core.dir/raster/qgsfreakoutshader.i
+
+src/core/CMakeFiles/qgis_core.dir/raster/qgsfreakoutshader.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/core/CMakeFiles/qgis_core.dir/raster/qgsfreakoutshader.s"
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/raster/qgsfreakoutshader.cpp -o src/core/CMakeFiles/qgis_core.dir/raster/qgsfreakoutshader.s
+
+src/core/CMakeFiles/qgis_core.dir/raster/qgsfreakoutshader.o.requires:
+
+src/core/CMakeFiles/qgis_core.dir/raster/qgsfreakoutshader.o.provides: src/core/CMakeFiles/qgis_core.dir/raster/qgsfreakoutshader.o.requires
+	$(MAKE) -f src/core/CMakeFiles/qgis_core.dir/build.make src/core/CMakeFiles/qgis_core.dir/raster/qgsfreakoutshader.o.provides.build
+
+src/core/CMakeFiles/qgis_core.dir/raster/qgsfreakoutshader.o.provides.build: src/core/CMakeFiles/qgis_core.dir/raster/qgsfreakoutshader.o
+
+src/core/CMakeFiles/qgis_core.dir/depend.make.mark: src/core/CMakeFiles/qgis_core.dir/flags.make
+src/core/CMakeFiles/qgis_core.dir/depend.make.mark: ../src/core/raster/qgslinearminmaxenhancement.cpp
+
+src/core/CMakeFiles/qgis_core.dir/raster/qgslinearminmaxenhancement.o: src/core/CMakeFiles/qgis_core.dir/flags.make
+src/core/CMakeFiles/qgis_core.dir/raster/qgslinearminmaxenhancement.o: ../src/core/raster/qgslinearminmaxenhancement.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_62)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/core/CMakeFiles/qgis_core.dir/raster/qgslinearminmaxenhancement.o"
+	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/raster/qgslinearminmaxenhancement.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/raster/qgslinearminmaxenhancement.cpp
+
+src/core/CMakeFiles/qgis_core.dir/raster/qgslinearminmaxenhancement.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/core/CMakeFiles/qgis_core.dir/raster/qgslinearminmaxenhancement.i"
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/raster/qgslinearminmaxenhancement.cpp > src/core/CMakeFiles/qgis_core.dir/raster/qgslinearminmaxenhancement.i
+
+src/core/CMakeFiles/qgis_core.dir/raster/qgslinearminmaxenhancement.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/core/CMakeFiles/qgis_core.dir/raster/qgslinearminmaxenhancement.s"
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/raster/qgslinearminmaxenhancement.cpp -o src/core/CMakeFiles/qgis_core.dir/raster/qgslinearminmaxenhancement.s
+
+src/core/CMakeFiles/qgis_core.dir/raster/qgslinearminmaxenhancement.o.requires:
+
+src/core/CMakeFiles/qgis_core.dir/raster/qgslinearminmaxenhancement.o.provides: src/core/CMakeFiles/qgis_core.dir/raster/qgslinearminmaxenhancement.o.requires
+	$(MAKE) -f src/core/CMakeFiles/qgis_core.dir/build.make src/core/CMakeFiles/qgis_core.dir/raster/qgslinearminmaxenhancement.o.provides.build
+
+src/core/CMakeFiles/qgis_core.dir/raster/qgslinearminmaxenhancement.o.provides.build: src/core/CMakeFiles/qgis_core.dir/raster/qgslinearminmaxenhancement.o
+
+src/core/CMakeFiles/qgis_core.dir/depend.make.mark: src/core/CMakeFiles/qgis_core.dir/flags.make
+src/core/CMakeFiles/qgis_core.dir/depend.make.mark: ../src/core/raster/qgslinearminmaxenhancementwithclip.cpp
+
+src/core/CMakeFiles/qgis_core.dir/raster/qgslinearminmaxenhancementwithclip.o: src/core/CMakeFiles/qgis_core.dir/flags.make
+src/core/CMakeFiles/qgis_core.dir/raster/qgslinearminmaxenhancementwithclip.o: ../src/core/raster/qgslinearminmaxenhancementwithclip.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_63)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/core/CMakeFiles/qgis_core.dir/raster/qgslinearminmaxenhancementwithclip.o"
+	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/raster/qgslinearminmaxenhancementwithclip.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/raster/qgslinearminmaxenhancementwithclip.cpp
+
+src/core/CMakeFiles/qgis_core.dir/raster/qgslinearminmaxenhancementwithclip.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/core/CMakeFiles/qgis_core.dir/raster/qgslinearminmaxenhancementwithclip.i"
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/raster/qgslinearminmaxenhancementwithclip.cpp > src/core/CMakeFiles/qgis_core.dir/raster/qgslinearminmaxenhancementwithclip.i
+
+src/core/CMakeFiles/qgis_core.dir/raster/qgslinearminmaxenhancementwithclip.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/core/CMakeFiles/qgis_core.dir/raster/qgslinearminmaxenhancementwithclip.s"
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/raster/qgslinearminmaxenhancementwithclip.cpp -o src/core/CMakeFiles/qgis_core.dir/raster/qgslinearminmaxenhancementwithclip.s
+
+src/core/CMakeFiles/qgis_core.dir/raster/qgslinearminmaxenhancementwithclip.o.requires:
+
+src/core/CMakeFiles/qgis_core.dir/raster/qgslinearminmaxenhancementwithclip.o.provides: src/core/CMakeFiles/qgis_core.dir/raster/qgslinearminmaxenhancementwithclip.o.requires
+	$(MAKE) -f src/core/CMakeFiles/qgis_core.dir/build.make src/core/CMakeFiles/qgis_core.dir/raster/qgslinearminmaxenhancementwithclip.o.provides.build
+
+src/core/CMakeFiles/qgis_core.dir/raster/qgslinearminmaxenhancementwithclip.o.provides.build: src/core/CMakeFiles/qgis_core.dir/raster/qgslinearminmaxenhancementwithclip.o
+
+src/core/CMakeFiles/qgis_core.dir/depend.make.mark: src/core/CMakeFiles/qgis_core.dir/flags.make
+src/core/CMakeFiles/qgis_core.dir/depend.make.mark: ../src/core/raster/qgspseudocolorshader.cpp
+
+src/core/CMakeFiles/qgis_core.dir/raster/qgspseudocolorshader.o: src/core/CMakeFiles/qgis_core.dir/flags.make
+src/core/CMakeFiles/qgis_core.dir/raster/qgspseudocolorshader.o: ../src/core/raster/qgspseudocolorshader.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_64)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/core/CMakeFiles/qgis_core.dir/raster/qgspseudocolorshader.o"
+	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/raster/qgspseudocolorshader.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/raster/qgspseudocolorshader.cpp
+
+src/core/CMakeFiles/qgis_core.dir/raster/qgspseudocolorshader.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/core/CMakeFiles/qgis_core.dir/raster/qgspseudocolorshader.i"
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/raster/qgspseudocolorshader.cpp > src/core/CMakeFiles/qgis_core.dir/raster/qgspseudocolorshader.i
+
+src/core/CMakeFiles/qgis_core.dir/raster/qgspseudocolorshader.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/core/CMakeFiles/qgis_core.dir/raster/qgspseudocolorshader.s"
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/raster/qgspseudocolorshader.cpp -o src/core/CMakeFiles/qgis_core.dir/raster/qgspseudocolorshader.s
+
+src/core/CMakeFiles/qgis_core.dir/raster/qgspseudocolorshader.o.requires:
+
+src/core/CMakeFiles/qgis_core.dir/raster/qgspseudocolorshader.o.provides: src/core/CMakeFiles/qgis_core.dir/raster/qgspseudocolorshader.o.requires
+	$(MAKE) -f src/core/CMakeFiles/qgis_core.dir/build.make src/core/CMakeFiles/qgis_core.dir/raster/qgspseudocolorshader.o.provides.build
+
+src/core/CMakeFiles/qgis_core.dir/raster/qgspseudocolorshader.o.provides.build: src/core/CMakeFiles/qgis_core.dir/raster/qgspseudocolorshader.o
 
 src/core/CMakeFiles/qgis_core.dir/depend.make.mark: src/core/CMakeFiles/qgis_core.dir/flags.make
 src/core/CMakeFiles/qgis_core.dir/depend.make.mark: ../src/core/raster/qgsrasterlayer.cpp
 
 src/core/CMakeFiles/qgis_core.dir/raster/qgsrasterlayer.o: src/core/CMakeFiles/qgis_core.dir/flags.make
 src/core/CMakeFiles/qgis_core.dir/raster/qgsrasterlayer.o: ../src/core/raster/qgsrasterlayer.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_42)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_65)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/core/CMakeFiles/qgis_core.dir/raster/qgsrasterlayer.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/raster/qgsrasterlayer.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/raster/qgsrasterlayer.cpp
+	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/raster/qgsrasterlayer.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/raster/qgsrasterlayer.cpp
 
 src/core/CMakeFiles/qgis_core.dir/raster/qgsrasterlayer.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/core/CMakeFiles/qgis_core.dir/raster/qgsrasterlayer.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/raster/qgsrasterlayer.cpp > src/core/CMakeFiles/qgis_core.dir/raster/qgsrasterlayer.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/raster/qgsrasterlayer.cpp > src/core/CMakeFiles/qgis_core.dir/raster/qgsrasterlayer.i
 
 src/core/CMakeFiles/qgis_core.dir/raster/qgsrasterlayer.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/core/CMakeFiles/qgis_core.dir/raster/qgsrasterlayer.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/raster/qgsrasterlayer.cpp -o src/core/CMakeFiles/qgis_core.dir/raster/qgsrasterlayer.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/raster/qgsrasterlayer.cpp -o src/core/CMakeFiles/qgis_core.dir/raster/qgsrasterlayer.s
 
 src/core/CMakeFiles/qgis_core.dir/raster/qgsrasterlayer.o.requires:
 
@@ -1054,21 +1606,93 @@ src/core/CMakeFiles/qgis_core.dir/raster/qgsrasterlayer.o.provides: src/core/CMa
 src/core/CMakeFiles/qgis_core.dir/raster/qgsrasterlayer.o.provides.build: src/core/CMakeFiles/qgis_core.dir/raster/qgsrasterlayer.o
 
 src/core/CMakeFiles/qgis_core.dir/depend.make.mark: src/core/CMakeFiles/qgis_core.dir/flags.make
+src/core/CMakeFiles/qgis_core.dir/depend.make.mark: ../src/core/raster/qgsrastertransparency.cpp
+
+src/core/CMakeFiles/qgis_core.dir/raster/qgsrastertransparency.o: src/core/CMakeFiles/qgis_core.dir/flags.make
+src/core/CMakeFiles/qgis_core.dir/raster/qgsrastertransparency.o: ../src/core/raster/qgsrastertransparency.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_66)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/core/CMakeFiles/qgis_core.dir/raster/qgsrastertransparency.o"
+	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/raster/qgsrastertransparency.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/raster/qgsrastertransparency.cpp
+
+src/core/CMakeFiles/qgis_core.dir/raster/qgsrastertransparency.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/core/CMakeFiles/qgis_core.dir/raster/qgsrastertransparency.i"
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/raster/qgsrastertransparency.cpp > src/core/CMakeFiles/qgis_core.dir/raster/qgsrastertransparency.i
+
+src/core/CMakeFiles/qgis_core.dir/raster/qgsrastertransparency.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/core/CMakeFiles/qgis_core.dir/raster/qgsrastertransparency.s"
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/raster/qgsrastertransparency.cpp -o src/core/CMakeFiles/qgis_core.dir/raster/qgsrastertransparency.s
+
+src/core/CMakeFiles/qgis_core.dir/raster/qgsrastertransparency.o.requires:
+
+src/core/CMakeFiles/qgis_core.dir/raster/qgsrastertransparency.o.provides: src/core/CMakeFiles/qgis_core.dir/raster/qgsrastertransparency.o.requires
+	$(MAKE) -f src/core/CMakeFiles/qgis_core.dir/build.make src/core/CMakeFiles/qgis_core.dir/raster/qgsrastertransparency.o.provides.build
+
+src/core/CMakeFiles/qgis_core.dir/raster/qgsrastertransparency.o.provides.build: src/core/CMakeFiles/qgis_core.dir/raster/qgsrastertransparency.o
+
+src/core/CMakeFiles/qgis_core.dir/depend.make.mark: src/core/CMakeFiles/qgis_core.dir/flags.make
+src/core/CMakeFiles/qgis_core.dir/depend.make.mark: ../src/core/raster/qgsrastershader.cpp
+
+src/core/CMakeFiles/qgis_core.dir/raster/qgsrastershader.o: src/core/CMakeFiles/qgis_core.dir/flags.make
+src/core/CMakeFiles/qgis_core.dir/raster/qgsrastershader.o: ../src/core/raster/qgsrastershader.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_67)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/core/CMakeFiles/qgis_core.dir/raster/qgsrastershader.o"
+	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/raster/qgsrastershader.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/raster/qgsrastershader.cpp
+
+src/core/CMakeFiles/qgis_core.dir/raster/qgsrastershader.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/core/CMakeFiles/qgis_core.dir/raster/qgsrastershader.i"
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/raster/qgsrastershader.cpp > src/core/CMakeFiles/qgis_core.dir/raster/qgsrastershader.i
+
+src/core/CMakeFiles/qgis_core.dir/raster/qgsrastershader.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/core/CMakeFiles/qgis_core.dir/raster/qgsrastershader.s"
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/raster/qgsrastershader.cpp -o src/core/CMakeFiles/qgis_core.dir/raster/qgsrastershader.s
+
+src/core/CMakeFiles/qgis_core.dir/raster/qgsrastershader.o.requires:
+
+src/core/CMakeFiles/qgis_core.dir/raster/qgsrastershader.o.provides: src/core/CMakeFiles/qgis_core.dir/raster/qgsrastershader.o.requires
+	$(MAKE) -f src/core/CMakeFiles/qgis_core.dir/build.make src/core/CMakeFiles/qgis_core.dir/raster/qgsrastershader.o.provides.build
+
+src/core/CMakeFiles/qgis_core.dir/raster/qgsrastershader.o.provides.build: src/core/CMakeFiles/qgis_core.dir/raster/qgsrastershader.o
+
+src/core/CMakeFiles/qgis_core.dir/depend.make.mark: src/core/CMakeFiles/qgis_core.dir/flags.make
+src/core/CMakeFiles/qgis_core.dir/depend.make.mark: ../src/core/raster/qgsrastershaderfunction.cpp
+
+src/core/CMakeFiles/qgis_core.dir/raster/qgsrastershaderfunction.o: src/core/CMakeFiles/qgis_core.dir/flags.make
+src/core/CMakeFiles/qgis_core.dir/raster/qgsrastershaderfunction.o: ../src/core/raster/qgsrastershaderfunction.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_68)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/core/CMakeFiles/qgis_core.dir/raster/qgsrastershaderfunction.o"
+	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/raster/qgsrastershaderfunction.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/raster/qgsrastershaderfunction.cpp
+
+src/core/CMakeFiles/qgis_core.dir/raster/qgsrastershaderfunction.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/core/CMakeFiles/qgis_core.dir/raster/qgsrastershaderfunction.i"
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/raster/qgsrastershaderfunction.cpp > src/core/CMakeFiles/qgis_core.dir/raster/qgsrastershaderfunction.i
+
+src/core/CMakeFiles/qgis_core.dir/raster/qgsrastershaderfunction.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/core/CMakeFiles/qgis_core.dir/raster/qgsrastershaderfunction.s"
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/raster/qgsrastershaderfunction.cpp -o src/core/CMakeFiles/qgis_core.dir/raster/qgsrastershaderfunction.s
+
+src/core/CMakeFiles/qgis_core.dir/raster/qgsrastershaderfunction.o.requires:
+
+src/core/CMakeFiles/qgis_core.dir/raster/qgsrastershaderfunction.o.provides: src/core/CMakeFiles/qgis_core.dir/raster/qgsrastershaderfunction.o.requires
+	$(MAKE) -f src/core/CMakeFiles/qgis_core.dir/build.make src/core/CMakeFiles/qgis_core.dir/raster/qgsrastershaderfunction.o.provides.build
+
+src/core/CMakeFiles/qgis_core.dir/raster/qgsrastershaderfunction.o.provides.build: src/core/CMakeFiles/qgis_core.dir/raster/qgsrastershaderfunction.o
+
+src/core/CMakeFiles/qgis_core.dir/depend.make.mark: src/core/CMakeFiles/qgis_core.dir/flags.make
 src/core/CMakeFiles/qgis_core.dir/depend.make.mark: ../src/core/renderer/qgscontinuouscolorrenderer.cpp
 
 src/core/CMakeFiles/qgis_core.dir/renderer/qgscontinuouscolorrenderer.o: src/core/CMakeFiles/qgis_core.dir/flags.make
 src/core/CMakeFiles/qgis_core.dir/renderer/qgscontinuouscolorrenderer.o: ../src/core/renderer/qgscontinuouscolorrenderer.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_43)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_69)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/core/CMakeFiles/qgis_core.dir/renderer/qgscontinuouscolorrenderer.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/renderer/qgscontinuouscolorrenderer.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/renderer/qgscontinuouscolorrenderer.cpp
+	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/renderer/qgscontinuouscolorrenderer.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/renderer/qgscontinuouscolorrenderer.cpp
 
 src/core/CMakeFiles/qgis_core.dir/renderer/qgscontinuouscolorrenderer.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/core/CMakeFiles/qgis_core.dir/renderer/qgscontinuouscolorrenderer.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/renderer/qgscontinuouscolorrenderer.cpp > src/core/CMakeFiles/qgis_core.dir/renderer/qgscontinuouscolorrenderer.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/renderer/qgscontinuouscolorrenderer.cpp > src/core/CMakeFiles/qgis_core.dir/renderer/qgscontinuouscolorrenderer.i
 
 src/core/CMakeFiles/qgis_core.dir/renderer/qgscontinuouscolorrenderer.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/core/CMakeFiles/qgis_core.dir/renderer/qgscontinuouscolorrenderer.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/renderer/qgscontinuouscolorrenderer.cpp -o src/core/CMakeFiles/qgis_core.dir/renderer/qgscontinuouscolorrenderer.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/renderer/qgscontinuouscolorrenderer.cpp -o src/core/CMakeFiles/qgis_core.dir/renderer/qgscontinuouscolorrenderer.s
 
 src/core/CMakeFiles/qgis_core.dir/renderer/qgscontinuouscolorrenderer.o.requires:
 
@@ -1082,17 +1706,17 @@ src/core/CMakeFiles/qgis_core.dir/depend.make.mark: ../src/core/renderer/qgsgrad
 
 src/core/CMakeFiles/qgis_core.dir/renderer/qgsgraduatedsymbolrenderer.o: src/core/CMakeFiles/qgis_core.dir/flags.make
 src/core/CMakeFiles/qgis_core.dir/renderer/qgsgraduatedsymbolrenderer.o: ../src/core/renderer/qgsgraduatedsymbolrenderer.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_44)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_70)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/core/CMakeFiles/qgis_core.dir/renderer/qgsgraduatedsymbolrenderer.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/renderer/qgsgraduatedsymbolrenderer.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/renderer/qgsgraduatedsymbolrenderer.cpp
+	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/renderer/qgsgraduatedsymbolrenderer.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/renderer/qgsgraduatedsymbolrenderer.cpp
 
 src/core/CMakeFiles/qgis_core.dir/renderer/qgsgraduatedsymbolrenderer.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/core/CMakeFiles/qgis_core.dir/renderer/qgsgraduatedsymbolrenderer.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/renderer/qgsgraduatedsymbolrenderer.cpp > src/core/CMakeFiles/qgis_core.dir/renderer/qgsgraduatedsymbolrenderer.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/renderer/qgsgraduatedsymbolrenderer.cpp > src/core/CMakeFiles/qgis_core.dir/renderer/qgsgraduatedsymbolrenderer.i
 
 src/core/CMakeFiles/qgis_core.dir/renderer/qgsgraduatedsymbolrenderer.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/core/CMakeFiles/qgis_core.dir/renderer/qgsgraduatedsymbolrenderer.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/renderer/qgsgraduatedsymbolrenderer.cpp -o src/core/CMakeFiles/qgis_core.dir/renderer/qgsgraduatedsymbolrenderer.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/renderer/qgsgraduatedsymbolrenderer.cpp -o src/core/CMakeFiles/qgis_core.dir/renderer/qgsgraduatedsymbolrenderer.s
 
 src/core/CMakeFiles/qgis_core.dir/renderer/qgsgraduatedsymbolrenderer.o.requires:
 
@@ -1106,17 +1730,17 @@ src/core/CMakeFiles/qgis_core.dir/depend.make.mark: ../src/core/renderer/qgsrend
 
 src/core/CMakeFiles/qgis_core.dir/renderer/qgsrenderer.o: src/core/CMakeFiles/qgis_core.dir/flags.make
 src/core/CMakeFiles/qgis_core.dir/renderer/qgsrenderer.o: ../src/core/renderer/qgsrenderer.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_45)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_71)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/core/CMakeFiles/qgis_core.dir/renderer/qgsrenderer.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/renderer/qgsrenderer.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/renderer/qgsrenderer.cpp
+	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/renderer/qgsrenderer.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/renderer/qgsrenderer.cpp
 
 src/core/CMakeFiles/qgis_core.dir/renderer/qgsrenderer.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/core/CMakeFiles/qgis_core.dir/renderer/qgsrenderer.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/renderer/qgsrenderer.cpp > src/core/CMakeFiles/qgis_core.dir/renderer/qgsrenderer.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/renderer/qgsrenderer.cpp > src/core/CMakeFiles/qgis_core.dir/renderer/qgsrenderer.i
 
 src/core/CMakeFiles/qgis_core.dir/renderer/qgsrenderer.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/core/CMakeFiles/qgis_core.dir/renderer/qgsrenderer.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/renderer/qgsrenderer.cpp -o src/core/CMakeFiles/qgis_core.dir/renderer/qgsrenderer.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/renderer/qgsrenderer.cpp -o src/core/CMakeFiles/qgis_core.dir/renderer/qgsrenderer.s
 
 src/core/CMakeFiles/qgis_core.dir/renderer/qgsrenderer.o.requires:
 
@@ -1130,17 +1754,17 @@ src/core/CMakeFiles/qgis_core.dir/depend.make.mark: ../src/core/renderer/qgssing
 
 src/core/CMakeFiles/qgis_core.dir/renderer/qgssinglesymbolrenderer.o: src/core/CMakeFiles/qgis_core.dir/flags.make
 src/core/CMakeFiles/qgis_core.dir/renderer/qgssinglesymbolrenderer.o: ../src/core/renderer/qgssinglesymbolrenderer.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_46)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_72)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/core/CMakeFiles/qgis_core.dir/renderer/qgssinglesymbolrenderer.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/renderer/qgssinglesymbolrenderer.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/renderer/qgssinglesymbolrenderer.cpp
+	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/renderer/qgssinglesymbolrenderer.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/renderer/qgssinglesymbolrenderer.cpp
 
 src/core/CMakeFiles/qgis_core.dir/renderer/qgssinglesymbolrenderer.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/core/CMakeFiles/qgis_core.dir/renderer/qgssinglesymbolrenderer.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/renderer/qgssinglesymbolrenderer.cpp > src/core/CMakeFiles/qgis_core.dir/renderer/qgssinglesymbolrenderer.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/renderer/qgssinglesymbolrenderer.cpp > src/core/CMakeFiles/qgis_core.dir/renderer/qgssinglesymbolrenderer.i
 
 src/core/CMakeFiles/qgis_core.dir/renderer/qgssinglesymbolrenderer.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/core/CMakeFiles/qgis_core.dir/renderer/qgssinglesymbolrenderer.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/renderer/qgssinglesymbolrenderer.cpp -o src/core/CMakeFiles/qgis_core.dir/renderer/qgssinglesymbolrenderer.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/renderer/qgssinglesymbolrenderer.cpp -o src/core/CMakeFiles/qgis_core.dir/renderer/qgssinglesymbolrenderer.s
 
 src/core/CMakeFiles/qgis_core.dir/renderer/qgssinglesymbolrenderer.o.requires:
 
@@ -1154,17 +1778,17 @@ src/core/CMakeFiles/qgis_core.dir/depend.make.mark: ../src/core/renderer/qgsuniq
 
 src/core/CMakeFiles/qgis_core.dir/renderer/qgsuniquevaluerenderer.o: src/core/CMakeFiles/qgis_core.dir/flags.make
 src/core/CMakeFiles/qgis_core.dir/renderer/qgsuniquevaluerenderer.o: ../src/core/renderer/qgsuniquevaluerenderer.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_47)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_73)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/core/CMakeFiles/qgis_core.dir/renderer/qgsuniquevaluerenderer.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/renderer/qgsuniquevaluerenderer.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/renderer/qgsuniquevaluerenderer.cpp
+	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/renderer/qgsuniquevaluerenderer.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/renderer/qgsuniquevaluerenderer.cpp
 
 src/core/CMakeFiles/qgis_core.dir/renderer/qgsuniquevaluerenderer.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/core/CMakeFiles/qgis_core.dir/renderer/qgsuniquevaluerenderer.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/renderer/qgsuniquevaluerenderer.cpp > src/core/CMakeFiles/qgis_core.dir/renderer/qgsuniquevaluerenderer.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/renderer/qgsuniquevaluerenderer.cpp > src/core/CMakeFiles/qgis_core.dir/renderer/qgsuniquevaluerenderer.i
 
 src/core/CMakeFiles/qgis_core.dir/renderer/qgsuniquevaluerenderer.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/core/CMakeFiles/qgis_core.dir/renderer/qgsuniquevaluerenderer.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/renderer/qgsuniquevaluerenderer.cpp -o src/core/CMakeFiles/qgis_core.dir/renderer/qgsuniquevaluerenderer.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/renderer/qgsuniquevaluerenderer.cpp -o src/core/CMakeFiles/qgis_core.dir/renderer/qgsuniquevaluerenderer.s
 
 src/core/CMakeFiles/qgis_core.dir/renderer/qgsuniquevaluerenderer.o.requires:
 
@@ -1178,17 +1802,17 @@ src/core/CMakeFiles/qgis_core.dir/depend.make.mark: ../src/core/symbology/qgsmar
 
 src/core/CMakeFiles/qgis_core.dir/symbology/qgsmarkercatalogue.o: src/core/CMakeFiles/qgis_core.dir/flags.make
 src/core/CMakeFiles/qgis_core.dir/symbology/qgsmarkercatalogue.o: ../src/core/symbology/qgsmarkercatalogue.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_48)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_74)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/core/CMakeFiles/qgis_core.dir/symbology/qgsmarkercatalogue.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/symbology/qgsmarkercatalogue.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/symbology/qgsmarkercatalogue.cpp
+	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/symbology/qgsmarkercatalogue.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/symbology/qgsmarkercatalogue.cpp
 
 src/core/CMakeFiles/qgis_core.dir/symbology/qgsmarkercatalogue.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/core/CMakeFiles/qgis_core.dir/symbology/qgsmarkercatalogue.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/symbology/qgsmarkercatalogue.cpp > src/core/CMakeFiles/qgis_core.dir/symbology/qgsmarkercatalogue.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/symbology/qgsmarkercatalogue.cpp > src/core/CMakeFiles/qgis_core.dir/symbology/qgsmarkercatalogue.i
 
 src/core/CMakeFiles/qgis_core.dir/symbology/qgsmarkercatalogue.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/core/CMakeFiles/qgis_core.dir/symbology/qgsmarkercatalogue.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/symbology/qgsmarkercatalogue.cpp -o src/core/CMakeFiles/qgis_core.dir/symbology/qgsmarkercatalogue.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/symbology/qgsmarkercatalogue.cpp -o src/core/CMakeFiles/qgis_core.dir/symbology/qgsmarkercatalogue.s
 
 src/core/CMakeFiles/qgis_core.dir/symbology/qgsmarkercatalogue.o.requires:
 
@@ -1202,17 +1826,17 @@ src/core/CMakeFiles/qgis_core.dir/depend.make.mark: ../src/core/symbology/qgssym
 
 src/core/CMakeFiles/qgis_core.dir/symbology/qgssymbol.o: src/core/CMakeFiles/qgis_core.dir/flags.make
 src/core/CMakeFiles/qgis_core.dir/symbology/qgssymbol.o: ../src/core/symbology/qgssymbol.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_49)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_75)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/core/CMakeFiles/qgis_core.dir/symbology/qgssymbol.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/symbology/qgssymbol.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/symbology/qgssymbol.cpp
+	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/symbology/qgssymbol.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/symbology/qgssymbol.cpp
 
 src/core/CMakeFiles/qgis_core.dir/symbology/qgssymbol.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/core/CMakeFiles/qgis_core.dir/symbology/qgssymbol.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/symbology/qgssymbol.cpp > src/core/CMakeFiles/qgis_core.dir/symbology/qgssymbol.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/symbology/qgssymbol.cpp > src/core/CMakeFiles/qgis_core.dir/symbology/qgssymbol.i
 
 src/core/CMakeFiles/qgis_core.dir/symbology/qgssymbol.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/core/CMakeFiles/qgis_core.dir/symbology/qgssymbol.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/symbology/qgssymbol.cpp -o src/core/CMakeFiles/qgis_core.dir/symbology/qgssymbol.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/symbology/qgssymbol.cpp -o src/core/CMakeFiles/qgis_core.dir/symbology/qgssymbol.s
 
 src/core/CMakeFiles/qgis_core.dir/symbology/qgssymbol.o.requires:
 
@@ -1226,17 +1850,17 @@ src/core/CMakeFiles/qgis_core.dir/depend.make.mark: ../src/core/symbology/qgssym
 
 src/core/CMakeFiles/qgis_core.dir/symbology/qgssymbologyutils.o: src/core/CMakeFiles/qgis_core.dir/flags.make
 src/core/CMakeFiles/qgis_core.dir/symbology/qgssymbologyutils.o: ../src/core/symbology/qgssymbologyutils.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_50)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_76)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/core/CMakeFiles/qgis_core.dir/symbology/qgssymbologyutils.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/symbology/qgssymbologyutils.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/symbology/qgssymbologyutils.cpp
+	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/symbology/qgssymbologyutils.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/symbology/qgssymbologyutils.cpp
 
 src/core/CMakeFiles/qgis_core.dir/symbology/qgssymbologyutils.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/core/CMakeFiles/qgis_core.dir/symbology/qgssymbologyutils.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/symbology/qgssymbologyutils.cpp > src/core/CMakeFiles/qgis_core.dir/symbology/qgssymbologyutils.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/symbology/qgssymbologyutils.cpp > src/core/CMakeFiles/qgis_core.dir/symbology/qgssymbologyutils.i
 
 src/core/CMakeFiles/qgis_core.dir/symbology/qgssymbologyutils.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/core/CMakeFiles/qgis_core.dir/symbology/qgssymbologyutils.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/symbology/qgssymbologyutils.cpp -o src/core/CMakeFiles/qgis_core.dir/symbology/qgssymbologyutils.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/symbology/qgssymbologyutils.cpp -o src/core/CMakeFiles/qgis_core.dir/symbology/qgssymbologyutils.s
 
 src/core/CMakeFiles/qgis_core.dir/symbology/qgssymbologyutils.o.requires:
 
@@ -1250,17 +1874,17 @@ src/core/CMakeFiles/qgis_core.dir/depend.make.mark: ../src/core/spatialindex/qgs
 
 src/core/CMakeFiles/qgis_core.dir/spatialindex/qgsspatialindex.o: src/core/CMakeFiles/qgis_core.dir/flags.make
 src/core/CMakeFiles/qgis_core.dir/spatialindex/qgsspatialindex.o: ../src/core/spatialindex/qgsspatialindex.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_51)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_77)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/core/CMakeFiles/qgis_core.dir/spatialindex/qgsspatialindex.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/spatialindex/qgsspatialindex.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/spatialindex/qgsspatialindex.cpp
+	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/spatialindex/qgsspatialindex.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/spatialindex/qgsspatialindex.cpp
 
 src/core/CMakeFiles/qgis_core.dir/spatialindex/qgsspatialindex.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/core/CMakeFiles/qgis_core.dir/spatialindex/qgsspatialindex.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/spatialindex/qgsspatialindex.cpp > src/core/CMakeFiles/qgis_core.dir/spatialindex/qgsspatialindex.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/spatialindex/qgsspatialindex.cpp > src/core/CMakeFiles/qgis_core.dir/spatialindex/qgsspatialindex.i
 
 src/core/CMakeFiles/qgis_core.dir/spatialindex/qgsspatialindex.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/core/CMakeFiles/qgis_core.dir/spatialindex/qgsspatialindex.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/spatialindex/qgsspatialindex.cpp -o src/core/CMakeFiles/qgis_core.dir/spatialindex/qgsspatialindex.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/spatialindex/qgsspatialindex.cpp -o src/core/CMakeFiles/qgis_core.dir/spatialindex/qgsspatialindex.s
 
 src/core/CMakeFiles/qgis_core.dir/spatialindex/qgsspatialindex.o.requires:
 
@@ -1274,17 +1898,17 @@ src/core/CMakeFiles/qgis_core.dir/depend.make.mark: src/core/flex_qgssearchstrin
 
 src/core/CMakeFiles/qgis_core.dir/flex_qgssearchstringlexer.o: src/core/CMakeFiles/qgis_core.dir/flags.make
 src/core/CMakeFiles/qgis_core.dir/flex_qgssearchstringlexer.o: src/core/flex_qgssearchstringlexer.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_52)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_78)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/core/CMakeFiles/qgis_core.dir/flex_qgssearchstringlexer.o"
-	/usr/bin/c++   $(CXX_FLAGS) -w -o src/core/CMakeFiles/qgis_core.dir/flex_qgssearchstringlexer.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/core/flex_qgssearchstringlexer.cpp
+	/usr/bin/c++   $(CXX_FLAGS) -w -o src/core/CMakeFiles/qgis_core.dir/flex_qgssearchstringlexer.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/flex_qgssearchstringlexer.cpp
 
 src/core/CMakeFiles/qgis_core.dir/flex_qgssearchstringlexer.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/core/CMakeFiles/qgis_core.dir/flex_qgssearchstringlexer.i"
-	/usr/bin/c++  $(CXX_FLAGS) -w -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/core/flex_qgssearchstringlexer.cpp > src/core/CMakeFiles/qgis_core.dir/flex_qgssearchstringlexer.i
+	/usr/bin/c++  $(CXX_FLAGS) -w -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/flex_qgssearchstringlexer.cpp > src/core/CMakeFiles/qgis_core.dir/flex_qgssearchstringlexer.i
 
 src/core/CMakeFiles/qgis_core.dir/flex_qgssearchstringlexer.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/core/CMakeFiles/qgis_core.dir/flex_qgssearchstringlexer.s"
-	/usr/bin/c++  $(CXX_FLAGS) -w -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/core/flex_qgssearchstringlexer.cpp -o src/core/CMakeFiles/qgis_core.dir/flex_qgssearchstringlexer.s
+	/usr/bin/c++  $(CXX_FLAGS) -w -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/flex_qgssearchstringlexer.cpp -o src/core/CMakeFiles/qgis_core.dir/flex_qgssearchstringlexer.s
 
 src/core/CMakeFiles/qgis_core.dir/flex_qgssearchstringlexer.o.requires:
 
@@ -1298,17 +1922,17 @@ src/core/CMakeFiles/qgis_core.dir/depend.make.mark: src/core/qgssearchstringpars
 
 src/core/CMakeFiles/qgis_core.dir/qgssearchstringparser.o: src/core/CMakeFiles/qgis_core.dir/flags.make
 src/core/CMakeFiles/qgis_core.dir/qgssearchstringparser.o: src/core/qgssearchstringparser.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_53)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_79)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/core/CMakeFiles/qgis_core.dir/qgssearchstringparser.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/qgssearchstringparser.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/core/qgssearchstringparser.cpp
+	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/qgssearchstringparser.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/qgssearchstringparser.cpp
 
 src/core/CMakeFiles/qgis_core.dir/qgssearchstringparser.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/core/CMakeFiles/qgis_core.dir/qgssearchstringparser.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/core/qgssearchstringparser.cpp > src/core/CMakeFiles/qgis_core.dir/qgssearchstringparser.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/qgssearchstringparser.cpp > src/core/CMakeFiles/qgis_core.dir/qgssearchstringparser.i
 
 src/core/CMakeFiles/qgis_core.dir/qgssearchstringparser.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/core/CMakeFiles/qgis_core.dir/qgssearchstringparser.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/core/qgssearchstringparser.cpp -o src/core/CMakeFiles/qgis_core.dir/qgssearchstringparser.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/qgssearchstringparser.cpp -o src/core/CMakeFiles/qgis_core.dir/qgssearchstringparser.s
 
 src/core/CMakeFiles/qgis_core.dir/qgssearchstringparser.o.requires:
 
@@ -1322,17 +1946,17 @@ src/core/CMakeFiles/qgis_core.dir/depend.make.mark: src/core/moc_qgscontexthelp.
 
 src/core/CMakeFiles/qgis_core.dir/moc_qgscontexthelp.o: src/core/CMakeFiles/qgis_core.dir/flags.make
 src/core/CMakeFiles/qgis_core.dir/moc_qgscontexthelp.o: src/core/moc_qgscontexthelp.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_54)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_80)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/core/CMakeFiles/qgis_core.dir/moc_qgscontexthelp.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/moc_qgscontexthelp.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/core/moc_qgscontexthelp.cxx
+	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/moc_qgscontexthelp.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/moc_qgscontexthelp.cxx
 
 src/core/CMakeFiles/qgis_core.dir/moc_qgscontexthelp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/core/CMakeFiles/qgis_core.dir/moc_qgscontexthelp.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/core/moc_qgscontexthelp.cxx > src/core/CMakeFiles/qgis_core.dir/moc_qgscontexthelp.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/moc_qgscontexthelp.cxx > src/core/CMakeFiles/qgis_core.dir/moc_qgscontexthelp.i
 
 src/core/CMakeFiles/qgis_core.dir/moc_qgscontexthelp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/core/CMakeFiles/qgis_core.dir/moc_qgscontexthelp.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/core/moc_qgscontexthelp.cxx -o src/core/CMakeFiles/qgis_core.dir/moc_qgscontexthelp.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/moc_qgscontexthelp.cxx -o src/core/CMakeFiles/qgis_core.dir/moc_qgscontexthelp.s
 
 src/core/CMakeFiles/qgis_core.dir/moc_qgscontexthelp.o.requires:
 
@@ -1346,17 +1970,17 @@ src/core/CMakeFiles/qgis_core.dir/depend.make.mark: src/core/moc_qgscoordinatetr
 
 src/core/CMakeFiles/qgis_core.dir/moc_qgscoordinatetransform.o: src/core/CMakeFiles/qgis_core.dir/flags.make
 src/core/CMakeFiles/qgis_core.dir/moc_qgscoordinatetransform.o: src/core/moc_qgscoordinatetransform.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_55)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_81)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/core/CMakeFiles/qgis_core.dir/moc_qgscoordinatetransform.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/moc_qgscoordinatetransform.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/core/moc_qgscoordinatetransform.cxx
+	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/moc_qgscoordinatetransform.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/moc_qgscoordinatetransform.cxx
 
 src/core/CMakeFiles/qgis_core.dir/moc_qgscoordinatetransform.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/core/CMakeFiles/qgis_core.dir/moc_qgscoordinatetransform.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/core/moc_qgscoordinatetransform.cxx > src/core/CMakeFiles/qgis_core.dir/moc_qgscoordinatetransform.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/moc_qgscoordinatetransform.cxx > src/core/CMakeFiles/qgis_core.dir/moc_qgscoordinatetransform.i
 
 src/core/CMakeFiles/qgis_core.dir/moc_qgscoordinatetransform.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/core/CMakeFiles/qgis_core.dir/moc_qgscoordinatetransform.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/core/moc_qgscoordinatetransform.cxx -o src/core/CMakeFiles/qgis_core.dir/moc_qgscoordinatetransform.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/moc_qgscoordinatetransform.cxx -o src/core/CMakeFiles/qgis_core.dir/moc_qgscoordinatetransform.s
 
 src/core/CMakeFiles/qgis_core.dir/moc_qgscoordinatetransform.o.requires:
 
@@ -1370,17 +1994,17 @@ src/core/CMakeFiles/qgis_core.dir/depend.make.mark: src/core/moc_qgsdataprovider
 
 src/core/CMakeFiles/qgis_core.dir/moc_qgsdataprovider.o: src/core/CMakeFiles/qgis_core.dir/flags.make
 src/core/CMakeFiles/qgis_core.dir/moc_qgsdataprovider.o: src/core/moc_qgsdataprovider.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_56)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_82)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/core/CMakeFiles/qgis_core.dir/moc_qgsdataprovider.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/moc_qgsdataprovider.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/core/moc_qgsdataprovider.cxx
+	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/moc_qgsdataprovider.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/moc_qgsdataprovider.cxx
 
 src/core/CMakeFiles/qgis_core.dir/moc_qgsdataprovider.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/core/CMakeFiles/qgis_core.dir/moc_qgsdataprovider.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/core/moc_qgsdataprovider.cxx > src/core/CMakeFiles/qgis_core.dir/moc_qgsdataprovider.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/moc_qgsdataprovider.cxx > src/core/CMakeFiles/qgis_core.dir/moc_qgsdataprovider.i
 
 src/core/CMakeFiles/qgis_core.dir/moc_qgsdataprovider.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/core/CMakeFiles/qgis_core.dir/moc_qgsdataprovider.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/core/moc_qgsdataprovider.cxx -o src/core/CMakeFiles/qgis_core.dir/moc_qgsdataprovider.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/moc_qgsdataprovider.cxx -o src/core/CMakeFiles/qgis_core.dir/moc_qgsdataprovider.s
 
 src/core/CMakeFiles/qgis_core.dir/moc_qgsdataprovider.o.requires:
 
@@ -1394,17 +2018,17 @@ src/core/CMakeFiles/qgis_core.dir/depend.make.mark: src/core/moc_qgshttptransact
 
 src/core/CMakeFiles/qgis_core.dir/moc_qgshttptransaction.o: src/core/CMakeFiles/qgis_core.dir/flags.make
 src/core/CMakeFiles/qgis_core.dir/moc_qgshttptransaction.o: src/core/moc_qgshttptransaction.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_57)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_83)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/core/CMakeFiles/qgis_core.dir/moc_qgshttptransaction.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/moc_qgshttptransaction.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/core/moc_qgshttptransaction.cxx
+	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/moc_qgshttptransaction.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/moc_qgshttptransaction.cxx
 
 src/core/CMakeFiles/qgis_core.dir/moc_qgshttptransaction.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/core/CMakeFiles/qgis_core.dir/moc_qgshttptransaction.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/core/moc_qgshttptransaction.cxx > src/core/CMakeFiles/qgis_core.dir/moc_qgshttptransaction.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/moc_qgshttptransaction.cxx > src/core/CMakeFiles/qgis_core.dir/moc_qgshttptransaction.i
 
 src/core/CMakeFiles/qgis_core.dir/moc_qgshttptransaction.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/core/CMakeFiles/qgis_core.dir/moc_qgshttptransaction.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/core/moc_qgshttptransaction.cxx -o src/core/CMakeFiles/qgis_core.dir/moc_qgshttptransaction.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/moc_qgshttptransaction.cxx -o src/core/CMakeFiles/qgis_core.dir/moc_qgshttptransaction.s
 
 src/core/CMakeFiles/qgis_core.dir/moc_qgshttptransaction.o.requires:
 
@@ -1418,17 +2042,17 @@ src/core/CMakeFiles/qgis_core.dir/depend.make.mark: src/core/moc_qgsmaplayer.cxx
 
 src/core/CMakeFiles/qgis_core.dir/moc_qgsmaplayer.o: src/core/CMakeFiles/qgis_core.dir/flags.make
 src/core/CMakeFiles/qgis_core.dir/moc_qgsmaplayer.o: src/core/moc_qgsmaplayer.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_58)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_84)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/core/CMakeFiles/qgis_core.dir/moc_qgsmaplayer.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/moc_qgsmaplayer.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/core/moc_qgsmaplayer.cxx
+	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/moc_qgsmaplayer.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/moc_qgsmaplayer.cxx
 
 src/core/CMakeFiles/qgis_core.dir/moc_qgsmaplayer.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/core/CMakeFiles/qgis_core.dir/moc_qgsmaplayer.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/core/moc_qgsmaplayer.cxx > src/core/CMakeFiles/qgis_core.dir/moc_qgsmaplayer.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/moc_qgsmaplayer.cxx > src/core/CMakeFiles/qgis_core.dir/moc_qgsmaplayer.i
 
 src/core/CMakeFiles/qgis_core.dir/moc_qgsmaplayer.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/core/CMakeFiles/qgis_core.dir/moc_qgsmaplayer.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/core/moc_qgsmaplayer.cxx -o src/core/CMakeFiles/qgis_core.dir/moc_qgsmaplayer.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/moc_qgsmaplayer.cxx -o src/core/CMakeFiles/qgis_core.dir/moc_qgsmaplayer.s
 
 src/core/CMakeFiles/qgis_core.dir/moc_qgsmaplayer.o.requires:
 
@@ -1442,17 +2066,17 @@ src/core/CMakeFiles/qgis_core.dir/depend.make.mark: src/core/moc_qgsmaplayerregi
 
 src/core/CMakeFiles/qgis_core.dir/moc_qgsmaplayerregistry.o: src/core/CMakeFiles/qgis_core.dir/flags.make
 src/core/CMakeFiles/qgis_core.dir/moc_qgsmaplayerregistry.o: src/core/moc_qgsmaplayerregistry.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_59)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_85)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/core/CMakeFiles/qgis_core.dir/moc_qgsmaplayerregistry.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/moc_qgsmaplayerregistry.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/core/moc_qgsmaplayerregistry.cxx
+	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/moc_qgsmaplayerregistry.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/moc_qgsmaplayerregistry.cxx
 
 src/core/CMakeFiles/qgis_core.dir/moc_qgsmaplayerregistry.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/core/CMakeFiles/qgis_core.dir/moc_qgsmaplayerregistry.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/core/moc_qgsmaplayerregistry.cxx > src/core/CMakeFiles/qgis_core.dir/moc_qgsmaplayerregistry.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/moc_qgsmaplayerregistry.cxx > src/core/CMakeFiles/qgis_core.dir/moc_qgsmaplayerregistry.i
 
 src/core/CMakeFiles/qgis_core.dir/moc_qgsmaplayerregistry.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/core/CMakeFiles/qgis_core.dir/moc_qgsmaplayerregistry.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/core/moc_qgsmaplayerregistry.cxx -o src/core/CMakeFiles/qgis_core.dir/moc_qgsmaplayerregistry.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/moc_qgsmaplayerregistry.cxx -o src/core/CMakeFiles/qgis_core.dir/moc_qgsmaplayerregistry.s
 
 src/core/CMakeFiles/qgis_core.dir/moc_qgsmaplayerregistry.o.requires:
 
@@ -1462,45 +2086,45 @@ src/core/CMakeFiles/qgis_core.dir/moc_qgsmaplayerregistry.o.provides: src/core/C
 src/core/CMakeFiles/qgis_core.dir/moc_qgsmaplayerregistry.o.provides.build: src/core/CMakeFiles/qgis_core.dir/moc_qgsmaplayerregistry.o
 
 src/core/CMakeFiles/qgis_core.dir/depend.make.mark: src/core/CMakeFiles/qgis_core.dir/flags.make
-src/core/CMakeFiles/qgis_core.dir/depend.make.mark: src/core/moc_qgsmaprender.cxx
+src/core/CMakeFiles/qgis_core.dir/depend.make.mark: src/core/moc_qgsmaprenderer.cxx
 
-src/core/CMakeFiles/qgis_core.dir/moc_qgsmaprender.o: src/core/CMakeFiles/qgis_core.dir/flags.make
-src/core/CMakeFiles/qgis_core.dir/moc_qgsmaprender.o: src/core/moc_qgsmaprender.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_60)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/core/CMakeFiles/qgis_core.dir/moc_qgsmaprender.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/moc_qgsmaprender.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/core/moc_qgsmaprender.cxx
+src/core/CMakeFiles/qgis_core.dir/moc_qgsmaprenderer.o: src/core/CMakeFiles/qgis_core.dir/flags.make
+src/core/CMakeFiles/qgis_core.dir/moc_qgsmaprenderer.o: src/core/moc_qgsmaprenderer.cxx
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_86)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/core/CMakeFiles/qgis_core.dir/moc_qgsmaprenderer.o"
+	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/moc_qgsmaprenderer.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/moc_qgsmaprenderer.cxx
 
-src/core/CMakeFiles/qgis_core.dir/moc_qgsmaprender.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/core/CMakeFiles/qgis_core.dir/moc_qgsmaprender.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/core/moc_qgsmaprender.cxx > src/core/CMakeFiles/qgis_core.dir/moc_qgsmaprender.i
+src/core/CMakeFiles/qgis_core.dir/moc_qgsmaprenderer.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/core/CMakeFiles/qgis_core.dir/moc_qgsmaprenderer.i"
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/moc_qgsmaprenderer.cxx > src/core/CMakeFiles/qgis_core.dir/moc_qgsmaprenderer.i
 
-src/core/CMakeFiles/qgis_core.dir/moc_qgsmaprender.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/core/CMakeFiles/qgis_core.dir/moc_qgsmaprender.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/core/moc_qgsmaprender.cxx -o src/core/CMakeFiles/qgis_core.dir/moc_qgsmaprender.s
+src/core/CMakeFiles/qgis_core.dir/moc_qgsmaprenderer.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/core/CMakeFiles/qgis_core.dir/moc_qgsmaprenderer.s"
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/moc_qgsmaprenderer.cxx -o src/core/CMakeFiles/qgis_core.dir/moc_qgsmaprenderer.s
 
-src/core/CMakeFiles/qgis_core.dir/moc_qgsmaprender.o.requires:
+src/core/CMakeFiles/qgis_core.dir/moc_qgsmaprenderer.o.requires:
 
-src/core/CMakeFiles/qgis_core.dir/moc_qgsmaprender.o.provides: src/core/CMakeFiles/qgis_core.dir/moc_qgsmaprender.o.requires
-	$(MAKE) -f src/core/CMakeFiles/qgis_core.dir/build.make src/core/CMakeFiles/qgis_core.dir/moc_qgsmaprender.o.provides.build
+src/core/CMakeFiles/qgis_core.dir/moc_qgsmaprenderer.o.provides: src/core/CMakeFiles/qgis_core.dir/moc_qgsmaprenderer.o.requires
+	$(MAKE) -f src/core/CMakeFiles/qgis_core.dir/build.make src/core/CMakeFiles/qgis_core.dir/moc_qgsmaprenderer.o.provides.build
 
-src/core/CMakeFiles/qgis_core.dir/moc_qgsmaprender.o.provides.build: src/core/CMakeFiles/qgis_core.dir/moc_qgsmaprender.o
+src/core/CMakeFiles/qgis_core.dir/moc_qgsmaprenderer.o.provides.build: src/core/CMakeFiles/qgis_core.dir/moc_qgsmaprenderer.o
 
 src/core/CMakeFiles/qgis_core.dir/depend.make.mark: src/core/CMakeFiles/qgis_core.dir/flags.make
 src/core/CMakeFiles/qgis_core.dir/depend.make.mark: src/core/moc_qgsmessageoutput.cxx
 
 src/core/CMakeFiles/qgis_core.dir/moc_qgsmessageoutput.o: src/core/CMakeFiles/qgis_core.dir/flags.make
 src/core/CMakeFiles/qgis_core.dir/moc_qgsmessageoutput.o: src/core/moc_qgsmessageoutput.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_61)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_87)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/core/CMakeFiles/qgis_core.dir/moc_qgsmessageoutput.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/moc_qgsmessageoutput.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/core/moc_qgsmessageoutput.cxx
+	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/moc_qgsmessageoutput.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/moc_qgsmessageoutput.cxx
 
 src/core/CMakeFiles/qgis_core.dir/moc_qgsmessageoutput.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/core/CMakeFiles/qgis_core.dir/moc_qgsmessageoutput.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/core/moc_qgsmessageoutput.cxx > src/core/CMakeFiles/qgis_core.dir/moc_qgsmessageoutput.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/moc_qgsmessageoutput.cxx > src/core/CMakeFiles/qgis_core.dir/moc_qgsmessageoutput.i
 
 src/core/CMakeFiles/qgis_core.dir/moc_qgsmessageoutput.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/core/CMakeFiles/qgis_core.dir/moc_qgsmessageoutput.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/core/moc_qgsmessageoutput.cxx -o src/core/CMakeFiles/qgis_core.dir/moc_qgsmessageoutput.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/moc_qgsmessageoutput.cxx -o src/core/CMakeFiles/qgis_core.dir/moc_qgsmessageoutput.s
 
 src/core/CMakeFiles/qgis_core.dir/moc_qgsmessageoutput.o.requires:
 
@@ -1514,17 +2138,17 @@ src/core/CMakeFiles/qgis_core.dir/depend.make.mark: src/core/moc_qgsproject.cxx
 
 src/core/CMakeFiles/qgis_core.dir/moc_qgsproject.o: src/core/CMakeFiles/qgis_core.dir/flags.make
 src/core/CMakeFiles/qgis_core.dir/moc_qgsproject.o: src/core/moc_qgsproject.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_62)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_88)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/core/CMakeFiles/qgis_core.dir/moc_qgsproject.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/moc_qgsproject.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/core/moc_qgsproject.cxx
+	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/moc_qgsproject.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/moc_qgsproject.cxx
 
 src/core/CMakeFiles/qgis_core.dir/moc_qgsproject.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/core/CMakeFiles/qgis_core.dir/moc_qgsproject.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/core/moc_qgsproject.cxx > src/core/CMakeFiles/qgis_core.dir/moc_qgsproject.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/moc_qgsproject.cxx > src/core/CMakeFiles/qgis_core.dir/moc_qgsproject.i
 
 src/core/CMakeFiles/qgis_core.dir/moc_qgsproject.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/core/CMakeFiles/qgis_core.dir/moc_qgsproject.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/core/moc_qgsproject.cxx -o src/core/CMakeFiles/qgis_core.dir/moc_qgsproject.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/moc_qgsproject.cxx -o src/core/CMakeFiles/qgis_core.dir/moc_qgsproject.s
 
 src/core/CMakeFiles/qgis_core.dir/moc_qgsproject.o.requires:
 
@@ -1534,45 +2158,21 @@ src/core/CMakeFiles/qgis_core.dir/moc_qgsproject.o.provides: src/core/CMakeFiles
 src/core/CMakeFiles/qgis_core.dir/moc_qgsproject.o.provides.build: src/core/CMakeFiles/qgis_core.dir/moc_qgsproject.o
 
 src/core/CMakeFiles/qgis_core.dir/depend.make.mark: src/core/CMakeFiles/qgis_core.dir/flags.make
-src/core/CMakeFiles/qgis_core.dir/depend.make.mark: src/core/moc_qgsrasterdataprovider.cxx
-
-src/core/CMakeFiles/qgis_core.dir/moc_qgsrasterdataprovider.o: src/core/CMakeFiles/qgis_core.dir/flags.make
-src/core/CMakeFiles/qgis_core.dir/moc_qgsrasterdataprovider.o: src/core/moc_qgsrasterdataprovider.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_63)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/core/CMakeFiles/qgis_core.dir/moc_qgsrasterdataprovider.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/moc_qgsrasterdataprovider.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/core/moc_qgsrasterdataprovider.cxx
-
-src/core/CMakeFiles/qgis_core.dir/moc_qgsrasterdataprovider.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/core/CMakeFiles/qgis_core.dir/moc_qgsrasterdataprovider.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/core/moc_qgsrasterdataprovider.cxx > src/core/CMakeFiles/qgis_core.dir/moc_qgsrasterdataprovider.i
-
-src/core/CMakeFiles/qgis_core.dir/moc_qgsrasterdataprovider.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/core/CMakeFiles/qgis_core.dir/moc_qgsrasterdataprovider.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/core/moc_qgsrasterdataprovider.cxx -o src/core/CMakeFiles/qgis_core.dir/moc_qgsrasterdataprovider.s
-
-src/core/CMakeFiles/qgis_core.dir/moc_qgsrasterdataprovider.o.requires:
-
-src/core/CMakeFiles/qgis_core.dir/moc_qgsrasterdataprovider.o.provides: src/core/CMakeFiles/qgis_core.dir/moc_qgsrasterdataprovider.o.requires
-	$(MAKE) -f src/core/CMakeFiles/qgis_core.dir/build.make src/core/CMakeFiles/qgis_core.dir/moc_qgsrasterdataprovider.o.provides.build
-
-src/core/CMakeFiles/qgis_core.dir/moc_qgsrasterdataprovider.o.provides.build: src/core/CMakeFiles/qgis_core.dir/moc_qgsrasterdataprovider.o
-
-src/core/CMakeFiles/qgis_core.dir/depend.make.mark: src/core/CMakeFiles/qgis_core.dir/flags.make
 src/core/CMakeFiles/qgis_core.dir/depend.make.mark: src/core/moc_qgsrunprocess.cxx
 
 src/core/CMakeFiles/qgis_core.dir/moc_qgsrunprocess.o: src/core/CMakeFiles/qgis_core.dir/flags.make
 src/core/CMakeFiles/qgis_core.dir/moc_qgsrunprocess.o: src/core/moc_qgsrunprocess.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_64)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_89)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/core/CMakeFiles/qgis_core.dir/moc_qgsrunprocess.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/moc_qgsrunprocess.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/core/moc_qgsrunprocess.cxx
+	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/moc_qgsrunprocess.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/moc_qgsrunprocess.cxx
 
 src/core/CMakeFiles/qgis_core.dir/moc_qgsrunprocess.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/core/CMakeFiles/qgis_core.dir/moc_qgsrunprocess.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/core/moc_qgsrunprocess.cxx > src/core/CMakeFiles/qgis_core.dir/moc_qgsrunprocess.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/moc_qgsrunprocess.cxx > src/core/CMakeFiles/qgis_core.dir/moc_qgsrunprocess.i
 
 src/core/CMakeFiles/qgis_core.dir/moc_qgsrunprocess.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/core/CMakeFiles/qgis_core.dir/moc_qgsrunprocess.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/core/moc_qgsrunprocess.cxx -o src/core/CMakeFiles/qgis_core.dir/moc_qgsrunprocess.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/moc_qgsrunprocess.cxx -o src/core/CMakeFiles/qgis_core.dir/moc_qgsrunprocess.s
 
 src/core/CMakeFiles/qgis_core.dir/moc_qgsrunprocess.o.requires:
 
@@ -1586,17 +2186,17 @@ src/core/CMakeFiles/qgis_core.dir/depend.make.mark: src/core/moc_qgsvectorlayer.
 
 src/core/CMakeFiles/qgis_core.dir/moc_qgsvectorlayer.o: src/core/CMakeFiles/qgis_core.dir/flags.make
 src/core/CMakeFiles/qgis_core.dir/moc_qgsvectorlayer.o: src/core/moc_qgsvectorlayer.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_65)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_90)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/core/CMakeFiles/qgis_core.dir/moc_qgsvectorlayer.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/moc_qgsvectorlayer.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/core/moc_qgsvectorlayer.cxx
+	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/moc_qgsvectorlayer.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/moc_qgsvectorlayer.cxx
 
 src/core/CMakeFiles/qgis_core.dir/moc_qgsvectorlayer.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/core/CMakeFiles/qgis_core.dir/moc_qgsvectorlayer.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/core/moc_qgsvectorlayer.cxx > src/core/CMakeFiles/qgis_core.dir/moc_qgsvectorlayer.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/moc_qgsvectorlayer.cxx > src/core/CMakeFiles/qgis_core.dir/moc_qgsvectorlayer.i
 
 src/core/CMakeFiles/qgis_core.dir/moc_qgsvectorlayer.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/core/CMakeFiles/qgis_core.dir/moc_qgsvectorlayer.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/core/moc_qgsvectorlayer.cxx -o src/core/CMakeFiles/qgis_core.dir/moc_qgsvectorlayer.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/moc_qgsvectorlayer.cxx -o src/core/CMakeFiles/qgis_core.dir/moc_qgsvectorlayer.s
 
 src/core/CMakeFiles/qgis_core.dir/moc_qgsvectorlayer.o.requires:
 
@@ -1606,21 +2206,189 @@ src/core/CMakeFiles/qgis_core.dir/moc_qgsvectorlayer.o.provides: src/core/CMakeF
 src/core/CMakeFiles/qgis_core.dir/moc_qgsvectorlayer.o.provides.build: src/core/CMakeFiles/qgis_core.dir/moc_qgsvectorlayer.o
 
 src/core/CMakeFiles/qgis_core.dir/depend.make.mark: src/core/CMakeFiles/qgis_core.dir/flags.make
+src/core/CMakeFiles/qgis_core.dir/depend.make.mark: src/core/moc_qgsrasterdataprovider.cxx
+
+src/core/CMakeFiles/qgis_core.dir/moc_qgsrasterdataprovider.o: src/core/CMakeFiles/qgis_core.dir/flags.make
+src/core/CMakeFiles/qgis_core.dir/moc_qgsrasterdataprovider.o: src/core/moc_qgsrasterdataprovider.cxx
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_91)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/core/CMakeFiles/qgis_core.dir/moc_qgsrasterdataprovider.o"
+	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/moc_qgsrasterdataprovider.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/moc_qgsrasterdataprovider.cxx
+
+src/core/CMakeFiles/qgis_core.dir/moc_qgsrasterdataprovider.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/core/CMakeFiles/qgis_core.dir/moc_qgsrasterdataprovider.i"
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/moc_qgsrasterdataprovider.cxx > src/core/CMakeFiles/qgis_core.dir/moc_qgsrasterdataprovider.i
+
+src/core/CMakeFiles/qgis_core.dir/moc_qgsrasterdataprovider.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/core/CMakeFiles/qgis_core.dir/moc_qgsrasterdataprovider.s"
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/moc_qgsrasterdataprovider.cxx -o src/core/CMakeFiles/qgis_core.dir/moc_qgsrasterdataprovider.s
+
+src/core/CMakeFiles/qgis_core.dir/moc_qgsrasterdataprovider.o.requires:
+
+src/core/CMakeFiles/qgis_core.dir/moc_qgsrasterdataprovider.o.provides: src/core/CMakeFiles/qgis_core.dir/moc_qgsrasterdataprovider.o.requires
+	$(MAKE) -f src/core/CMakeFiles/qgis_core.dir/build.make src/core/CMakeFiles/qgis_core.dir/moc_qgsrasterdataprovider.o.provides.build
+
+src/core/CMakeFiles/qgis_core.dir/moc_qgsrasterdataprovider.o.provides.build: src/core/CMakeFiles/qgis_core.dir/moc_qgsrasterdataprovider.o
+
+src/core/CMakeFiles/qgis_core.dir/depend.make.mark: src/core/CMakeFiles/qgis_core.dir/flags.make
+src/core/CMakeFiles/qgis_core.dir/depend.make.mark: src/core/moc_qgscomposerlegend.cxx
+
+src/core/CMakeFiles/qgis_core.dir/moc_qgscomposerlegend.o: src/core/CMakeFiles/qgis_core.dir/flags.make
+src/core/CMakeFiles/qgis_core.dir/moc_qgscomposerlegend.o: src/core/moc_qgscomposerlegend.cxx
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_92)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/core/CMakeFiles/qgis_core.dir/moc_qgscomposerlegend.o"
+	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/moc_qgscomposerlegend.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/moc_qgscomposerlegend.cxx
+
+src/core/CMakeFiles/qgis_core.dir/moc_qgscomposerlegend.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/core/CMakeFiles/qgis_core.dir/moc_qgscomposerlegend.i"
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/moc_qgscomposerlegend.cxx > src/core/CMakeFiles/qgis_core.dir/moc_qgscomposerlegend.i
+
+src/core/CMakeFiles/qgis_core.dir/moc_qgscomposerlegend.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/core/CMakeFiles/qgis_core.dir/moc_qgscomposerlegend.s"
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/moc_qgscomposerlegend.cxx -o src/core/CMakeFiles/qgis_core.dir/moc_qgscomposerlegend.s
+
+src/core/CMakeFiles/qgis_core.dir/moc_qgscomposerlegend.o.requires:
+
+src/core/CMakeFiles/qgis_core.dir/moc_qgscomposerlegend.o.provides: src/core/CMakeFiles/qgis_core.dir/moc_qgscomposerlegend.o.requires
+	$(MAKE) -f src/core/CMakeFiles/qgis_core.dir/build.make src/core/CMakeFiles/qgis_core.dir/moc_qgscomposerlegend.o.provides.build
+
+src/core/CMakeFiles/qgis_core.dir/moc_qgscomposerlegend.o.provides.build: src/core/CMakeFiles/qgis_core.dir/moc_qgscomposerlegend.o
+
+src/core/CMakeFiles/qgis_core.dir/depend.make.mark: src/core/CMakeFiles/qgis_core.dir/flags.make
+src/core/CMakeFiles/qgis_core.dir/depend.make.mark: src/core/moc_qgscomposermap.cxx
+
+src/core/CMakeFiles/qgis_core.dir/moc_qgscomposermap.o: src/core/CMakeFiles/qgis_core.dir/flags.make
+src/core/CMakeFiles/qgis_core.dir/moc_qgscomposermap.o: src/core/moc_qgscomposermap.cxx
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_93)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/core/CMakeFiles/qgis_core.dir/moc_qgscomposermap.o"
+	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/moc_qgscomposermap.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/moc_qgscomposermap.cxx
+
+src/core/CMakeFiles/qgis_core.dir/moc_qgscomposermap.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/core/CMakeFiles/qgis_core.dir/moc_qgscomposermap.i"
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/moc_qgscomposermap.cxx > src/core/CMakeFiles/qgis_core.dir/moc_qgscomposermap.i
+
+src/core/CMakeFiles/qgis_core.dir/moc_qgscomposermap.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/core/CMakeFiles/qgis_core.dir/moc_qgscomposermap.s"
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/moc_qgscomposermap.cxx -o src/core/CMakeFiles/qgis_core.dir/moc_qgscomposermap.s
+
+src/core/CMakeFiles/qgis_core.dir/moc_qgscomposermap.o.requires:
+
+src/core/CMakeFiles/qgis_core.dir/moc_qgscomposermap.o.provides: src/core/CMakeFiles/qgis_core.dir/moc_qgscomposermap.o.requires
+	$(MAKE) -f src/core/CMakeFiles/qgis_core.dir/build.make src/core/CMakeFiles/qgis_core.dir/moc_qgscomposermap.o.provides.build
+
+src/core/CMakeFiles/qgis_core.dir/moc_qgscomposermap.o.provides.build: src/core/CMakeFiles/qgis_core.dir/moc_qgscomposermap.o
+
+src/core/CMakeFiles/qgis_core.dir/depend.make.mark: src/core/CMakeFiles/qgis_core.dir/flags.make
+src/core/CMakeFiles/qgis_core.dir/depend.make.mark: src/core/moc_qgscomposerpicture.cxx
+
+src/core/CMakeFiles/qgis_core.dir/moc_qgscomposerpicture.o: src/core/CMakeFiles/qgis_core.dir/flags.make
+src/core/CMakeFiles/qgis_core.dir/moc_qgscomposerpicture.o: src/core/moc_qgscomposerpicture.cxx
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_94)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/core/CMakeFiles/qgis_core.dir/moc_qgscomposerpicture.o"
+	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/moc_qgscomposerpicture.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/moc_qgscomposerpicture.cxx
+
+src/core/CMakeFiles/qgis_core.dir/moc_qgscomposerpicture.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/core/CMakeFiles/qgis_core.dir/moc_qgscomposerpicture.i"
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/moc_qgscomposerpicture.cxx > src/core/CMakeFiles/qgis_core.dir/moc_qgscomposerpicture.i
+
+src/core/CMakeFiles/qgis_core.dir/moc_qgscomposerpicture.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/core/CMakeFiles/qgis_core.dir/moc_qgscomposerpicture.s"
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/moc_qgscomposerpicture.cxx -o src/core/CMakeFiles/qgis_core.dir/moc_qgscomposerpicture.s
+
+src/core/CMakeFiles/qgis_core.dir/moc_qgscomposerpicture.o.requires:
+
+src/core/CMakeFiles/qgis_core.dir/moc_qgscomposerpicture.o.provides: src/core/CMakeFiles/qgis_core.dir/moc_qgscomposerpicture.o.requires
+	$(MAKE) -f src/core/CMakeFiles/qgis_core.dir/build.make src/core/CMakeFiles/qgis_core.dir/moc_qgscomposerpicture.o.provides.build
+
+src/core/CMakeFiles/qgis_core.dir/moc_qgscomposerpicture.o.provides.build: src/core/CMakeFiles/qgis_core.dir/moc_qgscomposerpicture.o
+
+src/core/CMakeFiles/qgis_core.dir/depend.make.mark: src/core/CMakeFiles/qgis_core.dir/flags.make
+src/core/CMakeFiles/qgis_core.dir/depend.make.mark: src/core/moc_qgscomposerscalebar.cxx
+
+src/core/CMakeFiles/qgis_core.dir/moc_qgscomposerscalebar.o: src/core/CMakeFiles/qgis_core.dir/flags.make
+src/core/CMakeFiles/qgis_core.dir/moc_qgscomposerscalebar.o: src/core/moc_qgscomposerscalebar.cxx
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_95)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/core/CMakeFiles/qgis_core.dir/moc_qgscomposerscalebar.o"
+	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/moc_qgscomposerscalebar.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/moc_qgscomposerscalebar.cxx
+
+src/core/CMakeFiles/qgis_core.dir/moc_qgscomposerscalebar.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/core/CMakeFiles/qgis_core.dir/moc_qgscomposerscalebar.i"
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/moc_qgscomposerscalebar.cxx > src/core/CMakeFiles/qgis_core.dir/moc_qgscomposerscalebar.i
+
+src/core/CMakeFiles/qgis_core.dir/moc_qgscomposerscalebar.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/core/CMakeFiles/qgis_core.dir/moc_qgscomposerscalebar.s"
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/moc_qgscomposerscalebar.cxx -o src/core/CMakeFiles/qgis_core.dir/moc_qgscomposerscalebar.s
+
+src/core/CMakeFiles/qgis_core.dir/moc_qgscomposerscalebar.o.requires:
+
+src/core/CMakeFiles/qgis_core.dir/moc_qgscomposerscalebar.o.provides: src/core/CMakeFiles/qgis_core.dir/moc_qgscomposerscalebar.o.requires
+	$(MAKE) -f src/core/CMakeFiles/qgis_core.dir/build.make src/core/CMakeFiles/qgis_core.dir/moc_qgscomposerscalebar.o.provides.build
+
+src/core/CMakeFiles/qgis_core.dir/moc_qgscomposerscalebar.o.provides.build: src/core/CMakeFiles/qgis_core.dir/moc_qgscomposerscalebar.o
+
+src/core/CMakeFiles/qgis_core.dir/depend.make.mark: src/core/CMakeFiles/qgis_core.dir/flags.make
+src/core/CMakeFiles/qgis_core.dir/depend.make.mark: src/core/moc_qgscomposeritemgroup.cxx
+
+src/core/CMakeFiles/qgis_core.dir/moc_qgscomposeritemgroup.o: src/core/CMakeFiles/qgis_core.dir/flags.make
+src/core/CMakeFiles/qgis_core.dir/moc_qgscomposeritemgroup.o: src/core/moc_qgscomposeritemgroup.cxx
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_96)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/core/CMakeFiles/qgis_core.dir/moc_qgscomposeritemgroup.o"
+	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/moc_qgscomposeritemgroup.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/moc_qgscomposeritemgroup.cxx
+
+src/core/CMakeFiles/qgis_core.dir/moc_qgscomposeritemgroup.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/core/CMakeFiles/qgis_core.dir/moc_qgscomposeritemgroup.i"
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/moc_qgscomposeritemgroup.cxx > src/core/CMakeFiles/qgis_core.dir/moc_qgscomposeritemgroup.i
+
+src/core/CMakeFiles/qgis_core.dir/moc_qgscomposeritemgroup.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/core/CMakeFiles/qgis_core.dir/moc_qgscomposeritemgroup.s"
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/moc_qgscomposeritemgroup.cxx -o src/core/CMakeFiles/qgis_core.dir/moc_qgscomposeritemgroup.s
+
+src/core/CMakeFiles/qgis_core.dir/moc_qgscomposeritemgroup.o.requires:
+
+src/core/CMakeFiles/qgis_core.dir/moc_qgscomposeritemgroup.o.provides: src/core/CMakeFiles/qgis_core.dir/moc_qgscomposeritemgroup.o.requires
+	$(MAKE) -f src/core/CMakeFiles/qgis_core.dir/build.make src/core/CMakeFiles/qgis_core.dir/moc_qgscomposeritemgroup.o.provides.build
+
+src/core/CMakeFiles/qgis_core.dir/moc_qgscomposeritemgroup.o.provides.build: src/core/CMakeFiles/qgis_core.dir/moc_qgscomposeritemgroup.o
+
+src/core/CMakeFiles/qgis_core.dir/depend.make.mark: src/core/CMakeFiles/qgis_core.dir/flags.make
+src/core/CMakeFiles/qgis_core.dir/depend.make.mark: src/core/moc_qgslegendmodel.cxx
+
+src/core/CMakeFiles/qgis_core.dir/moc_qgslegendmodel.o: src/core/CMakeFiles/qgis_core.dir/flags.make
+src/core/CMakeFiles/qgis_core.dir/moc_qgslegendmodel.o: src/core/moc_qgslegendmodel.cxx
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_97)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/core/CMakeFiles/qgis_core.dir/moc_qgslegendmodel.o"
+	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/moc_qgslegendmodel.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/moc_qgslegendmodel.cxx
+
+src/core/CMakeFiles/qgis_core.dir/moc_qgslegendmodel.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/core/CMakeFiles/qgis_core.dir/moc_qgslegendmodel.i"
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/moc_qgslegendmodel.cxx > src/core/CMakeFiles/qgis_core.dir/moc_qgslegendmodel.i
+
+src/core/CMakeFiles/qgis_core.dir/moc_qgslegendmodel.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/core/CMakeFiles/qgis_core.dir/moc_qgslegendmodel.s"
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/moc_qgslegendmodel.cxx -o src/core/CMakeFiles/qgis_core.dir/moc_qgslegendmodel.s
+
+src/core/CMakeFiles/qgis_core.dir/moc_qgslegendmodel.o.requires:
+
+src/core/CMakeFiles/qgis_core.dir/moc_qgslegendmodel.o.provides: src/core/CMakeFiles/qgis_core.dir/moc_qgslegendmodel.o.requires
+	$(MAKE) -f src/core/CMakeFiles/qgis_core.dir/build.make src/core/CMakeFiles/qgis_core.dir/moc_qgslegendmodel.o.provides.build
+
+src/core/CMakeFiles/qgis_core.dir/moc_qgslegendmodel.o.provides.build: src/core/CMakeFiles/qgis_core.dir/moc_qgslegendmodel.o
+
+src/core/CMakeFiles/qgis_core.dir/depend.make.mark: src/core/CMakeFiles/qgis_core.dir/flags.make
 src/core/CMakeFiles/qgis_core.dir/depend.make.mark: src/core/moc_qgsrasterlayer.cxx
 
 src/core/CMakeFiles/qgis_core.dir/moc_qgsrasterlayer.o: src/core/CMakeFiles/qgis_core.dir/flags.make
 src/core/CMakeFiles/qgis_core.dir/moc_qgsrasterlayer.o: src/core/moc_qgsrasterlayer.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_66)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_98)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/core/CMakeFiles/qgis_core.dir/moc_qgsrasterlayer.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/moc_qgsrasterlayer.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/core/moc_qgsrasterlayer.cxx
+	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/moc_qgsrasterlayer.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/moc_qgsrasterlayer.cxx
 
 src/core/CMakeFiles/qgis_core.dir/moc_qgsrasterlayer.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/core/CMakeFiles/qgis_core.dir/moc_qgsrasterlayer.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/core/moc_qgsrasterlayer.cxx > src/core/CMakeFiles/qgis_core.dir/moc_qgsrasterlayer.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/moc_qgsrasterlayer.cxx > src/core/CMakeFiles/qgis_core.dir/moc_qgsrasterlayer.i
 
 src/core/CMakeFiles/qgis_core.dir/moc_qgsrasterlayer.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/core/CMakeFiles/qgis_core.dir/moc_qgsrasterlayer.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/core/moc_qgsrasterlayer.cxx -o src/core/CMakeFiles/qgis_core.dir/moc_qgsrasterlayer.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/moc_qgsrasterlayer.cxx -o src/core/CMakeFiles/qgis_core.dir/moc_qgsrasterlayer.s
 
 src/core/CMakeFiles/qgis_core.dir/moc_qgsrasterlayer.o.requires:
 
@@ -1630,45 +2398,21 @@ src/core/CMakeFiles/qgis_core.dir/moc_qgsrasterlayer.o.provides: src/core/CMakeF
 src/core/CMakeFiles/qgis_core.dir/moc_qgsrasterlayer.o.provides.build: src/core/CMakeFiles/qgis_core.dir/moc_qgsrasterlayer.o
 
 src/core/CMakeFiles/qgis_core.dir/depend.make.mark: src/core/CMakeFiles/qgis_core.dir/flags.make
-src/core/CMakeFiles/qgis_core.dir/depend.make.mark: src/core/moc_qgsrasterviewport.cxx
-
-src/core/CMakeFiles/qgis_core.dir/moc_qgsrasterviewport.o: src/core/CMakeFiles/qgis_core.dir/flags.make
-src/core/CMakeFiles/qgis_core.dir/moc_qgsrasterviewport.o: src/core/moc_qgsrasterviewport.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_67)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/core/CMakeFiles/qgis_core.dir/moc_qgsrasterviewport.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/moc_qgsrasterviewport.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/core/moc_qgsrasterviewport.cxx
-
-src/core/CMakeFiles/qgis_core.dir/moc_qgsrasterviewport.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/core/CMakeFiles/qgis_core.dir/moc_qgsrasterviewport.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/core/moc_qgsrasterviewport.cxx > src/core/CMakeFiles/qgis_core.dir/moc_qgsrasterviewport.i
-
-src/core/CMakeFiles/qgis_core.dir/moc_qgsrasterviewport.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/core/CMakeFiles/qgis_core.dir/moc_qgsrasterviewport.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/core/moc_qgsrasterviewport.cxx -o src/core/CMakeFiles/qgis_core.dir/moc_qgsrasterviewport.s
-
-src/core/CMakeFiles/qgis_core.dir/moc_qgsrasterviewport.o.requires:
-
-src/core/CMakeFiles/qgis_core.dir/moc_qgsrasterviewport.o.provides: src/core/CMakeFiles/qgis_core.dir/moc_qgsrasterviewport.o.requires
-	$(MAKE) -f src/core/CMakeFiles/qgis_core.dir/build.make src/core/CMakeFiles/qgis_core.dir/moc_qgsrasterviewport.o.provides.build
-
-src/core/CMakeFiles/qgis_core.dir/moc_qgsrasterviewport.o.provides.build: src/core/CMakeFiles/qgis_core.dir/moc_qgsrasterviewport.o
-
-src/core/CMakeFiles/qgis_core.dir/depend.make.mark: src/core/CMakeFiles/qgis_core.dir/flags.make
 src/core/CMakeFiles/qgis_core.dir/depend.make.mark: ../src/core/spatialindex/tools/ExternalSort.cc
 
 src/core/CMakeFiles/qgis_core.dir/spatialindex/tools/ExternalSort.o: src/core/CMakeFiles/qgis_core.dir/flags.make
 src/core/CMakeFiles/qgis_core.dir/spatialindex/tools/ExternalSort.o: ../src/core/spatialindex/tools/ExternalSort.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_68)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_99)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/core/CMakeFiles/qgis_core.dir/spatialindex/tools/ExternalSort.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/spatialindex/tools/ExternalSort.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/spatialindex/tools/ExternalSort.cc
+	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/spatialindex/tools/ExternalSort.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/spatialindex/tools/ExternalSort.cc
 
 src/core/CMakeFiles/qgis_core.dir/spatialindex/tools/ExternalSort.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/core/CMakeFiles/qgis_core.dir/spatialindex/tools/ExternalSort.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/spatialindex/tools/ExternalSort.cc > src/core/CMakeFiles/qgis_core.dir/spatialindex/tools/ExternalSort.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/spatialindex/tools/ExternalSort.cc > src/core/CMakeFiles/qgis_core.dir/spatialindex/tools/ExternalSort.i
 
 src/core/CMakeFiles/qgis_core.dir/spatialindex/tools/ExternalSort.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/core/CMakeFiles/qgis_core.dir/spatialindex/tools/ExternalSort.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/spatialindex/tools/ExternalSort.cc -o src/core/CMakeFiles/qgis_core.dir/spatialindex/tools/ExternalSort.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/spatialindex/tools/ExternalSort.cc -o src/core/CMakeFiles/qgis_core.dir/spatialindex/tools/ExternalSort.s
 
 src/core/CMakeFiles/qgis_core.dir/spatialindex/tools/ExternalSort.o.requires:
 
@@ -1682,17 +2426,17 @@ src/core/CMakeFiles/qgis_core.dir/depend.make.mark: ../src/core/spatialindex/too
 
 src/core/CMakeFiles/qgis_core.dir/spatialindex/tools/TemporaryFile.o: src/core/CMakeFiles/qgis_core.dir/flags.make
 src/core/CMakeFiles/qgis_core.dir/spatialindex/tools/TemporaryFile.o: ../src/core/spatialindex/tools/TemporaryFile.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_69)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_100)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/core/CMakeFiles/qgis_core.dir/spatialindex/tools/TemporaryFile.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/spatialindex/tools/TemporaryFile.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/spatialindex/tools/TemporaryFile.cc
+	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/spatialindex/tools/TemporaryFile.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/spatialindex/tools/TemporaryFile.cc
 
 src/core/CMakeFiles/qgis_core.dir/spatialindex/tools/TemporaryFile.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/core/CMakeFiles/qgis_core.dir/spatialindex/tools/TemporaryFile.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/spatialindex/tools/TemporaryFile.cc > src/core/CMakeFiles/qgis_core.dir/spatialindex/tools/TemporaryFile.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/spatialindex/tools/TemporaryFile.cc > src/core/CMakeFiles/qgis_core.dir/spatialindex/tools/TemporaryFile.i
 
 src/core/CMakeFiles/qgis_core.dir/spatialindex/tools/TemporaryFile.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/core/CMakeFiles/qgis_core.dir/spatialindex/tools/TemporaryFile.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/spatialindex/tools/TemporaryFile.cc -o src/core/CMakeFiles/qgis_core.dir/spatialindex/tools/TemporaryFile.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/spatialindex/tools/TemporaryFile.cc -o src/core/CMakeFiles/qgis_core.dir/spatialindex/tools/TemporaryFile.s
 
 src/core/CMakeFiles/qgis_core.dir/spatialindex/tools/TemporaryFile.o.requires:
 
@@ -1706,17 +2450,17 @@ src/core/CMakeFiles/qgis_core.dir/depend.make.mark: ../src/core/spatialindex/too
 
 src/core/CMakeFiles/qgis_core.dir/spatialindex/tools/Tools.o: src/core/CMakeFiles/qgis_core.dir/flags.make
 src/core/CMakeFiles/qgis_core.dir/spatialindex/tools/Tools.o: ../src/core/spatialindex/tools/Tools.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_70)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_101)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/core/CMakeFiles/qgis_core.dir/spatialindex/tools/Tools.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/spatialindex/tools/Tools.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/spatialindex/tools/Tools.cc
+	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/spatialindex/tools/Tools.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/spatialindex/tools/Tools.cc
 
 src/core/CMakeFiles/qgis_core.dir/spatialindex/tools/Tools.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/core/CMakeFiles/qgis_core.dir/spatialindex/tools/Tools.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/spatialindex/tools/Tools.cc > src/core/CMakeFiles/qgis_core.dir/spatialindex/tools/Tools.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/spatialindex/tools/Tools.cc > src/core/CMakeFiles/qgis_core.dir/spatialindex/tools/Tools.i
 
 src/core/CMakeFiles/qgis_core.dir/spatialindex/tools/Tools.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/core/CMakeFiles/qgis_core.dir/spatialindex/tools/Tools.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/spatialindex/tools/Tools.cc -o src/core/CMakeFiles/qgis_core.dir/spatialindex/tools/Tools.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/spatialindex/tools/Tools.cc -o src/core/CMakeFiles/qgis_core.dir/spatialindex/tools/Tools.s
 
 src/core/CMakeFiles/qgis_core.dir/spatialindex/tools/Tools.o.requires:
 
@@ -1730,17 +2474,17 @@ src/core/CMakeFiles/qgis_core.dir/depend.make.mark: ../src/core/spatialindex/geo
 
 src/core/CMakeFiles/qgis_core.dir/spatialindex/geometry/LineSegment.o: src/core/CMakeFiles/qgis_core.dir/flags.make
 src/core/CMakeFiles/qgis_core.dir/spatialindex/geometry/LineSegment.o: ../src/core/spatialindex/geometry/LineSegment.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_71)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_102)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/core/CMakeFiles/qgis_core.dir/spatialindex/geometry/LineSegment.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/spatialindex/geometry/LineSegment.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/spatialindex/geometry/LineSegment.cc
+	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/spatialindex/geometry/LineSegment.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/spatialindex/geometry/LineSegment.cc
 
 src/core/CMakeFiles/qgis_core.dir/spatialindex/geometry/LineSegment.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/core/CMakeFiles/qgis_core.dir/spatialindex/geometry/LineSegment.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/spatialindex/geometry/LineSegment.cc > src/core/CMakeFiles/qgis_core.dir/spatialindex/geometry/LineSegment.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/spatialindex/geometry/LineSegment.cc > src/core/CMakeFiles/qgis_core.dir/spatialindex/geometry/LineSegment.i
 
 src/core/CMakeFiles/qgis_core.dir/spatialindex/geometry/LineSegment.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/core/CMakeFiles/qgis_core.dir/spatialindex/geometry/LineSegment.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/spatialindex/geometry/LineSegment.cc -o src/core/CMakeFiles/qgis_core.dir/spatialindex/geometry/LineSegment.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/spatialindex/geometry/LineSegment.cc -o src/core/CMakeFiles/qgis_core.dir/spatialindex/geometry/LineSegment.s
 
 src/core/CMakeFiles/qgis_core.dir/spatialindex/geometry/LineSegment.o.requires:
 
@@ -1754,17 +2498,17 @@ src/core/CMakeFiles/qgis_core.dir/depend.make.mark: ../src/core/spatialindex/geo
 
 src/core/CMakeFiles/qgis_core.dir/spatialindex/geometry/Point.o: src/core/CMakeFiles/qgis_core.dir/flags.make
 src/core/CMakeFiles/qgis_core.dir/spatialindex/geometry/Point.o: ../src/core/spatialindex/geometry/Point.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_72)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_103)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/core/CMakeFiles/qgis_core.dir/spatialindex/geometry/Point.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/spatialindex/geometry/Point.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/spatialindex/geometry/Point.cc
+	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/spatialindex/geometry/Point.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/spatialindex/geometry/Point.cc
 
 src/core/CMakeFiles/qgis_core.dir/spatialindex/geometry/Point.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/core/CMakeFiles/qgis_core.dir/spatialindex/geometry/Point.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/spatialindex/geometry/Point.cc > src/core/CMakeFiles/qgis_core.dir/spatialindex/geometry/Point.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/spatialindex/geometry/Point.cc > src/core/CMakeFiles/qgis_core.dir/spatialindex/geometry/Point.i
 
 src/core/CMakeFiles/qgis_core.dir/spatialindex/geometry/Point.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/core/CMakeFiles/qgis_core.dir/spatialindex/geometry/Point.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/spatialindex/geometry/Point.cc -o src/core/CMakeFiles/qgis_core.dir/spatialindex/geometry/Point.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/spatialindex/geometry/Point.cc -o src/core/CMakeFiles/qgis_core.dir/spatialindex/geometry/Point.s
 
 src/core/CMakeFiles/qgis_core.dir/spatialindex/geometry/Point.o.requires:
 
@@ -1778,17 +2522,17 @@ src/core/CMakeFiles/qgis_core.dir/depend.make.mark: ../src/core/spatialindex/geo
 
 src/core/CMakeFiles/qgis_core.dir/spatialindex/geometry/Region.o: src/core/CMakeFiles/qgis_core.dir/flags.make
 src/core/CMakeFiles/qgis_core.dir/spatialindex/geometry/Region.o: ../src/core/spatialindex/geometry/Region.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_73)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_104)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/core/CMakeFiles/qgis_core.dir/spatialindex/geometry/Region.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/spatialindex/geometry/Region.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/spatialindex/geometry/Region.cc
+	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/spatialindex/geometry/Region.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/spatialindex/geometry/Region.cc
 
 src/core/CMakeFiles/qgis_core.dir/spatialindex/geometry/Region.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/core/CMakeFiles/qgis_core.dir/spatialindex/geometry/Region.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/spatialindex/geometry/Region.cc > src/core/CMakeFiles/qgis_core.dir/spatialindex/geometry/Region.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/spatialindex/geometry/Region.cc > src/core/CMakeFiles/qgis_core.dir/spatialindex/geometry/Region.i
 
 src/core/CMakeFiles/qgis_core.dir/spatialindex/geometry/Region.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/core/CMakeFiles/qgis_core.dir/spatialindex/geometry/Region.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/spatialindex/geometry/Region.cc -o src/core/CMakeFiles/qgis_core.dir/spatialindex/geometry/Region.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/spatialindex/geometry/Region.cc -o src/core/CMakeFiles/qgis_core.dir/spatialindex/geometry/Region.s
 
 src/core/CMakeFiles/qgis_core.dir/spatialindex/geometry/Region.o.requires:
 
@@ -1802,17 +2546,17 @@ src/core/CMakeFiles/qgis_core.dir/depend.make.mark: ../src/core/spatialindex/spa
 
 src/core/CMakeFiles/qgis_core.dir/spatialindex/spatialindex/SpatialIndexImpl.o: src/core/CMakeFiles/qgis_core.dir/flags.make
 src/core/CMakeFiles/qgis_core.dir/spatialindex/spatialindex/SpatialIndexImpl.o: ../src/core/spatialindex/spatialindex/SpatialIndexImpl.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_74)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_105)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/core/CMakeFiles/qgis_core.dir/spatialindex/spatialindex/SpatialIndexImpl.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/spatialindex/spatialindex/SpatialIndexImpl.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/spatialindex/spatialindex/SpatialIndexImpl.cc
+	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/spatialindex/spatialindex/SpatialIndexImpl.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/spatialindex/spatialindex/SpatialIndexImpl.cc
 
 src/core/CMakeFiles/qgis_core.dir/spatialindex/spatialindex/SpatialIndexImpl.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/core/CMakeFiles/qgis_core.dir/spatialindex/spatialindex/SpatialIndexImpl.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/spatialindex/spatialindex/SpatialIndexImpl.cc > src/core/CMakeFiles/qgis_core.dir/spatialindex/spatialindex/SpatialIndexImpl.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/spatialindex/spatialindex/SpatialIndexImpl.cc > src/core/CMakeFiles/qgis_core.dir/spatialindex/spatialindex/SpatialIndexImpl.i
 
 src/core/CMakeFiles/qgis_core.dir/spatialindex/spatialindex/SpatialIndexImpl.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/core/CMakeFiles/qgis_core.dir/spatialindex/spatialindex/SpatialIndexImpl.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/spatialindex/spatialindex/SpatialIndexImpl.cc -o src/core/CMakeFiles/qgis_core.dir/spatialindex/spatialindex/SpatialIndexImpl.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/spatialindex/spatialindex/SpatialIndexImpl.cc -o src/core/CMakeFiles/qgis_core.dir/spatialindex/spatialindex/SpatialIndexImpl.s
 
 src/core/CMakeFiles/qgis_core.dir/spatialindex/spatialindex/SpatialIndexImpl.o.requires:
 
@@ -1826,17 +2570,17 @@ src/core/CMakeFiles/qgis_core.dir/depend.make.mark: ../src/core/spatialindex/sto
 
 src/core/CMakeFiles/qgis_core.dir/spatialindex/storagemanager/Buffer.o: src/core/CMakeFiles/qgis_core.dir/flags.make
 src/core/CMakeFiles/qgis_core.dir/spatialindex/storagemanager/Buffer.o: ../src/core/spatialindex/storagemanager/Buffer.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_75)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_106)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/core/CMakeFiles/qgis_core.dir/spatialindex/storagemanager/Buffer.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/spatialindex/storagemanager/Buffer.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/spatialindex/storagemanager/Buffer.cc
+	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/spatialindex/storagemanager/Buffer.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/spatialindex/storagemanager/Buffer.cc
 
 src/core/CMakeFiles/qgis_core.dir/spatialindex/storagemanager/Buffer.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/core/CMakeFiles/qgis_core.dir/spatialindex/storagemanager/Buffer.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/spatialindex/storagemanager/Buffer.cc > src/core/CMakeFiles/qgis_core.dir/spatialindex/storagemanager/Buffer.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/spatialindex/storagemanager/Buffer.cc > src/core/CMakeFiles/qgis_core.dir/spatialindex/storagemanager/Buffer.i
 
 src/core/CMakeFiles/qgis_core.dir/spatialindex/storagemanager/Buffer.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/core/CMakeFiles/qgis_core.dir/spatialindex/storagemanager/Buffer.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/spatialindex/storagemanager/Buffer.cc -o src/core/CMakeFiles/qgis_core.dir/spatialindex/storagemanager/Buffer.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/spatialindex/storagemanager/Buffer.cc -o src/core/CMakeFiles/qgis_core.dir/spatialindex/storagemanager/Buffer.s
 
 src/core/CMakeFiles/qgis_core.dir/spatialindex/storagemanager/Buffer.o.requires:
 
@@ -1850,17 +2594,17 @@ src/core/CMakeFiles/qgis_core.dir/depend.make.mark: ../src/core/spatialindex/sto
 
 src/core/CMakeFiles/qgis_core.dir/spatialindex/storagemanager/DiskStorageManager.o: src/core/CMakeFiles/qgis_core.dir/flags.make
 src/core/CMakeFiles/qgis_core.dir/spatialindex/storagemanager/DiskStorageManager.o: ../src/core/spatialindex/storagemanager/DiskStorageManager.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_76)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_107)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/core/CMakeFiles/qgis_core.dir/spatialindex/storagemanager/DiskStorageManager.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/spatialindex/storagemanager/DiskStorageManager.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/spatialindex/storagemanager/DiskStorageManager.cc
+	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/spatialindex/storagemanager/DiskStorageManager.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/spatialindex/storagemanager/DiskStorageManager.cc
 
 src/core/CMakeFiles/qgis_core.dir/spatialindex/storagemanager/DiskStorageManager.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/core/CMakeFiles/qgis_core.dir/spatialindex/storagemanager/DiskStorageManager.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/spatialindex/storagemanager/DiskStorageManager.cc > src/core/CMakeFiles/qgis_core.dir/spatialindex/storagemanager/DiskStorageManager.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/spatialindex/storagemanager/DiskStorageManager.cc > src/core/CMakeFiles/qgis_core.dir/spatialindex/storagemanager/DiskStorageManager.i
 
 src/core/CMakeFiles/qgis_core.dir/spatialindex/storagemanager/DiskStorageManager.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/core/CMakeFiles/qgis_core.dir/spatialindex/storagemanager/DiskStorageManager.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/spatialindex/storagemanager/DiskStorageManager.cc -o src/core/CMakeFiles/qgis_core.dir/spatialindex/storagemanager/DiskStorageManager.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/spatialindex/storagemanager/DiskStorageManager.cc -o src/core/CMakeFiles/qgis_core.dir/spatialindex/storagemanager/DiskStorageManager.s
 
 src/core/CMakeFiles/qgis_core.dir/spatialindex/storagemanager/DiskStorageManager.o.requires:
 
@@ -1874,17 +2618,17 @@ src/core/CMakeFiles/qgis_core.dir/depend.make.mark: ../src/core/spatialindex/sto
 
 src/core/CMakeFiles/qgis_core.dir/spatialindex/storagemanager/MemoryStorageManager.o: src/core/CMakeFiles/qgis_core.dir/flags.make
 src/core/CMakeFiles/qgis_core.dir/spatialindex/storagemanager/MemoryStorageManager.o: ../src/core/spatialindex/storagemanager/MemoryStorageManager.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_77)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_108)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/core/CMakeFiles/qgis_core.dir/spatialindex/storagemanager/MemoryStorageManager.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/spatialindex/storagemanager/MemoryStorageManager.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/spatialindex/storagemanager/MemoryStorageManager.cc
+	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/spatialindex/storagemanager/MemoryStorageManager.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/spatialindex/storagemanager/MemoryStorageManager.cc
 
 src/core/CMakeFiles/qgis_core.dir/spatialindex/storagemanager/MemoryStorageManager.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/core/CMakeFiles/qgis_core.dir/spatialindex/storagemanager/MemoryStorageManager.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/spatialindex/storagemanager/MemoryStorageManager.cc > src/core/CMakeFiles/qgis_core.dir/spatialindex/storagemanager/MemoryStorageManager.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/spatialindex/storagemanager/MemoryStorageManager.cc > src/core/CMakeFiles/qgis_core.dir/spatialindex/storagemanager/MemoryStorageManager.i
 
 src/core/CMakeFiles/qgis_core.dir/spatialindex/storagemanager/MemoryStorageManager.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/core/CMakeFiles/qgis_core.dir/spatialindex/storagemanager/MemoryStorageManager.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/spatialindex/storagemanager/MemoryStorageManager.cc -o src/core/CMakeFiles/qgis_core.dir/spatialindex/storagemanager/MemoryStorageManager.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/spatialindex/storagemanager/MemoryStorageManager.cc -o src/core/CMakeFiles/qgis_core.dir/spatialindex/storagemanager/MemoryStorageManager.s
 
 src/core/CMakeFiles/qgis_core.dir/spatialindex/storagemanager/MemoryStorageManager.o.requires:
 
@@ -1898,17 +2642,17 @@ src/core/CMakeFiles/qgis_core.dir/depend.make.mark: ../src/core/spatialindex/sto
 
 src/core/CMakeFiles/qgis_core.dir/spatialindex/storagemanager/RandomEvictionsBuffer.o: src/core/CMakeFiles/qgis_core.dir/flags.make
 src/core/CMakeFiles/qgis_core.dir/spatialindex/storagemanager/RandomEvictionsBuffer.o: ../src/core/spatialindex/storagemanager/RandomEvictionsBuffer.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_78)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_109)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/core/CMakeFiles/qgis_core.dir/spatialindex/storagemanager/RandomEvictionsBuffer.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/spatialindex/storagemanager/RandomEvictionsBuffer.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/spatialindex/storagemanager/RandomEvictionsBuffer.cc
+	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/spatialindex/storagemanager/RandomEvictionsBuffer.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/spatialindex/storagemanager/RandomEvictionsBuffer.cc
 
 src/core/CMakeFiles/qgis_core.dir/spatialindex/storagemanager/RandomEvictionsBuffer.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/core/CMakeFiles/qgis_core.dir/spatialindex/storagemanager/RandomEvictionsBuffer.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/spatialindex/storagemanager/RandomEvictionsBuffer.cc > src/core/CMakeFiles/qgis_core.dir/spatialindex/storagemanager/RandomEvictionsBuffer.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/spatialindex/storagemanager/RandomEvictionsBuffer.cc > src/core/CMakeFiles/qgis_core.dir/spatialindex/storagemanager/RandomEvictionsBuffer.i
 
 src/core/CMakeFiles/qgis_core.dir/spatialindex/storagemanager/RandomEvictionsBuffer.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/core/CMakeFiles/qgis_core.dir/spatialindex/storagemanager/RandomEvictionsBuffer.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/spatialindex/storagemanager/RandomEvictionsBuffer.cc -o src/core/CMakeFiles/qgis_core.dir/spatialindex/storagemanager/RandomEvictionsBuffer.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/spatialindex/storagemanager/RandomEvictionsBuffer.cc -o src/core/CMakeFiles/qgis_core.dir/spatialindex/storagemanager/RandomEvictionsBuffer.s
 
 src/core/CMakeFiles/qgis_core.dir/spatialindex/storagemanager/RandomEvictionsBuffer.o.requires:
 
@@ -1922,17 +2666,17 @@ src/core/CMakeFiles/qgis_core.dir/depend.make.mark: ../src/core/spatialindex/rtr
 
 src/core/CMakeFiles/qgis_core.dir/spatialindex/rtree/BulkLoader.o: src/core/CMakeFiles/qgis_core.dir/flags.make
 src/core/CMakeFiles/qgis_core.dir/spatialindex/rtree/BulkLoader.o: ../src/core/spatialindex/rtree/BulkLoader.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_79)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_110)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/core/CMakeFiles/qgis_core.dir/spatialindex/rtree/BulkLoader.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/spatialindex/rtree/BulkLoader.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/spatialindex/rtree/BulkLoader.cc
+	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/spatialindex/rtree/BulkLoader.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/spatialindex/rtree/BulkLoader.cc
 
 src/core/CMakeFiles/qgis_core.dir/spatialindex/rtree/BulkLoader.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/core/CMakeFiles/qgis_core.dir/spatialindex/rtree/BulkLoader.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/spatialindex/rtree/BulkLoader.cc > src/core/CMakeFiles/qgis_core.dir/spatialindex/rtree/BulkLoader.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/spatialindex/rtree/BulkLoader.cc > src/core/CMakeFiles/qgis_core.dir/spatialindex/rtree/BulkLoader.i
 
 src/core/CMakeFiles/qgis_core.dir/spatialindex/rtree/BulkLoader.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/core/CMakeFiles/qgis_core.dir/spatialindex/rtree/BulkLoader.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/spatialindex/rtree/BulkLoader.cc -o src/core/CMakeFiles/qgis_core.dir/spatialindex/rtree/BulkLoader.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/spatialindex/rtree/BulkLoader.cc -o src/core/CMakeFiles/qgis_core.dir/spatialindex/rtree/BulkLoader.s
 
 src/core/CMakeFiles/qgis_core.dir/spatialindex/rtree/BulkLoader.o.requires:
 
@@ -1946,17 +2690,17 @@ src/core/CMakeFiles/qgis_core.dir/depend.make.mark: ../src/core/spatialindex/rtr
 
 src/core/CMakeFiles/qgis_core.dir/spatialindex/rtree/Index.o: src/core/CMakeFiles/qgis_core.dir/flags.make
 src/core/CMakeFiles/qgis_core.dir/spatialindex/rtree/Index.o: ../src/core/spatialindex/rtree/Index.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_80)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_111)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/core/CMakeFiles/qgis_core.dir/spatialindex/rtree/Index.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/spatialindex/rtree/Index.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/spatialindex/rtree/Index.cc
+	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/spatialindex/rtree/Index.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/spatialindex/rtree/Index.cc
 
 src/core/CMakeFiles/qgis_core.dir/spatialindex/rtree/Index.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/core/CMakeFiles/qgis_core.dir/spatialindex/rtree/Index.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/spatialindex/rtree/Index.cc > src/core/CMakeFiles/qgis_core.dir/spatialindex/rtree/Index.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/spatialindex/rtree/Index.cc > src/core/CMakeFiles/qgis_core.dir/spatialindex/rtree/Index.i
 
 src/core/CMakeFiles/qgis_core.dir/spatialindex/rtree/Index.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/core/CMakeFiles/qgis_core.dir/spatialindex/rtree/Index.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/spatialindex/rtree/Index.cc -o src/core/CMakeFiles/qgis_core.dir/spatialindex/rtree/Index.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/spatialindex/rtree/Index.cc -o src/core/CMakeFiles/qgis_core.dir/spatialindex/rtree/Index.s
 
 src/core/CMakeFiles/qgis_core.dir/spatialindex/rtree/Index.o.requires:
 
@@ -1970,17 +2714,17 @@ src/core/CMakeFiles/qgis_core.dir/depend.make.mark: ../src/core/spatialindex/rtr
 
 src/core/CMakeFiles/qgis_core.dir/spatialindex/rtree/Leaf.o: src/core/CMakeFiles/qgis_core.dir/flags.make
 src/core/CMakeFiles/qgis_core.dir/spatialindex/rtree/Leaf.o: ../src/core/spatialindex/rtree/Leaf.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_81)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_112)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/core/CMakeFiles/qgis_core.dir/spatialindex/rtree/Leaf.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/spatialindex/rtree/Leaf.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/spatialindex/rtree/Leaf.cc
+	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/spatialindex/rtree/Leaf.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/spatialindex/rtree/Leaf.cc
 
 src/core/CMakeFiles/qgis_core.dir/spatialindex/rtree/Leaf.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/core/CMakeFiles/qgis_core.dir/spatialindex/rtree/Leaf.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/spatialindex/rtree/Leaf.cc > src/core/CMakeFiles/qgis_core.dir/spatialindex/rtree/Leaf.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/spatialindex/rtree/Leaf.cc > src/core/CMakeFiles/qgis_core.dir/spatialindex/rtree/Leaf.i
 
 src/core/CMakeFiles/qgis_core.dir/spatialindex/rtree/Leaf.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/core/CMakeFiles/qgis_core.dir/spatialindex/rtree/Leaf.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/spatialindex/rtree/Leaf.cc -o src/core/CMakeFiles/qgis_core.dir/spatialindex/rtree/Leaf.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/spatialindex/rtree/Leaf.cc -o src/core/CMakeFiles/qgis_core.dir/spatialindex/rtree/Leaf.s
 
 src/core/CMakeFiles/qgis_core.dir/spatialindex/rtree/Leaf.o.requires:
 
@@ -1994,17 +2738,17 @@ src/core/CMakeFiles/qgis_core.dir/depend.make.mark: ../src/core/spatialindex/rtr
 
 src/core/CMakeFiles/qgis_core.dir/spatialindex/rtree/Node.o: src/core/CMakeFiles/qgis_core.dir/flags.make
 src/core/CMakeFiles/qgis_core.dir/spatialindex/rtree/Node.o: ../src/core/spatialindex/rtree/Node.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_82)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_113)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/core/CMakeFiles/qgis_core.dir/spatialindex/rtree/Node.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/spatialindex/rtree/Node.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/spatialindex/rtree/Node.cc
+	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/spatialindex/rtree/Node.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/spatialindex/rtree/Node.cc
 
 src/core/CMakeFiles/qgis_core.dir/spatialindex/rtree/Node.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/core/CMakeFiles/qgis_core.dir/spatialindex/rtree/Node.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/spatialindex/rtree/Node.cc > src/core/CMakeFiles/qgis_core.dir/spatialindex/rtree/Node.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/spatialindex/rtree/Node.cc > src/core/CMakeFiles/qgis_core.dir/spatialindex/rtree/Node.i
 
 src/core/CMakeFiles/qgis_core.dir/spatialindex/rtree/Node.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/core/CMakeFiles/qgis_core.dir/spatialindex/rtree/Node.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/spatialindex/rtree/Node.cc -o src/core/CMakeFiles/qgis_core.dir/spatialindex/rtree/Node.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/spatialindex/rtree/Node.cc -o src/core/CMakeFiles/qgis_core.dir/spatialindex/rtree/Node.s
 
 src/core/CMakeFiles/qgis_core.dir/spatialindex/rtree/Node.o.requires:
 
@@ -2018,17 +2762,17 @@ src/core/CMakeFiles/qgis_core.dir/depend.make.mark: ../src/core/spatialindex/rtr
 
 src/core/CMakeFiles/qgis_core.dir/spatialindex/rtree/RTree.o: src/core/CMakeFiles/qgis_core.dir/flags.make
 src/core/CMakeFiles/qgis_core.dir/spatialindex/rtree/RTree.o: ../src/core/spatialindex/rtree/RTree.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_83)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_114)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/core/CMakeFiles/qgis_core.dir/spatialindex/rtree/RTree.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/spatialindex/rtree/RTree.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/spatialindex/rtree/RTree.cc
+	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/spatialindex/rtree/RTree.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/spatialindex/rtree/RTree.cc
 
 src/core/CMakeFiles/qgis_core.dir/spatialindex/rtree/RTree.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/core/CMakeFiles/qgis_core.dir/spatialindex/rtree/RTree.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/spatialindex/rtree/RTree.cc > src/core/CMakeFiles/qgis_core.dir/spatialindex/rtree/RTree.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/spatialindex/rtree/RTree.cc > src/core/CMakeFiles/qgis_core.dir/spatialindex/rtree/RTree.i
 
 src/core/CMakeFiles/qgis_core.dir/spatialindex/rtree/RTree.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/core/CMakeFiles/qgis_core.dir/spatialindex/rtree/RTree.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/spatialindex/rtree/RTree.cc -o src/core/CMakeFiles/qgis_core.dir/spatialindex/rtree/RTree.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/spatialindex/rtree/RTree.cc -o src/core/CMakeFiles/qgis_core.dir/spatialindex/rtree/RTree.s
 
 src/core/CMakeFiles/qgis_core.dir/spatialindex/rtree/RTree.o.requires:
 
@@ -2042,17 +2786,17 @@ src/core/CMakeFiles/qgis_core.dir/depend.make.mark: ../src/core/spatialindex/rtr
 
 src/core/CMakeFiles/qgis_core.dir/spatialindex/rtree/Statistics.o: src/core/CMakeFiles/qgis_core.dir/flags.make
 src/core/CMakeFiles/qgis_core.dir/spatialindex/rtree/Statistics.o: ../src/core/spatialindex/rtree/Statistics.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_84)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_115)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/core/CMakeFiles/qgis_core.dir/spatialindex/rtree/Statistics.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/spatialindex/rtree/Statistics.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/spatialindex/rtree/Statistics.cc
+	/usr/bin/c++   $(CXX_FLAGS) -o src/core/CMakeFiles/qgis_core.dir/spatialindex/rtree/Statistics.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/spatialindex/rtree/Statistics.cc
 
 src/core/CMakeFiles/qgis_core.dir/spatialindex/rtree/Statistics.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/core/CMakeFiles/qgis_core.dir/spatialindex/rtree/Statistics.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/spatialindex/rtree/Statistics.cc > src/core/CMakeFiles/qgis_core.dir/spatialindex/rtree/Statistics.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/spatialindex/rtree/Statistics.cc > src/core/CMakeFiles/qgis_core.dir/spatialindex/rtree/Statistics.i
 
 src/core/CMakeFiles/qgis_core.dir/spatialindex/rtree/Statistics.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/core/CMakeFiles/qgis_core.dir/spatialindex/rtree/Statistics.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/spatialindex/rtree/Statistics.cc -o src/core/CMakeFiles/qgis_core.dir/spatialindex/rtree/Statistics.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/spatialindex/rtree/Statistics.cc -o src/core/CMakeFiles/qgis_core.dir/spatialindex/rtree/Statistics.s
 
 src/core/CMakeFiles/qgis_core.dir/spatialindex/rtree/Statistics.o.requires:
 
@@ -2062,84 +2806,109 @@ src/core/CMakeFiles/qgis_core.dir/spatialindex/rtree/Statistics.o.provides: src/
 src/core/CMakeFiles/qgis_core.dir/spatialindex/rtree/Statistics.o.provides.build: src/core/CMakeFiles/qgis_core.dir/spatialindex/rtree/Statistics.o
 
 src/core/flex_qgssearchstringlexer.cpp: ../src/core/qgssearchstringlexer.ll
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_85)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_116)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating flex_qgssearchstringlexer.cpp"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/core && /usr/bin/flex -o/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/core/flex_qgssearchstringlexer.cpp -d /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgssearchstringlexer.ll
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core && /usr/bin/flex -o/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/flex_qgssearchstringlexer.cpp -d /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgssearchstringlexer.ll
 
 src/core/qgssearchstringparser.cpp: ../src/core/qgssearchstringparser.yy
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_86)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_117)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating qgssearchstringparser.cpp"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/core && /usr/bin/bison -o/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/core/qgssearchstringparser.cpp -d -v -t /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgssearchstringparser.yy
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core && /usr/bin/bison -o/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/qgssearchstringparser.cpp -d -v -t /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgssearchstringparser.yy
 
 src/core/moc_qgscontexthelp.cxx: ../src/core/qgscontexthelp.h
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_87)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_118)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating moc_qgscontexthelp.cxx"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/core && /Developer/Tools/Qt/moc -I /usr/include -I /Library/Frameworks/Qt3Support.framework/Headers -I /Library/Frameworks/QtSvg.framework/Headers -I /Library/Frameworks/QtGui.framework/Headers -I /Library/Frameworks/QtXml.framework/Headers -I /Library/Frameworks/QtSql.framework/Headers -I /Library/Frameworks/QtNetwork.framework/Headers -I /Library/Frameworks/QtCore.framework/Headers -I /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/core/moc_qgscontexthelp.cxx /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgscontexthelp.h
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core && /Developer/Tools/Qt/moc -I /usr/include -I /Library/Frameworks/Qt3Support.framework/Headers -I /Library/Frameworks/QtSvg.framework/Headers -I /Library/Frameworks/QtGui.framework/Headers -I /Library/Frameworks/QtXml.framework/Headers -I /Library/Frameworks/QtSql.framework/Headers -I /Library/Frameworks/QtNetwork.framework/Headers -I /Library/Frameworks/QtCore.framework/Headers -I /Users/bhattgopal/dev/cpp/qgis_1.0.2/build -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/moc_qgscontexthelp.cxx /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgscontexthelp.h
 
 src/core/moc_qgscoordinatetransform.cxx: ../src/core/qgscoordinatetransform.h
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_88)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_119)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating moc_qgscoordinatetransform.cxx"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/core && /Developer/Tools/Qt/moc -I /usr/include -I /Library/Frameworks/Qt3Support.framework/Headers -I /Library/Frameworks/QtSvg.framework/Headers -I /Library/Frameworks/QtGui.framework/Headers -I /Library/Frameworks/QtXml.framework/Headers -I /Library/Frameworks/QtSql.framework/Headers -I /Library/Frameworks/QtNetwork.framework/Headers -I /Library/Frameworks/QtCore.framework/Headers -I /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/core/moc_qgscoordinatetransform.cxx /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgscoordinatetransform.h
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core && /Developer/Tools/Qt/moc -I /usr/include -I /Library/Frameworks/Qt3Support.framework/Headers -I /Library/Frameworks/QtSvg.framework/Headers -I /Library/Frameworks/QtGui.framework/Headers -I /Library/Frameworks/QtXml.framework/Headers -I /Library/Frameworks/QtSql.framework/Headers -I /Library/Frameworks/QtNetwork.framework/Headers -I /Library/Frameworks/QtCore.framework/Headers -I /Users/bhattgopal/dev/cpp/qgis_1.0.2/build -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/moc_qgscoordinatetransform.cxx /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgscoordinatetransform.h
 
 src/core/moc_qgsdataprovider.cxx: ../src/core/qgsdataprovider.h
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_89)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_120)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating moc_qgsdataprovider.cxx"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/core && /Developer/Tools/Qt/moc -I /usr/include -I /Library/Frameworks/Qt3Support.framework/Headers -I /Library/Frameworks/QtSvg.framework/Headers -I /Library/Frameworks/QtGui.framework/Headers -I /Library/Frameworks/QtXml.framework/Headers -I /Library/Frameworks/QtSql.framework/Headers -I /Library/Frameworks/QtNetwork.framework/Headers -I /Library/Frameworks/QtCore.framework/Headers -I /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/core/moc_qgsdataprovider.cxx /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgsdataprovider.h
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core && /Developer/Tools/Qt/moc -I /usr/include -I /Library/Frameworks/Qt3Support.framework/Headers -I /Library/Frameworks/QtSvg.framework/Headers -I /Library/Frameworks/QtGui.framework/Headers -I /Library/Frameworks/QtXml.framework/Headers -I /Library/Frameworks/QtSql.framework/Headers -I /Library/Frameworks/QtNetwork.framework/Headers -I /Library/Frameworks/QtCore.framework/Headers -I /Users/bhattgopal/dev/cpp/qgis_1.0.2/build -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/moc_qgsdataprovider.cxx /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgsdataprovider.h
 
 src/core/moc_qgshttptransaction.cxx: ../src/core/qgshttptransaction.h
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_90)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_121)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating moc_qgshttptransaction.cxx"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/core && /Developer/Tools/Qt/moc -I /usr/include -I /Library/Frameworks/Qt3Support.framework/Headers -I /Library/Frameworks/QtSvg.framework/Headers -I /Library/Frameworks/QtGui.framework/Headers -I /Library/Frameworks/QtXml.framework/Headers -I /Library/Frameworks/QtSql.framework/Headers -I /Library/Frameworks/QtNetwork.framework/Headers -I /Library/Frameworks/QtCore.framework/Headers -I /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/core/moc_qgshttptransaction.cxx /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgshttptransaction.h
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core && /Developer/Tools/Qt/moc -I /usr/include -I /Library/Frameworks/Qt3Support.framework/Headers -I /Library/Frameworks/QtSvg.framework/Headers -I /Library/Frameworks/QtGui.framework/Headers -I /Library/Frameworks/QtXml.framework/Headers -I /Library/Frameworks/QtSql.framework/Headers -I /Library/Frameworks/QtNetwork.framework/Headers -I /Library/Frameworks/QtCore.framework/Headers -I /Users/bhattgopal/dev/cpp/qgis_1.0.2/build -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/moc_qgshttptransaction.cxx /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgshttptransaction.h
 
 src/core/moc_qgsmaplayer.cxx: ../src/core/qgsmaplayer.h
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_91)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_122)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating moc_qgsmaplayer.cxx"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/core && /Developer/Tools/Qt/moc -I /usr/include -I /Library/Frameworks/Qt3Support.framework/Headers -I /Library/Frameworks/QtSvg.framework/Headers -I /Library/Frameworks/QtGui.framework/Headers -I /Library/Frameworks/QtXml.framework/Headers -I /Library/Frameworks/QtSql.framework/Headers -I /Library/Frameworks/QtNetwork.framework/Headers -I /Library/Frameworks/QtCore.framework/Headers -I /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/core/moc_qgsmaplayer.cxx /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgsmaplayer.h
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core && /Developer/Tools/Qt/moc -I /usr/include -I /Library/Frameworks/Qt3Support.framework/Headers -I /Library/Frameworks/QtSvg.framework/Headers -I /Library/Frameworks/QtGui.framework/Headers -I /Library/Frameworks/QtXml.framework/Headers -I /Library/Frameworks/QtSql.framework/Headers -I /Library/Frameworks/QtNetwork.framework/Headers -I /Library/Frameworks/QtCore.framework/Headers -I /Users/bhattgopal/dev/cpp/qgis_1.0.2/build -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/moc_qgsmaplayer.cxx /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgsmaplayer.h
 
 src/core/moc_qgsmaplayerregistry.cxx: ../src/core/qgsmaplayerregistry.h
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_92)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_123)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating moc_qgsmaplayerregistry.cxx"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/core && /Developer/Tools/Qt/moc -I /usr/include -I /Library/Frameworks/Qt3Support.framework/Headers -I /Library/Frameworks/QtSvg.framework/Headers -I /Library/Frameworks/QtGui.framework/Headers -I /Library/Frameworks/QtXml.framework/Headers -I /Library/Frameworks/QtSql.framework/Headers -I /Library/Frameworks/QtNetwork.framework/Headers -I /Library/Frameworks/QtCore.framework/Headers -I /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/core/moc_qgsmaplayerregistry.cxx /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgsmaplayerregistry.h
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core && /Developer/Tools/Qt/moc -I /usr/include -I /Library/Frameworks/Qt3Support.framework/Headers -I /Library/Frameworks/QtSvg.framework/Headers -I /Library/Frameworks/QtGui.framework/Headers -I /Library/Frameworks/QtXml.framework/Headers -I /Library/Frameworks/QtSql.framework/Headers -I /Library/Frameworks/QtNetwork.framework/Headers -I /Library/Frameworks/QtCore.framework/Headers -I /Users/bhattgopal/dev/cpp/qgis_1.0.2/build -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/moc_qgsmaplayerregistry.cxx /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgsmaplayerregistry.h
 
-src/core/moc_qgsmaprender.cxx: ../src/core/qgsmaprender.h
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_93)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating moc_qgsmaprender.cxx"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/core && /Developer/Tools/Qt/moc -I /usr/include -I /Library/Frameworks/Qt3Support.framework/Headers -I /Library/Frameworks/QtSvg.framework/Headers -I /Library/Frameworks/QtGui.framework/Headers -I /Library/Frameworks/QtXml.framework/Headers -I /Library/Frameworks/QtSql.framework/Headers -I /Library/Frameworks/QtNetwork.framework/Headers -I /Library/Frameworks/QtCore.framework/Headers -I /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/core/moc_qgsmaprender.cxx /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgsmaprender.h
+src/core/moc_qgsmaprenderer.cxx: ../src/core/qgsmaprenderer.h
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_124)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating moc_qgsmaprenderer.cxx"
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core && /Developer/Tools/Qt/moc -I /usr/include -I /Library/Frameworks/Qt3Support.framework/Headers -I /Library/Frameworks/QtSvg.framework/Headers -I /Library/Frameworks/QtGui.framework/Headers -I /Library/Frameworks/QtXml.framework/Headers -I /Library/Frameworks/QtSql.framework/Headers -I /Library/Frameworks/QtNetwork.framework/Headers -I /Library/Frameworks/QtCore.framework/Headers -I /Users/bhattgopal/dev/cpp/qgis_1.0.2/build -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/moc_qgsmaprenderer.cxx /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgsmaprenderer.h
 
 src/core/moc_qgsmessageoutput.cxx: ../src/core/qgsmessageoutput.h
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_94)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_125)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating moc_qgsmessageoutput.cxx"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/core && /Developer/Tools/Qt/moc -I /usr/include -I /Library/Frameworks/Qt3Support.framework/Headers -I /Library/Frameworks/QtSvg.framework/Headers -I /Library/Frameworks/QtGui.framework/Headers -I /Library/Frameworks/QtXml.framework/Headers -I /Library/Frameworks/QtSql.framework/Headers -I /Library/Frameworks/QtNetwork.framework/Headers -I /Library/Frameworks/QtCore.framework/Headers -I /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/core/moc_qgsmessageoutput.cxx /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgsmessageoutput.h
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core && /Developer/Tools/Qt/moc -I /usr/include -I /Library/Frameworks/Qt3Support.framework/Headers -I /Library/Frameworks/QtSvg.framework/Headers -I /Library/Frameworks/QtGui.framework/Headers -I /Library/Frameworks/QtXml.framework/Headers -I /Library/Frameworks/QtSql.framework/Headers -I /Library/Frameworks/QtNetwork.framework/Headers -I /Library/Frameworks/QtCore.framework/Headers -I /Users/bhattgopal/dev/cpp/qgis_1.0.2/build -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/moc_qgsmessageoutput.cxx /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgsmessageoutput.h
 
 src/core/moc_qgsproject.cxx: ../src/core/qgsproject.h
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_95)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_126)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating moc_qgsproject.cxx"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/core && /Developer/Tools/Qt/moc -I /usr/include -I /Library/Frameworks/Qt3Support.framework/Headers -I /Library/Frameworks/QtSvg.framework/Headers -I /Library/Frameworks/QtGui.framework/Headers -I /Library/Frameworks/QtXml.framework/Headers -I /Library/Frameworks/QtSql.framework/Headers -I /Library/Frameworks/QtNetwork.framework/Headers -I /Library/Frameworks/QtCore.framework/Headers -I /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/core/moc_qgsproject.cxx /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgsproject.h
-
-src/core/moc_qgsrasterdataprovider.cxx: ../src/core/qgsrasterdataprovider.h
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_96)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating moc_qgsrasterdataprovider.cxx"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/core && /Developer/Tools/Qt/moc -I /usr/include -I /Library/Frameworks/Qt3Support.framework/Headers -I /Library/Frameworks/QtSvg.framework/Headers -I /Library/Frameworks/QtGui.framework/Headers -I /Library/Frameworks/QtXml.framework/Headers -I /Library/Frameworks/QtSql.framework/Headers -I /Library/Frameworks/QtNetwork.framework/Headers -I /Library/Frameworks/QtCore.framework/Headers -I /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/core/moc_qgsrasterdataprovider.cxx /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgsrasterdataprovider.h
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core && /Developer/Tools/Qt/moc -I /usr/include -I /Library/Frameworks/Qt3Support.framework/Headers -I /Library/Frameworks/QtSvg.framework/Headers -I /Library/Frameworks/QtGui.framework/Headers -I /Library/Frameworks/QtXml.framework/Headers -I /Library/Frameworks/QtSql.framework/Headers -I /Library/Frameworks/QtNetwork.framework/Headers -I /Library/Frameworks/QtCore.framework/Headers -I /Users/bhattgopal/dev/cpp/qgis_1.0.2/build -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/moc_qgsproject.cxx /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgsproject.h
 
 src/core/moc_qgsrunprocess.cxx: ../src/core/qgsrunprocess.h
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_97)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_127)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating moc_qgsrunprocess.cxx"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/core && /Developer/Tools/Qt/moc -I /usr/include -I /Library/Frameworks/Qt3Support.framework/Headers -I /Library/Frameworks/QtSvg.framework/Headers -I /Library/Frameworks/QtGui.framework/Headers -I /Library/Frameworks/QtXml.framework/Headers -I /Library/Frameworks/QtSql.framework/Headers -I /Library/Frameworks/QtNetwork.framework/Headers -I /Library/Frameworks/QtCore.framework/Headers -I /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/core/moc_qgsrunprocess.cxx /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgsrunprocess.h
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core && /Developer/Tools/Qt/moc -I /usr/include -I /Library/Frameworks/Qt3Support.framework/Headers -I /Library/Frameworks/QtSvg.framework/Headers -I /Library/Frameworks/QtGui.framework/Headers -I /Library/Frameworks/QtXml.framework/Headers -I /Library/Frameworks/QtSql.framework/Headers -I /Library/Frameworks/QtNetwork.framework/Headers -I /Library/Frameworks/QtCore.framework/Headers -I /Users/bhattgopal/dev/cpp/qgis_1.0.2/build -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/moc_qgsrunprocess.cxx /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgsrunprocess.h
 
 src/core/moc_qgsvectorlayer.cxx: ../src/core/qgsvectorlayer.h
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_98)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_128)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating moc_qgsvectorlayer.cxx"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/core && /Developer/Tools/Qt/moc -I /usr/include -I /Library/Frameworks/Qt3Support.framework/Headers -I /Library/Frameworks/QtSvg.framework/Headers -I /Library/Frameworks/QtGui.framework/Headers -I /Library/Frameworks/QtXml.framework/Headers -I /Library/Frameworks/QtSql.framework/Headers -I /Library/Frameworks/QtNetwork.framework/Headers -I /Library/Frameworks/QtCore.framework/Headers -I /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/core/moc_qgsvectorlayer.cxx /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/qgsvectorlayer.h
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core && /Developer/Tools/Qt/moc -I /usr/include -I /Library/Frameworks/Qt3Support.framework/Headers -I /Library/Frameworks/QtSvg.framework/Headers -I /Library/Frameworks/QtGui.framework/Headers -I /Library/Frameworks/QtXml.framework/Headers -I /Library/Frameworks/QtSql.framework/Headers -I /Library/Frameworks/QtNetwork.framework/Headers -I /Library/Frameworks/QtCore.framework/Headers -I /Users/bhattgopal/dev/cpp/qgis_1.0.2/build -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/moc_qgsvectorlayer.cxx /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgsvectorlayer.h
+
+src/core/moc_qgsrasterdataprovider.cxx: ../src/core/qgsrasterdataprovider.h
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_129)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating moc_qgsrasterdataprovider.cxx"
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core && /Developer/Tools/Qt/moc -I /usr/include -I /Library/Frameworks/Qt3Support.framework/Headers -I /Library/Frameworks/QtSvg.framework/Headers -I /Library/Frameworks/QtGui.framework/Headers -I /Library/Frameworks/QtXml.framework/Headers -I /Library/Frameworks/QtSql.framework/Headers -I /Library/Frameworks/QtNetwork.framework/Headers -I /Library/Frameworks/QtCore.framework/Headers -I /Users/bhattgopal/dev/cpp/qgis_1.0.2/build -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/moc_qgsrasterdataprovider.cxx /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgsrasterdataprovider.h
+
+src/core/moc_qgscomposerlegend.cxx: ../src/core/composer/qgscomposerlegend.h
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_130)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating moc_qgscomposerlegend.cxx"
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core && /Developer/Tools/Qt/moc -I /usr/include -I /Library/Frameworks/Qt3Support.framework/Headers -I /Library/Frameworks/QtSvg.framework/Headers -I /Library/Frameworks/QtGui.framework/Headers -I /Library/Frameworks/QtXml.framework/Headers -I /Library/Frameworks/QtSql.framework/Headers -I /Library/Frameworks/QtNetwork.framework/Headers -I /Library/Frameworks/QtCore.framework/Headers -I /Users/bhattgopal/dev/cpp/qgis_1.0.2/build -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/moc_qgscomposerlegend.cxx /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/composer/qgscomposerlegend.h
+
+src/core/moc_qgscomposermap.cxx: ../src/core/composer/qgscomposermap.h
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_131)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating moc_qgscomposermap.cxx"
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core && /Developer/Tools/Qt/moc -I /usr/include -I /Library/Frameworks/Qt3Support.framework/Headers -I /Library/Frameworks/QtSvg.framework/Headers -I /Library/Frameworks/QtGui.framework/Headers -I /Library/Frameworks/QtXml.framework/Headers -I /Library/Frameworks/QtSql.framework/Headers -I /Library/Frameworks/QtNetwork.framework/Headers -I /Library/Frameworks/QtCore.framework/Headers -I /Users/bhattgopal/dev/cpp/qgis_1.0.2/build -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/moc_qgscomposermap.cxx /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/composer/qgscomposermap.h
+
+src/core/moc_qgscomposerpicture.cxx: ../src/core/composer/qgscomposerpicture.h
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_132)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating moc_qgscomposerpicture.cxx"
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core && /Developer/Tools/Qt/moc -I /usr/include -I /Library/Frameworks/Qt3Support.framework/Headers -I /Library/Frameworks/QtSvg.framework/Headers -I /Library/Frameworks/QtGui.framework/Headers -I /Library/Frameworks/QtXml.framework/Headers -I /Library/Frameworks/QtSql.framework/Headers -I /Library/Frameworks/QtNetwork.framework/Headers -I /Library/Frameworks/QtCore.framework/Headers -I /Users/bhattgopal/dev/cpp/qgis_1.0.2/build -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/moc_qgscomposerpicture.cxx /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/composer/qgscomposerpicture.h
+
+src/core/moc_qgscomposerscalebar.cxx: ../src/core/composer/qgscomposerscalebar.h
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_133)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating moc_qgscomposerscalebar.cxx"
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core && /Developer/Tools/Qt/moc -I /usr/include -I /Library/Frameworks/Qt3Support.framework/Headers -I /Library/Frameworks/QtSvg.framework/Headers -I /Library/Frameworks/QtGui.framework/Headers -I /Library/Frameworks/QtXml.framework/Headers -I /Library/Frameworks/QtSql.framework/Headers -I /Library/Frameworks/QtNetwork.framework/Headers -I /Library/Frameworks/QtCore.framework/Headers -I /Users/bhattgopal/dev/cpp/qgis_1.0.2/build -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/moc_qgscomposerscalebar.cxx /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/composer/qgscomposerscalebar.h
+
+src/core/moc_qgscomposeritemgroup.cxx: ../src/core/composer/qgscomposeritemgroup.h
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_134)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating moc_qgscomposeritemgroup.cxx"
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core && /Developer/Tools/Qt/moc -I /usr/include -I /Library/Frameworks/Qt3Support.framework/Headers -I /Library/Frameworks/QtSvg.framework/Headers -I /Library/Frameworks/QtGui.framework/Headers -I /Library/Frameworks/QtXml.framework/Headers -I /Library/Frameworks/QtSql.framework/Headers -I /Library/Frameworks/QtNetwork.framework/Headers -I /Library/Frameworks/QtCore.framework/Headers -I /Users/bhattgopal/dev/cpp/qgis_1.0.2/build -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/moc_qgscomposeritemgroup.cxx /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/composer/qgscomposeritemgroup.h
+
+src/core/moc_qgslegendmodel.cxx: ../src/core/composer/qgslegendmodel.h
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_135)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating moc_qgslegendmodel.cxx"
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core && /Developer/Tools/Qt/moc -I /usr/include -I /Library/Frameworks/Qt3Support.framework/Headers -I /Library/Frameworks/QtSvg.framework/Headers -I /Library/Frameworks/QtGui.framework/Headers -I /Library/Frameworks/QtXml.framework/Headers -I /Library/Frameworks/QtSql.framework/Headers -I /Library/Frameworks/QtNetwork.framework/Headers -I /Library/Frameworks/QtCore.framework/Headers -I /Users/bhattgopal/dev/cpp/qgis_1.0.2/build -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/moc_qgslegendmodel.cxx /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/composer/qgslegendmodel.h
 
 src/core/moc_qgsrasterlayer.cxx: ../src/core/raster/qgsrasterlayer.h
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_99)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_136)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating moc_qgsrasterlayer.cxx"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/core && /Developer/Tools/Qt/moc -I /usr/include -I /Library/Frameworks/Qt3Support.framework/Headers -I /Library/Frameworks/QtSvg.framework/Headers -I /Library/Frameworks/QtGui.framework/Headers -I /Library/Frameworks/QtXml.framework/Headers -I /Library/Frameworks/QtSql.framework/Headers -I /Library/Frameworks/QtNetwork.framework/Headers -I /Library/Frameworks/QtCore.framework/Headers -I /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/core/moc_qgsrasterlayer.cxx /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/raster/qgsrasterlayer.h
-
-src/core/moc_qgsrasterviewport.cxx: ../src/core/raster/qgsrasterviewport.h
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_100)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating moc_qgsrasterviewport.cxx"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/core && /Developer/Tools/Qt/moc -I /usr/include -I /Library/Frameworks/Qt3Support.framework/Headers -I /Library/Frameworks/QtSvg.framework/Headers -I /Library/Frameworks/QtGui.framework/Headers -I /Library/Frameworks/QtXml.framework/Headers -I /Library/Frameworks/QtSql.framework/Headers -I /Library/Frameworks/QtNetwork.framework/Headers -I /Library/Frameworks/QtCore.framework/Headers -I /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build -o /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/core/moc_qgsrasterviewport.cxx /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core/raster/qgsrasterviewport.h
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core && /Developer/Tools/Qt/moc -I /usr/include -I /Library/Frameworks/Qt3Support.framework/Headers -I /Library/Frameworks/QtSvg.framework/Headers -I /Library/Frameworks/QtGui.framework/Headers -I /Library/Frameworks/QtXml.framework/Headers -I /Library/Frameworks/QtSql.framework/Headers -I /Library/Frameworks/QtNetwork.framework/Headers -I /Library/Frameworks/QtCore.framework/Headers -I /Users/bhattgopal/dev/cpp/qgis_1.0.2/build -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/moc_qgsrasterlayer.cxx /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/raster/qgsrasterlayer.h
 
 src/core/CMakeFiles/qgis_core.dir/depend: src/core/CMakeFiles/qgis_core.dir/depend.make.mark
 
@@ -2151,16 +2920,21 @@ src/core/CMakeFiles/qgis_core.dir/depend.make.mark: src/core/moc_qgsdataprovider
 src/core/CMakeFiles/qgis_core.dir/depend.make.mark: src/core/moc_qgshttptransaction.cxx
 src/core/CMakeFiles/qgis_core.dir/depend.make.mark: src/core/moc_qgsmaplayer.cxx
 src/core/CMakeFiles/qgis_core.dir/depend.make.mark: src/core/moc_qgsmaplayerregistry.cxx
-src/core/CMakeFiles/qgis_core.dir/depend.make.mark: src/core/moc_qgsmaprender.cxx
+src/core/CMakeFiles/qgis_core.dir/depend.make.mark: src/core/moc_qgsmaprenderer.cxx
 src/core/CMakeFiles/qgis_core.dir/depend.make.mark: src/core/moc_qgsmessageoutput.cxx
 src/core/CMakeFiles/qgis_core.dir/depend.make.mark: src/core/moc_qgsproject.cxx
-src/core/CMakeFiles/qgis_core.dir/depend.make.mark: src/core/moc_qgsrasterdataprovider.cxx
 src/core/CMakeFiles/qgis_core.dir/depend.make.mark: src/core/moc_qgsrunprocess.cxx
 src/core/CMakeFiles/qgis_core.dir/depend.make.mark: src/core/moc_qgsvectorlayer.cxx
+src/core/CMakeFiles/qgis_core.dir/depend.make.mark: src/core/moc_qgsrasterdataprovider.cxx
+src/core/CMakeFiles/qgis_core.dir/depend.make.mark: src/core/moc_qgscomposerlegend.cxx
+src/core/CMakeFiles/qgis_core.dir/depend.make.mark: src/core/moc_qgscomposermap.cxx
+src/core/CMakeFiles/qgis_core.dir/depend.make.mark: src/core/moc_qgscomposerpicture.cxx
+src/core/CMakeFiles/qgis_core.dir/depend.make.mark: src/core/moc_qgscomposerscalebar.cxx
+src/core/CMakeFiles/qgis_core.dir/depend.make.mark: src/core/moc_qgscomposeritemgroup.cxx
+src/core/CMakeFiles/qgis_core.dir/depend.make.mark: src/core/moc_qgslegendmodel.cxx
 src/core/CMakeFiles/qgis_core.dir/depend.make.mark: src/core/moc_qgsrasterlayer.cxx
-src/core/CMakeFiles/qgis_core.dir/depend.make.mark: src/core/moc_qgsrasterviewport.cxx
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --magenta --bold "Scanning dependencies of target qgis_core"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0 /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/core /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/core /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/core/CMakeFiles/qgis_core.dir/DependInfo.cmake
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/bhattgopal/dev/cpp/qgis_1.0.2 /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core /Users/bhattgopal/dev/cpp/qgis_1.0.2/build /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/CMakeFiles/qgis_core.dir/DependInfo.cmake
 
 # Object files for target qgis_core
 qgis_core_OBJECTS = \
@@ -2176,36 +2950,62 @@ qgis_core_OBJECTS = \
 "CMakeFiles/qgis_core.dir/qgsfeature.o" \
 "CMakeFiles/qgis_core.dir/qgsfield.o" \
 "CMakeFiles/qgis_core.dir/qgsgeometry.o" \
-"CMakeFiles/qgis_core.dir/qgsgeometryvertexindex.o" \
 "CMakeFiles/qgis_core.dir/qgshttptransaction.o" \
 "CMakeFiles/qgis_core.dir/qgslabel.o" \
 "CMakeFiles/qgis_core.dir/qgslabelattributes.o" \
-"CMakeFiles/qgis_core.dir/qgsline.o" \
 "CMakeFiles/qgis_core.dir/qgslogger.o" \
 "CMakeFiles/qgis_core.dir/qgsmaplayer.o" \
 "CMakeFiles/qgis_core.dir/qgsmaplayerregistry.o" \
-"CMakeFiles/qgis_core.dir/qgsmaprender.o" \
+"CMakeFiles/qgis_core.dir/qgsmaprenderer.o" \
 "CMakeFiles/qgis_core.dir/qgsmaptopixel.o" \
 "CMakeFiles/qgis_core.dir/qgsmessageoutput.o" \
 "CMakeFiles/qgis_core.dir/qgspoint.o" \
 "CMakeFiles/qgis_core.dir/qgsproject.o" \
+"CMakeFiles/qgis_core.dir/qgsprojectfiletransform.o" \
+"CMakeFiles/qgis_core.dir/qgsprojectversion.o" \
 "CMakeFiles/qgis_core.dir/qgsprojectproperty.o" \
 "CMakeFiles/qgis_core.dir/qgsprovidercountcalcevent.o" \
 "CMakeFiles/qgis_core.dir/qgsproviderextentcalcevent.o" \
 "CMakeFiles/qgis_core.dir/qgsprovidermetadata.o" \
 "CMakeFiles/qgis_core.dir/qgsproviderregistry.o" \
 "CMakeFiles/qgis_core.dir/qgsrasterdataprovider.o" \
-"CMakeFiles/qgis_core.dir/qgsrect.o" \
+"CMakeFiles/qgis_core.dir/qgsrendercontext.o" \
+"CMakeFiles/qgis_core.dir/qgsrectangle.o" \
 "CMakeFiles/qgis_core.dir/qgsrunprocess.o" \
 "CMakeFiles/qgis_core.dir/qgsscalecalculator.o" \
 "CMakeFiles/qgis_core.dir/qgssearchstring.o" \
 "CMakeFiles/qgis_core.dir/qgssearchtreenode.o" \
-"CMakeFiles/qgis_core.dir/qgsspatialrefsys.o" \
+"CMakeFiles/qgis_core.dir/qgssnapper.o" \
+"CMakeFiles/qgis_core.dir/qgscoordinatereferencesystem.o" \
 "CMakeFiles/qgis_core.dir/qgsvectordataprovider.o" \
 "CMakeFiles/qgis_core.dir/qgsvectorfilewriter.o" \
 "CMakeFiles/qgis_core.dir/qgsvectorlayer.o" \
-"CMakeFiles/qgis_core.dir/raster/qgscolortable.o" \
+"CMakeFiles/qgis_core.dir/composer/qgscomposeritem.o" \
+"CMakeFiles/qgis_core.dir/composer/qgscomposeritemgroup.o" \
+"CMakeFiles/qgis_core.dir/composer/qgscomposerlabel.o" \
+"CMakeFiles/qgis_core.dir/composer/qgscomposerpicture.o" \
+"CMakeFiles/qgis_core.dir/composer/qgscomposermap.o" \
+"CMakeFiles/qgis_core.dir/composer/qgscomposerscalebar.o" \
+"CMakeFiles/qgis_core.dir/composer/qgslegendmodel.o" \
+"CMakeFiles/qgis_core.dir/composer/qgscomposerlegend.o" \
+"CMakeFiles/qgis_core.dir/composer/qgsscalebarstyle.o" \
+"CMakeFiles/qgis_core.dir/composer/qgsdoubleboxscalebarstyle.o" \
+"CMakeFiles/qgis_core.dir/composer/qgsnumericscalebarstyle.o" \
+"CMakeFiles/qgis_core.dir/composer/qgssingleboxscalebarstyle.o" \
+"CMakeFiles/qgis_core.dir/composer/qgsticksscalebarstyle.o" \
+"CMakeFiles/qgis_core.dir/composer/qgscomposition.o" \
+"CMakeFiles/qgis_core.dir/raster/qgscliptominmaxenhancement.o" \
+"CMakeFiles/qgis_core.dir/raster/qgscolorrampshader.o" \
+"CMakeFiles/qgis_core.dir/raster/qgscontrastenhancement.o" \
+"CMakeFiles/qgis_core.dir/raster/qgscontrastenhancementfunction.o" \
+"CMakeFiles/qgis_core.dir/raster/qgsfreakoutshader.o" \
+"CMakeFiles/qgis_core.dir/raster/qgslinearminmaxenhancement.o" \
+"CMakeFiles/qgis_core.dir/raster/qgslinearminmaxenhancementwithclip.o" \
+"CMakeFiles/qgis_core.dir/raster/qgspseudocolorshader.o" \
 "CMakeFiles/qgis_core.dir/raster/qgsrasterlayer.o" \
+"CMakeFiles/qgis_core.dir/raster/qgsrastertransparency.o" \
+"CMakeFiles/qgis_core.dir/raster/qgsrastershader.o" \
+"CMakeFiles/qgis_core.dir/raster/qgsrastershaderfunction.o" \
 "CMakeFiles/qgis_core.dir/renderer/qgscontinuouscolorrenderer.o" \
 "CMakeFiles/qgis_core.dir/renderer/qgsgraduatedsymbolrenderer.o" \
 "CMakeFiles/qgis_core.dir/renderer/qgsrenderer.o" \
@@ -2223,14 +3023,19 @@ qgis_core_OBJECTS = \
 "CMakeFiles/qgis_core.dir/moc_qgshttptransaction.o" \
 "CMakeFiles/qgis_core.dir/moc_qgsmaplayer.o" \
 "CMakeFiles/qgis_core.dir/moc_qgsmaplayerregistry.o" \
-"CMakeFiles/qgis_core.dir/moc_qgsmaprender.o" \
+"CMakeFiles/qgis_core.dir/moc_qgsmaprenderer.o" \
 "CMakeFiles/qgis_core.dir/moc_qgsmessageoutput.o" \
 "CMakeFiles/qgis_core.dir/moc_qgsproject.o" \
-"CMakeFiles/qgis_core.dir/moc_qgsrasterdataprovider.o" \
 "CMakeFiles/qgis_core.dir/moc_qgsrunprocess.o" \
 "CMakeFiles/qgis_core.dir/moc_qgsvectorlayer.o" \
+"CMakeFiles/qgis_core.dir/moc_qgsrasterdataprovider.o" \
+"CMakeFiles/qgis_core.dir/moc_qgscomposerlegend.o" \
+"CMakeFiles/qgis_core.dir/moc_qgscomposermap.o" \
+"CMakeFiles/qgis_core.dir/moc_qgscomposerpicture.o" \
+"CMakeFiles/qgis_core.dir/moc_qgscomposerscalebar.o" \
+"CMakeFiles/qgis_core.dir/moc_qgscomposeritemgroup.o" \
+"CMakeFiles/qgis_core.dir/moc_qgslegendmodel.o" \
 "CMakeFiles/qgis_core.dir/moc_qgsrasterlayer.o" \
-"CMakeFiles/qgis_core.dir/moc_qgsrasterviewport.o" \
 "CMakeFiles/qgis_core.dir/spatialindex/tools/ExternalSort.o" \
 "CMakeFiles/qgis_core.dir/spatialindex/tools/TemporaryFile.o" \
 "CMakeFiles/qgis_core.dir/spatialindex/tools/Tools.o" \
@@ -2252,105 +3057,139 @@ qgis_core_OBJECTS = \
 # External object files for target qgis_core
 qgis_core_EXTERNAL_OBJECTS =
 
-src/core/libqgis_core.dylib: src/core/CMakeFiles/qgis_core.dir/qgis.o
-src/core/libqgis_core.dylib: src/core/CMakeFiles/qgis_core.dir/qgsapplication.o
-src/core/libqgis_core.dylib: src/core/CMakeFiles/qgis_core.dir/qgsattributeaction.o
-src/core/libqgis_core.dylib: src/core/CMakeFiles/qgis_core.dir/qgsclipper.o
-src/core/libqgis_core.dylib: src/core/CMakeFiles/qgis_core.dir/qgscontexthelp.o
-src/core/libqgis_core.dylib: src/core/CMakeFiles/qgis_core.dir/qgscoordinatetransform.o
-src/core/libqgis_core.dylib: src/core/CMakeFiles/qgis_core.dir/qgsdatasourceuri.o
-src/core/libqgis_core.dylib: src/core/CMakeFiles/qgis_core.dir/qgsdistancearea.o
-src/core/libqgis_core.dylib: src/core/CMakeFiles/qgis_core.dir/qgsexception.o
-src/core/libqgis_core.dylib: src/core/CMakeFiles/qgis_core.dir/qgsfeature.o
-src/core/libqgis_core.dylib: src/core/CMakeFiles/qgis_core.dir/qgsfield.o
-src/core/libqgis_core.dylib: src/core/CMakeFiles/qgis_core.dir/qgsgeometry.o
-src/core/libqgis_core.dylib: src/core/CMakeFiles/qgis_core.dir/qgsgeometryvertexindex.o
-src/core/libqgis_core.dylib: src/core/CMakeFiles/qgis_core.dir/qgshttptransaction.o
-src/core/libqgis_core.dylib: src/core/CMakeFiles/qgis_core.dir/qgslabel.o
-src/core/libqgis_core.dylib: src/core/CMakeFiles/qgis_core.dir/qgslabelattributes.o
-src/core/libqgis_core.dylib: src/core/CMakeFiles/qgis_core.dir/qgsline.o
-src/core/libqgis_core.dylib: src/core/CMakeFiles/qgis_core.dir/qgslogger.o
-src/core/libqgis_core.dylib: src/core/CMakeFiles/qgis_core.dir/qgsmaplayer.o
-src/core/libqgis_core.dylib: src/core/CMakeFiles/qgis_core.dir/qgsmaplayerregistry.o
-src/core/libqgis_core.dylib: src/core/CMakeFiles/qgis_core.dir/qgsmaprender.o
-src/core/libqgis_core.dylib: src/core/CMakeFiles/qgis_core.dir/qgsmaptopixel.o
-src/core/libqgis_core.dylib: src/core/CMakeFiles/qgis_core.dir/qgsmessageoutput.o
-src/core/libqgis_core.dylib: src/core/CMakeFiles/qgis_core.dir/qgspoint.o
-src/core/libqgis_core.dylib: src/core/CMakeFiles/qgis_core.dir/qgsproject.o
-src/core/libqgis_core.dylib: src/core/CMakeFiles/qgis_core.dir/qgsprojectproperty.o
-src/core/libqgis_core.dylib: src/core/CMakeFiles/qgis_core.dir/qgsprovidercountcalcevent.o
-src/core/libqgis_core.dylib: src/core/CMakeFiles/qgis_core.dir/qgsproviderextentcalcevent.o
-src/core/libqgis_core.dylib: src/core/CMakeFiles/qgis_core.dir/qgsprovidermetadata.o
-src/core/libqgis_core.dylib: src/core/CMakeFiles/qgis_core.dir/qgsproviderregistry.o
-src/core/libqgis_core.dylib: src/core/CMakeFiles/qgis_core.dir/qgsrasterdataprovider.o
-src/core/libqgis_core.dylib: src/core/CMakeFiles/qgis_core.dir/qgsrect.o
-src/core/libqgis_core.dylib: src/core/CMakeFiles/qgis_core.dir/qgsrunprocess.o
-src/core/libqgis_core.dylib: src/core/CMakeFiles/qgis_core.dir/qgsscalecalculator.o
-src/core/libqgis_core.dylib: src/core/CMakeFiles/qgis_core.dir/qgssearchstring.o
-src/core/libqgis_core.dylib: src/core/CMakeFiles/qgis_core.dir/qgssearchtreenode.o
-src/core/libqgis_core.dylib: src/core/CMakeFiles/qgis_core.dir/qgsspatialrefsys.o
-src/core/libqgis_core.dylib: src/core/CMakeFiles/qgis_core.dir/qgsvectordataprovider.o
-src/core/libqgis_core.dylib: src/core/CMakeFiles/qgis_core.dir/qgsvectorfilewriter.o
-src/core/libqgis_core.dylib: src/core/CMakeFiles/qgis_core.dir/qgsvectorlayer.o
-src/core/libqgis_core.dylib: src/core/CMakeFiles/qgis_core.dir/raster/qgscolortable.o
-src/core/libqgis_core.dylib: src/core/CMakeFiles/qgis_core.dir/raster/qgsrasterlayer.o
-src/core/libqgis_core.dylib: src/core/CMakeFiles/qgis_core.dir/renderer/qgscontinuouscolorrenderer.o
-src/core/libqgis_core.dylib: src/core/CMakeFiles/qgis_core.dir/renderer/qgsgraduatedsymbolrenderer.o
-src/core/libqgis_core.dylib: src/core/CMakeFiles/qgis_core.dir/renderer/qgsrenderer.o
-src/core/libqgis_core.dylib: src/core/CMakeFiles/qgis_core.dir/renderer/qgssinglesymbolrenderer.o
-src/core/libqgis_core.dylib: src/core/CMakeFiles/qgis_core.dir/renderer/qgsuniquevaluerenderer.o
-src/core/libqgis_core.dylib: src/core/CMakeFiles/qgis_core.dir/symbology/qgsmarkercatalogue.o
-src/core/libqgis_core.dylib: src/core/CMakeFiles/qgis_core.dir/symbology/qgssymbol.o
-src/core/libqgis_core.dylib: src/core/CMakeFiles/qgis_core.dir/symbology/qgssymbologyutils.o
-src/core/libqgis_core.dylib: src/core/CMakeFiles/qgis_core.dir/spatialindex/qgsspatialindex.o
-src/core/libqgis_core.dylib: src/core/CMakeFiles/qgis_core.dir/flex_qgssearchstringlexer.o
-src/core/libqgis_core.dylib: src/core/CMakeFiles/qgis_core.dir/qgssearchstringparser.o
-src/core/libqgis_core.dylib: src/core/CMakeFiles/qgis_core.dir/moc_qgscontexthelp.o
-src/core/libqgis_core.dylib: src/core/CMakeFiles/qgis_core.dir/moc_qgscoordinatetransform.o
-src/core/libqgis_core.dylib: src/core/CMakeFiles/qgis_core.dir/moc_qgsdataprovider.o
-src/core/libqgis_core.dylib: src/core/CMakeFiles/qgis_core.dir/moc_qgshttptransaction.o
-src/core/libqgis_core.dylib: src/core/CMakeFiles/qgis_core.dir/moc_qgsmaplayer.o
-src/core/libqgis_core.dylib: src/core/CMakeFiles/qgis_core.dir/moc_qgsmaplayerregistry.o
-src/core/libqgis_core.dylib: src/core/CMakeFiles/qgis_core.dir/moc_qgsmaprender.o
-src/core/libqgis_core.dylib: src/core/CMakeFiles/qgis_core.dir/moc_qgsmessageoutput.o
-src/core/libqgis_core.dylib: src/core/CMakeFiles/qgis_core.dir/moc_qgsproject.o
-src/core/libqgis_core.dylib: src/core/CMakeFiles/qgis_core.dir/moc_qgsrasterdataprovider.o
-src/core/libqgis_core.dylib: src/core/CMakeFiles/qgis_core.dir/moc_qgsrunprocess.o
-src/core/libqgis_core.dylib: src/core/CMakeFiles/qgis_core.dir/moc_qgsvectorlayer.o
-src/core/libqgis_core.dylib: src/core/CMakeFiles/qgis_core.dir/moc_qgsrasterlayer.o
-src/core/libqgis_core.dylib: src/core/CMakeFiles/qgis_core.dir/moc_qgsrasterviewport.o
-src/core/libqgis_core.dylib: src/core/CMakeFiles/qgis_core.dir/spatialindex/tools/ExternalSort.o
-src/core/libqgis_core.dylib: src/core/CMakeFiles/qgis_core.dir/spatialindex/tools/TemporaryFile.o
-src/core/libqgis_core.dylib: src/core/CMakeFiles/qgis_core.dir/spatialindex/tools/Tools.o
-src/core/libqgis_core.dylib: src/core/CMakeFiles/qgis_core.dir/spatialindex/geometry/LineSegment.o
-src/core/libqgis_core.dylib: src/core/CMakeFiles/qgis_core.dir/spatialindex/geometry/Point.o
-src/core/libqgis_core.dylib: src/core/CMakeFiles/qgis_core.dir/spatialindex/geometry/Region.o
-src/core/libqgis_core.dylib: src/core/CMakeFiles/qgis_core.dir/spatialindex/spatialindex/SpatialIndexImpl.o
-src/core/libqgis_core.dylib: src/core/CMakeFiles/qgis_core.dir/spatialindex/storagemanager/Buffer.o
-src/core/libqgis_core.dylib: src/core/CMakeFiles/qgis_core.dir/spatialindex/storagemanager/DiskStorageManager.o
-src/core/libqgis_core.dylib: src/core/CMakeFiles/qgis_core.dir/spatialindex/storagemanager/MemoryStorageManager.o
-src/core/libqgis_core.dylib: src/core/CMakeFiles/qgis_core.dir/spatialindex/storagemanager/RandomEvictionsBuffer.o
-src/core/libqgis_core.dylib: src/core/CMakeFiles/qgis_core.dir/spatialindex/rtree/BulkLoader.o
-src/core/libqgis_core.dylib: src/core/CMakeFiles/qgis_core.dir/spatialindex/rtree/Index.o
-src/core/libqgis_core.dylib: src/core/CMakeFiles/qgis_core.dir/spatialindex/rtree/Leaf.o
-src/core/libqgis_core.dylib: src/core/CMakeFiles/qgis_core.dir/spatialindex/rtree/Node.o
-src/core/libqgis_core.dylib: src/core/CMakeFiles/qgis_core.dir/spatialindex/rtree/RTree.o
-src/core/libqgis_core.dylib: src/core/CMakeFiles/qgis_core.dir/spatialindex/rtree/Statistics.o
-src/core/libqgis_core.dylib: /Library/Frameworks/QtCore.framework
-src/core/libqgis_core.dylib: /Library/Frameworks/QtGui.framework
-src/core/libqgis_core.dylib: /Library/Frameworks/QtXml.framework
-src/core/libqgis_core.dylib: /Library/Frameworks/QtSvg.framework
-src/core/libqgis_core.dylib: /Library/Frameworks/QtNetwork.framework
-src/core/libqgis_core.dylib: /Library/Frameworks/Qt3Support.framework
-src/core/libqgis_core.dylib: /Library/Frameworks/proj.framework
-src/core/libqgis_core.dylib: /Library/Frameworks/sqlite3.framework
-src/core/libqgis_core.dylib: /Library/Frameworks/geos.framework
-src/core/libqgis_core.dylib: /Library/Frameworks/GDAL.framework/Versions/1.5/unix/lib/libgdal.dylib
-src/core/libqgis_core.dylib: /Library/Frameworks/QtSql.framework
-src/core/libqgis_core.dylib: src/core/CMakeFiles/qgis_core.dir/build.make
+src/core/libqgis_core.1.0.dylib: src/core/CMakeFiles/qgis_core.dir/qgis.o
+src/core/libqgis_core.1.0.dylib: src/core/CMakeFiles/qgis_core.dir/qgsapplication.o
+src/core/libqgis_core.1.0.dylib: src/core/CMakeFiles/qgis_core.dir/qgsattributeaction.o
+src/core/libqgis_core.1.0.dylib: src/core/CMakeFiles/qgis_core.dir/qgsclipper.o
+src/core/libqgis_core.1.0.dylib: src/core/CMakeFiles/qgis_core.dir/qgscontexthelp.o
+src/core/libqgis_core.1.0.dylib: src/core/CMakeFiles/qgis_core.dir/qgscoordinatetransform.o
+src/core/libqgis_core.1.0.dylib: src/core/CMakeFiles/qgis_core.dir/qgsdatasourceuri.o
+src/core/libqgis_core.1.0.dylib: src/core/CMakeFiles/qgis_core.dir/qgsdistancearea.o
+src/core/libqgis_core.1.0.dylib: src/core/CMakeFiles/qgis_core.dir/qgsexception.o
+src/core/libqgis_core.1.0.dylib: src/core/CMakeFiles/qgis_core.dir/qgsfeature.o
+src/core/libqgis_core.1.0.dylib: src/core/CMakeFiles/qgis_core.dir/qgsfield.o
+src/core/libqgis_core.1.0.dylib: src/core/CMakeFiles/qgis_core.dir/qgsgeometry.o
+src/core/libqgis_core.1.0.dylib: src/core/CMakeFiles/qgis_core.dir/qgshttptransaction.o
+src/core/libqgis_core.1.0.dylib: src/core/CMakeFiles/qgis_core.dir/qgslabel.o
+src/core/libqgis_core.1.0.dylib: src/core/CMakeFiles/qgis_core.dir/qgslabelattributes.o
+src/core/libqgis_core.1.0.dylib: src/core/CMakeFiles/qgis_core.dir/qgslogger.o
+src/core/libqgis_core.1.0.dylib: src/core/CMakeFiles/qgis_core.dir/qgsmaplayer.o
+src/core/libqgis_core.1.0.dylib: src/core/CMakeFiles/qgis_core.dir/qgsmaplayerregistry.o
+src/core/libqgis_core.1.0.dylib: src/core/CMakeFiles/qgis_core.dir/qgsmaprenderer.o
+src/core/libqgis_core.1.0.dylib: src/core/CMakeFiles/qgis_core.dir/qgsmaptopixel.o
+src/core/libqgis_core.1.0.dylib: src/core/CMakeFiles/qgis_core.dir/qgsmessageoutput.o
+src/core/libqgis_core.1.0.dylib: src/core/CMakeFiles/qgis_core.dir/qgspoint.o
+src/core/libqgis_core.1.0.dylib: src/core/CMakeFiles/qgis_core.dir/qgsproject.o
+src/core/libqgis_core.1.0.dylib: src/core/CMakeFiles/qgis_core.dir/qgsprojectfiletransform.o
+src/core/libqgis_core.1.0.dylib: src/core/CMakeFiles/qgis_core.dir/qgsprojectversion.o
+src/core/libqgis_core.1.0.dylib: src/core/CMakeFiles/qgis_core.dir/qgsprojectproperty.o
+src/core/libqgis_core.1.0.dylib: src/core/CMakeFiles/qgis_core.dir/qgsprovidercountcalcevent.o
+src/core/libqgis_core.1.0.dylib: src/core/CMakeFiles/qgis_core.dir/qgsproviderextentcalcevent.o
+src/core/libqgis_core.1.0.dylib: src/core/CMakeFiles/qgis_core.dir/qgsprovidermetadata.o
+src/core/libqgis_core.1.0.dylib: src/core/CMakeFiles/qgis_core.dir/qgsproviderregistry.o
+src/core/libqgis_core.1.0.dylib: src/core/CMakeFiles/qgis_core.dir/qgsrasterdataprovider.o
+src/core/libqgis_core.1.0.dylib: src/core/CMakeFiles/qgis_core.dir/qgsrendercontext.o
+src/core/libqgis_core.1.0.dylib: src/core/CMakeFiles/qgis_core.dir/qgsrectangle.o
+src/core/libqgis_core.1.0.dylib: src/core/CMakeFiles/qgis_core.dir/qgsrunprocess.o
+src/core/libqgis_core.1.0.dylib: src/core/CMakeFiles/qgis_core.dir/qgsscalecalculator.o
+src/core/libqgis_core.1.0.dylib: src/core/CMakeFiles/qgis_core.dir/qgssearchstring.o
+src/core/libqgis_core.1.0.dylib: src/core/CMakeFiles/qgis_core.dir/qgssearchtreenode.o
+src/core/libqgis_core.1.0.dylib: src/core/CMakeFiles/qgis_core.dir/qgssnapper.o
+src/core/libqgis_core.1.0.dylib: src/core/CMakeFiles/qgis_core.dir/qgscoordinatereferencesystem.o
+src/core/libqgis_core.1.0.dylib: src/core/CMakeFiles/qgis_core.dir/qgsvectordataprovider.o
+src/core/libqgis_core.1.0.dylib: src/core/CMakeFiles/qgis_core.dir/qgsvectorfilewriter.o
+src/core/libqgis_core.1.0.dylib: src/core/CMakeFiles/qgis_core.dir/qgsvectorlayer.o
+src/core/libqgis_core.1.0.dylib: src/core/CMakeFiles/qgis_core.dir/composer/qgscomposeritem.o
+src/core/libqgis_core.1.0.dylib: src/core/CMakeFiles/qgis_core.dir/composer/qgscomposeritemgroup.o
+src/core/libqgis_core.1.0.dylib: src/core/CMakeFiles/qgis_core.dir/composer/qgscomposerlabel.o
+src/core/libqgis_core.1.0.dylib: src/core/CMakeFiles/qgis_core.dir/composer/qgscomposerpicture.o
+src/core/libqgis_core.1.0.dylib: src/core/CMakeFiles/qgis_core.dir/composer/qgscomposermap.o
+src/core/libqgis_core.1.0.dylib: src/core/CMakeFiles/qgis_core.dir/composer/qgscomposerscalebar.o
+src/core/libqgis_core.1.0.dylib: src/core/CMakeFiles/qgis_core.dir/composer/qgslegendmodel.o
+src/core/libqgis_core.1.0.dylib: src/core/CMakeFiles/qgis_core.dir/composer/qgscomposerlegend.o
+src/core/libqgis_core.1.0.dylib: src/core/CMakeFiles/qgis_core.dir/composer/qgsscalebarstyle.o
+src/core/libqgis_core.1.0.dylib: src/core/CMakeFiles/qgis_core.dir/composer/qgsdoubleboxscalebarstyle.o
+src/core/libqgis_core.1.0.dylib: src/core/CMakeFiles/qgis_core.dir/composer/qgsnumericscalebarstyle.o
+src/core/libqgis_core.1.0.dylib: src/core/CMakeFiles/qgis_core.dir/composer/qgssingleboxscalebarstyle.o
+src/core/libqgis_core.1.0.dylib: src/core/CMakeFiles/qgis_core.dir/composer/qgsticksscalebarstyle.o
+src/core/libqgis_core.1.0.dylib: src/core/CMakeFiles/qgis_core.dir/composer/qgscomposition.o
+src/core/libqgis_core.1.0.dylib: src/core/CMakeFiles/qgis_core.dir/raster/qgscliptominmaxenhancement.o
+src/core/libqgis_core.1.0.dylib: src/core/CMakeFiles/qgis_core.dir/raster/qgscolorrampshader.o
+src/core/libqgis_core.1.0.dylib: src/core/CMakeFiles/qgis_core.dir/raster/qgscontrastenhancement.o
+src/core/libqgis_core.1.0.dylib: src/core/CMakeFiles/qgis_core.dir/raster/qgscontrastenhancementfunction.o
+src/core/libqgis_core.1.0.dylib: src/core/CMakeFiles/qgis_core.dir/raster/qgsfreakoutshader.o
+src/core/libqgis_core.1.0.dylib: src/core/CMakeFiles/qgis_core.dir/raster/qgslinearminmaxenhancement.o
+src/core/libqgis_core.1.0.dylib: src/core/CMakeFiles/qgis_core.dir/raster/qgslinearminmaxenhancementwithclip.o
+src/core/libqgis_core.1.0.dylib: src/core/CMakeFiles/qgis_core.dir/raster/qgspseudocolorshader.o
+src/core/libqgis_core.1.0.dylib: src/core/CMakeFiles/qgis_core.dir/raster/qgsrasterlayer.o
+src/core/libqgis_core.1.0.dylib: src/core/CMakeFiles/qgis_core.dir/raster/qgsrastertransparency.o
+src/core/libqgis_core.1.0.dylib: src/core/CMakeFiles/qgis_core.dir/raster/qgsrastershader.o
+src/core/libqgis_core.1.0.dylib: src/core/CMakeFiles/qgis_core.dir/raster/qgsrastershaderfunction.o
+src/core/libqgis_core.1.0.dylib: src/core/CMakeFiles/qgis_core.dir/renderer/qgscontinuouscolorrenderer.o
+src/core/libqgis_core.1.0.dylib: src/core/CMakeFiles/qgis_core.dir/renderer/qgsgraduatedsymbolrenderer.o
+src/core/libqgis_core.1.0.dylib: src/core/CMakeFiles/qgis_core.dir/renderer/qgsrenderer.o
+src/core/libqgis_core.1.0.dylib: src/core/CMakeFiles/qgis_core.dir/renderer/qgssinglesymbolrenderer.o
+src/core/libqgis_core.1.0.dylib: src/core/CMakeFiles/qgis_core.dir/renderer/qgsuniquevaluerenderer.o
+src/core/libqgis_core.1.0.dylib: src/core/CMakeFiles/qgis_core.dir/symbology/qgsmarkercatalogue.o
+src/core/libqgis_core.1.0.dylib: src/core/CMakeFiles/qgis_core.dir/symbology/qgssymbol.o
+src/core/libqgis_core.1.0.dylib: src/core/CMakeFiles/qgis_core.dir/symbology/qgssymbologyutils.o
+src/core/libqgis_core.1.0.dylib: src/core/CMakeFiles/qgis_core.dir/spatialindex/qgsspatialindex.o
+src/core/libqgis_core.1.0.dylib: src/core/CMakeFiles/qgis_core.dir/flex_qgssearchstringlexer.o
+src/core/libqgis_core.1.0.dylib: src/core/CMakeFiles/qgis_core.dir/qgssearchstringparser.o
+src/core/libqgis_core.1.0.dylib: src/core/CMakeFiles/qgis_core.dir/moc_qgscontexthelp.o
+src/core/libqgis_core.1.0.dylib: src/core/CMakeFiles/qgis_core.dir/moc_qgscoordinatetransform.o
+src/core/libqgis_core.1.0.dylib: src/core/CMakeFiles/qgis_core.dir/moc_qgsdataprovider.o
+src/core/libqgis_core.1.0.dylib: src/core/CMakeFiles/qgis_core.dir/moc_qgshttptransaction.o
+src/core/libqgis_core.1.0.dylib: src/core/CMakeFiles/qgis_core.dir/moc_qgsmaplayer.o
+src/core/libqgis_core.1.0.dylib: src/core/CMakeFiles/qgis_core.dir/moc_qgsmaplayerregistry.o
+src/core/libqgis_core.1.0.dylib: src/core/CMakeFiles/qgis_core.dir/moc_qgsmaprenderer.o
+src/core/libqgis_core.1.0.dylib: src/core/CMakeFiles/qgis_core.dir/moc_qgsmessageoutput.o
+src/core/libqgis_core.1.0.dylib: src/core/CMakeFiles/qgis_core.dir/moc_qgsproject.o
+src/core/libqgis_core.1.0.dylib: src/core/CMakeFiles/qgis_core.dir/moc_qgsrunprocess.o
+src/core/libqgis_core.1.0.dylib: src/core/CMakeFiles/qgis_core.dir/moc_qgsvectorlayer.o
+src/core/libqgis_core.1.0.dylib: src/core/CMakeFiles/qgis_core.dir/moc_qgsrasterdataprovider.o
+src/core/libqgis_core.1.0.dylib: src/core/CMakeFiles/qgis_core.dir/moc_qgscomposerlegend.o
+src/core/libqgis_core.1.0.dylib: src/core/CMakeFiles/qgis_core.dir/moc_qgscomposermap.o
+src/core/libqgis_core.1.0.dylib: src/core/CMakeFiles/qgis_core.dir/moc_qgscomposerpicture.o
+src/core/libqgis_core.1.0.dylib: src/core/CMakeFiles/qgis_core.dir/moc_qgscomposerscalebar.o
+src/core/libqgis_core.1.0.dylib: src/core/CMakeFiles/qgis_core.dir/moc_qgscomposeritemgroup.o
+src/core/libqgis_core.1.0.dylib: src/core/CMakeFiles/qgis_core.dir/moc_qgslegendmodel.o
+src/core/libqgis_core.1.0.dylib: src/core/CMakeFiles/qgis_core.dir/moc_qgsrasterlayer.o
+src/core/libqgis_core.1.0.dylib: src/core/CMakeFiles/qgis_core.dir/spatialindex/tools/ExternalSort.o
+src/core/libqgis_core.1.0.dylib: src/core/CMakeFiles/qgis_core.dir/spatialindex/tools/TemporaryFile.o
+src/core/libqgis_core.1.0.dylib: src/core/CMakeFiles/qgis_core.dir/spatialindex/tools/Tools.o
+src/core/libqgis_core.1.0.dylib: src/core/CMakeFiles/qgis_core.dir/spatialindex/geometry/LineSegment.o
+src/core/libqgis_core.1.0.dylib: src/core/CMakeFiles/qgis_core.dir/spatialindex/geometry/Point.o
+src/core/libqgis_core.1.0.dylib: src/core/CMakeFiles/qgis_core.dir/spatialindex/geometry/Region.o
+src/core/libqgis_core.1.0.dylib: src/core/CMakeFiles/qgis_core.dir/spatialindex/spatialindex/SpatialIndexImpl.o
+src/core/libqgis_core.1.0.dylib: src/core/CMakeFiles/qgis_core.dir/spatialindex/storagemanager/Buffer.o
+src/core/libqgis_core.1.0.dylib: src/core/CMakeFiles/qgis_core.dir/spatialindex/storagemanager/DiskStorageManager.o
+src/core/libqgis_core.1.0.dylib: src/core/CMakeFiles/qgis_core.dir/spatialindex/storagemanager/MemoryStorageManager.o
+src/core/libqgis_core.1.0.dylib: src/core/CMakeFiles/qgis_core.dir/spatialindex/storagemanager/RandomEvictionsBuffer.o
+src/core/libqgis_core.1.0.dylib: src/core/CMakeFiles/qgis_core.dir/spatialindex/rtree/BulkLoader.o
+src/core/libqgis_core.1.0.dylib: src/core/CMakeFiles/qgis_core.dir/spatialindex/rtree/Index.o
+src/core/libqgis_core.1.0.dylib: src/core/CMakeFiles/qgis_core.dir/spatialindex/rtree/Leaf.o
+src/core/libqgis_core.1.0.dylib: src/core/CMakeFiles/qgis_core.dir/spatialindex/rtree/Node.o
+src/core/libqgis_core.1.0.dylib: src/core/CMakeFiles/qgis_core.dir/spatialindex/rtree/RTree.o
+src/core/libqgis_core.1.0.dylib: src/core/CMakeFiles/qgis_core.dir/spatialindex/rtree/Statistics.o
+src/core/libqgis_core.1.0.dylib: /Library/Frameworks/QtCore.framework
+src/core/libqgis_core.1.0.dylib: /Library/Frameworks/QtGui.framework
+src/core/libqgis_core.1.0.dylib: /Library/Frameworks/QtXml.framework
+src/core/libqgis_core.1.0.dylib: /Library/Frameworks/QtSvg.framework
+src/core/libqgis_core.1.0.dylib: /Library/Frameworks/QtNetwork.framework
+src/core/libqgis_core.1.0.dylib: /Library/Frameworks/proj.framework
+src/core/libqgis_core.1.0.dylib: /Library/Frameworks/GEOS.framework/unix/lib/libgeos_c.dylib
+src/core/libqgis_core.1.0.dylib: /Library/Frameworks/GDAL.framework/Versions/1.5/unix/lib/libgdal.dylib
+src/core/libqgis_core.1.0.dylib: /Library/Frameworks/sqlite3.framework
+src/core/libqgis_core.1.0.dylib: src/core/CMakeFiles/qgis_core.dir/build.make
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX shared library libqgis_core.dylib"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/core && $(CMAKE_COMMAND) -P CMakeFiles/qgis_core.dir/cmake_clean_target.cmake
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/core && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/qgis_core.dir/link.txt --verbose=$(VERBOSE)
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core && $(CMAKE_COMMAND) -P CMakeFiles/qgis_core.dir/cmake_clean_target.cmake
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/qgis_core.dir/link.txt --verbose=$(VERBOSE)
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core && $(CMAKE_COMMAND) -E cmake_symlink_library libqgis_core.1.0.dylib libqgis_core.1.0.2.dylib libqgis_core.dylib
+
+src/core/libqgis_core.1.0.2.dylib: src/core/libqgis_core.1.0.dylib
+
+src/core/libqgis_core.dylib: src/core/libqgis_core.1.0.2.dylib
 
 # Rule to build all files generated by this target.
 src/core/CMakeFiles/qgis_core.dir/build: src/core/libqgis_core.dylib
@@ -2367,36 +3206,62 @@ src/core/CMakeFiles/qgis_core.dir/requires: src/core/CMakeFiles/qgis_core.dir/qg
 src/core/CMakeFiles/qgis_core.dir/requires: src/core/CMakeFiles/qgis_core.dir/qgsfeature.o.requires
 src/core/CMakeFiles/qgis_core.dir/requires: src/core/CMakeFiles/qgis_core.dir/qgsfield.o.requires
 src/core/CMakeFiles/qgis_core.dir/requires: src/core/CMakeFiles/qgis_core.dir/qgsgeometry.o.requires
-src/core/CMakeFiles/qgis_core.dir/requires: src/core/CMakeFiles/qgis_core.dir/qgsgeometryvertexindex.o.requires
 src/core/CMakeFiles/qgis_core.dir/requires: src/core/CMakeFiles/qgis_core.dir/qgshttptransaction.o.requires
 src/core/CMakeFiles/qgis_core.dir/requires: src/core/CMakeFiles/qgis_core.dir/qgslabel.o.requires
 src/core/CMakeFiles/qgis_core.dir/requires: src/core/CMakeFiles/qgis_core.dir/qgslabelattributes.o.requires
-src/core/CMakeFiles/qgis_core.dir/requires: src/core/CMakeFiles/qgis_core.dir/qgsline.o.requires
 src/core/CMakeFiles/qgis_core.dir/requires: src/core/CMakeFiles/qgis_core.dir/qgslogger.o.requires
 src/core/CMakeFiles/qgis_core.dir/requires: src/core/CMakeFiles/qgis_core.dir/qgsmaplayer.o.requires
 src/core/CMakeFiles/qgis_core.dir/requires: src/core/CMakeFiles/qgis_core.dir/qgsmaplayerregistry.o.requires
-src/core/CMakeFiles/qgis_core.dir/requires: src/core/CMakeFiles/qgis_core.dir/qgsmaprender.o.requires
+src/core/CMakeFiles/qgis_core.dir/requires: src/core/CMakeFiles/qgis_core.dir/qgsmaprenderer.o.requires
 src/core/CMakeFiles/qgis_core.dir/requires: src/core/CMakeFiles/qgis_core.dir/qgsmaptopixel.o.requires
 src/core/CMakeFiles/qgis_core.dir/requires: src/core/CMakeFiles/qgis_core.dir/qgsmessageoutput.o.requires
 src/core/CMakeFiles/qgis_core.dir/requires: src/core/CMakeFiles/qgis_core.dir/qgspoint.o.requires
 src/core/CMakeFiles/qgis_core.dir/requires: src/core/CMakeFiles/qgis_core.dir/qgsproject.o.requires
+src/core/CMakeFiles/qgis_core.dir/requires: src/core/CMakeFiles/qgis_core.dir/qgsprojectfiletransform.o.requires
+src/core/CMakeFiles/qgis_core.dir/requires: src/core/CMakeFiles/qgis_core.dir/qgsprojectversion.o.requires
 src/core/CMakeFiles/qgis_core.dir/requires: src/core/CMakeFiles/qgis_core.dir/qgsprojectproperty.o.requires
 src/core/CMakeFiles/qgis_core.dir/requires: src/core/CMakeFiles/qgis_core.dir/qgsprovidercountcalcevent.o.requires
 src/core/CMakeFiles/qgis_core.dir/requires: src/core/CMakeFiles/qgis_core.dir/qgsproviderextentcalcevent.o.requires
 src/core/CMakeFiles/qgis_core.dir/requires: src/core/CMakeFiles/qgis_core.dir/qgsprovidermetadata.o.requires
 src/core/CMakeFiles/qgis_core.dir/requires: src/core/CMakeFiles/qgis_core.dir/qgsproviderregistry.o.requires
 src/core/CMakeFiles/qgis_core.dir/requires: src/core/CMakeFiles/qgis_core.dir/qgsrasterdataprovider.o.requires
-src/core/CMakeFiles/qgis_core.dir/requires: src/core/CMakeFiles/qgis_core.dir/qgsrect.o.requires
+src/core/CMakeFiles/qgis_core.dir/requires: src/core/CMakeFiles/qgis_core.dir/qgsrendercontext.o.requires
+src/core/CMakeFiles/qgis_core.dir/requires: src/core/CMakeFiles/qgis_core.dir/qgsrectangle.o.requires
 src/core/CMakeFiles/qgis_core.dir/requires: src/core/CMakeFiles/qgis_core.dir/qgsrunprocess.o.requires
 src/core/CMakeFiles/qgis_core.dir/requires: src/core/CMakeFiles/qgis_core.dir/qgsscalecalculator.o.requires
 src/core/CMakeFiles/qgis_core.dir/requires: src/core/CMakeFiles/qgis_core.dir/qgssearchstring.o.requires
 src/core/CMakeFiles/qgis_core.dir/requires: src/core/CMakeFiles/qgis_core.dir/qgssearchtreenode.o.requires
-src/core/CMakeFiles/qgis_core.dir/requires: src/core/CMakeFiles/qgis_core.dir/qgsspatialrefsys.o.requires
+src/core/CMakeFiles/qgis_core.dir/requires: src/core/CMakeFiles/qgis_core.dir/qgssnapper.o.requires
+src/core/CMakeFiles/qgis_core.dir/requires: src/core/CMakeFiles/qgis_core.dir/qgscoordinatereferencesystem.o.requires
 src/core/CMakeFiles/qgis_core.dir/requires: src/core/CMakeFiles/qgis_core.dir/qgsvectordataprovider.o.requires
 src/core/CMakeFiles/qgis_core.dir/requires: src/core/CMakeFiles/qgis_core.dir/qgsvectorfilewriter.o.requires
 src/core/CMakeFiles/qgis_core.dir/requires: src/core/CMakeFiles/qgis_core.dir/qgsvectorlayer.o.requires
-src/core/CMakeFiles/qgis_core.dir/requires: src/core/CMakeFiles/qgis_core.dir/raster/qgscolortable.o.requires
+src/core/CMakeFiles/qgis_core.dir/requires: src/core/CMakeFiles/qgis_core.dir/composer/qgscomposeritem.o.requires
+src/core/CMakeFiles/qgis_core.dir/requires: src/core/CMakeFiles/qgis_core.dir/composer/qgscomposeritemgroup.o.requires
+src/core/CMakeFiles/qgis_core.dir/requires: src/core/CMakeFiles/qgis_core.dir/composer/qgscomposerlabel.o.requires
+src/core/CMakeFiles/qgis_core.dir/requires: src/core/CMakeFiles/qgis_core.dir/composer/qgscomposerpicture.o.requires
+src/core/CMakeFiles/qgis_core.dir/requires: src/core/CMakeFiles/qgis_core.dir/composer/qgscomposermap.o.requires
+src/core/CMakeFiles/qgis_core.dir/requires: src/core/CMakeFiles/qgis_core.dir/composer/qgscomposerscalebar.o.requires
+src/core/CMakeFiles/qgis_core.dir/requires: src/core/CMakeFiles/qgis_core.dir/composer/qgslegendmodel.o.requires
+src/core/CMakeFiles/qgis_core.dir/requires: src/core/CMakeFiles/qgis_core.dir/composer/qgscomposerlegend.o.requires
+src/core/CMakeFiles/qgis_core.dir/requires: src/core/CMakeFiles/qgis_core.dir/composer/qgsscalebarstyle.o.requires
+src/core/CMakeFiles/qgis_core.dir/requires: src/core/CMakeFiles/qgis_core.dir/composer/qgsdoubleboxscalebarstyle.o.requires
+src/core/CMakeFiles/qgis_core.dir/requires: src/core/CMakeFiles/qgis_core.dir/composer/qgsnumericscalebarstyle.o.requires
+src/core/CMakeFiles/qgis_core.dir/requires: src/core/CMakeFiles/qgis_core.dir/composer/qgssingleboxscalebarstyle.o.requires
+src/core/CMakeFiles/qgis_core.dir/requires: src/core/CMakeFiles/qgis_core.dir/composer/qgsticksscalebarstyle.o.requires
+src/core/CMakeFiles/qgis_core.dir/requires: src/core/CMakeFiles/qgis_core.dir/composer/qgscomposition.o.requires
+src/core/CMakeFiles/qgis_core.dir/requires: src/core/CMakeFiles/qgis_core.dir/raster/qgscliptominmaxenhancement.o.requires
+src/core/CMakeFiles/qgis_core.dir/requires: src/core/CMakeFiles/qgis_core.dir/raster/qgscolorrampshader.o.requires
+src/core/CMakeFiles/qgis_core.dir/requires: src/core/CMakeFiles/qgis_core.dir/raster/qgscontrastenhancement.o.requires
+src/core/CMakeFiles/qgis_core.dir/requires: src/core/CMakeFiles/qgis_core.dir/raster/qgscontrastenhancementfunction.o.requires
+src/core/CMakeFiles/qgis_core.dir/requires: src/core/CMakeFiles/qgis_core.dir/raster/qgsfreakoutshader.o.requires
+src/core/CMakeFiles/qgis_core.dir/requires: src/core/CMakeFiles/qgis_core.dir/raster/qgslinearminmaxenhancement.o.requires
+src/core/CMakeFiles/qgis_core.dir/requires: src/core/CMakeFiles/qgis_core.dir/raster/qgslinearminmaxenhancementwithclip.o.requires
+src/core/CMakeFiles/qgis_core.dir/requires: src/core/CMakeFiles/qgis_core.dir/raster/qgspseudocolorshader.o.requires
 src/core/CMakeFiles/qgis_core.dir/requires: src/core/CMakeFiles/qgis_core.dir/raster/qgsrasterlayer.o.requires
+src/core/CMakeFiles/qgis_core.dir/requires: src/core/CMakeFiles/qgis_core.dir/raster/qgsrastertransparency.o.requires
+src/core/CMakeFiles/qgis_core.dir/requires: src/core/CMakeFiles/qgis_core.dir/raster/qgsrastershader.o.requires
+src/core/CMakeFiles/qgis_core.dir/requires: src/core/CMakeFiles/qgis_core.dir/raster/qgsrastershaderfunction.o.requires
 src/core/CMakeFiles/qgis_core.dir/requires: src/core/CMakeFiles/qgis_core.dir/renderer/qgscontinuouscolorrenderer.o.requires
 src/core/CMakeFiles/qgis_core.dir/requires: src/core/CMakeFiles/qgis_core.dir/renderer/qgsgraduatedsymbolrenderer.o.requires
 src/core/CMakeFiles/qgis_core.dir/requires: src/core/CMakeFiles/qgis_core.dir/renderer/qgsrenderer.o.requires
@@ -2414,14 +3279,19 @@ src/core/CMakeFiles/qgis_core.dir/requires: src/core/CMakeFiles/qgis_core.dir/mo
 src/core/CMakeFiles/qgis_core.dir/requires: src/core/CMakeFiles/qgis_core.dir/moc_qgshttptransaction.o.requires
 src/core/CMakeFiles/qgis_core.dir/requires: src/core/CMakeFiles/qgis_core.dir/moc_qgsmaplayer.o.requires
 src/core/CMakeFiles/qgis_core.dir/requires: src/core/CMakeFiles/qgis_core.dir/moc_qgsmaplayerregistry.o.requires
-src/core/CMakeFiles/qgis_core.dir/requires: src/core/CMakeFiles/qgis_core.dir/moc_qgsmaprender.o.requires
+src/core/CMakeFiles/qgis_core.dir/requires: src/core/CMakeFiles/qgis_core.dir/moc_qgsmaprenderer.o.requires
 src/core/CMakeFiles/qgis_core.dir/requires: src/core/CMakeFiles/qgis_core.dir/moc_qgsmessageoutput.o.requires
 src/core/CMakeFiles/qgis_core.dir/requires: src/core/CMakeFiles/qgis_core.dir/moc_qgsproject.o.requires
-src/core/CMakeFiles/qgis_core.dir/requires: src/core/CMakeFiles/qgis_core.dir/moc_qgsrasterdataprovider.o.requires
 src/core/CMakeFiles/qgis_core.dir/requires: src/core/CMakeFiles/qgis_core.dir/moc_qgsrunprocess.o.requires
 src/core/CMakeFiles/qgis_core.dir/requires: src/core/CMakeFiles/qgis_core.dir/moc_qgsvectorlayer.o.requires
+src/core/CMakeFiles/qgis_core.dir/requires: src/core/CMakeFiles/qgis_core.dir/moc_qgsrasterdataprovider.o.requires
+src/core/CMakeFiles/qgis_core.dir/requires: src/core/CMakeFiles/qgis_core.dir/moc_qgscomposerlegend.o.requires
+src/core/CMakeFiles/qgis_core.dir/requires: src/core/CMakeFiles/qgis_core.dir/moc_qgscomposermap.o.requires
+src/core/CMakeFiles/qgis_core.dir/requires: src/core/CMakeFiles/qgis_core.dir/moc_qgscomposerpicture.o.requires
+src/core/CMakeFiles/qgis_core.dir/requires: src/core/CMakeFiles/qgis_core.dir/moc_qgscomposerscalebar.o.requires
+src/core/CMakeFiles/qgis_core.dir/requires: src/core/CMakeFiles/qgis_core.dir/moc_qgscomposeritemgroup.o.requires
+src/core/CMakeFiles/qgis_core.dir/requires: src/core/CMakeFiles/qgis_core.dir/moc_qgslegendmodel.o.requires
 src/core/CMakeFiles/qgis_core.dir/requires: src/core/CMakeFiles/qgis_core.dir/moc_qgsrasterlayer.o.requires
-src/core/CMakeFiles/qgis_core.dir/requires: src/core/CMakeFiles/qgis_core.dir/moc_qgsrasterviewport.o.requires
 src/core/CMakeFiles/qgis_core.dir/requires: src/core/CMakeFiles/qgis_core.dir/spatialindex/tools/ExternalSort.o.requires
 src/core/CMakeFiles/qgis_core.dir/requires: src/core/CMakeFiles/qgis_core.dir/spatialindex/tools/TemporaryFile.o.requires
 src/core/CMakeFiles/qgis_core.dir/requires: src/core/CMakeFiles/qgis_core.dir/spatialindex/tools/Tools.o.requires
@@ -2441,5 +3311,5 @@ src/core/CMakeFiles/qgis_core.dir/requires: src/core/CMakeFiles/qgis_core.dir/sp
 src/core/CMakeFiles/qgis_core.dir/requires: src/core/CMakeFiles/qgis_core.dir/spatialindex/rtree/Statistics.o.requires
 
 src/core/CMakeFiles/qgis_core.dir/clean:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/core && $(CMAKE_COMMAND) -P CMakeFiles/qgis_core.dir/cmake_clean.cmake
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core && $(CMAKE_COMMAND) -P CMakeFiles/qgis_core.dir/cmake_clean.cmake
 

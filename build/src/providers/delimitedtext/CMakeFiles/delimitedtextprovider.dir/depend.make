@@ -3,6 +3,7 @@
 
 src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/qgsdelimitedtextprovider.o: ../src/providers/delimitedtext/../../core/qgis.h
 src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/qgsdelimitedtextprovider.o: ../src/providers/delimitedtext/../../core/qgsapplication.h
+src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/qgsdelimitedtextprovider.o: ../src/providers/delimitedtext/../../core/qgscoordinatereferencesystem.h
 src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/qgsdelimitedtextprovider.o: ../src/providers/delimitedtext/../../core/qgsdataprovider.h
 src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/qgsdelimitedtextprovider.o: ../src/providers/delimitedtext/../../core/qgsfeature.h
 src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/qgsdelimitedtextprovider.o: ../src/providers/delimitedtext/../../core/qgsfield.h
@@ -10,14 +11,16 @@ src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/qgsdelimitedtex
 src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/qgsdelimitedtextprovider.o: ../src/providers/delimitedtext/../../core/qgsmaplayer.h
 src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/qgsdelimitedtextprovider.o: ../src/providers/delimitedtext/../../core/qgsmessageoutput.h
 src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/qgsdelimitedtextprovider.o: ../src/providers/delimitedtext/../../core/qgspoint.h
-src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/qgsdelimitedtextprovider.o: ../src/providers/delimitedtext/../../core/qgsrect.h
-src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/qgsdelimitedtextprovider.o: ../src/providers/delimitedtext/../../core/qgsspatialrefsys.h
+src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/qgsdelimitedtextprovider.o: ../src/providers/delimitedtext/../../core/qgsrectangle.h
+src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/qgsdelimitedtextprovider.o: ../src/providers/delimitedtext/../../core/qgssnapper.h
 src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/qgsdelimitedtextprovider.o: ../src/providers/delimitedtext/../../core/qgsvectordataprovider.h
 src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/qgsdelimitedtextprovider.o: ../src/providers/delimitedtext/../../core/qgsvectorlayer.h
 src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/qgsdelimitedtextprovider.o: /Library/Frameworks/QtCore.framework/Headers/QDataStream
+src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/qgsdelimitedtextprovider.o: /Library/Frameworks/QtCore.framework/Headers/QEvent
 src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/qgsdelimitedtextprovider.o: /Library/Frameworks/QtCore.framework/Headers/QFile
 src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/qgsdelimitedtextprovider.o: /Library/Frameworks/QtCore.framework/Headers/QList
 src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/qgsdelimitedtextprovider.o: /Library/Frameworks/QtCore.framework/Headers/QMap
+src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/qgsdelimitedtextprovider.o: /Library/Frameworks/QtCore.framework/Headers/QMultiMap
 src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/qgsdelimitedtextprovider.o: /Library/Frameworks/QtCore.framework/Headers/QObject
 src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/qgsdelimitedtextprovider.o: /Library/Frameworks/QtCore.framework/Headers/QRegExp
 src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/qgsdelimitedtextprovider.o: /Library/Frameworks/QtCore.framework/Headers/QSet
@@ -28,6 +31,7 @@ src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/qgsdelimitedtex
 src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/qgsdelimitedtextprovider.o: /Library/Frameworks/QtCore.framework/Headers/QUrl
 src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/qgsdelimitedtextprovider.o: /Library/Frameworks/QtCore.framework/Headers/QVariant
 src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/qgsdelimitedtextprovider.o: /Library/Frameworks/QtCore.framework/Headers/QtGlobal
+src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/qgsdelimitedtextprovider.o: /Library/Frameworks/QtCore.framework/Headers/qcoreevent.h
 src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/qgsdelimitedtextprovider.o: /Library/Frameworks/QtCore.framework/Headers/qdatastream.h
 src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/qgsdelimitedtextprovider.o: /Library/Frameworks/QtCore.framework/Headers/qfile.h
 src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/qgsdelimitedtextprovider.o: /Library/Frameworks/QtCore.framework/Headers/qglobal.h
@@ -45,7 +49,6 @@ src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/qgsdelimitedtex
 src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/qgsdelimitedtextprovider.o: /Library/Frameworks/QtGui.framework/Headers/QApplication
 src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/qgsdelimitedtextprovider.o: /Library/Frameworks/QtGui.framework/Headers/QMessageBox
 src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/qgsdelimitedtextprovider.o: /Library/Frameworks/QtGui.framework/Headers/qapplication.h
-src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/qgsdelimitedtextprovider.o: /Library/Frameworks/QtGui.framework/Headers/qevent.h
 src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/qgsdelimitedtextprovider.o: /Library/Frameworks/QtGui.framework/Headers/qmessagebox.h
 src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/qgsdelimitedtextprovider.o: ../src/providers/delimitedtext/qgsdelimitedtextprovider.cpp
 src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/qgsdelimitedtextprovider.o: ../src/providers/delimitedtext/qgsdelimitedtextprovider.h
@@ -65,4 +68,35 @@ src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/qgsdelimitedtex
 src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/qgsdelimitedtextprovider.o: /usr/include/sys/cdefs.h
 src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/qgsdelimitedtextprovider.o: /usr/include/xlocale/_ctype.h
 src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/qgsdelimitedtextprovider.o: /usr/include/xlocale/_stdio.h
+
+src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/moc_qgsdelimitedtextprovider.o: ../src/providers/delimitedtext/../../core/qgis.h
+src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/moc_qgsdelimitedtextprovider.o: ../src/providers/delimitedtext/../../core/qgsdataprovider.h
+src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/moc_qgsdelimitedtextprovider.o: ../src/providers/delimitedtext/../../core/qgsfeature.h
+src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/moc_qgsdelimitedtextprovider.o: ../src/providers/delimitedtext/../../core/qgsfield.h
+src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/moc_qgsdelimitedtextprovider.o: ../src/providers/delimitedtext/../../core/qgsmaplayer.h
+src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/moc_qgsdelimitedtextprovider.o: ../src/providers/delimitedtext/../../core/qgspoint.h
+src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/moc_qgsdelimitedtextprovider.o: ../src/providers/delimitedtext/../../core/qgsrectangle.h
+src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/moc_qgsdelimitedtextprovider.o: ../src/providers/delimitedtext/../../core/qgssnapper.h
+src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/moc_qgsdelimitedtextprovider.o: ../src/providers/delimitedtext/../../core/qgsvectordataprovider.h
+src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/moc_qgsdelimitedtextprovider.o: ../src/providers/delimitedtext/../../core/qgsvectorlayer.h
+src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/moc_qgsdelimitedtextprovider.o: /Library/Frameworks/QtCore.framework/Headers/QEvent
+src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/moc_qgsdelimitedtextprovider.o: /Library/Frameworks/QtCore.framework/Headers/QList
+src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/moc_qgsdelimitedtextprovider.o: /Library/Frameworks/QtCore.framework/Headers/QMap
+src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/moc_qgsdelimitedtextprovider.o: /Library/Frameworks/QtCore.framework/Headers/QMultiMap
+src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/moc_qgsdelimitedtextprovider.o: /Library/Frameworks/QtCore.framework/Headers/QObject
+src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/moc_qgsdelimitedtextprovider.o: /Library/Frameworks/QtCore.framework/Headers/QSet
+src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/moc_qgsdelimitedtextprovider.o: /Library/Frameworks/QtCore.framework/Headers/QString
+src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/moc_qgsdelimitedtextprovider.o: /Library/Frameworks/QtCore.framework/Headers/QStringList
+src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/moc_qgsdelimitedtextprovider.o: /Library/Frameworks/QtCore.framework/Headers/QVariant
+src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/moc_qgsdelimitedtextprovider.o: /Library/Frameworks/QtCore.framework/Headers/qcoreevent.h
+src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/moc_qgsdelimitedtextprovider.o: /Library/Frameworks/QtCore.framework/Headers/qlist.h
+src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/moc_qgsdelimitedtextprovider.o: /Library/Frameworks/QtCore.framework/Headers/qmap.h
+src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/moc_qgsdelimitedtextprovider.o: /Library/Frameworks/QtCore.framework/Headers/qobject.h
+src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/moc_qgsdelimitedtextprovider.o: /Library/Frameworks/QtCore.framework/Headers/qset.h
+src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/moc_qgsdelimitedtextprovider.o: /Library/Frameworks/QtCore.framework/Headers/qstring.h
+src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/moc_qgsdelimitedtextprovider.o: /Library/Frameworks/QtCore.framework/Headers/qstringlist.h
+src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/moc_qgsdelimitedtextprovider.o: /Library/Frameworks/QtCore.framework/Headers/qvariant.h
+src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/moc_qgsdelimitedtextprovider.o: src/providers/delimitedtext/../../../../src/providers/delimitedtext/qgsdelimitedtextprovider.h
+src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/moc_qgsdelimitedtextprovider.o: src/providers/delimitedtext/moc_qgsdelimitedtextprovider.cxx
+src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/moc_qgsdelimitedtextprovider.o: /usr/include/stdarg.h
 

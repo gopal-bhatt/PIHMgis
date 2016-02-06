@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/qgis/!svn/ver/10639/branches/Release-1_0_2/images/svg/emergency
+END
+amenity=hospital.svg
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/qgis/!svn/ver/10639/branches/Release-1_0_2/images/svg/emergency/amenity=hospital.svg
+END
+amenity=fire_station.svg
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/qgis/!svn/ver/10639/branches/Release-1_0_2/images/svg/emergency/amenity=fire_station.svg
+END
+amenity=police.svg
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/qgis/!svn/ver/10639/branches/Release-1_0_2/images/svg/emergency/amenity=police.svg
+END

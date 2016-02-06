@@ -1,5 +1,5 @@
 /***************************************************************************
-                          qgspluginmanager.h 
+                          qgspluginmanager.h
                Plugin manager for loading/unloading QGIS plugins
                              -------------------
     begin                : 2004-02-12
@@ -15,24 +15,31 @@
  *   (at your option) any later version.                                   *
  *                                                                         *
  ***************************************************************************/
- /* $Id: qgspluginmanager.h 6415 2007-01-09 02:39:15Z wonder $ */
+/* $Id: qgspluginmanager.h 9138 2008-08-23 21:37:31Z jef $ */
 #ifndef QGSPLUGINMANAGER_H
 #define QGSPLUGINMANAGER_H
 #include <vector>
+#include <QStandardItemModel>
+#include <QSortFilterProxyModel>
+#include <QStandardItem>
+#include <QHeaderView>
 #include "ui_qgspluginmanagerbase.h"
 #include "qgisgui.h"
 
 class QgsPluginItem;
+class QgsPythonUtils;
+class QTableView;
+
 /*!
  * \brief Plugin manager for loading/unloading plugins
 @author Gary Sherman
 */
 class QgsPluginManager : public QDialog, private Ui::QgsPluginManagerBase
 {
-  Q_OBJECT
+    Q_OBJECT
   public:
     //! Constructor
-    QgsPluginManager(QWidget *parent = 0, Qt::WFlags fl = QgisGui::ModalDialogFlags);
+    QgsPluginManager( QgsPythonUtils* pythonUtils, QWidget *parent = 0, Qt::WFlags fl = QgisGui::ModalDialogFlags );
     //! Destructor
     ~QgsPluginManager();
     //! Get description of plugins (name, etc)
@@ -43,18 +50,28 @@ class QgsPluginManager : public QDialog, private Ui::QgsPluginManagerBase
     void unload();
     //! Gets the selected plugins
     std::vector<QgsPluginItem> getSelectedPlugins();
-    public slots:
+    //! Set lstPlugins table GUI
+    void setTable();
+    //! Resize columns to contents
+    void resizeColumnsToContents();
+    //! Sort model by column ascending
+    void sortModel( int );
+  public slots:
+    //! Enable disable checkbox
+    void on_vwPlugins_clicked( const QModelIndex & );
     //! Load selected plugins and close the dialog
-    void on_btnOk_clicked();
+    void accept();
     //! Select all plugins by setting their checkbox on
-    void on_btnSelectAll_clicked();
+    void selectAll();
     //! Clear all selections by clearing the plugins checkbox
-    void on_btnClearAll_clicked();
-    //! Browse to a location (directory) containing QGIS plugins
-    void on_btnBrowse_clicked();
-    //! Close the dialog
-    void on_btnClose_clicked();
+    void clearAll();
+    //! Update the filter when user changes the filter expression
+    void on_leFilter_textChanged( QString theText );
+  private:
+    QStandardItemModel *mModelPlugins;
+    QSortFilterProxyModel * mModelProxy;
 
+    QgsPythonUtils* mPythonUtils;
 };
 
 #endif

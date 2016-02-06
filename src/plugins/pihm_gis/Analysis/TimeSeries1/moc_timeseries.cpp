@@ -1,8 +1,8 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'timeseries.h'
 **
-** Created: Mon Jul 23 12:44:07 2007
-**      by: The Qt Meta Object Compiler version 59 (Qt 4.1.0)
+** Created: Wed May 27 04:53:06 2009
+**      by: The Qt Meta Object Compiler version 59 (Qt 4.3.2)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
@@ -11,7 +11,7 @@
 #if !defined(Q_MOC_OUTPUT_REVISION)
 #error "The header file 'timeseries.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 59
-#error "This file was generated using the moc from 4.1.0. It"
+#error "This file was generated using the moc from 4.3.2. It"
 #error "cannot be used with the include files from this version of Qt."
 #error "(The moc has changed too much.)"
 #endif
@@ -36,7 +36,8 @@ static const uint qt_meta_data_timeSeriesDlg[] = {
 };
 
 static const char qt_meta_stringdata_timeSeriesDlg[] = {
-    "timeSeriesDlg\0\0browse()\0plot()\0savePlot()\0help()\0"
+    "timeSeriesDlg\0\0browse()\0plot()\0"
+    "savePlot()\0help()\0"
 };
 
 const QMetaObject timeSeriesDlg::staticMetaObject = {
@@ -53,7 +54,7 @@ void *timeSeriesDlg::qt_metacast(const char *_clname)
 {
     if (!_clname) return 0;
     if (!strcmp(_clname, qt_meta_stringdata_timeSeriesDlg))
-	return static_cast<void*>(const_cast<timeSeriesDlg*>(this));
+	return static_cast<void*>(const_cast< timeSeriesDlg*>(this));
     return QDialog::qt_metacast(_clname);
 }
 

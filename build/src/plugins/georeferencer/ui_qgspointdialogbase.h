@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading ui file 'qgspointdialogbase.ui'
 **
-** Created: Wed Jun 11 19:10:51 2008
+** Created: Fri Jun 19 01:59:55 2009
 **      by: Qt User Interface Compiler version 4.3.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling ui file!
@@ -29,7 +29,15 @@ class Ui_QgsPointDialogBase
 {
 public:
     QGridLayout *gridLayout;
-    QSpacerItem *spacerItem;
+    QPushButton *pbnSelectWorldFile;
+    QPushButton *pbnSelectModifiedRaster;
+    QLabel *lblSelectModifiedRaster;
+    QLabel *textLabel1;
+    QLineEdit *leSelectModifiedRaster;
+    QLineEdit *leSelectWorldFile;
+    QLabel *textLabel2;
+    QComboBox *cmbTransformType;
+    QPushButton *pbnGenerateWorldFile;
     QFrame *frame5;
     QHBoxLayout *hboxLayout;
     QToolButton *tbnAddPoint;
@@ -40,32 +48,65 @@ public:
     QToolButton *tbnZoomOut;
     QToolButton *tbnZoomToLayer;
     QToolButton *tbnPan;
-    QPushButton *pbnSelectModifiedRaster;
-    QPushButton *pbnSelectWorldFile;
-    QPushButton *pbnGenerateAndLoad;
-    QLineEdit *leSelectModifiedRaster;
-    QLineEdit *leSelectWorldFile;
-    QPushButton *pbnGenerateWorldFile;
-    QLabel *lblSelectModifiedRaster;
-    QLabel *textLabel1;
-    QSpacerItem *spacerItem1;
-    QComboBox *cmbTransformType;
-    QLabel *textLabel2;
-    QPushButton *pbnCancel;
     QFrame *canvasFrame;
+    QPushButton *pbnGenerateAndLoad;
+    QSpacerItem *spacerItem;
 
     void setupUi(QDialog *QgsPointDialogBase)
     {
     if (QgsPointDialogBase->objectName().isEmpty())
         QgsPointDialogBase->setObjectName(QString::fromUtf8("QgsPointDialogBase"));
-    QgsPointDialogBase->resize(703, 410);
+    QgsPointDialogBase->resize(335, 433);
+    QgsPointDialogBase->setWindowIcon(QIcon(QString::fromUtf8(":/icon.png")));
+    QgsPointDialogBase->setAutoFillBackground(true);
     gridLayout = new QGridLayout(QgsPointDialogBase);
     gridLayout->setSpacing(6);
     gridLayout->setMargin(9);
     gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
-    spacerItem = new QSpacerItem(300, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+    pbnSelectWorldFile = new QPushButton(QgsPointDialogBase);
+    pbnSelectWorldFile->setObjectName(QString::fromUtf8("pbnSelectWorldFile"));
 
-    gridLayout->addItem(spacerItem, 0, 4, 1, 4);
+    gridLayout->addWidget(pbnSelectWorldFile, 4, 3, 1, 1);
+
+    pbnSelectModifiedRaster = new QPushButton(QgsPointDialogBase);
+    pbnSelectModifiedRaster->setObjectName(QString::fromUtf8("pbnSelectModifiedRaster"));
+
+    gridLayout->addWidget(pbnSelectModifiedRaster, 3, 3, 1, 1);
+
+    lblSelectModifiedRaster = new QLabel(QgsPointDialogBase);
+    lblSelectModifiedRaster->setObjectName(QString::fromUtf8("lblSelectModifiedRaster"));
+
+    gridLayout->addWidget(lblSelectModifiedRaster, 3, 0, 1, 2);
+
+    textLabel1 = new QLabel(QgsPointDialogBase);
+    textLabel1->setObjectName(QString::fromUtf8("textLabel1"));
+
+    gridLayout->addWidget(textLabel1, 4, 0, 1, 2);
+
+    leSelectModifiedRaster = new QLineEdit(QgsPointDialogBase);
+    leSelectModifiedRaster->setObjectName(QString::fromUtf8("leSelectModifiedRaster"));
+
+    gridLayout->addWidget(leSelectModifiedRaster, 3, 2, 1, 1);
+
+    leSelectWorldFile = new QLineEdit(QgsPointDialogBase);
+    leSelectWorldFile->setObjectName(QString::fromUtf8("leSelectWorldFile"));
+
+    gridLayout->addWidget(leSelectWorldFile, 4, 2, 1, 1);
+
+    textLabel2 = new QLabel(QgsPointDialogBase);
+    textLabel2->setObjectName(QString::fromUtf8("textLabel2"));
+
+    gridLayout->addWidget(textLabel2, 2, 0, 1, 2);
+
+    cmbTransformType = new QComboBox(QgsPointDialogBase);
+    cmbTransformType->setObjectName(QString::fromUtf8("cmbTransformType"));
+
+    gridLayout->addWidget(cmbTransformType, 2, 2, 1, 2);
+
+    pbnGenerateWorldFile = new QPushButton(QgsPointDialogBase);
+    pbnGenerateWorldFile->setObjectName(QString::fromUtf8("pbnGenerateWorldFile"));
+
+    gridLayout->addWidget(pbnGenerateWorldFile, 5, 0, 1, 1);
 
     frame5 = new QFrame(QgsPointDialogBase);
     frame5->setObjectName(QString::fromUtf8("frame5"));
@@ -78,7 +119,7 @@ public:
     frame5->setFrameShadow(QFrame::Raised);
     hboxLayout = new QHBoxLayout(frame5);
     hboxLayout->setSpacing(0);
-    hboxLayout->setMargin(0);
+    hboxLayout->setMargin(11);
     hboxLayout->setObjectName(QString::fromUtf8("hboxLayout"));
     tbnAddPoint = new QToolButton(frame5);
     tbnAddPoint->setObjectName(QString::fromUtf8("tbnAddPoint"));
@@ -98,7 +139,7 @@ public:
     hboxLayout->addWidget(tbnDeletePoint);
 
 
-    gridLayout->addWidget(frame5, 0, 2, 1, 2);
+    gridLayout->addWidget(frame5, 0, 2, 1, 1);
 
     frame4 = new QFrame(QgsPointDialogBase);
     frame4->setObjectName(QString::fromUtf8("frame4"));
@@ -108,7 +149,7 @@ public:
     frame4->setFrameShadow(QFrame::Raised);
     hboxLayout1 = new QHBoxLayout(frame4);
     hboxLayout1->setSpacing(0);
-    hboxLayout1->setMargin(0);
+    hboxLayout1->setMargin(11);
     hboxLayout1->setObjectName(QString::fromUtf8("hboxLayout1"));
     tbnZoomIn = new QToolButton(frame4);
     tbnZoomIn->setObjectName(QString::fromUtf8("tbnZoomIn"));
@@ -145,72 +186,22 @@ public:
 
     gridLayout->addWidget(frame4, 0, 0, 1, 2);
 
-    pbnSelectModifiedRaster = new QPushButton(QgsPointDialogBase);
-    pbnSelectModifiedRaster->setObjectName(QString::fromUtf8("pbnSelectModifiedRaster"));
+    canvasFrame = new QFrame(QgsPointDialogBase);
+    canvasFrame->setObjectName(QString::fromUtf8("canvasFrame"));
+    canvasFrame->setAutoFillBackground(false);
+    canvasFrame->setFrameShape(QFrame::StyledPanel);
+    canvasFrame->setFrameShadow(QFrame::Raised);
 
-    gridLayout->addWidget(pbnSelectModifiedRaster, 2, 7, 1, 1);
-
-    pbnSelectWorldFile = new QPushButton(QgsPointDialogBase);
-    pbnSelectWorldFile->setObjectName(QString::fromUtf8("pbnSelectWorldFile"));
-
-    gridLayout->addWidget(pbnSelectWorldFile, 3, 7, 1, 1);
+    gridLayout->addWidget(canvasFrame, 1, 0, 1, 4);
 
     pbnGenerateAndLoad = new QPushButton(QgsPointDialogBase);
     pbnGenerateAndLoad->setObjectName(QString::fromUtf8("pbnGenerateAndLoad"));
 
-    gridLayout->addWidget(pbnGenerateAndLoad, 4, 6, 1, 2);
+    gridLayout->addWidget(pbnGenerateAndLoad, 5, 1, 1, 3);
 
-    leSelectModifiedRaster = new QLineEdit(QgsPointDialogBase);
-    leSelectModifiedRaster->setObjectName(QString::fromUtf8("leSelectModifiedRaster"));
+    spacerItem = new QSpacerItem(41, 53, QSizePolicy::Expanding, QSizePolicy::Minimum);
 
-    gridLayout->addWidget(leSelectModifiedRaster, 2, 5, 1, 2);
-
-    leSelectWorldFile = new QLineEdit(QgsPointDialogBase);
-    leSelectWorldFile->setObjectName(QString::fromUtf8("leSelectWorldFile"));
-
-    gridLayout->addWidget(leSelectWorldFile, 3, 5, 1, 2);
-
-    pbnGenerateWorldFile = new QPushButton(QgsPointDialogBase);
-    pbnGenerateWorldFile->setObjectName(QString::fromUtf8("pbnGenerateWorldFile"));
-
-    gridLayout->addWidget(pbnGenerateWorldFile, 4, 5, 1, 1);
-
-    lblSelectModifiedRaster = new QLabel(QgsPointDialogBase);
-    lblSelectModifiedRaster->setObjectName(QString::fromUtf8("lblSelectModifiedRaster"));
-
-    gridLayout->addWidget(lblSelectModifiedRaster, 2, 4, 1, 1);
-
-    textLabel1 = new QLabel(QgsPointDialogBase);
-    textLabel1->setObjectName(QString::fromUtf8("textLabel1"));
-
-    gridLayout->addWidget(textLabel1, 3, 4, 1, 1);
-
-    spacerItem1 = new QSpacerItem(150, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
-
-    gridLayout->addItem(spacerItem1, 4, 3, 1, 2);
-
-    cmbTransformType = new QComboBox(QgsPointDialogBase);
-    cmbTransformType->setObjectName(QString::fromUtf8("cmbTransformType"));
-
-    gridLayout->addWidget(cmbTransformType, 2, 1, 1, 3);
-
-    textLabel2 = new QLabel(QgsPointDialogBase);
-    textLabel2->setObjectName(QString::fromUtf8("textLabel2"));
-
-    gridLayout->addWidget(textLabel2, 2, 0, 1, 1);
-
-    pbnCancel = new QPushButton(QgsPointDialogBase);
-    pbnCancel->setObjectName(QString::fromUtf8("pbnCancel"));
-
-    gridLayout->addWidget(pbnCancel, 4, 0, 1, 3);
-
-    canvasFrame = new QFrame(QgsPointDialogBase);
-    canvasFrame->setObjectName(QString::fromUtf8("canvasFrame"));
-    canvasFrame->setAutoFillBackground(true);
-    canvasFrame->setFrameShape(QFrame::StyledPanel);
-    canvasFrame->setFrameShadow(QFrame::Raised);
-
-    gridLayout->addWidget(canvasFrame, 1, 0, 1, 8);
+    gridLayout->addItem(spacerItem, 0, 3, 1, 1);
 
 
     retranslateUi(QgsPointDialogBase);
@@ -220,7 +211,13 @@ public:
 
     void retranslateUi(QDialog *QgsPointDialogBase)
     {
-    QgsPointDialogBase->setWindowTitle(QApplication::translate("QgsPointDialogBase", "Georeferencer", 0, QApplication::UnicodeUTF8));
+    QgsPointDialogBase->setWindowTitle(QApplication::translate("QgsPointDialogBase", "Reference points", 0, QApplication::UnicodeUTF8));
+    pbnSelectWorldFile->setText(QApplication::translate("QgsPointDialogBase", "...", 0, QApplication::UnicodeUTF8));
+    pbnSelectModifiedRaster->setText(QApplication::translate("QgsPointDialogBase", "...", 0, QApplication::UnicodeUTF8));
+    lblSelectModifiedRaster->setText(QApplication::translate("QgsPointDialogBase", "Modified raster:", 0, QApplication::UnicodeUTF8));
+    textLabel1->setText(QApplication::translate("QgsPointDialogBase", "World file:", 0, QApplication::UnicodeUTF8));
+    textLabel2->setText(QApplication::translate("QgsPointDialogBase", "Transform type:", 0, QApplication::UnicodeUTF8));
+    pbnGenerateWorldFile->setText(QApplication::translate("QgsPointDialogBase", "Create", 0, QApplication::UnicodeUTF8));
     tbnAddPoint->setToolTip(QApplication::translate("QgsPointDialogBase", "Add points", 0, QApplication::UnicodeUTF8));
     tbnAddPoint->setText(QString());
     tbnDeletePoint->setToolTip(QApplication::translate("QgsPointDialogBase", "Delete points", 0, QApplication::UnicodeUTF8));
@@ -233,14 +230,7 @@ public:
     tbnZoomToLayer->setText(QString());
     tbnPan->setToolTip(QApplication::translate("QgsPointDialogBase", "Pan", 0, QApplication::UnicodeUTF8));
     tbnPan->setText(QString());
-    pbnSelectModifiedRaster->setText(QApplication::translate("QgsPointDialogBase", "Save As...", 0, QApplication::UnicodeUTF8));
-    pbnSelectWorldFile->setText(QApplication::translate("QgsPointDialogBase", "Save As...", 0, QApplication::UnicodeUTF8));
-    pbnGenerateAndLoad->setText(QApplication::translate("QgsPointDialogBase", "Generate world file and load layer", 0, QApplication::UnicodeUTF8));
-    pbnGenerateWorldFile->setText(QApplication::translate("QgsPointDialogBase", "Generate world file", 0, QApplication::UnicodeUTF8));
-    lblSelectModifiedRaster->setText(QApplication::translate("QgsPointDialogBase", "Modified raster:", 0, QApplication::UnicodeUTF8));
-    textLabel1->setText(QApplication::translate("QgsPointDialogBase", "World file:", 0, QApplication::UnicodeUTF8));
-    textLabel2->setText(QApplication::translate("QgsPointDialogBase", "Transform type:", 0, QApplication::UnicodeUTF8));
-    pbnCancel->setText(QApplication::translate("QgsPointDialogBase", "Cancel", 0, QApplication::UnicodeUTF8));
+    pbnGenerateAndLoad->setText(QApplication::translate("QgsPointDialogBase", "Create and load layer", 0, QApplication::UnicodeUTF8));
     Q_UNUSED(QgsPointDialogBase);
     } // retranslateUi
 

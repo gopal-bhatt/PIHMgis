@@ -40,9 +40,9 @@ void simplifyLineDialogDlg::addBrowse()
 	QString tolerance(toleranceEdit->text());
 	int count=0;
 	int index=0;
-	while(fileNames.find(';',index)!=-1){
+	while(fileNames.indexOf(';',index)!=-1){
         	count++;
-                index=fileNames.find(';',index)+1;
+                index=fileNames.indexOf(';',index)+1;
    	}
    	int row=inputOutputTable->numRows();
    	for(int i=0;i<count;i++){
@@ -96,7 +96,7 @@ void simplifyLineDialogDlg::run()
 {
 	QString logFileName("/tmp/log.html");
 	ofstream log;
-	log.open(logFileName.ascii());
+	log.open(qPrintable(logFileName));
 	log<<"<html><body><font size=3 color=black><p> Verifying Files...</p></font></body></html>";
         log.close();
         MessageLog->setSource(logFileName);
@@ -104,7 +104,7 @@ void simplifyLineDialogDlg::run()
         MessageLog->setModified(TRUE);
 	
 	if(inputOutputTable->numRows() < 1){
-		log.open(logFileName.ascii(), ios::app);
+		log.open(qPrintable(logFileName), ios::app);
 		log<<"<p><font size=3 color=red> First Please input Files</p>";
 		log.close();
 		MessageLog->reload();
@@ -128,27 +128,27 @@ void simplifyLineDialogDlg::run()
                 	dbfFileNameSimp.append("dbf");
 
 			ifstream in;
-	                in.open(shpFileName.ascii());
+	                in.open(qPrintable(shpFileName));
 			ofstream out;
-			out.open(shpFileNameSimp.ascii());
+			out.open(qPrintable(shpFileNameSimp));
 
 			int runFlag = 1;
-			log.open(logFileName.ascii(), ios::app);
-			log<<"<p>Checking... "<<shpFileName.ascii()<<"... ";
+			log.open(qPrintable(logFileName), ios::app);
+			log<<"<p>Checking... "<<qPrintable(shpFileName)<<"... ";
 			if(in == NULL){
 				log<<"<font size=3 color=red> Error!</p>";
 				runFlag = 0;
-				qWarning("\n %s doesn't exist!", shpFileName.ascii());
+				qWarning("\n %s doesn't exist!", qPrintable(shpFileName));
 			}
 			else
 				log<<"Done!</p>";
 
 
-			log<<"<p>Checking... "<<shpFileNameSimp.ascii()<<"... ";		
+			log<<"<p>Checking... "<<qPrintable(shpFileNameSimp)<<"... ";		
 			if(out == NULL){
 				log<<"<font size=3 color=red> Error!</p>";
 				runFlag = 0;
-				qWarning("\n %s doesn't exist!", shpFileNameSimp.ascii());
+				qWarning("\n %s doesn't exist!", qPrintable(shpFileNameSimp));
 			}
 			else
 				log<<"Done!</p>";
@@ -158,7 +158,7 @@ void simplifyLineDialogDlg::run()
 
 			if((inputOutputTable->text(i, 1)).length() == 0 || tol < 0){
 				runFlag = 0;
-				log.open(logFileName.ascii(), ios::app);
+				log.open(qPrintable(logFileName), ios::app);
 				log<<"<font size=3 color=red> Error! Please input a valid threshold value</p>";
 				log.close();
 				MessageLog->reload();
@@ -167,16 +167,16 @@ void simplifyLineDialogDlg::run()
 	
 			
 			if(runFlag == 1){
-				log.open(logFileName.ascii(), ios::app);
-				log<<"<p>Simplifying "<<shpFileName.ascii()<<" to "<<shpFileNameSimp.ascii()<<" using "<<tol<<" unit tolerance...";
+				log.open(qPrintable(logFileName), ios::app);
+				log<<"<p>Simplifying "<<qPrintable(shpFileName)<<" to "<<qPrintable(shpFileNameSimp)<<" using "<<tol<<" unit tolerance...";
 				log.close();
 				MessageLog->reload();
 				QApplication::processEvents();
 
-                		simplifyPolySHP(shpFileName.ascii(), dbfFileName.ascii(), shpFileNameSimp.ascii(), dbfFileNameSimp.ascii(), tol);
-                		qWarning("Simplifying %s to %s using %f\n", shpFileName.ascii(), shpFileNameSimp.ascii(), tol);
+                		simplifyPolySHP(qPrintable(shpFileName), qPrintable(dbfFileName), qPrintable(shpFileNameSimp), qPrintable(dbfFileNameSimp), tol);
+                		qWarning("Simplifying %s to %s using %f\n", qPrintable(shpFileName), qPrintable(shpFileNameSimp), tol);
 
-				log.open(logFileName.ascii(), ios::app);
+				log.open(qPrintable(logFileName), ios::app);
 				log<<" Done!</p>";
 				log.close();
 				MessageLog->reload();

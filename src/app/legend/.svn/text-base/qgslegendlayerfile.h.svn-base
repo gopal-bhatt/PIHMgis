@@ -1,6 +1,6 @@
 /***************************************************************************
- *   Copyright (C) 2005 by Tim Sutton   *
- *   aps02ts@macbuntu   *
+ *   Copyright (C) 2005 by Tim Sutton                                      *
+ *   aps02ts@macbuntu                                                      *
  *                                                                         *
  *   This program is free software; you can redistribute it and/or modify  *
  *   it under the terms of the GNU General Public License as published by  *
@@ -26,86 +26,70 @@
 #include "qgsmapcanvas.h"
 
 class QgsMapLayer;
-class QgsAttributeTableDisplay;
 
 /**
 @author Tim Sutton
 */
 class QgsLegendLayerFile : public QgsLegendItem
 {
-  Q_OBJECT;
-  
-public:
-    QgsLegendLayerFile(QTreeWidgetItem * theLegendItem, QString theString, QgsMapLayer* theLayer);
-    ~QgsLegendLayerFile();
+    Q_OBJECT
+
+  public:
+    QgsLegendLayerFile( QTreeWidgetItem * theLegendItem, QString theString, QgsMapLayer* theLayer );
+
     bool isLeafNode() {return true;}
-    DRAG_ACTION accept(LEGEND_ITEM_TYPE type);
-    QgsLegendItem::DRAG_ACTION accept(const QgsLegendItem* li) const;
+    DRAG_ACTION accept( LEGEND_ITEM_TYPE type );
+    QgsLegendItem::DRAG_ACTION accept( const QgsLegendItem* li ) const;
     QgsMapLayer* layer() { return mLyr.layer(); }
     const QgsMapLayer* layer() const { return mLyr.layer(); }
     QgsMapCanvasLayer& canvasLayer() { return mLyr; }
-    
+
     QPixmap getOriginalPixmap() const;
 
-    /** updates item to the current state of the layer */
-    void updateLegendItem();
-    
-    void setIconAppearance(bool inOverview, bool editable);
+    void setIconAppearance( bool isInOverview, bool editable );
 
     /**Returns a label for a layer. Is static such that
      the name can be passed to the constructor of QgsLegendLayerFile*/
-    static QString nameFromLayer(QgsMapLayer* layer);
-    
-    
-    void setVisible(bool visible = TRUE);
+    static QString nameFromLayer( QgsMapLayer* layer );
+
+    void setVisible( bool visible = TRUE );
     bool isVisible();
-    
-    void setInOverview(bool inOverview = TRUE);
+
+    void setInOverview( bool isInOverview = TRUE );
     bool isInOverview();
-    
+
     /** called to add appropriate menu items to legend's popup menu */
-    void addToPopupMenu(QMenu& theMenu, QAction* toggleEditingAction);
-    
+    void addToPopupMenu( QMenu& theMenu, QAction* toggleEditingAction );
+
   public slots:
-    
+    /** updates item to the current state of the layer */
+    void updateLegendItem();
+
     /**Open attribute table*/
     void table();
-    
-    /**Connected to deleted() signal of attribute table*/
-    void invalidateTableDisplay();
 
-    /**Connected to layer's selectionChanged() */
-    void selectionChanged();
-    
-    /**Connected to layer's wasModified() */
-    void closeTable(bool onlyGeometryWasChanged);
-    
     /**Save as shapefile*/
     void saveAsShapefile();
-    
+
     /**Save selection as shapefile*/
     void saveSelectionAsShapefile();
-    
-    /**Toggle editing for layer*/
-    void toggleEditing();
-    
+
+    /**Return editing status for layer*/
+    bool isEditing();
+
     /**Toggle show in overview*/
     void showInOverview();
-    
+
     /**Layer name has changed - set it also in legend*/
     void layerNameChanged();
-    
- protected:
+
+  protected:
 
     /**Save as shapefile (called from saveAsShapefile and saveSelectionAsShapefile)*/
-    void saveAsShapefileGeneral(bool saveOnlySelection);
+    void saveAsShapefileGeneral( bool saveOnlySelection );
 
     /** layer identified by its layer id */
     QgsMapCanvasLayer mLyr;
-   
-    /** Pointer to the table display object if there is one, otherwise NULL */
-    QgsAttributeTableDisplay* mTableDisplay;
-
 };
 
 #endif

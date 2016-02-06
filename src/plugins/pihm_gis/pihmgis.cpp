@@ -33,7 +33,7 @@
 #include <QMenu>
 #include <QAction>
 #include <QToolBar>
-
+#include <QThread>
 #include "RasterProcessing/FillPits/fillpits.h"
 #include "RasterProcessing/FlowGrid/flowgrid.h"
 #include "RasterProcessing/StreamGrid/streamgrid.h"
@@ -57,7 +57,7 @@
 #include "DataModelLoader/Parafile/parafile.h"
 
 #include "RunPIHM/runpihm.h"
-
+//#include "MyNewThread.h"
 #include "Analysis/SpatialPlot/spatialplot.h"
 #include "Analysis/TimeSeries/timeseries.h"
 
@@ -137,7 +137,7 @@ void PIHMgis::initGui()
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
   QMenu* vectMenu = new QMenu("&Vector-Processing");//, mQGisIface->app());
-  vectMenu->addAction( "Run All", this, SLOT(runShpFileInput()));
+  vectMenu->addAction( "Run All", this, SLOT(runDoNothing()));
   vectMenu->addSeparator();
   //vectMenu->addAction( "Input Files", this, SLOT(runShpFileInput()));
   vectMenu->addAction( "Polygon To Line", this, SLOT(runPolygonToPolyline()));
@@ -221,7 +221,7 @@ void PIHMgis::help()
 // not be enough
 void PIHMgis::run()
 {
-  PIHMgisGui *myPluginGui=new PIHMgisGui(mQGisIface->getMainWindow(), QgisGui::ModalDialogFlags);
+  PIHMgisGui *myPluginGui=new PIHMgisGui(mQGisIface->mainWindow(), QgisGui::ModalDialogFlags);
   myPluginGui->setAttribute(Qt::WA_DeleteOnClose);
   myPluginGui->show();
 }
@@ -230,57 +230,57 @@ void PIHMgis::run()
 void PIHMgis::unload()
 {
   // remove the GUI
-  mQGisIface->removePluginMenu("&PIHMgis",mQActionPointer);
-  mQGisIface->removeToolBarIcon(mQActionPointer);
-  delete mQActionPointer;
+  //mQGisIface->removePluginMenu("&PIHMgis",mQActionPointer);
+  //mQGisIface->removeToolBarIcon(mQActionPointer);
+  //delete mQActionPointer;
 }
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 void PIHMgis::runFillPits(){
         fillpitsDlg* Dlg = new fillpitsDlg; //(NULL,NULL,TRUE,0); //,"/opt3/helpDialog/poly.html","Help Caption");
-        //Dlg->setApplicationPointer(mQGisIface->app());
+        Dlg->setApplicationPointer(mQGisIface);//->app());
         //??Dlg->setApplicationPointer(mQGisApp);
         Dlg->show();
 }
 
 void PIHMgis::runFlowGrid(){
         FlowGridDlg* Dlg = new FlowGridDlg; //(NULL,NULL,TRUE,0); //,"/opt3/helpDialog/poly.html","Help Caption");
-        //Dlg->setApplicationPointer(mQGisIface->app());
+        Dlg->setApplicationPointer(mQGisIface);//->app());
         //??Dlg->setApplicationPointer(mQGisApp);
         Dlg->show();
 }
 
 void PIHMgis::runStreamGrid(){
         StreamGridDlg* Dlg = new StreamGridDlg; //(NULL,NULL,TRUE,0); //,"/opt3/helpDialog/poly.html","Help Caption");
-        //Dlg->setApplicationPointer(mQGisIface->app());
+        Dlg->setApplicationPointer(mQGisIface);//->app());
         //??Dlg->setApplicationPointer(mQGisApp);
         Dlg->show();
 } 
 
 void PIHMgis::runLinkGrid(){
         LinkGridDlg* Dlg = new LinkGridDlg; //(NULL,NULL,TRUE,0); //,"/opt3/helpDialog/poly.html","Help Caption");
-        //Dlg->setApplicationPointer(mQGisIface->app());
+        Dlg->setApplicationPointer(mQGisIface);//->app());
 //??        Dlg->setApplicationPointer(mQGisApp);
         Dlg->show();
 }
 
 void PIHMgis::runStreamPolyLine(){
         StreamPolyLineDlg* Dlg = new StreamPolyLineDlg; //(NULL,NULL,TRUE,0); //,"/opt3/helpDialog/poly.html","Help Caption");
-        //Dlg->setApplicationPointer(mQGisIface->app());
+        Dlg->setApplicationPointer(mQGisIface);//->app());
 //??        Dlg->setApplicationPointer(mQGisApp);
         Dlg->show();
 }
 
 void PIHMgis::runCatchmentGrid(){
         CatchmentGridDlg* Dlg = new CatchmentGridDlg; //(NULL,NULL,TRUE,0); //,"/opt3/helpDialog/poly.html","Help Caption");
-        //Dlg->setApplicationPointer(mQGisIface->app());
+        Dlg->setApplicationPointer(mQGisIface);//->app());
 //??        Dlg->setApplicationPointer(mQGisApp);
         Dlg->show();
 }
 
 void PIHMgis::runCatchmentPolygon(){
         CatchmentPolygonDlg* Dlg = new CatchmentPolygonDlg; //(NULL,NULL,TRUE,0); //,"/opt3/helpDialog/poly.html","Help Caption");
-        //Dlg->setApplicationPointer(mQGisIface->app());
+        Dlg->setApplicationPointer(mQGisIface);//->app());
 //??        Dlg->setApplicationPointer(mQGisApp);
         Dlg->show();
 }
@@ -353,6 +353,8 @@ void PIHMgis::runParaFile(){
 void PIHMgis::runPIHM(){
         runPIHMDlg* Dlg = new runPIHMDlg;
         Dlg->show();
+	//MyNewThread* thread = new MyNewThread;
+	//thread->start();
 }
 
 void PIHMgis::runSpatialPlots(){
@@ -362,8 +364,8 @@ void PIHMgis::runSpatialPlots(){
 }
 
 void PIHMgis::runTimeSeriesPlots(){
-      //timeSeriesDlg *Dlg = new timeSeriesDlg;
-      //Dlg->show();
+      timeSeriesDlg *Dlg = new timeSeriesDlg;
+      Dlg->show();
 }
 
 void PIHMgis::runAbout(){

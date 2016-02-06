@@ -14,21 +14,21 @@
  *   (at your option) any later version.                                   *
  *                                                                         *
  ***************************************************************************/
- /* $Id: qgsmaptopixel.cpp 6655 2007-02-22 11:45:34Z wonder $ */
-#include <qstring.h>
-#include <qtextstream.h>
-#include <qpoint.h>
+/* $Id: qgsmaptopixel.cpp 9177 2008-08-26 20:47:53Z ersts $ */
 #include "qgsmaptopixel.h"
+#include <QPoint>
+#include <QTextStream>
+#include "qgslogger.h"
 
-QgsMapToPixel::QgsMapToPixel(double mupp, 
-				    double ymax,
-				    double ymin, 
-				    double xmin)
-  : mMapUnitsPerPixel(mupp), 
-     yMax(ymax), 
-     yMin(ymin), 
-     xMin(xmin),
-     xMax(0)                   // XXX wasn't originally specified?  Why?
+QgsMapToPixel::QgsMapToPixel( double mapUnitsPerPixel,
+                              double ymax,
+                              double ymin,
+                              double xmin )
+    : mMapUnitsPerPixel( mapUnitsPerPixel ),
+    yMax( ymax ),
+    yMin( ymin ),
+    xMin( xmin ),
+    xMax( 0 )                 // XXX wasn't originally specified?  Why?
 {
 }
 
@@ -36,52 +36,52 @@ QgsMapToPixel::~QgsMapToPixel()
 {
 }
 
-QgsPoint QgsMapToPixel::toMapPoint(int x, int y)
+QgsPoint QgsMapToPixel::toMapPoint( int x, int y ) const
 {
   double mx = x * mMapUnitsPerPixel + xMin;
-  double my = -1 * ((y - yMax) * mMapUnitsPerPixel - yMin);
-  return QgsPoint(mx, my);
+  double my = -1 * (( y - yMax ) * mMapUnitsPerPixel - yMin );
+  return QgsPoint( mx, my );
 }
 
-QgsPoint QgsMapToPixel::toMapCoordinates(QPoint p)
+QgsPoint QgsMapToPixel::toMapCoordinates( QPoint p ) const
 {
-  QgsPoint mapPt = toMapPoint(p.x(), p.y());
-  return QgsPoint(mapPt);
+  QgsPoint mapPt = toMapPoint( p.x(), p.y() );
+  return QgsPoint( mapPt );
 }
 
-QgsPoint QgsMapToPixel::toMapCoordinates(int x, int y)
+QgsPoint QgsMapToPixel::toMapCoordinates( int x, int y ) const
 {
-  return toMapPoint(x, y);
+  return toMapPoint( x, y );
 }
 
-void QgsMapToPixel::setMapUnitsPerPixel(double mupp)
+void QgsMapToPixel::setMapUnitsPerPixel( double mapUnitsPerPixel )
 {
-  mMapUnitsPerPixel = mupp;
+  mMapUnitsPerPixel = mapUnitsPerPixel;
 }
 
-double QgsMapToPixel::mapUnitsPerPixel()
+double QgsMapToPixel::mapUnitsPerPixel() const
 {
   return mMapUnitsPerPixel;
 }
 
-void QgsMapToPixel::setYmax(double ymax)
+void QgsMapToPixel::setYMaximum( double ymax )
 {
   yMax = ymax;
 }
 
-void QgsMapToPixel::setYmin(double ymin)
+void QgsMapToPixel::setYMinimum( double ymin )
 {
   yMin = ymin;
 }
 
-void QgsMapToPixel::setXmin(double xmin)
+void QgsMapToPixel::setXMinimum( double xmin )
 {
   xMin = xmin;
 }
 
-void QgsMapToPixel::setParameters(double mupp, double xmin, double ymin, double ymax)
+void QgsMapToPixel::setParameters( double mapUnitsPerPixel, double xmin, double ymin, double ymax )
 {
-  mMapUnitsPerPixel = mupp;
+  mMapUnitsPerPixel = mapUnitsPerPixel;
   xMin = xmin;
   yMin = ymin;
   yMax = ymax;
@@ -91,51 +91,51 @@ void QgsMapToPixel::setParameters(double mupp, double xmin, double ymin, double 
 QString QgsMapToPixel::showParameters()
 {
   QString rep;
-  QTextOStream(&rep) << "Map units/pixel: " << mMapUnitsPerPixel
-    << " X minimum: " << xMin << " Y minimum: " << yMin << " Y maximum: " << yMax;
+  QTextStream( &rep ) << "Map units/pixel: " << mMapUnitsPerPixel
+  << " X minimum: " << xMin << " Y minimum: " << yMin << " Y maximum: " << yMax;
   return rep;
 
 }
 
 
-QgsPoint QgsMapToPixel::transform(double x, double y)
+QgsPoint QgsMapToPixel::transform( double x, double y ) const
 {
-  transformInPlace(x,y);
-  return QgsPoint(x,y);
+  transformInPlace( x, y );
+  return QgsPoint( x, y );
 }
 
-QgsPoint QgsMapToPixel::transform(const QgsPoint& p)
+QgsPoint QgsMapToPixel::transform( const QgsPoint& p ) const
 {
   double dx = p.x();
   double dy = p.y();
-  transformInPlace(dx, dy);
+  transformInPlace( dx, dy );
 
-  //std::cerr << "Point to pixel...X : " << p.x() << "-->" << dx << ", Y: " << p.y() << " -->" << dy << std::endl;
-  return QgsPoint(dx, dy);
+// QgsDebugMsg(QString("Point to pixel...X : %1-->%2, Y: %3 -->%4").arg(p.x()).arg(dx).arg(p.y()).arg(dy));
+  return QgsPoint( dx, dy );
 }
 
-void QgsMapToPixel::transform(QgsPoint* p)
-{   
+void QgsMapToPixel::transform( QgsPoint* p ) const
+{
   double x = p->x();
   double y = p->y();
-  transformInPlace(x, y);
+  transformInPlace( x, y );
 
-#ifdef QGISDEBUG 
-    //std::cerr << "Point to pixel...X : " << p->x() << "-->" << x << ", Y: " << p->y() << " -->" << y << std::endl;
-#endif     
-  p->set(x,y);
+#ifdef QGISDEBUG
+// QgsDebugMsg(QString("Point to pixel...X : %1-->%2, Y: %3 -->%4").arg(p->x()).arg(x).arg(p->y()).arg(y));
+#endif
+  p->set( x, y );
 }
 
-void QgsMapToPixel::transformInPlace(double& x, double& y)
+void QgsMapToPixel::transformInPlace( double& x, double& y ) const
 {
-  x = (x - xMin) / mMapUnitsPerPixel;
-  y = yMax - (y - yMin) / mMapUnitsPerPixel;
+  x = ( x - xMin ) / mMapUnitsPerPixel;
+  y = yMax - ( y - yMin ) / mMapUnitsPerPixel;
 }
 
-void QgsMapToPixel::transformInPlace(std::vector<double>& x, 
-					    std::vector<double>& y)
+void QgsMapToPixel::transformInPlace( std::vector<double>& x,
+                                      std::vector<double>& y ) const
 {
-  assert(x.size() == y.size());
-  for (unsigned int i = 0; i < x.size(); ++i)
-    transformInPlace(x[i], y[i]);
+  assert( x.size() == y.size() );
+  for ( unsigned int i = 0; i < x.size(); ++i )
+    transformInPlace( x[i], y[i] );
 }

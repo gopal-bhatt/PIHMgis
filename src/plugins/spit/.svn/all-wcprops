@@ -1,149 +1,113 @@
 K 25
 svn:wc:ra_dav:version-url
-V 65
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/spit
+V 60
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/spit
 END
 qgsspit.h
 K 25
 svn:wc:ra_dav:version-url
-V 75
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/spit/qgsspit.h
-END
-qgsconnectiondialog.h
-K 25
-svn:wc:ra_dav:version-url
-V 87
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/spit/qgsconnectiondialog.h
-END
-qgseditreservedwordsdialog.cpp
-K 25
-svn:wc:ra_dav:version-url
-V 96
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/spit/qgseditreservedwordsdialog.cpp
-END
-qgseditreservedwordsdialog.h
-K 25
-svn:wc:ra_dav:version-url
-V 94
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/spit/qgseditreservedwordsdialog.h
-END
-qgseditreservedwordsbase.ui
-K 25
-svn:wc:ra_dav:version-url
-V 93
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/spit/qgseditreservedwordsbase.ui
+V 70
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/spit/qgsspit.h
 END
 qgsdbfbase.h
 K 25
 svn:wc:ra_dav:version-url
-V 78
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/spit/qgsdbfbase.h
-END
-qgsspitplugin.cpp
-K 25
-svn:wc:ra_dav:version-url
-V 83
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/spit/qgsspitplugin.cpp
+V 73
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/spit/qgsdbfbase.h
 END
 icon_spit.xpm
 K 25
 svn:wc:ra_dav:version-url
-V 79
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/spit/icon_spit.xpm
+V 74
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/spit/icon_spit.xpm
+END
+qgsspitplugin.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/spit/qgsspitplugin.cpp
 END
 spiticon.xpm
 K 25
 svn:wc:ra_dav:version-url
-V 78
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/spit/spiticon.xpm
+V 73
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/spit/spiticon.xpm
 END
 qgsshapefile.cpp
 K 25
 svn:wc:ra_dav:version-url
-V 82
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/spit/qgsshapefile.cpp
+V 77
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/spit/qgsshapefile.cpp
 END
 qgsspitplugin.h
 K 25
 svn:wc:ra_dav:version-url
-V 81
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/spit/qgsspitplugin.h
+V 76
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/spit/qgsspitplugin.h
 END
 spit_icons.h
 K 25
 svn:wc:ra_dav:version-url
-V 78
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/spit/spit_icons.h
+V 73
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/spit/spit_icons.h
 END
 qgspgutil.cpp
 K 25
 svn:wc:ra_dav:version-url
-V 79
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/spit/qgspgutil.cpp
-END
-qgsspitbase.ui
-K 25
-svn:wc:ra_dav:version-url
-V 80
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/spit/qgsspitbase.ui
-END
-qgsconnectiondialogbase.ui
-K 25
-svn:wc:ra_dav:version-url
-V 92
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/spit/qgsconnectiondialogbase.ui
+V 74
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/spit/qgspgutil.cpp
 END
 qgsshapefile.h
 K 25
 svn:wc:ra_dav:version-url
-V 80
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/spit/qgsshapefile.h
+V 75
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/spit/qgsshapefile.h
+END
+qgsspitbase.ui
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/spit/qgsspitbase.ui
 END
 spit.png
 K 25
 svn:wc:ra_dav:version-url
-V 74
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/spit/spit.png
+V 69
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/spit/spit.png
 END
 spit.qrc
 K 25
 svn:wc:ra_dav:version-url
-V 74
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/spit/spit.qrc
-END
-qgspgutil.h
-K 25
-svn:wc:ra_dav:version-url
-V 77
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/spit/qgspgutil.h
+V 69
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/spit/spit.qrc
 END
 main.cpp
 K 25
 svn:wc:ra_dav:version-url
-V 74
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/spit/main.cpp
+V 69
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/spit/main.cpp
+END
+qgspgutil.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/spit/qgspgutil.h
 END
 qgsspit.cpp
 K 25
 svn:wc:ra_dav:version-url
-V 77
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/spit/qgsspit.cpp
-END
-qgsconnectiondialog.cpp
-K 25
-svn:wc:ra_dav:version-url
-V 89
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/spit/qgsconnectiondialog.cpp
+V 72
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/spit/qgsspit.cpp
 END
 CMakeLists.txt
 K 25
 svn:wc:ra_dav:version-url
-V 80
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/spit/CMakeLists.txt
+V 75
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/spit/CMakeLists.txt
 END
 .cvsignore
 K 25
 svn:wc:ra_dav:version-url
-V 76
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/spit/.cvsignore
+V 71
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/spit/.cvsignore
 END

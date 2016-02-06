@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading ui file 'pluginguibase.ui'
 **
-** Created: Wed Jun 11 19:10:19 2008
+** Created: Fri Jun 19 01:59:25 2009
 **      by: Qt User Interface Compiler version 4.3.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling ui file!

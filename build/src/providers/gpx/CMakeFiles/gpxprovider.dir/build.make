@@ -31,10 +31,10 @@ RM = /usr/bin/cmake -E remove -f
 CMAKE_EDIT_COMMAND = /usr/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0
+CMAKE_SOURCE_DIR = /Users/bhattgopal/dev/cpp/qgis_1.0.2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build
+CMAKE_BINARY_DIR = /Users/bhattgopal/dev/cpp/qgis_1.0.2/build
 
 # Include any dependencies generated for this target.
 include src/providers/gpx/CMakeFiles/gpxprovider.dir/depend.make
@@ -50,17 +50,17 @@ src/providers/gpx/CMakeFiles/gpxprovider.dir/depend.make.mark: ../src/providers/
 
 src/providers/gpx/CMakeFiles/gpxprovider.dir/qgsgpxprovider.o: src/providers/gpx/CMakeFiles/gpxprovider.dir/flags.make
 src/providers/gpx/CMakeFiles/gpxprovider.dir/qgsgpxprovider.o: ../src/providers/gpx/qgsgpxprovider.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/providers/gpx/CMakeFiles/gpxprovider.dir/qgsgpxprovider.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/providers/gpx/CMakeFiles/gpxprovider.dir/qgsgpxprovider.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/providers/gpx/qgsgpxprovider.cpp
+	/usr/bin/c++   $(CXX_FLAGS) -o src/providers/gpx/CMakeFiles/gpxprovider.dir/qgsgpxprovider.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/providers/gpx/qgsgpxprovider.cpp
 
 src/providers/gpx/CMakeFiles/gpxprovider.dir/qgsgpxprovider.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/providers/gpx/CMakeFiles/gpxprovider.dir/qgsgpxprovider.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/providers/gpx/qgsgpxprovider.cpp > src/providers/gpx/CMakeFiles/gpxprovider.dir/qgsgpxprovider.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/providers/gpx/qgsgpxprovider.cpp > src/providers/gpx/CMakeFiles/gpxprovider.dir/qgsgpxprovider.i
 
 src/providers/gpx/CMakeFiles/gpxprovider.dir/qgsgpxprovider.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/providers/gpx/CMakeFiles/gpxprovider.dir/qgsgpxprovider.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/providers/gpx/qgsgpxprovider.cpp -o src/providers/gpx/CMakeFiles/gpxprovider.dir/qgsgpxprovider.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/providers/gpx/qgsgpxprovider.cpp -o src/providers/gpx/CMakeFiles/gpxprovider.dir/qgsgpxprovider.s
 
 src/providers/gpx/CMakeFiles/gpxprovider.dir/qgsgpxprovider.o.requires:
 
@@ -74,17 +74,17 @@ src/providers/gpx/CMakeFiles/gpxprovider.dir/depend.make.mark: ../src/providers/
 
 src/providers/gpx/CMakeFiles/gpxprovider.dir/gpsdata.o: src/providers/gpx/CMakeFiles/gpxprovider.dir/flags.make
 src/providers/gpx/CMakeFiles/gpxprovider.dir/gpsdata.o: ../src/providers/gpx/gpsdata.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/providers/gpx/CMakeFiles/gpxprovider.dir/gpsdata.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/providers/gpx/CMakeFiles/gpxprovider.dir/gpsdata.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/providers/gpx/gpsdata.cpp
+	/usr/bin/c++   $(CXX_FLAGS) -o src/providers/gpx/CMakeFiles/gpxprovider.dir/gpsdata.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/providers/gpx/gpsdata.cpp
 
 src/providers/gpx/CMakeFiles/gpxprovider.dir/gpsdata.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/providers/gpx/CMakeFiles/gpxprovider.dir/gpsdata.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/providers/gpx/gpsdata.cpp > src/providers/gpx/CMakeFiles/gpxprovider.dir/gpsdata.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/providers/gpx/gpsdata.cpp > src/providers/gpx/CMakeFiles/gpxprovider.dir/gpsdata.i
 
 src/providers/gpx/CMakeFiles/gpxprovider.dir/gpsdata.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/providers/gpx/CMakeFiles/gpxprovider.dir/gpsdata.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/providers/gpx/gpsdata.cpp -o src/providers/gpx/CMakeFiles/gpxprovider.dir/gpsdata.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/providers/gpx/gpsdata.cpp -o src/providers/gpx/CMakeFiles/gpxprovider.dir/gpsdata.s
 
 src/providers/gpx/CMakeFiles/gpxprovider.dir/gpsdata.o.requires:
 
@@ -93,47 +93,76 @@ src/providers/gpx/CMakeFiles/gpxprovider.dir/gpsdata.o.provides: src/providers/g
 
 src/providers/gpx/CMakeFiles/gpxprovider.dir/gpsdata.o.provides.build: src/providers/gpx/CMakeFiles/gpxprovider.dir/gpsdata.o
 
+src/providers/gpx/CMakeFiles/gpxprovider.dir/depend.make.mark: src/providers/gpx/CMakeFiles/gpxprovider.dir/flags.make
+src/providers/gpx/CMakeFiles/gpxprovider.dir/depend.make.mark: src/providers/gpx/moc_qgsgpxprovider.cxx
+
+src/providers/gpx/CMakeFiles/gpxprovider.dir/moc_qgsgpxprovider.o: src/providers/gpx/CMakeFiles/gpxprovider.dir/flags.make
+src/providers/gpx/CMakeFiles/gpxprovider.dir/moc_qgsgpxprovider.o: src/providers/gpx/moc_qgsgpxprovider.cxx
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_3)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/providers/gpx/CMakeFiles/gpxprovider.dir/moc_qgsgpxprovider.o"
+	/usr/bin/c++   $(CXX_FLAGS) -o src/providers/gpx/CMakeFiles/gpxprovider.dir/moc_qgsgpxprovider.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/providers/gpx/moc_qgsgpxprovider.cxx
+
+src/providers/gpx/CMakeFiles/gpxprovider.dir/moc_qgsgpxprovider.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/providers/gpx/CMakeFiles/gpxprovider.dir/moc_qgsgpxprovider.i"
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/providers/gpx/moc_qgsgpxprovider.cxx > src/providers/gpx/CMakeFiles/gpxprovider.dir/moc_qgsgpxprovider.i
+
+src/providers/gpx/CMakeFiles/gpxprovider.dir/moc_qgsgpxprovider.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/providers/gpx/CMakeFiles/gpxprovider.dir/moc_qgsgpxprovider.s"
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/providers/gpx/moc_qgsgpxprovider.cxx -o src/providers/gpx/CMakeFiles/gpxprovider.dir/moc_qgsgpxprovider.s
+
+src/providers/gpx/CMakeFiles/gpxprovider.dir/moc_qgsgpxprovider.o.requires:
+
+src/providers/gpx/CMakeFiles/gpxprovider.dir/moc_qgsgpxprovider.o.provides: src/providers/gpx/CMakeFiles/gpxprovider.dir/moc_qgsgpxprovider.o.requires
+	$(MAKE) -f src/providers/gpx/CMakeFiles/gpxprovider.dir/build.make src/providers/gpx/CMakeFiles/gpxprovider.dir/moc_qgsgpxprovider.o.provides.build
+
+src/providers/gpx/CMakeFiles/gpxprovider.dir/moc_qgsgpxprovider.o.provides.build: src/providers/gpx/CMakeFiles/gpxprovider.dir/moc_qgsgpxprovider.o
+
+src/providers/gpx/moc_qgsgpxprovider.cxx: ../src/providers/gpx/qgsgpxprovider.h
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_4)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating moc_qgsgpxprovider.cxx"
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/providers/gpx && /Developer/Tools/Qt/moc -I /usr/include -I /Library/Frameworks/Qt3Support.framework/Headers -I /Library/Frameworks/QtSvg.framework/Headers -I /Library/Frameworks/QtGui.framework/Headers -I /Library/Frameworks/QtXml.framework/Headers -I /Library/Frameworks/QtSql.framework/Headers -I /Library/Frameworks/QtNetwork.framework/Headers -I /Library/Frameworks/QtCore.framework/Headers -I /Users/bhattgopal/dev/cpp/qgis_1.0.2/build -I /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/providers/gpx/../../core -I /Library/Frameworks/GEOS.framework/Headers -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/providers/gpx/moc_qgsgpxprovider.cxx /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/providers/gpx/qgsgpxprovider.h
+
 src/providers/gpx/CMakeFiles/gpxprovider.dir/depend: src/providers/gpx/CMakeFiles/gpxprovider.dir/depend.make.mark
 
-src/providers/gpx/CMakeFiles/gpxprovider.dir/depend.make.mark:
+src/providers/gpx/CMakeFiles/gpxprovider.dir/depend.make.mark: src/providers/gpx/moc_qgsgpxprovider.cxx
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --magenta --bold "Scanning dependencies of target gpxprovider"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0 /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/providers/gpx /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/providers/gpx /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/providers/gpx/CMakeFiles/gpxprovider.dir/DependInfo.cmake
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/bhattgopal/dev/cpp/qgis_1.0.2 /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/providers/gpx /Users/bhattgopal/dev/cpp/qgis_1.0.2/build /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/providers/gpx /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/providers/gpx/CMakeFiles/gpxprovider.dir/DependInfo.cmake
 
 # Object files for target gpxprovider
 gpxprovider_OBJECTS = \
 "CMakeFiles/gpxprovider.dir/qgsgpxprovider.o" \
-"CMakeFiles/gpxprovider.dir/gpsdata.o"
+"CMakeFiles/gpxprovider.dir/gpsdata.o" \
+"CMakeFiles/gpxprovider.dir/moc_qgsgpxprovider.o"
 
 # External object files for target gpxprovider
 gpxprovider_EXTERNAL_OBJECTS =
 
 src/providers/gpx/libgpxprovider.so: src/providers/gpx/CMakeFiles/gpxprovider.dir/qgsgpxprovider.o
 src/providers/gpx/libgpxprovider.so: src/providers/gpx/CMakeFiles/gpxprovider.dir/gpsdata.o
-src/providers/gpx/libgpxprovider.so: /Library/Frameworks/Qt3Support.framework
-src/providers/gpx/libgpxprovider.so: /Library/Frameworks/QtSvg.framework
-src/providers/gpx/libgpxprovider.so: /Library/Frameworks/QtGui.framework
-src/providers/gpx/libgpxprovider.so: /Library/Frameworks/QtXml.framework
-src/providers/gpx/libgpxprovider.so: /Library/Frameworks/QtSql.framework
-src/providers/gpx/libgpxprovider.so: /Library/Frameworks/QtNetwork.framework
+src/providers/gpx/libgpxprovider.so: src/providers/gpx/CMakeFiles/gpxprovider.dir/moc_qgsgpxprovider.o
 src/providers/gpx/libgpxprovider.so: /Library/Frameworks/QtCore.framework
-src/providers/gpx/libgpxprovider.so: /usr/lib/libz.dylib
-src/providers/gpx/libgpxprovider.so: /Library/Frameworks/geos.framework
+src/providers/gpx/libgpxprovider.so: /Library/Frameworks/QtXml.framework
+src/providers/gpx/libgpxprovider.so: /Library/Frameworks/GEOS.framework/unix/lib/libgeos_c.dylib
 src/providers/gpx/libgpxprovider.so: /usr/lib/libexpat.dylib
 src/providers/gpx/libgpxprovider.so: src/core/libqgis_core.dylib
+src/providers/gpx/libgpxprovider.so: /Library/Frameworks/QtGui.framework
+src/providers/gpx/libgpxprovider.so: /Library/Frameworks/QtSvg.framework
+src/providers/gpx/libgpxprovider.so: /Library/Frameworks/QtNetwork.framework
 src/providers/gpx/libgpxprovider.so: /Library/Frameworks/proj.framework
-src/providers/gpx/libgpxprovider.so: /Library/Frameworks/sqlite3.framework
 src/providers/gpx/libgpxprovider.so: /Library/Frameworks/GDAL.framework/Versions/1.5/unix/lib/libgdal.dylib
+src/providers/gpx/libgpxprovider.so: /Library/Frameworks/sqlite3.framework
 src/providers/gpx/libgpxprovider.so: src/providers/gpx/CMakeFiles/gpxprovider.dir/build.make
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX shared module libgpxprovider.so"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/providers/gpx && $(CMAKE_COMMAND) -P CMakeFiles/gpxprovider.dir/cmake_clean_target.cmake
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/providers/gpx && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gpxprovider.dir/link.txt --verbose=$(VERBOSE)
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/providers/gpx && $(CMAKE_COMMAND) -P CMakeFiles/gpxprovider.dir/cmake_clean_target.cmake
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/providers/gpx && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gpxprovider.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 src/providers/gpx/CMakeFiles/gpxprovider.dir/build: src/providers/gpx/libgpxprovider.so
 
 src/providers/gpx/CMakeFiles/gpxprovider.dir/requires: src/providers/gpx/CMakeFiles/gpxprovider.dir/qgsgpxprovider.o.requires
 src/providers/gpx/CMakeFiles/gpxprovider.dir/requires: src/providers/gpx/CMakeFiles/gpxprovider.dir/gpsdata.o.requires
+src/providers/gpx/CMakeFiles/gpxprovider.dir/requires: src/providers/gpx/CMakeFiles/gpxprovider.dir/moc_qgsgpxprovider.o.requires
 
 src/providers/gpx/CMakeFiles/gpxprovider.dir/clean:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/providers/gpx && $(CMAKE_COMMAND) -P CMakeFiles/gpxprovider.dir/cmake_clean.cmake
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/providers/gpx && $(CMAKE_COMMAND) -P CMakeFiles/gpxprovider.dir/cmake_clean.cmake
 

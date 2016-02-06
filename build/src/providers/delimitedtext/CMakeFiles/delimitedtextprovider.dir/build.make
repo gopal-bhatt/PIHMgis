@@ -31,10 +31,10 @@ RM = /usr/bin/cmake -E remove -f
 CMAKE_EDIT_COMMAND = /usr/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0
+CMAKE_SOURCE_DIR = /Users/bhattgopal/dev/cpp/qgis_1.0.2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build
+CMAKE_BINARY_DIR = /Users/bhattgopal/dev/cpp/qgis_1.0.2/build
 
 # Include any dependencies generated for this target.
 include src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/depend.make
@@ -50,17 +50,17 @@ src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/depend.make.mar
 
 src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/qgsdelimitedtextprovider.o: src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/flags.make
 src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/qgsdelimitedtextprovider.o: ../src/providers/delimitedtext/qgsdelimitedtextprovider.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/qgsdelimitedtextprovider.o"
-	/usr/bin/c++   $(CXX_FLAGS) -o src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/qgsdelimitedtextprovider.o -c /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/providers/delimitedtext/qgsdelimitedtextprovider.cpp
+	/usr/bin/c++   $(CXX_FLAGS) -o src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/qgsdelimitedtextprovider.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/providers/delimitedtext/qgsdelimitedtextprovider.cpp
 
 src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/qgsdelimitedtextprovider.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/qgsdelimitedtextprovider.i"
-	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/providers/delimitedtext/qgsdelimitedtextprovider.cpp > src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/qgsdelimitedtextprovider.i
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/providers/delimitedtext/qgsdelimitedtextprovider.cpp > src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/qgsdelimitedtextprovider.i
 
 src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/qgsdelimitedtextprovider.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/qgsdelimitedtextprovider.s"
-	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/providers/delimitedtext/qgsdelimitedtextprovider.cpp -o src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/qgsdelimitedtextprovider.s
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/providers/delimitedtext/qgsdelimitedtextprovider.cpp -o src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/qgsdelimitedtextprovider.s
 
 src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/qgsdelimitedtextprovider.o.requires:
 
@@ -69,43 +69,72 @@ src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/qgsdelimitedtex
 
 src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/qgsdelimitedtextprovider.o.provides.build: src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/qgsdelimitedtextprovider.o
 
+src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/depend.make.mark: src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/flags.make
+src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/depend.make.mark: src/providers/delimitedtext/moc_qgsdelimitedtextprovider.cxx
+
+src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/moc_qgsdelimitedtextprovider.o: src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/flags.make
+src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/moc_qgsdelimitedtextprovider.o: src/providers/delimitedtext/moc_qgsdelimitedtextprovider.cxx
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/moc_qgsdelimitedtextprovider.o"
+	/usr/bin/c++   $(CXX_FLAGS) -o src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/moc_qgsdelimitedtextprovider.o -c /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/providers/delimitedtext/moc_qgsdelimitedtextprovider.cxx
+
+src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/moc_qgsdelimitedtextprovider.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/moc_qgsdelimitedtextprovider.i"
+	/usr/bin/c++  $(CXX_FLAGS) -E /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/providers/delimitedtext/moc_qgsdelimitedtextprovider.cxx > src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/moc_qgsdelimitedtextprovider.i
+
+src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/moc_qgsdelimitedtextprovider.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/moc_qgsdelimitedtextprovider.s"
+	/usr/bin/c++  $(CXX_FLAGS) -S /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/providers/delimitedtext/moc_qgsdelimitedtextprovider.cxx -o src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/moc_qgsdelimitedtextprovider.s
+
+src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/moc_qgsdelimitedtextprovider.o.requires:
+
+src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/moc_qgsdelimitedtextprovider.o.provides: src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/moc_qgsdelimitedtextprovider.o.requires
+	$(MAKE) -f src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/build.make src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/moc_qgsdelimitedtextprovider.o.provides.build
+
+src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/moc_qgsdelimitedtextprovider.o.provides.build: src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/moc_qgsdelimitedtextprovider.o
+
+src/providers/delimitedtext/moc_qgsdelimitedtextprovider.cxx: ../src/providers/delimitedtext/qgsdelimitedtextprovider.h
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_PROGRESS_3)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating moc_qgsdelimitedtextprovider.cxx"
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/providers/delimitedtext && /Developer/Tools/Qt/moc -I /usr/include -I /Library/Frameworks/Qt3Support.framework/Headers -I /Library/Frameworks/QtSvg.framework/Headers -I /Library/Frameworks/QtGui.framework/Headers -I /Library/Frameworks/QtXml.framework/Headers -I /Library/Frameworks/QtSql.framework/Headers -I /Library/Frameworks/QtNetwork.framework/Headers -I /Library/Frameworks/QtCore.framework/Headers -I /Users/bhattgopal/dev/cpp/qgis_1.0.2/build -I /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/providers/delimitedtext/. -I /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/providers/delimitedtext/../../core -I /Library/Frameworks/GDAL.framework/Headers -I /Library/Frameworks/GEOS.framework/Headers -o /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/providers/delimitedtext/moc_qgsdelimitedtextprovider.cxx /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/providers/delimitedtext/qgsdelimitedtextprovider.h
+
 src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/depend: src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/depend.make.mark
 
-src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/depend.make.mark:
+src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/depend.make.mark: src/providers/delimitedtext/moc_qgsdelimitedtextprovider.cxx
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --magenta --bold "Scanning dependencies of target delimitedtextprovider"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0 /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/providers/delimitedtext /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/providers/delimitedtext /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/DependInfo.cmake
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/bhattgopal/dev/cpp/qgis_1.0.2 /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/providers/delimitedtext /Users/bhattgopal/dev/cpp/qgis_1.0.2/build /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/providers/delimitedtext /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/DependInfo.cmake
 
 # Object files for target delimitedtextprovider
 delimitedtextprovider_OBJECTS = \
-"CMakeFiles/delimitedtextprovider.dir/qgsdelimitedtextprovider.o"
+"CMakeFiles/delimitedtextprovider.dir/qgsdelimitedtextprovider.o" \
+"CMakeFiles/delimitedtextprovider.dir/moc_qgsdelimitedtextprovider.o"
 
 # External object files for target delimitedtextprovider
 delimitedtextprovider_EXTERNAL_OBJECTS =
 
 src/providers/delimitedtext/libdelimitedtextprovider.so: src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/qgsdelimitedtextprovider.o
-src/providers/delimitedtext/libdelimitedtextprovider.so: /Library/Frameworks/Qt3Support.framework
-src/providers/delimitedtext/libdelimitedtextprovider.so: /Library/Frameworks/QtSvg.framework
-src/providers/delimitedtext/libdelimitedtextprovider.so: /Library/Frameworks/QtGui.framework
-src/providers/delimitedtext/libdelimitedtextprovider.so: /Library/Frameworks/QtXml.framework
-src/providers/delimitedtext/libdelimitedtextprovider.so: /Library/Frameworks/QtSql.framework
-src/providers/delimitedtext/libdelimitedtextprovider.so: /Library/Frameworks/QtNetwork.framework
+src/providers/delimitedtext/libdelimitedtextprovider.so: src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/moc_qgsdelimitedtextprovider.o
 src/providers/delimitedtext/libdelimitedtextprovider.so: /Library/Frameworks/QtCore.framework
-src/providers/delimitedtext/libdelimitedtextprovider.so: /usr/lib/libz.dylib
+src/providers/delimitedtext/libdelimitedtextprovider.so: /Library/Frameworks/QtXml.framework
 src/providers/delimitedtext/libdelimitedtextprovider.so: /Library/Frameworks/GDAL.framework/Versions/1.5/unix/lib/libgdal.dylib
-src/providers/delimitedtext/libdelimitedtextprovider.so: /Library/Frameworks/geos.framework
+src/providers/delimitedtext/libdelimitedtextprovider.so: /Library/Frameworks/GEOS.framework/unix/lib/libgeos_c.dylib
 src/providers/delimitedtext/libdelimitedtextprovider.so: src/core/libqgis_core.dylib
+src/providers/delimitedtext/libdelimitedtextprovider.so: /Library/Frameworks/QtGui.framework
+src/providers/delimitedtext/libdelimitedtextprovider.so: /Library/Frameworks/QtSvg.framework
+src/providers/delimitedtext/libdelimitedtextprovider.so: /Library/Frameworks/QtNetwork.framework
 src/providers/delimitedtext/libdelimitedtextprovider.so: /Library/Frameworks/proj.framework
 src/providers/delimitedtext/libdelimitedtextprovider.so: /Library/Frameworks/sqlite3.framework
 src/providers/delimitedtext/libdelimitedtextprovider.so: src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/build.make
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX shared module libdelimitedtextprovider.so"
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/providers/delimitedtext && $(CMAKE_COMMAND) -P CMakeFiles/delimitedtextprovider.dir/cmake_clean_target.cmake
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/providers/delimitedtext && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/delimitedtextprovider.dir/link.txt --verbose=$(VERBOSE)
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/providers/delimitedtext && $(CMAKE_COMMAND) -P CMakeFiles/delimitedtextprovider.dir/cmake_clean_target.cmake
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/providers/delimitedtext && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/delimitedtextprovider.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/build: src/providers/delimitedtext/libdelimitedtextprovider.so
 
 src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/requires: src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/qgsdelimitedtextprovider.o.requires
+src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/requires: src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/moc_qgsdelimitedtextprovider.o.requires
 
 src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/clean:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/providers/delimitedtext && $(CMAKE_COMMAND) -P CMakeFiles/delimitedtextprovider.dir/cmake_clean.cmake
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/providers/delimitedtext && $(CMAKE_COMMAND) -P CMakeFiles/delimitedtextprovider.dir/cmake_clean.cmake
 

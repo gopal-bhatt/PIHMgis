@@ -31,16 +31,15 @@ RM = /usr/bin/cmake -E remove -f
 CMAKE_EDIT_COMMAND = /usr/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0
+CMAKE_SOURCE_DIR = /Users/bhattgopal/dev/cpp/qgis_1.0.2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build
+CMAKE_BINARY_DIR = /Users/bhattgopal/dev/cpp/qgis_1.0.2/build
 
 # Utility rule file for Info.plist.
 
-src/mac/Contents/CMakeFiles/Info.plist: ../src/mac/Contents/Info.plist.in
-src/mac/Contents/CMakeFiles/Info.plist: qgsconfig.h
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/mac/Contents && VERSION=`grep VERSION /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/qgsconfig.h | sed -e s/#define\ VERSION\ // -e s/\"//g ` && SVNVERSION=`grep QGSSVNVERSION /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/qgssvnversion.h | sed -e s/#define\ QGSSVNVERSION\ // -e s/\"//g ` && sed -e s/@VERSION/$$VERSION/ -e s/@SHORTVERSION/$$VERSION/ -e s/@SVNVERSION/$$SVNVERSION/ < /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/mac/Contents/Info.plist.in > Info.plist
+src/mac/Contents/CMakeFiles/Info.plist: ../.svn/entries
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/mac/Contents && /usr/bin/cmake -D CURRENT_SOURCE_DIR=/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/mac/Contents -D SOURCE_DIR=/Users/bhattgopal/dev/cpp/qgis_1.0.2 -D VERSION=1.0.2-Kore -P /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/mac/Contents/Info.plist.cmake
 
 Info.plist: src/mac/Contents/CMakeFiles/Info.plist.dir/build.make
 
@@ -49,5 +48,5 @@ src/mac/Contents/CMakeFiles/Info.plist.dir/build: Info.plist
 src/mac/Contents/CMakeFiles/Info.plist.dir/build: src/mac/Contents/CMakeFiles/Info.plist
 
 src/mac/Contents/CMakeFiles/Info.plist.dir/clean:
-	cd /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/mac/Contents && $(CMAKE_COMMAND) -P CMakeFiles/Info.plist.dir/cmake_clean.cmake
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/mac/Contents && $(CMAKE_COMMAND) -P CMakeFiles/Info.plist.dir/cmake_clean.cmake
 

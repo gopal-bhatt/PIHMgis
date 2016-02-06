@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading ui file 'streampolyline.ui'
 **
-** Created: Wed Jun 11 19:11:09 2008
+** Created: Fri Jun 19 02:00:50 2009
 **      by: Qt User Interface Compiler version 4.3.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling ui file!

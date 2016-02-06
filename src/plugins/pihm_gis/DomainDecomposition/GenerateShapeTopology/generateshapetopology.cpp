@@ -42,7 +42,7 @@ void generateShapeTopologyDlg::run()
 
 	QString logFileName("/tmp/log.html");
 	ofstream log;
-	log.open(logFileName.ascii());
+	log.open(qPrintable(logFileName));
 	log<<"<html><body><font size=3 color=black><p> Verifying Files...</p></font></body></html>";
         log.close();
         MessageLog->setSource(logFileName);
@@ -53,20 +53,20 @@ void generateShapeTopologyDlg::run()
 	QString inputFileName((inputFileLineEdit->text()));
 	QString outputFileName((outputFileLineEdit->text()));
 
-	ifstream inFile;      inFile.open((inputFileLineEdit->text()).ascii());
-	ofstream outFile;    outFile.open((outputFileLineEdit->text()).ascii());
+	ifstream inFile;      inFile.open(qPrintable((inputFileLineEdit->text())));
+	ofstream outFile;    outFile.open(qPrintable((outputFileLineEdit->text())));
 	int runFlag = 1;
 
-	log.open(logFileName.ascii(), ios::app);
+	log.open(qPrintable(logFileName), ios::app);
 	if(inputFileName.length()==0){
-		log<<"<p><font size=3 color=red> Error! Please input Flow Acc. Grid Input File</p>";
+		log<<"<p><font size=3 color=red> Error! Please input Vector Merge Input File</p>";
 		runFlag = 0;
 	}
 	else{
-		log<<"<p>Checking... "<<inputFileName.ascii()<<"... ";
+		log<<"<p>Checking... "<<qPrintable(inputFileName)<<"... ";
 		if(inFile == NULL){
 			log<<"<font size=3 color=red> Error!</p>";
-			qWarning("\n%s doesn't exist!", (inputFileLineEdit->text()).ascii());
+			qWarning("\n%s doesn't exist!", qPrintable((inputFileLineEdit->text())));
 			runFlag = 0;
 		}
 		else
@@ -76,13 +76,13 @@ void generateShapeTopologyDlg::run()
 	MessageLog->reload();
 	QApplication::processEvents();
 
-	log.open(logFileName.ascii(), ios::app);
+	log.open(qPrintable(logFileName), ios::app);
 	if(outputFileName.length()==0){
 		log<<"<p><font size=3 color=red> Error! Please input Stream Grid Output File</p>";
 		runFlag = 0;
 	}
 	else{
-		log<<"<p>Checking... "<<outputFileName.ascii()<<"... ";
+		log<<"<p>Checking... "<<qPrintable(outputFileName)<<"... ";
 		if(outFile == NULL){
 			log<<"<font size=3 color=red> Error!</p>";
 			qWarning("\nCan not open output file name");
@@ -109,15 +109,15 @@ void generateShapeTopologyDlg::run()
 	//else
 		
 	if(runFlag == 1){
-		log.open(logFileName.ascii(), ios::app);
+		log.open(qPrintable(logFileName), ios::app);
 		log<<"<p>Running...";
 		log.close();
 		MessageLog->reload();
 		QApplication::processEvents();
 
-		generatePolyFile(inputFileName.ascii(), outputFileName.ascii(), "dummy");
+		generatePolyFile(qPrintable(inputFileName), qPrintable(outputFileName), qPrintable(logFileName)); //"dummy");
 
-		log.open(logFileName.ascii(), ios::app);
+		log.open(qPrintable(logFileName), ios::app);
 		log<<" Done!</p>";
 		log.close();
 		MessageLog->reload();

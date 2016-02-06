@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/qgis/!svn/ver/10639/branches/Release-1_0_2/images/svg/services
+END
+amenity=post_box.svg
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/qgis/!svn/ver/10639/branches/Release-1_0_2/images/svg/services/amenity=post_box.svg
+END
+amenity=recycling.svg
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/qgis/!svn/ver/10639/branches/Release-1_0_2/images/svg/services/amenity=recycling.svg
+END
+shop=convenience.svg
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/qgis/!svn/ver/10639/branches/Release-1_0_2/images/svg/services/shop=convenience.svg
+END
+amenity=atm.svg
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/qgis/!svn/ver/10639/branches/Release-1_0_2/images/svg/services/amenity=atm.svg
+END
+amenity=pharmacy,dispensing=yes.svg
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/qgis/!svn/ver/10639/branches/Release-1_0_2/images/svg/services/amenity=pharmacy,dispensing=yes.svg
+END
+amenity=telephone.svg
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/qgis/!svn/ver/10639/branches/Release-1_0_2/images/svg/services/amenity=telephone.svg
+END
+amenity=pharmacy.svg
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/qgis/!svn/ver/10639/branches/Release-1_0_2/images/svg/services/amenity=pharmacy.svg
+END
+shop=supermarket.svg
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/qgis/!svn/ver/10639/branches/Release-1_0_2/images/svg/services/shop=supermarket.svg
+END
+tourism=hotel.svg
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/qgis/!svn/ver/10639/branches/Release-1_0_2/images/svg/services/tourism=hotel.svg
+END

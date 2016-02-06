@@ -1,41 +1,47 @@
 K 25
 svn:wc:ra_dav:version-url
-V 61
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/images/icons
+V 56
+/qgis/!svn/ver/10639/branches/Release-1_0_2/images/icons
 END
 qgis-icon-16x16.png
 K 25
 svn:wc:ra_dav:version-url
-V 81
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/images/icons/qgis-icon-16x16.png
+V 76
+/qgis/!svn/ver/10639/branches/Release-1_0_2/images/icons/qgis-icon-16x16.png
 END
 qgis-mime-icon.png
 K 25
 svn:wc:ra_dav:version-url
-V 80
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/images/icons/qgis-mime-icon.png
+V 75
+/qgis/!svn/ver/10639/branches/Release-1_0_2/images/icons/qgis-mime-icon.png
+END
+qgis_icon.svg
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/qgis/!svn/ver/10639/branches/Release-1_0_2/images/icons/qgis_icon.svg
 END
 qgis-icon.png
 K 25
 svn:wc:ra_dav:version-url
-V 75
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/images/icons/qgis-icon.png
+V 70
+/qgis/!svn/ver/10639/branches/Release-1_0_2/images/icons/qgis-icon.png
 END
 .cvsignore
 K 25
 svn:wc:ra_dav:version-url
-V 72
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/images/icons/.cvsignore
+V 67
+/qgis/!svn/ver/10639/branches/Release-1_0_2/images/icons/.cvsignore
 END
 CMakeLists.txt
 K 25
 svn:wc:ra_dav:version-url
-V 76
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/images/icons/CMakeLists.txt
+V 71
+/qgis/!svn/ver/10639/branches/Release-1_0_2/images/icons/CMakeLists.txt
 END
 qgis-icon-60x60.png
 K 25
 svn:wc:ra_dav:version-url
-V 81
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/images/icons/qgis-icon-60x60.png
+V 76
+/qgis/!svn/ver/10639/branches/Release-1_0_2/images/icons/qgis-icon-60x60.png
 END

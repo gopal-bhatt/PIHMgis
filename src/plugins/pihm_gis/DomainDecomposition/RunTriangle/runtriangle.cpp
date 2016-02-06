@@ -39,7 +39,7 @@ void runTriangleDlg::run()
 
 	QString logFileName("/tmp/log.html");
 	ofstream log;
-	log.open(logFileName.ascii());
+	log.open(qPrintable(logFileName));
 	log<<"<html><body><font size=3 color=black><p> Verifying Files...</p></font></body></html>";
         log.close();
         MessageLog->setSource(logFileName);
@@ -48,28 +48,28 @@ void runTriangleDlg::run()
 
 /*
 	ifstream temp;
-        temp.open((polyFileLineEdit->text()).ascii());
+        temp.open(qPrintable((polyFileLineEdit->text())));
         if((polyFileLineEdit->text()).length()==0){
         	qWarning("\n Enter Poly File");
 	}
         else if(temp==NULL){
-        	qWarning("\n %s doesn't exist!", (polyFileLineEdit->text()).ascii());
+        	qWarning("\n %s doesn't exist!", qPrintable((polyFileLineEdit->text())));
 	}
 */
 
-	ifstream inFile;      inFile.open((polyFileLineEdit->text()).ascii());
+	ifstream inFile;      inFile.open(qPrintable((polyFileLineEdit->text())));
 	int runFlag = 1;
 
-	log.open(logFileName.ascii(), ios::app);
+	log.open(qPrintable(logFileName), ios::app);
 	if((polyFileLineEdit->text()).length()==0){
 		log<<"<p><font size=3 color=red> Error! Please input poly File</p>";
 		runFlag = 0;
 	}
 	else{
-		log<<"<p>Checking... "<<(polyFileLineEdit->text()).ascii()<<"... ";
+		log<<"<p>Checking... "<<qPrintable((polyFileLineEdit->text()))<<"... ";
 		if(inFile == NULL){
 			log<<"<font size=3 color=red> Error!</p>";
-			//qWarning("\n%s doesn't exist!", (inputFileLineEdit->text()).ascii());
+			//qWarning("\n%s doesn't exist!", qPrintable((inputFileLineEdit->text())));
 			runFlag = 0;
 		}
 		else
@@ -81,9 +81,11 @@ void runTriangleDlg::run()
 	
         if(runFlag == 1){
 		QString temp(polyFileLineEdit->text());
-		int slashPos = temp.findRev('/');
-        	temp.truncate(slashPos);
+		//int slashPos = temp.findRev('/');
+        	//temp.truncate(slashPos);
+		temp=temp.section('/', 0, -2);
         	QString presentDir(temp);
+		cout<<"DEBUG: "<<qPrintable(temp)<<"\n";
 		
 		QString* exeString = new QString("triangle");
 		QString* optString = new QString("-");
@@ -94,7 +96,7 @@ void runTriangleDlg::run()
                 if(otherOptionCheckBox->isChecked()) {optString->append(otherOptionLineEdit->text());}
 		//cmdString->append(aOptionLineEdit->text());}
 
-                //qWarning("cmdstring = %s\n", cmdString->ascii());
+                //qWarning("cmdstring = %s\n", qPrintable(cmdString));
 
                 //cmdString->append(" ");
                 QString fileString(polyFileLineEdit->text());
@@ -114,19 +116,24 @@ void runTriangleDlg::run()
 			arg1++;
 		}
 		else{
-			arg2[1]=(char *)fileString.ascii();
+			arg2[1]=(char *)qPrintable(fileString);
 			arg1++;
 		}
 
-		log.open(logFileName.ascii(), ios::app);
+		log.open(qPrintable(logFileName), ios::app);
 		log<<"<p>Running...";
 		log.close();
 		MessageLog->reload();
 		QApplication::processEvents();
+		cout<<"arg1 = "<<arg1<<"\n";
+		cout<<"arg2 0= ="<<*arg2[0]<<"= || "<<qPrintable(*exeString)<<"\n";
+		cout<<"arg2 1= ="<<*arg2[1]<<"= || "<<qPrintable(*optString)<<"\n";
+		cout<<"arg2 2= ="<<*arg2[2]<<"= || "<<qPrintable(fileString)<<"\n";
+		cout<<"file  = "<<qPrintable(fileString)<<"\n";
 
 		ShewchukTRIANGLE(arg1, arg2);
 		
-		log.open(logFileName.ascii(), ios::app);
+		log.open(qPrintable(logFileName), ios::app);
 		log<<" Done!</p>";
 		log.close();
 		MessageLog->reload();
@@ -137,7 +144,7 @@ void runTriangleDlg::run()
                 //cmdString->append(presentDir);
                 //cmdString->append("/statistics.txt");
 		
-		//const char* str = cmdString->ascii();
+		//const char* str = qPrintable(*cmdString);
 		//std::system(str);
 /*
 		QFile statFile( presentDir+"/statistics.txt" );
@@ -161,7 +168,7 @@ void runTriangleDlg::run()
                 }
 
                 for(int i=1; i<=lines2print; i++){
-                       qWarning("\n %s",(textStream.readLine()).ascii());
+                       qWarning("\n %s",qPrintable((textStream.readLine())));
                 }
 */
 	}

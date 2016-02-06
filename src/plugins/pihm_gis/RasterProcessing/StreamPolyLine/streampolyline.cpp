@@ -4,7 +4,7 @@
 #include "../../pihmRasterLIBS/streamSegmentationShp.h"
 
 #include "../../pihmLIBS/helpDialog/helpdialog.h"
-
+#include <iostream>
 #include <fstream>
 using namespace std;
 
@@ -48,7 +48,7 @@ void StreamPolyLineDlg::run()
 {
 	QString logFileName("/tmp/log.html");
 	ofstream log;
-	log.open(logFileName.ascii());
+	log.open(qPrintable(logFileName));
 	log<<"<html><body><font size=3 color=black><p> Verifying Files...</p></font></body></html>";
         log.close();
         messageLog->setSource(logFileName);
@@ -63,21 +63,21 @@ void StreamPolyLineDlg::run()
     	outputDbfFileName.truncate(outputDbfFileName.length()-3);
     	outputDbfFileName.append("dbf");
 
-	ifstream STRinFile;      STRinFile.open((inputSTRFileLineEdit->text()).ascii());
-	ifstream FDRinFile;      FDRinFile.open((inputFDRFileLineEdit->text()).ascii());
-	ofstream outFile;          outFile.open((outputFileLineEdit->text()).ascii());
+	ifstream STRinFile;      STRinFile.open(qPrintable(inputSTRFileLineEdit->text()));
+	ifstream FDRinFile;      FDRinFile.open(qPrintable(inputFDRFileLineEdit->text()));
+	ofstream outFile;          outFile.open(qPrintable(outputFileLineEdit->text()));
 	int runFlag = 1;
 
-	log.open(logFileName.ascii(), ios::app);
+	log.open(qPrintable(logFileName), ios::app);
 	if(inputSTRFileName.length()==0){
 		log<<"<p><font size=3 color=red> Error! Please input Stream Grid Input File</p>";
 		runFlag = 0;
 	}
 	else{
-		log<<"<p>Checking... "<<inputSTRFileName.ascii()<<"... ";
+		log<<"<p>Checking... "<<qPrintable(inputSTRFileName)<<"... ";
 		if(STRinFile == NULL){
 			log<<"<font size=3 color=red> Error!</p>";
-			qWarning("\n%s doesn't exist!", (inputSTRFileLineEdit->text()).ascii());
+			qWarning("\n%s doesn't exist!", qPrintable(inputSTRFileLineEdit->text()));
 			runFlag = 0;
 		}
 		else
@@ -87,16 +87,16 @@ void StreamPolyLineDlg::run()
 	messageLog->reload();
 	QApplication::processEvents();	
 
-	log.open(logFileName.ascii(), ios::app);
+	log.open(qPrintable(logFileName), ios::app);
 	if(inputFDRFileName.length()==0){
 		log<<"<p><font size=3 color=red> Error! Please input Flow Dir. Grid Input File</p>";
 		runFlag = 0;
 	}
 	else{
-		log<<"<p>Checking... "<<inputFDRFileName.ascii()<<"... ";
+		log<<"<p>Checking... "<<qPrintable(inputFDRFileName)<<"... ";
 		if(FDRinFile == NULL){
 			log<<"<font size=3 color=red> Error!</p>";
-			qWarning("\n%s doesn't exist!", (inputFDRFileLineEdit->text()).ascii());
+			qWarning("\n%s doesn't exist!", qPrintable(inputFDRFileLineEdit->text()));
 			runFlag = 0;
 		}
 		else
@@ -106,13 +106,13 @@ void StreamPolyLineDlg::run()
 	messageLog->reload();
 	QApplication::processEvents();
 	
-	log.open(logFileName.ascii(), ios::app);
+	log.open(qPrintable(logFileName), ios::app);
 	if(outputShpFileName.length()==0){
 		log<<"<p><font size=3 color=red> Error! Please input Stream Output File</p>";
 		runFlag = 0;
 	}
 	else{
-		log<<"<p>Checking... "<<outputShpFileName.ascii()<<"... ";
+		log<<"<p>Checking... "<<qPrintable(outputShpFileName)<<"... ";
 		if(outFile == NULL){
 			log<<"<font size=3 color=red> Error!</p>";
 			qWarning("\nCan not open output file name");
@@ -126,22 +126,29 @@ void StreamPolyLineDlg::run()
 	QApplication::processEvents();	
 
 	if(runFlag == 1){
-		log.open(logFileName.ascii(), ios::app);
+		log.open(qPrintable(logFileName), ios::app);
 		log<<"<p>Running...";
 		log.close();
 		messageLog->reload();
 		QApplication::processEvents();		
 
-	    	int err = streamSegmentationShp((char *)inputSTRFileName.ascii(), (char *)inputFDRFileName.ascii(), (char *)outputShpFileName.ascii(), (char *)outputDbfFileName.ascii());
+	    	int err = streamSegmentationShp((char *)qPrintable(inputSTRFileName), (char *)qPrintable(inputFDRFileName), (char *)qPrintable(outputShpFileName), (char *)qPrintable(outputDbfFileName));
 		
-		log.open(logFileName.ascii(), ios::app);
+		log.open(qPrintable(logFileName), ios::app);
 		log<<" Done!</p>";
 		log.close();
 		messageLog->reload();
 		QApplication::processEvents();
 
 		if(showSG_DFrame->isChecked() == 1){
-		//??	applicationPointer->addLayer(QStringList(outputShpFileName), NULL);
+		//??
+			QString myFileNameQString = outputShpFileName;
+		        QFileInfo myFileInfo(myFileNameQString);
+     			QString myBaseNameQString = myFileInfo.baseName();
+			QString provider = "OGR";
+			cout<<"\n"<<myFileNameQString.ascii()<<"\n"<<myBaseNameQString.ascii()<<"\n"<<provider.ascii()<<"\n";
+			//getchar(); getchar();
+			applicationPointer->addVectorLayer(myFileNameQString, myBaseNameQString, "ogr");
 	        	//QgsRasterLayer *tempLayer = new QgsRasterLayer("/backup/pihm/RasterProcessing/FillPits", "morgedem.asc");
 		}
 	}
@@ -153,7 +160,7 @@ void StreamPolyLineDlg::help()
 	hlpDlg->show();	
 
 }
-/* ??
-void StreamPolyLineDlg::setApplicationPointer(QgisApp* appPtr){
+/* ??*/
+void StreamPolyLineDlg::setApplicationPointer(QgisInterface* appPtr){
     applicationPointer = appPtr;
-}*/
+}

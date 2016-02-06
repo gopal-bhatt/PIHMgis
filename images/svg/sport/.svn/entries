@@ -1,9 +1,9 @@
 8
 
 dir
-7809
-https://svn.qgis.org/repos/qgis/branches/Release-0_9_0/images/svg/sport
-https://svn.qgis.org/repos/qgis
+10938
+https://svn.osgeo.org/qgis/branches/Release-1_0_2/images/svg/sport
+https://svn.osgeo.org/qgis
 
 
 
@@ -32,7 +32,7 @@ file
 
 
 
-2007-12-24T08:18:20.000000Z
+2009-06-17T07:50:03.000000Z
 0378f7701f42549eaba74da28b7c0543
 2006-01-24T02:41:54.626515Z
 4728
@@ -44,7 +44,7 @@ file
 
 
 
-2007-12-24T08:18:20.000000Z
+2009-06-17T07:50:03.000000Z
 0f8b31b091e5fa453967158fdecbfa0b
 2006-01-24T02:41:54.626515Z
 4728

@@ -1,6 +1,6 @@
 Terminals which are not used
 
-   UNKNOWN_CHARACTER
+   Unknown_CHARACTER
 
 
 Grammar
@@ -45,7 +45,7 @@ NUMBER (258) 16
 COMPARISON (259) 8
 STRING (260) 17
 COLUMN_REF (261) 18
-UNKNOWN_CHARACTER (262)
+Unknown_CHARACTER (262)
 NOT (263) 4
 AND (264) 3
 OR (265) 2

@@ -1,17 +1,17 @@
 K 25
 svn:wc:ra_dav:version-url
-V 79
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/north_arrow/images
+V 74
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/north_arrow/images
 END
 logo.jpg
 K 25
 svn:wc:ra_dav:version-url
-V 88
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/north_arrow/images/logo.jpg
+V 83
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/north_arrow/images/logo.jpg
 END
 logo.xcf
 K 25
 svn:wc:ra_dav:version-url
-V 88
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/north_arrow/images/logo.xcf
+V 83
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/north_arrow/images/logo.xcf
 END

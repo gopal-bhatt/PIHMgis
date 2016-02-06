@@ -1,305 +1,251 @@
 K 25
 svn:wc:ra_dav:version-url
-V 66
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/grass
+V 61
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/grass
 END
 qgsgrassregion.cpp
 K 25
 svn:wc:ra_dav:version-url
-V 85
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/grass/qgsgrassregion.cpp
-END
-grass_close_mapset.xpm
-K 25
-svn:wc:ra_dav:version-url
-V 89
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/grass/grass_close_mapset.xpm
+V 80
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/grass/qgsgrassregion.cpp
 END
 qgsgrassmapcalcbase.ui
 K 25
 svn:wc:ra_dav:version-url
-V 89
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/grass/qgsgrassmapcalcbase.ui
+V 84
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/grass/qgsgrassmapcalcbase.ui
 END
 qgsgrassattributes.cpp
 K 25
 svn:wc:ra_dav:version-url
-V 89
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/grass/qgsgrassattributes.cpp
+V 84
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/grass/qgsgrassattributes.cpp
+END
+qgsgrasstoolsbase.ui
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/grass/qgsgrasstoolsbase.ui
 END
 qgsgrassbrowser.h
 K 25
 svn:wc:ra_dav:version-url
-V 84
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/grass/qgsgrassbrowser.h
+V 79
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/grass/qgsgrassbrowser.h
 END
 qgsgrassnewmapsetbase.ui
 K 25
 svn:wc:ra_dav:version-url
-V 91
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/grass/qgsgrassnewmapsetbase.ui
-END
-qgsgrassedit.h
-K 25
-svn:wc:ra_dav:version-url
-V 81
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/grass/qgsgrassedit.h
+V 86
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/grass/qgsgrassnewmapsetbase.ui
 END
 qgsgrassmodule.h
 K 25
 svn:wc:ra_dav:version-url
-V 83
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/grass/qgsgrassmodule.h
+V 78
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/grass/qgsgrassmodule.h
 END
-grass_edit.xpm
+qgsgrassedit.h
 K 25
 svn:wc:ra_dav:version-url
-V 81
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/grass/grass_edit.xpm
-END
-grass_region_edit.xpm
-K 25
-svn:wc:ra_dav:version-url
-V 88
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/grass/grass_region_edit.xpm
+V 76
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/grass/qgsgrassedit.h
 END
 qgsgrassplugin.cpp
 K 25
 svn:wc:ra_dav:version-url
-V 85
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/grass/qgsgrassplugin.cpp
+V 80
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/grass/qgsgrassplugin.cpp
+END
+qgsgrass_plugin.qrc
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/grass/qgsgrass_plugin.qrc
 END
 qgsgrassutils.cpp
 K 25
 svn:wc:ra_dav:version-url
-V 84
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/grass/qgsgrassutils.cpp
+V 79
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/grass/qgsgrassutils.cpp
 END
 qgsgrassnewmapset.cpp
 K 25
 svn:wc:ra_dav:version-url
-V 88
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/grass/qgsgrassnewmapset.cpp
-END
-qgsgrassmapcalc.h
-K 25
-svn:wc:ra_dav:version-url
-V 84
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/grass/qgsgrassmapcalc.h
-END
-qgsgrasstools.h
-K 25
-svn:wc:ra_dav:version-url
-V 82
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/grass/qgsgrasstools.h
+V 83
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/grass/qgsgrassnewmapset.cpp
 END
 qgsgrassmodel.h
 K 25
 svn:wc:ra_dav:version-url
-V 82
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/grass/qgsgrassmodel.h
+V 77
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/grass/qgsgrassmodel.h
 END
-grass_tools.xpm
+qgsgrassmapcalc.h
 K 25
 svn:wc:ra_dav:version-url
-V 82
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/grass/grass_tools.xpm
+V 79
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/grass/qgsgrassmapcalc.h
+END
+qgsgrasstools.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/grass/qgsgrasstools.h
 END
 qgsgrassedittools.cpp
 K 25
 svn:wc:ra_dav:version-url
-V 88
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/grass/qgsgrassedittools.cpp
-END
-qgsgrassmodulebase.ui
-K 25
-svn:wc:ra_dav:version-url
-V 88
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/grass/qgsgrassmodulebase.ui
+V 83
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/grass/qgsgrassedittools.cpp
 END
 qgsgrasseditbase.ui
 K 25
 svn:wc:ra_dav:version-url
-V 86
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/grass/qgsgrasseditbase.ui
+V 81
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/grass/qgsgrasseditbase.ui
+END
+qgsgrassmodulebase.ui
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/grass/qgsgrassmodulebase.ui
 END
 qgsgrassshell.h
 K 25
 svn:wc:ra_dav:version-url
-V 82
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/grass/qgsgrassshell.h
+V 77
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/grass/qgsgrassshell.h
 END
 qgsgrassattributesbase.ui
 K 25
 svn:wc:ra_dav:version-url
-V 92
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/grass/qgsgrassattributesbase.ui
-END
-grass_new_vector_layer.xpm
-K 25
-svn:wc:ra_dav:version-url
-V 93
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/grass/grass_new_vector_layer.xpm
-END
-grass_open_mapset.xpm
-K 25
-svn:wc:ra_dav:version-url
-V 88
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/grass/grass_open_mapset.xpm
+V 87
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/grass/qgsgrassattributesbase.ui
 END
 CMakeLists.txt
 K 25
 svn:wc:ra_dav:version-url
-V 81
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/grass/CMakeLists.txt
+V 76
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/grass/CMakeLists.txt
 END
 .cvsignore
 K 25
 svn:wc:ra_dav:version-url
-V 77
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/grass/.cvsignore
+V 72
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/grass/.cvsignore
 END
 qgsgrassbrowser.cpp
 K 25
 svn:wc:ra_dav:version-url
-V 86
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/grass/qgsgrassbrowser.cpp
+V 81
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/grass/qgsgrassbrowser.cpp
 END
 qgsgrassselect.h
 K 25
 svn:wc:ra_dav:version-url
-V 83
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/grass/qgsgrassselect.h
+V 78
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/grass/qgsgrassselect.h
 END
 qgsgrassedit.cpp
 K 25
 svn:wc:ra_dav:version-url
-V 83
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/grass/qgsgrassedit.cpp
+V 78
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/grass/qgsgrassedit.cpp
 END
 qgsgrassmodule.cpp
 K 25
 svn:wc:ra_dav:version-url
-V 85
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/grass/qgsgrassmodule.cpp
+V 80
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/grass/qgsgrassmodule.cpp
 END
 qgsgrassregion.h
 K 25
 svn:wc:ra_dav:version-url
-V 83
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/grass/qgsgrassregion.h
-END
-grass_region.xpm
-K 25
-svn:wc:ra_dav:version-url
-V 83
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/grass/grass_region.xpm
+V 78
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/grass/qgsgrassregion.h
 END
 qgsgrassattributes.h
 K 25
 svn:wc:ra_dav:version-url
-V 87
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/grass/qgsgrassattributes.h
+V 82
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/grass/qgsgrassattributes.h
 END
 qgsgrassshellbase.ui
 K 25
 svn:wc:ra_dav:version-url
-V 87
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/grass/qgsgrassshellbase.ui
-END
-qgsgrassmodel.cpp
-K 25
-svn:wc:ra_dav:version-url
-V 84
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/grass/qgsgrassmodel.cpp
-END
-qgsgrassmapcalc.cpp
-K 25
-svn:wc:ra_dav:version-url
-V 86
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/grass/qgsgrassmapcalc.cpp
+V 82
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/grass/qgsgrassshellbase.ui
 END
 qgsgrasstools.cpp
 K 25
 svn:wc:ra_dav:version-url
-V 84
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/grass/qgsgrasstools.cpp
+V 79
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/grass/qgsgrasstools.cpp
+END
+qgsgrassmapcalc.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/grass/qgsgrassmapcalc.cpp
+END
+qgsgrassmodel.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/grass/qgsgrassmodel.cpp
 END
 qgsgrassplugin.h
 K 25
 svn:wc:ra_dav:version-url
-V 83
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/grass/qgsgrassplugin.h
+V 78
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/grass/qgsgrassplugin.h
 END
 qgsgrassselectbase.ui
 K 25
 svn:wc:ra_dav:version-url
-V 88
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/grass/qgsgrassselectbase.ui
+V 83
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/grass/qgsgrassselectbase.ui
 END
 qgsgrassutils.h
 K 25
 svn:wc:ra_dav:version-url
-V 82
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/grass/qgsgrassutils.h
+V 77
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/grass/qgsgrassutils.h
 END
 qgsgrassshell.cpp
 K 25
 svn:wc:ra_dav:version-url
-V 84
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/grass/qgsgrassshell.cpp
-END
-grass_new_mapset.xpm
-K 25
-svn:wc:ra_dav:version-url
-V 87
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/grass/grass_new_mapset.xpm
+V 79
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/grass/qgsgrassshell.cpp
 END
 qgsgrassnewmapset.h
 K 25
 svn:wc:ra_dav:version-url
-V 86
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/grass/qgsgrassnewmapset.h
+V 81
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/grass/qgsgrassnewmapset.h
 END
 qgsgrassregionbase.ui
 K 25
 svn:wc:ra_dav:version-url
-V 88
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/grass/qgsgrassregionbase.ui
+V 83
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/grass/qgsgrassregionbase.ui
 END
 qgsgrassedittools.h
 K 25
 svn:wc:ra_dav:version-url
-V 86
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/grass/qgsgrassedittools.h
+V 81
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/grass/qgsgrassedittools.h
 END
 locations.gml
 K 25
 svn:wc:ra_dav:version-url
-V 80
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/grass/locations.gml
-END
-world.png
-K 25
-svn:wc:ra_dav:version-url
-V 76
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/grass/world.png
-END
-add_raster.xpm
-K 25
-svn:wc:ra_dav:version-url
-V 81
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/grass/add_raster.xpm
+V 75
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/grass/locations.gml
 END
 qgsgrassselect.cpp
 K 25
 svn:wc:ra_dav:version-url
-V 85
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/grass/qgsgrassselect.cpp
-END
-add_vector.xpm
-K 25
-svn:wc:ra_dav:version-url
-V 81
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/grass/add_vector.xpm
+V 80
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/grass/qgsgrassselect.cpp
 END

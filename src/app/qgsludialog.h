@@ -14,7 +14,7 @@
  *   (at your option) any later version.                                   *
  *                                                                         *
  ***************************************************************************/
-/* $Id: qgsludialog.h 6415 2007-01-09 02:39:15Z wonder $ */
+/* $Id: qgsludialog.h 9138 2008-08-23 21:37:31Z jef $ */
 
 #ifndef QGSLUDIALOG_H
 #define QGSLUDIALOG_H
@@ -26,13 +26,13 @@
 class QgsLUDialog: public QDialog, private Ui::QgsLUDialogBase
 {
     Q_OBJECT
- public:
-    QgsLUDialog(QWidget *parent = 0, Qt::WFlags fl = QgisGui::ModalDialogFlags);
+  public:
+    QgsLUDialog( QWidget *parent = 0, Qt::WFlags fl = QgisGui::ModalDialogFlags );
     ~QgsLUDialog();
     QString lowerValue() const;
-    void setLowerValue(QString val);
+    void setLowerValue( QString val );
     QString upperValue() const;
-    void setUpperValue(QString val);
+    void setUpperValue( QString val );
 };
 
 #endif

@@ -1,15 +1,15 @@
 8
 
 dir
-7809
-https://svn.qgis.org/repos/qgis/branches/Release-0_9_0/src/plugins
-https://svn.qgis.org/repos/qgis
+10938
+https://svn.osgeo.org/qgis/branches/Release-1_0_2/src/plugins
+https://svn.osgeo.org/qgis
 
 
 
-2007-09-16T20:18:38.396806Z
-7204
-gsherman
+2009-04-07T19:35:04.350256Z
+10501
+jef
 has-props
 
 svn:special svn:externals svn:needs-lock
@@ -38,11 +38,17 @@ file
 
 
 
-2007-12-24T08:18:06.000000Z
-052a94c4585348fe27d3a2ba5b583a7e
-2006-04-19T13:40:59.417091Z
-5311
-mhugent
+2009-06-17T07:49:46.000000Z
+55fafdd3209e0c9393634edb8f49dc03
+2008-08-23T21:37:31.208899Z
+9138
+jef
+
+interpolation
+dir
+
+quick_print
+dir
 
 plugin_template
 dir
@@ -53,11 +59,11 @@ file
 
 
 
-2007-12-24T08:18:06.000000Z
-950c70e62b637227fe3dc0a4579d984f
-2007-09-16T20:18:38.396806Z
-7204
-gsherman
+2009-06-17T07:49:46.000000Z
+715476099215142ba942da56991cf3b2
+2008-01-08T18:15:09.996037Z
+7873
+timlinux
 has-props
 
 wfs
@@ -72,6 +78,9 @@ dir
 north_arrow
 dir
 
+dxf2shp_converter
+dir
+
 copyright_label
 dir
 
@@ -84,17 +93,17 @@ file
 
 
 
-2007-12-24T08:18:06.000000Z
-f92191a31a22730c7d5740ce67503644
-2007-09-16T20:18:38.396806Z
-7204
-gsherman
+2009-06-17T07:49:46.000000Z
+252666d38b3fc08025ad337b5d4a6298
+2008-08-23T21:37:31.208899Z
+9138
+jef
 has-props
 
-gps_importer
+coordinate_capture
 dir
 
-maplayer
+gps_importer
 dir
 
 georeferencer
@@ -109,11 +118,11 @@ file
 
 
 
-2007-12-24T08:18:06.000000Z
-d57ce1e42b11fbf2e6d5f7ff8b673c65
-2007-08-27T22:18:04.738966Z
-7155
-timlinux
+2009-06-17T07:49:46.000000Z
+af1b548b2ff52f70155ae4066d697d81
+2008-10-25T14:19:58.119035Z
+9546
+mhugent
 
 .cvsignore
 file
@@ -121,10 +130,13 @@ file
 
 
 
-2007-12-24T08:18:06.000000Z
+2009-06-17T07:49:46.000000Z
 31076018db46093e4e5e50ab56486a4e
 2005-01-10T20:26:46.000000Z
 2610
 g_j_m
 has-props
+
+ogr_converter
+dir
 

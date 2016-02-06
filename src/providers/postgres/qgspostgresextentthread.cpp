@@ -15,18 +15,22 @@
  *   (at your option) any later version.                                   *
  *                                                                         *
  ***************************************************************************/
-/* $Id: qgspostgresextentthread.cpp 6415 2007-01-09 02:39:15Z wonder $ */
+/* $Id: qgspostgresextentthread.cpp 10136 2009-02-08 19:18:53Z jef $ */
 
 #include <fstream>
+#include <cstdlib>
+
 #include <QEvent>
 #include <QApplication>
-#include <QCustomEvent>
+#include <QEvent>
 
 #include "qgis.h"
-#include "qgsrect.h"
+#include "qgsrectangle.h"
 
 
 #include "qgspostgresextentthread.h"
+#include "qgsproviderextentcalcevent.h"
+#include "qgslogger.h"
 
 
 /*
@@ -46,7 +50,7 @@ QgsPostgresExtentThread::~QgsPostgresExtentThread()
 
 void QgsPostgresExtentThread::setConnInfo( QString s )
 {
-  connInfo = s;
+  connectionInfo = s;
 }
 
 void QgsPostgresExtentThread::setTableName( QString s )
@@ -73,105 +77,97 @@ void QgsPostgresExtentThread::setGeometryColumn( QString s )
 void QgsPostgresExtentThread::run()
 {
 //  // placeholders for now.
-//  QString connInfo;
-  
-  std::cout << "QgsPostgresExtentThread: Started running." << std::endl;
+//  QString connectionInfo;
+
+  QgsDebugMsg( "Started running." );
 
   // Open another connection to the database
-  PGconn *connection = PQconnectdb((const char *) connInfo);
+  PGconn *connection = PQconnectdb( connectionInfo.toUtf8() );
 
   // get the extents
 
   QString sql = "select extent(" + geometryColumn + ") from " + tableName;
-  if(sqlWhereClause.length() > 0)
+  if ( sqlWhereClause.length() > 0 )
   {
     sql += " where " + sqlWhereClause;
   }
 
 #if WASTE_TIME
   sql = "select xmax(extent(" + geometryColumn + ")) as xmax,"
-    "xmin(extent(" + geometryColumn + ")) as xmin,"
-    "ymax(extent(" + geometryColumn + ")) as ymax," "ymin(extent(" + geometryColumn + ")) as ymin" " from " + tableName;
+        "xmin(extent(" + geometryColumn + ")) as xmin,"
+        "ymax(extent(" + geometryColumn + ")) as ymax," "ymin(extent(" + geometryColumn + ")) as ymin" " from " + tableName;
 #endif
 
-#ifdef QGISDEBUG 
-  qDebug("+++++++++QgsPostgresExtentThread::run -  Getting extents using schema.table: " + sql);
-#endif
+  QgsDebugMsg( QString( "Getting extents using schema.table: %1" ).arg( sql ) );
+
+  QgsDebugMsg( "About to issue query." );
+
+  PGresult *result = PQexec( connection, sql.toUtf8() );
+
+  QgsDebugMsg( "Query completed." );
 
 
-  std::cout << "QgsPostgresExtentThread: About to issue query." << std::endl;
 
-  PGresult *result = PQexec(connection, (const char *) sql);
-  
-  std::cout << "QgsPostgresExtentThread: Query completed." << std::endl;
-
-  
-    
-  std::string box3d = PQgetvalue(result, 0, 0);
+  std::string box3d = PQgetvalue( result, 0, 0 );
   std::string s;
 
-  box3d = box3d.substr(box3d.find_first_of("(")+1);
-  box3d = box3d.substr(box3d.find_first_not_of(" "));
-  s = box3d.substr(0, box3d.find_first_of(" "));
-  double minx = strtod(s.c_str(), NULL);
+  box3d = box3d.substr( box3d.find_first_of( "(" ) + 1 );
+  box3d = box3d.substr( box3d.find_first_not_of( " " ) );
+  s = box3d.substr( 0, box3d.find_first_of( " " ) );
+  double minx = strtod( s.c_str(), NULL );
 
-  box3d = box3d.substr(box3d.find_first_of(" ")+1);
-  s = box3d.substr(0, box3d.find_first_of(" "));
-  double miny = strtod(s.c_str(), NULL);
+  box3d = box3d.substr( box3d.find_first_of( " " ) + 1 );
+  s = box3d.substr( 0, box3d.find_first_of( " " ) );
+  double miny = strtod( s.c_str(), NULL );
 
-  box3d = box3d.substr(box3d.find_first_of(",")+1);
-  box3d = box3d.substr(box3d.find_first_not_of(" "));
-  s = box3d.substr(0, box3d.find_first_of(" "));
-  double maxx = strtod(s.c_str(), NULL);
+  box3d = box3d.substr( box3d.find_first_of( "," ) + 1 );
+  box3d = box3d.substr( box3d.find_first_not_of( " " ) );
+  s = box3d.substr( 0, box3d.find_first_of( " " ) );
+  double maxx = strtod( s.c_str(), NULL );
 
-  box3d = box3d.substr(box3d.find_first_of(" ")+1);
-  s = box3d.substr(0, box3d.find_first_of(" "));
-  double maxy = strtod(s.c_str(), NULL);
+  box3d = box3d.substr( box3d.find_first_of( " " ) + 1 );
+  s = box3d.substr( 0, box3d.find_first_of( " " ) );
+  double maxy = strtod( s.c_str(), NULL );
 
-  layerExtent = new QgsRect(minx, miny, maxx, maxy);
-  
-/*
-  layerExtent.setXmax(maxx);
-  layerExtent.setXmin(minx);
-  layerExtent.setYmax(maxy);
-  layerExtent.setYmin(miny);
-*/
-  
+  layerExtent = new QgsRectangle( minx, miny, maxx, maxy );
 
-#ifdef QGISDEBUG
-  std::cout << "QgsPostgresExtentThread: Set extents to: " 
-        << layerExtent->xMin() << ", " << layerExtent->yMin() <<
-    " " << layerExtent->xMax() << ", " << layerExtent->yMax() << std::endl;
-#endif
+  /*
+    layerExtent.setXMaximum(maxx);
+    layerExtent.setXMinimum(minx);
+    layerExtent.setYMaximum(maxy);
+    layerExtent.setYMinimum(miny);
+  */
+
+
+  QgsDebugMsg( QString( "Set extents to: %1, %2 %3, %4" ).arg( layerExtent->xMinimum() ).arg( layerExtent->yMinimum() ).arg( layerExtent->xMaximum() ).arg( layerExtent->yMaximum() ) );
 
   // clear query result
-  PQclear(result);
+  PQclear( result );
 
 
   // Send some events (instead of a signal) as it is thread-safe
-  
+
   // First we tell the object that invoked us that we have some new extents for her
   // Second we tell the application that the extents have changed, so that it
   // can go on and do any visual housekeeping (e.g. update the overview window)
 
-  std::cout << "QgsPostgresExtentThread: About to create and dispatch event " << QGis::ProviderExtentCalcEvent << " to callback" << std::endl;
-  
-  QCustomEvent * e1 = new QCustomEvent ( QGis::ProviderExtentCalcEvent );
-  e1->setData(layerExtent);
-  QApplication::postEvent( (QObject *)callbackObject, e1);
-  
-//  QApplication::postEvent(qApp->mainWidget(), e1);
-  
-  std::cout << "QgsPostgresExtentThread: Posted event " << QGis::ProviderExtentCalcEvent << " to callback" << std::endl;
+  QgsDebugMsg( QString( "About to create and dispatch event %1 to callback" ).arg( QGis::ProviderExtentCalcEvent ) );
 
-  
-  std::cout << "QgsPostgresExtentThread: About to finish connection." << std::endl;
+  QgsProviderExtentCalcEvent * e1 = new QgsProviderExtentCalcEvent( layerExtent );
+  QApplication::postEvent(( QObject * )callbackObject, e1 );
+
+//  QApplication::postEvent(qApp->mainWidget(), e1);
+
+  QgsDebugMsg( QString( "Posted event %1 to callback" ).arg( QGis::ProviderExtentCalcEvent ) );
+
+
+  QgsDebugMsg( "About to finish connection." );
 
   // ending the thread, clean up
-  PQfinish(connection);
-  
-  std::cout << "QgsPostgresExtentThread: About to complete running." << std::endl;
-  
-    
+  PQfinish( connection );
+
+  QgsDebugMsg( "About to complete running." );
+
+
 }
 

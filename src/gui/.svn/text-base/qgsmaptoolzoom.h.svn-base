@@ -23,33 +23,37 @@
 
 class QRubberBand;
 
+/** \ingroup gui
+ * A map tool for zooming into the map.
+ * @see QgsMapTool
+ */
 class GUI_EXPORT QgsMapToolZoom : public QgsMapTool
 {
   public:
     //! constructor
-    QgsMapToolZoom(QgsMapCanvas* canvas, bool zoomOut);
-          
-    //! Overridden mouse move event
-    virtual void canvasMoveEvent(QMouseEvent * e);
-  
-    //! Overridden mouse press event
-    virtual void canvasPressEvent(QMouseEvent * e);
-  
-    //! Overridden mouse release event
-    virtual void canvasReleaseEvent(QMouseEvent * e);
+    QgsMapToolZoom( QgsMapCanvas* canvas, bool zoomOut );
 
-    virtual bool isZoomTool() { return true; }
-    
+    //! Overridden mouse move event
+    virtual void canvasMoveEvent( QMouseEvent * e );
+
+    //! Overridden mouse press event
+    virtual void canvasPressEvent( QMouseEvent * e );
+
+    //! Overridden mouse release event
+    virtual void canvasReleaseEvent( QMouseEvent * e );
+
+    virtual bool isTransient() { return true; }
+
   protected:
     //! stores actual zoom rect
     QRect mZoomRect;
-    
+
     //! indicates whether we're zooming in or out
     bool mZoomOut;
-    
+
     //! Flag to indicate a map canvas drag operation is taking place
     bool mDragging;
-    
+
     //! TODO: to be changed to a canvas item
     QRubberBand* mRubberBand;
 };

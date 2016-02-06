@@ -16,10 +16,10 @@ class QgsScaleCalculator
      * Constructor
      * @param dpi Monitor resolution in dots per inch
      * @param mapUnits Units of the data on the map. Must match a value from the
-     * QGis::units enum (METERS, FEET, DEGREES)
+     * QGis::UnitType enum (Meters, Feet, Degrees)
      */
     QgsScaleCalculator(int dpi = 0, 
-                       QGis::units mapUnits = QGis::METERS);
+                       QGis::UnitType mapUnits = QGis::Meters);
 
     //! Destructor
     ~QgsScaleCalculator();
@@ -31,29 +31,35 @@ class QgsScaleCalculator
     void setDpi(int dpi);
 
     /**
+     * Accessor for dpi used in scale calculations
+     * @return int the dpi used for scale calculations.
+     */
+    int dpi();
+    
+    /**
      * Set the map units
      * @param mapUnits Units of the data on the map. Must match a value from the
      */
-    void setMapUnits(QGis::units mapUnits);
+    void setMapUnits(QGis::UnitType mapUnits);
 
     /** Returns current map units */
-    QGis::units mapUnits() const;
+    QGis::UnitType mapUnits() const;
     
     /**
      * Calculate the scale
-     * @param mapExtent QgsRect containing the current map extent
+     * @param mapExtent QgsRectangle containing the current map extent
      * @param canvasWidth Width of the map canvas in pixel (physical) units
      * @return scale of current map view
      */
-    double calculate(QgsRect &mapExtent, int canvasWidth);
+    double calculate(QgsRectangle &mapExtent, int canvasWidth);
 
     /**
      * Calculate the distance between to points in geographic coordinates.
      * Used to calculate scale for map views with geographic (decimal degree)
      * data.
-     * @param mapExtent QgsRect containing the current map extent
+     * @param mapExtent QgsRectangle containing the current map extent
      */
-    double calculateGeographicDistance(QgsRect &mapExtent);
+    double calculateGeographicDistance(QgsRectangle &mapExtent);
 
 };
 

@@ -28,6 +28,7 @@ public:
     static WriterError writeAsShapefile(QgsVectorLayer* layer,
                                         const QString& shapefileName,
                                         const QString& fileEncoding,
+                                        const QgsCoordinateReferenceSystem*,
                                         bool onlySelected = FALSE);
 
 
@@ -35,8 +36,8 @@ public:
     QgsVectorFileWriter(const QString& shapefileName,
                         const QString& fileEncoding,
                         const QMap<int, QgsField>& fields,
-                        QGis::WKBTYPE geometryType,
-                        const QgsSpatialRefSys* srs);
+                        QGis::WkbType geometryType,
+                        const QgsCoordinateReferenceSystem* srs);
     
     /** checks whether there were any errors in constructor */
     WriterError hasError();
@@ -47,5 +48,10 @@ public:
     /** close opened shapefile for writing */
     ~QgsVectorFileWriter();
     
+    /** Delete a shapefile (and its accompanying shx / dbf / prf)
+     * @param QString theFileName - /path/to/file.shp
+     * @return bool true if the file was deleted successfully
+     */ 
+    static bool deleteShapeFile(QString theFileName);
 };
 

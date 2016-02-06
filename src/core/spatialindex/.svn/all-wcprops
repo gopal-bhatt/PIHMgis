@@ -1,23 +1,23 @@
 K 25
 svn:wc:ra_dav:version-url
-V 70
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/spatialindex
+V 65
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/core/spatialindex
 END
 qgsspatialindex.cpp
 K 25
 svn:wc:ra_dav:version-url
-V 90
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/spatialindex/qgsspatialindex.cpp
+V 85
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/core/spatialindex/qgsspatialindex.cpp
 END
 qgsspatialindex.h
 K 25
 svn:wc:ra_dav:version-url
-V 88
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/spatialindex/qgsspatialindex.h
+V 83
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/core/spatialindex/qgsspatialindex.h
 END
 README
 K 25
 svn:wc:ra_dav:version-url
-V 77
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/spatialindex/README
+V 72
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/core/spatialindex/README
 END

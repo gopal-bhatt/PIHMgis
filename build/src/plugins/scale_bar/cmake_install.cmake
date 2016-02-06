@@ -1,8 +1,8 @@
-# Install script for directory: /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/scale_bar
+# Install script for directory: /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/scale_bar
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  SET(CMAKE_INSTALL_PREFIX "/Users/bhattgopal/apps/qgis0.9.0.app/Contents/MacOS")
+  SET(CMAKE_INSTALL_PREFIX "/Users/bhattgopal/apps/qgis1.0.2.app/Contents/MacOS")
 ENDIF(NOT DEFINED CMAKE_INSTALL_PREFIX)
 STRING(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -27,10 +27,10 @@ IF(NOT CMAKE_INSTALL_COMPONENT)
   ENDIF(COMPONENT)
 ENDIF(NOT CMAKE_INSTALL_COMPONENT)
 
-FILE(INSTALL DESTINATION "/Users/bhattgopal/apps/qgis0.9.0.app/Contents/MacOS/lib/qgis" TYPE MODULE COMPONENTS "Unspecified" FILES "/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/scale_bar/libscalebarplugin.so")
+FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/qgis" TYPE MODULE COMPONENTS "Unspecified" FILES "/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/scale_bar/libscalebarplugin.so")
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")
   EXECUTE_PROCESS(COMMAND install_name_tool
-    -change "/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/core/libqgis_core.dylib" "@executable_path/lib/libqgis_core.dylib"
-    -change "/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/gui/libqgis_gui.dylib" "@executable_path/lib/libqgis_gui.dylib"
-    "$ENV{DESTDIR}/Users/bhattgopal/apps/qgis0.9.0.app/Contents/MacOS/lib/qgis/libscalebarplugin.so")
+    -change "/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/libqgis_core.1.0.2.dylib" "@executable_path/lib/libqgis_core.1.0.2.dylib"
+    -change "/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/gui/libqgis_gui.1.0.2.dylib" "@executable_path/lib/libqgis_gui.1.0.2.dylib"
+    "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/qgis/libscalebarplugin.so")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" MATCHES "^(Unspecified)$")

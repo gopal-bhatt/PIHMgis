@@ -1,5 +1,5 @@
 /***************************************************************************
-                          qgsrunprocess.h 
+                          qgsrunprocess.h
 
  A class that runs an external program
 
@@ -17,7 +17,7 @@
  *   (at your option) any later version.                                   *
  *                                                                         *
  ***************************************************************************/
-/* $Id: qgsrunprocess.h 6415 2007-01-09 02:39:15Z wonder $ */
+/* $Id: qgsrunprocess.h 9138 2008-08-23 21:37:31Z jef $ */
 
 #ifndef QGSRUNPROCESS_H
 #define QGSRUNPROCESS_H
@@ -27,42 +27,43 @@
 
 class QgsMessageOutput;
 
-/* A class than executes an external program/script, etc and
- * optionally captures the standard output and error from the
+/** \ingroup core
+ * A class that executes an external program/script.
+ * It can optionally capture the standard output and error from the
  * process and displays them in a dialog box.
  */
 class CORE_EXPORT QgsRunProcess: public QObject
 {
-  Q_OBJECT
+    Q_OBJECT
 
- public:
-  // This class deletes itself, so to ensure that it is only created
-  // using new, the Named Consturctor Idiom is used, and one needs to
-  // use the create() static function to get an instance of this class.
+  public:
+    // This class deletes itself, so to ensure that it is only created
+    // using new, the Named Consturctor Idiom is used, and one needs to
+    // use the create() static function to get an instance of this class.
 
-  // The action argument contains string with the command.
-  // If capture is true, the standard output and error from the process
-  // will be sent to QgsMessageOuptut - usually a dialog box.
-  static QgsRunProcess* create(const QString& action, bool capture)
-    { return new QgsRunProcess(action, capture); }
+    // The action argument contains string with the command.
+    // If capture is true, the standard output and error from the process
+    // will be sent to QgsMessageOuptut - usually a dialog box.
+    static QgsRunProcess* create( const QString& action, bool capture )
+    { return new QgsRunProcess( action, capture ); }
 
- public slots:
-  void stdoutAvailable();
-  void stderrAvailable();
-  void processError(QProcess::ProcessError);
-  void processExit(int,QProcess::ExitStatus);
-  void dialogGone();
+  public slots:
+    void stdoutAvailable();
+    void stderrAvailable();
+    void processError( QProcess::ProcessError );
+    void processExit( int, QProcess::ExitStatus );
+    void dialogGone();
 
- private:
-  QgsRunProcess(const QString& action, bool capture);
-  ~QgsRunProcess();
+  private:
+    QgsRunProcess( const QString& action, bool capture );
+    ~QgsRunProcess();
 
-  // Deletes the instance of the class
-  void die();
+    // Deletes the instance of the class
+    void die();
 
-  QProcess* mProcess;
-  QgsMessageOutput* mOutput;
-  QString mCommand;
+    QProcess* mProcess;
+    QgsMessageOutput* mOutput;
+    QString mCommand;
 };
 
 #endif

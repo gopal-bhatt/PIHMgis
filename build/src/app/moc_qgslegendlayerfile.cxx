@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'qgslegendlayerfile.h'
 **
-** Created: Wed Jun 11 19:05:44 2008
+** Created: Fri Jun 19 01:54:07 2009
 **      by: The Qt Meta Object Compiler version 59 (Qt 4.3.2)
 **
 ** WARNING! All changes made in this file will be lost!
@@ -22,30 +22,27 @@ static const uint qt_meta_data_QgsLegendLayerFile[] = {
        1,       // revision
        0,       // classname
        0,    0, // classinfo
-       9,   10, // methods
+       7,   10, // methods
        0,    0, // properties
        0,    0, // enums/sets
 
  // slots: signature, parameters, type, tag, flags
       20,   19,   19,   19, 0x0a,
-      28,   19,   19,   19, 0x0a,
-      53,   19,   19,   19, 0x0a,
-      95,   72,   19,   19, 0x0a,
-     112,   19,   19,   19, 0x0a,
-     130,   19,   19,   19, 0x0a,
-     157,   19,   19,   19, 0x0a,
-     173,   19,   19,   19, 0x0a,
-     190,   19,   19,   19, 0x0a,
+      39,   19,   19,   19, 0x0a,
+      47,   19,   19,   19, 0x0a,
+      65,   19,   19,   19, 0x0a,
+      97,   19,   92,   19, 0x0a,
+     109,   19,   19,   19, 0x0a,
+     126,   19,   19,   19, 0x0a,
 
        0        // eod
 };
 
 static const char qt_meta_stringdata_QgsLegendLayerFile[] = {
-    "QgsLegendLayerFile\0\0table()\0"
-    "invalidateTableDisplay()\0selectionChanged()\0"
-    "onlyGeometryWasChanged\0closeTable(bool)\0"
-    "saveAsShapefile()\0saveSelectionAsShapefile()\0"
-    "toggleEditing()\0showInOverview()\0"
+    "QgsLegendLayerFile\0\0updateLegendItem()\0"
+    "table()\0saveAsShapefile()\0"
+    "saveSelectionAsShapefile()\0bool\0"
+    "isEditing()\0showInOverview()\0"
     "layerNameChanged()\0"
 };
 
@@ -74,17 +71,16 @@ int QgsLegendLayerFile::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
         switch (_id) {
-        case 0: table(); break;
-        case 1: invalidateTableDisplay(); break;
-        case 2: selectionChanged(); break;
-        case 3: closeTable((*reinterpret_cast< bool(*)>(_a[1]))); break;
-        case 4: saveAsShapefile(); break;
-        case 5: saveSelectionAsShapefile(); break;
-        case 6: toggleEditing(); break;
-        case 7: showInOverview(); break;
-        case 8: layerNameChanged(); break;
+        case 0: updateLegendItem(); break;
+        case 1: table(); break;
+        case 2: saveAsShapefile(); break;
+        case 3: saveSelectionAsShapefile(); break;
+        case 4: { bool _r = isEditing();
+            if (_a[0]) *reinterpret_cast< bool*>(_a[0]) = _r; }  break;
+        case 5: showInOverview(); break;
+        case 6: layerNameChanged(); break;
         }
-        _id -= 9;
+        _id -= 7;
     }
     return _id;
 }

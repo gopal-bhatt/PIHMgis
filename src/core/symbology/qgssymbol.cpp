@@ -15,74 +15,96 @@
  *   (at your option) any later version.                                   *
  *                                                                         *
  ***************************************************************************/
-/* $Id: qgssymbol.cpp 7040 2007-06-19 11:16:35Z timlinux $ */
+/* $Id: qgssymbol.cpp 10136 2009-02-08 19:18:53Z jef $ */
 #include <cmath>
-#include <iostream>
 
+#include "qgis.h"
 #include "qgssymbol.h"
+#include "qgslogger.h"
 #include "qgssymbologyutils.h"
 #include "qgsmarkercatalogue.h"
+#include "qgsapplication.h"
+#include "qgsvectorlayer.h"
 
 #include <QPainter>
 #include <QDomNode>
 #include <QDomDocument>
 #include <QImage>
+#include <QDir>
+#include <QFileInfo>
 //#include <QString>
+#include "qgslogger.h"
 //do we have to include qstring?
 
-QgsSymbol::QgsSymbol(QGis::VectorType t, QString lvalue, QString uvalue, QString label) : 
-      mLowerValue(lvalue),
-      mUpperValue(uvalue),
-      mLabel(label),
-      mType(t),
-      mPointSymbolName( "hard:circle" ),
-      mPointSize( 6 ),
-      mPointSymbolImage(1,1, QImage::Format_ARGB32_Premultiplied),
-      mWidthScale(1.0),
-      mCacheUpToDate( false ),
-      mCacheUpToDate2( false )
-{}
+QgsSymbol::QgsSymbol( QGis::GeometryType t, QString lvalue, QString uvalue, QString label ) :
+    mLowerValue( lvalue ),
+    mUpperValue( uvalue ),
+    mLabel( label ),
+    mType( t ),
+    mPointSymbolName( "hard:circle" ),
+    mPointSize( DEFAULT_POINT_SIZE ),
+    mPointSymbolImage( 1, 1, QImage::Format_ARGB32_Premultiplied ),
+    mWidthScale( -1.0 ),
+    mCacheUpToDate( false ),
+    mCacheUpToDate2( false ),
+    mRotationClassificationField( -1 ),
+    mScaleClassificationField( -1 )
+{
+  mPen.setWidthF( DEFAULT_LINE_WIDTH );
+}
 
 
-QgsSymbol::QgsSymbol(QGis::VectorType t, QString lvalue, QString uvalue, QString label, QColor c) : 
-      mLowerValue(lvalue),
-      mUpperValue(uvalue),
-      mLabel(label),
-      mType(t),
-      mPen( c ),
-      mBrush( c ),
-      mPointSymbolName( "hard:circle" ),
-      mPointSize( 6 ),
-      mPointSymbolImage(1,1, QImage::Format_ARGB32_Premultiplied),
-      mWidthScale(1.0),
-      mCacheUpToDate( false ),
-      mCacheUpToDate2( false )
-{}
+QgsSymbol::QgsSymbol( QGis::GeometryType t, QString lvalue, QString uvalue, QString label, QColor c ) :
+    mLowerValue( lvalue ),
+    mUpperValue( uvalue ),
+    mLabel( label ),
+    mType( t ),
+    mPen( c ),
+    mBrush( c ),
+    mPointSymbolName( "hard:circle" ),
+    mPointSize( DEFAULT_POINT_SIZE ),
+    mPointSymbolImage( 1, 1, QImage::Format_ARGB32_Premultiplied ),
+    mWidthScale( -1.0 ),
+    mCacheUpToDate( false ),
+    mCacheUpToDate2( false ),
+    mRotationClassificationField( -1 ),
+    mScaleClassificationField( -1 )
+{
+  mPen.setWidthF( DEFAULT_LINE_WIDTH );
+}
 
 QgsSymbol::QgsSymbol()
     : mPointSymbolName( "hard:circle" ),
-      mPointSize( 6 ),
-      mPointSymbolImage(1,1, QImage::Format_ARGB32_Premultiplied),
-      mWidthScale(1.0),
-      mCacheUpToDate( false ),
-      mCacheUpToDate2( false )
-{}
-
-
-QgsSymbol::QgsSymbol(QColor c)
-    : mPen( c ),
-      mBrush( c ),
-      mPointSymbolName( "hard:circle" ),
-      mPointSize( 6 ),
-      mPointSymbolImage(1,1, QImage::Format_ARGB32_Premultiplied),
-      mWidthScale(1.0),
-      mCacheUpToDate( false ),
-      mCacheUpToDate2( false )
-{}
-
-QgsSymbol::QgsSymbol(const QgsSymbol& s)
+    mPointSize( DEFAULT_POINT_SIZE ),
+    mPointSymbolImage( 1, 1, QImage::Format_ARGB32_Premultiplied ),
+    mWidthScale( -1.0 ),
+    mCacheUpToDate( false ),
+    mCacheUpToDate2( false ),
+    mRotationClassificationField( -1 ),
+    mScaleClassificationField( -1 )
 {
-  if (this != &s)
+  mPen.setWidthF( DEFAULT_LINE_WIDTH );
+}
+
+
+QgsSymbol::QgsSymbol( QColor c )
+    : mPen( c ),
+    mBrush( c ),
+    mPointSymbolName( "hard:circle" ),
+    mPointSize( DEFAULT_POINT_SIZE ),
+    mPointSymbolImage( 1, 1, QImage::Format_ARGB32_Premultiplied ),
+    mWidthScale( -1.0 ),
+    mCacheUpToDate( false ),
+    mCacheUpToDate2( false ),
+    mRotationClassificationField( -1 ),
+    mScaleClassificationField( -1 )
+{
+  mPen.setWidthF( DEFAULT_LINE_WIDTH );
+}
+
+QgsSymbol::QgsSymbol( const QgsSymbol& s )
+{
+  if ( this != &s )
   {
     mLowerValue = s.mLowerValue;
     mUpperValue = s.mUpperValue;
@@ -90,7 +112,7 @@ QgsSymbol::QgsSymbol(const QgsSymbol& s)
     mType = s.mType;
     mPen = s.mPen;
     mBrush = s.mBrush;
-	mTextureFilePath = s.mTextureFilePath;
+    mTextureFilePath = s.mTextureFilePath;
     mPointSymbolName = s.mPointSymbolName;
     mPointSize = s.mPointSize;
     mPointSymbolImage = s.mPointSymbolImage;
@@ -102,12 +124,13 @@ QgsSymbol::QgsSymbol(const QgsSymbol& s)
     mCacheUpToDate2 = s.mCacheUpToDate2;
     mSelectionColor = s.mSelectionColor;
     mSelectionColor2 = s.mSelectionColor2;
+    mRotationClassificationField = s.mRotationClassificationField;
+    mScaleClassificationField = s.mScaleClassificationField;
   }
 }
 
 QgsSymbol::~QgsSymbol()
 {
-
 }
 
 
@@ -116,9 +139,9 @@ QColor QgsSymbol::color() const
   return mPen.color();
 }
 
-void QgsSymbol::setColor(QColor c)
+void QgsSymbol::setColor( QColor c )
 {
-  mPen.setColor(c);
+  mPen.setColor( c );
   mCacheUpToDate = mCacheUpToDate2 = false;
 }
 
@@ -127,300 +150,456 @@ QColor QgsSymbol::fillColor() const
   return mBrush.color();
 }
 
-void QgsSymbol::setFillColor(QColor c)
+void QgsSymbol::setFillColor( QColor c )
 {
-  mBrush.setColor(c);
+  mBrush.setColor( c );
   mCacheUpToDate = mCacheUpToDate2 = false;
 }
 
-int QgsSymbol::lineWidth() const
+double QgsSymbol::lineWidth() const
 {
-  return mPen.width();
+  return mPen.widthF();
 }
 
-void QgsSymbol::setLineWidth(int w)
+void QgsSymbol::setLineWidth( double w )
 {
-  mPen.setWidth(w);
+  mPen.setWidthF( w );
   mCacheUpToDate = mCacheUpToDate2 = false;
 }
 
 void QgsSymbol::setLineStyle( Qt::PenStyle s )
 {
-  mPen.setStyle(s);
+  mPen.setStyle( s );
   mCacheUpToDate = mCacheUpToDate2 = false;
 }
 
 void QgsSymbol::setFillStyle( Qt::BrushStyle s )
 {
-  mBrush.setStyle(s);
+  mBrush.setStyle( s );
   mCacheUpToDate = mCacheUpToDate2 = false;
 }
 
 QString QgsSymbol::customTexture() const
 {
-	return mTextureFilePath;
+  return mTextureFilePath;
 }
 
 void QgsSymbol::setCustomTexture( QString path )
 {
   mTextureFilePath = path;
-  mBrush.setTextureImage(QImage (path));
+  mBrush.setTextureImage( QImage( path ) );
   mCacheUpToDate = mCacheUpToDate2 = false;
 }
 
 //should we set the path independently of setting the texture?
 
-void QgsSymbol::setNamedPointSymbol(QString name)
+void QgsSymbol::setNamedPointSymbol( QString name )
 {
-    mPointSymbolName = name;
-    mCacheUpToDate = mCacheUpToDate2 = false;
+  // do some sanity checking for svgs...
+  QString myTempName = name;
+  myTempName.replace( "svg:", "" );
+  QFile myFile( myTempName );
+  if ( !myFile.exists() )
+  {
+    QgsDebugMsg( "\n\n\n *** Svg Symbol not found on fs ***" );
+    QgsDebugMsg( "Name: " + name );
+    //see if we can resolve the problem...
+    //by using the qgis svg dir from this local machine
+    //one day when user specified svg are allowed we need
+    //to adjust this logic probably...
+    QString svgPath = QgsApplication::svgPath();
+    QgsDebugMsg( "SvgPath: " + svgPath );
+    QFileInfo myInfo( myTempName );
+    QString myFileName = myInfo.fileName(); // foo.svg
+    QString myLowestDir = myInfo.dir().dirName();
+    QString myLocalPath = svgPath + QDir::separator() +
+                          myLowestDir + QDir::separator() +
+                          myFileName;
+    QgsDebugMsg( "Alternative svg path: " + myLocalPath );
+    if ( QFile( myLocalPath ).exists() )
+    {
+      name = "svg:" + myLocalPath;
+      QgsDebugMsg( "Svg found in alternative path" );
+    }
+    else
+    {
+      //couldnt find the file, no happy ending :-(
+      QgsDebugMsg( "Computed alternate path but no svg there either" );
+    }
+  }
+  mPointSymbolName = name;
+  mCacheUpToDate = mCacheUpToDate2 = false;
 }
 
 QString QgsSymbol::pointSymbolName() const
 {
-    return mPointSymbolName;
+  return mPointSymbolName;
 }
 
-void QgsSymbol::setPointSize(int s)
+void QgsSymbol::setPointSize( double s )
 {
-    if ( s < 3 )  
-	mPointSize = 3;
-    else 
-    	mPointSize = s;
+  if ( s < MINIMUM_POINT_SIZE )
+    mPointSize = MINIMUM_POINT_SIZE;
+  else
+    mPointSize = s;
 
-    mCacheUpToDate = mCacheUpToDate2 = false;
+  mCacheUpToDate = mCacheUpToDate2 = false;
 }
 
-int QgsSymbol::pointSize() const
+double QgsSymbol::pointSize() const
 {
-    return mPointSize;
+  return mPointSize;
 }
 
 
 QImage QgsSymbol::getLineSymbolAsImage()
 {
-    QImage img(15, 15, QImage::Format_ARGB32_Premultiplied);
-    img.fill(QColor(255,255,255,0).rgba());
-    QPainter p(&img);
-    p.setPen(mPen);
-    p.drawLine(0, 0, 15, 15);
-    return img; //this is ok because of qts sharing mechanism
+  //Note by Tim: dont use premultiplied - it causes
+  //artifacts on the output icon!
+  QImage img( 15, 15, QImage::Format_ARGB32 );//QImage::Format_ARGB32_Premultiplied);
+  //0 = fully transparent
+  img.fill( QColor( 255, 255, 255, 0 ).rgba() );
+  QPainter p( &img );
+  p.setRenderHints( QPainter::Antialiasing );
+  p.setPen( mPen );
+
+
+  QPainterPath myPath;
+  myPath.moveTo( 0, 0 );
+  myPath.cubicTo( 15, 0, 5, 7, 15, 15 );
+  p.drawPath( myPath );
+  //p.drawLine(0, 0, 15, 15);
+  return img; //this is ok because of qts sharing mechanism
 }
 
 QImage QgsSymbol::getPolygonSymbolAsImage()
 {
-   QImage img(15, 15, QImage::Format_ARGB32_Premultiplied);
-   img.fill(QColor(255,255,255,0).rgba());
-   QPainter p(&img);
-   p.setPen(mPen);
-   p.setBrush(mBrush);
-   p.drawRect(0, 0, 15, 15);
-   return img; //this is ok because of qts sharing mechanism 
+  //Note by Tim: dont use premultiplied - it causes
+  //artifacts on the output icon!
+  QImage img( 15, 15, QImage::Format_ARGB32 ); //, QImage::Format_ARGB32_Premultiplied);
+  //0 = fully transparent
+  img.fill( QColor( 255, 255, 255, 0 ).rgba() );
+  QPainter p( &img );
+  p.setRenderHints( QPainter::Antialiasing );
+  p.setPen( mPen );
+  p.setBrush( mBrush );
+  QPolygon myPolygon;
+  //leave a little white space around so
+  //dont draw at 0,0,15,15
+  myPolygon << QPoint( 2, 2 )
+  << QPoint( 1, 5 )
+  << QPoint( 1, 10 )
+  << QPoint( 2, 12 )
+  << QPoint( 5, 13 )
+  << QPoint( 6, 13 )
+  << QPoint( 8, 12 )
+  << QPoint( 8, 12 )
+  << QPoint( 10, 12 )
+  << QPoint( 12, 13 )
+  << QPoint( 13, 11 )
+  << QPoint( 12, 8 )
+  << QPoint( 11, 6 )
+  << QPoint( 12, 5 )
+  << QPoint( 13, 2 )
+  << QPoint( 11, 1 )
+  << QPoint( 10, 1 )
+  << QPoint( 8, 2 )
+  << QPoint( 6, 4 )
+  << QPoint( 4, 2 )
+  ;
+  p.drawPolygon( myPolygon );
+  //p.drawRect(1, 1, 14, 14);
+  return img; //this is ok because of qts sharing mechanism
 }
 
-QImage QgsSymbol::getPointSymbolAsImage(  double widthScale,
-               bool selected, QColor selectionColor )
+QImage QgsSymbol::getCachedPointSymbolAsImage( double widthScale,
+    bool selected, QColor selectionColor )
 {
-
-	if ( !mCacheUpToDate 
-	     || ( selected && mSelectionColor != selectionColor ) )
-	{
-	    if ( selected ) {
-	        cache(  selectionColor );
-	    } else {
-	        cache(  mSelectionColor );
-	    }
-	}
-
-	if ( selected )
+  if ( !mCacheUpToDate2
+       || ( selected && mSelectionColor != selectionColor ) )
   {
-	    return mPointSymbolImageSelected;
-	}
-        
- return mPointSymbolImage;
+    if ( selected )
+    {
+      cache2( widthScale, selectionColor );
+    }
+    else
+    {
+      cache2( widthScale, mSelectionColor );
+    }
+  }
+
+  if ( selected )
+  {
+    return mPointSymbolImageSelected2;
+  }
+  else
+  {
+    return mPointSymbolImage2;
+  }
 }
 
-void QgsSymbol::cache(  QColor selectionColor )
+QImage QgsSymbol::getPointSymbolAsImage( double widthScale, bool selected, QColor selectionColor, double scale,
+    double rotation, double rasterScaleFactor )
 {
-    QPen pen = mPen;
-    pen.setColor ( selectionColor ); 
+  if ( 1.0 == ( scale * rasterScaleFactor ) && 0 == rotation )
+  {
+    if ( mWidthScale < 0 || widthScale == mWidthScale )
+    {
+      // If scale is 1.0 and rotation 0.0, use cached image.
+      return getCachedPointSymbolAsImage( widthScale, selected, selectionColor );
+    }
+  }
+
+  QImage preRotateImage;
+  QPen pen = mPen;
+  double newWidth = mPen.widthF() * widthScale * rasterScaleFactor;
+  pen.setWidthF( newWidth );
+
+  if ( selected )
+  {
+    pen.setColor( selectionColor );
     QBrush brush = mBrush;
-    // For symbols that have a different coloured border, the line
-    // below causes the fill colour to be wrong for the print
-    // composer. Not sure why... 
-    // brush.setColor ( selectionColor ); 
+    preRotateImage = QgsMarkerCatalogue::instance()->imageMarker(
+                       mPointSymbolName, ( float )( mPointSize * scale * widthScale *
+                                                    rasterScaleFactor ),
+                       pen, mBrush );
+  }
+  else
+  {
+    preRotateImage = QgsMarkerCatalogue::instance()->imageMarker(
+                       mPointSymbolName, ( float )( mPointSize * scale * widthScale *
+                                                    rasterScaleFactor ),
+                       pen, mBrush );
+  }
 
-    mPointSymbolImage = QgsMarkerCatalogue::instance()->imageMarker ( mPointSymbolName, mPointSize,
-	                        mPen, mBrush );
-    
-    mPointSymbolImageSelected = QgsMarkerCatalogue::instance()->imageMarker ( 
-	     mPointSymbolName, mPointSize, pen, brush );
+  QMatrix rotationMatrix;
+  rotationMatrix = rotationMatrix.rotate( rotation );
 
-    mSelectionColor = selectionColor;
-    mCacheUpToDate = true;
+  return preRotateImage.transformed( rotationMatrix, Qt::SmoothTransformation );
+}
+
+
+void QgsSymbol::cache( QColor selectionColor )
+{
+  QPen pen = mPen;
+  pen.setColor( selectionColor );
+  QBrush brush = mBrush;
+  // For symbols that have a different coloured border, the line
+  // below causes the fill colour to be wrong for the print
+  // composer. Not sure why...
+  // brush.setColor ( selectionColor );
+
+  mPointSymbolImage = QgsMarkerCatalogue::instance()->imageMarker( mPointSymbolName, mPointSize,
+                      mPen, mBrush );
+
+  mPointSymbolImageSelected = QgsMarkerCatalogue::instance()->imageMarker(
+                                mPointSymbolName, mPointSize, pen, brush );
+
+  mSelectionColor = selectionColor;
+  mCacheUpToDate = true;
 }
 
 void QgsSymbol::cache2( double widthScale, QColor selectionColor )
 {
-    //std::cerr << "QgsSymbol::cache2 widthScale = " << widthScale << std::endl;
+// QgsDebugMsg(QString("widthScale = %1").arg(widthScale));
 
-    QPen pen = mPen;
-    pen.setWidth ( (int) ( widthScale * pen.width() ) );
+  QPen pen = mPen;
+  pen.setWidthF( widthScale * pen.widthF() );
 
-    
-    mPointSymbolImage2 = QgsMarkerCatalogue::instance()->imageMarker ( mPointSymbolName, mPointSize,
-	                        pen, mBrush, false );
+  mPointSymbolImage2 = QgsMarkerCatalogue::instance()->imageMarker( mPointSymbolName, mPointSize * widthScale,
+                       pen, mBrush, false );
 
-    QBrush brush = mBrush;
-    brush.setColor ( selectionColor ); 
-    pen.setColor ( selectionColor ); 
+  QBrush brush = mBrush;
+  brush.setColor( selectionColor );
+  pen.setColor( selectionColor );
 
-    mPointSymbolImageSelected2 = QgsMarkerCatalogue::instance()->imageMarker ( 
-	               mPointSymbolName, mPointSize, pen, brush,  false );
+  mPointSymbolImageSelected2 = QgsMarkerCatalogue::instance()->imageMarker(
+                                 mPointSymbolName, mPointSize * widthScale, pen, brush,  false );
 
-    mSelectionColor2 = selectionColor;
-    
-    mWidthScale = widthScale;
-    mCacheUpToDate2 = true;
+  mSelectionColor2 = selectionColor;
+
+  mWidthScale = widthScale;
+  mCacheUpToDate2 = true;
 }
 
-bool QgsSymbol::writeXML( QDomNode & item, QDomDocument & document ) const
+void QgsSymbol::appendField( QDomElement &symbol, QDomDocument &document, const QgsVectorLayer &vl, QString name, int idx ) const
 {
-    bool returnval = false;
-    returnval = true; // no error checking yet
-    QDomElement symbol=document.createElement("symbol");
-    item.appendChild(symbol);
-
-    QDomElement lowervalue=document.createElement("lowervalue");
-    QDomText lowervaluetxt=document.createTextNode(mLowerValue);
-    symbol.appendChild(lowervalue);
-    lowervalue.appendChild(lowervaluetxt);
-
-    QDomElement uppervalue=document.createElement("uppervalue");
-    QDomText uppervaluetxt=document.createTextNode(mUpperValue);
-    symbol.appendChild(uppervalue);
-    uppervalue.appendChild(uppervaluetxt);
-
-    QDomElement label=document.createElement("label");
-    QDomText labeltxt=document.createTextNode(mLabel);
-    symbol.appendChild(label);
-    label.appendChild(labeltxt);
-
-    QDomElement pointsymbol=document.createElement("pointsymbol");
-    QDomText pointsymboltxt=document.createTextNode(pointSymbolName());
-    symbol.appendChild(pointsymbol);
-    pointsymbol.appendChild(pointsymboltxt);
-
-    QDomElement pointsize=document.createElement("pointsize");
-    QDomText pointsizetxt=document.createTextNode( QString::number(pointSize()) );
-    symbol.appendChild(pointsize);
-    pointsize.appendChild(pointsizetxt);
-
-    QDomElement outlinecolor=document.createElement("outlinecolor");
-    outlinecolor.setAttribute("red",QString::number(mPen.color().red()));
-    outlinecolor.setAttribute("green",QString::number(mPen.color().green()));
-    outlinecolor.setAttribute("blue",QString::number(mPen.color().blue()));
-    symbol.appendChild(outlinecolor);
-    QDomElement outlinestyle=document.createElement("outlinestyle");
-    QDomText outlinestyletxt=document.createTextNode(QgsSymbologyUtils::penStyle2QString(mPen.style()));
-    outlinestyle.appendChild(outlinestyletxt);
-    symbol.appendChild(outlinestyle);
-    QDomElement outlinewidth=document.createElement("outlinewidth");
-    QDomText outlinewidthtxt=document.createTextNode(QString::number(mPen.width()));
-    outlinewidth.appendChild(outlinewidthtxt);
-    symbol.appendChild(outlinewidth);
-    QDomElement fillcolor=document.createElement("fillcolor");
-    fillcolor.setAttribute("red",QString::number(mBrush.color().red()));
-    fillcolor.setAttribute("green",QString::number(mBrush.color().green()));
-    fillcolor.setAttribute("blue",QString::number(mBrush.color().blue()));
-    symbol.appendChild(fillcolor);
-    QDomElement fillpattern=document.createElement("fillpattern");
-    QDomText fillpatterntxt=document.createTextNode(QgsSymbologyUtils::brushStyle2QString(mBrush.style()));
-    fillpattern.appendChild(fillpatterntxt);
-    symbol.appendChild(fillpattern);
-    fillpattern.appendChild(fillpatterntxt);
-    
-	QDomElement texturepath=document.createElement("texturepath");
-    QDomText texturepathtxt=document.createTextNode(mTextureFilePath);
-    symbol.appendChild(texturepath);
-    texturepath.appendChild(texturepathtxt);
-
-    return returnval;
+  appendText( symbol, document, name, vl.pendingFields().contains( idx ) ? vl.pendingFields()[idx].name() : "" );
 }
 
-bool QgsSymbol::readXML( QDomNode & synode )
+void QgsSymbol::appendText( QDomElement &symbol, QDomDocument &document, QString name, QString value ) const
 {
-    // Legacy project file formats didn't have support for pointsymbol nor
-    // pointsize DOM elements.  Therefore we should check whether these
-    // actually exist.
+  QDomElement node = document.createElement( name );
+  QDomText txt = document.createTextNode( value );
+  symbol.appendChild( node );
+  node.appendChild( txt );
+}
 
-    QDomNode lvalnode = synode.namedItem("lowervalue");
-    if( ! lvalnode.isNull() )
-    {
-	QDomElement lvalelement = lvalnode.toElement();
-	mLowerValue=lvalelement.text();
-    }
+bool QgsSymbol::writeXML( QDomNode & item, QDomDocument & document, const QgsVectorLayer *vl ) const
+{
+  bool returnval = false;
+  returnval = true; // no error checking yet
+  QDomElement symbol = document.createElement( "symbol" );
+  item.appendChild( symbol );
 
-    QDomNode uvalnode = synode.namedItem("uppervalue");
-    if( ! uvalnode.isNull() )
-    {
-	QDomElement uvalelement = uvalnode.toElement();
-	mUpperValue=uvalelement.text();
-    }
+  appendText( symbol, document, "lowervalue", mLowerValue );
+  appendText( symbol, document, "uppervalue", mUpperValue );
+  appendText( symbol, document, "label", mLabel );
+  appendText( symbol, document, "pointsymbol", pointSymbolName() );
+  appendText( symbol, document, "pointsize", QString::number( pointSize() ) );
 
-    QDomNode labelnode = synode.namedItem("label");
-    if( ! labelnode.isNull() )
-    {
-	QDomElement labelelement = labelnode.toElement();
-	mLabel=labelelement.text();
-    }
+  if ( vl )
+  {
+    appendField( symbol, document, *vl, "rotationclassificationfieldname", mRotationClassificationField );
+    appendField( symbol, document, *vl, "scaleclassificationfieldname", mScaleClassificationField );
+  }
 
-    QDomNode psymbnode = synode.namedItem("pointsymbol");
+  QDomElement outlinecolor = document.createElement( "outlinecolor" );
+  outlinecolor.setAttribute( "red", QString::number( mPen.color().red() ) );
+  outlinecolor.setAttribute( "green", QString::number( mPen.color().green() ) );
+  outlinecolor.setAttribute( "blue", QString::number( mPen.color().blue() ) );
+  symbol.appendChild( outlinecolor );
 
-    if ( ! psymbnode.isNull() )
-    {
-        QDomElement psymbelement = psymbnode.toElement();
-        setNamedPointSymbol( psymbelement.text() );
-    }
-    
-    QDomNode psizenode = synode.namedItem("pointsize");
-    
-    if ( !  psizenode.isNull() )
-    {
-        QDomElement psizeelement = psizenode.toElement();
-        setPointSize( psizeelement.text().toInt() );
-    }
+  appendText( symbol, document, "outlinestyle", QgsSymbologyUtils::penStyle2QString( mPen.style() ) );
+  appendText( symbol, document, "outlinewidth", QString::number( mPen.widthF() ) );
 
-    QDomNode outlcnode = synode.namedItem("outlinecolor");
-    QDomElement oulcelement = outlcnode.toElement();
-    int red = oulcelement.attribute("red").toInt();
-    int green = oulcelement.attribute("green").toInt();
-    int blue = oulcelement.attribute("blue").toInt();
-    setColor(QColor(red, green, blue));
+  QDomElement fillcolor = document.createElement( "fillcolor" );
+  fillcolor.setAttribute( "red", QString::number( mBrush.color().red() ) );
+  fillcolor.setAttribute( "green", QString::number( mBrush.color().green() ) );
+  fillcolor.setAttribute( "blue", QString::number( mBrush.color().blue() ) );
+  symbol.appendChild( fillcolor );
 
-    QDomNode outlstnode = synode.namedItem("outlinestyle");
-    QDomElement outlstelement = outlstnode.toElement();
-    setLineStyle(QgsSymbologyUtils::qString2PenStyle(outlstelement.text()));
+  appendText( symbol, document, "fillpattern", QgsSymbologyUtils::brushStyle2QString( mBrush.style() ) );
+  appendText( symbol, document, "texturepath", mTextureFilePath );
 
-    QDomNode outlwnode = synode.namedItem("outlinewidth");
-    QDomElement outlwelement = outlwnode.toElement();
-    setLineWidth(outlwelement.text().toInt());
+  return returnval;
+}
 
-    QDomNode fillcnode = synode.namedItem("fillcolor");
-    QDomElement fillcelement = fillcnode.toElement();
-    red = fillcelement.attribute("red").toInt();
-    green = fillcelement.attribute("green").toInt();
-    blue = fillcelement.attribute("blue").toInt();
-    setFillColor(QColor(red, green, blue));
+int QgsSymbol::readFieldName( QDomNode &synode, QString name, const QgsVectorLayer &vl )
+{
+  QDomNode node = synode.namedItem( name + "name" );
 
-    QDomNode texturepathnode = synode.namedItem("texturepath");
-    QDomElement texturepathelement = texturepathnode.toElement();
-    setCustomTexture(texturepathelement.text());
+  if ( !node.isNull() )
+  {
+    const QgsFieldMap &fields = vl.pendingFields();
+    QString name = node.toElement().text();
 
-	//run this after setting the custom texture path, so we override the brush if it isn't the custom pattern brush.
-    QDomNode fillpnode = synode.namedItem("fillpattern");
-    QDomElement fillpelement = fillpnode.toElement();
-    setFillStyle(QgsSymbologyUtils::qString2BrushStyle(fillpelement.text()));
+    for ( QgsFieldMap::const_iterator it = fields.begin(); it != fields.end(); it++ )
+      if ( it->name() == name )
+        return it.key();
 
-    return true;
+    return -1;
+  }
+
+  node = synode.namedItem( name );
+
+  return node.isNull() ? -1 : node.toElement().text().toInt();
+}
+
+bool QgsSymbol::readXML( QDomNode &synode, const QgsVectorLayer *vl )
+{
+  // Legacy project file formats didn't have support for pointsymbol nor
+  // pointsize Dom elements.  Therefore we should check whether these
+  // actually exist.
+
+  QDomNode lvalnode = synode.namedItem( "lowervalue" );
+  if ( ! lvalnode.isNull() )
+  {
+    QDomElement lvalelement = lvalnode.toElement();
+    mLowerValue = lvalelement.text();
+  }
+
+  QDomNode uvalnode = synode.namedItem( "uppervalue" );
+  if ( ! uvalnode.isNull() )
+  {
+    QDomElement uvalelement = uvalnode.toElement();
+    mUpperValue = uvalelement.text();
+  }
+
+  QDomNode labelnode = synode.namedItem( "label" );
+  if ( ! labelnode.isNull() )
+  {
+    QDomElement labelelement = labelnode.toElement();
+    mLabel = labelelement.text();
+  }
+
+  QDomNode psymbnode = synode.namedItem( "pointsymbol" );
+
+  if ( ! psymbnode.isNull() )
+  {
+    QDomElement psymbelement = psymbnode.toElement();
+    setNamedPointSymbol( psymbelement.text() );
+  }
+
+  QDomNode psizenode = synode.namedItem( "pointsize" );
+
+  if ( !  psizenode.isNull() )
+  {
+    QDomElement psizeelement = psizenode.toElement();
+    setPointSize( psizeelement.text().toFloat() );
+  }
+
+  if ( vl )
+  {
+    mRotationClassificationField = readFieldName( synode, "rotationclassificationfield", *vl );
+    mScaleClassificationField = readFieldName( synode, "scaleclassificationfield", *vl );
+  }
+  else
+  {
+    mRotationClassificationField = -1;
+    mScaleClassificationField = -1;
+  }
+
+  QDomNode outlcnode = synode.namedItem( "outlinecolor" );
+  QDomElement oulcelement = outlcnode.toElement();
+  int red = oulcelement.attribute( "red" ).toInt();
+  int green = oulcelement.attribute( "green" ).toInt();
+  int blue = oulcelement.attribute( "blue" ).toInt();
+  setColor( QColor( red, green, blue ) );
+
+  QDomNode outlstnode = synode.namedItem( "outlinestyle" );
+  QDomElement outlstelement = outlstnode.toElement();
+  setLineStyle( QgsSymbologyUtils::qString2PenStyle( outlstelement.text() ) );
+
+  QDomNode outlwnode = synode.namedItem( "outlinewidth" );
+  QDomElement outlwelement = outlwnode.toElement();
+  setLineWidth( outlwelement.text().toDouble() );
+
+  QDomNode fillcnode = synode.namedItem( "fillcolor" );
+  QDomElement fillcelement = fillcnode.toElement();
+  red = fillcelement.attribute( "red" ).toInt();
+  green = fillcelement.attribute( "green" ).toInt();
+  blue = fillcelement.attribute( "blue" ).toInt();
+  setFillColor( QColor( red, green, blue ) );
+
+  QDomNode texturepathnode = synode.namedItem( "texturepath" );
+  QDomElement texturepathelement = texturepathnode.toElement();
+  setCustomTexture( texturepathelement.text() );
+
+  //run this after setting the custom texture path, so we override the brush if it isn't the custom pattern brush.
+  QDomNode fillpnode = synode.namedItem( "fillpattern" );
+  QDomElement fillpelement = fillpnode.toElement();
+  setFillStyle( QgsSymbologyUtils::qString2BrushStyle( fillpelement.text() ) );
+
+  return true;
+}
+
+int QgsSymbol::rotationClassificationField() const
+{
+  return mRotationClassificationField;
+}
+
+void QgsSymbol::setRotationClassificationField( int field )
+{
+  mRotationClassificationField = field;
+}
+
+int QgsSymbol::scaleClassificationField() const
+{
+  return mScaleClassificationField;
+}
+
+void QgsSymbol::setScaleClassificationField( int field )
+{
+  mScaleClassificationField = field;
 }

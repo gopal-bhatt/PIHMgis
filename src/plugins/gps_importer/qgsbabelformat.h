@@ -13,7 +13,7 @@
  *   (at your option) any later version.                                   *
  *                                                                         *
  ***************************************************************************/
-/*  $Id: qgsbabelformat.h 6415 2007-01-09 02:39:15Z wonder $ */
+/*  $Id: qgsbabelformat.h 9138 2008-08-23 21:37:31Z jef $ */
 
 #ifndef QGSBABELFORMAT_H
 #define QGSBABELFORMAT_H
@@ -24,64 +24,67 @@
 
 class QString;
 
-class QgsBabelFormat {
-public:
-  QgsBabelFormat(const QString& name = "");
-  virtual ~QgsBabelFormat() { }
-  
-  const QString& name() const;
-  virtual QStringList importCommand(const QString& babel,
-				    const QString& featuretype,
-				    const QString& input,
-				    const QString& output) const;
-  virtual QStringList exportCommand(const QString& babel,
-				    const QString& featuretype,
-				    const QString& input,
-				    const QString& output) const;
-  
-  bool supportsImport() const;
-  bool supportsExport() const;
-  bool supportsWaypoints() const;
-  bool supportsRoutes() const;
-  bool supportsTracks() const;
-  
-protected:
-  
-  QString mName;
-  bool mSupportsImport, mSupportsExport;
-  bool mSupportsWaypoints, mSupportsRoutes, mSupportsTracks;
+class QgsBabelFormat
+{
+  public:
+    QgsBabelFormat( const QString& name = "" );
+    virtual ~QgsBabelFormat() { }
+
+    const QString& name() const;
+    virtual QStringList importCommand( const QString& babel,
+                                       const QString& featuretype,
+                                       const QString& input,
+                                       const QString& output ) const;
+    virtual QStringList exportCommand( const QString& babel,
+                                       const QString& featuretype,
+                                       const QString& input,
+                                       const QString& output ) const;
+
+    bool supportsImport() const;
+    bool supportsExport() const;
+    bool supportsWaypoints() const;
+    bool supportsRoutes() const;
+    bool supportsTracks() const;
+
+  protected:
+
+    QString mName;
+    bool mSupportsImport, mSupportsExport;
+    bool mSupportsWaypoints, mSupportsRoutes, mSupportsTracks;
 };
 
 
 
-class QgsSimpleBabelFormat : public QgsBabelFormat {
-public:
-  QgsSimpleBabelFormat(const QString& format, bool hasWaypoints, 
-		       bool hasRoutes, bool hasTracks);
-  QStringList importCommand(const QString& babel, 
-			    const QString& featuretype,
-			    const QString& input,
-			    const QString& output) const;
-protected:
-  QString mFormat;
+class QgsSimpleBabelFormat : public QgsBabelFormat
+{
+  public:
+    QgsSimpleBabelFormat( const QString& format, bool hasWaypoints,
+                          bool hasRoutes, bool hasTracks );
+    QStringList importCommand( const QString& babel,
+                               const QString& featuretype,
+                               const QString& input,
+                               const QString& output ) const;
+  protected:
+    QString mFormat;
 };
 
 
 
-class QgsBabelCommand : public QgsBabelFormat {
-public:
-  QgsBabelCommand(const QString& importCmd, const QString& exportCmd);
-  QStringList importCommand(const QString& babel,
-			    const QString& featuretype,
-			    const QString& input,
-			    const QString& output) const;
-  QStringList exportCommand(const QString& babel,
-			    const QString& featuretype,
-			    const QString& input,
-			    const QString& output) const;
-protected:
-  QStringList mImportCmd;
-  QStringList mExportCmd;
+class QgsBabelCommand : public QgsBabelFormat
+{
+  public:
+    QgsBabelCommand( const QString& importCmd, const QString& exportCmd );
+    QStringList importCommand( const QString& babel,
+                               const QString& featuretype,
+                               const QString& input,
+                               const QString& output ) const;
+    QStringList exportCommand( const QString& babel,
+                               const QString& featuretype,
+                               const QString& input,
+                               const QString& output ) const;
+  protected:
+    QStringList mImportCmd;
+    QStringList mExportCmd;
 };
 
 

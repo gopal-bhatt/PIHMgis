@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'qgssearchquerybuilder.h'
 **
-** Created: Wed Jun 11 19:05:43 2008
+** Created: Fri Jun 19 01:54:09 2009
 **      by: The Qt Meta Object Compiler version 59 (Qt 4.3.2)
 **
 ** WARNING! All changes made in this file will be lost!
@@ -36,18 +36,18 @@ static const uint qt_meta_data_QgsSearchQueryBuilder[] = {
      156,   22,   22,   22, 0x0a,
      178,   22,   22,   22, 0x0a,
      199,   22,   22,   22, 0x0a,
-     226,  221,   22,   22, 0x0a,
-     269,  221,   22,   22, 0x0a,
-     312,   22,   22,   22, 0x0a,
-     338,   22,   22,   22, 0x0a,
-     367,   22,   22,   22, 0x0a,
-     392,   22,   22,   22, 0x0a,
-     412,   22,   22,   22, 0x0a,
-     432,   22,   22,   22, 0x0a,
-     451,   22,   22,   22, 0x0a,
-     473,   22,   22,   22, 0x0a,
-     494,   22,   22,   22, 0x0a,
-     523,   22,   22,   22, 0x0a,
+     227,  221,   22,   22, 0x0a,
+     267,  221,   22,   22, 0x0a,
+     307,   22,   22,   22, 0x0a,
+     333,   22,   22,   22, 0x0a,
+     362,   22,   22,   22, 0x0a,
+     387,   22,   22,   22, 0x0a,
+     407,   22,   22,   22, 0x0a,
+     427,   22,   22,   22, 0x0a,
+     446,   22,   22,   22, 0x0a,
+     468,   22,   22,   22, 0x0a,
+     489,   22,   22,   22, 0x0a,
+     518,   22,   22,   22, 0x0a,
 
        0        // eod
 };
@@ -58,9 +58,9 @@ static const char qt_meta_stringdata_QgsSearchQueryBuilder[] = {
     "on_btnGreaterThan_clicked()\0"
     "on_btnPct_clicked()\0on_btnIn_clicked()\0"
     "on_btnNotIn_clicked()\0on_btnLike_clicked()\0"
-    "on_btnILike_clicked()\0item\0"
-    "on_lstFields_doubleClicked(Q3ListBoxItem*)\0"
-    "on_lstValues_doubleClicked(Q3ListBoxItem*)\0"
+    "on_btnILike_clicked()\0index\0"
+    "on_lstFields_doubleClicked(QModelIndex)\0"
+    "on_lstValues_doubleClicked(QModelIndex)\0"
     "on_btnLessEqual_clicked()\0"
     "on_btnGreaterEqual_clicked()\0"
     "on_btnNotEqual_clicked()\0on_btnAnd_clicked()\0"
@@ -104,8 +104,8 @@ int QgsSearchQueryBuilder::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
         case 6: on_btnNotIn_clicked(); break;
         case 7: on_btnLike_clicked(); break;
         case 8: on_btnILike_clicked(); break;
-        case 9: on_lstFields_doubleClicked((*reinterpret_cast< Q3ListBoxItem*(*)>(_a[1]))); break;
-        case 10: on_lstValues_doubleClicked((*reinterpret_cast< Q3ListBoxItem*(*)>(_a[1]))); break;
+        case 9: on_lstFields_doubleClicked((*reinterpret_cast< const QModelIndex(*)>(_a[1]))); break;
+        case 10: on_lstValues_doubleClicked((*reinterpret_cast< const QModelIndex(*)>(_a[1]))); break;
         case 11: on_btnLessEqual_clicked(); break;
         case 12: on_btnGreaterEqual_clicked(); break;
         case 13: on_btnNotEqual_clicked(); break;

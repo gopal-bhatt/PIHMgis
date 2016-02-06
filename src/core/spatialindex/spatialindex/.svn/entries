@@ -1,15 +1,15 @@
 8
 
 dir
-7809
-https://svn.qgis.org/repos/qgis/branches/Release-0_9_0/src/core/spatialindex/spatialindex
-https://svn.qgis.org/repos/qgis
+10938
+https://svn.osgeo.org/qgis/branches/Release-1_0_2/src/core/spatialindex/spatialindex
+https://svn.osgeo.org/qgis
 
 
 
-2007-01-09T02:39:15.173934Z
-6415
-wonder
+2008-08-23T21:37:31.208899Z
+9138
+jef
 
 
 svn:special svn:externals svn:needs-lock
@@ -32,11 +32,11 @@ file
 
 
 
-2007-12-24T08:18:09.000000Z
-acf64692fb00ef30ca316ab7111785d8
-2007-01-09T02:39:15.173934Z
-6415
-wonder
+2009-06-17T07:49:52.000000Z
+2f0a008cf77250833f538659f0a628c4
+2008-08-23T21:37:31.208899Z
+9138
+jef
 
 SpatialIndexImpl.h
 file
@@ -44,9 +44,9 @@ file
 
 
 
-2007-12-24T08:18:09.000000Z
-d83d44431246a4fa6cd353c68a550c5e
-2007-01-09T02:39:15.173934Z
-6415
-wonder
+2009-06-17T07:49:52.000000Z
+5304363895922be8a0f13bc39964c078
+2008-08-23T21:37:31.208899Z
+9138
+jef
 

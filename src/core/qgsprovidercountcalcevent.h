@@ -15,48 +15,44 @@
  *   (at your option) any later version.                                   *
  *                                                                         *
  ***************************************************************************/
-/* $Id: qgsprovidercountcalcevent.h 6415 2007-01-09 02:39:15Z wonder $ */
+/* $Id: qgsprovidercountcalcevent.h 9538 2008-10-24 22:12:40Z timlinux $ */
 
 #ifndef QGSPROVIDERCOUNTCALCEVENT_H
 #define QGSPROVIDERCOUNTCALCEVENT_H
 
-#include <qevent.h>
+#include <QEvent>
 
-#include "qgis.h"
-//Added by qt3to4:
-#include <QCustomEvent>
-
-/*!
+/** \ingroup core
  * \brief   A custom event that is designed to be fired when a layer count has been fully calculated.
    \author  Brendan Morley
    \date    March 2005
 
-   
-   This QCustomEvent is designed to be fired when the full item count of a layer has been calculated.
+
+   This custom QEvent is designed to be fired when the full item count of a layer has been calculated.
    It was initially included in QGIS to help the QgsPostgresProvider provide the asynchronous
    calculation of PostgreSQL layer counts.
-   
+
    Events are used instead of Qt signals/slots as events can be received asynchronously,
    which makes for better mutlithreading behaviour and less opportunity for programmer mishap.
-  
- */ 
+
+ */
 
 // TODO: Add the pg table this is a count OF.
 
-class CORE_EXPORT QgsProviderCountCalcEvent : public QCustomEvent
+class CORE_EXPORT QgsProviderCountCalcEvent : public QEvent
 {
 
-public:
+  public:
 
-  QgsProviderCountCalcEvent( long numberFeatures );
+    QgsProviderCountCalcEvent( long featuresCounted );
 
-  long numberFeatures() const;
+    long featuresCounted() const;
 
-  
-private:
 
-  long n;
-    
+  private:
+
+    long n;
+
 };
 
 #endif

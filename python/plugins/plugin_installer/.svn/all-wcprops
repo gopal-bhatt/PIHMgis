@@ -1,0 +1,161 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/qgis/!svn/ver/10639/branches/Release-1_0_2/python/plugins/plugin_installer
+END
+repoDisabled.png
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/qgis/!svn/ver/10639/branches/Release-1_0_2/python/plugins/plugin_installer/repoDisabled.png
+END
+qgsplugininstallerfetchingbase.py
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/qgis/!svn/ver/10639/branches/Release-1_0_2/python/plugins/plugin_installer/qgsplugininstallerfetchingbase.py
+END
+version_compare.py
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/qgis/!svn/ver/10639/branches/Release-1_0_2/python/plugins/plugin_installer/version_compare.py
+END
+LICENSE
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/qgis/!svn/ver/10639/branches/Release-1_0_2/python/plugins/plugin_installer/LICENSE
+END
+qgsplugininstallerinstallingbase.ui
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/qgis/!svn/ver/10639/branches/Release-1_0_2/python/plugins/plugin_installer/qgsplugininstallerinstallingbase.ui
+END
+resources_rc.py
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/qgis/!svn/ver/10639/branches/Release-1_0_2/python/plugins/plugin_installer/resources_rc.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/qgis/!svn/ver/10639/branches/Release-1_0_2/python/plugins/plugin_installer/__init__.py
+END
+qgsplugininstallerpluginerrorbase.ui
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/qgis/!svn/ver/10639/branches/Release-1_0_2/python/plugins/plugin_installer/qgsplugininstallerpluginerrorbase.ui
+END
+installer_gui.py
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/qgis/!svn/ver/10639/branches/Release-1_0_2/python/plugins/plugin_installer/installer_gui.py
+END
+unzip.py
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/qgis/!svn/ver/10639/branches/Release-1_0_2/python/plugins/plugin_installer/unzip.py
+END
+repoUnavailable.png
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/qgis/!svn/ver/10639/branches/Release-1_0_2/python/plugins/plugin_installer/repoUnavailable.png
+END
+resources.qrc
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/qgis/!svn/ver/10639/branches/Release-1_0_2/python/plugins/plugin_installer/resources.qrc
+END
+qgsplugininstallerrepositorybase.ui
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/qgis/!svn/ver/10639/branches/Release-1_0_2/python/plugins/plugin_installer/qgsplugininstallerrepositorybase.ui
+END
+plugin_installer.png
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/qgis/!svn/ver/10639/branches/Release-1_0_2/python/plugins/plugin_installer/plugin_installer.png
+END
+qgsplugininstallerbase.ui
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/qgis/!svn/ver/10639/branches/Release-1_0_2/python/plugins/plugin_installer/qgsplugininstallerbase.ui
+END
+qgsplugininstallerinstallingbase.py
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/qgis/!svn/ver/10639/branches/Release-1_0_2/python/plugins/plugin_installer/qgsplugininstallerinstallingbase.py
+END
+i18n.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/qgis/!svn/ver/10639/branches/Release-1_0_2/python/plugins/plugin_installer/i18n.cpp
+END
+qgsplugininstallerpluginerrorbase.py
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/qgis/!svn/ver/10639/branches/Release-1_0_2/python/plugins/plugin_installer/qgsplugininstallerpluginerrorbase.py
+END
+installer_plugin.py
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/qgis/!svn/ver/10639/branches/Release-1_0_2/python/plugins/plugin_installer/installer_plugin.py
+END
+qgsplugininstallerfetchingbase.ui
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/qgis/!svn/ver/10639/branches/Release-1_0_2/python/plugins/plugin_installer/qgsplugininstallerfetchingbase.ui
+END
+qgsplugininstallerbase.py
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/qgis/!svn/ver/10639/branches/Release-1_0_2/python/plugins/plugin_installer/qgsplugininstallerbase.py
+END
+qgsplugininstallerrepositorybase.py
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/qgis/!svn/ver/10639/branches/Release-1_0_2/python/plugins/plugin_installer/qgsplugininstallerrepositorybase.py
+END
+repoConnected.png
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/qgis/!svn/ver/10639/branches/Release-1_0_2/python/plugins/plugin_installer/repoConnected.png
+END
+qgis-icon.png
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/qgis/!svn/ver/10639/branches/Release-1_0_2/python/plugins/plugin_installer/qgis-icon.png
+END
+installer_data.py
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/qgis/!svn/ver/10639/branches/Release-1_0_2/python/plugins/plugin_installer/installer_data.py
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/qgis/!svn/ver/10639/branches/Release-1_0_2/python/plugins/plugin_installer/CMakeLists.txt
+END

@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/dxf2shp_converter/shapelib-1.2.10
+END
+LICENSE.LGPL
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/dxf2shp_converter/shapelib-1.2.10/LICENSE.LGPL
+END
+shapefil.h
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/dxf2shp_converter/shapelib-1.2.10/shapefil.h
+END
+shapelib.def
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/dxf2shp_converter/shapelib-1.2.10/shapelib.def
+END
+shprewind.c
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/dxf2shp_converter/shapelib-1.2.10/shprewind.c
+END
+shpopen.c
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/dxf2shp_converter/shapelib-1.2.10/shpopen.c
+END
+dbfopen.c
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/qgis/!svn/ver/10639/branches/Release-1_0_2/src/plugins/dxf2shp_converter/shapelib-1.2.10/dbfopen.c
+END

@@ -1,5 +1,5 @@
 /***************************************************************************
-                          qgspluginregistry.h    
+                          qgspluginregistry.h
            Singleton class for keeping track of installed plugins.
                              -------------------
     begin                : Mon Jan 26 2004
@@ -15,45 +15,91 @@
  *   (at your option) any later version.                                   *
  *                                                                         *
  ***************************************************************************/
- /* $Id: qgspluginregistry.h 6415 2007-01-09 02:39:15Z wonder $ */
- 
+/* $Id: qgspluginregistry.h 9781 2008-12-13 11:07:45Z jef $ */
+
 #ifndef QGSPLUGINREGISTRY_H
 #define QGSPLUGINREGISTRY_H
-#include <map>
-#include "qgspluginmetadata.h"
+
+#include <QMap>
+
 class QgsPluginMetadata;
+class QgsPythonUtils;
 class QgisPlugin;
+class QgisInterface;
 class QString;
+
 /**
 * \class QgsPluginRegistry
 * \brief This class tracks plugins that are currently loaded an provides
 * a means to fetch a pointer to a plugin and unload it
+*
+* plugin key is:
+* - C++ plugins: base name of plugin library, e.g. libgrassplugin
+* - Python plugins: module name (directory) of plugin, e.g. plugin_installer
 */
 class QgsPluginRegistry
 {
-public:
-//! Returns the instance pointer, creating the object on the first call
- static QgsPluginRegistry* instance();
- //! Return the full path to the plugins library using the plugin name as a key
- QString library(QString pluginKey);
- //! Retrieve the metadata for a plugin by name
- QgsPluginMetadata * pluginMetadata(QString name);
- //! Retrieve a pointer to a loaded plugin by name
- QgisPlugin * plugin(QString name);
- //! Return whether the plugin is pythonic
- bool isPythonPlugin(QString name);
- //! Add a plugin to the map of loaded plugins
- void addPlugin(QString _library, QString _name, QgisPlugin * _plugin);
- //! Add a plugin written in python
- void addPythonPlugin(QString packageName, QString pluginName);
- //! Remove a plugin from the list of loaded plugins
- void removePlugin(QString name);
-protected:
-//! protected constructor
- QgsPluginRegistry();
-private:
- static QgsPluginRegistry* _instance;
- std::map<QString,QgsPluginMetadata*> plugins;
+  public:
+    //! Returns the instance pointer, creating the object on the first call
+    static QgsPluginRegistry* instance();
+
+    //! set pointer to qgis interface passed to plugins (used by QgisApp)
+    void setQgisInterface( QgisInterface* iface );
+
+    //! Check whether this module is loaded
+    bool isLoaded( QString key );
+
+    //! Retrieve library of the plugin
+    QString library( QString key );
+
+    //! Retrieve a pointer to a loaded plugin
+    QgisPlugin * plugin( QString key );
+
+    //! Return whether the plugin is pythonic
+    bool isPythonPlugin( QString key );
+
+    //! Add a plugin to the map of loaded plugins
+    void addPlugin( QString key, QgsPluginMetadata metadata );
+
+    //! Remove a plugin from the list of loaded plugins
+    void removePlugin( QString key );
+
+    //! Unload plugins
+    void unloadAll();
+
+    //! Save pointer for python utils (needed for unloading python plugins)
+    void setPythonUtils( QgsPythonUtils* pythonUtils );
+
+    //! Dump list of plugins
+    void dump();
+
+    //! C++ plugin loader
+    void loadCppPlugin( QString mFullPath );
+    //! Python plugin loader
+    void loadPythonPlugin( QString packageName );
+
+    //! Load any plugins used in the last qgis session
+    void restoreSessionPlugins( QString thePluginDirString );
+
+    //! Check whether plugin is compatible with current version of QGIS
+    bool isPythonPluginCompatible( QString packageName );
+
+  protected:
+    //! protected constructor
+    QgsPluginRegistry();
+
+    //! Try to load and get metadata from c++ plugin, return true on success
+    bool checkCppPlugin( QString pluginFullPath );
+    //! Try to load and get metadata from Python plugin, return true on success
+    bool checkPythonPlugin( QString packageName );
+
+    //! Check current QGIS version against plugin's minimal requested QGIS version
+    bool checkQgisVersion( QString minVersion );
+
+  private:
+    static QgsPluginRegistry* _instance;
+    QMap<QString, QgsPluginMetadata> mPlugins;
+    QgsPythonUtils* mPythonUtils;
+    QgisInterface* mQgisInterface;
 };
 #endif //QgsPluginRegistry_H
-

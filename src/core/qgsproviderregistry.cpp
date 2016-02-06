@@ -15,7 +15,7 @@
  *   (at your option) any later version.                                   *
  *                                                                         *
  ***************************************************************************/
- /* $Id: qgsproviderregistry.cpp 6434 2007-01-15 08:29:34Z mhugent $ */
+/* $Id: qgsproviderregistry.cpp 9150 2008-08-24 14:07:06Z jef $ */
 
 #include "qgsproviderregistry.h"
 
@@ -41,20 +41,20 @@ typedef QString fileVectorFilters_t();
 
 QgsProviderRegistry *QgsProviderRegistry::_instance = 0;
 
-QgsProviderRegistry *QgsProviderRegistry::instance(QString pluginPath)
+QgsProviderRegistry *QgsProviderRegistry::instance( QString pluginPath )
 {
-    if (_instance == 0)
-    {
-        _instance = new QgsProviderRegistry(pluginPath);
-    }
+  if ( _instance == 0 )
+  {
+    _instance = new QgsProviderRegistry( pluginPath );
+  }
 
-    return _instance;
+  return _instance;
 
 } // QgsProviderRegistry::instance
 
 
 
-QgsProviderRegistry::QgsProviderRegistry(QString pluginPath)
+QgsProviderRegistry::QgsProviderRegistry( QString pluginPath )
 {
   // At startup, examine the libs in the qgis/lib dir and store those that
   // are a provider shared lib
@@ -72,82 +72,78 @@ QgsProviderRegistry::QgsProviderRegistry(QString pluginPath)
   mLibraryDirectory.setFilter( QDir::Files | QDir::NoSymLinks );
 
 #ifdef WIN32
-  mLibraryDirectory.setNameFilter( "*.dll" );
+  mLibraryDirectory.setNameFilters( QStringList( "*.dll" ) );
 #else
-  mLibraryDirectory.setNameFilter( "*.so" );
+  mLibraryDirectory.setNameFilters( QStringList( "*.so" ) );
 #endif
 
 #ifdef QGISDEBUG
-  QgsLogger::debug("Checking " + mLibraryDirectory.path() + " for provider plugins\n", 1, __FILE__, __FUNCTION__, __LINE__);
+  QgsLogger::debug( "Checking " + mLibraryDirectory.path() + " for provider plugins\n", 1, __FILE__, __FUNCTION__, __LINE__ );
 #endif
 
-  if (mLibraryDirectory.count() == 0)
+  if ( mLibraryDirectory.count() == 0 )
   {
-    QString msg = QObject::tr("No Data Provider Plugins", 
-                              "No QGIS data provider plugins found in:");
+    QString msg = QObject::tr( "No Data Provider Plugins",
+                               "No QGIS data provider plugins found in:" );
     msg += "\n" + mLibraryDirectory.path() + "\n\n";
-    msg += QObject::tr("No vector layers can be loaded. Check your QGIS installation");
-    
+    msg += QObject::tr( "No vector layers can be loaded. Check your QGIS installation" );
+
     QgsMessageOutput* output = QgsMessageOutput::createMessageOutput();
-    output->setTitle(QObject::tr("No Data Providers"));
-    output->setMessage(msg, QgsMessageOutput::MessageText);
+    output->setTitle( QObject::tr( "No Data Providers" ) );
+    output->setMessage( msg, QgsMessageOutput::MessageText );
     output->showMessage();
-  } 
+  }
   else
   {
     const QFileInfoList list = mLibraryDirectory.entryInfoList();
     QListIterator<QFileInfo> it( list );
     QFileInfo fi;
 
-    while (it.hasNext())
+    while ( it.hasNext() )
     {
       fi = it.next();
-        
+
       QLibrary *myLib = new QLibrary( fi.filePath() );
 
       bool loaded = myLib->load();
+      //we will build up a debug message and print on one line to avoid terminal spam
+      QString myMessage =  "Checking  " + myLib->fileName() + " : " ;
 
-      if (loaded)
+      if ( loaded )
       {
-#ifdef QGISDEBUG
-	QgsLogger::debug("Checking  " + myLib->library(), 1, __FILE__, __FUNCTION__, __LINE__);
-#endif
         // get the description and the key for the provider plugin
-        isprovider_t *isProvider = (isprovider_t *) myLib->resolve("isProvider");
+        isprovider_t *isProvider = ( isprovider_t * ) cast_to_fptr( myLib->resolve( "isProvider" ) );
 
-	//MH: Added a further test to detect non-provider plugins linked to provider plugins.
-	//Only pure provider plugins have 'type' not defined
-	isprovider_t *hasType = (isprovider_t *) myLib->resolve("type");
+        //MH: Added a further test to detect non-provider plugins linked to provider plugins.
+        //Only pure provider plugins have 'type' not defined
+        isprovider_t *hasType = ( isprovider_t * ) cast_to_fptr( myLib->resolve( "type" ) );
 
-        if (!hasType && isProvider)
+        if ( !hasType && isProvider )
         {
           // check to see if this is a provider plugin
-          if (isProvider())
-	    {
+          if ( isProvider() )
+          {
             // looks like a provider. get the key and description
-            description_t *pDesc = (description_t *) myLib->resolve("description");
-            providerkey_t *pKey = (providerkey_t *) myLib->resolve("providerKey");
-            if (pDesc && pKey)
+            description_t *pDesc = ( description_t * ) cast_to_fptr( myLib->resolve( "description" ) );
+            providerkey_t *pKey = ( providerkey_t * ) cast_to_fptr( myLib->resolve( "providerKey" ) );
+            if ( pDesc && pKey )
             {
               // add this provider to the provider map
-              mProviders[pKey()] = 
-                new QgsProviderMetadata(pKey(), pDesc(), myLib->library());
-#ifdef QGISDEBUG
-	      QgsDebugMsg("Loaded " + pDesc());
-#endif
+              mProviders[pKey()] =
+                new QgsProviderMetadata( pKey(), pDesc(), myLib->fileName() );
+              //myMessage += "Loaded " + QString(pDesc()) + " ok";
 
               // now get vector file filters, if any
-              fileVectorFilters_t *pFileVectorFilters = 
-                (fileVectorFilters_t *) myLib->resolve("fileVectorFilters");
+              fileVectorFilters_t *pFileVectorFilters =
+                ( fileVectorFilters_t * ) cast_to_fptr( myLib->resolve( "fileVectorFilters" ) );
 
               if ( pFileVectorFilters )
               {
                 QString vectorFileFilters = pFileVectorFilters();
 
-
                 // now get vector file filters, if any
-                fileVectorFilters_t *pVectorFileFilters = 
-                  (fileVectorFilters_t *) myLib->resolve("fileVectorFilters");
+                fileVectorFilters_t *pVectorFileFilters =
+                  ( fileVectorFilters_t * ) cast_to_fptr( myLib->resolve( "fileVectorFilters" ) );
 
                 if ( pVectorFileFilters )
                 {
@@ -156,41 +152,47 @@ QgsProviderRegistry::QgsProviderRegistry(QString pluginPath)
                   if ( ! fileVectorFilters.isEmpty() )
                   {
                     mVectorFileFilters += fileVectorFilters;
+                    myMessage += QString( "... loaded ok (and with %1 file filters)" ).
+                                 arg( fileVectorFilters.split( ";;" ).count() );
                   }
                   else
                   {
-                    QgsLogger::debug("No vector file filters for " + pKey(), 1, __FILE__, __FUNCTION__, __LINE__);
+                    //myMessage += ", but it has no vector file filters for " + QString(pKey());
+                    myMessage += "... loaded ok (0 file filters)";
                   }
                 }
-              } 
+              }
               else
               {
-		QgsDebugMsg("Unable to invoke fileVectorFilters()");
+                //myMessage += ", but unable to invoke fileVectorFilters()";
+                myMessage += "... loaded ok (null file filters)";
               }
             }
             else
             {
-	      QgsLogger::debug("Unable to find one of the required provider functions (providerKey() or description()) in " + myLib->library());
+              //myMessage += ", but unable to find one of the required provider functions (providerKey() or description()) in ";
+              myMessage += "...not usable";
+
             }
           }
           else
           {
-            QgsDebugMsg("Unable to invoke fileVectorFilters()");
+            //myMessage += ", but this is not a valid provider, skipping.";
+            myMessage += "..invalid";
           }
-        } 
+        }
         else
         {
-#ifdef QGISDEBUG
-	  QgsDebugMsg(myLib->library() + " is not a provider");
-#endif
+          //myMessage += ", but this is not a valid provider or has no type, skipping.";
+          myMessage += "..invalid (no type)";
         }
       }
       else
       {
-        QgsDebugMsg("Couldn't load " + fi.filePath());
+        myMessage += "...invalid (lib not loadable)";
       }
 
-      //++it;
+      QgsDebugMsg( myMessage );
 
       delete myLib;
     }
@@ -215,7 +217,7 @@ static
 QgsProviderMetadata * findMetadata_( QgsProviderRegistry::Providers const & metaData,
                                      QString const & providerKey )
 {
-  QgsProviderRegistry::Providers::const_iterator i = 
+  QgsProviderRegistry::Providers::const_iterator i =
     metaData.find( providerKey );
 
   if ( i != metaData.end() )
@@ -228,11 +230,11 @@ QgsProviderMetadata * findMetadata_( QgsProviderRegistry::Providers const & meta
 
 
 
-QString QgsProviderRegistry::library(QString const & providerKey) const
+QString QgsProviderRegistry::library( QString const & providerKey ) const
 {
   QgsProviderMetadata * md = findMetadata_( mProviders, providerKey );
 
-  if (md)
+  if ( md )
   {
     return md->library();
   }
@@ -241,29 +243,29 @@ QString QgsProviderRegistry::library(QString const & providerKey) const
 }
 
 
-QString QgsProviderRegistry::pluginList(bool asHTML) const
+QString QgsProviderRegistry::pluginList( bool asHTML ) const
 {
   Providers::const_iterator it = mProviders.begin();
   QString list;
 
   if ( mProviders.empty() )
   {
-    list = QObject::tr("No data provider plugins are available. No vector layers can be loaded");
-  } 
+    list = QObject::tr( "No data provider plugins are available. No vector layers can be loaded" );
+  }
   else
   {
-    if (asHTML)
+    if ( asHTML )
     {
       list += "<ol>";
     }
-    while (it != mProviders.end())
+    while ( it != mProviders.end() )
     {
-      QgsProviderMetadata *mp = (*it).second;
+      QgsProviderMetadata *mp = ( *it ).second;
 
-      if (asHTML)
+      if ( asHTML )
       {
         list += "<li>" + mp->description() + "<br>";
-      } 
+      }
       else
       {
         list += mp->description() + "\n";
@@ -271,7 +273,7 @@ QString QgsProviderRegistry::pluginList(bool asHTML) const
 
       it++;
     }
-    if (asHTML)
+    if ( asHTML )
     {
       list += "</ol>";
     }
@@ -281,105 +283,102 @@ QString QgsProviderRegistry::pluginList(bool asHTML) const
 }
 
 
-void QgsProviderRegistry::setLibraryDirectory(QDir const & path)
+void QgsProviderRegistry::setLibraryDirectory( QDir const & path )
 {
-    mLibraryDirectory = path;
+  mLibraryDirectory = path;
 }
 
 
 QDir const & QgsProviderRegistry::libraryDirectory() const
 {
-    return mLibraryDirectory;
+  return mLibraryDirectory;
 }
 
 
 
 // typedef for the QgsDataProvider class factory
 typedef QgsDataProvider * classFactoryFunction_t( const QString * );
- 
 
 
-/** Copied from QgsVectorLayer::setDataProvider 
+
+/** Copied from QgsVectorLayer::setDataProvider
  *  TODO: Make it work in the generic environment
  *
  *  TODO: Is this class really the best place to put a data provider loader?
  *        It seems more sensible to provide the code in one place rather than
  *        in qgsrasterlayer, qgsvectorlayer, serversourceselect, etc.
  */
-QgsDataProvider* QgsProviderRegistry::getProvider( QString const & providerKey, 
-                                                   QString const & dataSource )
+QgsDataProvider* QgsProviderRegistry::getProvider( QString const & providerKey,
+    QString const & dataSource )
 {
   // XXX should I check for and possibly delete any pre-existing providers?
   // XXX How often will that scenario occur?
 
   // load the plugin
-  QString lib = library(providerKey);
+  QString lib = library( providerKey );
 
 #ifdef TESTPROVIDERLIB
-  const char *cLib = (const char *) lib;
+  const char *cLib = lib.toUtf8();
 
   // test code to help debug provider loading problems
   //  void *handle = dlopen(cLib, RTLD_LAZY);
-  void *handle = dlopen(cOgrLib, RTLD_LAZY | RTLD_GLOBAL);
-  if (!handle)
+  void *handle = dlopen( cOgrLib, RTLD_LAZY | RTLD_GLOBAL );
+  if ( !handle )
   {
-    QgsLogger::warning("Error in dlopen");
+    QgsLogger::warning( "Error in dlopen" );
   }
   else
   {
-    QgsDebugMsg("dlopen suceeded");
-    dlclose(handle);
+    QgsDebugMsg( "dlopen suceeded" );
+    dlclose( handle );
   }
 
 #endif
 
   // load the data provider
-  QLibrary* myLib = new QLibrary((const char *) lib);
+  QLibrary* myLib = new QLibrary( lib );
 
-#ifdef QGISDEBUG
-  QgsDebugMsg("QgsProviderRegistry::getRasterProvider: Library name is " + myLib->library());
-#endif
+  QgsDebugMsg( "Library name is " + myLib->fileName() );
 
   bool loaded = myLib->load();
 
-  if (loaded)
+  if ( loaded )
   {
-      QgsDebugMsg( "Loaded data provider library" );
-      QgsDebugMsg( "Attempting to resolve the classFactory function" );
+    QgsDebugMsg( "Loaded data provider library" );
+    QgsDebugMsg( "Attempting to resolve the classFactory function" );
 
-      classFactoryFunction_t * classFactory = 
-          (classFactoryFunction_t *) myLib->resolve("classFactory");
+    classFactoryFunction_t * classFactory =
+      ( classFactoryFunction_t * ) cast_to_fptr( myLib->resolve( "classFactory" ) );
 
-    if (classFactory)
+    if ( classFactory )
     {
       QgsDebugMsg( "Getting pointer to a dataProvider object from the library" );
 
       //XXX - This was a dynamic cast but that kills the Windows
       //      version big-time with an abnormal termination error
-//       QgsDataProvider* dataProvider = (QgsDataProvider*)
-//                                       (classFactory((const char*)(dataSource.utf8())));
+      //      QgsDataProvider* dataProvider = (QgsDataProvider*)
+      //      (classFactory((const char*)(dataSource.utf8())));
 
-      QgsDataProvider * dataProvider = (*classFactory)(&dataSource);
+      QgsDataProvider * dataProvider = ( *classFactory )( &dataSource );
 
-      if (dataProvider)
+      if ( dataProvider )
       {
-#ifdef QGISDEBUG
         QgsDebugMsg( "Instantiated the data provider plugin" );
-	QgsDebugMsg("provider name: " + dataProvider->name());
-#endif
-        if (dataProvider->isValid())
+        QgsDebugMsg( "provider name: " + dataProvider->name() );
+
+        if ( dataProvider->isValid() )
         {
-	  delete myLib;
+          delete myLib;
           return dataProvider;
         }
         else
         {   // this is likely because the dataSource is invalid, and isn't
-            // necessarily a reflection on the data provider itself
-            QgsDebugMsg( "Invalid data provider" );
+          // necessarily a reflection on the data provider itself
+          QgsDebugMsg( "Invalid data provider" );
 
-            myLib->unload();
-	    delete myLib;
-            return 0;
+          myLib->unload();
+          delete myLib;
+          return 0;
         }
       }
       else
@@ -387,7 +386,7 @@ QgsDataProvider* QgsProviderRegistry::getProvider( QString const & providerKey,
         QgsLogger::warning( "Unable to instantiate the data provider plugin" );
 
         myLib->unload();
-	delete myLib;
+        delete myLib;
         return 0;
       }
     }
@@ -398,11 +397,11 @@ QgsDataProvider* QgsProviderRegistry::getProvider( QString const & providerKey,
     delete myLib;
     return 0;
   }
-  
+
   QgsDebugMsg( "exiting" );
 
   return 0;  // factory didn't exist
-  
+
 } // QgsProviderRegistry::setDataProvider
 
 
@@ -411,29 +410,29 @@ QgsDataProvider* QgsProviderRegistry::getProvider( QString const & providerKey,
 
 QString QgsProviderRegistry::fileVectorFilters() const
 {
-    return mVectorFileFilters;
+  return mVectorFileFilters;
 } //  QgsProviderRegistry::fileVectorFilters
 
 
 QStringList QgsProviderRegistry::providerList() const
 {
   QStringList lst;
-  for (Providers::const_iterator it = mProviders.begin(); it != mProviders.end(); it++)
+  for ( Providers::const_iterator it = mProviders.begin(); it != mProviders.end(); it++ )
   {
-    lst.append(it->first);
+    lst.append( it->first );
   }
   return lst;
 }
 
 
-const QgsProviderMetadata* QgsProviderRegistry::providerMetadata(const QString& providerKey) const
+const QgsProviderMetadata* QgsProviderRegistry::providerMetadata( const QString& providerKey ) const
 {
   return findMetadata_( mProviders, providerKey );
 }
 
 
 /*
-QgsDataProvider * 
+QgsDataProvider *
 QgsProviderRegistry::openVector( QString const & dataSource, QString const & providerKey )
 {
     return getProvider( providerKey, dataSource );

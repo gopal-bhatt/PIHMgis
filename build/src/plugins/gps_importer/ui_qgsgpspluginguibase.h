@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading ui file 'qgsgpspluginguibase.ui'
 **
-** Created: Wed Jun 11 19:10:27 2008
+** Created: Fri Jun 19 01:59:31 2009
 **      by: Qt User Interface Compiler version 4.3.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling ui file!
@@ -38,7 +38,7 @@ public:
     QTabWidget *tabWidget;
     QWidget *tab1;
     QGridLayout *gridLayout1;
-    QTextEdit *textEdit;
+    QTextEdit *teLoadDescription;
     QLabel *lblGPXFile;
     QPushButton *pbnGPXSelectFile;
     QgsFileDropEdit *leGPXFile;
@@ -48,7 +48,7 @@ public:
     QCheckBox *cbGPXTracks;
     QWidget *tab2;
     QGridLayout *gridLayout2;
-    QTextEdit *textEdit_2;
+    QTextEdit *teIMPDescription;
     QLineEdit *leIMPLayer;
     QLabel *textLabel1_6;
     QPushButton *pbnIMPOutput;
@@ -58,29 +58,31 @@ public:
     QSpacerItem *spacerItem;
     QComboBox *cmbIMPFeature;
     QLabel *textLabel2_3;
+    QLabel *textLabel2_6;
     QLineEdit *leIMPInput;
     QLabel *textLabel1_5;
     QWidget *tab3;
     QGridLayout *gridLayout3;
-    QTextEdit *textEdit_3;
-    QComboBox *cmbDLPort;
-    QComboBox *cmbDLFeatureType;
-    QLabel *textLabel2_5;
-    QLabel *textLabel1_3;
-    QLineEdit *leDLBasename;
-    QLabel *textLabel1_2;
-    QLabel *textLabel2;
-    QLineEdit *leDLOutput;
-    QSpacerItem *spacerItem1;
-    QSpacerItem *spacerItem2;
+    QTextEdit *teDLDescription;
     QLabel *textLabel1;
     QComboBox *cmbDLDevice;
     QPushButton *pbDLEditDevices;
+    QSpacerItem *spacerItem1;
+    QLabel *textLabel2_5;
+    QComboBox *cmbDLPort;
+    QPushButton *pbnRefresh;
+    QSpacerItem *spacerItem2;
+    QLabel *textLabel1_3;
+    QComboBox *cmbDLFeatureType;
+    QLabel *textLabel2;
+    QLineEdit *leDLOutput;
     QPushButton *pbnDLOutput;
+    QLabel *textLabel1_2;
+    QLineEdit *leDLBasename;
     QWidget *tab4;
     QGridLayout *gridLayout4;
     QSpacerItem *spacerItem3;
-    QTextEdit *textEdit_4;
+    QTextEdit *teULDescription;
     QComboBox *cmbULPort;
     QLabel *textLabel3;
     QComboBox *cmbULDevice;
@@ -88,18 +90,35 @@ public:
     QPushButton *pbULEditDevices;
     QLabel *textLabel2_4;
     QLabel *textLabel2_2;
+    QWidget *tab5;
+    QGridLayout *gridLayout5;
+    QTextEdit *teCONVDescription;
+    QLineEdit *leCONVLayer;
+    QLabel *textLabel5_1;
+    QPushButton *pbnCONVOutput;
+    QPushButton *pbnCONVInput;
+    QLineEdit *leCONVOutput;
+    QLabel *textLabel5_2;
+    QSpacerItem *spacerItem4;
+    QComboBox *cmbCONVType;
+    QLabel *textLabel5_3;
+    QLineEdit *leCONVInput;
+    QLabel *textLabel5_4;
     QDialogButtonBox *buttonBox;
 
     void setupUi(QDialog *QgsGPSPluginGuiBase)
     {
     if (QgsGPSPluginGuiBase->objectName().isEmpty())
         QgsGPSPluginGuiBase->setObjectName(QString::fromUtf8("QgsGPSPluginGuiBase"));
-    QgsGPSPluginGuiBase->resize(691, 406);
+    QgsGPSPluginGuiBase->resize(987, 428);
     QgsGPSPluginGuiBase->setWindowIcon(QIcon());
     gridLayout = new QGridLayout(QgsGPSPluginGuiBase);
     gridLayout->setSpacing(6);
-    gridLayout->setMargin(9);
+    gridLayout->setMargin(11);
     gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
+    gridLayout->setHorizontalSpacing(6);
+    gridLayout->setVerticalSpacing(6);
+    gridLayout->setContentsMargins(9, 9, 9, 9);
     label = new QLabel(QgsGPSPluginGuiBase);
     label->setObjectName(QString::fromUtf8("label"));
     label->setPixmap(QPixmap(QString::fromUtf8(":/gps.xpm")));
@@ -121,19 +140,22 @@ public:
     tab1->setObjectName(QString::fromUtf8("tab1"));
     gridLayout1 = new QGridLayout(tab1);
     gridLayout1->setSpacing(6);
-    gridLayout1->setMargin(9);
+    gridLayout1->setMargin(11);
     gridLayout1->setObjectName(QString::fromUtf8("gridLayout1"));
-    textEdit = new QTextEdit(tab1);
-    textEdit->setObjectName(QString::fromUtf8("textEdit"));
-    QSizePolicy sizePolicy(static_cast<QSizePolicy::Policy>(7), static_cast<QSizePolicy::Policy>(7));
+    gridLayout1->setHorizontalSpacing(6);
+    gridLayout1->setVerticalSpacing(6);
+    gridLayout1->setContentsMargins(9, 9, 9, 9);
+    teLoadDescription = new QTextEdit(tab1);
+    teLoadDescription->setObjectName(QString::fromUtf8("teLoadDescription"));
+    QSizePolicy sizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
     sizePolicy.setHorizontalStretch(0);
     sizePolicy.setVerticalStretch(0);
-    sizePolicy.setHeightForWidth(textEdit->sizePolicy().hasHeightForWidth());
-    textEdit->setSizePolicy(sizePolicy);
-    textEdit->setLineWidth(0);
-    textEdit->setReadOnly(true);
+    sizePolicy.setHeightForWidth(teLoadDescription->sizePolicy().hasHeightForWidth());
+    teLoadDescription->setSizePolicy(sizePolicy);
+    teLoadDescription->setLineWidth(0);
+    teLoadDescription->setReadOnly(true);
 
-    gridLayout1->addWidget(textEdit, 0, 0, 1, 2);
+    gridLayout1->addWidget(teLoadDescription, 0, 0, 1, 2);
 
     lblGPXFile = new QLabel(tab1);
     lblGPXFile->setObjectName(QString::fromUtf8("lblGPXFile"));
@@ -181,13 +203,16 @@ public:
     tab2->setObjectName(QString::fromUtf8("tab2"));
     gridLayout2 = new QGridLayout(tab2);
     gridLayout2->setSpacing(6);
-    gridLayout2->setMargin(9);
+    gridLayout2->setMargin(11);
     gridLayout2->setObjectName(QString::fromUtf8("gridLayout2"));
-    textEdit_2 = new QTextEdit(tab2);
-    textEdit_2->setObjectName(QString::fromUtf8("textEdit_2"));
-    textEdit_2->setReadOnly(true);
+    gridLayout2->setHorizontalSpacing(6);
+    gridLayout2->setVerticalSpacing(6);
+    gridLayout2->setContentsMargins(9, 9, 9, 9);
+    teIMPDescription = new QTextEdit(tab2);
+    teIMPDescription->setObjectName(QString::fromUtf8("teIMPDescription"));
+    teIMPDescription->setReadOnly(true);
 
-    gridLayout2->addWidget(textEdit_2, 0, 0, 1, 4);
+    gridLayout2->addWidget(teIMPDescription, 0, 0, 1, 4);
 
     leIMPLayer = new QLineEdit(tab2);
     leIMPLayer->setObjectName(QString::fromUtf8("leIMPLayer"));
@@ -225,7 +250,7 @@ public:
 
     cmbIMPFeature = new QComboBox(tab2);
     cmbIMPFeature->setObjectName(QString::fromUtf8("cmbIMPFeature"));
-    cmbIMPFeature->setMinimumSize(QSize(90, 0));
+    cmbIMPFeature->setMinimumSize(QSize(130, 0));
 
     gridLayout2->addWidget(cmbIMPFeature, 2, 1, 1, 1);
 
@@ -233,6 +258,11 @@ public:
     textLabel2_3->setObjectName(QString::fromUtf8("textLabel2_3"));
 
     gridLayout2->addWidget(textLabel2_3, 2, 0, 1, 1);
+
+    textLabel2_6 = new QLabel(tab2);
+    textLabel2_6->setObjectName(QString::fromUtf8("textLabel2_6"));
+
+    gridLayout2->addWidget(textLabel2_6, 2, 2, 1, 1);
 
     leIMPInput = new QLineEdit(tab2);
     leIMPInput->setObjectName(QString::fromUtf8("leIMPInput"));
@@ -250,63 +280,13 @@ public:
     tab3->setObjectName(QString::fromUtf8("tab3"));
     gridLayout3 = new QGridLayout(tab3);
     gridLayout3->setSpacing(6);
-    gridLayout3->setMargin(9);
+    gridLayout3->setMargin(11);
     gridLayout3->setObjectName(QString::fromUtf8("gridLayout3"));
-    textEdit_3 = new QTextEdit(tab3);
-    textEdit_3->setObjectName(QString::fromUtf8("textEdit_3"));
-    textEdit_3->setReadOnly(true);
+    teDLDescription = new QTextEdit(tab3);
+    teDLDescription->setObjectName(QString::fromUtf8("teDLDescription"));
+    teDLDescription->setReadOnly(true);
 
-    gridLayout3->addWidget(textEdit_3, 0, 0, 1, 5);
-
-    cmbDLPort = new QComboBox(tab3);
-    cmbDLPort->setObjectName(QString::fromUtf8("cmbDLPort"));
-    cmbDLPort->setMinimumSize(QSize(90, 0));
-
-    gridLayout3->addWidget(cmbDLPort, 1, 4, 1, 1);
-
-    cmbDLFeatureType = new QComboBox(tab3);
-    cmbDLFeatureType->setObjectName(QString::fromUtf8("cmbDLFeatureType"));
-    cmbDLFeatureType->setMinimumSize(QSize(100, 0));
-
-    gridLayout3->addWidget(cmbDLFeatureType, 2, 4, 1, 1);
-
-    textLabel2_5 = new QLabel(tab3);
-    textLabel2_5->setObjectName(QString::fromUtf8("textLabel2_5"));
-
-    gridLayout3->addWidget(textLabel2_5, 1, 3, 1, 1);
-
-    textLabel1_3 = new QLabel(tab3);
-    textLabel1_3->setObjectName(QString::fromUtf8("textLabel1_3"));
-
-    gridLayout3->addWidget(textLabel1_3, 2, 3, 1, 1);
-
-    leDLBasename = new QLineEdit(tab3);
-    leDLBasename->setObjectName(QString::fromUtf8("leDLBasename"));
-
-    gridLayout3->addWidget(leDLBasename, 4, 1, 1, 3);
-
-    textLabel1_2 = new QLabel(tab3);
-    textLabel1_2->setObjectName(QString::fromUtf8("textLabel1_2"));
-
-    gridLayout3->addWidget(textLabel1_2, 4, 0, 1, 1);
-
-    textLabel2 = new QLabel(tab3);
-    textLabel2->setObjectName(QString::fromUtf8("textLabel2"));
-
-    gridLayout3->addWidget(textLabel2, 3, 0, 1, 1);
-
-    leDLOutput = new QLineEdit(tab3);
-    leDLOutput->setObjectName(QString::fromUtf8("leDLOutput"));
-
-    gridLayout3->addWidget(leDLOutput, 3, 1, 1, 3);
-
-    spacerItem1 = new QSpacerItem(80, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
-
-    gridLayout3->addItem(spacerItem1, 1, 2, 1, 1);
-
-    spacerItem2 = new QSpacerItem(80, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
-
-    gridLayout3->addItem(spacerItem2, 2, 2, 1, 1);
+    gridLayout3->addWidget(teDLDescription, 0, 0, 1, 9);
 
     textLabel1 = new QLabel(tab3);
     textLabel1->setObjectName(QString::fromUtf8("textLabel1"));
@@ -322,29 +302,87 @@ public:
     pbDLEditDevices = new QPushButton(tab3);
     pbDLEditDevices->setObjectName(QString::fromUtf8("pbDLEditDevices"));
 
-    gridLayout3->addWidget(pbDLEditDevices, 2, 1, 1, 1);
+    gridLayout3->addWidget(pbDLEditDevices, 1, 2, 1, 1);
+
+    spacerItem1 = new QSpacerItem(121, 24, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+    gridLayout3->addItem(spacerItem1, 1, 3, 1, 1);
+
+    textLabel2_5 = new QLabel(tab3);
+    textLabel2_5->setObjectName(QString::fromUtf8("textLabel2_5"));
+
+    gridLayout3->addWidget(textLabel2_5, 1, 4, 1, 2);
+
+    cmbDLPort = new QComboBox(tab3);
+    cmbDLPort->setObjectName(QString::fromUtf8("cmbDLPort"));
+    cmbDLPort->setMinimumSize(QSize(90, 0));
+
+    gridLayout3->addWidget(cmbDLPort, 1, 6, 1, 2);
+
+    pbnRefresh = new QPushButton(tab3);
+    pbnRefresh->setObjectName(QString::fromUtf8("pbnRefresh"));
+
+    gridLayout3->addWidget(pbnRefresh, 1, 8, 1, 1);
+
+    spacerItem2 = new QSpacerItem(80, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+    gridLayout3->addItem(spacerItem2, 2, 2, 1, 3);
+
+    textLabel1_3 = new QLabel(tab3);
+    textLabel1_3->setObjectName(QString::fromUtf8("textLabel1_3"));
+
+    gridLayout3->addWidget(textLabel1_3, 2, 5, 1, 2);
+
+    cmbDLFeatureType = new QComboBox(tab3);
+    cmbDLFeatureType->setObjectName(QString::fromUtf8("cmbDLFeatureType"));
+    cmbDLFeatureType->setMinimumSize(QSize(100, 0));
+
+    gridLayout3->addWidget(cmbDLFeatureType, 2, 7, 1, 2);
+
+    textLabel2 = new QLabel(tab3);
+    textLabel2->setObjectName(QString::fromUtf8("textLabel2"));
+
+    gridLayout3->addWidget(textLabel2, 3, 0, 1, 1);
+
+    leDLOutput = new QLineEdit(tab3);
+    leDLOutput->setObjectName(QString::fromUtf8("leDLOutput"));
+
+    gridLayout3->addWidget(leDLOutput, 3, 1, 1, 6);
 
     pbnDLOutput = new QPushButton(tab3);
     pbnDLOutput->setObjectName(QString::fromUtf8("pbnDLOutput"));
 
-    gridLayout3->addWidget(pbnDLOutput, 3, 4, 1, 1);
+    gridLayout3->addWidget(pbnDLOutput, 3, 7, 1, 2);
+
+    textLabel1_2 = new QLabel(tab3);
+    textLabel1_2->setObjectName(QString::fromUtf8("textLabel1_2"));
+
+    gridLayout3->addWidget(textLabel1_2, 4, 0, 1, 1);
+
+    leDLBasename = new QLineEdit(tab3);
+    leDLBasename->setObjectName(QString::fromUtf8("leDLBasename"));
+
+    gridLayout3->addWidget(leDLBasename, 4, 1, 1, 6);
 
     tabWidget->addTab(tab3, QString());
     tab4 = new QWidget();
     tab4->setObjectName(QString::fromUtf8("tab4"));
     gridLayout4 = new QGridLayout(tab4);
     gridLayout4->setSpacing(6);
-    gridLayout4->setMargin(9);
+    gridLayout4->setMargin(11);
     gridLayout4->setObjectName(QString::fromUtf8("gridLayout4"));
+    gridLayout4->setHorizontalSpacing(6);
+    gridLayout4->setVerticalSpacing(6);
+    gridLayout4->setContentsMargins(9, 9, 9, 9);
     spacerItem3 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
 
     gridLayout4->addItem(spacerItem3, 1, 2, 1, 1);
 
-    textEdit_4 = new QTextEdit(tab4);
-    textEdit_4->setObjectName(QString::fromUtf8("textEdit_4"));
-    textEdit_4->setReadOnly(true);
+    teULDescription = new QTextEdit(tab4);
+    teULDescription->setObjectName(QString::fromUtf8("teULDescription"));
+    teULDescription->setReadOnly(true);
 
-    gridLayout4->addWidget(textEdit_4, 0, 0, 1, 5);
+    gridLayout4->addWidget(teULDescription, 0, 0, 1, 5);
 
     cmbULPort = new QComboBox(tab4);
     cmbULPort->setObjectName(QString::fromUtf8("cmbULPort"));
@@ -385,6 +423,78 @@ public:
     gridLayout4->addWidget(textLabel2_2, 1, 0, 1, 1);
 
     tabWidget->addTab(tab4, QString());
+    tab5 = new QWidget();
+    tab5->setObjectName(QString::fromUtf8("tab5"));
+    gridLayout5 = new QGridLayout(tab5);
+    gridLayout5->setSpacing(6);
+    gridLayout5->setMargin(11);
+    gridLayout5->setObjectName(QString::fromUtf8("gridLayout5"));
+    gridLayout5->setHorizontalSpacing(6);
+    gridLayout5->setVerticalSpacing(6);
+    gridLayout5->setContentsMargins(9, 9, 9, 9);
+    teCONVDescription = new QTextEdit(tab5);
+    teCONVDescription->setObjectName(QString::fromUtf8("teCONVDescription"));
+    teCONVDescription->setReadOnly(true);
+
+    gridLayout5->addWidget(teCONVDescription, 0, 0, 1, 4);
+
+    leCONVLayer = new QLineEdit(tab5);
+    leCONVLayer->setObjectName(QString::fromUtf8("leCONVLayer"));
+
+    gridLayout5->addWidget(leCONVLayer, 4, 1, 1, 2);
+
+    textLabel5_1 = new QLabel(tab5);
+    textLabel5_1->setObjectName(QString::fromUtf8("textLabel5_1"));
+
+    gridLayout5->addWidget(textLabel5_1, 4, 0, 1, 1);
+
+    pbnCONVOutput = new QPushButton(tab5);
+    pbnCONVOutput->setObjectName(QString::fromUtf8("pbnCONVOutput"));
+
+    gridLayout5->addWidget(pbnCONVOutput, 3, 3, 1, 1);
+
+    pbnCONVInput = new QPushButton(tab5);
+    pbnCONVInput->setObjectName(QString::fromUtf8("pbnCONVInput"));
+
+    gridLayout5->addWidget(pbnCONVInput, 1, 3, 1, 1);
+
+    leCONVOutput = new QLineEdit(tab5);
+    leCONVOutput->setObjectName(QString::fromUtf8("leCONVOutput"));
+
+    gridLayout5->addWidget(leCONVOutput, 3, 1, 1, 2);
+
+    textLabel5_2 = new QLabel(tab5);
+    textLabel5_2->setObjectName(QString::fromUtf8("textLabel5_2"));
+
+    gridLayout5->addWidget(textLabel5_2, 3, 0, 1, 1);
+
+    spacerItem4 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+    gridLayout5->addItem(spacerItem4, 2, 2, 1, 1);
+
+    cmbCONVType = new QComboBox(tab5);
+    cmbCONVType->setObjectName(QString::fromUtf8("cmbCONVType"));
+    cmbCONVType->setMinimumSize(QSize(10, 0));
+
+    gridLayout5->addWidget(cmbCONVType, 2, 1, 1, 1);
+
+    textLabel5_3 = new QLabel(tab5);
+    textLabel5_3->setObjectName(QString::fromUtf8("textLabel5_3"));
+
+    gridLayout5->addWidget(textLabel5_3, 2, 0, 1, 1);
+
+    leCONVInput = new QLineEdit(tab5);
+    leCONVInput->setObjectName(QString::fromUtf8("leCONVInput"));
+    leCONVInput->setEnabled(false);
+
+    gridLayout5->addWidget(leCONVInput, 1, 1, 1, 2);
+
+    textLabel5_4 = new QLabel(tab5);
+    textLabel5_4->setObjectName(QString::fromUtf8("textLabel5_4"));
+
+    gridLayout5->addWidget(textLabel5_4, 1, 0, 1, 1);
+
+    tabWidget->addTab(tab5, QString());
 
     gridLayout->addWidget(tabWidget, 0, 2, 1, 1);
 
@@ -395,10 +505,44 @@ public:
 
     gridLayout->addWidget(buttonBox, 1, 0, 1, 3);
 
+    QWidget::setTabOrder(leGPXFile, pbnGPXSelectFile);
+    QWidget::setTabOrder(pbnGPXSelectFile, cbGPXWaypoints);
+    QWidget::setTabOrder(cbGPXWaypoints, cbGPXRoutes);
+    QWidget::setTabOrder(cbGPXRoutes, cbGPXTracks);
+    QWidget::setTabOrder(cbGPXTracks, buttonBox);
+    QWidget::setTabOrder(buttonBox, leIMPInput);
+    QWidget::setTabOrder(leIMPInput, pbnIMPInput);
+    QWidget::setTabOrder(pbnIMPInput, cmbIMPFeature);
+    QWidget::setTabOrder(cmbIMPFeature, leIMPOutput);
+    QWidget::setTabOrder(leIMPOutput, pbnIMPOutput);
+    QWidget::setTabOrder(pbnIMPOutput, leIMPLayer);
+    QWidget::setTabOrder(leIMPLayer, cmbDLDevice);
+    QWidget::setTabOrder(cmbDLDevice, cmbDLPort);
+    QWidget::setTabOrder(cmbDLPort, pbDLEditDevices);
+    QWidget::setTabOrder(pbDLEditDevices, cmbDLFeatureType);
+    QWidget::setTabOrder(cmbDLFeatureType, leDLOutput);
+    QWidget::setTabOrder(leDLOutput, pbnDLOutput);
+    QWidget::setTabOrder(pbnDLOutput, leDLBasename);
+    QWidget::setTabOrder(leDLBasename, cmbULLayer);
+    QWidget::setTabOrder(cmbULLayer, cmbULDevice);
+    QWidget::setTabOrder(cmbULDevice, cmbULPort);
+    QWidget::setTabOrder(cmbULPort, pbULEditDevices);
+    QWidget::setTabOrder(pbULEditDevices, leCONVInput);
+    QWidget::setTabOrder(leCONVInput, pbnCONVInput);
+    QWidget::setTabOrder(pbnCONVInput, cmbCONVType);
+    QWidget::setTabOrder(cmbCONVType, leCONVOutput);
+    QWidget::setTabOrder(leCONVOutput, pbnCONVOutput);
+    QWidget::setTabOrder(pbnCONVOutput, leCONVLayer);
+    QWidget::setTabOrder(leCONVLayer, teCONVDescription);
+    QWidget::setTabOrder(teCONVDescription, teDLDescription);
+    QWidget::setTabOrder(teDLDescription, teULDescription);
+    QWidget::setTabOrder(teULDescription, teLoadDescription);
+    QWidget::setTabOrder(teLoadDescription, tabWidget);
+    QWidget::setTabOrder(tabWidget, teIMPDescription);
 
     retranslateUi(QgsGPSPluginGuiBase);
 
-    tabWidget->setCurrentIndex(0);
+    tabWidget->setCurrentIndex(2);
 
 
     QMetaObject::connectSlotsByName(QgsGPSPluginGuiBase);
@@ -408,11 +552,10 @@ public:
     {
     QgsGPSPluginGuiBase->setWindowTitle(QApplication::translate("QgsGPSPluginGuiBase", "GPS Tools", 0, QApplication::UnicodeUTF8));
     label->setText(QString());
-    textEdit->setHtml(QApplication::translate("QgsGPSPluginGuiBase", "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+    teLoadDescription->setHtml(QApplication::translate("QgsGPSPluginGuiBase", "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-weight:400; font-style:normal; text-decoration:none;\">\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Arial'; font-size:12pt;\"><span style=\" font-size:10pt;\">GPX is the </span><a href=\"http://www.topografix.com/gpx.asp\"><span style=\" font-size:10pt; text-decoration: underline; color:#0000ff;\">GPS eXchange file format</span></a><span style=\" font-size:10pt;\">, which is used to store information about waypoints, routes, and tracks.</span></p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Arial'; font-size:10pt;\">Select a GPX file and then select the feature types that you want to load.</p></body></html>", 0, QApplication::UnicodeUTF8));
+"</style></head><body style=\" font-family:'Verdana'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; font-size:9pt;\"></p></body></html>", 0, QApplication::UnicodeUTF8));
     lblGPXFile->setText(QApplication::translate("QgsGPSPluginGuiBase", "File:", 0, QApplication::UnicodeUTF8));
     pbnGPXSelectFile->setText(QApplication::translate("QgsGPSPluginGuiBase", "Browse...", 0, QApplication::UnicodeUTF8));
     lblGPXFeatureTypes->setText(QApplication::translate("QgsGPSPluginGuiBase", "Feature types:", 0, QApplication::UnicodeUTF8));
@@ -420,50 +563,57 @@ public:
     cbGPXRoutes->setText(QApplication::translate("QgsGPSPluginGuiBase", "Routes", 0, QApplication::UnicodeUTF8));
     cbGPXTracks->setText(QApplication::translate("QgsGPSPluginGuiBase", "Tracks", 0, QApplication::UnicodeUTF8));
     tabWidget->setTabText(tabWidget->indexOf(tab1), QApplication::translate("QgsGPSPluginGuiBase", "Load GPX file", 0, QApplication::UnicodeUTF8));
-    textEdit_2->setHtml(QApplication::translate("QgsGPSPluginGuiBase", "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+    teIMPDescription->setHtml(QApplication::translate("QgsGPSPluginGuiBase", "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-weight:400; font-style:normal; text-decoration:none;\">\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Arial'; font-size:12pt;\"><span style=\" font-size:10pt;\">QGIS can only load GPX files by itself, but many other formats can be converted to GPX using GPSBabel (</span><a href=\"http://gpsbabel.sf.net\"><span style=\" font-size:10pt; text-decoration: underline; color:#0000ff;\">http://gpsbabel.sf.net</span></a><span style=\" font-size:10pt;\">). This requires that you have GPSBabel installed where QGIS can find it.</span></p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Arial'; font-size:10pt;\">Select a GPS file format and the file th"
-        "at you want to import, the feature type that you want to use, a GPX filename that you want to save the converted file as, and a name for the new layer. All file formats can not store waypoints, routes, and tracks, so some feature types may be disabled for some file formats.</p></body></html>", 0, QApplication::UnicodeUTF8));
+"</style></head><body style=\" font-family:'Verdana'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; font-size:9pt;\"></p></body></html>", 0, QApplication::UnicodeUTF8));
     textLabel1_6->setText(QApplication::translate("QgsGPSPluginGuiBase", "Layer name:", 0, QApplication::UnicodeUTF8));
     pbnIMPOutput->setText(QApplication::translate("QgsGPSPluginGuiBase", "Save As...", 0, QApplication::UnicodeUTF8));
     pbnIMPInput->setText(QApplication::translate("QgsGPSPluginGuiBase", "Browse...", 0, QApplication::UnicodeUTF8));
     textLabel3_3->setText(QApplication::translate("QgsGPSPluginGuiBase", "GPX output file:", 0, QApplication::UnicodeUTF8));
     textLabel2_3->setText(QApplication::translate("QgsGPSPluginGuiBase", "Feature type:", 0, QApplication::UnicodeUTF8));
+    textLabel2_6->setText(QApplication::translate("QgsGPSPluginGuiBase", "(Note: Selecting correct file type in browser dialog important!)", 0, QApplication::UnicodeUTF8));
     textLabel1_5->setText(QApplication::translate("QgsGPSPluginGuiBase", "File to import:", 0, QApplication::UnicodeUTF8));
     tabWidget->setTabText(tabWidget->indexOf(tab2), QApplication::translate("QgsGPSPluginGuiBase", "Import other file", 0, QApplication::UnicodeUTF8));
-    textEdit_3->setHtml(QApplication::translate("QgsGPSPluginGuiBase", "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+    teDLDescription->setHtml(QApplication::translate("QgsGPSPluginGuiBase", "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-weight:400; font-style:normal; text-decoration:none;\">\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Arial'; font-size:12pt;\"><span style=\" font-size:10pt;\">This tool will help you download data from a GPS device. Choose your GPS device, the port it is connected to, the feature type you want to download, a name for your new layer, and the GPX file where you want to store the data. If your device isn't listed, or if you want to change some settings, you can also edit the devices.</span></p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Arial'; font-size:10pt;\">This tool uses the program GPSBabel (<a href=\"http://gpsbabel.sf.net\"><s"
-        "pan style=\" text-decoration: underline; color:#0000ff;\">http://gpsbabel.sf.net</span></a>) to transfer the data. If you don't have GPSBabel installed where QGIS can find it, this tool will not work.</p></body></html>", 0, QApplication::UnicodeUTF8));
+"</style></head><body style=\" font-family:'Verdana'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; font-size:9pt;\"></p></body></html>", 0, QApplication::UnicodeUTF8));
+    textLabel1->setText(QApplication::translate("QgsGPSPluginGuiBase", "GPS device:", 0, QApplication::UnicodeUTF8));
+    pbDLEditDevices->setText(QApplication::translate("QgsGPSPluginGuiBase", "Edit devices...", 0, QApplication::UnicodeUTF8));
+    textLabel2_5->setText(QApplication::translate("QgsGPSPluginGuiBase", "Port:", 0, QApplication::UnicodeUTF8));
+    pbnRefresh->setText(QApplication::translate("QgsGPSPluginGuiBase", "Refresh", 0, QApplication::UnicodeUTF8));
+    textLabel1_3->setText(QApplication::translate("QgsGPSPluginGuiBase", "Feature type:", 0, QApplication::UnicodeUTF8));
     cmbDLFeatureType->clear();
     cmbDLFeatureType->insertItems(0, QStringList()
      << QApplication::translate("QgsGPSPluginGuiBase", "Waypoints", 0, QApplication::UnicodeUTF8)
      << QApplication::translate("QgsGPSPluginGuiBase", "Routes", 0, QApplication::UnicodeUTF8)
      << QApplication::translate("QgsGPSPluginGuiBase", "Tracks", 0, QApplication::UnicodeUTF8)
     );
-    textLabel2_5->setText(QApplication::translate("QgsGPSPluginGuiBase", "Port:", 0, QApplication::UnicodeUTF8));
-    textLabel1_3->setText(QApplication::translate("QgsGPSPluginGuiBase", "Feature type:", 0, QApplication::UnicodeUTF8));
-    textLabel1_2->setText(QApplication::translate("QgsGPSPluginGuiBase", "Layer name:", 0, QApplication::UnicodeUTF8));
     textLabel2->setText(QApplication::translate("QgsGPSPluginGuiBase", "Output file:", 0, QApplication::UnicodeUTF8));
-    textLabel1->setText(QApplication::translate("QgsGPSPluginGuiBase", "GPS device:", 0, QApplication::UnicodeUTF8));
-    pbDLEditDevices->setText(QApplication::translate("QgsGPSPluginGuiBase", "Edit devices", 0, QApplication::UnicodeUTF8));
     pbnDLOutput->setText(QApplication::translate("QgsGPSPluginGuiBase", "Save As...", 0, QApplication::UnicodeUTF8));
+    textLabel1_2->setText(QApplication::translate("QgsGPSPluginGuiBase", "Layer name:", 0, QApplication::UnicodeUTF8));
     tabWidget->setTabText(tabWidget->indexOf(tab3), QApplication::translate("QgsGPSPluginGuiBase", "Download from GPS", 0, QApplication::UnicodeUTF8));
-    textEdit_4->setHtml(QApplication::translate("QgsGPSPluginGuiBase", "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+    teULDescription->setHtml(QApplication::translate("QgsGPSPluginGuiBase", "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-weight:400; font-style:normal; text-decoration:none;\">\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Arial'; font-size:12pt;\"><span style=\" font-size:10pt;\">This tool will help you upload data from a GPX layer to a GPS device. Choose the layer you want to upload, the device you want to upload it to, and the port your device is connected to. If your device isn't listed, or if you want to change some settings, you can also edit the devices.</span></p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Arial'; font-size:10pt;\">This tool uses the program GPSBabel (<a href=\"http://gpsbabel.sf.net\"><span style=\" text-decoration: underline; "
-        "color:#0000ff;\">http://gpsbabel.sf.net</span></a>) to transfer the data. If you don't have GPSBabel installed where QGIS can find it, this tool will not work.</p></body></html>", 0, QApplication::UnicodeUTF8));
+"</style></head><body style=\" font-family:'Verdana'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; font-size:9pt;\"></p></body></html>", 0, QApplication::UnicodeUTF8));
     textLabel3->setText(QApplication::translate("QgsGPSPluginGuiBase", "Port:", 0, QApplication::UnicodeUTF8));
     pbULEditDevices->setText(QApplication::translate("QgsGPSPluginGuiBase", "Edit devices", 0, QApplication::UnicodeUTF8));
     textLabel2_4->setText(QApplication::translate("QgsGPSPluginGuiBase", "GPS device:", 0, QApplication::UnicodeUTF8));
     textLabel2_2->setText(QApplication::translate("QgsGPSPluginGuiBase", "Data layer:", 0, QApplication::UnicodeUTF8));
     tabWidget->setTabText(tabWidget->indexOf(tab4), QApplication::translate("QgsGPSPluginGuiBase", "Upload to GPS", 0, QApplication::UnicodeUTF8));
+    teCONVDescription->setHtml(QApplication::translate("QgsGPSPluginGuiBase", "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Verdana'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; font-size:9pt;\"></p></body></html>", 0, QApplication::UnicodeUTF8));
+    textLabel5_1->setText(QApplication::translate("QgsGPSPluginGuiBase", "Layer name:", 0, QApplication::UnicodeUTF8));
+    pbnCONVOutput->setText(QApplication::translate("QgsGPSPluginGuiBase", "Save As...", 0, QApplication::UnicodeUTF8));
+    pbnCONVInput->setText(QApplication::translate("QgsGPSPluginGuiBase", "Browse...", 0, QApplication::UnicodeUTF8));
+    textLabel5_2->setText(QApplication::translate("QgsGPSPluginGuiBase", "GPX output file:", 0, QApplication::UnicodeUTF8));
+    textLabel5_3->setText(QApplication::translate("QgsGPSPluginGuiBase", "Conversion:", 0, QApplication::UnicodeUTF8));
+    textLabel5_4->setText(QApplication::translate("QgsGPSPluginGuiBase", "GPX input file:", 0, QApplication::UnicodeUTF8));
+    tabWidget->setTabText(tabWidget->indexOf(tab5), QApplication::translate("QgsGPSPluginGuiBase", "GPX Conversions", 0, QApplication::UnicodeUTF8));
     Q_UNUSED(QgsGPSPluginGuiBase);
     } // retranslateUi
 

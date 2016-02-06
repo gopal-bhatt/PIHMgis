@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/qgis/!svn/ver/10639/branches/Release-1_0_2/debian/mime/application
+END
+x-mapinfo-mif.desktop
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/qgis/!svn/ver/10639/branches/Release-1_0_2/debian/mime/application/x-mapinfo-mif.desktop
+END
+x-adobe-mif.desktop
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/qgis/!svn/ver/10639/branches/Release-1_0_2/debian/mime/application/x-adobe-mif.desktop
+END
+x-esri-crs.desktop
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/qgis/!svn/ver/10639/branches/Release-1_0_2/debian/mime/application/x-esri-crs.desktop
+END
+x-qgis-project.desktop
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/qgis/!svn/ver/10639/branches/Release-1_0_2/debian/mime/application/x-qgis-project.desktop
+END
+x-qgis-layer-settings.desktop
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/qgis/!svn/ver/10639/branches/Release-1_0_2/debian/mime/application/x-qgis-layer-settings.desktop
+END
+x-raster-ecw.desktop
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/qgis/!svn/ver/10639/branches/Release-1_0_2/debian/mime/application/x-raster-ecw.desktop
+END
+x-raster-mrsid.desktop
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/qgis/!svn/ver/10639/branches/Release-1_0_2/debian/mime/application/x-raster-mrsid.desktop
+END
+x-raster-aig.desktop
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/qgis/!svn/ver/10639/branches/Release-1_0_2/debian/mime/application/x-raster-aig.desktop
+END
+x-esri-shape.desktop
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/qgis/!svn/ver/10639/branches/Release-1_0_2/debian/mime/application/x-esri-shape.desktop
+END

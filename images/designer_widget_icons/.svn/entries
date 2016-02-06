@@ -1,9 +1,9 @@
 8
 
 dir
-7809
-https://svn.qgis.org/repos/qgis/branches/Release-0_9_0/images/designer_widget_icons
-https://svn.qgis.org/repos/qgis
+10938
+https://svn.osgeo.org/qgis/branches/Release-1_0_2/images/designer_widget_icons
+https://svn.osgeo.org/qgis
 
 
 
@@ -32,7 +32,7 @@ file
 
 
 
-2007-12-24T08:18:32.000000Z
+2009-06-17T07:50:13.000000Z
 f0ad316d0de168b4b967919a4dac1e49
 2006-04-02T22:57:22.991651Z
 5133

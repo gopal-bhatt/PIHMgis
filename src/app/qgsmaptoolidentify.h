@@ -19,6 +19,7 @@
 
 #include "qgsmaptool.h"
 #include "qgspoint.h"
+#include "qgsfeature.h"
 
 #include <QObject>
 
@@ -38,29 +39,32 @@ class QgsVectorLayer;
 */
 class QgsMapToolIdentify : public QgsMapTool
 {
-  Q_OBJECT;
+    Q_OBJECT
 
   public:
-    QgsMapToolIdentify(QgsMapCanvas* canvas);
+    QgsMapToolIdentify( QgsMapCanvas* canvas );
 
     ~QgsMapToolIdentify();
 
     //! Overridden mouse move event
-    virtual void canvasMoveEvent(QMouseEvent * e);
+    virtual void canvasMoveEvent( QMouseEvent * e );
 
     //! Overridden mouse press event
-    virtual void canvasPressEvent(QMouseEvent * e);
+    virtual void canvasPressEvent( QMouseEvent * e );
 
     //! Overridden mouse release event
-    virtual void canvasReleaseEvent(QMouseEvent * e);
+    virtual void canvasReleaseEvent( QMouseEvent * e );
 
     //! called when map tool is being deactivated
     virtual void deactivate();
 
   public slots:
     //! creates rubberband on top of the feature to highlight it
-    void highlightFeature(int featureId);
-  
+    void highlightFeature( int featureId );
+
+    //! edit a feature
+    void editFeature( int featureId );
+
   private:
 
     /**
@@ -68,7 +72,7 @@ class QgsMapToolIdentify : public QgsMapTool
      *
      * \param point[in]  The coordinate (as the CRS of the raster layer)
      */
-    void identifyRasterLayer(QgsRasterLayer* layer, const QgsPoint& point);
+    void identifyRasterLayer( const QgsPoint& point );
 
     /**
      * \brief function for identifying a pixel in a OGC WMS raster layer
@@ -78,18 +82,20 @@ class QgsMapToolIdentify : public QgsMapTool
      * \note WMS Servers prefer to receive coordinates in image space not CRS space, therefore
      *       this special variant of identifyRasterLayer.
      */
-    void identifyRasterWmsLayer(QgsRasterLayer* layer, const QgsPoint& point);
+    void identifyRasterWmsLayer( const QgsPoint& point );
 
     /**
      * \brief function for identifying features at a coordinate in a vector layer
      *
      * \param point[in]  The coordinate (as the CRS of the vector layer)
      */
-    void identifyVectorLayer(QgsVectorLayer* layer, const QgsPoint& point);
+    void identifyVectorLayer( const QgsPoint& point );
 
     //! show whatever error is exposed by the QgsMapLayer.
-    void showError(QgsMapLayer * mapLayer);
+    void showError();
 
+    //! edit a feature
+    void editFeature( QgsFeature &f );
 
     //! Pointer to the identify results dialog for name/value pairs
     QgsIdentifyResults *mResults;
@@ -97,7 +103,12 @@ class QgsMapToolIdentify : public QgsMapTool
     //! Rubber band for highlighting identified feature
     QgsRubberBand* mRubberBand;
 
-private slots:
+    QgsMapLayer *mLayer;
+
+    //! list of identified features
+    QgsFeatureList mFeatureList;
+
+  private slots:
     // Let us know when the QgsIdentifyResults dialog box has been closed
     void resultsDialogGone();
 

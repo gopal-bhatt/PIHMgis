@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'qgswmsprovider.h'
 **
-** Created: Wed Jun 11 19:09:24 2008
+** Created: Fri Jun 19 01:58:03 2009
 **      by: The Qt Meta Object Compiler version 59 (Qt 4.3.2)
 **
 ** WARNING! All changes made in this file will be lost!
@@ -28,18 +28,18 @@ static const uint qt_meta_data_QgsWmsProvider[] = {
 
  // signals: signature, parameters, type, tag, flags
       42,   16,   15,   15, 0x05,
-      80,   63,   15,   15, 0x05,
+      84,   67,   15,   15, 0x05,
 
  // slots: signature, parameters, type, tag, flags
-     110,   99,   15,   15, 0x0a,
+     118,  107,   15,   15, 0x0a,
 
        0        // eod
 };
 
 static const char qt_meta_stringdata_QgsWmsProvider[] = {
     "QgsWmsProvider\0\0theProgress,theTotalSteps\0"
-    "setProgress(int,int)\0theStatusQString\0"
-    "setStatus(QString)\0theMessage\0"
+    "progressChanged(int,int)\0theStatusQString\0"
+    "statusChanged(QString)\0theMessage\0"
     "showStatusMessage(QString)\0"
 };
 
@@ -68,8 +68,8 @@ int QgsWmsProvider::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
         switch (_id) {
-        case 0: setProgress((*reinterpret_cast< int(*)>(_a[1])),(*reinterpret_cast< int(*)>(_a[2]))); break;
-        case 1: setStatus((*reinterpret_cast< const QString(*)>(_a[1]))); break;
+        case 0: progressChanged((*reinterpret_cast< int(*)>(_a[1])),(*reinterpret_cast< int(*)>(_a[2]))); break;
+        case 1: statusChanged((*reinterpret_cast< const QString(*)>(_a[1]))); break;
         case 2: showStatusMessage((*reinterpret_cast< const QString(*)>(_a[1]))); break;
         }
         _id -= 3;
@@ -78,14 +78,14 @@ int QgsWmsProvider::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 }
 
 // SIGNAL 0
-void QgsWmsProvider::setProgress(int _t1, int _t2)
+void QgsWmsProvider::progressChanged(int _t1, int _t2)
 {
     void *_a[] = { 0, const_cast<void*>(reinterpret_cast<const void*>(&_t1)), const_cast<void*>(reinterpret_cast<const void*>(&_t2)) };
     QMetaObject::activate(this, &staticMetaObject, 0, _a);
 }
 
 // SIGNAL 1
-void QgsWmsProvider::setStatus(QString const & _t1)
+void QgsWmsProvider::statusChanged(QString const & _t1)
 {
     void *_a[] = { 0, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
     QMetaObject::activate(this, &staticMetaObject, 1, _a);

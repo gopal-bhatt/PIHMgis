@@ -20,6 +20,7 @@
 #include "qgsmarkercatalogue.h"
 #include "qgssymbol.h"
 #include "qgssymbologyutils.h"
+#include "qgsvectordataprovider.h"
 #include "qgsvectorlayer.h"
 
 #include <cfloat>
@@ -27,31 +28,31 @@
 #include <QPainter>
 #include <QImage>
 
-QgsContinuousColorRenderer::QgsContinuousColorRenderer(QGis::VectorType type): mMinimumSymbol(0), mMaximumSymbol(0)
+QgsContinuousColorRenderer::QgsContinuousColorRenderer( QGis::GeometryType type ): mMinimumSymbol( 0 ), mMaximumSymbol( 0 )
 {
-    mVectorType = type;
+  mGeometryType = type;
 }
 
-QgsContinuousColorRenderer::QgsContinuousColorRenderer(const QgsContinuousColorRenderer& other)
+QgsContinuousColorRenderer::QgsContinuousColorRenderer( const QgsContinuousColorRenderer& other )
 {
-    mVectorType = other.mVectorType;
+  mGeometryType = other.mGeometryType;
+  mClassificationField = other.mClassificationField;
+  mMinimumSymbol = new QgsSymbol( *other.mMinimumSymbol );
+  mMaximumSymbol = new QgsSymbol( *other.mMaximumSymbol );
+}
+
+QgsContinuousColorRenderer& QgsContinuousColorRenderer::operator=( const QgsContinuousColorRenderer & other )
+{
+  if ( this != &other )
+  {
+    mGeometryType = other.mGeometryType;
     mClassificationField = other.mClassificationField;
-    mMinimumSymbol = new QgsSymbol(*other.mMinimumSymbol);
-    mMaximumSymbol = new QgsSymbol(*other.mMaximumSymbol);
-}
-
-QgsContinuousColorRenderer& QgsContinuousColorRenderer::operator=(const QgsContinuousColorRenderer& other)
-{
-    if(this != &other)
-    {
-	mVectorType = other.mVectorType;
-	mClassificationField = other.mClassificationField;
-	delete mMinimumSymbol;
-	delete mMaximumSymbol;
-	mMinimumSymbol = new QgsSymbol(*other.mMinimumSymbol);
-	mMaximumSymbol = new QgsSymbol(*other.mMaximumSymbol);
-    }
-    return *this;
+    delete mMinimumSymbol;
+    delete mMaximumSymbol;
+    mMinimumSymbol = new QgsSymbol( *other.mMinimumSymbol );
+    mMaximumSymbol = new QgsSymbol( *other.mMaximumSymbol );
+  }
+  return *this;
 }
 
 QgsContinuousColorRenderer::~QgsContinuousColorRenderer()
@@ -60,25 +61,30 @@ QgsContinuousColorRenderer::~QgsContinuousColorRenderer()
   delete mMaximumSymbol;
 }
 
-void QgsContinuousColorRenderer::setMinimumSymbol(QgsSymbol* sy)
+void QgsContinuousColorRenderer::setMinimumSymbol( QgsSymbol* sy )
 {
   delete mMinimumSymbol;
   mMinimumSymbol = sy;
 }
 
-void QgsContinuousColorRenderer::setMaximumSymbol(QgsSymbol* sy)
+void QgsContinuousColorRenderer::setMaximumSymbol( QgsSymbol* sy )
 {
   delete mMaximumSymbol;
   mMaximumSymbol = sy;
 }
 
-void QgsContinuousColorRenderer::renderFeature(QPainter * p, QgsFeature & f, QImage* img, 
-	double* scalefactor, bool selected, double widthScale)
+void QgsContinuousColorRenderer::renderFeature( QPainter * p, QgsFeature & f, QImage* img, bool selected, double widthScale, double rasterScaleFactor )
 {
-  if ((mMinimumSymbol && mMaximumSymbol))
+  if (( mMinimumSymbol && mMaximumSymbol ) )
   {
     //first find out the value for the classification attribute
     const QgsAttributeMap& attrs = f.attributeMap();
+    if ( attrs[mClassificationField].isNull() )
+    {
+      if ( img )
+        *img = QImage();
+      return;
+    }
     double fvalue = attrs[mClassificationField].toDouble();
 
     //double fvalue = vec[mClassificationField].fieldValue().toDouble();
@@ -87,184 +93,219 @@ void QgsContinuousColorRenderer::renderFeature(QPainter * p, QgsFeature & f, QIm
 
     QColor mincolor, maxcolor;
 
-    if ( mVectorType == QGis::Line || mVectorType == QGis::Point )
+    if ( mGeometryType == QGis::Line || mGeometryType == QGis::Point )
     {
       mincolor = mMinimumSymbol->pen().color();
       maxcolor = mMaximumSymbol->pen().color();
-    } 
+    }
     else                    //if polygon
     {
-      p->setPen(mMinimumSymbol->pen());
+      p->setPen( mMinimumSymbol->pen() );
       mincolor = mMinimumSymbol->fillColor();
       maxcolor = mMaximumSymbol->fillColor();
     }
 
-    int red,green,blue;
+    int red, green, blue;
 
-    if((maxvalue - minvalue)!=0)
+    if (( maxvalue - minvalue ) != 0 )
     {
-      red = int (maxcolor.red() * (fvalue - minvalue) / (maxvalue - minvalue) + mincolor.red() * (maxvalue - fvalue) / (maxvalue - minvalue));
-      green = int (maxcolor.green() * (fvalue - minvalue) / (maxvalue - minvalue) + mincolor.green() * (maxvalue - fvalue) / (maxvalue - minvalue));
-      blue =  int (maxcolor.blue() * (fvalue - minvalue) / (maxvalue - minvalue) + mincolor.blue() * (maxvalue - fvalue) / (maxvalue - minvalue));
+      red = int ( maxcolor.red() * ( fvalue - minvalue ) / ( maxvalue - minvalue ) + mincolor.red() * ( maxvalue - fvalue ) / ( maxvalue - minvalue ) );
+      green = int ( maxcolor.green() * ( fvalue - minvalue ) / ( maxvalue - minvalue ) + mincolor.green() * ( maxvalue - fvalue ) / ( maxvalue - minvalue ) );
+      blue =  int ( maxcolor.blue() * ( fvalue - minvalue ) / ( maxvalue - minvalue ) + mincolor.blue() * ( maxvalue - fvalue ) / ( maxvalue - minvalue ) );
     }
     else
     {
-      red = int (mincolor.red());
-      green = int (mincolor.green());
-      blue = int (mincolor.blue());
+      red = int ( mincolor.red() );
+      green = int ( mincolor.green() );
+      blue = int ( mincolor.blue() );
     }
 
-    if ( mVectorType == QGis::Point && img) {
-      // TODO we must get always new marker -> slow, but continuous color for points 
+    if ( mGeometryType == QGis::Point && img )
+    {
+      // TODO we must get always new marker -> slow, but continuous color for points
       // probably is not used frequently
 
 
       // Use color for both pen and brush (user can add another layer with outpine)
       // later add support for both pen and brush to dialog
       QPen pen = mMinimumSymbol->pen();
-      pen.setColor ( QColor(red, green, blue) );
-      pen.setWidthF ( widthScale * pen.width() );
+      pen.setColor( QColor( red, green, blue ) );
+      pen.setWidthF( widthScale * pen.widthF() );
 
       QBrush brush = mMinimumSymbol->brush();
 
-      if ( selected ) {
-        pen.setColor ( mSelectionColor );
-        brush.setColor ( mSelectionColor );
-      } else {
-        brush.setColor ( QColor(red, green, blue) );
-      }
-      brush.setStyle ( Qt::SolidPattern );
-
-      *img = QgsMarkerCatalogue::instance()->imageMarker ( mMinimumSymbol->pointSymbolName(), mMinimumSymbol->pointSize(),
-          pen, brush);
-
-      if ( scalefactor ) *scalefactor = 1;
-    } 
-    else if ( mVectorType == QGis::Line )
-    {
-      p->setPen( QPen(QColor(red, green, blue),
-            (int)(widthScale*mMinimumSymbol->pen().width()) ));//make sure the correct line width is used
-    } 
-    else
-    {
-      p->setBrush(QColor(red, green, blue));
-      if (mDrawPolygonOutline)
+      if ( selected )
       {
-        QPen pen;
-        pen.setColor(QColor(0,0,0));
-        pen.setWidthF(widthScale*mMinimumSymbol->pen().width());
-        p->setPen(pen);
+        pen.setColor( mSelectionColor );
+        brush.setColor( mSelectionColor );
       }
       else
-        p->setPen(Qt::NoPen);
+      {
+        brush.setColor( QColor( red, green, blue ) );
+      }
+      brush.setStyle( Qt::SolidPattern );
+
+      *img = QgsMarkerCatalogue::instance()->imageMarker( mMinimumSymbol->pointSymbolName(),
+             mMinimumSymbol->pointSize() * widthScale * rasterScaleFactor, pen, brush );
     }
-    if(selected)
+    else if ( mGeometryType == QGis::Line )
     {
-      QPen pen=mMinimumSymbol->pen();
-      pen.setColor(mSelectionColor);
-      QBrush brush=mMinimumSymbol->brush();
-      brush.setColor(mSelectionColor);
-      p->setPen(pen);
-      p->setBrush(brush);
+      QPen linePen;
+      linePen.setColor( QColor( red, green, blue ) );
+      linePen.setWidthF( widthScale*mMinimumSymbol->pen().widthF() );
+      p->setPen( linePen );
+    }
+    else //polygon
+    {
+      p->setBrush( QColor( red, green, blue ) );
+      if ( mDrawPolygonOutline )
+      {
+        QPen pen;
+        pen.setColor( QColor( 0, 0, 0 ) );
+        pen.setWidthF( widthScale*mMinimumSymbol->pen().widthF() );
+        p->setPen( pen );
+      }
+      else
+      {
+        p->setPen( Qt::NoPen );
+      }
+    }
+    if ( selected )
+    {
+      //for polygons we dont use selection colour for outline
+      //otherwise adjacent features appear merged when selected
+      if ( mGeometryType != QGis::Polygon )
+      {
+        QPen pen = mMinimumSymbol->pen();
+        pen.setColor( mSelectionColor );
+        p->setPen( pen );
+      }
+      QBrush brush = mMinimumSymbol->brush();
+      brush.setColor( mSelectionColor );
+      p->setBrush( brush );
     }
   }
 }
 
-void QgsContinuousColorRenderer::readXML(const QDomNode& rnode, QgsVectorLayer& vl)
+int QgsContinuousColorRenderer::readXML( const QDomNode& rnode, QgsVectorLayer& vl )
 {
-    mVectorType = vl.vectorType();
-    QDomNode classnode = rnode.namedItem("classificationfield");
-    int classificationfield = classnode.toElement().text().toInt();
-    this->setClassificationField(classificationfield);
-    
-    //polygon outline
-    QDomNode polyoutlinenode = rnode.namedItem("polygonoutline");
-    QString polyoutline = polyoutlinenode.toElement().text();
-    if(polyoutline == "0")
-    {
-	    mDrawPolygonOutline = false;
-    }
-    else if(polyoutline == "1")
-    {
-	    mDrawPolygonOutline = true;
-    }
+  mGeometryType = vl.geometryType();
+  QDomNode classnode = rnode.namedItem( "classificationfield" );
+  QString classificationField = classnode.toElement().text();
 
-    //read the settings for the renderitem of the minimum value
-    QDomNode lowernode = rnode.namedItem("lowestsymbol");
-    QDomNode lsymbolnode = lowernode.namedItem("symbol");
-    if( ! lsymbolnode.isNull() )
-    {
-	QgsSymbol* lsy = new QgsSymbol(mVectorType);
-	lsy->readXML ( lsymbolnode );
-	this->setMinimumSymbol(lsy);
-    }
-    QDomNode uppernode = rnode.namedItem("highestsymbol");
-    QDomNode usymbolnode = uppernode.namedItem("symbol");
-    if( ! usymbolnode.isNull() )
-    {
-	QgsSymbol* usy = new QgsSymbol(mVectorType);
-	usy->readXML ( usymbolnode );
-	this->setMaximumSymbol(usy);
-    }
-    vl.setRenderer(this);
+  QgsVectorDataProvider* theProvider = vl.dataProvider();
+  if ( !theProvider )
+  {
+    return 1;
+  }
+  int classificationId = theProvider->fieldNameIndex( classificationField );
+  if ( classificationId == -1 )
+  {
+    return 2; //@todo: handle gracefully in gui situation where user needs to nominate field
+  }
+  setClassificationField( classificationId );
+
+  //polygon outline
+  QDomNode polyoutlinenode = rnode.namedItem( "polygonoutline" );
+  QString polyoutline = polyoutlinenode.toElement().text();
+  if ( polyoutline == "0" )
+  {
+    mDrawPolygonOutline = false;
+  }
+  else if ( polyoutline == "1" )
+  {
+    mDrawPolygonOutline = true;
+  }
+
+  //read the settings for the renderitem of the minimum value
+  QDomNode lowernode = rnode.namedItem( "lowestsymbol" );
+  QDomNode lsymbolnode = lowernode.namedItem( "symbol" );
+  if ( ! lsymbolnode.isNull() )
+  {
+    QgsSymbol* lsy = new QgsSymbol( mGeometryType );
+    lsy->readXML( lsymbolnode, &vl );
+    setMinimumSymbol( lsy );
+  }
+  QDomNode uppernode = rnode.namedItem( "highestsymbol" );
+  QDomNode usymbolnode = uppernode.namedItem( "symbol" );
+  if ( ! usymbolnode.isNull() )
+  {
+    QgsSymbol* usy = new QgsSymbol( mGeometryType );
+    usy->readXML( usymbolnode, &vl );
+    setMaximumSymbol( usy );
+  }
+  vl.setRenderer( this );
+  return 0;
 }
 
 QgsAttributeList QgsContinuousColorRenderer::classificationAttributes() const
 {
-    QgsAttributeList list;
-    list.append(mClassificationField);
-    return list;
+  QgsAttributeList list;
+  list.append( mClassificationField );
+  return list;
 }
 
 QString QgsContinuousColorRenderer::name() const
 {
-    return "Continuous Color";
+  return "Continuous Color";
 }
 
-bool QgsContinuousColorRenderer::writeXML( QDomNode & layer_node, QDomDocument & document ) const
+bool QgsContinuousColorRenderer::writeXML( QDomNode & layer_node, QDomDocument & document, const QgsVectorLayer& vl ) const
 {
-    bool returnval=true;
-#ifndef WIN32
-    QDomElement continuoussymbol=document.createElement("continuoussymbol");
-    layer_node.appendChild(continuoussymbol);
-    QDomElement classificationfield=document.createElement("classificationfield");
-    QDomText classificationfieldtxt=document.createTextNode(QString::number(mClassificationField));
-    classificationfield.appendChild(classificationfieldtxt);
-    continuoussymbol.appendChild(classificationfield);
-    
-    //polygon outlines
-    QDomElement drawPolygonOutlines = document.createElement("polygonoutline");
-    int drawPolyInt = mDrawPolygonOutline ? 1 : 0;
-    QDomText drawPolygonText = document.createTextNode(QString::number(drawPolyInt));
-    drawPolygonOutlines.appendChild(drawPolygonText);
-    continuoussymbol.appendChild(drawPolygonOutlines);
-    
-    QDomElement lowestsymbol=document.createElement("lowestsymbol");
-    continuoussymbol.appendChild(lowestsymbol);
-    if(mMinimumSymbol)
-    {
-	mMinimumSymbol->writeXML(lowestsymbol,document);
-    }
-    QDomElement highestsymbol=document.createElement("highestsymbol");
-    continuoussymbol.appendChild(highestsymbol);
-    if(mMaximumSymbol)
-    {
-	mMaximumSymbol->writeXML(highestsymbol,document);
-    }
-#endif
-    return returnval;
+  const QgsVectorDataProvider* theProvider = vl.dataProvider();
+  if ( !theProvider )
+  {
+    return false;
+  }
+
+  QString classificationFieldName;
+  QgsFieldMap::const_iterator field_it = theProvider->fields().find( mClassificationField );
+  if ( field_it != theProvider->fields().constEnd() )
+  {
+    classificationFieldName = field_it.value().name();
+  }
+  bool returnval = true;
+
+  QDomElement continuoussymbol = document.createElement( "continuoussymbol" );
+  layer_node.appendChild( continuoussymbol );
+  QDomElement classificationfield = document.createElement( "classificationfield" );
+  QDomText classificationfieldtxt = document.createTextNode( classificationFieldName );
+  classificationfield.appendChild( classificationfieldtxt );
+  continuoussymbol.appendChild( classificationfield );
+
+  //polygon outlines
+  QDomElement drawPolygonOutlines = document.createElement( "polygonoutline" );
+  int drawPolyInt = mDrawPolygonOutline ? 1 : 0;
+  QDomText drawPolygonText = document.createTextNode( QString::number( drawPolyInt ) );
+  drawPolygonOutlines.appendChild( drawPolygonText );
+  continuoussymbol.appendChild( drawPolygonOutlines );
+
+  QDomElement lowestsymbol = document.createElement( "lowestsymbol" );
+  continuoussymbol.appendChild( lowestsymbol );
+  if ( mMinimumSymbol )
+  {
+    mMinimumSymbol->writeXML( lowestsymbol, document, &vl );
+  }
+  QDomElement highestsymbol = document.createElement( "highestsymbol" );
+  continuoussymbol.appendChild( highestsymbol );
+  if ( mMaximumSymbol )
+  {
+    mMaximumSymbol->writeXML( highestsymbol, document, &vl );
+  }
+
+  return returnval;
 }
 
 const QList<QgsSymbol*> QgsContinuousColorRenderer::symbols() const
 {
-    QList<QgsSymbol*> list;
-    list.append(mMinimumSymbol);
-    list.append(mMaximumSymbol);
-    return list;
+  QList<QgsSymbol*> list;
+  list.append( mMinimumSymbol );
+  list.append( mMaximumSymbol );
+  return list;
 }
 
 QgsRenderer* QgsContinuousColorRenderer::clone() const
 {
-    QgsContinuousColorRenderer* r = new QgsContinuousColorRenderer(*this);
-    return r;
+  QgsContinuousColorRenderer* r = new QgsContinuousColorRenderer( *this );
+  return r;
 }

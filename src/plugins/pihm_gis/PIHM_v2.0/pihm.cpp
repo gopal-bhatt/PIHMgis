@@ -68,7 +68,7 @@
 #include "is_sm_et.h"
 #include "update.h"
 #include <iostream>
-
+#include <fstream>
 #include <QtGui/QProgressBar>^M
 #include "progress.h"
 
@@ -78,7 +78,7 @@
 using namespace std;
 
 /* Function Declarations */
-void initialize(char *, Model_Data, Control_Data *, N_Vector);
+int initialize(char *, Model_Data, Control_Data *, N_Vector);
 /* Function to calculate right hand side of ODE systems */
 int f(realtype, N_Vector, N_Vector, void *);
 void read_alloc(char *, Model_Data, Control_Data *);	/* Variable definition */
@@ -86,7 +86,7 @@ void read_alloc(char *, Model_Data, Control_Data *);	/* Variable definition */
 void PrintData(FILE **,Control_Data *, Model_Data, N_Vector, realtype);
 
 /* Main Function */
-int pihm(int argc, char **argv, QProgressBar* bar)
+int pihm(int argc, char **argv, QProgressBar* bar, QString logFileName, int* RunFlag)
 	{  
 	char tmpLName[11],tmpFName[400];	/* rivFlux File names */
   	Model_Data mData;               /* Model Data                */
@@ -155,7 +155,7 @@ int pihm(int argc, char **argv, QProgressBar* bar)
 
 	for(i=0;i<11;i++)
 		{
-		sprintf(tmpLName,".rivFlx%d",i);
+		sprintf(tmpLName,".rivFlx%d.txt",i);
 		strcpy(tmpFName,filename);
                         cout<<tmpFName<<"\n";
 		strcat(tmpFName,tmpLName);
@@ -194,8 +194,24 @@ int pihm(int argc, char **argv, QProgressBar* bar)
   	CV_Y = N_VNew_Serial(N);
   
   	/* initialize mode data structure */
-  	initialize(filename, mData, &cData, CV_Y);
-  
+  	int BoolR = initialize(filename, mData, &cData, CV_Y);
+		ofstream log;
+		if(cData.FillEleSurf==1){
+		        log.open(qPrintable(logFileName), ios::app);
+		        log<<"Filling Surface Sink Elements...<br>";
+        		log.close();
+		}
+		if(cData.FillEleSub==1){
+                        log.open(qPrintable(logFileName), ios::app);
+                        log<<"Filling Subsurface Sink Elements...<br>";
+                        log.close();
+                }
+		if(BoolR==1){
+                        log.open(qPrintable(logFileName), ios::app);
+                        log<<"WARNING: River Elevation Correction may be needed...<br>";
+                        log.close();
+                }
+		
   	printf("\nSolving ODE system ... \n");
   
   	/* allocate memory for solver */
@@ -217,6 +233,9 @@ int pihm(int argc, char **argv, QProgressBar* bar)
   	/* start solver in loops */
   	for(i=0; i<cData.NumSteps; i++)
   		{
+		cout<<"i= "<<i<<" RunFlag= "<<*RunFlag<<"\n";
+		if(*RunFlag == 0)
+			return 0;
 	/*	if (cData.Verbose != 1)
     			{
       			printf("  Running: %-4.1f%% ... ", (100*(i+1)/((realtype) cData.NumSteps))); 

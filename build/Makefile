@@ -34,10 +34,10 @@ RM = /usr/bin/cmake -E remove -f
 CMAKE_EDIT_COMMAND = /usr/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0
+CMAKE_SOURCE_DIR = /Users/bhattgopal/dev/cpp/qgis_1.0.2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build
+CMAKE_BINARY_DIR = /Users/bhattgopal/dev/cpp/qgis_1.0.2/build
 
 # Include the progress variables for this target.
 include CMakeFiles/progress.make
@@ -81,7 +81,7 @@ list_install_components/fast: list_install_components
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	/usr/bin/cpack --config /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CPackConfig.cmake
+	/usr/bin/cpack --config /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CPackConfig.cmake
 
 # Special rule for the target package
 package/fast: package
@@ -89,7 +89,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	/usr/bin/cpack --config /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CPackSourceConfig.cmake
+	/usr/bin/cpack --config /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CPackSourceConfig.cmake
 
 # Special rule for the target package_source
 package_source/fast: package_source
@@ -104,9 +104,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles $(CMAKE_ALL_PROGRESS)
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles $(CMAKE_ALL_PROGRESS)
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles 0
 
 # The main clean target
 clean:
@@ -216,6 +216,17 @@ qgis_help/fast:
 	$(MAKE) -f src/helpviewer/CMakeFiles/qgis_help.dir/build.make src/helpviewer/CMakeFiles/qgis_help.dir/build
 
 #=============================================================================
+# Target rules for targets named memoryprovider
+
+# Build rule for target.
+memoryprovider: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 memoryprovider
+
+# fast build rule for target.
+memoryprovider/fast:
+	$(MAKE) -f src/providers/memory/CMakeFiles/memoryprovider.dir/build.make src/providers/memory/CMakeFiles/memoryprovider.dir/build
+
+#=============================================================================
 # Target rules for targets named ogrprovider
 
 # Build rule for target.
@@ -304,6 +315,17 @@ gridmakerplugin/fast:
 	$(MAKE) -f src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/build.make src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/build
 
 #=============================================================================
+# Target rules for targets named interpolationplugin
+
+# Build rule for target.
+interpolationplugin: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 interpolationplugin
+
+# fast build rule for target.
+interpolationplugin/fast:
+	$(MAKE) -f src/plugins/interpolation/CMakeFiles/interpolationplugin.dir/build.make src/plugins/interpolation/CMakeFiles/interpolationplugin.dir/build
+
+#=============================================================================
 # Target rules for targets named northarrowplugin
 
 # Build rule for target.
@@ -359,6 +381,50 @@ georefplugin/fast:
 	$(MAKE) -f src/plugins/georeferencer/CMakeFiles/georefplugin.dir/build.make src/plugins/georeferencer/CMakeFiles/georefplugin.dir/build
 
 #=============================================================================
+# Target rules for targets named quickprintplugin
+
+# Build rule for target.
+quickprintplugin: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 quickprintplugin
+
+# fast build rule for target.
+quickprintplugin/fast:
+	$(MAKE) -f src/plugins/quick_print/CMakeFiles/quickprintplugin.dir/build.make src/plugins/quick_print/CMakeFiles/quickprintplugin.dir/build
+
+#=============================================================================
+# Target rules for targets named coordinatecaptureplugin
+
+# Build rule for target.
+coordinatecaptureplugin: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 coordinatecaptureplugin
+
+# fast build rule for target.
+coordinatecaptureplugin/fast:
+	$(MAKE) -f src/plugins/coordinate_capture/CMakeFiles/coordinatecaptureplugin.dir/build.make src/plugins/coordinate_capture/CMakeFiles/coordinatecaptureplugin.dir/build
+
+#=============================================================================
+# Target rules for targets named dxf2shpconverterplugin
+
+# Build rule for target.
+dxf2shpconverterplugin: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 dxf2shpconverterplugin
+
+# fast build rule for target.
+dxf2shpconverterplugin/fast:
+	$(MAKE) -f src/plugins/dxf2shp_converter/CMakeFiles/dxf2shpconverterplugin.dir/build.make src/plugins/dxf2shp_converter/CMakeFiles/dxf2shpconverterplugin.dir/build
+
+#=============================================================================
+# Target rules for targets named ogrconverterplugin
+
+# Build rule for target.
+ogrconverterplugin: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ogrconverterplugin
+
+# fast build rule for target.
+ogrconverterplugin/fast:
+	$(MAKE) -f src/plugins/ogr_converter/CMakeFiles/ogrconverterplugin.dir/build.make src/plugins/ogr_converter/CMakeFiles/ogrconverterplugin.dir/build
+
+#=============================================================================
 # Target rules for targets named pihmgisplugin
 
 # Build rule for target.
@@ -379,17 +445,6 @@ Info.plist: cmake_check_build_system
 # fast build rule for target.
 Info.plist/fast:
 	$(MAKE) -f src/mac/Contents/CMakeFiles/Info.plist.dir/build.make src/mac/Contents/CMakeFiles/Info.plist.dir/build
-
-#=============================================================================
-# Target rules for targets named msexport
-
-# Build rule for target.
-msexport: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 msexport
-
-# fast build rule for target.
-msexport/fast:
-	$(MAKE) -f tools/mapserver_export/CMakeFiles/msexport.dir/build.make tools/mapserver_export/CMakeFiles/msexport.dir/build
 
 # Help Target
 help::
@@ -412,6 +467,7 @@ help::
 	@echo "... qgis_gui"
 	@echo "... qgis"
 	@echo "... qgis_help"
+	@echo "... memoryprovider"
 	@echo "... ogrprovider"
 	@echo "... wmsprovider"
 	@echo "... delimitedtextprovider"
@@ -420,14 +476,18 @@ help::
 	@echo "... copyrightlabelplugin"
 	@echo "... delimitedtextplugin"
 	@echo "... gridmakerplugin"
+	@echo "... interpolationplugin"
 	@echo "... northarrowplugin"
 	@echo "... scalebarplugin"
 	@echo "... gpsimporterplugin"
 	@echo "... wfsplugin"
 	@echo "... georefplugin"
+	@echo "... quickprintplugin"
+	@echo "... coordinatecaptureplugin"
+	@echo "... dxf2shpconverterplugin"
+	@echo "... ogrconverterplugin"
 	@echo "... pihmgisplugin"
 	@echo "... Info.plist"
-	@echo "... msexport"
 
 
 

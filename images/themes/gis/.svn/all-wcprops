@@ -1,0 +1,311 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/qgis/!svn/ver/10639/branches/Release-1_0_2/images/themes/gis
+END
+mActionHideAllLayers.png
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/qgis/!svn/ver/10639/branches/Release-1_0_2/images/themes/gis/mActionHideAllLayers.png
+END
+mActionFileSaveAs.png
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/qgis/!svn/ver/10639/branches/Release-1_0_2/images/themes/gis/mActionFileSaveAs.png
+END
+mActionEditPaste.png
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/qgis/!svn/ver/10639/branches/Release-1_0_2/images/themes/gis/mActionEditPaste.png
+END
+mActionAddVertex.png
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/qgis/!svn/ver/10639/branches/Release-1_0_2/images/themes/gis/mActionAddVertex.png
+END
+mActionShowAllLayers.png
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/qgis/!svn/ver/10639/branches/Release-1_0_2/images/themes/gis/mActionShowAllLayers.png
+END
+mActionShowBookmarks.png
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/qgis/!svn/ver/10639/branches/Release-1_0_2/images/themes/gis/mActionShowBookmarks.png
+END
+mActionUnselectAttributes.png
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/qgis/!svn/ver/10639/branches/Release-1_0_2/images/themes/gis/mActionUnselectAttributes.png
+END
+mActionInOverview.png
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/qgis/!svn/ver/10639/branches/Release-1_0_2/images/themes/gis/mActionInOverview.png
+END
+mActionAddGPSLayer.png
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/qgis/!svn/ver/10639/branches/Release-1_0_2/images/themes/gis/mActionAddGPSLayer.png
+END
+mActionZoomToSelected.png
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/qgis/!svn/ver/10639/branches/Release-1_0_2/images/themes/gis/mActionZoomToSelected.png
+END
+mActionFileOpen.png
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/qgis/!svn/ver/10639/branches/Release-1_0_2/images/themes/gis/mActionFileOpen.png
+END
+LICENSE.TXT
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/qgis/!svn/ver/10639/branches/Release-1_0_2/images/themes/gis/LICENSE.TXT
+END
+mActionMoveVertex.png
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/qgis/!svn/ver/10639/branches/Release-1_0_2/images/themes/gis/mActionMoveVertex.png
+END
+mActionAddWfsLayer.png
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/qgis/!svn/ver/10639/branches/Release-1_0_2/images/themes/gis/mActionAddWfsLayer.png
+END
+mActionHelpContents.png
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/qgis/!svn/ver/10639/branches/Release-1_0_2/images/themes/gis/mActionHelpContents.png
+END
+mActionNewVectorLayer.png
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/qgis/!svn/ver/10639/branches/Release-1_0_2/images/themes/gis/mActionNewVectorLayer.png
+END
+mActionZoomIn.png
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/qgis/!svn/ver/10639/branches/Release-1_0_2/images/themes/gis/mActionZoomIn.png
+END
+mActionDeleteSelected.png
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/qgis/!svn/ver/10639/branches/Release-1_0_2/images/themes/gis/mActionDeleteSelected.png
+END
+mActionCaptureLine.png
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/qgis/!svn/ver/10639/branches/Release-1_0_2/images/themes/gis/mActionCaptureLine.png
+END
+mActionZoomOut.png
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/qgis/!svn/ver/10639/branches/Release-1_0_2/images/themes/gis/mActionZoomOut.png
+END
+mActionAddWmsLayer.png
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/qgis/!svn/ver/10639/branches/Release-1_0_2/images/themes/gis/mActionAddWmsLayer.png
+END
+mActionCapturePoint.png
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/qgis/!svn/ver/10639/branches/Release-1_0_2/images/themes/gis/mActionCapturePoint.png
+END
+mActionPan.png
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/qgis/!svn/ver/10639/branches/Release-1_0_2/images/themes/gis/mActionPan.png
+END
+mActionSelect.png
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/qgis/!svn/ver/10639/branches/Release-1_0_2/images/themes/gis/mActionSelect.png
+END
+mActionNewBookmark.png
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/qgis/!svn/ver/10639/branches/Release-1_0_2/images/themes/gis/mActionNewBookmark.png
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/qgis/!svn/ver/10639/branches/Release-1_0_2/images/themes/gis/CMakeLists.txt
+END
+mActionMoveFeature.png
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/qgis/!svn/ver/10639/branches/Release-1_0_2/images/themes/gis/mActionMoveFeature.png
+END
+mActionAddIsland.png
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/qgis/!svn/ver/10639/branches/Release-1_0_2/images/themes/gis/mActionAddIsland.png
+END
+mActionZoomToLayer.png
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/qgis/!svn/ver/10639/branches/Release-1_0_2/images/themes/gis/mActionZoomToLayer.png
+END
+mActionToggleEditing.png
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/qgis/!svn/ver/10639/branches/Release-1_0_2/images/themes/gis/mActionToggleEditing.png
+END
+mActionAddLayer.png
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/qgis/!svn/ver/10639/branches/Release-1_0_2/images/themes/gis/mActionAddLayer.png
+END
+mActionFileNew.png
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/qgis/!svn/ver/10639/branches/Release-1_0_2/images/themes/gis/mActionFileNew.png
+END
+mActionMeasureArea.png
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/qgis/!svn/ver/10639/branches/Release-1_0_2/images/themes/gis/mActionMeasureArea.png
+END
+mActionRemoveLayer.png
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/qgis/!svn/ver/10639/branches/Release-1_0_2/images/themes/gis/mActionRemoveLayer.png
+END
+mActionSplitFeatures.png
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/qgis/!svn/ver/10639/branches/Release-1_0_2/images/themes/gis/mActionSplitFeatures.png
+END
+mActionFilePrint.png
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/qgis/!svn/ver/10639/branches/Release-1_0_2/images/themes/gis/mActionFilePrint.png
+END
+mActionDraw.png
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/qgis/!svn/ver/10639/branches/Release-1_0_2/images/themes/gis/mActionDraw.png
+END
+mActionAddOgrLayer.png
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/qgis/!svn/ver/10639/branches/Release-1_0_2/images/themes/gis/mActionAddOgrLayer.png
+END
+mActionFileSave.png
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/qgis/!svn/ver/10639/branches/Release-1_0_2/images/themes/gis/mActionFileSave.png
+END
+mActionZoomFullExtent.png
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/qgis/!svn/ver/10639/branches/Release-1_0_2/images/themes/gis/mActionZoomFullExtent.png
+END
+mActionDeleteVertex.png
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/qgis/!svn/ver/10639/branches/Release-1_0_2/images/themes/gis/mActionDeleteVertex.png
+END
+mActionMeasure.png
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/qgis/!svn/ver/10639/branches/Release-1_0_2/images/themes/gis/mActionMeasure.png
+END
+mActionEditCut.png
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/qgis/!svn/ver/10639/branches/Release-1_0_2/images/themes/gis/mActionEditCut.png
+END
+mActionAddRasterLayer.png
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/qgis/!svn/ver/10639/branches/Release-1_0_2/images/themes/gis/mActionAddRasterLayer.png
+END
+mActionAddRing.png
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/qgis/!svn/ver/10639/branches/Release-1_0_2/images/themes/gis/mActionAddRing.png
+END
+mActionZoomLast.png
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/qgis/!svn/ver/10639/branches/Release-1_0_2/images/themes/gis/mActionZoomLast.png
+END
+mActionOpenTable.png
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/qgis/!svn/ver/10639/branches/Release-1_0_2/images/themes/gis/mActionOpenTable.png
+END
+mActionIdentify.png
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/qgis/!svn/ver/10639/branches/Release-1_0_2/images/themes/gis/mActionIdentify.png
+END
+mActionCapturePolygon.png
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/qgis/!svn/ver/10639/branches/Release-1_0_2/images/themes/gis/mActionCapturePolygon.png
+END
+mActionMapTips.png
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/qgis/!svn/ver/10639/branches/Release-1_0_2/images/themes/gis/mActionMapTips.png
+END
+mActionEditCopy.png
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/qgis/!svn/ver/10639/branches/Release-1_0_2/images/themes/gis/mActionEditCopy.png
+END

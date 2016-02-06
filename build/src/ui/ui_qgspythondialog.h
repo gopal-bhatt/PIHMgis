@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading ui file 'qgspythondialog.ui'
 **
-** Created: Wed Jun 11 19:03:31 2008
+** Created: Fri Jun 19 01:50:17 2009
 **      by: Qt User Interface Compiler version 4.3.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling ui file!
@@ -89,15 +89,8 @@ public:
     void retranslateUi(QDialog *QgsPythonDialog)
     {
     QgsPythonDialog->setWindowTitle(QApplication::translate("QgsPythonDialog", "Python console", 0, QApplication::UnicodeUTF8));
-    lblInfo->setText(QApplication::translate("QgsPythonDialog", "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'DejaVu Sans Condensed'; font-size:10pt; font-weight:400; font-style:normal; text-decoration:none;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">To access Quantum GIS environment from this python console use object <span style=\" font-weight:600;\">iface</span> from global scope which is an instance of QgisInterface class.</p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Usage e.g.: iface.zoomFull()</p></body></html>", 0, QApplication::UnicodeUTF8));
-    txtHistory->setHtml(QApplication::translate("QgsPythonDialog", "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'DejaVu Sans Condensed'; font-size:9pt; font-weight:400; font-style:normal; text-decoration:none;\">\n"
-"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:10pt;\"></p></body></html>", 0, QApplication::UnicodeUTF8));
+    lblInfo->setText(QApplication::translate("QgsPythonDialog", "To access Quantum GIS environment from this python console use object from global scope which is an instance of QgisInterface class.<br>Usage e.g.: iface.zoomFull()", 0, QApplication::UnicodeUTF8));
+    txtHistory->setHtml(QString());
     lblPrompt->setText(QApplication::translate("QgsPythonDialog", ">>>", 0, QApplication::UnicodeUTF8));
     Q_UNUSED(QgsPythonDialog);
     } // retranslateUi

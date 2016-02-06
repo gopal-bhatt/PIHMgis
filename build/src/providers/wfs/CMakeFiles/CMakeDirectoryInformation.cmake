@@ -16,6 +16,7 @@ SET(CMAKE_C_INCLUDE_PATH
   "/Library/Frameworks/QtCore.framework/Headers"
   "."
   "../src/providers/wfs/../../core"
+  "../src/providers/wfs/../../core/spatialindex"
   "/Library/Frameworks/GEOS.framework/Headers"
   "/Library/Frameworks/GEOS.framework/Headers/geos"
   )

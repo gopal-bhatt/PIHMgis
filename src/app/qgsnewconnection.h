@@ -14,7 +14,7 @@
  *   (at your option) any later version.                                   *
  *                                                                         *
  ***************************************************************************/
- /* $Id: qgsnewconnection.h 6415 2007-01-09 02:39:15Z wonder $ */
+/* $Id: qgsnewconnection.h 9138 2008-08-23 21:37:31Z jef $ */
 #ifndef QGSNEWCONNECTION_H
 #define QGSNEWCONNECTION_H
 #include "ui_qgsnewconnectionbase.h"
@@ -23,12 +23,12 @@
  * \brief Dialog to allow the user to configure and save connection
  * information for a PostgresQl database
  */
-class QgsNewConnection : public QDialog, private Ui::QgsNewConnectionBase 
+class QgsNewConnection : public QDialog, private Ui::QgsNewConnectionBase
 {
-  Q_OBJECT
+    Q_OBJECT
   public:
     //! Constructor
-    QgsNewConnection(QWidget *parent = 0, const QString& connName = QString::null, Qt::WFlags fl = QgisGui::ModalDialogFlags);
+    QgsNewConnection( QWidget *parent = 0, const QString& connName = QString::null, Qt::WFlags fl = QgisGui::ModalDialogFlags );
     //! Destructor
     ~QgsNewConnection();
     //! Tests the connection using the parameters supplied

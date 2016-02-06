@@ -12,15 +12,15 @@
  *   (at your option) any later version.                                   *
  *                                                                         *
  ***************************************************************************/
-/* $Id: qgisgui.h 6122 2006-11-25 07:19:13Z telwertowski $ */
+/* $Id: qgisgui.h 9221 2008-08-30 23:38:26Z timlinux $ */
 #ifndef QGISGUI_H
 #define QGISGUI_H
 
 #include <Qt>
 
-/*!
+/** \ingroup gui
  * /namespace QgisGui
- * /brief The QgisGui namespace contains constants used throughout the QGIS GUI.
+ * The QgisGui namespace contains constants used throughout the QGIS GUI.
  */
 namespace QgisGui
 {
@@ -44,9 +44,9 @@ namespace QgisGui
    */
   static const Qt::WFlags ModalDialogFlags =
 #if QT_VERSION < 0x040200
-      Qt::WindowTitleHint | Qt::WindowSystemMenuHint | Qt::WindowMaximizeButtonHint;
+    Qt::WindowTitleHint | Qt::WindowSystemMenuHint | Qt::WindowMaximizeButtonHint;
 #else
-      0;
+    0;
 #endif
 
 }

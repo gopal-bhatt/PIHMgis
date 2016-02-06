@@ -1,15 +1,15 @@
 8
 
 dir
-7809
-https://svn.qgis.org/repos/qgis/branches/Release-0_9_0/src
-https://svn.qgis.org/repos/qgis
+10938
+https://svn.osgeo.org/qgis/branches/Release-1_0_2/src
+https://svn.osgeo.org/qgis
 
 
 
-2007-10-10T14:24:21.184007Z
-7260
-what_nick
+2009-04-19T10:33:52.498800Z
+10599
+jef
 has-props
 
 svn:special svn:externals svn:needs-lock
@@ -41,7 +41,7 @@ file
 
 
 
-2007-12-24T08:18:13.000000Z
+2009-06-17T07:49:58.000000Z
 aad5b43d51c837ac2989850e70a4bd7a
 2002-09-22T19:11:59.000000Z
 117
@@ -49,6 +49,9 @@ gsherman
 has-props
 
 plugins
+dir
+
+python
 dir
 
 gui
@@ -72,9 +75,9 @@ file
 
 
 
-2007-12-24T08:18:13.000000Z
-4300b4ae3514916cdf29931981ad51a4
-2007-01-11T22:16:41.351238Z
-6420
-telwertowski
+2009-06-17T07:49:58.000000Z
+d571b666df6c487443259caba3a6b61b
+2008-05-28T12:35:20.304423Z
+8530
+wonder
 

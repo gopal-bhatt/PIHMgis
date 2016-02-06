@@ -1,29 +1,29 @@
 K 25
 svn:wc:ra_dav:version-url
-V 77
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/tests/algorithms/projections
+V 72
+/qgis/!svn/ver/10639/branches/Release-1_0_2/tests/algorithms/projections
 END
 main.cpp
 K 25
 svn:wc:ra_dav:version-url
-V 86
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/tests/algorithms/projections/main.cpp
+V 81
+/qgis/!svn/ver/10639/branches/Release-1_0_2/tests/algorithms/projections/main.cpp
 END
 .cvsignore
 K 25
 svn:wc:ra_dav:version-url
-V 88
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/tests/algorithms/projections/.cvsignore
+V 83
+/qgis/!svn/ver/10639/branches/Release-1_0_2/tests/algorithms/projections/.cvsignore
 END
 README
 K 25
 svn:wc:ra_dav:version-url
-V 84
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/tests/algorithms/projections/README
+V 79
+/qgis/!svn/ver/10639/branches/Release-1_0_2/tests/algorithms/projections/README
 END
 projectioncshandlingtest.h
 K 25
 svn:wc:ra_dav:version-url
-V 104
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/tests/algorithms/projections/projectioncshandlingtest.h
+V 99
+/qgis/!svn/ver/10639/branches/Release-1_0_2/tests/algorithms/projections/projectioncshandlingtest.h
 END

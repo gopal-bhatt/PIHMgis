@@ -1,0 +1,14 @@
+FILE(REMOVE
+"moc_quickprintplugin.cxx"
+"moc_quickprintgui.cxx"
+"qrc_quickprint.cxx"
+"ui_quickprintguibase.h"
+"libquickprintplugin.pdb"
+"libquickprintplugin.a"
+"libquickprintplugin.so"
+"CMakeFiles/quickprintplugin.dir/quickprintplugin.o"
+"CMakeFiles/quickprintplugin.dir/quickprintgui.o"
+"CMakeFiles/quickprintplugin.dir/moc_quickprintplugin.o"
+"CMakeFiles/quickprintplugin.dir/moc_quickprintgui.o"
+"CMakeFiles/quickprintplugin.dir/qrc_quickprint.o"
+)

@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Resource object code
 **
-** Created: Wed Jun 11 19:11:09 2008
+** Created: Fri Jun 19 02:00:50 2009
 **      by: The Resource Compiler for Qt version 4.3.2
 **
 ** WARNING! All changes made in this file will be lost!
@@ -10,7 +10,7 @@
 #include <QtCore/qglobal.h>
 
 static const unsigned char qt_resource_data[] = {
-  // /Users/bhattgopal/dev/cpp/qgis0.9/src/plugins/pihm_gis/pihmgis.png
+  // /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmgis.png
   0x0,0x0,0x4,0x42,
   0x89,
   0x50,0x4e,0x47,0xd,0xa,0x1a,0xa,0x0,0x0,0x0,0xd,0x49,0x48,0x44,0x52,0x0,

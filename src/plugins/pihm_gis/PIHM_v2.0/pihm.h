@@ -36,7 +36,7 @@
 #include <stdio.h>
 #include <iostream>
 #include <QtGui/QProgressBar>
-int pihm(int, char **, QProgressBar *);
+int pihm(int, char **, QProgressBar *, QString, int*);
 
 /* Definition of Global Variable Types */
 

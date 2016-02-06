@@ -1,3 +1,12 @@
+/********************************************************************************
+** Form generated from reading ui file 'timeseries.ui'
+**
+** Created: Wed May 27 04:51:36 2009
+**      by: Qt User Interface Compiler version 4.3.2
+**
+** WARNING! All changes made in this file will be lost when recompiling ui file!
+********************************************************************************/
+
 #ifndef UI_TIMESERIES_H
 #define UI_TIMESERIES_H
 
@@ -55,8 +64,9 @@ public:
 
     void setupUi(QDialog *timeSeriesDialog)
     {
-    timeSeriesDialog->setObjectName(QString::fromUtf8("timeSeriesDialog"));
-    timeSeriesDialog->resize(QSize(559, 470).expandedTo(timeSeriesDialog->minimumSizeHint()));
+    if (timeSeriesDialog->objectName().isEmpty())
+        timeSeriesDialog->setObjectName(QString::fromUtf8("timeSeriesDialog"));
+    timeSeriesDialog->resize(559, 470);
     textBrowser = new QTextBrowser(timeSeriesDialog);
     textBrowser->setObjectName(QString::fromUtf8("textBrowser"));
     textBrowser->setGeometry(QRect(7, 344, 545, 121));
@@ -64,9 +74,12 @@ public:
     layoutWidget->setObjectName(QString::fromUtf8("layoutWidget"));
     layoutWidget->setGeometry(QRect(12, 294, 531, 40));
     hboxLayout = new QHBoxLayout(layoutWidget);
+#ifndef Q_OS_MAC
     hboxLayout->setSpacing(6);
+#endif
     hboxLayout->setMargin(0);
     hboxLayout->setObjectName(QString::fromUtf8("hboxLayout"));
+    hboxLayout->setContentsMargins(0, 0, 0, 0);
     pushButtonHelp = new QPushButton(layoutWidget);
     pushButtonHelp->setObjectName(QString::fromUtf8("pushButtonHelp"));
 
@@ -123,7 +136,7 @@ public:
     lineEditEleTime = new QLineEdit(tab);
     lineEditEleTime->setObjectName(QString::fromUtf8("lineEditEleTime"));
     lineEditEleTime->setGeometry(QRect(190, 120, 81, 23));
-    tabWidget->addTab(tab, QApplication::translate("timeSeriesDialog", "Element Features", 0, QApplication::UnicodeUTF8));
+    tabWidget->addTab(tab, QString());
     tab_2 = new QWidget();
     tab_2->setObjectName(QString::fromUtf8("tab_2"));
     label_6 = new QLabel(tab_2);
@@ -147,7 +160,7 @@ public:
     comboBoxRivVariable = new QComboBox(tab_2);
     comboBoxRivVariable->setObjectName(QString::fromUtf8("comboBoxRivVariable"));
     comboBoxRivVariable->setGeometry(QRect(190, 85, 191, 25));
-    tabWidget->addTab(tab_2, QApplication::translate("timeSeriesDialog", "River Features", 0, QApplication::UnicodeUTF8));
+    tabWidget->addTab(tab_2, QString());
     lineEditFileName = new QLineEdit(groupBox);
     lineEditFileName->setObjectName(QString::fromUtf8("lineEditFileName"));
     lineEditFileName->setGeometry(QRect(167, 234, 231, 23));
@@ -158,13 +171,17 @@ public:
     layoutWidget_2->setObjectName(QString::fromUtf8("layoutWidget_2"));
     layoutWidget_2->setGeometry(QRect(416, 225, 77, 40));
     hboxLayout1 = new QHBoxLayout(layoutWidget_2);
+#ifndef Q_OS_MAC
     hboxLayout1->setSpacing(6);
+#endif
     hboxLayout1->setMargin(0);
     hboxLayout1->setObjectName(QString::fromUtf8("hboxLayout1"));
+    hboxLayout1->setContentsMargins(0, 0, 0, 0);
     pushButtonBrowse = new QPushButton(layoutWidget_2);
     pushButtonBrowse->setObjectName(QString::fromUtf8("pushButtonBrowse"));
 
     hboxLayout1->addWidget(pushButtonBrowse);
+
 
     retranslateUi(timeSeriesDialog);
     QObject::connect(pushButtonClose, SIGNAL(clicked()), timeSeriesDialog, SLOT(reject()));
@@ -179,23 +196,29 @@ public:
     pushButtonSavePlot->setText(QApplication::translate("timeSeriesDialog", "Save Plot", 0, QApplication::UnicodeUTF8));
     pushButtonPlot->setText(QApplication::translate("timeSeriesDialog", "Plot", 0, QApplication::UnicodeUTF8));
     pushButtonClose->setText(QApplication::translate("timeSeriesDialog", "Close", 0, QApplication::UnicodeUTF8));
-    groupBox->setTitle(QApplication::translate("timeSeriesDialog", "", 0, QApplication::UnicodeUTF8));
+    groupBox->setTitle(QString());
     label->setText(QApplication::translate("timeSeriesDialog", "Select Feature Type:", 0, QApplication::UnicodeUTF8));
-    comboBoxEleFeature->addItem(QApplication::translate("timeSeriesDialog", "ID", 0, QApplication::UnicodeUTF8));
-    comboBoxEleFeature->addItem(QApplication::translate("timeSeriesDialog", "Average", 0, QApplication::UnicodeUTF8));
-    comboBoxEleFeature->addItem(QApplication::translate("timeSeriesDialog", "Group IDs", 0, QApplication::UnicodeUTF8));
+    comboBoxEleFeature->clear();
+    comboBoxEleFeature->insertItems(0, QStringList()
+     << QApplication::translate("timeSeriesDialog", "ID", 0, QApplication::UnicodeUTF8)
+     << QApplication::translate("timeSeriesDialog", "Average", 0, QApplication::UnicodeUTF8)
+     << QApplication::translate("timeSeriesDialog", "Group IDs", 0, QApplication::UnicodeUTF8)
+    );
     label_2->setText(QApplication::translate("timeSeriesDialog", "Select Features by:", 0, QApplication::UnicodeUTF8));
-    comboBoxEleVariable->addItem(QApplication::translate("timeSeriesDialog", "Interception Storage", 0, QApplication::UnicodeUTF8));
-    comboBoxEleVariable->addItem(QApplication::translate("timeSeriesDialog", "Saturated State", 0, QApplication::UnicodeUTF8));
-    comboBoxEleVariable->addItem(QApplication::translate("timeSeriesDialog", "Unsaturated State", 0, QApplication::UnicodeUTF8));
-    comboBoxEleVariable->addItem(QApplication::translate("timeSeriesDialog", "Surface State", 0, QApplication::UnicodeUTF8));
-    comboBoxEleVariable->addItem(QApplication::translate("timeSeriesDialog", "Evaporation from Canopy", 0, QApplication::UnicodeUTF8));
-    comboBoxEleVariable->addItem(QApplication::translate("timeSeriesDialog", "ET1", 0, QApplication::UnicodeUTF8));
-    comboBoxEleVariable->addItem(QApplication::translate("timeSeriesDialog", "ET2", 0, QApplication::UnicodeUTF8));
-    comboBoxEleVariable->addItem(QApplication::translate("timeSeriesDialog", "Precipitation", 0, QApplication::UnicodeUTF8));
-    comboBoxEleVariable->addItem(QApplication::translate("timeSeriesDialog", "Net Precipitation", 0, QApplication::UnicodeUTF8));
-    comboBoxEleVariable->addItem(QApplication::translate("timeSeriesDialog", "Infiltration", 0, QApplication::UnicodeUTF8));
-    comboBoxEleVariable->addItem(QApplication::translate("timeSeriesDialog", "Groundwater Recharge", 0, QApplication::UnicodeUTF8));
+    comboBoxEleVariable->clear();
+    comboBoxEleVariable->insertItems(0, QStringList()
+     << QApplication::translate("timeSeriesDialog", "Interception Storage", 0, QApplication::UnicodeUTF8)
+     << QApplication::translate("timeSeriesDialog", "Saturated State", 0, QApplication::UnicodeUTF8)
+     << QApplication::translate("timeSeriesDialog", "Unsaturated State", 0, QApplication::UnicodeUTF8)
+     << QApplication::translate("timeSeriesDialog", "Surface State", 0, QApplication::UnicodeUTF8)
+     << QApplication::translate("timeSeriesDialog", "Evaporation from Canopy", 0, QApplication::UnicodeUTF8)
+     << QApplication::translate("timeSeriesDialog", "ET1", 0, QApplication::UnicodeUTF8)
+     << QApplication::translate("timeSeriesDialog", "ET2", 0, QApplication::UnicodeUTF8)
+     << QApplication::translate("timeSeriesDialog", "Precipitation", 0, QApplication::UnicodeUTF8)
+     << QApplication::translate("timeSeriesDialog", "Net Precipitation", 0, QApplication::UnicodeUTF8)
+     << QApplication::translate("timeSeriesDialog", "Infiltration", 0, QApplication::UnicodeUTF8)
+     << QApplication::translate("timeSeriesDialog", "Groundwater Recharge", 0, QApplication::UnicodeUTF8)
+    );
     label_3->setText(QApplication::translate("timeSeriesDialog", "Select Plot Variable:", 0, QApplication::UnicodeUTF8));
     label_7->setText(QApplication::translate("timeSeriesDialog", "Time-Average Interval", 0, QApplication::UnicodeUTF8));
     lineEditEleID->setToolTip(QApplication::translate("timeSeriesDialog", "Enter Feature ID", "Enter Feature ID", QApplication::UnicodeUTF8));
@@ -204,24 +227,30 @@ public:
     lineEditEleTime->setText(QApplication::translate("timeSeriesDialog", "60", 0, QApplication::UnicodeUTF8));
     tabWidget->setTabText(tabWidget->indexOf(tab), QApplication::translate("timeSeriesDialog", "Element Features", 0, QApplication::UnicodeUTF8));
     label_6->setText(QApplication::translate("timeSeriesDialog", "Select Features by:", 0, QApplication::UnicodeUTF8));
-    comboBoxRivFeature->addItem(QApplication::translate("timeSeriesDialog", "ID", 0, QApplication::UnicodeUTF8));
-    comboBoxRivFeature->addItem(QApplication::translate("timeSeriesDialog", "Average", 0, QApplication::UnicodeUTF8));
-    comboBoxRivFeature->addItem(QApplication::translate("timeSeriesDialog", "Group IDs", 0, QApplication::UnicodeUTF8));
+    comboBoxRivFeature->clear();
+    comboBoxRivFeature->insertItems(0, QStringList()
+     << QApplication::translate("timeSeriesDialog", "ID", 0, QApplication::UnicodeUTF8)
+     << QApplication::translate("timeSeriesDialog", "Average", 0, QApplication::UnicodeUTF8)
+     << QApplication::translate("timeSeriesDialog", "Group IDs", 0, QApplication::UnicodeUTF8)
+    );
     label_5->setText(QApplication::translate("timeSeriesDialog", "Select Plot Variable:", 0, QApplication::UnicodeUTF8));
     label_8->setText(QApplication::translate("timeSeriesDialog", "Time-Average Interval", 0, QApplication::UnicodeUTF8));
     lineEditRivID->setToolTip(QApplication::translate("timeSeriesDialog", "Enter Feature ID", "Enter Feature ID", QApplication::UnicodeUTF8));
     lineEditRivID->setText(QApplication::translate("timeSeriesDialog", "Enter Riv ID", 0, QApplication::UnicodeUTF8));
     lineEditRivTime->setToolTip(QApplication::translate("timeSeriesDialog", "Enter Time-Average Interval", "Enter Feature ID", QApplication::UnicodeUTF8));
     lineEditRivTime->setText(QApplication::translate("timeSeriesDialog", "60", 0, QApplication::UnicodeUTF8));
-    comboBoxRivVariable->addItem(QApplication::translate("timeSeriesDialog", "Head", 0, QApplication::UnicodeUTF8));
-    comboBoxRivVariable->addItem(QApplication::translate("timeSeriesDialog", "Inflow", 0, QApplication::UnicodeUTF8));
-    comboBoxRivVariable->addItem(QApplication::translate("timeSeriesDialog", "Outflow", 0, QApplication::UnicodeUTF8));
-    comboBoxRivVariable->addItem(QApplication::translate("timeSeriesDialog", "Base Flow", 0, QApplication::UnicodeUTF8));
-    comboBoxRivVariable->addItem(QApplication::translate("timeSeriesDialog", "Surface Flow", 0, QApplication::UnicodeUTF8));
-    comboBoxRivVariable->addItem(QApplication::translate("timeSeriesDialog", "Base Flow Left", 0, QApplication::UnicodeUTF8));
-    comboBoxRivVariable->addItem(QApplication::translate("timeSeriesDialog", "Base Flow Right", 0, QApplication::UnicodeUTF8));
-    comboBoxRivVariable->addItem(QApplication::translate("timeSeriesDialog", "Surface Flow Left", 0, QApplication::UnicodeUTF8));
-    comboBoxRivVariable->addItem(QApplication::translate("timeSeriesDialog", "Surface Flow Right", 0, QApplication::UnicodeUTF8));
+    comboBoxRivVariable->clear();
+    comboBoxRivVariable->insertItems(0, QStringList()
+     << QApplication::translate("timeSeriesDialog", "Head", 0, QApplication::UnicodeUTF8)
+     << QApplication::translate("timeSeriesDialog", "Inflow", 0, QApplication::UnicodeUTF8)
+     << QApplication::translate("timeSeriesDialog", "Outflow", 0, QApplication::UnicodeUTF8)
+     << QApplication::translate("timeSeriesDialog", "Base Flow", 0, QApplication::UnicodeUTF8)
+     << QApplication::translate("timeSeriesDialog", "Surface Flow", 0, QApplication::UnicodeUTF8)
+     << QApplication::translate("timeSeriesDialog", "Base Flow Left", 0, QApplication::UnicodeUTF8)
+     << QApplication::translate("timeSeriesDialog", "Base Flow Right", 0, QApplication::UnicodeUTF8)
+     << QApplication::translate("timeSeriesDialog", "Surface Flow Left", 0, QApplication::UnicodeUTF8)
+     << QApplication::translate("timeSeriesDialog", "Surface Flow Right", 0, QApplication::UnicodeUTF8)
+    );
     tabWidget->setTabText(tabWidget->indexOf(tab_2), QApplication::translate("timeSeriesDialog", "River Features", 0, QApplication::UnicodeUTF8));
     label_4->setText(QApplication::translate("timeSeriesDialog", "Model Output File:", 0, QApplication::UnicodeUTF8));
     pushButtonBrowse->setText(QApplication::translate("timeSeriesDialog", "Browse...", 0, QApplication::UnicodeUTF8));

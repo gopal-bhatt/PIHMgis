@@ -1,15 +1,12 @@
 <ui version="4.0" >
- <author></author>
- <comment></comment>
- <exportmacro></exportmacro>
  <class>QgsIdentifyResultsBase</class>
  <widget class="QDialog" name="QgsIdentifyResultsBase" >
   <property name="geometry" >
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>231</width>
-    <height>542</height>
+    <width>281</width>
+    <height>316</height>
    </rect>
   </property>
   <property name="windowTitle" >
@@ -87,7 +84,6 @@
   </layout>
  </widget>
  <layoutdefault spacing="6" margin="11" />
- <pixmapfunction>qPixmapFromMimeSource</pixmapfunction>
  <resources/>
  <connections/>
 </ui>

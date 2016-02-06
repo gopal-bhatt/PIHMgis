@@ -14,7 +14,7 @@
  *   (at your option) any later version.                                   *
  *                                                                         *
  ***************************************************************************/
-/* $Id: qgsattributedialog.h 6976 2007-06-02 03:01:57Z gsherman $ */
+/* $Id: qgsattributedialog.h 9276 2008-09-07 08:59:28Z jef $ */
 #ifndef QGSATTRIBUTEDIALOG_H
 #define QGSATTRIBUTEDIALOG_H
 
@@ -25,49 +25,39 @@
 
 class QDialog;
 class QgsFeature;
-
+class QLayout;
 class QgsField;
-typedef QMap<int, QgsField> QgsFieldMap;
+class QgsVectorLayer;
 
 class QgsAttributeDialog: public QDialog, private Ui::QgsAttributeDialogBase
 {
     Q_OBJECT
 
   public:
-    QgsAttributeDialog(const QgsFieldMap& fields, const QgsAttributeMap& attributes);
-
+    QgsAttributeDialog( QgsVectorLayer *vl, QgsFeature * thepFeature );
     ~QgsAttributeDialog();
 
-    /** Returns the field value of a row */
-    QString value(int row);
+    /** Overloaded accept method which will write the feature field
+     * values, then delegate to QDialog::accept()
+     */
+    void accept();
+    /** Saves the size and position for the next time
+     *  this dialog box was used.
+     */
+    void saveGeometry();
+    /** Restores the size and position from the last time
+     *  this dialog box was used.
+     */
+    void restoreGeometry();
 
-    /** Returns if the field value of a row was edited since this dialog opened */
-    bool isDirty(int row);
-
-    /** Opens an attribute dialog and queries the attributes for a given feature. The
-     attribute values are set to the feature if the dialog is accepted.
-     \retval true if accepted
-     \retval false if canceled */
-    static bool queryAttributes(const QgsFieldMap& fields, QgsFeature& f);
-
-    // Saves and restores the size and position from the last time
-    // this dialog box was used.
-    void savePositionAndColumnWidth();
-
-    void restorePositionAndColumnWidth();
-
-    void resizeEvent(QResizeEvent *event);
-
-    void moveEvent(QMoveEvent *event);
-  
   public slots:
-    //! Slot to be called when an attribute value is edited in the table.
-    void setAttributeValueChanged(int row, int column);
+    void selectFileName();
 
   private:
-    QString _settingsPath;
-
-    std::vector<bool> mRowIsDirty;
+    QString mSettingsPath;
+    QList<QWidget *> mpWidgets;
+    QgsVectorLayer *mLayer;
+    QgsFeature *  mpFeature;
 };
 
 #endif

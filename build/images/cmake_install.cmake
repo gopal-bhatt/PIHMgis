@@ -1,8 +1,8 @@
-# Install script for directory: /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/images
+# Install script for directory: /Users/bhattgopal/dev/cpp/qgis_1.0.2/images
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  SET(CMAKE_INSTALL_PREFIX "/Users/bhattgopal/apps/qgis0.9.0.app/Contents/MacOS")
+  SET(CMAKE_INSTALL_PREFIX "/Users/bhattgopal/apps/qgis1.0.2.app/Contents/MacOS")
 ENDIF(NOT DEFINED CMAKE_INSTALL_PREFIX)
 STRING(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -29,11 +29,11 @@ ENDIF(NOT CMAKE_INSTALL_COMPONENT)
 
 IF(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  INCLUDE("/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/images/north_arrows/cmake_install.cmake")
-  INCLUDE("/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/images/splash/cmake_install.cmake")
-  INCLUDE("/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/images/icons/cmake_install.cmake")
-  INCLUDE("/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/images/developers/cmake_install.cmake")
-  INCLUDE("/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/images/themes/cmake_install.cmake")
-  INCLUDE("/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/images/svg/cmake_install.cmake")
+  INCLUDE("/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/images/north_arrows/cmake_install.cmake")
+  INCLUDE("/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/images/splash/cmake_install.cmake")
+  INCLUDE("/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/images/icons/cmake_install.cmake")
+  INCLUDE("/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/images/developers/cmake_install.cmake")
+  INCLUDE("/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/images/themes/cmake_install.cmake")
+  INCLUDE("/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/images/svg/cmake_install.cmake")
 
 ENDIF(NOT CMAKE_INSTALL_LOCAL_ONLY)

@@ -7,22 +7,23 @@ src/plugins/delimited_text/CMakeFiles/delimitedtextplugin.dir/moc_qgsdelimitedte
  /Library/Frameworks/QtCore.framework/Headers/qstring.h
  /Library/Frameworks/QtGui.framework/Headers/QLineEdit
  /Library/Frameworks/QtGui.framework/Headers/qlineedit.h
- /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/delimited_text/../../../../src/plugins/delimited_text/../qgisplugin.h
- /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/delimited_text/../../../../src/plugins/delimited_text/qgsdelimitedtextplugin.h
- /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/delimited_text/moc_qgsdelimitedtextplugin.cxx
+ /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/delimited_text/../../../../src/plugins/delimited_text/../qgisplugin.h
+ /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/delimited_text/../../../../src/plugins/delimited_text/qgsdelimitedtextplugin.h
+ /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/delimited_text/moc_qgsdelimitedtextplugin.cxx
  /usr/include/stdarg.h
  src/plugins/delimited_text/ui_qgsdelimitedtextpluginguibase.h
 src/plugins/delimited_text/CMakeFiles/delimitedtextplugin.dir/moc_qgsdelimitedtextplugingui.o
  ../src/plugins/delimited_text/../../gui/qgsfiledropedit.h
  /Library/Frameworks/QtGui.framework/Headers/QLineEdit
  /Library/Frameworks/QtGui.framework/Headers/qlineedit.h
- /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/delimited_text/../../../../src/plugins/delimited_text/qgsdelimitedtextplugingui.h
- /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/delimited_text/moc_qgsdelimitedtextplugingui.cxx
+ /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/delimited_text/../../../../src/plugins/delimited_text/qgsdelimitedtextplugingui.h
+ /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/delimited_text/moc_qgsdelimitedtextplugingui.cxx
  src/plugins/delimited_text/ui_qgsdelimitedtextpluginguibase.h
 src/plugins/delimited_text/CMakeFiles/delimitedtextplugin.dir/qrc_delimited_text.o
- /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/delimited_text/qrc_delimited_text.cxx
+ /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/delimited_text/qrc_delimited_text.cxx
 src/plugins/delimited_text/CMakeFiles/delimitedtextplugin.dir/qgsdelimitedtextplugingui.o
  ../src/plugins/delimited_text/../../core/qgscontexthelp.h
+ ../src/plugins/delimited_text/../../core/qgslogger.h
  ../src/plugins/delimited_text/../../gui/qgisinterface.h
  ../src/plugins/delimited_text/../../gui/qgsfiledropedit.h
  /Library/Frameworks/QtCore.framework/Headers/QFile
@@ -30,12 +31,14 @@ src/plugins/delimited_text/CMakeFiles/delimitedtextplugin.dir/qgsdelimitedtextpl
  /Library/Frameworks/QtCore.framework/Headers/QObject
  /Library/Frameworks/QtCore.framework/Headers/QRegExp
  /Library/Frameworks/QtCore.framework/Headers/QSettings
+ /Library/Frameworks/QtCore.framework/Headers/QString
  /Library/Frameworks/QtCore.framework/Headers/QTextStream
  /Library/Frameworks/QtCore.framework/Headers/qfile.h
  /Library/Frameworks/QtCore.framework/Headers/qfileinfo.h
  /Library/Frameworks/QtCore.framework/Headers/qobject.h
  /Library/Frameworks/QtCore.framework/Headers/qregexp.h
  /Library/Frameworks/QtCore.framework/Headers/qsettings.h
+ /Library/Frameworks/QtCore.framework/Headers/qstring.h
  /Library/Frameworks/QtCore.framework/Headers/qtextstream.h
  /Library/Frameworks/QtGui.framework/Headers/QComboBox
  /Library/Frameworks/QtGui.framework/Headers/QFileDialog
@@ -45,8 +48,8 @@ src/plugins/delimited_text/CMakeFiles/delimitedtextplugin.dir/qgsdelimitedtextpl
  /Library/Frameworks/QtGui.framework/Headers/qfiledialog.h
  /Library/Frameworks/QtGui.framework/Headers/qlineedit.h
  /Library/Frameworks/QtGui.framework/Headers/qmessagebox.h
- /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/delimited_text/qgsdelimitedtextplugingui.cpp
- /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/delimited_text/qgsdelimitedtextplugingui.h
+ /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/delimited_text/qgsdelimitedtextplugingui.cpp
+ /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/delimited_text/qgsdelimitedtextplugingui.h
  /usr/include/_types.h
  /usr/include/ctype.h
  /usr/include/i386/_types.h
@@ -55,6 +58,7 @@ src/plugins/delimited_text/CMakeFiles/delimitedtextplugin.dir/qgsdelimitedtextpl
  /usr/include/runetype.h
  /usr/include/secure/_common.h
  /usr/include/secure/_stdio.h
+ /usr/include/stdarg.h
  /usr/include/stdio.h
  /usr/include/sys/_types.h
  /usr/include/sys/cdefs.h
@@ -64,7 +68,7 @@ src/plugins/delimited_text/CMakeFiles/delimitedtextplugin.dir/qgsdelimitedtextpl
 src/plugins/delimited_text/CMakeFiles/delimitedtextplugin.dir/qgsdelimitedtextplugin.o
  ../src/plugins/delimited_text/../../core/qgsmaplayer.h
  ../src/plugins/delimited_text/../../core/qgspoint.h
- ../src/plugins/delimited_text/../../core/qgsrect.h
+ ../src/plugins/delimited_text/../../core/qgsrectangle.h
  ../src/plugins/delimited_text/../../gui/qgisgui.h
  ../src/plugins/delimited_text/../../gui/qgisinterface.h
  ../src/plugins/delimited_text/../../gui/qgsfiledropedit.h
@@ -80,10 +84,9 @@ src/plugins/delimited_text/CMakeFiles/delimitedtextplugin.dir/qgsdelimitedtextpl
  /Library/Frameworks/QtGui.framework/Headers/qaction.h
  /Library/Frameworks/QtGui.framework/Headers/qlineedit.h
  /Library/Frameworks/QtGui.framework/Headers/qmenu.h
- /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/delimited_text/../qgisplugin.h
- /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/delimited_text/icon.xpm
- /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/delimited_text/qgsdelimitedtextplugin.cpp
- /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/delimited_text/qgsdelimitedtextplugin.h
- /Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/delimited_text/qgsdelimitedtextplugingui.h
+ /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/delimited_text/../qgisplugin.h
+ /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/delimited_text/qgsdelimitedtextplugin.cpp
+ /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/delimited_text/qgsdelimitedtextplugin.h
+ /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/delimited_text/qgsdelimitedtextplugingui.h
  /usr/include/stdarg.h
  src/plugins/delimited_text/ui_qgsdelimitedtextpluginguibase.h

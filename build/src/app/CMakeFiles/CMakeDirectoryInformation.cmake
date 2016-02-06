@@ -21,16 +21,17 @@ SET(CMAKE_C_INCLUDE_PATH
   "src/app"
   "src/app/../ui"
   "../src/app/../core"
+  "../src/app/../core/composer"
   "../src/app/../core/raster"
   "../src/app/../core/renderer"
   "../src/app/../core/symbology"
   "../src/app/../gui"
   "../src/app/../plugins"
+  "../src/app/../python"
   "/Library/Frameworks/PROJ.framework/Headers"
   "/Library/Frameworks/SQLite3.framework/Headers"
   "/Library/Frameworks/GEOS.framework/Headers"
   "/Library/Frameworks/GDAL.framework/Headers"
-  "/Library/Frameworks/Python.framework/Headers"
   )
 SET(CMAKE_CXX_INCLUDE_PATH ${CMAKE_C_INCLUDE_PATH})
 

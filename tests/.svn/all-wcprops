@@ -1,17 +1,17 @@
 K 25
 svn:wc:ra_dav:version-url
-V 54
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/tests
+V 49
+/qgis/!svn/ver/10639/branches/Release-1_0_2/tests
 END
 CMakeLists.txt
 K 25
 svn:wc:ra_dav:version-url
-V 69
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/tests/CMakeLists.txt
+V 64
+/qgis/!svn/ver/10639/branches/Release-1_0_2/tests/CMakeLists.txt
 END
 README
 K 25
 svn:wc:ra_dav:version-url
-V 61
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/tests/README
+V 56
+/qgis/!svn/ver/10639/branches/Release-1_0_2/tests/README
 END

@@ -1,75 +1,5 @@
 
 
-template <TYPE>
-%MappedType QSet<TYPE>
-{
-%TypeHeaderCode
-#include <QSet>
-%End
-
-%ConvertFromTypeCode
-  // Create the list.
-  PyObject *l;
-
-  if ((l = PyList_New(sipCpp->size())) == NULL)
-    return NULL;
-      
-  // Set the list elements.
-  int i;
-  for (QSet<TYPE>::iterator it = sipCpp->begin(); it != sipCpp->end(); ++it, ++i)
-  {
-    TYPE *t = new TYPE(*it);
-    PyObject *tobj;
-
-    if ((tobj = sipConvertFromNewInstance(t, sipClass_TYPE, sipTransferObj)) == NULL)
-    {
-      Py_DECREF(l);
-      delete t;
-      return NULL;
-    }
-    PyList_SET_ITEM(l, i, tobj);
-  }
- 
-  return l;
-%End
-
-%ConvertToTypeCode
-  // Check the type if that is all that is required.
-  if (sipIsErr == NULL)
-  {
-    if (!PyList_Check(sipPy))
-      return 0;
-
-    for (int i = 0; i < PyList_GET_SIZE(sipPy); ++i)
-      if (!sipCanConvertToInstance(PyList_GET_ITEM(sipPy, i), sipClass_TYPE, SIP_NOT_NONE))
-        return 0;
-
-    return 1;
-  }
-
-  QSet<TYPE> *qset = new QSet<TYPE>;
-
-  for (int i = 0; i < PyList_GET_SIZE(sipPy); ++i)
-  {
-    int state;
-    TYPE* t = reinterpret_cast<TYPE *>(sipConvertToInstance(PyList_GET_ITEM(sipPy, i), sipClass_TYPE, sipTransferObj, SIP_NOT_NONE, &state, sipIsErr));
-
-    if (*sipIsErr)
-    {
-      sipReleaseInstance(t, sipClass_TYPE, state);
-      delete qset;
-      return 0;
-    }
-    qset->insert(*t);
-    sipReleaseInstance(t, sipClass_TYPE, state);
-  }
-
-  *sipCppPtr = qset;
-  return sipGetState(sipTransferObj);
-%End
-
-};
-
 
 /**
   @author Tim Sutton
@@ -98,7 +28,7 @@ class QgsProjectionSelector: QWidget //, private Ui::QgsProjectionSelectorBase
        *
        * \todo Should this be public?
        */
-      void applyUserProjList(QSet<QString> * crsFilter = 0);
+      void loadUserCrsList(QSet<QString> * crsFilter = 0);
 
       /**
        * \brief Populate the proj tree view with system projection names...
@@ -109,9 +39,8 @@ class QgsProjectionSelector: QWidget //, private Ui::QgsProjectionSelectorBase
        *
        * \todo Should this be public?
        */
-      void applyProjList(QSet<QString> * crsFilter = 0);
+      void loadCrsList(QSet<QString> * crsFilter = 0);
 
-      void updateProjAndEllipsoidAcronyms(int theSrsid, QString theProj4String);
 
       /*!
        * \brief Make the string safe for use in SQL statements.
@@ -122,25 +51,27 @@ class QgsProjectionSelector: QWidget //, private Ui::QgsProjectionSelectorBase
        * \arg const QString in The input string to make safe.
        * \return The string made safe for SQL statements.
        */
-      const QString stringSQLSafe(const QString theSQL);
+      const QString sqlSafeString(const QString theSQL);
 
-      //! Gets the current EPSG-style projection identifier
-      long getCurrentEpsg();
+      //! Gets the current EpsgCrsId-style projection identifier
+      long selectedEpsg();
 
     public slots:
-      void setSelectedSRSName(QString theSRSName);
+      void setSelectedCrsName(QString theCRSName);
 
-      QString getSelectedName();
+      QString selectedName();
 
-      void setSelectedSRSID(long theSRSID);
+      void setSelectedCrsId(long theCRSID);
+      
+      void setSelectedEpsg(long epsg);
 
-      QString getCurrentProj4String();
+      QString selectedProj4String();
 
       //! Gets the current PostGIS-style projection identifier
-      long getCurrentSRID();
+      long selectedPostgresSrId();
 
       //! Gets the current QGIS projection identfier
-      long getCurrentSRSID();
+      long selectedCrsId();
 
       /**
        * \brief filters this widget by the given CRSs
@@ -152,7 +83,7 @@ class QgsProjectionSelector: QWidget //, private Ui::QgsProjectionSelectorBase
        *                  list of projections by.  This is useful in (e.g.) WMS situations
        *                  where you just want to offer what the WMS server can support.
        *
-       * \note This function only deals with EPSG labels only at this time.
+       * \note This function only deals with EpsgCrsId labels only at this time.
        *
        * \warning This function's behaviour is undefined if it is called after the widget is shown.
        */

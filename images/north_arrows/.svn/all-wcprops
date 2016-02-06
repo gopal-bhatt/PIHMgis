@@ -1,23 +1,23 @@
 K 25
 svn:wc:ra_dav:version-url
-V 68
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/images/north_arrows
+V 63
+/qgis/!svn/ver/10639/branches/Release-1_0_2/images/north_arrows
 END
 default.png
 K 25
 svn:wc:ra_dav:version-url
-V 80
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/images/north_arrows/default.png
+V 75
+/qgis/!svn/ver/10639/branches/Release-1_0_2/images/north_arrows/default.png
 END
 .cvsignore
 K 25
 svn:wc:ra_dav:version-url
-V 79
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/images/north_arrows/.cvsignore
+V 74
+/qgis/!svn/ver/10639/branches/Release-1_0_2/images/north_arrows/.cvsignore
 END
 CMakeLists.txt
 K 25
 svn:wc:ra_dav:version-url
-V 83
-/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/images/north_arrows/CMakeLists.txt
+V 78
+/qgis/!svn/ver/10639/branches/Release-1_0_2/images/north_arrows/CMakeLists.txt
 END

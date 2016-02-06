@@ -8,22 +8,8 @@ class QgsFeature
     
   public:
 
-    typedef unsigned int size_t;
-    
     //! Constructor
     QgsFeature(int id = 0, QString typeName = "" );
-
-    /** create a copy of this feature in its uncommitted state.
-        To do this, you also pass in a reference to the feature's
-        layer's uncommitted attribute and geometry changes.
-        The resulting feature will have those changes applied.
-        
-        This is useful in the cut/copy routine, where you'd
-        want a copy of the "current" feature, not the on-disk feature.
-     */
-     QgsFeature( const QgsFeature & rhs,
-                 const QMap<int, QMap<int, QVariant> >& changedAttributes,
-                 const QMap<int, QgsGeometry> & changedGeometries );
 
     /** copy ctor needed due to internal pointer */
     QgsFeature(const QgsFeature & rhs );
@@ -36,7 +22,7 @@ class QgsFeature
      * Get the feature id for this feature
      * @return Feature id
      */
-    int featureId() const;
+    int id() const;
 
     /**
      * Set the feature id for this feature
@@ -60,6 +46,10 @@ class QgsFeature
      */
     const QMap<int, QVariant> & attributeMap() const;
 
+
+    /**Sets all the attributes in one go*/
+    void setAttributeMap(const QMap<int, QVariant> & attributeMap);
+    
     /** 
      * Add an attribute to the map
      */
@@ -95,7 +85,7 @@ class QgsFeature
      * Reset the dirtiness of the feature.  (i.e. make clean)
      * You would normally do this after it's saved to permanent storage (e.g. disk, an ACID-compliant database)
      */
-    void resetDirty();
+    void clean();
     
     /**
      * Get the geometry object associated with this feature
@@ -110,7 +100,7 @@ class QgsFeature
     
     /** Set this feature's geometry from another QgsGeometry object (deep copy)
      */
-    void setGeometry(QgsGeometry& geom);
+    void setGeometry(const QgsGeometry& geom);
     
     /** Set this feature's geometry (takes geometry ownership)
      */

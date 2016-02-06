@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'qgsattributedialog.h'
 **
-** Created: Wed Jun 11 19:05:42 2008
+** Created: Fri Jun 19 01:54:08 2009
 **      by: The Qt Meta Object Compiler version 59 (Qt 4.3.2)
 **
 ** WARNING! All changes made in this file will be lost!
@@ -27,14 +27,13 @@ static const uint qt_meta_data_QgsAttributeDialog[] = {
        0,    0, // enums/sets
 
  // slots: signature, parameters, type, tag, flags
-      31,   20,   19,   19, 0x0a,
+      20,   19,   19,   19, 0x0a,
 
        0        // eod
 };
 
 static const char qt_meta_stringdata_QgsAttributeDialog[] = {
-    "QgsAttributeDialog\0\0row,column\0"
-    "setAttributeValueChanged(int,int)\0"
+    "QgsAttributeDialog\0\0selectFileName()\0"
 };
 
 const QMetaObject QgsAttributeDialog::staticMetaObject = {
@@ -62,7 +61,7 @@ int QgsAttributeDialog::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
         switch (_id) {
-        case 0: setAttributeValueChanged((*reinterpret_cast< int(*)>(_a[1])),(*reinterpret_cast< int(*)>(_a[2]))); break;
+        case 0: selectFileName(); break;
         }
         _id -= 1;
     }

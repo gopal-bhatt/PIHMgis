@@ -15,72 +15,97 @@
  *   (at your option) any later version.                                   *
  *                                                                         *
  ***************************************************************************/
-/* $Id: qgsattributetabledisplay.h 6415 2007-01-09 02:39:15Z wonder $ */
+/* $Id: qgsattributetabledisplay.h 9223 2008-08-31 07:39:36Z telwertowski $ */
 
 #ifndef QGSATTRIBUTETABLEDISPLAY_H
 #define QGSATTRIBUTETABLEDISPLAY_H
 
 #include "ui_qgsattributetablebase.h"
 
-
+class QDockWidget;
 class QgsAttributeTable;
 class QgsVectorLayer;
 class QgisApp;
+class QgsAttributeActions;
 
 /**
   *@author Gary E.Sherman
   */
 
-class QgsAttributeTableDisplay:public QDialog, private Ui::QgsAttributeTableBase
+class QgsAttributeTableDisplay : public QDialog, private Ui::QgsAttributeTableBase
 {
-  Q_OBJECT
+    Q_OBJECT
   public:
-    /**
-     \param qgisApp   This should be the QgisApp that spawned this table.
-                      Otherwise the Copy button on this QgsAttributeTableDisplay
-                      will not work.
-     */
-    QgsAttributeTableDisplay(QgsVectorLayer* layer, QgisApp * qgisApp);
+    static QgsAttributeTableDisplay *attributeTable( QgsVectorLayer *layer );
+
     ~QgsAttributeTableDisplay();
 
-    QgsAttributeTable *table();
-    void setTitle(QString title);
+    void fillTable();
+
   protected:
+    QgsAttributeTableDisplay( QgsVectorLayer* layer );
+
     QgsVectorLayer* mLayer;
 
-    QgisApp * mQgisApp;
+    void doSearch( QString searchString );
+    void setAttributeActions( const QgsAttributeAction &actions );
+    void selectRowsWithId( const QgsFeatureIds &ids );
 
-    void doSearch(const QString& searchString);
+#ifdef Q_WS_MAC
+    //! Change event (update window menu on ActivationChange)
+    virtual void changeEvent( QEvent *event );
+#endif
 
-    virtual void closeEvent(QCloseEvent* ev);
-    void showHelp();
+    virtual void closeEvent( QCloseEvent *ev );
 
     /** array of feature IDs that match last searched condition */
     QgsFeatureIds mSearchIds;
 
   protected slots:
-    void deleteAttributes();
-    void addAttribute();
-    void startEditing();
-    void stopEditing();
     void selectedToTop();
     void invertSelection();
     void removeSelection();
     void copySelectedRowsToClipboard();
+    void zoomMapToSelectedRows();
     void search();
     void advancedSearch();
-    void searchShowResultsChanged(int item);
-    void on_btnHelp_clicked();
+    void searchShowResultsChanged( int item );
+    void showHelp();
+    void toggleEditing();
+
+    void attributeAdded( int idx );
+    void attributeDeleted( int idx );
+
+  public slots:
+    void changeFeatureAttribute( int row, int column );
+    void editingToggled();
+    void selectionChanged();
 
   signals:
-    void deleted();
+    void editingToggled( QgsMapLayer * );
+
+  private slots:
+    void activate();
+
   private:
     /** Set the icon theme for this dialog */
     void setTheme();
-    
+
+    void restorePosition();
+    void saveWindowLocation();
+
+#ifdef Q_WS_MAC
+    /** Window menu action to select this window */
+    QAction *mWindowAction;
+#endif
+
     QString mSearchString;
 
+    QDockWidget *mDock;
+
     static const int context_id = 831088384;
+
+    static QMap<QgsVectorLayer *, QgsAttributeTableDisplay *> smTables;
 };
 
 #endif

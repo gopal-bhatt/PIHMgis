@@ -15,21 +15,20 @@
  *   (at your option) any later version.                                   *
  *                                                                         *
  ***************************************************************************/
-/* $Id: qgsprovidercountcalcevent.cpp 4502 2006-01-08 01:18:20Z timlinux $ */
+/* $Id: qgsprovidercountcalcevent.cpp 9538 2008-10-24 22:12:40Z timlinux $ */
 
 #include "qgsprovidercountcalcevent.h"
-//Added by qt3to4:
-#include <QCustomEvent>
+#include "qgis.h"
 
-QgsProviderCountCalcEvent::QgsProviderCountCalcEvent( long numberFeatures )
-    : QCustomEvent( QGis::ProviderCountCalcEvent ),
-      n( numberFeatures )
+QgsProviderCountCalcEvent::QgsProviderCountCalcEvent( long featuresCounted )
+    : QEvent( static_cast<QEvent::Type>( QGis::ProviderCountCalcEvent ) ),
+    n( featuresCounted )
 {
   // NO-OP
 }
 
 
-long QgsProviderCountCalcEvent::numberFeatures() const
+long QgsProviderCountCalcEvent::featuresCounted() const
 {
   return n;
 }

@@ -7,9 +7,9 @@ class QgsSymbol
 
  public:
     /**Constructor*/
-    QgsSymbol(QGis::VectorType t, QString lvalue="", QString uvalue="", QString label="");
+    QgsSymbol(QGis::GeometryType t, QString lvalue="", QString uvalue="", QString label="");
     /**Constructor*/
-    QgsSymbol(QGis::VectorType t, QString lvalue, QString uvalue, QString label, QColor c);
+    QgsSymbol(QGis::GeometryType t, QString lvalue, QString uvalue, QString label, QColor c);
     QgsSymbol(const QgsSymbol&);
     /**old constructors*/
     QgsSymbol();
@@ -27,9 +27,9 @@ class QgsSymbol
     /**Sets the fill color*/
     virtual void setFillColor(QColor c);
     /**Get the line width*/
-    virtual int lineWidth() const;
+    virtual double lineWidth() const;
     /**Sets the line width*/
-    virtual void setLineWidth(int w);
+    virtual void setLineWidth(double w);
     /**Sets the pen*/
     virtual void setPen(QPen p);
     /**Gets a reference to m_pen. Don't use the pen to change color/style  */
@@ -51,9 +51,9 @@ class QgsSymbol
     /**Get point symbol*/
     virtual QString pointSymbolName() const;
     /**Set size*/
-    virtual void setPointSize(int s);
+    virtual void setPointSize(double s);
     /**Get size*/
-    virtual int pointSize() const;
+    virtual double pointSize() const;
     //! Destructor
     virtual ~QgsSymbol();
 
@@ -70,12 +70,12 @@ class QgsSymbol
 
     /**Writes the contents of the symbol to a configuration file
      @ return true in case of success*/
-    virtual bool writeXML( QDomNode & item, QDomDocument & document ) const;
+    virtual bool writeXML( QDomNode & item, QDomDocument & document, const QgsVectorLayer *vl ) const;
     /**Reads the contents of the symbol from a configuration file
      @ return true in case of success*/
-    virtual bool readXML( QDomNode & symbol );
+    virtual bool readXML( QDomNode & symbol, const QgsVectorLayer *vl );
     /**Returns if this symbol is point/ line or polygon*/
-    QGis::VectorType type() const;
+    QGis::GeometryType type() const;
 
 };
 

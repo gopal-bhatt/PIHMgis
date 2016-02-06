@@ -38,7 +38,8 @@
 
 //QT4 includes
 #include <QObject>
-
+#include <QThread>
+#include "RunPIHM/runpihm.h"
 //QGIS includes
 #include "../qgisplugin.h"
 
@@ -132,5 +133,4 @@ private:
   //
   ////////////////////////////////////////////////////////////////////
 };
-
 #endif //PIHMgis_H

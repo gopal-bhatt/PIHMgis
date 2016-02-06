@@ -17,12 +17,14 @@ SET(CMAKE_C_INCLUDE_PATH
   "."
   "../src/gui"
   "../src/gui/../core"
+  "../src/gui/../core/composer"
   "../src/gui/../core/raster"
   "../src/gui/../core/renderer"
   "../src/gui/../core/symbology"
-  "/Library/Frameworks/SQLite3.framework/Headers"
   "src/gui"
   "src/gui/../ui"
+  "/Library/Frameworks/GEOS.framework/Headers"
+  "/Library/Frameworks/SQLite3.framework/Headers"
   )
 SET(CMAKE_CXX_INCLUDE_PATH ${CMAKE_C_INCLUDE_PATH})
 

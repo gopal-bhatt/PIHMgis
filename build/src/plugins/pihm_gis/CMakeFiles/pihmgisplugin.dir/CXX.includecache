@@ -1,6 +1,112 @@
+../src/plugins/pihm_gis/../../app/qgisapp.h
+QMainWindow
+-
+QToolBar
+-
+QAbstractSocket
+-
+QPointer
+-
+qgsconfig.h
+../src/plugins/pihm_gis/../../app/qgsconfig.h
+qgspoint.h
+../src/plugins/pihm_gis/../../app/qgspoint.h
+
+../src/plugins/pihm_gis/../../core/qgis.h
+QEvent
+-
+QString
+-
+
 ../src/plugins/pihm_gis/../../core/qgscontexthelp.h
 QObject
 -
+
+../src/plugins/pihm_gis/../../core/qgsdataprovider.h
+QObject
+-
+QString
+-
+QStringList
+-
+
+../src/plugins/pihm_gis/../../core/qgsmaplayer.h
+vector
+-
+map
+-
+QObject
+-
+qgsrectangle.h
+../src/plugins/pihm_gis/../../core/qgsrectangle.h
+
+../src/plugins/pihm_gis/../../core/qgspoint.h
+iostream
+-
+QString
+-
+
+../src/plugins/pihm_gis/../../core/qgsrasterdataprovider.h
+qgsdataprovider.h
+../src/plugins/pihm_gis/../../core/qgsdataprovider.h
+
+../src/plugins/pihm_gis/../../core/qgsrectangle.h
+iosfwd
+-
+qgspoint.h
+../src/plugins/pihm_gis/../../core/qgspoint.h
+
+../src/plugins/pihm_gis/../../core/raster/qgscolorrampshader.h
+QColor
+-
+QMap
+-
+qgsrastershaderfunction.h
+../src/plugins/pihm_gis/../../core/raster/qgsrastershaderfunction.h
+
+../src/plugins/pihm_gis/../../core/raster/qgscontrastenhancement.h
+limits
+-
+
+../src/plugins/pihm_gis/../../core/raster/qgsrasterlayer.h
+QColor
+-
+QDateTime
+-
+QVector
+-
+QList
+-
+QMap
+-
+qgis.h
+../src/plugins/pihm_gis/../../core/raster/qgis.h
+qgspoint.h
+../src/plugins/pihm_gis/../../core/raster/qgspoint.h
+qgsmaplayer.h
+../src/plugins/pihm_gis/../../core/raster/qgsmaplayer.h
+qgscontrastenhancement.h
+../src/plugins/pihm_gis/../../core/raster/qgscontrastenhancement.h
+qgsrastertransparency.h
+../src/plugins/pihm_gis/../../core/raster/qgsrastertransparency.h
+qgsrastershader.h
+../src/plugins/pihm_gis/../../core/raster/qgsrastershader.h
+qgscolorrampshader.h
+../src/plugins/pihm_gis/../../core/raster/qgscolorrampshader.h
+qgsrastershaderfunction.h
+../src/plugins/pihm_gis/../../core/raster/qgsrastershaderfunction.h
+qgsrasterdataprovider.h
+../src/plugins/pihm_gis/../../core/raster/qgsrasterdataprovider.h
+gdal.h
+-
+
+../src/plugins/pihm_gis/../../core/raster/qgsrastershader.h
+qgsrastershaderfunction.h
+../src/plugins/pihm_gis/../../core/raster/qgsrastershaderfunction.h
+
+../src/plugins/pihm_gis/../../core/raster/qgsrastershaderfunction.h
+
+../src/plugins/pihm_gis/../../core/raster/qgsrastertransparency.h
 
 ../src/plugins/pihm_gis/../../gui/qgisgui.h
 Qt
@@ -120,13 +226,57 @@ vector
 
 /Library/Frameworks/GDAL.framework/Headers/gdal_version.h
 
+/Library/Frameworks/QtCore.framework/Headers/QDateTime
+qdatetime.h
+/Library/Frameworks/QtCore.framework/Headers/qdatetime.h
+
+/Library/Frameworks/QtCore.framework/Headers/QEvent
+qcoreevent.h
+/Library/Frameworks/QtCore.framework/Headers/qcoreevent.h
+
+/Library/Frameworks/QtCore.framework/Headers/QList
+qlist.h
+/Library/Frameworks/QtCore.framework/Headers/qlist.h
+
+/Library/Frameworks/QtCore.framework/Headers/QMap
+qmap.h
+/Library/Frameworks/QtCore.framework/Headers/qmap.h
+
 /Library/Frameworks/QtCore.framework/Headers/QObject
 qobject.h
 /Library/Frameworks/QtCore.framework/Headers/qobject.h
 
+/Library/Frameworks/QtCore.framework/Headers/QPointF
+qpoint.h
+/Library/Frameworks/QtCore.framework/Headers/qpoint.h
+
+/Library/Frameworks/QtCore.framework/Headers/QPointer
+qpointer.h
+/Library/Frameworks/QtCore.framework/Headers/qpointer.h
+
+/Library/Frameworks/QtCore.framework/Headers/QRectF
+qrect.h
+/Library/Frameworks/QtCore.framework/Headers/qrect.h
+
+/Library/Frameworks/QtCore.framework/Headers/QSizeF
+qsize.h
+/Library/Frameworks/QtCore.framework/Headers/qsize.h
+
 /Library/Frameworks/QtCore.framework/Headers/QString
 qstring.h
 /Library/Frameworks/QtCore.framework/Headers/qstring.h
+
+/Library/Frameworks/QtCore.framework/Headers/QStringList
+qstringlist.h
+/Library/Frameworks/QtCore.framework/Headers/qstringlist.h
+
+/Library/Frameworks/QtCore.framework/Headers/QThread
+qthread.h
+/Library/Frameworks/QtCore.framework/Headers/qthread.h
+
+/Library/Frameworks/QtCore.framework/Headers/QVector
+qvector.h
+/Library/Frameworks/QtCore.framework/Headers/qvector.h
 
 /Library/Frameworks/QtCore.framework/Headers/Qt
 qnamespace.h
@@ -135,6 +285,18 @@ qnamespace.h
 /Library/Frameworks/QtCore.framework/Headers/QtGlobal
 qglobal.h
 /Library/Frameworks/QtCore.framework/Headers/qglobal.h
+
+/Library/Frameworks/QtCore.framework/Headers/qcoreevent.h
+QtCore/qnamespace.h
+-
+QtCore/qbytearray.h
+-
+
+/Library/Frameworks/QtCore.framework/Headers/qdatetime.h
+QtCore/qstring.h
+-
+QtCore/qnamespace.h
+-
 
 /Library/Frameworks/QtCore.framework/Headers/qfile.h
 QtCore/qiodevice.h
@@ -154,6 +316,32 @@ AvailabilityMacros.h
 QtCore/qfeatures.h
 -
 
+/Library/Frameworks/QtCore.framework/Headers/qlist.h
+QtCore/qiterator.h
+-
+QtCore/qatomic.h
+-
+QtCore/qalgorithms.h
+-
+iterator
+-
+list
+-
+new
+-
+
+/Library/Frameworks/QtCore.framework/Headers/qmap.h
+QtCore/qatomic.h
+-
+QtCore/qiterator.h
+-
+QtCore/qlist.h
+-
+map
+-
+new
+-
+
 /Library/Frameworks/QtCore.framework/Headers/qnamespace.h
 QtCore/qglobal.h
 -
@@ -168,6 +356,24 @@ QtCore/qbytearray.h
 QtCore/qlist.h
 -
 QtCore/qcoreevent.h
+-
+
+/Library/Frameworks/QtCore.framework/Headers/qpoint.h
+QtCore/qnamespace.h
+-
+
+/Library/Frameworks/QtCore.framework/Headers/qpointer.h
+QtCore/qobject.h
+-
+
+/Library/Frameworks/QtCore.framework/Headers/qrect.h
+QtCore/qsize.h
+-
+QtCore/qpoint.h
+-
+
+/Library/Frameworks/QtCore.framework/Headers/qsize.h
+QtCore/qnamespace.h
 -
 
 /Library/Frameworks/QtCore.framework/Headers/qstring.h
@@ -188,6 +394,50 @@ string
 stdarg.h
 -
 
+/Library/Frameworks/QtCore.framework/Headers/qstringlist.h
+QtCore/qalgorithms.h
+-
+QtCore/qdatastream.h
+-
+QtCore/qlist.h
+-
+QtCore/qregexp.h
+-
+QtCore/qstring.h
+-
+QtCore/qstringmatcher.h
+-
+Qt3Support/q3valuelist.h
+-
+
+/Library/Frameworks/QtCore.framework/Headers/qthread.h
+QtCore/qobject.h
+-
+limits.h
+-
+
+/Library/Frameworks/QtCore.framework/Headers/qvector.h
+QtCore/qiterator.h
+-
+QtCore/qatomic.h
+-
+QtCore/qalgorithms.h
+-
+QtCore/qlist.h
+-
+iterator
+-
+vector
+-
+stdlib.h
+-
+string.h
+-
+QtCore/QPointF
+-
+QtCore/QPoint
+-
+
 /Library/Frameworks/QtGui.framework/Headers/QAction
 qaction.h
 /Library/Frameworks/QtGui.framework/Headers/qaction.h
@@ -195,6 +445,10 @@ qaction.h
 /Library/Frameworks/QtGui.framework/Headers/QApplication
 qapplication.h
 /Library/Frameworks/QtGui.framework/Headers/qapplication.h
+
+/Library/Frameworks/QtGui.framework/Headers/QColor
+qcolor.h
+/Library/Frameworks/QtGui.framework/Headers/qcolor.h
 
 /Library/Frameworks/QtGui.framework/Headers/QDialog
 qdialog.h
@@ -204,9 +458,17 @@ qdialog.h
 qerrormessage.h
 /Library/Frameworks/QtGui.framework/Headers/qerrormessage.h
 
+/Library/Frameworks/QtGui.framework/Headers/QMainWindow
+qmainwindow.h
+/Library/Frameworks/QtGui.framework/Headers/qmainwindow.h
+
 /Library/Frameworks/QtGui.framework/Headers/QMenu
 qmenu.h
 /Library/Frameworks/QtGui.framework/Headers/qmenu.h
+
+/Library/Frameworks/QtGui.framework/Headers/QPolygonF
+qpolygon.h
+/Library/Frameworks/QtGui.framework/Headers/qpolygon.h
 
 /Library/Frameworks/QtGui.framework/Headers/QToolBar
 qtoolbar.h
@@ -1916,15 +2178,27 @@ QtGui/qmatrix.h
 QtGui/qwidget.h
 -
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/../qgisplugin.h
+/Library/Frameworks/QtNetwork.framework/Headers/QAbstractSocket
+qabstractsocket.h
+/Library/Frameworks/QtNetwork.framework/Headers/qabstractsocket.h
+
+/Library/Frameworks/QtNetwork.framework/Headers/qabstractsocket.h
+QtCore/qiodevice.h
+-
+QtCore/qobject.h
+-
+QtCore/qdebug.h
+-
+
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/../qgisplugin.h
 QString
 -
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/Analysis/SpatialPlot/spatialplot.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/Analysis/SpatialPlot/spatialplot.h
 ui_spatialplot.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/Analysis/SpatialPlot/ui_spatialplot.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/Analysis/SpatialPlot/ui_spatialplot.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/Analysis/SpatialPlot/ui_spatialplot.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/Analysis/SpatialPlot/ui_spatialplot.h
 QtCore/QVariant
 -
 QtGui/QAction
@@ -1956,11 +2230,47 @@ QtGui/QTextBrowser
 QtGui/QWidget
 -
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/DataModelLoader/AttFile/attfile.h
-ui_attfile.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/DataModelLoader/AttFile/ui_attfile.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/Analysis/TimeSeries/timeseries.h
+ui_timeseries.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/Analysis/TimeSeries/ui_timeseries.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/DataModelLoader/AttFile/ui_attfile.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/Analysis/TimeSeries/ui_timeseries.h
+QtCore/QVariant
+-
+QtGui/QAction
+-
+QtGui/QApplication
+-
+QtGui/QButtonGroup
+-
+QtGui/QComboBox
+-
+QtGui/QDialog
+-
+QtGui/QGroupBox
+-
+QtGui/QHBoxLayout
+-
+QtGui/QLabel
+-
+QtGui/QLineEdit
+-
+QtGui/QPushButton
+-
+QtGui/QSpacerItem
+-
+QtGui/QTabWidget
+-
+QtGui/QTextBrowser
+-
+QtGui/QWidget
+-
+
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/DataModelLoader/AttFile/attfile.h
+ui_attfile.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/DataModelLoader/AttFile/ui_attfile.h
+
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/DataModelLoader/AttFile/ui_attfile.h
 Qt3Support/Q3ButtonGroup
 -
 Qt3Support/Q3GroupBox
@@ -1992,13 +2302,13 @@ QtGui/QTabWidget
 QtGui/QWidget
 -
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/DataModelLoader/MeshFile/mshfile.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/DataModelLoader/MeshFile/mshfile.h
 ui_mshfile.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/DataModelLoader/MeshFile/ui_mshfile.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/DataModelLoader/MeshFile/ui_mshfile.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/DataModelLoader/MeshFile/ui_mshfile.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/DataModelLoader/MeshFile/ui_mshfile.h
 Qt3Support/Q3ButtonGroup
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/DataModelLoader/MeshFile/Qt3Support/Q3ButtonGroup
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/DataModelLoader/MeshFile/Qt3Support/Q3ButtonGroup
 QtCore/QVariant
 -
 QtGui/QAction
@@ -2018,13 +2328,13 @@ QtGui/QPushButton
 Qt3Support/Q3MimeSourceFactory
 -
 Qt3Support/Q3TextBrowser
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/DataModelLoader/MeshFile/Qt3Support/Q3TextBrowser
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/DataModelLoader/MeshFile/Qt3Support/Q3TextBrowser
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/DataModelLoader/ParaFile/parafile.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/DataModelLoader/ParaFile/parafile.h
 ui_parafile.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/DataModelLoader/ParaFile/ui_parafile.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/DataModelLoader/ParaFile/ui_parafile.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/DataModelLoader/ParaFile/ui_parafile.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/DataModelLoader/ParaFile/ui_parafile.h
 Qt3Support/Q3ButtonGroup
 -
 Qt3Support/Q3GroupBox
@@ -2060,13 +2370,13 @@ QtGui/QTabWidget
 QtGui/QWidget
 -
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/DataModelLoader/RivFile/rivfile.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/DataModelLoader/RivFile/rivfile.h
 ui_rivfile.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/DataModelLoader/RivFile/ui_rivfile.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/DataModelLoader/RivFile/ui_rivfile.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/DataModelLoader/RivFile/ui_rivfile.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/DataModelLoader/RivFile/ui_rivfile.h
 Qt3Support/Q3GroupBox
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/DataModelLoader/RivFile/Qt3Support/Q3GroupBox
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/DataModelLoader/RivFile/Qt3Support/Q3GroupBox
 QtCore/QVariant
 -
 QtGui/QAction
@@ -2086,15 +2396,15 @@ QtGui/QPushButton
 Qt3Support/Q3MimeSourceFactory
 -
 Qt3Support/Q3TextBrowser
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/DataModelLoader/RivFile/Qt3Support/Q3TextBrowser
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/DataModelLoader/RivFile/Qt3Support/Q3TextBrowser
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/DomainDecomposition/CreateTINs/createtins.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/DomainDecomposition/CreateTINs/createtins.h
 ui_createtinsdialog.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/DomainDecomposition/CreateTINs/ui_createtinsdialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/DomainDecomposition/CreateTINs/ui_createtinsdialog.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/DomainDecomposition/CreateTINs/ui_createtinsdialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/DomainDecomposition/CreateTINs/ui_createtinsdialog.h
 Qt3Support/Q3ButtonGroup
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/DomainDecomposition/CreateTINs/Qt3Support/Q3ButtonGroup
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/DomainDecomposition/CreateTINs/Qt3Support/Q3ButtonGroup
 QtCore/QVariant
 -
 QtGui/QAction
@@ -2114,15 +2424,15 @@ QtGui/QPushButton
 Qt3Support/Q3MimeSourceFactory
 -
 Qt3Support/Q3TextBrowser
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/DomainDecomposition/CreateTINs/Qt3Support/Q3TextBrowser
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/DomainDecomposition/CreateTINs/Qt3Support/Q3TextBrowser
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/DomainDecomposition/GenerateShapeTopology/generateshapetopology.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/DomainDecomposition/GenerateShapeTopology/generateshapetopology.h
 ui_generateshapetopology.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/DomainDecomposition/GenerateShapeTopology/ui_generateshapetopology.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/DomainDecomposition/GenerateShapeTopology/ui_generateshapetopology.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/DomainDecomposition/GenerateShapeTopology/ui_generateshapetopology.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/DomainDecomposition/GenerateShapeTopology/ui_generateshapetopology.h
 Qt3Support/Q3ButtonGroup
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/DomainDecomposition/GenerateShapeTopology/Qt3Support/Q3ButtonGroup
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/DomainDecomposition/GenerateShapeTopology/Qt3Support/Q3ButtonGroup
 QtCore/QVariant
 -
 QtGui/QAction
@@ -2142,15 +2452,15 @@ QtGui/QPushButton
 Qt3Support/Q3MimeSourceFactory
 -
 Qt3Support/Q3TextBrowser
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/DomainDecomposition/GenerateShapeTopology/Qt3Support/Q3TextBrowser
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/DomainDecomposition/GenerateShapeTopology/Qt3Support/Q3TextBrowser
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/DomainDecomposition/RunTriangle/runtriangle.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/DomainDecomposition/RunTriangle/runtriangle.h
 ui_runtriangle.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/DomainDecomposition/RunTriangle/ui_runtriangle.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/DomainDecomposition/RunTriangle/ui_runtriangle.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/DomainDecomposition/RunTriangle/ui_runtriangle.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/DomainDecomposition/RunTriangle/ui_runtriangle.h
 Qt3Support/Q3ButtonGroup
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/DomainDecomposition/RunTriangle/Qt3Support/Q3ButtonGroup
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/DomainDecomposition/RunTriangle/Qt3Support/Q3ButtonGroup
 QtCore/QVariant
 -
 QtGui/QAction
@@ -2172,19 +2482,21 @@ QtGui/QPushButton
 Qt3Support/Q3MimeSourceFactory
 -
 Qt3Support/Q3TextBrowser
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/DomainDecomposition/RunTriangle/Qt3Support/Q3TextBrowser
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/DomainDecomposition/RunTriangle/Qt3Support/Q3TextBrowser
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/Help/About/about.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/Help/About/about.h
 ui_about.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/Help/About/ui_about.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/Help/About/ui_about.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/RasterProcessing/CatchmentGrid/catchmentgrid.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/RasterProcessing/CatchmentGrid/catchmentgrid.h
 ui_catchmentgrid.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/RasterProcessing/CatchmentGrid/ui_catchmentgrid.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/RasterProcessing/CatchmentGrid/ui_catchmentgrid.h
+qgisinterface.h
+-
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/RasterProcessing/CatchmentGrid/ui_catchmentgrid.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/RasterProcessing/CatchmentGrid/ui_catchmentgrid.h
 Qt3Support/Q3ButtonGroup
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/RasterProcessing/CatchmentGrid/Qt3Support/Q3ButtonGroup
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/RasterProcessing/CatchmentGrid/Qt3Support/Q3ButtonGroup
 QtCore/QVariant
 -
 QtGui/QAction
@@ -2206,15 +2518,17 @@ QtGui/QPushButton
 Qt3Support/Q3MimeSourceFactory
 -
 Qt3Support/Q3TextBrowser
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/RasterProcessing/CatchmentGrid/Qt3Support/Q3TextBrowser
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/RasterProcessing/CatchmentGrid/Qt3Support/Q3TextBrowser
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/RasterProcessing/CatchmentPolygon/catchmentpolygon.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/RasterProcessing/CatchmentPolygon/catchmentpolygon.h
 ui_catchmentpolygon.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/RasterProcessing/CatchmentPolygon/ui_catchmentpolygon.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/RasterProcessing/CatchmentPolygon/ui_catchmentpolygon.h
+qgisinterface.h
+-
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/RasterProcessing/CatchmentPolygon/ui_catchmentpolygon.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/RasterProcessing/CatchmentPolygon/ui_catchmentpolygon.h
 Qt3Support/Q3ButtonGroup
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/RasterProcessing/CatchmentPolygon/Qt3Support/Q3ButtonGroup
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/RasterProcessing/CatchmentPolygon/Qt3Support/Q3ButtonGroup
 QtCore/QVariant
 -
 QtGui/QAction
@@ -2236,13 +2550,17 @@ QtGui/QPushButton
 Qt3Support/Q3MimeSourceFactory
 -
 Qt3Support/Q3TextBrowser
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/RasterProcessing/CatchmentPolygon/Qt3Support/Q3TextBrowser
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/RasterProcessing/CatchmentPolygon/Qt3Support/Q3TextBrowser
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/RasterProcessing/FillPits/fillpits.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/RasterProcessing/FillPits/fillpits.h
 ui_fillpits.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/RasterProcessing/FillPits/ui_fillpits.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/RasterProcessing/FillPits/ui_fillpits.h
+qgisapp.h
+-
+qgisinterface.h
+-
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/RasterProcessing/FillPits/ui_fillpits.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/RasterProcessing/FillPits/ui_fillpits.h
 Qt3Support/Q3ButtonGroup
 -
 Qt3Support/Q3TextBrowser
@@ -2268,13 +2586,15 @@ QtGui/QPushButton
 Qt3Support/Q3MimeSourceFactory
 -
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/RasterProcessing/FlowGrid/flowgrid.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/RasterProcessing/FlowGrid/flowgrid.h
 ui_flowgrid.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/RasterProcessing/FlowGrid/ui_flowgrid.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/RasterProcessing/FlowGrid/ui_flowgrid.h
+qgisinterface.h
+-
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/RasterProcessing/FlowGrid/ui_flowgrid.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/RasterProcessing/FlowGrid/ui_flowgrid.h
 Qt3Support/Q3ButtonGroup
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/RasterProcessing/FlowGrid/Qt3Support/Q3ButtonGroup
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/RasterProcessing/FlowGrid/Qt3Support/Q3ButtonGroup
 QtCore/QVariant
 -
 QtGui/QAction
@@ -2296,15 +2616,17 @@ QtGui/QPushButton
 Qt3Support/Q3MimeSourceFactory
 -
 Qt3Support/Q3TextBrowser
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/RasterProcessing/FlowGrid/Qt3Support/Q3TextBrowser
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/RasterProcessing/FlowGrid/Qt3Support/Q3TextBrowser
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/RasterProcessing/LinkGrid/linkgrid.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/RasterProcessing/LinkGrid/linkgrid.h
 ui_linkgrid.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/RasterProcessing/LinkGrid/ui_linkgrid.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/RasterProcessing/LinkGrid/ui_linkgrid.h
+qgisinterface.h
+-
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/RasterProcessing/LinkGrid/ui_linkgrid.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/RasterProcessing/LinkGrid/ui_linkgrid.h
 Qt3Support/Q3ButtonGroup
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/RasterProcessing/LinkGrid/Qt3Support/Q3ButtonGroup
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/RasterProcessing/LinkGrid/Qt3Support/Q3ButtonGroup
 QtCore/QVariant
 -
 QtGui/QAction
@@ -2326,15 +2648,17 @@ QtGui/QPushButton
 Qt3Support/Q3MimeSourceFactory
 -
 Qt3Support/Q3TextBrowser
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/RasterProcessing/LinkGrid/Qt3Support/Q3TextBrowser
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/RasterProcessing/LinkGrid/Qt3Support/Q3TextBrowser
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/RasterProcessing/StreamGrid/streamgrid.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/RasterProcessing/StreamGrid/streamgrid.h
 ui_streamgrid.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/RasterProcessing/StreamGrid/ui_streamgrid.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/RasterProcessing/StreamGrid/ui_streamgrid.h
+qgisinterface.h
+-
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/RasterProcessing/StreamGrid/ui_streamgrid.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/RasterProcessing/StreamGrid/ui_streamgrid.h
 Qt3Support/Q3ButtonGroup
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/RasterProcessing/StreamGrid/Qt3Support/Q3ButtonGroup
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/RasterProcessing/StreamGrid/Qt3Support/Q3ButtonGroup
 QtCore/QVariant
 -
 QtGui/QAction
@@ -2356,15 +2680,17 @@ QtGui/QPushButton
 Qt3Support/Q3MimeSourceFactory
 -
 Qt3Support/Q3TextBrowser
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/RasterProcessing/StreamGrid/Qt3Support/Q3TextBrowser
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/RasterProcessing/StreamGrid/Qt3Support/Q3TextBrowser
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/RasterProcessing/StreamPolyLine/streampolyline.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/RasterProcessing/StreamPolyLine/streampolyline.h
 ui_streampolyline.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/RasterProcessing/StreamPolyLine/ui_streampolyline.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/RasterProcessing/StreamPolyLine/ui_streampolyline.h
+qgisinterface.h
+-
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/RasterProcessing/StreamPolyLine/ui_streampolyline.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/RasterProcessing/StreamPolyLine/ui_streampolyline.h
 Qt3Support/Q3ButtonGroup
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/RasterProcessing/StreamPolyLine/Qt3Support/Q3ButtonGroup
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/RasterProcessing/StreamPolyLine/Qt3Support/Q3ButtonGroup
 QtCore/QVariant
 -
 QtGui/QAction
@@ -2386,19 +2712,39 @@ QtGui/QPushButton
 Qt3Support/Q3MimeSourceFactory
 -
 Qt3Support/Q3TextBrowser
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/RasterProcessing/StreamPolyLine/Qt3Support/Q3TextBrowser
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/RasterProcessing/StreamPolyLine/Qt3Support/Q3TextBrowser
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/RunPIHM/runpihm.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/RunPIHM/.././PIHM_v2.0/pihm.h
+sundials_types.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/RunPIHM/.././PIHM_v2.0/sundials_types.h
+nvector_serial.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/RunPIHM/.././PIHM_v2.0/nvector_serial.h
+stdio.h
+-
+iostream
+-
+QtGui/QProgressBar
+-
+
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/RunPIHM/../MyNewThread.h
+QThread
+-
+./PIHM_v2.0/pihm.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/RunPIHM/.././PIHM_v2.0/pihm.h
+
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/RunPIHM/runpihm.h
 ui_runpihm.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/RunPIHM/ui_runpihm.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/RunPIHM/ui_runpihm.h
+../MyNewThread.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/RunPIHM/../MyNewThread.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/VectorProcessing/MergeFeatures/mergefeaturesdialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/VectorProcessing/MergeFeatures/mergefeaturesdialog.h
 ui_mergefeaturesdialog.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/VectorProcessing/MergeFeatures/ui_mergefeaturesdialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/VectorProcessing/MergeFeatures/ui_mergefeaturesdialog.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/VectorProcessing/MergeFeatures/ui_mergefeaturesdialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/VectorProcessing/MergeFeatures/ui_mergefeaturesdialog.h
 Qt3Support/Q3ButtonGroup
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/VectorProcessing/MergeFeatures/Qt3Support/Q3ButtonGroup
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/VectorProcessing/MergeFeatures/Qt3Support/Q3ButtonGroup
 Qt3Support/Q3Header
 -
 QtCore/QVariant
@@ -2418,17 +2764,17 @@ QtGui/QLineEdit
 QtGui/QPushButton
 -
 Qt3Support/Q3Table
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/VectorProcessing/MergeFeatures/Qt3Support/Q3Table
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/VectorProcessing/MergeFeatures/Qt3Support/Q3Table
 Qt3Support/Q3TextBrowser
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/VectorProcessing/MergeFeatures/Qt3Support/Q3TextBrowser
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/VectorProcessing/MergeFeatures/Qt3Support/Q3TextBrowser
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/VectorProcessing/PolygonToPolyLine/polygontopolylinedialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/VectorProcessing/PolygonToPolyLine/polygontopolylinedialog.h
 ui_polygontopolylinedialog.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/VectorProcessing/PolygonToPolyLine/ui_polygontopolylinedialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/VectorProcessing/PolygonToPolyLine/ui_polygontopolylinedialog.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/VectorProcessing/PolygonToPolyLine/ui_polygontopolylinedialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/VectorProcessing/PolygonToPolyLine/ui_polygontopolylinedialog.h
 Qt3Support/Q3ButtonGroup
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/VectorProcessing/PolygonToPolyLine/Qt3Support/Q3ButtonGroup
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/VectorProcessing/PolygonToPolyLine/Qt3Support/Q3ButtonGroup
 Qt3Support/Q3Header
 -
 QtCore/QVariant
@@ -2444,17 +2790,17 @@ QtGui/QDialog
 QtGui/QPushButton
 -
 Qt3Support/Q3Table
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/VectorProcessing/PolygonToPolyLine/Qt3Support/Q3Table
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/VectorProcessing/PolygonToPolyLine/Qt3Support/Q3Table
 Qt3Support/Q3TextBrowser
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/VectorProcessing/PolygonToPolyLine/Qt3Support/Q3TextBrowser
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/VectorProcessing/PolygonToPolyLine/Qt3Support/Q3TextBrowser
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/VectorProcessing/SimplifyLine/simplifylinedialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/VectorProcessing/SimplifyLine/simplifylinedialog.h
 ui_simplifylinedialog.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/VectorProcessing/SimplifyLine/ui_simplifylinedialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/VectorProcessing/SimplifyLine/ui_simplifylinedialog.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/VectorProcessing/SimplifyLine/ui_simplifylinedialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/VectorProcessing/SimplifyLine/ui_simplifylinedialog.h
 Qt3Support/Q3ButtonGroup
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/VectorProcessing/SimplifyLine/Qt3Support/Q3ButtonGroup
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/VectorProcessing/SimplifyLine/Qt3Support/Q3ButtonGroup
 Qt3Support/Q3Header
 -
 QtCore/QVariant
@@ -2474,17 +2820,17 @@ QtGui/QLineEdit
 QtGui/QPushButton
 -
 Qt3Support/Q3Table
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/VectorProcessing/SimplifyLine/Qt3Support/Q3Table
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/VectorProcessing/SimplifyLine/Qt3Support/Q3Table
 Qt3Support/Q3TextBrowser
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/VectorProcessing/SimplifyLine/Qt3Support/Q3TextBrowser
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/VectorProcessing/SimplifyLine/Qt3Support/Q3TextBrowser
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/VectorProcessing/SplitLine/splitlinedialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/VectorProcessing/SplitLine/splitlinedialog.h
 ui_splitlinedialog.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/VectorProcessing/SplitLine/ui_splitlinedialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/VectorProcessing/SplitLine/ui_splitlinedialog.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/VectorProcessing/SplitLine/ui_splitlinedialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/VectorProcessing/SplitLine/ui_splitlinedialog.h
 Qt3Support/Q3ButtonGroup
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/VectorProcessing/SplitLine/Qt3Support/Q3ButtonGroup
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/VectorProcessing/SplitLine/Qt3Support/Q3ButtonGroup
 Qt3Support/Q3Header
 -
 QtCore/QVariant
@@ -2500,15 +2846,15 @@ QtGui/QDialog
 QtGui/QPushButton
 -
 Qt3Support/Q3Table
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/VectorProcessing/SplitLine/Qt3Support/Q3Table
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/VectorProcessing/SplitLine/Qt3Support/Q3Table
 Qt3Support/Q3TextBrowser
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/VectorProcessing/SplitLine/Qt3Support/Q3TextBrowser
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/VectorProcessing/SplitLine/Qt3Support/Q3TextBrowser
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/pihmLIBS/helpDialog/helpdialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/pihmLIBS/helpDialog/helpdialog.h
 ui_helpdialog.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/pihmLIBS/helpDialog/ui_helpdialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/pihmLIBS/helpDialog/ui_helpdialog.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/pihmLIBS/helpDialog/ui_helpdialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/pihmLIBS/helpDialog/ui_helpdialog.h
 QtCore/QVariant
 -
 QtGui/QAction
@@ -2528,129 +2874,151 @@ QtGui/QWidget
 Qt3Support/Q3MimeSourceFactory
 -
 Qt3Support/Q3TextBrowser
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/pihmLIBS/helpDialog/Qt3Support/Q3TextBrowser
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/pihmLIBS/helpDialog/Qt3Support/Q3TextBrowser
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/pihmgis.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/pihmgis.h
 QObject
 -
+QThread
+-
+RunPIHM/runpihm.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/RunPIHM/runpihm.h
 ../qgisplugin.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/../qgisplugin.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/../qgisplugin.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/pihmgisgui.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/pihmgisgui.h
 QDialog
 -
 ui_pihmgisgui.h
 -
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/moc_about.cxx
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_about.cxx
 ../../../../src/plugins/pihm_gis/Help/About/about.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/Help/About/about.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/Help/About/about.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/moc_attfile.cxx
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_attfile.cxx
 ../../../../src/plugins/pihm_gis/DataModelLoader/AttFile/attfile.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/DataModelLoader/AttFile/attfile.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/DataModelLoader/AttFile/attfile.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/moc_catchmentgrid.cxx
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_catchmentgrid.cxx
 ../../../../src/plugins/pihm_gis/RasterProcessing/CatchmentGrid/catchmentgrid.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/RasterProcessing/CatchmentGrid/catchmentgrid.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/RasterProcessing/CatchmentGrid/catchmentgrid.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/moc_catchmentpolygon.cxx
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_catchmentpolygon.cxx
 ../../../../src/plugins/pihm_gis/RasterProcessing/CatchmentPolygon/catchmentpolygon.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/RasterProcessing/CatchmentPolygon/catchmentpolygon.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/RasterProcessing/CatchmentPolygon/catchmentpolygon.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/moc_createtins.cxx
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_createtins.cxx
 ../../../../src/plugins/pihm_gis/DomainDecomposition/CreateTINs/createtins.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/DomainDecomposition/CreateTINs/createtins.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/DomainDecomposition/CreateTINs/createtins.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/moc_fillpits.cxx
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_fillpits.cxx
 ../../../../src/plugins/pihm_gis/RasterProcessing/FillPits/fillpits.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/RasterProcessing/FillPits/fillpits.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/RasterProcessing/FillPits/fillpits.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/moc_flowgrid.cxx
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_flowgrid.cxx
 ../../../../src/plugins/pihm_gis/RasterProcessing/FlowGrid/flowgrid.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/RasterProcessing/FlowGrid/flowgrid.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/RasterProcessing/FlowGrid/flowgrid.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/moc_generateshapetopology.cxx
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_generateshapetopology.cxx
 ../../../../src/plugins/pihm_gis/DomainDecomposition/GenerateShapeTopology/generateshapetopology.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/DomainDecomposition/GenerateShapeTopology/generateshapetopology.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/DomainDecomposition/GenerateShapeTopology/generateshapetopology.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/moc_helpdialog.cxx
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_helpdialog.cxx
 ../../../../src/plugins/pihm_gis/pihmLIBS/helpDialog/helpdialog.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/pihmLIBS/helpDialog/helpdialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/pihmLIBS/helpDialog/helpdialog.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/moc_linkgrid.cxx
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_linkgrid.cxx
 ../../../../src/plugins/pihm_gis/RasterProcessing/LinkGrid/linkgrid.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/RasterProcessing/LinkGrid/linkgrid.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/RasterProcessing/LinkGrid/linkgrid.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/moc_mergefeaturesdialog.cxx
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_mergefeaturesdialog.cxx
 ../../../../src/plugins/pihm_gis/VectorProcessing/MergeFeatures/mergefeaturesdialog.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/VectorProcessing/MergeFeatures/mergefeaturesdialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/VectorProcessing/MergeFeatures/mergefeaturesdialog.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/moc_mshfile.cxx
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_mshfile.cxx
 ../../../../src/plugins/pihm_gis/DataModelLoader/MeshFile/mshfile.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/DataModelLoader/MeshFile/mshfile.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/DataModelLoader/MeshFile/mshfile.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/moc_parafile.cxx
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_parafile.cxx
 ../../../../src/plugins/pihm_gis/DataModelLoader/ParaFile/parafile.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/DataModelLoader/ParaFile/parafile.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/DataModelLoader/ParaFile/parafile.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/moc_pihmgis.cxx
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_pihmgis.cxx
 ../../../../src/plugins/pihm_gis/pihmgis.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/pihmgis.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/pihmgis.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/moc_pihmgisgui.cxx
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_pihmgisgui.cxx
 ../../../../src/plugins/pihm_gis/pihmgisgui.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/pihmgisgui.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/pihmgisgui.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/moc_polygontopolylinedialog.cxx
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_plotTS.cxx
+
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_polygontopolylinedialog.cxx
 ../../../../src/plugins/pihm_gis/VectorProcessing/PolygonToPolyLine/polygontopolylinedialog.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/VectorProcessing/PolygonToPolyLine/polygontopolylinedialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/VectorProcessing/PolygonToPolyLine/polygontopolylinedialog.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/moc_rivfile.cxx
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_rivfile.cxx
 ../../../../src/plugins/pihm_gis/DataModelLoader/RivFile/rivfile.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/DataModelLoader/RivFile/rivfile.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/DataModelLoader/RivFile/rivfile.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/moc_runpihm.cxx
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_runpihm.cxx
 ../../../../src/plugins/pihm_gis/RunPIHM/runpihm.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/RunPIHM/runpihm.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/RunPIHM/runpihm.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/moc_runtriangle.cxx
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_runtriangle.cxx
 ../../../../src/plugins/pihm_gis/DomainDecomposition/RunTriangle/runtriangle.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/DomainDecomposition/RunTriangle/runtriangle.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/DomainDecomposition/RunTriangle/runtriangle.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/moc_simplifylinedialog.cxx
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_simplifylinedialog.cxx
 ../../../../src/plugins/pihm_gis/VectorProcessing/SimplifyLine/simplifylinedialog.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/VectorProcessing/SimplifyLine/simplifylinedialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/VectorProcessing/SimplifyLine/simplifylinedialog.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/moc_spatialplot.cxx
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_spatialplot.cxx
 ../../../../src/plugins/pihm_gis/Analysis/SpatialPlot/spatialplot.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/Analysis/SpatialPlot/spatialplot.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/Analysis/SpatialPlot/spatialplot.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/moc_splitlinedialog.cxx
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_splitlinedialog.cxx
 ../../../../src/plugins/pihm_gis/VectorProcessing/SplitLine/splitlinedialog.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/VectorProcessing/SplitLine/splitlinedialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/VectorProcessing/SplitLine/splitlinedialog.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/moc_streamgrid.cxx
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_streamgrid.cxx
 ../../../../src/plugins/pihm_gis/RasterProcessing/StreamGrid/streamgrid.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/RasterProcessing/StreamGrid/streamgrid.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/RasterProcessing/StreamGrid/streamgrid.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/moc_streampolyline.cxx
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_streampolyline.cxx
 ../../../../src/plugins/pihm_gis/RasterProcessing/StreamPolyLine/streampolyline.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/RasterProcessing/StreamPolyLine/streampolyline.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/RasterProcessing/StreamPolyLine/streampolyline.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/build/src/plugins/pihm_gis/qrc_pihmgis.cxx
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/moc_timeseries.cxx
+../../../../src/plugins/pihm_gis/Analysis/TimeSeries/timeseries.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/../../../../src/plugins/pihm_gis/Analysis/TimeSeries/timeseries.h
+
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/pihm_gis/qrc_pihmgis.cxx
 QtCore/qglobal.h
 -
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/../qgisplugin.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/../qgisplugin.h
 QString
 -
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/Analysis/SpatialPlot/spatialplot.h
-ui_spatialplot.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/Analysis/SpatialPlot/ui_spatialplot.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/./PIHM_v2.0/pihm.h
+sundials_types.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/./PIHM_v2.0/sundials_types.h
+nvector_serial.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/./PIHM_v2.0/nvector_serial.h
+stdio.h
+-
+iostream
+-
+QtGui/QProgressBar
+-
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/Analysis/SpatialPlot/ui_spatialplot.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/Analysis/SpatialPlot/spatialplot.h
+ui_spatialplot.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/Analysis/SpatialPlot/ui_spatialplot.h
+
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/Analysis/SpatialPlot/ui_spatialplot.h
 QtCore/QVariant
 -
 QtGui/QAction
@@ -2682,15 +3050,15 @@ QtGui/QTextBrowser
 QtGui/QWidget
 -
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/Analysis/Spatialplot/../../pihmLIBS/generateShape.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/Analysis/Spatialplot/../../pihmLIBS/generateShape.h
 QtGui
 -
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/Analysis/Spatialplot/../../pihmLIBS/helpDialog/helpdialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/Analysis/Spatialplot/../../pihmLIBS/helpDialog/helpdialog.h
 ui_helpdialog.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/Analysis/Spatialplot/../../pihmLIBS/helpDialog/ui_helpdialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/Analysis/Spatialplot/../../pihmLIBS/helpDialog/ui_helpdialog.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/Analysis/Spatialplot/../../pihmLIBS/helpDialog/ui_helpdialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/Analysis/Spatialplot/../../pihmLIBS/helpDialog/ui_helpdialog.h
 QtCore/QVariant
 -
 QtGui/QAction
@@ -2710,27 +3078,27 @@ QtGui/QWidget
 Qt3Support/Q3MimeSourceFactory
 -
 Qt3Support/Q3TextBrowser
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/Analysis/Spatialplot/../../pihmLIBS/helpDialog/Qt3Support/Q3TextBrowser
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/Analysis/Spatialplot/../../pihmLIBS/helpDialog/Qt3Support/Q3TextBrowser
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/Analysis/Spatialplot/spatialplot.cpp
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/Analysis/Spatialplot/spatialplot.cpp
 QtGui
 -
 spatialplot.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/Analysis/Spatialplot/spatialplot.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/Analysis/Spatialplot/spatialplot.h
 ../../pihmLIBS/generateShape.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/Analysis/Spatialplot/../../pihmLIBS/generateShape.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/Analysis/Spatialplot/../../pihmLIBS/generateShape.h
 ../../pihmLIBS/helpDialog/helpdialog.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/Analysis/Spatialplot/../../pihmLIBS/helpDialog/helpdialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/Analysis/Spatialplot/../../pihmLIBS/helpDialog/helpdialog.h
 iostream
 -
 fstream
 -
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/Analysis/Spatialplot/spatialplot.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/Analysis/Spatialplot/spatialplot.h
 ui_spatialplot.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/Analysis/Spatialplot/ui_spatialplot.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/Analysis/Spatialplot/ui_spatialplot.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/Analysis/Spatialplot/ui_spatialplot.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/Analysis/Spatialplot/ui_spatialplot.h
 QtCore/QVariant
 -
 QtGui/QAction
@@ -2762,47 +3130,11 @@ QtGui/QTextBrowser
 QtGui/QWidget
 -
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/Analysis/TimeSeries/timeseries.h
-ui_timeseries.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/Analysis/TimeSeries/ui_timeseries.h
-
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/Analysis/TimeSeries/ui_timeseries.h
-QtCore/QVariant
--
-QtGui/QAction
--
-QtGui/QApplication
--
-QtGui/QButtonGroup
--
-QtGui/QComboBox
--
-QtGui/QDialog
--
-QtGui/QGroupBox
--
-QtGui/QHBoxLayout
--
-QtGui/QLabel
--
-QtGui/QLineEdit
--
-QtGui/QPushButton
--
-QtGui/QSpacerItem
--
-QtGui/QTabWidget
--
-QtGui/QTextBrowser
--
-QtGui/QWidget
--
-
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DataModelLoader/AttFile/../../pihmLIBS/helpDialog/helpdialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/Analysis/TimeSeries/../../pihmLIBS/helpDialog/helpdialog.h
 ui_helpdialog.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DataModelLoader/AttFile/../../pihmLIBS/helpDialog/ui_helpdialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/Analysis/TimeSeries/../../pihmLIBS/helpDialog/ui_helpdialog.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DataModelLoader/AttFile/../../pihmLIBS/helpDialog/ui_helpdialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/Analysis/TimeSeries/../../pihmLIBS/helpDialog/ui_helpdialog.h
 QtCore/QVariant
 -
 QtGui/QAction
@@ -2822,9 +3154,117 @@ QtGui/QWidget
 Qt3Support/Q3MimeSourceFactory
 -
 Qt3Support/Q3TextBrowser
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DataModelLoader/AttFile/../../pihmLIBS/helpDialog/Qt3Support/Q3TextBrowser
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/Analysis/TimeSeries/../../pihmLIBS/helpDialog/Qt3Support/Q3TextBrowser
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DataModelLoader/AttFile/../../pihmLIBS/pickGridValue.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/Analysis/TimeSeries/plotTS.cpp
+qapplication.h
+-
+qwt_plot.h
+-
+qwt_plot_marker.h
+-
+qwt_plot_curve.h
+-
+qwt_legend.h
+-
+qwt_data.h
+-
+qwt_text.h
+-
+math.h
+-
+qdialog.h
+-
+qcolor.h
+-
+plotTS.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/Analysis/TimeSeries/plotTS.h
+
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/Analysis/TimeSeries/plotTS.h
+qwt_plot.h
+-
+
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/Analysis/TimeSeries/timeseries.cpp
+QtGui
+-
+iostream
+-
+fstream
+-
+timeseries.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/Analysis/TimeSeries/timeseries.h
+plotTS.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/Analysis/TimeSeries/plotTS.h
+../../pihmLIBS/helpDialog/helpdialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/Analysis/TimeSeries/../../pihmLIBS/helpDialog/helpdialog.h
+qwt_plot_canvas.h
+-
+qwt_magnifier.h
+-
+
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/Analysis/TimeSeries/timeseries.h
+ui_timeseries.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/Analysis/TimeSeries/ui_timeseries.h
+
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/Analysis/TimeSeries/ui_timeseries.h
+QtCore/QVariant
+-
+QtGui/QAction
+-
+QtGui/QApplication
+-
+QtGui/QButtonGroup
+-
+QtGui/QComboBox
+-
+QtGui/QDialog
+-
+QtGui/QGroupBox
+-
+QtGui/QHBoxLayout
+-
+QtGui/QLabel
+-
+QtGui/QLineEdit
+-
+QtGui/QPushButton
+-
+QtGui/QSpacerItem
+-
+QtGui/QTabWidget
+-
+QtGui/QTextBrowser
+-
+QtGui/QWidget
+-
+
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DataModelLoader/AttFile/../../pihmLIBS/helpDialog/helpdialog.h
+ui_helpdialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DataModelLoader/AttFile/../../pihmLIBS/helpDialog/ui_helpdialog.h
+
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DataModelLoader/AttFile/../../pihmLIBS/helpDialog/ui_helpdialog.h
+QtCore/QVariant
+-
+QtGui/QAction
+-
+QtGui/QApplication
+-
+QtGui/QButtonGroup
+-
+QtGui/QDialog
+-
+QtGui/QGridLayout
+-
+QtGui/QPushButton
+-
+QtGui/QWidget
+-
+Qt3Support/Q3MimeSourceFactory
+-
+Qt3Support/Q3TextBrowser
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DataModelLoader/AttFile/../../pihmLIBS/helpDialog/Qt3Support/Q3TextBrowser
+
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DataModelLoader/AttFile/../../pihmLIBS/pickGridValue.h
 iostream
 -
 gdal.h
@@ -2832,33 +3272,33 @@ gdal.h
 gdal_priv.h
 -
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DataModelLoader/AttFile/../../pihmLIBS/shapefil.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DataModelLoader/AttFile/../../pihmLIBS/shapefil.h
 stdio.h
 -
 dbmalloc.h
 -
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DataModelLoader/AttFile/attfile.cpp
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DataModelLoader/AttFile/attfile.cpp
 QtGui
 -
 attfile.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DataModelLoader/AttFile/attfile.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DataModelLoader/AttFile/attfile.h
 iomanip
 -
 fstream
 -
 ../../pihmLIBS/pickGridValue.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DataModelLoader/AttFile/../../pihmLIBS/pickGridValue.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DataModelLoader/AttFile/../../pihmLIBS/pickGridValue.h
 ../../pihmLIBS/shapefil.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DataModelLoader/AttFile/../../pihmLIBS/shapefil.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DataModelLoader/AttFile/../../pihmLIBS/shapefil.h
 ../../pihmLIBS/helpDialog/helpdialog.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DataModelLoader/AttFile/../../pihmLIBS/helpDialog/helpdialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DataModelLoader/AttFile/../../pihmLIBS/helpDialog/helpdialog.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DataModelLoader/AttFile/attfile.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DataModelLoader/AttFile/attfile.h
 ui_attfile.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DataModelLoader/AttFile/ui_attfile.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DataModelLoader/AttFile/ui_attfile.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DataModelLoader/AttFile/ui_attfile.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DataModelLoader/AttFile/ui_attfile.h
 Qt3Support/Q3ButtonGroup
 -
 Qt3Support/Q3GroupBox
@@ -2890,11 +3330,11 @@ QtGui/QTabWidget
 QtGui/QWidget
 -
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DataModelLoader/MeshFile/../../pihmLIBS/helpDialog/helpdialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DataModelLoader/MeshFile/../../pihmLIBS/helpDialog/helpdialog.h
 ui_helpdialog.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DataModelLoader/MeshFile/../../pihmLIBS/helpDialog/ui_helpdialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DataModelLoader/MeshFile/../../pihmLIBS/helpDialog/ui_helpdialog.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DataModelLoader/MeshFile/../../pihmLIBS/helpDialog/ui_helpdialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DataModelLoader/MeshFile/../../pihmLIBS/helpDialog/ui_helpdialog.h
 QtCore/QVariant
 -
 QtGui/QAction
@@ -2914,9 +3354,9 @@ QtGui/QWidget
 Qt3Support/Q3MimeSourceFactory
 -
 Qt3Support/Q3TextBrowser
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DataModelLoader/MeshFile/../../pihmLIBS/helpDialog/Qt3Support/Q3TextBrowser
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DataModelLoader/MeshFile/../../pihmLIBS/helpDialog/Qt3Support/Q3TextBrowser
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DataModelLoader/MeshFile/../../pihmLIBS/pickGridValue.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DataModelLoader/MeshFile/../../pihmLIBS/pickGridValue.h
 iostream
 -
 gdal.h
@@ -2924,27 +3364,27 @@ gdal.h
 gdal_priv.h
 -
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DataModelLoader/MeshFile/mshfile.cpp
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DataModelLoader/MeshFile/mshfile.cpp
 QtGui
 -
 mshfile.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DataModelLoader/MeshFile/mshfile.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DataModelLoader/MeshFile/mshfile.h
 iomanip
 -
 fstream
 -
 ../../pihmLIBS/pickGridValue.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DataModelLoader/MeshFile/../../pihmLIBS/pickGridValue.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DataModelLoader/MeshFile/../../pihmLIBS/pickGridValue.h
 ../../pihmLIBS/helpDialog/helpdialog.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DataModelLoader/MeshFile/../../pihmLIBS/helpDialog/helpdialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DataModelLoader/MeshFile/../../pihmLIBS/helpDialog/helpdialog.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DataModelLoader/MeshFile/mshfile.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DataModelLoader/MeshFile/mshfile.h
 ui_mshfile.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DataModelLoader/MeshFile/ui_mshfile.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DataModelLoader/MeshFile/ui_mshfile.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DataModelLoader/MeshFile/ui_mshfile.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DataModelLoader/MeshFile/ui_mshfile.h
 Qt3Support/Q3ButtonGroup
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DataModelLoader/MeshFile/Qt3Support/Q3ButtonGroup
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DataModelLoader/MeshFile/Qt3Support/Q3ButtonGroup
 QtCore/QVariant
 -
 QtGui/QAction
@@ -2964,13 +3404,13 @@ QtGui/QPushButton
 Qt3Support/Q3MimeSourceFactory
 -
 Qt3Support/Q3TextBrowser
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DataModelLoader/MeshFile/Qt3Support/Q3TextBrowser
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DataModelLoader/MeshFile/Qt3Support/Q3TextBrowser
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DataModelLoader/ParaFile/../../pihmLIBS/helpDialog/helpdialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DataModelLoader/ParaFile/../../pihmLIBS/helpDialog/helpdialog.h
 ui_helpdialog.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DataModelLoader/ParaFile/../../pihmLIBS/helpDialog/ui_helpdialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DataModelLoader/ParaFile/../../pihmLIBS/helpDialog/ui_helpdialog.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DataModelLoader/ParaFile/../../pihmLIBS/helpDialog/ui_helpdialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DataModelLoader/ParaFile/../../pihmLIBS/helpDialog/ui_helpdialog.h
 QtCore/QVariant
 -
 QtGui/QAction
@@ -2990,25 +3430,25 @@ QtGui/QWidget
 Qt3Support/Q3MimeSourceFactory
 -
 Qt3Support/Q3TextBrowser
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DataModelLoader/ParaFile/../../pihmLIBS/helpDialog/Qt3Support/Q3TextBrowser
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DataModelLoader/ParaFile/../../pihmLIBS/helpDialog/Qt3Support/Q3TextBrowser
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DataModelLoader/ParaFile/parafile.cpp
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DataModelLoader/ParaFile/parafile.cpp
 QtGui
 -
 parafile.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DataModelLoader/ParaFile/parafile.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DataModelLoader/ParaFile/parafile.h
 iomanip
 -
 fstream
 -
 ../../pihmLIBS/helpDialog/helpdialog.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DataModelLoader/ParaFile/../../pihmLIBS/helpDialog/helpdialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DataModelLoader/ParaFile/../../pihmLIBS/helpDialog/helpdialog.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DataModelLoader/ParaFile/parafile.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DataModelLoader/ParaFile/parafile.h
 ui_parafile.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DataModelLoader/ParaFile/ui_parafile.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DataModelLoader/ParaFile/ui_parafile.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DataModelLoader/ParaFile/ui_parafile.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DataModelLoader/ParaFile/ui_parafile.h
 Qt3Support/Q3ButtonGroup
 -
 Qt3Support/Q3GroupBox
@@ -3044,11 +3484,11 @@ QtGui/QTabWidget
 QtGui/QWidget
 -
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DataModelLoader/Parafile/parafile.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DataModelLoader/Parafile/parafile.h
 ui_parafile.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DataModelLoader/Parafile/ui_parafile.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DataModelLoader/Parafile/ui_parafile.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DataModelLoader/Parafile/ui_parafile.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DataModelLoader/Parafile/ui_parafile.h
 Qt3Support/Q3ButtonGroup
 -
 Qt3Support/Q3GroupBox
@@ -3084,21 +3524,21 @@ QtGui/QTabWidget
 QtGui/QWidget
 -
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DataModelLoader/RivFile/../../pihmLIBS/addFID.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DataModelLoader/RivFile/../../pihmLIBS/addFID.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DataModelLoader/RivFile/../../pihmLIBS/addSOrder.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DataModelLoader/RivFile/../../pihmLIBS/addSOrder.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DataModelLoader/RivFile/../../pihmLIBS/addToFromNode.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DataModelLoader/RivFile/../../pihmLIBS/addToFromNode.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DataModelLoader/RivFile/../../pihmLIBS/calDownSegment.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DataModelLoader/RivFile/../../pihmLIBS/calDownSegment.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DataModelLoader/RivFile/../../pihmLIBS/extractRiver4mTIN.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DataModelLoader/RivFile/../../pihmLIBS/extractRiver4mTIN.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DataModelLoader/RivFile/../../pihmLIBS/helpDialog/helpdialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DataModelLoader/RivFile/../../pihmLIBS/helpDialog/helpdialog.h
 ui_helpdialog.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DataModelLoader/RivFile/../../pihmLIBS/helpDialog/ui_helpdialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DataModelLoader/RivFile/../../pihmLIBS/helpDialog/ui_helpdialog.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DataModelLoader/RivFile/../../pihmLIBS/helpDialog/ui_helpdialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DataModelLoader/RivFile/../../pihmLIBS/helpDialog/ui_helpdialog.h
 QtCore/QVariant
 -
 QtGui/QAction
@@ -3118,45 +3558,45 @@ QtGui/QWidget
 Qt3Support/Q3MimeSourceFactory
 -
 Qt3Support/Q3TextBrowser
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DataModelLoader/RivFile/../../pihmLIBS/helpDialog/Qt3Support/Q3TextBrowser
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DataModelLoader/RivFile/../../pihmLIBS/helpDialog/Qt3Support/Q3TextBrowser
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DataModelLoader/RivFile/../../pihmLIBS/shapefil.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DataModelLoader/RivFile/../../pihmLIBS/shapefil.h
 stdio.h
 -
 dbmalloc.h
 -
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DataModelLoader/RivFile/rivfile.cpp
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DataModelLoader/RivFile/rivfile.cpp
 QtGui
 -
 rivfile.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DataModelLoader/RivFile/rivfile.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DataModelLoader/RivFile/rivfile.h
 iomanip
 -
 fstream
 -
 ../../pihmLIBS/extractRiver4mTIN.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DataModelLoader/RivFile/../../pihmLIBS/extractRiver4mTIN.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DataModelLoader/RivFile/../../pihmLIBS/extractRiver4mTIN.h
 ../../pihmLIBS/addFID.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DataModelLoader/RivFile/../../pihmLIBS/addFID.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DataModelLoader/RivFile/../../pihmLIBS/addFID.h
 ../../pihmLIBS/addToFromNode.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DataModelLoader/RivFile/../../pihmLIBS/addToFromNode.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DataModelLoader/RivFile/../../pihmLIBS/addToFromNode.h
 ../../pihmLIBS/addSOrder.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DataModelLoader/RivFile/../../pihmLIBS/addSOrder.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DataModelLoader/RivFile/../../pihmLIBS/addSOrder.h
 ../../pihmLIBS/calDownSegment.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DataModelLoader/RivFile/../../pihmLIBS/calDownSegment.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DataModelLoader/RivFile/../../pihmLIBS/calDownSegment.h
 ../../pihmLIBS/helpDialog/helpdialog.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DataModelLoader/RivFile/../../pihmLIBS/helpDialog/helpdialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DataModelLoader/RivFile/../../pihmLIBS/helpDialog/helpdialog.h
 ../../pihmLIBS/shapefil.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DataModelLoader/RivFile/../../pihmLIBS/shapefil.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DataModelLoader/RivFile/../../pihmLIBS/shapefil.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DataModelLoader/RivFile/rivfile.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DataModelLoader/RivFile/rivfile.h
 ui_rivfile.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DataModelLoader/RivFile/ui_rivfile.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DataModelLoader/RivFile/ui_rivfile.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DataModelLoader/RivFile/ui_rivfile.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DataModelLoader/RivFile/ui_rivfile.h
 Qt3Support/Q3GroupBox
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DataModelLoader/RivFile/Qt3Support/Q3GroupBox
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DataModelLoader/RivFile/Qt3Support/Q3GroupBox
 QtCore/QVariant
 -
 QtGui/QAction
@@ -3176,21 +3616,21 @@ QtGui/QPushButton
 Qt3Support/Q3MimeSourceFactory
 -
 Qt3Support/Q3TextBrowser
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DataModelLoader/RivFile/Qt3Support/Q3TextBrowser
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DataModelLoader/RivFile/Qt3Support/Q3TextBrowser
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DomainDecomposition/CreateTINs/../../pihmLIBS/createTinShapeFile.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DomainDecomposition/CreateTINs/../../pihmLIBS/createTinShapeFile.h
 fstream
 -
 iomanip
 -
 shapefil.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DomainDecomposition/CreateTINs/../../pihmLIBS/shapefil.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DomainDecomposition/CreateTINs/../../pihmLIBS/shapefil.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DomainDecomposition/CreateTINs/../../pihmLIBS/helpDialog/helpdialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DomainDecomposition/CreateTINs/../../pihmLIBS/helpDialog/helpdialog.h
 ui_helpdialog.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DomainDecomposition/CreateTINs/../../pihmLIBS/helpDialog/ui_helpdialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DomainDecomposition/CreateTINs/../../pihmLIBS/helpDialog/ui_helpdialog.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DomainDecomposition/CreateTINs/../../pihmLIBS/helpDialog/ui_helpdialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DomainDecomposition/CreateTINs/../../pihmLIBS/helpDialog/ui_helpdialog.h
 QtCore/QVariant
 -
 QtGui/QAction
@@ -3210,33 +3650,33 @@ QtGui/QWidget
 Qt3Support/Q3MimeSourceFactory
 -
 Qt3Support/Q3TextBrowser
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DomainDecomposition/CreateTINs/../../pihmLIBS/helpDialog/Qt3Support/Q3TextBrowser
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DomainDecomposition/CreateTINs/../../pihmLIBS/helpDialog/Qt3Support/Q3TextBrowser
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DomainDecomposition/CreateTINs/../../pihmLIBS/shapefil.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DomainDecomposition/CreateTINs/../../pihmLIBS/shapefil.h
 stdio.h
 -
 dbmalloc.h
 -
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DomainDecomposition/CreateTINs/createtins.cpp
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DomainDecomposition/CreateTINs/createtins.cpp
 QtGui
 -
 createtins.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DomainDecomposition/CreateTINs/createtins.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DomainDecomposition/CreateTINs/createtins.h
 ../../pihmLIBS/createTinShapeFile.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DomainDecomposition/CreateTINs/../../pihmLIBS/createTinShapeFile.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DomainDecomposition/CreateTINs/../../pihmLIBS/createTinShapeFile.h
 ../../pihmLIBS/helpDialog/helpdialog.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DomainDecomposition/CreateTINs/../../pihmLIBS/helpDialog/helpdialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DomainDecomposition/CreateTINs/../../pihmLIBS/helpDialog/helpdialog.h
 fstream
 -
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DomainDecomposition/CreateTINs/createtins.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DomainDecomposition/CreateTINs/createtins.h
 ui_createtinsdialog.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DomainDecomposition/CreateTINs/ui_createtinsdialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DomainDecomposition/CreateTINs/ui_createtinsdialog.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DomainDecomposition/CreateTINs/ui_createtinsdialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DomainDecomposition/CreateTINs/ui_createtinsdialog.h
 Qt3Support/Q3ButtonGroup
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DomainDecomposition/CreateTINs/Qt3Support/Q3ButtonGroup
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DomainDecomposition/CreateTINs/Qt3Support/Q3ButtonGroup
 QtCore/QVariant
 -
 QtGui/QAction
@@ -3256,9 +3696,9 @@ QtGui/QPushButton
 Qt3Support/Q3MimeSourceFactory
 -
 Qt3Support/Q3TextBrowser
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DomainDecomposition/CreateTINs/Qt3Support/Q3TextBrowser
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DomainDecomposition/CreateTINs/Qt3Support/Q3TextBrowser
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DomainDecomposition/GenerateShapeTopology/../../pihmLIBS/generatePolyFile.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DomainDecomposition/GenerateShapeTopology/../../pihmLIBS/generatePolyFile.h
 iostream
 -
 fstream
@@ -3268,13 +3708,13 @@ iomanip
 math.h
 -
 shapefil.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DomainDecomposition/GenerateShapeTopology/../../pihmLIBS/shapefil.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DomainDecomposition/GenerateShapeTopology/../../pihmLIBS/shapefil.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DomainDecomposition/GenerateShapeTopology/../../pihmLIBS/helpDialog/helpdialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DomainDecomposition/GenerateShapeTopology/../../pihmLIBS/helpDialog/helpdialog.h
 ui_helpdialog.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DomainDecomposition/GenerateShapeTopology/../../pihmLIBS/helpDialog/ui_helpdialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DomainDecomposition/GenerateShapeTopology/../../pihmLIBS/helpDialog/ui_helpdialog.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DomainDecomposition/GenerateShapeTopology/../../pihmLIBS/helpDialog/ui_helpdialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DomainDecomposition/GenerateShapeTopology/../../pihmLIBS/helpDialog/ui_helpdialog.h
 QtCore/QVariant
 -
 QtGui/QAction
@@ -3294,33 +3734,33 @@ QtGui/QWidget
 Qt3Support/Q3MimeSourceFactory
 -
 Qt3Support/Q3TextBrowser
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DomainDecomposition/GenerateShapeTopology/../../pihmLIBS/helpDialog/Qt3Support/Q3TextBrowser
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DomainDecomposition/GenerateShapeTopology/../../pihmLIBS/helpDialog/Qt3Support/Q3TextBrowser
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DomainDecomposition/GenerateShapeTopology/../../pihmLIBS/shapefil.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DomainDecomposition/GenerateShapeTopology/../../pihmLIBS/shapefil.h
 stdio.h
 -
 dbmalloc.h
 -
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DomainDecomposition/GenerateShapeTopology/generateshapetopology.cpp
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DomainDecomposition/GenerateShapeTopology/generateshapetopology.cpp
 QtGui
 -
 generateshapetopology.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DomainDecomposition/GenerateShapeTopology/generateshapetopology.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DomainDecomposition/GenerateShapeTopology/generateshapetopology.h
 ../../pihmLIBS/generatePolyFile.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DomainDecomposition/GenerateShapeTopology/../../pihmLIBS/generatePolyFile.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DomainDecomposition/GenerateShapeTopology/../../pihmLIBS/generatePolyFile.h
 ../../pihmLIBS/helpDialog/helpdialog.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DomainDecomposition/GenerateShapeTopology/../../pihmLIBS/helpDialog/helpdialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DomainDecomposition/GenerateShapeTopology/../../pihmLIBS/helpDialog/helpdialog.h
 fstream
 -
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DomainDecomposition/GenerateShapeTopology/generateshapetopology.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DomainDecomposition/GenerateShapeTopology/generateshapetopology.h
 ui_generateshapetopology.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DomainDecomposition/GenerateShapeTopology/ui_generateshapetopology.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DomainDecomposition/GenerateShapeTopology/ui_generateshapetopology.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DomainDecomposition/GenerateShapeTopology/ui_generateshapetopology.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DomainDecomposition/GenerateShapeTopology/ui_generateshapetopology.h
 Qt3Support/Q3ButtonGroup
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DomainDecomposition/GenerateShapeTopology/Qt3Support/Q3ButtonGroup
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DomainDecomposition/GenerateShapeTopology/Qt3Support/Q3ButtonGroup
 QtCore/QVariant
 -
 QtGui/QAction
@@ -3340,13 +3780,13 @@ QtGui/QPushButton
 Qt3Support/Q3MimeSourceFactory
 -
 Qt3Support/Q3TextBrowser
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DomainDecomposition/GenerateShapeTopology/Qt3Support/Q3TextBrowser
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DomainDecomposition/GenerateShapeTopology/Qt3Support/Q3TextBrowser
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DomainDecomposition/RunTriangle/../../pihmLIBS/helpDialog/helpdialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DomainDecomposition/RunTriangle/../../pihmLIBS/helpDialog/helpdialog.h
 ui_helpdialog.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DomainDecomposition/RunTriangle/../../pihmLIBS/helpDialog/ui_helpdialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DomainDecomposition/RunTriangle/../../pihmLIBS/helpDialog/ui_helpdialog.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DomainDecomposition/RunTriangle/../../pihmLIBS/helpDialog/ui_helpdialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DomainDecomposition/RunTriangle/../../pihmLIBS/helpDialog/ui_helpdialog.h
 QtCore/QVariant
 -
 QtGui/QAction
@@ -3366,29 +3806,29 @@ QtGui/QWidget
 Qt3Support/Q3MimeSourceFactory
 -
 Qt3Support/Q3TextBrowser
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DomainDecomposition/RunTriangle/../../pihmLIBS/helpDialog/Qt3Support/Q3TextBrowser
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DomainDecomposition/RunTriangle/../../pihmLIBS/helpDialog/Qt3Support/Q3TextBrowser
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DomainDecomposition/RunTriangle/runtriangle.cpp
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DomainDecomposition/RunTriangle/runtriangle.cpp
 iostream
 -
 QtGui
 -
 runtriangle.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DomainDecomposition/RunTriangle/runtriangle.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DomainDecomposition/RunTriangle/runtriangle.h
 fstream
 -
 ../../pihmLIBS/helpDialog/helpdialog.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DomainDecomposition/RunTriangle/../../pihmLIBS/helpDialog/helpdialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DomainDecomposition/RunTriangle/../../pihmLIBS/helpDialog/helpdialog.h
 triangle.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DomainDecomposition/RunTriangle/triangle.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DomainDecomposition/RunTriangle/triangle.h
 fstream
 -
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DomainDecomposition/RunTriangle/runtriangle.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DomainDecomposition/RunTriangle/runtriangle.h
 ui_runtriangle.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DomainDecomposition/RunTriangle/ui_runtriangle.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DomainDecomposition/RunTriangle/ui_runtriangle.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DomainDecomposition/RunTriangle/triangle.cpp
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DomainDecomposition/RunTriangle/triangle.cpp
 stdio.h
 -
 stdlib.h
@@ -3404,17 +3844,17 @@ float.h
 fpu_control.h
 -
 triangle.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DomainDecomposition/RunTriangle/triangle.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DomainDecomposition/RunTriangle/triangle.h
 triangle.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DomainDecomposition/RunTriangle/triangle.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DomainDecomposition/RunTriangle/triangle.h
 triangle.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DomainDecomposition/RunTriangle/triangle.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DomainDecomposition/RunTriangle/triangle.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DomainDecomposition/RunTriangle/triangle.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DomainDecomposition/RunTriangle/triangle.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DomainDecomposition/RunTriangle/ui_runtriangle.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DomainDecomposition/RunTriangle/ui_runtriangle.h
 Qt3Support/Q3ButtonGroup
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DomainDecomposition/RunTriangle/Qt3Support/Q3ButtonGroup
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DomainDecomposition/RunTriangle/Qt3Support/Q3ButtonGroup
 QtCore/QVariant
 -
 QtGui/QAction
@@ -3436,19 +3876,33 @@ QtGui/QPushButton
 Qt3Support/Q3MimeSourceFactory
 -
 Qt3Support/Q3TextBrowser
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DomainDecomposition/RunTriangle/Qt3Support/Q3TextBrowser
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DomainDecomposition/RunTriangle/Qt3Support/Q3TextBrowser
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/Help/About/about.cpp
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/Help/About/about.cpp
 QtGui
 -
 about.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/Help/About/about.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/Help/About/about.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/Help/About/about.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/Help/About/about.h
 ui_about.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/Help/About/ui_about.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/Help/About/ui_about.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/PIHM_v2.0/f.cpp
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/MyNewThread.cpp
+MyNewthread.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/MyNewthread.h
+RunPIHM/runpihm.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RunPIHM/runpihm.h
+iostream
+-
+
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/MyNewthread.h
+QThread
+-
+./PIHM_v2.0/pihm.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/./PIHM_v2.0/pihm.h
+
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/PIHM_v2.0/f.cpp
 iostream
 -
 stdio.h
@@ -3460,13 +3914,13 @@ math.h
 string.h
 -
 nvector_serial.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/PIHM_v2.0/nvector_serial.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/PIHM_v2.0/nvector_serial.h
 sundials_types.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/PIHM_v2.0/sundials_types.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/PIHM_v2.0/sundials_types.h
 pihm.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/PIHM_v2.0/pihm.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/PIHM_v2.0/pihm.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/PIHM_v2.0/initialize.cpp
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/PIHM_v2.0/initialize.cpp
 QtGlobal
 -
 QErrorMessage
@@ -3480,13 +3934,13 @@ math.h
 string.h
 -
 sundials_types.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/PIHM_v2.0/sundials_types.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/PIHM_v2.0/sundials_types.h
 nvector_serial.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/PIHM_v2.0/nvector_serial.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/PIHM_v2.0/nvector_serial.h
 pihm.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/PIHM_v2.0/pihm.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/PIHM_v2.0/pihm.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/PIHM_v2.0/is_sm_et.cpp
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/PIHM_v2.0/is_sm_et.cpp
 iostream
 -
 stdio.h
@@ -3498,21 +3952,21 @@ math.h
 string.h
 -
 nvector_serial.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/PIHM_v2.0/nvector_serial.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/PIHM_v2.0/nvector_serial.h
 sundials_types.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/PIHM_v2.0/sundials_types.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/PIHM_v2.0/sundials_types.h
 pihm.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/PIHM_v2.0/pihm.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/PIHM_v2.0/pihm.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/PIHM_v2.0/is_sm_et.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/PIHM_v2.0/is_sm_et.h
 sundials_types.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/PIHM_v2.0/sundials_types.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/PIHM_v2.0/sundials_types.h
 nvector_serial.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/PIHM_v2.0/nvector_serial.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/PIHM_v2.0/nvector_serial.h
 pihm.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/PIHM_v2.0/pihm.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/PIHM_v2.0/pihm.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/PIHM_v2.0/pihm.cpp
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/PIHM_v2.0/pihm.cpp
 stdio.h
 -
 stdlib.h
@@ -3524,39 +3978,41 @@ string.h
 time.h
 -
 sundials_types.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/PIHM_v2.0/sundials_types.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/PIHM_v2.0/sundials_types.h
 cvode.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/PIHM_v2.0/cvode.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/PIHM_v2.0/cvode.h
 cvode_spgmr.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/PIHM_v2.0/cvode_spgmr.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/PIHM_v2.0/cvode_spgmr.h
 sundials_smalldense.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/PIHM_v2.0/sundials_smalldense.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/PIHM_v2.0/sundials_smalldense.h
 nvector_serial.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/PIHM_v2.0/nvector_serial.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/PIHM_v2.0/nvector_serial.h
 sundials_math.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/PIHM_v2.0/sundials_math.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/PIHM_v2.0/sundials_math.h
 cvode_dense.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/PIHM_v2.0/cvode_dense.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/PIHM_v2.0/cvode_dense.h
 sundials_dense.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/PIHM_v2.0/sundials_dense.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/PIHM_v2.0/sundials_dense.h
 pihm.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/PIHM_v2.0/pihm.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/PIHM_v2.0/pihm.h
 is_sm_et.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/PIHM_v2.0/is_sm_et.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/PIHM_v2.0/is_sm_et.h
 update.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/PIHM_v2.0/update.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/PIHM_v2.0/update.h
 iostream
+-
+fstream
 -
 QtGui/QProgressBar
 -
 progress.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/PIHM_v2.0/progress.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/PIHM_v2.0/progress.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/PIHM_v2.0/pihm.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/PIHM_v2.0/pihm.h
 sundials_types.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/PIHM_v2.0/sundials_types.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/PIHM_v2.0/sundials_types.h
 nvector_serial.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/PIHM_v2.0/nvector_serial.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/PIHM_v2.0/nvector_serial.h
 stdio.h
 -
 iostream
@@ -3564,7 +4020,7 @@ iostream
 QtGui/QProgressBar
 -
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/PIHM_v2.0/print.cpp
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/PIHM_v2.0/print.cpp
 stdio.h
 -
 stdlib.h
@@ -3574,23 +4030,23 @@ math.h
 string.h
 -
 nvector_serial.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/PIHM_v2.0/nvector_serial.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/PIHM_v2.0/nvector_serial.h
 sundials_types.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/PIHM_v2.0/sundials_types.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/PIHM_v2.0/sundials_types.h
 pihm.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/PIHM_v2.0/pihm.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/PIHM_v2.0/pihm.h
 cvode.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/PIHM_v2.0/cvode.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/PIHM_v2.0/cvode.h
 cvode_dense.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/PIHM_v2.0/cvode_dense.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/PIHM_v2.0/cvode_dense.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/PIHM_v2.0/progress.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/PIHM_v2.0/progress.h
 QtGui/QProgressBar
 -
 QtGui
 -
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/PIHM_v2.0/read_alloc.cpp
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/PIHM_v2.0/read_alloc.cpp
 stdio.h
 -
 stdlib.h
@@ -3600,11 +4056,11 @@ math.h
 string.h
 -
 sundials_types.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/PIHM_v2.0/sundials_types.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/PIHM_v2.0/sundials_types.h
 pihm.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/PIHM_v2.0/pihm.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/PIHM_v2.0/pihm.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/PIHM_v2.0/update.cpp
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/PIHM_v2.0/update.cpp
 stdio.h
 -
 stdlib.h
@@ -3614,25 +4070,25 @@ math.h
 string.h
 -
 nvector_serial.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/PIHM_v2.0/nvector_serial.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/PIHM_v2.0/nvector_serial.h
 sundials_types.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/PIHM_v2.0/sundials_types.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/PIHM_v2.0/sundials_types.h
 pihm.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/PIHM_v2.0/pihm.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/PIHM_v2.0/pihm.h
 update.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/PIHM_v2.0/update.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/PIHM_v2.0/update.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/PIHM_v2.0/update.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/PIHM_v2.0/update.h
 sundials_types.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/PIHM_v2.0/sundials_types.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/PIHM_v2.0/sundials_types.h
 pihm.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/PIHM_v2.0/pihm.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/PIHM_v2.0/pihm.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/CatchmentGrid/../../pihmLIBS/helpDialog/helpdialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/CatchmentGrid/../../pihmLIBS/helpDialog/helpdialog.h
 ui_helpdialog.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/CatchmentGrid/../../pihmLIBS/helpDialog/ui_helpdialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/CatchmentGrid/../../pihmLIBS/helpDialog/ui_helpdialog.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/CatchmentGrid/../../pihmLIBS/helpDialog/ui_helpdialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/CatchmentGrid/../../pihmLIBS/helpDialog/ui_helpdialog.h
 QtCore/QVariant
 -
 QtGui/QAction
@@ -3652,17 +4108,17 @@ QtGui/QWidget
 Qt3Support/Q3MimeSourceFactory
 -
 Qt3Support/Q3TextBrowser
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/CatchmentGrid/../../pihmLIBS/helpDialog/Qt3Support/Q3TextBrowser
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/CatchmentGrid/../../pihmLIBS/helpDialog/Qt3Support/Q3TextBrowser
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/CatchmentGrid/../../pihmRasterLIBS/aread8.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/CatchmentGrid/../../pihmRasterLIBS/aread8.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/CatchmentGrid/../../pihmRasterLIBS/catProcessing.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/CatchmentGrid/../../pihmRasterLIBS/catProcessing.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/CatchmentGrid/../../pihmRasterLIBS/flood.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/CatchmentGrid/../../pihmRasterLIBS/flood.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/CatchmentGrid/../../pihmRasterLIBS/gioapi.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/CatchmentGrid/../../pihmRasterLIBS/gioapi.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/CatchmentGrid/../../pihmRasterLIBS/gridio.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/CatchmentGrid/../../pihmRasterLIBS/gridio.h
 stdio.h
 -
 string.h
@@ -3676,41 +4132,43 @@ limits.h
 math.h
 -
 gioapi.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/CatchmentGrid/../../pihmRasterLIBS/gioapi.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/CatchmentGrid/../../pihmRasterLIBS/gioapi.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/CatchmentGrid/../../pihmRasterLIBS/lsm.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/CatchmentGrid/../../pihmRasterLIBS/lsm.h
 gridio.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/CatchmentGrid/../../pihmRasterLIBS/gridio.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/CatchmentGrid/../../pihmRasterLIBS/gridio.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/CatchmentGrid/../../pihmRasterLIBS/setdir.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/CatchmentGrid/../../pihmRasterLIBS/setdir.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/CatchmentGrid/catchmentgrid.cpp
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/CatchmentGrid/catchmentgrid.cpp
 QtGui
 -
 catchmentgrid.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/CatchmentGrid/catchmentgrid.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/CatchmentGrid/catchmentgrid.h
 ../../pihmRasterLIBS/lsm.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/CatchmentGrid/../../pihmRasterLIBS/lsm.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/CatchmentGrid/../../pihmRasterLIBS/lsm.h
 ../../pihmRasterLIBS/flood.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/CatchmentGrid/../../pihmRasterLIBS/flood.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/CatchmentGrid/../../pihmRasterLIBS/flood.h
 ../../pihmRasterLIBS/setdir.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/CatchmentGrid/../../pihmRasterLIBS/setdir.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/CatchmentGrid/../../pihmRasterLIBS/setdir.h
 ../../pihmRasterLIBS/aread8.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/CatchmentGrid/../../pihmRasterLIBS/aread8.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/CatchmentGrid/../../pihmRasterLIBS/aread8.h
 ../../pihmRasterLIBS/catProcessing.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/CatchmentGrid/../../pihmRasterLIBS/catProcessing.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/CatchmentGrid/../../pihmRasterLIBS/catProcessing.h
 ../../pihmLIBS/helpDialog/helpdialog.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/CatchmentGrid/../../pihmLIBS/helpDialog/helpdialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/CatchmentGrid/../../pihmLIBS/helpDialog/helpdialog.h
 fstream
 -
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/CatchmentGrid/catchmentgrid.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/CatchmentGrid/catchmentgrid.h
 ui_catchmentgrid.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/CatchmentGrid/ui_catchmentgrid.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/CatchmentGrid/ui_catchmentgrid.h
+qgisinterface.h
+-
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/CatchmentGrid/ui_catchmentgrid.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/CatchmentGrid/ui_catchmentgrid.h
 Qt3Support/Q3ButtonGroup
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/CatchmentGrid/Qt3Support/Q3ButtonGroup
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/CatchmentGrid/Qt3Support/Q3ButtonGroup
 QtCore/QVariant
 -
 QtGui/QAction
@@ -3732,13 +4190,13 @@ QtGui/QPushButton
 Qt3Support/Q3MimeSourceFactory
 -
 Qt3Support/Q3TextBrowser
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/CatchmentGrid/Qt3Support/Q3TextBrowser
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/CatchmentGrid/Qt3Support/Q3TextBrowser
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/CatchmentPolygon/../../pihmLIBS/helpDialog/helpdialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/CatchmentPolygon/../../pihmLIBS/helpDialog/helpdialog.h
 ui_helpdialog.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/CatchmentPolygon/../../pihmLIBS/helpDialog/ui_helpdialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/CatchmentPolygon/../../pihmLIBS/helpDialog/ui_helpdialog.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/CatchmentPolygon/../../pihmLIBS/helpDialog/ui_helpdialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/CatchmentPolygon/../../pihmLIBS/helpDialog/ui_helpdialog.h
 QtCore/QVariant
 -
 QtGui/QAction
@@ -3758,13 +4216,13 @@ QtGui/QWidget
 Qt3Support/Q3MimeSourceFactory
 -
 Qt3Support/Q3TextBrowser
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/CatchmentPolygon/../../pihmLIBS/helpDialog/Qt3Support/Q3TextBrowser
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/CatchmentPolygon/../../pihmLIBS/helpDialog/Qt3Support/Q3TextBrowser
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/CatchmentPolygon/../../pihmRasterLIBS/catPoly.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/CatchmentPolygon/../../pihmRasterLIBS/catPoly.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/CatchmentPolygon/../../pihmRasterLIBS/gioapi.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/CatchmentPolygon/../../pihmRasterLIBS/gioapi.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/CatchmentPolygon/../../pihmRasterLIBS/gridio.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/CatchmentPolygon/../../pihmRasterLIBS/gridio.h
 stdio.h
 -
 string.h
@@ -3778,33 +4236,37 @@ limits.h
 math.h
 -
 gioapi.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/CatchmentPolygon/../../pihmRasterLIBS/gioapi.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/CatchmentPolygon/../../pihmRasterLIBS/gioapi.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/CatchmentPolygon/../../pihmRasterLIBS/lsm.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/CatchmentPolygon/../../pihmRasterLIBS/lsm.h
 gridio.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/CatchmentPolygon/../../pihmRasterLIBS/gridio.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/CatchmentPolygon/../../pihmRasterLIBS/gridio.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/CatchmentPolygon/catchmentpolygon.cpp
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/CatchmentPolygon/catchmentpolygon.cpp
 QtGui
 -
 catchmentpolygon.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/CatchmentPolygon/catchmentpolygon.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/CatchmentPolygon/catchmentpolygon.h
 ../../pihmRasterLIBS/lsm.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/CatchmentPolygon/../../pihmRasterLIBS/lsm.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/CatchmentPolygon/../../pihmRasterLIBS/lsm.h
 ../../pihmRasterLIBS/catPoly.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/CatchmentPolygon/../../pihmRasterLIBS/catPoly.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/CatchmentPolygon/../../pihmRasterLIBS/catPoly.h
 ../../pihmLIBS/helpDialog/helpdialog.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/CatchmentPolygon/../../pihmLIBS/helpDialog/helpdialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/CatchmentPolygon/../../pihmLIBS/helpDialog/helpdialog.h
+iostream
+-
 fstream
 -
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/CatchmentPolygon/catchmentpolygon.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/CatchmentPolygon/catchmentpolygon.h
 ui_catchmentpolygon.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/CatchmentPolygon/ui_catchmentpolygon.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/CatchmentPolygon/ui_catchmentpolygon.h
+qgisinterface.h
+-
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/CatchmentPolygon/ui_catchmentpolygon.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/CatchmentPolygon/ui_catchmentpolygon.h
 Qt3Support/Q3ButtonGroup
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/CatchmentPolygon/Qt3Support/Q3ButtonGroup
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/CatchmentPolygon/Qt3Support/Q3ButtonGroup
 QtCore/QVariant
 -
 QtGui/QAction
@@ -3826,17 +4288,41 @@ QtGui/QPushButton
 Qt3Support/Q3MimeSourceFactory
 -
 Qt3Support/Q3TextBrowser
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/CatchmentPolygon/Qt3Support/Q3TextBrowser
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/CatchmentPolygon/Qt3Support/Q3TextBrowser
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/FillPits/../../../qgisplugin.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/FillPits/../../../qgisplugin.h
 QString
 -
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/FillPits/../../pihmLIBS/helpDialog/helpdialog.h
-ui_helpdialog.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/FillPits/../../pihmLIBS/helpDialog/ui_helpdialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/FillPits/../../RunPIHM/.././PIHM_v2.0/pihm.h
+sundials_types.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/FillPits/../../RunPIHM/.././PIHM_v2.0/sundials_types.h
+nvector_serial.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/FillPits/../../RunPIHM/.././PIHM_v2.0/nvector_serial.h
+stdio.h
+-
+iostream
+-
+QtGui/QProgressBar
+-
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/FillPits/../../pihmLIBS/helpDialog/ui_helpdialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/FillPits/../../RunPIHM/../MyNewThread.h
+QThread
+-
+./PIHM_v2.0/pihm.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/FillPits/../../RunPIHM/.././PIHM_v2.0/pihm.h
+
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/FillPits/../../RunPIHM/runpihm.h
+ui_runpihm.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/FillPits/../../RunPIHM/ui_runpihm.h
+../MyNewThread.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/FillPits/../../RunPIHM/../MyNewThread.h
+
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/FillPits/../../pihmLIBS/helpDialog/helpdialog.h
+ui_helpdialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/FillPits/../../pihmLIBS/helpDialog/ui_helpdialog.h
+
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/FillPits/../../pihmLIBS/helpDialog/ui_helpdialog.h
 QtCore/QVariant
 -
 QtGui/QAction
@@ -3856,13 +4342,13 @@ QtGui/QWidget
 Qt3Support/Q3MimeSourceFactory
 -
 Qt3Support/Q3TextBrowser
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/FillPits/../../pihmLIBS/helpDialog/Qt3Support/Q3TextBrowser
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/FillPits/../../pihmLIBS/helpDialog/Qt3Support/Q3TextBrowser
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/FillPits/../../pihmLIBS/homeDir.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/FillPits/../../pihmLIBS/homeDir.h
 qfile.h
 -
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/FillPits/../../pihmRasterLIBS/bin2ascii.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/FillPits/../../pihmRasterLIBS/bin2ascii.h
 iostream
 -
 gdal.h
@@ -3874,37 +4360,47 @@ fstream
 iomanip
 -
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/FillPits/../../pihmRasterLIBS/flood.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/FillPits/../../pihmRasterLIBS/flood.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/FillPits/../../pihmgis.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/FillPits/../../pihmgis.h
 QObject
 -
+QThread
+-
+RunPIHM/runpihm.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/FillPits/../../RunPIHM/runpihm.h
 ../qgisplugin.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/FillPits/../../../qgisplugin.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/FillPits/../../../qgisplugin.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/FillPits/fillpits.cpp
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/FillPits/fillpits.cpp
 QtGui
 -
 fillpits.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/FillPits/fillpits.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/FillPits/fillpits.h
 ../../pihmRasterLIBS/flood.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/FillPits/../../pihmRasterLIBS/flood.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/FillPits/../../pihmRasterLIBS/flood.h
 ../../pihmRasterLIBS/bin2ascii.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/FillPits/../../pihmRasterLIBS/bin2ascii.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/FillPits/../../pihmRasterLIBS/bin2ascii.h
 ../../pihmLIBS/helpDialog/helpdialog.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/FillPits/../../pihmLIBS/helpDialog/helpdialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/FillPits/../../pihmLIBS/helpDialog/helpdialog.h
 ../../pihmgis.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/FillPits/../../pihmgis.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/FillPits/../../pihmgis.h
 ../../pihmLIBS/homeDir.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/FillPits/../../pihmLIBS/homeDir.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/FillPits/../../pihmLIBS/homeDir.h
+qgsrasterlayer.h
+-
 fstream
 -
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/FillPits/fillpits.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/FillPits/fillpits.h
 ui_fillpits.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/FillPits/ui_fillpits.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/FillPits/ui_fillpits.h
+qgisapp.h
+-
+qgisinterface.h
+-
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/FillPits/ui_fillpits.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/FillPits/ui_fillpits.h
 Qt3Support/Q3ButtonGroup
 -
 Qt3Support/Q3TextBrowser
@@ -3930,11 +4426,11 @@ QtGui/QPushButton
 Qt3Support/Q3MimeSourceFactory
 -
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/FlowGrid/../../pihmLIBS/helpDialog/helpdialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/FlowGrid/../../pihmLIBS/helpDialog/helpdialog.h
 ui_helpdialog.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/FlowGrid/../../pihmLIBS/helpDialog/ui_helpdialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/FlowGrid/../../pihmLIBS/helpDialog/ui_helpdialog.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/FlowGrid/../../pihmLIBS/helpDialog/ui_helpdialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/FlowGrid/../../pihmLIBS/helpDialog/ui_helpdialog.h
 QtCore/QVariant
 -
 QtGui/QAction
@@ -3954,15 +4450,15 @@ QtGui/QWidget
 Qt3Support/Q3MimeSourceFactory
 -
 Qt3Support/Q3TextBrowser
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/FlowGrid/../../pihmLIBS/helpDialog/Qt3Support/Q3TextBrowser
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/FlowGrid/../../pihmLIBS/helpDialog/Qt3Support/Q3TextBrowser
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/FlowGrid/../../pihmRasterLIBS/aread8.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/FlowGrid/../../pihmRasterLIBS/aread8.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/FlowGrid/../../pihmRasterLIBS/flood.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/FlowGrid/../../pihmRasterLIBS/flood.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/FlowGrid/../../pihmRasterLIBS/gioapi.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/FlowGrid/../../pihmRasterLIBS/gioapi.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/FlowGrid/../../pihmRasterLIBS/gridio.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/FlowGrid/../../pihmRasterLIBS/gridio.h
 stdio.h
 -
 string.h
@@ -3976,39 +4472,41 @@ limits.h
 math.h
 -
 gioapi.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/FlowGrid/../../pihmRasterLIBS/gioapi.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/FlowGrid/../../pihmRasterLIBS/gioapi.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/FlowGrid/../../pihmRasterLIBS/lsm.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/FlowGrid/../../pihmRasterLIBS/lsm.h
 gridio.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/FlowGrid/../../pihmRasterLIBS/gridio.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/FlowGrid/../../pihmRasterLIBS/gridio.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/FlowGrid/../../pihmRasterLIBS/setdir.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/FlowGrid/../../pihmRasterLIBS/setdir.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/FlowGrid/flowgrid.cpp
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/FlowGrid/flowgrid.cpp
 QtGui
 -
 flowgrid.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/FlowGrid/flowgrid.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/FlowGrid/flowgrid.h
 ../../pihmRasterLIBS/lsm.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/FlowGrid/../../pihmRasterLIBS/lsm.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/FlowGrid/../../pihmRasterLIBS/lsm.h
 ../../pihmRasterLIBS/flood.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/FlowGrid/../../pihmRasterLIBS/flood.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/FlowGrid/../../pihmRasterLIBS/flood.h
 ../../pihmRasterLIBS/setdir.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/FlowGrid/../../pihmRasterLIBS/setdir.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/FlowGrid/../../pihmRasterLIBS/setdir.h
 ../../pihmRasterLIBS/aread8.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/FlowGrid/../../pihmRasterLIBS/aread8.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/FlowGrid/../../pihmRasterLIBS/aread8.h
 ../../pihmLIBS/helpDialog/helpdialog.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/FlowGrid/../../pihmLIBS/helpDialog/helpdialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/FlowGrid/../../pihmLIBS/helpDialog/helpdialog.h
 fstream
 -
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/FlowGrid/flowgrid.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/FlowGrid/flowgrid.h
 ui_flowgrid.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/FlowGrid/ui_flowgrid.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/FlowGrid/ui_flowgrid.h
+qgisinterface.h
+-
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/FlowGrid/ui_flowgrid.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/FlowGrid/ui_flowgrid.h
 Qt3Support/Q3ButtonGroup
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/FlowGrid/Qt3Support/Q3ButtonGroup
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/FlowGrid/Qt3Support/Q3ButtonGroup
 QtCore/QVariant
 -
 QtGui/QAction
@@ -4030,13 +4528,13 @@ QtGui/QPushButton
 Qt3Support/Q3MimeSourceFactory
 -
 Qt3Support/Q3TextBrowser
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/FlowGrid/Qt3Support/Q3TextBrowser
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/FlowGrid/Qt3Support/Q3TextBrowser
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/LinkGrid/../../pihmLIBS/helpDialog/helpdialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/LinkGrid/../../pihmLIBS/helpDialog/helpdialog.h
 ui_helpdialog.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/LinkGrid/../../pihmLIBS/helpDialog/ui_helpdialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/LinkGrid/../../pihmLIBS/helpDialog/ui_helpdialog.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/LinkGrid/../../pihmLIBS/helpDialog/ui_helpdialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/LinkGrid/../../pihmLIBS/helpDialog/ui_helpdialog.h
 QtCore/QVariant
 -
 QtGui/QAction
@@ -4056,15 +4554,15 @@ QtGui/QWidget
 Qt3Support/Q3MimeSourceFactory
 -
 Qt3Support/Q3TextBrowser
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/LinkGrid/../../pihmLIBS/helpDialog/Qt3Support/Q3TextBrowser
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/LinkGrid/../../pihmLIBS/helpDialog/Qt3Support/Q3TextBrowser
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/LinkGrid/../../pihmRasterLIBS/aread8.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/LinkGrid/../../pihmRasterLIBS/aread8.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/LinkGrid/../../pihmRasterLIBS/flood.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/LinkGrid/../../pihmRasterLIBS/flood.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/LinkGrid/../../pihmRasterLIBS/gioapi.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/LinkGrid/../../pihmRasterLIBS/gioapi.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/LinkGrid/../../pihmRasterLIBS/gridio.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/LinkGrid/../../pihmRasterLIBS/gridio.h
 stdio.h
 -
 string.h
@@ -4078,43 +4576,45 @@ limits.h
 math.h
 -
 gioapi.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/LinkGrid/../../pihmRasterLIBS/gioapi.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/LinkGrid/../../pihmRasterLIBS/gioapi.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/LinkGrid/../../pihmRasterLIBS/lsm.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/LinkGrid/../../pihmRasterLIBS/lsm.h
 gridio.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/LinkGrid/../../pihmRasterLIBS/gridio.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/LinkGrid/../../pihmRasterLIBS/gridio.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/LinkGrid/../../pihmRasterLIBS/setdir.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/LinkGrid/../../pihmRasterLIBS/setdir.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/LinkGrid/../../pihmRasterLIBS/streamSegmentation.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/LinkGrid/../../pihmRasterLIBS/streamSegmentation.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/LinkGrid/linkgrid.cpp
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/LinkGrid/linkgrid.cpp
 QtGui
 -
 linkgrid.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/LinkGrid/linkgrid.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/LinkGrid/linkgrid.h
 ../../pihmRasterLIBS/lsm.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/LinkGrid/../../pihmRasterLIBS/lsm.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/LinkGrid/../../pihmRasterLIBS/lsm.h
 ../../pihmRasterLIBS/flood.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/LinkGrid/../../pihmRasterLIBS/flood.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/LinkGrid/../../pihmRasterLIBS/flood.h
 ../../pihmRasterLIBS/setdir.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/LinkGrid/../../pihmRasterLIBS/setdir.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/LinkGrid/../../pihmRasterLIBS/setdir.h
 ../../pihmRasterLIBS/aread8.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/LinkGrid/../../pihmRasterLIBS/aread8.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/LinkGrid/../../pihmRasterLIBS/aread8.h
 ../../pihmRasterLIBS/streamSegmentation.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/LinkGrid/../../pihmRasterLIBS/streamSegmentation.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/LinkGrid/../../pihmRasterLIBS/streamSegmentation.h
 ../../pihmLIBS/helpDialog/helpdialog.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/LinkGrid/../../pihmLIBS/helpDialog/helpdialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/LinkGrid/../../pihmLIBS/helpDialog/helpdialog.h
 fstream
 -
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/LinkGrid/linkgrid.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/LinkGrid/linkgrid.h
 ui_linkgrid.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/LinkGrid/ui_linkgrid.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/LinkGrid/ui_linkgrid.h
+qgisinterface.h
+-
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/LinkGrid/ui_linkgrid.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/LinkGrid/ui_linkgrid.h
 Qt3Support/Q3ButtonGroup
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/LinkGrid/Qt3Support/Q3ButtonGroup
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/LinkGrid/Qt3Support/Q3ButtonGroup
 QtCore/QVariant
 -
 QtGui/QAction
@@ -4136,13 +4636,13 @@ QtGui/QPushButton
 Qt3Support/Q3MimeSourceFactory
 -
 Qt3Support/Q3TextBrowser
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/LinkGrid/Qt3Support/Q3TextBrowser
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/LinkGrid/Qt3Support/Q3TextBrowser
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/StreamGrid/../../pihmLIBS/helpDialog/helpdialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/StreamGrid/../../pihmLIBS/helpDialog/helpdialog.h
 ui_helpdialog.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/StreamGrid/../../pihmLIBS/helpDialog/ui_helpdialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/StreamGrid/../../pihmLIBS/helpDialog/ui_helpdialog.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/StreamGrid/../../pihmLIBS/helpDialog/ui_helpdialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/StreamGrid/../../pihmLIBS/helpDialog/ui_helpdialog.h
 QtCore/QVariant
 -
 QtGui/QAction
@@ -4162,15 +4662,15 @@ QtGui/QWidget
 Qt3Support/Q3MimeSourceFactory
 -
 Qt3Support/Q3TextBrowser
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/StreamGrid/../../pihmLIBS/helpDialog/Qt3Support/Q3TextBrowser
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/StreamGrid/../../pihmLIBS/helpDialog/Qt3Support/Q3TextBrowser
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/StreamGrid/../../pihmRasterLIBS/aread8.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/StreamGrid/../../pihmRasterLIBS/aread8.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/StreamGrid/../../pihmRasterLIBS/flood.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/StreamGrid/../../pihmRasterLIBS/flood.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/StreamGrid/../../pihmRasterLIBS/gioapi.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/StreamGrid/../../pihmRasterLIBS/gioapi.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/StreamGrid/../../pihmRasterLIBS/gridio.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/StreamGrid/../../pihmRasterLIBS/gridio.h
 stdio.h
 -
 string.h
@@ -4184,47 +4684,49 @@ limits.h
 math.h
 -
 gioapi.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/StreamGrid/../../pihmRasterLIBS/gioapi.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/StreamGrid/../../pihmRasterLIBS/gioapi.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/StreamGrid/../../pihmRasterLIBS/lsm.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/StreamGrid/../../pihmRasterLIBS/lsm.h
 gridio.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/StreamGrid/../../pihmRasterLIBS/gridio.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/StreamGrid/../../pihmRasterLIBS/gridio.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/StreamGrid/../../pihmRasterLIBS/setdir.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/StreamGrid/../../pihmRasterLIBS/setdir.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/StreamGrid/../../pihmRasterLIBS/streamDefinition.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/StreamGrid/../../pihmRasterLIBS/streamDefinition.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/StreamGrid/../../pihmRasterLIBS/streamSegmentation.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/StreamGrid/../../pihmRasterLIBS/streamSegmentation.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/StreamGrid/streamgrid.cpp
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/StreamGrid/streamgrid.cpp
 QtGui
 -
 streamgrid.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/StreamGrid/streamgrid.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/StreamGrid/streamgrid.h
 ../../pihmRasterLIBS/lsm.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/StreamGrid/../../pihmRasterLIBS/lsm.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/StreamGrid/../../pihmRasterLIBS/lsm.h
 ../../pihmRasterLIBS/flood.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/StreamGrid/../../pihmRasterLIBS/flood.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/StreamGrid/../../pihmRasterLIBS/flood.h
 ../../pihmRasterLIBS/setdir.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/StreamGrid/../../pihmRasterLIBS/setdir.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/StreamGrid/../../pihmRasterLIBS/setdir.h
 ../../pihmRasterLIBS/aread8.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/StreamGrid/../../pihmRasterLIBS/aread8.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/StreamGrid/../../pihmRasterLIBS/aread8.h
 ../../pihmRasterLIBS/streamSegmentation.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/StreamGrid/../../pihmRasterLIBS/streamSegmentation.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/StreamGrid/../../pihmRasterLIBS/streamSegmentation.h
 ../../pihmRasterLIBS/streamDefinition.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/StreamGrid/../../pihmRasterLIBS/streamDefinition.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/StreamGrid/../../pihmRasterLIBS/streamDefinition.h
 ../../pihmLIBS/helpDialog/helpdialog.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/StreamGrid/../../pihmLIBS/helpDialog/helpdialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/StreamGrid/../../pihmLIBS/helpDialog/helpdialog.h
 fstream
 -
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/StreamGrid/streamgrid.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/StreamGrid/streamgrid.h
 ui_streamgrid.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/StreamGrid/ui_streamgrid.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/StreamGrid/ui_streamgrid.h
+qgisinterface.h
+-
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/StreamGrid/ui_streamgrid.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/StreamGrid/ui_streamgrid.h
 Qt3Support/Q3ButtonGroup
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/StreamGrid/Qt3Support/Q3ButtonGroup
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/StreamGrid/Qt3Support/Q3ButtonGroup
 QtCore/QVariant
 -
 QtGui/QAction
@@ -4246,13 +4748,13 @@ QtGui/QPushButton
 Qt3Support/Q3MimeSourceFactory
 -
 Qt3Support/Q3TextBrowser
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/StreamGrid/Qt3Support/Q3TextBrowser
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/StreamGrid/Qt3Support/Q3TextBrowser
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/StreamPolyLine/../../pihmLIBS/helpDialog/helpdialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/StreamPolyLine/../../pihmLIBS/helpDialog/helpdialog.h
 ui_helpdialog.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/StreamPolyLine/../../pihmLIBS/helpDialog/ui_helpdialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/StreamPolyLine/../../pihmLIBS/helpDialog/ui_helpdialog.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/StreamPolyLine/../../pihmLIBS/helpDialog/ui_helpdialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/StreamPolyLine/../../pihmLIBS/helpDialog/ui_helpdialog.h
 QtCore/QVariant
 -
 QtGui/QAction
@@ -4272,11 +4774,11 @@ QtGui/QWidget
 Qt3Support/Q3MimeSourceFactory
 -
 Qt3Support/Q3TextBrowser
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/StreamPolyLine/../../pihmLIBS/helpDialog/Qt3Support/Q3TextBrowser
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/StreamPolyLine/../../pihmLIBS/helpDialog/Qt3Support/Q3TextBrowser
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/StreamPolyLine/../../pihmRasterLIBS/gioapi.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/StreamPolyLine/../../pihmRasterLIBS/gioapi.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/StreamPolyLine/../../pihmRasterLIBS/gridio.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/StreamPolyLine/../../pihmRasterLIBS/gridio.h
 stdio.h
 -
 string.h
@@ -4290,35 +4792,39 @@ limits.h
 math.h
 -
 gioapi.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/StreamPolyLine/../../pihmRasterLIBS/gioapi.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/StreamPolyLine/../../pihmRasterLIBS/gioapi.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/StreamPolyLine/../../pihmRasterLIBS/lsm.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/StreamPolyLine/../../pihmRasterLIBS/lsm.h
 gridio.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/StreamPolyLine/../../pihmRasterLIBS/gridio.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/StreamPolyLine/../../pihmRasterLIBS/gridio.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/StreamPolyLine/../../pihmRasterLIBS/streamSegmentationShp.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/StreamPolyLine/../../pihmRasterLIBS/streamSegmentationShp.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/StreamPolyLine/streampolyline.cpp
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/StreamPolyLine/streampolyline.cpp
 QtGui
 -
 streampolyline.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/StreamPolyLine/streampolyline.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/StreamPolyLine/streampolyline.h
 ../../pihmRasterLIBS/lsm.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/StreamPolyLine/../../pihmRasterLIBS/lsm.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/StreamPolyLine/../../pihmRasterLIBS/lsm.h
 ../../pihmRasterLIBS/streamSegmentationShp.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/StreamPolyLine/../../pihmRasterLIBS/streamSegmentationShp.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/StreamPolyLine/../../pihmRasterLIBS/streamSegmentationShp.h
 ../../pihmLIBS/helpDialog/helpdialog.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/StreamPolyLine/../../pihmLIBS/helpDialog/helpdialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/StreamPolyLine/../../pihmLIBS/helpDialog/helpdialog.h
+iostream
+-
 fstream
 -
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/StreamPolyLine/streampolyline.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/StreamPolyLine/streampolyline.h
 ui_streampolyline.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/StreamPolyLine/ui_streampolyline.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/StreamPolyLine/ui_streampolyline.h
+qgisinterface.h
+-
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/StreamPolyLine/ui_streampolyline.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/StreamPolyLine/ui_streampolyline.h
 Qt3Support/Q3ButtonGroup
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/StreamPolyLine/Qt3Support/Q3ButtonGroup
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/StreamPolyLine/Qt3Support/Q3ButtonGroup
 QtCore/QVariant
 -
 QtGui/QAction
@@ -4340,17 +4846,13 @@ QtGui/QPushButton
 Qt3Support/Q3MimeSourceFactory
 -
 Qt3Support/Q3TextBrowser
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/StreamPolyLine/Qt3Support/Q3TextBrowser
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/StreamPolyLine/Qt3Support/Q3TextBrowser
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RunPIHM/../PIHM_v1.5/calib.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RunPIHM/.././PIHM_v2.0/pihm.h
 sundials_types.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RunPIHM/../PIHM_v1.5/sundials_types.h
-
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RunPIHM/../PIHM_v2.0/pihm.h
-sundials_types.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RunPIHM/../PIHM_v2.0/sundials_types.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RunPIHM/.././PIHM_v2.0/sundials_types.h
 nvector_serial.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RunPIHM/../PIHM_v2.0/nvector_serial.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RunPIHM/.././PIHM_v2.0/nvector_serial.h
 stdio.h
 -
 iostream
@@ -4358,11 +4860,33 @@ iostream
 QtGui/QProgressBar
 -
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RunPIHM/../pihmLIBS/helpDialog/helpdialog.h
-ui_helpdialog.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RunPIHM/../pihmLIBS/helpDialog/ui_helpdialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RunPIHM/../MyNewThread.h
+QThread
+-
+./PIHM_v2.0/pihm.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RunPIHM/.././PIHM_v2.0/pihm.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RunPIHM/../pihmLIBS/helpDialog/ui_helpdialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RunPIHM/../PIHM_v1.5/calib.h
+sundials_types.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RunPIHM/../PIHM_v1.5/sundials_types.h
+
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RunPIHM/../PIHM_v2.0/pihm.h
+sundials_types.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RunPIHM/../PIHM_v2.0/sundials_types.h
+nvector_serial.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RunPIHM/../PIHM_v2.0/nvector_serial.h
+stdio.h
+-
+iostream
+-
+QtGui/QProgressBar
+-
+
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RunPIHM/../pihmLIBS/helpDialog/helpdialog.h
+ui_helpdialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RunPIHM/../pihmLIBS/helpDialog/ui_helpdialog.h
+
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RunPIHM/../pihmLIBS/helpDialog/ui_helpdialog.h
 QtCore/QVariant
 -
 QtGui/QAction
@@ -4382,35 +4906,39 @@ QtGui/QWidget
 Qt3Support/Q3MimeSourceFactory
 -
 Qt3Support/Q3TextBrowser
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RunPIHM/../pihmLIBS/helpDialog/Qt3Support/Q3TextBrowser
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RunPIHM/../pihmLIBS/helpDialog/Qt3Support/Q3TextBrowser
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RunPIHM/runpihm.cpp
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RunPIHM/runpihm.cpp
 QtGui
 -
 QApplication
 -
 runpihm.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RunPIHM/runpihm.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RunPIHM/runpihm.h
 ../PIHM_v1.5/calib.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RunPIHM/../PIHM_v1.5/calib.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RunPIHM/../PIHM_v1.5/calib.h
 iomanip
 -
 fstream
 -
+../MyNewThread.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RunPIHM/../MyNewThread.h
 ../pihmLIBS/helpDialog/helpdialog.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RunPIHM/../pihmLIBS/helpDialog/helpdialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RunPIHM/../pihmLIBS/helpDialog/helpdialog.h
 ../PIHM_v2.0/pihm.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RunPIHM/../PIHM_v2.0/pihm.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RunPIHM/../PIHM_v2.0/pihm.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RunPIHM/runpihm.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RunPIHM/runpihm.h
 ui_runpihm.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RunPIHM/ui_runpihm.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RunPIHM/ui_runpihm.h
+../MyNewThread.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RunPIHM/../MyNewThread.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/VectorProcessing/MergeFeatures/../../pihmLIBS/helpDialog/helpdialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/VectorProcessing/MergeFeatures/../../pihmLIBS/helpDialog/helpdialog.h
 ui_helpdialog.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/VectorProcessing/MergeFeatures/../../pihmLIBS/helpDialog/ui_helpdialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/VectorProcessing/MergeFeatures/../../pihmLIBS/helpDialog/ui_helpdialog.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/VectorProcessing/MergeFeatures/../../pihmLIBS/helpDialog/ui_helpdialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/VectorProcessing/MergeFeatures/../../pihmLIBS/helpDialog/ui_helpdialog.h
 QtCore/QVariant
 -
 QtGui/QAction
@@ -4430,43 +4958,43 @@ QtGui/QWidget
 Qt3Support/Q3MimeSourceFactory
 -
 Qt3Support/Q3TextBrowser
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/VectorProcessing/MergeFeatures/../../pihmLIBS/helpDialog/Qt3Support/Q3TextBrowser
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/VectorProcessing/MergeFeatures/../../pihmLIBS/helpDialog/Qt3Support/Q3TextBrowser
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/VectorProcessing/MergeFeatures/../../pihmLIBS/mergeFeatures.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/VectorProcessing/MergeFeatures/../../pihmLIBS/mergeFeatures.h
 iostream
 -
 iomanip
 -
 shapefil.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/VectorProcessing/MergeFeatures/../../pihmLIBS/shapefil.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/VectorProcessing/MergeFeatures/../../pihmLIBS/shapefil.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/VectorProcessing/MergeFeatures/../../pihmLIBS/shapefil.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/VectorProcessing/MergeFeatures/../../pihmLIBS/shapefil.h
 stdio.h
 -
 dbmalloc.h
 -
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/VectorProcessing/MergeFeatures/mergefeaturesdialog.cpp
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/VectorProcessing/MergeFeatures/mergefeaturesdialog.cpp
 QtGui
 -
 mergefeaturesdialog.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/VectorProcessing/MergeFeatures/mergefeaturesdialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/VectorProcessing/MergeFeatures/mergefeaturesdialog.h
 ../../pihmLIBS/helpDialog/helpdialog.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/VectorProcessing/MergeFeatures/../../pihmLIBS/helpDialog/helpdialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/VectorProcessing/MergeFeatures/../../pihmLIBS/helpDialog/helpdialog.h
 ../../pihmLIBS/mergeFeatures.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/VectorProcessing/MergeFeatures/../../pihmLIBS/mergeFeatures.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/VectorProcessing/MergeFeatures/../../pihmLIBS/mergeFeatures.h
 ../../pihmLIBS/shapefil.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/VectorProcessing/MergeFeatures/../../pihmLIBS/shapefil.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/VectorProcessing/MergeFeatures/../../pihmLIBS/shapefil.h
 fstream
 -
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/VectorProcessing/MergeFeatures/mergefeaturesdialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/VectorProcessing/MergeFeatures/mergefeaturesdialog.h
 ui_mergefeaturesdialog.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/VectorProcessing/MergeFeatures/ui_mergefeaturesdialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/VectorProcessing/MergeFeatures/ui_mergefeaturesdialog.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/VectorProcessing/MergeFeatures/ui_mergefeaturesdialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/VectorProcessing/MergeFeatures/ui_mergefeaturesdialog.h
 Qt3Support/Q3ButtonGroup
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/VectorProcessing/MergeFeatures/Qt3Support/Q3ButtonGroup
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/VectorProcessing/MergeFeatures/Qt3Support/Q3ButtonGroup
 Qt3Support/Q3Header
 -
 QtCore/QVariant
@@ -4486,15 +5014,15 @@ QtGui/QLineEdit
 QtGui/QPushButton
 -
 Qt3Support/Q3Table
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/VectorProcessing/MergeFeatures/Qt3Support/Q3Table
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/VectorProcessing/MergeFeatures/Qt3Support/Q3Table
 Qt3Support/Q3TextBrowser
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/VectorProcessing/MergeFeatures/Qt3Support/Q3TextBrowser
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/VectorProcessing/MergeFeatures/Qt3Support/Q3TextBrowser
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/VectorProcessing/PolygonToPolyLine/../../pihmLIBS/helpDialog/helpdialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/VectorProcessing/PolygonToPolyLine/../../pihmLIBS/helpDialog/helpdialog.h
 ui_helpdialog.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/VectorProcessing/PolygonToPolyLine/../../pihmLIBS/helpDialog/ui_helpdialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/VectorProcessing/PolygonToPolyLine/../../pihmLIBS/helpDialog/ui_helpdialog.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/VectorProcessing/PolygonToPolyLine/../../pihmLIBS/helpDialog/ui_helpdialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/VectorProcessing/PolygonToPolyLine/../../pihmLIBS/helpDialog/ui_helpdialog.h
 QtCore/QVariant
 -
 QtGui/QAction
@@ -4514,9 +5042,9 @@ QtGui/QWidget
 Qt3Support/Q3MimeSourceFactory
 -
 Qt3Support/Q3TextBrowser
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/VectorProcessing/PolygonToPolyLine/../../pihmLIBS/helpDialog/Qt3Support/Q3TextBrowser
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/VectorProcessing/PolygonToPolyLine/../../pihmLIBS/helpDialog/Qt3Support/Q3TextBrowser
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/VectorProcessing/PolygonToPolyLine/../../pihmLIBS/polygonToPolyline.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/VectorProcessing/PolygonToPolyLine/../../pihmLIBS/polygonToPolyline.h
 iostream
 -
 fstream
@@ -4526,35 +5054,35 @@ iomanip
 math.h
 -
 shapefil.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/VectorProcessing/PolygonToPolyLine/../../pihmLIBS/shapefil.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/VectorProcessing/PolygonToPolyLine/../../pihmLIBS/shapefil.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/VectorProcessing/PolygonToPolyLine/../../pihmLIBS/shapefil.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/VectorProcessing/PolygonToPolyLine/../../pihmLIBS/shapefil.h
 stdio.h
 -
 dbmalloc.h
 -
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/VectorProcessing/PolygonToPolyLine/polygontopolylinedialog.cpp
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/VectorProcessing/PolygonToPolyLine/polygontopolylinedialog.cpp
 QtGui
 -
 polygontopolylinedialog.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/VectorProcessing/PolygonToPolyLine/polygontopolylinedialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/VectorProcessing/PolygonToPolyLine/polygontopolylinedialog.h
 ../../pihmLIBS/helpDialog/helpdialog.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/VectorProcessing/PolygonToPolyLine/../../pihmLIBS/helpDialog/helpdialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/VectorProcessing/PolygonToPolyLine/../../pihmLIBS/helpDialog/helpdialog.h
 ../../pihmLIBS/polygonToPolyline.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/VectorProcessing/PolygonToPolyLine/../../pihmLIBS/polygonToPolyline.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/VectorProcessing/PolygonToPolyLine/../../pihmLIBS/polygonToPolyline.h
 ../../pihmLIBS/shapefil.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/VectorProcessing/PolygonToPolyLine/../../pihmLIBS/shapefil.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/VectorProcessing/PolygonToPolyLine/../../pihmLIBS/shapefil.h
 fstream
 -
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/VectorProcessing/PolygonToPolyLine/polygontopolylinedialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/VectorProcessing/PolygonToPolyLine/polygontopolylinedialog.h
 ui_polygontopolylinedialog.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/VectorProcessing/PolygonToPolyLine/ui_polygontopolylinedialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/VectorProcessing/PolygonToPolyLine/ui_polygontopolylinedialog.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/VectorProcessing/PolygonToPolyLine/ui_polygontopolylinedialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/VectorProcessing/PolygonToPolyLine/ui_polygontopolylinedialog.h
 Qt3Support/Q3ButtonGroup
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/VectorProcessing/PolygonToPolyLine/Qt3Support/Q3ButtonGroup
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/VectorProcessing/PolygonToPolyLine/Qt3Support/Q3ButtonGroup
 Qt3Support/Q3Header
 -
 QtCore/QVariant
@@ -4570,15 +5098,15 @@ QtGui/QDialog
 QtGui/QPushButton
 -
 Qt3Support/Q3Table
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/VectorProcessing/PolygonToPolyLine/Qt3Support/Q3Table
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/VectorProcessing/PolygonToPolyLine/Qt3Support/Q3Table
 Qt3Support/Q3TextBrowser
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/VectorProcessing/PolygonToPolyLine/Qt3Support/Q3TextBrowser
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/VectorProcessing/PolygonToPolyLine/Qt3Support/Q3TextBrowser
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/VectorProcessing/SimplifyLine/../../pihmLIBS/helpDialog/helpdialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/VectorProcessing/SimplifyLine/../../pihmLIBS/helpDialog/helpdialog.h
 ui_helpdialog.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/VectorProcessing/SimplifyLine/../../pihmLIBS/helpDialog/ui_helpdialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/VectorProcessing/SimplifyLine/../../pihmLIBS/helpDialog/ui_helpdialog.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/VectorProcessing/SimplifyLine/../../pihmLIBS/helpDialog/ui_helpdialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/VectorProcessing/SimplifyLine/../../pihmLIBS/helpDialog/ui_helpdialog.h
 QtCore/QVariant
 -
 QtGui/QAction
@@ -4598,51 +5126,51 @@ QtGui/QWidget
 Qt3Support/Q3MimeSourceFactory
 -
 Qt3Support/Q3TextBrowser
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/VectorProcessing/SimplifyLine/../../pihmLIBS/helpDialog/Qt3Support/Q3TextBrowser
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/VectorProcessing/SimplifyLine/../../pihmLIBS/helpDialog/Qt3Support/Q3TextBrowser
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/VectorProcessing/SimplifyLine/../../pihmLIBS/shapefil.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/VectorProcessing/SimplifyLine/../../pihmLIBS/shapefil.h
 stdio.h
 -
 dbmalloc.h
 -
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/VectorProcessing/SimplifyLine/../../pihmLIBS/simplifyPolySHP.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/VectorProcessing/SimplifyLine/../../pihmLIBS/simplifyPolySHP.h
 iostream
 -
 iomanip
 -
 simplifyPolyline.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/VectorProcessing/SimplifyLine/../../pihmLIBS/simplifyPolyline.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/VectorProcessing/SimplifyLine/../../pihmLIBS/simplifyPolyline.h
 shapefil.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/VectorProcessing/SimplifyLine/../../pihmLIBS/shapefil.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/VectorProcessing/SimplifyLine/../../pihmLIBS/shapefil.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/VectorProcessing/SimplifyLine/../../pihmLIBS/simplifyPolyline.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/VectorProcessing/SimplifyLine/../../pihmLIBS/simplifyPolyline.h
 iostream
 -
 math.h
 -
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/VectorProcessing/SimplifyLine/simplifylinedialog.cpp
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/VectorProcessing/SimplifyLine/simplifylinedialog.cpp
 QtGui
 -
 simplifylinedialog.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/VectorProcessing/SimplifyLine/simplifylinedialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/VectorProcessing/SimplifyLine/simplifylinedialog.h
 ../../pihmLIBS/helpDialog/helpdialog.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/VectorProcessing/SimplifyLine/../../pihmLIBS/helpDialog/helpdialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/VectorProcessing/SimplifyLine/../../pihmLIBS/helpDialog/helpdialog.h
 ../../pihmLIBS/simplifyPolySHP.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/VectorProcessing/SimplifyLine/../../pihmLIBS/simplifyPolySHP.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/VectorProcessing/SimplifyLine/../../pihmLIBS/simplifyPolySHP.h
 ../../pihmLIBS/shapefil.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/VectorProcessing/SimplifyLine/../../pihmLIBS/shapefil.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/VectorProcessing/SimplifyLine/../../pihmLIBS/shapefil.h
 fstream
 -
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/VectorProcessing/SimplifyLine/simplifylinedialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/VectorProcessing/SimplifyLine/simplifylinedialog.h
 ui_simplifylinedialog.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/VectorProcessing/SimplifyLine/ui_simplifylinedialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/VectorProcessing/SimplifyLine/ui_simplifylinedialog.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/VectorProcessing/SimplifyLine/ui_simplifylinedialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/VectorProcessing/SimplifyLine/ui_simplifylinedialog.h
 Qt3Support/Q3ButtonGroup
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/VectorProcessing/SimplifyLine/Qt3Support/Q3ButtonGroup
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/VectorProcessing/SimplifyLine/Qt3Support/Q3ButtonGroup
 Qt3Support/Q3Header
 -
 QtCore/QVariant
@@ -4662,15 +5190,15 @@ QtGui/QLineEdit
 QtGui/QPushButton
 -
 Qt3Support/Q3Table
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/VectorProcessing/SimplifyLine/Qt3Support/Q3Table
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/VectorProcessing/SimplifyLine/Qt3Support/Q3Table
 Qt3Support/Q3TextBrowser
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/VectorProcessing/SimplifyLine/Qt3Support/Q3TextBrowser
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/VectorProcessing/SimplifyLine/Qt3Support/Q3TextBrowser
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/VectorProcessing/SplitLine/../../pihmLIBS/helpDialog/helpdialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/VectorProcessing/SplitLine/../../pihmLIBS/helpDialog/helpdialog.h
 ui_helpdialog.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/VectorProcessing/SplitLine/../../pihmLIBS/helpDialog/ui_helpdialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/VectorProcessing/SplitLine/../../pihmLIBS/helpDialog/ui_helpdialog.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/VectorProcessing/SplitLine/../../pihmLIBS/helpDialog/ui_helpdialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/VectorProcessing/SplitLine/../../pihmLIBS/helpDialog/ui_helpdialog.h
 QtCore/QVariant
 -
 QtGui/QAction
@@ -4690,43 +5218,43 @@ QtGui/QWidget
 Qt3Support/Q3MimeSourceFactory
 -
 Qt3Support/Q3TextBrowser
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/VectorProcessing/SplitLine/../../pihmLIBS/helpDialog/Qt3Support/Q3TextBrowser
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/VectorProcessing/SplitLine/../../pihmLIBS/helpDialog/Qt3Support/Q3TextBrowser
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/VectorProcessing/SplitLine/../../pihmLIBS/shapefil.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/VectorProcessing/SplitLine/../../pihmLIBS/shapefil.h
 stdio.h
 -
 dbmalloc.h
 -
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/VectorProcessing/SplitLine/../../pihmLIBS/splitLineAtVertices.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/VectorProcessing/SplitLine/../../pihmLIBS/splitLineAtVertices.h
 iostream
 -
 iomanip
 -
 shapefil.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/VectorProcessing/SplitLine/../../pihmLIBS/shapefil.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/VectorProcessing/SplitLine/../../pihmLIBS/shapefil.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/VectorProcessing/SplitLine/splitlinedialog.cpp
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/VectorProcessing/SplitLine/splitlinedialog.cpp
 QtGui
 -
 splitlinedialog.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/VectorProcessing/SplitLine/splitlinedialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/VectorProcessing/SplitLine/splitlinedialog.h
 ../../pihmLIBS/helpDialog/helpdialog.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/VectorProcessing/SplitLine/../../pihmLIBS/helpDialog/helpdialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/VectorProcessing/SplitLine/../../pihmLIBS/helpDialog/helpdialog.h
 ../../pihmLIBS/splitLineAtVertices.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/VectorProcessing/SplitLine/../../pihmLIBS/splitLineAtVertices.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/VectorProcessing/SplitLine/../../pihmLIBS/splitLineAtVertices.h
 ../../pihmLIBS/shapefil.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/VectorProcessing/SplitLine/../../pihmLIBS/shapefil.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/VectorProcessing/SplitLine/../../pihmLIBS/shapefil.h
 fstream
 -
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/VectorProcessing/SplitLine/splitlinedialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/VectorProcessing/SplitLine/splitlinedialog.h
 ui_splitlinedialog.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/VectorProcessing/SplitLine/ui_splitlinedialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/VectorProcessing/SplitLine/ui_splitlinedialog.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/VectorProcessing/SplitLine/ui_splitlinedialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/VectorProcessing/SplitLine/ui_splitlinedialog.h
 Qt3Support/Q3ButtonGroup
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/VectorProcessing/SplitLine/Qt3Support/Q3ButtonGroup
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/VectorProcessing/SplitLine/Qt3Support/Q3ButtonGroup
 Qt3Support/Q3Header
 -
 QtCore/QVariant
@@ -4742,17 +5270,17 @@ QtGui/QDialog
 QtGui/QPushButton
 -
 Qt3Support/Q3Table
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/VectorProcessing/SplitLine/Qt3Support/Q3Table
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/VectorProcessing/SplitLine/Qt3Support/Q3Table
 Qt3Support/Q3TextBrowser
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/VectorProcessing/SplitLine/Qt3Support/Q3TextBrowser
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/VectorProcessing/SplitLine/Qt3Support/Q3TextBrowser
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmLIBS/Point.cpp
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmLIBS/Point.cpp
 Point.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmLIBS/Point.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmLIBS/Point.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmLIBS/Point.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmLIBS/Point.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmLIBS/addFID.cpp
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmLIBS/addFID.cpp
 iostream
 -
 fstream
@@ -4760,9 +5288,9 @@ fstream
 iomanip
 -
 shapefil.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmLIBS/shapefil.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmLIBS/shapefil.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmLIBS/addSOrder.cpp
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmLIBS/addSOrder.cpp
 iostream
 -
 fstream
@@ -4770,11 +5298,11 @@ fstream
 iomanip
 -
 shapefil.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmLIBS/shapefil.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmLIBS/shapefil.h
 Point.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmLIBS/Point.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmLIBS/Point.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmLIBS/addToFromNode.cpp
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmLIBS/addToFromNode.cpp
 iostream
 -
 fstream
@@ -4782,11 +5310,11 @@ fstream
 iomanip
 -
 shapefil.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmLIBS/shapefil.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmLIBS/shapefil.h
 Point.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmLIBS/Point.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmLIBS/Point.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmLIBS/calDownSegment.cpp
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmLIBS/calDownSegment.cpp
 iostream
 -
 fstream
@@ -4794,9 +5322,9 @@ fstream
 iomanip
 -
 shapefil.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmLIBS/shapefil.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmLIBS/shapefil.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmLIBS/extractRiver4mTIN.cpp
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmLIBS/extractRiver4mTIN.cpp
 iostream
 -
 fstream
@@ -4806,31 +5334,31 @@ iomanip
 math.h
 -
 shapefil.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmLIBS/shapefil.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmLIBS/shapefil.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmLIBS/generateShape.cpp
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmLIBS/generateShape.cpp
 iostream
 -
 generateShape.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmLIBS/generateShape.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmLIBS/generateShape.h
 shapefil.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmLIBS/shapefil.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmLIBS/shapefil.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmLIBS/generateShape.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmLIBS/generateShape.h
 QtGui
 -
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmLIBS/helpDialog/helpdialog.cpp
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmLIBS/helpDialog/helpdialog.cpp
 QtGui
 -
 helpdialog.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmLIBS/helpDialog/helpdialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmLIBS/helpDialog/helpdialog.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmLIBS/helpDialog/helpdialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmLIBS/helpDialog/helpdialog.h
 ui_helpdialog.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmLIBS/helpDialog/ui_helpdialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmLIBS/helpDialog/ui_helpdialog.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmLIBS/helpDialog/ui_helpdialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmLIBS/helpDialog/ui_helpdialog.h
 QtCore/QVariant
 -
 QtGui/QAction
@@ -4850,13 +5378,13 @@ QtGui/QWidget
 Qt3Support/Q3MimeSourceFactory
 -
 Qt3Support/Q3TextBrowser
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmLIBS/helpDialog/Qt3Support/Q3TextBrowser
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmLIBS/helpDialog/Qt3Support/Q3TextBrowser
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmLIBS/pickGridValue.cpp
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmLIBS/pickGridValue.cpp
 pickGridValue.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmLIBS/pickGridValue.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmLIBS/pickGridValue.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmLIBS/pickGridValue.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmLIBS/pickGridValue.h
 iostream
 -
 gdal.h
@@ -4864,67 +5392,67 @@ gdal.h
 gdal_priv.h
 -
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmLIBS/shapefil.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmLIBS/shapefil.h
 stdio.h
 -
 dbmalloc.h
 -
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmRasterLIBS/./../pihmLIBS/shapefil.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmRasterLIBS/./../pihmLIBS/shapefil.h
 stdio.h
 -
 dbmalloc.h
 -
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmRasterLIBS/aread8.cpp
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmRasterLIBS/aread8.cpp
 iostream
 -
 lsm.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmRasterLIBS/lsm.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmRasterLIBS/lsm.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmRasterLIBS/avcalls_null.cpp
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmRasterLIBS/avcalls_null.cpp
 avexec32.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmRasterLIBS/avexec32.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmRasterLIBS/avexec32.h
 stdio.h
 -
 string.h
 -
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmRasterLIBS/avexec32.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmRasterLIBS/avexec32.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmRasterLIBS/callocate.cpp
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmRasterLIBS/callocate.cpp
 stdlib.h
 -
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmRasterLIBS/catPoly.cpp
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmRasterLIBS/catPoly.cpp
 stdio.h
 -
 lsm.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmRasterLIBS/lsm.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmRasterLIBS/lsm.h
 ./../pihmLIBS/shapefil.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmRasterLIBS/./../pihmLIBS/shapefil.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmRasterLIBS/./../pihmLIBS/shapefil.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmRasterLIBS/catProcessing.cpp
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmRasterLIBS/catProcessing.cpp
 stdio.h
 -
 lsm.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmRasterLIBS/lsm.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmRasterLIBS/lsm.h
 ./../pihmLIBS/shapefil.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmRasterLIBS/./../pihmLIBS/shapefil.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmRasterLIBS/./../pihmLIBS/shapefil.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmRasterLIBS/flood.cpp
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmRasterLIBS/flood.cpp
 lsm.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmRasterLIBS/lsm.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmRasterLIBS/lsm.h
 gridio.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmRasterLIBS/gridio.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmRasterLIBS/gridio.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmRasterLIBS/gioapi.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmRasterLIBS/gioapi.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmRasterLIBS/gridio.cpp
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmRasterLIBS/gridio.cpp
 gridio.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmRasterLIBS/gridio.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmRasterLIBS/gridio.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmRasterLIBS/gridio.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmRasterLIBS/gridio.h
 stdio.h
 -
 string.h
@@ -4938,119 +5466,125 @@ limits.h
 math.h
 -
 gioapi.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmRasterLIBS/gioapi.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmRasterLIBS/gioapi.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmRasterLIBS/gridio_null.cpp
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmRasterLIBS/gridio_null.cpp
 gioapi.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmRasterLIBS/gioapi.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmRasterLIBS/gioapi.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmRasterLIBS/lsm.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmRasterLIBS/lsm.h
 gridio.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmRasterLIBS/gridio.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmRasterLIBS/gridio.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmRasterLIBS/lsmcom.cpp
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmRasterLIBS/lsmcom.cpp
 lsm.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmRasterLIBS/lsm.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmRasterLIBS/lsm.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmRasterLIBS/setdir.cpp
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmRasterLIBS/setdir.cpp
 lsm.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmRasterLIBS/lsm.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmRasterLIBS/lsm.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmRasterLIBS/streamDefinition.cpp
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmRasterLIBS/streamDefinition.cpp
 stdio.h
 -
 lsm.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmRasterLIBS/lsm.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmRasterLIBS/lsm.h
 gridio.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmRasterLIBS/gridio.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmRasterLIBS/gridio.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmRasterLIBS/streamSegmentation.cpp
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmRasterLIBS/streamSegmentation.cpp
 stdio.h
 -
 lsm.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmRasterLIBS/lsm.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmRasterLIBS/lsm.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmRasterLIBS/streamSegmentationShp.cpp
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmRasterLIBS/streamSegmentationShp.cpp
 stdio.h
 -
 lsm.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmRasterLIBS/lsm.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmRasterLIBS/lsm.h
 ./../pihmLIBS/shapefil.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmRasterLIBS/./../pihmLIBS/shapefil.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmRasterLIBS/./../pihmLIBS/shapefil.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmgis.cpp
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmgis.cpp
 qgisinterface.h
 -
 qgisgui.h
 -
 pihmgis.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmgis.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmgis.h
 pihmgisgui.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmgisgui.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmgisgui.h
 QMenu
 -
 QAction
 -
 QToolBar
 -
+QThread
+-
 RasterProcessing/FillPits/fillpits.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/FillPits/fillpits.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/FillPits/fillpits.h
 RasterProcessing/FlowGrid/flowgrid.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/FlowGrid/flowgrid.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/FlowGrid/flowgrid.h
 RasterProcessing/StreamGrid/streamgrid.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/StreamGrid/streamgrid.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/StreamGrid/streamgrid.h
 RasterProcessing/LinkGrid/linkgrid.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/LinkGrid/linkgrid.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/LinkGrid/linkgrid.h
 RasterProcessing/StreamPolyLine/streampolyline.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/StreamPolyLine/streampolyline.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/StreamPolyLine/streampolyline.h
 RasterProcessing/CatchmentGrid/catchmentgrid.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/CatchmentGrid/catchmentgrid.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/CatchmentGrid/catchmentgrid.h
 RasterProcessing/CatchmentPolygon/catchmentpolygon.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RasterProcessing/CatchmentPolygon/catchmentpolygon.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RasterProcessing/CatchmentPolygon/catchmentpolygon.h
 VectorProcessing/PolygonToPolyLine/polygontopolylinedialog.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/VectorProcessing/PolygonToPolyLine/polygontopolylinedialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/VectorProcessing/PolygonToPolyLine/polygontopolylinedialog.h
 VectorProcessing/SimplifyLine/simplifylinedialog.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/VectorProcessing/SimplifyLine/simplifylinedialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/VectorProcessing/SimplifyLine/simplifylinedialog.h
 VectorProcessing/SplitLine/splitlinedialog.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/VectorProcessing/SplitLine/splitlinedialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/VectorProcessing/SplitLine/splitlinedialog.h
 VectorProcessing/MergeFeatures/mergefeaturesdialog.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/VectorProcessing/MergeFeatures/mergefeaturesdialog.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/VectorProcessing/MergeFeatures/mergefeaturesdialog.h
 DomainDecomposition/GenerateShapeTopology/generateshapetopology.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DomainDecomposition/GenerateShapeTopology/generateshapetopology.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DomainDecomposition/GenerateShapeTopology/generateshapetopology.h
 DomainDecomposition/RunTriangle/runtriangle.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DomainDecomposition/RunTriangle/runtriangle.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DomainDecomposition/RunTriangle/runtriangle.h
 DomainDecomposition/CreateTINs/createtins.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DomainDecomposition/CreateTINs/createtins.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DomainDecomposition/CreateTINs/createtins.h
 DataModelLoader/MeshFile/mshfile.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DataModelLoader/MeshFile/mshfile.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DataModelLoader/MeshFile/mshfile.h
 DataModelLoader/AttFile/attfile.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DataModelLoader/AttFile/attfile.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DataModelLoader/AttFile/attfile.h
 DataModelLoader/RivFile/rivfile.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DataModelLoader/RivFile/rivfile.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DataModelLoader/RivFile/rivfile.h
 DataModelLoader/Parafile/parafile.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/DataModelLoader/Parafile/parafile.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/DataModelLoader/Parafile/parafile.h
 RunPIHM/runpihm.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/RunPIHM/runpihm.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RunPIHM/runpihm.h
 Analysis/SpatialPlot/spatialplot.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/Analysis/SpatialPlot/spatialplot.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/Analysis/SpatialPlot/spatialplot.h
 Analysis/TimeSeries/timeseries.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/Analysis/TimeSeries/timeseries.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/Analysis/TimeSeries/timeseries.h
 Help/About/about.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/Help/About/about.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/Help/About/about.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmgis.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmgis.h
 QObject
 -
+QThread
+-
+RunPIHM/runpihm.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/RunPIHM/runpihm.h
 ../qgisplugin.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/../qgisplugin.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/../qgisplugin.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmgisgui.cpp
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmgisgui.cpp
 pihmgisgui.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmgisgui.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmgisgui.h
 qgscontexthelp.h
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/qgscontexthelp.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/qgscontexthelp.h
 
-/Users/bhattgopal/dev/cpp/qgis0.9_pihm2.0/src/plugins/pihm_gis/pihmgisgui.h
+/Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/pihm_gis/pihmgisgui.h
 QDialog
 -
 ui_pihmgisgui.h
@@ -5521,6 +6055,192 @@ sys/select.h
 /usr/include/xlocale/_string.h
 
 /usr/include/xlocale/_time.h
+
+/usr/local/qwt-5.2.0/include/qwt_array.h
+qwt_global.h
+/usr/local/qwt-5.2.0/include/qwt_global.h
+qmemarray.h
+-
+qvector.h
+-
+
+/usr/local/qwt-5.2.0/include/qwt_data.h
+qwt_global.h
+/usr/local/qwt-5.2.0/include/qwt_global.h
+qwt_array.h
+/usr/local/qwt-5.2.0/include/qwt_array.h
+qwt_double_rect.h
+/usr/local/qwt-5.2.0/include/qwt_double_rect.h
+QPolygonF
+-
+
+/usr/local/qwt-5.2.0/include/qwt_double_rect.h
+qwt_global.h
+/usr/local/qwt-5.2.0/include/qwt_global.h
+qwt_array.h
+/usr/local/qwt-5.2.0/include/qwt_array.h
+QPointF
+-
+QSizeF
+-
+QRectF
+-
+qpoint.h
+-
+qsize.h
+-
+qrect.h
+-
+
+/usr/local/qwt-5.2.0/include/qwt_global.h
+qglobal.h
+-
+qmodules.h
+-
+
+/usr/local/qwt-5.2.0/include/qwt_legend.h
+qframe.h
+-
+qwt_global.h
+/usr/local/qwt-5.2.0/include/qwt_global.h
+qvaluelist.h
+-
+qlist.h
+-
+
+/usr/local/qwt-5.2.0/include/qwt_legend_itemmanager.h
+qwt_global.h
+/usr/local/qwt-5.2.0/include/qwt_global.h
+
+/usr/local/qwt-5.2.0/include/qwt_magnifier.h
+qwt_global.h
+/usr/local/qwt-5.2.0/include/qwt_global.h
+qobject.h
+-
+
+/usr/local/qwt-5.2.0/include/qwt_math.h
+math.h
+-
+qpoint.h
+-
+qwt_global.h
+/usr/local/qwt-5.2.0/include/qwt_global.h
+qwt_double_rect.h
+/usr/local/qwt-5.2.0/include/qwt_double_rect.h
+
+/usr/local/qwt-5.2.0/include/qwt_plot.h
+qframe.h
+-
+qwt_global.h
+/usr/local/qwt-5.2.0/include/qwt_global.h
+qwt_array.h
+/usr/local/qwt-5.2.0/include/qwt_array.h
+qwt_text.h
+/usr/local/qwt-5.2.0/include/qwt_text.h
+qwt_plot_dict.h
+/usr/local/qwt-5.2.0/include/qwt_plot_dict.h
+qwt_scale_map.h
+/usr/local/qwt-5.2.0/include/qwt_scale_map.h
+qwt_plot_printfilter.h
+/usr/local/qwt-5.2.0/include/qwt_plot_printfilter.h
+qwt_plot.h
+-
+qwt_plot_curve.h
+-
+
+/usr/local/qwt-5.2.0/include/qwt_plot_canvas.h
+qframe.h
+-
+qpen.h
+-
+qwt_global.h
+/usr/local/qwt-5.2.0/include/qwt_global.h
+
+/usr/local/qwt-5.2.0/include/qwt_plot_curve.h
+qpen.h
+-
+qstring.h
+-
+qwt_global.h
+/usr/local/qwt-5.2.0/include/qwt_global.h
+qwt_plot_item.h
+/usr/local/qwt-5.2.0/include/qwt_plot_item.h
+qwt_text.h
+/usr/local/qwt-5.2.0/include/qwt_text.h
+qwt_polygon.h
+/usr/local/qwt-5.2.0/include/qwt_polygon.h
+qwt_data.h
+/usr/local/qwt-5.2.0/include/qwt_data.h
+
+/usr/local/qwt-5.2.0/include/qwt_plot_dict.h
+qwt_global.h
+/usr/local/qwt-5.2.0/include/qwt_global.h
+qwt_plot_item.h
+/usr/local/qwt-5.2.0/include/qwt_plot_item.h
+qvaluelist.h
+-
+qlist.h
+-
+
+/usr/local/qwt-5.2.0/include/qwt_plot_item.h
+qwt_global.h
+/usr/local/qwt-5.2.0/include/qwt_global.h
+qwt_legend_itemmanager.h
+/usr/local/qwt-5.2.0/include/qwt_legend_itemmanager.h
+qwt_text.h
+/usr/local/qwt-5.2.0/include/qwt_text.h
+qwt_double_rect.h
+/usr/local/qwt-5.2.0/include/qwt_double_rect.h
+
+/usr/local/qwt-5.2.0/include/qwt_plot_marker.h
+qpen.h
+-
+qfont.h
+-
+qstring.h
+-
+qbrush.h
+-
+qwt_global.h
+/usr/local/qwt-5.2.0/include/qwt_global.h
+qwt_plot_item.h
+/usr/local/qwt-5.2.0/include/qwt_plot_item.h
+
+/usr/local/qwt-5.2.0/include/qwt_plot_printfilter.h
+qcolor.h
+-
+qfont.h
+-
+qwt_global.h
+/usr/local/qwt-5.2.0/include/qwt_global.h
+
+/usr/local/qwt-5.2.0/include/qwt_polygon.h
+qwt_global.h
+/usr/local/qwt-5.2.0/include/qwt_global.h
+qpointarray.h
+-
+qwt_double_rect.h
+/usr/local/qwt-5.2.0/include/qwt_double_rect.h
+qpolygon.h
+-
+
+/usr/local/qwt-5.2.0/include/qwt_scale_map.h
+qwt_global.h
+/usr/local/qwt-5.2.0/include/qwt_global.h
+qwt_math.h
+/usr/local/qwt-5.2.0/include/qwt_math.h
+
+/usr/local/qwt-5.2.0/include/qwt_text.h
+qstring.h
+-
+qsize.h
+-
+qfont.h
+-
+qwt_global.h
+/usr/local/qwt-5.2.0/include/qwt_global.h
+
+qgsconfig.h
 
 src/plugins/pihm_gis/ui_about.h
 QtCore/QVariant

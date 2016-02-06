@@ -17,28 +17,31 @@
 #include "qgsdistancearea.h"
 #include "qgslogger.h"
 #include "qgsmapcanvas.h"
-#include "qgsmaprender.h"
+#include "qgsmaprenderer.h"
 #include "qgsmaptopixel.h"
 #include "qgsrubberband.h"
 
 #include "qgsmeasuredialog.h"
 #include "qgsmeasuretool.h"
+#include "qgscursors.h"
 
 #include <QMessageBox>
+#include <QMouseEvent>
 #include <QSettings>
 
-QgsMeasureTool::QgsMeasureTool(QgsMapCanvas* canvas, bool measureArea)
-  : QgsMapTool(canvas)
+QgsMeasureTool::QgsMeasureTool( QgsMapCanvas* canvas, bool measureArea )
+    : QgsMapTool( canvas )
 {
   mMeasureArea = measureArea;
-  
-  mRubberBand = new QgsRubberBand(canvas, mMeasureArea);
 
-  mCanvas->setCursor(Qt::CrossCursor);
+  mRubberBand = new QgsRubberBand( canvas, mMeasureArea );
+
+  QPixmap myCrossHairQPixmap = QPixmap(( const char ** ) cross_hair_cursor );
+  mCursor = QCursor( myCrossHairQPixmap, 8, 8 );
 
   mRightMouseClicked = false;
-  
-  mDialog = new QgsMeasureDialog(this);
+
+  mDialog = new QgsMeasureDialog( this );
 }
 
 QgsMeasureTool::~QgsMeasureTool()
@@ -61,26 +64,26 @@ void QgsMeasureTool::activate()
 
   // ensure that we have correct settings
   updateProjection();
-  
+
   // If we suspect that they have data that is projected, yet the
-  // map SRS is set to a geographic one, warn them.
-  if (mCanvas->mapRender()->distArea()->geographic() &&
-      (mCanvas->extent().height() > 360 || 
-       mCanvas->extent().width() > 720))
+  // map CRS is set to a geographic one, warn them.
+  if ( mCanvas->mapRenderer()->distanceArea()->geographic() &&
+       ( mCanvas->extent().height() > 360 ||
+         mCanvas->extent().width() > 720 ) )
   {
-    QMessageBox::warning(NULL, tr("Incorrect measure results"),
-        tr("<p>This map is defined with a geographic coordinate system "
-           "(latitude/longitude) "
-           "but the map extents suggest that it is actually a projected "
-           "coordinate system (e.g., Mercator). "
-           "If so, the results from line or area measurements will be "
-           "incorrect.</p>"
-           "<p>To fix this, explicitly set an appropriate map coordinate "
-           "system using the <tt>Settings:Project Properties</tt> menu."));
+    QMessageBox::warning( NULL, tr( "Incorrect measure results" ),
+                          tr( "<p>This map is defined with a geographic coordinate system "
+                              "(latitude/longitude) "
+                              "but the map extents suggests that it is actually a projected "
+                              "coordinate system (e.g., Mercator). "
+                              "If so, the results from line or area measurements will be "
+                              "incorrect.</p>"
+                              "<p>To fix this, explicitly set an appropriate map coordinate "
+                              "system using the <tt>Settings:Project Properties</tt> menu." ) );
     mWrongProjectProjection = true;
   }
 }
-    
+
 void QgsMeasureTool::deactivate()
 {
   mDialog->close();
@@ -93,18 +96,18 @@ void QgsMeasureTool::restart()
   updateProjection();
   mPoints.clear();
 
-  mRubberBand->reset(mMeasureArea);
+  mRubberBand->reset( mMeasureArea );
 
   // re-read color settings
   QSettings settings;
-  int myRed = settings.value("/qgis/default_measure_color_red", 180).toInt();
-  int myGreen = settings.value("/qgis/default_measure_color_green", 180).toInt();
-  int myBlue = settings.value("/qgis/default_measure_color_blue", 180).toInt();
-  mRubberBand->setColor(QColor(myRed, myGreen, myBlue));
+  int myRed = settings.value( "/qgis/default_measure_color_red", 180 ).toInt();
+  int myGreen = settings.value( "/qgis/default_measure_color_green", 180 ).toInt();
+  int myBlue = settings.value( "/qgis/default_measure_color_blue", 180 ).toInt();
+  mRubberBand->setColor( QColor( myRed, myGreen, myBlue ) );
 
   mRightMouseClicked = false;
   mWrongProjectProjection = false;
-  
+
 }
 
 
@@ -118,83 +121,83 @@ void QgsMeasureTool::updateProjection()
   // QString ellipsoid = settings.readEntry("/qgis/measure/ellipsoid", "WGS84");
   // mCalc->setEllipsoid(ellipsoid);
 
-  // set source SRS and projections enabled flag
-  // QgsMapRender* mapRender = mCanvas->mapRender();
-  // mCalc->setProjectionsEnabled(mapRender->projectionsEnabled());
+  // set source CRS and projections enabled flag
+  // QgsMapRenderer* mapRender = mCanvas->mapRenderer();
+  // mCalc->setProjectionsEnabled(mapRender->hasCrsTransformEnabled());
   // int srsid = mapRender->destinationSrs().srsid();
-  // mCalc->setSourceSRS(srsid);
-  
-  int myRed = settings.value("/qgis/default_measure_color_red", 180).toInt();
-  int myGreen = settings.value("/qgis/default_measure_color_green", 180).toInt();
-  int myBlue = settings.value("/qgis/default_measure_color_blue", 180).toInt();
-  mRubberBand->setColor(QColor(myRed, myGreen, myBlue));
+  // mCalc->setSourceCrs(srsid);
+
+  int myRed = settings.value( "/qgis/default_measure_color_red", 180 ).toInt();
+  int myGreen = settings.value( "/qgis/default_measure_color_green", 180 ).toInt();
+  int myBlue = settings.value( "/qgis/default_measure_color_blue", 180 ).toInt();
+  mRubberBand->setColor( QColor( myRed, myGreen, myBlue ) );
 
 }
 
 //////////////////////////
 
-void QgsMeasureTool::canvasPressEvent(QMouseEvent * e)
+void QgsMeasureTool::canvasPressEvent( QMouseEvent * e )
 {
-  if (e->button() == Qt::LeftButton)
+  if ( e->button() == Qt::LeftButton )
   {
-    if (mRightMouseClicked)
+    if ( mRightMouseClicked )
       mDialog->restart();
 
-    QgsPoint  idPoint = mCanvas->getCoordinateTransform()->toMapCoordinates(e->x(), e->y());
-    mDialog->mousePress(idPoint);
+    QgsPoint  idPoint = mCanvas->getCoordinateTransform()->toMapCoordinates( e->x(), e->y() );
+    mDialog->mousePress( idPoint );
   }
 }
 
 
-void QgsMeasureTool::canvasMoveEvent(QMouseEvent * e)
+void QgsMeasureTool::canvasMoveEvent( QMouseEvent * e )
 {
-  if (!mRightMouseClicked)
+  if ( !mRightMouseClicked )
   {
-    QgsPoint point = mCanvas->getCoordinateTransform()->toMapCoordinates(e->pos().x(), e->pos().y());
-    mRubberBand->movePoint(point);
-    mDialog->mouseMove(point);
+    QgsPoint point = mCanvas->getCoordinateTransform()->toMapCoordinates( e->pos().x(), e->pos().y() );
+    mRubberBand->movePoint( point );
+    mDialog->mouseMove( point );
   }
 }
 
 
-void QgsMeasureTool::canvasReleaseEvent(QMouseEvent * e)
+void QgsMeasureTool::canvasReleaseEvent( QMouseEvent * e )
 {
-  QgsPoint point = mCanvas->getCoordinateTransform()->toMapCoordinates(e->x(), e->y());
+  QgsPoint point = mCanvas->getCoordinateTransform()->toMapCoordinates( e->x(), e->y() );
 
-  if(e->button() == Qt::RightButton && (e->state() & Qt::LeftButton) == 0) // restart
+  if ( e->button() == Qt::RightButton && ( e->buttons() & Qt::LeftButton ) == 0 ) // restart
   {
-    if (mRightMouseClicked)
+    if ( mRightMouseClicked )
       mDialog->restart();
     else
       mRightMouseClicked = true;
-  } 
-  else if (e->button() == Qt::LeftButton)
+  }
+  else if ( e->button() == Qt::LeftButton )
   {
-    addPoint(point);
+    addPoint( point );
     mDialog->show();
   }
 
 }
 
 
-void QgsMeasureTool::addPoint(QgsPoint &point)
+void QgsMeasureTool::addPoint( QgsPoint &point )
 {
-  QgsDebugMsg( QString::number(point.x()) + ", " + QString::number(point.y()));
+  QgsDebugMsg( "point=" + point.toString() );
 
-  if (mWrongProjectProjection)
+  if ( mWrongProjectProjection )
   {
     updateProjection();
     mWrongProjectProjection = false;
   }
 
-   // don't add points with the same coordinates
-  if (mPoints.size() > 0 && point == mPoints[0])
+  // don't add points with the same coordinates
+  if ( mPoints.size() > 0 && point == mPoints[0] )
     return;
-    
-  QgsPoint pnt(point);
-  mPoints.append(pnt);
-    
-  
-  mRubberBand->addPoint(point);
-  mDialog->addPoint(point);
+
+  QgsPoint pnt( point );
+  mPoints.append( pnt );
+
+
+  mRubberBand->addPoint( point );
+  mDialog->addPoint( point );
 }

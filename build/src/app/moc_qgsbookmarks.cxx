@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'qgsbookmarks.h'
 **
-** Created: Wed Jun 11 19:05:42 2008
+** Created: Fri Jun 19 01:54:08 2009
 **      by: The Qt Meta Object Compiler version 59 (Qt 4.3.2)
 **
 ** WARNING! All changes made in this file will be lost!
@@ -22,25 +22,26 @@ static const uint qt_meta_data_QgsBookmarks[] = {
        1,       // revision
        0,       // classname
        0,    0, // classinfo
-       5,   10, // methods
+       6,   10, // methods
        0,    0, // properties
        0,    0, // enums/sets
 
  // slots: signature, parameters, type, tag, flags
-      14,   13,   13,   13, 0x0a,
-      37,   13,   13,   13, 0x0a,
-      60,   13,   13,   13, 0x0a,
-     107,   13,   13,   13, 0x0a,
-     128,   13,   13,   13, 0x0a,
+      14,   13,   13,   13, 0x08,
+      35,   13,   13,   13, 0x08,
+      58,   13,   13,   13, 0x08,
+      81,   13,   13,   13, 0x08,
+     129,   13,   13,   13, 0x08,
+     145,   13,   13,   13, 0x08,
 
        0        // eod
 };
 
 static const char qt_meta_stringdata_QgsBookmarks[] = {
-    "QgsBookmarks\0\0on_btnDelete_clicked()\0"
-    "on_btnZoomTo_clicked()\0"
-    "on_lstBookmarks_doubleClicked(Q3ListViewItem*)\0"
-    "on_btnHelp_clicked()\0refreshBookmarks()\0"
+    "QgsBookmarks\0\0saveWindowLocation()\0"
+    "on_btnDelete_clicked()\0on_btnZoomTo_clicked()\0"
+    "on_lstBookmarks_doubleClicked(QTreeWidgetItem*)\0"
+    "helpRequested()\0refreshBookmarks()\0"
 };
 
 const QMetaObject QgsBookmarks::staticMetaObject = {
@@ -68,13 +69,14 @@ int QgsBookmarks::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
         switch (_id) {
-        case 0: on_btnDelete_clicked(); break;
-        case 1: on_btnZoomTo_clicked(); break;
-        case 2: on_lstBookmarks_doubleClicked((*reinterpret_cast< Q3ListViewItem*(*)>(_a[1]))); break;
-        case 3: on_btnHelp_clicked(); break;
-        case 4: refreshBookmarks(); break;
+        case 0: saveWindowLocation(); break;
+        case 1: on_btnDelete_clicked(); break;
+        case 2: on_btnZoomTo_clicked(); break;
+        case 3: on_lstBookmarks_doubleClicked((*reinterpret_cast< QTreeWidgetItem*(*)>(_a[1]))); break;
+        case 4: helpRequested(); break;
+        case 5: refreshBookmarks(); break;
         }
-        _id -= 5;
+        _id -= 6;
     }
     return _id;
 }

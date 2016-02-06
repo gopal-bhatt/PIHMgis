@@ -30,7 +30,7 @@ void polygonToPolyLineDialogDlg::addBrowse()
 
         for(i=0; i< temp.count();i++)
         {
-                        //std::cout<<"\n"<<temp[i].ascii();
+                        //std::cout<<"\n"<<qPrintable(temp[i]);
                         str = temp[i];
                         str1 = temp[i];
                         str1.truncate(str1.length()-4);
@@ -75,7 +75,7 @@ void polygonToPolyLineDialogDlg::run()
 
 	QString logFileName("/tmp/log.html");
 	ofstream log;
-	log.open(logFileName.ascii());
+	log.open(qPrintable(logFileName));
 	log<<"<html><body><font size=3 color=black><p> Verifying Files...</p></font></body></html>";
         log.close();
         MessageLog->setSource(logFileName);
@@ -85,7 +85,7 @@ void polygonToPolyLineDialogDlg::run()
 	QString polygonFileShp, polygonFileDbf, polyLineFileShp, polyLineFileDbf;
 	
 	if(inputOutputTable->numRows() < 1){
-		log.open(logFileName.ascii(), ios::app);
+		log.open(qPrintable(logFileName), ios::app);
 		log<<"<p><font size=3 color=red> First Please input Files</p>";
 		log.close();
 		MessageLog->reload();
@@ -104,26 +104,26 @@ void polygonToPolyLineDialogDlg::run()
 	                polyLineFileDbf.append("dbf");
 
 			ifstream in;
-	                in.open(polygonFileShp.ascii());
+	                in.open(qPrintable(polygonFileShp));
 			ofstream out;
-			out.open(polyLineFileShp.ascii());
+			out.open(qPrintable(polyLineFileShp));
 			
 			int runFlag = 1;
-			log.open(logFileName.ascii(), ios::app);
-			log<<"<p>Checking... "<<polygonFileShp.ascii()<<"... ";
+			log.open(qPrintable(logFileName), ios::app);
+			log<<"<p>Checking... "<<qPrintable(polygonFileShp)<<"... ";
 			if(in == NULL){
 				log<<"<font size=3 color=red> Error!</p>";
 				runFlag = 0;
-				qWarning("\n %s doesn't exist!", polygonFileShp.ascii());
+				qWarning("\n %s doesn't exist!", qPrintable(polygonFileShp));
 			}
 			else
 				log<<"Done!</p>";
 
-			log<<"<p>Checking... "<<polyLineFileShp.ascii()<<"... ";		
+			log<<"<p>Checking... "<<qPrintable(polyLineFileShp)<<"... ";		
 			if(out == NULL){
 				log<<"<font size=3 color=red> Error!</p>";
 				runFlag = 0;
-				qWarning("\n %s doesn't exist!", polygonFileShp.ascii());
+				qWarning("\n %s doesn't exist!", qPrintable(polygonFileShp));
 			}
 			else
 				log<<"Done!</p>";
@@ -135,27 +135,27 @@ void polygonToPolyLineDialogDlg::run()
 								
         	                int entities[1], type[1];
                 	        double minbound[10], maxbound[10];
-	                        SHPHandle tempHandle = SHPOpen(polygonFileShp, "rb");
+	                        SHPHandle tempHandle = SHPOpen(qPrintable(polygonFileShp), "rb");
 	                        SHPGetInfo(tempHandle, entities, type, minbound, maxbound);
         	                std::cout<<"type= "<<type[0]<<"\n";
 	                        if(type[0] != 5){
-					log.open(logFileName.ascii(), ios::app);
-					log<<"<p><font size=3 color=red>"<<polygonFileShp.ascii()<<" is not a polygon type </p>";
-        	                        qWarning("\n %s is NOT a POLYGON file", polygonFileShp.ascii());
+					log.open(qPrintable(logFileName), ios::app);
+					log<<"<p><font size=3 color=red>"<<qPrintable(polygonFileShp)<<" is not a polygon type </p>";
+        	                        qWarning("\n %s is NOT a POLYGON file", qPrintable(polygonFileShp));
 					log.close();
 					MessageLog->reload();
 					QApplication::processEvents();
 				}
                 	        else{
-					log.open(logFileName.ascii(), ios::app);
+					log.open(qPrintable(logFileName), ios::app);
 					log<<"<p>Running...";
 					log.close();
 					MessageLog->reload();
 					QApplication::processEvents();
 
-	                                polygonToPolyline(polygonFileShp, polygonFileDbf, polyLineFileShp, polyLineFileDbf);
+	                                polygonToPolyline(qPrintable(polygonFileShp), qPrintable(polygonFileDbf), qPrintable(polyLineFileShp), qPrintable(polyLineFileDbf));
 
-					log.open(logFileName.ascii(), ios::app);
+					log.open(qPrintable(logFileName), ios::app);
 					log<<" Done!</p>";
 					log.close();
 					MessageLog->reload();

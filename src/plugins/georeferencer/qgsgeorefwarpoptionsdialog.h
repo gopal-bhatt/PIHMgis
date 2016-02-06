@@ -12,29 +12,31 @@
 #ifndef QGSGEOREFWARPOPTIONSDIALOG_H
 #define QGSGEOREFWARPOPTIONSDIALOG_H
 
+#include <cstdio>
+
 #include "qgsimagewarper.h"
 
 #include "ui_qgsgeorefwarpoptionsdialogbase.h"
 #include <QDialog>
 
-class QgsGeorefWarpOptionsDialog : public QDialog, private Ui::QgsGeorefWarpOptionsDialogBase 
+class QgsGeorefWarpOptionsDialog : public QDialog, private Ui::QgsGeorefWarpOptionsDialogBase
 {
-Q_OBJECT
-public:
-  
-  QgsGeorefWarpOptionsDialog(QWidget* parent);
-  void getWarpOptions(QgsImageWarper::ResamplingMethod& resampling, 
-		      bool& useZeroForTransparency);
-  
-public slots:
+    Q_OBJECT
+  public:
 
-  void on_pbnOK_clicked();
-  
-private:
-  
-  QgsImageWarper::ResamplingMethod resampling;
-  bool useZeroAsTransparency;
-  
+    QgsGeorefWarpOptionsDialog( QWidget* parent );
+    void getWarpOptions( QgsImageWarper::ResamplingMethod& resampling,
+                         bool& useZeroForTransparency, QString& compression );
+
+  public slots:
+
+    void on_pbnOK_clicked();
+
+  private:
+
+    QgsImageWarper::ResamplingMethod resampling;
+    bool useZeroAsTransparency;
+
 };
 
 #endif
