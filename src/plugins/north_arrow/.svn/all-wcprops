@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/north_arrow
+END
+plugin.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/north_arrow/plugin.cpp
+END
+pluginguibase.ui.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/north_arrow/pluginguibase.ui.h
+END
+north_arrow.xcf
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/north_arrow/north_arrow.xcf
+END
+plugin.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/north_arrow/plugin.h
+END
+plugingui.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/north_arrow/plugingui.cpp
+END
+northarrow_plugin.qrc
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/north_arrow/northarrow_plugin.qrc
+END
+northarrow.png
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/north_arrow/northarrow.png
+END
+plugingui.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/north_arrow/plugingui.h
+END
+pluginguibase.ui
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/north_arrow/pluginguibase.ui
+END
+icon.xpm
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/north_arrow/icon.xpm
+END
+.cvsignore
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/north_arrow/.cvsignore
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/north_arrow/CMakeLists.txt
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/north_arrow/README
+END

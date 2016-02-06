@@ -1,0 +1,406 @@
+
+%ModuleHeaderCode
+// From Python 2.5, some functions use Py_ssize_t instead of int
+// thus this typedef is for maintaining backward compatibility
+// for older versions of Python
+#if (PY_VERSION_HEX < 0x02050000)
+typedef int Py_ssize_t;
+#endif
+%End
+
+%MappedType QSet<int>
+{
+%TypeHeaderCode
+#include <QSet>
+%End
+
+%ConvertFromTypeCode
+  // Create the list.
+  PyObject *l;
+
+  if ((l = PyList_New(sipCpp->size())) == NULL)
+    return NULL;
+      
+  // Set the list elements.
+  QSet<int>::iterator it = sipCpp->begin();
+  for (int i = 0; it != sipCpp->end(); ++it, ++i)
+  {
+    PyObject *tobj;
+
+    if ((tobj = PyInt_FromLong(*it)) == NULL)
+    {
+      Py_DECREF(l);
+      return NULL;
+    }
+    PyList_SET_ITEM(l, i, tobj);
+  }
+
+  return l;
+%End
+
+%ConvertToTypeCode
+  // Check the type if that is all that is required.
+  if (sipIsErr == NULL)
+    return PyList_Check(sipPy);
+
+  QSet<int> *qset = new QSet<int>;
+
+  for (int i = 0; i < PyList_GET_SIZE(sipPy); ++i)
+  {
+    qset->insert(PyInt_AsLong(PyList_GET_ITEM(sipPy, i)));
+  }
+
+  *sipCppPtr = qset;
+  return sipGetState(sipTransferObj);
+%End
+
+};
+
+
+template<TYPE>
+%MappedType QMap<int, QMap<int, TYPE> >
+{
+%TypeHeaderCode
+#include <QMap>
+%End
+
+%ConvertFromTypeCode
+  // Create the list.
+  PyObject *d;
+
+  if ((d = PyDict_New()) == NULL)
+    return NULL;
+      
+  const sipMappedType* qmap2 = sipFindMappedType("QMap<int, TYPE>");
+      
+  // Set the list elements.
+  for (QMap<int, QMap<int, TYPE> >::iterator it = sipCpp->begin(); it != sipCpp->end(); ++it)
+  {
+    QMap<int, TYPE>* t = new QMap<int, TYPE>(*it);
+    
+    PyObject *kobj = PyInt_FromLong(it.key());
+    PyObject *tobj = sipConvertFromMappedType(t, qmap2, sipTransferObj);
+
+    if (kobj == NULL || tobj == NULL || PyDict_SetItem(d, kobj, tobj) < 0)
+    {
+      Py_DECREF(d);
+      
+      if (kobj)
+        Py_DECREF(kobj);
+
+      if (tobj)
+        Py_DECREF(tobj);
+      else
+        delete t;
+
+      return NULL;
+    }
+  
+    Py_DECREF(kobj);
+    Py_DECREF(tobj);
+  }
+ 
+  return d;
+%End
+
+%ConvertToTypeCode
+  PyObject *kobj, *tobj, *kobj2, *tobj2;
+
+  // Check the type if that is all that is required.
+  if (sipIsErr == NULL)
+  {
+    if (!PyDict_Check(sipPy))
+      return 0;
+
+    Py_ssize_t i = 0;
+    while (PyDict_Next(sipPy, &i, &kobj, &tobj))
+    {
+      if (!PyDict_Check(tobj))
+        return 0;
+        
+      Py_ssize_t j = 0;
+      while (PyDict_Next(tobj, &j, &kobj2, &tobj2))
+      {
+        if (!sipCanConvertToInstance(tobj2, sipClass_TYPE, SIP_NOT_NONE))
+          return 0;
+      }
+      
+    }
+    return 1;
+  }
+  
+  QMap<int, QMap<int, TYPE> > *qm = new QMap<int, QMap<int, TYPE> >;
+  
+
+  Py_ssize_t i = 0;
+  while (PyDict_Next(sipPy, &i, &kobj, &tobj))
+  {
+    int k = PyInt_AsLong(kobj);
+    
+    // using sipConvertToMappedType to convert directly to QMap<int, TYPE> doesn't work
+    // and ends with a segfault
+    
+    QMap<int, TYPE> qm2;
+    
+    Py_ssize_t j = 0;
+    while (PyDict_Next(tobj, &j, &kobj2, &tobj2))
+    {
+      int k2 = PyInt_AsLong(kobj2);
+      int state;
+      
+      TYPE* fa = reinterpret_cast<TYPE*>(sipConvertToInstance(tobj2, sipClass_TYPE, sipTransferObj,SIP_NOT_NONE,&state,sipIsErr));
+      
+      if (*sipIsErr)
+      {
+        sipReleaseInstance(tobj2, sipClass_TYPE, state);
+        delete qm;
+        return 0;
+      }
+      
+      qm2.insert(k2, *fa);
+      sipReleaseInstance(tobj2, sipClass_TYPE, state);
+    }
+    qm->insert(k, qm2);
+  }
+
+  *sipCppPtr = qm;
+  return sipGetState(sipTransferObj);
+%End
+
+};
+
+
+
+
+class QgsVectorDataProvider : QgsDataProvider
+{
+%TypeHeaderCode
+#include <qgsvectordataprovider.h>
+%End
+
+    public:
+
+      // If you add to this, please also add to capabilitiesString()
+      /**
+       * enumeration with capabilities that providers might implement
+       */
+      enum Capability
+      {
+        NoCapabilities =               0,
+        AddFeatures =                  1,
+        DeleteFeatures =               2,
+        ChangeAttributeValues =        4,
+        AddAttributes =                8,
+        DeleteAttributes =             16,
+        SaveAsShapefile =              32,
+        CreateSpatialIndex =           64,
+        SelectAtId =                   128,
+        ChangeGeometries =             256,
+        SelectGeometryAtId =           512,
+        RandomSelectGeometryAtId =     1024,
+        SequentialSelectGeometryAtId = 2048
+      };
+
+      /**
+       * Constructor of the vector provider
+       * @param uri  uniform resource locator (URI) for a dataset
+       */
+      QgsVectorDataProvider(QString uri = QString());
+
+      /**
+       * Destructor
+       */
+      virtual ~QgsVectorDataProvider();
+
+      /**
+       * Returns the permanent storage type for this layer as a friendly name.
+       */
+      virtual QString storageType() const;
+
+      /** Select features based on a bounding rectangle. Features can be retrieved with calls to getNextFeature.
+       * @param fetchAttributes list of attributes which should be fetched
+       * @param rect spatial filter
+       * @param fetchGeometry true if the feature geometry should be fetched
+       * @param useIntersect true if an accurate intersection test should be used,
+       *                     false if a test based on bounding box is sufficient
+       */
+      virtual void select(QList<int> fetchAttributes = QList<int>(),
+                          QgsRect rect = QgsRect(),
+                          bool fetchGeometry = true,
+                          bool useIntersect = false) = 0;
+
+      /**
+       * Update the feature count based on current spatial filter. If not
+       * overridden in the data provider this function returns -1
+       */
+      virtual long updateFeatureCount();
+
+      /** 
+       * Gets the feature at the given feature ID.
+       * @param featureId id of the feature
+       * @param feature feature which will receive the data
+       * @param fetchGeoemtry if true, geometry will be fetched from the provider
+       * @param fetchAttributes a list containing the indexes of the attribute fields to copy
+       * @return True when feature was found, otherwise false
+       */
+      virtual bool getFeatureAtId(int featureId,
+                                  QgsFeature& feature,
+                                  bool fetchGeometry = true,
+                                  QList<int> fetchAttributes = QList<int>());
+
+      /**
+       * Get the next feature resulting from a select operation.
+       * @param feature feature which will receive data from the provider
+       * @return true when there was a feature to fetch, false when end was hit
+       */
+      virtual bool getNextFeature(QgsFeature& feature) = 0;
+
+      /**
+       * Get feature type.
+       * @return int representing the feature type
+       */
+      virtual QGis::WKBTYPE geometryType() const = 0;
+
+
+      /**
+       * Number of features in the layer
+       * @return long containing number of features
+       */
+      virtual long featureCount() const = 0;
+
+      /**
+       * Number of attribute fields for a feature in the layer
+       */
+      virtual uint fieldCount() const = 0;
+
+      /**
+       * Return a map of indexes with field names for this layer
+       * @return map of fields
+       */
+      virtual const QMap<int, QgsField> & fields() const = 0;
+
+      /**
+       * Return a short comment for the data that this provider is
+       * providing access to (e.g. the comment for postgres table).
+       */
+      virtual QString dataComment() const;
+      
+      /** Restart reading features from previous select operation */
+      virtual void reset() = 0;
+
+      /**
+       * Returns the minimum value of an attributs
+       * @param index the index of the attribute
+       *
+       * Default implementation walks all numeric attributes and caches minimal
+       * and maximal values. If provider has facilities to retreive minimal
+       * value directly, override this function.
+       */
+      virtual QVariant minValue(int index);
+
+      /**
+       * Returns the maximum value of an attributs
+       * @param index the index of the attribute
+       *
+       * Default implementation walks all numeric attributes and caches minimal
+       * and maximal values. If provider has facilities to retreive maximal
+       * value directly, override this function.
+       */
+      virtual QVariant maxValue(int index);
+
+      /**
+       * Adds a list of features
+       * @return true in case of success and false in case of failure
+       */
+      virtual bool addFeatures(QList<QgsFeature> & flist);
+
+      /** 
+       * Deletes a feature
+       * @param id list containing feature ids to delete
+       * @return true in case of success and false in case of failure
+       */
+      virtual bool deleteFeatures(const QSet<int> & id);
+
+      /**
+       * Adds new attributes
+       * @param attributes map with attribute name as key and type as value
+       * @return true in case of success and false in case of failure
+       */
+      virtual bool addAttributes(const QMap<QString, QString> & attributes);
+
+      /**
+       * Deletes existing attributes
+       * @param attributes a set containing indexes of attributes
+       * @return true in case of success and false in case of failure
+       */
+      virtual bool deleteAttributes(const QSet<int> & attributes);
+
+      /**
+       * Changes attribute values of existing features.
+       * @param attr_map a map containing changed attributes
+       * @return true in case of success and false in case of failure 
+       */
+      virtual bool changeAttributeValues(const QMap<int, QMap<int, QVariant> > & attr_map);
+
+      /**
+       * Returns the default value for field specified by @c fieldId
+       */
+      virtual QVariant getDefaultValue(int fieldId);
+
+      /**
+       * Changes geometries of existing features
+       * @param geometry_map   A std::map containing the feature IDs to change the geometries of. 
+       *                       the second map parameter being the new geometries themselves
+       * @return               true in case of success and false in case of failure
+       */
+      virtual bool changeGeometryValues(QMap<int, QgsGeometry> & geometry_map);
+
+      /**
+       * Creates a spatial index on the datasource (if supported by the provider type).
+       * @return true in case of success
+       */
+      virtual bool createSpatialIndex();
+
+      /** Returns a bitmask containing the supported capabilities
+          Note, some capabilities may change depending on whether
+          a spatial filter is active on this provider, so it may
+          be prudent to check this value per intended operation.
+       */
+      virtual int capabilities() const;
+
+      /**
+       *  Returns the above in friendly format.
+       */
+      QString capabilitiesString() const;
+
+      /**
+       * Set encoding used for accessing data from layer
+       */
+      virtual void setEncoding(const QString& e);
+      
+      /**
+       * Get encoding which is used for accessing data
+       */
+      QString encoding() const;
+      
+      /**
+       * Returns the index of a field name or -1 if the field does not exist
+       */
+      int indexFromFieldName(const QString& fieldName) const;
+      
+      /**
+       * Return list of indexes to fetch all attributes in getNextFeature()
+       */
+      QList<int> allAttributesList();
+
+      /**Returns the names of the numerical types*/
+      // TODO: wrap, must wrap QSet<TYPE> first
+      //const QSet<QString>& supportedNativeTypes() const;
+      
+      /**
+       * Set whether provider should return also features that don't have
+       * associated geometry. FALSE by default
+       */
+      void setFetchFeaturesWithoutGeom(bool fetch);
+
+};

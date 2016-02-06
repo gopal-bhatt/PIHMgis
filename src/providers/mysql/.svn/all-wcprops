@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/providers/mysql
+END
+qgsmysqlprovider.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/providers/mysql/qgsmysqlprovider.h
+END
+testmysql.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/providers/mysql/testmysql.cpp
+END
+qgsmysqlprovider.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/providers/mysql/qgsmysqlprovider.cpp
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/providers/mysql/README
+END

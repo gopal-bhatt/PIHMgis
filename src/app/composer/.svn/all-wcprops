@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/app/composer
+END
+qgscomposerpicture.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/app/composer/qgscomposerpicture.cpp
+END
+qgscomposerscalebar.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/app/composer/qgscomposerscalebar.cpp
+END
+qgscomposermap.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/app/composer/qgscomposermap.cpp
+END
+qgscomposer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/app/composer/qgscomposer.cpp
+END
+qgscomposerlabel.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/app/composer/qgscomposerlabel.cpp
+END
+qgscomposerview.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/app/composer/qgscomposerview.h
+END
+qgscomposerpicture.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/app/composer/qgscomposerpicture.h
+END
+qgscomposerscalebar.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/app/composer/qgscomposerscalebar.h
+END
+qgscomposervectorlegend.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/app/composer/qgscomposervectorlegend.cpp
+END
+qgscomposermap.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/app/composer/qgscomposermap.h
+END
+qgscomposer.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/app/composer/qgscomposer.h
+END
+qgscomposerlabel.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/app/composer/qgscomposerlabel.h
+END
+qgscomposervectorlegend.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/app/composer/qgscomposervectorlegend.h
+END
+qgscomposition.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/app/composer/qgscomposition.cpp
+END
+qgscomposeritem.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/app/composer/qgscomposeritem.cpp
+END
+qgscomposition.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/app/composer/qgscomposition.h
+END
+qgscomposeritem.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/app/composer/qgscomposeritem.h
+END
+qgscomposerview.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/app/composer/qgscomposerview.cpp
+END

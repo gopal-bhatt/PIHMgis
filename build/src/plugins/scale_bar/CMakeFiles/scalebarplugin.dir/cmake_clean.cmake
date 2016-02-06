@@ -1,0 +1,14 @@
+FILE(REMOVE
+"moc_plugin.cxx"
+"moc_plugingui.cxx"
+"qrc_scalebar_plugin.cxx"
+"ui_pluginguibase.h"
+"libscalebarplugin.pdb"
+"libscalebarplugin.a"
+"libscalebarplugin.so"
+"CMakeFiles/scalebarplugin.dir/plugin.o"
+"CMakeFiles/scalebarplugin.dir/plugingui.o"
+"CMakeFiles/scalebarplugin.dir/moc_plugin.o"
+"CMakeFiles/scalebarplugin.dir/moc_plugingui.o"
+"CMakeFiles/scalebarplugin.dir/qrc_scalebar_plugin.o"
+)

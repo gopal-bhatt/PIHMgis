@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/providers/ogr
+END
+qgsogrfactory.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/providers/ogr/qgsogrfactory.h
+END
+qgsogrprovider.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/providers/ogr/qgsogrprovider.h
+END
+qgsogrfactory.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/providers/ogr/qgsogrfactory.cpp
+END
+.cvsignore
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/providers/ogr/.cvsignore
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/providers/ogr/CMakeLists.txt
+END
+qgsogrprovider.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/providers/ogr/qgsogrprovider.cpp
+END

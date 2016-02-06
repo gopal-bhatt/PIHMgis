@@ -1,0 +1,131 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/grid_maker
+END
+plugin.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/grid_maker/plugin.cpp
+END
+graticulecreator.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/grid_maker/graticulecreator.cpp
+END
+utils.c
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/grid_maker/utils.c
+END
+shapefil.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/grid_maker/shapefil.h
+END
+plugin.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/grid_maker/plugin.h
+END
+plugingui.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/grid_maker/plugingui.cpp
+END
+graticulecreator.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/grid_maker/graticulecreator.h
+END
+grid_pic2.png
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/grid_maker/grid_pic2.png
+END
+utils.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/grid_maker/utils.h
+END
+shapefile.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/grid_maker/shapefile.h
+END
+plugingui.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/grid_maker/plugingui.h
+END
+icon.xpm
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/grid_maker/icon.xpm
+END
+shpopen.c
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/grid_maker/shpopen.c
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/grid_maker/README
+END
+dbfopen.c
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/grid_maker/dbfopen.c
+END
+pluginguibase.ui.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/grid_maker/pluginguibase.ui.h
+END
+main.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/grid_maker/main.cpp
+END
+gridmaker_plugin.qrc
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/grid_maker/gridmaker_plugin.qrc
+END
+pluginguibase.ui
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/grid_maker/pluginguibase.ui
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/grid_maker/CMakeLists.txt
+END
+.cvsignore
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/grid_maker/.cvsignore
+END

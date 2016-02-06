@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/images/svg
+END
+.cvsignore
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/images/svg/.cvsignore
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/images/svg/CMakeLists.txt
+END

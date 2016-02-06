@@ -1,0 +1,52 @@
+8
+
+dir
+7809
+https://svn.qgis.org/repos/qgis/branches/Release-0_9_0/src/core/spatialindex/spatialindex
+https://svn.qgis.org/repos/qgis
+
+
+
+2007-01-09T02:39:15.173934Z
+6415
+wonder
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+c8812cc2-4d05-0410-92ff-de0c093fc19c
+
+SpatialIndexImpl.cc
+file
+
+
+
+
+2007-12-24T08:18:09.000000Z
+acf64692fb00ef30ca316ab7111785d8
+2007-01-09T02:39:15.173934Z
+6415
+wonder
+
+SpatialIndexImpl.h
+file
+
+
+
+
+2007-12-24T08:18:09.000000Z
+d83d44431246a4fa6cd353c68a550c5e
+2007-01-09T02:39:15.173934Z
+6415
+wonder
+

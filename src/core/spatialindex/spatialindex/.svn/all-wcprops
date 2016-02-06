@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/spatialindex/spatialindex
+END
+SpatialIndexImpl.cc
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/spatialindex/spatialindex/SpatialIndexImpl.cc
+END
+SpatialIndexImpl.h
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/spatialindex/spatialindex/SpatialIndexImpl.h
+END

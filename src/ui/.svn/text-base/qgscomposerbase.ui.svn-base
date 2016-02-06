@@ -1,0 +1,386 @@
+<ui version="4.0" >
+ <class>QgsComposerBase</class>
+ <widget class="QMainWindow" name="QgsComposerBase" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>609</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget" >
+   <layout class="QGridLayout" >
+    <property name="margin" >
+     <number>9</number>
+    </property>
+    <property name="spacing" >
+     <number>6</number>
+    </property>
+    <item row="0" column="0" colspan="3" >
+     <widget class="QSplitter" name="mSplitter" >
+      <property name="sizePolicy" >
+       <sizepolicy>
+        <hsizetype>7</hsizetype>
+        <vsizetype>7</vsizetype>
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="focusPolicy" >
+       <enum>Qt::ClickFocus</enum>
+      </property>
+      <property name="lineWidth" >
+       <number>1</number>
+      </property>
+      <property name="midLineWidth" >
+       <number>0</number>
+      </property>
+      <property name="orientation" >
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <widget class="Q3Frame" name="mViewFrame" >
+       <property name="sizePolicy" >
+        <sizepolicy>
+         <hsizetype>7</hsizetype>
+         <vsizetype>7</vsizetype>
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize" >
+        <size>
+         <width>10</width>
+         <height>10</height>
+        </size>
+       </property>
+       <property name="focusPolicy" >
+        <enum>Qt::ClickFocus</enum>
+       </property>
+       <property name="frameShape" >
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow" >
+        <enum>QFrame::Raised</enum>
+       </property>
+       <property name="lineWidth" >
+        <number>1</number>
+       </property>
+      </widget>
+      <widget class="QTabWidget" name="mOptionsTabWidget" >
+       <property name="sizePolicy" >
+        <sizepolicy>
+         <hsizetype>7</hsizetype>
+         <vsizetype>7</vsizetype>
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize" >
+        <size>
+         <width>150</width>
+         <height>10</height>
+        </size>
+       </property>
+       <property name="maximumSize" >
+        <size>
+         <width>300</width>
+         <height>32767</height>
+        </size>
+       </property>
+       <widget class="QWidget" name="tab" >
+        <attribute name="title" >
+         <string>General</string>
+        </attribute>
+        <layout class="QGridLayout" >
+         <property name="margin" >
+          <number>8</number>
+         </property>
+         <property name="spacing" >
+          <number>6</number>
+         </property>
+         <item row="1" column="0" colspan="2" >
+          <widget class="Q3Frame" name="mCompositionOptionsFrame" >
+           <property name="sizePolicy" >
+            <sizepolicy>
+             <hsizetype>7</hsizetype>
+             <vsizetype>7</vsizetype>
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="frameShape" >
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow" >
+            <enum>QFrame::Plain</enum>
+           </property>
+           <property name="lineWidth" >
+            <number>0</number>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0" >
+          <widget class="QLabel" name="textLabel1" >
+           <property name="sizePolicy" >
+            <sizepolicy>
+             <hsizetype>7</hsizetype>
+             <vsizetype>5</vsizetype>
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="text" >
+            <string>Composition</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1" >
+          <widget class="QComboBox" name="mCompositionNameComboBox" >
+           <property name="enabled" >
+            <bool>false</bool>
+           </property>
+           <property name="sizePolicy" >
+            <sizepolicy>
+             <hsizetype>7</hsizetype>
+             <vsizetype>0</vsizetype>
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="tab_2" >
+        <attribute name="title" >
+         <string>Item</string>
+        </attribute>
+        <layout class="QGridLayout" >
+         <property name="margin" >
+          <number>8</number>
+         </property>
+         <property name="spacing" >
+          <number>6</number>
+         </property>
+         <item row="0" column="0" >
+          <widget class="Q3Frame" name="mItemOptionsFrame" >
+           <property name="sizePolicy" >
+            <sizepolicy>
+             <hsizetype>7</hsizetype>
+             <vsizetype>7</vsizetype>
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="frameShape" >
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow" >
+            <enum>QFrame::Plain</enum>
+           </property>
+           <property name="lineWidth" >
+            <number>0</number>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </widget>
+    </item>
+    <item row="1" column="2" >
+     <widget class="QPushButton" name="closePButton" >
+      <property name="text" >
+       <string>Close</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0" >
+     <widget class="QPushButton" name="helpPButton" >
+      <property name="text" >
+       <string>Help</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1" >
+     <spacer>
+      <property name="orientation" >
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" >
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QToolBar" name="toolBar" >
+   <property name="orientation" >
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <attribute name="toolBarArea" >
+    <number>4</number>
+   </attribute>
+   <addaction name="mActionOpenTemplate" />
+   <addaction name="mActionSaveTemplateAs" />
+   <addaction name="mActionExportAsImage" />
+   <addaction name="mActionExportAsSVG" />
+   <addaction name="mActionPrint" />
+   <addaction name="separator" />
+   <addaction name="mActionZoomAll" />
+   <addaction name="mActionZoomIn" />
+   <addaction name="mActionZoomOut" />
+   <addaction name="mActionRefreshView" />
+   <addaction name="separator" />
+   <addaction name="mActionAddNewMap" />
+   <addaction name="mActionAddImage" />
+   <addaction name="mActionAddNewLabel" />
+   <addaction name="mActionAddNewVectLegend" />
+   <addaction name="mActionAddNewScalebar" />
+   <addaction name="mActionSelectMoveItem" />
+  </widget>
+  <action name="mActionOpenTemplate" >
+   <property name="icon" >
+    <iconset>../themes/default/mActionFileOpen.png</iconset>
+   </property>
+   <property name="text" >
+    <string>&amp;Open Template ...</string>
+   </property>
+  </action>
+  <action name="mActionSaveTemplateAs" >
+   <property name="icon" >
+    <iconset>../themes/default/mActionFileSaveAs.png</iconset>
+   </property>
+   <property name="text" >
+    <string>Save Template &amp;As...</string>
+   </property>
+  </action>
+  <action name="mActionPrint" >
+   <property name="icon" >
+    <iconset>../themes/default/mActionFilePrint.png</iconset>
+   </property>
+   <property name="text" >
+    <string>&amp;Print...</string>
+   </property>
+  </action>
+  <action name="mActionZoomAll" >
+   <property name="icon" >
+    <iconset>../themes/default/mActionZoomFullExtent.png</iconset>
+   </property>
+   <property name="text" >
+    <string>Zoom All</string>
+   </property>
+  </action>
+  <action name="mActionZoomIn" >
+   <property name="icon" >
+    <iconset>../themes/default/mActionZoomIn.png</iconset>
+   </property>
+   <property name="text" >
+    <string>Zoom In</string>
+   </property>
+  </action>
+  <action name="mActionZoomOut" >
+   <property name="icon" >
+    <iconset>../themes/default/mActionZoomOut.png</iconset>
+   </property>
+   <property name="text" >
+    <string>Zoom Out</string>
+   </property>
+  </action>
+  <action name="mActionAddNewMap" >
+   <property name="icon" >
+    <iconset>../themes/default/mActionAddRasterLayer.png</iconset>
+   </property>
+   <property name="text" >
+    <string>Add new map</string>
+   </property>
+  </action>
+  <action name="mActionAddNewLabel" >
+   <property name="icon" >
+    <iconset>../themes/default/mActionLabel.png</iconset>
+   </property>
+   <property name="text" >
+    <string>Add new label</string>
+   </property>
+  </action>
+  <action name="mActionAddNewVectLegend" >
+   <property name="icon" >
+    <iconset>../themes/default/mActionAddLegend.png</iconset>
+   </property>
+   <property name="text" >
+    <string>Add new vect legend</string>
+   </property>
+  </action>
+  <action name="mActionSelectMoveItem" >
+   <property name="icon" >
+    <iconset>../themes/default/mActionPan.png</iconset>
+   </property>
+   <property name="text" >
+    <string>Select/Move item</string>
+   </property>
+  </action>
+  <action name="mActionExportAsImage" >
+   <property name="icon" >
+    <iconset>../themes/default/mActionExportMapServer.png</iconset>
+   </property>
+   <property name="text" >
+    <string>Export as image</string>
+   </property>
+  </action>
+  <action name="mActionExportAsSVG" >
+   <property name="icon" >
+    <iconset>../themes/default/mActionSaveAsSVG.png</iconset>
+   </property>
+   <property name="text" >
+    <string>Export as SVG</string>
+   </property>
+  </action>
+  <action name="mActionAddNewScalebar" >
+   <property name="icon" >
+    <iconset>../../plugins/scale_bar/icon.xpm</iconset>
+   </property>
+   <property name="text" >
+    <string>Add new scalebar</string>
+   </property>
+  </action>
+  <action name="mActionRefreshView" >
+   <property name="icon" >
+    <iconset>../themes/default/mActionDraw.png</iconset>
+   </property>
+   <property name="text" >
+    <string>Refresh view</string>
+   </property>
+  </action>
+  <action name="mActionAddImage" >
+   <property name="icon" >
+    <iconset>../themes/default/mActionSaveMapAsImage.png</iconset>
+   </property>
+   <property name="text" >
+    <string>Add Image</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>Q3Frame</class>
+   <extends>QFrame</extends>
+   <header>Qt3Support/Q3Frame</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <tabstops>
+  <tabstop>mViewFrame</tabstop>
+  <tabstop>mOptionsTabWidget</tabstop>
+  <tabstop>mCompositionNameComboBox</tabstop>
+  <tabstop>mSplitter</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

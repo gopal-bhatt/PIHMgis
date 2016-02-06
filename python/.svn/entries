@@ -1,0 +1,82 @@
+8
+
+dir
+7809
+https://svn.qgis.org/repos/qgis/branches/Release-0_9_0/python
+https://svn.qgis.org/repos/qgis
+
+
+
+2007-08-30T02:13:49.023291Z
+7172
+timlinux
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+c8812cc2-4d05-0410-92ff-de0c093fc19c
+
+gui
+dir
+
+qgisconfig.py.in
+file
+
+
+
+
+2007-12-24T08:17:15.000000Z
+018596219a67b1cc654360058185992c
+2007-01-09T02:39:15.173934Z
+6415
+wonder
+
+__init__.py
+file
+
+
+
+
+2007-12-24T08:17:15.000000Z
+ce9879a80ec59753ae8edd7e31012486
+2007-01-09T02:39:15.173934Z
+6415
+wonder
+
+core
+dir
+
+CMakeLists.txt
+file
+
+
+
+
+2007-12-24T08:17:15.000000Z
+9115695a56a51d1c02e74d6120c0444b
+2007-03-08T11:51:16.291501Z
+6776
+wonder
+
+configure.py.in
+file
+
+
+
+
+2007-12-24T08:17:15.000000Z
+5e259bfacff1af4f995e06dbee765bbd
+2007-08-30T02:13:49.023291Z
+7172
+timlinux
+

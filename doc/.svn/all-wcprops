@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/doc
+END
+qgisdoc.css
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/doc/qgisdoc.css
+END
+userguide.pdf
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/doc/userguide.pdf
+END
+index.html
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/doc/index.html
+END
+.cvsignore
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/doc/.cvsignore
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/doc/CMakeLists.txt
+END
+favicon.ico
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/doc/favicon.ico
+END
+install.pdf
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/doc/install.pdf
+END

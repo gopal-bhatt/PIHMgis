@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/tests/testdata
+END
+polys.shp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/tests/testdata/polys.shp
+END
+polys.dbf
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/tests/testdata/polys.dbf
+END
+polys.prj
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/tests/testdata/polys.prj
+END
+lines.shp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/tests/testdata/lines.shp
+END
+lines.dbf
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/tests/testdata/lines.dbf
+END
+lines.prj
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/tests/testdata/lines.prj
+END
+points.shp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/tests/testdata/points.shp
+END
+points.dbf
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/tests/testdata/points.dbf
+END
+points.prj
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/tests/testdata/points.prj
+END
+polys.shx
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/tests/testdata/polys.shx
+END
+lines.shx
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/tests/testdata/lines.shx
+END
+points.shx
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/tests/testdata/points.shx
+END

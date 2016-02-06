@@ -1,0 +1,77 @@
+8
+
+dir
+7809
+https://svn.qgis.org/repos/qgis/branches/Release-0_9_0/src/providers
+https://svn.qgis.org/repos/qgis
+
+
+
+2007-09-16T20:34:54.819737Z
+7205
+gsherman
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+c8812cc2-4d05-0410-92ff-de0c093fc19c
+
+grass
+dir
+
+wfs
+dir
+
+delimitedtext
+dir
+
+mysql
+dir
+
+postgres
+dir
+
+wms
+dir
+
+ogr
+dir
+
+.cvsignore
+file
+
+
+
+
+2007-12-24T08:18:12.000000Z
+31076018db46093e4e5e50ab56486a4e
+2005-01-10T22:06:18.000000Z
+2612
+g_j_m
+has-props
+
+CMakeLists.txt
+file
+
+
+
+
+2007-12-24T08:18:12.000000Z
+707d456cf44010753f7377fa92642e3d
+2007-01-15T08:29:34.189136Z
+6434
+mhugent
+
+gpx
+dir
+

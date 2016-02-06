@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/spatialindex/geometry
+END
+Region.cc
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/spatialindex/geometry/Region.cc
+END
+Point.cc
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/spatialindex/geometry/Point.cc
+END
+LineSegment.cc
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/spatialindex/geometry/LineSegment.cc
+END

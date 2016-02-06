@@ -1,0 +1,173 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/i18n
+END
+qt_ru.ts
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/i18n/qt_ru.ts
+END
+qgis_es.ts
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/i18n/qgis_es.ts
+END
+qgis_fr.ts
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/i18n/qgis_fr.ts
+END
+qt_sv.ts
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/i18n/qt_sv.ts
+END
+qt_de.ts
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/i18n/qt_de.ts
+END
+qgis_nl.ts
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/i18n/qgis_nl.ts
+END
+qgis_mn.ts
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/i18n/qgis_mn.ts
+END
+qgis_it.ts
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/i18n/qgis_it.ts
+END
+qgis_sk.ts
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/i18n/qgis_sk.ts
+END
+qgis_vi.ts
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/i18n/qgis_vi.ts
+END
+qgis_ro.ts
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/i18n/qgis_ro.ts
+END
+qgis_lv.ts
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/i18n/qgis_lv.ts
+END
+qt_zh_CN.ts
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/i18n/qt_zh_CN.ts
+END
+qgis_tr.ts
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/i18n/qgis_tr.ts
+END
+qgis_ru.ts
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/i18n/qgis_ru.ts
+END
+qgis_de.ts
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/i18n/qgis_de.ts
+END
+qgis_sv.ts
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/i18n/qgis_sv.ts
+END
+qt_es.ts
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/i18n/qt_es.ts
+END
+qt_fr.ts
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/i18n/qt_fr.ts
+END
+qgis_ja.ts
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/i18n/qgis_ja.ts
+END
+qgis_id.ts
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/i18n/qgis_id.ts
+END
+qt_sk.ts
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/i18n/qt_sk.ts
+END
+qgis_cs_CZ.ts
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/i18n/qgis_cs_CZ.ts
+END
+qgis_zh_CN.ts
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/i18n/qgis_zh_CN.ts
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/i18n/CMakeLists.txt
+END
+.cvsignore
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/i18n/.cvsignore
+END
+qgis_pt_BR.ts
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/i18n/qgis_pt_BR.ts
+END
+qgis_pl_PL.ts
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/i18n/qgis_pl_PL.ts
+END

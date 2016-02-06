@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/spatialindex/tools
+END
+ExternalSort.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/spatialindex/tools/ExternalSort.h
+END
+Tools.cc
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/spatialindex/tools/Tools.cc
+END
+TemporaryFile.cc
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/spatialindex/tools/TemporaryFile.cc
+END
+ExternalSort.cc
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/spatialindex/tools/ExternalSort.cc
+END

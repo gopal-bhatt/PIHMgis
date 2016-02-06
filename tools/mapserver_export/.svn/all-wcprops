@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/tools/mapserver_export
+END
+qgsmapserverexport.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/tools/mapserver_export/qgsmapserverexport.cpp
+END
+ms_main.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/tools/mapserver_export/ms_main.cpp
+END
+ms_export.py
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/tools/mapserver_export/ms_export.py
+END
+qgsmapserverexport.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/tools/mapserver_export/qgsmapserverexport.h
+END
+test_export.py
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/tools/mapserver_export/test_export.py
+END
+msexport.i
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/tools/mapserver_export/msexport.i
+END
+qgsmapserverexportbase.ui
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/tools/mapserver_export/qgsmapserverexportbase.ui
+END
+msexport_wrap.cxx
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/tools/mapserver_export/msexport_wrap.cxx
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/tools/mapserver_export/CMakeLists.txt
+END

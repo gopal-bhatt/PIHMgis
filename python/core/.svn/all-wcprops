@@ -1,0 +1,275 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/python/core
+END
+qgsmaplayer.sip
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/python/core/qgsmaplayer.sip
+END
+qgslogger.sip
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/python/core/qgslogger.sip
+END
+qgsmaptopixel.sip
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/python/core/qgsmaptopixel.sip
+END
+qgsproviderregistry.sip
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/python/core/qgsproviderregistry.sip
+END
+qgsdistancearea.sip
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/python/core/qgsdistancearea.sip
+END
+qgsfield.sip
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/python/core/qgsfield.sip
+END
+qgsspatialindex.sip
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/python/core/qgsspatialindex.sip
+END
+qgis.sip
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/python/core/qgis.sip
+END
+qgsgeometry.sip
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/python/core/qgsgeometry.sip
+END
+qgscontinuouscolorrenderer.sip
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/python/core/qgscontinuouscolorrenderer.sip
+END
+qgsrect.sip
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/python/core/qgsrect.sip
+END
+qgsmessageoutput.sip
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/python/core/qgsmessageoutput.sip
+END
+qgsmarkercatalogue.sip
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/python/core/qgsmarkercatalogue.sip
+END
+qgsrenderer.sip
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/python/core/qgsrenderer.sip
+END
+qgsdatasourceuri.sip
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/python/core/qgsdatasourceuri.sip
+END
+qgsgraduatedsymbolrenderer.sip
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/python/core/qgsgraduatedsymbolrenderer.sip
+END
+core.sip
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/python/core/core.sip
+END
+qgsmaprender.sip
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/python/core/qgsmaprender.sip
+END
+qgslabel.sip
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/python/core/qgslabel.sip
+END
+qgsgeometryvertexindex.sip
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/python/core/qgsgeometryvertexindex.sip
+END
+qgscoordinatetransform.sip
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/python/core/qgscoordinatetransform.sip
+END
+qgsdataprovider.sip
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/python/core/qgsdataprovider.sip
+END
+qgscolortable.sip
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/python/core/qgscolortable.sip
+END
+qgslabelattributes.sip
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/python/core/qgslabelattributes.sip
+END
+qgsrasterpyramid.sip
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/python/core/qgsrasterpyramid.sip
+END
+qgsspatialrefsys.sip
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/python/core/qgsspatialrefsys.sip
+END
+qgspoint.sip
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/python/core/qgspoint.sip
+END
+qgsuniquevaluerenderer.sip
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/python/core/qgsuniquevaluerenderer.sip
+END
+qgsfeature.sip
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/python/core/qgsfeature.sip
+END
+qgsprovidermetadata.sip
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/python/core/qgsprovidermetadata.sip
+END
+qgscontexthelp.sip
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/python/core/qgscontexthelp.sip
+END
+qgsrasterlayer.sip
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/python/core/qgsrasterlayer.sip
+END
+qgssinglesymbolrenderer.sip
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/python/core/qgssinglesymbolrenderer.sip
+END
+qgsvectorfilewriter.sip
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/python/core/qgsvectorfilewriter.sip
+END
+qgsvectorlayer.sip
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/python/core/qgsvectorlayer.sip
+END
+qgsrasterviewport.sip
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/python/core/qgsrasterviewport.sip
+END
+qgsscalecalculator.sip
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/python/core/qgsscalecalculator.sip
+END
+qgsmaplayerregistry.sip
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/python/core/qgsmaplayerregistry.sip
+END
+qgsapplication.sip
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/python/core/qgsapplication.sip
+END
+qgsrasterbandstats.sip
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/python/core/qgsrasterbandstats.sip
+END
+qgsrasterdataprovider.sip
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/python/core/qgsrasterdataprovider.sip
+END
+qgssymbol.sip
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/python/core/qgssymbol.sip
+END
+qgssymbologyutils.sip
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/python/core/qgssymbologyutils.sip
+END
+qgsproject.sip
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/python/core/qgsproject.sip
+END
+qgsvectordataprovider.sip
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/python/core/qgsvectordataprovider.sip
+END

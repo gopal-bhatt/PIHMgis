@@ -1,0 +1,82 @@
+8
+
+dir
+7809
+https://svn.qgis.org/repos/qgis/branches/Release-0_9_0/src/core/spatialindex
+https://svn.qgis.org/repos/qgis
+
+
+
+2007-02-28T17:32:49.401694Z
+6733
+wonder
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+c8812cc2-4d05-0410-92ff-de0c093fc19c
+
+storagemanager
+dir
+
+tools
+dir
+
+rtree
+dir
+
+qgsspatialindex.cpp
+file
+
+
+
+
+2007-12-24T08:18:09.000000Z
+a648264c99dfea9c569d97f46533f6ce
+2007-02-05T09:05:30.022983Z
+6527
+timlinux
+
+include
+dir
+
+spatialindex
+dir
+
+qgsspatialindex.h
+file
+
+
+
+
+2007-12-24T08:18:09.000000Z
+a72fa4697195b630dda4b003825edc03
+2007-01-09T02:39:15.173934Z
+6415
+wonder
+
+geometry
+dir
+
+README
+file
+
+
+
+
+2007-12-24T08:18:09.000000Z
+4e7408e146c6434ad4a1d8f848804216
+2007-01-09T02:39:15.173934Z
+6415
+wonder
+

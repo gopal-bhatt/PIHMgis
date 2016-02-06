@@ -1,0 +1,25 @@
+K 10
+svn:ignore
+V 305
+*.lo
+*.la
+spit
+*.moc.cpp
+Makefile
+Makefile.in
+.libs
+.deps
+qgsconnectiondialogbase.cpp
+qgsconnectiondialogbase.h
+qgseditreservedwordsbase.cpp
+qgseditreservedwordsbase.h
+qgsmessageviewerbase.cpp
+qgsmessageviewerbase.h
+qgsscangeometries.cpp
+qgsscangeometries.h
+qgsspitbase.cpp
+qgsspitbase.h
+ui_*.h
+*.qrc.cpp
+
+END

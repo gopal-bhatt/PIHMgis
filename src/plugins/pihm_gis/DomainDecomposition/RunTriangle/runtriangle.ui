@@ -1,0 +1,292 @@
+<ui version="4.0" >
+ <author></author>
+ <comment></comment>
+ <exportmacro></exportmacro>
+ <class>runTriangle</class>
+ <widget class="QDialog" name="runTriangle" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>579</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>Run TRIANGLE</string>
+  </property>
+  <widget class="Q3ButtonGroup" name="inputPolyFileGroup" >
+   <property name="geometry" >
+    <rect>
+     <x>11</x>
+     <y>283</y>
+     <width>578</width>
+     <height>100</height>
+    </rect>
+   </property>
+   <property name="title" >
+    <string>Input a Poly File</string>
+   </property>
+   <property name="orientation" >
+    <enum>Qt::Vertical</enum>
+   </property>
+   <widget class="QPushButton" name="polyFileBrowseButton" >
+    <property name="geometry" >
+     <rect>
+      <x>370</x>
+      <y>39</y>
+      <width>81</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="text" >
+     <string>Browse...</string>
+    </property>
+    <property name="autoDefault" >
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="polyFileLineEdit" >
+    <property name="geometry" >
+     <rect>
+      <x>20</x>
+      <y>40</y>
+      <width>340</width>
+      <height>28</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="Q3ButtonGroup" name="Options" >
+   <property name="geometry" >
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>578</width>
+     <height>270</height>
+    </rect>
+   </property>
+   <property name="title" >
+    <string>Options</string>
+   </property>
+   <property name="orientation" >
+    <enum>Qt::Vertical</enum>
+   </property>
+   <widget class="QLineEdit" name="qOptionLineEdit" >
+    <property name="geometry" >
+     <rect>
+      <x>40</x>
+      <y>120</y>
+      <width>80</width>
+      <height>29</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="aOptionLineEdit" >
+    <property name="geometry" >
+     <rect>
+      <x>40</x>
+      <y>190</y>
+      <width>80</width>
+      <height>29</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="otherOptionLineEdit" >
+    <property name="geometry" >
+     <rect>
+      <x>170</x>
+      <y>230</y>
+      <width>90</width>
+      <height>29</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="otherOptionCheckBox" >
+    <property name="geometry" >
+     <rect>
+      <x>11</x>
+      <y>231</y>
+      <width>130</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="text" >
+     <string>Other options</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="aOptionLabel" >
+    <property name="geometry" >
+     <rect>
+      <x>140</x>
+      <y>190</y>
+      <width>151</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text" >
+     <string>Area</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="nOptionCheckBox" >
+    <property name="geometry" >
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>556</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="text" >
+     <string>-n : Generate a list of triangle neighbours.</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="VOptionsCheckBox" >
+    <property name="geometry" >
+     <rect>
+      <x>11</x>
+      <y>57</y>
+      <width>556</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="text" >
+     <string>-V : Verbose if checked. Quiet otherwise.</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="qOptionsCheckBox" >
+    <property name="geometry" >
+     <rect>
+      <x>11</x>
+      <y>92</y>
+      <width>556</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="text" >
+     <string>-q : Quality Mesh generation. A minimum angle may be specified.</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="qOptionLabel" >
+    <property name="geometry" >
+     <rect>
+      <x>140</x>
+      <y>120</y>
+      <width>251</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text" >
+     <string>Angle (in Degree)</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="aOptionsCheckBox" >
+    <property name="geometry" >
+     <rect>
+      <x>11</x>
+      <y>159</y>
+      <width>556</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="text" >
+     <string>-a : Apply a maximum triangle area constraint.</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="showOptionsButton" >
+    <property name="geometry" >
+     <rect>
+      <x>140</x>
+      <y>229</y>
+      <width>20</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="text" >
+     <string>?</string>
+    </property>
+    <property name="autoDefault" >
+     <bool>false</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="Q3TextBrowser" name="MessageLog" >
+   <property name="geometry" >
+    <rect>
+     <x>12</x>
+     <y>438</y>
+     <width>571</width>
+     <height>131</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="runButton" >
+   <property name="geometry" >
+    <rect>
+     <x>504</x>
+     <y>393</y>
+     <width>80</width>
+     <height>34</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string>Run!</string>
+   </property>
+   <property name="autoDefault" >
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="cancelButton" >
+   <property name="geometry" >
+    <rect>
+     <x>421</x>
+     <y>393</y>
+     <width>80</width>
+     <height>34</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string>Cancel</string>
+   </property>
+   <property name="autoDefault" >
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="helpButton" >
+   <property name="geometry" >
+    <rect>
+     <x>11</x>
+     <y>393</y>
+     <width>80</width>
+     <height>34</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string>Help</string>
+   </property>
+   <property name="autoDefault" >
+    <bool>false</bool>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11" />
+ <pixmapfunction>qPixmapFromMimeSource</pixmapfunction>
+ <customwidgets>
+  <customwidget>
+   <class>Q3TextBrowser</class>
+   <extends>QWidget</extends>
+   <header>q3textbrowser.h</header>
+   <container>1</container>
+   <pixmap></pixmap>
+  </customwidget>
+  <customwidget>
+   <class>Q3ButtonGroup</class>
+   <extends></extends>
+   <header>Qt3Support/Q3ButtonGroup</header>
+   <container>1</container>
+   <pixmap></pixmap>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

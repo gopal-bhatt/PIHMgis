@@ -1,0 +1,34 @@
+8
+
+dir
+7809
+https://svn.qgis.org/repos/qgis/branches/Release-0_9_0/tests/algorithms
+https://svn.qgis.org/repos/qgis
+
+
+
+2007-09-16T20:34:54.819737Z
+7205
+gsherman
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+c8812cc2-4d05-0410-92ff-de0c093fc19c
+
+projections
+dir
+
+qgsproject
+dir
+

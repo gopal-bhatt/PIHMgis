@@ -1,0 +1,292 @@
+<ui version="4.0" >
+ <class>QgsAttributeTableBase</class>
+ <widget class="QDialog" name="QgsAttributeTableBase" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>686</width>
+    <height>547</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>Attribute Table</string>
+  </property>
+  <property name="windowIcon" >
+   <iconset/>
+  </property>
+  <layout class="QGridLayout" >
+   <property name="margin" >
+    <number>9</number>
+   </property>
+   <property name="spacing" >
+    <number>6</number>
+   </property>
+   <item row="2" column="0" >
+    <layout class="QHBoxLayout" >
+     <property name="margin" >
+      <number>0</number>
+     </property>
+     <property name="spacing" >
+      <number>6</number>
+     </property>
+     <item>
+      <widget class="QPushButton" name="btnHelp" >
+       <property name="text" >
+        <string>&amp;Help</string>
+       </property>
+       <property name="shortcut" >
+        <string>Alt+C</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="textLabel1" >
+       <property name="text" >
+        <string>Search for:</string>
+       </property>
+       <property name="buddy" >
+        <cstring>mSearchText</cstring>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="mSearchText" />
+     </item>
+     <item>
+      <widget class="QLabel" name="textLabel2" >
+       <property name="text" >
+        <string>in</string>
+       </property>
+       <property name="buddy" >
+        <cstring>mSearchColumns</cstring>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="mSearchColumns" >
+       <property name="sizePolicy" >
+        <sizepolicy>
+         <hsizetype>7</hsizetype>
+         <vsizetype>0</vsizetype>
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="mSearchButton" >
+       <property name="text" >
+        <string>Search</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="mSearchShowResults" />
+     </item>
+     <item>
+      <widget class="QPushButton" name="btnAdvancedSearch" >
+       <property name="text" >
+        <string>Adva&amp;nced...</string>
+       </property>
+       <property name="shortcut" >
+        <string>Alt+N</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btnClose" >
+       <property name="text" >
+        <string>&amp;Close</string>
+       </property>
+       <property name="shortcut" >
+        <string>Alt+C</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="1" column="0" >
+    <widget class="QgsAttributeTable" native="1" name="tblAttributes" >
+     <property name="sizePolicy" >
+      <sizepolicy>
+       <hsizetype>7</hsizetype>
+       <vsizetype>7</vsizetype>
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="0" >
+    <layout class="QHBoxLayout" >
+     <property name="margin" >
+      <number>0</number>
+     </property>
+     <property name="spacing" >
+      <number>6</number>
+     </property>
+     <item>
+      <widget class="QToolButton" name="mRemoveSelectionButton" >
+       <property name="toolTip" >
+        <string>Remove selection</string>
+       </property>
+       <property name="text" >
+        <string/>
+       </property>
+       <property name="icon" >
+        <iconset>../xpm/remove_selection.xpm</iconset>
+       </property>
+       <property name="shortcut" >
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="mSelectedToTopButton" >
+       <property name="toolTip" >
+        <string>Move selected to top</string>
+       </property>
+       <property name="text" >
+        <string/>
+       </property>
+       <property name="icon" >
+        <iconset>../xpm/selected_to_top.png</iconset>
+       </property>
+       <property name="shortcut" >
+        <string>Ctrl+T</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="mInvertSelectionButton" >
+       <property name="toolTip" >
+        <string>Invert selection</string>
+       </property>
+       <property name="text" >
+        <string/>
+       </property>
+       <property name="icon" >
+        <iconset>../xpm/switch_selection.png</iconset>
+       </property>
+       <property name="shortcut" >
+        <string>Ctrl+S</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="mCopySelectedRowsButton" >
+       <property name="toolTip" >
+        <string>Copy selected rows to clipboard (Ctrl+C)</string>
+       </property>
+       <property name="whatsThis" >
+        <string>Copies the selected rows to the clipboard</string>
+       </property>
+       <property name="text" >
+        <string/>
+       </property>
+       <property name="icon" >
+        <iconset>../xpm/copy_selection.png</iconset>
+       </property>
+       <property name="shortcut" >
+        <string>Ctrl+C</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="mAddAttributeButton" >
+       <property name="toolTip" >
+        <string>New column</string>
+       </property>
+       <property name="text" >
+        <string/>
+       </property>
+       <property name="icon" >
+        <iconset>../xpm/new_attribute.png</iconset>
+       </property>
+       <property name="shortcut" >
+        <string>Ctrl+N</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="mDeleteAttributeButton" >
+       <property name="toolTip" >
+        <string>Delete column</string>
+       </property>
+       <property name="text" >
+        <string/>
+       </property>
+       <property name="icon" >
+        <iconset>../xpm/delete_attribute.png</iconset>
+       </property>
+       <property name="shortcut" >
+        <string>Ctrl+X</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer>
+       <property name="orientation" >
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeType" >
+        <enum>QSizePolicy::Expanding</enum>
+       </property>
+       <property name="sizeHint" >
+        <size>
+         <width>210</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btnStartEditing" >
+       <property name="text" >
+        <string>Start editing</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btnStopEditing" >
+       <property name="text" >
+        <string>Stop editin&amp;g</string>
+       </property>
+       <property name="shortcut" >
+        <string>Alt+G</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11" />
+ <customwidgets>
+  <customwidget>
+   <class>QgsAttributeTable</class>
+   <extends>QWidget</extends>
+   <header>qgsattributetable.h</header>
+  </customwidget>
+ </customwidgets>
+ <tabstops>
+  <tabstop>mRemoveSelectionButton</tabstop>
+  <tabstop>mSelectedToTopButton</tabstop>
+  <tabstop>mInvertSelectionButton</tabstop>
+  <tabstop>mCopySelectedRowsButton</tabstop>
+  <tabstop>mAddAttributeButton</tabstop>
+  <tabstop>mDeleteAttributeButton</tabstop>
+  <tabstop>btnStartEditing</tabstop>
+  <tabstop>btnStopEditing</tabstop>
+  <tabstop>mSearchText</tabstop>
+  <tabstop>mSearchColumns</tabstop>
+  <tabstop>mSearchButton</tabstop>
+  <tabstop>mSearchShowResults</tabstop>
+  <tabstop>btnAdvancedSearch</tabstop>
+  <tabstop>btnClose</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

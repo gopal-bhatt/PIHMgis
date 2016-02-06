@@ -1,0 +1,14 @@
+K 10
+svn:ignore
+V 124
+Makefile
+Makefile.in
+*.moc.cpp
+.deps
+.libs
+qgssearchstringlexer.cc
+qgssearchstringparser.cc
+qgssearchstringparser.h
+include
+
+END

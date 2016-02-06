@@ -1,0 +1,6 @@
+#ifndef IHM10
+#define IHM10
+
+int ihm10(int argc, char *argv[]);
+
+#endif

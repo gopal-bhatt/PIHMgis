@@ -1,0 +1,14 @@
+FILE(REMOVE
+"moc_qgsdelimitedtextplugin.cxx"
+"moc_qgsdelimitedtextplugingui.cxx"
+"qrc_delimited_text.cxx"
+"ui_qgsdelimitedtextpluginguibase.h"
+"libdelimitedtextplugin.pdb"
+"libdelimitedtextplugin.a"
+"libdelimitedtextplugin.so"
+"CMakeFiles/delimitedtextplugin.dir/qgsdelimitedtextplugin.o"
+"CMakeFiles/delimitedtextplugin.dir/qgsdelimitedtextplugingui.o"
+"CMakeFiles/delimitedtextplugin.dir/moc_qgsdelimitedtextplugin.o"
+"CMakeFiles/delimitedtextplugin.dir/moc_qgsdelimitedtextplugingui.o"
+"CMakeFiles/delimitedtextplugin.dir/qrc_delimited_text.o"
+)

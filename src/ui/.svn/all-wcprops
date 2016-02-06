@@ -1,0 +1,311 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/ui
+END
+qgspatterndialogbase.ui
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/ui/qgspatterndialogbase.ui
+END
+qgsludialogbase.ui
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/ui/qgsludialogbase.ui
+END
+qgsmarkerdialogbase.ui
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/ui/qgsmarkerdialogbase.ui
+END
+qgscompositionbase.ui
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/ui/qgscompositionbase.ui
+END
+qgsmapserverexportbase.ui
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/ui/qgsmapserverexportbase.ui
+END
+qgslayerprojectionselectorbase.ui
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/ui/qgslayerprojectionselectorbase.ui
+END
+qgsrasterlayerpropertiesbase.ui
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/ui/qgsrasterlayerpropertiesbase.ui
+END
+qgsattributetablebase.ui
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/ui/qgsattributetablebase.ui
+END
+qgsmessageviewer.ui
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/ui/qgsmessageviewer.ui
+END
+qgsvectorsymbologywidgetbase.ui
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/ui/qgsvectorsymbologywidgetbase.ui
+END
+qgsvectorlayerpropertiesbase.ui
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/ui/qgsvectorlayerpropertiesbase.ui
+END
+qgsdelattrdialogbase.ui
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/ui/qgsdelattrdialogbase.ui
+END
+qgsuniquevaluedialogbase.ui
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/ui/qgsuniquevaluedialogbase.ui
+END
+qgscomposerscalebarbase.ui
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/ui/qgscomposerscalebarbase.ui
+END
+qgsserversourceselectbase.ui
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/ui/qgsserversourceselectbase.ui
+END
+qgssinglesymboldialogbase.ui
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/ui/qgssinglesymboldialogbase.ui
+END
+qgscomposerlabelbase.ui
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/ui/qgscomposerlabelbase.ui
+END
+qgscustomprojectiondialogbase.ui
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/ui/qgscustomprojectiondialogbase.ui
+END
+qgsbookmarksbase.ui
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/ui/qgsbookmarksbase.ui
+END
+qgslinestyledialogbase.ui
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/ui/qgslinestyledialogbase.ui
+END
+qgspluginmanagerbase.ui
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/ui/qgspluginmanagerbase.ui
+END
+qgscomposervectorlegendbase.ui
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/ui/qgscomposervectorlegendbase.ui
+END
+qgisappbase.ui
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/ui/qgisappbase.ui
+END
+qgsoptionsbase.ui
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/ui/qgsoptionsbase.ui
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/ui/CMakeLists.txt
+END
+.cvsignore
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/ui/.cvsignore
+END
+qgsidentifyresultsbase.ui
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/ui/qgsidentifyresultsbase.ui
+END
+qgslabeldialogbase.ui
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/ui/qgslabeldialogbase.ui
+END
+qgsmeasurebase.ui
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/ui/qgsmeasurebase.ui
+END
+qgspgquerybuilderbase.ui
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/ui/qgspgquerybuilderbase.ui
+END
+qgsaddattrdialogbase.ui
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/ui/qgsaddattrdialogbase.ui
+END
+qgsgraduatedsymboldialogbase.ui
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/ui/qgsgraduatedsymboldialogbase.ui
+END
+qgsdbsourceselectbase.ui
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/ui/qgsdbsourceselectbase.ui
+END
+qgspythondialog.ui
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/ui/qgspythondialog.ui
+END
+qgsgeomtypedialogbase.ui
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/ui/qgsgeomtypedialogbase.ui
+END
+qgsnewconnectionbase.ui
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/ui/qgsnewconnectionbase.ui
+END
+qgsnewhttpconnectionbase.ui
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/ui/qgsnewhttpconnectionbase.ui
+END
+qgshelpviewerbase.ui
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/ui/qgshelpviewerbase.ui
+END
+qgsfillstylewidgetbase.ui
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/ui/qgsfillstylewidgetbase.ui
+END
+qgslinestylewidgetbase.ui
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/ui/qgslinestylewidgetbase.ui
+END
+qgsprojectionselectorbase.ui
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/ui/qgsprojectionselectorbase.ui
+END
+qgspointstylewidgetbase.ui
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/ui/qgspointstylewidgetbase.ui
+END
+qgsabout.ui
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/ui/qgsabout.ui
+END
+qgsattributeactiondialogbase.ui
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/ui/qgsattributeactiondialogbase.ui
+END
+qgsattributedialogbase.ui
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/ui/qgsattributedialogbase.ui
+END
+qgscomposerpicturebase.ui
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/ui/qgscomposerpicturebase.ui
+END
+qgsprojectpropertiesbase.ui
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/ui/qgsprojectpropertiesbase.ui
+END
+qgscontinuouscolordialogbase.ui
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/ui/qgscontinuouscolordialogbase.ui
+END
+qgscomposermapbase.ui
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/ui/qgscomposermapbase.ui
+END
+qgspastetransformationsbase.ui
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/ui/qgspastetransformationsbase.ui
+END
+qgscomposerbase.ui
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/ui/qgscomposerbase.ui
+END

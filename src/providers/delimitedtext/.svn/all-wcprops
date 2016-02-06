@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/providers/delimitedtext
+END
+qgsdelimitedtextprovider.h
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/providers/delimitedtext/qgsdelimitedtextprovider.h
+END
+qgsdelimitedtextprovider.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/providers/delimitedtext/qgsdelimitedtextprovider.cpp
+END
+.cvsignore
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/providers/delimitedtext/.cvsignore
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/providers/delimitedtext/CMakeLists.txt
+END

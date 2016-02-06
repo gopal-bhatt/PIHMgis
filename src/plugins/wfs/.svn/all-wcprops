@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/wfs
+END
+qgswfsplugin.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/wfs/qgswfsplugin.h
+END
+qgswfssourceselect.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/wfs/qgswfssourceselect.h
+END
+qgswfssourceselectbase.ui
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/wfs/qgswfssourceselectbase.ui
+END
+qgswfsplugin.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/wfs/qgswfsplugin.cpp
+END
+qgswfssourceselect.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/wfs/qgswfssourceselect.cpp
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/wfs/CMakeLists.txt
+END
+mIconAddWfsLayer.xpm
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/wfs/mIconAddWfsLayer.xpm
+END

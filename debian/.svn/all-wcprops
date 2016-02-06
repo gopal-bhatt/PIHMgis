@@ -1,0 +1,131 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/debian
+END
+qgis.postrm.debhelper
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/debian/qgis.postrm.debhelper
+END
+control
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/debian/control
+END
+libqgis1.install
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/debian/libqgis1.install
+END
+qgis-plugin-grass.install
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/debian/qgis-plugin-grass.install
+END
+compat
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/debian/compat
+END
+changelog
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/debian/changelog
+END
+docs
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/debian/docs
+END
+rules
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/debian/rules
+END
+libqgis1-dev.install
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/debian/libqgis1-dev.install
+END
+qgis-icon.xpm
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/debian/qgis-icon.xpm
+END
+files
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/debian/files
+END
+pencil.uu
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/debian/pencil.uu
+END
+qgis.1
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/debian/qgis.1
+END
+qgis.dirs
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/debian/qgis.dirs
+END
+gridmaker.1
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/debian/gridmaker.1
+END
+libqgis1-dev.README.Debian
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/debian/libqgis1-dev.README.Debian
+END
+qgis-config.1
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/debian/qgis-config.1
+END
+qgis.menu
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/debian/qgis.menu
+END
+copyright
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/debian/copyright
+END
+qgis.install
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/debian/qgis.install
+END
+qgis.postinst.debhelper
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/debian/qgis.postinst.debhelper
+END

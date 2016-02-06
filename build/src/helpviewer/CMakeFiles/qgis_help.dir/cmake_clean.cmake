@@ -1,0 +1,12 @@
+FILE(REMOVE
+"moc_qgshelpserver.cxx"
+"moc_qgshelpviewer.cxx"
+"ui_qgshelpviewerbase.h"
+"qgis_help.app/Contents/MacOS/qgis_help.pdb"
+"qgis_help.app/Contents/MacOS/qgis_help"
+"CMakeFiles/qgis_help.dir/main.o"
+"CMakeFiles/qgis_help.dir/qgshelpserver.o"
+"CMakeFiles/qgis_help.dir/qgshelpviewer.o"
+"CMakeFiles/qgis_help.dir/moc_qgshelpserver.o"
+"CMakeFiles/qgis_help.dir/moc_qgshelpviewer.o"
+)

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/python
+END
+qgisconfig.py.in
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/python/qgisconfig.py.in
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/python/__init__.py
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/python/CMakeLists.txt
+END
+configure.py.in
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/python/configure.py.in
+END

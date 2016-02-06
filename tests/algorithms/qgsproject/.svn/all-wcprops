@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/tests/algorithms/qgsproject
+END
+main.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/tests/algorithms/qgsproject/main.cpp
+END
+projecttest.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/tests/algorithms/qgsproject/projecttest.h
+END
+.cvsignore
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/tests/algorithms/qgsproject/.cvsignore
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/tests/algorithms/qgsproject/README
+END

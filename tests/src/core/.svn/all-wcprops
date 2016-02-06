@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/tests/src/core
+END
+test_builder.pl
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/tests/src/core/test_builder.pl
+END
+testqgsapplication.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/tests/src/core/testqgsapplication.cpp
+END
+runtests.sh
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/tests/src/core/runtests.sh
+END
+test_suite_builder.sh
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/tests/src/core/test_suite_builder.sh
+END
+test_template.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/tests/src/core/test_template.cpp
+END
+testqgsvectorfilewriter.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/tests/src/core/testqgsvectorfilewriter.cpp
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/tests/src/core/CMakeLists.txt
+END

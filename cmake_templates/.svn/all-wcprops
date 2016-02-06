@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/cmake_templates
+END
+svnscript.cmake.in_cmake
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/cmake_templates/svnscript.cmake.in_cmake
+END
+qgssvnversion.h.in_cmake
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/cmake_templates/qgssvnversion.h.in_cmake
+END
+qgsconfig.h.in
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/cmake_templates/qgsconfig.h.in
+END
+cmake_uninstall.cmake.in
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/cmake_templates/cmake_uninstall.cmake.in
+END

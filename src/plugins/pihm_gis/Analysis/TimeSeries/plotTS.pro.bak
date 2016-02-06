@@ -1,0 +1,10 @@
+QT3SUPPORT +=
+
+include( ../examples.pri )
+
+#TARGET       = plot
+
+SOURCES = \
+	plotTS.cpp \
+	main.cpp
+

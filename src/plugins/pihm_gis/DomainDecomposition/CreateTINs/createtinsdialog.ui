@@ -1,0 +1,261 @@
+<ui version="4.0" >
+ <author></author>
+ <comment></comment>
+ <exportmacro></exportmacro>
+ <class>CreateTINsDialog</class>
+ <widget class="QDialog" name="CreateTINsDialog" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>508</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>Unstructured Mesh Generation</string>
+  </property>
+  <widget class="Q3ButtonGroup" name="shapeFileNameGroup" >
+   <property name="geometry" >
+    <rect>
+     <x>11</x>
+     <y>197</y>
+     <width>572</width>
+     <height>110</height>
+    </rect>
+   </property>
+   <property name="title" >
+    <string>Output TIN</string>
+   </property>
+   <property name="orientation" >
+    <enum>Qt::Vertical</enum>
+   </property>
+   <widget class="QLineEdit" name="shpFileLineEdit" >
+    <property name="geometry" >
+     <rect>
+      <x>162</x>
+      <y>45</y>
+      <width>294</width>
+      <height>29</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="shpFileLabel" >
+    <property name="geometry" >
+     <rect>
+      <x>21</x>
+      <y>41</y>
+      <width>135</width>
+      <height>38</height>
+     </rect>
+    </property>
+    <property name="text" >
+     <string>Output Shape File</string>
+    </property>
+    <property name="alignment" >
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="shpFileButton" >
+    <property name="geometry" >
+     <rect>
+      <x>462</x>
+      <y>44</y>
+      <width>87</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="text" >
+     <string>Browse...</string>
+    </property>
+    <property name="autoDefault" >
+     <bool>false</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="cancelButton" >
+   <property name="geometry" >
+    <rect>
+     <x>415</x>
+     <y>321</y>
+     <width>80</width>
+     <height>34</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string>Cancel</string>
+   </property>
+   <property name="autoDefault" >
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="Q3TextBrowser" name="MessageLog" >
+   <property name="geometry" >
+    <rect>
+     <x>10</x>
+     <y>365</y>
+     <width>571</width>
+     <height>131</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="Q3ButtonGroup" name="shapeFileGroup" >
+   <property name="geometry" >
+    <rect>
+     <x>11</x>
+     <y>11</y>
+     <width>572</width>
+     <height>170</height>
+    </rect>
+   </property>
+   <property name="title" >
+    <string>Input Files</string>
+   </property>
+   <property name="orientation" >
+    <enum>Qt::Vertical</enum>
+   </property>
+   <widget class="QLabel" name="nodeFileLabel" >
+    <property name="geometry" >
+     <rect>
+      <x>22</x>
+      <y>116</y>
+      <width>94</width>
+      <height>38</height>
+     </rect>
+    </property>
+    <property name="frameShape" >
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="frameShadow" >
+     <enum>QFrame::Plain</enum>
+    </property>
+    <property name="text" >
+     <string>Node File</string>
+    </property>
+    <property name="alignment" >
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="eleFileLabel" >
+    <property name="geometry" >
+     <rect>
+      <x>22</x>
+      <y>44</y>
+      <width>94</width>
+      <height>38</height>
+     </rect>
+    </property>
+    <property name="text" >
+     <string>Element File</string>
+    </property>
+    <property name="alignment" >
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="eleFileLineEdit" >
+    <property name="geometry" >
+     <rect>
+      <x>122</x>
+      <y>48</y>
+      <width>335</width>
+      <height>29</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="nodeFileLineEdit" >
+    <property name="geometry" >
+     <rect>
+      <x>122</x>
+      <y>120</y>
+      <width>335</width>
+      <height>29</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="eleFileButton" >
+    <property name="geometry" >
+     <rect>
+      <x>463</x>
+      <y>47</y>
+      <width>87</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="text" >
+     <string>Browse...</string>
+    </property>
+    <property name="autoDefault" >
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="nodeFileButton" >
+    <property name="geometry" >
+     <rect>
+      <x>463</x>
+      <y>119</y>
+      <width>87</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="text" >
+     <string>Browse...</string>
+    </property>
+    <property name="autoDefault" >
+     <bool>false</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="runButton" >
+   <property name="geometry" >
+    <rect>
+     <x>501</x>
+     <y>321</y>
+     <width>80</width>
+     <height>34</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string>Run!</string>
+   </property>
+   <property name="autoDefault" >
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="helpButton" >
+   <property name="geometry" >
+    <rect>
+     <x>11</x>
+     <y>321</y>
+     <width>80</width>
+     <height>34</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string>Help</string>
+   </property>
+   <property name="autoDefault" >
+    <bool>false</bool>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11" />
+ <pixmapfunction>qPixmapFromMimeSource</pixmapfunction>
+ <customwidgets>
+  <customwidget>
+   <class>Q3ButtonGroup</class>
+   <extends></extends>
+   <header>Qt3Support/Q3ButtonGroup</header>
+   <container>1</container>
+   <pixmap></pixmap>
+  </customwidget>
+  <customwidget>
+   <class>Q3TextBrowser</class>
+   <extends>QWidget</extends>
+   <header>q3textbrowser.h</header>
+   <container>1</container>
+   <pixmap></pixmap>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

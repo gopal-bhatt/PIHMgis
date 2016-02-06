@@ -1,0 +1,14 @@
+FILE(REMOVE
+"moc_plugin.cxx"
+"moc_plugingui.cxx"
+"qrc_copyright_plugin.cxx"
+"ui_pluginguibase.h"
+"libcopyrightlabelplugin.pdb"
+"libcopyrightlabelplugin.a"
+"libcopyrightlabelplugin.so"
+"CMakeFiles/copyrightlabelplugin.dir/plugin.o"
+"CMakeFiles/copyrightlabelplugin.dir/plugingui.o"
+"CMakeFiles/copyrightlabelplugin.dir/moc_plugin.o"
+"CMakeFiles/copyrightlabelplugin.dir/moc_plugingui.o"
+"CMakeFiles/copyrightlabelplugin.dir/qrc_copyright_plugin.o"
+)

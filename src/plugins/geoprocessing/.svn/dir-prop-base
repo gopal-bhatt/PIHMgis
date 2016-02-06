@@ -1,0 +1,15 @@
+K 10
+svn:ignore
+V 104
+*.lo
+*.la
+*.moc.cpp
+Makefile.in
+Makefile
+.libs
+.deps
+qgsdlgpgbufferbase.cpp
+qgsdlgpgbufferbase.h
+ui_*.h
+
+END

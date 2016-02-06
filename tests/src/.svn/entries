@@ -1,0 +1,56 @@
+8
+
+dir
+7809
+https://svn.qgis.org/repos/qgis/branches/Release-0_9_0/tests/src
+https://svn.qgis.org/repos/qgis
+
+
+
+2007-09-21T19:02:56.457688Z
+7216
+timlinux
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+c8812cc2-4d05-0410-92ff-de0c093fc19c
+
+runtests.sh
+file
+
+
+
+
+2007-12-24T08:18:14.000000Z
+f602ba213510aecd87e1566484481338
+2007-09-16T20:34:54.819737Z
+7205
+gsherman
+has-props
+
+core
+dir
+
+CMakeLists.txt
+file
+
+
+
+
+2007-12-24T08:18:14.000000Z
+cb6d8a7a34a581532a41c55b914c486f
+2007-05-21T17:28:53.824229Z
+6949
+timlinux
+

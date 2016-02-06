@@ -1,0 +1,11 @@
+K 10
+svn:ignore
+V 52
+*.lo
+*.la
+Makefile.in
+Makefile
+.libs
+.deps
+*.moc.cpp
+END

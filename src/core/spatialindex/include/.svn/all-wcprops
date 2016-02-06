@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/spatialindex/include
+END
+Point.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/spatialindex/include/Point.h
+END
+LineSegment.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/spatialindex/include/LineSegment.h
+END
+PointerPool.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/spatialindex/include/PointerPool.h
+END
+PoolPointer.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/spatialindex/include/PoolPointer.h
+END
+Tools.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/spatialindex/include/Tools.h
+END
+RTree.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/spatialindex/include/RTree.h
+END
+TemporaryFile.h
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/spatialindex/include/TemporaryFile.h
+END
+Region.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/spatialindex/include/Region.h
+END
+SpatialIndex.h
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/spatialindex/include/SpatialIndex.h
+END
+SmartPointer.h
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/spatialindex/include/SmartPointer.h
+END

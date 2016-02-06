@@ -1,0 +1,12 @@
+K 10
+svn:ignore
+V 59
+qgisconfig.py
+qgis.sbf
+Makefile
+*.exp
+*.so
+sip*.h
+sip*.cpp
+
+END

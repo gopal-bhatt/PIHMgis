@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/helpviewer
+END
+qgshelpserver.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/helpviewer/qgshelpserver.h
+END
+main.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/helpviewer/main.cpp
+END
+qgshelpviewer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/helpviewer/qgshelpviewer.cpp
+END
+qgshelpserver.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/helpviewer/qgshelpserver.cpp
+END
+qgshelpviewer.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/helpviewer/qgshelpviewer.h
+END
+qgshelpviewerbase.ui
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/helpviewer/qgshelpviewerbase.ui
+END
+.cvsignore
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/helpviewer/.cvsignore
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/helpviewer/CMakeLists.txt
+END

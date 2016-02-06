@@ -1,0 +1,98 @@
+8
+
+dir
+7809
+https://svn.qgis.org/repos/qgis/branches/Release-0_9_0/tools
+https://svn.qgis.org/repos/qgis
+
+
+
+2007-09-16T20:50:28.210666Z
+7206
+gsherman
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+c8812cc2-4d05-0410-92ff-de0c093fc19c
+
+mapserver_export
+dir
+
+qgis_config
+dir
+
+qgis-qt3to4.pl
+file
+
+
+
+
+2007-12-24T08:18:14.000000Z
+8e38dd41e9e2b848b048c95292bdab39
+2005-11-19T04:23:07.205757Z
+4230
+gsherman
+has-props
+
+qgisdetect.m4
+file
+
+
+
+
+2007-12-24T08:18:14.000000Z
+7485232de826c1f50e73f2d0c94b89fa
+2005-05-13T21:59:53.000000Z
+3379
+jobi
+has-props
+
+qgiscommit
+file
+
+
+
+
+2007-12-24T08:18:14.000000Z
+0f415b8dcc0aa04aa4022a0ee1ac61ab
+2004-04-04T22:53:48.000000Z
+1153
+jobi
+has-props
+
+.cvsignore
+file
+
+
+
+
+2007-12-24T08:18:14.000000Z
+19f10f1a61ba7632248be885d91ba230
+2005-01-10T20:26:46.000000Z
+2610
+g_j_m
+has-props
+
+CMakeLists.txt
+file
+
+
+
+
+2007-12-24T08:18:14.000000Z
+7912aa503e7ed4010e56120b90dc42ce
+2007-01-09T02:39:15.173934Z
+6415
+wonder
+

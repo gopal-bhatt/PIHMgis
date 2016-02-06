@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/symbology
+END
+qgssymbol.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/symbology/qgssymbol.cpp
+END
+qgssymbologyutils.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/symbology/qgssymbologyutils.cpp
+END
+qgsmarkercatalogue.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/symbology/qgsmarkercatalogue.cpp
+END
+qgssymbol.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/symbology/qgssymbol.h
+END
+qgssymbologyutils.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/symbology/qgssymbologyutils.h
+END
+qgsmarkercatalogue.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/symbology/qgsmarkercatalogue.h
+END

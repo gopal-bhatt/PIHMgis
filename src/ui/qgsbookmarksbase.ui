@@ -1,0 +1,126 @@
+<ui version="4.0" >
+ <author></author>
+ <comment></comment>
+ <exportmacro></exportmacro>
+ <class>QgsBookmarksBase</class>
+ <widget class="QDialog" name="QgsBookmarksBase" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>344</width>
+    <height>263</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>Geospatial Bookmarks</string>
+  </property>
+  <layout class="QGridLayout" >
+   <property name="margin" >
+    <number>9</number>
+   </property>
+   <property name="spacing" >
+    <number>6</number>
+   </property>
+   <item row="4" column="1" >
+    <spacer>
+     <property name="orientation" >
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeType" >
+      <enum>QSizePolicy::Expanding</enum>
+     </property>
+     <property name="sizeHint" >
+      <size>
+       <width>85</width>
+       <height>109</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item rowspan="5" row="0" column="0" >
+    <widget class="Q3ListView" name="lstBookmarks" >
+     <column>
+      <property name="text" >
+       <string>Name</string>
+      </property>
+     </column>
+     <column>
+      <property name="text" >
+       <string>Project</string>
+      </property>
+     </column>
+     <column>
+      <property name="text" >
+       <string>Extent</string>
+      </property>
+     </column>
+     <column>
+      <property name="text" >
+       <string>Id</string>
+      </property>
+     </column>
+    </widget>
+   </item>
+   <item row="3" column="1" >
+    <widget class="QPushButton" name="btnHelp" >
+     <property name="toolTip" >
+      <string>Close the dialog</string>
+     </property>
+     <property name="text" >
+      <string>Help</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="1" >
+    <widget class="QPushButton" name="btnClose" >
+     <property name="toolTip" >
+      <string>Close the dialog</string>
+     </property>
+     <property name="text" >
+      <string>Close</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1" >
+    <widget class="QPushButton" name="btnDelete" >
+     <property name="toolTip" >
+      <string>Delete the currently selected bookmark</string>
+     </property>
+     <property name="text" >
+      <string>Delete</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1" >
+    <widget class="QPushButton" name="btnZoomTo" >
+     <property name="toolTip" >
+      <string>Zoom to the currently selected bookmark</string>
+     </property>
+     <property name="text" >
+      <string>Zoom To</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11" />
+ <pixmapfunction>qPixmapFromMimeSource</pixmapfunction>
+ <customwidgets>
+  <customwidget>
+   <class>Q3ListView</class>
+   <extends></extends>
+   <header>q3listview.h</header>
+   <container>0</container>
+   <pixmap></pixmap>
+  </customwidget>
+ </customwidgets>
+ <tabstops>
+  <tabstop>btnZoomTo</tabstop>
+  <tabstop>btnDelete</tabstop>
+  <tabstop>btnClose</tabstop>
+  <tabstop>btnHelp</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

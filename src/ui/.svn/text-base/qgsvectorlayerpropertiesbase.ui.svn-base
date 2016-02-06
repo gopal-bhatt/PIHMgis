@@ -1,0 +1,493 @@
+<ui version="4.0" >
+ <class>QgsVectorLayerPropertiesBase</class>
+ <widget class="QDialog" name="QgsVectorLayerPropertiesBase" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>469</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="minimumSize" >
+   <size>
+    <width>0</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="windowTitle" >
+   <string>Layer Properties</string>
+  </property>
+  <property name="windowIcon" >
+   <iconset/>
+  </property>
+  <property name="modal" >
+   <bool>true</bool>
+  </property>
+  <layout class="QGridLayout" >
+   <property name="margin" >
+    <number>9</number>
+   </property>
+   <property name="spacing" >
+    <number>6</number>
+   </property>
+   <item row="1" column="0" >
+    <widget class="QDialogButtonBox" name="buttonBox" >
+     <property name="orientation" >
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons" >
+      <set>QDialogButtonBox::Apply|QDialogButtonBox::Cancel|QDialogButtonBox::Help|QDialogButtonBox::NoButton|QDialogButtonBox::Ok</set>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="0" >
+    <widget class="QTabWidget" name="tabWidget" >
+     <property name="tabShape" >
+      <enum>QTabWidget::Rounded</enum>
+     </property>
+     <property name="currentIndex" >
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="tab1" >
+      <attribute name="title" >
+       <string>Symbology</string>
+      </attribute>
+      <layout class="QGridLayout" >
+       <property name="margin" >
+        <number>9</number>
+       </property>
+       <property name="spacing" >
+        <number>6</number>
+       </property>
+       <item row="2" column="0" colspan="2" >
+        <widget class="QStackedWidget" name="widgetStackRenderers" >
+         <property name="sizePolicy" >
+          <sizepolicy>
+           <hsizetype>7</hsizetype>
+           <vsizetype>7</vsizetype>
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <widget class="QWidget" name="page" />
+         <widget class="QWidget" name="page_2" />
+        </widget>
+       </item>
+       <item row="0" column="1" >
+        <widget class="QComboBox" name="legendtypecombobox" >
+         <property name="minimumSize" >
+          <size>
+           <width>270</width>
+           <height>24</height>
+          </size>
+         </property>
+         <property name="maximumSize" >
+          <size>
+           <width>32767</width>
+           <height>22</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0" >
+        <widget class="QLabel" name="legendtypelabel" >
+         <property name="maximumSize" >
+          <size>
+           <width>32767</width>
+           <height>22</height>
+          </size>
+         </property>
+         <property name="text" >
+          <string>Legend type:</string>
+         </property>
+         <property name="buddy" >
+          <cstring>legendtypecombobox</cstring>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0" >
+        <widget class="QLabel" name="lblTransparencyPercent" >
+         <property name="text" >
+          <string>Transparency:</string>
+         </property>
+         <property name="buddy" >
+          <cstring>sliderTransparency</cstring>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1" >
+        <widget class="QSlider" name="sliderTransparency" >
+         <property name="maximum" >
+          <number>255</number>
+         </property>
+         <property name="value" >
+          <number>0</number>
+         </property>
+         <property name="orientation" >
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab2" >
+      <attribute name="title" >
+       <string>General</string>
+      </attribute>
+      <layout class="QGridLayout" >
+       <property name="margin" >
+        <number>9</number>
+       </property>
+       <property name="spacing" >
+        <number>6</number>
+       </property>
+       <item row="0" column="0" >
+        <widget class="QLabel" name="textLabel3" >
+         <property name="text" >
+          <string>Display name</string>
+         </property>
+         <property name="buddy" >
+          <cstring>txtDisplayName</cstring>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2" >
+        <widget class="QLabel" name="textLabel2" >
+         <property name="toolTip" >
+          <string>Display field for the Identify Results dialog box</string>
+         </property>
+         <property name="whatsThis" >
+          <string>This sets the display field for the Identify Results dialog box</string>
+         </property>
+         <property name="text" >
+          <string>Display field</string>
+         </property>
+         <property name="buddy" >
+          <cstring>displayFieldComboBox</cstring>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="3" >
+        <widget class="QComboBox" name="displayFieldComboBox" >
+         <property name="whatsThis" >
+          <string>Use this control to set which field is placed at the top level of the Identify Results dialog box.</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1" >
+        <widget class="QLineEdit" name="txtDisplayName" />
+       </item>
+       <item row="1" column="0" colspan="4" >
+        <widget class="QGroupBox" name="chkUseScaleDependentRendering" >
+         <property name="title" >
+          <string>Use scale dependent rendering</string>
+         </property>
+         <property name="checkable" >
+          <bool>true</bool>
+         </property>
+         <layout class="QGridLayout" >
+          <property name="margin" >
+           <number>8</number>
+          </property>
+          <property name="spacing" >
+           <number>6</number>
+          </property>
+          <item row="0" column="2" >
+           <widget class="QLabel" name="textLabel1_2_2" >
+            <property name="text" >
+             <string>Maximum 1:</string>
+            </property>
+            <property name="buddy" >
+             <cstring>spinMaximumScale</cstring>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0" >
+           <widget class="QLabel" name="textLabel1" >
+            <property name="text" >
+             <string>Minimum 1:</string>
+            </property>
+            <property name="buddy" >
+             <cstring>spinMinimumScale</cstring>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1" >
+           <widget class="QSpinBox" name="spinMinimumScale" >
+            <property name="toolTip" >
+             <string>Minimum scale at which this layer will be displayed. </string>
+            </property>
+            <property name="maximum" >
+             <number>100000000</number>
+            </property>
+            <property name="minimum" >
+             <number>1</number>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="3" >
+           <widget class="QSpinBox" name="spinMaximumScale" >
+            <property name="toolTip" >
+             <string>Maximum scale at which this layer will be displayed. </string>
+            </property>
+            <property name="maximum" >
+             <number>100000000</number>
+            </property>
+            <property name="minimum" >
+             <number>1</number>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="2" column="0" colspan="4" >
+        <widget class="QGroupBox" name="indexGroupBox" >
+         <property name="title" >
+          <string>Spatial Index</string>
+         </property>
+         <layout class="QGridLayout" >
+          <property name="margin" >
+           <number>8</number>
+          </property>
+          <property name="spacing" >
+           <number>6</number>
+          </property>
+          <item row="0" column="0" >
+           <widget class="QLabel" name="indexLabel" >
+            <property name="text" >
+             <string>Create Spatial Index</string>
+            </property>
+            <property name="buddy" >
+             <cstring>pbnIndex</cstring>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="2" >
+           <widget class="QPushButton" name="pbnIndex" >
+            <property name="text" >
+             <string>Create</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1" >
+           <spacer>
+            <property name="orientation" >
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeType" >
+             <enum>QSizePolicy::Expanding</enum>
+            </property>
+            <property name="sizeHint" >
+             <size>
+              <width>141</width>
+              <height>21</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="3" column="0" colspan="4" >
+        <widget class="QGroupBox" name="grpSRS" >
+         <property name="title" >
+          <string>Spatial Reference System</string>
+         </property>
+         <layout class="QGridLayout" >
+          <property name="margin" >
+           <number>8</number>
+          </property>
+          <property name="spacing" >
+           <number>6</number>
+          </property>
+          <item row="0" column="0" >
+           <widget class="QLineEdit" name="leSpatialRefSys" >
+            <property name="readOnly" >
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1" >
+           <widget class="QPushButton" name="pbnChangeSpatialRefSys" >
+            <property name="text" >
+             <string>Change</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="4" column="0" colspan="4" >
+        <widget class="QGroupBox" name="grpSubset" >
+         <property name="title" >
+          <string>Subset</string>
+         </property>
+         <layout class="QGridLayout" >
+          <property name="margin" >
+           <number>9</number>
+          </property>
+          <property name="spacing" >
+           <number>6</number>
+          </property>
+          <item row="0" column="0" colspan="2" >
+           <widget class="QTextEdit" name="txtSubsetSQL" >
+            <property name="enabled" >
+             <bool>false</bool>
+            </property>
+            <property name="acceptDrops" >
+             <bool>false</bool>
+            </property>
+            <property name="acceptRichText" >
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0" >
+           <spacer>
+            <property name="orientation" >
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeType" >
+             <enum>QSizePolicy::Expanding</enum>
+            </property>
+            <property name="sizeHint" >
+             <size>
+              <width>480</width>
+              <height>21</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="1" column="1" >
+           <widget class="QPushButton" name="pbnQueryBuilder" >
+            <property name="text" >
+             <string>Query Builder</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab3" >
+      <attribute name="title" >
+       <string>Metadata</string>
+      </attribute>
+      <layout class="QGridLayout" >
+       <property name="margin" >
+        <number>9</number>
+       </property>
+       <property name="spacing" >
+        <number>6</number>
+       </property>
+       <item row="0" column="0" >
+        <widget class="QTextEdit" name="teMetadata" >
+         <property name="lineWidth" >
+          <number>2</number>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab4" >
+      <attribute name="title" >
+       <string>Labels</string>
+      </attribute>
+      <layout class="QGridLayout" >
+       <property name="margin" >
+        <number>9</number>
+       </property>
+       <property name="spacing" >
+        <number>6</number>
+       </property>
+       <item row="1" column="0" >
+        <widget class="QFrame" name="labelOptionsFrame" >
+         <property name="sizePolicy" >
+          <sizepolicy>
+           <hsizetype>7</hsizetype>
+           <vsizetype>7</vsizetype>
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="frameShape" >
+          <enum>QFrame::NoFrame</enum>
+         </property>
+         <property name="frameShadow" >
+          <enum>QFrame::Plain</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0" >
+        <widget class="QCheckBox" name="labelCheckBox" >
+         <property name="sizePolicy" >
+          <sizepolicy>
+           <hsizetype>7</hsizetype>
+           <vsizetype>0</vsizetype>
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="text" >
+          <string>Display labels</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab5" >
+      <attribute name="title" >
+       <string>Actions</string>
+      </attribute>
+      <layout class="QGridLayout" >
+       <property name="margin" >
+        <number>9</number>
+       </property>
+       <property name="spacing" >
+        <number>6</number>
+       </property>
+       <item row="0" column="0" >
+        <widget class="QFrame" name="actionOptionsFrame" >
+         <property name="sizePolicy" >
+          <sizepolicy>
+           <hsizetype>7</hsizetype>
+           <vsizetype>7</vsizetype>
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="frameShape" >
+          <enum>QFrame::NoFrame</enum>
+         </property>
+         <property name="frameShadow" >
+          <enum>QFrame::Raised</enum>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11" />
+ <tabstops>
+  <tabstop>tabWidget</tabstop>
+  <tabstop>legendtypecombobox</tabstop>
+  <tabstop>sliderTransparency</tabstop>
+  <tabstop>txtDisplayName</tabstop>
+  <tabstop>displayFieldComboBox</tabstop>
+  <tabstop>spinMinimumScale</tabstop>
+  <tabstop>spinMaximumScale</tabstop>
+  <tabstop>pbnIndex</tabstop>
+  <tabstop>leSpatialRefSys</tabstop>
+  <tabstop>pbnChangeSpatialRefSys</tabstop>
+  <tabstop>pbnQueryBuilder</tabstop>
+  <tabstop>labelCheckBox</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/geoprocessing
+END
+qgspggeoprocessing.h
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/geoprocessing/qgspggeoprocessing.h
+END
+qgsdlgpgbuffer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/geoprocessing/qgsdlgpgbuffer.cpp
+END
+icon_buffer.xpm
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/geoprocessing/icon_buffer.xpm
+END
+qgsdlgpgbuffer.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/geoprocessing/qgsdlgpgbuffer.h
+END
+qgsdlgpgbufferbase.ui
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/geoprocessing/qgsdlgpgbufferbase.ui
+END
+qgspggeoprocessing.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/geoprocessing/qgspggeoprocessing.cpp
+END
+.cvsignore
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/geoprocessing/.cvsignore
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/geoprocessing/CMakeLists.txt
+END

@@ -1,0 +1,9 @@
+FILE(REMOVE
+"moc_qgswfsdata.cxx"
+"libwfsprovider.pdb"
+"libwfsprovider.a"
+"libwfsprovider.so"
+"CMakeFiles/wfsprovider.dir/qgswfsprovider.o"
+"CMakeFiles/wfsprovider.dir/qgswfsdata.o"
+"CMakeFiles/wfsprovider.dir/moc_qgswfsdata.o"
+)

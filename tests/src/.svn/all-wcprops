@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/tests/src
+END
+runtests.sh
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/tests/src/runtests.sh
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/tests/src/CMakeLists.txt
+END

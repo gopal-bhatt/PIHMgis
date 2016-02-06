@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/mac
+END
+install-extra.sh
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/mac/install-extra.sh
+END
+release-check.sh
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/mac/release-check.sh
+END
+release-extra-grass.sh
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/mac/release-extra-grass.sh
+END
+release-strip.sh
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/mac/release-strip.sh
+END
+Read Me (Mac).rtf
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/mac/Read%20Me%20(Mac).rtf
+END
+release-extra.sh
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/mac/release-extra.sh
+END
+release-extra-qt.sh
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/mac/release-extra-qt.sh
+END

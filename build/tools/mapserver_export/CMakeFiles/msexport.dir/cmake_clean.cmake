@@ -1,0 +1,10 @@
+FILE(REMOVE
+"moc_qgsmapserverexport.cxx"
+"ui_qgsmapserverexportbase.h"
+"msexport.app/Contents/MacOS/msexport.pdb"
+"msexport.app/Contents/MacOS/msexport"
+"CMakeFiles/msexport.dir/qgsmapserverexport.o"
+"CMakeFiles/msexport.dir/ms_main.o"
+"CMakeFiles/msexport.dir/msexport_wrap.o"
+"CMakeFiles/msexport.dir/moc_qgsmapserverexport.o"
+)

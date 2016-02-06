@@ -1,0 +1,17 @@
+K 10
+svn:ignore
+V 105
+.deps
+.libs
+Makefile
+Makefile.in
+*.la
+*.lo
+*.moc.cpp
+pluginguibase.cpp
+pluginguibase.h
+ui_*.h
+*.qrc.cpp
+
+
+END

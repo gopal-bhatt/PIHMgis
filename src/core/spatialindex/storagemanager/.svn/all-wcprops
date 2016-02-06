@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/spatialindex/storagemanager
+END
+Buffer.h
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/spatialindex/storagemanager/Buffer.h
+END
+DiskStorageManager.h
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/spatialindex/storagemanager/DiskStorageManager.h
+END
+RandomEvictionsBuffer.cc
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/spatialindex/storagemanager/RandomEvictionsBuffer.cc
+END
+RandomEvictionsBuffer.h
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/spatialindex/storagemanager/RandomEvictionsBuffer.h
+END
+MemoryStorageManager.cc
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/spatialindex/storagemanager/MemoryStorageManager.cc
+END
+Buffer.cc
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/spatialindex/storagemanager/Buffer.cc
+END
+DiskStorageManager.cc
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/spatialindex/storagemanager/DiskStorageManager.cc
+END
+MemoryStorageManager.h
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/spatialindex/storagemanager/MemoryStorageManager.h
+END

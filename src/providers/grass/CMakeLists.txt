@@ -1,0 +1,56 @@
+
+ADD_DEFINITIONS(-DGRASS_BASE=\\\"${GRASS_PREFIX}\\\")
+
+########################################################
+# Files
+
+SET(GRASS_PROVIDER_SRCS provider.cpp)
+
+SET(GRASS_LIB_SRCS qgsgrassprovider.cpp qgsgrass.cpp)
+
+IF (PEDANTIC)
+  MESSAGE("providers/grass : -Werror removed for qgsgrassprovider.cpp for now - please get rid of any compiler warnings!")
+ENDIF (PEDANTIC)
+# The warnings are caused by multiple definitions of NDEBUG in grass sources
+# I have submitted a bug to teh grass folks in the meantime we need to
+# disable treating warnings as errors for the affected files
+SET_SOURCE_FILES_PROPERTIES(qgsgrassprovider.cpp PROPERTIES COMPILE_FLAGS -Wno-error )
+SET_SOURCE_FILES_PROPERTIES(qgsgrass.cpp PROPERTIES COMPILE_FLAGS -Wno-error )
+SET_SOURCE_FILES_PROPERTIES(provider.cpp PROPERTIES COMPILE_FLAGS -Wno-error )
+
+########################################################
+# Build
+
+INCLUDE_DIRECTORIES (
+  ../../core
+  ${GRASS_INCLUDE_DIR}
+  ${GDAL_INCLUDE_DIR}
+  ${PROJ_INCLUDE_DIR}
+)
+
+ADD_LIBRARY (qgisgrass SHARED ${GRASS_LIB_SRCS})
+
+TARGET_LINK_LIBRARIES (qgisgrass
+  ${QT_LIBRARIES}
+  ${GRASS_LIBRARIES}
+  qgis_core
+)
+
+ADD_LIBRARY (grassprovider MODULE ${GRASS_PROVIDER_SRCS})
+
+TARGET_LINK_LIBRARIES (grassprovider
+  ${QT_LIBRARIES}
+  qgis_core
+  qgisgrass
+)
+
+########################################################
+# Install
+
+INSTALL(TARGETS qgisgrass
+  RUNTIME DESTINATION ${QGIS_BIN_DIR}
+  LIBRARY DESTINATION lib)
+       
+INSTALL(TARGETS grassprovider
+  RUNTIME DESTINATION ${QGIS_PLUGIN_DIR}
+  LIBRARY DESTINATION ${QGIS_PLUGIN_DIR})

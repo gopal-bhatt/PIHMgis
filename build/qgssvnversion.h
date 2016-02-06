@@ -1,0 +1,1 @@
+#define QGSSVNVERSION "7809M"

@@ -1,0 +1,521 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/repos/qgis/!svn/ver/7222/branches/Release-0_9_0/src/core
+END
+qgscoordinatetransform.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/qgscoordinatetransform.cpp
+END
+qgslabelattributes.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/qgslabelattributes.cpp
+END
+qgsline.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/qgsline.cpp
+END
+qgssearchstringparser.yy
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/qgssearchstringparser.yy
+END
+qgsfield.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/qgsfield.h
+END
+qgsproviderregistry.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/qgsproviderregistry.h
+END
+qgspoint.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/qgspoint.cpp
+END
+qgshttptransaction.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/qgshttptransaction.h
+END
+qgsfeature.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/qgsfeature.cpp
+END
+qgsexception.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/qgsexception.cpp
+END
+qgsvectorlayer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/qgsvectorlayer.cpp
+END
+qgsvectorfilewriter.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/qgsvectorfilewriter.cpp
+END
+qgssearchstring.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/qgssearchstring.h
+END
+qgsscalecalculator.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/qgsscalecalculator.cpp
+END
+qgsrect.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/qgsrect.h
+END
+qgsapplication.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/qgsapplication.cpp
+END
+qgsproject.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/qgsproject.cpp
+END
+qgsvectordataprovider.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/qgsvectordataprovider.cpp
+END
+qgsrunprocess.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/qgsrunprocess.h
+END
+qgsmaplayer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/qgsmaplayer.cpp
+END
+qgslogger.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/qgslogger.cpp
+END
+qgsdatasourceuri.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/qgsdatasourceuri.h
+END
+qgsmaprender.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/qgsmaprender.h
+END
+qgsdistancearea.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/qgsdistancearea.cpp
+END
+qgscoordinatetransform.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/qgscoordinatetransform.h
+END
+qgscsexception.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/qgscsexception.h
+END
+genlexyacc.bat
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/genlexyacc.bat
+END
+qgsgeometry.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/qgsgeometry.cpp
+END
+qgssearchtreenode.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/qgssearchtreenode.cpp
+END
+qgsline.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/qgsline.h
+END
+qgssearchstring.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/qgssearchstring.cpp
+END
+qgsprovidercountcalcevent.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/qgsprovidercountcalcevent.h
+END
+qgspoint.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/qgspoint.h
+END
+qgsfeature.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/qgsfeature.h
+END
+qgsclipper.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/qgsclipper.h
+END
+qgsvectorlayer.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/qgsvectorlayer.h
+END
+qgsvectorfilewriter.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/qgsvectorfilewriter.h
+END
+qgsmessageoutput.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/qgsmessageoutput.cpp
+END
+qgsscalecalculator.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/qgsscalecalculator.h
+END
+qgsapplication.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/qgsapplication.h
+END
+qgsdatasourceuri.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/qgsdatasourceuri.cpp
+END
+qgsvectordataprovider.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/qgsvectordataprovider.h
+END
+qgslabel.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/qgslabel.cpp
+END
+qgsgeometryvertexindex.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/qgsgeometryvertexindex.cpp
+END
+qgslogger.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/qgslogger.h
+END
+qgsmaptopixel.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/qgsmaptopixel.h
+END
+qgsdistancearea.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/qgsdistancearea.h
+END
+qgsprovidercountcalcevent.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/qgsprovidercountcalcevent.cpp
+END
+qgsspatialrefsys.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/qgsspatialrefsys.cpp
+END
+qgsprovidermetadata.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/qgsprovidermetadata.cpp
+END
+qgis.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/qgis.h
+END
+qgscontexthelp.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/qgscontexthelp.cpp
+END
+qgsclipper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/qgsclipper.cpp
+END
+qgssearchtreenode.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/qgssearchtreenode.h
+END
+qgsgeometry.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/qgsgeometry.h
+END
+qgsattributeaction.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/qgsattributeaction.cpp
+END
+qgsmaplayerregistry.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/qgsmaplayerregistry.cpp
+END
+qgsrasterdataprovider.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/qgsrasterdataprovider.cpp
+END
+qgsproviderextentcalcevent.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/qgsproviderextentcalcevent.cpp
+END
+qgsmessageoutput.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/qgsmessageoutput.h
+END
+qgsprojectproperty.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/qgsprojectproperty.cpp
+END
+qgssearchstringlexer.ll
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/qgssearchstringlexer.ll
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/CMakeLists.txt
+END
+qgsmaptopixel.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/qgsmaptopixel.cpp
+END
+qgsproviderregistry.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/qgsproviderregistry.cpp
+END
+qgsfield.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/qgsfield.cpp
+END
+qgslabel.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/qgslabel.h
+END
+qgshttptransaction.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/qgshttptransaction.cpp
+END
+qgsgeometryvertexindex.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/qgsgeometryvertexindex.h
+END
+qgis.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/qgis.cpp
+END
+qgsdataprovider.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/qgsdataprovider.h
+END
+qgslabelattributes.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/qgslabelattributes.h
+END
+qgsrect.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/qgsrect.cpp
+END
+qgsspatialrefsys.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/qgsspatialrefsys.h
+END
+qgsprovidermetadata.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/qgsprovidermetadata.h
+END
+qgscontexthelp.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/qgscontexthelp.h
+END
+qgsexception.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/qgsexception.h
+END
+qgsrunprocess.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/qgsrunprocess.cpp
+END
+qgsattributeaction.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/qgsattributeaction.h
+END
+qgsmaplayerregistry.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/qgsmaplayerregistry.h
+END
+qgsrasterdataprovider.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/qgsrasterdataprovider.h
+END
+qgsproject.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/qgsproject.h
+END
+qgsproviderextentcalcevent.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/qgsproviderextentcalcevent.h
+END
+qgsmaprender.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/qgsmaprender.cpp
+END
+qgsmaplayer.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/qgsmaplayer.h
+END
+qgsprojectproperty.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/qgsprojectproperty.h
+END

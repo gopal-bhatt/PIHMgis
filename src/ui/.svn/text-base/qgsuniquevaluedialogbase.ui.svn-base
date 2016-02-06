@@ -1,0 +1,93 @@
+<ui version="4.0" >
+ <class>QgsUniqueValueDialogBase</class>
+ <widget class="QDialog" name="QgsUniqueValueDialogBase" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>505</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>Form1</string>
+  </property>
+  <layout class="QGridLayout" >
+   <property name="margin" >
+    <number>9</number>
+   </property>
+   <property name="spacing" >
+    <number>6</number>
+   </property>
+   <item row="1" column="0" colspan="2" >
+    <widget class="QStackedWidget" name="mSymbolWidgetStack" >
+     <widget class="QWidget" name="page" />
+     <widget class="QWidget" name="page_2" />
+    </widget>
+   </item>
+   <item row="0" column="0" >
+    <widget class="QLabel" name="mClassVarLabel" >
+     <property name="minimumSize" >
+      <size>
+       <width>0</width>
+       <height>20</height>
+      </size>
+     </property>
+     <property name="text" >
+      <string>Classification Field:</string>
+     </property>
+     <property name="buddy" >
+      <cstring>mClassificationComboBox</cstring>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="4" >
+    <widget class="QPushButton" name="mDeletePushButton" >
+     <property name="text" >
+      <string>Delete class</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="5" >
+    <spacer>
+     <property name="orientation" >
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeType" >
+      <enum>QSizePolicy::Expanding</enum>
+     </property>
+     <property name="sizeHint" >
+      <size>
+       <width>51</width>
+       <height>25</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="0" column="1" colspan="2" >
+    <widget class="QComboBox" name="mClassificationComboBox" >
+     <property name="minimumSize" >
+      <size>
+       <width>0</width>
+       <height>20</height>
+      </size>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="3" >
+    <widget class="QPushButton" name="mClassifyButton" >
+     <property name="text" >
+      <string>Classify</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="2" colspan="4" >
+    <widget class="QListWidget" name="mClassListWidget" />
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11" />
+ <pixmapfunction>qPixmapFromMimeSource</pixmapfunction>
+ <resources/>
+ <connections/>
+</ui>

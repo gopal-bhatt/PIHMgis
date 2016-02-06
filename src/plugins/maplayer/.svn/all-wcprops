@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/maplayer
+END
+maplayertest.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/maplayer/maplayertest.h
+END
+matrix1.xpm
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/maplayer/matrix1.xpm
+END
+maplayertest.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/maplayer/maplayertest.cpp
+END
+.cvsignore
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/maplayer/.cvsignore
+END

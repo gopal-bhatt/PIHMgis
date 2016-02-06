@@ -1,0 +1,179 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/georeferencer
+END
+qgsgeorefwarpoptionsdialogbase.ui
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/georeferencer/qgsgeorefwarpoptionsdialogbase.ui
+END
+helmert.jpg
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/georeferencer/helmert.jpg
+END
+plugin.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/georeferencer/plugin.cpp
+END
+plugin.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/georeferencer/plugin.h
+END
+plugingui.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/georeferencer/plugingui.cpp
+END
+mapcoordsdialog.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/georeferencer/mapcoordsdialog.cpp
+END
+qgsgeorefwarpoptionsdialog.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/georeferencer/qgsgeorefwarpoptionsdialog.cpp
+END
+plugingui.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/georeferencer/plugingui.h
+END
+georef.png
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/georeferencer/georef.png
+END
+qgspointdialogbase.ui
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/georeferencer/qgspointdialogbase.ui
+END
+mapcoordsdialog.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/georeferencer/mapcoordsdialog.h
+END
+pencil.png
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/georeferencer/pencil.png
+END
+qgsgeorefwarpoptionsdialog.h
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/georeferencer/qgsgeorefwarpoptionsdialog.h
+END
+qgsimagewarper.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/georeferencer/qgsimagewarper.cpp
+END
+georeferencer.qrc
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/georeferencer/georeferencer.qrc
+END
+add_point.xpm
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/georeferencer/add_point.xpm
+END
+qgsimagewarper.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/georeferencer/qgsimagewarper.h
+END
+qgspointdialog.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/georeferencer/qgspointdialog.cpp
+END
+affine.jpg
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/georeferencer/affine.jpg
+END
+qgsgeorefdatapoint.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/georeferencer/qgsgeorefdatapoint.cpp
+END
+qgsleastsquares.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/georeferencer/qgsleastsquares.cpp
+END
+pluginguibase.ui
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/georeferencer/pluginguibase.ui
+END
+qgspointdialog.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/georeferencer/qgspointdialog.h
+END
+icon.png
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/georeferencer/icon.png
+END
+qgsgeorefdatapoint.h
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/georeferencer/qgsgeorefdatapoint.h
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/georeferencer/CMakeLists.txt
+END
+.cvsignore
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/georeferencer/.cvsignore
+END
+qgsleastsquares.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/georeferencer/qgsleastsquares.h
+END
+mapcoordsdialogbase.ui
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/plugins/georeferencer/mapcoordsdialogbase.ui
+END

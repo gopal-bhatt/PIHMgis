@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/scripts
+END
+update_ts_files.sh
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/scripts/update_ts_files.sh
+END
+build_debian_package.sh
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/scripts/build_debian_package.sh
+END
+update_translations.bat
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/scripts/update_translations.bat
+END

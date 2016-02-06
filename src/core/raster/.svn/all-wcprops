@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repos/qgis/!svn/ver/7222/branches/Release-0_9_0/src/core/raster
+END
+qgsrasterviewport.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/raster/qgsrasterviewport.h
+END
+qgscolortable.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/raster/qgscolortable.cpp
+END
+qgsrasterbandstats.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/raster/qgsrasterbandstats.h
+END
+qgscolortable.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/raster/qgscolortable.h
+END
+qgsrasterpyramid.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/raster/qgsrasterpyramid.h
+END
+qgsrasterlayer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/repos/qgis/!svn/ver/7222/branches/Release-0_9_0/src/core/raster/qgsrasterlayer.cpp
+END
+qgsrasterlayer.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/qgis/!svn/ver/7220/branches/Release-0_9_0/src/core/raster/qgsrasterlayer.h
+END

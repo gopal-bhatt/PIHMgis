@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/pihmgis/" >
+        <file>pihmgis.png</file>
+    </qresource>
+</RCC>
