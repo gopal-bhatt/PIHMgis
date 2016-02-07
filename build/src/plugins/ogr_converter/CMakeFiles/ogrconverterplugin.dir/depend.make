@@ -37,6 +37,9 @@ src/plugins/ogr_converter/CMakeFiles/ogrconverterplugin.dir/dialog.o: ../src/plu
 src/plugins/ogr_converter/CMakeFiles/ogrconverterplugin.dir/dialog.o: ../src/plugins/ogr_converter/dialog.h
 src/plugins/ogr_converter/CMakeFiles/ogrconverterplugin.dir/dialog.o: ../src/plugins/ogr_converter/format.h
 src/plugins/ogr_converter/CMakeFiles/ogrconverterplugin.dir/dialog.o: ../src/plugins/ogr_converter/translator.h
+src/plugins/ogr_converter/CMakeFiles/ogrconverterplugin.dir/dialog.o: /usr/include/Availability.h
+src/plugins/ogr_converter/CMakeFiles/ogrconverterplugin.dir/dialog.o: /usr/include/AvailabilityInternal.h
+src/plugins/ogr_converter/CMakeFiles/ogrconverterplugin.dir/dialog.o: /usr/include/AvailabilityMacros.h
 src/plugins/ogr_converter/CMakeFiles/ogrconverterplugin.dir/dialog.o: /usr/include/_locale.h
 src/plugins/ogr_converter/CMakeFiles/ogrconverterplugin.dir/dialog.o: /usr/include/_structs.h
 src/plugins/ogr_converter/CMakeFiles/ogrconverterplugin.dir/dialog.o: /usr/include/_types.h
@@ -44,7 +47,6 @@ src/plugins/ogr_converter/CMakeFiles/ogrconverterplugin.dir/dialog.o: /usr/inclu
 src/plugins/ogr_converter/CMakeFiles/ogrconverterplugin.dir/dialog.o: /usr/include/alloca.h
 src/plugins/ogr_converter/CMakeFiles/ogrconverterplugin.dir/dialog.o: /usr/include/architecture/i386/math.h
 src/plugins/ogr_converter/CMakeFiles/ogrconverterplugin.dir/dialog.o: /usr/include/architecture/ppc/math.h
-src/plugins/ogr_converter/CMakeFiles/ogrconverterplugin.dir/dialog.o: /usr/include/available.h
 src/plugins/ogr_converter/CMakeFiles/ogrconverterplugin.dir/dialog.o: /usr/include/ctype.h
 src/plugins/ogr_converter/CMakeFiles/ogrconverterplugin.dir/dialog.o: /usr/include/errno.h
 src/plugins/ogr_converter/CMakeFiles/ogrconverterplugin.dir/dialog.o: /usr/include/float.h
@@ -156,6 +158,9 @@ src/plugins/ogr_converter/CMakeFiles/ogrconverterplugin.dir/plugin.o: ../src/plu
 src/plugins/ogr_converter/CMakeFiles/ogrconverterplugin.dir/plugin.o: ../src/plugins/ogr_converter/format.h
 src/plugins/ogr_converter/CMakeFiles/ogrconverterplugin.dir/plugin.o: ../src/plugins/ogr_converter/plugin.cpp
 src/plugins/ogr_converter/CMakeFiles/ogrconverterplugin.dir/plugin.o: ../src/plugins/ogr_converter/plugin.h
+src/plugins/ogr_converter/CMakeFiles/ogrconverterplugin.dir/plugin.o: /usr/include/Availability.h
+src/plugins/ogr_converter/CMakeFiles/ogrconverterplugin.dir/plugin.o: /usr/include/AvailabilityInternal.h
+src/plugins/ogr_converter/CMakeFiles/ogrconverterplugin.dir/plugin.o: /usr/include/AvailabilityMacros.h
 src/plugins/ogr_converter/CMakeFiles/ogrconverterplugin.dir/plugin.o: /usr/include/_locale.h
 src/plugins/ogr_converter/CMakeFiles/ogrconverterplugin.dir/plugin.o: /usr/include/_structs.h
 src/plugins/ogr_converter/CMakeFiles/ogrconverterplugin.dir/plugin.o: /usr/include/_types.h
@@ -163,7 +168,6 @@ src/plugins/ogr_converter/CMakeFiles/ogrconverterplugin.dir/plugin.o: /usr/inclu
 src/plugins/ogr_converter/CMakeFiles/ogrconverterplugin.dir/plugin.o: /usr/include/alloca.h
 src/plugins/ogr_converter/CMakeFiles/ogrconverterplugin.dir/plugin.o: /usr/include/architecture/i386/math.h
 src/plugins/ogr_converter/CMakeFiles/ogrconverterplugin.dir/plugin.o: /usr/include/architecture/ppc/math.h
-src/plugins/ogr_converter/CMakeFiles/ogrconverterplugin.dir/plugin.o: /usr/include/available.h
 src/plugins/ogr_converter/CMakeFiles/ogrconverterplugin.dir/plugin.o: /usr/include/ctype.h
 src/plugins/ogr_converter/CMakeFiles/ogrconverterplugin.dir/plugin.o: /usr/include/errno.h
 src/plugins/ogr_converter/CMakeFiles/ogrconverterplugin.dir/plugin.o: /usr/include/float.h
@@ -230,6 +234,9 @@ src/plugins/ogr_converter/CMakeFiles/ogrconverterplugin.dir/translator.o: /Libra
 src/plugins/ogr_converter/CMakeFiles/ogrconverterplugin.dir/translator.o: /Library/Frameworks/QtGui.framework/Headers/qapplication.h
 src/plugins/ogr_converter/CMakeFiles/ogrconverterplugin.dir/translator.o: ../src/plugins/ogr_converter/translator.cpp
 src/plugins/ogr_converter/CMakeFiles/ogrconverterplugin.dir/translator.o: ../src/plugins/ogr_converter/translator.h
+src/plugins/ogr_converter/CMakeFiles/ogrconverterplugin.dir/translator.o: /usr/include/Availability.h
+src/plugins/ogr_converter/CMakeFiles/ogrconverterplugin.dir/translator.o: /usr/include/AvailabilityInternal.h
+src/plugins/ogr_converter/CMakeFiles/ogrconverterplugin.dir/translator.o: /usr/include/AvailabilityMacros.h
 src/plugins/ogr_converter/CMakeFiles/ogrconverterplugin.dir/translator.o: /usr/include/_locale.h
 src/plugins/ogr_converter/CMakeFiles/ogrconverterplugin.dir/translator.o: /usr/include/_structs.h
 src/plugins/ogr_converter/CMakeFiles/ogrconverterplugin.dir/translator.o: /usr/include/_types.h
@@ -237,7 +244,6 @@ src/plugins/ogr_converter/CMakeFiles/ogrconverterplugin.dir/translator.o: /usr/i
 src/plugins/ogr_converter/CMakeFiles/ogrconverterplugin.dir/translator.o: /usr/include/alloca.h
 src/plugins/ogr_converter/CMakeFiles/ogrconverterplugin.dir/translator.o: /usr/include/architecture/i386/math.h
 src/plugins/ogr_converter/CMakeFiles/ogrconverterplugin.dir/translator.o: /usr/include/architecture/ppc/math.h
-src/plugins/ogr_converter/CMakeFiles/ogrconverterplugin.dir/translator.o: /usr/include/available.h
 src/plugins/ogr_converter/CMakeFiles/ogrconverterplugin.dir/translator.o: /usr/include/ctype.h
 src/plugins/ogr_converter/CMakeFiles/ogrconverterplugin.dir/translator.o: /usr/include/errno.h
 src/plugins/ogr_converter/CMakeFiles/ogrconverterplugin.dir/translator.o: /usr/include/float.h

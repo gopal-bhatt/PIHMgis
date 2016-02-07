@@ -5,7 +5,7 @@
 
 using namespace std;
 
-void calDownSegment(const char* dbfFileName){
+void calDownSegment(const char* dbfFileName, int BC){
 	int temp;
 
 	DBFHandle dbf = DBFOpen(dbfFileName, "rb");
@@ -85,7 +85,7 @@ void calDownSegment(const char* dbfFileName){
 			//cout<<"After push\n";
 		}
 		else{
-			temp = DBFWriteIntegerAttribute(newdbf, i, fieldCount, 0);
+			temp = DBFWriteIntegerAttribute(newdbf, i, fieldCount, BC);
 		}
 	}
 	cout<<"DONE!\n";

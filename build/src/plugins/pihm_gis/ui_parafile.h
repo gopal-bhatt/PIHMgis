@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading ui file 'parafile.ui'
 **
-** Created: Fri Jun 19 02:00:51 2009
+** Created: Mon Sep 21 03:37:46 2009
 **      by: Qt User Interface Compiler version 4.3.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling ui file!
@@ -453,7 +453,8 @@ public:
 
     retranslateUi(paraFile);
 
-    tabWidget2->setCurrentIndex(2);
+    tabWidget2->setCurrentIndex(0);
+    umComboBox->setCurrentIndex(1);
 
 
     QMetaObject::connectSlotsByName(paraFile);

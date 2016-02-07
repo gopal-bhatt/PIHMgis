@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'qgsrasterlayer.h'
 **
-** Created: Fri Jun 19 01:50:18 2009
+** Created: Mon Sep 7 22:35:30 2009
 **      by: The Qt Meta Object Compiler version 59 (Qt 4.3.2)
 **
 ** WARNING! All changes made in this file will be lost!

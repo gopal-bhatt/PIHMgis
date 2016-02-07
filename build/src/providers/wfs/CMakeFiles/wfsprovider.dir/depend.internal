@@ -27,10 +27,11 @@ src/providers/wfs/CMakeFiles/wfsprovider.dir/moc_qgswfsdata.o
  /Library/Frameworks/QtNetwork.framework/Headers/qhttp.h
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/providers/wfs/../../../../src/providers/wfs/qgswfsdata.h
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/providers/wfs/moc_qgswfsdata.cxx
+ /usr/include/Availability.h
+ /usr/include/AvailabilityInternal.h
  /usr/include/_types.h
  /usr/include/_xlocale.h
  /usr/include/alloca.h
- /usr/include/available.h
  /usr/include/expat.h
  /usr/include/expat_external.h
  /usr/include/i386/_structs.h
@@ -153,10 +154,11 @@ src/providers/wfs/CMakeFiles/wfsprovider.dir/qgswfsprovider.o
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/providers/wfs/qgswfsdata.h
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/providers/wfs/qgswfsprovider.cpp
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/providers/wfs/qgswfsprovider.h
+ /usr/include/Availability.h
+ /usr/include/AvailabilityInternal.h
  /usr/include/_types.h
  /usr/include/_xlocale.h
  /usr/include/alloca.h
- /usr/include/available.h
  /usr/include/expat.h
  /usr/include/expat_external.h
  /usr/include/i386/_structs.h
@@ -231,10 +233,11 @@ src/providers/wfs/CMakeFiles/wfsprovider.dir/qgswfsdata.o
  /Library/Frameworks/QtNetwork.framework/Headers/qhttp.h
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/providers/wfs/qgswfsdata.cpp
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/providers/wfs/qgswfsdata.h
+ /usr/include/Availability.h
+ /usr/include/AvailabilityInternal.h
  /usr/include/_types.h
  /usr/include/_xlocale.h
  /usr/include/alloca.h
- /usr/include/available.h
  /usr/include/expat.h
  /usr/include/expat_external.h
  /usr/include/i386/_structs.h

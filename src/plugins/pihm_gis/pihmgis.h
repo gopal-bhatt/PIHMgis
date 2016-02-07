@@ -103,6 +103,11 @@ void runMshFile();
 void runAttFile();
 void runRivFile();
 void runParaFile();
+void runSoilFile();
+void runGeolFile();
+void runLCFile();
+void runCalibFile();
+void runInitFile();
 
 void runPIHM();
 

@@ -528,6 +528,12 @@ qgsvectordataprovider.h
 gpsdata.h
 /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/providers/gpx/gpsdata.h
 
+/usr/include/Availability.h
+AvailabilityInternal.h
+-
+
+/usr/include/AvailabilityInternal.h
+
 /usr/include/_types.h
 sys/_types.h
 -
@@ -541,8 +547,6 @@ sys/cdefs.h
 -
 _types.h
 -
-
-/usr/include/available.h
 
 /usr/include/expat.h
 stdlib.h
@@ -671,6 +675,8 @@ secure/_common.h
 -
 
 /usr/include/secure/_string.h
+sys/cdefs.h
+-
 secure/_common.h
 -
 
@@ -691,7 +697,7 @@ secure/_stdio.h
 -
 
 /usr/include/stdlib.h
-available.h
+Availability.h
 -
 _types.h
 -

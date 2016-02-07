@@ -984,10 +984,11 @@ src/gui/CMakeFiles/qgis_gui.dir/qgsrubberband.o
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/gui/qgsmapcanvasitem.h
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/gui/qgsrubberband.cpp
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/gui/qgsrubberband.h
+ /usr/include/Availability.h
+ /usr/include/AvailabilityInternal.h
  /usr/include/_types.h
  /usr/include/_xlocale.h
  /usr/include/alloca.h
- /usr/include/available.h
  /usr/include/i386/_structs.h
  /usr/include/i386/_types.h
  /usr/include/i386/endian.h

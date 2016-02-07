@@ -18,6 +18,7 @@ QgisInterface* applicationPointer;
 public slots:
         void inputBrowse();
 	void outputBrowse();
+	void suggestMe();
         void run();
 	void help();
 };

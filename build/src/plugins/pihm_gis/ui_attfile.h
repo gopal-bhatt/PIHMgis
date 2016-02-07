@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading ui file 'attfile.ui'
 **
-** Created: Fri Jun 19 02:00:51 2009
+** Created: Mon Sep 7 22:45:44 2009
 **      by: Qt User Interface Compiler version 4.3.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling ui file!
@@ -13,7 +13,6 @@
 #include <Qt3Support/Q3ButtonGroup>
 #include <Qt3Support/Q3GroupBox>
 #include <Qt3Support/Q3MimeSourceFactory>
-#include <Qt3Support/Q3TextBrowser>
 #include <QtCore/QVariant>
 #include <QtGui/QAction>
 #include <QtGui/QApplication>
@@ -24,6 +23,7 @@
 #include <QtGui/QPushButton>
 #include <QtGui/QRadioButton>
 #include <QtGui/QTabWidget>
+#include <QtGui/QTextBrowser>
 #include <QtGui/QWidget>
 
 class Ui_AttFileGeneration
@@ -37,7 +37,7 @@ public:
     QLabel *mshFileLabel;
     QLineEdit *attFileLineEdit;
     QPushButton *attFilePushButton;
-    Q3TextBrowser *textBrowser11;
+    QTextBrowser *textBrowser11;
     Q3GroupBox *groupBox8_3;
     Q3ButtonGroup *buttonGroup2;
     QRadioButton *OrthoRadioButton;
@@ -145,7 +145,7 @@ public:
     attFilePushButton->setObjectName(QString::fromUtf8("attFilePushButton"));
     attFilePushButton->setGeometry(QRect(472, 14, 87, 32));
     attFilePushButton->setAutoDefault(false);
-    textBrowser11 = new Q3TextBrowser(AttFileGeneration);
+    textBrowser11 = new QTextBrowser(AttFileGeneration);
     textBrowser11->setObjectName(QString::fromUtf8("textBrowser11"));
     textBrowser11->setGeometry(QRect(15, 610, 570, 130));
     groupBox8_3 = new Q3GroupBox(AttFileGeneration);

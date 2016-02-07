@@ -4126,6 +4126,12 @@ QPixmap
 Qt
 -
 
+/usr/include/Availability.h
+AvailabilityInternal.h
+-
+
+/usr/include/AvailabilityInternal.h
+
 /usr/include/AvailabilityMacros.h
 
 /usr/include/_locale.h
@@ -4155,6 +4161,8 @@ _types.h
 /usr/include/architecture/i386/math.h
 sys/cdefs.h
 /usr/include/architecture/i386/sys/cdefs.h
+AvailabilityMacros.h
+-
 
 /usr/include/architecture/ppc/math.h
 sys/cdefs.h
@@ -4165,8 +4173,6 @@ sys/cdefs.h
 -
 stdlib.h
 -
-
-/usr/include/available.h
 
 /usr/include/ctype.h
 runetype.h
@@ -4317,6 +4323,8 @@ architecture/ppc/math.h
 /usr/include/architecture/ppc/math.h
 architecture/i386/math.h
 /usr/include/architecture/i386/math.h
+architecture/arm/math.h
+/usr/include/architecture/arm/math.h
 
 /usr/include/netinet/in.h
 sys/appleapiopts.h
@@ -4405,6 +4413,8 @@ secure/_common.h
 -
 
 /usr/include/secure/_string.h
+sys/cdefs.h
+-
 secure/_common.h
 -
 
@@ -4433,7 +4443,7 @@ secure/_stdio.h
 -
 
 /usr/include/stdlib.h
-available.h
+Availability.h
 -
 _types.h
 -
@@ -4537,7 +4547,7 @@ sys/_structs.h
 -
 
 /usr/include/sys/socket.h
-sys/_types.h
+sys/types.h
 -
 sys/cdefs.h
 -
@@ -4548,6 +4558,8 @@ machine/_param.h
 sys/_types.h
 -
 sys/cdefs.h
+-
+Availability.h
 -
 sys/_structs.h
 -

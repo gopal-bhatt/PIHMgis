@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading ui file 'simplifylinedialog.ui'
 **
-** Created: Fri Jun 19 02:00:51 2009
+** Created: Mon Sep 7 22:45:44 2009
 **      by: Qt User Interface Compiler version 4.3.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling ui file!
@@ -51,12 +51,11 @@ public:
     polygonToPolyLineGroup = new Q3ButtonGroup(simplifyLineDialog);
     polygonToPolyLineGroup->setObjectName(QString::fromUtf8("polygonToPolyLineGroup"));
     polygonToPolyLineGroup->setGeometry(QRect(5, 140, 580, 380));
-    QSizePolicy sizePolicy(static_cast<QSizePolicy::Policy>(0), static_cast<QSizePolicy::Policy>(5));
+    QSizePolicy sizePolicy(QSizePolicy::Fixed, QSizePolicy::Preferred);
     sizePolicy.setHorizontalStretch(0);
     sizePolicy.setVerticalStretch(0);
     sizePolicy.setHeightForWidth(polygonToPolyLineGroup->sizePolicy().hasHeightForWidth());
     polygonToPolyLineGroup->setSizePolicy(sizePolicy);
-    polygonToPolyLineGroup->setOrientation(Qt::Vertical);
     helpButton = new QPushButton(polygonToPolyLineGroup);
     helpButton->setObjectName(QString::fromUtf8("helpButton"));
     helpButton->setGeometry(QRect(12, 222, 80, 34));
@@ -67,26 +66,24 @@ public:
     inputOutputTable = new Q3Table(polygonToPolyLineGroup);
     inputOutputTable->setObjectName(QString::fromUtf8("inputOutputTable"));
     inputOutputTable->setGeometry(QRect(10, 10, 510, 200));
-    inputOutputTable->setLineWidth(2);
-    inputOutputTable->setMidLineWidth(0);
-    inputOutputTable->setMargin(0);
-    inputOutputTable->setResizePolicy(Q3ScrollView::Default);
-    inputOutputTable->setDragAutoScroll(false);
-    inputOutputTable->setNumRows(0);
-    inputOutputTable->setNumCols(3);
-    inputOutputTable->setShowGrid(true);
-    inputOutputTable->setRowMovingEnabled(false);
-    inputOutputTable->setColumnMovingEnabled(false);
-    inputOutputTable->setFocusStyle(Q3Table::SpreadSheet);
+    inputOutputTable->setProperty("lineWidth", QVariant(2));
+    inputOutputTable->setProperty("midLineWidth", QVariant(0));
+    inputOutputTable->setProperty("margin", QVariant(0));
+    inputOutputTable->setProperty("dragAutoScroll", QVariant(false));
+    inputOutputTable->setProperty("numRows", QVariant(0));
+    inputOutputTable->setProperty("numCols", QVariant(3));
+    inputOutputTable->setProperty("showGrid", QVariant(true));
+    inputOutputTable->setProperty("rowMovingEnabled", QVariant(false));
+    inputOutputTable->setProperty("columnMovingEnabled", QVariant(false));
     removeFileButton = new QPushButton(polygonToPolyLineGroup);
     removeFileButton->setObjectName(QString::fromUtf8("removeFileButton"));
     removeFileButton->setGeometry(QRect(530, 10, 40, 32));
-    removeFileButton->setIcon(QIcon(QString::fromUtf8("./icons/Minus32.png")));
+    removeFileButton->setIcon(QIcon(QString::fromUtf8(":/icons/Minus32.png")));
     removeFileButton->setAutoDefault(false);
     removeAllButton = new QPushButton(polygonToPolyLineGroup);
     removeAllButton->setObjectName(QString::fromUtf8("removeAllButton"));
     removeAllButton->setGeometry(QRect(530, 90, 40, 32));
-    removeAllButton->setIcon(QIcon(QString::fromUtf8("./icons/Delete32.png")));
+    removeAllButton->setIcon(QIcon(QString::fromUtf8(":/icons/Delete32.png")));
     removeAllButton->setAutoDefault(false);
     okButton = new QPushButton(polygonToPolyLineGroup);
     okButton->setObjectName(QString::fromUtf8("okButton"));
@@ -99,12 +96,11 @@ public:
     editToleranceButton = new QPushButton(polygonToPolyLineGroup);
     editToleranceButton->setObjectName(QString::fromUtf8("editToleranceButton"));
     editToleranceButton->setGeometry(QRect(530, 50, 40, 32));
-    editToleranceButton->setIcon(QIcon(QString::fromUtf8("./icons/Properties32.png")));
+    editToleranceButton->setIcon(QIcon(QString::fromUtf8(":/icons/Properties32.png")));
     editToleranceButton->setAutoDefault(false);
     buttonGroup8 = new Q3ButtonGroup(simplifyLineDialog);
     buttonGroup8->setObjectName(QString::fromUtf8("buttonGroup8"));
     buttonGroup8->setGeometry(QRect(5, 10, 580, 121));
-    buttonGroup8->setOrientation(Qt::Vertical);
     InputPolyline = new QLabel(buttonGroup8);
     InputPolyline->setObjectName(QString::fromUtf8("InputPolyline"));
     InputPolyline->setGeometry(QRect(15, 10, 110, 48));
@@ -119,8 +115,8 @@ public:
     toleranceEdit->setGeometry(QRect(125, 70, 90, 29));
     addFileButton = new QPushButton(buttonGroup8);
     addFileButton->setObjectName(QString::fromUtf8("addFileButton"));
-    addFileButton->setGeometry(QRect(227, 70, 80, 32));
-    addFileButton->setIcon(QIcon(QString::fromUtf8("./icons/Plus32.png")));
+    addFileButton->setGeometry(QRect(227, 70, 81, 32));
+    addFileButton->setIcon(QIcon(QString::fromUtf8(":/icons/Plus32.png")));
     addFileButton->setAutoDefault(false);
     inputPolylineButton = new QPushButton(buttonGroup8);
     inputPolylineButton->setObjectName(QString::fromUtf8("inputPolylineButton"));
@@ -135,7 +131,7 @@ public:
     void retranslateUi(QDialog *simplifyLineDialog)
     {
     simplifyLineDialog->setWindowTitle(QApplication::translate("simplifyLineDialog", "Simplify Line", 0, QApplication::UnicodeUTF8));
-    polygonToPolyLineGroup->setTitle(QString());
+    polygonToPolyLineGroup->setProperty("title", QVariant(QString()));
     helpButton->setText(QApplication::translate("simplifyLineDialog", "Help", 0, QApplication::UnicodeUTF8));
     removeFileButton->setToolTip(QApplication::translate("simplifyLineDialog", "removeFile", 0, QApplication::UnicodeUTF8));
     removeFileButton->setText(QString());
@@ -145,10 +141,11 @@ public:
     cancelButton->setText(QApplication::translate("simplifyLineDialog", "Close", 0, QApplication::UnicodeUTF8));
     editToleranceButton->setToolTip(QApplication::translate("simplifyLineDialog", "Edit Tolerance", 0, QApplication::UnicodeUTF8));
     editToleranceButton->setText(QString());
-    buttonGroup8->setTitle(QString());
+    buttonGroup8->setProperty("title", QVariant(QString()));
     InputPolyline->setText(QApplication::translate("simplifyLineDialog", "Input Polyline", 0, QApplication::UnicodeUTF8));
     tolerance->setText(QApplication::translate("simplifyLineDialog", "Tolerance", 0, QApplication::UnicodeUTF8));
-    addFileButton->setText(QApplication::translate("simplifyLineDialog", "     Add", 0, QApplication::UnicodeUTF8));
+    addFileButton->setToolTip(QApplication::translate("simplifyLineDialog", "Add (Polyline, Tolerance) to Table", 0, QApplication::UnicodeUTF8));
+    addFileButton->setText(QString());
     inputPolylineButton->setText(QApplication::translate("simplifyLineDialog", "Browse...", 0, QApplication::UnicodeUTF8));
     Q_UNUSED(simplifyLineDialog);
     } // retranslateUi

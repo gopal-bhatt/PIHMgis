@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'streamgrid.h'
 **
-** Created: Fri Jul 24 04:57:59 2009
+** Created: Mon Sep 7 22:45:42 2009
 **      by: The Qt Meta Object Compiler version 59 (Qt 4.3.2)
 **
 ** WARNING! All changes made in this file will be lost!
@@ -22,7 +22,7 @@ static const uint qt_meta_data_StreamGridDlg[] = {
        1,       // revision
        0,       // classname
        0,    0, // classinfo
-       4,   10, // methods
+       5,   10, // methods
        0,    0, // properties
        0,    0, // enums/sets
 
@@ -30,14 +30,16 @@ static const uint qt_meta_data_StreamGridDlg[] = {
       15,   14,   14,   14, 0x0a,
       29,   14,   14,   14, 0x0a,
       44,   14,   14,   14, 0x0a,
-      50,   14,   14,   14, 0x0a,
+      56,   14,   14,   14, 0x0a,
+      62,   14,   14,   14, 0x0a,
 
        0        // eod
 };
 
 static const char qt_meta_stringdata_StreamGridDlg[] = {
     "StreamGridDlg\0\0inputBrowse()\0"
-    "outputBrowse()\0run()\0help()\0"
+    "outputBrowse()\0suggestMe()\0run()\0"
+    "help()\0"
 };
 
 const QMetaObject StreamGridDlg::staticMetaObject = {
@@ -67,10 +69,11 @@ int StreamGridDlg::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
         switch (_id) {
         case 0: inputBrowse(); break;
         case 1: outputBrowse(); break;
-        case 2: run(); break;
-        case 3: help(); break;
+        case 2: suggestMe(); break;
+        case 3: run(); break;
+        case 4: help(); break;
         }
-        _id -= 4;
+        _id -= 5;
     }
     return _id;
 }

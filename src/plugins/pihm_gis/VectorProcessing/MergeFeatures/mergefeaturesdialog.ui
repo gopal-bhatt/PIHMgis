@@ -1,10 +1,8 @@
-<ui version="4.0" >
- <author></author>
- <comment></comment>
- <exportmacro></exportmacro>
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
  <class>mergeFeaturesDialog</class>
- <widget class="QDialog" name="mergeFeaturesDialog" >
-  <property name="geometry" >
+ <widget class="QDialog" name="mergeFeaturesDialog">
+  <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
@@ -12,11 +10,11 @@
     <height>534</height>
    </rect>
   </property>
-  <property name="windowTitle" >
+  <property name="windowTitle">
    <string>Merge Features</string>
   </property>
-  <widget class="QPushButton" name="okButton" >
-   <property name="geometry" >
+  <widget class="QPushButton" name="okButton">
+   <property name="geometry">
     <rect>
      <x>513</x>
      <y>358</y>
@@ -24,15 +22,15 @@
      <height>34</height>
     </rect>
    </property>
-   <property name="text" >
+   <property name="text">
     <string>Run!</string>
    </property>
-   <property name="autoDefault" >
+   <property name="autoDefault">
     <bool>false</bool>
    </property>
   </widget>
-  <widget class="QPushButton" name="cancelButton" >
-   <property name="geometry" >
+  <widget class="QPushButton" name="cancelButton">
+   <property name="geometry">
     <rect>
      <x>427</x>
      <y>358</y>
@@ -40,15 +38,15 @@
      <height>34</height>
     </rect>
    </property>
-   <property name="text" >
+   <property name="text">
     <string>Close</string>
    </property>
-   <property name="autoDefault" >
+   <property name="autoDefault">
     <bool>false</bool>
    </property>
   </widget>
-  <widget class="QPushButton" name="helpButton" >
-   <property name="geometry" >
+  <widget class="QPushButton" name="helpButton">
+   <property name="geometry">
     <rect>
      <x>15</x>
      <y>358</y>
@@ -56,15 +54,15 @@
      <height>34</height>
     </rect>
    </property>
-   <property name="text" >
+   <property name="text">
     <string>Help</string>
    </property>
-   <property name="autoDefault" >
+   <property name="autoDefault">
     <bool>false</bool>
    </property>
   </widget>
-  <widget class="Q3ButtonGroup" name="polygonToPolyLineGroup" >
-   <property name="geometry" >
+  <widget class="Q3ButtonGroup" name="polygonToPolyLineGroup" native="true">
+   <property name="geometry">
     <rect>
      <x>15</x>
      <y>10</y>
@@ -72,22 +70,17 @@
      <height>220</height>
     </rect>
    </property>
-   <property name="sizePolicy" >
-    <sizepolicy>
-     <hsizetype>0</hsizetype>
-     <vsizetype>5</vsizetype>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
      <horstretch>0</horstretch>
      <verstretch>0</verstretch>
     </sizepolicy>
    </property>
-   <property name="title" >
+   <property name="title" stdset="0">
     <string/>
    </property>
-   <property name="orientation" >
-    <enum>Qt::Vertical</enum>
-   </property>
-   <widget class="Q3Table" name="inputOutputTable" >
-    <property name="geometry" >
+   <widget class="Q3Table" name="inputOutputTable" native="true">
+    <property name="geometry">
      <rect>
       <x>10</x>
       <y>10</y>
@@ -95,42 +88,36 @@
       <height>200</height>
      </rect>
     </property>
-    <property name="lineWidth" >
+    <property name="lineWidth" stdset="0">
      <number>2</number>
     </property>
-    <property name="midLineWidth" >
+    <property name="midLineWidth" stdset="0">
      <number>0</number>
     </property>
-    <property name="margin" >
+    <property name="margin" stdset="0">
      <number>0</number>
     </property>
-    <property name="resizePolicy" >
-     <enum>Q3ScrollView::Default</enum>
-    </property>
-    <property name="dragAutoScroll" >
+    <property name="dragAutoScroll" stdset="0">
      <bool>false</bool>
     </property>
-    <property name="numRows" >
+    <property name="numRows" stdset="0">
      <number>0</number>
     </property>
-    <property name="numCols" >
+    <property name="numCols" stdset="0">
      <number>1</number>
     </property>
-    <property name="showGrid" >
+    <property name="showGrid" stdset="0">
      <bool>true</bool>
     </property>
-    <property name="rowMovingEnabled" >
+    <property name="rowMovingEnabled" stdset="0">
      <bool>false</bool>
     </property>
-    <property name="columnMovingEnabled" >
+    <property name="columnMovingEnabled" stdset="0">
      <bool>false</bool>
-    </property>
-    <property name="focusStyle" >
-     <enum>Q3Table::SpreadSheet</enum>
     </property>
    </widget>
-   <widget class="QPushButton" name="addFileButton" >
-    <property name="geometry" >
+   <widget class="QPushButton" name="addFileButton">
+    <property name="geometry">
      <rect>
       <x>530</x>
       <y>10</y>
@@ -138,21 +125,22 @@
       <height>32</height>
      </rect>
     </property>
-    <property name="toolTip" >
+    <property name="toolTip">
      <string>addFile</string>
     </property>
-    <property name="text" >
+    <property name="text">
      <string/>
     </property>
-    <property name="icon" >
-     <iconset>./icons/Plus32.png</iconset>
+    <property name="icon">
+     <iconset resource="../PolygonToPolyLine/polygontopolylinedialog.qrc">
+      <normaloff>:/icons/Plus32.png</normaloff>:/icons/Plus32.png</iconset>
     </property>
-    <property name="autoDefault" >
+    <property name="autoDefault">
      <bool>false</bool>
     </property>
    </widget>
-   <widget class="QPushButton" name="removeFileButton" >
-    <property name="geometry" >
+   <widget class="QPushButton" name="removeFileButton">
+    <property name="geometry">
      <rect>
       <x>530</x>
       <y>50</y>
@@ -160,21 +148,22 @@
       <height>32</height>
      </rect>
     </property>
-    <property name="toolTip" >
+    <property name="toolTip">
      <string>removeFile</string>
     </property>
-    <property name="text" >
+    <property name="text">
      <string/>
     </property>
-    <property name="icon" >
-     <iconset>./icons/Minus32.png</iconset>
+    <property name="icon">
+     <iconset resource="../PolygonToPolyLine/polygontopolylinedialog.qrc">
+      <normaloff>:/icons/Minus32.png</normaloff>:/icons/Minus32.png</iconset>
     </property>
-    <property name="autoDefault" >
+    <property name="autoDefault">
      <bool>false</bool>
     </property>
    </widget>
-   <widget class="QPushButton" name="removeAllButton" >
-    <property name="geometry" >
+   <widget class="QPushButton" name="removeAllButton">
+    <property name="geometry">
      <rect>
       <x>530</x>
       <y>90</y>
@@ -182,22 +171,23 @@
       <height>32</height>
      </rect>
     </property>
-    <property name="toolTip" >
+    <property name="toolTip">
      <string>remove All Files</string>
     </property>
-    <property name="text" >
+    <property name="text">
      <string/>
     </property>
-    <property name="icon" >
-     <iconset>./icons/Delete32.png</iconset>
+    <property name="icon">
+     <iconset resource="../PolygonToPolyLine/polygontopolylinedialog.qrc">
+      <normaloff>:/icons/Delete32.png</normaloff>:/icons/Delete32.png</iconset>
     </property>
-    <property name="autoDefault" >
+    <property name="autoDefault">
      <bool>false</bool>
     </property>
    </widget>
   </widget>
-  <widget class="Q3ButtonGroup" name="mergeFeaturesGroup" >
-   <property name="geometry" >
+  <widget class="Q3ButtonGroup" name="mergeFeaturesGroup" native="true">
+   <property name="geometry">
     <rect>
      <x>14</x>
      <y>235</y>
@@ -205,14 +195,11 @@
      <height>110</height>
     </rect>
    </property>
-   <property name="title" >
+   <property name="title" stdset="0">
     <string/>
    </property>
-   <property name="orientation" >
-    <enum>Qt::Vertical</enum>
-   </property>
-   <widget class="QPushButton" name="outputMergedFileButton" >
-    <property name="geometry" >
+   <widget class="QPushButton" name="outputMergedFileButton">
+    <property name="geometry">
      <rect>
       <x>478</x>
       <y>14</y>
@@ -220,15 +207,15 @@
       <height>32</height>
      </rect>
     </property>
-    <property name="text" >
+    <property name="text">
      <string>Browse...</string>
     </property>
-    <property name="autoDefault" >
+    <property name="autoDefault">
      <bool>false</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="outputMergedFileLabel" >
-    <property name="geometry" >
+   <widget class="QLabel" name="outputMergedFileLabel">
+    <property name="geometry">
      <rect>
       <x>21</x>
       <y>2</y>
@@ -236,12 +223,12 @@
       <height>58</height>
      </rect>
     </property>
-    <property name="text" >
+    <property name="text">
      <string>Output Merged File</string>
     </property>
    </widget>
-   <widget class="QLabel" name="mergeFeaturesClusterToleranceLabel" >
-    <property name="geometry" >
+   <widget class="QLabel" name="mergeFeaturesClusterToleranceLabel">
+    <property name="geometry">
      <rect>
       <x>21</x>
       <y>47</y>
@@ -249,15 +236,15 @@
       <height>58</height>
      </rect>
     </property>
-    <property name="text" >
+    <property name="text">
      <string>Cluster Tolerance</string>
     </property>
-    <property name="alignment" >
+    <property name="alignment">
      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
     </property>
    </widget>
-   <widget class="QLineEdit" name="clusterToleranceLineEdit" >
-    <property name="geometry" >
+   <widget class="QLineEdit" name="clusterToleranceLineEdit">
+    <property name="geometry">
      <rect>
       <x>169</x>
       <y>61</y>
@@ -265,12 +252,12 @@
       <height>29</height>
      </rect>
     </property>
-    <property name="text" >
+    <property name="text">
      <string>0</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="outputMergedFileLineEdit" >
-    <property name="geometry" >
+   <widget class="QLineEdit" name="outputMergedFileLineEdit">
+    <property name="geometry">
      <rect>
       <x>171</x>
       <y>15</y>
@@ -280,8 +267,8 @@
     </property>
    </widget>
   </widget>
-  <widget class="Q3TextBrowser" name="messageLog" >
-   <property name="geometry" >
+  <widget class="Q3TextBrowser" name="messageLog" native="true">
+   <property name="geometry">
     <rect>
      <x>10</x>
      <y>407</y>
@@ -291,29 +278,24 @@
    </property>
   </widget>
  </widget>
- <layoutdefault spacing="6" margin="11" />
- <pixmapfunction></pixmapfunction>
+ <layoutdefault spacing="6" margin="11"/>
  <customwidgets>
   <customwidget>
    <class>Q3ButtonGroup</class>
    <extends></extends>
    <header>Qt3Support/Q3ButtonGroup</header>
    <container>1</container>
-   <pixmap></pixmap>
   </customwidget>
   <customwidget>
    <class>Q3Table</class>
    <extends></extends>
    <header>q3table.h</header>
-   <container>0</container>
-   <pixmap></pixmap>
   </customwidget>
   <customwidget>
    <class>Q3TextBrowser</class>
    <extends>QWidget</extends>
    <header>q3textbrowser.h</header>
    <container>1</container>
-   <pixmap></pixmap>
   </customwidget>
  </customwidgets>
  <tabstops>
@@ -324,6 +306,8 @@
   <tabstop>okButton</tabstop>
   <tabstop>helpButton</tabstop>
  </tabstops>
- <resources/>
+ <resources>
+  <include location="../PolygonToPolyLine/polygontopolylinedialog.qrc"/>
+ </resources>
  <connections/>
 </ui>

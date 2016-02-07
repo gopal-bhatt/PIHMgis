@@ -1,8 +1,8 @@
-The system is: Darwin - 9.7.0 - i386
+The system is: Darwin - 10.0.0 - i386
 Determining if the C compiler is GNU succeeded with the following output:
 # 1 "/usr/share/cmake-2.4/Modules/CMakeTestGNU.c"
 # 1 "<built-in>"
-# 1 "<command line>"
+# 1 "<command-line>"
 # 1 "/usr/share/cmake-2.4/Modules/CMakeTestGNU.c"
 
 void THIS_IS_GNU();
@@ -10,7 +10,7 @@ void THIS_IS_GNU();
 Determining if the C++ compiler is GNU succeeded with the following output:
 # 1 "/usr/share/cmake-2.4/Modules/CMakeTestGNU.c"
 # 1 "<built-in>"
-# 1 "<command line>"
+# 1 "<command-line>"
 # 1 "/usr/share/cmake-2.4/Modules/CMakeTestGNU.c"
 
 void THIS_IS_GNU();

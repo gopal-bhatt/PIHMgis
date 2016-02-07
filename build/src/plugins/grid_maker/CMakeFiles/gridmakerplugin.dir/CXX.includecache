@@ -492,6 +492,12 @@ ui_pluginguibase.h
 QDialog
 -
 
+/usr/include/Availability.h
+AvailabilityInternal.h
+-
+
+/usr/include/AvailabilityInternal.h
+
 /usr/include/_types.h
 sys/_types.h
 -
@@ -505,8 +511,6 @@ sys/cdefs.h
 -
 _types.h
 -
-
-/usr/include/available.h
 
 /usr/include/i386/_structs.h
 sys/appleapiopts.h
@@ -623,6 +627,8 @@ sys/cdefs.h
 /usr/include/secure/_common.h
 
 /usr/include/secure/_string.h
+sys/cdefs.h
+-
 secure/_common.h
 -
 
@@ -635,7 +641,7 @@ _types.h
 -
 
 /usr/include/stdlib.h
-available.h
+Availability.h
 -
 _types.h
 -

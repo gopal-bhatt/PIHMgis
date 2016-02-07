@@ -187,6 +187,54 @@ DataModelLoader/AttFile/attfile.s:
 	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DataModelLoader/AttFile/attfile.s
 
 # target to build an object file
+DataModelLoader/CalibFile/calibfile.o:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DataModelLoader/CalibFile/calibfile.o
+
+# target to preprocess a source file
+DataModelLoader/CalibFile/calibfile.i:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DataModelLoader/CalibFile/calibfile.i
+
+# target to generate assembly for a file
+DataModelLoader/CalibFile/calibfile.s:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DataModelLoader/CalibFile/calibfile.s
+
+# target to build an object file
+DataModelLoader/GeolFile/geolfile.o:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DataModelLoader/GeolFile/geolfile.o
+
+# target to preprocess a source file
+DataModelLoader/GeolFile/geolfile.i:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DataModelLoader/GeolFile/geolfile.i
+
+# target to generate assembly for a file
+DataModelLoader/GeolFile/geolfile.s:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DataModelLoader/GeolFile/geolfile.s
+
+# target to build an object file
+DataModelLoader/InitFile/initfile.o:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DataModelLoader/InitFile/initfile.o
+
+# target to preprocess a source file
+DataModelLoader/InitFile/initfile.i:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DataModelLoader/InitFile/initfile.i
+
+# target to generate assembly for a file
+DataModelLoader/InitFile/initfile.s:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DataModelLoader/InitFile/initfile.s
+
+# target to build an object file
+DataModelLoader/LCFile/lcfile.o:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DataModelLoader/LCFile/lcfile.o
+
+# target to preprocess a source file
+DataModelLoader/LCFile/lcfile.i:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DataModelLoader/LCFile/lcfile.i
+
+# target to generate assembly for a file
+DataModelLoader/LCFile/lcfile.s:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DataModelLoader/LCFile/lcfile.s
+
+# target to build an object file
 DataModelLoader/MeshFile/mshfile.o:
 	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DataModelLoader/MeshFile/mshfile.o
 
@@ -221,6 +269,18 @@ DataModelLoader/RivFile/rivfile.i:
 # target to generate assembly for a file
 DataModelLoader/RivFile/rivfile.s:
 	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DataModelLoader/RivFile/rivfile.s
+
+# target to build an object file
+DataModelLoader/SoilFile/soilfile.o:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DataModelLoader/SoilFile/soilfile.o
+
+# target to preprocess a source file
+DataModelLoader/SoilFile/soilfile.i:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DataModelLoader/SoilFile/soilfile.i
+
+# target to generate assembly for a file
+DataModelLoader/SoilFile/soilfile.s:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DataModelLoader/SoilFile/soilfile.s
 
 # target to build an object file
 DomainDecomposition/CreateTINs/createtins.o:
@@ -499,6 +559,18 @@ VectorProcessing/PolygonToPolyLine/polygontopolylinedialog.s:
 	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/VectorProcessing/PolygonToPolyLine/polygontopolylinedialog.s
 
 # target to build an object file
+VectorProcessing/PolygonToPolyLine/qrc_polygontopolylinedialog.o:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/VectorProcessing/PolygonToPolyLine/qrc_polygontopolylinedialog.o
+
+# target to preprocess a source file
+VectorProcessing/PolygonToPolyLine/qrc_polygontopolylinedialog.i:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/VectorProcessing/PolygonToPolyLine/qrc_polygontopolylinedialog.i
+
+# target to generate assembly for a file
+VectorProcessing/PolygonToPolyLine/qrc_polygontopolylinedialog.s:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/VectorProcessing/PolygonToPolyLine/qrc_polygontopolylinedialog.s
+
+# target to build an object file
 VectorProcessing/SimplifyLine/simplifylinedialog.o:
 	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/VectorProcessing/SimplifyLine/simplifylinedialog.o
 
@@ -545,6 +617,18 @@ moc_attfile.i:
 # target to generate assembly for a file
 moc_attfile.s:
 	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_attfile.s
+
+# target to build an object file
+moc_calibfile.o:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_calibfile.o
+
+# target to preprocess a source file
+moc_calibfile.i:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_calibfile.i
+
+# target to generate assembly for a file
+moc_calibfile.s:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_calibfile.s
 
 # target to build an object file
 moc_catchmentgrid.o:
@@ -619,6 +703,18 @@ moc_generateshapetopology.s:
 	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_generateshapetopology.s
 
 # target to build an object file
+moc_geolfile.o:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_geolfile.o
+
+# target to preprocess a source file
+moc_geolfile.i:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_geolfile.i
+
+# target to generate assembly for a file
+moc_geolfile.s:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_geolfile.s
+
+# target to build an object file
 moc_helpdialog.o:
 	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_helpdialog.o
 
@@ -629,6 +725,30 @@ moc_helpdialog.i:
 # target to generate assembly for a file
 moc_helpdialog.s:
 	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_helpdialog.s
+
+# target to build an object file
+moc_initfile.o:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_initfile.o
+
+# target to preprocess a source file
+moc_initfile.i:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_initfile.i
+
+# target to generate assembly for a file
+moc_initfile.s:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_initfile.s
+
+# target to build an object file
+moc_lcfile.o:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_lcfile.o
+
+# target to preprocess a source file
+moc_lcfile.i:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_lcfile.i
+
+# target to generate assembly for a file
+moc_lcfile.s:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_lcfile.s
 
 # target to build an object file
 moc_linkgrid.o:
@@ -773,6 +893,18 @@ moc_simplifylinedialog.i:
 # target to generate assembly for a file
 moc_simplifylinedialog.s:
 	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_simplifylinedialog.s
+
+# target to build an object file
+moc_soilfile.o:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_soilfile.o
+
+# target to preprocess a source file
+moc_soilfile.i:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_soilfile.i
+
+# target to generate assembly for a file
+moc_soilfile.s:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_soilfile.s
 
 # target to build an object file
 moc_spatialplot.o:
@@ -1160,6 +1292,18 @@ help::
 	@echo "... DataModelLoader/AttFile/attfile.o"
 	@echo "... DataModelLoader/AttFile/attfile.i"
 	@echo "... DataModelLoader/AttFile/attfile.s"
+	@echo "... DataModelLoader/CalibFile/calibfile.o"
+	@echo "... DataModelLoader/CalibFile/calibfile.i"
+	@echo "... DataModelLoader/CalibFile/calibfile.s"
+	@echo "... DataModelLoader/GeolFile/geolfile.o"
+	@echo "... DataModelLoader/GeolFile/geolfile.i"
+	@echo "... DataModelLoader/GeolFile/geolfile.s"
+	@echo "... DataModelLoader/InitFile/initfile.o"
+	@echo "... DataModelLoader/InitFile/initfile.i"
+	@echo "... DataModelLoader/InitFile/initfile.s"
+	@echo "... DataModelLoader/LCFile/lcfile.o"
+	@echo "... DataModelLoader/LCFile/lcfile.i"
+	@echo "... DataModelLoader/LCFile/lcfile.s"
 	@echo "... DataModelLoader/MeshFile/mshfile.o"
 	@echo "... DataModelLoader/MeshFile/mshfile.i"
 	@echo "... DataModelLoader/MeshFile/mshfile.s"
@@ -1169,6 +1313,9 @@ help::
 	@echo "... DataModelLoader/RivFile/rivfile.o"
 	@echo "... DataModelLoader/RivFile/rivfile.i"
 	@echo "... DataModelLoader/RivFile/rivfile.s"
+	@echo "... DataModelLoader/SoilFile/soilfile.o"
+	@echo "... DataModelLoader/SoilFile/soilfile.i"
+	@echo "... DataModelLoader/SoilFile/soilfile.s"
 	@echo "... DomainDecomposition/CreateTINs/createtins.o"
 	@echo "... DomainDecomposition/CreateTINs/createtins.i"
 	@echo "... DomainDecomposition/CreateTINs/createtins.s"
@@ -1238,6 +1385,9 @@ help::
 	@echo "... VectorProcessing/PolygonToPolyLine/polygontopolylinedialog.o"
 	@echo "... VectorProcessing/PolygonToPolyLine/polygontopolylinedialog.i"
 	@echo "... VectorProcessing/PolygonToPolyLine/polygontopolylinedialog.s"
+	@echo "... VectorProcessing/PolygonToPolyLine/qrc_polygontopolylinedialog.o"
+	@echo "... VectorProcessing/PolygonToPolyLine/qrc_polygontopolylinedialog.i"
+	@echo "... VectorProcessing/PolygonToPolyLine/qrc_polygontopolylinedialog.s"
 	@echo "... VectorProcessing/SimplifyLine/simplifylinedialog.o"
 	@echo "... VectorProcessing/SimplifyLine/simplifylinedialog.i"
 	@echo "... VectorProcessing/SimplifyLine/simplifylinedialog.s"
@@ -1250,6 +1400,9 @@ help::
 	@echo "... moc_attfile.o"
 	@echo "... moc_attfile.i"
 	@echo "... moc_attfile.s"
+	@echo "... moc_calibfile.o"
+	@echo "... moc_calibfile.i"
+	@echo "... moc_calibfile.s"
 	@echo "... moc_catchmentgrid.o"
 	@echo "... moc_catchmentgrid.i"
 	@echo "... moc_catchmentgrid.s"
@@ -1268,9 +1421,18 @@ help::
 	@echo "... moc_generateshapetopology.o"
 	@echo "... moc_generateshapetopology.i"
 	@echo "... moc_generateshapetopology.s"
+	@echo "... moc_geolfile.o"
+	@echo "... moc_geolfile.i"
+	@echo "... moc_geolfile.s"
 	@echo "... moc_helpdialog.o"
 	@echo "... moc_helpdialog.i"
 	@echo "... moc_helpdialog.s"
+	@echo "... moc_initfile.o"
+	@echo "... moc_initfile.i"
+	@echo "... moc_initfile.s"
+	@echo "... moc_lcfile.o"
+	@echo "... moc_lcfile.i"
+	@echo "... moc_lcfile.s"
 	@echo "... moc_linkgrid.o"
 	@echo "... moc_linkgrid.i"
 	@echo "... moc_linkgrid.s"
@@ -1307,6 +1469,9 @@ help::
 	@echo "... moc_simplifylinedialog.o"
 	@echo "... moc_simplifylinedialog.i"
 	@echo "... moc_simplifylinedialog.s"
+	@echo "... moc_soilfile.o"
+	@echo "... moc_soilfile.i"
+	@echo "... moc_soilfile.s"
 	@echo "... moc_spatialplot.o"
 	@echo "... moc_spatialplot.i"
 	@echo "... moc_spatialplot.s"

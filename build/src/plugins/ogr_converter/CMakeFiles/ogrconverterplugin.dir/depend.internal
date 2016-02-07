@@ -38,6 +38,9 @@ src/plugins/ogr_converter/CMakeFiles/ogrconverterplugin.dir/dialog.o
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/ogr_converter/dialog.h
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/ogr_converter/format.h
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/ogr_converter/translator.h
+ /usr/include/Availability.h
+ /usr/include/AvailabilityInternal.h
+ /usr/include/AvailabilityMacros.h
  /usr/include/_locale.h
  /usr/include/_structs.h
  /usr/include/_types.h
@@ -45,7 +48,6 @@ src/plugins/ogr_converter/CMakeFiles/ogrconverterplugin.dir/dialog.o
  /usr/include/alloca.h
  /usr/include/architecture/i386/math.h
  /usr/include/architecture/ppc/math.h
- /usr/include/available.h
  /usr/include/ctype.h
  /usr/include/errno.h
  /usr/include/float.h
@@ -157,6 +159,9 @@ src/plugins/ogr_converter/CMakeFiles/ogrconverterplugin.dir/plugin.o
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/ogr_converter/format.h
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/ogr_converter/plugin.cpp
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/ogr_converter/plugin.h
+ /usr/include/Availability.h
+ /usr/include/AvailabilityInternal.h
+ /usr/include/AvailabilityMacros.h
  /usr/include/_locale.h
  /usr/include/_structs.h
  /usr/include/_types.h
@@ -164,7 +169,6 @@ src/plugins/ogr_converter/CMakeFiles/ogrconverterplugin.dir/plugin.o
  /usr/include/alloca.h
  /usr/include/architecture/i386/math.h
  /usr/include/architecture/ppc/math.h
- /usr/include/available.h
  /usr/include/ctype.h
  /usr/include/errno.h
  /usr/include/float.h
@@ -231,6 +235,9 @@ src/plugins/ogr_converter/CMakeFiles/ogrconverterplugin.dir/translator.o
  /Library/Frameworks/QtGui.framework/Headers/qapplication.h
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/ogr_converter/translator.cpp
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/ogr_converter/translator.h
+ /usr/include/Availability.h
+ /usr/include/AvailabilityInternal.h
+ /usr/include/AvailabilityMacros.h
  /usr/include/_locale.h
  /usr/include/_structs.h
  /usr/include/_types.h
@@ -238,7 +245,6 @@ src/plugins/ogr_converter/CMakeFiles/ogrconverterplugin.dir/translator.o
  /usr/include/alloca.h
  /usr/include/architecture/i386/math.h
  /usr/include/architecture/ppc/math.h
- /usr/include/available.h
  /usr/include/ctype.h
  /usr/include/errno.h
  /usr/include/float.h

@@ -54,6 +54,7 @@ src/providers/wms/CMakeFiles/wmsprovider.dir/qgswmsprovider.o
  /Library/Frameworks/QtXml.framework/Headers/qdom.h
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/providers/wms/qgswmsprovider.cpp
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/providers/wms/qgswmsprovider.h
+ /usr/include/AvailabilityMacros.h
  /usr/include/_types.h
  /usr/include/architecture/i386/math.h
  /usr/include/architecture/ppc/math.h

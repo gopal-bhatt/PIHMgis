@@ -128,7 +128,7 @@ void rivFileDlg::run()
 	messageLog->reload();
 	QApplication::processEvents();
 
-	
+
 	log.open(qPrintable(logFileName), ios::app);
 	if((neighLineEdit->text()).length()==0){
 		log<<"<p><font size=3 color=red> Error! Please input .neigh Input File</p>";
@@ -212,41 +212,41 @@ void rivFileDlg::run()
 */
 	if(runFlag == 1){
 
-				
+
 
 
 		QString shpFileName(qPrintable((riverLineEdit->text())));
 	        QString dbfFileName(shpFileName);
         	        dbfFileName.truncate(dbfFileName.length()-3);
                 	dbfFileName.append("dbf");
-      		
+
 		QString newshp(shpFileName);
 		QString newdbf(shpFileName);
-	
+
   		//int slashPos = newshp.findRev("/");
 		//newshp.truncate(slashPos);
 		//newdbf.truncate(slashPos);
 		newshp=newshp.section('/',0,-2);
 		newdbf=newdbf.section('/',0,-2);
-		
+
 		newshp.append("/temp.shp");
 		newdbf.append("/temp.dbf");
 
 		qWarning("\n%s", qPrintable(newshp));
-		qWarning("\n%s", qPrintable(newdbf)); 	
-	
+		qWarning("\n%s", qPrintable(newdbf));
+
 		QString eleFileName(qPrintable((eleLineEdit->text())));
         	QString nodeFileName(qPrintable((nodeLineEdit->text())));
         	QString neighFileName(qPrintable((neighLineEdit->text())));
-		
+
 		log.open(qPrintable(logFileName), ios::app);
 		log<<"<p>Extracting River from TIN (MESH)...";
 		log.close();
 		messageLog->reload();
 		QApplication::processEvents();
-		
+
         	extractRiver4mTIN(qPrintable(shpFileName),qPrintable(dbfFileName),qPrintable(eleFileName),qPrintable(nodeFileName),qPrintable(neighFileName), qPrintable(newshp), qPrintable(newdbf));
-		
+
 		log.open(qPrintable(logFileName), ios::app);
 		log<<" Done!</p>";
 		log.close();
@@ -259,7 +259,7 @@ void rivFileDlg::run()
 		log.close();
 		messageLog->reload();
 		QApplication::processEvents();
- 
+
         	addFID(qPrintable(newdbf));
 
 		log.open(qPrintable(logFileName), ios::app);
@@ -277,7 +277,7 @@ void rivFileDlg::run()
 		QApplication::processEvents();
 
         	addToFromNode(qPrintable(newdbf), qPrintable(newshp));
-        	
+
 		log.open(qPrintable(logFileName), ios::app);
 		log<<" Done!</p>";
 		log.close();
@@ -308,7 +308,12 @@ void rivFileDlg::run()
 		messageLog->reload();
 		QApplication::processEvents();
 
-        	calDownSegment(qPrintable(newdbf));
+		int BC;
+		if(one->isChecked()) BC= -1;
+		if(two->isChecked()) BC= -2;
+		if(three->isChecked()) BC= -3;
+		if(four->isChecked()) BC= -4;
+        	calDownSegment(qPrintable(newdbf), BC);
 
 		log.open(qPrintable(logFileName), ios::app);
 		log<<" Done!</p>";
@@ -352,16 +357,34 @@ void rivFileDlg::run()
 			riv<<orderVal                                    <<"\t"; //IC
 			riv<<"0"                                         <<"\t"; //BC
 			riv<<"0"                                         <<"\n"; //Res
-			
+
 			if(maxOrder < orderVal)
 				maxOrder = orderVal;
 		}
 		riv<<"Shape\t"   <<maxOrder<<"\n";
+			for(int c=1; c<=maxOrder; c++){
+				riv<<   c<<"\t"<< 	//index
+					0.5*c<<"\t"<< 	//depth
+					"1"<<"\t"<< 	//interpOrder
+					2.0*c<<"\n";	//width
+			}
 		riv<<"Material\t"<<maxOrder<<"\n";
+			for(int c=1; c<=maxOrder; c++){
+				riv<<   c<<"\t"<< 		//index
+					"4.63E-07"<<"\t"<< 	//n
+					"0.6"<<"\t"<< 		//cwr
+					"0.1"<<"\t"<< 		//Kh
+					"1.0"<<"\t"<< 		//Kv
+					"1"<<"\n";		//BedDepth
+			}
 		riv<<"IC\t"      <<maxOrder<<"\n";
+			for(int c=1; c<=maxOrder; c++){
+				riv<<   c<<"\t"<< 		//index
+					0.25*c<<"\n";		//rivIC
+			}
 		riv<<"BC\t"      <<"0"     <<"\n";
 		riv<<"RES\t"     <<"0"     <<"\n";
-		
+
 
 		log.open(qPrintable(logFileName), ios::app);
 		log<<" Done!</p>";
@@ -373,15 +396,15 @@ void rivFileDlg::run()
 	riv.close();
 
 	log.open(qPrintable(logFileName), ios::app);
-	log<<"<p><font size=3 color=red>Note: Please add SHAPE, MATERIAL, INITIAL AND BOUNDARY CONDITION at the end of the .riv file MANUALLY</p>";
+	log<<"<p><font size=3 color=red>Note: Default Values have been included for ease of use. Please modify SHAPE, MATERIAL, INITIAL AND BOUNDARY CONDITION at the end of the .riv file MANUALLY</p>";
 	log.close();
 	messageLog->reload();
 	QApplication::processEvents();
 
 }
-			
+
 void rivFileDlg::help()
 {
 	helpDialog* hlpDlg = new helpDialog(this, "Riv File", 1, "helpFiles/rivfile.html", "Help :: Riv File");
-	hlpDlg->show();	
+	hlpDlg->show();
 }

@@ -5296,6 +5296,12 @@ qgsdelattrdialog.h
 qgsfield.h
 /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/app/qgsfield.h
 
+/usr/include/Availability.h
+AvailabilityInternal.h
+-
+
+/usr/include/AvailabilityInternal.h
+
 /usr/include/AvailabilityMacros.h
 
 /usr/include/_locale.h
@@ -5325,12 +5331,12 @@ _types.h
 /usr/include/architecture/i386/math.h
 sys/cdefs.h
 /usr/include/architecture/i386/sys/cdefs.h
+AvailabilityMacros.h
+-
 
 /usr/include/architecture/ppc/math.h
 sys/cdefs.h
 /usr/include/architecture/ppc/sys/cdefs.h
-
-/usr/include/available.h
 
 /usr/include/ctype.h
 runetype.h
@@ -5463,6 +5469,8 @@ ppc/limits.h
 -
 i386/limits.h
 -
+arm/limits.h
+-
 
 /usr/include/machine/signal.h
 ppc/signal.h
@@ -5485,6 +5493,8 @@ architecture/ppc/math.h
 /usr/include/architecture/ppc/math.h
 architecture/i386/math.h
 /usr/include/architecture/i386/math.h
+architecture/arm/math.h
+/usr/include/architecture/arm/math.h
 
 /usr/include/ppc/_limits.h
 
@@ -5533,6 +5543,8 @@ secure/_common.h
 -
 
 /usr/include/secure/_string.h
+sys/cdefs.h
+-
 secure/_common.h
 -
 
@@ -5559,7 +5571,7 @@ secure/_stdio.h
 -
 
 /usr/include/stdlib.h
-available.h
+Availability.h
 -
 _types.h
 -

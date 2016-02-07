@@ -747,6 +747,8 @@ ppc/limits.h
 -
 i386/limits.h
 -
+arm/limits.h
+-
 
 /usr/include/ppc/_limits.h
 

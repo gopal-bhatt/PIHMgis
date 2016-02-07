@@ -53,6 +53,7 @@ src/providers/wms/CMakeFiles/wmsprovider.dir/qgswmsprovider.o: /Library/Framewor
 src/providers/wms/CMakeFiles/wmsprovider.dir/qgswmsprovider.o: /Library/Frameworks/QtXml.framework/Headers/qdom.h
 src/providers/wms/CMakeFiles/wmsprovider.dir/qgswmsprovider.o: ../src/providers/wms/qgswmsprovider.cpp
 src/providers/wms/CMakeFiles/wmsprovider.dir/qgswmsprovider.o: ../src/providers/wms/qgswmsprovider.h
+src/providers/wms/CMakeFiles/wmsprovider.dir/qgswmsprovider.o: /usr/include/AvailabilityMacros.h
 src/providers/wms/CMakeFiles/wmsprovider.dir/qgswmsprovider.o: /usr/include/_types.h
 src/providers/wms/CMakeFiles/wmsprovider.dir/qgswmsprovider.o: /usr/include/architecture/i386/math.h
 src/providers/wms/CMakeFiles/wmsprovider.dir/qgswmsprovider.o: /usr/include/architecture/ppc/math.h

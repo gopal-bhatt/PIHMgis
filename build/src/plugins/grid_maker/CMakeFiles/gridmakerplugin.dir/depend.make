@@ -59,10 +59,11 @@ src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/graticulecreator.o: /Libra
 src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/graticulecreator.o: /Library/Frameworks/QtXml.framework/Headers/qdom.h
 src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/graticulecreator.o: ../src/plugins/grid_maker/graticulecreator.cpp
 src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/graticulecreator.o: ../src/plugins/grid_maker/graticulecreator.h
+src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/graticulecreator.o: /usr/include/Availability.h
+src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/graticulecreator.o: /usr/include/AvailabilityInternal.h
 src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/graticulecreator.o: /usr/include/_types.h
 src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/graticulecreator.o: /usr/include/_xlocale.h
 src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/graticulecreator.o: /usr/include/alloca.h
-src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/graticulecreator.o: /usr/include/available.h
 src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/graticulecreator.o: /usr/include/i386/_structs.h
 src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/graticulecreator.o: /usr/include/i386/_types.h
 src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/graticulecreator.o: /usr/include/i386/endian.h

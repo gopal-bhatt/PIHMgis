@@ -55,6 +55,9 @@ src/plugins/georeferencer/CMakeFiles/georefplugin.dir/moc_qgspointdialog.o
  /Library/Frameworks/QtXml.framework/Headers/qdom.h
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/georeferencer/../../../../src/plugins/georeferencer/qgspointdialog.h
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/georeferencer/moc_qgspointdialog.cxx
+ /usr/include/Availability.h
+ /usr/include/AvailabilityInternal.h
+ /usr/include/AvailabilityMacros.h
  /usr/include/_locale.h
  /usr/include/_structs.h
  /usr/include/_types.h
@@ -62,7 +65,6 @@ src/plugins/georeferencer/CMakeFiles/georefplugin.dir/moc_qgspointdialog.o
  /usr/include/alloca.h
  /usr/include/architecture/i386/math.h
  /usr/include/architecture/ppc/math.h
- /usr/include/available.h
  /usr/include/ctype.h
  /usr/include/errno.h
  /usr/include/float.h
@@ -149,6 +151,9 @@ src/plugins/georeferencer/CMakeFiles/georefplugin.dir/moc_qgsgeorefwarpoptionsdi
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/georeferencer/../../../../src/plugins/georeferencer/qgsgeorefwarpoptionsdialog.h
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/georeferencer/../../../../src/plugins/georeferencer/qgsimagewarper.h
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/plugins/georeferencer/moc_qgsgeorefwarpoptionsdialog.cxx
+ /usr/include/Availability.h
+ /usr/include/AvailabilityInternal.h
+ /usr/include/AvailabilityMacros.h
  /usr/include/_locale.h
  /usr/include/_structs.h
  /usr/include/_types.h
@@ -156,7 +161,6 @@ src/plugins/georeferencer/CMakeFiles/georefplugin.dir/moc_qgsgeorefwarpoptionsdi
  /usr/include/alloca.h
  /usr/include/architecture/i386/math.h
  /usr/include/architecture/ppc/math.h
- /usr/include/available.h
  /usr/include/ctype.h
  /usr/include/errno.h
  /usr/include/float.h
@@ -256,6 +260,9 @@ src/plugins/georeferencer/CMakeFiles/georefplugin.dir/plugin.o
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/georeferencer/plugin.cpp
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/georeferencer/plugin.h
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/georeferencer/plugingui.h
+ /usr/include/Availability.h
+ /usr/include/AvailabilityInternal.h
+ /usr/include/AvailabilityMacros.h
  /usr/include/_locale.h
  /usr/include/_structs.h
  /usr/include/_types.h
@@ -263,7 +270,6 @@ src/plugins/georeferencer/CMakeFiles/georefplugin.dir/plugin.o
  /usr/include/alloca.h
  /usr/include/architecture/i386/math.h
  /usr/include/architecture/ppc/math.h
- /usr/include/available.h
  /usr/include/ctype.h
  /usr/include/errno.h
  /usr/include/float.h
@@ -381,6 +387,9 @@ src/plugins/georeferencer/CMakeFiles/georefplugin.dir/plugingui.o
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/georeferencer/qgsgeorefdescriptiondialog.h
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/georeferencer/qgsleastsquares.h
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/georeferencer/qgspointdialog.h
+ /usr/include/Availability.h
+ /usr/include/AvailabilityInternal.h
+ /usr/include/AvailabilityMacros.h
  /usr/include/_locale.h
  /usr/include/_structs.h
  /usr/include/_types.h
@@ -388,7 +397,6 @@ src/plugins/georeferencer/CMakeFiles/georefplugin.dir/plugingui.o
  /usr/include/alloca.h
  /usr/include/architecture/i386/math.h
  /usr/include/architecture/ppc/math.h
- /usr/include/available.h
  /usr/include/ctype.h
  /usr/include/errno.h
  /usr/include/float.h
@@ -484,6 +492,9 @@ src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsimagewarper.o
  /Library/Frameworks/QtCore.framework/Headers/qstring.h
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/georeferencer/qgsimagewarper.cpp
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/georeferencer/qgsimagewarper.h
+ /usr/include/Availability.h
+ /usr/include/AvailabilityInternal.h
+ /usr/include/AvailabilityMacros.h
  /usr/include/_locale.h
  /usr/include/_structs.h
  /usr/include/_types.h
@@ -491,7 +502,6 @@ src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsimagewarper.o
  /usr/include/alloca.h
  /usr/include/architecture/i386/math.h
  /usr/include/architecture/ppc/math.h
- /usr/include/available.h
  /usr/include/ctype.h
  /usr/include/errno.h
  /usr/include/float.h
@@ -556,10 +566,11 @@ src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsleastsquares.o
  /Library/Frameworks/QtCore.framework/Headers/qstring.h
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/georeferencer/qgsleastsquares.cpp
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/georeferencer/qgsleastsquares.h
+ /usr/include/Availability.h
+ /usr/include/AvailabilityInternal.h
  /usr/include/_types.h
  /usr/include/_xlocale.h
  /usr/include/alloca.h
- /usr/include/available.h
  /usr/include/errno.h
  /usr/include/i386/_structs.h
  /usr/include/i386/_types.h
@@ -733,6 +744,9 @@ src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgspointdialog.o
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/georeferencer/qgsleastsquares.h
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/georeferencer/qgspointdialog.cpp
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/georeferencer/qgspointdialog.h
+ /usr/include/Availability.h
+ /usr/include/AvailabilityInternal.h
+ /usr/include/AvailabilityMacros.h
  /usr/include/_locale.h
  /usr/include/_structs.h
  /usr/include/_types.h
@@ -740,7 +754,6 @@ src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgspointdialog.o
  /usr/include/alloca.h
  /usr/include/architecture/i386/math.h
  /usr/include/architecture/ppc/math.h
- /usr/include/available.h
  /usr/include/ctype.h
  /usr/include/errno.h
  /usr/include/float.h
@@ -819,6 +832,9 @@ src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsgeorefwarpoptionsdialog
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/georeferencer/qgsgeorefwarpoptionsdialog.cpp
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/georeferencer/qgsgeorefwarpoptionsdialog.h
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/georeferencer/qgsimagewarper.h
+ /usr/include/Availability.h
+ /usr/include/AvailabilityInternal.h
+ /usr/include/AvailabilityMacros.h
  /usr/include/_locale.h
  /usr/include/_structs.h
  /usr/include/_types.h
@@ -826,7 +842,6 @@ src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsgeorefwarpoptionsdialog
  /usr/include/alloca.h
  /usr/include/architecture/i386/math.h
  /usr/include/architecture/ppc/math.h
- /usr/include/available.h
  /usr/include/ctype.h
  /usr/include/errno.h
  /usr/include/float.h

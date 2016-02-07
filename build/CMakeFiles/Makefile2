@@ -208,7 +208,7 @@ all: i18n/CMakeFiles/translations.dir/all
 
 # Build rule for subdir invocation for target.
 i18n/CMakeFiles/translations.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles 57
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles 55
 	$(MAKE) -f CMakeFiles/Makefile2 i18n/CMakeFiles/translations.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles 0
 
@@ -335,7 +335,7 @@ src/gui/CMakeFiles/qgis_gui.dir/all: src/core/CMakeFiles/qgis_core.dir/all
 src/gui/CMakeFiles/qgis_gui.dir/all: src/ui/CMakeFiles/ui.dir/all
 	$(MAKE) -f src/gui/CMakeFiles/qgis_gui.dir/build.make src/gui/CMakeFiles/qgis_gui.dir/depend
 	$(MAKE) -f src/gui/CMakeFiles/qgis_gui.dir/build.make src/gui/CMakeFiles/qgis_gui.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles  29 30 31 32 33 34 35
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles  29 30 31 32 33 34
 	@echo "Built target qgis_gui"
 
 # Include target in all.
@@ -343,7 +343,7 @@ all: src/gui/CMakeFiles/qgis_gui.dir/all
 
 # Build rule for subdir invocation for target.
 src/gui/CMakeFiles/qgis_gui.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles 30
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles 29
 	$(MAKE) -f CMakeFiles/Makefile2 src/gui/CMakeFiles/qgis_gui.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles 0
 
@@ -377,7 +377,7 @@ src/app/CMakeFiles/qgis.dir/all: src/core/CMakeFiles/qgis_core.dir/all
 src/app/CMakeFiles/qgis.dir/all: src/gui/CMakeFiles/qgis_gui.dir/all
 	$(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/depend
 	$(MAKE) -f src/app/CMakeFiles/qgis.dir/build.make src/app/CMakeFiles/qgis.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles  36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles  35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55
 	@echo "Built target qgis"
 
 # Include target in all.
@@ -385,7 +385,7 @@ all: src/app/CMakeFiles/qgis.dir/all
 
 # Build rule for subdir invocation for target.
 src/app/CMakeFiles/qgis.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles 52
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles 50
 	$(MAKE) -f CMakeFiles/Makefile2 src/app/CMakeFiles/qgis.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles 0
 
@@ -496,7 +496,7 @@ src/helpviewer/preinstall:
 src/helpviewer/CMakeFiles/qgis_help.dir/all: src/core/CMakeFiles/qgis_core.dir/all
 	$(MAKE) -f src/helpviewer/CMakeFiles/qgis_help.dir/build.make src/helpviewer/CMakeFiles/qgis_help.dir/depend
 	$(MAKE) -f src/helpviewer/CMakeFiles/qgis_help.dir/build.make src/helpviewer/CMakeFiles/qgis_help.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles  58
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles  56
 	@echo "Built target qgis_help"
 
 # Include target in all.
@@ -631,7 +631,7 @@ src/providers/wms/preinstall:
 src/providers/wms/CMakeFiles/wmsprovider.dir/all: src/core/CMakeFiles/qgis_core.dir/all
 	$(MAKE) -f src/providers/wms/CMakeFiles/wmsprovider.dir/build.make src/providers/wms/CMakeFiles/wmsprovider.dir/depend
 	$(MAKE) -f src/providers/wms/CMakeFiles/wmsprovider.dir/build.make src/providers/wms/CMakeFiles/wmsprovider.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles 
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles  57
 	@echo "Built target wmsprovider"
 
 # Include target in all.
@@ -639,7 +639,7 @@ all: src/providers/wms/CMakeFiles/wmsprovider.dir/all
 
 # Build rule for subdir invocation for target.
 src/providers/wms/CMakeFiles/wmsprovider.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles 17
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles 18
 	$(MAKE) -f CMakeFiles/Makefile2 src/providers/wms/CMakeFiles/wmsprovider.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles 0
 
@@ -672,7 +672,7 @@ src/providers/delimitedtext/preinstall:
 src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/all: src/core/CMakeFiles/qgis_core.dir/all
 	$(MAKE) -f src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/build.make src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/depend
 	$(MAKE) -f src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/build.make src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles  59
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles 
 	@echo "Built target delimitedtextprovider"
 
 # Include target in all.
@@ -680,7 +680,7 @@ all: src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/all
 
 # Build rule for subdir invocation for target.
 src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles 18
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles 17
 	$(MAKE) -f CMakeFiles/Makefile2 src/providers/delimitedtext/CMakeFiles/delimitedtextprovider.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles 0
 
@@ -713,7 +713,7 @@ src/providers/gpx/preinstall:
 src/providers/gpx/CMakeFiles/gpxprovider.dir/all: src/core/CMakeFiles/qgis_core.dir/all
 	$(MAKE) -f src/providers/gpx/CMakeFiles/gpxprovider.dir/build.make src/providers/gpx/CMakeFiles/gpxprovider.dir/depend
 	$(MAKE) -f src/providers/gpx/CMakeFiles/gpxprovider.dir/build.make src/providers/gpx/CMakeFiles/gpxprovider.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles 
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles  58
 	@echo "Built target gpxprovider"
 
 # Include target in all.
@@ -721,7 +721,7 @@ all: src/providers/gpx/CMakeFiles/gpxprovider.dir/all
 
 # Build rule for subdir invocation for target.
 src/providers/gpx/CMakeFiles/gpxprovider.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles 17
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles 18
 	$(MAKE) -f CMakeFiles/Makefile2 src/providers/gpx/CMakeFiles/gpxprovider.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles 0
 
@@ -754,7 +754,7 @@ src/providers/wfs/preinstall:
 src/providers/wfs/CMakeFiles/wfsprovider.dir/all: src/core/CMakeFiles/qgis_core.dir/all
 	$(MAKE) -f src/providers/wfs/CMakeFiles/wfsprovider.dir/build.make src/providers/wfs/CMakeFiles/wfsprovider.dir/depend
 	$(MAKE) -f src/providers/wfs/CMakeFiles/wfsprovider.dir/build.make src/providers/wfs/CMakeFiles/wfsprovider.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles  60
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles 
 	@echo "Built target wfsprovider"
 
 # Include target in all.
@@ -762,7 +762,7 @@ all: src/providers/wfs/CMakeFiles/wfsprovider.dir/all
 
 # Build rule for subdir invocation for target.
 src/providers/wfs/CMakeFiles/wfsprovider.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles 18
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles 17
 	$(MAKE) -f CMakeFiles/Makefile2 src/providers/wfs/CMakeFiles/wfsprovider.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles 0
 
@@ -796,7 +796,7 @@ src/plugins/copyright_label/CMakeFiles/copyrightlabelplugin.dir/all: src/core/CM
 src/plugins/copyright_label/CMakeFiles/copyrightlabelplugin.dir/all: src/gui/CMakeFiles/qgis_gui.dir/all
 	$(MAKE) -f src/plugins/copyright_label/CMakeFiles/copyrightlabelplugin.dir/build.make src/plugins/copyright_label/CMakeFiles/copyrightlabelplugin.dir/depend
 	$(MAKE) -f src/plugins/copyright_label/CMakeFiles/copyrightlabelplugin.dir/build.make src/plugins/copyright_label/CMakeFiles/copyrightlabelplugin.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles  61
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles  59
 	@echo "Built target copyrightlabelplugin"
 
 # Include target in all.
@@ -804,7 +804,7 @@ all: src/plugins/copyright_label/CMakeFiles/copyrightlabelplugin.dir/all
 
 # Build rule for subdir invocation for target.
 src/plugins/copyright_label/CMakeFiles/copyrightlabelplugin.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles 31
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles 30
 	$(MAKE) -f CMakeFiles/Makefile2 src/plugins/copyright_label/CMakeFiles/copyrightlabelplugin.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles 0
 
@@ -838,7 +838,7 @@ src/plugins/delimited_text/CMakeFiles/delimitedtextplugin.dir/all: src/core/CMak
 src/plugins/delimited_text/CMakeFiles/delimitedtextplugin.dir/all: src/gui/CMakeFiles/qgis_gui.dir/all
 	$(MAKE) -f src/plugins/delimited_text/CMakeFiles/delimitedtextplugin.dir/build.make src/plugins/delimited_text/CMakeFiles/delimitedtextplugin.dir/depend
 	$(MAKE) -f src/plugins/delimited_text/CMakeFiles/delimitedtextplugin.dir/build.make src/plugins/delimited_text/CMakeFiles/delimitedtextplugin.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles  62
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles  60 61
 	@echo "Built target delimitedtextplugin"
 
 # Include target in all.
@@ -880,7 +880,7 @@ src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/all: src/core/CMakeFiles/q
 src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/all: src/gui/CMakeFiles/qgis_gui.dir/all
 	$(MAKE) -f src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/build.make src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/depend
 	$(MAKE) -f src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/build.make src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles  63
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles  62
 	@echo "Built target gridmakerplugin"
 
 # Include target in all.
@@ -888,7 +888,7 @@ all: src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/all
 
 # Build rule for subdir invocation for target.
 src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles 31
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles 30
 	$(MAKE) -f CMakeFiles/Makefile2 src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles 0
 
@@ -922,7 +922,7 @@ src/plugins/interpolation/CMakeFiles/interpolationplugin.dir/all: src/core/CMake
 src/plugins/interpolation/CMakeFiles/interpolationplugin.dir/all: src/gui/CMakeFiles/qgis_gui.dir/all
 	$(MAKE) -f src/plugins/interpolation/CMakeFiles/interpolationplugin.dir/build.make src/plugins/interpolation/CMakeFiles/interpolationplugin.dir/depend
 	$(MAKE) -f src/plugins/interpolation/CMakeFiles/interpolationplugin.dir/build.make src/plugins/interpolation/CMakeFiles/interpolationplugin.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles  64 65 66 67 68
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles  63 64 65 66
 	@echo "Built target interpolationplugin"
 
 # Include target in all.
@@ -930,7 +930,7 @@ all: src/plugins/interpolation/CMakeFiles/interpolationplugin.dir/all
 
 # Build rule for subdir invocation for target.
 src/plugins/interpolation/CMakeFiles/interpolationplugin.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles 35
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles 33
 	$(MAKE) -f CMakeFiles/Makefile2 src/plugins/interpolation/CMakeFiles/interpolationplugin.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles 0
 
@@ -964,7 +964,7 @@ src/plugins/north_arrow/CMakeFiles/northarrowplugin.dir/all: src/core/CMakeFiles
 src/plugins/north_arrow/CMakeFiles/northarrowplugin.dir/all: src/gui/CMakeFiles/qgis_gui.dir/all
 	$(MAKE) -f src/plugins/north_arrow/CMakeFiles/northarrowplugin.dir/build.make src/plugins/north_arrow/CMakeFiles/northarrowplugin.dir/depend
 	$(MAKE) -f src/plugins/north_arrow/CMakeFiles/northarrowplugin.dir/build.make src/plugins/north_arrow/CMakeFiles/northarrowplugin.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles  69
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles  67
 	@echo "Built target northarrowplugin"
 
 # Include target in all.
@@ -972,7 +972,7 @@ all: src/plugins/north_arrow/CMakeFiles/northarrowplugin.dir/all
 
 # Build rule for subdir invocation for target.
 src/plugins/north_arrow/CMakeFiles/northarrowplugin.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles 31
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles 30
 	$(MAKE) -f CMakeFiles/Makefile2 src/plugins/north_arrow/CMakeFiles/northarrowplugin.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles 0
 
@@ -1006,7 +1006,7 @@ src/plugins/scale_bar/CMakeFiles/scalebarplugin.dir/all: src/core/CMakeFiles/qgi
 src/plugins/scale_bar/CMakeFiles/scalebarplugin.dir/all: src/gui/CMakeFiles/qgis_gui.dir/all
 	$(MAKE) -f src/plugins/scale_bar/CMakeFiles/scalebarplugin.dir/build.make src/plugins/scale_bar/CMakeFiles/scalebarplugin.dir/depend
 	$(MAKE) -f src/plugins/scale_bar/CMakeFiles/scalebarplugin.dir/build.make src/plugins/scale_bar/CMakeFiles/scalebarplugin.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles  70
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles  68
 	@echo "Built target scalebarplugin"
 
 # Include target in all.
@@ -1014,7 +1014,7 @@ all: src/plugins/scale_bar/CMakeFiles/scalebarplugin.dir/all
 
 # Build rule for subdir invocation for target.
 src/plugins/scale_bar/CMakeFiles/scalebarplugin.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles 31
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles 30
 	$(MAKE) -f CMakeFiles/Makefile2 src/plugins/scale_bar/CMakeFiles/scalebarplugin.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles 0
 
@@ -1048,7 +1048,7 @@ src/plugins/gps_importer/CMakeFiles/gpsimporterplugin.dir/all: src/core/CMakeFil
 src/plugins/gps_importer/CMakeFiles/gpsimporterplugin.dir/all: src/gui/CMakeFiles/qgis_gui.dir/all
 	$(MAKE) -f src/plugins/gps_importer/CMakeFiles/gpsimporterplugin.dir/build.make src/plugins/gps_importer/CMakeFiles/gpsimporterplugin.dir/depend
 	$(MAKE) -f src/plugins/gps_importer/CMakeFiles/gpsimporterplugin.dir/build.make src/plugins/gps_importer/CMakeFiles/gpsimporterplugin.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles  71 72
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles  69 70
 	@echo "Built target gpsimporterplugin"
 
 # Include target in all.
@@ -1056,7 +1056,7 @@ all: src/plugins/gps_importer/CMakeFiles/gpsimporterplugin.dir/all
 
 # Build rule for subdir invocation for target.
 src/plugins/gps_importer/CMakeFiles/gpsimporterplugin.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles 32
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles 31
 	$(MAKE) -f CMakeFiles/Makefile2 src/plugins/gps_importer/CMakeFiles/gpsimporterplugin.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles 0
 
@@ -1090,7 +1090,7 @@ src/plugins/wfs/CMakeFiles/wfsplugin.dir/all: src/core/CMakeFiles/qgis_core.dir/
 src/plugins/wfs/CMakeFiles/wfsplugin.dir/all: src/gui/CMakeFiles/qgis_gui.dir/all
 	$(MAKE) -f src/plugins/wfs/CMakeFiles/wfsplugin.dir/build.make src/plugins/wfs/CMakeFiles/wfsplugin.dir/depend
 	$(MAKE) -f src/plugins/wfs/CMakeFiles/wfsplugin.dir/build.make src/plugins/wfs/CMakeFiles/wfsplugin.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles  73
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles  71
 	@echo "Built target wfsplugin"
 
 # Include target in all.
@@ -1098,7 +1098,7 @@ all: src/plugins/wfs/CMakeFiles/wfsplugin.dir/all
 
 # Build rule for subdir invocation for target.
 src/plugins/wfs/CMakeFiles/wfsplugin.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles 31
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles 30
 	$(MAKE) -f CMakeFiles/Makefile2 src/plugins/wfs/CMakeFiles/wfsplugin.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles 0
 
@@ -1132,7 +1132,7 @@ src/plugins/georeferencer/CMakeFiles/georefplugin.dir/all: src/core/CMakeFiles/q
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/all: src/gui/CMakeFiles/qgis_gui.dir/all
 	$(MAKE) -f src/plugins/georeferencer/CMakeFiles/georefplugin.dir/build.make src/plugins/georeferencer/CMakeFiles/georefplugin.dir/depend
 	$(MAKE) -f src/plugins/georeferencer/CMakeFiles/georefplugin.dir/build.make src/plugins/georeferencer/CMakeFiles/georefplugin.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles  74 75 76 77
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles  72 73 74 75
 	@echo "Built target georefplugin"
 
 # Include target in all.
@@ -1140,7 +1140,7 @@ all: src/plugins/georeferencer/CMakeFiles/georefplugin.dir/all
 
 # Build rule for subdir invocation for target.
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles 34
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles 33
 	$(MAKE) -f CMakeFiles/Makefile2 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles 0
 
@@ -1174,7 +1174,7 @@ src/plugins/quick_print/CMakeFiles/quickprintplugin.dir/all: src/core/CMakeFiles
 src/plugins/quick_print/CMakeFiles/quickprintplugin.dir/all: src/gui/CMakeFiles/qgis_gui.dir/all
 	$(MAKE) -f src/plugins/quick_print/CMakeFiles/quickprintplugin.dir/build.make src/plugins/quick_print/CMakeFiles/quickprintplugin.dir/depend
 	$(MAKE) -f src/plugins/quick_print/CMakeFiles/quickprintplugin.dir/build.make src/plugins/quick_print/CMakeFiles/quickprintplugin.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles  78
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles  76
 	@echo "Built target quickprintplugin"
 
 # Include target in all.
@@ -1182,7 +1182,7 @@ all: src/plugins/quick_print/CMakeFiles/quickprintplugin.dir/all
 
 # Build rule for subdir invocation for target.
 src/plugins/quick_print/CMakeFiles/quickprintplugin.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles 31
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles 30
 	$(MAKE) -f CMakeFiles/Makefile2 src/plugins/quick_print/CMakeFiles/quickprintplugin.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles 0
 
@@ -1216,7 +1216,7 @@ src/plugins/coordinate_capture/CMakeFiles/coordinatecaptureplugin.dir/all: src/c
 src/plugins/coordinate_capture/CMakeFiles/coordinatecaptureplugin.dir/all: src/gui/CMakeFiles/qgis_gui.dir/all
 	$(MAKE) -f src/plugins/coordinate_capture/CMakeFiles/coordinatecaptureplugin.dir/build.make src/plugins/coordinate_capture/CMakeFiles/coordinatecaptureplugin.dir/depend
 	$(MAKE) -f src/plugins/coordinate_capture/CMakeFiles/coordinatecaptureplugin.dir/build.make src/plugins/coordinate_capture/CMakeFiles/coordinatecaptureplugin.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles  79
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles  77
 	@echo "Built target coordinatecaptureplugin"
 
 # Include target in all.
@@ -1224,7 +1224,7 @@ all: src/plugins/coordinate_capture/CMakeFiles/coordinatecaptureplugin.dir/all
 
 # Build rule for subdir invocation for target.
 src/plugins/coordinate_capture/CMakeFiles/coordinatecaptureplugin.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles 31
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles 30
 	$(MAKE) -f CMakeFiles/Makefile2 src/plugins/coordinate_capture/CMakeFiles/coordinatecaptureplugin.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles 0
 
@@ -1258,7 +1258,7 @@ src/plugins/dxf2shp_converter/CMakeFiles/dxf2shpconverterplugin.dir/all: src/cor
 src/plugins/dxf2shp_converter/CMakeFiles/dxf2shpconverterplugin.dir/all: src/gui/CMakeFiles/qgis_gui.dir/all
 	$(MAKE) -f src/plugins/dxf2shp_converter/CMakeFiles/dxf2shpconverterplugin.dir/build.make src/plugins/dxf2shp_converter/CMakeFiles/dxf2shpconverterplugin.dir/depend
 	$(MAKE) -f src/plugins/dxf2shp_converter/CMakeFiles/dxf2shpconverterplugin.dir/build.make src/plugins/dxf2shp_converter/CMakeFiles/dxf2shpconverterplugin.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles  80 81
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles  78 79
 	@echo "Built target dxf2shpconverterplugin"
 
 # Include target in all.
@@ -1266,7 +1266,7 @@ all: src/plugins/dxf2shp_converter/CMakeFiles/dxf2shpconverterplugin.dir/all
 
 # Build rule for subdir invocation for target.
 src/plugins/dxf2shp_converter/CMakeFiles/dxf2shpconverterplugin.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles 32
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles 31
 	$(MAKE) -f CMakeFiles/Makefile2 src/plugins/dxf2shp_converter/CMakeFiles/dxf2shpconverterplugin.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles 0
 
@@ -1300,7 +1300,7 @@ src/plugins/ogr_converter/CMakeFiles/ogrconverterplugin.dir/all: src/core/CMakeF
 src/plugins/ogr_converter/CMakeFiles/ogrconverterplugin.dir/all: src/gui/CMakeFiles/qgis_gui.dir/all
 	$(MAKE) -f src/plugins/ogr_converter/CMakeFiles/ogrconverterplugin.dir/build.make src/plugins/ogr_converter/CMakeFiles/ogrconverterplugin.dir/depend
 	$(MAKE) -f src/plugins/ogr_converter/CMakeFiles/ogrconverterplugin.dir/build.make src/plugins/ogr_converter/CMakeFiles/ogrconverterplugin.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles  82
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles  80
 	@echo "Built target ogrconverterplugin"
 
 # Include target in all.
@@ -1308,7 +1308,7 @@ all: src/plugins/ogr_converter/CMakeFiles/ogrconverterplugin.dir/all
 
 # Build rule for subdir invocation for target.
 src/plugins/ogr_converter/CMakeFiles/ogrconverterplugin.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles 31
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles 30
 	$(MAKE) -f CMakeFiles/Makefile2 src/plugins/ogr_converter/CMakeFiles/ogrconverterplugin.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles 0
 
@@ -1342,7 +1342,7 @@ src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/all: src/core/CMakeFiles/qgis_
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/all: src/gui/CMakeFiles/qgis_gui.dir/all
 	$(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/depend
 	$(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles  83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles  81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100
 	@echo "Built target pihmgisplugin"
 
 # Include target in all.
@@ -1350,7 +1350,7 @@ all: src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/all
 
 # Build rule for subdir invocation for target.
 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles 48
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles 49
 	$(MAKE) -f CMakeFiles/Makefile2 src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/CMakeFiles 0
 

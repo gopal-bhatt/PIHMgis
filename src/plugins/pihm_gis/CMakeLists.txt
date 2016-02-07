@@ -42,6 +42,7 @@ SET (pihmgis_SRCS
 	pihmLIBS/simplifyPolyShp.h
 	pihmLIBS/splitLineAtVertices.h
 	pihmLIBS/mergeFeatures.h
+	VectorProcessing/PolygonToPolyLine/qrc_polygontopolylinedialog.cpp
 	VectorProcessing/PolygonToPolyLine/polygontopolylinedialog.cpp
 	VectorProcessing/SimplifyLine/simplifylinedialog.cpp
 	VectorProcessing/SplitLine/splitlinedialog.cpp
@@ -68,6 +69,11 @@ SET (pihmgis_SRCS
 	DataModelLoader/AttFile/attfile.cpp
 	DataModelLoader/RivFile/rivfile.cpp
 	DataModelLoader/ParaFile/parafile.cpp
+	DataModelLoader/SoilFile/soilfile.cpp
+	DataModelLoader/GeolFile/geolfile.cpp
+	DataModelLoader/LCFile/lcfile.cpp
+	DataModelLoader/CalibFile/calibfile.cpp
+	DataModelLoader/InitFile/initfile.cpp
 	#PIHM_v2.0/calib.h
 	#PIHM_v2.0/calib.cpp
 	#PIHM_v2.0/f.h
@@ -113,6 +119,11 @@ SET (pihmgis_UIS pihmgisgui.ui
 	DataModelLoader/AttFile/attfile.ui
 	DataModelLoader/RivFile/rivfile.ui
 	DataModelLoader/ParaFile/parafile.ui
+	DataModelLoader/SoilFile/soilfile.ui
+	DataModelLoader/GeolFile/geolfile.ui
+	DataModelLoader/LCFile/lcfile.ui
+	DataModelLoader/CalibFile/calibfile.ui
+	DataModelLoader/InitFile/initfile.ui
 	RunPIHM/runpihm.ui
 	Analysis/TimeSeries/timeseries.ui
 	Analysis/SpatialPlot/spatialplot.ui
@@ -141,6 +152,11 @@ SET (pihmgis_MOC_HDRS
 	DataModelLoader/AttFile/attfile.h
 	DataModelLoader/RivFile/rivfile.h
 	DataModelLoader/ParaFile/parafile.h
+	DataModelLoader/SoilFile/soilfile.h
+	DataModelLoader/GeolFile/geolfile.h
+	DataModelLoader/LCFile/lcfile.h
+	DataModelLoader/CalibFile/calibfile.h
+	DataModelLoader/InitFile/initfile.h
 	RunPIHM/runpihm.h
 	Analysis/TimeSeries/plotTS.h
 	Analysis/TimeSeries/timeseries.h

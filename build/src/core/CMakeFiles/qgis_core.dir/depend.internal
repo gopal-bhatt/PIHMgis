@@ -11,6 +11,36 @@ src/core/CMakeFiles/qgis_core.dir/qgis.o
  /usr/include/stdarg.h
  qgsconfig.h
  qgssvnversion.h
+src/core/CMakeFiles/qgis_core.dir/moc_qgsdataprovider.o
+ /Library/Frameworks/QtCore.framework/Headers/QObject
+ /Library/Frameworks/QtCore.framework/Headers/QString
+ /Library/Frameworks/QtCore.framework/Headers/QStringList
+ /Library/Frameworks/QtCore.framework/Headers/qobject.h
+ /Library/Frameworks/QtCore.framework/Headers/qstring.h
+ /Library/Frameworks/QtCore.framework/Headers/qstringlist.h
+ /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/../../../src/core/qgsdataprovider.h
+ /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/moc_qgsdataprovider.cxx
+ /usr/include/stdarg.h
+src/core/CMakeFiles/qgis_core.dir/moc_qgscomposerlegend.o
+ /Library/Frameworks/QtCore.framework/Headers/QLinkedList
+ /Library/Frameworks/QtCore.framework/Headers/QObject
+ /Library/Frameworks/QtCore.framework/Headers/QSet
+ /Library/Frameworks/QtCore.framework/Headers/QStringList
+ /Library/Frameworks/QtCore.framework/Headers/qlinkedlist.h
+ /Library/Frameworks/QtCore.framework/Headers/qobject.h
+ /Library/Frameworks/QtCore.framework/Headers/qset.h
+ /Library/Frameworks/QtCore.framework/Headers/qstringlist.h
+ /Library/Frameworks/QtGui.framework/Headers/QGraphicsRectItem
+ /Library/Frameworks/QtGui.framework/Headers/QGraphicsScene
+ /Library/Frameworks/QtGui.framework/Headers/QStandardItemModel
+ /Library/Frameworks/QtGui.framework/Headers/qgraphicsitem.h
+ /Library/Frameworks/QtGui.framework/Headers/qgraphicsscene.h
+ /Library/Frameworks/QtGui.framework/Headers/qstandarditemmodel.h
+ /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/../../../src/core/composer/qgscomposeritem.h
+ /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/../../../src/core/composer/qgscomposerlegend.h
+ /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/../../../src/core/composer/qgscomposition.h
+ /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/../../../src/core/composer/qgslegendmodel.h
+ /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/moc_qgscomposerlegend.cxx
 src/core/CMakeFiles/qgis_core.dir/moc_qgscomposermap.o
  ../src/core/qgspoint.h
  ../src/core/qgsrectangle.h
@@ -31,6 +61,33 @@ src/core/CMakeFiles/qgis_core.dir/moc_qgscomposermap.o
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/../../../src/core/composer/qgscomposition.h
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/moc_qgscomposermap.cxx
  /usr/include/stdarg.h
+src/core/CMakeFiles/qgis_core.dir/moc_qgscomposerpicture.o
+ /Library/Frameworks/QtCore.framework/Headers/QFile
+ /Library/Frameworks/QtCore.framework/Headers/QLinkedList
+ /Library/Frameworks/QtCore.framework/Headers/QObject
+ /Library/Frameworks/QtCore.framework/Headers/qfile.h
+ /Library/Frameworks/QtCore.framework/Headers/qlinkedlist.h
+ /Library/Frameworks/QtCore.framework/Headers/qobject.h
+ /Library/Frameworks/QtGui.framework/Headers/QGraphicsRectItem
+ /Library/Frameworks/QtGui.framework/Headers/QGraphicsScene
+ /Library/Frameworks/QtGui.framework/Headers/QImage
+ /Library/Frameworks/QtGui.framework/Headers/qgraphicsitem.h
+ /Library/Frameworks/QtGui.framework/Headers/qgraphicsscene.h
+ /Library/Frameworks/QtGui.framework/Headers/qimage.h
+ /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/../../../src/core/composer/qgscomposeritem.h
+ /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/../../../src/core/composer/qgscomposerpicture.h
+ /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/../../../src/core/composer/qgscomposition.h
+ /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/moc_qgscomposerpicture.cxx
+ /usr/include/_types.h
+ /usr/include/i386/_types.h
+ /usr/include/machine/_types.h
+ /usr/include/ppc/_types.h
+ /usr/include/secure/_common.h
+ /usr/include/secure/_stdio.h
+ /usr/include/stdio.h
+ /usr/include/sys/_types.h
+ /usr/include/sys/cdefs.h
+ /usr/include/xlocale/_stdio.h
 src/core/CMakeFiles/qgis_core.dir/qgsprojectfiletransform.o
  /Library/Frameworks/QtCore.framework/Headers/QEvent
  /Library/Frameworks/QtCore.framework/Headers/QList
@@ -80,26 +137,17 @@ src/core/CMakeFiles/qgis_core.dir/qgsprojectfiletransform.o
  /usr/include/sys/_types.h
  /usr/include/sys/cdefs.h
  /usr/include/xlocale/_stdio.h
-src/core/CMakeFiles/qgis_core.dir/moc_qgscomposerlegend.o
- /Library/Frameworks/QtCore.framework/Headers/QLinkedList
+src/core/CMakeFiles/qgis_core.dir/moc_qgsrasterdataprovider.o
  /Library/Frameworks/QtCore.framework/Headers/QObject
- /Library/Frameworks/QtCore.framework/Headers/QSet
+ /Library/Frameworks/QtCore.framework/Headers/QString
  /Library/Frameworks/QtCore.framework/Headers/QStringList
- /Library/Frameworks/QtCore.framework/Headers/qlinkedlist.h
  /Library/Frameworks/QtCore.framework/Headers/qobject.h
- /Library/Frameworks/QtCore.framework/Headers/qset.h
+ /Library/Frameworks/QtCore.framework/Headers/qstring.h
  /Library/Frameworks/QtCore.framework/Headers/qstringlist.h
- /Library/Frameworks/QtGui.framework/Headers/QGraphicsRectItem
- /Library/Frameworks/QtGui.framework/Headers/QGraphicsScene
- /Library/Frameworks/QtGui.framework/Headers/QStandardItemModel
- /Library/Frameworks/QtGui.framework/Headers/qgraphicsitem.h
- /Library/Frameworks/QtGui.framework/Headers/qgraphicsscene.h
- /Library/Frameworks/QtGui.framework/Headers/qstandarditemmodel.h
- /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/../../../src/core/composer/qgscomposeritem.h
- /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/../../../src/core/composer/qgscomposerlegend.h
- /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/../../../src/core/composer/qgscomposition.h
- /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/../../../src/core/composer/qgslegendmodel.h
- /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/moc_qgscomposerlegend.cxx
+ /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/../../../src/core/qgsdataprovider.h
+ /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/../../../src/core/qgsrasterdataprovider.h
+ /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/moc_qgsrasterdataprovider.cxx
+ /usr/include/stdarg.h
 src/core/CMakeFiles/qgis_core.dir/moc_qgsmessageoutput.o
  /Library/Frameworks/QtCore.framework/Headers/QObject
  /Library/Frameworks/QtCore.framework/Headers/QString
@@ -119,33 +167,6 @@ src/core/CMakeFiles/qgis_core.dir/moc_qgsproject.o
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/../../../src/core/qgsprojectversion.h
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/moc_qgsproject.cxx
  /usr/include/stdarg.h
-src/core/CMakeFiles/qgis_core.dir/moc_qgscomposerpicture.o
- /Library/Frameworks/QtCore.framework/Headers/QFile
- /Library/Frameworks/QtCore.framework/Headers/QLinkedList
- /Library/Frameworks/QtCore.framework/Headers/QObject
- /Library/Frameworks/QtCore.framework/Headers/qfile.h
- /Library/Frameworks/QtCore.framework/Headers/qlinkedlist.h
- /Library/Frameworks/QtCore.framework/Headers/qobject.h
- /Library/Frameworks/QtGui.framework/Headers/QGraphicsRectItem
- /Library/Frameworks/QtGui.framework/Headers/QGraphicsScene
- /Library/Frameworks/QtGui.framework/Headers/QImage
- /Library/Frameworks/QtGui.framework/Headers/qgraphicsitem.h
- /Library/Frameworks/QtGui.framework/Headers/qgraphicsscene.h
- /Library/Frameworks/QtGui.framework/Headers/qimage.h
- /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/../../../src/core/composer/qgscomposeritem.h
- /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/../../../src/core/composer/qgscomposerpicture.h
- /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/../../../src/core/composer/qgscomposition.h
- /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/moc_qgscomposerpicture.cxx
- /usr/include/_types.h
- /usr/include/i386/_types.h
- /usr/include/machine/_types.h
- /usr/include/ppc/_types.h
- /usr/include/secure/_common.h
- /usr/include/secure/_stdio.h
- /usr/include/stdio.h
- /usr/include/sys/_types.h
- /usr/include/sys/cdefs.h
- /usr/include/xlocale/_stdio.h
 src/core/CMakeFiles/qgis_core.dir/moc_qgsrunprocess.o
  /Library/Frameworks/QtCore.framework/Headers/QObject
  /Library/Frameworks/QtCore.framework/Headers/QProcess
@@ -181,27 +202,56 @@ src/core/CMakeFiles/qgis_core.dir/moc_qgsvectorlayer.o
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/../../../src/core/qgsvectorlayer.h
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/moc_qgsvectorlayer.cxx
  /usr/include/stdarg.h
-src/core/CMakeFiles/qgis_core.dir/moc_qgsrasterdataprovider.o
+src/core/CMakeFiles/qgis_core.dir/moc_qgshttptransaction.o
+ /Library/Frameworks/QtCore.framework/Headers/QString
+ /Library/Frameworks/QtCore.framework/Headers/qstring.h
+ /Library/Frameworks/QtNetwork.framework/Headers/QHttp
+ /Library/Frameworks/QtNetwork.framework/Headers/qhttp.h
+ /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/../../../src/core/qgshttptransaction.h
+ /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/moc_qgshttptransaction.cxx
+ /usr/include/stdarg.h
+src/core/CMakeFiles/qgis_core.dir/moc_qgsmaplayer.o
  /Library/Frameworks/QtCore.framework/Headers/QObject
  /Library/Frameworks/QtCore.framework/Headers/QString
- /Library/Frameworks/QtCore.framework/Headers/QStringList
  /Library/Frameworks/QtCore.framework/Headers/qobject.h
  /Library/Frameworks/QtCore.framework/Headers/qstring.h
- /Library/Frameworks/QtCore.framework/Headers/qstringlist.h
- /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/../../../src/core/qgsdataprovider.h
- /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/../../../src/core/qgsrasterdataprovider.h
- /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/moc_qgsrasterdataprovider.cxx
+ /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/../../../src/core/qgsmaplayer.h
+ /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/../../../src/core/qgspoint.h
+ /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/../../../src/core/qgsrectangle.h
+ /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/moc_qgsmaplayer.cxx
  /usr/include/stdarg.h
-src/core/CMakeFiles/qgis_core.dir/moc_qgsdataprovider.o
+src/core/CMakeFiles/qgis_core.dir/moc_qgscontexthelp.o
+ /Library/Frameworks/QtCore.framework/Headers/QObject
+ /Library/Frameworks/QtCore.framework/Headers/qobject.h
+ /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/../../../src/core/qgscontexthelp.h
+ /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/moc_qgscontexthelp.cxx
+src/core/CMakeFiles/qgis_core.dir/moc_qgscoordinatetransform.o
+ /Library/Frameworks/QtCore.framework/Headers/QEvent
+ /Library/Frameworks/QtCore.framework/Headers/QMap
  /Library/Frameworks/QtCore.framework/Headers/QObject
  /Library/Frameworks/QtCore.framework/Headers/QString
- /Library/Frameworks/QtCore.framework/Headers/QStringList
+ /Library/Frameworks/QtCore.framework/Headers/qcoreevent.h
+ /Library/Frameworks/QtCore.framework/Headers/qmap.h
  /Library/Frameworks/QtCore.framework/Headers/qobject.h
  /Library/Frameworks/QtCore.framework/Headers/qstring.h
- /Library/Frameworks/QtCore.framework/Headers/qstringlist.h
- /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/../../../src/core/qgsdataprovider.h
- /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/moc_qgsdataprovider.cxx
+ /Library/Frameworks/QtXml.framework/Headers/QDomNode
+ /Library/Frameworks/QtXml.framework/Headers/qdom.h
+ /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/../../../src/core/qgis.h
+ /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/../../../src/core/qgscoordinatereferencesystem.h
+ /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/../../../src/core/qgscoordinatetransform.h
+ /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/../../../src/core/qgscsexception.h
+ /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/../../../src/core/qgsexception.h
+ /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/../../../src/core/qgspoint.h
+ /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/../../../src/core/qgsrectangle.h
+ /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/moc_qgscoordinatetransform.cxx
  /usr/include/stdarg.h
+src/core/CMakeFiles/qgis_core.dir/moc_qgsmaplayerregistry.o
+ /Library/Frameworks/QtCore.framework/Headers/QMap
+ /Library/Frameworks/QtCore.framework/Headers/QObject
+ /Library/Frameworks/QtCore.framework/Headers/qmap.h
+ /Library/Frameworks/QtCore.framework/Headers/qobject.h
+ /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/../../../src/core/qgsmaplayerregistry.h
+ /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/moc_qgsmaplayerregistry.cxx
 src/core/CMakeFiles/qgis_core.dir/moc_qgsmaprenderer.o
  /Library/Frameworks/QtCore.framework/Headers/QEvent
  /Library/Frameworks/QtCore.framework/Headers/QMap
@@ -229,56 +279,61 @@ src/core/CMakeFiles/qgis_core.dir/moc_qgsmaprenderer.o
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/../../../src/core/qgsrendercontext.h
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/moc_qgsmaprenderer.cxx
  /usr/include/stdarg.h
-src/core/CMakeFiles/qgis_core.dir/moc_qgscoordinatetransform.o
- /Library/Frameworks/QtCore.framework/Headers/QEvent
+src/core/CMakeFiles/qgis_core.dir/qgssearchstringparser.o
+ ../src/core/qgsfeature.h
+ ../src/core/qgsfield.h
+ ../src/core/qgssearchtreenode.h
+ /Library/Frameworks/QtCore.framework/Headers/QList
  /Library/Frameworks/QtCore.framework/Headers/QMap
- /Library/Frameworks/QtCore.framework/Headers/QObject
  /Library/Frameworks/QtCore.framework/Headers/QString
- /Library/Frameworks/QtCore.framework/Headers/qcoreevent.h
+ /Library/Frameworks/QtCore.framework/Headers/QVariant
+ /Library/Frameworks/QtCore.framework/Headers/qglobal.h
+ /Library/Frameworks/QtCore.framework/Headers/qlist.h
  /Library/Frameworks/QtCore.framework/Headers/qmap.h
- /Library/Frameworks/QtCore.framework/Headers/qobject.h
  /Library/Frameworks/QtCore.framework/Headers/qstring.h
- /Library/Frameworks/QtXml.framework/Headers/QDomNode
- /Library/Frameworks/QtXml.framework/Headers/qdom.h
- /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/../../../src/core/qgis.h
- /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/../../../src/core/qgscoordinatereferencesystem.h
- /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/../../../src/core/qgscoordinatetransform.h
- /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/../../../src/core/qgscsexception.h
- /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/../../../src/core/qgsexception.h
- /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/../../../src/core/qgspoint.h
- /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/../../../src/core/qgsrectangle.h
- /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/moc_qgscoordinatetransform.cxx
+ /Library/Frameworks/QtCore.framework/Headers/qvariant.h
+ /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/qgssearchstringparser.cpp
+ /usr/include/Availability.h
+ /usr/include/AvailabilityInternal.h
+ /usr/include/AvailabilityMacros.h
+ /usr/include/_types.h
+ /usr/include/_xlocale.h
+ /usr/include/alloca.h
+ /usr/include/i386/_structs.h
+ /usr/include/i386/_types.h
+ /usr/include/i386/endian.h
+ /usr/include/i386/signal.h
+ /usr/include/i386/types.h
+ /usr/include/libkern/_OSByteOrder.h
+ /usr/include/libkern/i386/_OSByteOrder.h
+ /usr/include/mach/i386/_structs.h
+ /usr/include/mach/ppc/_structs.h
+ /usr/include/machine/_structs.h
+ /usr/include/machine/_types.h
+ /usr/include/machine/endian.h
+ /usr/include/machine/signal.h
+ /usr/include/machine/types.h
+ /usr/include/ppc/_structs.h
+ /usr/include/ppc/_types.h
+ /usr/include/ppc/endian.h
+ /usr/include/ppc/signal.h
+ /usr/include/ppc/types.h
+ /usr/include/secure/_common.h
+ /usr/include/secure/_stdio.h
  /usr/include/stdarg.h
-src/core/CMakeFiles/qgis_core.dir/moc_qgscontexthelp.o
- /Library/Frameworks/QtCore.framework/Headers/QObject
- /Library/Frameworks/QtCore.framework/Headers/qobject.h
- /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/../../../src/core/qgscontexthelp.h
- /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/moc_qgscontexthelp.cxx
-src/core/CMakeFiles/qgis_core.dir/moc_qgsmaplayerregistry.o
- /Library/Frameworks/QtCore.framework/Headers/QMap
- /Library/Frameworks/QtCore.framework/Headers/QObject
- /Library/Frameworks/QtCore.framework/Headers/qmap.h
- /Library/Frameworks/QtCore.framework/Headers/qobject.h
- /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/../../../src/core/qgsmaplayerregistry.h
- /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/moc_qgsmaplayerregistry.cxx
-src/core/CMakeFiles/qgis_core.dir/moc_qgsmaplayer.o
- /Library/Frameworks/QtCore.framework/Headers/QObject
- /Library/Frameworks/QtCore.framework/Headers/QString
- /Library/Frameworks/QtCore.framework/Headers/qobject.h
- /Library/Frameworks/QtCore.framework/Headers/qstring.h
- /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/../../../src/core/qgsmaplayer.h
- /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/../../../src/core/qgspoint.h
- /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/../../../src/core/qgsrectangle.h
- /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/moc_qgsmaplayer.cxx
- /usr/include/stdarg.h
-src/core/CMakeFiles/qgis_core.dir/moc_qgshttptransaction.o
- /Library/Frameworks/QtCore.framework/Headers/QString
- /Library/Frameworks/QtCore.framework/Headers/qstring.h
- /Library/Frameworks/QtNetwork.framework/Headers/QHttp
- /Library/Frameworks/QtNetwork.framework/Headers/qhttp.h
- /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/../../../src/core/qgshttptransaction.h
- /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/moc_qgshttptransaction.cxx
- /usr/include/stdarg.h
+ /usr/include/stddef.h
+ /usr/include/stdio.h
+ /usr/include/stdlib.h
+ /usr/include/sys/_endian.h
+ /usr/include/sys/_structs.h
+ /usr/include/sys/_types.h
+ /usr/include/sys/appleapiopts.h
+ /usr/include/sys/cdefs.h
+ /usr/include/sys/resource.h
+ /usr/include/sys/signal.h
+ /usr/include/sys/wait.h
+ /usr/include/xlocale/_stdio.h
+ /usr/include/xlocale/_stdlib.h
 src/core/CMakeFiles/qgis_core.dir/flex_qgssearchstringlexer.o
  ../src/core/qgsfeature.h
  ../src/core/qgsfield.h
@@ -293,10 +348,11 @@ src/core/CMakeFiles/qgis_core.dir/flex_qgssearchstringlexer.o
  /Library/Frameworks/QtCore.framework/Headers/qvariant.h
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/flex_qgssearchstringlexer.cpp
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/qgssearchstringparser.hpp
+ /usr/include/Availability.h
+ /usr/include/AvailabilityInternal.h
  /usr/include/_types.h
  /usr/include/_xlocale.h
  /usr/include/alloca.h
- /usr/include/available.h
  /usr/include/errno.h
  /usr/include/i386/_structs.h
  /usr/include/i386/_types.h
@@ -343,60 +399,6 @@ src/core/CMakeFiles/qgis_core.dir/flex_qgssearchstringlexer.o
  /usr/include/xlocale/_stdio.h
  /usr/include/xlocale/_stdlib.h
  /usr/include/xlocale/_string.h
-src/core/CMakeFiles/qgis_core.dir/qgssearchstringparser.o
- ../src/core/qgsfeature.h
- ../src/core/qgsfield.h
- ../src/core/qgssearchtreenode.h
- /Library/Frameworks/QtCore.framework/Headers/QList
- /Library/Frameworks/QtCore.framework/Headers/QMap
- /Library/Frameworks/QtCore.framework/Headers/QString
- /Library/Frameworks/QtCore.framework/Headers/QVariant
- /Library/Frameworks/QtCore.framework/Headers/qglobal.h
- /Library/Frameworks/QtCore.framework/Headers/qlist.h
- /Library/Frameworks/QtCore.framework/Headers/qmap.h
- /Library/Frameworks/QtCore.framework/Headers/qstring.h
- /Library/Frameworks/QtCore.framework/Headers/qvariant.h
- /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/qgssearchstringparser.cpp
- /usr/include/AvailabilityMacros.h
- /usr/include/_types.h
- /usr/include/_xlocale.h
- /usr/include/alloca.h
- /usr/include/available.h
- /usr/include/i386/_structs.h
- /usr/include/i386/_types.h
- /usr/include/i386/endian.h
- /usr/include/i386/signal.h
- /usr/include/i386/types.h
- /usr/include/libkern/_OSByteOrder.h
- /usr/include/libkern/i386/_OSByteOrder.h
- /usr/include/mach/i386/_structs.h
- /usr/include/mach/ppc/_structs.h
- /usr/include/machine/_structs.h
- /usr/include/machine/_types.h
- /usr/include/machine/endian.h
- /usr/include/machine/signal.h
- /usr/include/machine/types.h
- /usr/include/ppc/_structs.h
- /usr/include/ppc/_types.h
- /usr/include/ppc/endian.h
- /usr/include/ppc/signal.h
- /usr/include/ppc/types.h
- /usr/include/secure/_common.h
- /usr/include/secure/_stdio.h
- /usr/include/stdarg.h
- /usr/include/stddef.h
- /usr/include/stdio.h
- /usr/include/stdlib.h
- /usr/include/sys/_endian.h
- /usr/include/sys/_structs.h
- /usr/include/sys/_types.h
- /usr/include/sys/appleapiopts.h
- /usr/include/sys/cdefs.h
- /usr/include/sys/resource.h
- /usr/include/sys/signal.h
- /usr/include/sys/wait.h
- /usr/include/xlocale/_stdio.h
- /usr/include/xlocale/_stdlib.h
 src/core/CMakeFiles/qgis_core.dir/moc_qgscomposerscalebar.o
  /Library/Frameworks/QtCore.framework/Headers/QLinkedList
  /Library/Frameworks/QtCore.framework/Headers/QObject
@@ -473,6 +475,9 @@ src/core/CMakeFiles/qgis_core.dir/moc_qgsrasterlayer.o
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/../../../src/core/raster/qgsrastershaderfunction.h
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/../../../src/core/raster/qgsrastertransparency.h
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/core/moc_qgsrasterlayer.cxx
+ /usr/include/Availability.h
+ /usr/include/AvailabilityInternal.h
+ /usr/include/AvailabilityMacros.h
  /usr/include/_locale.h
  /usr/include/_structs.h
  /usr/include/_types.h
@@ -480,7 +485,6 @@ src/core/CMakeFiles/qgis_core.dir/moc_qgsrasterlayer.o
  /usr/include/alloca.h
  /usr/include/architecture/i386/math.h
  /usr/include/architecture/ppc/math.h
- /usr/include/available.h
  /usr/include/ctype.h
  /usr/include/errno.h
  /usr/include/float.h
@@ -556,6 +560,9 @@ src/core/CMakeFiles/qgis_core.dir/qgsapplication.o
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgsapplication.h
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgsmaplayerregistry.h
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgsproviderregistry.h
+ /usr/include/Availability.h
+ /usr/include/AvailabilityInternal.h
+ /usr/include/AvailabilityMacros.h
  /usr/include/_locale.h
  /usr/include/_structs.h
  /usr/include/_types.h
@@ -563,7 +570,6 @@ src/core/CMakeFiles/qgis_core.dir/qgsapplication.o
  /usr/include/alloca.h
  /usr/include/architecture/i386/math.h
  /usr/include/architecture/ppc/math.h
- /usr/include/available.h
  /usr/include/ctype.h
  /usr/include/errno.h
  /usr/include/float.h
@@ -615,6 +621,7 @@ src/core/CMakeFiles/qgis_core.dir/qgsapplication.o
  /usr/include/sys/resource.h
  /usr/include/sys/signal.h
  /usr/include/sys/socket.h
+ /usr/include/sys/types.h
  /usr/include/sys/wait.h
  /usr/include/time.h
  /usr/include/xlocale/_ctype.h
@@ -699,12 +706,14 @@ src/core/CMakeFiles/qgis_core.dir/qgscoordinatetransform.o
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgslogger.h
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgspoint.h
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgsrectangle.h
+ /usr/include/Availability.h
+ /usr/include/AvailabilityInternal.h
+ /usr/include/AvailabilityMacros.h
  /usr/include/_types.h
  /usr/include/_xlocale.h
  /usr/include/alloca.h
  /usr/include/architecture/i386/math.h
  /usr/include/architecture/ppc/math.h
- /usr/include/available.h
  /usr/include/i386/_structs.h
  /usr/include/i386/_types.h
  /usr/include/i386/endian.h
@@ -785,10 +794,11 @@ src/core/CMakeFiles/qgis_core.dir/qgsdistancearea.o
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgslogger.h
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgspoint.h
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgsrectangle.h
+ /usr/include/Availability.h
+ /usr/include/AvailabilityInternal.h
  /usr/include/_types.h
  /usr/include/_xlocale.h
  /usr/include/alloca.h
- /usr/include/available.h
  /usr/include/i386/_structs.h
  /usr/include/i386/_types.h
  /usr/include/i386/endian.h
@@ -860,10 +870,11 @@ src/core/CMakeFiles/qgis_core.dir/qgsfeature.o
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgsgeometry.h
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgspoint.h
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgsrectangle.h
+ /usr/include/Availability.h
+ /usr/include/AvailabilityInternal.h
  /usr/include/_types.h
  /usr/include/_xlocale.h
  /usr/include/alloca.h
- /usr/include/available.h
  /usr/include/i386/_structs.h
  /usr/include/i386/_types.h
  /usr/include/i386/endian.h
@@ -934,10 +945,11 @@ src/core/CMakeFiles/qgis_core.dir/qgsgeometry.o
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgslogger.h
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgspoint.h
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgsrectangle.h
+ /usr/include/Availability.h
+ /usr/include/AvailabilityInternal.h
  /usr/include/_types.h
  /usr/include/_xlocale.h
  /usr/include/alloca.h
- /usr/include/available.h
  /usr/include/i386/_structs.h
  /usr/include/i386/_types.h
  /usr/include/i386/endian.h
@@ -1052,10 +1064,11 @@ src/core/CMakeFiles/qgis_core.dir/qgslabel.o
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgsmaptopixel.h
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgspoint.h
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgsrectangle.h
+ /usr/include/Availability.h
+ /usr/include/AvailabilityInternal.h
  /usr/include/_types.h
  /usr/include/_xlocale.h
  /usr/include/alloca.h
- /usr/include/available.h
  /usr/include/i386/_structs.h
  /usr/include/i386/_types.h
  /usr/include/i386/endian.h
@@ -1328,6 +1341,9 @@ src/core/CMakeFiles/qgis_core.dir/qgsproject.o
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgsrectangle.h
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgssnapper.h
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgsvectorlayer.h
+ /usr/include/Availability.h
+ /usr/include/AvailabilityInternal.h
+ /usr/include/AvailabilityMacros.h
  /usr/include/_locale.h
  /usr/include/_structs.h
  /usr/include/_types.h
@@ -1335,7 +1351,6 @@ src/core/CMakeFiles/qgis_core.dir/qgsproject.o
  /usr/include/alloca.h
  /usr/include/architecture/i386/math.h
  /usr/include/architecture/ppc/math.h
- /usr/include/available.h
  /usr/include/ctype.h
  /usr/include/errno.h
  /usr/include/float.h
@@ -1547,13 +1562,15 @@ src/core/CMakeFiles/qgis_core.dir/qgsscalecalculator.o
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgsrectangle.h
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgsscalecalculator.cpp
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgsscalecalculator.h
+ /usr/include/Availability.h
+ /usr/include/AvailabilityInternal.h
+ /usr/include/AvailabilityMacros.h
  /usr/include/_types.h
  /usr/include/_xlocale.h
  /usr/include/alloca.h
  /usr/include/architecture/i386/math.h
  /usr/include/architecture/ppc/math.h
  /usr/include/assert.h
- /usr/include/available.h
  /usr/include/i386/_structs.h
  /usr/include/i386/_types.h
  /usr/include/i386/endian.h
@@ -1681,6 +1698,9 @@ src/core/CMakeFiles/qgis_core.dir/qgscoordinatereferencesystem.o
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgscoordinatereferencesystem.h
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgslogger.h
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgsmessageoutput.h
+ /usr/include/Availability.h
+ /usr/include/AvailabilityInternal.h
+ /usr/include/AvailabilityMacros.h
  /usr/include/_locale.h
  /usr/include/_structs.h
  /usr/include/_types.h
@@ -1688,7 +1708,6 @@ src/core/CMakeFiles/qgis_core.dir/qgscoordinatereferencesystem.o
  /usr/include/alloca.h
  /usr/include/architecture/i386/math.h
  /usr/include/architecture/ppc/math.h
- /usr/include/available.h
  /usr/include/ctype.h
  /usr/include/errno.h
  /usr/include/float.h
@@ -1835,6 +1854,9 @@ src/core/CMakeFiles/qgis_core.dir/qgsvectorfilewriter.o
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgsvectorfilewriter.cpp
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgsvectorfilewriter.h
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgsvectorlayer.h
+ /usr/include/Availability.h
+ /usr/include/AvailabilityInternal.h
+ /usr/include/AvailabilityMacros.h
  /usr/include/_locale.h
  /usr/include/_structs.h
  /usr/include/_types.h
@@ -1842,7 +1864,6 @@ src/core/CMakeFiles/qgis_core.dir/qgsvectorfilewriter.o
  /usr/include/alloca.h
  /usr/include/architecture/i386/math.h
  /usr/include/architecture/ppc/math.h
- /usr/include/available.h
  /usr/include/ctype.h
  /usr/include/errno.h
  /usr/include/float.h
@@ -1963,11 +1984,12 @@ src/core/CMakeFiles/qgis_core.dir/qgsvectorlayer.o
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgsvectordataprovider.h
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgsvectorlayer.cpp
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/qgsvectorlayer.h
+ /usr/include/Availability.h
+ /usr/include/AvailabilityInternal.h
  /usr/include/AvailabilityMacros.h
  /usr/include/_types.h
  /usr/include/_xlocale.h
  /usr/include/alloca.h
- /usr/include/available.h
  /usr/include/ctype.h
  /usr/include/dlfcn.h
  /usr/include/i386/_structs.h
@@ -2191,6 +2213,9 @@ src/core/CMakeFiles/qgis_core.dir/composer/qgscomposermap.o
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/composer/qgscomposermap.cpp
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/composer/qgscomposermap.h
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/composer/qgscomposition.h
+ /usr/include/Availability.h
+ /usr/include/AvailabilityInternal.h
+ /usr/include/AvailabilityMacros.h
  /usr/include/_locale.h
  /usr/include/_structs.h
  /usr/include/_types.h
@@ -2198,7 +2223,6 @@ src/core/CMakeFiles/qgis_core.dir/composer/qgscomposermap.o
  /usr/include/alloca.h
  /usr/include/architecture/i386/math.h
  /usr/include/architecture/ppc/math.h
- /usr/include/available.h
  /usr/include/ctype.h
  /usr/include/errno.h
  /usr/include/float.h
@@ -2353,6 +2377,9 @@ src/core/CMakeFiles/qgis_core.dir/composer/qgslegendmodel.o
  /Library/Frameworks/QtXml.framework/Headers/qdom.h
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/composer/qgslegendmodel.cpp
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/composer/qgslegendmodel.h
+ /usr/include/Availability.h
+ /usr/include/AvailabilityInternal.h
+ /usr/include/AvailabilityMacros.h
  /usr/include/_locale.h
  /usr/include/_structs.h
  /usr/include/_types.h
@@ -2360,7 +2387,6 @@ src/core/CMakeFiles/qgis_core.dir/composer/qgslegendmodel.o
  /usr/include/alloca.h
  /usr/include/architecture/i386/math.h
  /usr/include/architecture/ppc/math.h
- /usr/include/available.h
  /usr/include/ctype.h
  /usr/include/errno.h
  /usr/include/float.h
@@ -2635,6 +2661,7 @@ src/core/CMakeFiles/qgis_core.dir/raster/qgscolorrampshader.o
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/raster/qgscolorrampshader.cpp
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/raster/qgscolorrampshader.h
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/raster/qgsrastershaderfunction.h
+ /usr/include/AvailabilityMacros.h
  /usr/include/architecture/i386/math.h
  /usr/include/architecture/ppc/math.h
  /usr/include/math.h
@@ -2783,6 +2810,9 @@ src/core/CMakeFiles/qgis_core.dir/raster/qgsrasterlayer.o
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/raster/qgsrastershaderfunction.h
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/raster/qgsrastertransparency.h
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/raster/qgsrasterviewport.h
+ /usr/include/Availability.h
+ /usr/include/AvailabilityInternal.h
+ /usr/include/AvailabilityMacros.h
  /usr/include/_locale.h
  /usr/include/_structs.h
  /usr/include/_types.h
@@ -2790,7 +2820,6 @@ src/core/CMakeFiles/qgis_core.dir/raster/qgsrasterlayer.o
  /usr/include/alloca.h
  /usr/include/architecture/i386/math.h
  /usr/include/architecture/ppc/math.h
- /usr/include/available.h
  /usr/include/ctype.h
  /usr/include/errno.h
  /usr/include/float.h
@@ -2906,6 +2935,7 @@ src/core/CMakeFiles/qgis_core.dir/renderer/qgsgraduatedsymbolrenderer.o
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/renderer/qgsgraduatedsymbolrenderer.cpp
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/renderer/qgsgraduatedsymbolrenderer.h
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/renderer/qgsrenderer.h
+ /usr/include/AvailabilityMacros.h
  /usr/include/architecture/i386/math.h
  /usr/include/architecture/ppc/math.h
  /usr/include/math.h
@@ -3020,6 +3050,7 @@ src/core/CMakeFiles/qgis_core.dir/renderer/qgssinglesymbolrenderer.o
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/renderer/qgsrenderer.h
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/renderer/qgssinglesymbolrenderer.cpp
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/renderer/qgssinglesymbolrenderer.h
+ /usr/include/AvailabilityMacros.h
  /usr/include/architecture/i386/math.h
  /usr/include/architecture/ppc/math.h
  /usr/include/math.h
@@ -3059,11 +3090,12 @@ src/core/CMakeFiles/qgis_core.dir/symbology/qgsmarkercatalogue.o
  /Library/Frameworks/QtSvg.framework/Headers/qsvgrenderer.h
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/symbology/qgsmarkercatalogue.cpp
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/symbology/qgsmarkercatalogue.h
+ /usr/include/Availability.h
+ /usr/include/AvailabilityInternal.h
  /usr/include/_types.h
  /usr/include/_xlocale.h
  /usr/include/alloca.h
  /usr/include/assert.h
- /usr/include/available.h
  /usr/include/i386/_structs.h
  /usr/include/i386/_types.h
  /usr/include/i386/endian.h
@@ -3140,6 +3172,7 @@ src/core/CMakeFiles/qgis_core.dir/renderer/qgsuniquevaluerenderer.o
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/renderer/qgsrenderer.h
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/renderer/qgsuniquevaluerenderer.cpp
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/renderer/qgsuniquevaluerenderer.h
+ /usr/include/AvailabilityMacros.h
  /usr/include/architecture/i386/math.h
  /usr/include/architecture/ppc/math.h
  /usr/include/math.h
@@ -3245,12 +3278,13 @@ src/core/CMakeFiles/qgis_core.dir/spatialindex/qgsspatialindex.o
  /Library/Frameworks/QtXml.framework/Headers/qdom.h
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/spatialindex/qgsspatialindex.cpp
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/spatialindex/qgsspatialindex.h
+ /usr/include/Availability.h
+ /usr/include/AvailabilityInternal.h
  /usr/include/_structs.h
  /usr/include/_types.h
  /usr/include/_xlocale.h
  /usr/include/alloca.h
  /usr/include/assert.h
- /usr/include/available.h
  /usr/include/i386/_limits.h
  /usr/include/i386/_structs.h
  /usr/include/i386/_types.h
@@ -3314,12 +3348,13 @@ src/core/CMakeFiles/qgis_core.dir/spatialindex/geometry/Point.o
  /Library/Frameworks/QtCore.framework/Headers/QString
  /Library/Frameworks/QtCore.framework/Headers/qstring.h
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/spatialindex/geometry/Point.cc
+ /usr/include/Availability.h
+ /usr/include/AvailabilityInternal.h
  /usr/include/_structs.h
  /usr/include/_types.h
  /usr/include/_xlocale.h
  /usr/include/alloca.h
  /usr/include/assert.h
- /usr/include/available.h
  /usr/include/i386/_limits.h
  /usr/include/i386/_structs.h
  /usr/include/i386/_types.h
@@ -3379,12 +3414,13 @@ src/core/CMakeFiles/qgis_core.dir/spatialindex/tools/ExternalSort.o
  /Library/Frameworks/QtCore.framework/Headers/qstring.h
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/spatialindex/tools/ExternalSort.cc
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/spatialindex/tools/ExternalSort.h
+ /usr/include/Availability.h
+ /usr/include/AvailabilityInternal.h
  /usr/include/_structs.h
  /usr/include/_types.h
  /usr/include/_xlocale.h
  /usr/include/alloca.h
  /usr/include/assert.h
- /usr/include/available.h
  /usr/include/i386/_limits.h
  /usr/include/i386/_structs.h
  /usr/include/i386/_types.h
@@ -3447,12 +3483,13 @@ src/core/CMakeFiles/qgis_core.dir/spatialindex/tools/TemporaryFile.o
  /Library/Frameworks/QtCore.framework/Headers/QString
  /Library/Frameworks/QtCore.framework/Headers/qstring.h
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/spatialindex/tools/TemporaryFile.cc
+ /usr/include/Availability.h
+ /usr/include/AvailabilityInternal.h
  /usr/include/_structs.h
  /usr/include/_types.h
  /usr/include/_xlocale.h
  /usr/include/alloca.h
  /usr/include/assert.h
- /usr/include/available.h
  /usr/include/fcntl.h
  /usr/include/i386/_limits.h
  /usr/include/i386/_structs.h
@@ -3518,12 +3555,13 @@ src/core/CMakeFiles/qgis_core.dir/spatialindex/tools/Tools.o
  /Library/Frameworks/QtCore.framework/Headers/qstring.h
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/spatialindex/tools/ExternalSort.h
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/spatialindex/tools/Tools.cc
+ /usr/include/Availability.h
+ /usr/include/AvailabilityInternal.h
  /usr/include/_structs.h
  /usr/include/_types.h
  /usr/include/_xlocale.h
  /usr/include/alloca.h
  /usr/include/assert.h
- /usr/include/available.h
  /usr/include/i386/_limits.h
  /usr/include/i386/_structs.h
  /usr/include/i386/_types.h
@@ -3582,12 +3620,13 @@ src/core/CMakeFiles/qgis_core.dir/spatialindex/geometry/LineSegment.o
  /Library/Frameworks/QtCore.framework/Headers/QString
  /Library/Frameworks/QtCore.framework/Headers/qstring.h
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/spatialindex/geometry/LineSegment.cc
+ /usr/include/Availability.h
+ /usr/include/AvailabilityInternal.h
  /usr/include/_structs.h
  /usr/include/_types.h
  /usr/include/_xlocale.h
  /usr/include/alloca.h
  /usr/include/assert.h
- /usr/include/available.h
  /usr/include/i386/_limits.h
  /usr/include/i386/_structs.h
  /usr/include/i386/_types.h
@@ -3646,12 +3685,13 @@ src/core/CMakeFiles/qgis_core.dir/spatialindex/geometry/Region.o
  /Library/Frameworks/QtCore.framework/Headers/QString
  /Library/Frameworks/QtCore.framework/Headers/qstring.h
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/spatialindex/geometry/Region.cc
+ /usr/include/Availability.h
+ /usr/include/AvailabilityInternal.h
  /usr/include/_structs.h
  /usr/include/_types.h
  /usr/include/_xlocale.h
  /usr/include/alloca.h
  /usr/include/assert.h
- /usr/include/available.h
  /usr/include/i386/_limits.h
  /usr/include/i386/_structs.h
  /usr/include/i386/_types.h
@@ -3714,12 +3754,13 @@ src/core/CMakeFiles/qgis_core.dir/spatialindex/storagemanager/Buffer.o
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/spatialindex/storagemanager/../spatialindex/SpatialIndexImpl.h
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/spatialindex/storagemanager/Buffer.cc
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/spatialindex/storagemanager/Buffer.h
+ /usr/include/Availability.h
+ /usr/include/AvailabilityInternal.h
  /usr/include/_structs.h
  /usr/include/_types.h
  /usr/include/_xlocale.h
  /usr/include/alloca.h
  /usr/include/assert.h
- /usr/include/available.h
  /usr/include/i386/_limits.h
  /usr/include/i386/_structs.h
  /usr/include/i386/_types.h
@@ -3785,12 +3826,13 @@ src/core/CMakeFiles/qgis_core.dir/spatialindex/spatialindex/SpatialIndexImpl.o
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/spatialindex/spatialindex/../rtree/Statistics.h
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/spatialindex/spatialindex/SpatialIndexImpl.cc
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/spatialindex/spatialindex/SpatialIndexImpl.h
+ /usr/include/Availability.h
+ /usr/include/AvailabilityInternal.h
  /usr/include/_structs.h
  /usr/include/_types.h
  /usr/include/_xlocale.h
  /usr/include/alloca.h
  /usr/include/assert.h
- /usr/include/available.h
  /usr/include/i386/_limits.h
  /usr/include/i386/_structs.h
  /usr/include/i386/_types.h
@@ -3853,12 +3895,13 @@ src/core/CMakeFiles/qgis_core.dir/spatialindex/storagemanager/MemoryStorageManag
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/spatialindex/storagemanager/../spatialindex/SpatialIndexImpl.h
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/spatialindex/storagemanager/MemoryStorageManager.cc
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/spatialindex/storagemanager/MemoryStorageManager.h
+ /usr/include/Availability.h
+ /usr/include/AvailabilityInternal.h
  /usr/include/_structs.h
  /usr/include/_types.h
  /usr/include/_xlocale.h
  /usr/include/alloca.h
  /usr/include/assert.h
- /usr/include/available.h
  /usr/include/i386/_limits.h
  /usr/include/i386/_structs.h
  /usr/include/i386/_types.h
@@ -3922,12 +3965,13 @@ src/core/CMakeFiles/qgis_core.dir/spatialindex/storagemanager/DiskStorageManager
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/spatialindex/storagemanager/../spatialindex/SpatialIndexImpl.h
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/spatialindex/storagemanager/DiskStorageManager.cc
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/spatialindex/storagemanager/DiskStorageManager.h
+ /usr/include/Availability.h
+ /usr/include/AvailabilityInternal.h
  /usr/include/_structs.h
  /usr/include/_types.h
  /usr/include/_xlocale.h
  /usr/include/alloca.h
  /usr/include/assert.h
- /usr/include/available.h
  /usr/include/fcntl.h
  /usr/include/i386/_limits.h
  /usr/include/i386/_structs.h
@@ -4003,12 +4047,13 @@ src/core/CMakeFiles/qgis_core.dir/spatialindex/rtree/BulkLoader.o
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/spatialindex/rtree/PointerPoolNode.h
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/spatialindex/rtree/RTree.h
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/spatialindex/rtree/Statistics.h
+ /usr/include/Availability.h
+ /usr/include/AvailabilityInternal.h
  /usr/include/_structs.h
  /usr/include/_types.h
  /usr/include/_xlocale.h
  /usr/include/alloca.h
  /usr/include/assert.h
- /usr/include/available.h
  /usr/include/i386/_limits.h
  /usr/include/i386/_structs.h
  /usr/include/i386/_types.h
@@ -4079,12 +4124,13 @@ src/core/CMakeFiles/qgis_core.dir/spatialindex/rtree/Index.o
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/spatialindex/rtree/PointerPoolNode.h
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/spatialindex/rtree/RTree.h
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/spatialindex/rtree/Statistics.h
+ /usr/include/Availability.h
+ /usr/include/AvailabilityInternal.h
  /usr/include/_structs.h
  /usr/include/_types.h
  /usr/include/_xlocale.h
  /usr/include/alloca.h
  /usr/include/assert.h
- /usr/include/available.h
  /usr/include/i386/_limits.h
  /usr/include/i386/_structs.h
  /usr/include/i386/_types.h
@@ -4148,12 +4194,13 @@ src/core/CMakeFiles/qgis_core.dir/spatialindex/storagemanager/RandomEvictionsBuf
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/spatialindex/storagemanager/Buffer.h
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/spatialindex/storagemanager/RandomEvictionsBuffer.cc
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/spatialindex/storagemanager/RandomEvictionsBuffer.h
+ /usr/include/Availability.h
+ /usr/include/AvailabilityInternal.h
  /usr/include/_structs.h
  /usr/include/_types.h
  /usr/include/_xlocale.h
  /usr/include/alloca.h
  /usr/include/assert.h
- /usr/include/available.h
  /usr/include/i386/_limits.h
  /usr/include/i386/_structs.h
  /usr/include/i386/_types.h
@@ -4220,12 +4267,13 @@ src/core/CMakeFiles/qgis_core.dir/spatialindex/rtree/Leaf.o
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/spatialindex/rtree/PointerPoolNode.h
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/spatialindex/rtree/RTree.h
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/spatialindex/rtree/Statistics.h
+ /usr/include/Availability.h
+ /usr/include/AvailabilityInternal.h
  /usr/include/_structs.h
  /usr/include/_types.h
  /usr/include/_xlocale.h
  /usr/include/alloca.h
  /usr/include/assert.h
- /usr/include/available.h
  /usr/include/i386/_limits.h
  /usr/include/i386/_structs.h
  /usr/include/i386/_types.h
@@ -4291,12 +4339,13 @@ src/core/CMakeFiles/qgis_core.dir/spatialindex/rtree/Node.o
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/spatialindex/rtree/PointerPoolNode.h
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/spatialindex/rtree/RTree.h
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/spatialindex/rtree/Statistics.h
+ /usr/include/Availability.h
+ /usr/include/AvailabilityInternal.h
  /usr/include/_structs.h
  /usr/include/_types.h
  /usr/include/_xlocale.h
  /usr/include/alloca.h
  /usr/include/assert.h
- /usr/include/available.h
  /usr/include/i386/_limits.h
  /usr/include/i386/_structs.h
  /usr/include/i386/_types.h
@@ -4364,12 +4413,13 @@ src/core/CMakeFiles/qgis_core.dir/spatialindex/rtree/RTree.o
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/spatialindex/rtree/RTree.cc
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/spatialindex/rtree/RTree.h
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/spatialindex/rtree/Statistics.h
+ /usr/include/Availability.h
+ /usr/include/AvailabilityInternal.h
  /usr/include/_structs.h
  /usr/include/_types.h
  /usr/include/_xlocale.h
  /usr/include/alloca.h
  /usr/include/assert.h
- /usr/include/available.h
  /usr/include/i386/_limits.h
  /usr/include/i386/_structs.h
  /usr/include/i386/_types.h
@@ -4432,12 +4482,13 @@ src/core/CMakeFiles/qgis_core.dir/spatialindex/rtree/Statistics.o
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/spatialindex/rtree/../spatialindex/SpatialIndexImpl.h
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/spatialindex/rtree/Statistics.cc
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/core/spatialindex/rtree/Statistics.h
+ /usr/include/Availability.h
+ /usr/include/AvailabilityInternal.h
  /usr/include/_structs.h
  /usr/include/_types.h
  /usr/include/_xlocale.h
  /usr/include/alloca.h
  /usr/include/assert.h
- /usr/include/available.h
  /usr/include/i386/_limits.h
  /usr/include/i386/_structs.h
  /usr/include/i386/_types.h

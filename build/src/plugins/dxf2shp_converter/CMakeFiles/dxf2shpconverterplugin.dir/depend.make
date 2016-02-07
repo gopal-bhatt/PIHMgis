@@ -31,6 +31,7 @@ src/plugins/dxf2shp_converter/CMakeFiles/dxf2shpconverterplugin.dir/builder.o: .
 src/plugins/dxf2shp_converter/CMakeFiles/dxf2shpconverterplugin.dir/builder.o: ../src/plugins/dxf2shp_converter/dxflib/src/dl_extrusion.h
 src/plugins/dxf2shp_converter/CMakeFiles/dxf2shpconverterplugin.dir/builder.o: ../src/plugins/dxf2shp_converter/getInsertions.h
 src/plugins/dxf2shp_converter/CMakeFiles/dxf2shpconverterplugin.dir/builder.o: ../src/plugins/dxf2shp_converter/shapelib-1.2.10/shapefil.h
+src/plugins/dxf2shp_converter/CMakeFiles/dxf2shpconverterplugin.dir/builder.o: /usr/include/AvailabilityMacros.h
 src/plugins/dxf2shp_converter/CMakeFiles/dxf2shpconverterplugin.dir/builder.o: /usr/include/_types.h
 src/plugins/dxf2shp_converter/CMakeFiles/dxf2shpconverterplugin.dir/builder.o: /usr/include/architecture/i386/math.h
 src/plugins/dxf2shp_converter/CMakeFiles/dxf2shpconverterplugin.dir/builder.o: /usr/include/architecture/ppc/math.h
@@ -80,12 +81,14 @@ src/plugins/dxf2shp_converter/CMakeFiles/dxf2shpconverterplugin.dir/dxf2shpconve
 src/plugins/dxf2shp_converter/CMakeFiles/dxf2shpconverterplugin.dir/dxf2shpconvertergui.o: ../src/plugins/dxf2shp_converter/dxflib/src/dl_writer_ascii.h
 src/plugins/dxf2shp_converter/CMakeFiles/dxf2shpconverterplugin.dir/dxf2shpconvertergui.o: ../src/plugins/dxf2shp_converter/getInsertions.h
 src/plugins/dxf2shp_converter/CMakeFiles/dxf2shpconverterplugin.dir/dxf2shpconvertergui.o: ../src/plugins/dxf2shp_converter/shapelib-1.2.10/shapefil.h
+src/plugins/dxf2shp_converter/CMakeFiles/dxf2shpconverterplugin.dir/dxf2shpconvertergui.o: /usr/include/Availability.h
+src/plugins/dxf2shp_converter/CMakeFiles/dxf2shpconverterplugin.dir/dxf2shpconvertergui.o: /usr/include/AvailabilityInternal.h
+src/plugins/dxf2shp_converter/CMakeFiles/dxf2shpconverterplugin.dir/dxf2shpconvertergui.o: /usr/include/AvailabilityMacros.h
 src/plugins/dxf2shp_converter/CMakeFiles/dxf2shpconverterplugin.dir/dxf2shpconvertergui.o: /usr/include/_types.h
 src/plugins/dxf2shp_converter/CMakeFiles/dxf2shpconverterplugin.dir/dxf2shpconvertergui.o: /usr/include/_xlocale.h
 src/plugins/dxf2shp_converter/CMakeFiles/dxf2shpconverterplugin.dir/dxf2shpconvertergui.o: /usr/include/alloca.h
 src/plugins/dxf2shp_converter/CMakeFiles/dxf2shpconverterplugin.dir/dxf2shpconvertergui.o: /usr/include/architecture/i386/math.h
 src/plugins/dxf2shp_converter/CMakeFiles/dxf2shpconverterplugin.dir/dxf2shpconvertergui.o: /usr/include/architecture/ppc/math.h
-src/plugins/dxf2shp_converter/CMakeFiles/dxf2shpconverterplugin.dir/dxf2shpconvertergui.o: /usr/include/available.h
 src/plugins/dxf2shp_converter/CMakeFiles/dxf2shpconverterplugin.dir/dxf2shpconvertergui.o: /usr/include/ctype.h
 src/plugins/dxf2shp_converter/CMakeFiles/dxf2shpconverterplugin.dir/dxf2shpconvertergui.o: /usr/include/i386/_structs.h
 src/plugins/dxf2shp_converter/CMakeFiles/dxf2shpconverterplugin.dir/dxf2shpconvertergui.o: /usr/include/i386/_types.h
@@ -179,6 +182,7 @@ src/plugins/dxf2shp_converter/CMakeFiles/dxf2shpconverterplugin.dir/getInsertion
 src/plugins/dxf2shp_converter/CMakeFiles/dxf2shpconverterplugin.dir/getInsertions.o: ../src/plugins/dxf2shp_converter/dxflib/src/dl_extrusion.h
 src/plugins/dxf2shp_converter/CMakeFiles/dxf2shpconverterplugin.dir/getInsertions.o: ../src/plugins/dxf2shp_converter/getInsertions.cpp
 src/plugins/dxf2shp_converter/CMakeFiles/dxf2shpconverterplugin.dir/getInsertions.o: ../src/plugins/dxf2shp_converter/getInsertions.h
+src/plugins/dxf2shp_converter/CMakeFiles/dxf2shpconverterplugin.dir/getInsertions.o: /usr/include/AvailabilityMacros.h
 src/plugins/dxf2shp_converter/CMakeFiles/dxf2shpconverterplugin.dir/getInsertions.o: /usr/include/_types.h
 src/plugins/dxf2shp_converter/CMakeFiles/dxf2shpconverterplugin.dir/getInsertions.o: /usr/include/architecture/i386/math.h
 src/plugins/dxf2shp_converter/CMakeFiles/dxf2shpconverterplugin.dir/getInsertions.o: /usr/include/architecture/ppc/math.h
@@ -205,12 +209,14 @@ src/plugins/dxf2shp_converter/CMakeFiles/dxf2shpconverterplugin.dir/dxflib/src/d
 src/plugins/dxf2shp_converter/CMakeFiles/dxf2shpconverterplugin.dir/dxflib/src/dl_dxf.o: ../src/plugins/dxf2shp_converter/dxflib/src/dl_extrusion.h
 src/plugins/dxf2shp_converter/CMakeFiles/dxf2shpconverterplugin.dir/dxflib/src/dl_dxf.o: ../src/plugins/dxf2shp_converter/dxflib/src/dl_writer.h
 src/plugins/dxf2shp_converter/CMakeFiles/dxf2shpconverterplugin.dir/dxflib/src/dl_dxf.o: ../src/plugins/dxf2shp_converter/dxflib/src/dl_writer_ascii.h
+src/plugins/dxf2shp_converter/CMakeFiles/dxf2shpconverterplugin.dir/dxflib/src/dl_dxf.o: /usr/include/Availability.h
+src/plugins/dxf2shp_converter/CMakeFiles/dxf2shpconverterplugin.dir/dxflib/src/dl_dxf.o: /usr/include/AvailabilityInternal.h
+src/plugins/dxf2shp_converter/CMakeFiles/dxf2shpconverterplugin.dir/dxflib/src/dl_dxf.o: /usr/include/AvailabilityMacros.h
 src/plugins/dxf2shp_converter/CMakeFiles/dxf2shpconverterplugin.dir/dxflib/src/dl_dxf.o: /usr/include/_types.h
 src/plugins/dxf2shp_converter/CMakeFiles/dxf2shpconverterplugin.dir/dxflib/src/dl_dxf.o: /usr/include/_xlocale.h
 src/plugins/dxf2shp_converter/CMakeFiles/dxf2shpconverterplugin.dir/dxflib/src/dl_dxf.o: /usr/include/alloca.h
 src/plugins/dxf2shp_converter/CMakeFiles/dxf2shpconverterplugin.dir/dxflib/src/dl_dxf.o: /usr/include/architecture/i386/math.h
 src/plugins/dxf2shp_converter/CMakeFiles/dxf2shpconverterplugin.dir/dxflib/src/dl_dxf.o: /usr/include/architecture/ppc/math.h
-src/plugins/dxf2shp_converter/CMakeFiles/dxf2shpconverterplugin.dir/dxflib/src/dl_dxf.o: /usr/include/available.h
 src/plugins/dxf2shp_converter/CMakeFiles/dxf2shpconverterplugin.dir/dxflib/src/dl_dxf.o: /usr/include/i386/_structs.h
 src/plugins/dxf2shp_converter/CMakeFiles/dxf2shpconverterplugin.dir/dxflib/src/dl_dxf.o: /usr/include/i386/_types.h
 src/plugins/dxf2shp_converter/CMakeFiles/dxf2shpconverterplugin.dir/dxflib/src/dl_dxf.o: /usr/include/i386/endian.h

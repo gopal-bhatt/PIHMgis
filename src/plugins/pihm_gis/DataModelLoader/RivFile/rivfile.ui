@@ -1,10 +1,8 @@
-<ui version="4.0" >
- <author></author>
- <comment></comment>
- <exportmacro></exportmacro>
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
  <class>rivfile</class>
- <widget class="QDialog" name="rivfile" >
-  <property name="geometry" >
+ <widget class="QDialog" name="rivfile">
+  <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
@@ -12,166 +10,205 @@
     <height>505</height>
    </rect>
   </property>
-  <property name="windowTitle" >
+  <property name="windowTitle">
    <string>Riv File Generation</string>
   </property>
-  <widget class="Q3GroupBox" name="groupBox1" >
-   <property name="geometry" >
+  <widget class="Q3GroupBox" name="groupBox1" native="true">
+   <property name="geometry">
     <rect>
      <x>14</x>
-     <y>11</y>
+     <y>4</y>
      <width>571</width>
-     <height>220</height>
+     <height>181</height>
     </rect>
    </property>
-   <property name="title" >
+   <property name="title" stdset="0">
     <string>Input Files</string>
    </property>
-   <property name="orientation" >
-    <enum>Qt::Vertical</enum>
-   </property>
-   <widget class="QLabel" name="textLabel4_2_5_2" >
-    <property name="geometry" >
+   <widget class="QLabel" name="textLabel4_2_5_2">
+    <property name="geometry">
      <rect>
       <x>26</x>
-      <y>76</y>
+      <y>58</y>
       <width>70</width>
       <height>41</height>
      </rect>
     </property>
-    <property name="text" >
+    <property name="text">
      <string>ele File</string>
     </property>
    </widget>
-   <widget class="QLabel" name="textLabel4_2_5_2_2" >
-    <property name="geometry" >
+   <widget class="QLabel" name="textLabel4_2_5_2_2">
+    <property name="geometry">
      <rect>
       <x>26</x>
-      <y>125</y>
+      <y>98</y>
       <width>70</width>
       <height>41</height>
      </rect>
     </property>
-    <property name="text" >
+    <property name="text">
      <string>node File</string>
     </property>
    </widget>
-   <widget class="QLabel" name="textLabel4_2_5_2_3" >
-    <property name="geometry" >
+   <widget class="QLabel" name="textLabel4_2_5_2_3">
+    <property name="geometry">
      <rect>
       <x>26</x>
-      <y>171</y>
+      <y>138</y>
       <width>70</width>
       <height>41</height>
      </rect>
     </property>
-    <property name="text" >
+    <property name="text">
      <string>neigh File</string>
     </property>
    </widget>
-   <widget class="QLabel" name="textLabel4_2_5" >
-    <property name="geometry" >
+   <widget class="QLabel" name="textLabel4_2_5">
+    <property name="geometry">
      <rect>
       <x>26</x>
-      <y>28</y>
+      <y>20</y>
       <width>70</width>
       <height>41</height>
      </rect>
     </property>
-    <property name="text" >
+    <property name="text">
      <string>River File</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="eleLineEdit" >
-    <property name="geometry" >
+   <widget class="QLineEdit" name="eleLineEdit">
+    <property name="geometry">
      <rect>
       <x>116</x>
-      <y>81</y>
+      <y>68</y>
       <width>325</width>
-      <height>29</height>
+      <height>22</height>
      </rect>
     </property>
    </widget>
-   <widget class="QLineEdit" name="nodeLineEdit" >
-    <property name="geometry" >
+   <widget class="QLineEdit" name="nodeLineEdit">
+    <property name="geometry">
      <rect>
       <x>116</x>
-      <y>130</y>
+      <y>108</y>
       <width>325</width>
-      <height>29</height>
+      <height>22</height>
      </rect>
     </property>
    </widget>
-   <widget class="QLineEdit" name="neighLineEdit" >
-    <property name="geometry" >
+   <widget class="QLineEdit" name="neighLineEdit">
+    <property name="geometry">
      <rect>
       <x>116</x>
-      <y>176</y>
+      <y>148</y>
       <width>325</width>
-      <height>29</height>
+      <height>22</height>
      </rect>
     </property>
    </widget>
-   <widget class="QPushButton" name="eleFileButton" >
-    <property name="geometry" >
+   <widget class="QPushButton" name="eleFileButton">
+    <property name="geometry">
      <rect>
       <x>466</x>
-      <y>79</y>
+      <y>64</y>
       <width>81</width>
       <height>32</height>
      </rect>
     </property>
-    <property name="text" >
+    <property name="text">
      <string>Browse...</string>
     </property>
-    <property name="autoDefault" >
+    <property name="autoDefault">
      <bool>false</bool>
     </property>
    </widget>
-   <widget class="QPushButton" name="nodeFileButton" >
-    <property name="geometry" >
+   <widget class="QPushButton" name="nodeFileButton">
+    <property name="geometry">
      <rect>
       <x>466</x>
-      <y>128</y>
+      <y>104</y>
       <width>81</width>
       <height>32</height>
      </rect>
     </property>
-    <property name="text" >
+    <property name="text">
      <string>Browse...</string>
     </property>
-    <property name="autoDefault" >
+    <property name="autoDefault">
      <bool>false</bool>
     </property>
    </widget>
-   <widget class="QPushButton" name="neighFileButton" >
-    <property name="geometry" >
+   <widget class="QPushButton" name="neighFileButton">
+    <property name="geometry">
      <rect>
       <x>466</x>
-      <y>174</y>
+      <y>143</y>
       <width>81</width>
       <height>32</height>
      </rect>
     </property>
-    <property name="text" >
+    <property name="text">
      <string>Browse...</string>
     </property>
-    <property name="autoDefault" >
+    <property name="autoDefault">
      <bool>false</bool>
     </property>
    </widget>
-   <widget class="QLineEdit" name="riverLineEdit" >
-    <property name="geometry" >
+   <widget class="QLineEdit" name="riverLineEdit">
+    <property name="geometry">
      <rect>
       <x>116</x>
-      <y>33</y>
+      <y>31</y>
       <width>325</width>
-      <height>29</height>
+      <height>22</height>
      </rect>
     </property>
    </widget>
-   <widget class="QPushButton" name="riverFileButton" >
-    <property name="geometry" >
+   <widget class="QPushButton" name="riverFileButton">
+    <property name="geometry">
+     <rect>
+      <x>466</x>
+      <y>27</y>
+      <width>81</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Browse...</string>
+    </property>
+    <property name="autoDefault">
+     <bool>false</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="Q3GroupBox" name="groupBox1_3" native="true">
+   <property name="geometry">
+    <rect>
+     <x>14</x>
+     <y>243</y>
+     <width>571</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="title" stdset="0">
+    <string>Output File</string>
+   </property>
+   <widget class="QLabel" name="textLabel4_2_5_4">
+    <property name="geometry">
+     <rect>
+      <x>26</x>
+      <y>26</y>
+      <width>70</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>riv File</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="rivFileButton">
+    <property name="geometry">
      <rect>
       <x>466</x>
       <y>31</y>
@@ -179,71 +216,26 @@
       <height>32</height>
      </rect>
     </property>
-    <property name="text" >
+    <property name="text">
      <string>Browse...</string>
     </property>
-    <property name="autoDefault" >
+    <property name="autoDefault">
      <bool>false</bool>
     </property>
    </widget>
-  </widget>
-  <widget class="Q3GroupBox" name="groupBox1_3" >
-   <property name="geometry" >
-    <rect>
-     <x>14</x>
-     <y>232</y>
-     <width>571</width>
-     <height>80</height>
-    </rect>
-   </property>
-   <property name="title" >
-    <string>Output File</string>
-   </property>
-   <property name="orientation" >
-    <enum>Qt::Vertical</enum>
-   </property>
-   <widget class="QLabel" name="textLabel4_2_5_4" >
-    <property name="geometry" >
-     <rect>
-      <x>26</x>
-      <y>27</y>
-      <width>70</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="text" >
-     <string>riv File</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="rivFileButton" >
-    <property name="geometry" >
-     <rect>
-      <x>466</x>
-      <y>30</y>
-      <width>81</width>
-      <height>32</height>
-     </rect>
-    </property>
-    <property name="text" >
-     <string>Browse...</string>
-    </property>
-    <property name="autoDefault" >
-     <bool>false</bool>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="rivLineEdit" >
-    <property name="geometry" >
+   <widget class="QLineEdit" name="rivLineEdit">
+    <property name="geometry">
      <rect>
       <x>116</x>
-      <y>32</y>
+      <y>36</y>
       <width>325</width>
-      <height>29</height>
+      <height>22</height>
      </rect>
     </property>
    </widget>
   </widget>
-  <widget class="QPushButton" name="cancelButton" >
-   <property name="geometry" >
+  <widget class="QPushButton" name="cancelButton">
+   <property name="geometry">
     <rect>
      <x>412</x>
      <y>322</y>
@@ -251,15 +243,15 @@
      <height>34</height>
     </rect>
    </property>
-   <property name="text" >
+   <property name="text">
     <string>Close</string>
    </property>
-   <property name="autoDefault" >
+   <property name="autoDefault">
     <bool>false</bool>
    </property>
   </widget>
-  <widget class="QPushButton" name="helpButton" >
-   <property name="geometry" >
+  <widget class="QPushButton" name="helpButton">
+   <property name="geometry">
     <rect>
      <x>13</x>
      <y>322</y>
@@ -267,15 +259,15 @@
      <height>34</height>
     </rect>
    </property>
-   <property name="text" >
+   <property name="text">
     <string>Help</string>
    </property>
-   <property name="autoDefault" >
+   <property name="autoDefault">
     <bool>false</bool>
    </property>
   </widget>
-  <widget class="Q3TextBrowser" name="messageLog" >
-   <property name="geometry" >
+  <widget class="QTextBrowser" name="messageLog" native="true">
+   <property name="geometry">
     <rect>
      <x>12</x>
      <y>365</y>
@@ -284,8 +276,8 @@
     </rect>
    </property>
   </widget>
-  <widget class="QPushButton" name="runButton" >
-   <property name="geometry" >
+  <widget class="QPushButton" name="runButton">
+   <property name="geometry">
     <rect>
      <x>505</x>
      <y>322</y>
@@ -293,15 +285,86 @@
      <height>34</height>
     </rect>
    </property>
-   <property name="text" >
+   <property name="text">
     <string>Run!</string>
    </property>
-   <property name="autoDefault" >
+   <property name="autoDefault">
     <bool>false</bool>
    </property>
   </widget>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>14</x>
+     <y>186</y>
+     <width>571</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Boundary Condition</string>
+   </property>
+   <widget class="QRadioButton" name="one">
+    <property name="geometry">
+     <rect>
+      <x>18</x>
+      <y>30</y>
+      <width>101</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Dirichlet</string>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="two">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>30</y>
+      <width>101</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Neumann</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="three">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>30</y>
+      <width>161</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>zero-depth-gradient</string>
+    </property>
+    <property name="checked">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="four">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>30</y>
+      <width>111</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>critical-depth</string>
+    </property>
+   </widget>
+  </widget>
  </widget>
- <layoutdefault spacing="6" margin="11" />
+ <layoutdefault spacing="6" margin="11"/>
  <pixmapfunction>qPixmapFromMimeSource</pixmapfunction>
  <customwidgets>
   <customwidget>
@@ -309,14 +372,12 @@
    <extends></extends>
    <header>Qt3Support/Q3GroupBox</header>
    <container>1</container>
-   <pixmap></pixmap>
   </customwidget>
   <customwidget>
-   <class>Q3TextBrowser</class>
+   <class>QTextBrowser</class>
    <extends>QWidget</extends>
    <header>q3textbrowser.h</header>
    <container>1</container>
-   <pixmap></pixmap>
   </customwidget>
  </customwidgets>
  <resources/>

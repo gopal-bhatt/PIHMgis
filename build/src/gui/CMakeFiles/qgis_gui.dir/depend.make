@@ -983,10 +983,11 @@ src/gui/CMakeFiles/qgis_gui.dir/qgsrubberband.o: ../src/gui/qgsmapcanvas.h
 src/gui/CMakeFiles/qgis_gui.dir/qgsrubberband.o: ../src/gui/qgsmapcanvasitem.h
 src/gui/CMakeFiles/qgis_gui.dir/qgsrubberband.o: ../src/gui/qgsrubberband.cpp
 src/gui/CMakeFiles/qgis_gui.dir/qgsrubberband.o: ../src/gui/qgsrubberband.h
+src/gui/CMakeFiles/qgis_gui.dir/qgsrubberband.o: /usr/include/Availability.h
+src/gui/CMakeFiles/qgis_gui.dir/qgsrubberband.o: /usr/include/AvailabilityInternal.h
 src/gui/CMakeFiles/qgis_gui.dir/qgsrubberband.o: /usr/include/_types.h
 src/gui/CMakeFiles/qgis_gui.dir/qgsrubberband.o: /usr/include/_xlocale.h
 src/gui/CMakeFiles/qgis_gui.dir/qgsrubberband.o: /usr/include/alloca.h
-src/gui/CMakeFiles/qgis_gui.dir/qgsrubberband.o: /usr/include/available.h
 src/gui/CMakeFiles/qgis_gui.dir/qgsrubberband.o: /usr/include/i386/_structs.h
 src/gui/CMakeFiles/qgis_gui.dir/qgsrubberband.o: /usr/include/i386/_types.h
 src/gui/CMakeFiles/qgis_gui.dir/qgsrubberband.o: /usr/include/i386/endian.h

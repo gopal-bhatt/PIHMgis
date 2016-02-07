@@ -32,6 +32,7 @@ src/plugins/dxf2shp_converter/CMakeFiles/dxf2shpconverterplugin.dir/builder.o
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/dxf2shp_converter/dxflib/src/dl_extrusion.h
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/dxf2shp_converter/getInsertions.h
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/dxf2shp_converter/shapelib-1.2.10/shapefil.h
+ /usr/include/AvailabilityMacros.h
  /usr/include/_types.h
  /usr/include/architecture/i386/math.h
  /usr/include/architecture/ppc/math.h
@@ -81,12 +82,14 @@ src/plugins/dxf2shp_converter/CMakeFiles/dxf2shpconverterplugin.dir/dxf2shpconve
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/dxf2shp_converter/dxflib/src/dl_writer_ascii.h
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/dxf2shp_converter/getInsertions.h
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/dxf2shp_converter/shapelib-1.2.10/shapefil.h
+ /usr/include/Availability.h
+ /usr/include/AvailabilityInternal.h
+ /usr/include/AvailabilityMacros.h
  /usr/include/_types.h
  /usr/include/_xlocale.h
  /usr/include/alloca.h
  /usr/include/architecture/i386/math.h
  /usr/include/architecture/ppc/math.h
- /usr/include/available.h
  /usr/include/ctype.h
  /usr/include/i386/_structs.h
  /usr/include/i386/_types.h
@@ -180,6 +183,7 @@ src/plugins/dxf2shp_converter/CMakeFiles/dxf2shpconverterplugin.dir/getInsertion
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/dxf2shp_converter/dxflib/src/dl_extrusion.h
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/dxf2shp_converter/getInsertions.cpp
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/dxf2shp_converter/getInsertions.h
+ /usr/include/AvailabilityMacros.h
  /usr/include/_types.h
  /usr/include/architecture/i386/math.h
  /usr/include/architecture/ppc/math.h
@@ -206,12 +210,14 @@ src/plugins/dxf2shp_converter/CMakeFiles/dxf2shpconverterplugin.dir/dxflib/src/d
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/dxf2shp_converter/dxflib/src/dl_extrusion.h
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/dxf2shp_converter/dxflib/src/dl_writer.h
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/dxf2shp_converter/dxflib/src/dl_writer_ascii.h
+ /usr/include/Availability.h
+ /usr/include/AvailabilityInternal.h
+ /usr/include/AvailabilityMacros.h
  /usr/include/_types.h
  /usr/include/_xlocale.h
  /usr/include/alloca.h
  /usr/include/architecture/i386/math.h
  /usr/include/architecture/ppc/math.h
- /usr/include/available.h
  /usr/include/i386/_structs.h
  /usr/include/i386/_types.h
  /usr/include/i386/endian.h

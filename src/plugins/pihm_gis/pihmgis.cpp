@@ -55,6 +55,11 @@
 #include "DataModelLoader/AttFile/attfile.h"
 #include "DataModelLoader/RivFile/rivfile.h"
 #include "DataModelLoader/Parafile/parafile.h"
+#include "DataModelLoader/SoilFile/soilfile.h"
+#include "DataModelLoader/GeolFile/geolfile.h"
+#include "DataModelLoader/LCFile/lcfile.h"
+#include "DataModelLoader/CalibFile/calibfile.h"
+#include "DataModelLoader/InitFile/initfile.h"
 
 #include "RunPIHM/runpihm.h"
 //#include "MyNewThread.h"
@@ -171,7 +176,11 @@ void PIHMgis::initGui()
   xtractMenu->addAction( "Generate AttFile", this, SLOT(runAttFile()));
   xtractMenu->addAction( "Generate RivFile", this, SLOT(runRivFile()));
   xtractMenu->addAction( "Generate ParaFile", this, SLOT(runParaFile()));
-
+  xtractMenu->addAction( "Generate SoilFile", this, SLOT(runSoilFile()));
+  xtractMenu->addAction( "Generate GeolFile", this, SLOT(runGeolFile()));
+  xtractMenu->addAction( "Generate LCFile",   this, SLOT(runLCFile()));
+  xtractMenu->addAction( "Generate CalibFile", this,SLOT(runCalibFile()));
+  xtractMenu->addAction( "Generate InitFile", this, SLOT(runInitFile()));
   QAction *xtractAction = new QAction("&DataModel Loader", this);
   xtractAction->setMenu(xtractMenu);
   mQGisIface->addToolBarIcon(xtractAction);
@@ -348,6 +357,31 @@ void PIHMgis::runParaFile(){
         paraFileDlg* Dlg = new paraFileDlg; //(NULL,NULL,TRUE,0); //,"/opt3/helpDialog/poly.html","Help Caption");
         //Dlg->setApplicationPointer(mQGisIface->app());
         Dlg->show();
+}
+
+void PIHMgis::runSoilFile(){
+	SoilFile* Dlg = new SoilFile;
+	Dlg->show();	
+}
+
+void PIHMgis::runGeolFile(){
+	GeolFile* Dlg = new GeolFile;
+	Dlg->show();
+}
+
+void PIHMgis::runLCFile(){
+	LCFile* Dlg = new LCFile;
+	Dlg->show();
+}
+
+void PIHMgis::runCalibFile(){
+	CalibFile* Dlg = new CalibFile;
+	Dlg->show();
+}
+
+void PIHMgis::runInitFile(){
+	InitFile* Dlg = new InitFile;
+	Dlg->show();
 }
 
 void PIHMgis::runPIHM(){

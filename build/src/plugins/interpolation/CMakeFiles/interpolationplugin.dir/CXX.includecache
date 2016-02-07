@@ -850,6 +850,12 @@ qgsinterpolatordialog.h
 ui_qgstininterpolatordialogbase.h
 /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/interpolation/ui_qgstininterpolatordialogbase.h
 
+/usr/include/Availability.h
+AvailabilityInternal.h
+-
+
+/usr/include/AvailabilityInternal.h
+
 /usr/include/_types.h
 sys/_types.h
 -
@@ -863,8 +869,6 @@ sys/cdefs.h
 -
 _types.h
 -
-
-/usr/include/available.h
 
 /usr/include/i386/_structs.h
 sys/appleapiopts.h
@@ -985,6 +989,8 @@ secure/_common.h
 -
 
 /usr/include/secure/_string.h
+sys/cdefs.h
+-
 secure/_common.h
 -
 
@@ -1005,7 +1011,7 @@ secure/_stdio.h
 -
 
 /usr/include/stdlib.h
-available.h
+Availability.h
 -
 _types.h
 -

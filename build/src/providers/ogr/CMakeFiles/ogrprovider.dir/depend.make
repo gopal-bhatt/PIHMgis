@@ -62,6 +62,9 @@ src/providers/ogr/CMakeFiles/ogrprovider.dir/qgsogrprovider.o: /Library/Framewor
 src/providers/ogr/CMakeFiles/ogrprovider.dir/qgsogrprovider.o: /Library/Frameworks/QtXml.framework/Headers/qdom.h
 src/providers/ogr/CMakeFiles/ogrprovider.dir/qgsogrprovider.o: ../src/providers/ogr/qgsogrprovider.cpp
 src/providers/ogr/CMakeFiles/ogrprovider.dir/qgsogrprovider.o: ../src/providers/ogr/qgsogrprovider.h
+src/providers/ogr/CMakeFiles/ogrprovider.dir/qgsogrprovider.o: /usr/include/Availability.h
+src/providers/ogr/CMakeFiles/ogrprovider.dir/qgsogrprovider.o: /usr/include/AvailabilityInternal.h
+src/providers/ogr/CMakeFiles/ogrprovider.dir/qgsogrprovider.o: /usr/include/AvailabilityMacros.h
 src/providers/ogr/CMakeFiles/ogrprovider.dir/qgsogrprovider.o: /usr/include/_locale.h
 src/providers/ogr/CMakeFiles/ogrprovider.dir/qgsogrprovider.o: /usr/include/_structs.h
 src/providers/ogr/CMakeFiles/ogrprovider.dir/qgsogrprovider.o: /usr/include/_types.h
@@ -69,7 +72,6 @@ src/providers/ogr/CMakeFiles/ogrprovider.dir/qgsogrprovider.o: /usr/include/_xlo
 src/providers/ogr/CMakeFiles/ogrprovider.dir/qgsogrprovider.o: /usr/include/alloca.h
 src/providers/ogr/CMakeFiles/ogrprovider.dir/qgsogrprovider.o: /usr/include/architecture/i386/math.h
 src/providers/ogr/CMakeFiles/ogrprovider.dir/qgsogrprovider.o: /usr/include/architecture/ppc/math.h
-src/providers/ogr/CMakeFiles/ogrprovider.dir/qgsogrprovider.o: /usr/include/available.h
 src/providers/ogr/CMakeFiles/ogrprovider.dir/qgsogrprovider.o: /usr/include/ctype.h
 src/providers/ogr/CMakeFiles/ogrprovider.dir/qgsogrprovider.o: /usr/include/errno.h
 src/providers/ogr/CMakeFiles/ogrprovider.dir/qgsogrprovider.o: /usr/include/float.h

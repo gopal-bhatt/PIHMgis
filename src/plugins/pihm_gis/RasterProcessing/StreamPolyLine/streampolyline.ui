@@ -132,7 +132,7 @@
      </rect>
     </property>
     <property name="text" >
-     <string>Stream Grid</string>
+     <string>Link Grid</string>
     </property>
    </widget>
    <widget class="QLabel" name="textLabel1_3" >

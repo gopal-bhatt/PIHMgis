@@ -16,11 +16,13 @@ using namespace std;
 StreamGridDlg::StreamGridDlg(QWidget *parent)
 {
 	setupUi(this);
+	runButton->setDefault(TRUE);
 	connect(inputBrowseButton, SIGNAL(clicked()), this, SLOT(inputBrowse()));
 	connect(outputBrowseButton, SIGNAL(clicked()), this, SLOT(outputBrowse()));
 	connect(runButton, SIGNAL(clicked()), this, SLOT(run()));
 	connect(helpButton, SIGNAL(clicked()), this, SLOT(help()));
 	connect(closeButton, SIGNAL(clicked()), this, SLOT(close()));
+	connect(pushButtonSuggestMe, SIGNAL(clicked()), this, SLOT(suggestMe()));
 }
 
 void StreamGridDlg::inputBrowse()
@@ -130,6 +132,42 @@ void StreamGridDlg::run()
 			applicationPointer->addRasterLayer(outputFileName);
 		}
 	}
+}
+
+void StreamGridDlg::suggestMe(){
+	fstream inFile;
+	inFile.open(inputFileLineEdit->text().toAscii());
+	
+	if(inFile == NULL){
+		QMessageBox msgBox;
+		msgBox.setIcon(QMessageBox::Critical);
+		msgBox.critical(0, "Error", "Error: Flow Accumulation Grid File not provided or accessible", QMessageBox::Close);
+	}
+
+	char tempChar[100];
+	int tempInt, Rows, Cols, NoData, suggestedThreshold;
+	double tempDouble;
+	int *sortedData, count=0;
+	int flag = 1;
+
+	inFile >> tempChar; inFile >> Cols;
+	inFile >> tempChar; inFile >> Rows;
+	inFile >> tempChar; inFile >> tempDouble;
+	inFile >> tempChar; inFile >> tempDouble;
+	inFile >> tempDouble; inFile >> NoData;
+
+	sortedData = (int *)malloc(Rows*Cols* sizeof(int));
+	for(int i=0; i<Rows*Cols; i++){
+		inFile >> tempInt;
+		if(tempInt >= 0){
+			sortedData[i] = tempInt;
+			count++;
+		}
+	}
+	char strThresh[100];
+	sprintf(strThresh, "%d", (int)(count*0.02));
+	QString qstrThresh(strThresh);
+	inputThreshLineEdit->setText(strThresh);
 }
 
 void StreamGridDlg::help()

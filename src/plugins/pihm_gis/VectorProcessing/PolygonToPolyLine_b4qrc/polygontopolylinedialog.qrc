@@ -1,0 +1,9 @@
+<RCC>
+    <qresource>
+        <file>./icons/Plus32.png</file>
+	<file>./icons/Minus32.png</file>
+	<file>./icons/Delete32.png</file>
+	<file>./icons/Properties32.png</file>
+    </qresource>
+</RCC>
+

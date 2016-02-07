@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading ui file 'streampolyline.ui'
 **
-** Created: Fri Jun 19 02:00:50 2009
+** Created: Wed Oct 7 21:15:12 2009
 **      by: Qt User Interface Compiler version 4.3.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling ui file!
@@ -132,7 +132,7 @@ public:
     outputBrowseButton->setText(QApplication::translate("StreamPolyLine", "Browse", 0, QApplication::UnicodeUTF8));
     showSG_DFrame->setText(QApplication::translate("StreamPolyLine", "Load in Data Frame", 0, QApplication::UnicodeUTF8));
     buttonGroup1->setTitle(QApplication::translate("StreamPolyLine", "Input", 0, QApplication::UnicodeUTF8));
-    textLabel1->setText(QApplication::translate("StreamPolyLine", "Stream Grid", 0, QApplication::UnicodeUTF8));
+    textLabel1->setText(QApplication::translate("StreamPolyLine", "Link Grid", 0, QApplication::UnicodeUTF8));
     textLabel1_3->setText(QApplication::translate("StreamPolyLine", "Flow Dir. Grid", 0, QApplication::UnicodeUTF8));
     inputSTRBrowseButton->setText(QApplication::translate("StreamPolyLine", "Browse", 0, QApplication::UnicodeUTF8));
     inputFDRBrowseButton->setText(QApplication::translate("StreamPolyLine", "Browse", 0, QApplication::UnicodeUTF8));

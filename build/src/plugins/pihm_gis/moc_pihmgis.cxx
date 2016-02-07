@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'pihmgis.h'
 **
-** Created: Fri Jun 19 02:00:48 2009
+** Created: Mon Sep 7 22:45:41 2009
 **      by: The Qt Meta Object Compiler version 59 (Qt 4.3.2)
 **
 ** WARNING! All changes made in this file will be lost!
@@ -22,7 +22,7 @@ static const uint qt_meta_data_PIHMgis[] = {
        1,       // revision
        0,       // classname
        0,    0, // classinfo
-      27,   10, // methods
+      32,   10, // methods
        0,    0, // properties
        0,    0, // enums/sets
 
@@ -50,10 +50,15 @@ static const uint qt_meta_data_PIHMgis[] = {
      319,    8,    8,    8, 0x0a,
      332,    8,    8,    8, 0x0a,
      346,    8,    8,    8, 0x0a,
-     356,    8,    8,    8, 0x0a,
+     360,    8,    8,    8, 0x0a,
      374,    8,    8,    8, 0x0a,
-     395,    8,    8,    8, 0x0a,
-     406,    8,    8,    8, 0x0a,
+     386,    8,    8,    8, 0x0a,
+     401,    8,    8,    8, 0x0a,
+     415,    8,    8,    8, 0x0a,
+     425,    8,    8,    8, 0x0a,
+     443,    8,    8,    8, 0x0a,
+     464,    8,    8,    8, 0x0a,
+     475,    8,    8,    8, 0x0a,
 
        0        // eod
 };
@@ -68,7 +73,9 @@ static const char qt_meta_stringdata_PIHMgis[] = {
     "runVectorMerge()\0runGenerateShapeTopology()\0"
     "runRunTriangle()\0runCreateTINs()\0"
     "runMshFile()\0runAttFile()\0runRivFile()\0"
-    "runParaFile()\0runPIHM()\0runSpatialPlots()\0"
+    "runParaFile()\0runSoilFile()\0runGeolFile()\0"
+    "runLCFile()\0runCalibFile()\0runInitFile()\0"
+    "runPIHM()\0runSpatialPlots()\0"
     "runTimeSeriesPlots()\0runAbout()\0"
     "runHomePage()\0"
 };
@@ -122,13 +129,18 @@ int PIHMgis::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
         case 19: runAttFile(); break;
         case 20: runRivFile(); break;
         case 21: runParaFile(); break;
-        case 22: runPIHM(); break;
-        case 23: runSpatialPlots(); break;
-        case 24: runTimeSeriesPlots(); break;
-        case 25: runAbout(); break;
-        case 26: runHomePage(); break;
+        case 22: runSoilFile(); break;
+        case 23: runGeolFile(); break;
+        case 24: runLCFile(); break;
+        case 25: runCalibFile(); break;
+        case 26: runInitFile(); break;
+        case 27: runPIHM(); break;
+        case 28: runSpatialPlots(); break;
+        case 29: runTimeSeriesPlots(); break;
+        case 30: runAbout(); break;
+        case 31: runHomePage(); break;
         }
-        _id -= 27;
+        _id -= 32;
     }
     return _id;
 }

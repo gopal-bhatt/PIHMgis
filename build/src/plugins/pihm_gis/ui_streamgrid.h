@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading ui file 'streamgrid.ui'
 **
-** Created: Fri Jun 19 02:00:50 2009
+** Created: Mon Sep 7 22:45:43 2009
 **      by: Qt User Interface Compiler version 4.3.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling ui file!
@@ -35,6 +35,7 @@ public:
     QLineEdit *outputFileLineEdit;
     QCheckBox *showSG_DFrame;
     QLineEdit *inputThreshLineEdit;
+    QPushButton *pushButtonSuggestMe;
     QPushButton *helpButton;
     QPushButton *closeButton;
     QPushButton *runButton;
@@ -54,7 +55,6 @@ public:
     buttonGroup2 = new Q3ButtonGroup(StreamGrid);
     buttonGroup2->setObjectName(QString::fromUtf8("buttonGroup2"));
     buttonGroup2->setGeometry(QRect(10, 120, 581, 150));
-    buttonGroup2->setOrientation(Qt::Vertical);
     textLabel1_2_2 = new QLabel(buttonGroup2);
     textLabel1_2_2->setObjectName(QString::fromUtf8("textLabel1_2_2"));
     textLabel1_2_2->setGeometry(QRect(30, 100, 90, 31));
@@ -88,6 +88,9 @@ public:
     inputThreshLineEdit = new QLineEdit(buttonGroup2);
     inputThreshLineEdit->setObjectName(QString::fromUtf8("inputThreshLineEdit"));
     inputThreshLineEdit->setGeometry(QRect(130, 101, 90, 29));
+    pushButtonSuggestMe = new QPushButton(buttonGroup2);
+    pushButtonSuggestMe->setObjectName(QString::fromUtf8("pushButtonSuggestMe"));
+    pushButtonSuggestMe->setGeometry(QRect(230, 100, 113, 32));
     helpButton = new QPushButton(StreamGrid);
     helpButton->setObjectName(QString::fromUtf8("helpButton"));
     helpButton->setGeometry(QRect(10, 279, 81, 32));
@@ -103,7 +106,6 @@ public:
     buttonGroup1 = new Q3ButtonGroup(StreamGrid);
     buttonGroup1->setObjectName(QString::fromUtf8("buttonGroup1"));
     buttonGroup1->setGeometry(QRect(10, 10, 581, 101));
-    buttonGroup1->setOrientation(Qt::Vertical);
     textLabel1 = new QLabel(buttonGroup1);
     textLabel1->setObjectName(QString::fromUtf8("textLabel1"));
     textLabel1->setGeometry(QRect(30, 40, 95, 31));
@@ -125,16 +127,17 @@ public:
     void retranslateUi(QDialog *StreamGrid)
     {
     StreamGrid->setWindowTitle(QApplication::translate("StreamGrid", "Stream Grid", 0, QApplication::UnicodeUTF8));
-    buttonGroup2->setTitle(QApplication::translate("StreamGrid", "Output", 0, QApplication::UnicodeUTF8));
+    buttonGroup2->setProperty("title", QVariant(QApplication::translate("StreamGrid", "Output", 0, QApplication::UnicodeUTF8)));
     textLabel1_2_2->setText(QApplication::translate("StreamGrid", "Threshold", 0, QApplication::UnicodeUTF8));
     textLabel1_2->setText(QApplication::translate("StreamGrid", "Stream Grid", 0, QApplication::UnicodeUTF8));
     textLabel1_2_2_2->setText(QApplication::translate("StreamGrid", "(# of grids)", 0, QApplication::UnicodeUTF8));
     outputBrowseButton->setText(QApplication::translate("StreamGrid", "Browse", 0, QApplication::UnicodeUTF8));
     showSG_DFrame->setText(QApplication::translate("StreamGrid", "Load in Data Frame", 0, QApplication::UnicodeUTF8));
+    pushButtonSuggestMe->setText(QApplication::translate("StreamGrid", "Suggest Me", 0, QApplication::UnicodeUTF8));
     helpButton->setText(QApplication::translate("StreamGrid", "Help", 0, QApplication::UnicodeUTF8));
     closeButton->setText(QApplication::translate("StreamGrid", "Close", 0, QApplication::UnicodeUTF8));
     runButton->setText(QApplication::translate("StreamGrid", "Run", 0, QApplication::UnicodeUTF8));
-    buttonGroup1->setTitle(QApplication::translate("StreamGrid", "Input", 0, QApplication::UnicodeUTF8));
+    buttonGroup1->setProperty("title", QVariant(QApplication::translate("StreamGrid", "Input", 0, QApplication::UnicodeUTF8)));
     textLabel1->setText(QApplication::translate("StreamGrid", "Flow Acc. Grid", 0, QApplication::UnicodeUTF8));
     inputBrowseButton->setText(QApplication::translate("StreamGrid", "Browse", 0, QApplication::UnicodeUTF8));
     Q_UNUSED(StreamGrid);

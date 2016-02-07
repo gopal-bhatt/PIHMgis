@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading ui file 'qgsdetaileditemwidgetbase.ui'
 **
-** Created: Fri Jun 19 01:50:16 2009
+** Created: Mon Sep 7 22:35:29 2009
 **      by: Qt User Interface Compiler version 4.3.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling ui file!

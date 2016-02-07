@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading ui file 'splitlinedialog.ui'
 **
-** Created: Fri Jun 19 02:00:51 2009
+** Created: Mon Sep 7 22:45:44 2009
 **      by: Qt User Interface Compiler version 4.3.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling ui file!
@@ -43,12 +43,11 @@ public:
     polygonToPolyLineGroup = new Q3ButtonGroup(splitLineDialog);
     polygonToPolyLineGroup->setObjectName(QString::fromUtf8("polygonToPolyLineGroup"));
     polygonToPolyLineGroup->setGeometry(QRect(10, 10, 580, 370));
-    QSizePolicy sizePolicy(static_cast<QSizePolicy::Policy>(0), static_cast<QSizePolicy::Policy>(5));
+    QSizePolicy sizePolicy(QSizePolicy::Fixed, QSizePolicy::Preferred);
     sizePolicy.setHorizontalStretch(0);
     sizePolicy.setVerticalStretch(0);
     sizePolicy.setHeightForWidth(polygonToPolyLineGroup->sizePolicy().hasHeightForWidth());
     polygonToPolyLineGroup->setSizePolicy(sizePolicy);
-    polygonToPolyLineGroup->setOrientation(Qt::Vertical);
     MessageLog = new Q3TextBrowser(polygonToPolyLineGroup);
     MessageLog->setObjectName(QString::fromUtf8("MessageLog"));
     MessageLog->setGeometry(QRect(11, 271, 560, 92));
@@ -67,31 +66,30 @@ public:
     inputOutputTable = new Q3Table(polygonToPolyLineGroup);
     inputOutputTable->setObjectName(QString::fromUtf8("inputOutputTable"));
     inputOutputTable->setGeometry(QRect(10, 10, 510, 200));
-    inputOutputTable->setLineWidth(2);
-    inputOutputTable->setMidLineWidth(0);
-    inputOutputTable->setMargin(0);
-    inputOutputTable->setResizePolicy(Q3ScrollView::Default);
-    inputOutputTable->setDragAutoScroll(false);
-    inputOutputTable->setNumRows(0);
-    inputOutputTable->setNumCols(2);
-    inputOutputTable->setShowGrid(true);
-    inputOutputTable->setRowMovingEnabled(false);
-    inputOutputTable->setColumnMovingEnabled(false);
-    inputOutputTable->setFocusStyle(Q3Table::SpreadSheet);
+    inputOutputTable->setProperty("lineWidth", QVariant(2));
+    inputOutputTable->setProperty("midLineWidth", QVariant(0));
+    inputOutputTable->setProperty("margin", QVariant(0));
+    inputOutputTable->setProperty("dragAutoScroll", QVariant(false));
+    inputOutputTable->setProperty("numRows", QVariant(0));
+    inputOutputTable->setProperty("numCols", QVariant(2));
+    inputOutputTable->setProperty("showGrid", QVariant(true));
+    inputOutputTable->setProperty("rowMovingEnabled", QVariant(false));
+    inputOutputTable->setProperty("columnMovingEnabled", QVariant(false));
     addFileButton = new QPushButton(polygonToPolyLineGroup);
     addFileButton->setObjectName(QString::fromUtf8("addFileButton"));
     addFileButton->setGeometry(QRect(530, 10, 40, 32));
-    addFileButton->setIcon(QIcon(QString::fromUtf8("./icons/Plus32.png")));
+    addFileButton->setIcon(QIcon(QString::fromUtf8(":/icons/Plus32.png")));
     addFileButton->setAutoDefault(false);
     removeFileButton = new QPushButton(polygonToPolyLineGroup);
     removeFileButton->setObjectName(QString::fromUtf8("removeFileButton"));
     removeFileButton->setGeometry(QRect(530, 50, 40, 32));
-    removeFileButton->setIcon(QIcon(QString::fromUtf8("./icons/Minus32.png")));
+    removeFileButton->setIcon(QIcon(QString::fromUtf8(":/icons/Minus32.png")));
     removeFileButton->setAutoDefault(false);
     removeAllButton = new QPushButton(polygonToPolyLineGroup);
     removeAllButton->setObjectName(QString::fromUtf8("removeAllButton"));
     removeAllButton->setGeometry(QRect(530, 90, 40, 32));
-    removeAllButton->setIcon(QIcon(QString::fromUtf8("./icons/Delete32.png")));
+    removeAllButton->setIcon(QIcon(QString::fromUtf8(":/icons/Delete32.png")));
+    removeAllButton->setIconSize(QSize(16, 16));
     removeAllButton->setAutoDefault(false);
 
     retranslateUi(splitLineDialog);
@@ -102,7 +100,7 @@ public:
     void retranslateUi(QDialog *splitLineDialog)
     {
     splitLineDialog->setWindowTitle(QApplication::translate("splitLineDialog", "Split Lines", 0, QApplication::UnicodeUTF8));
-    polygonToPolyLineGroup->setTitle(QString());
+    polygonToPolyLineGroup->setProperty("title", QVariant(QString()));
     helpButton->setText(QApplication::translate("splitLineDialog", "Help", 0, QApplication::UnicodeUTF8));
     okButton->setText(QApplication::translate("splitLineDialog", "Run!", 0, QApplication::UnicodeUTF8));
     cancelButton->setText(QApplication::translate("splitLineDialog", "Close", 0, QApplication::UnicodeUTF8));

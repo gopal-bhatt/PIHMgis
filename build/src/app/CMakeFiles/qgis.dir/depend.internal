@@ -286,10 +286,11 @@ src/app/CMakeFiles/qgis.dir/moc_qgsmaptoolvertexedit.o
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/app/../../../src/app/qgsmaptooledit.h
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/app/../../../src/app/qgsmaptoolvertexedit.h
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/app/moc_qgsmaptoolvertexedit.cxx
+ /usr/include/Availability.h
+ /usr/include/AvailabilityInternal.h
  /usr/include/_types.h
  /usr/include/_xlocale.h
  /usr/include/alloca.h
- /usr/include/available.h
  /usr/include/i386/_structs.h
  /usr/include/i386/_types.h
  /usr/include/i386/endian.h
@@ -627,10 +628,11 @@ src/app/CMakeFiles/qgis.dir/main.o
  /Library/Frameworks/QtXml.framework/Headers/qdom.h
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/app/main.cpp
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/app/qgisapp.h
+ /usr/include/Availability.h
+ /usr/include/AvailabilityInternal.h
  /usr/include/_types.h
  /usr/include/_xlocale.h
  /usr/include/alloca.h
- /usr/include/available.h
  /usr/include/ctype.h
  /usr/include/fcntl.h
  /usr/include/getopt.h
@@ -943,6 +945,8 @@ src/app/CMakeFiles/qgis.dir/qgisapp.o
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/app/qgsrasterlayerproperties.h
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/app/qgsserversourceselect.h
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/app/qgssnappingdialog.h
+ /usr/include/Availability.h
+ /usr/include/AvailabilityInternal.h
  /usr/include/AvailabilityMacros.h
  /usr/include/_locale.h
  /usr/include/_structs.h
@@ -951,7 +955,6 @@ src/app/CMakeFiles/qgis.dir/qgisapp.o
  /usr/include/alloca.h
  /usr/include/architecture/i386/math.h
  /usr/include/architecture/ppc/math.h
- /usr/include/available.h
  /usr/include/ctype.h
  /usr/include/dlfcn.h
  /usr/include/errno.h
@@ -1525,10 +1528,11 @@ src/app/CMakeFiles/qgis.dir/qgsclipboard.o
  /Library/Frameworks/QtXml.framework/Headers/qdom.h
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/app/qgsclipboard.cpp
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/app/qgsclipboard.h
+ /usr/include/Availability.h
+ /usr/include/AvailabilityInternal.h
  /usr/include/_types.h
  /usr/include/_xlocale.h
  /usr/include/alloca.h
- /usr/include/available.h
  /usr/include/i386/_structs.h
  /usr/include/i386/_types.h
  /usr/include/i386/endian.h
@@ -1644,12 +1648,14 @@ src/app/CMakeFiles/qgis.dir/qgscustomprojectiondialog.o
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/app/qgisapp.h
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/app/qgscustomprojectiondialog.cpp
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/app/qgscustomprojectiondialog.h
+ /usr/include/Availability.h
+ /usr/include/AvailabilityInternal.h
+ /usr/include/AvailabilityMacros.h
  /usr/include/_types.h
  /usr/include/_xlocale.h
  /usr/include/alloca.h
  /usr/include/architecture/i386/math.h
  /usr/include/architecture/ppc/math.h
- /usr/include/available.h
  /usr/include/i386/_structs.h
  /usr/include/i386/_types.h
  /usr/include/i386/endian.h
@@ -1977,10 +1983,11 @@ src/app/CMakeFiles/qgis.dir/qgsmaptooladdfeature.o
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/app/qgsmaptooladdfeature.h
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/app/qgsmaptoolcapture.h
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/app/qgsmaptooledit.h
+ /usr/include/Availability.h
+ /usr/include/AvailabilityInternal.h
  /usr/include/_types.h
  /usr/include/_xlocale.h
  /usr/include/alloca.h
- /usr/include/available.h
  /usr/include/i386/_structs.h
  /usr/include/i386/_types.h
  /usr/include/i386/endian.h
@@ -2083,10 +2090,11 @@ src/app/CMakeFiles/qgis.dir/qgsmaptooladdisland.o
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/app/qgsmaptooladdisland.h
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/app/qgsmaptoolcapture.h
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/app/qgsmaptooledit.h
+ /usr/include/Availability.h
+ /usr/include/AvailabilityInternal.h
  /usr/include/_types.h
  /usr/include/_xlocale.h
  /usr/include/alloca.h
- /usr/include/available.h
  /usr/include/i386/_structs.h
  /usr/include/i386/_types.h
  /usr/include/i386/endian.h
@@ -2184,10 +2192,11 @@ src/app/CMakeFiles/qgis.dir/qgsmaptooladdvertex.o
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/app/qgsmaptooladdvertex.h
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/app/qgsmaptooledit.h
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/app/qgsmaptoolvertexedit.h
+ /usr/include/Availability.h
+ /usr/include/AvailabilityInternal.h
  /usr/include/_types.h
  /usr/include/_xlocale.h
  /usr/include/alloca.h
- /usr/include/available.h
  /usr/include/i386/_structs.h
  /usr/include/i386/_types.h
  /usr/include/i386/endian.h
@@ -2289,10 +2298,11 @@ src/app/CMakeFiles/qgis.dir/qgsmaptooladdring.o
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/app/qgsmaptooladdring.h
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/app/qgsmaptoolcapture.h
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/app/qgsmaptooledit.h
+ /usr/include/Availability.h
+ /usr/include/AvailabilityInternal.h
  /usr/include/_types.h
  /usr/include/_xlocale.h
  /usr/include/alloca.h
- /usr/include/available.h
  /usr/include/i386/_structs.h
  /usr/include/i386/_types.h
  /usr/include/i386/endian.h
@@ -2408,10 +2418,11 @@ src/app/CMakeFiles/qgis.dir/qgsmaptoolcapture.o
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/app/qgsmaptoolcapture.cpp
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/app/qgsmaptoolcapture.h
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/app/qgsmaptooledit.h
+ /usr/include/Availability.h
+ /usr/include/AvailabilityInternal.h
  /usr/include/_types.h
  /usr/include/_xlocale.h
  /usr/include/alloca.h
- /usr/include/available.h
  /usr/include/i386/_structs.h
  /usr/include/i386/_types.h
  /usr/include/i386/endian.h
@@ -2502,10 +2513,11 @@ src/app/CMakeFiles/qgis.dir/qgsmaptooldeletevertex.o
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/app/qgsmaptooldeletevertex.h
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/app/qgsmaptooledit.h
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/app/qgsmaptoolvertexedit.h
+ /usr/include/Availability.h
+ /usr/include/AvailabilityInternal.h
  /usr/include/_types.h
  /usr/include/_xlocale.h
  /usr/include/alloca.h
- /usr/include/available.h
  /usr/include/i386/_structs.h
  /usr/include/i386/_types.h
  /usr/include/i386/endian.h
@@ -2699,6 +2711,9 @@ src/app/CMakeFiles/qgis.dir/qgsmaptoolidentify.o
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/app/qgsidentifyresults.h
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/app/qgsmaptoolidentify.cpp
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/app/qgsmaptoolidentify.h
+ /usr/include/Availability.h
+ /usr/include/AvailabilityInternal.h
+ /usr/include/AvailabilityMacros.h
  /usr/include/_locale.h
  /usr/include/_structs.h
  /usr/include/_types.h
@@ -2706,7 +2721,6 @@ src/app/CMakeFiles/qgis.dir/qgsmaptoolidentify.o
  /usr/include/alloca.h
  /usr/include/architecture/i386/math.h
  /usr/include/architecture/ppc/math.h
- /usr/include/available.h
  /usr/include/ctype.h
  /usr/include/errno.h
  /usr/include/float.h
@@ -2828,10 +2842,11 @@ src/app/CMakeFiles/qgis.dir/qgsmaptoolmovefeature.o
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/app/qgsmaptooledit.h
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/app/qgsmaptoolmovefeature.cpp
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/app/qgsmaptoolmovefeature.h
+ /usr/include/Availability.h
+ /usr/include/AvailabilityInternal.h
  /usr/include/_types.h
  /usr/include/_xlocale.h
  /usr/include/alloca.h
- /usr/include/available.h
  /usr/include/ctype.h
  /usr/include/i386/_structs.h
  /usr/include/i386/_types.h
@@ -2932,10 +2947,11 @@ src/app/CMakeFiles/qgis.dir/qgsmaptoolmovevertex.o
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/app/qgsmaptoolmovevertex.cpp
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/app/qgsmaptoolmovevertex.h
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/app/qgsmaptoolvertexedit.h
+ /usr/include/Availability.h
+ /usr/include/AvailabilityInternal.h
  /usr/include/_types.h
  /usr/include/_xlocale.h
  /usr/include/alloca.h
- /usr/include/available.h
  /usr/include/i386/_structs.h
  /usr/include/i386/_types.h
  /usr/include/i386/endian.h
@@ -3154,10 +3170,11 @@ src/app/CMakeFiles/qgis.dir/qgsmaptoolvertexedit.o
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/app/qgsmaptooledit.h
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/app/qgsmaptoolvertexedit.cpp
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/app/qgsmaptoolvertexedit.h
+ /usr/include/Availability.h
+ /usr/include/AvailabilityInternal.h
  /usr/include/_types.h
  /usr/include/_xlocale.h
  /usr/include/alloca.h
- /usr/include/available.h
  /usr/include/ctype.h
  /usr/include/i386/_structs.h
  /usr/include/i386/_types.h
@@ -3720,6 +3737,9 @@ src/app/CMakeFiles/qgis.dir/qgsrasterlayerproperties.o
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/app/qgisapp.h
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/app/qgsrasterlayerproperties.cpp
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/app/qgsrasterlayerproperties.h
+ /usr/include/Availability.h
+ /usr/include/AvailabilityInternal.h
+ /usr/include/AvailabilityMacros.h
  /usr/include/_locale.h
  /usr/include/_structs.h
  /usr/include/_types.h
@@ -3727,7 +3747,6 @@ src/app/CMakeFiles/qgis.dir/qgsrasterlayerproperties.o
  /usr/include/alloca.h
  /usr/include/architecture/i386/math.h
  /usr/include/architecture/ppc/math.h
- /usr/include/available.h
  /usr/include/ctype.h
  /usr/include/errno.h
  /usr/include/float.h
@@ -4678,6 +4697,9 @@ src/app/CMakeFiles/qgis.dir/legend/qgslegend.o
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/app/legend/qgslegendlayerfilegroup.h
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/app/legend/qgslegendpropertygroup.h
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/app/legend/qgslegendsymbologyitem.h
+ /usr/include/Availability.h
+ /usr/include/AvailabilityInternal.h
+ /usr/include/AvailabilityMacros.h
  /usr/include/_locale.h
  /usr/include/_structs.h
  /usr/include/_types.h
@@ -4685,7 +4707,6 @@ src/app/CMakeFiles/qgis.dir/legend/qgslegend.o
  /usr/include/alloca.h
  /usr/include/architecture/i386/math.h
  /usr/include/architecture/ppc/math.h
- /usr/include/available.h
  /usr/include/ctype.h
  /usr/include/errno.h
  /usr/include/float.h
@@ -4857,6 +4878,9 @@ src/app/CMakeFiles/qgis.dir/legend/qgslegendlayer.o
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/app/legend/qgslegendlayerfile.h
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/app/legend/qgslegendlayerfilegroup.h
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/app/legend/qgslegendsymbologyitem.h
+ /usr/include/Availability.h
+ /usr/include/AvailabilityInternal.h
+ /usr/include/AvailabilityMacros.h
  /usr/include/_locale.h
  /usr/include/_structs.h
  /usr/include/_types.h
@@ -4864,7 +4888,6 @@ src/app/CMakeFiles/qgis.dir/legend/qgslegendlayer.o
  /usr/include/alloca.h
  /usr/include/architecture/i386/math.h
  /usr/include/architecture/ppc/math.h
- /usr/include/available.h
  /usr/include/ctype.h
  /usr/include/errno.h
  /usr/include/float.h
@@ -5026,6 +5049,9 @@ src/app/CMakeFiles/qgis.dir/legend/qgslegendlayerfile.o
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/app/legend/qgslegendlayer.h
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/app/legend/qgslegendlayerfile.cpp
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/app/legend/qgslegendlayerfile.h
+ /usr/include/Availability.h
+ /usr/include/AvailabilityInternal.h
+ /usr/include/AvailabilityMacros.h
  /usr/include/_locale.h
  /usr/include/_structs.h
  /usr/include/_types.h
@@ -5033,7 +5059,6 @@ src/app/CMakeFiles/qgis.dir/legend/qgslegendlayerfile.o
  /usr/include/alloca.h
  /usr/include/architecture/i386/math.h
  /usr/include/architecture/ppc/math.h
- /usr/include/available.h
  /usr/include/ctype.h
  /usr/include/errno.h
  /usr/include/float.h

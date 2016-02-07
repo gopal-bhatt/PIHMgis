@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading ui file 'mergefeaturesdialog.ui'
 **
-** Created: Fri Jun 19 02:00:51 2009
+** Created: Mon Sep 7 22:45:44 2009
 **      by: Qt User Interface Compiler version 4.3.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling ui file!
@@ -62,45 +62,41 @@ public:
     polygonToPolyLineGroup = new Q3ButtonGroup(mergeFeaturesDialog);
     polygonToPolyLineGroup->setObjectName(QString::fromUtf8("polygonToPolyLineGroup"));
     polygonToPolyLineGroup->setGeometry(QRect(15, 10, 580, 220));
-    QSizePolicy sizePolicy(static_cast<QSizePolicy::Policy>(0), static_cast<QSizePolicy::Policy>(5));
+    QSizePolicy sizePolicy(QSizePolicy::Fixed, QSizePolicy::Preferred);
     sizePolicy.setHorizontalStretch(0);
     sizePolicy.setVerticalStretch(0);
     sizePolicy.setHeightForWidth(polygonToPolyLineGroup->sizePolicy().hasHeightForWidth());
     polygonToPolyLineGroup->setSizePolicy(sizePolicy);
-    polygonToPolyLineGroup->setOrientation(Qt::Vertical);
     inputOutputTable = new Q3Table(polygonToPolyLineGroup);
     inputOutputTable->setObjectName(QString::fromUtf8("inputOutputTable"));
     inputOutputTable->setGeometry(QRect(10, 10, 510, 200));
-    inputOutputTable->setLineWidth(2);
-    inputOutputTable->setMidLineWidth(0);
-    inputOutputTable->setMargin(0);
-    inputOutputTable->setResizePolicy(Q3ScrollView::Default);
-    inputOutputTable->setDragAutoScroll(false);
-    inputOutputTable->setNumRows(0);
-    inputOutputTable->setNumCols(1);
-    inputOutputTable->setShowGrid(true);
-    inputOutputTable->setRowMovingEnabled(false);
-    inputOutputTable->setColumnMovingEnabled(false);
-    inputOutputTable->setFocusStyle(Q3Table::SpreadSheet);
+    inputOutputTable->setProperty("lineWidth", QVariant(2));
+    inputOutputTable->setProperty("midLineWidth", QVariant(0));
+    inputOutputTable->setProperty("margin", QVariant(0));
+    inputOutputTable->setProperty("dragAutoScroll", QVariant(false));
+    inputOutputTable->setProperty("numRows", QVariant(0));
+    inputOutputTable->setProperty("numCols", QVariant(1));
+    inputOutputTable->setProperty("showGrid", QVariant(true));
+    inputOutputTable->setProperty("rowMovingEnabled", QVariant(false));
+    inputOutputTable->setProperty("columnMovingEnabled", QVariant(false));
     addFileButton = new QPushButton(polygonToPolyLineGroup);
     addFileButton->setObjectName(QString::fromUtf8("addFileButton"));
     addFileButton->setGeometry(QRect(530, 10, 40, 32));
-    addFileButton->setIcon(QIcon(QString::fromUtf8("./icons/Plus32.png")));
+    addFileButton->setIcon(QIcon(QString::fromUtf8(":/icons/Plus32.png")));
     addFileButton->setAutoDefault(false);
     removeFileButton = new QPushButton(polygonToPolyLineGroup);
     removeFileButton->setObjectName(QString::fromUtf8("removeFileButton"));
     removeFileButton->setGeometry(QRect(530, 50, 40, 32));
-    removeFileButton->setIcon(QIcon(QString::fromUtf8("./icons/Minus32.png")));
+    removeFileButton->setIcon(QIcon(QString::fromUtf8(":/icons/Minus32.png")));
     removeFileButton->setAutoDefault(false);
     removeAllButton = new QPushButton(polygonToPolyLineGroup);
     removeAllButton->setObjectName(QString::fromUtf8("removeAllButton"));
     removeAllButton->setGeometry(QRect(530, 90, 40, 32));
-    removeAllButton->setIcon(QIcon(QString::fromUtf8("./icons/Delete32.png")));
+    removeAllButton->setIcon(QIcon(QString::fromUtf8(":/icons/Delete32.png")));
     removeAllButton->setAutoDefault(false);
     mergeFeaturesGroup = new Q3ButtonGroup(mergeFeaturesDialog);
     mergeFeaturesGroup->setObjectName(QString::fromUtf8("mergeFeaturesGroup"));
     mergeFeaturesGroup->setGeometry(QRect(14, 235, 581, 110));
-    mergeFeaturesGroup->setOrientation(Qt::Vertical);
     outputMergedFileButton = new QPushButton(mergeFeaturesGroup);
     outputMergedFileButton->setObjectName(QString::fromUtf8("outputMergedFileButton"));
     outputMergedFileButton->setGeometry(QRect(478, 14, 81, 32));
@@ -138,14 +134,14 @@ public:
     okButton->setText(QApplication::translate("mergeFeaturesDialog", "Run!", 0, QApplication::UnicodeUTF8));
     cancelButton->setText(QApplication::translate("mergeFeaturesDialog", "Close", 0, QApplication::UnicodeUTF8));
     helpButton->setText(QApplication::translate("mergeFeaturesDialog", "Help", 0, QApplication::UnicodeUTF8));
-    polygonToPolyLineGroup->setTitle(QString());
+    polygonToPolyLineGroup->setProperty("title", QVariant(QString()));
     addFileButton->setToolTip(QApplication::translate("mergeFeaturesDialog", "addFile", 0, QApplication::UnicodeUTF8));
     addFileButton->setText(QString());
     removeFileButton->setToolTip(QApplication::translate("mergeFeaturesDialog", "removeFile", 0, QApplication::UnicodeUTF8));
     removeFileButton->setText(QString());
     removeAllButton->setToolTip(QApplication::translate("mergeFeaturesDialog", "remove All Files", 0, QApplication::UnicodeUTF8));
     removeAllButton->setText(QString());
-    mergeFeaturesGroup->setTitle(QString());
+    mergeFeaturesGroup->setProperty("title", QVariant(QString()));
     outputMergedFileButton->setText(QApplication::translate("mergeFeaturesDialog", "Browse...", 0, QApplication::UnicodeUTF8));
     outputMergedFileLabel->setText(QApplication::translate("mergeFeaturesDialog", "Output Merged File", 0, QApplication::UnicodeUTF8));
     mergeFeaturesClusterToleranceLabel->setText(QApplication::translate("mergeFeaturesDialog", "Cluster Tolerance", 0, QApplication::UnicodeUTF8));

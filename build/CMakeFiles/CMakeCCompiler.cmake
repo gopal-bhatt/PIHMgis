@@ -27,4 +27,4 @@ ELSE(UNIX)
 ENDIF(UNIX)
 # save the size of void* in case where cache is removed
 # and the this file is still around
-SET(CMAKE_SIZEOF_VOID_P 4)
+SET(CMAKE_SIZEOF_VOID_P 8)
