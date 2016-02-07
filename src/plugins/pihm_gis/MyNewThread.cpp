@@ -31,6 +31,6 @@ void MyNewThread::kill()
 	cout<<"thread KILL invoked...\n";
 	*RunFlag=0;
 	cout<<"RunFlag set to "<<*RunFlag<<"\n";
-	wait(10);
-	terminate();
+	wait(20);
+	//terminate();
 }

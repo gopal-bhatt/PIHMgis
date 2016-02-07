@@ -237,7 +237,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>4</string>
+     <string>4.5</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_9">
@@ -276,7 +276,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>0.4</string>
+     <string>0</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="riverBed">
@@ -289,7 +289,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>4</string>
+     <string>4.5</string>
     </property>
    </widget>
    <widget class="Line" name="line">
@@ -302,7 +302,7 @@
      </rect>
     </property>
     <property name="lineWidth">
-     <number>0.4</number>
+     <number>0</number>
     </property>
     <property name="orientation">
      <enum>Qt::Horizontal</enum>
@@ -400,7 +400,7 @@
     <bool>true</bool>
    </property>
   </widget>
-  <widget class="QTextBrowser" name="textBrowser">
+  <widget class="Q3TextBrowser" name="textBrowser" native="true">
    <property name="geometry">
     <rect>
      <x>20</x>
@@ -412,6 +412,13 @@
   </widget>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>Q3TextBrowser</class>
+   <extends>QWidget</extends>
+   <header>q3textbrowser.h</header>
+  </customwidget>
+ </customwidgets>
  <resources/>
  <connections/>
 </ui>

@@ -34,6 +34,14 @@
 #include <QAction>
 #include <QToolBar>
 #include <QThread>
+#include <QDesktopServices>
+
+#include "Project/DefineProject/defineproject.h"
+#include "Project/OpenProject/openproject.h"
+#include "Project/CloseProject/closeproject.h"
+#include "Project/ImportProject/importproject.h"
+
+#include "RasterProcessing/RunAllRaster/runallraster.h"
 #include "RasterProcessing/FillPits/fillpits.h"
 #include "RasterProcessing/FlowGrid/flowgrid.h"
 #include "RasterProcessing/StreamGrid/streamgrid.h"
@@ -42,11 +50,13 @@
 #include "RasterProcessing/CatchmentGrid/catchmentgrid.h"
 #include "RasterProcessing/CatchmentPolygon/catchmentpolygon.h"
 
+#include "VectorProcessing/Dissolve/dissolve.h"
 #include "VectorProcessing/PolygonToPolyLine/polygontopolylinedialog.h"
 #include "VectorProcessing/SimplifyLine/simplifylinedialog.h"
 #include "VectorProcessing/SplitLine/splitlinedialog.h"
 #include "VectorProcessing/MergeFeatures/mergefeaturesdialog.h"
 
+#include "DomainDecomposition/RunAllDomain/runnalldomain.h"
 #include "DomainDecomposition/GenerateShapeTopology/generateshapetopology.h"
 #include "DomainDecomposition/RunTriangle/runtriangle.h"
 #include "DomainDecomposition/CreateTINs/createtins.h"
@@ -60,6 +70,7 @@
 #include "DataModelLoader/LCFile/lcfile.h"
 #include "DataModelLoader/CalibFile/calibfile.h"
 #include "DataModelLoader/InitFile/initfile.h"
+#include "DataModelLoader/IbcFile/ibcfile.h"
 
 #include "RunPIHM/runpihm.h"
 //#include "MyNewThread.h"
@@ -123,8 +134,18 @@ void PIHMgis::initGui()
   mQGisIface->addPluginMenu("&PIHMgis", mQActionPointer);
 */
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
+  QMenu* projMenu = new QMenu("&PIHMgis-Project");
+  projMenu->addAction("New Project", this, SLOT(runDefineProject()));
+  projMenu->addAction("Open Project", this, SLOT(runOpenProject()));
+  projMenu->addAction("Close Project", this, SLOT(runCloseProject()));
+  projMenu->addAction("Import Project", this, SLOT(runImportProject()));
+
+  QAction *projAction = new QAction("PIHMgis Project", this);
+  projAction->setMenu(projMenu);
+  mQGisIface->addToolBarIcon(projAction);
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
   QMenu* rastMenu = new QMenu("&Raster-Processing");//, mQGisIface->app());
-  rastMenu->addAction("Run All", this, SLOT(runFillPits()));
+  rastMenu->addAction("Run All", this, SLOT(runRunAllRaster()));
   rastMenu->addSeparator();
 //      rastMenu->addAction(QIcon(":/pihmgis/pihmgis.png"), "Fill Pits", this, SLOT(runFillPits()));
   rastMenu->addAction( "Fill Pits", this, SLOT(runFillPits()));
@@ -142,9 +163,10 @@ void PIHMgis::initGui()
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
   QMenu* vectMenu = new QMenu("&Vector-Processing");//, mQGisIface->app());
-  vectMenu->addAction( "Run All", this, SLOT(runDoNothing()));
+  QAction* vp0 = vectMenu->addAction( "Run All", this, SLOT(runDoNothing())); vp0->setDisabled(1);
   vectMenu->addSeparator();
   //vectMenu->addAction( "Input Files", this, SLOT(runShpFileInput()));
+  vectMenu->addAction( "Dissolve Polygon", this, SLOT(runDissolve()));
   vectMenu->addAction( "Polygon To Line", this, SLOT(runPolygonToPolyline()));
   vectMenu->addAction( "Simplify Line", this, SLOT(runSimplifyLine()));
   vectMenu->addAction( "Split Line", this, SLOT(runSplitLine()));
@@ -157,7 +179,7 @@ void PIHMgis::initGui()
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
   QMenu* domainMenu = new QMenu("&Domain-Decomposition");//??, mQGisIface->app());
-  domainMenu->addAction( "Run All", this, SLOT(runGenerateShapeTopology()));
+  domainMenu->addAction( "Run All", this, SLOT(runRunAllDomain()));
   domainMenu->addSeparator();
   domainMenu->addAction( "Read ShapeTopology", this, SLOT(runGenerateShapeTopology()));
   domainMenu->addAction( "Run Triangle", this, SLOT(runRunTriangle()));
@@ -170,7 +192,7 @@ void PIHMgis::initGui()
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
   QMenu* xtractMenu = new QMenu("&Extract-Data");//??, mQGisIface->app());
-  xtractMenu->addAction( "Run All", this, SLOT(runMshFile()));
+  QAction* xt0 = xtractMenu->addAction( "Run All", this, SLOT(runMshFile())); xt0->setDisabled(1);
   xtractMenu->addSeparator();
   xtractMenu->addAction( "Generate MeshFile", this, SLOT(runMshFile()));
   xtractMenu->addAction( "Generate AttFile", this, SLOT(runAttFile()));
@@ -181,6 +203,8 @@ void PIHMgis::initGui()
   xtractMenu->addAction( "Generate LCFile",   this, SLOT(runLCFile()));
   xtractMenu->addAction( "Generate CalibFile", this,SLOT(runCalibFile()));
   xtractMenu->addAction( "Generate InitFile", this, SLOT(runInitFile()));
+  xtractMenu->addAction( "Generate IBCFile", this, SLOT(runIBCFile()));
+  QAction* forc = xtractMenu->addAction( "Generate ForcFile", this, SLOT(runForcFile())); forc->setDisabled(1);
   QAction *xtractAction = new QAction("&DataModel Loader", this);
   xtractAction->setMenu(xtractMenu);
   mQGisIface->addToolBarIcon(xtractAction);
@@ -190,7 +214,7 @@ void PIHMgis::initGui()
   QMenu* pihmMenu = new QMenu("&PIHM");//??, mQGisIface->app());
   pihmMenu->addAction( "Run PIHM", this, SLOT(runPIHM()));
   //pihmMenu->addAction( "Run PIHM", this, SLOT(runDoNothing()));
-  QAction *pihmAction = new QAction("      PIHM      ", this);
+  QAction *pihmAction = new QAction("      &PIHM      ", this);
   pihmAction->setMenu(pihmMenu);
   mQGisIface->addToolBarIcon(pihmAction);
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -200,14 +224,14 @@ void PIHMgis::initGui()
   analysisMenu->addAction("TimeSeries Plots", this, SLOT(runTimeSeriesPlots()));
   analysisMenu->addAction("Spatial Plots", this, SLOT(runSpatialPlots()));
 
-  QAction *analysisAction = new QAction("      Analysis      ", this);
+  QAction *analysisAction = new QAction("      InfoViz      ", this);
   analysisAction->setMenu(analysisMenu);
   mQGisIface->addToolBarIcon(analysisAction);
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
   QMenu* helpMenu = new QMenu("&HELP");//??, mQGisIface->app());
-  helpMenu->addAction( "HelpContents", this, SLOT(runDoNothing()));
+  helpMenu->addAction( "Online Help", this, SLOT(runOnlineHelp()));
   helpMenu->addAction( "PIHMgis Homepage", this, SLOT(runHomePage()));
   helpMenu->addAction( "About", this, SLOT(runAbout()));
   QAction *helpAction = new QAction("      Help      ", this);
@@ -245,6 +269,33 @@ void PIHMgis::unload()
 }
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+void PIHMgis::runDefineProject(){
+	DefineProject *Dlg = new DefineProject;
+	//Dlg->setApplicationPointer(mQGisIface);
+	Dlg->show();
+}
+
+void PIHMgis::runOpenProject(){
+	OpenProject *Dlg = new OpenProject;
+	Dlg->show();
+}
+
+void PIHMgis::runCloseProject(){
+	CloseProject *Dlg = new CloseProject;
+	Dlg->show();
+}
+
+void PIHMgis::runImportProject(){
+	ImportProject *Dlg = new ImportProject;
+	Dlg->show();
+}
+
+void PIHMgis::runRunAllRaster(){
+	RunAllRaster* Dlg = new RunAllRaster;
+	Dlg->setApplicationPointer(mQGisIface);
+	Dlg->show();
+}
+
 void PIHMgis::runFillPits(){
         fillpitsDlg* Dlg = new fillpitsDlg; //(NULL,NULL,TRUE,0); //,"/opt3/helpDialog/poly.html","Help Caption");
         Dlg->setApplicationPointer(mQGisIface);//->app());
@@ -294,28 +345,43 @@ void PIHMgis::runCatchmentPolygon(){
         Dlg->show();
 }
 
+void PIHMgis::runDissolve(){
+	Dissolve* Dlg = new Dissolve;
+	Dlg->setApplicationPointer(mQGisIface);
+	Dlg->show();
+}
+
 void PIHMgis::runPolygonToPolyline(){
         polygonToPolyLineDialogDlg* Dlg = new polygonToPolyLineDialogDlg; //(NULL,NULL,TRUE,0); //,"/opt3/helpDialog/poly.html","Help Caption");
         //Dlg->setApplicationPointer(mQGisIface->app());
+	Dlg->setApplicationPointer(mQGisIface);
         Dlg->show();
 }    
 
 void PIHMgis::runSimplifyLine(){
         simplifyLineDialogDlg* Dlg = new simplifyLineDialogDlg; //(NULL,NULL,TRUE,0); //,"/opt3/helpDialog/poly.html","Help Caption");
         //Dlg->setApplicationPointer(mQGisIface->app());
+	Dlg->setApplicationPointer(mQGisIface);
         Dlg->show();
 }
 
 void PIHMgis::runSplitLine(){
         splitLineDialogDlg* Dlg = new splitLineDialogDlg; //(NULL,NULL,TRUE,0); //,"/opt3/helpDialog/poly.html","Help Caption");
         //Dlg->setApplicationPointer(mQGisIface->app());
+	Dlg->setApplicationPointer(mQGisIface);
         Dlg->show();
 }
 
 void PIHMgis::runVectorMerge(){
         mergeFeaturesDialogDlg* Dlg = new mergeFeaturesDialogDlg; //(NULL,NULL,TRUE,0); //,"/opt3/helpDialog/poly.html","Help Caption");
         //Dlg->setApplicationPointer(mQGisIface->app());
+	Dlg->setApplicationPointer(mQGisIface);
         Dlg->show();
+}
+
+void PIHMgis::runRunAllDomain(){
+	RunnAllDomain* Dlg = new RunnAllDomain;
+	Dlg->show();
 }
 
 void PIHMgis::runGenerateShapeTopology(){
@@ -333,6 +399,7 @@ void PIHMgis::runRunTriangle(){
 void PIHMgis::runCreateTINs(){
         createTINsDlg* Dlg = new createTINsDlg; //(NULL,NULL,TRUE,0); //,"/opt3/helpDialog/poly.html","Help Caption");
         //Dlg->setApplicationPointer(mQGisIface->app());
+	Dlg->setApplicationPointer(mQGisIface);
         Dlg->show();
 }
 
@@ -350,6 +417,7 @@ void PIHMgis::runAttFile(){
 
 void PIHMgis::runRivFile(){
         rivFileDlg* Dlg = new rivFileDlg;
+	Dlg->setApplicationPointer(mQGisIface);
         Dlg->show();
 }
 
@@ -384,6 +452,16 @@ void PIHMgis::runInitFile(){
 	Dlg->show();
 }
 
+void PIHMgis::runIBCFile(){
+	IbcFile* Dlg = new IbcFile;
+	Dlg->show();	
+}
+
+void PIHMgis::runForcFile(){
+
+}
+
+
 void PIHMgis::runPIHM(){
         runPIHMDlg* Dlg = new runPIHMDlg;
         Dlg->show();
@@ -394,6 +472,7 @@ void PIHMgis::runPIHM(){
 void PIHMgis::runSpatialPlots(){
         spatialPlotDlg* Dlg = new spatialPlotDlg;
 //??        Dlg->setApplicationPointer(mQGisApp);
+	Dlg->setApplicationPointer(mQGisIface);
         Dlg->show();
 }
 
@@ -408,7 +487,13 @@ void PIHMgis::runAbout(){
 } 
 
 void PIHMgis::runHomePage(){
+	QUrl url("http://www.pihm.psu.edu");
+	QDesktopServices::openUrl( url);
+}
 
+void PIHMgis::runOnlineHelp(){
+        QUrl url("http://www.pihm.psu.edu/pihmgis_documents.html");
+        QDesktopServices::openUrl( url);
 }
 //////////////////////////////////////////////////////////////////////////
 //

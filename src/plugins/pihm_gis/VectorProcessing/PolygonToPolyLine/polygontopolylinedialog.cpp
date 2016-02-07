@@ -4,6 +4,8 @@
 #include "../../pihmLIBS/polygonToPolyline.h"
 #include "../../pihmLIBS/shapefil.h"
 
+#include "../../pihmLIBS/fileStruct.h"
+
 #include <fstream>
 using namespace std;
 
@@ -16,11 +18,45 @@ polygonToPolyLineDialogDlg::polygonToPolyLineDialogDlg(QWidget *parent)
 	connect(okButton, SIGNAL(clicked()), this, SLOT(run()));
 	connect(helpButton, SIGNAL(clicked()), this, SLOT(help()));
 	connect(cancelButton, SIGNAL(clicked()), this, SLOT(close()));
+
+	QStringList labels;
+	labels << "Input Polygons" << "Output Polylines";
+	inputOutputTable->setColumnLabels(labels);
+
+	QString projDir, projFile;
+        QFile tFile(QDir::homePath()+"/project.txt");
+        tFile.open(QIODevice::ReadOnly | QIODevice::Text);
+        QTextStream tin(&tFile);
+        projDir  = tin.readLine();
+        projFile = tin.readLine();
+	tFile.close();
+        cout << qPrintable(projDir);
+
+	QString tempStr; tempStr=readLineNumber(qPrintable(projFile), 23);
+	if(tempStr.length()>1){
+		int rows = inputOutputTable->numRows();
+		inputOutputTable->insertRows(rows);
+		Q3TableItem *tempItem;
+		tempItem = new Q3TableItem(inputOutputTable, Q3TableItem::Always, tempStr);
+		inputOutputTable->setItem(rows, 0, tempItem);
+		tempStr.truncate(tempStr.length()-4); tempStr.append("_PolyLine.shp");
+		tempItem = new Q3TableItem(inputOutputTable, Q3TableItem::Always, tempStr);
+		inputOutputTable->setItem(rows, 1, tempItem);
+	}
 }
 
 void polygonToPolyLineDialogDlg::addBrowse()
 {
-	QStringList temp = QFileDialog::getOpenFileNames(this, "Choose File", "~/","Internal Bounds File(*.shp *.SHP)");
+	QString projDir, projFile;
+        QFile tFile(QDir::homePath()+"/project.txt");
+        tFile.open(QIODevice::ReadOnly | QIODevice::Text);
+        QTextStream tin(&tFile);
+        projDir  = tin.readLine();
+        projFile = tin.readLine();
+	tFile.close();
+        cout << qPrintable(projDir);
+
+	QStringList temp = QFileDialog::getOpenFileNames(this, "Choose File", projDir+"/VectorProcessing","Internal Bounds File(*.shp *.SHP)");
         QString str = "";
         QString str1 = "";
 
@@ -72,8 +108,21 @@ void polygonToPolyLineDialogDlg::removeAllBrowse()
 
 void polygonToPolyLineDialogDlg::run()
 {
+	QString projDir, projFile;
+        QFile tFile(QDir::homePath()+"/project.txt");
+        tFile.open(QIODevice::ReadOnly | QIODevice::Text);
+        QTextStream tin(&tFile);
+        projDir  = tin.readLine();
+        projFile = tin.readLine();
+	tFile.close();
+        cout << qPrintable(projDir);
 
-	QString logFileName("/tmp/log.html");
+	writeLineNumber(qPrintable(projFile), 24, qPrintable(inputOutputTable->text(0,0)));
+	writeLineNumber(qPrintable(projFile), 25, qPrintable(inputOutputTable->text(0,1)));
+
+	QDir dir = QDir::home();
+        QString home = dir.homePath();
+	QString logFileName(qPrintable(home+"/log.html"));
 	ofstream log;
 	log.open(qPrintable(logFileName));
 	log<<"<html><body><font size=3 color=black><p> Verifying Files...</p></font></body></html>";
@@ -154,6 +203,11 @@ void polygonToPolyLineDialogDlg::run()
 					QApplication::processEvents();
 
 	                                polygonToPolyline(qPrintable(polygonFileShp), qPrintable(polygonFileDbf), qPrintable(polyLineFileShp), qPrintable(polyLineFileDbf));
+					QString myFileNameQString = polyLineFileShp;
+		                        QFileInfo myFileInfo(myFileNameQString);
+                		        QString myBaseNameQString = myFileInfo.baseName();
+                        		QString provider = "OGR";
+		                        applicationPointer->addVectorLayer(myFileNameQString, myBaseNameQString, "ogr");
 
 					log.open(qPrintable(logFileName), ios::app);
 					log<<" Done!</p>";
@@ -170,4 +224,8 @@ void polygonToPolyLineDialogDlg::help()
 {
 	helpDialog* hlpDlg = new helpDialog(this, "Polygon To Polyline", 1, "helpFiles/polygonToPolyLineDialog.html", "Help :: Polygon To Polyline");
 	hlpDlg->show();	
+}
+
+void polygonToPolyLineDialogDlg::setApplicationPointer(QgisInterface* appPtr){
+    applicationPointer = appPtr;
 }

@@ -54,8 +54,6 @@ src/plugins/georeferencer/CMakeFiles/georefplugin.dir/moc_qgspointdialog.o: /Lib
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/moc_qgspointdialog.o: /Library/Frameworks/QtXml.framework/Headers/qdom.h
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/moc_qgspointdialog.o: src/plugins/georeferencer/../../../../src/plugins/georeferencer/qgspointdialog.h
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/moc_qgspointdialog.o: src/plugins/georeferencer/moc_qgspointdialog.cxx
-src/plugins/georeferencer/CMakeFiles/georefplugin.dir/moc_qgspointdialog.o: /usr/include/Availability.h
-src/plugins/georeferencer/CMakeFiles/georefplugin.dir/moc_qgspointdialog.o: /usr/include/AvailabilityInternal.h
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/moc_qgspointdialog.o: /usr/include/AvailabilityMacros.h
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/moc_qgspointdialog.o: /usr/include/_locale.h
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/moc_qgspointdialog.o: /usr/include/_structs.h
@@ -150,8 +148,6 @@ src/plugins/georeferencer/CMakeFiles/georefplugin.dir/moc_qgsgeorefwarpoptionsdi
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/moc_qgsgeorefwarpoptionsdialog.o: src/plugins/georeferencer/../../../../src/plugins/georeferencer/qgsgeorefwarpoptionsdialog.h
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/moc_qgsgeorefwarpoptionsdialog.o: src/plugins/georeferencer/../../../../src/plugins/georeferencer/qgsimagewarper.h
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/moc_qgsgeorefwarpoptionsdialog.o: src/plugins/georeferencer/moc_qgsgeorefwarpoptionsdialog.cxx
-src/plugins/georeferencer/CMakeFiles/georefplugin.dir/moc_qgsgeorefwarpoptionsdialog.o: /usr/include/Availability.h
-src/plugins/georeferencer/CMakeFiles/georefplugin.dir/moc_qgsgeorefwarpoptionsdialog.o: /usr/include/AvailabilityInternal.h
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/moc_qgsgeorefwarpoptionsdialog.o: /usr/include/AvailabilityMacros.h
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/moc_qgsgeorefwarpoptionsdialog.o: /usr/include/_locale.h
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/moc_qgsgeorefwarpoptionsdialog.o: /usr/include/_structs.h
@@ -259,8 +255,6 @@ src/plugins/georeferencer/CMakeFiles/georefplugin.dir/plugin.o: /Library/Framewo
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/plugin.o: ../src/plugins/georeferencer/plugin.cpp
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/plugin.o: ../src/plugins/georeferencer/plugin.h
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/plugin.o: ../src/plugins/georeferencer/plugingui.h
-src/plugins/georeferencer/CMakeFiles/georefplugin.dir/plugin.o: /usr/include/Availability.h
-src/plugins/georeferencer/CMakeFiles/georefplugin.dir/plugin.o: /usr/include/AvailabilityInternal.h
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/plugin.o: /usr/include/AvailabilityMacros.h
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/plugin.o: /usr/include/_locale.h
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/plugin.o: /usr/include/_structs.h
@@ -386,8 +380,6 @@ src/plugins/georeferencer/CMakeFiles/georefplugin.dir/plugingui.o: ../src/plugin
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/plugingui.o: ../src/plugins/georeferencer/qgsgeorefdescriptiondialog.h
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/plugingui.o: ../src/plugins/georeferencer/qgsleastsquares.h
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/plugingui.o: ../src/plugins/georeferencer/qgspointdialog.h
-src/plugins/georeferencer/CMakeFiles/georefplugin.dir/plugingui.o: /usr/include/Availability.h
-src/plugins/georeferencer/CMakeFiles/georefplugin.dir/plugingui.o: /usr/include/AvailabilityInternal.h
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/plugingui.o: /usr/include/AvailabilityMacros.h
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/plugingui.o: /usr/include/_locale.h
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/plugingui.o: /usr/include/_structs.h
@@ -491,8 +483,6 @@ src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsimagewarper.o: /Library
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsimagewarper.o: /Library/Frameworks/QtCore.framework/Headers/qstring.h
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsimagewarper.o: ../src/plugins/georeferencer/qgsimagewarper.cpp
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsimagewarper.o: ../src/plugins/georeferencer/qgsimagewarper.h
-src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsimagewarper.o: /usr/include/Availability.h
-src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsimagewarper.o: /usr/include/AvailabilityInternal.h
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsimagewarper.o: /usr/include/AvailabilityMacros.h
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsimagewarper.o: /usr/include/_locale.h
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsimagewarper.o: /usr/include/_structs.h
@@ -565,8 +555,6 @@ src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsleastsquares.o: /Librar
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsleastsquares.o: /Library/Frameworks/QtCore.framework/Headers/qstring.h
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsleastsquares.o: ../src/plugins/georeferencer/qgsleastsquares.cpp
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsleastsquares.o: ../src/plugins/georeferencer/qgsleastsquares.h
-src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsleastsquares.o: /usr/include/Availability.h
-src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsleastsquares.o: /usr/include/AvailabilityInternal.h
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsleastsquares.o: /usr/include/_types.h
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsleastsquares.o: /usr/include/_xlocale.h
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsleastsquares.o: /usr/include/alloca.h
@@ -743,8 +731,6 @@ src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgspointdialog.o: ../src/p
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgspointdialog.o: ../src/plugins/georeferencer/qgsleastsquares.h
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgspointdialog.o: ../src/plugins/georeferencer/qgspointdialog.cpp
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgspointdialog.o: ../src/plugins/georeferencer/qgspointdialog.h
-src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgspointdialog.o: /usr/include/Availability.h
-src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgspointdialog.o: /usr/include/AvailabilityInternal.h
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgspointdialog.o: /usr/include/AvailabilityMacros.h
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgspointdialog.o: /usr/include/_locale.h
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgspointdialog.o: /usr/include/_structs.h
@@ -831,8 +817,6 @@ src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsgeorefwarpoptionsdialog
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsgeorefwarpoptionsdialog.o: ../src/plugins/georeferencer/qgsgeorefwarpoptionsdialog.cpp
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsgeorefwarpoptionsdialog.o: ../src/plugins/georeferencer/qgsgeorefwarpoptionsdialog.h
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsgeorefwarpoptionsdialog.o: ../src/plugins/georeferencer/qgsimagewarper.h
-src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsgeorefwarpoptionsdialog.o: /usr/include/Availability.h
-src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsgeorefwarpoptionsdialog.o: /usr/include/AvailabilityInternal.h
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsgeorefwarpoptionsdialog.o: /usr/include/AvailabilityMacros.h
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsgeorefwarpoptionsdialog.o: /usr/include/_locale.h
 src/plugins/georeferencer/CMakeFiles/georefplugin.dir/qgsgeorefwarpoptionsdialog.o: /usr/include/_structs.h

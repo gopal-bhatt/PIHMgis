@@ -42,8 +42,6 @@ src/providers/memory/CMakeFiles/memoryprovider.dir/qgsmemoryprovider.o: /Library
 src/providers/memory/CMakeFiles/memoryprovider.dir/qgsmemoryprovider.o: /Library/Frameworks/QtXml.framework/Headers/qdom.h
 src/providers/memory/CMakeFiles/memoryprovider.dir/qgsmemoryprovider.o: ../src/providers/memory/qgsmemoryprovider.cpp
 src/providers/memory/CMakeFiles/memoryprovider.dir/qgsmemoryprovider.o: ../src/providers/memory/qgsmemoryprovider.h
-src/providers/memory/CMakeFiles/memoryprovider.dir/qgsmemoryprovider.o: /usr/include/Availability.h
-src/providers/memory/CMakeFiles/memoryprovider.dir/qgsmemoryprovider.o: /usr/include/AvailabilityInternal.h
 src/providers/memory/CMakeFiles/memoryprovider.dir/qgsmemoryprovider.o: /usr/include/_types.h
 src/providers/memory/CMakeFiles/memoryprovider.dir/qgsmemoryprovider.o: /usr/include/_xlocale.h
 src/providers/memory/CMakeFiles/memoryprovider.dir/qgsmemoryprovider.o: /usr/include/alloca.h

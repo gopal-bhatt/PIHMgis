@@ -1,0 +1,130 @@
+/********************************************************************************
+** Form generated from reading ui file 'defineproject.ui'
+**
+** Created: Tue Jul 27 23:38:16 2010
+**      by: Qt User Interface Compiler version 4.3.2
+**
+** WARNING! All changes made in this file will be lost when recompiling ui file!
+********************************************************************************/
+
+#ifndef UI_DEFINEPROJECT_H
+#define UI_DEFINEPROJECT_H
+
+#include <QtCore/QVariant>
+#include <QtGui/QAction>
+#include <QtGui/QApplication>
+#include <QtGui/QButtonGroup>
+#include <QtGui/QDialog>
+#include <QtGui/QGroupBox>
+#include <QtGui/QLabel>
+#include <QtGui/QLineEdit>
+#include <QtGui/QPushButton>
+
+class Ui_DefineProject
+{
+public:
+    QLabel *label_2;
+    QGroupBox *groupBox;
+    QPushButton *pushButtonHelp;
+    QPushButton *pushButtonClose;
+    QPushButton *pushButtonSave;
+    QGroupBox *groupBox_2;
+    QLabel *label_3;
+    QLineEdit *lineEditFile;
+    QPushButton *pushButtonFile;
+    QLabel *label;
+    QLineEdit *lineEditFolder;
+    QLabel *label_4;
+    QLineEdit *lineEditFile2;
+
+    void setupUi(QDialog *DefineProject)
+    {
+    if (DefineProject->objectName().isEmpty())
+        DefineProject->setObjectName(QString::fromUtf8("DefineProject"));
+    DefineProject->resize(600, 317);
+    label_2 = new QLabel(DefineProject);
+    label_2->setObjectName(QString::fromUtf8("label_2"));
+    label_2->setGeometry(QRect(165, 16, 271, 21));
+    label_2->setAlignment(Qt::AlignCenter);
+    groupBox = new QGroupBox(DefineProject);
+    groupBox->setObjectName(QString::fromUtf8("groupBox"));
+    groupBox->setGeometry(QRect(10, 236, 581, 61));
+    pushButtonHelp = new QPushButton(groupBox);
+    pushButtonHelp->setObjectName(QString::fromUtf8("pushButtonHelp"));
+    pushButtonHelp->setGeometry(QRect(12, 18, 113, 32));
+    pushButtonClose = new QPushButton(groupBox);
+    pushButtonClose->setObjectName(QString::fromUtf8("pushButtonClose"));
+    pushButtonClose->setGeometry(QRect(312, 18, 113, 32));
+    pushButtonSave = new QPushButton(groupBox);
+    pushButtonSave->setObjectName(QString::fromUtf8("pushButtonSave"));
+    pushButtonSave->setGeometry(QRect(436, 18, 131, 32));
+    groupBox_2 = new QGroupBox(DefineProject);
+    groupBox_2->setObjectName(QString::fromUtf8("groupBox_2"));
+    groupBox_2->setGeometry(QRect(10, 56, 581, 161));
+    label_3 = new QLabel(groupBox_2);
+    label_3->setObjectName(QString::fromUtf8("label_3"));
+    label_3->setGeometry(QRect(15, 20, 141, 31));
+    lineEditFile = new QLineEdit(groupBox_2);
+    lineEditFile->setObjectName(QString::fromUtf8("lineEditFile"));
+    lineEditFile->setGeometry(QRect(165, 24, 281, 22));
+    pushButtonFile = new QPushButton(groupBox_2);
+    pushButtonFile->setObjectName(QString::fromUtf8("pushButtonFile"));
+    pushButtonFile->setGeometry(QRect(454, 20, 113, 32));
+    pushButtonFile->setDefault(true);
+    label = new QLabel(groupBox_2);
+    label->setObjectName(QString::fromUtf8("label"));
+    label->setGeometry(QRect(15, 60, 131, 51));
+    lineEditFolder = new QLineEdit(groupBox_2);
+    lineEditFolder->setObjectName(QString::fromUtf8("lineEditFolder"));
+    lineEditFolder->setEnabled(false);
+    lineEditFolder->setGeometry(QRect(165, 74, 281, 22));
+    label_4 = new QLabel(groupBox_2);
+    label_4->setObjectName(QString::fromUtf8("label_4"));
+    label_4->setGeometry(QRect(16, 120, 101, 17));
+    lineEditFile2 = new QLineEdit(groupBox_2);
+    lineEditFile2->setObjectName(QString::fromUtf8("lineEditFile2"));
+    lineEditFile2->setEnabled(false);
+    lineEditFile2->setGeometry(QRect(165, 118, 281, 22));
+    lineEditFile2->setReadOnly(true);
+
+    retranslateUi(DefineProject);
+
+    QMetaObject::connectSlotsByName(DefineProject);
+    } // setupUi
+
+    void retranslateUi(QDialog *DefineProject)
+    {
+    DefineProject->setWindowTitle(QApplication::translate("DefineProject", "New PIHMgis Project", 0, QApplication::UnicodeUTF8));
+    label_2->setText(QApplication::translate("DefineProject", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Lucida Grande'; font-size:13pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:18pt;\">Create a New PIHMgis Project</span></p></body></html>", 0, QApplication::UnicodeUTF8));
+    groupBox->setTitle(QString());
+    pushButtonHelp->setText(QApplication::translate("DefineProject", "Help", 0, QApplication::UnicodeUTF8));
+    pushButtonClose->setText(QApplication::translate("DefineProject", "Close", 0, QApplication::UnicodeUTF8));
+    pushButtonSave->setToolTip(QApplication::translate("DefineProject", "Note: the dialog will close by itself after execution", 0, QApplication::UnicodeUTF8));
+    pushButtonSave->setText(QApplication::translate("DefineProject", " Create Project ", 0, QApplication::UnicodeUTF8));
+    groupBox_2->setTitle(QString());
+    label_3->setToolTip(QApplication::translate("DefineProject", "It is recommended that you choose PROJECT FOLDER\n"
+"for the Watershed you want to model", 0, QApplication::UnicodeUTF8));
+    label_3->setText(QApplication::translate("DefineProject", "Project Home Folder\n"
+"(Working Directory)", 0, QApplication::UnicodeUTF8));
+    pushButtonFile->setText(QApplication::translate("DefineProject", "Browse...", 0, QApplication::UnicodeUTF8));
+    label->setToolTip(QApplication::translate("DefineProject", "This will be your HOME Directory for the PIHMgis.\n"
+"Output files & Folders will be created relative to this path.", 0, QApplication::UnicodeUTF8));
+    label->setText(QApplication::translate("DefineProject", "PIHMgis\n"
+"Home Folder", 0, QApplication::UnicodeUTF8));
+    label_4->setToolTip(QApplication::translate("DefineProject", "This is your new project file that will be created.\n"
+"Choose this file if you need to open the project later.", 0, QApplication::UnicodeUTF8));
+    label_4->setText(QApplication::translate("DefineProject", "Project File", 0, QApplication::UnicodeUTF8));
+    Q_UNUSED(DefineProject);
+    } // retranslateUi
+
+};
+
+namespace Ui {
+    class DefineProject: public Ui_DefineProject {};
+} // namespace Ui
+
+#endif // UI_DEFINEPROJECT_H

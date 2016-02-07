@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading ui file 'initfile.ui'
 **
-** Created: Sun Sep 13 02:50:18 2009
+** Created: Tue Jul 27 23:38:18 2010
 **      by: Qt User Interface Compiler version 4.3.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling ui file!
@@ -10,6 +10,7 @@
 #ifndef UI_INITFILE_H
 #define UI_INITFILE_H
 
+#include <Qt3Support/Q3TextBrowser>
 #include <QtCore/QVariant>
 #include <QtGui/QAction>
 #include <QtGui/QApplication>
@@ -20,7 +21,6 @@
 #include <QtGui/QLabel>
 #include <QtGui/QLineEdit>
 #include <QtGui/QPushButton>
-#include <QtGui/QTextBrowser>
 
 class Ui_InitFile
 {
@@ -55,7 +55,7 @@ public:
     QPushButton *pushButton_Help;
     QPushButton *pushButton_Close;
     QPushButton *pushButton_Run;
-    QTextBrowser *textBrowser;
+    Q3TextBrowser *textBrowser;
 
     void setupUi(QDialog *InitFile)
     {
@@ -156,7 +156,7 @@ public:
     pushButton_Run->setObjectName(QString::fromUtf8("pushButton_Run"));
     pushButton_Run->setGeometry(QRect(475, 298, 113, 32));
     pushButton_Run->setDefault(true);
-    textBrowser = new QTextBrowser(InitFile);
+    textBrowser = new Q3TextBrowser(InitFile);
     textBrowser->setObjectName(QString::fromUtf8("textBrowser"));
     textBrowser->setGeometry(QRect(20, 337, 561, 101));
 
@@ -183,11 +183,11 @@ public:
     snow->setText(QApplication::translate("InitFile", "0", 0, QApplication::UnicodeUTF8));
     surface->setText(QApplication::translate("InitFile", "0", 0, QApplication::UnicodeUTF8));
     unsaturated->setText(QApplication::translate("InitFile", "0", 0, QApplication::UnicodeUTF8));
-    saturated->setText(QApplication::translate("InitFile", "4", 0, QApplication::UnicodeUTF8));
+    saturated->setText(QApplication::translate("InitFile", "4.5", 0, QApplication::UnicodeUTF8));
     label_9->setText(QApplication::translate("InitFile", "River", 0, QApplication::UnicodeUTF8));
     label_10->setText(QApplication::translate("InitFile", "River Bed", 0, QApplication::UnicodeUTF8));
-    river->setText(QApplication::translate("InitFile", "0.4", 0, QApplication::UnicodeUTF8));
-    riverBed->setText(QApplication::translate("InitFile", "4", 0, QApplication::UnicodeUTF8));
+    river->setText(QApplication::translate("InitFile", "0", 0, QApplication::UnicodeUTF8));
+    riverBed->setText(QApplication::translate("InitFile", "4.5", 0, QApplication::UnicodeUTF8));
     groupBox_3->setTitle(QApplication::translate("InitFile", "Output", 0, QApplication::UnicodeUTF8));
     label_8->setText(QApplication::translate("InitFile", "init File", 0, QApplication::UnicodeUTF8));
     pushButton_InitFile->setText(QApplication::translate("InitFile", "Browse...", 0, QApplication::UnicodeUTF8));

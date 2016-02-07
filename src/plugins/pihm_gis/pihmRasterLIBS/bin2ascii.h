@@ -1,3 +1,6 @@
+#ifndef BIN2ASCII
+#define BIN2ASCII
+
 #include <iostream>
 #include <gdal.h>
 #include <gdal_priv.h>
@@ -7,10 +10,9 @@
 using namespace std;
 
 
-double readValueB2A ( void *data, GDALDataType type, int index );
+//double readValueB2A ( void *data, GDALDataType type, int index );
 
-
-void bin2ascii(char *binFile, char *asciiFile){
+void bin2ascii(char *binFile, char *asciiFile);/*{
     GDALDataset *layer;
     GDALAllRegister();
     layer = (GDALDataset *)GDALOpen(binFile, GA_ReadOnly);
@@ -63,10 +65,10 @@ void bin2ascii(char *binFile, char *asciiFile){
 	cout<<"Bin2Ascii.. Done!\n";
 	outFile.close();
 	//getchar(); getchar();
-}
+}*/
 
 
-
+/*
 double readValueB2A ( void *data, GDALDataType type, int index )
 {
   double val;
@@ -99,5 +101,6 @@ double readValueB2A ( void *data, GDALDataType type, int index )
     cout<<"Data type "<<type<<" is not supported";
   }
   return 0.0;
-}
+}*/
 
+#endif

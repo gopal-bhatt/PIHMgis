@@ -7,7 +7,9 @@
 #include "../../pihmRasterLIBS/streamSegmentation.h"
 
 #include "../../pihmLIBS/helpDialog/helpdialog.h"
+#include "../../pihmLIBS/fileStruct.h"
 
+#include <iostream>
 #include <fstream>
 using namespace std;
 
@@ -20,23 +22,67 @@ LinkGridDlg::LinkGridDlg(QWidget *parent)
 	connect(runButton, SIGNAL(clicked()), this, SLOT(run()));
 	connect(helpButton, SIGNAL(clicked()), this, SLOT(help()));
 	connect(closeButton, SIGNAL(clicked()), this, SLOT(close()));
+
+	QString projDir, projFile;
+        QFile tFile(QDir::homePath()+"/project.txt");
+        tFile.open(QIODevice::ReadOnly | QIODevice::Text);
+        QTextStream tin(&tFile);
+        projDir  = tin.readLine();
+        projFile = tin.readLine();
+	tFile.close();
+        cout << qPrintable(projDir);
+
+	inputSTRFileLineEdit->setText(readLineNumber(qPrintable(projFile), 9));
+	inputFDRFileLineEdit->setText(readLineNumber(qPrintable(projFile), 6));
+
+	QString qstrThresh(readLineNumber(qPrintable(projFile), 10));
+	outputFileLineEdit->setText(projDir+"/RasterProcessing/lnk"+qstrThresh+".asc");
 }
 
 void LinkGridDlg::inputSTRBrowse()
 {
-	QString str = QFileDialog::getOpenFileName(this, "Choose File", "~/","Stream Grid File(*.adf *.asc)");
+	QString projDir, projFile;
+        QFile tFile(QDir::homePath()+"/project.txt");
+        tFile.open(QIODevice::ReadOnly | QIODevice::Text);
+        QTextStream tin(&tFile);
+        projDir  = tin.readLine();
+        projFile = tin.readLine();
+	tFile.close();
+        cout << qPrintable(projDir);
+
+	QString str = QFileDialog::getOpenFileName(this, "Choose File", projDir+"/RasterProcessing","Stream Grid File(*.adf *.asc)");
 	inputSTRFileLineEdit->setText(str);
+
+	
 }
 
 void LinkGridDlg::inputFDRBrowse()
 {
-        QString str = QFileDialog::getOpenFileName(this, "Choose File", "~/","Flow Dir Grid File(*.adf *.asc)");
+	QString projDir, projFile;
+        QFile tFile(QDir::homePath()+"/project.txt");
+        tFile.open(QIODevice::ReadOnly | QIODevice::Text);
+        QTextStream tin(&tFile);
+        projDir  = tin.readLine();
+        projFile = tin.readLine();
+	tFile.close();
+        cout << qPrintable(projDir);
+
+        QString str = QFileDialog::getOpenFileName(this, "Choose File", projDir+"/RasterProcessing","Flow Dir Grid File(*.adf *.asc)");
         inputFDRFileLineEdit->setText(str);
 }
 
 void LinkGridDlg::outputBrowse()
 {
-	QString temp = QFileDialog::getSaveFileName(this, "Choose File", "~/","Link Grid File(*.adf *.asc)");
+	QString projDir, projFile;
+        QFile tFile(QDir::homePath()+"/project.txt");
+        tFile.open(QIODevice::ReadOnly | QIODevice::Text);
+        QTextStream tin(&tFile);
+        projDir  = tin.readLine();
+        projFile = tin.readLine();
+	tFile.close();
+        cout << qPrintable(projDir);
+
+	QString temp = QFileDialog::getSaveFileName(this, "Choose File", projDir+"/RasterProcessing","Link Grid File(*.adf *.asc)");
 	QString tmp = temp;
 	if(!(tmp.toLower()).endsWith(".asc")){
         tmp.append(".asc");
@@ -49,7 +95,21 @@ void LinkGridDlg::outputBrowse()
 
 void LinkGridDlg::run()
 {
-	QString logFileName("/tmp/log.html");
+	QString projDir, projFile;
+        QFile tFile(QDir::homePath()+"/project.txt");
+        tFile.open(QIODevice::ReadOnly | QIODevice::Text);
+        QTextStream tin(&tFile);
+        projDir  = tin.readLine();
+        projFile = tin.readLine();
+	tFile.close();
+        cout << qPrintable(projDir);
+        writeLineNumber(qPrintable(projFile), 11, qPrintable(inputSTRFileLineEdit->text()));
+        writeLineNumber(qPrintable(projFile), 12, qPrintable(inputFDRFileLineEdit->text()));
+        writeLineNumber(qPrintable(projFile), 13, qPrintable(outputFileLineEdit->text()));
+
+	QDir dir = QDir::home();
+        QString home = dir.homePath();
+	QString logFileName(qPrintable(home+"/log.html"));
 	ofstream log;
 	log.open(qPrintable(logFileName));
 	log<<"<html><body><font size=3 color=black><p> Verifying Files...</p></font></body></html>";

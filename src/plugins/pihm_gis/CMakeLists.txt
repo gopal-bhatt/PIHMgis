@@ -4,7 +4,16 @@
 SET (pihmgis_SRCS
      pihmgis.cpp
      pihmgisgui.cpp
+	Project/DefineProject/defineproject.cpp
+	Project/OpenProject/openproject.cpp
+	Project/CloseProject/closeproject.cpp
+	Project/ImportProject/importproject.cpp
+	RasterProcessing/RunAllRaster/runallraster.cpp
 	pihmLIBS/helpDialog/helpdialog.cpp
+	pihmLIBS/fileStruct.h
+	pihmLIBS/fileStruct.cpp
+	pihmRasterLIBS/bin2ascii.h
+	pihmRasterLIBS/bin2ascii.cpp
 	pihmRasterLIBS/avexec32.h
 	pihmRasterLIBS/avcalls_null.cpp
 	pihmRasterLIBS/gioapi.h
@@ -42,11 +51,15 @@ SET (pihmgis_SRCS
 	pihmLIBS/simplifyPolyShp.h
 	pihmLIBS/splitLineAtVertices.h
 	pihmLIBS/mergeFeatures.h
+	VectorProcessing/Dissolve/dissolve.cpp
 	VectorProcessing/PolygonToPolyLine/qrc_polygontopolylinedialog.cpp
 	VectorProcessing/PolygonToPolyLine/polygontopolylinedialog.cpp
 	VectorProcessing/SimplifyLine/simplifylinedialog.cpp
 	VectorProcessing/SplitLine/splitlinedialog.cpp
 	VectorProcessing/MergeFeatures/mergefeaturesdialog.cpp
+	pihmLIBS/generatePolyFile.cpp
+	pihmLIBS/createTinShapeFile.cpp
+	DomainDecomposition/RunAllDomain/runnalldomain.cpp
 	DomainDecomposition/GenerateShapeTopology/generateshapetopology.cpp
 	DomainDecomposition/RunTriangle/triangle.cpp
 	DomainDecomposition/RunTriangle/runtriangle.cpp
@@ -74,6 +87,7 @@ SET (pihmgis_SRCS
 	DataModelLoader/LCFile/lcfile.cpp
 	DataModelLoader/CalibFile/calibfile.cpp
 	DataModelLoader/InitFile/initfile.cpp
+	DataModelLoader/IbcFile/ibcfile.cpp
 	#PIHM_v2.0/calib.h
 	#PIHM_v2.0/calib.cpp
 	#PIHM_v2.0/f.h
@@ -100,6 +114,11 @@ SET (pihmgis_SRCS
 )
 
 SET (pihmgis_UIS pihmgisgui.ui
+	Project/DefineProject/defineproject.ui
+	Project/OpenProject/openproject.ui
+	Project/CloseProject/closeproject.ui
+	Project/ImportProject/importproject.ui
+	RasterProcessing/RunAllRaster/runallraster.ui
 	pihmLIBS/helpDialog/helpdialog.ui
 	RasterProcessing/FillPits/fillpits.ui
 	RasterProcessing/FlowGrid/flowgrid.ui
@@ -108,10 +127,12 @@ SET (pihmgis_UIS pihmgisgui.ui
 	RasterProcessing/StreamPolyLine/streampolyline.ui
 	RasterProcessing/CatchmentGrid/catchmentgrid.ui
 	RasterProcessing/CatchmentPolygon/catchmentpolygon.ui
+	VectorProcessing/Dissolve/dissolve.ui
 	VectorProcessing/PolygonToPolyLine/polygontopolylinedialog.ui
 	VectorProcessing/SimplifyLine/simplifylinedialog.ui
 	VectorProcessing/SplitLine/splitlinedialog.ui
 	VectorProcessing/MergeFeatures/mergefeaturesdialog.ui
+	DomainDecomposition/RunAllDomain/runnalldomain.ui
 	DomainDecomposition/GenerateShapeTopology/generateshapetopology.ui
 	DomainDecomposition/RunTriangle/runtriangle.ui
 	DomainDecomposition/CreateTINs/createtinsdialog.ui
@@ -124,6 +145,7 @@ SET (pihmgis_UIS pihmgisgui.ui
 	DataModelLoader/LCFile/lcfile.ui
 	DataModelLoader/CalibFile/calibfile.ui
 	DataModelLoader/InitFile/initfile.ui
+	DataModelLoader/IbcFile/ibcfile.ui
 	RunPIHM/runpihm.ui
 	Analysis/TimeSeries/timeseries.ui
 	Analysis/SpatialPlot/spatialplot.ui
@@ -133,6 +155,11 @@ SET (pihmgis_UIS pihmgisgui.ui
 SET (pihmgis_MOC_HDRS
      pihmgis.h
      pihmgisgui.h
+	Project/DefineProject/defineproject.h
+	Project/OpenProject/openproject.h
+	Project/CloseProject/closeproject.h
+	Project/ImportProject/importproject.h
+	RasterProcessing/RunAllRaster/runallraster.h
 	pihmLIBS/helpDialog/helpdialog.h
 	RasterProcessing/FillPits/fillpits.h
 	RasterProcessing/FlowGrid/flowgrid.h
@@ -141,10 +168,12 @@ SET (pihmgis_MOC_HDRS
 	RasterProcessing/StreamPolyLine/streampolyline.h
 	RasterProcessing/CatchmentGrid/catchmentgrid.h
 	RasterProcessing/CatchmentPolygon/catchmentpolygon.h
+	VectorProcessing/Dissolve/dissolve.h
 	VectorProcessing/PolygonToPolyLine/polygontopolylinedialog.h
 	VectorProcessing/SimplifyLine/simplifylinedialog.h
 	VectorProcessing/SplitLine/splitlinedialog.h
 	VectorProcessing/MergeFeatures/mergefeaturesdialog.h
+	DomainDecomposition/RunAllDomain/runnalldomain.h
 	DomainDecomposition/GenerateShapeTopology/generateshapetopology.h
 	DomainDecomposition/RunTriangle/runtriangle.h
 	DomainDecomposition/CreateTINs/createtins.h
@@ -157,6 +186,7 @@ SET (pihmgis_MOC_HDRS
 	DataModelLoader/LCFile/lcfile.h
 	DataModelLoader/CalibFile/calibfile.h
 	DataModelLoader/InitFile/initfile.h
+	DataModelLoader/IbcFile/ibcfile.h
 	RunPIHM/runpihm.h
 	Analysis/TimeSeries/plotTS.h
 	Analysis/TimeSeries/timeseries.h

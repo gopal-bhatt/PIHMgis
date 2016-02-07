@@ -2,13 +2,31 @@
 #include "ui_initfile.h"
 
 #include <QFileDialog>
-#include <fstream.h>
+#include <fstream>
+
+#include "../../pihmLIBS/helpDialog/helpdialog.h"
+#include "../../pihmLIBS/fileStruct.h"
+
 using namespace std;
 
 InitFile::InitFile(QWidget *parent)
     : QDialog(parent), ui(new Ui::InitFile)
 {
     ui->setupUi(this);
+
+	QString projDir, projFile;
+        QFile tFile(QDir::homePath()+"/project.txt");
+        tFile.open(QIODevice::ReadOnly | QIODevice::Text);
+        QTextStream tin(&tFile);
+        projDir  = tin.readLine();
+        projFile = tin.readLine();
+	tFile.close();
+        cout << qPrintable(projDir);
+
+	QString tempStr=readLineNumber(qPrintable(projFile), 49); tempStr.truncate(tempStr.length()-4);
+	ui->lineEditMeshFile->setText(tempStr+"mesh");
+	ui->lineEditRivFile->setText(tempStr+"riv");
+	ui->lineEditInitFile->setText(tempStr+"init");
 }
 
 InitFile::~InitFile()
@@ -18,19 +36,46 @@ InitFile::~InitFile()
 
 void InitFile::on_pushButton_MeshFile_clicked()
 {
-    QString s = QFileDialog::getOpenFileName(this, "Choose Mesh File", "", "Mesh File (*.mesh)");
+	QString projDir, projFile;
+        QFile tFile(QDir::homePath()+"/project.txt");
+        tFile.open(QIODevice::ReadOnly | QIODevice::Text);
+        QTextStream tin(&tFile);
+        projDir  = tin.readLine();
+        projFile = tin.readLine();
+	tFile.close();
+        cout << qPrintable(projDir);
+
+    QString s = QFileDialog::getOpenFileName(this, "Choose Mesh File", projDir+"/DataModel", "Mesh File (*.mesh)");
     ui->lineEditMeshFile->setText(s);
 }
 
 void InitFile::on_pushButton_RivFile_clicked()
 {
-    QString s = QFileDialog::getOpenFileName(this, "Choose Riv File", "", "Riv File (*.riv)");
+	QString projDir, projFile;
+        QFile tFile(QDir::homePath()+"/project.txt");
+        tFile.open(QIODevice::ReadOnly | QIODevice::Text);
+        QTextStream tin(&tFile);
+        projDir  = tin.readLine();
+        projFile = tin.readLine();
+	tFile.close();
+        cout << qPrintable(projDir);
+
+    QString s = QFileDialog::getOpenFileName(this, "Choose Riv File", projDir+"/DataModel", "Riv File (*.riv)");
     ui->lineEditRivFile->setText(s);
 }
 
 void InitFile::on_pushButton_InitFile_clicked()
 {
-    QString s = QFileDialog::getSaveFileName(this, "Choose Init File Name", "", "Init file (*.init)");
+	QString projDir, projFile;
+        QFile tFile(QDir::homePath()+"/project.txt");
+        tFile.open(QIODevice::ReadOnly | QIODevice::Text);
+        QTextStream tin(&tFile);
+        projDir  = tin.readLine();
+        projFile = tin.readLine();
+	tFile.close();
+        cout << qPrintable(projDir);
+
+    QString s = QFileDialog::getSaveFileName(this, "Choose Init File Name", projDir+"/DataModel", "Init file (*.init)");
     if(!s.endsWith(".init"))
         s.append(".init");
     ui->lineEditInitFile->setText(s);
@@ -43,6 +88,17 @@ void InitFile::on_pushButton_Close_clicked()
 
 void InitFile::on_pushButton_Run_clicked()
 {
+	QString projDir, projFile;
+        QFile tFile(QDir::homePath()+"/project.txt");
+        tFile.open(QIODevice::ReadOnly | QIODevice::Text);
+        QTextStream tin(&tFile);
+        projDir  = tin.readLine();
+        projFile = tin.readLine();
+	tFile.close();
+        cout << qPrintable(projDir);
+
+	writeLineNumber(qPrintable(projFile), 94, qPrintable(ui->lineEditInitFile->text()));
+
     int RunFlag=1;
     ifstream inFileMesh, inFileRiv;
     ofstream outFile;
@@ -51,15 +107,17 @@ void InitFile::on_pushButton_Run_clicked()
     outFile.open((ui->lineEditInitFile->text()).toAscii());
 
     ofstream logFile;
-    QString logFileName("/tmp/log.html");
-    logFile.open("/tmp/log.html");
+	QDir dir = QDir::home();
+        QString home = dir.homePath();
+    QString logFileName(home+"/log.html");
+    logFile.open(qPrintable(logFileName));
     logFile<<"<html><body><font size=3 color=black> Verifying Files...<br>";
     logFile.close();
     ui->textBrowser->setSource(logFileName);
     ui->textBrowser->setFocus();
     ui->textBrowser->setModified(TRUE);
 
-    logFile.open("/tmp/log.html", ios::app);
+    logFile.open(qPrintable(logFileName), ios::app);
     logFile<<"Checking Mesh File... ";
     if (inFileMesh == NULL){
         logFile<<"could NOT open file.  ERROR<br>";
@@ -85,7 +143,7 @@ void InitFile::on_pushButton_Run_clicked()
     ui->textBrowser->reload();
 
     if(RunFlag == 1){
-        logFile.open("/tmp/log.html", ios::app);
+        logFile.open(qPrintable(logFileName), ios::app);
         logFile<<"Generating INIT file... ";
         int NumEle, NumRiv;
         inFileMesh >> NumEle;
@@ -113,5 +171,6 @@ void InitFile::on_pushButton_Run_clicked()
 
 void InitFile::on_pushButton_Help_clicked()
 {
-
+helpDialog* hlpDlg = new helpDialog(this, "Init File", 1, "helpFiles/initfile.html", "Help :: Init File");
+        hlpDlg->show();
 }

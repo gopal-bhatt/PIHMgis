@@ -285,8 +285,6 @@ src/app/CMakeFiles/qgis.dir/moc_qgsmaptoolvertexedit.o: /Library/Frameworks/QtXm
 src/app/CMakeFiles/qgis.dir/moc_qgsmaptoolvertexedit.o: src/app/../../../src/app/qgsmaptooledit.h
 src/app/CMakeFiles/qgis.dir/moc_qgsmaptoolvertexedit.o: src/app/../../../src/app/qgsmaptoolvertexedit.h
 src/app/CMakeFiles/qgis.dir/moc_qgsmaptoolvertexedit.o: src/app/moc_qgsmaptoolvertexedit.cxx
-src/app/CMakeFiles/qgis.dir/moc_qgsmaptoolvertexedit.o: /usr/include/Availability.h
-src/app/CMakeFiles/qgis.dir/moc_qgsmaptoolvertexedit.o: /usr/include/AvailabilityInternal.h
 src/app/CMakeFiles/qgis.dir/moc_qgsmaptoolvertexedit.o: /usr/include/_types.h
 src/app/CMakeFiles/qgis.dir/moc_qgsmaptoolvertexedit.o: /usr/include/_xlocale.h
 src/app/CMakeFiles/qgis.dir/moc_qgsmaptoolvertexedit.o: /usr/include/alloca.h
@@ -627,8 +625,6 @@ src/app/CMakeFiles/qgis.dir/main.o: /Library/Frameworks/QtXml.framework/Headers/
 src/app/CMakeFiles/qgis.dir/main.o: /Library/Frameworks/QtXml.framework/Headers/qdom.h
 src/app/CMakeFiles/qgis.dir/main.o: ../src/app/main.cpp
 src/app/CMakeFiles/qgis.dir/main.o: ../src/app/qgisapp.h
-src/app/CMakeFiles/qgis.dir/main.o: /usr/include/Availability.h
-src/app/CMakeFiles/qgis.dir/main.o: /usr/include/AvailabilityInternal.h
 src/app/CMakeFiles/qgis.dir/main.o: /usr/include/_types.h
 src/app/CMakeFiles/qgis.dir/main.o: /usr/include/_xlocale.h
 src/app/CMakeFiles/qgis.dir/main.o: /usr/include/alloca.h
@@ -944,8 +940,6 @@ src/app/CMakeFiles/qgis.dir/qgisapp.o: ../src/app/qgspythondialog.h
 src/app/CMakeFiles/qgis.dir/qgisapp.o: ../src/app/qgsrasterlayerproperties.h
 src/app/CMakeFiles/qgis.dir/qgisapp.o: ../src/app/qgsserversourceselect.h
 src/app/CMakeFiles/qgis.dir/qgisapp.o: ../src/app/qgssnappingdialog.h
-src/app/CMakeFiles/qgis.dir/qgisapp.o: /usr/include/Availability.h
-src/app/CMakeFiles/qgis.dir/qgisapp.o: /usr/include/AvailabilityInternal.h
 src/app/CMakeFiles/qgis.dir/qgisapp.o: /usr/include/AvailabilityMacros.h
 src/app/CMakeFiles/qgis.dir/qgisapp.o: /usr/include/_locale.h
 src/app/CMakeFiles/qgis.dir/qgisapp.o: /usr/include/_structs.h
@@ -1527,8 +1521,6 @@ src/app/CMakeFiles/qgis.dir/qgsclipboard.o: /Library/Frameworks/QtXml.framework/
 src/app/CMakeFiles/qgis.dir/qgsclipboard.o: /Library/Frameworks/QtXml.framework/Headers/qdom.h
 src/app/CMakeFiles/qgis.dir/qgsclipboard.o: ../src/app/qgsclipboard.cpp
 src/app/CMakeFiles/qgis.dir/qgsclipboard.o: ../src/app/qgsclipboard.h
-src/app/CMakeFiles/qgis.dir/qgsclipboard.o: /usr/include/Availability.h
-src/app/CMakeFiles/qgis.dir/qgsclipboard.o: /usr/include/AvailabilityInternal.h
 src/app/CMakeFiles/qgis.dir/qgsclipboard.o: /usr/include/_types.h
 src/app/CMakeFiles/qgis.dir/qgsclipboard.o: /usr/include/_xlocale.h
 src/app/CMakeFiles/qgis.dir/qgsclipboard.o: /usr/include/alloca.h
@@ -1647,8 +1639,6 @@ src/app/CMakeFiles/qgis.dir/qgscustomprojectiondialog.o: /Library/Frameworks/QtN
 src/app/CMakeFiles/qgis.dir/qgscustomprojectiondialog.o: ../src/app/qgisapp.h
 src/app/CMakeFiles/qgis.dir/qgscustomprojectiondialog.o: ../src/app/qgscustomprojectiondialog.cpp
 src/app/CMakeFiles/qgis.dir/qgscustomprojectiondialog.o: ../src/app/qgscustomprojectiondialog.h
-src/app/CMakeFiles/qgis.dir/qgscustomprojectiondialog.o: /usr/include/Availability.h
-src/app/CMakeFiles/qgis.dir/qgscustomprojectiondialog.o: /usr/include/AvailabilityInternal.h
 src/app/CMakeFiles/qgis.dir/qgscustomprojectiondialog.o: /usr/include/AvailabilityMacros.h
 src/app/CMakeFiles/qgis.dir/qgscustomprojectiondialog.o: /usr/include/_types.h
 src/app/CMakeFiles/qgis.dir/qgscustomprojectiondialog.o: /usr/include/_xlocale.h
@@ -1982,8 +1972,6 @@ src/app/CMakeFiles/qgis.dir/qgsmaptooladdfeature.o: ../src/app/qgsmaptooladdfeat
 src/app/CMakeFiles/qgis.dir/qgsmaptooladdfeature.o: ../src/app/qgsmaptooladdfeature.h
 src/app/CMakeFiles/qgis.dir/qgsmaptooladdfeature.o: ../src/app/qgsmaptoolcapture.h
 src/app/CMakeFiles/qgis.dir/qgsmaptooladdfeature.o: ../src/app/qgsmaptooledit.h
-src/app/CMakeFiles/qgis.dir/qgsmaptooladdfeature.o: /usr/include/Availability.h
-src/app/CMakeFiles/qgis.dir/qgsmaptooladdfeature.o: /usr/include/AvailabilityInternal.h
 src/app/CMakeFiles/qgis.dir/qgsmaptooladdfeature.o: /usr/include/_types.h
 src/app/CMakeFiles/qgis.dir/qgsmaptooladdfeature.o: /usr/include/_xlocale.h
 src/app/CMakeFiles/qgis.dir/qgsmaptooladdfeature.o: /usr/include/alloca.h
@@ -2089,8 +2077,6 @@ src/app/CMakeFiles/qgis.dir/qgsmaptooladdisland.o: ../src/app/qgsmaptooladdislan
 src/app/CMakeFiles/qgis.dir/qgsmaptooladdisland.o: ../src/app/qgsmaptooladdisland.h
 src/app/CMakeFiles/qgis.dir/qgsmaptooladdisland.o: ../src/app/qgsmaptoolcapture.h
 src/app/CMakeFiles/qgis.dir/qgsmaptooladdisland.o: ../src/app/qgsmaptooledit.h
-src/app/CMakeFiles/qgis.dir/qgsmaptooladdisland.o: /usr/include/Availability.h
-src/app/CMakeFiles/qgis.dir/qgsmaptooladdisland.o: /usr/include/AvailabilityInternal.h
 src/app/CMakeFiles/qgis.dir/qgsmaptooladdisland.o: /usr/include/_types.h
 src/app/CMakeFiles/qgis.dir/qgsmaptooladdisland.o: /usr/include/_xlocale.h
 src/app/CMakeFiles/qgis.dir/qgsmaptooladdisland.o: /usr/include/alloca.h
@@ -2191,8 +2177,6 @@ src/app/CMakeFiles/qgis.dir/qgsmaptooladdvertex.o: ../src/app/qgsmaptooladdverte
 src/app/CMakeFiles/qgis.dir/qgsmaptooladdvertex.o: ../src/app/qgsmaptooladdvertex.h
 src/app/CMakeFiles/qgis.dir/qgsmaptooladdvertex.o: ../src/app/qgsmaptooledit.h
 src/app/CMakeFiles/qgis.dir/qgsmaptooladdvertex.o: ../src/app/qgsmaptoolvertexedit.h
-src/app/CMakeFiles/qgis.dir/qgsmaptooladdvertex.o: /usr/include/Availability.h
-src/app/CMakeFiles/qgis.dir/qgsmaptooladdvertex.o: /usr/include/AvailabilityInternal.h
 src/app/CMakeFiles/qgis.dir/qgsmaptooladdvertex.o: /usr/include/_types.h
 src/app/CMakeFiles/qgis.dir/qgsmaptooladdvertex.o: /usr/include/_xlocale.h
 src/app/CMakeFiles/qgis.dir/qgsmaptooladdvertex.o: /usr/include/alloca.h
@@ -2297,8 +2281,6 @@ src/app/CMakeFiles/qgis.dir/qgsmaptooladdring.o: ../src/app/qgsmaptooladdring.cp
 src/app/CMakeFiles/qgis.dir/qgsmaptooladdring.o: ../src/app/qgsmaptooladdring.h
 src/app/CMakeFiles/qgis.dir/qgsmaptooladdring.o: ../src/app/qgsmaptoolcapture.h
 src/app/CMakeFiles/qgis.dir/qgsmaptooladdring.o: ../src/app/qgsmaptooledit.h
-src/app/CMakeFiles/qgis.dir/qgsmaptooladdring.o: /usr/include/Availability.h
-src/app/CMakeFiles/qgis.dir/qgsmaptooladdring.o: /usr/include/AvailabilityInternal.h
 src/app/CMakeFiles/qgis.dir/qgsmaptooladdring.o: /usr/include/_types.h
 src/app/CMakeFiles/qgis.dir/qgsmaptooladdring.o: /usr/include/_xlocale.h
 src/app/CMakeFiles/qgis.dir/qgsmaptooladdring.o: /usr/include/alloca.h
@@ -2417,8 +2399,6 @@ src/app/CMakeFiles/qgis.dir/qgsmaptoolcapture.o: ../src/app/qgsattributedialog.h
 src/app/CMakeFiles/qgis.dir/qgsmaptoolcapture.o: ../src/app/qgsmaptoolcapture.cpp
 src/app/CMakeFiles/qgis.dir/qgsmaptoolcapture.o: ../src/app/qgsmaptoolcapture.h
 src/app/CMakeFiles/qgis.dir/qgsmaptoolcapture.o: ../src/app/qgsmaptooledit.h
-src/app/CMakeFiles/qgis.dir/qgsmaptoolcapture.o: /usr/include/Availability.h
-src/app/CMakeFiles/qgis.dir/qgsmaptoolcapture.o: /usr/include/AvailabilityInternal.h
 src/app/CMakeFiles/qgis.dir/qgsmaptoolcapture.o: /usr/include/_types.h
 src/app/CMakeFiles/qgis.dir/qgsmaptoolcapture.o: /usr/include/_xlocale.h
 src/app/CMakeFiles/qgis.dir/qgsmaptoolcapture.o: /usr/include/alloca.h
@@ -2512,8 +2492,6 @@ src/app/CMakeFiles/qgis.dir/qgsmaptooldeletevertex.o: ../src/app/qgsmaptooldelet
 src/app/CMakeFiles/qgis.dir/qgsmaptooldeletevertex.o: ../src/app/qgsmaptooldeletevertex.h
 src/app/CMakeFiles/qgis.dir/qgsmaptooldeletevertex.o: ../src/app/qgsmaptooledit.h
 src/app/CMakeFiles/qgis.dir/qgsmaptooldeletevertex.o: ../src/app/qgsmaptoolvertexedit.h
-src/app/CMakeFiles/qgis.dir/qgsmaptooldeletevertex.o: /usr/include/Availability.h
-src/app/CMakeFiles/qgis.dir/qgsmaptooldeletevertex.o: /usr/include/AvailabilityInternal.h
 src/app/CMakeFiles/qgis.dir/qgsmaptooldeletevertex.o: /usr/include/_types.h
 src/app/CMakeFiles/qgis.dir/qgsmaptooldeletevertex.o: /usr/include/_xlocale.h
 src/app/CMakeFiles/qgis.dir/qgsmaptooldeletevertex.o: /usr/include/alloca.h
@@ -2710,8 +2688,6 @@ src/app/CMakeFiles/qgis.dir/qgsmaptoolidentify.o: ../src/app/qgsattributedialog.
 src/app/CMakeFiles/qgis.dir/qgsmaptoolidentify.o: ../src/app/qgsidentifyresults.h
 src/app/CMakeFiles/qgis.dir/qgsmaptoolidentify.o: ../src/app/qgsmaptoolidentify.cpp
 src/app/CMakeFiles/qgis.dir/qgsmaptoolidentify.o: ../src/app/qgsmaptoolidentify.h
-src/app/CMakeFiles/qgis.dir/qgsmaptoolidentify.o: /usr/include/Availability.h
-src/app/CMakeFiles/qgis.dir/qgsmaptoolidentify.o: /usr/include/AvailabilityInternal.h
 src/app/CMakeFiles/qgis.dir/qgsmaptoolidentify.o: /usr/include/AvailabilityMacros.h
 src/app/CMakeFiles/qgis.dir/qgsmaptoolidentify.o: /usr/include/_locale.h
 src/app/CMakeFiles/qgis.dir/qgsmaptoolidentify.o: /usr/include/_structs.h
@@ -2841,8 +2817,6 @@ src/app/CMakeFiles/qgis.dir/qgsmaptoolmovefeature.o: /Library/Frameworks/QtXml.f
 src/app/CMakeFiles/qgis.dir/qgsmaptoolmovefeature.o: ../src/app/qgsmaptooledit.h
 src/app/CMakeFiles/qgis.dir/qgsmaptoolmovefeature.o: ../src/app/qgsmaptoolmovefeature.cpp
 src/app/CMakeFiles/qgis.dir/qgsmaptoolmovefeature.o: ../src/app/qgsmaptoolmovefeature.h
-src/app/CMakeFiles/qgis.dir/qgsmaptoolmovefeature.o: /usr/include/Availability.h
-src/app/CMakeFiles/qgis.dir/qgsmaptoolmovefeature.o: /usr/include/AvailabilityInternal.h
 src/app/CMakeFiles/qgis.dir/qgsmaptoolmovefeature.o: /usr/include/_types.h
 src/app/CMakeFiles/qgis.dir/qgsmaptoolmovefeature.o: /usr/include/_xlocale.h
 src/app/CMakeFiles/qgis.dir/qgsmaptoolmovefeature.o: /usr/include/alloca.h
@@ -2946,8 +2920,6 @@ src/app/CMakeFiles/qgis.dir/qgsmaptoolmovevertex.o: ../src/app/qgsmaptooledit.h
 src/app/CMakeFiles/qgis.dir/qgsmaptoolmovevertex.o: ../src/app/qgsmaptoolmovevertex.cpp
 src/app/CMakeFiles/qgis.dir/qgsmaptoolmovevertex.o: ../src/app/qgsmaptoolmovevertex.h
 src/app/CMakeFiles/qgis.dir/qgsmaptoolmovevertex.o: ../src/app/qgsmaptoolvertexedit.h
-src/app/CMakeFiles/qgis.dir/qgsmaptoolmovevertex.o: /usr/include/Availability.h
-src/app/CMakeFiles/qgis.dir/qgsmaptoolmovevertex.o: /usr/include/AvailabilityInternal.h
 src/app/CMakeFiles/qgis.dir/qgsmaptoolmovevertex.o: /usr/include/_types.h
 src/app/CMakeFiles/qgis.dir/qgsmaptoolmovevertex.o: /usr/include/_xlocale.h
 src/app/CMakeFiles/qgis.dir/qgsmaptoolmovevertex.o: /usr/include/alloca.h
@@ -3169,8 +3141,6 @@ src/app/CMakeFiles/qgis.dir/qgsmaptoolvertexedit.o: /Library/Frameworks/QtXml.fr
 src/app/CMakeFiles/qgis.dir/qgsmaptoolvertexedit.o: ../src/app/qgsmaptooledit.h
 src/app/CMakeFiles/qgis.dir/qgsmaptoolvertexedit.o: ../src/app/qgsmaptoolvertexedit.cpp
 src/app/CMakeFiles/qgis.dir/qgsmaptoolvertexedit.o: ../src/app/qgsmaptoolvertexedit.h
-src/app/CMakeFiles/qgis.dir/qgsmaptoolvertexedit.o: /usr/include/Availability.h
-src/app/CMakeFiles/qgis.dir/qgsmaptoolvertexedit.o: /usr/include/AvailabilityInternal.h
 src/app/CMakeFiles/qgis.dir/qgsmaptoolvertexedit.o: /usr/include/_types.h
 src/app/CMakeFiles/qgis.dir/qgsmaptoolvertexedit.o: /usr/include/_xlocale.h
 src/app/CMakeFiles/qgis.dir/qgsmaptoolvertexedit.o: /usr/include/alloca.h
@@ -3736,8 +3706,6 @@ src/app/CMakeFiles/qgis.dir/qgsrasterlayerproperties.o: /Library/Frameworks/QtXm
 src/app/CMakeFiles/qgis.dir/qgsrasterlayerproperties.o: ../src/app/qgisapp.h
 src/app/CMakeFiles/qgis.dir/qgsrasterlayerproperties.o: ../src/app/qgsrasterlayerproperties.cpp
 src/app/CMakeFiles/qgis.dir/qgsrasterlayerproperties.o: ../src/app/qgsrasterlayerproperties.h
-src/app/CMakeFiles/qgis.dir/qgsrasterlayerproperties.o: /usr/include/Availability.h
-src/app/CMakeFiles/qgis.dir/qgsrasterlayerproperties.o: /usr/include/AvailabilityInternal.h
 src/app/CMakeFiles/qgis.dir/qgsrasterlayerproperties.o: /usr/include/AvailabilityMacros.h
 src/app/CMakeFiles/qgis.dir/qgsrasterlayerproperties.o: /usr/include/_locale.h
 src/app/CMakeFiles/qgis.dir/qgsrasterlayerproperties.o: /usr/include/_structs.h
@@ -4696,8 +4664,6 @@ src/app/CMakeFiles/qgis.dir/legend/qgslegend.o: ../src/app/legend/qgslegendlayer
 src/app/CMakeFiles/qgis.dir/legend/qgslegend.o: ../src/app/legend/qgslegendlayerfilegroup.h
 src/app/CMakeFiles/qgis.dir/legend/qgslegend.o: ../src/app/legend/qgslegendpropertygroup.h
 src/app/CMakeFiles/qgis.dir/legend/qgslegend.o: ../src/app/legend/qgslegendsymbologyitem.h
-src/app/CMakeFiles/qgis.dir/legend/qgslegend.o: /usr/include/Availability.h
-src/app/CMakeFiles/qgis.dir/legend/qgslegend.o: /usr/include/AvailabilityInternal.h
 src/app/CMakeFiles/qgis.dir/legend/qgslegend.o: /usr/include/AvailabilityMacros.h
 src/app/CMakeFiles/qgis.dir/legend/qgslegend.o: /usr/include/_locale.h
 src/app/CMakeFiles/qgis.dir/legend/qgslegend.o: /usr/include/_structs.h
@@ -4877,8 +4843,6 @@ src/app/CMakeFiles/qgis.dir/legend/qgslegendlayer.o: ../src/app/legend/qgslegend
 src/app/CMakeFiles/qgis.dir/legend/qgslegendlayer.o: ../src/app/legend/qgslegendlayerfile.h
 src/app/CMakeFiles/qgis.dir/legend/qgslegendlayer.o: ../src/app/legend/qgslegendlayerfilegroup.h
 src/app/CMakeFiles/qgis.dir/legend/qgslegendlayer.o: ../src/app/legend/qgslegendsymbologyitem.h
-src/app/CMakeFiles/qgis.dir/legend/qgslegendlayer.o: /usr/include/Availability.h
-src/app/CMakeFiles/qgis.dir/legend/qgslegendlayer.o: /usr/include/AvailabilityInternal.h
 src/app/CMakeFiles/qgis.dir/legend/qgslegendlayer.o: /usr/include/AvailabilityMacros.h
 src/app/CMakeFiles/qgis.dir/legend/qgslegendlayer.o: /usr/include/_locale.h
 src/app/CMakeFiles/qgis.dir/legend/qgslegendlayer.o: /usr/include/_structs.h
@@ -5048,8 +5012,6 @@ src/app/CMakeFiles/qgis.dir/legend/qgslegendlayerfile.o: ../src/app/legend/qgsle
 src/app/CMakeFiles/qgis.dir/legend/qgslegendlayerfile.o: ../src/app/legend/qgslegendlayer.h
 src/app/CMakeFiles/qgis.dir/legend/qgslegendlayerfile.o: ../src/app/legend/qgslegendlayerfile.cpp
 src/app/CMakeFiles/qgis.dir/legend/qgslegendlayerfile.o: ../src/app/legend/qgslegendlayerfile.h
-src/app/CMakeFiles/qgis.dir/legend/qgslegendlayerfile.o: /usr/include/Availability.h
-src/app/CMakeFiles/qgis.dir/legend/qgslegendlayerfile.o: /usr/include/AvailabilityInternal.h
 src/app/CMakeFiles/qgis.dir/legend/qgslegendlayerfile.o: /usr/include/AvailabilityMacros.h
 src/app/CMakeFiles/qgis.dir/legend/qgslegendlayerfile.o: /usr/include/_locale.h
 src/app/CMakeFiles/qgis.dir/legend/qgslegendlayerfile.o: /usr/include/_structs.h

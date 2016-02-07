@@ -8,7 +8,7 @@
 //#include "dbfopen.h"
 
 using namespace std;
-
+/*
 struct Point{
 	double x,y;
 	int serialNum;
@@ -34,9 +34,9 @@ int searchPoint(Point* pointArray, double coord1,double coord2,int *temp, int po
 		}
 		return 0;
 }
+*/
 
-
-void generatePolyFile(const char* constFileName, const char* outputFileName, const char* logFileName){
+void generatePolyFile(const char* constFileName, const char* outputFileName, const char* logFileName);/*{
 		
 		//struct Map_info* vectMap;
 		
@@ -188,4 +188,4 @@ void generatePolyFile(const char* constFileName, const char* outputFileName, con
 		return;
 		//std::cout<<"After return\n";
 		
-}
+}*/

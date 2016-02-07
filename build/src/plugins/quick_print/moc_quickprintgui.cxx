@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'quickprintgui.h'
 **
-** Created: Mon Sep 7 22:45:09 2009
+** Created: Tue Jun 22 23:12:53 2010
 **      by: The Qt Meta Object Compiler version 59 (Qt 4.3.2)
 **
 ** WARNING! All changes made in this file will be lost!

@@ -62,8 +62,6 @@ src/providers/ogr/CMakeFiles/ogrprovider.dir/qgsogrprovider.o: /Library/Framewor
 src/providers/ogr/CMakeFiles/ogrprovider.dir/qgsogrprovider.o: /Library/Frameworks/QtXml.framework/Headers/qdom.h
 src/providers/ogr/CMakeFiles/ogrprovider.dir/qgsogrprovider.o: ../src/providers/ogr/qgsogrprovider.cpp
 src/providers/ogr/CMakeFiles/ogrprovider.dir/qgsogrprovider.o: ../src/providers/ogr/qgsogrprovider.h
-src/providers/ogr/CMakeFiles/ogrprovider.dir/qgsogrprovider.o: /usr/include/Availability.h
-src/providers/ogr/CMakeFiles/ogrprovider.dir/qgsogrprovider.o: /usr/include/AvailabilityInternal.h
 src/providers/ogr/CMakeFiles/ogrprovider.dir/qgsogrprovider.o: /usr/include/AvailabilityMacros.h
 src/providers/ogr/CMakeFiles/ogrprovider.dir/qgsogrprovider.o: /usr/include/_locale.h
 src/providers/ogr/CMakeFiles/ogrprovider.dir/qgsogrprovider.o: /usr/include/_structs.h

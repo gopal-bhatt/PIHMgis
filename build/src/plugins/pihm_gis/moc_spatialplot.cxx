@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'spatialplot.h'
 **
-** Created: Mon Sep 7 22:45:43 2009
+** Created: Tue Jul 27 23:38:16 2010
 **      by: The Qt Meta Object Compiler version 59 (Qt 4.3.2)
 **
 ** WARNING! All changes made in this file will be lost!
@@ -22,7 +22,7 @@ static const uint qt_meta_data_spatialPlotDlg[] = {
        1,       // revision
        0,       // classname
        0,    0, // classinfo
-       5,   10, // methods
+       8,   10, // methods
        0,    0, // properties
        0,    0, // enums/sets
 
@@ -32,6 +32,9 @@ static const uint qt_meta_data_spatialPlotDlg[] = {
       58,   15,   15,   15, 0x0a,
       76,   15,   15,   15, 0x0a,
       87,   15,   15,   15, 0x0a,
+      94,   15,   15,   15, 0x08,
+     128,  122,   15,   15, 0x08,
+     176,  122,   15,   15, 0x08,
 
        0        // eod
 };
@@ -39,7 +42,9 @@ static const uint qt_meta_data_spatialPlotDlg[] = {
 static const char qt_meta_stringdata_spatialPlotDlg[] = {
     "spatialPlotDlg\0\0browseEleShapeFile()\0"
     "browseRivShapeFile()\0browseModelFile()\0"
-    "generate()\0help()\0"
+    "generate()\0help()\0on_cancelButton_2_clicked()\0"
+    "index\0on_comboBoxRivVariable_currentIndexChanged(int)\0"
+    "on_comboBoxEleVariable_currentIndexChanged(int)\0"
 };
 
 const QMetaObject spatialPlotDlg::staticMetaObject = {
@@ -72,8 +77,11 @@ int spatialPlotDlg::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
         case 2: browseModelFile(); break;
         case 3: generate(); break;
         case 4: help(); break;
+        case 5: on_cancelButton_2_clicked(); break;
+        case 6: on_comboBoxRivVariable_currentIndexChanged((*reinterpret_cast< int(*)>(_a[1]))); break;
+        case 7: on_comboBoxEleVariable_currentIndexChanged((*reinterpret_cast< int(*)>(_a[1]))); break;
         }
-        _id -= 5;
+        _id -= 8;
     }
     return _id;
 }

@@ -492,12 +492,6 @@ ui_pluginguibase.h
 QDialog
 -
 
-/usr/include/Availability.h
-AvailabilityInternal.h
--
-
-/usr/include/AvailabilityInternal.h
-
 /usr/include/_types.h
 sys/_types.h
 -

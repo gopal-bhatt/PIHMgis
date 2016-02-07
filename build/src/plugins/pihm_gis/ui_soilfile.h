@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading ui file 'soilfile.ui'
 **
-** Created: Wed Sep 9 00:08:10 2009
+** Created: Tue Jul 27 23:38:18 2010
 **      by: Qt User Interface Compiler version 4.3.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling ui file!
@@ -10,6 +10,7 @@
 #ifndef UI_SOILFILE_H
 #define UI_SOILFILE_H
 
+#include <Qt3Support/Q3TextBrowser>
 #include <QtCore/QVariant>
 #include <QtGui/QAction>
 #include <QtGui/QApplication>
@@ -19,14 +20,13 @@
 #include <QtGui/QLabel>
 #include <QtGui/QLineEdit>
 #include <QtGui/QPushButton>
-#include <QtGui/QTextBrowser>
 
 class Ui_SoilFile
 {
 public:
     QPushButton *pushButtonRun;
     QPushButton *pushButtonClose;
-    QTextBrowser *textBrowser;
+    Q3TextBrowser *textBrowser;
     QGroupBox *groupBox;
     QLabel *label;
     QLineEdit *lineEditSoilTexture;
@@ -48,7 +48,7 @@ public:
     pushButtonClose = new QPushButton(SoilFile);
     pushButtonClose->setObjectName(QString::fromUtf8("pushButtonClose"));
     pushButtonClose->setGeometry(QRect(330, 228, 113, 32));
-    textBrowser = new QTextBrowser(SoilFile);
+    textBrowser = new Q3TextBrowser(SoilFile);
     textBrowser->setObjectName(QString::fromUtf8("textBrowser"));
     textBrowser->setGeometry(QRect(21, 274, 561, 111));
     groupBox = new QGroupBox(SoilFile);

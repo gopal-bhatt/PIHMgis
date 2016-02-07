@@ -82,6 +82,13 @@ public slots:
   void unload();
   //! show the help document
   void help();
+
+void runDefineProject();
+void runOpenProject();
+void runCloseProject();
+void runImportProject();
+
+void runRunAllRaster();
 void runFillPits();
 void runFlowGrid();
 void runStreamGrid();
@@ -90,11 +97,13 @@ void runStreamPolyLine();
 void runCatchmentGrid();
 void runCatchmentPolygon();
 
+void runDissolve();
 void runPolygonToPolyline();
 void runSimplifyLine();
 void runSplitLine();
 void runVectorMerge();
 
+void runRunAllDomain();
 void runGenerateShapeTopology();
 void runRunTriangle();
 void runCreateTINs();
@@ -108,6 +117,8 @@ void runGeolFile();
 void runLCFile();
 void runCalibFile();
 void runInitFile();
+void runIBCFile();
+void runForcFile();
 
 void runPIHM();
 
@@ -116,6 +127,7 @@ void runTimeSeriesPlots();
 
 void runAbout();
 void runHomePage();
+void runOnlineHelp();
 
 private:
 

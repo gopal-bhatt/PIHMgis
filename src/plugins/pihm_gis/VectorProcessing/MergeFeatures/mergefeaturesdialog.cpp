@@ -4,6 +4,8 @@
 #include "../../pihmLIBS/mergeFeatures.h"
 #include "../../pihmLIBS/shapefil.h"
 
+#include "../../pihmLIBS/fileStruct.h"
+
 #include <fstream>
 using namespace std;
 
@@ -17,11 +19,53 @@ mergeFeaturesDialogDlg::mergeFeaturesDialogDlg(QWidget *parent)
 	connect(okButton, SIGNAL(clicked()), this, SLOT(run()));
 	connect(helpButton, SIGNAL(clicked()), this, SLOT(help()));
 	connect(cancelButton, SIGNAL(clicked()), this, SLOT(close()));
+
+	clusterToleranceLineEdit->setDisabled(1);
+
+	QStringList labels;
+        labels << "Split Line Features (Constraining layer)";
+        inputOutputTable->setColumnLabels(labels);
+
+	QString projDir, projFile;
+        QFile tFile(QDir::homePath()+"/project.txt");
+        tFile.open(QIODevice::ReadOnly | QIODevice::Text);
+        QTextStream tin(&tFile);
+        projDir  = tin.readLine();
+        projFile = tin.readLine();
+	tFile.close();
+        cout << qPrintable(projDir);
+
+        QString tempStr; tempStr=readLineNumber(qPrintable(projFile), 33);
+        if(tempStr.length()>1){
+                int rows = inputOutputTable->numRows();
+                inputOutputTable->insertRows(rows);
+                Q3TableItem *tempItem;
+                tempItem = new Q3TableItem(inputOutputTable, Q3TableItem::Always, tempStr);
+                inputOutputTable->setItem(rows, 0, tempItem);
+        }
+	tempStr=readLineNumber(qPrintable(projFile), 35);
+        if(tempStr.length()>1){
+                int rows = inputOutputTable->numRows();
+                inputOutputTable->insertRows(rows);
+                Q3TableItem *tempItem;
+                tempItem = new Q3TableItem(inputOutputTable, Q3TableItem::Always, tempStr);
+                inputOutputTable->setItem(rows, 0, tempItem);
+        }
+	outputMergedFileLineEdit->setText(projDir+"/VectorProcessing/MergeFeatures.shp");
 }
 
 void mergeFeaturesDialogDlg::addBrowse()
 {
-	QStringList temp = QFileDialog::getOpenFileNames(this, "Choose File", "~/","Shape Files(*.shp *.SHP)");
+	QString projDir, projFile;
+        QFile tFile(QDir::homePath()+"/project.txt");
+        tFile.open(QIODevice::ReadOnly | QIODevice::Text);
+        QTextStream tin(&tFile);
+        projDir  = tin.readLine();
+        projFile = tin.readLine();
+	tFile.close();
+        cout << qPrintable(projDir);
+
+	QStringList temp = QFileDialog::getOpenFileNames(this, "Choose File", projDir+"/VectorProcessing","Shape Files(*.shp *.SHP)");
         QString str = "";
         //QString str1 = "";
 
@@ -72,7 +116,16 @@ void mergeFeaturesDialogDlg::removeAllBrowse()
 
 void mergeFeaturesDialogDlg::outputBrowse()
 {
-	QString temp = QFileDialog::getSaveFileName(this, "Choose File", "~/","Shape File(*.shp *.SHP)");
+	QString projDir, projFile;
+        QFile tFile(QDir::homePath()+"/project.txt");
+        tFile.open(QIODevice::ReadOnly | QIODevice::Text);
+        QTextStream tin(&tFile);
+        projDir  = tin.readLine();
+        projFile = tin.readLine();
+	tFile.close();
+        cout << qPrintable(projDir);
+
+	QString temp = QFileDialog::getSaveFileName(this, "Choose File", projDir+"/VectorProcessing","Shape File(*.shp *.SHP)");
         QString tmp = temp;
         if(!(tmp.toLower()).endsWith(".shp")){
 	        tmp.append(".shp");
@@ -83,8 +136,25 @@ void mergeFeaturesDialogDlg::outputBrowse()
 
 void mergeFeaturesDialogDlg::run()
 {
+	QString projDir, projFile;
+        QFile tFile(QDir::homePath()+"/project.txt");
+        tFile.open(QIODevice::ReadOnly | QIODevice::Text);
+        QTextStream tin(&tFile);
+        projDir  = tin.readLine();
+        projFile = tin.readLine();
+	tFile.close();
+        cout << qPrintable(projDir);
 
-	QString logFileName("/tmp/log.html");
+	writeLineNumber(qPrintable(projFile), 36, qPrintable(inputOutputTable->text(0,0)));
+        if(inputOutputTable->numRows()>0){
+                writeLineNumber(qPrintable(projFile), 37, qPrintable(inputOutputTable->text(1,0)));
+        }
+	writeLineNumber(qPrintable(projFile), 38, qPrintable(outputMergedFileLineEdit->text()));
+	//writeLineNumber(qPrintable(projFile), 39, qPrintable(projDir+"/DomainDecomposition/"+id+".shp"));
+
+	QDir dir = QDir::home();
+        QString home = dir.homePath();
+	QString logFileName(qPrintable(home+"/log.html"));
 	ofstream log;
 	log.open(logFileName.ascii());
 	log<<"<html><body><font size=3 color=black><p> Verifying Files...</p></font></body></html>";
@@ -103,7 +173,7 @@ void mergeFeaturesDialogDlg::run()
         QString *dbfFileNames = new QString[rows];
 	int fileCount = 0;
 
-        QString shpFileName, dbfFileName, shpFileNameMerge, dbfFileNameMerge;
+        QString shpFileName, dbfFileName, shpFileNameMerge, dbfFileNameMerge, shxFileNameMerge;
         //double tol;
 	int runFlag = 1;
 	if(inputOutputTable->numRows() < 2){
@@ -176,6 +246,7 @@ void mergeFeaturesDialogDlg::run()
                 shpFileNameMerge = outputMergedFileLineEdit->text();
                 dbfFileNameMerge = shpFileNameMerge;
                 dbfFileNameMerge.truncate(dbfFileNameMerge.length()-3);
+		shxFileNameMerge=dbfFileNameMerge;
                 dbfFileNameMerge.append("dbf");
         
 		log.open(logFileName.ascii(), ios::app);
@@ -187,6 +258,28 @@ void mergeFeaturesDialogDlg::run()
 		
 		
 	        mergeFeatures(shpFileNamesChar, dbfFileNamesChar, fileCount, shpFileNameMerge.ascii(), dbfFileNameMerge.ascii());
+
+			QString myFileNameQString = shpFileNameMerge;
+                        QFileInfo myFileInfo(myFileNameQString);
+                        QString myBaseNameQString = myFileInfo.baseName();
+                        QString provider = "OGR";
+                        applicationPointer->addVectorLayer(myFileNameQString, myBaseNameQString, "ogr");
+
+		shxFileNameMerge.truncate(shxFileNameMerge.length()-1);
+		QString id=shxFileNameMerge;
+	        id=id.right(id.length()-id.lastIndexOf("/",-1)-1);
+        	cout << "ID = "<<qPrintable(id) <<"\n";
+	        shxFileNameMerge.append(".shx");
+
+        	QString shpFile = projDir+"/DomainDecomposition/"+id+".shp";
+        	QString dbfFile = projDir+"/DomainDecomposition/"+id+".dbf";
+       		QString shxFile = projDir+"/DomainDecomposition/"+id+".shx";
+		
+		QFile::copy(shpFileNameMerge, shpFile);
+                QFile::copy(dbfFileNameMerge, dbfFile);
+                QFile::copy(shxFileNameMerge, shxFile);		
+
+		writeLineNumber(qPrintable(projFile), 39, qPrintable(shpFile));
 		
 		log.open(logFileName.ascii(), ios::app);
 		log<<" Done!</p>";
@@ -200,4 +293,8 @@ void mergeFeaturesDialogDlg::help()
 {
 	helpDialog* hlpDlg = new helpDialog(this, "Vecto Merge", 1, "helpFiles/mergeFeaturesDialog.html", "Help :: Vector Merge");
 	hlpDlg->show();	
+}
+
+void mergeFeaturesDialogDlg::setApplicationPointer(QgisInterface* appPtr){
+    applicationPointer = appPtr;
 }

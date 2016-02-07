@@ -26,8 +26,6 @@ src/providers/wfs/CMakeFiles/wfsprovider.dir/moc_qgswfsdata.o: /Library/Framewor
 src/providers/wfs/CMakeFiles/wfsprovider.dir/moc_qgswfsdata.o: /Library/Frameworks/QtNetwork.framework/Headers/qhttp.h
 src/providers/wfs/CMakeFiles/wfsprovider.dir/moc_qgswfsdata.o: src/providers/wfs/../../../../src/providers/wfs/qgswfsdata.h
 src/providers/wfs/CMakeFiles/wfsprovider.dir/moc_qgswfsdata.o: src/providers/wfs/moc_qgswfsdata.cxx
-src/providers/wfs/CMakeFiles/wfsprovider.dir/moc_qgswfsdata.o: /usr/include/Availability.h
-src/providers/wfs/CMakeFiles/wfsprovider.dir/moc_qgswfsdata.o: /usr/include/AvailabilityInternal.h
 src/providers/wfs/CMakeFiles/wfsprovider.dir/moc_qgswfsdata.o: /usr/include/_types.h
 src/providers/wfs/CMakeFiles/wfsprovider.dir/moc_qgswfsdata.o: /usr/include/_xlocale.h
 src/providers/wfs/CMakeFiles/wfsprovider.dir/moc_qgswfsdata.o: /usr/include/alloca.h
@@ -153,8 +151,6 @@ src/providers/wfs/CMakeFiles/wfsprovider.dir/qgswfsprovider.o: /Library/Framewor
 src/providers/wfs/CMakeFiles/wfsprovider.dir/qgswfsprovider.o: ../src/providers/wfs/qgswfsdata.h
 src/providers/wfs/CMakeFiles/wfsprovider.dir/qgswfsprovider.o: ../src/providers/wfs/qgswfsprovider.cpp
 src/providers/wfs/CMakeFiles/wfsprovider.dir/qgswfsprovider.o: ../src/providers/wfs/qgswfsprovider.h
-src/providers/wfs/CMakeFiles/wfsprovider.dir/qgswfsprovider.o: /usr/include/Availability.h
-src/providers/wfs/CMakeFiles/wfsprovider.dir/qgswfsprovider.o: /usr/include/AvailabilityInternal.h
 src/providers/wfs/CMakeFiles/wfsprovider.dir/qgswfsprovider.o: /usr/include/_types.h
 src/providers/wfs/CMakeFiles/wfsprovider.dir/qgswfsprovider.o: /usr/include/_xlocale.h
 src/providers/wfs/CMakeFiles/wfsprovider.dir/qgswfsprovider.o: /usr/include/alloca.h
@@ -232,8 +228,6 @@ src/providers/wfs/CMakeFiles/wfsprovider.dir/qgswfsdata.o: /Library/Frameworks/Q
 src/providers/wfs/CMakeFiles/wfsprovider.dir/qgswfsdata.o: /Library/Frameworks/QtNetwork.framework/Headers/qhttp.h
 src/providers/wfs/CMakeFiles/wfsprovider.dir/qgswfsdata.o: ../src/providers/wfs/qgswfsdata.cpp
 src/providers/wfs/CMakeFiles/wfsprovider.dir/qgswfsdata.o: ../src/providers/wfs/qgswfsdata.h
-src/providers/wfs/CMakeFiles/wfsprovider.dir/qgswfsdata.o: /usr/include/Availability.h
-src/providers/wfs/CMakeFiles/wfsprovider.dir/qgswfsdata.o: /usr/include/AvailabilityInternal.h
 src/providers/wfs/CMakeFiles/wfsprovider.dir/qgswfsdata.o: /usr/include/_types.h
 src/providers/wfs/CMakeFiles/wfsprovider.dir/qgswfsdata.o: /usr/include/_xlocale.h
 src/providers/wfs/CMakeFiles/wfsprovider.dir/qgswfsdata.o: /usr/include/alloca.h

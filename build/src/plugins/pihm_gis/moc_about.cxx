@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'about.h'
 **
-** Created: Mon Sep 7 22:45:43 2009
+** Created: Tue Jul 27 23:38:16 2010
 **      by: The Qt Meta Object Compiler version 59 (Qt 4.3.2)
 **
 ** WARNING! All changes made in this file will be lost!
@@ -22,15 +22,18 @@ static const uint qt_meta_data_AboutDlg[] = {
        1,       // revision
        0,       // classname
        0,    0, // classinfo
-       0,    0, // methods
+       1,   10, // methods
        0,    0, // properties
        0,    0, // enums/sets
+
+ // slots: signature, parameters, type, tag, flags
+      15,   10,    9,    9, 0x08,
 
        0        // eod
 };
 
 static const char qt_meta_stringdata_AboutDlg[] = {
-    "AboutDlg\0"
+    "AboutDlg\0\0link\0on_label_11_linkActivated(QString)\0"
 };
 
 const QMetaObject AboutDlg::staticMetaObject = {
@@ -56,5 +59,11 @@ int AboutDlg::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     _id = QDialog::qt_metacall(_c, _id, _a);
     if (_id < 0)
         return _id;
+    if (_c == QMetaObject::InvokeMetaMethod) {
+        switch (_id) {
+        case 0: on_label_11_linkActivated((*reinterpret_cast< QString(*)>(_a[1]))); break;
+        }
+        _id -= 1;
+    }
     return _id;
 }

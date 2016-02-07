@@ -3,6 +3,7 @@
 
 #include "ui_spatialplot.h"
 //??#include <qgisapp.h>
+#include <qgisinterface.h>
 
 class spatialPlotDlg : public QDialog, private Ui::spatialPlotDialog
 {
@@ -13,6 +14,8 @@ public:
 
 //??	void setApplicationPointer(QgisApp *);
 //??	QgisApp* applicationPointer;
+	void setApplicationPointer(QgisInterface *);
+	QgisInterface* applicationPointer;
 
 public slots:
 	void browseEleShapeFile();
@@ -20,6 +23,11 @@ public slots:
 	void browseModelFile();
 	void generate();
 	void help();
+
+private slots:
+    void on_cancelButton_2_clicked();
+    void on_comboBoxRivVariable_currentIndexChanged(int index);
+    void on_comboBoxEleVariable_currentIndexChanged(int index);
 };
 
 #endif

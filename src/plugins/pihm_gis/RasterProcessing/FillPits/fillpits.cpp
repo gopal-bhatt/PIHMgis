@@ -5,6 +5,8 @@
 #include "../../pihmLIBS/helpDialog/helpdialog.h"
 #include "../../pihmgis.h"
 #include "../../pihmLIBS/homeDir.h"
+#include "../../pihmLIBS/fileStruct.h"
+
 #include <qgsrasterlayer.h>
 #include <fstream>
 using namespace std;
@@ -21,13 +23,33 @@ fillpitsDlg::fillpitsDlg(QWidget *parent)
 
 void fillpitsDlg::inputBrowse()
 {
-	QString str = QFileDialog::getOpenFileName(this, "Choose File", "~/","DEM Grid File(*.adf *.asc)");
+	QString projDir, projFile;
+        QFile tFile(QDir::homePath()+"/project.txt");
+        tFile.open(QIODevice::ReadOnly | QIODevice::Text);
+        QTextStream tin(&tFile);
+	projDir  = tin.readLine();
+	projFile = tin.readLine();
+        tFile.close();
+        cout << qPrintable(projDir);
+
+	QString str = QFileDialog::getOpenFileName(this, "Choose File", projDir,"DEM Grid File(*.adf *.asc)");
 	inputFileLineEdit->setText(str);
+	
+	outputFileLineEdit->setText(projDir+"/RasterProcessing/fill.asc");
 }
 
 void fillpitsDlg::outputBrowse()
 {
-	QString temp = QFileDialog::getSaveFileName(this, "Choose File", "~/","DEM Grid File(*.adf *.asc)");
+	QString projDir, projFile;
+        QFile tFile(QDir::homePath()+"/project.txt");
+        tFile.open(QIODevice::ReadOnly | QIODevice::Text);
+        QTextStream tin(&tFile);
+        projDir  = tin.readLine();
+        projFile = tin.readLine();
+	tFile.close();
+        cout << qPrintable(projDir);
+
+	QString temp = QFileDialog::getSaveFileName(this, "Choose File", projDir+"/RasterProcessing","DEM Grid File(*.adf *.asc)");
 	QString tmp = temp;
 	if(!(tmp.toLower()).endsWith(".asc")){
         tmp.append(".asc");
@@ -39,10 +61,24 @@ void fillpitsDlg::outputBrowse()
 
 void fillpitsDlg::run()
 {
+	QString projDir, projFile;
+        QFile tFile(QDir::homePath()+"/project.txt");
+        tFile.open(QIODevice::ReadOnly | QIODevice::Text);
+        QTextStream tin(&tFile);
+        projDir  = tin.readLine();
+        projFile = tin.readLine();
+	tFile.close();
+        cout << qPrintable(projDir)<<"\n$";
+	cout << qPrintable(projFile)<<"\n";
+	writeLineNumber(qPrintable(projFile), 3, qPrintable(inputFileLineEdit->text()));
+	writeLineNumber(qPrintable(projFile), 4, qPrintable(outputFileLineEdit->text()));
+
 	QString inputFileName((inputFileLineEdit->text()));
 	QString outputFileName((outputFileLineEdit->text()));
 	
-	QString logFileName("/tmp/log.html");
+	QDir dir = QDir::home();
+        QString home = dir.homePath();
+	QString logFileName(qPrintable(home+"/log.html"));
 	ofstream log;
 	log.open(logFileName.toAscii());
 	log<<"<html><body><font size=3 color=black><p> Verifying Files...</p></font></body></html>";
@@ -111,7 +147,18 @@ void fillpitsDlg::run()
 			inputAsciiFileName.append("asc"); 
        			bin2ascii((char*) qPrintable(inputFileName), (char *) qPrintable(inputAsciiFileName));
         	}	
-	
+
+		ifstream tempFile; tempFile.open(qPrintable(inputAsciiFileName));
+		char tempChar[100];
+		tempFile>>tempChar;tempFile>>tempChar;tempFile>>tempChar;tempFile>>tempChar;
+		tempFile>>tempChar;tempFile>>tempChar;tempFile>>tempChar;tempFile>>tempChar;
+		tempFile >> tempChar;
+		int tempDouble; tempFile >> tempDouble;
+		cout << "DEM Resolution= "<<tempDouble<<"\n";
+		tempFile.close(); QString tempStr;
+		writeLineNumber(qPrintable(projFile), 100, qPrintable(QString::number(tempDouble, 10)));
+		//getchar(); getchar();
+
 		int err = flood((char *)qPrintable(inputAsciiFileName), "dummy", (char *)qPrintable(outputFileName) );
 		
 		log.open(logFileName.toAscii(), ios::app);

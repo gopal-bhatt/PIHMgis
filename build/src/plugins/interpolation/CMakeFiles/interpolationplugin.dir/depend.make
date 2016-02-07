@@ -20,8 +20,6 @@ src/plugins/interpolation/CMakeFiles/interpolationplugin.dir/moc_qgstininterpola
 src/plugins/interpolation/CMakeFiles/interpolationplugin.dir/moc_qgstininterpolatordialog.o: src/plugins/interpolation/../../../../src/plugins/interpolation/qgsinterpolatordialog.h
 src/plugins/interpolation/CMakeFiles/interpolationplugin.dir/moc_qgstininterpolatordialog.o: src/plugins/interpolation/../../../../src/plugins/interpolation/qgstininterpolatordialog.h
 src/plugins/interpolation/CMakeFiles/interpolationplugin.dir/moc_qgstininterpolatordialog.o: src/plugins/interpolation/moc_qgstininterpolatordialog.cxx
-src/plugins/interpolation/CMakeFiles/interpolationplugin.dir/moc_qgstininterpolatordialog.o: /usr/include/Availability.h
-src/plugins/interpolation/CMakeFiles/interpolationplugin.dir/moc_qgstininterpolatordialog.o: /usr/include/AvailabilityInternal.h
 src/plugins/interpolation/CMakeFiles/interpolationplugin.dir/moc_qgstininterpolatordialog.o: /usr/include/_types.h
 src/plugins/interpolation/CMakeFiles/interpolationplugin.dir/moc_qgstininterpolatordialog.o: /usr/include/_xlocale.h
 src/plugins/interpolation/CMakeFiles/interpolationplugin.dir/moc_qgstininterpolatordialog.o: /usr/include/alloca.h
@@ -70,8 +68,6 @@ src/plugins/interpolation/CMakeFiles/interpolationplugin.dir/moc_qgsidwinterpola
 src/plugins/interpolation/CMakeFiles/interpolationplugin.dir/moc_qgsidwinterpolatordialog.o: src/plugins/interpolation/../../../../src/plugins/interpolation/qgsinterpolator.h
 src/plugins/interpolation/CMakeFiles/interpolationplugin.dir/moc_qgsidwinterpolatordialog.o: src/plugins/interpolation/../../../../src/plugins/interpolation/qgsinterpolatordialog.h
 src/plugins/interpolation/CMakeFiles/interpolationplugin.dir/moc_qgsidwinterpolatordialog.o: src/plugins/interpolation/moc_qgsidwinterpolatordialog.cxx
-src/plugins/interpolation/CMakeFiles/interpolationplugin.dir/moc_qgsidwinterpolatordialog.o: /usr/include/Availability.h
-src/plugins/interpolation/CMakeFiles/interpolationplugin.dir/moc_qgsidwinterpolatordialog.o: /usr/include/AvailabilityInternal.h
 src/plugins/interpolation/CMakeFiles/interpolationplugin.dir/moc_qgsidwinterpolatordialog.o: /usr/include/_types.h
 src/plugins/interpolation/CMakeFiles/interpolationplugin.dir/moc_qgsidwinterpolatordialog.o: /usr/include/_xlocale.h
 src/plugins/interpolation/CMakeFiles/interpolationplugin.dir/moc_qgsidwinterpolatordialog.o: /usr/include/alloca.h
@@ -150,8 +146,6 @@ src/plugins/interpolation/CMakeFiles/interpolationplugin.dir/qgsgridfilewriter.o
 src/plugins/interpolation/CMakeFiles/interpolationplugin.dir/qgsgridfilewriter.o: ../src/plugins/interpolation/qgsgridfilewriter.cpp
 src/plugins/interpolation/CMakeFiles/interpolationplugin.dir/qgsgridfilewriter.o: ../src/plugins/interpolation/qgsgridfilewriter.h
 src/plugins/interpolation/CMakeFiles/interpolationplugin.dir/qgsgridfilewriter.o: ../src/plugins/interpolation/qgsinterpolator.h
-src/plugins/interpolation/CMakeFiles/interpolationplugin.dir/qgsgridfilewriter.o: /usr/include/Availability.h
-src/plugins/interpolation/CMakeFiles/interpolationplugin.dir/qgsgridfilewriter.o: /usr/include/AvailabilityInternal.h
 src/plugins/interpolation/CMakeFiles/interpolationplugin.dir/qgsgridfilewriter.o: /usr/include/_types.h
 src/plugins/interpolation/CMakeFiles/interpolationplugin.dir/qgsgridfilewriter.o: /usr/include/_xlocale.h
 src/plugins/interpolation/CMakeFiles/interpolationplugin.dir/qgsgridfilewriter.o: /usr/include/alloca.h
@@ -198,8 +192,6 @@ src/plugins/interpolation/CMakeFiles/interpolationplugin.dir/qgsidwinterpolator.
 src/plugins/interpolation/CMakeFiles/interpolationplugin.dir/qgsidwinterpolator.o: ../src/plugins/interpolation/qgsidwinterpolator.cpp
 src/plugins/interpolation/CMakeFiles/interpolationplugin.dir/qgsidwinterpolator.o: ../src/plugins/interpolation/qgsidwinterpolator.h
 src/plugins/interpolation/CMakeFiles/interpolationplugin.dir/qgsidwinterpolator.o: ../src/plugins/interpolation/qgsinterpolator.h
-src/plugins/interpolation/CMakeFiles/interpolationplugin.dir/qgsidwinterpolator.o: /usr/include/Availability.h
-src/plugins/interpolation/CMakeFiles/interpolationplugin.dir/qgsidwinterpolator.o: /usr/include/AvailabilityInternal.h
 src/plugins/interpolation/CMakeFiles/interpolationplugin.dir/qgsidwinterpolator.o: /usr/include/_types.h
 src/plugins/interpolation/CMakeFiles/interpolationplugin.dir/qgsidwinterpolator.o: /usr/include/_xlocale.h
 src/plugins/interpolation/CMakeFiles/interpolationplugin.dir/qgsidwinterpolator.o: /usr/include/alloca.h
@@ -248,8 +240,6 @@ src/plugins/interpolation/CMakeFiles/interpolationplugin.dir/qgsidwinterpolatord
 src/plugins/interpolation/CMakeFiles/interpolationplugin.dir/qgsidwinterpolatordialog.o: ../src/plugins/interpolation/qgsidwinterpolatordialog.h
 src/plugins/interpolation/CMakeFiles/interpolationplugin.dir/qgsidwinterpolatordialog.o: ../src/plugins/interpolation/qgsinterpolator.h
 src/plugins/interpolation/CMakeFiles/interpolationplugin.dir/qgsidwinterpolatordialog.o: ../src/plugins/interpolation/qgsinterpolatordialog.h
-src/plugins/interpolation/CMakeFiles/interpolationplugin.dir/qgsidwinterpolatordialog.o: /usr/include/Availability.h
-src/plugins/interpolation/CMakeFiles/interpolationplugin.dir/qgsidwinterpolatordialog.o: /usr/include/AvailabilityInternal.h
 src/plugins/interpolation/CMakeFiles/interpolationplugin.dir/qgsidwinterpolatordialog.o: /usr/include/_types.h
 src/plugins/interpolation/CMakeFiles/interpolationplugin.dir/qgsidwinterpolatordialog.o: /usr/include/_xlocale.h
 src/plugins/interpolation/CMakeFiles/interpolationplugin.dir/qgsidwinterpolatordialog.o: /usr/include/alloca.h
@@ -336,8 +326,6 @@ src/plugins/interpolation/CMakeFiles/interpolationplugin.dir/qgsinterpolationdia
 src/plugins/interpolation/CMakeFiles/interpolationplugin.dir/qgsinterpolationdialog.o: ../src/plugins/interpolation/qgsinterpolator.h
 src/plugins/interpolation/CMakeFiles/interpolationplugin.dir/qgsinterpolationdialog.o: ../src/plugins/interpolation/qgsinterpolatordialog.h
 src/plugins/interpolation/CMakeFiles/interpolationplugin.dir/qgsinterpolationdialog.o: ../src/plugins/interpolation/qgstininterpolatordialog.h
-src/plugins/interpolation/CMakeFiles/interpolationplugin.dir/qgsinterpolationdialog.o: /usr/include/Availability.h
-src/plugins/interpolation/CMakeFiles/interpolationplugin.dir/qgsinterpolationdialog.o: /usr/include/AvailabilityInternal.h
 src/plugins/interpolation/CMakeFiles/interpolationplugin.dir/qgsinterpolationdialog.o: /usr/include/_types.h
 src/plugins/interpolation/CMakeFiles/interpolationplugin.dir/qgsinterpolationdialog.o: /usr/include/_xlocale.h
 src/plugins/interpolation/CMakeFiles/interpolationplugin.dir/qgsinterpolationdialog.o: /usr/include/alloca.h
@@ -421,8 +409,6 @@ src/plugins/interpolation/CMakeFiles/interpolationplugin.dir/qgsinterpolator.o: 
 src/plugins/interpolation/CMakeFiles/interpolationplugin.dir/qgsinterpolator.o: /Library/Frameworks/QtXml.framework/Headers/qdom.h
 src/plugins/interpolation/CMakeFiles/interpolationplugin.dir/qgsinterpolator.o: ../src/plugins/interpolation/qgsinterpolator.cpp
 src/plugins/interpolation/CMakeFiles/interpolationplugin.dir/qgsinterpolator.o: ../src/plugins/interpolation/qgsinterpolator.h
-src/plugins/interpolation/CMakeFiles/interpolationplugin.dir/qgsinterpolator.o: /usr/include/Availability.h
-src/plugins/interpolation/CMakeFiles/interpolationplugin.dir/qgsinterpolator.o: /usr/include/AvailabilityInternal.h
 src/plugins/interpolation/CMakeFiles/interpolationplugin.dir/qgsinterpolator.o: /usr/include/_types.h
 src/plugins/interpolation/CMakeFiles/interpolationplugin.dir/qgsinterpolator.o: /usr/include/_xlocale.h
 src/plugins/interpolation/CMakeFiles/interpolationplugin.dir/qgsinterpolator.o: /usr/include/alloca.h
@@ -471,8 +457,6 @@ src/plugins/interpolation/CMakeFiles/interpolationplugin.dir/qgsinterpolatordial
 src/plugins/interpolation/CMakeFiles/interpolationplugin.dir/qgsinterpolatordialog.o: ../src/plugins/interpolation/qgsinterpolator.h
 src/plugins/interpolation/CMakeFiles/interpolationplugin.dir/qgsinterpolatordialog.o: ../src/plugins/interpolation/qgsinterpolatordialog.cpp
 src/plugins/interpolation/CMakeFiles/interpolationplugin.dir/qgsinterpolatordialog.o: ../src/plugins/interpolation/qgsinterpolatordialog.h
-src/plugins/interpolation/CMakeFiles/interpolationplugin.dir/qgsinterpolatordialog.o: /usr/include/Availability.h
-src/plugins/interpolation/CMakeFiles/interpolationplugin.dir/qgsinterpolatordialog.o: /usr/include/AvailabilityInternal.h
 src/plugins/interpolation/CMakeFiles/interpolationplugin.dir/qgsinterpolatordialog.o: /usr/include/_types.h
 src/plugins/interpolation/CMakeFiles/interpolationplugin.dir/qgsinterpolatordialog.o: /usr/include/_xlocale.h
 src/plugins/interpolation/CMakeFiles/interpolationplugin.dir/qgsinterpolatordialog.o: /usr/include/alloca.h
@@ -567,8 +551,6 @@ src/plugins/interpolation/CMakeFiles/interpolationplugin.dir/qgstininterpolator.
 src/plugins/interpolation/CMakeFiles/interpolationplugin.dir/qgstininterpolator.o: ../src/plugins/interpolation/qgsinterpolator.h
 src/plugins/interpolation/CMakeFiles/interpolationplugin.dir/qgstininterpolator.o: ../src/plugins/interpolation/qgstininterpolator.cpp
 src/plugins/interpolation/CMakeFiles/interpolationplugin.dir/qgstininterpolator.o: ../src/plugins/interpolation/qgstininterpolator.h
-src/plugins/interpolation/CMakeFiles/interpolationplugin.dir/qgstininterpolator.o: /usr/include/Availability.h
-src/plugins/interpolation/CMakeFiles/interpolationplugin.dir/qgstininterpolator.o: /usr/include/AvailabilityInternal.h
 src/plugins/interpolation/CMakeFiles/interpolationplugin.dir/qgstininterpolator.o: /usr/include/_types.h
 src/plugins/interpolation/CMakeFiles/interpolationplugin.dir/qgstininterpolator.o: /usr/include/_xlocale.h
 src/plugins/interpolation/CMakeFiles/interpolationplugin.dir/qgstininterpolator.o: /usr/include/alloca.h
@@ -621,8 +603,6 @@ src/plugins/interpolation/CMakeFiles/interpolationplugin.dir/qgstininterpolatord
 src/plugins/interpolation/CMakeFiles/interpolationplugin.dir/qgstininterpolatordialog.o: ../src/plugins/interpolation/qgstininterpolator.h
 src/plugins/interpolation/CMakeFiles/interpolationplugin.dir/qgstininterpolatordialog.o: ../src/plugins/interpolation/qgstininterpolatordialog.cpp
 src/plugins/interpolation/CMakeFiles/interpolationplugin.dir/qgstininterpolatordialog.o: ../src/plugins/interpolation/qgstininterpolatordialog.h
-src/plugins/interpolation/CMakeFiles/interpolationplugin.dir/qgstininterpolatordialog.o: /usr/include/Availability.h
-src/plugins/interpolation/CMakeFiles/interpolationplugin.dir/qgstininterpolatordialog.o: /usr/include/AvailabilityInternal.h
 src/plugins/interpolation/CMakeFiles/interpolationplugin.dir/qgstininterpolatordialog.o: /usr/include/_types.h
 src/plugins/interpolation/CMakeFiles/interpolationplugin.dir/qgstininterpolatordialog.o: /usr/include/_xlocale.h
 src/plugins/interpolation/CMakeFiles/interpolationplugin.dir/qgstininterpolatordialog.o: /usr/include/alloca.h
@@ -695,8 +675,6 @@ src/plugins/interpolation/CMakeFiles/interpolationplugin.dir/DualEdgeTriangulati
 src/plugins/interpolation/CMakeFiles/interpolationplugin.dir/DualEdgeTriangulation.o: ../src/plugins/interpolation/TriangleInterpolator.h
 src/plugins/interpolation/CMakeFiles/interpolationplugin.dir/DualEdgeTriangulation.o: ../src/plugins/interpolation/Triangulation.h
 src/plugins/interpolation/CMakeFiles/interpolationplugin.dir/DualEdgeTriangulation.o: ../src/plugins/interpolation/Vector3D.h
-src/plugins/interpolation/CMakeFiles/interpolationplugin.dir/DualEdgeTriangulation.o: /usr/include/Availability.h
-src/plugins/interpolation/CMakeFiles/interpolationplugin.dir/DualEdgeTriangulation.o: /usr/include/AvailabilityInternal.h
 src/plugins/interpolation/CMakeFiles/interpolationplugin.dir/DualEdgeTriangulation.o: /usr/include/_types.h
 src/plugins/interpolation/CMakeFiles/interpolationplugin.dir/DualEdgeTriangulation.o: /usr/include/_xlocale.h
 src/plugins/interpolation/CMakeFiles/interpolationplugin.dir/DualEdgeTriangulation.o: /usr/include/alloca.h
@@ -781,8 +759,6 @@ src/plugins/interpolation/CMakeFiles/interpolationplugin.dir/LinTriangleInterpol
 src/plugins/interpolation/CMakeFiles/interpolationplugin.dir/LinTriangleInterpolator.o: ../src/plugins/interpolation/Node.h
 src/plugins/interpolation/CMakeFiles/interpolationplugin.dir/LinTriangleInterpolator.o: ../src/plugins/interpolation/TriangleInterpolator.h
 src/plugins/interpolation/CMakeFiles/interpolationplugin.dir/LinTriangleInterpolator.o: ../src/plugins/interpolation/Triangulation.h
-src/plugins/interpolation/CMakeFiles/interpolationplugin.dir/LinTriangleInterpolator.o: /usr/include/Availability.h
-src/plugins/interpolation/CMakeFiles/interpolationplugin.dir/LinTriangleInterpolator.o: /usr/include/AvailabilityInternal.h
 src/plugins/interpolation/CMakeFiles/interpolationplugin.dir/LinTriangleInterpolator.o: /usr/include/_types.h
 src/plugins/interpolation/CMakeFiles/interpolationplugin.dir/LinTriangleInterpolator.o: /usr/include/_xlocale.h
 src/plugins/interpolation/CMakeFiles/interpolationplugin.dir/LinTriangleInterpolator.o: /usr/include/alloca.h

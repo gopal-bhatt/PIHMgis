@@ -5,8 +5,9 @@
 #include "../../pihmLIBS/helpDialog/helpdialog.h"
 #include "triangle.h"
 
+#include "../../pihmLIBS/fileStruct.h"
+
 #include <fstream>
-using namespace std;
 
 using namespace std;
 
@@ -18,12 +19,46 @@ runTriangleDlg::runTriangleDlg(QWidget *parent)
 	connect(runButton, SIGNAL(clicked()), this, SLOT(run()));
 	connect(helpButton, SIGNAL(clicked()), this, SLOT(help()));
 	connect(cancelButton, SIGNAL(clicked()), this, SLOT(close()));
+	nOptionCheckBox->setCheckState(Qt::Checked);
+        VOptionsCheckBox->setCheckState(Qt::Checked);
+
+	QString projDir, projFile;
+        QFile tFile(QDir::homePath()+"/project.txt");
+        tFile.open(QIODevice::ReadOnly | QIODevice::Text);
+        QTextStream tin(&tFile);
+        projDir  = tin.readLine();
+        projFile = tin.readLine();
+	tFile.close();
+        cout << qPrintable(projDir);
+
+	polyFileLineEdit->setText(readLineNumber(qPrintable(projFile), 41));
+	if(readLineNumber(qPrintable(projFile), 43).length()>1){
+		qOptionsCheckBox->setCheckState(Qt::Checked);
+		qOptionLineEdit->setText(readLineNumber(qPrintable(projFile), 43));
+	}
+	if(readLineNumber(qPrintable(projFile), 44).length()>1){
+		aOptionsCheckBox->setCheckState(Qt::Checked);
+		aOptionLineEdit->setText(readLineNumber(qPrintable(projFile), 44));
+	}
+	if(readLineNumber(qPrintable(projFile), 45).length()>1){
+		otherOptionLineEdit->setText(readLineNumber(qPrintable(projFile), 45));
+	}
+		
 }
 
 
 void runTriangleDlg::inputBrowse()
 {
-	QString temp = QFileDialog::getOpenFileName(this, "Choose File", "~/","Poly File(*.poly)");
+	QString projDir, projFile;
+        QFile tFile(QDir::homePath()+"/project.txt");
+        tFile.open(QIODevice::ReadOnly | QIODevice::Text);
+        QTextStream tin(&tFile);
+        projDir  = tin.readLine();
+        projFile = tin.readLine();
+	tFile.close();
+        cout << qPrintable(projDir);
+
+	QString temp = QFileDialog::getOpenFileName(this, "Choose File", projDir+"/DomainDecomposition","Poly File(*.poly)");
 	
         polyFileLineEdit->setText(temp);
 }
@@ -36,8 +71,23 @@ void runTriangleDlg::options()
 
 void runTriangleDlg::run()
 {
+	QString projDir, projFile;
+        QFile tFile(QDir::homePath()+"/project.txt");
+        tFile.open(QIODevice::ReadOnly | QIODevice::Text);
+        QTextStream tin(&tFile);
+        projDir  = tin.readLine();
+        projFile = tin.readLine();
+	tFile.close();
+        cout << qPrintable(projDir);
 
-	QString logFileName("/tmp/log.html");
+	writeLineNumber(qPrintable(projFile), 42, qPrintable(polyFileLineEdit->text()));
+	writeLineNumber(qPrintable(projFile), 43, qPrintable(qOptionLineEdit->text()));
+	writeLineNumber(qPrintable(projFile), 44, qPrintable(aOptionLineEdit->text()));
+	writeLineNumber(qPrintable(projFile), 45, qPrintable(otherOptionLineEdit->text()));
+
+	QDir dir = QDir::home();
+        QString home = dir.homePath();
+	QString logFileName(qPrintable(home+"/log.html"));
 	ofstream log;
 	log.open(qPrintable(logFileName));
 	log<<"<html><body><font size=3 color=black><p> Verifying Files...</p></font></body></html>";

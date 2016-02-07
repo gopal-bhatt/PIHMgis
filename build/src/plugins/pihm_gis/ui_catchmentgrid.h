@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading ui file 'catchmentgrid.ui'
 **
-** Created: Mon Sep 7 22:45:43 2009
+** Created: Tue Jul 27 23:38:17 2010
 **      by: Qt User Interface Compiler version 4.3.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling ui file!
@@ -11,6 +11,7 @@
 #define UI_CATCHMENTGRID_H
 
 #include <Qt3Support/Q3ButtonGroup>
+#include <Qt3Support/Q3GroupBox>
 #include <Qt3Support/Q3MimeSourceFactory>
 #include <Qt3Support/Q3TextBrowser>
 #include <QtCore/QVariant>
@@ -50,32 +51,31 @@ public:
     CatchmentGrid->resize(607, 448);
     messageLog = new Q3TextBrowser(CatchmentGrid);
     messageLog->setObjectName(QString::fromUtf8("messageLog"));
-    messageLog->setGeometry(QRect(10, 309, 581, 130));
+    messageLog->setGeometry(QRect(10, 306, 581, 130));
     helpButton = new QPushButton(CatchmentGrid);
     helpButton->setObjectName(QString::fromUtf8("helpButton"));
-    helpButton->setGeometry(QRect(10, 269, 81, 32));
+    helpButton->setGeometry(QRect(10, 266, 98, 32));
     helpButton->setAutoDefault(false);
     runButton = new QPushButton(CatchmentGrid);
     runButton->setObjectName(QString::fromUtf8("runButton"));
-    runButton->setGeometry(QRect(510, 269, 81, 32));
+    runButton->setGeometry(QRect(500, 266, 98, 32));
     runButton->setAutoDefault(false);
     closeButton = new QPushButton(CatchmentGrid);
     closeButton->setObjectName(QString::fromUtf8("closeButton"));
-    closeButton->setGeometry(QRect(424, 269, 81, 32));
+    closeButton->setGeometry(QRect(390, 266, 98, 32));
     closeButton->setAutoDefault(false);
     buttonGroup1 = new Q3ButtonGroup(CatchmentGrid);
     buttonGroup1->setObjectName(QString::fromUtf8("buttonGroup1"));
-    buttonGroup1->setGeometry(QRect(10, 10, 581, 140));
-    buttonGroup1->setOrientation(Qt::Vertical);
+    buttonGroup1->setGeometry(QRect(10, 6, 581, 140));
     inputLNKBrowseButton = new QPushButton(buttonGroup1);
     inputLNKBrowseButton->setObjectName(QString::fromUtf8("inputLNKBrowseButton"));
-    inputLNKBrowseButton->setGeometry(QRect(470, 40, 81, 32));
+    inputLNKBrowseButton->setGeometry(QRect(470, 40, 98, 32));
     inputLNKBrowseButton->setCheckable(false);
     inputLNKBrowseButton->setAutoDefault(false);
     inputLNKBrowseButton->setFlat(false);
     inputFDRBrowseButton = new QPushButton(buttonGroup1);
     inputFDRBrowseButton->setObjectName(QString::fromUtf8("inputFDRBrowseButton"));
-    inputFDRBrowseButton->setGeometry(QRect(470, 90, 81, 32));
+    inputFDRBrowseButton->setGeometry(QRect(470, 90, 98, 32));
     inputFDRBrowseButton->setCheckable(false);
     inputFDRBrowseButton->setAutoDefault(false);
     inputFDRBrowseButton->setFlat(false);
@@ -93,11 +93,10 @@ public:
     inputFDRFileLineEdit->setGeometry(QRect(130, 91, 325, 29));
     buttonGroup2 = new Q3ButtonGroup(CatchmentGrid);
     buttonGroup2->setObjectName(QString::fromUtf8("buttonGroup2"));
-    buttonGroup2->setGeometry(QRect(10, 157, 581, 100));
-    buttonGroup2->setOrientation(Qt::Vertical);
+    buttonGroup2->setGeometry(QRect(10, 153, 581, 100));
     outputBrowseButton = new QPushButton(buttonGroup2);
     outputBrowseButton->setObjectName(QString::fromUtf8("outputBrowseButton"));
-    outputBrowseButton->setGeometry(QRect(470, 40, 81, 32));
+    outputBrowseButton->setGeometry(QRect(470, 40, 98, 32));
     outputBrowseButton->setAutoDefault(false);
     textLabel1_2 = new QLabel(buttonGroup2);
     textLabel1_2->setObjectName(QString::fromUtf8("textLabel1_2"));
@@ -133,7 +132,7 @@ public:
     buttonGroup1->setTitle(QApplication::translate("CatchmentGrid", "Input", 0, QApplication::UnicodeUTF8));
     inputLNKBrowseButton->setText(QApplication::translate("CatchmentGrid", "Browse", 0, QApplication::UnicodeUTF8));
     inputFDRBrowseButton->setText(QApplication::translate("CatchmentGrid", "Browse", 0, QApplication::UnicodeUTF8));
-    textLabel1->setText(QApplication::translate("CatchmentGrid", "Stream Link Grid", 0, QApplication::UnicodeUTF8));
+    textLabel1->setText(QApplication::translate("CatchmentGrid", "Link Grid", 0, QApplication::UnicodeUTF8));
     textLabel1_3->setText(QApplication::translate("CatchmentGrid", "Flow Dir. Grid", 0, QApplication::UnicodeUTF8));
     buttonGroup2->setTitle(QApplication::translate("CatchmentGrid", "Output", 0, QApplication::UnicodeUTF8));
     outputBrowseButton->setText(QApplication::translate("CatchmentGrid", "Browse", 0, QApplication::UnicodeUTF8));

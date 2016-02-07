@@ -2,14 +2,29 @@
 #include "ui_geolfile.h"
 
 #include <QFileDialog>
-#include <fstream.h>
+#include <fstream>
 #include <math.h>
+
+#include "../../pihmLIBS/fileStruct.h"
+#include "../../pihmLIBS/helpDialog/helpdialog.h"
+
 using namespace std;
 
 GeolFile::GeolFile(QWidget *parent)
     : QDialog(parent), ui(new Ui::GeolFile)
 {
     ui->setupUi(this);
+	QString projDir, projFile;
+        QFile tFile(QDir::homePath()+"/project.txt");
+        tFile.open(QIODevice::ReadOnly | QIODevice::Text);
+        QTextStream tin(&tFile);
+        projDir  = tin.readLine();
+        projFile = tin.readLine();
+	tFile.close();
+        cout << qPrintable(projDir);
+
+        QString tempStr=readLineNumber(qPrintable(projFile), 49); tempStr.truncate(tempStr.length()-4);
+        ui->lineEditGeolFile->setText(tempStr+"geol");
 }
 
 GeolFile::~GeolFile()
@@ -24,13 +39,31 @@ void GeolFile::on_pushButtonClose_clicked()
 
 void GeolFile::on_pushButtonGeolTexture_clicked()
 {
-    QString s = QFileDialog::getOpenFileName(this, "Choose Geol Texture File", "", "Texture (*.txt *.TXT)");
+	QString projDir, projFile;
+        QFile tFile(QDir::homePath()+"/project.txt");
+        tFile.open(QIODevice::ReadOnly | QIODevice::Text);
+        QTextStream tin(&tFile);
+        projDir  = tin.readLine();
+        projFile = tin.readLine();
+	tFile.close();
+        cout << qPrintable(projDir);
+
+    QString s = QFileDialog::getOpenFileName(this, "Choose Geol Texture File", projDir, "Texture (*.txt *.TXT)");
     ui->lineEditGeolTexture->setText(s);
 }
 
 void GeolFile::on_pushButtonGeolFile_clicked()
 {
-    QString s = QFileDialog::getSaveFileName(this, "Choose .GEOL File Name", "", "GEOL file (*.geol)");
+	QString projDir, projFile;
+        QFile tFile(QDir::homePath()+"/project.txt");
+        tFile.open(QIODevice::ReadOnly | QIODevice::Text);
+        QTextStream tin(&tFile);
+        projDir  = tin.readLine();
+        projFile = tin.readLine();
+	tFile.close();
+        cout << qPrintable(projDir);
+
+    QString s = QFileDialog::getSaveFileName(this, "Choose .GEOL File Name", projDir+"/DataModel", "GEOL file (*.geol)");
     if(!s.endsWith(".geol"))
         s.append(".geol");
     ui->lineEditGeolFile->setText(s);
@@ -38,6 +71,18 @@ void GeolFile::on_pushButtonGeolFile_clicked()
 
 void GeolFile::on_pushButtonRun_clicked()
 {
+	QString projDir, projFile;
+        QFile tFile(QDir::homePath()+"/project.txt");
+        tFile.open(QIODevice::ReadOnly | QIODevice::Text);
+        QTextStream tin(&tFile);
+        projDir  = tin.readLine();
+        projFile = tin.readLine();
+	tFile.close();
+        cout << qPrintable(projDir);
+
+	writeLineNumber(qPrintable(projFile), 89, qPrintable(ui->lineEditGeolTexture->text()));
+	writeLineNumber(qPrintable(projFile), 90, qPrintable(ui->lineEditGeolFile->text()));
+
     int RunFlag=1;
     ifstream inFile;
     ofstream outFile;
@@ -45,15 +90,17 @@ void GeolFile::on_pushButtonRun_clicked()
     outFile.open((ui->lineEditGeolFile->text()).toAscii());
 
     ofstream logFile;
-    QString logFileName("/tmp/log.html");
-    logFile.open("/tmp/log.html");
+	QDir dir = QDir::home();
+        QString home = dir.homePath();
+    QString logFileName(home+"/log.html");
+    logFile.open(qPrintable(logFileName));
     logFile<<"<html><body><font size=3 color=black> Verifying Files...<br>";
     logFile.close();
     ui->textBrowser->setSource(logFileName);
     ui->textBrowser->setFocus();
     ui->textBrowser->setModified(TRUE);
 
-    logFile.open("/tmp/log.html", ios::app);
+    logFile.open(qPrintable(logFileName), ios::app);
     logFile<<"Checking Geol Texture File... ";
     if (inFile == NULL){
         logFile<<"could NOT open file.  ERROR<br>";
@@ -73,7 +120,7 @@ void GeolFile::on_pushButtonRun_clicked()
 
     if(RunFlag == 1){
 
-        logFile.open("/tmp/log.html", ios::app);
+        logFile.open(qPrintable(logFileName), ios::app);
         logFile<<"Generating .GEOL file... ";
 
         char tempS[500];
@@ -134,6 +181,7 @@ void GeolFile::on_pushButtonRun_clicked()
                 //Alpha
             //outData[i][5]=log(-14.96+0.03135*C+0.0351*S+0.646*OM+15.29*D-0.192*topsoil-4.671*D*D-0.000781*C*C-0.00687*OM*OM+0.0449/OM+0.0663*log(S)+0.1482*log(OM)-0.04546*D*S-0.4852*D*OM+0.00673*topsoil*C);
             outData[i][5]=  exp(-14.96+0.03135*C+0.0351*S+0.646*OM+15.29*D-0.192*topsoil-4.671*D*D-0.000781*C*C-0.00687*OM*OM+0.0449/OM+0.0663*log(S)+0.1482*log(OM)-0.04546*D*S-0.4852*D*OM+0.00673*topsoil*C);
+		outData[i][5]= 100*outData[i][5]; //UNIT CONVERSION 1/cm TO 1/m
             outFile<<outData[i][5]<<"\t";
                 //Beta
             outData[i][6]=1+exp(-25.23-0.02195*C+0.0074*S-0.1940*OM+45.5*D-7.24*D*D+0.0003658*C*C+0.002885*OM*OM-12.81/D-0.1524/S-0.01958/OM-0.2876*log(S)-0.0709*log(OM)-44.6*log(D)-0.02264*D*C+0.0896*D*OM+0.00718*topsoil*C);
@@ -160,5 +208,6 @@ void GeolFile::on_pushButtonRun_clicked()
 
 void GeolFile::on_pushButtonHelp_clicked()
 {
-
+helpDialog* hlpDlg = new helpDialog(this, "Geol File", 1, "helpFiles/geolfile.html", "Help :: Geol File");
+        hlpDlg->show();
 }

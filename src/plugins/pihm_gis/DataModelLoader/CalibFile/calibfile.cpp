@@ -3,10 +3,13 @@
 
 #include <QErrorMessage>
 #include <QFileDialog>
-#include <fstream.h>
+#include <fstream>
 
 #include <QMessageBox>
 #include <QPushButton>
+
+#include "../../pihmLIBS/helpDialog/helpdialog.h"
+#include "../../pihmLIBS/fileStruct.h"
 
 using namespace std;
 
@@ -15,7 +18,18 @@ CalibFile::CalibFile(QWidget *parent)
 {
     ui->setupUi(this);
     ui->calibFile->setFocus(Qt::OtherFocusReason);
+	
+	QString projDir, projFile;
+        QFile tFile(QDir::homePath()+"/project.txt");
+        tFile.open(QIODevice::ReadOnly | QIODevice::Text);
+        QTextStream tin(&tFile);
+        projDir  = tin.readLine();
+        projFile = tin.readLine();
+	tFile.close();
+        cout << qPrintable(projDir);
 
+	QString tempStr=readLineNumber(qPrintable(projFile), 49); tempStr.truncate(tempStr.length()-4);
+	ui->calibFile->setText(tempStr+"calib");
 }
 
 CalibFile::~CalibFile()
@@ -30,7 +44,16 @@ void CalibFile::on_pushButtonClose_clicked()
 
 void CalibFile::on_pushButtonBrowse_clicked()
 {
-    QString s = QFileDialog::getSaveFileName(this, "Choose CALIB File Name", "", "CALIB file (*.calib)");
+	QString projDir, projFile;
+        QFile tFile(QDir::homePath()+"/project.txt");
+        tFile.open(QIODevice::ReadOnly | QIODevice::Text);
+        QTextStream tin(&tFile);
+        projDir  = tin.readLine();
+        projFile = tin.readLine();
+	tFile.close();
+        cout << qPrintable(projDir);
+
+    QString s = QFileDialog::getSaveFileName(this, "Choose CALIB File Name", projDir+"/DataModel", "CALIB file (*.calib)");
     if(!s.endsWith(".calib"))
         s.append(".calib");
     ui->calibFile->setText(s);
@@ -38,6 +61,17 @@ void CalibFile::on_pushButtonBrowse_clicked()
 
 void CalibFile::on_pushButtonRun_clicked()
 {
+	QString projDir, projFile;
+        QFile tFile(QDir::homePath()+"/project.txt");
+        tFile.open(QIODevice::ReadOnly | QIODevice::Text);
+        QTextStream tin(&tFile);
+        projDir  = tin.readLine();
+        projFile = tin.readLine();
+	tFile.close();
+        cout << qPrintable(projDir);
+
+	writeLineNumber(qPrintable(projFile), 93, qPrintable(ui->calibFile->text()));
+
     ofstream outFile;
     outFile.open((ui->calibFile->text()).toAscii());
     int RunFlag = 1;
@@ -63,11 +97,13 @@ void CalibFile::on_pushButtonRun_clicked()
 
         QMessageBox msgBox;
         msgBox.setIcon(QMessageBox::Information);
-        msgBox.information(0, "Success", "Done !", QMessageBox::Close);
+	QMessageBox::information(this,tr("Calib File"),tr("Calib file created successfully\nClick OK to close the dialog!"),QMessageBox::Ok);
+        //msgBox.information(0, "Success", "Done !", QMessageBox::Close);
     }
 }
 
 void CalibFile::on_pushButtonHelp_clicked()
 {
-
+            helpDialog* hlpDlg = new helpDialog(this, "Fill Pits", 1, "helpFiles/calibfile.html", "Help :: Fill Pits");
+            hlpDlg->show();
 }

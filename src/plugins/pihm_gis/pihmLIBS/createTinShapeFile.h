@@ -4,7 +4,7 @@
 
 using namespace std;
 
-void createTinShapeFile(const char* eleFileName, const char* nodeFileName, const char* shpFileName, const char*dbfFileName, const char *logFileName){
+void createTinShapeFile(const char* eleFileName, const char* nodeFileName, const char* shpFileName, const char*dbfFileName, const char *logFileName);/*{
                           ifstream eleFile;
                           ifstream nodeFile;
                           eleFile.open(eleFileName);
@@ -80,4 +80,4 @@ void createTinShapeFile(const char* eleFileName, const char* nodeFileName, const
                           DBFClose(newDbf);
 			  out<<" Done!</p>";
 			  out<<"<br><br>";
-}
+}*/

@@ -5,8 +5,11 @@
 #include <fstream>
 using namespace std;
 
+#include "../../pihmLIBS/interpRiverNodes.h"
 #include "../../pihmLIBS/pickGridValue.h"
 #include "../../pihmLIBS/helpDialog/helpdialog.h"
+
+#include "../../pihmLIBS/fileStruct.h"
 
 mshFileDlg::mshFileDlg(QWidget *parent)
 {
@@ -20,41 +23,116 @@ mshFileDlg::mshFileDlg(QWidget *parent)
 	connect(runButton, SIGNAL(clicked()), this, SLOT(run()));
 	connect(helpButton, SIGNAL(clicked()), this, SLOT(help()));
 	connect(cancelButton, SIGNAL(clicked()), this, SLOT(close()));
+
+	bElevFileLineEdit->setShown(0);
+	bElevFileButton->setShown(0);
+
+	QString projDir, projFile;
+        QFile tFile(QDir::homePath()+"/project.txt");
+        tFile.open(QIODevice::ReadOnly | QIODevice::Text);
+        QTextStream tin(&tFile);
+        projDir  = tin.readLine();
+        projFile = tin.readLine();
+	tFile.close();
+        cout << qPrintable(projDir);
+
+	eleFileLineEdit->setText(readLineNumber(qPrintable(projFile), 46));
+	nodeFileLineEdit->setText(readLineNumber(qPrintable(projFile), 47));
+        rivFileLineEdit->setText(readLineNumber(qPrintable(projFile), 37));
+	QString tempStr = readLineNumber(qPrintable(projFile), 47);
+	tempStr.truncate(tempStr.length()-4); tempStr.append("neigh");
+	neighFileLineEdit->setText(tempStr);
+	//sElevFileLineEdit->setText(readLineNumber(qPrintable(projFile), 3)); //adf
+	sElevFileLineEdit->setText(readLineNumber(qPrintable(projFile), 4)); //asc
 }
 
 void mshFileDlg::eleBrowse()
 {
-	QString str = QFileDialog::getOpenFileName(this, "Choose File", "~/","ele File(*.ele *.ELE)");
+	QString projDir, projFile;
+        QFile tFile(QDir::homePath()+"/project.txt");
+        tFile.open(QIODevice::ReadOnly | QIODevice::Text);
+        QTextStream tin(&tFile);
+        projDir  = tin.readLine();
+        projFile = tin.readLine();
+	tFile.close();
+        cout << qPrintable(projDir);
+
+	QString str = QFileDialog::getOpenFileName(this, "Choose File", projDir+"/DomainDecomposition","ele File(*.ele *.ELE)");
 	eleFileLineEdit->setText(str);
 }
 
 void mshFileDlg::nodeBrowse()
 {
-        QString str = QFileDialog::getOpenFileName(this, "Choose File", "~/","node File(*.node *.NODE)");
+	QString projDir, projFile;
+        QFile tFile(QDir::homePath()+"/project.txt");
+        tFile.open(QIODevice::ReadOnly | QIODevice::Text);
+        QTextStream tin(&tFile);
+        projDir  = tin.readLine();
+        projFile = tin.readLine();
+	tFile.close();
+        cout << qPrintable(projDir);
+
+        QString str = QFileDialog::getOpenFileName(this, "Choose File", projDir+"/DomainDecomposition","node File(*.node *.NODE)");
         nodeFileLineEdit->setText(str);
 }
 
 void mshFileDlg::neighBrowse()
 {
-        QString str = QFileDialog::getOpenFileName(this, "Choose File", "~/","neigh File(*.neigh *.NEIGH)");
+	QString projDir, projFile;
+        QFile tFile(QDir::homePath()+"/project.txt");
+        tFile.open(QIODevice::ReadOnly | QIODevice::Text);
+        QTextStream tin(&tFile);
+        projDir  = tin.readLine();
+        projFile = tin.readLine();
+	tFile.close();
+        cout << qPrintable(projDir);
+
+        QString str = QFileDialog::getOpenFileName(this, "Choose File", projDir+"/DomainDecomposition","neigh File(*.neigh *.NEIGH)");
         neighFileLineEdit->setText(str);
 }
 
 void mshFileDlg::sEleBrowse()
 {
-        QString str = QFileDialog::getOpenFileName(this, "Choose File", "~/","Surface Elev File(*.adf *.ADF)");
+	QString projDir, projFile;
+        QFile tFile(QDir::homePath()+"/project.txt");
+        tFile.open(QIODevice::ReadOnly | QIODevice::Text);
+        QTextStream tin(&tFile);
+        projDir  = tin.readLine();
+        projFile = tin.readLine();
+	tFile.close();
+        cout << qPrintable(projDir);
+
+        QString str = QFileDialog::getOpenFileName(this, "Choose File", projDir,"Surface Elev File(*.adf *.ADF *.asc *ASC)");
         sElevFileLineEdit->setText(str);
 }
 
 void mshFileDlg::bEleBrowse()
 {
-        QString str = QFileDialog::getOpenFileName(this, "Choose File", "~/","Bed Elev File(*.adf *.ADF)");
+	QString projDir, projFile;
+        QFile tFile(QDir::homePath()+"/project.txt");
+        tFile.open(QIODevice::ReadOnly | QIODevice::Text);
+        QTextStream tin(&tFile);
+        projDir  = tin.readLine();
+        projFile = tin.readLine();
+	tFile.close();
+        cout << qPrintable(projDir);
+
+        QString str = QFileDialog::getOpenFileName(this, "Choose File", projDir,"Bed Elev File(*.adf *.ADF *.asc *ASC)");
         bElevFileLineEdit->setText(str);
 }
 
 void mshFileDlg::mshBrowse()
 {
-	QString temp = QFileDialog::getSaveFileName(this, "Choose File", "~/","mesh File(*.mesh *.MESH)");
+	QString projDir, projFile;
+        QFile tFile(QDir::homePath()+"/project.txt");
+        tFile.open(QIODevice::ReadOnly | QIODevice::Text);
+        QTextStream tin(&tFile);
+        projDir  = tin.readLine();
+        projFile = tin.readLine();
+	tFile.close();
+        cout << qPrintable(projDir);
+
+	QString temp = QFileDialog::getSaveFileName(this, "Choose File", projDir+"/DataModel","mesh File(*.mesh *.MESH)");
 	QString tmp = temp;
 	if(!(tmp.toLower()).endsWith(".mesh")){
         	tmp.append(".mesh");
@@ -65,8 +143,24 @@ void mshFileDlg::mshBrowse()
 
 void mshFileDlg::run()
 {
+	QString projDir, projFile;
+        QFile tFile(QDir::homePath()+"/project.txt");
+        tFile.open(QIODevice::ReadOnly | QIODevice::Text);
+        QTextStream tin(&tFile);
+        projDir  = tin.readLine();
+        projFile = tin.readLine();
+	tFile.close();
+        cout << qPrintable(projDir);
 
-	QString logFileName("/tmp/log.html");
+	writeLineNumber(qPrintable(projFile), 49, qPrintable(mshFileLineEdit->text()));
+	QString tempStr = mshFileLineEdit->text();
+	tempStr.truncate(tempStr.length()-5);
+	tempStr=tempStr.right(tempStr.length()-tempStr.lastIndexOf("/", -1)-1);
+	writeLineNumber(qPrintable(projFile), 50, qPrintable(tempStr));
+	
+	QDir dir = QDir::home();
+        QString home = dir.homePath();
+	QString logFileName(home+"/log.html");
 	ofstream log;
 	log.open(qPrintable(logFileName));
 	log<<"<html><body><font size=3 color=black><p> Verifying Files...</p></font></body></html>";
@@ -76,14 +170,17 @@ void mshFileDlg::run()
         MessageLog->setModified(TRUE);
 
 	ifstream ele, node, neigh, sele, bele;
-        ofstream mesh;
+        ofstream mesh; ofstream mesh0;
 
         ele.open(qPrintable((eleFileLineEdit->text())));
         node.open(qPrintable((nodeFileLineEdit->text())));
         neigh.open(qPrintable((neighFileLineEdit->text())));
         sele.open(qPrintable((sElevFileLineEdit->text())));
         bele.open(qPrintable((bElevFileLineEdit->text())));
-        mesh.open(qPrintable((mshFileLineEdit->text())), ios::out);
+        //mesh.open(qPrintable((mshFileLineEdit->text())), ios::out);
+        QString meshFile0 =  mshFileLineEdit->text();
+        QString meshFile1; meshFile1 = meshFile0 + "0";
+        mesh.open(qPrintable(meshFile1), ios::out);
 
 	int runFlag = 1;
 /*
@@ -194,13 +291,13 @@ void mshFileDlg::run()
 
 
 	log.open(qPrintable(logFileName), ios::app);
-	if((bElevFileLineEdit->text()).length()==0){
+	if((bElevFileLineEdit->text()).length()==0 && radioButtonFile->isChecked()==1){
 		log<<"<p><font size=3 color=red> Error! Please input Bed Elev. Input File</p>";
 		runFlag = 0;
 	}
 	else{
 		log<<"<p>Checking... "<<qPrintable((bElevFileLineEdit->text()))<<"... ";
-		if(bele == NULL){
+		if(bele == NULL && radioButtonFile->isChecked()==1){
 			log<<"<font size=3 color=red> Error!</p>";
 			//qWarning("\n%s doesn't exist!", (inputFileLineEdit->text()).ascii());
 			runFlag = 0;
@@ -245,8 +342,10 @@ void mshFileDlg::run()
                 double sRanges[6], bRanges[6];
                 GDALAllRegister();
                 sElev = (GDALDataset *)GDALOpen(qPrintable((sElevFileLineEdit->text())), GA_ReadOnly);
+		if(radioButtonFile->isChecked()==1)
                 bElev = (GDALDataset *)GDALOpen(qPrintable((bElevFileLineEdit->text())), GA_ReadOnly);
                 getExtent(sElev, sRanges);
+		if(radioButtonFile->isChecked()==1)
                 getExtent(bElev, bRanges);
 
 
@@ -267,8 +366,13 @@ void mshFileDlg::run()
                 double X, Y, Zmin, Zmax;
                 for(int i=0; i<numNode; i++){
                         node>>index; node>>X; node>>Y; node>>temp;
-                        Zmin = getRasterValue(bElev, 1, X, Y, bRanges);
+                        //Zmin = getRasterValue(bElev, 1, X, Y, bRanges);
                         Zmax = getRasterValue(sElev, 1, X, Y, sRanges);
+
+			if(radioButtonFile->isChecked()==1)
+				Zmin = getRasterValue(bElev, 1, X, Y, bRanges);
+			else
+				Zmin = Zmax-(lineEdit->text()).toDouble();
                         mesh<<"\n"<<index<<"\t"<<setprecision(20)<<X<<"\t"<<setprecision(20)<<Y<<"\t"<<setprecision(15)<<Zmin<<"\t"<<setprecision(15)<<Zmax;
                 }
 
@@ -278,11 +382,29 @@ void mshFileDlg::run()
 		MessageLog->reload();
 		QApplication::processEvents();
 
+                ///////////////////////////////////////////////////////////////////////
+                //ADDING INTERPOLATION OF ELEVATION FOR NODE INSERTED ON RIVER SEGMENTS
+                ///////////////////////////////////////////////////////////////////////
+                mesh.close(); ele.close(); node.close(); neigh.close();
+                QString shpFile = rivFileLineEdit->text();
+                QString dbfFile = shpFile; dbfFile.truncate(dbfFile.length()-3); dbfFile.append("dbf");
+                QString eleFile = eleFileLineEdit->text();
+                QString nodeFile= nodeFileLineEdit->text();
+                QString neighFile=neighFileLineEdit->text();
+                cout<<"\n"<<qPrintable(meshFile1);
+                cout<<"\n"<<qPrintable(meshFile0);
+                interpRiverNodes(qPrintable(shpFile), qPrintable(dbfFile), qPrintable(eleFile), qPrintable(nodeFile), qPrintable(neighFile), qPrintable(meshFile1), qPrintable(meshFile0));
 	}	
 }
-			
+
+void mshFileDlg::on_rivFileButton_clicked()
+{
+
+}
+
 void mshFileDlg::help()
 {
 	helpDialog* hlpDlg = new helpDialog(this, "Mesh File", 1, "helpFiles/meshfile.html", "Help :: Mesh File");
 	hlpDlg->show();	
 }
+

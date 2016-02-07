@@ -69,6 +69,7 @@
 #include "update.h"
 #include <iostream>
 #include <fstream>
+#include <QtGui>
 #include <QtGui/QProgressBar>^M
 #include "progress.h"
 
@@ -88,7 +89,7 @@ void PrintData(FILE **,Control_Data *, Model_Data, N_Vector, realtype);
 /* Main Function */
 int pihm(int argc, char **argv, QProgressBar* bar, QString logFileName, int* RunFlag)
 	{  
-	char tmpLName[11],tmpFName[400];	/* rivFlux File names */
+	char tmpLName[20],tmpFName[400];	/* rivFlux File names */
   	Model_Data mData;               /* Model Data                */
   	Control_Data cData;             /* Solver Control Data       */
   	N_Vector CV_Y;                  /* State Variables Vector    */
@@ -129,28 +130,28 @@ int pihm(int argc, char **argv, QProgressBar* bar, QString logFileName, int* Run
 		cout<<filename<<"\n";
 		}
 	/* Open Output Files */
-	ofn[0] = (char *)malloc((strlen(filename)+3)*sizeof(char));
+	ofn[0] = (char *)malloc((strlen(filename)+10)*sizeof(char));
 	strcpy(ofn[0], filename);
-	Ofile[0]=fopen(strcat(ofn[0], ".GW"),"w");
+	Ofile[0]=fopen(strcat(ofn[0], ".GW.txt"),"w");
 	cout<<ofn[0]<<"\n";
-	ofn[1] = (char *)malloc((strlen(filename)+5)*sizeof(char));
+	ofn[1] = (char *)malloc((strlen(filename)+10)*sizeof(char));
 	strcpy(ofn[1], filename);
-	Ofile[1]=fopen(strcat(ofn[1], ".surf"),"w");
-	ofn[2] = (char *)malloc((strlen(filename)+4)*sizeof(char));
+	Ofile[1]=fopen(strcat(ofn[1], ".surf.txt"),"w");
+	ofn[2] = (char *)malloc((strlen(filename)+10)*sizeof(char));
 	strcpy(ofn[2], filename);
-	Ofile[2]=fopen(strcat(ofn[2], ".et0"),"w");
-	ofn[3] = (char *)malloc((strlen(filename)+4)*sizeof(char));
+	Ofile[2]=fopen(strcat(ofn[2], ".et0.txt"),"w");
+	ofn[3] = (char *)malloc((strlen(filename)+10)*sizeof(char));
 	strcpy(ofn[3], filename);
-	Ofile[3]=fopen(strcat(ofn[3], ".et1"),"w");
-	ofn[4] = (char *)malloc((strlen(filename)+4)*sizeof(char));
+	Ofile[3]=fopen(strcat(ofn[3], ".et1.txt"),"w");
+	ofn[4] = (char *)malloc((strlen(filename)+10)*sizeof(char));
 	strcpy(ofn[4], filename);
-	Ofile[4]=fopen(strcat(ofn[4], ".et2"),"w");
-	ofn[5] = (char *)malloc((strlen(filename)+3)*sizeof(char));
+	Ofile[4]=fopen(strcat(ofn[4], ".et2.txt"),"w");
+	ofn[5] = (char *)malloc((strlen(filename)+10)*sizeof(char));
 	strcpy(ofn[5], filename);
-	Ofile[5]=fopen(strcat(ofn[5], ".is"),"w");
-	ofn[6] = (char *)malloc((strlen(filename)+5)*sizeof(char));
+	Ofile[5]=fopen(strcat(ofn[5], ".is.txt"),"w");
+	ofn[6] = (char *)malloc((strlen(filename)+10)*sizeof(char));
 	strcpy(ofn[6], filename);
-	Ofile[6]=fopen(strcat(ofn[6], ".snow"),"w");
+	Ofile[6]=fopen(strcat(ofn[6], ".snow.txt"),"w");
 	        cout<<ofn[6]<<"\n";
 
 	for(i=0;i<11;i++)
@@ -162,16 +163,16 @@ int pihm(int argc, char **argv, QProgressBar* bar, QString logFileName, int* Run
 		        cout<<tmpFName<<"\n";
 		Ofile[7+i]=fopen(tmpFName,"w");
 		}
-	cout<<ofn[17]<<"\n";	
-	ofn[18] = (char *)malloc((strlen(filename)+6)*sizeof(char));
+	//cout<<ofn[17]<<"\n";	
+	ofn[18] = (char *)malloc((strlen(filename)+15)*sizeof(char));
 	strcpy(ofn[18], filename);
-	Ofile[18]=fopen(strcat(ofn[18], ".stage"),"w");
-	ofn[19] = (char *)malloc((strlen(filename)+6)*sizeof(char));
+	Ofile[18]=fopen(strcat(ofn[18], ".stage.txt"),"w");
+	ofn[19] = (char *)malloc((strlen(filename)+15)*sizeof(char));
 	strcpy(ofn[19], filename);
-	Ofile[19]=fopen(strcat(ofn[19], ".unsat"),"w");
-	ofn[20] = (char *)malloc((strlen(filename)+5)*sizeof(char));
+	Ofile[19]=fopen(strcat(ofn[19], ".unsat.txt"),"w");
+	ofn[20] = (char *)malloc((strlen(filename)+15)*sizeof(char));
 	strcpy(ofn[20], filename);
-	Ofile[20]=fopen(strcat(ofn[20], ".Rech"),"w");
+	Ofile[20]=fopen(strcat(ofn[20], ".Rech.txt"),"w");
 
   	/* allocate memory for model data structure */
   	mData = (Model_Data)malloc(sizeof *mData);
@@ -271,6 +272,7 @@ int pihm(int argc, char **argv, QProgressBar* bar, QString logFileName, int* Run
   	/* Free integrator memory */
   	//CVodeFree(cvode_mem);
   	free(mData);
+	QMessageBox::information(0,"Run PIHM","Simulation Completed Successfully!",QMessageBox::Ok);
   	return 0;
 	}
 

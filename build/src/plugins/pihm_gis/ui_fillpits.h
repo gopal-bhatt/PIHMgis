@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading ui file 'fillpits.ui'
 **
-** Created: Mon Sep 7 22:45:43 2009
+** Created: Tue Jul 27 23:38:17 2010
 **      by: Qt User Interface Compiler version 4.3.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling ui file!
@@ -11,6 +11,7 @@
 #define UI_FILLPITS_H
 
 #include <Qt3Support/Q3ButtonGroup>
+#include <Qt3Support/Q3GroupBox>
 #include <Qt3Support/Q3MimeSourceFactory>
 #include <Qt3Support/Q3TextBrowser>
 #include <QtCore/QVariant>
@@ -47,55 +48,56 @@ public:
     FillPits->resize(604, 409);
     buttonGroup1 = new Q3ButtonGroup(FillPits);
     buttonGroup1->setObjectName(QString::fromUtf8("buttonGroup1"));
-    buttonGroup1->setGeometry(QRect(10, 10, 581, 101));
+    buttonGroup1->setGeometry(QRect(12, 5, 581, 101));
     inputFileLineEdit = new QLineEdit(buttonGroup1);
     inputFileLineEdit->setObjectName(QString::fromUtf8("inputFileLineEdit"));
-    inputFileLineEdit->setGeometry(QRect(130, 41, 325, 29));
+    inputFileLineEdit->setGeometry(QRect(132, 41, 325, 29));
     inputBrowseButton = new QPushButton(buttonGroup1);
     inputBrowseButton->setObjectName(QString::fromUtf8("inputBrowseButton"));
-    inputBrowseButton->setGeometry(QRect(470, 40, 81, 32));
+    inputBrowseButton->setGeometry(QRect(472, 40, 98, 32));
     inputBrowseButton->setCheckable(false);
     inputBrowseButton->setAutoDefault(false);
     inputBrowseButton->setFlat(false);
     textLabel1 = new QLabel(buttonGroup1);
     textLabel1->setObjectName(QString::fromUtf8("textLabel1"));
-    textLabel1->setGeometry(QRect(30, 40, 70, 31));
+    textLabel1->setGeometry(QRect(20, 40, 70, 31));
     runButton = new QPushButton(FillPits);
     runButton->setObjectName(QString::fromUtf8("runButton"));
-    runButton->setGeometry(QRect(510, 229, 81, 32));
+    runButton->setGeometry(QRect(500, 227, 98, 32));
     runButton->setAutoDefault(false);
     helpButton = new QPushButton(FillPits);
     helpButton->setObjectName(QString::fromUtf8("helpButton"));
-    helpButton->setGeometry(QRect(10, 229, 81, 32));
+    helpButton->setGeometry(QRect(8, 227, 98, 32));
     helpButton->setAutoDefault(false);
     closeButton = new QPushButton(FillPits);
     closeButton->setObjectName(QString::fromUtf8("closeButton"));
-    closeButton->setGeometry(QRect(424, 229, 81, 32));
+    closeButton->setGeometry(QRect(390, 227, 98, 32));
     closeButton->setAutoDefault(false);
     messageLog = new Q3TextBrowser(FillPits);
     messageLog->setObjectName(QString::fromUtf8("messageLog"));
-    messageLog->setGeometry(QRect(10, 269, 581, 130));
+    messageLog->setGeometry(QRect(12, 269, 581, 130));
     buttonGroup2 = new Q3ButtonGroup(FillPits);
     buttonGroup2->setObjectName(QString::fromUtf8("buttonGroup2"));
-    buttonGroup2->setGeometry(QRect(10, 120, 581, 100));
+    buttonGroup2->setGeometry(QRect(12, 115, 581, 100));
     outputFileLineEdit = new QLineEdit(buttonGroup2);
     outputFileLineEdit->setObjectName(QString::fromUtf8("outputFileLineEdit"));
-    outputFileLineEdit->setGeometry(QRect(130, 41, 325, 29));
+    outputFileLineEdit->setGeometry(QRect(132, 41, 325, 29));
     outputBrowseButton = new QPushButton(buttonGroup2);
     outputBrowseButton->setObjectName(QString::fromUtf8("outputBrowseButton"));
-    outputBrowseButton->setGeometry(QRect(470, 40, 81, 32));
+    outputBrowseButton->setGeometry(QRect(472, 40, 98, 32));
     outputBrowseButton->setAutoDefault(false);
     textLabel1_2 = new QLabel(buttonGroup2);
     textLabel1_2->setObjectName(QString::fromUtf8("textLabel1_2"));
-    textLabel1_2->setGeometry(QRect(30, 40, 90, 31));
+    textLabel1_2->setGeometry(QRect(20, 40, 90, 31));
     showPF_DFrame = new QCheckBox(buttonGroup2);
     showPF_DFrame->setObjectName(QString::fromUtf8("showPF_DFrame"));
-    showPF_DFrame->setGeometry(QRect(336, 73, 140, 21));
+    showPF_DFrame->setGeometry(QRect(338, 73, 140, 21));
     QFont font;
     font.setPointSize(8);
     font.setBold(false);
     font.setItalic(false);
     font.setUnderline(false);
+    font.setWeight(50);
     font.setStrikeOut(false);
     showPF_DFrame->setFont(font);
     showPF_DFrame->setChecked(true);

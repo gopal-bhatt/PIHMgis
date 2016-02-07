@@ -60,8 +60,6 @@ src/plugins/grid_maker/CMakeFiles/gridmakerplugin.dir/graticulecreator.o
  /Library/Frameworks/QtXml.framework/Headers/qdom.h
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/grid_maker/graticulecreator.cpp
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/grid_maker/graticulecreator.h
- /usr/include/Availability.h
- /usr/include/AvailabilityInternal.h
  /usr/include/_types.h
  /usr/include/_xlocale.h
  /usr/include/alloca.h

@@ -4,12 +4,27 @@
 #include <fstream>
 #include <QFileDialog>
 
+#include "../../pihmLIBS/fileStruct.h"
+#include "../../pihmLIBS/helpDialog/helpdialog.h"
+
 using namespace std;
 
 LCFile::LCFile(QWidget *parent)
     : QDialog(parent), ui(new Ui::LCFile)
 {
     ui->setupUi(this);
+
+	QString projDir, projFile;
+        QFile tFile(QDir::homePath()+"/project.txt");
+        tFile.open(QIODevice::ReadOnly | QIODevice::Text);
+        QTextStream tin(&tFile);
+        projDir  = tin.readLine();
+        projFile = tin.readLine();
+	tFile.close();
+        cout << qPrintable(projDir);
+	
+	QString tempStr=readLineNumber(qPrintable(projFile), 49); tempStr.truncate(tempStr.length()-4);
+	ui->lineEditLC->setText(tempStr+"lc");
 }
 
 LCFile::~LCFile()
@@ -24,13 +39,31 @@ void LCFile::on_pushButtonClose_clicked()
 
 void LCFile::on_pushButtonNLCD_clicked()
 {
-    QString s = QFileDialog::getOpenFileName(this, "Choose NLCD Class File", "", "NLCD Class (*.txt *.TXT)");
+	QString projDir, projFile;
+        QFile tFile(QDir::homePath()+"/project.txt");
+        tFile.open(QIODevice::ReadOnly | QIODevice::Text);
+        QTextStream tin(&tFile);
+        projDir  = tin.readLine();
+        projFile = tin.readLine();
+	tFile.close();
+        cout << qPrintable(projDir);
+
+    QString s = QFileDialog::getOpenFileName(this, "Choose NLCD Class File", projDir, "NLCD Class (*.txt *.TXT)");
     ui->lineEditNLCD->setText(s);
 }
 
 void LCFile::on_pushButtonLC_clicked()
 {
-    QString s = QFileDialog::getSaveFileName(this, "Choose LC File Name", "", "LC file (*.lc)");
+	QString projDir, projFile;
+        QFile tFile(QDir::homePath()+"/project.txt");
+        tFile.open(QIODevice::ReadOnly | QIODevice::Text);
+        QTextStream tin(&tFile);
+        projDir  = tin.readLine();
+        projFile = tin.readLine();
+	tFile.close();
+        cout << qPrintable(projDir);
+
+    QString s = QFileDialog::getSaveFileName(this, "Choose LC File Name", projDir+"/DataModel", "LC file (*.lc)");
     if(!s.endsWith(".lc"))
         s.append(".lc");
     ui->lineEditLC->setText(s);
@@ -38,6 +71,18 @@ void LCFile::on_pushButtonLC_clicked()
 
 void LCFile::on_pushButtonRun_clicked()
 {
+	QString projDir, projFile;
+        QFile tFile(QDir::homePath()+"/project.txt");
+        tFile.open(QIODevice::ReadOnly | QIODevice::Text);
+        QTextStream tin(&tFile);
+        projDir  = tin.readLine();
+        projFile = tin.readLine();
+	tFile.close();
+        cout << qPrintable(projDir);
+
+	writeLineNumber(qPrintable(projFile), 91, qPrintable(ui->lineEditNLCD->text()));
+	writeLineNumber(qPrintable(projFile), 92, qPrintable(ui->lineEditLC->text()));
+
     int RunFlag=1;
     ifstream inFile;
     ofstream outFile;
@@ -45,15 +90,17 @@ void LCFile::on_pushButtonRun_clicked()
     outFile.open((ui->lineEditLC->text()).toAscii());
 
     ofstream logFile;
-    QString logFileName("/tmp/log.html");
-    logFile.open("/tmp/log.html");
+	QDir dir = QDir::home();
+        QString home = dir.homePath();
+    QString logFileName(home+"/log.html");
+    logFile.open(qPrintable(logFileName));
     logFile<<"<html><body><font size=3 color=black> Verifying Files...<br>";
     logFile.close();
     ui->textBrowser->setSource(logFileName);
     ui->textBrowser->setFocus();
     ui->textBrowser->setModified(TRUE);
 
-    logFile.open("/tmp/log.html", ios::app);
+    logFile.open(qPrintable(logFileName), ios::app);
     logFile<<"Checking NLCD Texture File... ";
     if (inFile == NULL){
         logFile<<"could NOT open file.  ERROR<br>";
@@ -73,7 +120,7 @@ void LCFile::on_pushButtonRun_clicked()
 
     if(RunFlag == 1){
 
-        logFile.open("/tmp/log.html", ios::app);
+        logFile.open(qPrintable(logFileName), ios::app);
         logFile<<"Generating LC file... ";
 
         int count = 0;
@@ -231,5 +278,6 @@ void LCFile::on_pushButtonRun_clicked()
 
 void LCFile::on_pushButtonHelp_clicked()
 {
-
+helpDialog* hlpDlg = new helpDialog(this, "LC File", 1, "helpFiles/lcfile.html", "Help :: LC File");
+        hlpDlg->show();
 }

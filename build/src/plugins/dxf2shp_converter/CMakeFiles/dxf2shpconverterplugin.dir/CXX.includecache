@@ -544,12 +544,6 @@ stdio.h
 dbmalloc.h
 -
 
-/usr/include/Availability.h
-AvailabilityInternal.h
--
-
-/usr/include/AvailabilityInternal.h
-
 /usr/include/AvailabilityMacros.h
 
 /usr/include/_types.h

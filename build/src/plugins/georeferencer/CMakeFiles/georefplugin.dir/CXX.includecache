@@ -1034,12 +1034,6 @@ qgsrasterlayer.h
 ui_qgspointdialogbase.h
 -
 
-/usr/include/Availability.h
-AvailabilityInternal.h
--
-
-/usr/include/AvailabilityInternal.h
-
 /usr/include/AvailabilityMacros.h
 
 /usr/include/_locale.h

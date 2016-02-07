@@ -9,6 +9,8 @@ using namespace std;
 #include "../../pihmLIBS/shapefil.h"
 #include "../../pihmLIBS/helpDialog/helpdialog.h"
 
+#include "../../pihmLIBS/fileStruct.h"
+
 attFileDlg::attFileDlg(QWidget *parent)
 {
 	setupUi(this);
@@ -37,132 +39,354 @@ attFileDlg::attFileDlg(QWidget *parent)
 	connect(runButton, SIGNAL(clicked()), this, SLOT(run()));
 	connect(helpButton, SIGNAL(clicked()), this, SLOT(help()));
 	connect(cancelButton, SIGNAL(clicked()), this, SLOT(close()));
+
+	QString projDir, projFile;
+        QFile tFile(QDir::homePath()+"/project.txt");
+        tFile.open(QIODevice::ReadOnly | QIODevice::Text);
+        QTextStream tin(&tFile);
+        projDir  = tin.readLine();
+        projFile = tin.readLine();
+	tFile.close();
+        cout << qPrintable(projDir);
+
+	TINLineEdit->setText(readLineNumber(qPrintable(projFile), 48));
+	QString tempStr; tempStr=readLineNumber(qPrintable(projFile), 49); tempStr.truncate(tempStr.length()-4);
+	attFileLineEdit->setText(tempStr+"att");
+	PrecipLineEdit->setText(readLineNumber(qPrintable(projFile), 54));
+	TempLineEdit->setText(readLineNumber(qPrintable(projFile), 55));
+	HumidLineEdit->setText(readLineNumber(qPrintable(projFile), 56));
+	WindLineEdit->setText(readLineNumber(qPrintable(projFile), 57));
+	GLineEdit->setText(readLineNumber(qPrintable(projFile), 58));
+	RnLineEdit->setText(readLineNumber(qPrintable(projFile), 59));
+	PLineEdit->setText(readLineNumber(qPrintable(projFile), 60));
+	SoilLineEdit->setText(readLineNumber(qPrintable(projFile), 61));
+	GeolLineEdit->setText(readLineNumber(qPrintable(projFile), 62));
+	LCLineEdit->setText(readLineNumber(qPrintable(projFile), 63));
+	MFLineEdit->setText(readLineNumber(qPrintable(projFile), 64));
+	MPLineEdit->setText(readLineNumber(qPrintable(projFile), 65));
+	ISICLineEdit->setText(readLineNumber(qPrintable(projFile), 66));
+	SnowICLineEdit->setText(readLineNumber(qPrintable(projFile), 67));
+	OverlandICLineEdit->setText(readLineNumber(qPrintable(projFile), 68));
+	UnSatICLineEdit->setText(readLineNumber(qPrintable(projFile), 69));
+	SatICLineEdit->setText(readLineNumber(qPrintable(projFile), 70));
+	BCLineEdit->setText(readLineNumber(qPrintable(projFile), 71));
+	SourceLineEdit->setText(readLineNumber(qPrintable(projFile), 72));
 }
 
 void attFileDlg::tinBrowse()
 {
-	QString str = QFileDialog::getOpenFileName(this, "Choose File", "~/","Shape File(*.shp *.SHP)");
+	QString projDir, projFile;
+        QFile tFile(QDir::homePath()+"/project.txt");
+        tFile.open(QIODevice::ReadOnly | QIODevice::Text);
+        QTextStream tin(&tFile);
+        projDir  = tin.readLine();
+        projFile = tin.readLine();
+	tFile.close();
+        cout << qPrintable(projDir);
+
+	QString str = QFileDialog::getOpenFileName(this, "Choose File", projDir+"/DomainDecomposition","Shape File(*.shp *.SHP)");
         TINLineEdit->setText(str);
 }
 
 void attFileDlg::precipBrowse()
 {
-        QString str = QFileDialog::getOpenFileName(this, "Choose File", "~/","File(*.adf *.ADF)");
+	QString projDir, projFile;
+        QFile tFile(QDir::homePath()+"/project.txt");
+        tFile.open(QIODevice::ReadOnly | QIODevice::Text);
+        QTextStream tin(&tFile);
+        projDir  = tin.readLine();
+        projFile = tin.readLine();
+	tFile.close();
+        cout << qPrintable(projDir);
+
+        QString str = QFileDialog::getOpenFileName(this, "Choose File", projDir,"File(*.adf *.ADF)");
         PrecipLineEdit->setText(str);
 }
 
 void attFileDlg::tempBrowse()
 {
-        QString str = QFileDialog::getOpenFileName(this, "Choose File", "~/","File(*.adf *.ADF)");
+	QString projDir, projFile;
+        QFile tFile(QDir::homePath()+"/project.txt");
+        tFile.open(QIODevice::ReadOnly | QIODevice::Text);
+        QTextStream tin(&tFile);
+        projDir  = tin.readLine();
+        projFile = tin.readLine();
+	tFile.close();
+        cout << qPrintable(projDir);
+
+        QString str = QFileDialog::getOpenFileName(this, "Choose File", projDir,"File(*.adf *.ADF)");
         TempLineEdit->setText(str);
 }
 
 void attFileDlg::humidBrowse()
 {
-        QString str = QFileDialog::getOpenFileName(this, "Choose File", "~/","File(*.adf *.ADF)");
+	QString projDir, projFile;
+        QFile tFile(QDir::homePath()+"/project.txt");
+        tFile.open(QIODevice::ReadOnly | QIODevice::Text);
+        QTextStream tin(&tFile);
+        projDir  = tin.readLine();
+        projFile = tin.readLine();
+	tFile.close();
+        cout << qPrintable(projDir);
+
+        QString str = QFileDialog::getOpenFileName(this, "Choose File", projDir,"File(*.adf *.ADF)");
         HumidLineEdit->setText(str);
 }
 
 void attFileDlg::windBrowse()
 {
-        QString str = QFileDialog::getOpenFileName(this, "Choose File", "~/","File(*.adf *.ADF)");
+	QString projDir, projFile;
+        QFile tFile(QDir::homePath()+"/project.txt");
+        tFile.open(QIODevice::ReadOnly | QIODevice::Text);
+        QTextStream tin(&tFile);
+        projDir  = tin.readLine();
+        projFile = tin.readLine();
+	tFile.close();
+        cout << qPrintable(projDir);
+
+        QString str = QFileDialog::getOpenFileName(this, "Choose File", projDir,"File(*.adf *.ADF)");
         WindLineEdit->setText(str);
 }
 
 void attFileDlg::gBrowse()
 {
-        QString str = QFileDialog::getOpenFileName(this, "Choose File", "~/","File(*.adf *.ADF)");
+	QString projDir, projFile;
+        QFile tFile(QDir::homePath()+"/project.txt");
+        tFile.open(QIODevice::ReadOnly | QIODevice::Text);
+        QTextStream tin(&tFile);
+        projDir  = tin.readLine();
+        projFile = tin.readLine();
+	tFile.close();
+        cout << qPrintable(projDir);
+
+        QString str = QFileDialog::getOpenFileName(this, "Choose File", projDir,"File(*.adf *.ADF)");
         GLineEdit->setText(str);
 }
 
 void attFileDlg::rnBrowse()
 {
-        QString str = QFileDialog::getOpenFileName(this, "Choose File", "~/","File(*.adf *.ADF)");
+	QString projDir, projFile;
+        QFile tFile(QDir::homePath()+"/project.txt");
+        tFile.open(QIODevice::ReadOnly | QIODevice::Text);
+        QTextStream tin(&tFile);
+        projDir  = tin.readLine();
+        projFile = tin.readLine();
+	tFile.close();
+        cout << qPrintable(projDir);
+
+        QString str = QFileDialog::getOpenFileName(this, "Choose File", projDir,"File(*.adf *.ADF)");
         RnLineEdit->setText(str);
+	GLineEdit->setText(str);
 }
 
 void attFileDlg::pBrowse()
 {
-        QString str = QFileDialog::getOpenFileName(this, "Choose File", "~/","File(*.adf *.ADF)");
+	QString projDir, projFile;
+        QFile tFile(QDir::homePath()+"/project.txt");
+        tFile.open(QIODevice::ReadOnly | QIODevice::Text);
+        QTextStream tin(&tFile);
+        projDir  = tin.readLine();
+        projFile = tin.readLine();
+	tFile.close();
+        cout << qPrintable(projDir);
+
+        QString str = QFileDialog::getOpenFileName(this, "Choose File", projDir,"File(*.adf *.ADF)");
         PLineEdit->setText(str);
 }
 
 void attFileDlg::soilBrowse()
 {
-        QString str = QFileDialog::getOpenFileName(this, "Choose File", "~/","File(*.adf *.ADF)");
+	QString projDir, projFile;
+        QFile tFile(QDir::homePath()+"/project.txt");
+        tFile.open(QIODevice::ReadOnly | QIODevice::Text);
+        QTextStream tin(&tFile);
+        projDir  = tin.readLine();
+        projFile = tin.readLine();
+	tFile.close();
+        cout << qPrintable(projDir);
+
+        QString str = QFileDialog::getOpenFileName(this, "Choose File", projDir,"File(*.adf *.ADF)");
         SoilLineEdit->setText(str);
 }
 
 void attFileDlg::geolBrowse()
 {
-        QString str = QFileDialog::getOpenFileName(this, "Choose File", "~/","File(*.adf *.ADF)");
+	QString projDir, projFile;
+        QFile tFile(QDir::homePath()+"/project.txt");
+        tFile.open(QIODevice::ReadOnly | QIODevice::Text);
+        QTextStream tin(&tFile);
+        projDir  = tin.readLine();
+        projFile = tin.readLine();
+	tFile.close();
+        cout << qPrintable(projDir);
+
+        QString str = QFileDialog::getOpenFileName(this, "Choose File", projDir,"File(*.adf *.ADF)");
         GeolLineEdit->setText(str);
 }
 
 void attFileDlg::mfBrowse()
 {
-        QString str = QFileDialog::getOpenFileName(this, "Choose File", "~/","File(*.adf *.ADF)");
+	QString projDir, projFile;
+        QFile tFile(QDir::homePath()+"/project.txt");
+        tFile.open(QIODevice::ReadOnly | QIODevice::Text);
+        QTextStream tin(&tFile);
+        projDir  = tin.readLine();
+        projFile = tin.readLine();
+	tFile.close();
+        cout << qPrintable(projDir);
+
+        QString str = QFileDialog::getOpenFileName(this, "Choose File", projDir,"File(*.adf *.ADF)");
         MFLineEdit->setText(str);
 }
 
 
 void attFileDlg::mpBrowse()
 {
-        QString str = QFileDialog::getOpenFileName(this, "Choose File", "~/","File(*.adf *.ADF)");
+	QString projDir, projFile;
+        QFile tFile(QDir::homePath()+"/project.txt");
+        tFile.open(QIODevice::ReadOnly | QIODevice::Text);
+        QTextStream tin(&tFile);
+        projDir  = tin.readLine();
+        projFile = tin.readLine();
+	tFile.close();
+        cout << qPrintable(projDir);
+
+        QString str = QFileDialog::getOpenFileName(this, "Choose File", projDir,"File(*.adf *.ADF)");
         MPLineEdit->setText(str);
 }
 
 void attFileDlg::lcBrowse()
 {
-        QString str = QFileDialog::getOpenFileName(this, "Choose File", "~/","File(*.adf *.ADF)");
+	QString projDir, projFile;
+        QFile tFile(QDir::homePath()+"/project.txt");
+        tFile.open(QIODevice::ReadOnly | QIODevice::Text);
+        QTextStream tin(&tFile);
+        projDir  = tin.readLine();
+        projFile = tin.readLine();
+	tFile.close();
+        cout << qPrintable(projDir);
+
+        QString str = QFileDialog::getOpenFileName(this, "Choose File", projDir,"File(*.adf *.ADF)");
         LCLineEdit->setText(str);
 }
 
 void attFileDlg::isICBrowse()
 {
-        QString str = QFileDialog::getOpenFileName(this, "Choose File", "~/","File(*.adf *.ADF)");
+	QString projDir, projFile;
+        QFile tFile(QDir::homePath()+"/project.txt");
+        tFile.open(QIODevice::ReadOnly | QIODevice::Text);
+        QTextStream tin(&tFile);
+        projDir  = tin.readLine();
+        projFile = tin.readLine();
+	tFile.close();
+        cout << qPrintable(projDir);
+
+        QString str = QFileDialog::getOpenFileName(this, "Choose File", projDir,"File(*.adf *.ADF)");
         ISICLineEdit->setText(str);
 }
 
 void attFileDlg::snowICBrowse()
 {
-        QString str = QFileDialog::getOpenFileName(this, "Choose File", "~/","File(*.adf *.ADF)");
+	QString projDir, projFile;
+        QFile tFile(QDir::homePath()+"/project.txt");
+        tFile.open(QIODevice::ReadOnly | QIODevice::Text);
+        QTextStream tin(&tFile);
+        projDir  = tin.readLine();
+        projFile = tin.readLine();
+	tFile.close();
+        cout << qPrintable(projDir);
+
+        QString str = QFileDialog::getOpenFileName(this, "Choose File", projDir,"File(*.adf *.ADF)");
         SnowICLineEdit->setText(str);
 }
 
 void attFileDlg::overlandICBrowse()
 {
-        QString str = QFileDialog::getOpenFileName(this, "Choose File", "~/","File(*.adf *.ADF)");
+	QString projDir, projFile;
+        QFile tFile(QDir::homePath()+"/project.txt");
+        tFile.open(QIODevice::ReadOnly | QIODevice::Text);
+        QTextStream tin(&tFile);
+        projDir  = tin.readLine();
+        projFile = tin.readLine();
+	tFile.close();
+        cout << qPrintable(projDir);
+
+        QString str = QFileDialog::getOpenFileName(this, "Choose File", projDir,"File(*.adf *.ADF)");
         OverlandICLineEdit->setText(str);
 }
 
 void attFileDlg::unsatICBrowse()
 {
-        QString str = QFileDialog::getOpenFileName(this, "Choose File", "~/","File(*.adf *.ADF)");
+	QString projDir, projFile;
+        QFile tFile(QDir::homePath()+"/project.txt");
+        tFile.open(QIODevice::ReadOnly | QIODevice::Text);
+        QTextStream tin(&tFile);
+        projDir  = tin.readLine();
+        projFile = tin.readLine();
+	tFile.close();
+        cout << qPrintable(projDir);
+
+        QString str = QFileDialog::getOpenFileName(this, "Choose File", projDir,"File(*.adf *.ADF)");
         UnSatICLineEdit->setText(str);
 }
 
 void attFileDlg::satICBrowse()
 {
-        QString str = QFileDialog::getOpenFileName(this, "Choose File", "~/","File(*.adf *.ADF)");
+	QString projDir, projFile;
+        QFile tFile(QDir::homePath()+"/project.txt");
+        tFile.open(QIODevice::ReadOnly | QIODevice::Text);
+        QTextStream tin(&tFile);
+        projDir  = tin.readLine();
+        projFile = tin.readLine();
+	tFile.close();
+        cout << qPrintable(projDir);
+
+        QString str = QFileDialog::getOpenFileName(this, "Choose File", projDir,"File(*.adf *.ADF)");
         SatICLineEdit->setText(str);
 }
 
 void attFileDlg::bcBrowse()
 {
-        QString str = QFileDialog::getOpenFileName(this, "Choose File", "~/","File(*.adf *.ADF)");
+	QString projDir, projFile;
+        QFile tFile(QDir::homePath()+"/project.txt");
+        tFile.open(QIODevice::ReadOnly | QIODevice::Text);
+        QTextStream tin(&tFile);
+        projDir  = tin.readLine();
+        projFile = tin.readLine();
+	tFile.close();
+        cout << qPrintable(projDir);
+
+        QString str = QFileDialog::getOpenFileName(this, "Choose File", projDir,"File(*.adf *.ADF)");
         BCLineEdit->setText(str);
 }
 
 void attFileDlg::sourceBrowse()
 {
-        QString str = QFileDialog::getOpenFileName(this, "Choose File", "~/","File(*.adf *.ADF)");
+	QString projDir, projFile;
+        QFile tFile(QDir::homePath()+"/project.txt");
+        tFile.open(QIODevice::ReadOnly | QIODevice::Text);
+        QTextStream tin(&tFile);
+        projDir  = tin.readLine();
+        projFile = tin.readLine();
+	tFile.close();
+        cout << qPrintable(projDir);
+
+        QString str = QFileDialog::getOpenFileName(this, "Choose File", projDir,"File(*.adf *.ADF)");
         SourceLineEdit->setText(str);
 }
 
 void attFileDlg::attBrowse()
 {
-	QString temp = QFileDialog::getSaveFileName(this, "Choose File", "~/","att File(*.att *.ATT)");
+	QString projDir, projFile;
+        QFile tFile(QDir::homePath()+"/project.txt");
+        tFile.open(QIODevice::ReadOnly | QIODevice::Text);
+        QTextStream tin(&tFile);
+        projDir  = tin.readLine();
+        projFile = tin.readLine();
+	tFile.close();
+        cout << qPrintable(projDir);
+
+	QString temp = QFileDialog::getSaveFileName(this, "Choose File", projDir+"/DataModel","att File(*.att *.ATT)");
 	QString tmp = temp;
 	if(!(tmp.toLower()).endsWith(".att")){
         	tmp.append(".att");
@@ -173,8 +397,39 @@ void attFileDlg::attBrowse()
 
 void attFileDlg::run()
 {
+	QString projDir, projFile;
+        QFile tFile(QDir::homePath()+"/project.txt");
+        tFile.open(QIODevice::ReadOnly | QIODevice::Text);
+        QTextStream tin(&tFile);
+        projDir  = tin.readLine();
+        projFile = tin.readLine();
+	tFile.close();
+        cout << qPrintable(projDir);
 
-	QString logFileName("/tmp/log.html");
+	writeLineNumber(qPrintable(projFile), 54, qPrintable(PrecipLineEdit->text()));
+	writeLineNumber(qPrintable(projFile), 55, qPrintable(TempLineEdit->text()));
+	writeLineNumber(qPrintable(projFile), 56, qPrintable(HumidLineEdit->text()));
+	writeLineNumber(qPrintable(projFile), 57, qPrintable(WindLineEdit->text()));
+	writeLineNumber(qPrintable(projFile), 58, qPrintable(GLineEdit->text()));
+	writeLineNumber(qPrintable(projFile), 59, qPrintable(RnLineEdit->text()));
+	writeLineNumber(qPrintable(projFile), 60, qPrintable(PLineEdit->text()));
+	writeLineNumber(qPrintable(projFile), 61, qPrintable(SoilLineEdit->text()));
+	writeLineNumber(qPrintable(projFile), 62, qPrintable(GeolLineEdit->text()));
+	writeLineNumber(qPrintable(projFile), 63, qPrintable(LCLineEdit->text()));
+	writeLineNumber(qPrintable(projFile), 64, qPrintable(MFLineEdit->text()));
+	writeLineNumber(qPrintable(projFile), 65, qPrintable(MPLineEdit->text()));
+	writeLineNumber(qPrintable(projFile), 66, qPrintable(ISICLineEdit->text()));
+	writeLineNumber(qPrintable(projFile), 67, qPrintable(SnowICLineEdit->text()));
+	writeLineNumber(qPrintable(projFile), 68, qPrintable(OverlandICLineEdit->text()));
+	writeLineNumber(qPrintable(projFile), 69, qPrintable(UnSatICLineEdit->text()));
+	writeLineNumber(qPrintable(projFile), 70, qPrintable(SatICLineEdit->text()));
+	writeLineNumber(qPrintable(projFile), 71, qPrintable(BCLineEdit->text()));
+	writeLineNumber(qPrintable(projFile), 72, qPrintable(SourceLineEdit->text()));
+	writeLineNumber(qPrintable(projFile), 74, qPrintable(attFileLineEdit->text()));
+
+	QDir dir = QDir::home();
+        QString home = dir.homePath();
+	QString logFileName(home+"/log.html");
 	ofstream log;
 	log.open(qPrintable(logFileName));
 	log<<"<html><body><font size=3 color=black><p> Verifying Files...</p></font></body></html>";
@@ -304,15 +559,15 @@ void attFileDlg::run()
 	inFile.open(qPrintable((GLineEdit->text())));
 	log.open(qPrintable(logFileName), ios::app);
 	if((GLineEdit->text()).length()==0){
-		log<<"<p><font size=3 color=red> Error! Please input G Input File</p>";
-		runFlag = 0;
+		//log<<"<p><font size=3 color=red> Error! Please input G Input File</p>";
+		//runFlag = 0;
 	}
 	else{
 		log<<"<p>Checking... "<<qPrintable((GLineEdit->text()))<<"... ";
 		if(inFile == NULL){
-			log<<"<font size=3 color=red> Error!</p>";
+			//log<<"<font size=3 color=red> Error!</p>";
 			//qWarning("\n%s doesn't exist!", (inputFileLineEdit->text()).ascii());
-			runFlag = 0;
+			//runFlag = 0;
 		}
 		else
 			log<<"Done!</p>";
@@ -321,7 +576,7 @@ void attFileDlg::run()
 	textBrowser11->reload();
 	QApplication::processEvents();
 	inFile.close();
-
+	
 
 	inFile.open(qPrintable((RnLineEdit->text())));
 	log.open(qPrintable(logFileName), ios::app);
@@ -829,7 +1084,9 @@ void attFileDlg::run()
                 temp       = (GDALDataset *)GDALOpen(qPrintable((TempLineEdit->text())), GA_ReadOnly);
                 humidity   = (GDALDataset *)GDALOpen(qPrintable((HumidLineEdit->text())), GA_ReadOnly);
                 wind       = (GDALDataset *)GDALOpen(qPrintable((WindLineEdit->text())), GA_ReadOnly);
-                G          = (GDALDataset *)GDALOpen(qPrintable((GLineEdit->text())), GA_ReadOnly);
+
+		G       = (GDALDataset *)GDALOpen(qPrintable((WindLineEdit->text())), GA_ReadOnly);
+                //??G          = (GDALDataset *)GDALOpen(qPrintable((GLineEdit->text())), GA_ReadOnly);
                 Rn         = (GDALDataset *)GDALOpen(qPrintable((RnLineEdit->text())), GA_ReadOnly);
                 pressure   = (GDALDataset *)GDALOpen(qPrintable((PLineEdit->text())), GA_ReadOnly);
                 soil       = (GDALDataset *)GDALOpen(qPrintable((SoilLineEdit->text())), GA_ReadOnly);
@@ -907,6 +1164,7 @@ void attFileDlg::run()
                                 val = (int) getRasterValue(Rn,       1, X, Y, RnRanges);
                                 att<<val<<"\t";
                                 val = (int) getRasterValue(G,        1, X, Y, GRanges);
+				val = 0;
                                 att<<val<<"\t";
                                 val = (int) getRasterValue(pressure, 1, X, Y, pressureRanges);
                                 att<<val<<"\t";
@@ -952,7 +1210,7 @@ void attFileDlg::run()
 
                         qWarning("Ele Radio Button: Not yet implimented\n");
                 }
-
+		att.close();
         }
 }
 			
@@ -960,4 +1218,11 @@ void attFileDlg::help()
 {
 	helpDialog* hlpDlg = new helpDialog(this, "Att File", 1, "helpFiles/attfile.html", "Help :: Att File");
 	hlpDlg->show();	
+}
+
+void attFileDlg::on_RnLineEdit_textChanged(QString )
+{
+        QString str;
+        str = RnLineEdit->text();
+        GLineEdit->setText(str);
 }

@@ -16,9 +16,9 @@
   <widget class="QPushButton" name="okButton">
    <property name="geometry">
     <rect>
-     <x>513</x>
+     <x>494</x>
      <y>358</y>
-     <width>80</width>
+     <width>98</width>
      <height>34</height>
     </rect>
    </property>
@@ -32,9 +32,9 @@
   <widget class="QPushButton" name="cancelButton">
    <property name="geometry">
     <rect>
-     <x>427</x>
+     <x>390</x>
      <y>358</y>
-     <width>80</width>
+     <width>98</width>
      <height>34</height>
     </rect>
    </property>
@@ -48,9 +48,9 @@
   <widget class="QPushButton" name="helpButton">
    <property name="geometry">
     <rect>
-     <x>15</x>
+     <x>10</x>
      <y>358</y>
-     <width>80</width>
+     <width>98</width>
      <height>34</height>
     </rect>
    </property>
@@ -61,10 +61,10 @@
     <bool>false</bool>
    </property>
   </widget>
-  <widget class="Q3ButtonGroup" name="polygonToPolyLineGroup" native="true">
+  <widget class="Q3ButtonGroup" name="polygonToPolyLineGroup">
    <property name="geometry">
     <rect>
-     <x>15</x>
+     <x>10</x>
      <y>10</y>
      <width>580</width>
      <height>220</height>
@@ -76,7 +76,7 @@
      <verstretch>0</verstretch>
     </sizepolicy>
    </property>
-   <property name="title" stdset="0">
+   <property name="title">
     <string/>
    </property>
    <widget class="Q3Table" name="inputOutputTable" native="true">
@@ -186,29 +186,29 @@
     </property>
    </widget>
   </widget>
-  <widget class="Q3ButtonGroup" name="mergeFeaturesGroup" native="true">
+  <widget class="Q3ButtonGroup" name="mergeFeaturesGroup">
    <property name="geometry">
     <rect>
-     <x>14</x>
+     <x>10</x>
      <y>235</y>
      <width>581</width>
      <height>110</height>
     </rect>
    </property>
-   <property name="title" stdset="0">
+   <property name="title">
     <string/>
    </property>
    <widget class="QPushButton" name="outputMergedFileButton">
     <property name="geometry">
      <rect>
       <x>478</x>
-      <y>14</y>
-      <width>81</width>
+      <y>16</y>
+      <width>98</width>
       <height>32</height>
      </rect>
     </property>
     <property name="text">
-     <string>Browse...</string>
+     <string>Browse</string>
     </property>
     <property name="autoDefault">
      <bool>false</bool>
@@ -217,7 +217,7 @@
    <widget class="QLabel" name="outputMergedFileLabel">
     <property name="geometry">
      <rect>
-      <x>21</x>
+      <x>14</x>
       <y>2</y>
       <width>144</width>
       <height>58</height>
@@ -230,17 +230,17 @@
    <widget class="QLabel" name="mergeFeaturesClusterToleranceLabel">
     <property name="geometry">
      <rect>
-      <x>21</x>
+      <x>14</x>
       <y>47</y>
-      <width>132</width>
+      <width>151</width>
       <height>58</height>
      </rect>
     </property>
     <property name="text">
-     <string>Cluster Tolerance</string>
+     <string>Cluster Tolerance (m)</string>
     </property>
     <property name="alignment">
-     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
     </property>
    </widget>
    <widget class="QLineEdit" name="clusterToleranceLineEdit">
@@ -259,7 +259,7 @@
    <widget class="QLineEdit" name="outputMergedFileLineEdit">
     <property name="geometry">
      <rect>
-      <x>171</x>
+      <x>169</x>
       <y>15</y>
       <width>301</width>
       <height>29</height>
@@ -281,8 +281,20 @@
  <layoutdefault spacing="6" margin="11"/>
  <customwidgets>
   <customwidget>
+   <class>Q3TextBrowser</class>
+   <extends>QWidget</extends>
+   <header>q3textbrowser.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>Q3GroupBox</class>
+   <extends>QGroupBox</extends>
+   <header>Qt3Support/Q3GroupBox</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
    <class>Q3ButtonGroup</class>
-   <extends></extends>
+   <extends>Q3GroupBox</extends>
    <header>Qt3Support/Q3ButtonGroup</header>
    <container>1</container>
   </customwidget>
@@ -290,12 +302,6 @@
    <class>Q3Table</class>
    <extends></extends>
    <header>q3table.h</header>
-  </customwidget>
-  <customwidget>
-   <class>Q3TextBrowser</class>
-   <extends>QWidget</extends>
-   <header>q3textbrowser.h</header>
-   <container>1</container>
   </customwidget>
  </customwidgets>
  <tabstops>

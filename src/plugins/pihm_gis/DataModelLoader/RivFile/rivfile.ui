@@ -13,7 +13,7 @@
   <property name="windowTitle">
    <string>Riv File Generation</string>
   </property>
-  <widget class="Q3GroupBox" name="groupBox1" native="true">
+  <widget class="Q3GroupBox" name="groupBox1">
    <property name="geometry">
     <rect>
      <x>14</x>
@@ -22,7 +22,7 @@
      <height>181</height>
     </rect>
    </property>
-   <property name="title" stdset="0">
+   <property name="title">
     <string>Input Files</string>
    </property>
    <widget class="QLabel" name="textLabel4_2_5_2">
@@ -112,7 +112,7 @@
      <rect>
       <x>466</x>
       <y>64</y>
-      <width>81</width>
+      <width>98</width>
       <height>32</height>
      </rect>
     </property>
@@ -128,7 +128,7 @@
      <rect>
       <x>466</x>
       <y>104</y>
-      <width>81</width>
+      <width>98</width>
       <height>32</height>
      </rect>
     </property>
@@ -144,7 +144,7 @@
      <rect>
       <x>466</x>
       <y>143</y>
-      <width>81</width>
+      <width>98</width>
       <height>32</height>
      </rect>
     </property>
@@ -170,7 +170,7 @@
      <rect>
       <x>466</x>
       <y>27</y>
-      <width>81</width>
+      <width>98</width>
       <height>32</height>
      </rect>
     </property>
@@ -182,16 +182,16 @@
     </property>
    </widget>
   </widget>
-  <widget class="Q3GroupBox" name="groupBox1_3" native="true">
+  <widget class="Q3GroupBox" name="groupBox1_3">
    <property name="geometry">
     <rect>
      <x>14</x>
-     <y>243</y>
+     <y>245</y>
      <width>571</width>
      <height>71</height>
     </rect>
    </property>
-   <property name="title" stdset="0">
+   <property name="title">
     <string>Output File</string>
    </property>
    <widget class="QLabel" name="textLabel4_2_5_4">
@@ -212,7 +212,7 @@
      <rect>
       <x>466</x>
       <y>31</y>
-      <width>81</width>
+      <width>98</width>
       <height>32</height>
      </rect>
     </property>
@@ -237,9 +237,9 @@
   <widget class="QPushButton" name="cancelButton">
    <property name="geometry">
     <rect>
-     <x>412</x>
+     <x>390</x>
      <y>322</y>
-     <width>80</width>
+     <width>98</width>
      <height>34</height>
     </rect>
    </property>
@@ -253,9 +253,9 @@
   <widget class="QPushButton" name="helpButton">
    <property name="geometry">
     <rect>
-     <x>13</x>
+     <x>9</x>
      <y>322</y>
-     <width>80</width>
+     <width>98</width>
      <height>34</height>
     </rect>
    </property>
@@ -266,7 +266,7 @@
     <bool>false</bool>
    </property>
   </widget>
-  <widget class="QTextBrowser" name="messageLog" native="true">
+  <widget class="Q3TextBrowser" name="messageLog">
    <property name="geometry">
     <rect>
      <x>12</x>
@@ -279,9 +279,9 @@
   <widget class="QPushButton" name="runButton">
    <property name="geometry">
     <rect>
-     <x>505</x>
+     <x>490</x>
      <y>322</y>
-     <width>80</width>
+     <width>98</width>
      <height>34</height>
     </rect>
    </property>
@@ -296,7 +296,7 @@
    <property name="geometry">
     <rect>
      <x>14</x>
-     <y>186</y>
+     <y>187</y>
      <width>571</width>
      <height>61</height>
     </rect>
@@ -369,14 +369,8 @@
  <customwidgets>
   <customwidget>
    <class>Q3GroupBox</class>
-   <extends></extends>
+   <extends>QGroupBox</extends>
    <header>Qt3Support/Q3GroupBox</header>
-   <container>1</container>
-  </customwidget>
-  <customwidget>
-   <class>QTextBrowser</class>
-   <extends>QWidget</extends>
-   <header>q3textbrowser.h</header>
    <container>1</container>
   </customwidget>
  </customwidgets>

@@ -7,7 +7,9 @@
 #include "../../pihmRasterLIBS/catProcessing.h"
 
 #include "../../pihmLIBS/helpDialog/helpdialog.h"
+#include "../../pihmLIBS/fileStruct.h"
 
+#include <iostream>
 #include <fstream>
 using namespace std;
 
@@ -20,23 +22,65 @@ CatchmentGridDlg::CatchmentGridDlg(QWidget *parent)
 	connect(runButton, SIGNAL(clicked()), this, SLOT(run()));
 	connect(helpButton, SIGNAL(clicked()), this, SLOT(help()));
 	connect(closeButton, SIGNAL(clicked()), this, SLOT(close()));
+
+	QString projDir, projFile;
+        QFile tFile(QDir::homePath()+"/project.txt");
+        tFile.open(QIODevice::ReadOnly | QIODevice::Text);
+        QTextStream tin(&tFile);
+	projDir  = tin.readLine();
+        projFile = tin.readLine();
+        tFile.close();
+        cout << qPrintable(projDir);
+
+	inputLNKFileLineEdit->setText(readLineNumber(qPrintable(projFile), 13));
+	inputFDRFileLineEdit->setText(readLineNumber(qPrintable(projFile), 15));
+
+	QString qstrThresh(readLineNumber(qPrintable(projFile), 10));
+	outputFileLineEdit->setText(projDir+"/RasterProcessing/cat"+ qstrThresh +".asc");
 }
 
 void CatchmentGridDlg::inputLNKBrowse()
 {
-	QString str = QFileDialog::getOpenFileName(this, "Choose File", "~/","Link Grid File(*.adf *.asc)");
+	QString projDir, projFile;
+        QFile tFile(QDir::homePath()+"/project.txt");
+        tFile.open(QIODevice::ReadOnly | QIODevice::Text);
+        QTextStream tin(&tFile);
+        projDir  = tin.readLine();
+        projFile = tin.readLine();
+	tFile.close();
+        cout << qPrintable(projDir);
+
+	QString str = QFileDialog::getOpenFileName(this, "Choose File", projDir+"/RasterProcessing","Link Grid File(*.adf *.asc)");
 	inputLNKFileLineEdit->setText(str);
 }
 
 void CatchmentGridDlg::inputFDRBrowse()
 {
-        QString str = QFileDialog::getOpenFileName(this, "Choose File", "~/","Flow Dir Grid File(*.adf *.asc)");
+	QString projDir, projFile;
+        QFile tFile(QDir::homePath()+"/project.txt");
+        tFile.open(QIODevice::ReadOnly | QIODevice::Text);
+        QTextStream tin(&tFile);
+        projDir  = tin.readLine();
+        projFile = tin.readLine();
+	tFile.close();
+        cout << qPrintable(projDir);
+
+        QString str = QFileDialog::getOpenFileName(this, "Choose File", projDir+"/RasterProcessing","Flow Dir Grid File(*.adf *.asc)");
         inputFDRFileLineEdit->setText(str);
 }
 
 void CatchmentGridDlg::outputBrowse()
 {
-	QString temp = QFileDialog::getSaveFileName(this, "Choose File", "~/","Catchment Grid File(*.adf *.asc)");
+	QString projDir, projFile;
+        QFile tFile(QDir::homePath()+"/project.txt");
+        tFile.open(QIODevice::ReadOnly | QIODevice::Text);
+        QTextStream tin(&tFile);
+        projDir  = tin.readLine();
+        projFile = tin.readLine();
+	tFile.close();
+        cout << qPrintable(projDir);
+
+	QString temp = QFileDialog::getSaveFileName(this, "Choose File", projDir+"/RasterProcessing","Catchment Grid File(*.adf *.asc)");
 	QString tmp = temp;
 	if(!(tmp.toLower()).endsWith(".asc")){
         tmp.append(".asc");
@@ -49,8 +93,22 @@ void CatchmentGridDlg::outputBrowse()
 
 void CatchmentGridDlg::run()
 {
+	QString projDir, projFile;
+        QFile tFile(QDir::homePath()+"/project.txt");
+        tFile.open(QIODevice::ReadOnly | QIODevice::Text);
+        QTextStream tin(&tFile);
+        projDir  = tin.readLine();
+        projFile = tin.readLine();
+	tFile.close();
+        cout << qPrintable(projDir);
+	
+	writeLineNumber(qPrintable(projFile), 17, qPrintable(inputLNKFileLineEdit->text()));
+	writeLineNumber(qPrintable(projFile), 18, qPrintable(inputFDRFileLineEdit->text()));
+	writeLineNumber(qPrintable(projFile), 19, qPrintable(outputFileLineEdit->text()));
 
-	QString logFileName("/tmp/log.html");
+	QDir dir = QDir::home();
+        QString home = dir.homePath();
+	QString logFileName(qPrintable(home+"/log.html"));
 	ofstream log;
 	log.open(qPrintable(logFileName));
 	log<<"<html><body><font size=3 color=black><p> Verifying Files...</p></font></body></html>";

@@ -850,12 +850,6 @@ qgsinterpolatordialog.h
 ui_qgstininterpolatordialogbase.h
 /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/interpolation/ui_qgstininterpolatordialogbase.h
 
-/usr/include/Availability.h
-AvailabilityInternal.h
--
-
-/usr/include/AvailabilityInternal.h
-
 /usr/include/_types.h
 sys/_types.h
 -

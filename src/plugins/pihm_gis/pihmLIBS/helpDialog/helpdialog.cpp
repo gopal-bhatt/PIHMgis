@@ -3,6 +3,7 @@
 
 helpDialog::helpDialog(QWidget *parent, const char* name , bool modal, const QString& helpFileName,const QString& captionText)
 {
+	this->setWindowTitle(QApplication::translate("helpDialog", qPrintable(captionText), 0, QApplication::UnicodeUTF8));
         setupUi(this);
         //if ( !name )
         //setName( "helpDialog" );
@@ -18,7 +19,8 @@ helpDialog::helpDialog(QWidget *parent, const char* name , bool modal, const QSt
         QTextStream ts( &f );
         helpTextBrowser->setText( ts.readAll() );
         helpTextBrowser->setModified( FALSE );
-        setWindowTitle( captionText );
+        //this->setWindowTitle( captionText );
+	this->setWindowTitle(QApplication::translate("helpDialog", qPrintable(captionText), 0, QApplication::UnicodeUTF8));
 	        helpTextBrowser->show();
 }
 

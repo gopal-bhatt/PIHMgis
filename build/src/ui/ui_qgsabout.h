@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading ui file 'qgsabout.ui'
 **
-** Created: Mon Sep 7 22:35:28 2009
+** Created: Tue Jun 22 23:03:09 2010
 **      by: Qt User Interface Compiler version 4.3.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling ui file!

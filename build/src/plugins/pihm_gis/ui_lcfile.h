@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading ui file 'lcfile.ui'
 **
-** Created: Mon Sep 7 22:45:44 2009
+** Created: Tue Jul 27 23:38:18 2010
 **      by: Qt User Interface Compiler version 4.3.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling ui file!
@@ -10,6 +10,7 @@
 #ifndef UI_LCFILE_H
 #define UI_LCFILE_H
 
+#include <Qt3Support/Q3TextBrowser>
 #include <QtCore/QVariant>
 #include <QtGui/QAction>
 #include <QtGui/QApplication>
@@ -19,7 +20,6 @@
 #include <QtGui/QLabel>
 #include <QtGui/QLineEdit>
 #include <QtGui/QPushButton>
-#include <QtGui/QTextBrowser>
 
 class Ui_LCFile
 {
@@ -32,7 +32,7 @@ public:
     QLabel *label_2;
     QLineEdit *lineEditLC;
     QPushButton *pushButtonLC;
-    QTextBrowser *textBrowser;
+    Q3TextBrowser *textBrowser;
     QPushButton *pushButtonRun;
     QPushButton *pushButtonClose;
     QPushButton *pushButtonHelp;
@@ -44,41 +44,41 @@ public:
     LCFile->resize(600, 400);
     groupBox = new QGroupBox(LCFile);
     groupBox->setObjectName(QString::fromUtf8("groupBox"));
-    groupBox->setGeometry(QRect(20, 0, 561, 111));
+    groupBox->setGeometry(QRect(20, 0, 561, 101));
     label = new QLabel(groupBox);
     label->setObjectName(QString::fromUtf8("label"));
-    label->setGeometry(QRect(19, 58, 71, 17));
+    label->setGeometry(QRect(19, 54, 71, 17));
     lineEditNLCD = new QLineEdit(groupBox);
     lineEditNLCD->setObjectName(QString::fromUtf8("lineEditNLCD"));
-    lineEditNLCD->setGeometry(QRect(100, 54, 321, 22));
+    lineEditNLCD->setGeometry(QRect(100, 50, 321, 22));
     pushButtonNLCD = new QPushButton(groupBox);
     pushButtonNLCD->setObjectName(QString::fromUtf8("pushButtonNLCD"));
-    pushButtonNLCD->setGeometry(QRect(430, 50, 113, 32));
+    pushButtonNLCD->setGeometry(QRect(430, 46, 113, 32));
     groupBox_2 = new QGroupBox(LCFile);
     groupBox_2->setObjectName(QString::fromUtf8("groupBox_2"));
-    groupBox_2->setGeometry(QRect(20, 110, 561, 111));
+    groupBox_2->setGeometry(QRect(20, 103, 561, 101));
     label_2 = new QLabel(groupBox_2);
     label_2->setObjectName(QString::fromUtf8("label_2"));
-    label_2->setGeometry(QRect(19, 57, 61, 17));
+    label_2->setGeometry(QRect(19, 52, 61, 17));
     lineEditLC = new QLineEdit(groupBox_2);
     lineEditLC->setObjectName(QString::fromUtf8("lineEditLC"));
-    lineEditLC->setGeometry(QRect(100, 53, 321, 22));
+    lineEditLC->setGeometry(QRect(100, 48, 321, 22));
     pushButtonLC = new QPushButton(groupBox_2);
     pushButtonLC->setObjectName(QString::fromUtf8("pushButtonLC"));
-    pushButtonLC->setGeometry(QRect(430, 50, 113, 32));
-    textBrowser = new QTextBrowser(LCFile);
+    pushButtonLC->setGeometry(QRect(430, 45, 113, 32));
+    textBrowser = new Q3TextBrowser(LCFile);
     textBrowser->setObjectName(QString::fromUtf8("textBrowser"));
-    textBrowser->setGeometry(QRect(20, 278, 561, 111));
+    textBrowser->setGeometry(QRect(20, 264, 561, 121));
     pushButtonRun = new QPushButton(LCFile);
     pushButtonRun->setObjectName(QString::fromUtf8("pushButtonRun"));
-    pushButtonRun->setGeometry(QRect(471, 237, 113, 32));
+    pushButtonRun->setGeometry(QRect(471, 220, 113, 32));
     pushButtonRun->setDefault(true);
     pushButtonClose = new QPushButton(LCFile);
     pushButtonClose->setObjectName(QString::fromUtf8("pushButtonClose"));
-    pushButtonClose->setGeometry(QRect(340, 237, 113, 32));
+    pushButtonClose->setGeometry(QRect(340, 220, 113, 32));
     pushButtonHelp = new QPushButton(LCFile);
     pushButtonHelp->setObjectName(QString::fromUtf8("pushButtonHelp"));
-    pushButtonHelp->setGeometry(QRect(16, 237, 113, 32));
+    pushButtonHelp->setGeometry(QRect(16, 220, 113, 32));
 
     retranslateUi(LCFile);
 

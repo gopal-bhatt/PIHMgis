@@ -1,10 +1,8 @@
-<ui version="4.0" >
- <author></author>
- <comment></comment>
- <exportmacro></exportmacro>
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
  <class>GenerateShapeTopology</class>
- <widget class="QDialog" name="GenerateShapeTopology" >
-  <property name="geometry" >
+ <widget class="QDialog" name="GenerateShapeTopology">
+  <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
@@ -12,11 +10,11 @@
     <height>433</height>
    </rect>
   </property>
-  <property name="windowTitle" >
+  <property name="windowTitle">
    <string>Generate Shape Topology</string>
   </property>
-  <widget class="Q3ButtonGroup" name="constrainingLayerButtonGroup" >
-   <property name="geometry" >
+  <widget class="Q3ButtonGroup" name="constrainingLayerButtonGroup">
+   <property name="geometry">
     <rect>
      <x>11</x>
      <y>1</y>
@@ -24,60 +22,57 @@
      <height>100</height>
     </rect>
    </property>
-   <property name="title" >
+   <property name="title">
     <string>Input</string>
    </property>
-   <property name="orientation" >
-    <enum>Qt::Vertical</enum>
-   </property>
-   <widget class="QLabel" name="constrainingLayerLabel" >
-    <property name="geometry" >
+   <widget class="QLabel" name="constrainingLayerLabel">
+    <property name="geometry">
      <rect>
-      <x>12</x>
+      <x>20</x>
       <y>42</y>
       <width>110</width>
       <height>32</height>
      </rect>
     </property>
-    <property name="text" >
+    <property name="text">
      <string>Input Feature</string>
     </property>
-    <property name="alignment" >
-     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
     </property>
    </widget>
-   <widget class="QLineEdit" name="inputFileLineEdit" >
-    <property name="geometry" >
+   <widget class="QLineEdit" name="inputFileLineEdit">
+    <property name="geometry">
      <rect>
-      <x>158</x>
+      <x>140</x>
       <y>43</y>
       <width>325</width>
       <height>29</height>
      </rect>
     </property>
    </widget>
-   <widget class="QPushButton" name="inputBrowseButton" >
-    <property name="geometry" >
+   <widget class="QPushButton" name="inputBrowseButton">
+    <property name="geometry">
      <rect>
-      <x>489</x>
+      <x>470</x>
       <y>42</y>
-      <width>81</width>
+      <width>98</width>
       <height>32</height>
      </rect>
     </property>
-    <property name="focusPolicy" >
+    <property name="focusPolicy">
      <enum>Qt::TabFocus</enum>
     </property>
-    <property name="text" >
-     <string>Browse...</string>
+    <property name="text">
+     <string>Browse</string>
     </property>
-    <property name="autoDefault" >
+    <property name="autoDefault">
      <bool>false</bool>
     </property>
    </widget>
   </widget>
-  <widget class="Q3ButtonGroup" name="outputButtonGroup" >
-   <property name="geometry" >
+  <widget class="Q3ButtonGroup" name="outputButtonGroup">
+   <property name="geometry">
     <rect>
      <x>11</x>
      <y>108</y>
@@ -85,107 +80,104 @@
      <height>100</height>
     </rect>
    </property>
-   <property name="title" >
+   <property name="title">
     <string>Output</string>
    </property>
-   <property name="orientation" >
-    <enum>Qt::Vertical</enum>
-   </property>
-   <widget class="QLabel" name="outputFileLabel" >
-    <property name="geometry" >
+   <widget class="QLabel" name="outputFileLabel">
+    <property name="geometry">
      <rect>
-      <x>22</x>
+      <x>20</x>
       <y>45</y>
       <width>120</width>
       <height>32</height>
      </rect>
     </property>
-    <property name="text" >
+    <property name="text">
      <string>Output Poly File</string>
     </property>
-    <property name="alignment" >
-     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
     </property>
    </widget>
-   <widget class="QLineEdit" name="outputFileLineEdit" >
-    <property name="geometry" >
+   <widget class="QLineEdit" name="outputFileLineEdit">
+    <property name="geometry">
      <rect>
-      <x>159</x>
+      <x>140</x>
       <y>46</y>
       <width>325</width>
       <height>29</height>
      </rect>
     </property>
    </widget>
-   <widget class="QPushButton" name="outputBrowseButton" >
-    <property name="geometry" >
+   <widget class="QPushButton" name="outputBrowseButton">
+    <property name="geometry">
      <rect>
-      <x>490</x>
+      <x>470</x>
       <y>45</y>
-      <width>81</width>
+      <width>98</width>
       <height>32</height>
      </rect>
     </property>
-    <property name="text" >
-     <string>Browse...</string>
+    <property name="text">
+     <string>Browse</string>
     </property>
-    <property name="autoDefault" >
+    <property name="autoDefault">
      <bool>false</bool>
     </property>
    </widget>
   </widget>
-  <widget class="QPushButton" name="cancelButton" >
-   <property name="geometry" >
+  <widget class="QPushButton" name="cancelButton">
+   <property name="geometry">
     <rect>
-     <x>420</x>
+     <x>380</x>
      <y>228</y>
-     <width>80</width>
+     <width>98</width>
      <height>34</height>
     </rect>
    </property>
-   <property name="text" >
+   <property name="text">
     <string>Close</string>
    </property>
-   <property name="autoDefault" >
+   <property name="autoDefault">
     <bool>false</bool>
    </property>
   </widget>
-  <widget class="QPushButton" name="okButton" >
-   <property name="geometry" >
+  <widget class="QPushButton" name="okButton">
+   <property name="geometry">
     <rect>
-     <x>506</x>
+     <x>495</x>
      <y>228</y>
-     <width>80</width>
+     <width>98</width>
      <height>34</height>
     </rect>
    </property>
-   <property name="text" >
+   <property name="text">
     <string>Run!</string>
    </property>
-   <property name="autoDefault" >
+   <property name="autoDefault">
     <bool>false</bool>
    </property>
   </widget>
-  <widget class="QPushButton" name="helpButton" >
-   <property name="geometry" >
+  <widget class="QPushButton" name="helpButton">
+   <property name="geometry">
     <rect>
-     <x>15</x>
+     <x>7</x>
      <y>228</y>
-     <width>80</width>
+     <width>98</width>
      <height>34</height>
     </rect>
    </property>
-   <property name="text" >
+   <property name="text">
     <string>Help</string>
    </property>
-   <property name="autoDefault" >
+   <property name="autoDefault">
     <bool>false</bool>
    </property>
   </widget>
-  <widget class="Q3TextBrowser" name="MessageLog" >
-   <property name="geometry" >
+  <widget class="Q3TextBrowser" name="MessageLog" native="true">
+   <property name="geometry">
     <rect>
-     <x>11</x>
+     <x>15</x>
      <y>280</y>
      <width>570</width>
      <height>140</height>
@@ -193,22 +185,26 @@
    </property>
   </widget>
  </widget>
- <layoutdefault spacing="6" margin="11" />
+ <layoutdefault spacing="6" margin="11"/>
  <pixmapfunction>qPixmapFromMimeSource</pixmapfunction>
  <customwidgets>
-  <customwidget>
-   <class>Q3ButtonGroup</class>
-   <extends></extends>
-   <header>Qt3Support/Q3ButtonGroup</header>
-   <container>1</container>
-   <pixmap></pixmap>
-  </customwidget>
   <customwidget>
    <class>Q3TextBrowser</class>
    <extends>QWidget</extends>
    <header>q3textbrowser.h</header>
    <container>1</container>
-   <pixmap></pixmap>
+  </customwidget>
+  <customwidget>
+   <class>Q3GroupBox</class>
+   <extends>QGroupBox</extends>
+   <header>Qt3Support/Q3GroupBox</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>Q3ButtonGroup</class>
+   <extends>Q3GroupBox</extends>
+   <header>Qt3Support/Q3ButtonGroup</header>
+   <container>1</container>
   </customwidget>
  </customwidgets>
  <tabstops>

@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ImportProject</class>
+ <widget class="QDialog" name="ImportProject">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>553</width>
+    <height>310</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>ImportProject</string>
+  </property>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>11</x>
+     <y>235</y>
+     <width>531</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string/>
+   </property>
+   <widget class="QPushButton" name="pushButtonHelp">
+    <property name="geometry">
+     <rect>
+      <x>4</x>
+      <y>18</y>
+      <width>113</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Help</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonClose">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>18</y>
+      <width>113</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Close</string>
+    </property>
+    <property name="default">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonOpen">
+    <property name="geometry">
+     <rect>
+      <x>394</x>
+      <y>18</y>
+      <width>131</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Note: the dialog will close by itself after execution</string>
+    </property>
+    <property name="text">
+     <string> Import Project </string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_2">
+   <property name="geometry">
+    <rect>
+     <x>11</x>
+     <y>12</y>
+     <width>531</width>
+     <height>211</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string/>
+   </property>
+   <widget class="QLineEdit" name="lineEdit">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>81</y>
+      <width>261</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Existing Project is a project that was not created on some other computer or Home directory structure has been altered (by moving or renaming).</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>156</x>
+      <y>20</y>
+      <width>231</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Lucida Grande'; font-size:13pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:18pt;&quot;&gt;Import Existing Project&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>82</y>
+      <width>111</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Existing Project is a project that was not created on some other computer or Home directory structure has been altered (by moving or renaming).</string>
+    </property>
+    <property name="text">
+     <string>Existing Project</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonProject">
+    <property name="geometry">
+     <rect>
+      <x>414</x>
+      <y>78</y>
+      <width>113</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Existing Project is a project that was not created on some other computer or Home directory structure has been altered (by moving or renaming).</string>
+    </property>
+    <property name="text">
+     <string>Browse</string>
+    </property>
+    <property name="default">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEditOld">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>120</y>
+      <width>261</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>121</y>
+      <width>111</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Existing Project is a project that was not created on some other computer.</string>
+    </property>
+    <property name="text">
+     <string>Old Project Dir.</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEditNew">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>160</y>
+      <width>261</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>161</y>
+      <width>111</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Existing Project is a project that was not created on some other computer.</string>
+    </property>
+    <property name="text">
+     <string>New Project Dir.</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

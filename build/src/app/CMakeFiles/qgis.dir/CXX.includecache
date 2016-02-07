@@ -5296,12 +5296,6 @@ qgsdelattrdialog.h
 qgsfield.h
 /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/app/qgsfield.h
 
-/usr/include/Availability.h
-AvailabilityInternal.h
--
-
-/usr/include/AvailabilityInternal.h
-
 /usr/include/AvailabilityMacros.h
 
 /usr/include/_locale.h

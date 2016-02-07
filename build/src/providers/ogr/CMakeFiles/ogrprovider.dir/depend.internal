@@ -63,8 +63,6 @@ src/providers/ogr/CMakeFiles/ogrprovider.dir/qgsogrprovider.o
  /Library/Frameworks/QtXml.framework/Headers/qdom.h
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/providers/ogr/qgsogrprovider.cpp
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/providers/ogr/qgsogrprovider.h
- /usr/include/Availability.h
- /usr/include/AvailabilityInternal.h
  /usr/include/AvailabilityMacros.h
  /usr/include/_locale.h
  /usr/include/_structs.h

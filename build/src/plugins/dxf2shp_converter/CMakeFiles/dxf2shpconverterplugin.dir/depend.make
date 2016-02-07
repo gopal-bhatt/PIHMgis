@@ -81,8 +81,6 @@ src/plugins/dxf2shp_converter/CMakeFiles/dxf2shpconverterplugin.dir/dxf2shpconve
 src/plugins/dxf2shp_converter/CMakeFiles/dxf2shpconverterplugin.dir/dxf2shpconvertergui.o: ../src/plugins/dxf2shp_converter/dxflib/src/dl_writer_ascii.h
 src/plugins/dxf2shp_converter/CMakeFiles/dxf2shpconverterplugin.dir/dxf2shpconvertergui.o: ../src/plugins/dxf2shp_converter/getInsertions.h
 src/plugins/dxf2shp_converter/CMakeFiles/dxf2shpconverterplugin.dir/dxf2shpconvertergui.o: ../src/plugins/dxf2shp_converter/shapelib-1.2.10/shapefil.h
-src/plugins/dxf2shp_converter/CMakeFiles/dxf2shpconverterplugin.dir/dxf2shpconvertergui.o: /usr/include/Availability.h
-src/plugins/dxf2shp_converter/CMakeFiles/dxf2shpconverterplugin.dir/dxf2shpconvertergui.o: /usr/include/AvailabilityInternal.h
 src/plugins/dxf2shp_converter/CMakeFiles/dxf2shpconverterplugin.dir/dxf2shpconvertergui.o: /usr/include/AvailabilityMacros.h
 src/plugins/dxf2shp_converter/CMakeFiles/dxf2shpconverterplugin.dir/dxf2shpconvertergui.o: /usr/include/_types.h
 src/plugins/dxf2shp_converter/CMakeFiles/dxf2shpconverterplugin.dir/dxf2shpconvertergui.o: /usr/include/_xlocale.h
@@ -209,8 +207,6 @@ src/plugins/dxf2shp_converter/CMakeFiles/dxf2shpconverterplugin.dir/dxflib/src/d
 src/plugins/dxf2shp_converter/CMakeFiles/dxf2shpconverterplugin.dir/dxflib/src/dl_dxf.o: ../src/plugins/dxf2shp_converter/dxflib/src/dl_extrusion.h
 src/plugins/dxf2shp_converter/CMakeFiles/dxf2shpconverterplugin.dir/dxflib/src/dl_dxf.o: ../src/plugins/dxf2shp_converter/dxflib/src/dl_writer.h
 src/plugins/dxf2shp_converter/CMakeFiles/dxf2shpconverterplugin.dir/dxflib/src/dl_dxf.o: ../src/plugins/dxf2shp_converter/dxflib/src/dl_writer_ascii.h
-src/plugins/dxf2shp_converter/CMakeFiles/dxf2shpconverterplugin.dir/dxflib/src/dl_dxf.o: /usr/include/Availability.h
-src/plugins/dxf2shp_converter/CMakeFiles/dxf2shpconverterplugin.dir/dxflib/src/dl_dxf.o: /usr/include/AvailabilityInternal.h
 src/plugins/dxf2shp_converter/CMakeFiles/dxf2shpconverterplugin.dir/dxflib/src/dl_dxf.o: /usr/include/AvailabilityMacros.h
 src/plugins/dxf2shp_converter/CMakeFiles/dxf2shpconverterplugin.dir/dxflib/src/dl_dxf.o: /usr/include/_types.h
 src/plugins/dxf2shp_converter/CMakeFiles/dxf2shpconverterplugin.dir/dxflib/src/dl_dxf.o: /usr/include/_xlocale.h

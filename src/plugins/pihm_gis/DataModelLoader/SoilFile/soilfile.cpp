@@ -5,10 +5,24 @@
 #include <math.h>
 using namespace std;
 
+#include "../../pihmLIBS/helpDialog/helpdialog.h"
+#include "../../pihmLIBS/fileStruct.h"
+
 SoilFile::SoilFile(QWidget *parent)
     : QDialog(parent), ui(new Ui::SoilFile)
 {
     ui->setupUi(this);
+	QString projDir, projFile;
+        QFile tFile(QDir::homePath()+"/project.txt");
+        tFile.open(QIODevice::ReadOnly | QIODevice::Text);
+        QTextStream tin(&tFile);
+        projDir  = tin.readLine();
+        projFile = tin.readLine();
+	tFile.close();
+        cout << qPrintable(projDir);
+	
+	QString tempStr=readLineNumber(qPrintable(projFile), 49); tempStr.truncate(tempStr.length()-4);
+	ui->lineEditSoilFile->setText(tempStr+"soil");
 }
 
 SoilFile::~SoilFile()
@@ -23,13 +37,31 @@ void SoilFile::on_pushButtonClose_clicked()
 
 void SoilFile::on_pushButtonSoilTexture_clicked()
 {
-    QString s = QFileDialog::getOpenFileName(this, "Choose Soil Texture File", "", "Texture (*.txt *.TXT)");
+	QString projDir, projFile;
+        QFile tFile(QDir::homePath()+"/project.txt");
+        tFile.open(QIODevice::ReadOnly | QIODevice::Text);
+        QTextStream tin(&tFile);
+        projDir  = tin.readLine();
+        projFile = tin.readLine();
+	tFile.close();
+        cout << qPrintable(projDir);
+
+    QString s = QFileDialog::getOpenFileName(this, "Choose Soil Texture File", projDir, "Texture (*.txt *.TXT)");
     ui->lineEditSoilTexture->setText(s);
 }
 
 void SoilFile::on_pushButtonSoilFile_clicked()
 {
-    QString s = QFileDialog::getSaveFileName(this, "Choose Soil File Name", "", "SOIL file (*.soil)");
+	QString projDir, projFile;
+        QFile tFile(QDir::homePath()+"/project.txt");
+        tFile.open(QIODevice::ReadOnly | QIODevice::Text);
+        QTextStream tin(&tFile);
+        projDir  = tin.readLine();
+        projFile = tin.readLine();
+	tFile.close();
+        cout << qPrintable(projDir);
+
+    QString s = QFileDialog::getSaveFileName(this, "Choose Soil File Name", projDir+"/DataModel", "SOIL file (*.soil)");
     if(!s.endsWith(".soil"))
         s.append(".soil");
     ui->lineEditSoilFile->setText(s);
@@ -37,6 +69,18 @@ void SoilFile::on_pushButtonSoilFile_clicked()
 
 void SoilFile::on_pushButtonRun_clicked()
 {
+	QString projDir, projFile;
+        QFile tFile(QDir::homePath()+"/project.txt");
+        tFile.open(QIODevice::ReadOnly | QIODevice::Text);
+        QTextStream tin(&tFile);
+        projDir  = tin.readLine();
+        projFile = tin.readLine();
+	tFile.close();
+        cout << qPrintable(projDir);
+
+	writeLineNumber(qPrintable(projFile), 87, qPrintable(ui->lineEditSoilTexture->text()));
+	writeLineNumber(qPrintable(projFile), 88, qPrintable(ui->lineEditSoilFile->text()));
+
     int RunFlag=1;
     ifstream inFile;
     ofstream outFile;
@@ -44,15 +88,17 @@ void SoilFile::on_pushButtonRun_clicked()
     outFile.open((ui->lineEditSoilFile->text()).toAscii());
 
     ofstream logFile;
-    QString logFileName("/tmp/log.html");
-    logFile.open("/tmp/log.html");
+	QDir dir = QDir::home();
+        QString home = dir.homePath();
+    QString logFileName(home+"/log.html");
+    logFile.open(qPrintable(logFileName));
     logFile<<"<html><body><font size=3 color=black> Verifying Files...<br>";
     logFile.close();
     ui->textBrowser->setSource(logFileName);
     ui->textBrowser->setFocus();
     ui->textBrowser->setModified(TRUE);
 
-    logFile.open("/tmp/log.html", ios::app);
+    logFile.open(qPrintable(logFileName), ios::app);
     logFile<<"Checking Soil Texture File... ";
     if (inFile == NULL){
         logFile<<"could NOT open file.  ERROR<br>";
@@ -72,7 +118,7 @@ void SoilFile::on_pushButtonRun_clicked()
 
     if(RunFlag == 1){
 
-        logFile.open("/tmp/log.html", ios::app);
+        logFile.open(qPrintable(logFileName), ios::app);
         logFile<<"Generating SOIL file... ";
 
         char tempS[500];
@@ -117,7 +163,7 @@ void SoilFile::on_pushButtonRun_clicked()
                 //KsatV
             //outData[i][1]= (7.755+0.03252*S+0.93*topsoil-0.967*D*D-0.000484*C*C-0.000322*S*S+0.001/S-0.0748/OM-0.643*log(S)-0.01398*D*C-0.1673*D*OM+0.02986*topsoil*C-0.03305*topsoil*S);
             outData[i][1]=exp(7.755+0.03252*S+0.93*topsoil-0.967*D*D-0.000484*C*C-0.000322*S*S+0.001/S-0.0748/OM-0.643*log(S)-0.01398*D*C-0.1673*D*OM+0.02986*topsoil*C-0.03305*topsoil*S);
-            outData[i][1]=outData[i][1]/100;
+            outData[i][1]=outData[i][1]/100; //UNIT CONVERSION cm/d to m/day
             outFile<<outData[i][1]<<"\t";
                 //ThetaS
             //outData[i][2]=(0.7919+0.001691*C-0.29619*D-0.000001491*S*S+0.0000821*OM*OM+0.02427/C+0.01113/S+0.01472*log(S)-0.0000733*OM*C-0.000619*D*C-0.001183*D*OM-0.0001664*topsoil*S);
@@ -129,11 +175,12 @@ void SoilFile::on_pushButtonRun_clicked()
                 //InfD
             outData[i][4]=0.10;
             outFile<<outData[i][4]<<"\t";
-                //Alpha
+                //ALPHA
             //outData[i][5]=log(-14.96+0.03135*C+0.0351*S+0.646*OM+15.29*D-0.192*topsoil-4.671*D*D-0.000781*C*C-0.00687*OM*OM+0.0449/OM+0.0663*log(S)+0.1482*log(OM)-0.04546*D*S-0.4852*D*OM+0.00673*topsoil*C);
             outData[i][5]=  exp(-14.96+0.03135*C+0.0351*S+0.646*OM+15.29*D-0.192*topsoil-4.671*D*D-0.000781*C*C-0.00687*OM*OM+0.0449/OM+0.0663*log(S)+0.1482*log(OM)-0.04546*D*S-0.4852*D*OM+0.00673*topsoil*C);
+	    outData[i][5]= 100*outData[i][5]; //UNIT CONVERSION 1/cm TO 1/m
             outFile<<outData[i][5]<<"\t";
-                //Beta
+                //BETA
             outData[i][6]=1+exp(-25.23-0.02195*C+0.0074*S-0.1940*OM+45.5*D-7.24*D*D+0.0003658*C*C+0.002885*OM*OM-12.81/D-0.1524/S-0.01958/OM-0.2876*log(S)-0.0709*log(OM)-44.6*log(D)-0.02264*D*C+0.0896*D*OM+0.00718*topsoil*C);
             outFile<<outData[i][6]<<"\t";
                 //hAreaF
@@ -153,5 +200,6 @@ void SoilFile::on_pushButtonRun_clicked()
 
 void SoilFile::on_pushButtonHelp_clicked()
 {
-
+helpDialog* hlpDlg = new helpDialog(this, "Soil File", 1, "helpFiles/soilfile.html", "Help :: Soil File");
+        hlpDlg->show();
 }

@@ -34,8 +34,6 @@ src/providers/gpx/CMakeFiles/gpxprovider.dir/moc_qgsgpxprovider.o
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/providers/gpx/../../../../src/providers/gpx/gpsdata.h
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/providers/gpx/../../../../src/providers/gpx/qgsgpxprovider.h
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/build/src/providers/gpx/moc_qgsgpxprovider.cxx
- /usr/include/Availability.h
- /usr/include/AvailabilityInternal.h
  /usr/include/_types.h
  /usr/include/_xlocale.h
  /usr/include/alloca.h
@@ -127,8 +125,6 @@ src/providers/gpx/CMakeFiles/gpxprovider.dir/qgsgpxprovider.o
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/providers/gpx/gpsdata.h
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/providers/gpx/qgsgpxprovider.cpp
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/providers/gpx/qgsgpxprovider.h
- /usr/include/Availability.h
- /usr/include/AvailabilityInternal.h
  /usr/include/_types.h
  /usr/include/_xlocale.h
  /usr/include/alloca.h
@@ -190,8 +186,6 @@ src/providers/gpx/CMakeFiles/gpxprovider.dir/gpsdata.o
  /Library/Frameworks/QtCore.framework/Headers/qtextstream.h
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/providers/gpx/gpsdata.cpp
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/providers/gpx/gpsdata.h
- /usr/include/Availability.h
- /usr/include/AvailabilityInternal.h
  /usr/include/_types.h
  /usr/include/_xlocale.h
  /usr/include/alloca.h

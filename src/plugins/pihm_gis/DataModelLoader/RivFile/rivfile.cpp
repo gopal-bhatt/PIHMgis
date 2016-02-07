@@ -15,6 +15,8 @@ using namespace std;
 #include "../../pihmLIBS/helpDialog/helpdialog.h"
 #include "../../pihmLIBS/shapefil.h"
 
+#include "../../pihmLIBS/fileStruct.h"
+
 rivFileDlg::rivFileDlg(QWidget *parent)
 {
 	setupUi(this);
@@ -26,37 +28,100 @@ rivFileDlg::rivFileDlg(QWidget *parent)
 	connect(runButton, SIGNAL(clicked()), this, SLOT(run()));
 	connect(helpButton, SIGNAL(clicked()), this, SLOT(help()));
 	connect(cancelButton, SIGNAL(clicked()), this, SLOT(close()));
+
+	QString projDir, projFile;
+        QFile tFile(QDir::homePath()+"/project.txt");
+        tFile.open(QIODevice::ReadOnly | QIODevice::Text);
+        QTextStream tin(&tFile);
+        projDir  = tin.readLine();
+        projFile = tin.readLine();
+	tFile.close();
+        cout << qPrintable(projDir);
+
+	//riverLineEdit->setText(readLineNumber(qPrintable(projFile), 4));
+	eleLineEdit->setText(readLineNumber(qPrintable(projFile), 46));
+	nodeLineEdit->setText(readLineNumber(qPrintable(projFile), 47));
+        riverLineEdit->setText(readLineNumber(qPrintable(projFile), 37));
+	QString tempStr; tempStr=readLineNumber(qPrintable(projFile), 47); tempStr.truncate(tempStr.length()-4);
+	neighLineEdit->setText(tempStr+"neigh");
+	tempStr=readLineNumber(qPrintable(projFile), 49); tempStr.truncate(tempStr.length()-4);
+	rivLineEdit->setText(tempStr+"riv");
 }
 
 void rivFileDlg::riverBrowse()
 {
-        QString str = QFileDialog::getOpenFileName(this, "Choose File", "~/","shp File(*.shp *.SHP)");
+	QString projDir, projFile;
+        QFile tFile(QDir::homePath()+"/project.txt");
+        tFile.open(QIODevice::ReadOnly | QIODevice::Text);
+        QTextStream tin(&tFile);
+        projDir  = tin.readLine();
+        projFile = tin.readLine();
+	tFile.close();
+        cout << qPrintable(projDir);
+
+        QString str = QFileDialog::getOpenFileName(this, "Choose File", projDir+"/VectorProcessing","shp File(*.shp *.SHP)");
         riverLineEdit->setText(str);
 }
 
 
 void rivFileDlg::eleBrowse()
 {
-	QString str = QFileDialog::getOpenFileName(this, "Choose File", "~/","ele File(*.ele *.ELE)");
+	QString projDir, projFile;
+        QFile tFile(QDir::homePath()+"/project.txt");
+        tFile.open(QIODevice::ReadOnly | QIODevice::Text);
+        QTextStream tin(&tFile);
+        projDir  = tin.readLine();
+        projFile = tin.readLine();
+	tFile.close();
+        cout << qPrintable(projDir);
+
+	QString str = QFileDialog::getOpenFileName(this, "Choose File", projDir+"/DomainDecomposition","ele File(*.ele *.ELE)");
 	eleLineEdit->setText(str);
 }
 
 void rivFileDlg::nodeBrowse()
 {
-        QString str = QFileDialog::getOpenFileName(this, "Choose File", "~/","node File(*.node *.NODE)");
+	QString projDir, projFile;
+        QFile tFile(QDir::homePath()+"/project.txt");
+        tFile.open(QIODevice::ReadOnly | QIODevice::Text);
+        QTextStream tin(&tFile);
+        projDir  = tin.readLine();
+        projFile = tin.readLine();
+	tFile.close();
+        cout << qPrintable(projDir);
+
+        QString str = QFileDialog::getOpenFileName(this, "Choose File", projDir+"/DomainDecomposition","node File(*.node *.NODE)");
         nodeLineEdit->setText(str);
 }
 
 void rivFileDlg::neighBrowse()
 {
-        QString str = QFileDialog::getOpenFileName(this, "Choose File", "~/","neigh File(*.neigh *.NEIGH)");
+	QString projDir, projFile;
+        QFile tFile(QDir::homePath()+"/project.txt");
+        tFile.open(QIODevice::ReadOnly | QIODevice::Text);
+        QTextStream tin(&tFile);
+        projDir  = tin.readLine();
+        projFile = tin.readLine();
+	tFile.close();
+        cout << qPrintable(projDir);
+
+        QString str = QFileDialog::getOpenFileName(this, "Choose File", projDir+"/DomainDecomposition","neigh File(*.neigh *.NEIGH)");
         neighLineEdit->setText(str);
 }
 
 
 void rivFileDlg::rivBrowse()
 {
-	QString temp = QFileDialog::getSaveFileName(this, "Choose File", "~/", "riv File(*.riv *RIV)");
+	QString projDir, projFile;
+        QFile tFile(QDir::homePath()+"/project.txt");
+        tFile.open(QIODevice::ReadOnly | QIODevice::Text);
+        QTextStream tin(&tFile);
+        projDir  = tin.readLine();
+        projFile = tin.readLine();
+	tFile.close();
+        cout << qPrintable(projDir);
+
+	QString temp = QFileDialog::getSaveFileName(this, "Choose File", projDir+"/DataModel", "riv File(*.riv *RIV)");
         QString tmp  = temp;
         if(!(tmp.toLower()).endsWith(".riv")){
                 tmp.append(".riv");
@@ -67,8 +132,25 @@ void rivFileDlg::rivBrowse()
 
 void rivFileDlg::run()
 {
+	QString projDir, projFile;
+        QFile tFile(QDir::homePath()+"/project.txt");
+        tFile.open(QIODevice::ReadOnly | QIODevice::Text);
+        QTextStream tin(&tFile);
+        projDir  = tin.readLine();
+        projFile = tin.readLine();
+	tFile.close();
+        cout << qPrintable(projDir);
 
-	QString logFileName("/tmp/log.html");
+	writeLineNumber(qPrintable(projFile), 75, qPrintable(riverLineEdit->text()));
+	writeLineNumber(qPrintable(projFile), 76, qPrintable(eleLineEdit->text()));
+	writeLineNumber(qPrintable(projFile), 77, qPrintable(nodeLineEdit->text()));
+	writeLineNumber(qPrintable(projFile), 78, qPrintable(neighLineEdit->text()));
+	writeLineNumber(qPrintable(projFile), 80, qPrintable(rivLineEdit->text()));
+	//writeLineNumber(qPrintable(projFile), 81, qPrintable(->text()));
+
+	QDir dir = QDir::home();
+        QString home = dir.homePath();
+	QString logFileName(home+"/log.html");
 	ofstream log;
 	log.open(qPrintable(logFileName));
 	log<<"<html><body><font size=3 color=black><p> Verifying Files...</p></font></body></html>";
@@ -226,11 +308,15 @@ void rivFileDlg::run()
   		//int slashPos = newshp.findRev("/");
 		//newshp.truncate(slashPos);
 		//newdbf.truncate(slashPos);
-		newshp=newshp.section('/',0,-2);
-		newdbf=newdbf.section('/',0,-2);
+		//??newshp=newshp.section('/',0,-2);
+		//??newdbf=newdbf.section('/',0,-2);
 
-		newshp.append("/temp.shp");
-		newdbf.append("/temp.dbf");
+		//??newshp.append("/temp.shp");
+		//??newdbf.append("/temp.dbf");
+
+		newshp.truncate(newshp.length()-4); newshp.append("_Decomp.shp");
+		newdbf.truncate(newdbf.length()-4); newdbf.append("_Decomp.dbf");
+		writeLineNumber(qPrintable(projFile), 81, qPrintable(newshp));
 
 		qWarning("\n%s", qPrintable(newshp));
 		qWarning("\n%s", qPrintable(newdbf));
@@ -392,6 +478,12 @@ void rivFileDlg::run()
 		messageLog->reload();
 		QApplication::processEvents();
 
+			QString myFileNameQString = newshp;
+                        QFileInfo myFileInfo(myFileNameQString);
+                        QString myBaseNameQString = myFileInfo.baseName();
+                        QString provider = "OGR";
+                        applicationPointer->addVectorLayer(myFileNameQString, myBaseNameQString, "ogr");
+
 	}
 	riv.close();
 
@@ -407,4 +499,8 @@ void rivFileDlg::help()
 {
 	helpDialog* hlpDlg = new helpDialog(this, "Riv File", 1, "helpFiles/rivfile.html", "Help :: Riv File");
 	hlpDlg->show();
+}
+
+void rivFileDlg::setApplicationPointer(QgisInterface* appPtr){
+    applicationPointer = appPtr;
 }

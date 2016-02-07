@@ -16,13 +16,13 @@
   <property name="sizeGripEnabled">
    <bool>false</bool>
   </property>
-  <widget class="Q3ButtonGroup" name="polygonToPolyLineGroup" native="true">
+  <widget class="Q3ButtonGroup" name="polygonToPolyLineGroup">
    <property name="geometry">
     <rect>
      <x>10</x>
      <y>10</y>
      <width>580</width>
-     <height>370</height>
+     <height>227</height>
     </rect>
    </property>
    <property name="sizePolicy">
@@ -31,67 +31,9 @@
      <verstretch>0</verstretch>
     </sizepolicy>
    </property>
-   <property name="title" stdset="0">
+   <property name="title">
     <string/>
    </property>
-   <widget class="Q3TextBrowser" name="MessageLog" native="true">
-    <property name="geometry">
-     <rect>
-      <x>11</x>
-      <y>271</y>
-      <width>560</width>
-      <height>92</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="helpButton">
-    <property name="geometry">
-     <rect>
-      <x>12</x>
-      <y>222</y>
-      <width>80</width>
-      <height>34</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Help</string>
-    </property>
-    <property name="autoDefault">
-     <bool>false</bool>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="okButton">
-    <property name="geometry">
-     <rect>
-      <x>488</x>
-      <y>222</y>
-      <width>80</width>
-      <height>34</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Run!</string>
-    </property>
-    <property name="autoDefault">
-     <bool>false</bool>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="cancelButton">
-    <property name="geometry">
-     <rect>
-      <x>402</x>
-      <y>222</y>
-      <width>80</width>
-      <height>34</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Close</string>
-    </property>
-    <property name="autoDefault">
-     <bool>false</bool>
-    </property>
-   </widget>
    <widget class="Q3Table" name="inputOutputTable" native="true">
     <property name="geometry">
      <rect>
@@ -205,12 +147,82 @@
     </property>
    </widget>
   </widget>
+  <widget class="Q3TextBrowser" name="MessageLog" native="true">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>285</y>
+     <width>580</width>
+     <height>92</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="helpButton">
+   <property name="geometry">
+    <rect>
+     <x>6</x>
+     <y>245</y>
+     <width>98</width>
+     <height>34</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Help</string>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="cancelButton">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>245</y>
+     <width>98</width>
+     <height>34</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Close</string>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="okButton">
+   <property name="geometry">
+    <rect>
+     <x>495</x>
+     <y>245</y>
+     <width>98</width>
+     <height>34</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Run!</string>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+  </widget>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <customwidgets>
   <customwidget>
+   <class>Q3TextBrowser</class>
+   <extends>QWidget</extends>
+   <header>q3textbrowser.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>Q3GroupBox</class>
+   <extends>QGroupBox</extends>
+   <header>Qt3Support/Q3GroupBox</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
    <class>Q3ButtonGroup</class>
-   <extends></extends>
+   <extends>Q3GroupBox</extends>
    <header>Qt3Support/Q3ButtonGroup</header>
    <container>1</container>
   </customwidget>
@@ -218,12 +230,6 @@
    <class>Q3Table</class>
    <extends></extends>
    <header>q3table.h</header>
-  </customwidget>
-  <customwidget>
-   <class>Q3TextBrowser</class>
-   <extends>QWidget</extends>
-   <header>q3textbrowser.h</header>
-   <container>1</container>
   </customwidget>
  </customwidgets>
  <resources>

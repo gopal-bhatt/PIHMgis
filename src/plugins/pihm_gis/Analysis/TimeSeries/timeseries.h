@@ -16,6 +16,13 @@ public slots:
 	void savePlot();
 	void help();
 
+
+private slots:
+    void on_pushButtonClose_clicked();
+    void on_comboBoxRivFeature_currentIndexChanged(int index);
+    void on_comboBoxEleFeature_currentIndexChanged(int index);
+    void on_comboBoxRivVariable_currentIndexChanged(int index);
+    void on_comboBoxEleVariable_currentIndexChanged(int index);
 };
 
 #endif

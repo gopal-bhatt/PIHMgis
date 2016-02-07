@@ -4,6 +4,8 @@
 #include "../../pihmLIBS/simplifyPolySHP.h"
 #include "../../pihmLIBS/shapefil.h"
 
+#include "../../pihmLIBS/fileStruct.h"
+
 #include <fstream>
 using namespace std;
 
@@ -18,11 +20,69 @@ simplifyLineDialogDlg::simplifyLineDialogDlg(QWidget *parent)
 	connect(okButton, SIGNAL(clicked()), this, SLOT(run()));
 	connect(helpButton, SIGNAL(clicked()), this, SLOT(help()));
 	connect(cancelButton, SIGNAL(clicked()), this, SLOT(close()));
+
+	QStringList labels;
+        labels << "Input Polylines" <<"Tolerance (m)" << "Output Polylines";
+        inputOutputTable->setColumnLabels(labels);
+
+	QString projDir, projFile;
+        QFile tFile(QDir::homePath()+"/project.txt");
+        tFile.open(QIODevice::ReadOnly | QIODevice::Text);
+        QTextStream tin(&tFile);
+        projDir  = tin.readLine();
+        projFile = tin.readLine();
+	tFile.close();
+        cout << qPrintable(projDir);
+
+        QString tempStr; tempStr=readLineNumber(qPrintable(projFile), 25);
+	QString tempThresh; tempThresh=readLineNumber(qPrintable(projFile), 100);
+	int tempThreshInt = 2*tempThresh.toInt();
+	tempThresh = QString::number(tempThreshInt, 10);
+        if(tempStr.length()>1){
+                int rows = inputOutputTable->numRows();
+                inputOutputTable->insertRows(rows);
+                Q3TableItem *tempItem;
+                tempItem = new Q3TableItem(inputOutputTable, Q3TableItem::Always, tempStr);
+                inputOutputTable->setItem(rows, 0, tempItem);
+		tempItem = new Q3TableItem(inputOutputTable, Q3TableItem::Always, tempThresh);
+		inputOutputTable->setItem(rows, 1, tempItem);
+                tempStr.truncate(tempStr.length()-4); tempStr.append("_Simp"); tempStr.append(tempThresh); tempStr.append(".shp");
+                tempItem = new Q3TableItem(inputOutputTable, Q3TableItem::Always, tempStr);
+                inputOutputTable->setItem(rows, 2, tempItem);
+	}
+
+	tempStr=readLineNumber(qPrintable(projFile), 16);
+        tempThresh=readLineNumber(qPrintable(projFile), 100);
+        //int tempThreshInt = 2*tempThresh.toInt();
+        //tempThresh = QString::number(tempThreshInt, 10);
+	if(tempStr.length()>1){
+		int rows = inputOutputTable->numRows();
+                inputOutputTable->insertRows(rows);
+                Q3TableItem *tempItem;
+		tempItem = new Q3TableItem(inputOutputTable, Q3TableItem::Always, tempStr);
+                inputOutputTable->setItem(rows, 0, tempItem);
+                tempItem = new Q3TableItem(inputOutputTable, Q3TableItem::Always, tempThresh);
+                inputOutputTable->setItem(rows, 1, tempItem);
+                tempStr.truncate(tempStr.length()-4); tempStr.append("_Simp"); tempStr.append(tempThresh); tempStr.append(".shp");
+                tempItem = new Q3TableItem(inputOutputTable, Q3TableItem::Always, tempStr);
+                inputOutputTable->setItem(rows, 2, tempItem);
+        }
+	toleranceEdit->setText(tempThresh);
+	
 }
 
 void simplifyLineDialogDlg::inputBrowse()
 {
-        QStringList temp = QFileDialog::getOpenFileNames(this, "Choose File", "~/","Internal Bounds File(*.shp *.SHP)");
+	QString projDir, projFile;
+        QFile tFile(QDir::homePath()+"/project.txt");
+        tFile.open(QIODevice::ReadOnly | QIODevice::Text);
+        QTextStream tin(&tFile);
+        projDir  = tin.readLine();
+        projFile = tin.readLine();
+	tFile.close();
+        cout << qPrintable(projDir);
+
+        QStringList temp = QFileDialog::getOpenFileNames(this, "Choose File", projDir+"/VectorProcessing","Unsimplified Polyline File(*.shp *.SHP)");
 	//QStringList shpFilesInputDialog::externalBoundsFiles = temp;
         //QString* str = new QString();
         QString str = "";
@@ -49,7 +109,7 @@ void simplifyLineDialogDlg::addBrowse()
         	QString fileName = fileNames.section(';',i,i);
                 QString simpFileName(fileName);
                 simpFileName.truncate(simpFileName.length()-4);
-                simpFileName.append("_Simp.shp");
+                simpFileName.append("_Simp"); simpFileName.append(tolerance); simpFileName.append(".shp");
                 inputOutputTable->insertRows(row+i);
                 Q3TableItem* tmpItem = new Q3TableItem(inputOutputTable, Q3TableItem::Always, fileName );
                 inputOutputTable->setItem(row+i,0,tmpItem);
@@ -94,7 +154,27 @@ void simplifyLineDialogDlg::editTolerance()
 
 void simplifyLineDialogDlg::run()
 {
-	QString logFileName("/tmp/log.html");
+	QString projDir, projFile;
+        QFile tFile(QDir::homePath()+"/project.txt");
+        tFile.open(QIODevice::ReadOnly | QIODevice::Text);
+        QTextStream tin(&tFile);
+        projDir  = tin.readLine();
+        projFile = tin.readLine();
+	tFile.close();
+        cout << qPrintable(projDir);
+	
+	writeLineNumber(qPrintable(projFile), 26, qPrintable(inputOutputTable->text(0,0)));
+	writeLineNumber(qPrintable(projFile), 27, qPrintable(inputOutputTable->text(0,2)));
+	writeLineNumber(qPrintable(projFile), 28, qPrintable(inputOutputTable->text(0,1)));
+	if(inputOutputTable->numRows()>0){
+		writeLineNumber(qPrintable(projFile), 29, qPrintable(inputOutputTable->text(1,0)));
+		writeLineNumber(qPrintable(projFile), 30, qPrintable(inputOutputTable->text(1,2)));
+		writeLineNumber(qPrintable(projFile), 31, qPrintable(inputOutputTable->text(1,1)));
+	}
+
+	QDir dir = QDir::home();
+        QString home = dir.homePath();
+	QString logFileName(qPrintable(home+"/log.html"));
 	ofstream log;
 	log.open(qPrintable(logFileName));
 	log<<"<html><body><font size=3 color=black><p> Verifying Files...</p></font></body></html>";
@@ -174,6 +254,13 @@ void simplifyLineDialogDlg::run()
 				QApplication::processEvents();
 
                 		simplifyPolySHP(qPrintable(shpFileName), qPrintable(dbfFileName), qPrintable(shpFileNameSimp), qPrintable(dbfFileNameSimp), tol);
+
+			QString myFileNameQString = shpFileNameSimp;
+                        QFileInfo myFileInfo(myFileNameQString);
+                        QString myBaseNameQString = myFileInfo.baseName();
+                        QString provider = "OGR";
+                        applicationPointer->addVectorLayer(myFileNameQString, myBaseNameQString, "ogr");
+
                 		qWarning("Simplifying %s to %s using %f\n", qPrintable(shpFileName), qPrintable(shpFileNameSimp), tol);
 
 				log.open(qPrintable(logFileName), ios::app);
@@ -190,4 +277,8 @@ void simplifyLineDialogDlg::help()
 {
 	helpDialog* hlpDlg = new helpDialog(this, "Simplify Line", 1, "helpFiles/simplifyPolyLineDialog.html", "Help :: Simplify Line");
 	hlpDlg->show();	
+}
+
+void simplifyLineDialogDlg::setApplicationPointer(QgisInterface* appPtr){
+    applicationPointer = appPtr;
 }

@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'timeseries.h'
 **
-** Created: Mon Sep 7 22:45:43 2009
+** Created: Tue Jul 27 23:38:16 2010
 **      by: The Qt Meta Object Compiler version 59 (Qt 4.3.2)
 **
 ** WARNING! All changes made in this file will be lost!
@@ -22,7 +22,7 @@ static const uint qt_meta_data_timeSeriesDlg[] = {
        1,       // revision
        0,       // classname
        0,    0, // classinfo
-       4,   10, // methods
+       9,   10, // methods
        0,    0, // properties
        0,    0, // enums/sets
 
@@ -31,13 +31,22 @@ static const uint qt_meta_data_timeSeriesDlg[] = {
       24,   14,   14,   14, 0x0a,
       31,   14,   14,   14, 0x0a,
       42,   14,   14,   14, 0x0a,
+      49,   14,   14,   14, 0x08,
+      84,   78,   14,   14, 0x08,
+     131,   78,   14,   14, 0x08,
+     178,   78,   14,   14, 0x08,
+     226,   78,   14,   14, 0x08,
 
        0        // eod
 };
 
 static const char qt_meta_stringdata_timeSeriesDlg[] = {
     "timeSeriesDlg\0\0browse()\0plot()\0"
-    "savePlot()\0help()\0"
+    "savePlot()\0help()\0on_pushButtonClose_clicked()\0"
+    "index\0on_comboBoxRivFeature_currentIndexChanged(int)\0"
+    "on_comboBoxEleFeature_currentIndexChanged(int)\0"
+    "on_comboBoxRivVariable_currentIndexChanged(int)\0"
+    "on_comboBoxEleVariable_currentIndexChanged(int)\0"
 };
 
 const QMetaObject timeSeriesDlg::staticMetaObject = {
@@ -69,8 +78,13 @@ int timeSeriesDlg::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
         case 1: plot(); break;
         case 2: savePlot(); break;
         case 3: help(); break;
+        case 4: on_pushButtonClose_clicked(); break;
+        case 5: on_comboBoxRivFeature_currentIndexChanged((*reinterpret_cast< int(*)>(_a[1]))); break;
+        case 6: on_comboBoxEleFeature_currentIndexChanged((*reinterpret_cast< int(*)>(_a[1]))); break;
+        case 7: on_comboBoxRivVariable_currentIndexChanged((*reinterpret_cast< int(*)>(_a[1]))); break;
+        case 8: on_comboBoxEleVariable_currentIndexChanged((*reinterpret_cast< int(*)>(_a[1]))); break;
         }
-        _id -= 4;
+        _id -= 9;
     }
     return _id;
 }

@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'mshfile.h'
 **
-** Created: Mon Sep 7 22:45:42 2009
+** Created: Tue Jul 27 23:38:15 2010
 **      by: The Qt Meta Object Compiler version 59 (Qt 4.3.2)
 **
 ** WARNING! All changes made in this file will be lost!
@@ -22,7 +22,7 @@ static const uint qt_meta_data_mshFileDlg[] = {
        1,       // revision
        0,       // classname
        0,    0, // classinfo
-       8,   10, // methods
+       9,   10, // methods
        0,    0, // properties
        0,    0, // enums/sets
 
@@ -35,6 +35,7 @@ static const uint qt_meta_data_mshFileDlg[] = {
       77,   11,   11,   11, 0x0a,
       89,   11,   11,   11, 0x0a,
       95,   11,   11,   11, 0x0a,
+     102,   11,   11,   11, 0x08,
 
        0        // eod
 };
@@ -43,6 +44,7 @@ static const char qt_meta_stringdata_mshFileDlg[] = {
     "mshFileDlg\0\0eleBrowse()\0nodeBrowse()\0"
     "neighBrowse()\0sEleBrowse()\0bEleBrowse()\0"
     "mshBrowse()\0run()\0help()\0"
+    "on_rivFileButton_clicked()\0"
 };
 
 const QMetaObject mshFileDlg::staticMetaObject = {
@@ -78,8 +80,9 @@ int mshFileDlg::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
         case 5: mshBrowse(); break;
         case 6: run(); break;
         case 7: help(); break;
+        case 8: on_rivFileButton_clicked(); break;
         }
-        _id -= 8;
+        _id -= 9;
     }
     return _id;
 }

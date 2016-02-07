@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading ui file 'linkgrid.ui'
 **
-** Created: Mon Sep 7 22:45:43 2009
+** Created: Tue Jul 27 23:38:17 2010
 **      by: Qt User Interface Compiler version 4.3.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling ui file!
@@ -11,6 +11,7 @@
 #define UI_LINKGRID_H
 
 #include <Qt3Support/Q3ButtonGroup>
+#include <Qt3Support/Q3GroupBox>
 #include <Qt3Support/Q3MimeSourceFactory>
 #include <Qt3Support/Q3TextBrowser>
 #include <QtCore/QVariant>
@@ -50,14 +51,13 @@ public:
     LinkGrid->resize(607, 449);
     buttonGroup2 = new Q3ButtonGroup(LinkGrid);
     buttonGroup2->setObjectName(QString::fromUtf8("buttonGroup2"));
-    buttonGroup2->setGeometry(QRect(10, 160, 581, 100));
-    buttonGroup2->setOrientation(Qt::Vertical);
+    buttonGroup2->setGeometry(QRect(13, 153, 581, 100));
     textLabel1_2 = new QLabel(buttonGroup2);
     textLabel1_2->setObjectName(QString::fromUtf8("textLabel1_2"));
-    textLabel1_2->setGeometry(QRect(30, 40, 90, 31));
+    textLabel1_2->setGeometry(QRect(20, 40, 90, 31));
     outputBrowseButton = new QPushButton(buttonGroup2);
     outputBrowseButton->setObjectName(QString::fromUtf8("outputBrowseButton"));
-    outputBrowseButton->setGeometry(QRect(470, 40, 81, 32));
+    outputBrowseButton->setGeometry(QRect(470, 40, 98, 32));
     outputBrowseButton->setAutoDefault(false);
     outputFileLineEdit = new QLineEdit(buttonGroup2);
     outputFileLineEdit->setObjectName(QString::fromUtf8("outputFileLineEdit"));
@@ -77,17 +77,16 @@ public:
     showSG_DFrame->setChecked(true);
     buttonGroup1 = new Q3ButtonGroup(LinkGrid);
     buttonGroup1->setObjectName(QString::fromUtf8("buttonGroup1"));
-    buttonGroup1->setGeometry(QRect(10, 10, 581, 140));
-    buttonGroup1->setOrientation(Qt::Vertical);
+    buttonGroup1->setGeometry(QRect(13, 6, 581, 140));
     textLabel1_3 = new QLabel(buttonGroup1);
     textLabel1_3->setObjectName(QString::fromUtf8("textLabel1_3"));
-    textLabel1_3->setGeometry(QRect(30, 90, 87, 31));
+    textLabel1_3->setGeometry(QRect(20, 90, 87, 31));
     textLabel1 = new QLabel(buttonGroup1);
     textLabel1->setObjectName(QString::fromUtf8("textLabel1"));
-    textLabel1->setGeometry(QRect(30, 40, 87, 31));
+    textLabel1->setGeometry(QRect(20, 40, 87, 31));
     inputFDRBrowseButton = new QPushButton(buttonGroup1);
     inputFDRBrowseButton->setObjectName(QString::fromUtf8("inputFDRBrowseButton"));
-    inputFDRBrowseButton->setGeometry(QRect(470, 90, 81, 32));
+    inputFDRBrowseButton->setGeometry(QRect(470, 90, 98, 32));
     inputFDRBrowseButton->setCheckable(false);
     inputFDRBrowseButton->setAutoDefault(false);
     inputFDRBrowseButton->setFlat(false);
@@ -99,25 +98,25 @@ public:
     inputSTRFileLineEdit->setGeometry(QRect(130, 41, 325, 29));
     inputSTRBrowseButton = new QPushButton(buttonGroup1);
     inputSTRBrowseButton->setObjectName(QString::fromUtf8("inputSTRBrowseButton"));
-    inputSTRBrowseButton->setGeometry(QRect(470, 40, 81, 32));
+    inputSTRBrowseButton->setGeometry(QRect(470, 40, 98, 32));
     inputSTRBrowseButton->setCheckable(false);
     inputSTRBrowseButton->setAutoDefault(false);
     inputSTRBrowseButton->setFlat(false);
     closeButton = new QPushButton(LinkGrid);
     closeButton->setObjectName(QString::fromUtf8("closeButton"));
-    closeButton->setGeometry(QRect(424, 269, 81, 32));
+    closeButton->setGeometry(QRect(393, 266, 98, 32));
     closeButton->setAutoDefault(false);
     runButton = new QPushButton(LinkGrid);
     runButton->setObjectName(QString::fromUtf8("runButton"));
-    runButton->setGeometry(QRect(510, 269, 81, 32));
+    runButton->setGeometry(QRect(500, 266, 98, 32));
     runButton->setAutoDefault(false);
     helpButton = new QPushButton(LinkGrid);
     helpButton->setObjectName(QString::fromUtf8("helpButton"));
-    helpButton->setGeometry(QRect(10, 269, 81, 32));
+    helpButton->setGeometry(QRect(8, 266, 98, 32));
     helpButton->setAutoDefault(false);
     messageLog = new Q3TextBrowser(LinkGrid);
     messageLog->setObjectName(QString::fromUtf8("messageLog"));
-    messageLog->setGeometry(QRect(10, 309, 581, 130));
+    messageLog->setGeometry(QRect(13, 307, 581, 130));
 
     retranslateUi(LinkGrid);
 

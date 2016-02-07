@@ -211,6 +211,18 @@ DataModelLoader/GeolFile/geolfile.s:
 	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DataModelLoader/GeolFile/geolfile.s
 
 # target to build an object file
+DataModelLoader/IbcFile/ibcfile.o:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DataModelLoader/IbcFile/ibcfile.o
+
+# target to preprocess a source file
+DataModelLoader/IbcFile/ibcfile.i:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DataModelLoader/IbcFile/ibcfile.i
+
+# target to generate assembly for a file
+DataModelLoader/IbcFile/ibcfile.s:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DataModelLoader/IbcFile/ibcfile.s
+
+# target to build an object file
 DataModelLoader/InitFile/initfile.o:
 	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DataModelLoader/InitFile/initfile.o
 
@@ -305,6 +317,18 @@ DomainDecomposition/GenerateShapeTopology/generateshapetopology.i:
 # target to generate assembly for a file
 DomainDecomposition/GenerateShapeTopology/generateshapetopology.s:
 	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DomainDecomposition/GenerateShapeTopology/generateshapetopology.s
+
+# target to build an object file
+DomainDecomposition/RunAllDomain/runnalldomain.o:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DomainDecomposition/RunAllDomain/runnalldomain.o
+
+# target to preprocess a source file
+DomainDecomposition/RunAllDomain/runnalldomain.i:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DomainDecomposition/RunAllDomain/runnalldomain.i
+
+# target to generate assembly for a file
+DomainDecomposition/RunAllDomain/runnalldomain.s:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/DomainDecomposition/RunAllDomain/runnalldomain.s
 
 # target to build an object file
 DomainDecomposition/RunTriangle/runtriangle.o:
@@ -439,6 +463,54 @@ PIHM_v2.0/update.s:
 	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/PIHM_v2.0/update.s
 
 # target to build an object file
+Project/CloseProject/closeproject.o:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/Project/CloseProject/closeproject.o
+
+# target to preprocess a source file
+Project/CloseProject/closeproject.i:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/Project/CloseProject/closeproject.i
+
+# target to generate assembly for a file
+Project/CloseProject/closeproject.s:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/Project/CloseProject/closeproject.s
+
+# target to build an object file
+Project/DefineProject/defineproject.o:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/Project/DefineProject/defineproject.o
+
+# target to preprocess a source file
+Project/DefineProject/defineproject.i:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/Project/DefineProject/defineproject.i
+
+# target to generate assembly for a file
+Project/DefineProject/defineproject.s:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/Project/DefineProject/defineproject.s
+
+# target to build an object file
+Project/ImportProject/importproject.o:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/Project/ImportProject/importproject.o
+
+# target to preprocess a source file
+Project/ImportProject/importproject.i:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/Project/ImportProject/importproject.i
+
+# target to generate assembly for a file
+Project/ImportProject/importproject.s:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/Project/ImportProject/importproject.s
+
+# target to build an object file
+Project/OpenProject/openproject.o:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/Project/OpenProject/openproject.o
+
+# target to preprocess a source file
+Project/OpenProject/openproject.i:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/Project/OpenProject/openproject.i
+
+# target to generate assembly for a file
+Project/OpenProject/openproject.s:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/Project/OpenProject/openproject.s
+
+# target to build an object file
 RasterProcessing/CatchmentGrid/catchmentgrid.o:
 	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/RasterProcessing/CatchmentGrid/catchmentgrid.o
 
@@ -499,6 +571,18 @@ RasterProcessing/LinkGrid/linkgrid.s:
 	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/RasterProcessing/LinkGrid/linkgrid.s
 
 # target to build an object file
+RasterProcessing/RunAllRaster/runallraster.o:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/RasterProcessing/RunAllRaster/runallraster.o
+
+# target to preprocess a source file
+RasterProcessing/RunAllRaster/runallraster.i:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/RasterProcessing/RunAllRaster/runallraster.i
+
+# target to generate assembly for a file
+RasterProcessing/RunAllRaster/runallraster.s:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/RasterProcessing/RunAllRaster/runallraster.s
+
+# target to build an object file
 RasterProcessing/StreamGrid/streamgrid.o:
 	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/RasterProcessing/StreamGrid/streamgrid.o
 
@@ -533,6 +617,18 @@ RunPIHM/runpihm.i:
 # target to generate assembly for a file
 RunPIHM/runpihm.s:
 	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/RunPIHM/runpihm.s
+
+# target to build an object file
+VectorProcessing/Dissolve/dissolve.o:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/VectorProcessing/Dissolve/dissolve.o
+
+# target to preprocess a source file
+VectorProcessing/Dissolve/dissolve.i:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/VectorProcessing/Dissolve/dissolve.i
+
+# target to generate assembly for a file
+VectorProcessing/Dissolve/dissolve.s:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/VectorProcessing/Dissolve/dissolve.s
 
 # target to build an object file
 VectorProcessing/MergeFeatures/mergefeaturesdialog.o:
@@ -655,6 +751,18 @@ moc_catchmentpolygon.s:
 	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_catchmentpolygon.s
 
 # target to build an object file
+moc_closeproject.o:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_closeproject.o
+
+# target to preprocess a source file
+moc_closeproject.i:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_closeproject.i
+
+# target to generate assembly for a file
+moc_closeproject.s:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_closeproject.s
+
+# target to build an object file
 moc_createtins.o:
 	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_createtins.o
 
@@ -665,6 +773,30 @@ moc_createtins.i:
 # target to generate assembly for a file
 moc_createtins.s:
 	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_createtins.s
+
+# target to build an object file
+moc_defineproject.o:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_defineproject.o
+
+# target to preprocess a source file
+moc_defineproject.i:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_defineproject.i
+
+# target to generate assembly for a file
+moc_defineproject.s:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_defineproject.s
+
+# target to build an object file
+moc_dissolve.o:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_dissolve.o
+
+# target to preprocess a source file
+moc_dissolve.i:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_dissolve.i
+
+# target to generate assembly for a file
+moc_dissolve.s:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_dissolve.s
 
 # target to build an object file
 moc_fillpits.o:
@@ -727,6 +859,30 @@ moc_helpdialog.s:
 	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_helpdialog.s
 
 # target to build an object file
+moc_ibcfile.o:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_ibcfile.o
+
+# target to preprocess a source file
+moc_ibcfile.i:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_ibcfile.i
+
+# target to generate assembly for a file
+moc_ibcfile.s:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_ibcfile.s
+
+# target to build an object file
+moc_importproject.o:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_importproject.o
+
+# target to preprocess a source file
+moc_importproject.i:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_importproject.i
+
+# target to generate assembly for a file
+moc_importproject.s:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_importproject.s
+
+# target to build an object file
 moc_initfile.o:
 	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_initfile.o
 
@@ -785,6 +941,18 @@ moc_mshfile.i:
 # target to generate assembly for a file
 moc_mshfile.s:
 	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_mshfile.s
+
+# target to build an object file
+moc_openproject.o:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_openproject.o
+
+# target to preprocess a source file
+moc_openproject.i:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_openproject.i
+
+# target to generate assembly for a file
+moc_openproject.s:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_openproject.s
 
 # target to build an object file
 moc_parafile.o:
@@ -857,6 +1025,30 @@ moc_rivfile.i:
 # target to generate assembly for a file
 moc_rivfile.s:
 	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_rivfile.s
+
+# target to build an object file
+moc_runallraster.o:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_runallraster.o
+
+# target to preprocess a source file
+moc_runallraster.i:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_runallraster.i
+
+# target to generate assembly for a file
+moc_runallraster.s:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_runallraster.s
+
+# target to build an object file
+moc_runnalldomain.o:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_runnalldomain.o
+
+# target to preprocess a source file
+moc_runnalldomain.i:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_runnalldomain.i
+
+# target to generate assembly for a file
+moc_runnalldomain.s:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/moc_runnalldomain.s
 
 # target to build an object file
 moc_runpihm.o:
@@ -1027,6 +1219,18 @@ pihmLIBS/calDownSegment.s:
 	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/calDownSegment.s
 
 # target to build an object file
+pihmLIBS/createTinShapeFile.o:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/createTinShapeFile.o
+
+# target to preprocess a source file
+pihmLIBS/createTinShapeFile.i:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/createTinShapeFile.i
+
+# target to generate assembly for a file
+pihmLIBS/createTinShapeFile.s:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/createTinShapeFile.s
+
+# target to build an object file
 pihmLIBS/extractRiver4mTIN.o:
 	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/extractRiver4mTIN.o
 
@@ -1037,6 +1241,30 @@ pihmLIBS/extractRiver4mTIN.i:
 # target to generate assembly for a file
 pihmLIBS/extractRiver4mTIN.s:
 	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/extractRiver4mTIN.s
+
+# target to build an object file
+pihmLIBS/fileStruct.o:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/fileStruct.o
+
+# target to preprocess a source file
+pihmLIBS/fileStruct.i:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/fileStruct.i
+
+# target to generate assembly for a file
+pihmLIBS/fileStruct.s:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/fileStruct.s
+
+# target to build an object file
+pihmLIBS/generatePolyFile.o:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/generatePolyFile.o
+
+# target to preprocess a source file
+pihmLIBS/generatePolyFile.i:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/generatePolyFile.i
+
+# target to generate assembly for a file
+pihmLIBS/generatePolyFile.s:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmLIBS/generatePolyFile.s
 
 # target to build an object file
 pihmLIBS/generateShape.o:
@@ -1097,6 +1325,18 @@ pihmRasterLIBS/avcalls_null.i:
 # target to generate assembly for a file
 pihmRasterLIBS/avcalls_null.s:
 	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/avcalls_null.s
+
+# target to build an object file
+pihmRasterLIBS/bin2ascii.o:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/bin2ascii.o
+
+# target to preprocess a source file
+pihmRasterLIBS/bin2ascii.i:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/bin2ascii.i
+
+# target to generate assembly for a file
+pihmRasterLIBS/bin2ascii.s:
+	cd /Users/bhattgopal/dev/cpp/qgis_1.0.2/build && $(MAKE) -f src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/build.make src/plugins/pihm_gis/CMakeFiles/pihmgisplugin.dir/pihmRasterLIBS/bin2ascii.s
 
 # target to build an object file
 pihmRasterLIBS/callocate.o:
@@ -1298,6 +1538,9 @@ help::
 	@echo "... DataModelLoader/GeolFile/geolfile.o"
 	@echo "... DataModelLoader/GeolFile/geolfile.i"
 	@echo "... DataModelLoader/GeolFile/geolfile.s"
+	@echo "... DataModelLoader/IbcFile/ibcfile.o"
+	@echo "... DataModelLoader/IbcFile/ibcfile.i"
+	@echo "... DataModelLoader/IbcFile/ibcfile.s"
 	@echo "... DataModelLoader/InitFile/initfile.o"
 	@echo "... DataModelLoader/InitFile/initfile.i"
 	@echo "... DataModelLoader/InitFile/initfile.s"
@@ -1322,6 +1565,9 @@ help::
 	@echo "... DomainDecomposition/GenerateShapeTopology/generateshapetopology.o"
 	@echo "... DomainDecomposition/GenerateShapeTopology/generateshapetopology.i"
 	@echo "... DomainDecomposition/GenerateShapeTopology/generateshapetopology.s"
+	@echo "... DomainDecomposition/RunAllDomain/runnalldomain.o"
+	@echo "... DomainDecomposition/RunAllDomain/runnalldomain.i"
+	@echo "... DomainDecomposition/RunAllDomain/runnalldomain.s"
 	@echo "... DomainDecomposition/RunTriangle/runtriangle.o"
 	@echo "... DomainDecomposition/RunTriangle/runtriangle.i"
 	@echo "... DomainDecomposition/RunTriangle/runtriangle.s"
@@ -1355,6 +1601,18 @@ help::
 	@echo "... PIHM_v2.0/update.o"
 	@echo "... PIHM_v2.0/update.i"
 	@echo "... PIHM_v2.0/update.s"
+	@echo "... Project/CloseProject/closeproject.o"
+	@echo "... Project/CloseProject/closeproject.i"
+	@echo "... Project/CloseProject/closeproject.s"
+	@echo "... Project/DefineProject/defineproject.o"
+	@echo "... Project/DefineProject/defineproject.i"
+	@echo "... Project/DefineProject/defineproject.s"
+	@echo "... Project/ImportProject/importproject.o"
+	@echo "... Project/ImportProject/importproject.i"
+	@echo "... Project/ImportProject/importproject.s"
+	@echo "... Project/OpenProject/openproject.o"
+	@echo "... Project/OpenProject/openproject.i"
+	@echo "... Project/OpenProject/openproject.s"
 	@echo "... RasterProcessing/CatchmentGrid/catchmentgrid.o"
 	@echo "... RasterProcessing/CatchmentGrid/catchmentgrid.i"
 	@echo "... RasterProcessing/CatchmentGrid/catchmentgrid.s"
@@ -1370,6 +1628,9 @@ help::
 	@echo "... RasterProcessing/LinkGrid/linkgrid.o"
 	@echo "... RasterProcessing/LinkGrid/linkgrid.i"
 	@echo "... RasterProcessing/LinkGrid/linkgrid.s"
+	@echo "... RasterProcessing/RunAllRaster/runallraster.o"
+	@echo "... RasterProcessing/RunAllRaster/runallraster.i"
+	@echo "... RasterProcessing/RunAllRaster/runallraster.s"
 	@echo "... RasterProcessing/StreamGrid/streamgrid.o"
 	@echo "... RasterProcessing/StreamGrid/streamgrid.i"
 	@echo "... RasterProcessing/StreamGrid/streamgrid.s"
@@ -1379,6 +1640,9 @@ help::
 	@echo "... RunPIHM/runpihm.o"
 	@echo "... RunPIHM/runpihm.i"
 	@echo "... RunPIHM/runpihm.s"
+	@echo "... VectorProcessing/Dissolve/dissolve.o"
+	@echo "... VectorProcessing/Dissolve/dissolve.i"
+	@echo "... VectorProcessing/Dissolve/dissolve.s"
 	@echo "... VectorProcessing/MergeFeatures/mergefeaturesdialog.o"
 	@echo "... VectorProcessing/MergeFeatures/mergefeaturesdialog.i"
 	@echo "... VectorProcessing/MergeFeatures/mergefeaturesdialog.s"
@@ -1409,9 +1673,18 @@ help::
 	@echo "... moc_catchmentpolygon.o"
 	@echo "... moc_catchmentpolygon.i"
 	@echo "... moc_catchmentpolygon.s"
+	@echo "... moc_closeproject.o"
+	@echo "... moc_closeproject.i"
+	@echo "... moc_closeproject.s"
 	@echo "... moc_createtins.o"
 	@echo "... moc_createtins.i"
 	@echo "... moc_createtins.s"
+	@echo "... moc_defineproject.o"
+	@echo "... moc_defineproject.i"
+	@echo "... moc_defineproject.s"
+	@echo "... moc_dissolve.o"
+	@echo "... moc_dissolve.i"
+	@echo "... moc_dissolve.s"
 	@echo "... moc_fillpits.o"
 	@echo "... moc_fillpits.i"
 	@echo "... moc_fillpits.s"
@@ -1427,6 +1700,12 @@ help::
 	@echo "... moc_helpdialog.o"
 	@echo "... moc_helpdialog.i"
 	@echo "... moc_helpdialog.s"
+	@echo "... moc_ibcfile.o"
+	@echo "... moc_ibcfile.i"
+	@echo "... moc_ibcfile.s"
+	@echo "... moc_importproject.o"
+	@echo "... moc_importproject.i"
+	@echo "... moc_importproject.s"
 	@echo "... moc_initfile.o"
 	@echo "... moc_initfile.i"
 	@echo "... moc_initfile.s"
@@ -1442,6 +1721,9 @@ help::
 	@echo "... moc_mshfile.o"
 	@echo "... moc_mshfile.i"
 	@echo "... moc_mshfile.s"
+	@echo "... moc_openproject.o"
+	@echo "... moc_openproject.i"
+	@echo "... moc_openproject.s"
 	@echo "... moc_parafile.o"
 	@echo "... moc_parafile.i"
 	@echo "... moc_parafile.s"
@@ -1460,6 +1742,12 @@ help::
 	@echo "... moc_rivfile.o"
 	@echo "... moc_rivfile.i"
 	@echo "... moc_rivfile.s"
+	@echo "... moc_runallraster.o"
+	@echo "... moc_runallraster.i"
+	@echo "... moc_runallraster.s"
+	@echo "... moc_runnalldomain.o"
+	@echo "... moc_runnalldomain.i"
+	@echo "... moc_runnalldomain.s"
 	@echo "... moc_runpihm.o"
 	@echo "... moc_runpihm.i"
 	@echo "... moc_runpihm.s"
@@ -1502,9 +1790,18 @@ help::
 	@echo "... pihmLIBS/calDownSegment.o"
 	@echo "... pihmLIBS/calDownSegment.i"
 	@echo "... pihmLIBS/calDownSegment.s"
+	@echo "... pihmLIBS/createTinShapeFile.o"
+	@echo "... pihmLIBS/createTinShapeFile.i"
+	@echo "... pihmLIBS/createTinShapeFile.s"
 	@echo "... pihmLIBS/extractRiver4mTIN.o"
 	@echo "... pihmLIBS/extractRiver4mTIN.i"
 	@echo "... pihmLIBS/extractRiver4mTIN.s"
+	@echo "... pihmLIBS/fileStruct.o"
+	@echo "... pihmLIBS/fileStruct.i"
+	@echo "... pihmLIBS/fileStruct.s"
+	@echo "... pihmLIBS/generatePolyFile.o"
+	@echo "... pihmLIBS/generatePolyFile.i"
+	@echo "... pihmLIBS/generatePolyFile.s"
 	@echo "... pihmLIBS/generateShape.o"
 	@echo "... pihmLIBS/generateShape.i"
 	@echo "... pihmLIBS/generateShape.s"
@@ -1520,6 +1817,9 @@ help::
 	@echo "... pihmRasterLIBS/avcalls_null.o"
 	@echo "... pihmRasterLIBS/avcalls_null.i"
 	@echo "... pihmRasterLIBS/avcalls_null.s"
+	@echo "... pihmRasterLIBS/bin2ascii.o"
+	@echo "... pihmRasterLIBS/bin2ascii.i"
+	@echo "... pihmRasterLIBS/bin2ascii.s"
 	@echo "... pihmRasterLIBS/callocate.o"
 	@echo "... pihmRasterLIBS/callocate.i"
 	@echo "... pihmRasterLIBS/callocate.s"

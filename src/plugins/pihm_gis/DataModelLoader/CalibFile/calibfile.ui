@@ -28,11 +28,14 @@
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>10</x>
+      <x>16</x>
       <y>34</y>
       <width>61</width>
       <height>17</height>
      </rect>
+    </property>
+    <property name="toolTip">
+     <string>Porosity</string>
     </property>
     <property name="text">
      <string>Porosity</string>
@@ -59,6 +62,9 @@
        <height>17</height>
       </rect>
      </property>
+     <property name="toolTip">
+      <string>Vertical Soil Conductivity</string>
+     </property>
      <property name="text">
       <string>KsatV</string>
      </property>
@@ -72,40 +78,49 @@
        <height>17</height>
       </rect>
      </property>
+     <property name="toolTip">
+      <string>Vertical macropore Conductivity</string>
+     </property>
      <property name="text">
-      <string>mKsatV</string>
+      <string>mpKsatV</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_6">
      <property name="geometry">
       <rect>
-       <x>110</x>
+       <x>116</x>
        <y>30</y>
        <width>61</width>
        <height>17</height>
       </rect>
      </property>
+     <property name="toolTip">
+      <string>Infiltration Depth</string>
+     </property>
      <property name="text">
-      <string>infD</string>
+      <string>infl D</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_7">
      <property name="geometry">
       <rect>
-       <x>110</x>
+       <x>116</x>
        <y>54</y>
        <width>61</width>
        <height>17</height>
       </rect>
      </property>
+     <property name="toolTip">
+      <string>horizontal macropore fraction</string>
+     </property>
      <property name="text">
-      <string>vAreaF</string>
+      <string>mpfH</string>
      </property>
     </widget>
     <widget class="QLineEdit" name="soilKsatV">
      <property name="geometry">
       <rect>
-       <x>66</x>
+       <x>72</x>
        <y>27</y>
        <width>31</width>
        <height>22</height>
@@ -118,14 +133,14 @@
     <widget class="QLineEdit" name="macKsatV">
      <property name="geometry">
       <rect>
-       <x>66</x>
+       <x>72</x>
        <y>50</y>
        <width>31</width>
        <height>22</height>
       </rect>
      </property>
      <property name="text">
-      <string>2</string>
+      <string>1</string>
      </property>
     </widget>
     <widget class="QLineEdit" name="infD">
@@ -141,7 +156,7 @@
       <string>1</string>
      </property>
     </widget>
-    <widget class="QLineEdit" name="vAreaF">
+    <widget class="QLineEdit" name="hAreaf">
      <property name="geometry">
       <rect>
        <x>158</x>
@@ -164,6 +179,9 @@
       <height>17</height>
      </rect>
     </property>
+    <property name="toolTip">
+     <string>Van genuchten parameters</string>
+    </property>
     <property name="text">
      <string>Alpha</string>
     </property>
@@ -171,11 +189,14 @@
    <widget class="QLabel" name="label_3">
     <property name="geometry">
      <rect>
-      <x>418</x>
+      <x>409</x>
       <y>34</y>
-      <width>61</width>
+      <width>41</width>
       <height>17</height>
      </rect>
+    </property>
+    <property name="toolTip">
+     <string>Van genuchten parameters</string>
     </property>
     <property name="text">
      <string>Beta</string>
@@ -184,7 +205,7 @@
    <widget class="QLineEdit" name="lineEditPorosity">
     <property name="geometry">
      <rect>
-      <x>80</x>
+      <x>85</x>
       <y>31</y>
       <width>80</width>
       <height>22</height>
@@ -210,7 +231,7 @@
    <widget class="QLineEdit" name="lineEditBeta">
     <property name="geometry">
      <rect>
-      <x>469</x>
+      <x>456</x>
       <y>31</y>
       <width>80</width>
       <height>22</height>
@@ -241,6 +262,9 @@
        <height>17</height>
       </rect>
      </property>
+     <property name="toolTip">
+      <string>Horizontal Conductivity</string>
+     </property>
      <property name="text">
       <string>KsatH</string>
      </property>
@@ -254,6 +278,9 @@
        <height>17</height>
       </rect>
      </property>
+     <property name="toolTip">
+      <string>Vertical Conductivity</string>
+     </property>
      <property name="text">
       <string>KsatV</string>
      </property>
@@ -261,27 +288,33 @@
     <widget class="QLabel" name="label_10">
      <property name="geometry">
       <rect>
-       <x>120</x>
+       <x>117</x>
        <y>30</y>
        <width>61</width>
        <height>17</height>
       </rect>
      </property>
+     <property name="toolTip">
+      <string>macropore Conductivity</string>
+     </property>
      <property name="text">
-      <string>mKsatH</string>
+      <string>mpKsatH</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_11">
      <property name="geometry">
       <rect>
-       <x>120</x>
+       <x>117</x>
        <y>54</y>
        <width>61</width>
        <height>17</height>
       </rect>
      </property>
+     <property name="toolTip">
+      <string>Macropore Depth</string>
+     </property>
      <property name="text">
-      <string>mDepth</string>
+      <string>mpDepth</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_12">
@@ -293,8 +326,11 @@
        <height>17</height>
       </rect>
      </property>
+     <property name="toolTip">
+      <string>vertical macropore fraction</string>
+     </property>
      <property name="text">
-      <string>hAreaF</string>
+      <string>mpfV</string>
      </property>
     </widget>
     <widget class="QLineEdit" name="geolKsatH">
@@ -326,30 +362,30 @@
     <widget class="QLineEdit" name="macKsatH">
      <property name="geometry">
       <rect>
-       <x>178</x>
+       <x>185</x>
        <y>27</y>
        <width>31</width>
        <height>22</height>
       </rect>
      </property>
      <property name="text">
-      <string>50</string>
+      <string>1</string>
      </property>
     </widget>
     <widget class="QLineEdit" name="macD">
      <property name="geometry">
       <rect>
-       <x>178</x>
+       <x>185</x>
        <y>50</y>
        <width>31</width>
        <height>22</height>
       </rect>
      </property>
      <property name="text">
-      <string>2.0</string>
+      <string>1</string>
      </property>
     </widget>
-    <widget class="QLineEdit" name="hAreaf">
+    <widget class="QLineEdit" name="vAreaF">
      <property name="geometry">
       <rect>
        <x>288</x>
@@ -385,6 +421,9 @@
       <height>17</height>
      </rect>
     </property>
+    <property name="toolTip">
+     <string>Root Zone Depth</string>
+    </property>
     <property name="text">
      <string>RzDepth</string>
     </property>
@@ -393,23 +432,26 @@
     <property name="geometry">
      <rect>
       <x>83</x>
-      <y>26</y>
+      <y>28</y>
       <width>31</width>
       <height>22</height>
      </rect>
     </property>
     <property name="text">
-     <string>0.3</string>
+     <string>1</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_15">
     <property name="geometry">
      <rect>
-      <x>158</x>
+      <x>147</x>
       <y>30</y>
       <width>61</width>
       <height>17</height>
      </rect>
+    </property>
+    <property name="toolTip">
+     <string>Vegetation Fraction</string>
     </property>
     <property name="text">
      <string>VegFrac</string>
@@ -418,11 +460,14 @@
    <widget class="QLabel" name="label_16">
     <property name="geometry">
      <rect>
-      <x>158</x>
+      <x>147</x>
       <y>55</y>
       <width>61</width>
       <height>17</height>
      </rect>
+    </property>
+    <property name="toolTip">
+     <string>Albedo</string>
     </property>
     <property name="text">
      <string>Albedo</string>
@@ -431,60 +476,72 @@
    <widget class="QLabel" name="label_17">
     <property name="geometry">
      <rect>
-      <x>310</x>
+      <x>270</x>
       <y>30</y>
-      <width>61</width>
-      <height>17</height>
+      <width>81</width>
+      <height>20</height>
      </rect>
     </property>
+    <property name="toolTip">
+     <string>Manning’s roughness (n)</string>
+    </property>
     <property name="text">
-     <string>Rough</string>
+     <string>Roughness</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_18">
     <property name="geometry">
      <rect>
-      <x>310</x>
+      <x>270</x>
       <y>55</y>
-      <width>61</width>
-      <height>17</height>
+      <width>91</width>
+      <height>20</height>
      </rect>
     </property>
+    <property name="toolTip">
+     <string>Interception Loss</string>
+    </property>
     <property name="text">
-     <string>ET 0</string>
+     <string>Evap Canopy</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_19">
     <property name="geometry">
      <rect>
-      <x>453</x>
+      <x>413</x>
       <y>30</y>
-      <width>61</width>
-      <height>17</height>
+      <width>91</width>
+      <height>20</height>
      </rect>
     </property>
+    <property name="toolTip">
+     <string>Transpiration</string>
+    </property>
     <property name="text">
-     <string>ET 1</string>
+     <string>Transpiration</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_20">
     <property name="geometry">
      <rect>
-      <x>453</x>
+      <x>413</x>
       <y>55</y>
-      <width>61</width>
-      <height>17</height>
+      <width>101</width>
+      <height>20</height>
      </rect>
     </property>
+    <property name="toolTip">
+     <string>Evaporation from Ground</string>
+    </property>
     <property name="text">
-     <string>ET 2</string>
+     <string>Evap Ground</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="VegFrac">
     <property name="geometry">
      <rect>
-      <x>221</x>
-      <y>26</y>
+      <x>210</x>
+      <y>28</y>
       <width>31</width>
       <height>22</height>
      </rect>
@@ -496,8 +553,8 @@
    <widget class="QLineEdit" name="Albedo">
     <property name="geometry">
      <rect>
-      <x>221</x>
-      <y>52</y>
+      <x>210</x>
+      <y>53</y>
       <width>31</width>
       <height>22</height>
      </rect>
@@ -510,7 +567,7 @@
     <property name="geometry">
      <rect>
       <x>367</x>
-      <y>26</y>
+      <y>28</y>
       <width>31</width>
       <height>22</height>
      </rect>
@@ -523,7 +580,7 @@
     <property name="geometry">
      <rect>
       <x>367</x>
-      <y>52</y>
+      <y>53</y>
       <width>31</width>
       <height>22</height>
      </rect>
@@ -536,7 +593,7 @@
     <property name="geometry">
      <rect>
       <x>507</x>
-      <y>26</y>
+      <y>28</y>
       <width>31</width>
       <height>22</height>
      </rect>
@@ -549,7 +606,7 @@
     <property name="geometry">
      <rect>
       <x>507</x>
-      <y>52</y>
+      <y>53</y>
       <width>31</width>
       <height>22</height>
      </rect>
@@ -607,7 +664,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>50</string>
+     <string>1</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="rivKsatV">
@@ -620,7 +677,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>50</string>
+     <string>1</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="rivDepth">
@@ -652,11 +709,14 @@
    <widget class="QLabel" name="label_14">
     <property name="geometry">
      <rect>
-      <x>10</x>
+      <x>16</x>
       <y>30</y>
       <width>61</width>
       <height>17</height>
      </rect>
+    </property>
+    <property name="toolTip">
+     <string>River bed Manning’s roughness (n)</string>
     </property>
     <property name="text">
      <string>Rough</string>
@@ -665,11 +725,14 @@
    <widget class="QLabel" name="label_22">
     <property name="geometry">
      <rect>
-      <x>10</x>
+      <x>16</x>
       <y>54</y>
       <width>71</width>
       <height>17</height>
      </rect>
+    </property>
+    <property name="toolTip">
+     <string>River bed thickness</string>
     </property>
     <property name="text">
      <string>Thickness</string>
@@ -684,6 +747,9 @@
       <height>17</height>
      </rect>
     </property>
+    <property name="toolTip">
+     <string>Conductivity of river sides</string>
+    </property>
     <property name="text">
      <string>KsatH</string>
     </property>
@@ -696,6 +762,9 @@
       <width>61</width>
       <height>17</height>
      </rect>
+    </property>
+    <property name="toolTip">
+     <string>Conductivity of river bed</string>
     </property>
     <property name="text">
      <string>KsatV</string>
@@ -710,6 +779,9 @@
       <height>17</height>
      </rect>
     </property>
+    <property name="toolTip">
+     <string>River depth</string>
+    </property>
     <property name="text">
      <string>Depth</string>
     </property>
@@ -722,6 +794,9 @@
       <width>61</width>
       <height>17</height>
      </rect>
+    </property>
+    <property name="toolTip">
+     <string>River width</string>
     </property>
     <property name="text">
      <string>Width</string>
@@ -788,6 +863,9 @@
       <height>17</height>
      </rect>
     </property>
+    <property name="toolTip">
+     <string>Precipitation Timeseries</string>
+    </property>
     <property name="text">
      <string>Precipitation</string>
     </property>
@@ -800,6 +878,9 @@
       <width>91</width>
       <height>17</height>
      </rect>
+    </property>
+    <property name="toolTip">
+     <string>Temperature timeseries</string>
     </property>
     <property name="text">
      <string>Temperature</string>

@@ -1,172 +1,161 @@
-<ui version="4.0" >
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
  <class>AttFileGeneration</class>
- <widget class="QDialog" name="AttFileGeneration" >
-  <property name="geometry" >
+ <widget class="QDialog" name="AttFileGeneration">
+  <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
     <width>599</width>
-    <height>748</height>
+    <height>693</height>
    </rect>
   </property>
-  <property name="windowTitle" >
+  <property name="windowTitle">
    <string>Att File Generation</string>
   </property>
-  <widget class="Q3GroupBox" name="groupBox8" >
-   <property name="geometry" >
+  <widget class="Q3GroupBox" name="groupBox8">
+   <property name="geometry">
     <rect>
      <x>10</x>
      <y>6</y>
      <width>580</width>
-     <height>60</height>
+     <height>51</height>
     </rect>
    </property>
-   <property name="title" >
+   <property name="title">
     <string/>
    </property>
-   <property name="orientation" >
-    <enum>Qt::Vertical</enum>
-   </property>
-   <widget class="QLabel" name="textLabel4" >
-    <property name="geometry" >
+   <widget class="QLabel" name="textLabel4">
+    <property name="geometry">
      <rect>
       <x>30</x>
-      <y>14</y>
+      <y>7</y>
       <width>70</width>
       <height>41</height>
      </rect>
     </property>
-    <property name="text" >
+    <property name="text">
      <string>TIN File</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="TINPushButton" >
-    <property name="geometry" >
+   <widget class="QPushButton" name="TINPushButton">
+    <property name="geometry">
      <rect>
       <x>470</x>
-      <y>17</y>
-      <width>81</width>
+      <y>12</y>
+      <width>98</width>
       <height>32</height>
      </rect>
     </property>
-    <property name="text" >
+    <property name="text">
      <string>Browse...</string>
     </property>
-    <property name="autoDefault" >
+    <property name="autoDefault">
      <bool>false</bool>
     </property>
    </widget>
-   <widget class="QLineEdit" name="TINLineEdit" >
-    <property name="geometry" >
+   <widget class="QLineEdit" name="TINLineEdit">
+    <property name="geometry">
      <rect>
-      <x>110</x>
-      <y>18</y>
+      <x>138</x>
+      <y>16</y>
       <width>325</width>
-      <height>29</height>
+      <height>22</height>
      </rect>
     </property>
    </widget>
   </widget>
-  <widget class="Q3ButtonGroup" name="shapeFileNameGroup" >
-   <property name="geometry" >
+  <widget class="Q3ButtonGroup" name="shapeFileNameGroup">
+   <property name="geometry">
     <rect>
      <x>10</x>
-     <y>502</y>
+     <y>480</y>
      <width>580</width>
-     <height>60</height>
+     <height>51</height>
     </rect>
    </property>
-   <property name="title" >
+   <property name="title">
     <string/>
    </property>
-   <property name="orientation" >
-    <enum>Qt::Vertical</enum>
-   </property>
-   <widget class="QLabel" name="mshFileLabel" >
-    <property name="geometry" >
+   <widget class="QLabel" name="mshFileLabel">
+    <property name="geometry">
      <rect>
-      <x>9</x>
-      <y>11</y>
-      <width>135</width>
+      <x>25</x>
+      <y>7</y>
+      <width>111</width>
       <height>38</height>
      </rect>
     </property>
-    <property name="text" >
-     <string>Output Att File</string>
-    </property>
-    <property name="alignment" >
-     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    <property name="text">
+     <string>Output ATT File</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="attFileLineEdit" >
-    <property name="geometry" >
+   <widget class="QLineEdit" name="attFileLineEdit">
+    <property name="geometry">
      <rect>
       <x>162</x>
       <y>15</y>
       <width>294</width>
-      <height>29</height>
+      <height>22</height>
      </rect>
     </property>
    </widget>
-   <widget class="QPushButton" name="attFilePushButton" >
-    <property name="geometry" >
+   <widget class="QPushButton" name="attFilePushButton">
+    <property name="geometry">
      <rect>
       <x>472</x>
-      <y>14</y>
-      <width>87</width>
+      <y>12</y>
+      <width>98</width>
       <height>32</height>
      </rect>
     </property>
-    <property name="text" >
+    <property name="text">
      <string>Browse...</string>
     </property>
-    <property name="autoDefault" >
+    <property name="autoDefault">
      <bool>false</bool>
     </property>
    </widget>
   </widget>
-  <widget class="QTextBrowser" name="textBrowser11" >
-   <property name="geometry" >
+  <widget class="Q3TextBrowser" name="textBrowser11">
+   <property name="geometry">
     <rect>
      <x>15</x>
-     <y>610</y>
+     <y>572</y>
      <width>570</width>
-     <height>130</height>
+     <height>111</height>
     </rect>
    </property>
   </widget>
-  <widget class="Q3GroupBox" name="groupBox8_3" >
-   <property name="geometry" >
+  <widget class="Q3GroupBox" name="groupBox8_3">
+   <property name="geometry">
     <rect>
      <x>10</x>
-     <y>430</y>
+     <y>399</y>
      <width>580</width>
      <height>70</height>
     </rect>
    </property>
-   <property name="title" >
+   <property name="title">
     <string>Extract Using</string>
    </property>
-   <property name="orientation" >
-    <enum>Qt::Vertical</enum>
-   </property>
-   <widget class="Q3ButtonGroup" name="buttonGroup2" >
-    <property name="geometry" >
+   <widget class="Q3ButtonGroup" name="buttonGroup2">
+    <property name="geometry">
      <rect>
       <x>10</x>
-      <y>24</y>
+      <y>27</y>
       <width>561</width>
-      <height>40</height>
+      <height>36</height>
      </rect>
     </property>
-    <property name="title" >
+    <property name="title">
      <string/>
     </property>
-    <property name="orientation" >
-     <enum>Qt::Vertical</enum>
-    </property>
-    <widget class="QRadioButton" name="OrthoRadioButton" >
-     <property name="geometry" >
+    <widget class="QRadioButton" name="OrthoRadioButton">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
       <rect>
        <x>220</x>
        <y>2</y>
@@ -174,12 +163,15 @@
        <height>31</height>
       </rect>
      </property>
-     <property name="text" >
+     <property name="text">
       <string>Ortho-center</string>
      </property>
     </widget>
-    <widget class="QRadioButton" name="EleRadioButton" >
-     <property name="geometry" >
+    <widget class="QRadioButton" name="EleRadioButton">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
       <rect>
        <x>420</x>
        <y>2</y>
@@ -187,12 +179,12 @@
        <height>31</height>
       </rect>
      </property>
-     <property name="text" >
+     <property name="text">
       <string>TIN Element</string>
      </property>
     </widget>
-    <widget class="QRadioButton" name="CentroidRadioButton" >
-     <property name="geometry" >
+    <widget class="QRadioButton" name="CentroidRadioButton">
+     <property name="geometry">
       <rect>
        <x>30</x>
        <y>2</y>
@@ -200,349 +192,355 @@
        <height>31</height>
       </rect>
      </property>
-     <property name="text" >
+     <property name="text">
       <string>Centroid</string>
      </property>
-     <property name="checked" >
+     <property name="checked">
       <bool>true</bool>
      </property>
     </widget>
    </widget>
   </widget>
-  <widget class="QTabWidget" name="tabWidget3" >
-   <property name="geometry" >
+  <widget class="QTabWidget" name="tabWidget3">
+   <property name="geometry">
     <rect>
      <x>10</x>
-     <y>70</y>
+     <y>66</y>
      <width>581</width>
-     <height>360</height>
+     <height>333</height>
     </rect>
    </property>
-   <property name="currentIndex" >
+   <property name="currentIndex">
     <number>0</number>
    </property>
-   <widget class="QWidget" name="tab1" >
-    <attribute name="title" >
-     <string>Forcing</string>
+   <widget class="QWidget" name="tab1">
+    <attribute name="title">
+     <string>     Climate     </string>
     </attribute>
-    <widget class="Q3GroupBox" name="groupBox14" >
-     <property name="geometry" >
+    <widget class="Q3GroupBox" name="groupBox14">
+     <property name="geometry">
       <rect>
        <x>8</x>
-       <y>9</y>
+       <y>4</y>
        <width>561</width>
-       <height>310</height>
+       <height>292</height>
       </rect>
      </property>
-     <property name="title" >
-      <string>Index File Input</string>
+     <property name="title">
+      <string>Index / Classification Grid Map</string>
      </property>
-     <widget class="QLabel" name="textLabel4_2_5" >
-      <property name="geometry" >
+     <widget class="QLabel" name="textLabel4_2_5">
+      <property name="geometry">
        <rect>
         <x>20</x>
-        <y>24</y>
-        <width>70</width>
+        <y>17</y>
+        <width>101</width>
         <height>41</height>
        </rect>
       </property>
-      <property name="text" >
-       <string>Precip.</string>
+      <property name="text">
+       <string>Precipitation</string>
       </property>
      </widget>
-     <widget class="QLabel" name="textLabel4_2_2_2" >
-      <property name="geometry" >
+     <widget class="QLabel" name="textLabel4_2_2_2">
+      <property name="geometry">
        <rect>
         <x>20</x>
-        <y>64</y>
-        <width>70</width>
+        <y>54</y>
+        <width>91</width>
         <height>41</height>
        </rect>
       </property>
-      <property name="text" >
-       <string>Temp.</string>
+      <property name="text">
+       <string>Temperature</string>
       </property>
      </widget>
-     <widget class="QLabel" name="textLabel4_2_3_2" >
-      <property name="geometry" >
+     <widget class="QLabel" name="textLabel4_2_3_2">
+      <property name="geometry">
        <rect>
         <x>20</x>
-        <y>100</y>
+        <y>93</y>
         <width>70</width>
         <height>41</height>
        </rect>
       </property>
-      <property name="text" >
+      <property name="text">
        <string>Humidity</string>
       </property>
      </widget>
-     <widget class="QLabel" name="textLabel4_2_4_2" >
-      <property name="geometry" >
+     <widget class="QLabel" name="textLabel4_2_4_2">
+      <property name="geometry">
        <rect>
         <x>20</x>
-        <y>139</y>
-        <width>70</width>
+        <y>133</y>
+        <width>91</width>
         <height>41</height>
        </rect>
       </property>
-      <property name="text" >
-       <string>Wind Vel.</string>
+      <property name="text">
+       <string>Wind Velocity</string>
       </property>
      </widget>
-     <widget class="QLabel" name="textLabel4_2_2_2_2" >
-      <property name="geometry" >
+     <widget class="QLabel" name="textLabel4_2_2_2_2">
+      <property name="geometry">
        <rect>
         <x>20</x>
-        <y>175</y>
+        <y>169</y>
         <width>70</width>
         <height>41</height>
        </rect>
       </property>
-      <property name="text" >
+      <property name="text">
        <string>G</string>
       </property>
      </widget>
-     <widget class="QLabel" name="textLabel4_2_5_2" >
-      <property name="geometry" >
+     <widget class="QLabel" name="textLabel4_2_5_2">
+      <property name="geometry">
        <rect>
         <x>20</x>
-        <y>215</y>
-        <width>70</width>
+        <y>207</y>
+        <width>101</width>
         <height>41</height>
        </rect>
       </property>
-      <property name="text" >
-       <string>Rn</string>
+      <property name="text">
+       <string>Solar Radiation</string>
       </property>
      </widget>
-     <widget class="QLabel" name="textLabel4_2_3_2_2" >
-      <property name="geometry" >
+     <widget class="QLabel" name="textLabel4_2_3_2_2">
+      <property name="geometry">
        <rect>
         <x>20</x>
-        <y>255</y>
-        <width>70</width>
+        <y>245</y>
+        <width>101</width>
         <height>41</height>
        </rect>
       </property>
-      <property name="text" >
-       <string>Pressure</string>
+      <property name="text">
+       <string>Vapor Pressure</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="PrecipPushButton" >
-      <property name="geometry" >
+     <widget class="QPushButton" name="PrecipPushButton">
+      <property name="geometry">
        <rect>
         <x>460</x>
-        <y>27</y>
-        <width>81</width>
+        <y>25</y>
+        <width>98</width>
         <height>32</height>
        </rect>
       </property>
-      <property name="text" >
+      <property name="text">
        <string>Browse...</string>
       </property>
-      <property name="autoDefault" >
+      <property name="autoDefault">
        <bool>false</bool>
       </property>
      </widget>
-     <widget class="QPushButton" name="TempPushButton" >
-      <property name="geometry" >
+     <widget class="QPushButton" name="TempPushButton">
+      <property name="geometry">
        <rect>
         <x>460</x>
-        <y>67</y>
-        <width>81</width>
+        <y>62</y>
+        <width>98</width>
         <height>32</height>
        </rect>
       </property>
-      <property name="text" >
+      <property name="text">
        <string>Browse...</string>
       </property>
-      <property name="autoDefault" >
+      <property name="autoDefault">
        <bool>false</bool>
       </property>
      </widget>
-     <widget class="QPushButton" name="HumidPushButton" >
-      <property name="geometry" >
+     <widget class="QPushButton" name="HumidPushButton">
+      <property name="geometry">
        <rect>
         <x>460</x>
-        <y>107</y>
-        <width>81</width>
+        <y>100</y>
+        <width>98</width>
         <height>32</height>
        </rect>
       </property>
-      <property name="text" >
+      <property name="text">
        <string>Browse...</string>
       </property>
-      <property name="autoDefault" >
+      <property name="autoDefault">
        <bool>false</bool>
       </property>
      </widget>
-     <widget class="QPushButton" name="WindPushButton" >
-      <property name="geometry" >
+     <widget class="QPushButton" name="WindPushButton">
+      <property name="geometry">
        <rect>
         <x>460</x>
-        <y>146</y>
-        <width>81</width>
+        <y>138</y>
+        <width>98</width>
         <height>32</height>
        </rect>
       </property>
-      <property name="text" >
+      <property name="text">
        <string>Browse...</string>
       </property>
-      <property name="autoDefault" >
+      <property name="autoDefault">
        <bool>false</bool>
       </property>
      </widget>
-     <widget class="QPushButton" name="GPushButton" >
-      <property name="geometry" >
+     <widget class="QPushButton" name="GPushButton">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
        <rect>
         <x>460</x>
-        <y>187</y>
-        <width>81</width>
+        <y>176</y>
+        <width>98</width>
         <height>32</height>
        </rect>
       </property>
-      <property name="text" >
+      <property name="text">
        <string>Browse...</string>
       </property>
-      <property name="autoDefault" >
+      <property name="autoDefault">
        <bool>false</bool>
       </property>
      </widget>
-     <widget class="QPushButton" name="RnPushButton" >
-      <property name="geometry" >
+     <widget class="QPushButton" name="RnPushButton">
+      <property name="geometry">
        <rect>
         <x>460</x>
-        <y>227</y>
-        <width>81</width>
+        <y>214</y>
+        <width>98</width>
         <height>32</height>
        </rect>
       </property>
-      <property name="text" >
+      <property name="text">
        <string>Browse...</string>
       </property>
-      <property name="autoDefault" >
+      <property name="autoDefault">
        <bool>false</bool>
       </property>
      </widget>
-     <widget class="QPushButton" name="PPushButton" >
-      <property name="geometry" >
+     <widget class="QPushButton" name="PPushButton">
+      <property name="geometry">
        <rect>
         <x>460</x>
-        <y>265</y>
-        <width>81</width>
+        <y>253</y>
+        <width>98</width>
         <height>32</height>
        </rect>
       </property>
-      <property name="text" >
+      <property name="text">
        <string>Browse...</string>
       </property>
-      <property name="autoDefault" >
+      <property name="autoDefault">
        <bool>false</bool>
       </property>
      </widget>
-     <widget class="QLineEdit" name="PrecipLineEdit" >
-      <property name="geometry" >
+     <widget class="QLineEdit" name="PrecipLineEdit">
+      <property name="geometry">
        <rect>
-        <x>100</x>
+        <x>124</x>
         <y>28</y>
         <width>325</width>
-        <height>29</height>
+        <height>22</height>
        </rect>
       </property>
      </widget>
-     <widget class="QLineEdit" name="TempLineEdit" >
-      <property name="geometry" >
+     <widget class="QLineEdit" name="TempLineEdit">
+      <property name="geometry">
        <rect>
-        <x>100</x>
-        <y>68</y>
+        <x>124</x>
+        <y>65</y>
         <width>325</width>
-        <height>29</height>
+        <height>22</height>
        </rect>
       </property>
      </widget>
-     <widget class="QLineEdit" name="HumidLineEdit" >
-      <property name="geometry" >
+     <widget class="QLineEdit" name="HumidLineEdit">
+      <property name="geometry">
        <rect>
-        <x>100</x>
-        <y>108</y>
+        <x>124</x>
+        <y>103</y>
         <width>325</width>
-        <height>29</height>
+        <height>22</height>
        </rect>
       </property>
      </widget>
-     <widget class="QLineEdit" name="WindLineEdit" >
-      <property name="geometry" >
+     <widget class="QLineEdit" name="WindLineEdit">
+      <property name="geometry">
        <rect>
-        <x>100</x>
-        <y>147</y>
+        <x>124</x>
+        <y>142</y>
         <width>325</width>
-        <height>29</height>
+        <height>22</height>
        </rect>
       </property>
      </widget>
-     <widget class="QLineEdit" name="GLineEdit" >
-      <property name="geometry" >
+     <widget class="QLineEdit" name="GLineEdit">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
        <rect>
-        <x>100</x>
-        <y>187</y>
+        <x>124</x>
+        <y>180</y>
         <width>325</width>
-        <height>29</height>
+        <height>22</height>
        </rect>
       </property>
      </widget>
-     <widget class="QLineEdit" name="RnLineEdit" >
-      <property name="geometry" >
+     <widget class="QLineEdit" name="RnLineEdit">
+      <property name="geometry">
        <rect>
-        <x>100</x>
-        <y>227</y>
+        <x>124</x>
+        <y>218</y>
         <width>325</width>
-        <height>29</height>
+        <height>22</height>
        </rect>
       </property>
      </widget>
-     <widget class="QLineEdit" name="PLineEdit" >
-      <property name="geometry" >
+     <widget class="QLineEdit" name="PLineEdit">
+      <property name="geometry">
        <rect>
-        <x>100</x>
-        <y>267</y>
+        <x>124</x>
+        <y>256</y>
         <width>325</width>
-        <height>29</height>
+        <height>22</height>
        </rect>
       </property>
      </widget>
     </widget>
    </widget>
-   <widget class="QWidget" name="tab2" >
-    <attribute name="title" >
+   <widget class="QWidget" name="tab2">
+    <attribute name="title">
      <string>Landuse/Landcover</string>
     </attribute>
-    <widget class="Q3GroupBox" name="groupBox14_2" >
-     <property name="geometry" >
+    <widget class="Q3GroupBox" name="groupBox14_2">
+     <property name="geometry">
       <rect>
        <x>8</x>
-       <y>9</y>
+       <y>2</y>
        <width>561</width>
-       <height>310</height>
+       <height>293</height>
       </rect>
      </property>
-     <property name="title" >
-      <string>Index File Input</string>
+     <property name="title">
+      <string>Index / Classification Grid Map</string>
      </property>
-     <widget class="QLabel" name="textLabel4_2_2_2_3" >
-      <property name="geometry" >
+     <widget class="QLabel" name="textLabel4_2_2_2_3">
+      <property name="geometry">
        <rect>
         <x>20</x>
-        <y>147</y>
-        <width>70</width>
+        <y>130</y>
+        <width>81</width>
         <height>41</height>
        </rect>
       </property>
-      <property name="text" >
-       <string>LC</string>
+      <property name="text">
+       <string>Land Cover</string>
       </property>
      </widget>
-     <widget class="QLabel" name="textLabel4_2_5_3" >
-      <property name="geometry" >
+     <widget class="QLabel" name="textLabel4_2_5_3">
+      <property name="geometry">
        <rect>
         <x>20</x>
         <y>34</y>
@@ -550,524 +548,523 @@
         <height>41</height>
        </rect>
       </property>
-      <property name="text" >
+      <property name="text">
        <string>Soil</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="SoilPushButton" >
-      <property name="geometry" >
+     <widget class="QPushButton" name="SoilPushButton">
+      <property name="geometry">
        <rect>
         <x>460</x>
         <y>37</y>
-        <width>81</width>
+        <width>98</width>
         <height>32</height>
        </rect>
       </property>
-      <property name="text" >
+      <property name="text">
        <string>Browse...</string>
       </property>
-      <property name="autoDefault" >
+      <property name="autoDefault">
        <bool>false</bool>
       </property>
      </widget>
-     <widget class="QLineEdit" name="SoilLineEdit" >
-      <property name="geometry" >
+     <widget class="QLineEdit" name="SoilLineEdit">
+      <property name="geometry">
        <rect>
-        <x>100</x>
-        <y>38</y>
+        <x>122</x>
+        <y>40</y>
         <width>325</width>
-        <height>29</height>
+        <height>22</height>
        </rect>
       </property>
      </widget>
-     <widget class="QLineEdit" name="LCLineEdit" >
-      <property name="geometry" >
+     <widget class="QLineEdit" name="LCLineEdit">
+      <property name="geometry">
        <rect>
-        <x>100</x>
-        <y>151</y>
+        <x>122</x>
+        <y>140</y>
         <width>325</width>
-        <height>29</height>
+        <height>22</height>
        </rect>
       </property>
      </widget>
-     <widget class="QPushButton" name="LCPushButton" >
-      <property name="geometry" >
+     <widget class="QPushButton" name="LCPushButton">
+      <property name="geometry">
        <rect>
         <x>460</x>
-        <y>150</y>
-        <width>81</width>
+        <y>135</y>
+        <width>98</width>
         <height>32</height>
        </rect>
       </property>
-      <property name="text" >
+      <property name="text">
        <string>Browse...</string>
       </property>
-      <property name="autoDefault" >
+      <property name="autoDefault">
        <bool>false</bool>
       </property>
      </widget>
+     <widget class="QLabel" name="textLabel4_2_2_2_5">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>180</y>
+        <width>70</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Melt Factor</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="textLabel4_2_2_2_4">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>79</y>
+        <width>70</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Geology</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="textLabel4_2_5_4">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>230</y>
+        <width>70</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Macropore</string>
+      </property>
+     </widget>
     </widget>
-    <widget class="QLineEdit" name="GeolLineEdit" >
-     <property name="geometry" >
+    <widget class="QLineEdit" name="GeolLineEdit">
+     <property name="geometry">
       <rect>
-       <x>108</x>
-       <y>104</y>
+       <x>130</x>
+       <y>90</y>
        <width>325</width>
-       <height>29</height>
+       <height>22</height>
       </rect>
      </property>
     </widget>
-    <widget class="QPushButton" name="GeolPushButton" >
-     <property name="geometry" >
+    <widget class="QPushButton" name="GeolPushButton">
+     <property name="geometry">
       <rect>
        <x>468</x>
-       <y>103</y>
-       <width>81</width>
+       <y>87</y>
+       <width>98</width>
        <height>32</height>
       </rect>
      </property>
-     <property name="text" >
+     <property name="text">
       <string>Browse...</string>
      </property>
-     <property name="autoDefault" >
+     <property name="autoDefault">
       <bool>false</bool>
      </property>
     </widget>
-    <widget class="QLabel" name="textLabel4_2_2_2_4" >
-     <property name="geometry" >
-      <rect>
-       <x>28</x>
-       <y>100</y>
-       <width>70</width>
-       <height>41</height>
-      </rect>
-     </property>
-     <property name="text" >
-      <string>Geology</string>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="MFPushButton" >
-     <property name="geometry" >
+    <widget class="QPushButton" name="MFPushButton">
+     <property name="geometry">
       <rect>
        <x>468</x>
-       <y>216</y>
-       <width>81</width>
+       <y>185</y>
+       <width>98</width>
        <height>32</height>
       </rect>
      </property>
-     <property name="text" >
+     <property name="text">
       <string>Browse...</string>
      </property>
-     <property name="autoDefault" >
+     <property name="autoDefault">
       <bool>false</bool>
      </property>
     </widget>
-    <widget class="QLabel" name="textLabel4_2_2_2_5" >
-     <property name="geometry" >
+    <widget class="QLineEdit" name="MFLineEdit">
+     <property name="geometry">
       <rect>
-       <x>28</x>
-       <y>211</y>
-       <width>70</width>
-       <height>41</height>
-      </rect>
-     </property>
-     <property name="text" >
-      <string>Melt Factor</string>
-     </property>
-    </widget>
-    <widget class="QLineEdit" name="MFLineEdit" >
-     <property name="geometry" >
-      <rect>
-       <x>108</x>
-       <y>216</y>
+       <x>130</x>
+       <y>190</y>
        <width>325</width>
-       <height>29</height>
+       <height>22</height>
       </rect>
      </property>
     </widget>
-    <widget class="QPushButton" name="MPPushButton" >
-     <property name="geometry" >
+    <widget class="QPushButton" name="MPPushButton">
+     <property name="geometry">
       <rect>
        <x>468</x>
-       <y>269</y>
-       <width>81</width>
+       <y>234</y>
+       <width>98</width>
        <height>32</height>
       </rect>
      </property>
-     <property name="text" >
+     <property name="text">
       <string>Browse...</string>
      </property>
-     <property name="autoDefault" >
+     <property name="autoDefault">
       <bool>false</bool>
      </property>
     </widget>
-    <widget class="QLabel" name="textLabel4_2_5_4" >
-     <property name="geometry" >
+    <widget class="QLineEdit" name="MPLineEdit">
+     <property name="geometry">
       <rect>
-       <x>28</x>
-       <y>266</y>
-       <width>70</width>
-       <height>41</height>
-      </rect>
-     </property>
-     <property name="text" >
-      <string>Macropore</string>
-     </property>
-    </widget>
-    <widget class="QLineEdit" name="MPLineEdit" >
-     <property name="geometry" >
-      <rect>
-       <x>108</x>
-       <y>270</y>
+       <x>130</x>
+       <y>240</y>
        <width>325</width>
-       <height>29</height>
+       <height>22</height>
       </rect>
      </property>
     </widget>
    </widget>
-   <widget class="QWidget" name="TabPage" >
-    <attribute name="title" >
+   <widget class="QWidget" name="TabPage">
+    <attribute name="title">
      <string>Miscellaneous</string>
     </attribute>
-    <widget class="Q3GroupBox" name="groupBox14_2_2" >
-     <property name="geometry" >
+    <widget class="Q3GroupBox" name="groupBox14_2_2">
+     <property name="geometry">
       <rect>
        <x>8</x>
-       <y>9</y>
+       <y>4</y>
        <width>561</width>
-       <height>310</height>
+       <height>296</height>
       </rect>
      </property>
-     <property name="title" >
-      <string>Index File Input</string>
+     <property name="title">
+      <string>Initial Conditions | Boundary Conditions | Sources/Sinks</string>
      </property>
-     <widget class="QLabel" name="textLabel4_2_2_2_3_2" >
-      <property name="geometry" >
+     <widget class="QLabel" name="textLabel4_2_2_2_3_2">
+      <property name="geometry">
        <rect>
-        <x>20</x>
-        <y>224</y>
-        <width>70</width>
+        <x>18</x>
+        <y>213</y>
+        <width>101</width>
         <height>41</height>
        </rect>
       </property>
-      <property name="text" >
-       <string>BC</string>
+      <property name="text">
+       <string>Boundary Cond.</string>
       </property>
      </widget>
-     <widget class="QLabel" name="textLabel4_2_5_3_2" >
-      <property name="geometry" >
+     <widget class="QLabel" name="textLabel4_2_5_3_2">
+      <property name="geometry">
        <rect>
-        <x>20</x>
-        <y>18</y>
-        <width>70</width>
+        <x>18</x>
+        <y>21</y>
+        <width>91</width>
         <height>41</height>
        </rect>
       </property>
-      <property name="text" >
-       <string>IS IC</string>
+      <property name="text">
+       <string>Interception</string>
       </property>
      </widget>
-     <widget class="QLabel" name="textLabel4_2_5_3_3" >
-      <property name="geometry" >
+     <widget class="QLabel" name="textLabel4_2_5_3_3">
+      <property name="geometry">
        <rect>
-        <x>20</x>
+        <x>18</x>
         <y>56</y>
         <width>70</width>
         <height>41</height>
        </rect>
       </property>
-      <property name="text" >
-       <string>Snow IC</string>
+      <property name="text">
+       <string>Snow</string>
       </property>
      </widget>
-     <widget class="QLabel" name="textLabel4_2_5_3_4" >
-      <property name="geometry" >
+     <widget class="QLabel" name="textLabel4_2_5_3_4">
+      <property name="geometry">
        <rect>
-        <x>20</x>
-        <y>96</y>
+        <x>18</x>
+        <y>95</y>
         <width>70</width>
         <height>41</height>
        </rect>
       </property>
-      <property name="text" >
-       <string>Overland IC</string>
+      <property name="text">
+       <string>Overland</string>
       </property>
      </widget>
-     <widget class="QLabel" name="textLabel4_2_5_3_5" >
-      <property name="geometry" >
+     <widget class="QLabel" name="textLabel4_2_5_3_5">
+      <property name="geometry">
        <rect>
-        <x>20</x>
-        <y>138</y>
-        <width>70</width>
+        <x>18</x>
+        <y>134</y>
+        <width>91</width>
         <height>41</height>
        </rect>
       </property>
-      <property name="text" >
-       <string>UnSat IC</string>
+      <property name="text">
+       <string>Soil Moisture</string>
       </property>
      </widget>
-     <widget class="QLabel" name="textLabel4_2_5_3_6" >
-      <property name="geometry" >
+     <widget class="QLabel" name="textLabel4_2_5_3_6">
+      <property name="geometry">
        <rect>
-        <x>20</x>
-        <y>181</y>
-        <width>70</width>
+        <x>18</x>
+        <y>173</y>
+        <width>91</width>
         <height>41</height>
        </rect>
       </property>
-      <property name="text" >
-       <string>Sat IC</string>
+      <property name="text">
+       <string>Groundwater</string>
       </property>
      </widget>
-     <widget class="QLabel" name="textLabel4_2_2_2_3_2_2" >
-      <property name="geometry" >
+     <widget class="QLabel" name="textLabel4_2_2_2_3_2_2">
+      <property name="geometry">
        <rect>
-        <x>20</x>
-        <y>266</y>
-        <width>70</width>
+        <x>18</x>
+        <y>253</y>
+        <width>91</width>
         <height>41</height>
        </rect>
       </property>
-      <property name="text" >
-       <string>Source/
-Well</string>
+      <property name="text">
+       <string>Source/Well</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="ISICPushButton" >
-      <property name="geometry" >
+     <widget class="QPushButton" name="ISICPushButton">
+      <property name="geometry">
        <rect>
-        <x>460</x>
-        <y>20</y>
-        <width>81</width>
+        <x>461</x>
+        <y>27</y>
+        <width>98</width>
         <height>32</height>
        </rect>
       </property>
-      <property name="text" >
+      <property name="text">
        <string>Browse...</string>
       </property>
-      <property name="autoDefault" >
+      <property name="autoDefault">
        <bool>false</bool>
       </property>
      </widget>
-     <widget class="QPushButton" name="SnowICPushButton" >
-      <property name="geometry" >
+     <widget class="QPushButton" name="SnowICPushButton">
+      <property name="geometry">
        <rect>
-        <x>460</x>
-        <y>60</y>
-        <width>81</width>
+        <x>461</x>
+        <y>63</y>
+        <width>98</width>
         <height>32</height>
        </rect>
       </property>
-      <property name="text" >
+      <property name="text">
        <string>Browse...</string>
       </property>
-      <property name="autoDefault" >
+      <property name="autoDefault">
        <bool>false</bool>
       </property>
      </widget>
-     <widget class="QPushButton" name="UnSatICPushButton" >
-      <property name="geometry" >
+     <widget class="QPushButton" name="UnSatICPushButton">
+      <property name="geometry">
        <rect>
-        <x>460</x>
-        <y>141</y>
-        <width>81</width>
+        <x>461</x>
+        <y>140</y>
+        <width>98</width>
         <height>32</height>
        </rect>
       </property>
-      <property name="text" >
+      <property name="text">
        <string>Browse...</string>
       </property>
-      <property name="autoDefault" >
+      <property name="autoDefault">
        <bool>false</bool>
       </property>
      </widget>
-     <widget class="QPushButton" name="SatICPushButton" >
-      <property name="geometry" >
+     <widget class="QPushButton" name="SatICPushButton">
+      <property name="geometry">
        <rect>
-        <x>460</x>
-        <y>184</y>
-        <width>81</width>
+        <x>461</x>
+        <y>178</y>
+        <width>98</width>
         <height>32</height>
        </rect>
       </property>
-      <property name="text" >
+      <property name="text">
        <string>Browse...</string>
       </property>
-      <property name="autoDefault" >
+      <property name="autoDefault">
        <bool>false</bool>
       </property>
      </widget>
-     <widget class="QPushButton" name="BCPushButton" >
-      <property name="geometry" >
+     <widget class="QPushButton" name="BCPushButton">
+      <property name="geometry">
        <rect>
-        <x>460</x>
-        <y>228</y>
-        <width>81</width>
+        <x>461</x>
+        <y>219</y>
+        <width>98</width>
         <height>32</height>
        </rect>
       </property>
-      <property name="text" >
+      <property name="text">
        <string>Browse...</string>
       </property>
-      <property name="autoDefault" >
+      <property name="autoDefault">
        <bool>false</bool>
       </property>
      </widget>
-     <widget class="QPushButton" name="OverlandICPushButton" >
-      <property name="geometry" >
+     <widget class="QPushButton" name="OverlandICPushButton">
+      <property name="geometry">
        <rect>
-        <x>460</x>
-        <y>100</y>
-        <width>81</width>
-        <height>32</height>
-       </rect>
-      </property>
-      <property name="text" >
-       <string>Browse...</string>
-      </property>
-      <property name="autoDefault" >
-       <bool>false</bool>
-      </property>
-     </widget>
-     <widget class="QLineEdit" name="OverlandICLineEdit" >
-      <property name="geometry" >
-       <rect>
-        <x>100</x>
+        <x>461</x>
         <y>101</y>
-        <width>325</width>
-        <height>29</height>
-       </rect>
-      </property>
-     </widget>
-     <widget class="QLineEdit" name="UnSatICLineEdit" >
-      <property name="geometry" >
-       <rect>
-        <x>100</x>
-        <y>143</y>
-        <width>325</width>
-        <height>29</height>
-       </rect>
-      </property>
-     </widget>
-     <widget class="QLineEdit" name="SatICLineEdit" >
-      <property name="geometry" >
-       <rect>
-        <x>100</x>
-        <y>187</y>
-        <width>325</width>
-        <height>29</height>
-       </rect>
-      </property>
-     </widget>
-     <widget class="QLineEdit" name="BCLineEdit" >
-      <property name="geometry" >
-       <rect>
-        <x>100</x>
-        <y>230</y>
-        <width>325</width>
-        <height>29</height>
-       </rect>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="SourcePushButton" >
-      <property name="geometry" >
-       <rect>
-        <x>460</x>
-        <y>269</y>
-        <width>81</width>
+        <width>98</width>
         <height>32</height>
        </rect>
       </property>
-      <property name="text" >
+      <property name="text">
        <string>Browse...</string>
       </property>
-      <property name="autoDefault" >
+      <property name="autoDefault">
        <bool>false</bool>
       </property>
      </widget>
-     <widget class="QLineEdit" name="SourceLineEdit" >
-      <property name="geometry" >
+     <widget class="QLineEdit" name="OverlandICLineEdit">
+      <property name="geometry">
        <rect>
-        <x>100</x>
-        <y>270</y>
+        <x>126</x>
+        <y>105</y>
         <width>325</width>
-        <height>29</height>
+        <height>22</height>
        </rect>
       </property>
      </widget>
-     <widget class="QLineEdit" name="ISICLineEdit" >
-      <property name="geometry" >
+     <widget class="QLineEdit" name="UnSatICLineEdit">
+      <property name="geometry">
        <rect>
-        <x>100</x>
-        <y>20</y>
+        <x>126</x>
+        <y>144</y>
         <width>325</width>
-        <height>29</height>
+        <height>22</height>
        </rect>
       </property>
      </widget>
-     <widget class="QLineEdit" name="SnowICLineEdit" >
-      <property name="geometry" >
+     <widget class="QLineEdit" name="SatICLineEdit">
+      <property name="geometry">
        <rect>
-        <x>100</x>
-        <y>60</y>
+        <x>126</x>
+        <y>183</y>
         <width>325</width>
-        <height>29</height>
+        <height>22</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="BCLineEdit">
+      <property name="geometry">
+       <rect>
+        <x>126</x>
+        <y>223</y>
+        <width>325</width>
+        <height>22</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="SourcePushButton">
+      <property name="geometry">
+       <rect>
+        <x>461</x>
+        <y>257</y>
+        <width>98</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Browse...</string>
+      </property>
+      <property name="autoDefault">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="SourceLineEdit">
+      <property name="geometry">
+       <rect>
+        <x>126</x>
+        <y>262</y>
+        <width>325</width>
+        <height>22</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="ISICLineEdit">
+      <property name="geometry">
+       <rect>
+        <x>126</x>
+        <y>31</y>
+        <width>325</width>
+        <height>22</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="SnowICLineEdit">
+      <property name="geometry">
+       <rect>
+        <x>126</x>
+        <y>68</y>
+        <width>325</width>
+        <height>22</height>
        </rect>
       </property>
      </widget>
     </widget>
    </widget>
   </widget>
-  <widget class="QPushButton" name="runButton" >
-   <property name="geometry" >
+  <widget class="QPushButton" name="runButton">
+   <property name="geometry">
     <rect>
-     <x>508</x>
-     <y>569</y>
-     <width>80</width>
+     <x>490</x>
+     <y>535</y>
+     <width>98</width>
      <height>34</height>
     </rect>
    </property>
-   <property name="text" >
+   <property name="text">
     <string>Run!</string>
    </property>
-   <property name="autoDefault" >
+   <property name="autoDefault">
     <bool>false</bool>
    </property>
   </widget>
-  <widget class="QPushButton" name="helpButton" >
-   <property name="geometry" >
+  <widget class="QPushButton" name="helpButton">
+   <property name="geometry">
     <rect>
      <x>11</x>
-     <y>569</y>
-     <width>80</width>
+     <y>535</y>
+     <width>98</width>
      <height>34</height>
     </rect>
    </property>
-   <property name="text" >
+   <property name="text">
     <string>Help</string>
    </property>
-   <property name="autoDefault" >
+   <property name="autoDefault">
     <bool>false</bool>
    </property>
   </widget>
-  <widget class="QPushButton" name="cancelButton" >
-   <property name="geometry" >
+  <widget class="QPushButton" name="cancelButton">
+   <property name="geometry">
     <rect>
-     <x>415</x>
-     <y>569</y>
-     <width>80</width>
+     <x>390</x>
+     <y>535</y>
+     <width>98</width>
      <height>34</height>
     </rect>
    </property>
-   <property name="text" >
+   <property name="text">
     <string>Close</string>
    </property>
-   <property name="autoDefault" >
+   <property name="autoDefault">
     <bool>false</bool>
    </property>
   </widget>
  </widget>
- <layoutdefault spacing="6" margin="11" />
+ <layoutdefault spacing="6" margin="11"/>
  <pixmapfunction>qPixmapFromMimeSource</pixmapfunction>
  <customwidgets>
   <customwidget>

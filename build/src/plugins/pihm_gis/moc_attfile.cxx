@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'attfile.h'
 **
-** Created: Mon Sep 7 22:45:42 2009
+** Created: Tue Jul 27 23:38:15 2010
 **      by: The Qt Meta Object Compiler version 59 (Qt 4.3.2)
 **
 ** WARNING! All changes made in this file will be lost!
@@ -22,7 +22,7 @@ static const uint qt_meta_data_attFileDlg[] = {
        1,       // revision
        0,       // classname
        0,    0, // classinfo
-      23,   10, // methods
+      24,   10, // methods
        0,    0, // properties
        0,    0, // enums/sets
 
@@ -50,6 +50,7 @@ static const uint qt_meta_data_attFileDlg[] = {
      272,   11,   11,   11, 0x0a,
      284,   11,   11,   11, 0x0a,
      290,   11,   11,   11, 0x0a,
+     297,   11,   11,   11, 0x08,
 
        0        // eod
 };
@@ -63,7 +64,7 @@ static const char qt_meta_stringdata_attFileDlg[] = {
     "snowICBrowse()\0overlandICBrowse()\0"
     "unsatICBrowse()\0satICBrowse()\0bcBrowse()\0"
     "sourceBrowse()\0attBrowse()\0run()\0"
-    "help()\0"
+    "help()\0on_RnLineEdit_textChanged(QString)\0"
 };
 
 const QMetaObject attFileDlg::staticMetaObject = {
@@ -114,8 +115,9 @@ int attFileDlg::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
         case 20: attBrowse(); break;
         case 21: run(); break;
         case 22: help(); break;
+        case 23: on_RnLineEdit_textChanged((*reinterpret_cast< QString(*)>(_a[1]))); break;
         }
-        _id -= 23;
+        _id -= 24;
     }
     return _id;
 }

@@ -4,6 +4,8 @@
 #include "../../pihmRasterLIBS/streamSegmentationShp.h"
 
 #include "../../pihmLIBS/helpDialog/helpdialog.h"
+#include "../../pihmLIBS/fileStruct.h"
+
 #include <iostream>
 #include <fstream>
 using namespace std;
@@ -17,23 +19,65 @@ StreamPolyLineDlg::StreamPolyLineDlg(QWidget *parent)
 	connect(runButton, SIGNAL(clicked()), this, SLOT(run()));
 	connect(helpButton, SIGNAL(clicked()), this, SLOT(help()));
 	connect(closeButton, SIGNAL(clicked()), this, SLOT(close()));
+
+	QString projDir, projFile;
+        QFile tFile(QDir::homePath()+"/project.txt");
+        tFile.open(QIODevice::ReadOnly | QIODevice::Text);
+        QTextStream tin(&tFile);
+        projDir  = tin.readLine();
+        projFile = tin.readLine();
+	tFile.close();
+        cout << qPrintable(projDir);
+
+	inputSTRFileLineEdit->setText(readLineNumber(qPrintable(projFile), 11));
+	inputFDRFileLineEdit->setText(readLineNumber(qPrintable(projFile), 6));
+
+	QString qstrThresh(readLineNumber(qPrintable(projFile), 10));
+	outputFileLineEdit->setText(projDir+"/RasterProcessing/str"+qstrThresh+".shp");
 }
 
 void StreamPolyLineDlg::inputSTRBrowse()
 {
-	QString str = QFileDialog::getOpenFileName(this, "Choose File", "~/","Stream Grid File(*.adf *.asc)");
+	QString projDir, projFile;
+        QFile tFile(QDir::homePath()+"/project.txt");
+        tFile.open(QIODevice::ReadOnly | QIODevice::Text);
+        QTextStream tin(&tFile);
+        projDir  = tin.readLine();
+        projFile = tin.readLine();
+	tFile.close();
+        cout << qPrintable(projDir);
+
+	QString str = QFileDialog::getOpenFileName(this, "Choose File", projDir+"/RasterProcessing","Stream Grid File(*.adf *.asc)");
 	inputSTRFileLineEdit->setText(str);
 }
 
 void StreamPolyLineDlg::inputFDRBrowse()
 {
-        QString str = QFileDialog::getOpenFileName(this, "Choose File", "~/","Flow Dir Grid File(*.adf *.asc)");
+	QString projDir, projFile;
+        QFile tFile(QDir::homePath()+"/project.txt");
+        tFile.open(QIODevice::ReadOnly | QIODevice::Text);
+        QTextStream tin(&tFile);
+        projDir  = tin.readLine();
+        projFile = tin.readLine();
+	tFile.close();
+        cout << qPrintable(projDir);
+
+        QString str = QFileDialog::getOpenFileName(this, "Choose File", projDir+"/RasterProcessing","Flow Dir Grid File(*.adf *.asc)");
         inputFDRFileLineEdit->setText(str);
 }
 
 void StreamPolyLineDlg::outputBrowse()
 {
-	QString temp = QFileDialog::getSaveFileName(this, "Choose File", "~/","Stream PolyLine File(*.shp)");
+	QString projDir, projFile;
+        QFile tFile(QDir::homePath()+"/project.txt");
+        tFile.open(QIODevice::ReadOnly | QIODevice::Text);
+        QTextStream tin(&tFile);
+        projDir  = tin.readLine();
+        projFile = tin.readLine();
+	tFile.close();
+        cout << qPrintable(projDir);
+
+	QString temp = QFileDialog::getSaveFileName(this, "Choose File", projDir+"/RasterProcessing","Stream PolyLine File(*.shp)");
 	QString tmp = temp;
 	if(!(tmp.toLower()).endsWith(".shp")){
         tmp.append(".shp");
@@ -46,7 +90,21 @@ void StreamPolyLineDlg::outputBrowse()
 
 void StreamPolyLineDlg::run()
 {
-	QString logFileName("/tmp/log.html");
+	QString projDir, projFile;
+        QFile tFile(QDir::homePath()+"/project.txt");
+        tFile.open(QIODevice::ReadOnly | QIODevice::Text);
+        QTextStream tin(&tFile);
+        projDir  = tin.readLine();
+        projFile = tin.readLine();
+	tFile.close();
+        cout << qPrintable(projDir);
+	writeLineNumber(qPrintable(projFile), 14, qPrintable(inputSTRFileLineEdit->text()));
+	writeLineNumber(qPrintable(projFile), 15, qPrintable(inputFDRFileLineEdit->text()));
+	writeLineNumber(qPrintable(projFile), 16, qPrintable(outputFileLineEdit->text()));
+
+	QDir dir = QDir::home();
+        QString home = dir.homePath();
+	QString logFileName(qPrintable(home+"/log.html"));
 	ofstream log;
 	log.open(qPrintable(logFileName));
 	log<<"<html><body><font size=3 color=black><p> Verifying Files...</p></font></body></html>";
@@ -61,7 +119,18 @@ void StreamPolyLineDlg::run()
 	QString outputDbfFileName;
 	outputDbfFileName = outputShpFileName;
     	outputDbfFileName.truncate(outputDbfFileName.length()-3);
+	QString outputShxFileName, id; outputShxFileName = outputDbfFileName;
     	outputDbfFileName.append("dbf");
+
+	outputShxFileName.truncate(outputShxFileName.length()-1);
+        id=outputShxFileName;
+        id=id.right(id.length()-id.lastIndexOf("/",-1)-1);
+        cout << "ID = "<<qPrintable(id) <<"\n";
+        outputShxFileName.append(".shx");
+
+        QString shpFile = projDir+"/VectorProcessing/"+id+".shp";
+        QString dbfFile = projDir+"/VectorProcessing/"+id+".dbf";
+        QString shxFile = projDir+"/VectorProcessing/"+id+".shx";
 
 	ifstream STRinFile;      STRinFile.open(qPrintable(inputSTRFileLineEdit->text()));
 	ifstream FDRinFile;      FDRinFile.open(qPrintable(inputFDRFileLineEdit->text()));
@@ -133,6 +202,11 @@ void StreamPolyLineDlg::run()
 		QApplication::processEvents();		
 
 	    	int err = streamSegmentationShp((char *)qPrintable(inputSTRFileName), (char *)qPrintable(inputFDRFileName), (char *)qPrintable(outputShpFileName), (char *)qPrintable(outputDbfFileName));
+
+		QFile::copy(outputShpFileName, shpFile);
+                QFile::copy(outputDbfFileName, dbfFile);
+                QFile::copy(outputShxFileName, shxFile);
+		writeLineNumber(qPrintable(projFile), 16, qPrintable(shpFile));
 		
 		log.open(qPrintable(logFileName), ios::app);
 		log<<" Done!</p>";

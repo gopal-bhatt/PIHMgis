@@ -1,10 +1,8 @@
-<ui version="4.0" >
- <author></author>
- <comment></comment>
- <exportmacro></exportmacro>
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
  <class>FlowGrid</class>
- <widget class="QDialog" name="FlowGrid" >
-  <property name="geometry" >
+ <widget class="QDialog" name="FlowGrid">
+  <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
@@ -12,134 +10,131 @@
     <height>489</height>
    </rect>
   </property>
-  <property name="windowTitle" >
+  <property name="windowTitle">
    <string>Flow Grid</string>
   </property>
-  <widget class="QPushButton" name="runButton" >
-   <property name="geometry" >
+  <widget class="QPushButton" name="runButton">
+   <property name="geometry">
     <rect>
-     <x>510</x>
-     <y>309</y>
-     <width>81</width>
+     <x>500</x>
+     <y>304</y>
+     <width>98</width>
      <height>32</height>
     </rect>
    </property>
-   <property name="text" >
+   <property name="text">
     <string>Run</string>
    </property>
-   <property name="autoDefault" >
+   <property name="autoDefault">
     <bool>false</bool>
    </property>
   </widget>
-  <widget class="QPushButton" name="helpButton" >
-   <property name="geometry" >
+  <widget class="QPushButton" name="helpButton">
+   <property name="geometry">
     <rect>
-     <x>10</x>
-     <y>309</y>
-     <width>81</width>
+     <x>12</x>
+     <y>304</y>
+     <width>98</width>
      <height>32</height>
     </rect>
    </property>
-   <property name="text" >
+   <property name="text">
     <string>Help</string>
    </property>
-   <property name="autoDefault" >
+   <property name="autoDefault">
     <bool>false</bool>
    </property>
   </widget>
-  <widget class="QPushButton" name="closeButton" >
-   <property name="geometry" >
+  <widget class="QPushButton" name="closeButton">
+   <property name="geometry">
     <rect>
-     <x>424</x>
-     <y>309</y>
-     <width>81</width>
+     <x>400</x>
+     <y>304</y>
+     <width>98</width>
      <height>32</height>
     </rect>
    </property>
-   <property name="text" >
+   <property name="text">
     <string>Close</string>
    </property>
-   <property name="autoDefault" >
+   <property name="autoDefault">
     <bool>false</bool>
    </property>
   </widget>
-  <widget class="Q3ButtonGroup" name="buttonGroup2" >
-   <property name="geometry" >
+  <widget class="Q3ButtonGroup" name="buttonGroup2">
+   <property name="geometry">
     <rect>
-     <x>10</x>
-     <y>120</y>
+     <x>12</x>
+     <y>114</y>
      <width>581</width>
      <height>180</height>
     </rect>
    </property>
-   <property name="title" >
+   <property name="title">
     <string>Output</string>
    </property>
-   <property name="orientation" >
-    <enum>Qt::Vertical</enum>
-   </property>
-   <widget class="QLineEdit" name="outputFDRFileLineEdit" >
-    <property name="geometry" >
+   <widget class="QLineEdit" name="outputFDRFileLineEdit">
+    <property name="geometry">
      <rect>
-      <x>130</x>
-      <y>41</y>
+      <x>132</x>
+      <y>37</y>
       <width>325</width>
       <height>29</height>
      </rect>
     </property>
    </widget>
-   <widget class="QLineEdit" name="outputFAGFileLineEdit" >
-    <property name="geometry" >
+   <widget class="QLineEdit" name="outputFAGFileLineEdit">
+    <property name="geometry">
      <rect>
-      <x>130</x>
-      <y>121</y>
+      <x>132</x>
+      <y>117</y>
       <width>325</width>
       <height>29</height>
      </rect>
     </property>
    </widget>
-   <widget class="QPushButton" name="outputFDRBrowseButton" >
-    <property name="geometry" >
+   <widget class="QPushButton" name="outputFDRBrowseButton">
+    <property name="geometry">
      <rect>
-      <x>470</x>
-      <y>40</y>
-      <width>81</width>
+      <x>472</x>
+      <y>36</y>
+      <width>98</width>
       <height>32</height>
      </rect>
     </property>
-    <property name="text" >
+    <property name="text">
      <string>Browse</string>
     </property>
-    <property name="autoDefault" >
+    <property name="autoDefault">
      <bool>false</bool>
     </property>
    </widget>
-   <widget class="QPushButton" name="outputFAGBrowseButton" >
-    <property name="geometry" >
+   <widget class="QPushButton" name="outputFAGBrowseButton">
+    <property name="geometry">
      <rect>
-      <x>470</x>
-      <y>118</y>
-      <width>81</width>
+      <x>472</x>
+      <y>114</y>
+      <width>98</width>
       <height>32</height>
      </rect>
     </property>
-    <property name="text" >
+    <property name="text">
      <string>Browse</string>
     </property>
-    <property name="autoDefault" >
+    <property name="autoDefault">
      <bool>false</bool>
     </property>
    </widget>
-   <widget class="QCheckBox" name="showFDR_DFrame" >
-    <property name="geometry" >
+   <widget class="QCheckBox" name="showFDR_DFrame">
+    <property name="geometry">
      <rect>
-      <x>336</x>
-      <y>73</y>
+      <x>338</x>
+      <y>69</y>
       <width>140</width>
       <height>21</height>
      </rect>
     </property>
-    <property name="font" >
+    <property name="font">
      <font>
       <family>Sans Serif</family>
       <pointsize>8</pointsize>
@@ -150,23 +145,23 @@
       <strikeout>false</strikeout>
      </font>
     </property>
-    <property name="text" >
+    <property name="text">
      <string>Load in Data Frame</string>
     </property>
-    <property name="checked" >
+    <property name="checked">
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QCheckBox" name="showFAG_DFrame" >
-    <property name="geometry" >
+   <widget class="QCheckBox" name="showFAG_DFrame">
+    <property name="geometry">
      <rect>
-      <x>336</x>
-      <y>152</y>
+      <x>338</x>
+      <y>148</y>
       <width>140</width>
       <height>21</height>
      </rect>
     </property>
-    <property name="font" >
+    <property name="font">
      <font>
       <family>Sans Serif</family>
       <pointsize>8</pointsize>
@@ -177,128 +172,130 @@
       <strikeout>false</strikeout>
      </font>
     </property>
-    <property name="text" >
+    <property name="text">
      <string>Load in Data Frame</string>
     </property>
-    <property name="checked" >
+    <property name="checked">
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="textLabel1_2" >
-    <property name="geometry" >
+   <widget class="QLabel" name="textLabel1_2">
+    <property name="geometry">
      <rect>
-      <x>22</x>
-      <y>40</y>
+      <x>24</x>
+      <y>36</y>
       <width>90</width>
       <height>31</height>
      </rect>
     </property>
-    <property name="text" >
+    <property name="text">
      <string>Flow Dir. Grid</string>
     </property>
    </widget>
-   <widget class="QLabel" name="textLabel1_2_2" >
-    <property name="geometry" >
+   <widget class="QLabel" name="textLabel1_2_2">
+    <property name="geometry">
      <rect>
-      <x>22</x>
-      <y>119</y>
+      <x>24</x>
+      <y>115</y>
       <width>90</width>
       <height>31</height>
      </rect>
     </property>
-    <property name="text" >
+    <property name="text">
      <string>Flow Acc. Grid</string>
     </property>
    </widget>
   </widget>
-  <widget class="Q3ButtonGroup" name="buttonGroup1" >
-   <property name="geometry" >
+  <widget class="Q3ButtonGroup" name="buttonGroup1">
+   <property name="geometry">
     <rect>
-     <x>10</x>
-     <y>10</y>
+     <x>12</x>
+     <y>6</y>
      <width>581</width>
      <height>101</height>
     </rect>
    </property>
-   <property name="title" >
+   <property name="title">
     <string>Input</string>
    </property>
-   <property name="orientation" >
-    <enum>Qt::Vertical</enum>
-   </property>
-   <widget class="QLineEdit" name="inputFileLineEdit" >
-    <property name="geometry" >
+   <widget class="QLineEdit" name="inputFileLineEdit">
+    <property name="geometry">
      <rect>
-      <x>130</x>
-      <y>41</y>
+      <x>132</x>
+      <y>45</y>
       <width>325</width>
       <height>29</height>
      </rect>
     </property>
    </widget>
-   <widget class="QPushButton" name="inputBrowseButton" >
-    <property name="geometry" >
+   <widget class="QPushButton" name="inputBrowseButton">
+    <property name="geometry">
      <rect>
-      <x>470</x>
-      <y>40</y>
-      <width>81</width>
+      <x>472</x>
+      <y>44</y>
+      <width>98</width>
       <height>32</height>
      </rect>
     </property>
-    <property name="text" >
+    <property name="text">
      <string>Browse</string>
     </property>
-    <property name="checkable" >
+    <property name="checkable">
      <bool>false</bool>
     </property>
-    <property name="autoDefault" >
+    <property name="autoDefault">
      <bool>false</bool>
     </property>
-    <property name="flat" >
+    <property name="flat">
      <bool>false</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="textLabel1" >
-    <property name="geometry" >
+   <widget class="QLabel" name="textLabel1">
+    <property name="geometry">
      <rect>
-      <x>22</x>
-      <y>40</y>
+      <x>24</x>
+      <y>44</y>
       <width>104</width>
       <height>31</height>
      </rect>
     </property>
-    <property name="text" >
-     <string>Pit-Filled/DEM Grid</string>
+    <property name="text">
+     <string>Pit-Filled/
+DEM Grid</string>
     </property>
    </widget>
   </widget>
-  <widget class="Q3TextBrowser" name="messageLog" >
-   <property name="geometry" >
+  <widget class="Q3TextBrowser" name="messageLog" native="true">
+   <property name="geometry">
     <rect>
-     <x>10</x>
-     <y>349</y>
+     <x>12</x>
+     <y>345</y>
      <width>581</width>
      <height>130</height>
     </rect>
    </property>
   </widget>
  </widget>
- <layoutdefault spacing="6" margin="11" />
+ <layoutdefault spacing="6" margin="11"/>
  <pixmapfunction>qPixmapFromMimeSource</pixmapfunction>
  <customwidgets>
-  <customwidget>
-   <class>Q3ButtonGroup</class>
-   <extends></extends>
-   <header>Qt3Support/Q3ButtonGroup</header>
-   <container>1</container>
-   <pixmap></pixmap>
-  </customwidget>
   <customwidget>
    <class>Q3TextBrowser</class>
    <extends>QWidget</extends>
    <header>q3textbrowser.h</header>
    <container>1</container>
-   <pixmap></pixmap>
+  </customwidget>
+  <customwidget>
+   <class>Q3GroupBox</class>
+   <extends>QGroupBox</extends>
+   <header>Qt3Support/Q3GroupBox</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>Q3ButtonGroup</class>
+   <extends>Q3GroupBox</extends>
+   <header>Qt3Support/Q3ButtonGroup</header>
+   <container>1</container>
   </customwidget>
  </customwidgets>
  <resources/>

@@ -721,26 +721,6 @@ int f(realtype t, N_Vector CV_Y, N_Vector CV_Ydot, void *DS)
         		DY[i] =  DY[i] - MD->FluxSurf[i][j]/MD->Ele[i].area;
         		DY[i+2*MD->NumEle] = DY[i+2*MD->NumEle] - MD->FluxSub[i][j]/MD->Ele[i].area;
       			} 
-		if(i==716)
-			{
-			DY[i+2*MD->NumEle]=DY[i+2*MD->NumEle]-0.00901;
-			} 
-		if(i==663)
-			{
-			DY[i+2*MD->NumEle]=DY[i+2*MD->NumEle]-0.00409;
-			} 
-		if(i==937)
-			{
-			DY[i+2*MD->NumEle]=DY[i+2*MD->NumEle]-0.00141;
-			} 
-		if(i==761)
-			{
-			DY[i+2*MD->NumEle]=DY[i+2*MD->NumEle]-0.01262;
-			} 
-		if(i==122)
-			{
-			DY[i+2*MD->NumEle]=DY[i+2*MD->NumEle]-0.00124;
-			} 
       		DY[i+MD->NumEle] = DY[i+MD->NumEle]/(MD->Ele[i].Porosity*UNIT_C);	
       		DY[i+2*MD->NumEle] = DY[i+2*MD->NumEle]/(MD->Ele[i].Porosity*UNIT_C);	
 		DY[i]=DY[i]/(UNIT_C);	

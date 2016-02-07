@@ -4,6 +4,8 @@
 #include "../../pihmLIBS/generatePolyFile.h"
 #include "../../pihmLIBS/helpDialog/helpdialog.h"
 
+#include "../../pihmLIBS/fileStruct.h"
+
 #include <fstream>
 using namespace std;
 
@@ -15,18 +17,49 @@ generateShapeTopologyDlg::generateShapeTopologyDlg(QWidget *parent)
 	connect(okButton, SIGNAL(clicked()), this, SLOT(run()));
 	connect(helpButton, SIGNAL(clicked()), this, SLOT(help()));
 	connect(cancelButton, SIGNAL(clicked()), this, SLOT(close()));
+
+	QString projDir, projFile;
+        QFile tFile(QDir::homePath()+"/project.txt");
+        tFile.open(QIODevice::ReadOnly | QIODevice::Text);
+        QTextStream tin(&tFile);
+        projDir  = tin.readLine();
+        projFile = tin.readLine();
+	tFile.close();
+        cout << qPrintable(projDir);
+
+	inputFileLineEdit->setText(readLineNumber(qPrintable(projFile), 39));
+	QString tempStr; tempStr=inputFileLineEdit->text(); tempStr.truncate(tempStr.length()-3);
+	outputFileLineEdit->setText(tempStr+"poly");
 }
 
 void generateShapeTopologyDlg::inputBrowse()
 {
-	QString str = QFileDialog::getOpenFileName(this, "Choose File", "~/","Shape File(*.shp *.SHP)");
+	QString projDir, projFile;
+        QFile tFile(QDir::homePath()+"/project.txt");
+        tFile.open(QIODevice::ReadOnly | QIODevice::Text);
+        QTextStream tin(&tFile);
+        projDir  = tin.readLine();
+        projFile = tin.readLine();
+	tFile.close();
+        cout << qPrintable(projDir);
+
+	QString str = QFileDialog::getOpenFileName(this, "Choose File", projDir+"/DomainDecomposition","Shape File(*.shp *.SHP)");
 	inputFileLineEdit->setText(str);
 }
 
 
 void generateShapeTopologyDlg::outputBrowse()
 {
-	QString temp = QFileDialog::getSaveFileName(this, "Choose File", "~/","Poly File(*.poly)");
+	QString projDir, projFile;
+        QFile tFile(QDir::homePath()+"/project.txt");
+        tFile.open(QIODevice::ReadOnly | QIODevice::Text);
+        QTextStream tin(&tFile);
+        projDir  = tin.readLine();
+        projFile = tin.readLine();
+	tFile.close();
+        cout << qPrintable(projDir);
+
+	QString temp = QFileDialog::getSaveFileName(this, "Choose File", projDir+"/DomainDecomposition","Poly File(*.poly)");
 	QString tmp = temp;
 	if(!(tmp.toLower()).endsWith(".poly")){
         	tmp.append(".poly");
@@ -39,8 +72,20 @@ void generateShapeTopologyDlg::outputBrowse()
 
 void generateShapeTopologyDlg::run()
 {
+	QString projDir, projFile;
+        QFile tFile(QDir::homePath()+"/project.txt");
+        tFile.open(QIODevice::ReadOnly | QIODevice::Text);
+        QTextStream tin(&tFile);
+        projDir  = tin.readLine();
+        projFile = tin.readLine();
+	tFile.close();
+        cout << qPrintable(projDir);
+	writeLineNumber(qPrintable(projFile), 40, qPrintable(inputFileLineEdit->text()));
+	writeLineNumber(qPrintable(projFile), 41, qPrintable(outputFileLineEdit->text()));
 
-	QString logFileName("/tmp/log.html");
+	QDir dir = QDir::home();
+        QString home = dir.homePath();
+	QString logFileName(qPrintable(home+"/log.html"));
 	ofstream log;
 	log.open(qPrintable(logFileName));
 	log<<"<html><body><font size=3 color=black><p> Verifying Files...</p></font></body></html>";

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>OpenProject</class>
+ <widget class="QDialog" name="OpenProject">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>320</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>OpenProject</string>
+  </property>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>250</y>
+     <width>581</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string/>
+   </property>
+   <widget class="QPushButton" name="pushButtonHelp">
+    <property name="geometry">
+     <rect>
+      <x>12</x>
+      <y>18</y>
+      <width>113</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Help</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonClose">
+    <property name="geometry">
+     <rect>
+      <x>312</x>
+      <y>18</y>
+      <width>113</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Close</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonOpen">
+    <property name="geometry">
+     <rect>
+      <x>436</x>
+      <y>18</y>
+      <width>131</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Note: the dialog will close by itself after execution</string>
+    </property>
+    <property name="text">
+     <string> Open Project </string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_2">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>80</y>
+     <width>581</width>
+     <height>161</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string/>
+   </property>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>15</x>
+      <y>113</y>
+      <width>141</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>It is recommended that you choose PROJECT FOLDER
+for the Watershed you want to model</string>
+    </property>
+    <property name="text">
+     <string>Project Home Folder
+(Working Directory)</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEditFile">
+    <property name="geometry">
+     <rect>
+      <x>165</x>
+      <y>24</y>
+      <width>281</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonFile">
+    <property name="geometry">
+     <rect>
+      <x>454</x>
+      <y>20</y>
+      <width>113</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Browse...</string>
+    </property>
+    <property name="default">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>15</x>
+      <y>60</y>
+      <width>131</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>This will be your HOME Directory for the PIHMgis.
+Output files &amp; Folders will be created relative to this path.</string>
+    </property>
+    <property name="text">
+     <string>PIHMgis
+Home Folder</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEditFolder">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>165</x>
+      <y>74</y>
+      <width>281</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>15</x>
+      <y>30</y>
+      <width>101</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>This is your new project file that will be created.
+Choose this file if you need to open the project later.</string>
+    </property>
+    <property name="text">
+     <string>Project File</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEditFolder2">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>165</x>
+      <y>118</y>
+      <width>281</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>30</y>
+     <width>271</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Lucida Grande'; font-size:13pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:18pt;&quot;&gt;Open Existing PIHMgis Project&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'qgshelpserver.h'
 **
-** Created: Mon Sep 7 22:42:51 2009
+** Created: Tue Jun 22 23:10:17 2010
 **      by: The Qt Meta Object Compiler version 59 (Qt 4.3.2)
 **
 ** WARNING! All changes made in this file will be lost!

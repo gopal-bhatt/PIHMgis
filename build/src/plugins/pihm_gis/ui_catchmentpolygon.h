@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading ui file 'catchmentpolygon.ui'
 **
-** Created: Mon Sep 7 22:45:43 2009
+** Created: Tue Jul 27 23:38:17 2010
 **      by: Qt User Interface Compiler version 4.3.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling ui file!
@@ -11,6 +11,7 @@
 #define UI_CATCHMENTPOLYGON_H
 
 #include <Qt3Support/Q3ButtonGroup>
+#include <Qt3Support/Q3GroupBox>
 #include <Qt3Support/Q3MimeSourceFactory>
 #include <Qt3Support/Q3TextBrowser>
 #include <QtCore/QVariant>
@@ -47,26 +48,25 @@ public:
     CatchmentPolygon->resize(607, 410);
     messageLog = new Q3TextBrowser(CatchmentPolygon);
     messageLog->setObjectName(QString::fromUtf8("messageLog"));
-    messageLog->setGeometry(QRect(10, 269, 581, 130));
+    messageLog->setGeometry(QRect(14, 269, 581, 130));
     closeButton = new QPushButton(CatchmentPolygon);
     closeButton->setObjectName(QString::fromUtf8("closeButton"));
-    closeButton->setGeometry(QRect(424, 229, 81, 32));
+    closeButton->setGeometry(QRect(394, 229, 98, 32));
     closeButton->setAutoDefault(false);
     helpButton = new QPushButton(CatchmentPolygon);
     helpButton->setObjectName(QString::fromUtf8("helpButton"));
-    helpButton->setGeometry(QRect(10, 229, 81, 32));
+    helpButton->setGeometry(QRect(11, 229, 98, 32));
     helpButton->setAutoDefault(false);
     runButton = new QPushButton(CatchmentPolygon);
     runButton->setObjectName(QString::fromUtf8("runButton"));
-    runButton->setGeometry(QRect(510, 229, 81, 32));
+    runButton->setGeometry(QRect(504, 229, 98, 32));
     runButton->setAutoDefault(false);
     buttonGroup2 = new Q3ButtonGroup(CatchmentPolygon);
     buttonGroup2->setObjectName(QString::fromUtf8("buttonGroup2"));
-    buttonGroup2->setGeometry(QRect(10, 120, 581, 100));
-    buttonGroup2->setOrientation(Qt::Vertical);
+    buttonGroup2->setGeometry(QRect(14, 116, 581, 100));
     showSG_DFrame = new QCheckBox(buttonGroup2);
     showSG_DFrame->setObjectName(QString::fromUtf8("showSG_DFrame"));
-    showSG_DFrame->setGeometry(QRect(346, 73, 140, 21));
+    showSG_DFrame->setGeometry(QRect(350, 73, 140, 21));
     QFont font;
     font.setFamily(QString::fromUtf8("Sans Serif"));
     font.setPointSize(8);
@@ -79,27 +79,26 @@ public:
     showSG_DFrame->setChecked(true);
     outputFileLineEdit = new QLineEdit(buttonGroup2);
     outputFileLineEdit->setObjectName(QString::fromUtf8("outputFileLineEdit"));
-    outputFileLineEdit->setGeometry(QRect(143, 41, 325, 29));
+    outputFileLineEdit->setGeometry(QRect(147, 41, 325, 29));
     outputBrowseButton = new QPushButton(buttonGroup2);
     outputBrowseButton->setObjectName(QString::fromUtf8("outputBrowseButton"));
-    outputBrowseButton->setGeometry(QRect(483, 40, 81, 32));
+    outputBrowseButton->setGeometry(QRect(478, 40, 98, 32));
     outputBrowseButton->setAutoDefault(false);
     textLabel1_2 = new QLabel(buttonGroup2);
     textLabel1_2->setObjectName(QString::fromUtf8("textLabel1_2"));
-    textLabel1_2->setGeometry(QRect(15, 40, 125, 31));
+    textLabel1_2->setGeometry(QRect(19, 40, 125, 31));
     buttonGroup1 = new Q3ButtonGroup(CatchmentPolygon);
     buttonGroup1->setObjectName(QString::fromUtf8("buttonGroup1"));
-    buttonGroup1->setGeometry(QRect(10, 10, 581, 101));
-    buttonGroup1->setOrientation(Qt::Vertical);
+    buttonGroup1->setGeometry(QRect(14, 7, 581, 101));
     textLabel1 = new QLabel(buttonGroup1);
     textLabel1->setObjectName(QString::fromUtf8("textLabel1"));
-    textLabel1->setGeometry(QRect(17, 40, 100, 31));
+    textLabel1->setGeometry(QRect(21, 43, 100, 31));
     inputFileLineEdit = new QLineEdit(buttonGroup1);
     inputFileLineEdit->setObjectName(QString::fromUtf8("inputFileLineEdit"));
-    inputFileLineEdit->setGeometry(QRect(143, 41, 325, 29));
+    inputFileLineEdit->setGeometry(QRect(147, 44, 325, 29));
     inputBrowseButton = new QPushButton(buttonGroup1);
     inputBrowseButton->setObjectName(QString::fromUtf8("inputBrowseButton"));
-    inputBrowseButton->setGeometry(QRect(483, 40, 81, 32));
+    inputBrowseButton->setGeometry(QRect(478, 43, 98, 32));
     inputBrowseButton->setCheckable(false);
     inputBrowseButton->setAutoDefault(false);
     inputBrowseButton->setFlat(false);

@@ -39,7 +39,7 @@
     <string>Close</string>
    </property>
   </widget>
-  <widget class="QTextBrowser" name="textBrowser">
+  <widget class="Q3TextBrowser" name="textBrowser">
    <property name="geometry">
     <rect>
      <x>21</x>

@@ -2034,12 +2034,6 @@ qgsmapcanvasitem.h
 qgspoint.h
 /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/gui/qgspoint.h
 
-/usr/include/Availability.h
-AvailabilityInternal.h
--
-
-/usr/include/AvailabilityInternal.h
-
 /usr/include/AvailabilityMacros.h
 
 /usr/include/_types.h

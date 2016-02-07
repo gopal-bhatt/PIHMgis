@@ -82,8 +82,6 @@ src/plugins/dxf2shp_converter/CMakeFiles/dxf2shpconverterplugin.dir/dxf2shpconve
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/dxf2shp_converter/dxflib/src/dl_writer_ascii.h
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/dxf2shp_converter/getInsertions.h
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/dxf2shp_converter/shapelib-1.2.10/shapefil.h
- /usr/include/Availability.h
- /usr/include/AvailabilityInternal.h
  /usr/include/AvailabilityMacros.h
  /usr/include/_types.h
  /usr/include/_xlocale.h
@@ -210,8 +208,6 @@ src/plugins/dxf2shp_converter/CMakeFiles/dxf2shpconverterplugin.dir/dxflib/src/d
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/dxf2shp_converter/dxflib/src/dl_extrusion.h
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/dxf2shp_converter/dxflib/src/dl_writer.h
  /Users/bhattgopal/dev/cpp/qgis_1.0.2/src/plugins/dxf2shp_converter/dxflib/src/dl_writer_ascii.h
- /usr/include/Availability.h
- /usr/include/AvailabilityInternal.h
  /usr/include/AvailabilityMacros.h
  /usr/include/_types.h
  /usr/include/_xlocale.h

@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading ui file 'runtriangle.ui'
 **
-** Created: Mon Sep 7 22:45:44 2009
+** Created: Tue Jul 27 23:38:17 2010
 **      by: Qt User Interface Compiler version 4.3.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling ui file!
@@ -11,6 +11,7 @@
 #define UI_RUNTRIANGLE_H
 
 #include <Qt3Support/Q3ButtonGroup>
+#include <Qt3Support/Q3GroupBox>
 #include <Qt3Support/Q3MimeSourceFactory>
 #include <Qt3Support/Q3TextBrowser>
 #include <QtCore/QVariant>
@@ -29,6 +30,7 @@ public:
     Q3ButtonGroup *inputPolyFileGroup;
     QPushButton *polyFileBrowseButton;
     QLineEdit *polyFileLineEdit;
+    QLabel *label;
     Q3ButtonGroup *Options;
     QLineEdit *qOptionLineEdit;
     QLineEdit *aOptionLineEdit;
@@ -54,66 +56,67 @@ public:
     inputPolyFileGroup = new Q3ButtonGroup(runTriangle);
     inputPolyFileGroup->setObjectName(QString::fromUtf8("inputPolyFileGroup"));
     inputPolyFileGroup->setGeometry(QRect(11, 283, 578, 100));
-    inputPolyFileGroup->setOrientation(Qt::Vertical);
     polyFileBrowseButton = new QPushButton(inputPolyFileGroup);
     polyFileBrowseButton->setObjectName(QString::fromUtf8("polyFileBrowseButton"));
-    polyFileBrowseButton->setGeometry(QRect(370, 39, 81, 32));
+    polyFileBrowseButton->setGeometry(QRect(470, 43, 98, 32));
     polyFileBrowseButton->setAutoDefault(false);
     polyFileLineEdit = new QLineEdit(inputPolyFileGroup);
     polyFileLineEdit->setObjectName(QString::fromUtf8("polyFileLineEdit"));
-    polyFileLineEdit->setGeometry(QRect(20, 40, 340, 28));
+    polyFileLineEdit->setGeometry(QRect(110, 44, 340, 28));
+    label = new QLabel(inputPolyFileGroup);
+    label->setObjectName(QString::fromUtf8("label"));
+    label->setGeometry(QRect(22, 50, 61, 16));
     Options = new Q3ButtonGroup(runTriangle);
     Options->setObjectName(QString::fromUtf8("Options"));
-    Options->setGeometry(QRect(10, 10, 578, 270));
-    Options->setOrientation(Qt::Vertical);
+    Options->setGeometry(QRect(11, 10, 578, 270));
     qOptionLineEdit = new QLineEdit(Options);
     qOptionLineEdit->setObjectName(QString::fromUtf8("qOptionLineEdit"));
-    qOptionLineEdit->setGeometry(QRect(40, 120, 80, 29));
+    qOptionLineEdit->setGeometry(QRect(50, 122, 90, 29));
     aOptionLineEdit = new QLineEdit(Options);
     aOptionLineEdit->setObjectName(QString::fromUtf8("aOptionLineEdit"));
-    aOptionLineEdit->setGeometry(QRect(40, 190, 80, 29));
+    aOptionLineEdit->setGeometry(QRect(50, 190, 90, 29));
     otherOptionLineEdit = new QLineEdit(Options);
     otherOptionLineEdit->setObjectName(QString::fromUtf8("otherOptionLineEdit"));
-    otherOptionLineEdit->setGeometry(QRect(170, 230, 90, 29));
+    otherOptionLineEdit->setGeometry(QRect(180, 230, 90, 29));
     otherOptionCheckBox = new QCheckBox(Options);
     otherOptionCheckBox->setObjectName(QString::fromUtf8("otherOptionCheckBox"));
-    otherOptionCheckBox->setGeometry(QRect(11, 231, 130, 26));
+    otherOptionCheckBox->setGeometry(QRect(21, 231, 130, 26));
     aOptionLabel = new QLabel(Options);
     aOptionLabel->setObjectName(QString::fromUtf8("aOptionLabel"));
-    aOptionLabel->setGeometry(QRect(140, 190, 151, 22));
+    aOptionLabel->setGeometry(QRect(160, 192, 151, 22));
     nOptionCheckBox = new QCheckBox(Options);
     nOptionCheckBox->setObjectName(QString::fromUtf8("nOptionCheckBox"));
-    nOptionCheckBox->setGeometry(QRect(10, 20, 556, 26));
+    nOptionCheckBox->setGeometry(QRect(20, 26, 541, 26));
     VOptionsCheckBox = new QCheckBox(Options);
     VOptionsCheckBox->setObjectName(QString::fromUtf8("VOptionsCheckBox"));
-    VOptionsCheckBox->setGeometry(QRect(11, 57, 556, 26));
+    VOptionsCheckBox->setGeometry(QRect(21, 58, 541, 26));
     qOptionsCheckBox = new QCheckBox(Options);
     qOptionsCheckBox->setObjectName(QString::fromUtf8("qOptionsCheckBox"));
-    qOptionsCheckBox->setGeometry(QRect(11, 92, 556, 26));
+    qOptionsCheckBox->setGeometry(QRect(21, 92, 541, 26));
     qOptionLabel = new QLabel(Options);
     qOptionLabel->setObjectName(QString::fromUtf8("qOptionLabel"));
-    qOptionLabel->setGeometry(QRect(140, 120, 251, 31));
+    qOptionLabel->setGeometry(QRect(160, 120, 251, 31));
     aOptionsCheckBox = new QCheckBox(Options);
     aOptionsCheckBox->setObjectName(QString::fromUtf8("aOptionsCheckBox"));
-    aOptionsCheckBox->setGeometry(QRect(11, 159, 556, 26));
+    aOptionsCheckBox->setGeometry(QRect(21, 159, 541, 26));
     showOptionsButton = new QPushButton(Options);
     showOptionsButton->setObjectName(QString::fromUtf8("showOptionsButton"));
-    showOptionsButton->setGeometry(QRect(140, 229, 20, 32));
+    showOptionsButton->setGeometry(QRect(150, 229, 20, 32));
     showOptionsButton->setAutoDefault(false);
     MessageLog = new Q3TextBrowser(runTriangle);
     MessageLog->setObjectName(QString::fromUtf8("MessageLog"));
-    MessageLog->setGeometry(QRect(12, 438, 571, 131));
+    MessageLog->setGeometry(QRect(12, 438, 578, 131));
     runButton = new QPushButton(runTriangle);
     runButton->setObjectName(QString::fromUtf8("runButton"));
-    runButton->setGeometry(QRect(504, 393, 80, 34));
+    runButton->setGeometry(QRect(495, 393, 98, 34));
     runButton->setAutoDefault(false);
     cancelButton = new QPushButton(runTriangle);
     cancelButton->setObjectName(QString::fromUtf8("cancelButton"));
-    cancelButton->setGeometry(QRect(421, 393, 80, 34));
+    cancelButton->setGeometry(QRect(380, 393, 98, 34));
     cancelButton->setAutoDefault(false);
     helpButton = new QPushButton(runTriangle);
     helpButton->setObjectName(QString::fromUtf8("helpButton"));
-    helpButton->setGeometry(QRect(11, 393, 80, 34));
+    helpButton->setGeometry(QRect(8, 393, 98, 34));
     helpButton->setAutoDefault(false);
 
     retranslateUi(runTriangle);
@@ -125,10 +128,11 @@ public:
     {
     runTriangle->setWindowTitle(QApplication::translate("runTriangle", "Run TRIANGLE", 0, QApplication::UnicodeUTF8));
     inputPolyFileGroup->setTitle(QApplication::translate("runTriangle", "Input a Poly File", 0, QApplication::UnicodeUTF8));
-    polyFileBrowseButton->setText(QApplication::translate("runTriangle", "Browse...", 0, QApplication::UnicodeUTF8));
+    polyFileBrowseButton->setText(QApplication::translate("runTriangle", "Browse", 0, QApplication::UnicodeUTF8));
+    label->setText(QApplication::translate("runTriangle", "PSLG File", 0, QApplication::UnicodeUTF8));
     Options->setTitle(QApplication::translate("runTriangle", "Options", 0, QApplication::UnicodeUTF8));
     otherOptionCheckBox->setText(QApplication::translate("runTriangle", "Other options", 0, QApplication::UnicodeUTF8));
-    aOptionLabel->setText(QApplication::translate("runTriangle", "Area", 0, QApplication::UnicodeUTF8));
+    aOptionLabel->setText(QApplication::translate("runTriangle", "Area (square meters)", 0, QApplication::UnicodeUTF8));
     nOptionCheckBox->setText(QApplication::translate("runTriangle", "-n : Generate a list of triangle neighbours.", 0, QApplication::UnicodeUTF8));
     VOptionsCheckBox->setText(QApplication::translate("runTriangle", "-V : Verbose if checked. Quiet otherwise.", 0, QApplication::UnicodeUTF8));
     qOptionsCheckBox->setText(QApplication::translate("runTriangle", "-q : Quality Mesh generation. A minimum angle may be specified.", 0, QApplication::UnicodeUTF8));
@@ -136,7 +140,7 @@ public:
     aOptionsCheckBox->setText(QApplication::translate("runTriangle", "-a : Apply a maximum triangle area constraint.", 0, QApplication::UnicodeUTF8));
     showOptionsButton->setText(QApplication::translate("runTriangle", "?", 0, QApplication::UnicodeUTF8));
     runButton->setText(QApplication::translate("runTriangle", "Run!", 0, QApplication::UnicodeUTF8));
-    cancelButton->setText(QApplication::translate("runTriangle", "Cancel", 0, QApplication::UnicodeUTF8));
+    cancelButton->setText(QApplication::translate("runTriangle", "Close", 0, QApplication::UnicodeUTF8));
     helpButton->setText(QApplication::translate("runTriangle", "Help", 0, QApplication::UnicodeUTF8));
     Q_UNUSED(runTriangle);
     } // retranslateUi

@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading ui file 'geolfile.ui'
 **
-** Created: Mon Sep 7 22:45:44 2009
+** Created: Tue Jul 27 23:38:18 2010
 **      by: Qt User Interface Compiler version 4.3.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling ui file!
@@ -10,6 +10,7 @@
 #ifndef UI_GEOLFILE_H
 #define UI_GEOLFILE_H
 
+#include <Qt3Support/Q3TextBrowser>
 #include <QtCore/QVariant>
 #include <QtGui/QAction>
 #include <QtGui/QApplication>
@@ -19,14 +20,13 @@
 #include <QtGui/QLabel>
 #include <QtGui/QLineEdit>
 #include <QtGui/QPushButton>
-#include <QtGui/QTextBrowser>
 
 class Ui_GeolFile
 {
 public:
     QPushButton *pushButtonRun;
     QPushButton *pushButtonClose;
-    QTextBrowser *textBrowser;
+    Q3TextBrowser *textBrowser;
     QGroupBox *groupBox_2;
     QLabel *label_2;
     QLineEdit *lineEditGeolFile;
@@ -48,7 +48,7 @@ public:
     pushButtonClose = new QPushButton(GeolFile);
     pushButtonClose->setObjectName(QString::fromUtf8("pushButtonClose"));
     pushButtonClose->setGeometry(QRect(330, 227, 113, 32));
-    textBrowser = new QTextBrowser(GeolFile);
+    textBrowser = new Q3TextBrowser(GeolFile);
     textBrowser->setObjectName(QString::fromUtf8("textBrowser"));
     textBrowser->setGeometry(QRect(21, 273, 561, 111));
     groupBox_2 = new QGroupBox(GeolFile);

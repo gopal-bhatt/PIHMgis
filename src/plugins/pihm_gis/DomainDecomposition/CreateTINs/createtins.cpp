@@ -4,6 +4,9 @@
 #include "../../pihmLIBS/createTinShapeFile.h"
 #include "../../pihmLIBS/helpDialog/helpdialog.h"
 
+#include "../../pihmLIBS/fileStruct.h"
+
+#include <iostream>
 #include <fstream>
 using namespace std;
 
@@ -16,23 +19,64 @@ createTINsDlg::createTINsDlg(QWidget *parent)
 	connect(runButton, SIGNAL(clicked()), this, SLOT(run()));
 	connect(helpButton, SIGNAL(clicked()), this, SLOT(help()));
 	connect(cancelButton, SIGNAL(clicked()), this, SLOT(close()));
+
+	QString projDir, projFile;
+        QFile tFile(QDir::homePath()+"/project.txt");
+        tFile.open(QIODevice::ReadOnly | QIODevice::Text);
+        QTextStream tin(&tFile);
+        projDir  = tin.readLine();
+        projFile = tin.readLine();
+	tFile.close();
+        cout << qPrintable(projDir);
+
+	QString tempStr=readLineNumber(qPrintable(projFile), 42); tempStr.truncate(tempStr.length()-5);
+	eleFileLineEdit->setText(tempStr+".1.ele");
+	nodeFileLineEdit->setText(tempStr+".1.node");
+	shpFileLineEdit->setText(tempStr+"_q"+readLineNumber(qPrintable(projFile), 43)+"_a"+readLineNumber(qPrintable(projFile), 44)+"_o"+readLineNumber(qPrintable(projFile), 45)+".shp");
 }
 
 void createTINsDlg::eleBrowse()
 {
-	QString str = QFileDialog::getOpenFileName(this, "Choose File", "~/","ele File(*.ele *.ELE)");
+	QString projDir, projFile;
+        QFile tFile(QDir::homePath()+"/project.txt");
+        tFile.open(QIODevice::ReadOnly | QIODevice::Text);
+        QTextStream tin(&tFile);
+	projDir  = tin.readLine();
+        projFile = tin.readLine();
+	tFile.close();
+        cout << qPrintable(projDir);
+
+	QString str = QFileDialog::getOpenFileName(this, "Choose File", projDir+"/DomainDecomposition","ele File(*.ele *.ELE)");
 	eleFileLineEdit->setText(str);
 }
 
 void createTINsDlg::nodeBrowse()
 {
-	QString str = QFileDialog::getOpenFileName(this, "Choose File", "~/", "node File(*.node *.NODE)");
+	QString projDir, projFile;
+        QFile tFile(QDir::homePath()+"/project.txt");
+        tFile.open(QIODevice::ReadOnly | QIODevice::Text);
+        QTextStream tin(&tFile);
+	projDir  = tin.readLine();
+        projFile = tin.readLine();
+	tFile.close();
+        cout << qPrintable(projDir);
+
+	QString str = QFileDialog::getOpenFileName(this, "Choose File", projDir+"/DomainDecomposition", "node File(*.node *.NODE)");
 	nodeFileLineEdit->setText(str);
 }
 
 void createTINsDlg::shpBrowse()
 {
-	QString temp = QFileDialog::getSaveFileName(this, "Choose File", "~/","Shape File(*.shp *.SHP)");
+	QString projDir, projFile;
+        QFile tFile(QDir::homePath()+"/project.txt");
+        tFile.open(QIODevice::ReadOnly | QIODevice::Text);
+        QTextStream tin(&tFile);
+	projDir  = tin.readLine();
+        projFile = tin.readLine();
+	tFile.close();
+        cout << qPrintable(projDir);
+
+	QString temp = QFileDialog::getSaveFileName(this, "Choose File", projDir+"/DomainDecomposition","Shape File(*.shp *.SHP)");
 	QString tmp = temp;
 	if(!(tmp.toLower()).endsWith(".shp")){
         	tmp.append(".shp");
@@ -45,8 +89,22 @@ void createTINsDlg::shpBrowse()
 
 void createTINsDlg::run()
 {
+	QString projDir, projFile;
+        QFile tFile(QDir::homePath()+"/project.txt");
+        tFile.open(QIODevice::ReadOnly | QIODevice::Text);
+        QTextStream tin(&tFile);
+	projDir  = tin.readLine();
+        projFile = tin.readLine();
+	tFile.close();
+        cout << qPrintable(projDir);
 
-	QString logFileName("/tmp/log.html");
+	writeLineNumber(qPrintable(projFile), 46, qPrintable(eleFileLineEdit->text()));
+	writeLineNumber(qPrintable(projFile), 47, qPrintable(nodeFileLineEdit->text()));
+	writeLineNumber(qPrintable(projFile), 48, qPrintable(shpFileLineEdit->text()));
+
+	QDir dir = QDir::home();
+        QString home = dir.homePath();
+	QString logFileName(qPrintable(home+"/log.html"));
 	ofstream log;
 	log.open(qPrintable(logFileName));
 	log<<"<html><body><font size=3 color=black><p> Verifying Files...</p></font></body></html>";
@@ -154,6 +212,12 @@ void createTINsDlg::run()
 		log.close();
 		MessageLog->reload();
 		QApplication::processEvents();
+
+			QString myFileNameQString = shpFileName;
+                        QFileInfo myFileInfo(myFileNameQString);
+                        QString myBaseNameQString = myFileInfo.baseName();
+                        QString provider = "OGR";
+                        applicationPointer->addVectorLayer(myFileNameQString, myBaseNameQString, "ogr");
 	}
 }
 			
@@ -164,4 +228,8 @@ void createTINsDlg::help()
 	helpDialog* hlpDlg = new helpDialog(this, "TIN Generation", 1, "helpFiles/tingeneration.html", "Help :: TIN Generation");
 	hlpDlg->show();	
 
+}
+
+void createTINsDlg::setApplicationPointer(QgisInterface* appPtr){
+    applicationPointer = appPtr;
 }

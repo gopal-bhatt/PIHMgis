@@ -13,13 +13,13 @@
   <property name="windowTitle">
    <string>Simplify Line</string>
   </property>
-  <widget class="Q3ButtonGroup" name="polygonToPolyLineGroup" native="true">
+  <widget class="Q3ButtonGroup" name="polygonToPolyLineGroup">
    <property name="geometry">
     <rect>
-     <x>5</x>
+     <x>10</x>
      <y>140</y>
-     <width>580</width>
-     <height>380</height>
+     <width>570</width>
+     <height>231</height>
     </rect>
    </property>
    <property name="sizePolicy">
@@ -28,41 +28,15 @@
      <verstretch>0</verstretch>
     </sizepolicy>
    </property>
-   <property name="title" stdset="0">
+   <property name="title">
     <string/>
    </property>
-   <widget class="QPushButton" name="helpButton">
-    <property name="geometry">
-     <rect>
-      <x>12</x>
-      <y>222</y>
-      <width>80</width>
-      <height>34</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Help</string>
-    </property>
-    <property name="autoDefault">
-     <bool>false</bool>
-    </property>
-   </widget>
-   <widget class="Q3TextBrowser" name="MessageLog" native="true">
-    <property name="geometry">
-     <rect>
-      <x>11</x>
-      <y>271</y>
-      <width>560</width>
-      <height>92</height>
-     </rect>
-    </property>
-   </widget>
    <widget class="Q3Table" name="inputOutputTable" native="true">
     <property name="geometry">
      <rect>
       <x>10</x>
       <y>10</y>
-      <width>510</width>
+      <width>501</width>
       <height>200</height>
      </rect>
     </property>
@@ -97,7 +71,7 @@
    <widget class="QPushButton" name="removeFileButton">
     <property name="geometry">
      <rect>
-      <x>530</x>
+      <x>520</x>
       <y>10</y>
       <width>40</width>
       <height>32</height>
@@ -120,7 +94,7 @@
    <widget class="QPushButton" name="removeAllButton">
     <property name="geometry">
      <rect>
-      <x>530</x>
+      <x>520</x>
       <y>90</y>
       <width>40</width>
       <height>32</height>
@@ -140,42 +114,10 @@
      <bool>false</bool>
     </property>
    </widget>
-   <widget class="QPushButton" name="okButton">
-    <property name="geometry">
-     <rect>
-      <x>488</x>
-      <y>222</y>
-      <width>80</width>
-      <height>34</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Run!</string>
-    </property>
-    <property name="autoDefault">
-     <bool>false</bool>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="cancelButton">
-    <property name="geometry">
-     <rect>
-      <x>402</x>
-      <y>222</y>
-      <width>80</width>
-      <height>34</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Close</string>
-    </property>
-    <property name="autoDefault">
-     <bool>false</bool>
-    </property>
-   </widget>
    <widget class="QPushButton" name="editToleranceButton">
     <property name="geometry">
      <rect>
-      <x>530</x>
+      <x>520</x>
       <y>50</y>
       <width>40</width>
       <height>32</height>
@@ -196,16 +138,16 @@
     </property>
    </widget>
   </widget>
-  <widget class="Q3ButtonGroup" name="buttonGroup8" native="true">
+  <widget class="Q3ButtonGroup" name="buttonGroup8">
    <property name="geometry">
     <rect>
-     <x>5</x>
+     <x>10</x>
      <y>10</y>
-     <width>580</width>
+     <width>570</width>
      <height>121</height>
     </rect>
    </property>
-   <property name="title" stdset="0">
+   <property name="title">
     <string/>
    </property>
    <widget class="QLabel" name="InputPolyline">
@@ -230,8 +172,11 @@
       <height>48</height>
      </rect>
     </property>
+    <property name="toolTip">
+     <string>Simplification Tolerance</string>
+    </property>
     <property name="text">
-     <string>Tolerance</string>
+     <string>Tolerance (m)</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="InputPolylineEdit">
@@ -239,7 +184,7 @@
      <rect>
       <x>125</x>
       <y>20</y>
-      <width>350</width>
+      <width>341</width>
       <height>29</height>
      </rect>
     </property>
@@ -258,9 +203,9 @@
     <property name="geometry">
      <rect>
       <x>227</x>
-      <y>70</y>
+      <y>68</y>
       <width>81</width>
-      <height>32</height>
+      <height>37</height>
      </rect>
     </property>
     <property name="toolTip">
@@ -280,26 +225,96 @@
    <widget class="QPushButton" name="inputPolylineButton">
     <property name="geometry">
      <rect>
-      <x>487</x>
+      <x>468</x>
       <y>20</y>
-      <width>81</width>
+      <width>98</width>
       <height>32</height>
      </rect>
     </property>
     <property name="text">
-     <string>Browse...</string>
+     <string>Browse</string>
     </property>
     <property name="autoDefault">
      <bool>false</bool>
     </property>
    </widget>
   </widget>
+  <widget class="Q3TextBrowser" name="MessageLog" native="true">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>417</y>
+     <width>570</width>
+     <height>101</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="okButton">
+   <property name="geometry">
+    <rect>
+     <x>484</x>
+     <y>379</y>
+     <width>98</width>
+     <height>34</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Run!</string>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="cancelButton">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>379</y>
+     <width>98</width>
+     <height>34</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Close</string>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="helpButton">
+   <property name="geometry">
+    <rect>
+     <x>6</x>
+     <y>379</y>
+     <width>98</width>
+     <height>34</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Help</string>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+  </widget>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <customwidgets>
   <customwidget>
+   <class>Q3TextBrowser</class>
+   <extends>QWidget</extends>
+   <header>q3textbrowser.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>Q3GroupBox</class>
+   <extends>QGroupBox</extends>
+   <header>Qt3Support/Q3GroupBox</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
    <class>Q3ButtonGroup</class>
-   <extends></extends>
+   <extends>Q3GroupBox</extends>
    <header>Qt3Support/Q3ButtonGroup</header>
    <container>1</container>
   </customwidget>
@@ -307,12 +322,6 @@
    <class>Q3Table</class>
    <extends></extends>
    <header>q3table.h</header>
-  </customwidget>
-  <customwidget>
-   <class>Q3TextBrowser</class>
-   <extends>QWidget</extends>
-   <header>q3textbrowser.h</header>
-   <container>1</container>
   </customwidget>
  </customwidgets>
  <resources>

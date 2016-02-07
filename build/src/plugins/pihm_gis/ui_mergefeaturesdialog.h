@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading ui file 'mergefeaturesdialog.ui'
 **
-** Created: Mon Sep 7 22:45:44 2009
+** Created: Tue Jul 27 23:38:17 2010
 **      by: Qt User Interface Compiler version 4.3.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling ui file!
@@ -11,6 +11,7 @@
 #define UI_MERGEFEATURESDIALOG_H
 
 #include <Qt3Support/Q3ButtonGroup>
+#include <Qt3Support/Q3GroupBox>
 #include <Qt3Support/Q3Header>
 #include <Qt3Support/Q3Table>
 #include <Qt3Support/Q3TextBrowser>
@@ -49,19 +50,19 @@ public:
     mergeFeaturesDialog->resize(600, 534);
     okButton = new QPushButton(mergeFeaturesDialog);
     okButton->setObjectName(QString::fromUtf8("okButton"));
-    okButton->setGeometry(QRect(513, 358, 80, 34));
+    okButton->setGeometry(QRect(494, 358, 98, 34));
     okButton->setAutoDefault(false);
     cancelButton = new QPushButton(mergeFeaturesDialog);
     cancelButton->setObjectName(QString::fromUtf8("cancelButton"));
-    cancelButton->setGeometry(QRect(427, 358, 80, 34));
+    cancelButton->setGeometry(QRect(390, 358, 98, 34));
     cancelButton->setAutoDefault(false);
     helpButton = new QPushButton(mergeFeaturesDialog);
     helpButton->setObjectName(QString::fromUtf8("helpButton"));
-    helpButton->setGeometry(QRect(15, 358, 80, 34));
+    helpButton->setGeometry(QRect(10, 358, 98, 34));
     helpButton->setAutoDefault(false);
     polygonToPolyLineGroup = new Q3ButtonGroup(mergeFeaturesDialog);
     polygonToPolyLineGroup->setObjectName(QString::fromUtf8("polygonToPolyLineGroup"));
-    polygonToPolyLineGroup->setGeometry(QRect(15, 10, 580, 220));
+    polygonToPolyLineGroup->setGeometry(QRect(10, 10, 580, 220));
     QSizePolicy sizePolicy(QSizePolicy::Fixed, QSizePolicy::Preferred);
     sizePolicy.setHorizontalStretch(0);
     sizePolicy.setVerticalStretch(0);
@@ -96,24 +97,24 @@ public:
     removeAllButton->setAutoDefault(false);
     mergeFeaturesGroup = new Q3ButtonGroup(mergeFeaturesDialog);
     mergeFeaturesGroup->setObjectName(QString::fromUtf8("mergeFeaturesGroup"));
-    mergeFeaturesGroup->setGeometry(QRect(14, 235, 581, 110));
+    mergeFeaturesGroup->setGeometry(QRect(10, 235, 581, 110));
     outputMergedFileButton = new QPushButton(mergeFeaturesGroup);
     outputMergedFileButton->setObjectName(QString::fromUtf8("outputMergedFileButton"));
-    outputMergedFileButton->setGeometry(QRect(478, 14, 81, 32));
+    outputMergedFileButton->setGeometry(QRect(478, 16, 98, 32));
     outputMergedFileButton->setAutoDefault(false);
     outputMergedFileLabel = new QLabel(mergeFeaturesGroup);
     outputMergedFileLabel->setObjectName(QString::fromUtf8("outputMergedFileLabel"));
-    outputMergedFileLabel->setGeometry(QRect(21, 2, 144, 58));
+    outputMergedFileLabel->setGeometry(QRect(14, 2, 144, 58));
     mergeFeaturesClusterToleranceLabel = new QLabel(mergeFeaturesGroup);
     mergeFeaturesClusterToleranceLabel->setObjectName(QString::fromUtf8("mergeFeaturesClusterToleranceLabel"));
-    mergeFeaturesClusterToleranceLabel->setGeometry(QRect(21, 47, 132, 58));
-    mergeFeaturesClusterToleranceLabel->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
+    mergeFeaturesClusterToleranceLabel->setGeometry(QRect(14, 47, 151, 58));
+    mergeFeaturesClusterToleranceLabel->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter);
     clusterToleranceLineEdit = new QLineEdit(mergeFeaturesGroup);
     clusterToleranceLineEdit->setObjectName(QString::fromUtf8("clusterToleranceLineEdit"));
     clusterToleranceLineEdit->setGeometry(QRect(169, 61, 130, 29));
     outputMergedFileLineEdit = new QLineEdit(mergeFeaturesGroup);
     outputMergedFileLineEdit->setObjectName(QString::fromUtf8("outputMergedFileLineEdit"));
-    outputMergedFileLineEdit->setGeometry(QRect(171, 15, 301, 29));
+    outputMergedFileLineEdit->setGeometry(QRect(169, 15, 301, 29));
     messageLog = new Q3TextBrowser(mergeFeaturesDialog);
     messageLog->setObjectName(QString::fromUtf8("messageLog"));
     messageLog->setGeometry(QRect(10, 407, 581, 120));
@@ -134,17 +135,17 @@ public:
     okButton->setText(QApplication::translate("mergeFeaturesDialog", "Run!", 0, QApplication::UnicodeUTF8));
     cancelButton->setText(QApplication::translate("mergeFeaturesDialog", "Close", 0, QApplication::UnicodeUTF8));
     helpButton->setText(QApplication::translate("mergeFeaturesDialog", "Help", 0, QApplication::UnicodeUTF8));
-    polygonToPolyLineGroup->setProperty("title", QVariant(QString()));
+    polygonToPolyLineGroup->setTitle(QString());
     addFileButton->setToolTip(QApplication::translate("mergeFeaturesDialog", "addFile", 0, QApplication::UnicodeUTF8));
     addFileButton->setText(QString());
     removeFileButton->setToolTip(QApplication::translate("mergeFeaturesDialog", "removeFile", 0, QApplication::UnicodeUTF8));
     removeFileButton->setText(QString());
     removeAllButton->setToolTip(QApplication::translate("mergeFeaturesDialog", "remove All Files", 0, QApplication::UnicodeUTF8));
     removeAllButton->setText(QString());
-    mergeFeaturesGroup->setProperty("title", QVariant(QString()));
-    outputMergedFileButton->setText(QApplication::translate("mergeFeaturesDialog", "Browse...", 0, QApplication::UnicodeUTF8));
+    mergeFeaturesGroup->setTitle(QString());
+    outputMergedFileButton->setText(QApplication::translate("mergeFeaturesDialog", "Browse", 0, QApplication::UnicodeUTF8));
     outputMergedFileLabel->setText(QApplication::translate("mergeFeaturesDialog", "Output Merged File", 0, QApplication::UnicodeUTF8));
-    mergeFeaturesClusterToleranceLabel->setText(QApplication::translate("mergeFeaturesDialog", "Cluster Tolerance", 0, QApplication::UnicodeUTF8));
+    mergeFeaturesClusterToleranceLabel->setText(QApplication::translate("mergeFeaturesDialog", "Cluster Tolerance (m)", 0, QApplication::UnicodeUTF8));
     clusterToleranceLineEdit->setText(QApplication::translate("mergeFeaturesDialog", "0", 0, QApplication::UnicodeUTF8));
     Q_UNUSED(mergeFeaturesDialog);
     } // retranslateUi

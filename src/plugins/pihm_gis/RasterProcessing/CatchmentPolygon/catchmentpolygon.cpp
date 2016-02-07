@@ -4,6 +4,8 @@
 #include "../../pihmRasterLIBS/catPoly.h"
 
 #include "../../pihmLIBS/helpDialog/helpdialog.h"
+#include "../../pihmLIBS/fileStruct.h"
+
 #include <iostream>
 #include <fstream>
 using namespace std;
@@ -16,18 +18,50 @@ CatchmentPolygonDlg::CatchmentPolygonDlg(QWidget *parent)
 	connect(runButton, SIGNAL(clicked()), this, SLOT(run()));
 	connect(helpButton, SIGNAL(clicked()), this, SLOT(help()));
 	connect(closeButton, SIGNAL(clicked()), this, SLOT(close()));
+
+	QString projDir, projFile;
+        QFile tFile(QDir::homePath()+"/project.txt");
+        tFile.open(QIODevice::ReadOnly | QIODevice::Text);
+        QTextStream tin(&tFile);
+        projDir  = tin.readLine();
+        projFile = tin.readLine();
+	tFile.close();
+        cout << qPrintable(projDir);
+
+	inputFileLineEdit->setText(readLineNumber(qPrintable(projFile), 19));
+	
+	QString qstrThresh(readLineNumber(qPrintable(projFile), 10));
+        outputFileLineEdit->setText(projDir+"/RasterProcessing/cat"+ qstrThresh +".shp");
 }
 
 void CatchmentPolygonDlg::inputBrowse()
 {
-	QString str = QFileDialog::getOpenFileName(this, "Choose File", "~/","CatchmentGrid File(*.adf *.asc)");
+	QString projDir, projFile;
+        QFile tFile(QDir::homePath()+"/project.txt");
+        tFile.open(QIODevice::ReadOnly | QIODevice::Text);
+        QTextStream tin(&tFile);
+        projDir  = tin.readLine();
+        projFile = tin.readLine();
+	tFile.close();
+        cout << qPrintable(projDir);
+
+	QString str = QFileDialog::getOpenFileName(this, "Choose File", projDir+"/RasterProcessing","CatchmentGrid File(*.adf *.asc)");
 	inputFileLineEdit->setText(str);
 }
 
 
 void CatchmentPolygonDlg::outputBrowse()
 {
-	QString temp = QFileDialog::getSaveFileName(this, "Choose File", "~/","Catchment Polygon File(*.shp)");
+	QString projDir, projFile;
+        QFile tFile(QDir::homePath()+"/project.txt");
+        tFile.open(QIODevice::ReadOnly | QIODevice::Text);
+        QTextStream tin(&tFile);
+        projDir  = tin.readLine();
+        projFile = tin.readLine();
+	tFile.close();
+        cout << qPrintable(projDir);
+
+	QString temp = QFileDialog::getSaveFileName(this, "Choose File", projDir+"/RasterProcessing","Catchment Polygon File(*.shp)");
 	QString tmp = temp;
 	if(!(tmp.toLower()).endsWith(".shp")){
         tmp.append(".shp");
@@ -40,7 +74,21 @@ void CatchmentPolygonDlg::outputBrowse()
 
 void CatchmentPolygonDlg::run()
 {
-	QString logFileName("/tmp/log.html");
+	QString projDir, projFile;
+        QFile tFile(QDir::homePath()+"/project.txt");
+        tFile.open(QIODevice::ReadOnly | QIODevice::Text);
+        QTextStream tin(&tFile);
+        projDir  = tin.readLine();
+        projFile = tin.readLine();
+	tFile.close();
+        cout << qPrintable(projDir);
+
+	writeLineNumber(qPrintable(projFile), 20, qPrintable(inputFileLineEdit->text()));
+	writeLineNumber(qPrintable(projFile), 21, qPrintable(outputFileLineEdit->text()));
+
+	QDir dir = QDir::home();
+        QString home = dir.homePath();
+	QString logFileName(qPrintable(home+"/log.html"));
 	ofstream log;
 	log.open(qPrintable(logFileName));
 	log<<"<html><body><font size=3 color=black><p> Verifying Files...</p></font></body></html>";
@@ -52,10 +100,20 @@ void CatchmentPolygonDlg::run()
 
 	QString inputFileName((inputFileLineEdit->text()));
 	QString outputShpFileName((outputFileLineEdit->text()));
-	QString outputDbfFileName;
+	QString outputDbfFileName; QString outputShxFileName, id;
 	outputDbfFileName = outputShpFileName;
-    	outputDbfFileName.truncate(outputDbfFileName.length()-3);
+    	outputDbfFileName.truncate(outputDbfFileName.length()-3); outputShxFileName=outputDbfFileName;
     	outputDbfFileName.append("dbf");
+	
+	outputShxFileName.truncate(outputShxFileName.length()-1);
+	id=outputShxFileName;
+	id=id.right(id.length()-id.lastIndexOf("/",-1)-1);
+	cout << "ID = "<<qPrintable(id) <<"\n";
+	outputShxFileName.append(".shx");
+
+	QString shpFile = projDir+"/VectorProcessing/"+id+".shp";
+	QString dbfFile = projDir+"/VectorProcessing/"+id+".dbf";
+	QString shxFile = projDir+"/VectorProcessing/"+id+".shx";
 
 	ifstream inFile;      inFile.open(qPrintable(inputFileLineEdit->text()));
 	ofstream outFile;    outFile.open(qPrintable(outputFileLineEdit->text()));
@@ -108,7 +166,12 @@ void CatchmentPolygonDlg::run()
 		messageLog->reload();
 		QApplication::processEvents();	
 		
-		int err = catchmentPoly((char *)qPrintable(inputFileName), "dummy", (char *)qPrintable(outputShpFileName), (char *)qPrintable(outputDbfFileName));	
+		int err = catchmentPoly((char *)qPrintable(inputFileName), "dummy", (char *)qPrintable(outputShpFileName), (char *)qPrintable(outputDbfFileName));
+		QFile::copy(outputShpFileName, shpFile);
+		QFile::copy(outputDbfFileName, dbfFile);
+		QFile::copy(outputShxFileName, shxFile);
+
+		writeLineNumber(qPrintable(projFile), 21, qPrintable(shpFile));
 
 		log.open(qPrintable(logFileName), ios::app);
 		log<<" Done!</p>";

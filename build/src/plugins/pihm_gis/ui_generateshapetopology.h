@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading ui file 'generateshapetopology.ui'
 **
-** Created: Mon Sep 7 22:45:44 2009
+** Created: Tue Jul 27 23:38:17 2010
 **      by: Qt User Interface Compiler version 4.3.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling ui file!
@@ -11,6 +11,7 @@
 #define UI_GENERATESHAPETOPOLOGY_H
 
 #include <Qt3Support/Q3ButtonGroup>
+#include <Qt3Support/Q3GroupBox>
 #include <Qt3Support/Q3MimeSourceFactory>
 #include <Qt3Support/Q3TextBrowser>
 #include <QtCore/QVariant>
@@ -46,49 +47,47 @@ public:
     constrainingLayerButtonGroup = new Q3ButtonGroup(GenerateShapeTopology);
     constrainingLayerButtonGroup->setObjectName(QString::fromUtf8("constrainingLayerButtonGroup"));
     constrainingLayerButtonGroup->setGeometry(QRect(11, 1, 578, 100));
-    constrainingLayerButtonGroup->setOrientation(Qt::Vertical);
     constrainingLayerLabel = new QLabel(constrainingLayerButtonGroup);
     constrainingLayerLabel->setObjectName(QString::fromUtf8("constrainingLayerLabel"));
-    constrainingLayerLabel->setGeometry(QRect(12, 42, 110, 32));
-    constrainingLayerLabel->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
+    constrainingLayerLabel->setGeometry(QRect(20, 42, 110, 32));
+    constrainingLayerLabel->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter);
     inputFileLineEdit = new QLineEdit(constrainingLayerButtonGroup);
     inputFileLineEdit->setObjectName(QString::fromUtf8("inputFileLineEdit"));
-    inputFileLineEdit->setGeometry(QRect(158, 43, 325, 29));
+    inputFileLineEdit->setGeometry(QRect(140, 43, 325, 29));
     inputBrowseButton = new QPushButton(constrainingLayerButtonGroup);
     inputBrowseButton->setObjectName(QString::fromUtf8("inputBrowseButton"));
-    inputBrowseButton->setGeometry(QRect(489, 42, 81, 32));
+    inputBrowseButton->setGeometry(QRect(470, 42, 98, 32));
     inputBrowseButton->setFocusPolicy(Qt::TabFocus);
     inputBrowseButton->setAutoDefault(false);
     outputButtonGroup = new Q3ButtonGroup(GenerateShapeTopology);
     outputButtonGroup->setObjectName(QString::fromUtf8("outputButtonGroup"));
     outputButtonGroup->setGeometry(QRect(11, 108, 578, 100));
-    outputButtonGroup->setOrientation(Qt::Vertical);
     outputFileLabel = new QLabel(outputButtonGroup);
     outputFileLabel->setObjectName(QString::fromUtf8("outputFileLabel"));
-    outputFileLabel->setGeometry(QRect(22, 45, 120, 32));
-    outputFileLabel->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
+    outputFileLabel->setGeometry(QRect(20, 45, 120, 32));
+    outputFileLabel->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter);
     outputFileLineEdit = new QLineEdit(outputButtonGroup);
     outputFileLineEdit->setObjectName(QString::fromUtf8("outputFileLineEdit"));
-    outputFileLineEdit->setGeometry(QRect(159, 46, 325, 29));
+    outputFileLineEdit->setGeometry(QRect(140, 46, 325, 29));
     outputBrowseButton = new QPushButton(outputButtonGroup);
     outputBrowseButton->setObjectName(QString::fromUtf8("outputBrowseButton"));
-    outputBrowseButton->setGeometry(QRect(490, 45, 81, 32));
+    outputBrowseButton->setGeometry(QRect(470, 45, 98, 32));
     outputBrowseButton->setAutoDefault(false);
     cancelButton = new QPushButton(GenerateShapeTopology);
     cancelButton->setObjectName(QString::fromUtf8("cancelButton"));
-    cancelButton->setGeometry(QRect(420, 228, 80, 34));
+    cancelButton->setGeometry(QRect(380, 228, 98, 34));
     cancelButton->setAutoDefault(false);
     okButton = new QPushButton(GenerateShapeTopology);
     okButton->setObjectName(QString::fromUtf8("okButton"));
-    okButton->setGeometry(QRect(506, 228, 80, 34));
+    okButton->setGeometry(QRect(495, 228, 98, 34));
     okButton->setAutoDefault(false);
     helpButton = new QPushButton(GenerateShapeTopology);
     helpButton->setObjectName(QString::fromUtf8("helpButton"));
-    helpButton->setGeometry(QRect(15, 228, 80, 34));
+    helpButton->setGeometry(QRect(7, 228, 98, 34));
     helpButton->setAutoDefault(false);
     MessageLog = new Q3TextBrowser(GenerateShapeTopology);
     MessageLog->setObjectName(QString::fromUtf8("MessageLog"));
-    MessageLog->setGeometry(QRect(11, 280, 570, 140));
+    MessageLog->setGeometry(QRect(15, 280, 570, 140));
     QWidget::setTabOrder(inputFileLineEdit, inputBrowseButton);
     QWidget::setTabOrder(inputBrowseButton, outputFileLineEdit);
     QWidget::setTabOrder(outputFileLineEdit, outputBrowseButton);
@@ -105,10 +104,10 @@ public:
     GenerateShapeTopology->setWindowTitle(QApplication::translate("GenerateShapeTopology", "Generate Shape Topology", 0, QApplication::UnicodeUTF8));
     constrainingLayerButtonGroup->setTitle(QApplication::translate("GenerateShapeTopology", "Input", 0, QApplication::UnicodeUTF8));
     constrainingLayerLabel->setText(QApplication::translate("GenerateShapeTopology", "Input Feature", 0, QApplication::UnicodeUTF8));
-    inputBrowseButton->setText(QApplication::translate("GenerateShapeTopology", "Browse...", 0, QApplication::UnicodeUTF8));
+    inputBrowseButton->setText(QApplication::translate("GenerateShapeTopology", "Browse", 0, QApplication::UnicodeUTF8));
     outputButtonGroup->setTitle(QApplication::translate("GenerateShapeTopology", "Output", 0, QApplication::UnicodeUTF8));
     outputFileLabel->setText(QApplication::translate("GenerateShapeTopology", "Output Poly File", 0, QApplication::UnicodeUTF8));
-    outputBrowseButton->setText(QApplication::translate("GenerateShapeTopology", "Browse...", 0, QApplication::UnicodeUTF8));
+    outputBrowseButton->setText(QApplication::translate("GenerateShapeTopology", "Browse", 0, QApplication::UnicodeUTF8));
     cancelButton->setText(QApplication::translate("GenerateShapeTopology", "Close", 0, QApplication::UnicodeUTF8));
     okButton->setText(QApplication::translate("GenerateShapeTopology", "Run!", 0, QApplication::UnicodeUTF8));
     helpButton->setText(QApplication::translate("GenerateShapeTopology", "Help", 0, QApplication::UnicodeUTF8));

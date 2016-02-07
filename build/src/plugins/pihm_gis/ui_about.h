@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading ui file 'about.ui'
 **
-** Created: Mon Sep 7 22:45:41 2009
+** Created: Tue Jul 27 23:38:13 2010
 **      by: Qt User Interface Compiler version 4.3.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling ui file!
@@ -31,16 +31,16 @@ public:
     QPushButton *okButton;
     QGroupBox *groupBox;
     QLabel *label;
-    QLabel *label_10;
-    QLabel *label_3;
-    QLabel *label_4;
-    QLabel *label_7;
+    QLabel *label_12;
     QLabel *label_2;
-    QLabel *label_11;
     QLabel *label_5;
-    QLabel *label_9;
+    QLabel *label_4;
     QLabel *label_6;
-    QLabel *label_8;
+    QLabel *label_7;
+    QLabel *label_11;
+    QLabel *label_14;
+    QLabel *label_15;
+    QLabel *label_16;
 
     void setupUi(QDialog *About)
     {
@@ -49,7 +49,7 @@ public:
     About->resize(454, 323);
     layoutWidget = new QWidget(About);
     layoutWidget->setObjectName(QString::fromUtf8("layoutWidget"));
-    layoutWidget->setGeometry(QRect(160, 280, 111, 40));
+    layoutWidget->setGeometry(QRect(160, 280, 111, 43));
     hboxLayout = new QHBoxLayout(layoutWidget);
     hboxLayout->setObjectName(QString::fromUtf8("hboxLayout"));
     hboxLayout->setContentsMargins(0, 0, 0, 0);
@@ -73,42 +73,77 @@ public:
     groupBox->setFocusPolicy(Qt::NoFocus);
     label = new QLabel(groupBox);
     label->setObjectName(QString::fromUtf8("label"));
-    label->setGeometry(QRect(190, 13, 61, 34));
-    label_10 = new QLabel(groupBox);
-    label_10->setObjectName(QString::fromUtf8("label_10"));
-    label_10->setGeometry(QRect(171, 191, 102, 26));
-    label_3 = new QLabel(groupBox);
-    label_3->setObjectName(QString::fromUtf8("label_3"));
-    label_3->setGeometry(QRect(155, 70, 121, 26));
-    label_4 = new QLabel(groupBox);
-    label_4->setObjectName(QString::fromUtf8("label_4"));
-    label_4->setGeometry(QRect(190, 100, 64, 34));
-    label_7 = new QLabel(groupBox);
-    label_7->setObjectName(QString::fromUtf8("label_7"));
-    label_7->setGeometry(QRect(152, 169, 156, 26));
+    label->setGeometry(QRect(172, 12, 91, 25));
+    QFont font;
+    font.setFamily(QString::fromUtf8("Century Gothic"));
+    font.setPointSize(20);
+    label->setFont(font);
+    label->setAlignment(Qt::AlignCenter);
+    label_12 = new QLabel(groupBox);
+    label_12->setObjectName(QString::fromUtf8("label_12"));
+    label_12->setGeometry(QRect(97, 44, 241, 16));
+    QFont font1;
+    font1.setFamily(QString::fromUtf8("Century Gothic"));
+    font1.setPointSize(14);
+    font1.setBold(false);
+    font1.setWeight(50);
+    label_12->setFont(font1);
+    label_12->setAlignment(Qt::AlignCenter);
     label_2 = new QLabel(groupBox);
     label_2->setObjectName(QString::fromUtf8("label_2"));
-    label_2->setGeometry(QRect(130, 50, 239, 26));
-    label_11 = new QLabel(groupBox);
-    label_11->setObjectName(QString::fromUtf8("label_11"));
-    label_11->setGeometry(QRect(136, 213, 205, 44));
+    label_2->setGeometry(QRect(60, 115, 91, 16));
+    QFont font2;
+    font2.setFamily(QString::fromUtf8("Century Gothic"));
+    font2.setPointSize(14);
+    label_2->setFont(font2);
+    label_2->setAlignment(Qt::AlignCenter);
     label_5 = new QLabel(groupBox);
     label_5->setObjectName(QString::fromUtf8("label_5"));
-    label_5->setGeometry(QRect(290, 120, 96, 26));
-    label_9 = new QLabel(groupBox);
-    label_9->setObjectName(QString::fromUtf8("label_9"));
-    label_9->setGeometry(QRect(60, 140, 109, 26));
+    label_5->setGeometry(QRect(280, 115, 111, 16));
+    label_5->setFont(font2);
+    label_5->setAlignment(Qt::AlignCenter);
+    label_4 = new QLabel(groupBox);
+    label_4->setObjectName(QString::fromUtf8("label_4"));
+    label_4->setGeometry(QRect(177, 95, 81, 16));
+    label_4->setFont(font2);
+    label_4->setAlignment(Qt::AlignCenter);
     label_6 = new QLabel(groupBox);
     label_6->setObjectName(QString::fromUtf8("label_6"));
-    label_6->setGeometry(QRect(74, 120, 77, 26));
-    QFont font;
-    font.setPointSize(29);
-    font.setBold(true);
-    font.setWeight(75);
-    label_6->setFont(font);
-    label_8 = new QLabel(groupBox);
-    label_8->setObjectName(QString::fromUtf8("label_8"));
-    label_8->setGeometry(QRect(281, 140, 113, 26));
+    label_6->setGeometry(QRect(132, 162, 171, 20));
+    label_6->setFont(font2);
+    label_6->setAlignment(Qt::AlignCenter);
+    label_7 = new QLabel(groupBox);
+    label_7->setObjectName(QString::fromUtf8("label_7"));
+    label_7->setGeometry(QRect(77, 215, 281, 38));
+    QFont font3;
+    font3.setFamily(QString::fromUtf8("Century Gothic"));
+    font3.setPointSize(16);
+    label_7->setFont(font3);
+    label_7->setLayoutDirection(Qt::LeftToRight);
+    label_7->setAlignment(Qt::AlignCenter);
+    label_11 = new QLabel(groupBox);
+    label_11->setObjectName(QString::fromUtf8("label_11"));
+    label_11->setGeometry(QRect(112, 60, 211, 20));
+    label_11->setFont(font2);
+    label_11->setMouseTracking(true);
+    label_11->setFocusPolicy(Qt::ClickFocus);
+    label_11->setAlignment(Qt::AlignCenter);
+    label_11->setOpenExternalLinks(true);
+    label_14 = new QLabel(groupBox);
+    label_14->setObjectName(QString::fromUtf8("label_14"));
+    label_14->setGeometry(QRect(42, 137, 131, 16));
+    label_14->setFont(font2);
+    label_14->setAlignment(Qt::AlignCenter);
+    label_15 = new QLabel(groupBox);
+    label_15->setObjectName(QString::fromUtf8("label_15"));
+    label_15->setGeometry(QRect(270, 135, 131, 20));
+    label_15->setFont(font2);
+    label_15->setAlignment(Qt::AlignCenter);
+    label_16 = new QLabel(groupBox);
+    label_16->setObjectName(QString::fromUtf8("label_16"));
+    label_16->setGeometry(QRect(157, 183, 121, 16));
+    label_16->setFont(font2);
+    label_16->setAlignment(Qt::AlignCenter);
 
     retranslateUi(About);
     QObject::connect(okButton, SIGNAL(clicked()), About, SLOT(accept()));
@@ -119,25 +154,24 @@ public:
     void retranslateUi(QDialog *About)
     {
     About->setWindowTitle(QApplication::translate("About", "About", 0, QApplication::UnicodeUTF8));
-    okButton->setText(QApplication::translate("About", "OK", 0, QApplication::UnicodeUTF8));
+    okButton->setText(QApplication::translate("About", "Close", 0, QApplication::UnicodeUTF8));
     groupBox->setTitle(QString());
-    label->setText(QApplication::translate("About", "<html><head><meta name=\"qrichtext\" content=\"1\" /></head><body style=\" white-space: pre-wrap; font-family:Sans Serif; font-size:9pt; font-weight:400; font-style:normal; text-decoration:none;\"><p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt;\">PIHMgis</span></p></body></html>", 0, QApplication::UnicodeUTF8));
-    label_10->setText(QApplication::translate("About", "<html><head><meta name=\"qrichtext\" content=\"1\" /></head><body style=\" white-space: pre-wrap; font-family:Sans Serif; font-size:9pt; font-weight:400; font-style:normal; text-decoration:none;\"><p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt;\">cxd11@psu.edu</span></p></body></html>", 0, QApplication::UnicodeUTF8));
-    label_3->setText(QApplication::translate("About", "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+    label->setText(QApplication::translate("About", "PIHMgis", 0, QApplication::UnicodeUTF8));
+    label_12->setText(QApplication::translate("About", "v2.3 - ea supported on QGIS v1.0.2", 0, QApplication::UnicodeUTF8));
+    label_2->setText(QApplication::translate("About", "Gopal Bhatt", 0, QApplication::UnicodeUTF8));
+    label_5->setText(QApplication::translate("About", "Mukesh Kumar", 0, QApplication::UnicodeUTF8));
+    label_4->setText(QApplication::translate("About", "Contacts:", 0, QApplication::UnicodeUTF8));
+    label_6->setText(QApplication::translate("About", "Prof. Christopher J. Duffy", 0, QApplication::UnicodeUTF8));
+    label_7->setText(QApplication::translate("About", "Civil & Environmental Engineering\n"
+"The Pennsylvania State University", 0, QApplication::UnicodeUTF8));
+    label_11->setText(QApplication::translate("About", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Lucida Grande'; font-size:13pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; font-size:9pt;\"><span style=\" font-size:10pt;\">(</span><span style=\" text-decoration: underline; color:#0000ff;\">http://www.pihm.psu.edu</span><span style=\" font-size:10pt; color:#000000;\">)</span></p></body></html>", 0, QApplication::UnicodeUTF8));
-    label_4->setText(QApplication::translate("About", "<html><head><meta name=\"qrichtext\" content=\"1\" /></head><body style=\" white-space: pre-wrap; font-family:Sans Serif; font-size:9pt; font-weight:400; font-style:normal; text-decoration:none;\"><p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt;\">Contacts:</span></p></body></html>", 0, QApplication::UnicodeUTF8));
-    label_7->setText(QApplication::translate("About", "<html><head><meta name=\"qrichtext\" content=\"1\" /></head><body style=\" white-space: pre-wrap; font-family:Sans Serif; font-size:9pt; font-weight:400; font-style:normal; text-decoration:none;\"><p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt;\">Prof. Christopher J. Duffy</span></p></body></html>", 0, QApplication::UnicodeUTF8));
-    label_2->setText(QApplication::translate("About", "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Lucida Grande'; font-size:13pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; font-size:9pt;\"><span style=\" font-size:10pt;\">v1.0.3 - ea supported on QGIS v0.9.0</span></p></body></html>", 0, QApplication::UnicodeUTF8));
-    label_11->setText(QApplication::translate("About", "<html><head><meta name=\"qrichtext\" content=\"1\" /></head><body style=\" white-space: pre-wrap; font-family:Sans Serif; font-size:9pt; font-weight:400; font-style:normal; text-decoration:none;\"><p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt;\">Civil &amp; Environmental Engineering</span></p><p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:10pt;\">   Pennsylvania State University</p></body></html>", 0, QApplication::UnicodeUTF8));
-    label_5->setText(QApplication::translate("About", "<html><head><meta name=\"qrichtext\" content=\"1\" /></head><body style=\" white-space: pre-wrap; font-family:Sans Serif; font-size:9pt; font-weight:400; font-style:normal; text-decoration:none;\"><p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt;\">Mukesh Kumar</span></p></body></html>", 0, QApplication::UnicodeUTF8));
-    label_9->setText(QApplication::translate("About", "<html><head><meta name=\"qrichtext\" content=\"1\" /></head><body style=\" white-space: pre-wrap; font-family:Sans Serif; font-size:9pt; font-weight:400; font-style:normal; text-decoration:none;\"><p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt;\">gxb913@psu.edu</span></p></body></html>", 0, QApplication::UnicodeUTF8));
-    label_6->setText(QApplication::translate("About", "<html><head><meta name=\"qrichtext\" content=\"1\" /></head><body style=\" white-space: pre-wrap; font-family:Sans Serif; font-size:9pt; font-weight:400; font-style:normal; text-decoration:none;\"><p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt;\">Gopal Bhatt</span></p></body></html>", 0, QApplication::UnicodeUTF8));
-    label_8->setText(QApplication::translate("About", "<html><head><meta name=\"qrichtext\" content=\"1\" /></head><body style=\" white-space: pre-wrap; font-family:Sans Serif; font-size:9pt; font-weight:400; font-style:normal; text-decoration:none;\"><p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt;\">muk139@psu.edu</span></p></body></html>", 0, QApplication::UnicodeUTF8));
+"</style></head><body style=\" font-family:'Century Gothic'; font-size:14pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><a href=\"http://www.pihm.psu.edu/\"><span style=\" text-decoration: underline; color:#0000ff;\">http://www.pihm.psu.edu/</span></a></p></body></html>", 0, QApplication::UnicodeUTF8));
+    label_14->setText(QApplication::translate("About", "gxb913@psu.edu", 0, QApplication::UnicodeUTF8));
+    label_15->setText(QApplication::translate("About", "muk139@psu.edu", 0, QApplication::UnicodeUTF8));
+    label_16->setText(QApplication::translate("About", "cxd11@psu.edu", 0, QApplication::UnicodeUTF8));
     Q_UNUSED(About);
     } // retranslateUi
 

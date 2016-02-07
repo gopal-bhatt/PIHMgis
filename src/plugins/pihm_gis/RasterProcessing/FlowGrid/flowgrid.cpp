@@ -5,8 +5,10 @@
 #include "../../pihmRasterLIBS/setdir.h"
 #include "../../pihmRasterLIBS/aread8.h"
 #include "../../pihmLIBS/helpDialog/helpdialog.h"
+#include "../../pihmLIBS/fileStruct.h"
 
 #include <fstream>
+#include <iostream>
 using namespace std;
 
 FlowGridDlg::FlowGridDlg(QWidget *parent)
@@ -18,17 +20,48 @@ FlowGridDlg::FlowGridDlg(QWidget *parent)
 	connect(runButton, SIGNAL(clicked()), this, SLOT(run()));
 	connect(helpButton, SIGNAL(clicked()), this, SLOT(help()));
 	connect(closeButton, SIGNAL(clicked()), this, SLOT(close()));
+
+	QString projDir, projFile;
+        QFile tFile(QDir::homePath()+"/project.txt");
+        tFile.open(QIODevice::ReadOnly | QIODevice::Text);
+        QTextStream tin(&tFile);
+        projDir  = tin.readLine();
+        projFile = tin.readLine();
+	tFile.close();
+        cout << qPrintable(projDir);
+	inputFileLineEdit->setText(readLineNumber(qPrintable(projFile), 4));
+	outputFDRFileLineEdit->setText(projDir+"/RasterProcessing/fdr.asc");
+        outputFAGFileLineEdit->setText(projDir+"/RasterProcessing/fac.asc");	
 }
 
 void FlowGridDlg::inputBrowse()
 {
-	QString str = QFileDialog::getOpenFileName(this, "Choose File", "~/","DEM/Fill Grid File(*.adf *.asc)");
+	QString projDir, projFile;
+        QFile tFile(QDir::homePath()+"/project.txt");
+        tFile.open(QIODevice::ReadOnly | QIODevice::Text);
+        QTextStream tin(&tFile);
+        projDir  = tin.readLine();
+        projFile = tin.readLine();
+	tFile.close();
+
+	QString str = QFileDialog::getOpenFileName(this, "Choose File", projDir+"/RasterProcessing","DEM/Fill Grid File(*.adf *.asc)");
 	inputFileLineEdit->setText(str);
+
+	outputFDRFileLineEdit->setText(projDir+"/RasterProcessing/fdr.asc");
+	outputFAGFileLineEdit->setText(projDir+"/RasterProcessing/fac.asc");
 }
 
 void FlowGridDlg::outputFDRBrowse()
 {
-	QString temp = QFileDialog::getSaveFileName(this, "Choose File", "~/","Flow Dir Grid File(*.adf *.asc)");
+	QString projDir, projFile;
+        QFile tFile(QDir::homePath()+"/project.txt");
+        tFile.open(QIODevice::ReadOnly | QIODevice::Text);
+        QTextStream tin(&tFile);
+        projDir  = tin.readLine();
+        projFile = tin.readLine();
+	tFile.close();
+
+	QString temp = QFileDialog::getSaveFileName(this, "Choose File", projDir+"/RasterProcessing","Flow Dir Grid File(*.adf *.asc)");
 	QString tmp = temp;
 	if(!(tmp.toLower()).endsWith(".asc")){
         tmp.append(".asc");
@@ -40,7 +73,15 @@ void FlowGridDlg::outputFDRBrowse()
 
 void FlowGridDlg::outputFAGBrowse()
 {
-        QString temp = QFileDialog::getSaveFileName(this, "Choose File", "~/","Flow Acc Grid File(*.adf *.asc)");
+	QString projDir, projFile;
+        QFile tFile(QDir::homePath()+"/project.txt");
+        tFile.open(QIODevice::ReadOnly | QIODevice::Text);
+        QTextStream tin(&tFile);
+        projDir  = tin.readLine();
+        projFile = tin.readLine();
+	tFile.close();
+
+        QString temp = QFileDialog::getSaveFileName(this, "Choose File", projDir+"/RasterProcessing","Flow Acc Grid File(*.adf *.asc)");
         QString tmp = temp;
         if(!(tmp.toLower()).endsWith(".asc")){
         tmp.append(".asc");
@@ -52,7 +93,21 @@ void FlowGridDlg::outputFAGBrowse()
 
 void FlowGridDlg::run()
 {
-	QString logFileName("/tmp/log.html");
+	QString projDir, projFile;
+        QFile tFile(QDir::homePath()+"/project.txt");
+        tFile.open(QIODevice::ReadOnly | QIODevice::Text);
+        QTextStream tin(&tFile);
+        projDir  = tin.readLine();
+        projFile = tin.readLine();
+	tFile.close();
+        cout << qPrintable(projDir);
+	writeLineNumber(qPrintable(projFile), 5, qPrintable(inputFileLineEdit->text()));
+	writeLineNumber(qPrintable(projFile), 6, qPrintable(outputFDRFileLineEdit->text()));
+	writeLineNumber(qPrintable(projFile), 7, qPrintable(outputFAGFileLineEdit->text()));
+
+	QDir dir = QDir::home();
+	QString home = dir.homePath();	
+	QString logFileName(qPrintable(home+"/log.html"));
 	ofstream log;
 	log.open(qPrintable(logFileName));
 	log<<"<html><body><font size=3 color=black><p> Verifying Files...</p></font></body></html>";

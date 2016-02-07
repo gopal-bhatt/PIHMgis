@@ -33,6 +33,9 @@ public slots:
 	void attBrowse();
         void run();
 	void help();
+
+private slots:
+    void on_RnLineEdit_textChanged(QString );
 };
 
 #endif

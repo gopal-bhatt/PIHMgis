@@ -6,6 +6,7 @@
 using namespace std;
 
 #include "../../pihmLIBS/helpDialog/helpdialog.h"
+#include "../../pihmLIBS/fileStruct.h"
 
 paraFileDlg::paraFileDlg(QWidget *parent)
 {
@@ -14,11 +15,32 @@ paraFileDlg::paraFileDlg(QWidget *parent)
 	connect(okButton, SIGNAL(clicked()), this, SLOT(run()));
 	connect(helpButton, SIGNAL(clicked()), this, SLOT(help()));
 	connect(cancelButton, SIGNAL(clicked()), this, SLOT(close()));
+	
+	QString projDir, projFile;
+        QFile tFile(QDir::homePath()+"/project.txt");
+        tFile.open(QIODevice::ReadOnly | QIODevice::Text);
+        QTextStream tin(&tFile);
+        projDir  = tin.readLine();
+        projFile = tin.readLine();
+	tFile.close();
+        cout << qPrintable(projDir);
+	
+	QString tempStr; tempStr=readLineNumber(qPrintable(projFile), 49); tempStr.truncate(tempStr.length()-4);
+	paraFileLineEdit->setText(tempStr+"para");
 }
 
 void paraFileDlg::paraBrowse()
-{
-	QString temp = QFileDialog::getSaveFileName(this, "Choose File", "~/","para File(*.para *.PARA)");
+{	
+	QString projDir, projFile;
+        QFile tFile(QDir::homePath()+"/project.txt");
+        tFile.open(QIODevice::ReadOnly | QIODevice::Text);
+        QTextStream tin(&tFile);
+        projDir  = tin.readLine();
+        projFile = tin.readLine();
+	tFile.close();
+        cout << qPrintable(projDir);
+
+	QString temp = QFileDialog::getSaveFileName(this, "Choose File", projDir+"/DataModel","para File(*.para *.PARA)");
 	QString tmp = temp;
 	if(!(tmp.toLower()).endsWith(".para")){
         	tmp.append(".para");
@@ -30,8 +52,20 @@ void paraFileDlg::paraBrowse()
 
 void paraFileDlg::run()
 {
+	QString projDir, projFile;
+        QFile tFile(QDir::homePath()+"/project.txt");
+        tFile.open(QIODevice::ReadOnly | QIODevice::Text);
+        QTextStream tin(&tFile);
+        projDir  = tin.readLine();
+        projFile = tin.readLine();
+	tFile.close();
+        cout << qPrintable(projDir);
 
-	QString logFileName("/tmp/log.html");
+	writeLineNumber(qPrintable(projFile), 82, qPrintable(paraFileLineEdit->text()));
+
+	QDir dir = QDir::home();
+        QString home = dir.homePath();
+	QString logFileName(home+"/log.html");
 	ofstream log;
 	log.open(qPrintable(logFileName));
 	log<<"<html><body><font size=3 color=black><p> Verifying Files...</p></font></body></html>";
@@ -348,42 +382,43 @@ void paraFileDlg::run()
                 else
                         parameters<<"0\n";
 		///
+		int multiplier = comboBoxTime2->currentIndex()==0 ? 1 : comboBoxTime2->currentIndex()==1? 60 : 24*60;
                 if(checkBox1->isChecked())
-                        parameters<<qPrintable((lineEdit1->text()))<<"\t";
+                        parameters<<(lineEdit1->text()).toDouble()*multiplier<<"\t";
                 else
                         parameters<<"0\t";
                 if(checkBox2->isChecked())
-                        parameters<<qPrintable((lineEdit2->text()))<<"\t";
+                        parameters<<(lineEdit2->text()).toDouble()*multiplier<<"\t";
                 else
                         parameters<<"0\t";
                 if(checkBox3->isChecked())
-                        parameters<<qPrintable((lineEdit3->text()))<<"\t";
+                        parameters<<(lineEdit3->text()).toDouble()*multiplier<<"\t";
                 else
                         parameters<<"0\t";
                 if(checkBox4->isChecked())
-                        parameters<<qPrintable((lineEdit4->text()))<<"\n";
+                        parameters<<(lineEdit4->text()).toDouble()*multiplier<<"\n";
                 else
                         parameters<<"0\n";
 
 		////
                 if(checkBox5->isChecked())
-                        parameters<<qPrintable((lineEdit5->text()))<<"\t";
+                        parameters<<(lineEdit5->text()).toDouble()*multiplier<<"\t";
                 else
                         parameters<<"0\t";
                 if(checkBox6->isChecked())
-                        parameters<<qPrintable((lineEdit6->text()))<<"\t";
+                        parameters<<(lineEdit6->text()).toDouble()*multiplier<<"\t";
                 else
                         parameters<<"0\t";
                 if(checkBox7->isChecked())
-                        parameters<<qPrintable((lineEdit7->text()))<<"\t";
+                        parameters<<(lineEdit7->text()).toDouble()*multiplier<<"\t";
                 else
                         parameters<<"0\t";
                 if(checkBox8->isChecked() || checkBox9->isChecked() || checkBox10->isChecked())
-                        parameters<<qPrintable((lineEdit8->text()))<<"\t";
+                        parameters<<(lineEdit8->text()).toDouble()*multiplier<<"\t";
                 else
                         parameters<<"0\t";
                 if(checkBox11->isChecked() || checkBox12->isChecked() || checkBox13->isChecked() || checkBox14->isChecked() || checkBox15->isChecked() || checkBox16->isChecked() || checkBox17->isChecked() || checkBox18->isChecked() || checkBox19->isChecked() || checkBox20->isChecked())
-                        parameters<<qPrintable((lineEdit11->text()))<<"\n";
+                        parameters<<(lineEdit11->text()).toDouble()*multiplier<<"\n";
                 else
                         parameters<<"0\n";
 
@@ -437,10 +472,10 @@ void paraFileDlg::run()
 		parameters<<qPrintable((ETSlineEdit->text()))<<"\n";
 
 		/***********/
+		multiplier = comboBoxTime1->currentIndex()==0 ? 1 : comboBoxTime1->currentIndex()==1? 60 : 24*60;
+		parameters<<(STlineEdit->text()).toDouble()*multiplier<<"\t";
 
-		parameters<<qPrintable((STlineEdit->text()))<<"\t";
-
-		parameters<<qPrintable((ETlineEdit->text()))<<"\t";
+		parameters<<(ETlineEdit->text()).toDouble()*multiplier<<"\t";
 
 		if(SScomboBox->currentIndex() == 0)
 			parameters<<"0\n";
