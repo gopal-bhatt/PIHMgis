@@ -1,1 +1,18 @@
 PIHMgis Version 3.0
+
+
+Software Author:
+Gopal Bhatt
+Penn State University
+
+
+Bhatt, G., Kumar, M., Duffy, C., 2014. A Tightly Coupled GIS and Distributed Hydrologic Modeling Framework, Environmental Modelling & Software, Vol. 62, pp. 70–84
+
+
+Highlights
+• A coupled GIS and distributed hydrologic modeling framework, PIHMgis was developed.
+• PIHMgis uses national geospatial dataset to setup, execute, and analyze simulations.
+• Procedural framework improves model-data integration using shared geodata model.
+
+
+PIHMgis is an open-source, platform independent, tightly coupled GIS and distributed hydrologic modeling framework, PIHMgis (www.pihm.psu.edu). PIHMgis improves model-data integration, and provides functionalities for watershed delineation, domain decomposition, parameter assignment, simulation, visualization and analyses.
