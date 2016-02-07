@@ -15,4 +15,4 @@ Highlights
 • Procedural framework improves model-data integration using shared geodata model.
 
 
-PIHMgis is an open-source, platform independent, tightly coupled GIS and distributed hydrologic modeling framework, PIHMgis (www.pihm.psu.edu). PIHMgis improves model-data integration, and provides functionalities for watershed delineation, domain decomposition, parameter assignment, simulation, visualization and analyses.
+PIHMgis is an open-source, platform independent, tightly coupled GIS and distributed hydrologic modeling framework (www.pihm.psu.edu). PIHMgis improves model-data integration, and provides functionalities for watershed delineation, domain decomposition, parameter assignment, simulation, visualization and analyses.
