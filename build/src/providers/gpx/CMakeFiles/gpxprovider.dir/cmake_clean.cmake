@@ -1,9 +1,0 @@
-FILE(REMOVE
-"moc_qgsgpxprovider.cxx"
-"libgpxprovider.pdb"
-"libgpxprovider.a"
-"libgpxprovider.so"
-"CMakeFiles/gpxprovider.dir/qgsgpxprovider.o"
-"CMakeFiles/gpxprovider.dir/gpsdata.o"
-"CMakeFiles/gpxprovider.dir/moc_qgsgpxprovider.o"
-)

@@ -1,7 +1,0 @@
-K 10
-svn:ignore
-V 28
-Makefile
-Makefile.in
-qgis.m4
-END

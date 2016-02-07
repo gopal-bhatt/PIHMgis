@@ -1,6 +1,0 @@
-<RCC>
-    <qresource prefix="/interpolator" >
-        <file>options.png</file>
-        <file>interpolation.png</file>
-    </qresource>
-</RCC>

@@ -1,0 +1,27 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file>Icons/ArrowCurlLeft80x.png</file>
+        <file>Icons/ArrowCurlLeft40x.png</file>
+        <file>Icons/ArrowCurlLeft60x.png</file>
+        <file>Icons/ArrowCurlDown60x.png</file>
+        <file>Icons/ArrowRight40x.png</file>
+        <file>Icons/ArrowRight60x.png</file>
+        <file>Icons/ArrowLeft40x.png</file>
+        <file>Icons/ArrowLeft60x.png</file>
+        <file>Icons/ArrowCurlDownRight60x.png</file>
+        <file>Icons/ArrowDown60x.png</file>
+        <file>Icons/PIHMSimulation.png</file>
+        <file>Icons/PIHMSimulation2.png</file>
+        <file>Icons/PIHMgis001.icns</file>
+        <file>Icons/PIHMgis001.png</file>
+        <file>Icons/PIHMgisFlat.icns</file>
+        <file>Icons/PIHMgis3D.icns</file>
+        <file>Icons/Add32.png</file>
+    </qresource>
+    <qresource prefix="/misc">
+        <file>Misc/usa.dbf</file>
+        <file>Misc/usa.prj</file>
+        <file>Misc/usa.shp</file>
+        <file>Misc/usa.shx</file>
+    </qresource>
+</RCC>

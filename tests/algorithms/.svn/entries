@@ -1,34 +1,0 @@
-8
-
-dir
-10938
-https://svn.osgeo.org/qgis/branches/Release-1_0_2/tests/algorithms
-https://svn.osgeo.org/qgis
-
-
-
-2008-10-20T20:08:43.789824Z
-9501
-timlinux
-
-
-svn:special svn:externals svn:needs-lock
-
-
-
-
-
-
-
-
-
-
-
-c8812cc2-4d05-0410-92ff-de0c093fc19c
-
-projections
-dir
-
-qgsproject
-dir
-

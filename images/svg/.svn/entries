@@ -1,89 +1,0 @@
-8
-
-dir
-10938
-https://svn.osgeo.org/qgis/branches/Release-1_0_2/images/svg
-https://svn.osgeo.org/qgis
-
-
-
-2009-02-13T14:09:29.290127Z
-10160
-timlinux
-has-props
-
-svn:special svn:externals svn:needs-lock
-
-
-
-
-
-
-
-
-
-
-
-c8812cc2-4d05-0410-92ff-de0c093fc19c
-
-services
-dir
-
-biology
-dir
-
-gpsicons
-dir
-
-symbol
-dir
-
-north_arrows
-dir
-
-sport
-dir
-
-icon
-dir
-
-landmark
-dir
-
-transport
-dir
-
-entertainment
-dir
-
-.cvsignore
-file
-
-
-
-
-2009-06-17T07:50:03.000000Z
-31076018db46093e4e5e50ab56486a4e
-2005-01-10T20:26:46.000000Z
-2610
-g_j_m
-has-props
-
-CMakeLists.txt
-file
-
-
-
-
-2009-06-17T07:50:03.000000Z
-c5d3165bac38506b736a464fac3aba23
-2009-02-13T14:09:29.290127Z
-10160
-timlinux
-
-emergency
-dir
-
-geometric
-dir
-

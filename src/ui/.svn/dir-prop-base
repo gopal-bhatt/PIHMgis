@@ -1,8 +1,0 @@
-K 10
-svn:ignore
-V 28
-Makefile.in
-Makefile
-ui_*.h
-
-END

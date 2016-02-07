@@ -1,6 +1,0 @@
-<RCC>
-    <qresource prefix="/images" >
-        <file>icons/qgis-icon-16x16.png</file>
-        <file>icons/qgis-icon-60x60.png</file>
-    </qresource>
-</RCC>

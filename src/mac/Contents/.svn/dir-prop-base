@@ -1,9 +1,0 @@
-K 10
-svn:ignore
-V 49
-.DS_Store
-Makefile
-Makefile.in
-Info.plist
-Pkginfo
-END

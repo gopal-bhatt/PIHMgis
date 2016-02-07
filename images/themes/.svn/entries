@@ -1,65 +1,0 @@
-8
-
-dir
-10938
-https://svn.osgeo.org/qgis/branches/Release-1_0_2/images/themes
-https://svn.osgeo.org/qgis
-
-
-
-2009-01-18T17:53:38.712155Z
-9979
-borysiasty
-has-props
-
-svn:special svn:externals svn:needs-lock
-
-
-
-
-
-
-
-
-
-
-
-c8812cc2-4d05-0410-92ff-de0c093fc19c
-
-classic
-dir
-
-gis
-dir
-
-default
-dir
-
-nkids
-dir
-
-.cvsignore
-file
-
-
-
-
-2009-06-17T07:50:08.000000Z
-31076018db46093e4e5e50ab56486a4e
-2005-01-10T20:26:46.000000Z
-2610
-g_j_m
-has-props
-
-CMakeLists.txt
-file
-
-
-
-
-2009-06-17T07:50:08.000000Z
-7d4d085c37db7eb4fddfe7cd1127f9c3
-2008-12-12T05:52:57.825315Z
-9775
-timlinux
-

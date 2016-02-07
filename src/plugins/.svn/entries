@@ -1,142 +1,0 @@
-8
-
-dir
-10938
-https://svn.osgeo.org/qgis/branches/Release-1_0_2/src/plugins
-https://svn.osgeo.org/qgis
-
-
-
-2009-04-07T19:35:04.350256Z
-10501
-jef
-has-props
-
-svn:special svn:externals svn:needs-lock
-
-
-
-
-
-
-
-
-
-
-
-c8812cc2-4d05-0410-92ff-de0c093fc19c
-
-spit
-dir
-
-grass
-dir
-
-qgsrendererplugin.h
-file
-
-
-
-
-2009-06-17T07:49:46.000000Z
-55fafdd3209e0c9393634edb8f49dc03
-2008-08-23T21:37:31.208899Z
-9138
-jef
-
-interpolation
-dir
-
-quick_print
-dir
-
-plugin_template
-dir
-
-plugin_builder.py
-file
-
-
-
-
-2009-06-17T07:49:46.000000Z
-715476099215142ba942da56991cf3b2
-2008-01-08T18:15:09.996037Z
-7873
-timlinux
-has-props
-
-wfs
-dir
-
-delimited_text
-dir
-
-grid_maker
-dir
-
-north_arrow
-dir
-
-dxf2shp_converter
-dir
-
-copyright_label
-dir
-
-geoprocessing
-dir
-
-qgisplugin.h
-file
-
-
-
-
-2009-06-17T07:49:46.000000Z
-252666d38b3fc08025ad337b5d4a6298
-2008-08-23T21:37:31.208899Z
-9138
-jef
-has-props
-
-coordinate_capture
-dir
-
-gps_importer
-dir
-
-georeferencer
-dir
-
-scale_bar
-dir
-
-CMakeLists.txt
-file
-
-
-
-
-2009-06-17T07:49:46.000000Z
-af1b548b2ff52f70155ae4066d697d81
-2008-10-25T14:19:58.119035Z
-9546
-mhugent
-
-.cvsignore
-file
-
-
-
-
-2009-06-17T07:49:46.000000Z
-31076018db46093e4e5e50ab56486a4e
-2005-01-10T20:26:46.000000Z
-2610
-g_j_m
-has-props
-
-ogr_converter
-dir
-

@@ -1,83 +1,0 @@
-8
-
-dir
-10938
-https://svn.osgeo.org/qgis/branches/Release-1_0_2/src
-https://svn.osgeo.org/qgis
-
-
-
-2009-04-19T10:33:52.498800Z
-10599
-jef
-has-props
-
-svn:special svn:externals svn:needs-lock
-
-
-
-
-
-
-
-
-
-
-
-c8812cc2-4d05-0410-92ff-de0c093fc19c
-
-app
-dir
-
-designer
-dir
-
-mac
-dir
-
-Qgis.xsd
-file
-
-
-
-
-2009-06-17T07:49:58.000000Z
-aad5b43d51c837ac2989850e70a4bd7a
-2002-09-22T19:11:59.000000Z
-117
-gsherman
-has-props
-
-plugins
-dir
-
-python
-dir
-
-gui
-dir
-
-core
-dir
-
-helpviewer
-dir
-
-providers
-dir
-
-ui
-dir
-
-CMakeLists.txt
-file
-
-
-
-
-2009-06-17T07:49:58.000000Z
-d571b666df6c487443259caba3a6b61b
-2008-05-28T12:35:20.304423Z
-8530
-wonder
-
